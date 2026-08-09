@@ -1,493 +1,464 @@
 /* ==========================================================================
-   Course deck design system — 1920×1080 slide surface
-   Editorial/dark aesthetic. Deterministic: no generative imagery, no webfonts
-   over the network. Everything here renders identically on any machine.
+   Course deck design system — 1920×1080
+
+   Direction: a well-set teaching page, not a product deck. The reference is a
+   modern textbook spread — white paper, printed-ink colour, a scholarly serif
+   for headings, and structural devices that mean something (figures are
+   numbered, definitions are boxed, worked examples are marked).
+
+   Typography
+     Headings   TeX Gyre Schola — a Century Schoolbook cut, the face designed
+                for school textbooks. Chosen for the subject, not for fashion.
+     Body       IBM Plex Sans — humanist, plain, high legibility at distance.
+     Data/code  IBM Plex Mono.
+
+   Everything is vendored locally, so renders are identical on any machine.
    ========================================================================== */
 
-@font-face {
-  font-family: 'Inter';
-  src: url('vendor/fonts/InterVariable.ttf') format('truetype-variations');
-  font-weight: 100 900;
-  font-display: block;
-}
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('vendor/fonts/JetBrainsMono-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-display: block;
-}
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('vendor/fonts/JetBrainsMono-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-display: block;
-}
+@font-face{font-family:'Schola';src:url('vendor/fonts/texgyreschola-regular.otf') format('opentype');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'Schola';src:url('vendor/fonts/texgyreschola-bold.otf') format('opentype');font-weight:700;font-style:normal;font-display:block}
+@font-face{font-family:'Schola';src:url('vendor/fonts/texgyreschola-italic.otf') format('opentype');font-weight:400;font-style:italic;font-display:block}
 
-:root {
-  /* Surface */
-  --bg:            #0B0E13;
-  --bg-elev:       #141A24;
-  --bg-elev-2:     #1B2331;
+@font-face{font-family:'Plex';src:url('vendor/fonts/IBMPlexSans-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'Plex';src:url('vendor/fonts/IBMPlexSans-Italic.ttf') format('truetype');font-weight:400;font-style:italic;font-display:block}
+@font-face{font-family:'Plex';src:url('vendor/fonts/IBMPlexSans-Medium.ttf') format('truetype');font-weight:500;font-style:normal;font-display:block}
+@font-face{font-family:'Plex';src:url('vendor/fonts/IBMPlexSans-SemiBold.ttf') format('truetype');font-weight:600;font-style:normal;font-display:block}
 
-  /* Ink */
-  --ink:           #EDF1F7;
-  --ink-soft:      #B4BECD;
-  --ink-muted:     #7A8699;
+@font-face{font-family:'PlexMono';src:url('vendor/fonts/IBMPlexMono-Regular.ttf') format('truetype');font-weight:400;font-display:block}
+@font-face{font-family:'PlexMono';src:url('vendor/fonts/IBMPlexMono-SemiBold.ttf') format('truetype');font-weight:600;font-display:block}
 
-  /* Accents — one primary, one secondary, semantic pair */
-  --accent:        #5EEAD4;   /* teal: structure, kickers, rules      */
-  --accent-2:      #818CF8;   /* indigo: secondary emphasis            */
-  --warn:          #FBBF24;   /* amber: the "watch out" colour         */
-  --bad:           #F87171;
-  --good:          #4ADE80;
+:root{
+  /* Paper and ink. Panels are a cool off-white so boxes read as tinted paper
+     rather than as UI cards. */
+  --paper:      #FFFFFF;
+  --panel:      #F5F7F9;
+  --panel-warm: #FBF7F0;
+  --rule:       #DAE0E7;
+  --rule-firm:  #B7C1CC;
 
-  --line:          rgba(255,255,255,.10);
-  --line-strong:   rgba(255,255,255,.18);
+  --ink:        #14181D;
+  --ink-soft:   #45505E;
+  --ink-faint:  #788594;
 
-  --pad-x:         132px;
-  --pad-y:         104px;
+  /* Printed-ink colours: saturated enough to carry, dark enough to look set
+     rather than lit. No neon, no gradients. */
+  --accent:     #1B4F8F;   /* ink blue: headings furniture, figure numbers   */
+  --accent-tint:#E9F0F9;
+  --good:       #1C6B4C;
+  --good-tint:  #E7F2EC;
+  --bad:        #A63229;
+  --bad-tint:   #FAEBE9;
+  --warn:       #8A5A08;
+  --warn-tint:  #FBF1DE;
 
-  --font:          'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --mono:          'JetBrains Mono', ui-monospace, monospace;
+  --serif: 'Schola', Georgia, 'Times New Roman', serif;
+  --sans:  'Plex', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono:  'PlexMono', ui-monospace, Menlo, monospace;
+
+  --pad-x: 132px;
+  --pad-y: 92px;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+*{box-sizing:border-box;margin:0;padding:0}
 
-html, body {
-  width: 1920px;
-  height: 1080px;
-  overflow: hidden;
+html,body{width:1920px;height:1080px;overflow:hidden}
+
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:32px;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
 }
 
-body {
-  background: var(--bg);
-  color: var(--ink);
-  font-family: var(--font);
-  font-size: 32px;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  font-feature-settings: 'ss01' 1, 'cv05' 1, 'tnum' 0;
+/* ---------- slide shell ---------- */
+
+/* Content is top-aligned by default so the eyebrow and heading hold the same
+   position from slide to slide. In video that matters: a header that jumps
+   between cuts reads as sloppy, and steady furniture makes the cut invisible.
+   Add `class: center` on a content-light slide to balance it instead. */
+.slide{
+  position:relative;
+  width:1920px;height:1080px;
+  padding:var(--pad-y) var(--pad-x) 126px;
+  display:flex;flex-direction:column;
+  justify-content:flex-start;
+}
+.slide.center{justify-content:center}
+
+/* Eyebrow: a running head, not a glowing chip. Small caps, hairline under. */
+.kicker{
+  font-family:var(--sans);
+  font-size:20px;font-weight:600;
+  letter-spacing:.15em;text-transform:uppercase;
+  color:var(--accent);
+  padding-bottom:14px;
+  margin-bottom:30px;
+  border-bottom:1px solid var(--rule);
 }
 
-/* Ambient depth — a single soft accent bloom. Subtle enough to never
-   compete with content, present enough that slides don't read as flat black. */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background:
-    radial-gradient(1100px 620px at 82% -12%, rgba(94,234,212,.10), transparent 62%),
-    radial-gradient(900px 560px at -8% 112%, rgba(129,140,248,.10), transparent 60%);
-  pointer-events: none;
+h1{
+  font-family:var(--serif);
+  font-size:84px;font-weight:700;
+  letter-spacing:-.014em;line-height:1.07;
+  text-wrap:balance;
+}
+h2{
+  font-family:var(--serif);
+  font-size:60px;font-weight:700;
+  letter-spacing:-.01em;line-height:1.14;
+  text-wrap:balance;
+}
+h3{
+  font-family:var(--sans);
+  font-size:32px;font-weight:600;
+  letter-spacing:.005em;
+  color:var(--ink);
 }
 
-/* Hairline grid — barely perceptible texture, kills the "blank PowerPoint" feel */
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,.014) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.014) 1px, transparent 1px);
-  background-size: 96px 96px;
-  pointer-events: none;
+p{font-size:33px;color:var(--ink-soft);max-width:54ch;margin-top:26px}
+.lead{
+  font-family:var(--serif);
+  font-size:38px;font-style:italic;
+  color:var(--ink-soft);
+  margin-top:28px;max-width:46ch;
 }
 
-/* ---------- Slide shell ---------- */
+strong{color:var(--ink);font-weight:600}
+em{font-style:italic;color:var(--ink)}
 
-.slide {
-  position: relative;
-  width: 1920px;
-  height: 1080px;
-  padding: var(--pad-y) var(--pad-x);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 1;
+/* Emphasis as a printed highlighter stripe, not a filled pill. */
+.hl{
+  background:linear-gradient(transparent 58%, var(--accent-tint) 58%);
+  padding:0 .06em;
+  font-weight:500;color:var(--ink);
+  box-shadow:inset 0 -2px 0 rgba(27,79,143,.30);
 }
 
-.slide > * { position: relative; z-index: 1; }
+/* ---------- running foot ---------- */
 
-/* Kicker: the small uppercase label that gives every slide an anchor */
-.kicker {
-  font-size: 21px;
-  font-weight: 650;
-  letter-spacing: .18em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  gap: 18px;
+.slide-foot{
+  position:absolute;
+  left:var(--pad-x);right:var(--pad-x);bottom:52px;
+  display:flex;justify-content:space-between;align-items:baseline;
+  font-size:19px;color:var(--ink-faint);
+  border-top:1px solid var(--rule);
+  padding-top:18px;
 }
-.kicker::before {
-  content: '';
-  width: 46px;
-  height: 3px;
-  background: var(--accent);
-  border-radius: 2px;
-  flex: none;
+.slide-foot .mark{font-family:var(--serif);font-style:italic;font-size:21px}
+.slide-foot .num{font-family:var(--mono);font-size:18px;letter-spacing:.06em}
+
+/* ---------- title ---------- */
+
+.layout-title{justify-content:center}
+.layout-title .kicker{border-bottom:none;padding-bottom:0;margin-bottom:22px}
+.layout-title h1{font-size:100px;max-width:19ch}
+.layout-title h1::after{                 /* the rule under a title page */
+  content:'';display:block;
+  width:190px;height:4px;
+  background:var(--accent);
+  margin-top:38px;
 }
+.layout-title .lead{font-size:40px;max-width:40ch;margin-top:34px}
 
-h1 {
-  font-size: 88px;
-  font-weight: 700;
-  letter-spacing: -.028em;
-  line-height: 1.04;
-  text-wrap: balance;
+/* ---------- section divider ---------- */
+
+.layout-section{justify-content:center}
+.layout-section .sec-num{
+  font-family:var(--serif);
+  font-size:150px;font-weight:700;line-height:.9;
+  color:var(--accent);
+  margin-bottom:20px;
 }
+.layout-section h1{font-size:88px;max-width:20ch}
+.layout-section .lead{color:var(--ink-faint)}
 
-h2 {
-  font-size: 62px;
-  font-weight: 680;
-  letter-spacing: -.022em;
-  line-height: 1.12;
-  text-wrap: balance;
+/* ---------- statement ---------- */
+
+/* A statement slide is mostly white space by design, but the measure has to be
+   wide enough that the empty right side reads as composition, not as a
+   too-narrow text column stranded on a 16:9 frame. */
+.layout-statement{justify-content:center}
+.layout-statement h2{
+  font-size:74px;max-width:30ch;line-height:1.09;
 }
+.layout-statement .lead{font-size:36px;max-width:52ch}
 
-h3 {
-  font-size: 38px;
-  font-weight: 650;
-  letter-spacing: -.012em;
-  color: var(--ink);
+/* ---------- lists ---------- */
+
+ul,ol{list-style:none;margin-top:38px}
+
+li{
+  font-size:35px;color:var(--ink-soft);
+  line-height:1.42;
+  padding-left:44px;position:relative;
+  margin-bottom:30px;max-width:46ch;
 }
-
-p  { font-size: 34px; color: var(--ink-soft); max-width: 52ch; }
-.lead { font-size: 40px; color: var(--ink-soft); margin-top: 30px; max-width: 46ch; }
-
-strong { color: var(--ink); font-weight: 680; }
-em     { color: var(--accent); font-style: normal; font-weight: 600; }
-
-/* Inline highlight for the phrase that matters on the slide */
-.hl {
-  color: var(--bg);
-  background: var(--accent);
-  padding: .04em .3em;
-  border-radius: 8px;
-  font-weight: 680;
-}
-
-/* ---------- Footer furniture ---------- */
-
-.slide-foot {
-  position: absolute;
-  left: var(--pad-x);
-  right: var(--pad-x);
-  bottom: 52px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 19px;
-  color: var(--ink-muted);
-  letter-spacing: .04em;
-  border-top: 1px solid var(--line);
-  padding-top: 22px;
-}
-.slide-foot .mark { font-weight: 600; }
-.slide-foot .num  { font-family: var(--mono); font-size: 18px; }
-
-/* ---------- Layout: title ---------- */
-
-.layout-title { justify-content: center; }
-.layout-title h1 { font-size: 108px; max-width: 20ch; }
-.layout-title .lead { font-size: 42px; color: var(--ink-muted); max-width: 40ch; }
-
-/* ---------- Layout: statement (the single big idea) ---------- */
-
-.layout-statement { justify-content: center; align-items: flex-start; }
-.layout-statement h2 {
-  font-size: 82px;
-  font-weight: 700;
-  max-width: 24ch;
-  line-height: 1.1;
-}
-.layout-statement .lead { font-size: 38px; max-width: 44ch; }
-
-/* ---------- Layout: bullets ---------- */
-
-ul, ol { list-style: none; margin-top: 46px; }
-
-.layout-bullets li,
-.layout-two-col li {
-  font-size: 36px;
-  color: var(--ink-soft);
-  line-height: 1.42;
-  padding-left: 52px;
-  position: relative;
-  margin-bottom: 30px;
-  max-width: 40ch;
-}
-.layout-bullets li::before,
-.layout-two-col li::before {
-  content: '';
-  position: absolute;
-  left: 8px;
-  top: .58em;
-  width: 13px;
-  height: 13px;
-  border-radius: 3px;
-  background: var(--accent);
-  transform: rotate(45deg);
+/* A small square rule, the way a textbook marks an item. */
+li::before{
+  content:'';position:absolute;
+  left:4px;top:.62em;
+  width:12px;height:2px;
+  background:var(--rule-firm);
 }
 
-/* Numbered variant reads as a sequence, not a pile */
-ol.steps { counter-reset: s; }
-ol.steps li { padding-left: 76px; }
-ol.steps li::before {
-  counter-increment: s;
-  content: counter(s);
-  top: .05em;
-  left: 0;
-  width: 46px;
-  height: 46px;
-  border-radius: 12px;
-  background: var(--bg-elev-2);
-  border: 1px solid var(--line-strong);
-  color: var(--accent);
-  font-family: var(--mono);
-  font-size: 22px;
-  font-weight: 700;
-  display: grid;
-  place-items: center;
-  transform: none;
+/* Numbered sequences get a real rail, because order carries meaning here. */
+ol.steps{counter-reset:s;margin-left:6px}
+ol.steps li{padding-left:78px;margin-bottom:30px}
+ol.steps li::before{
+  counter-increment:s;content:counter(s);
+  left:0;top:-.06em;
+  width:48px;height:48px;
+  background:var(--paper);
+  border:2px solid var(--accent);
+  border-radius:50%;
+  color:var(--accent);
+  font-family:var(--mono);font-size:22px;font-weight:600;
+  display:grid;place-items:center;
+}
+ol.steps li::after{                       /* connector between steps */
+  content:'';position:absolute;
+  left:23px;top:52px;bottom:-30px;
+  width:2px;background:var(--rule);
+}
+ol.steps li:last-child::after{display:none}
+
+/* ---------- columns and panels ---------- */
+
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:42px}
+.cols.ratio-6040{grid-template-columns:1.5fr 1fr}
+
+.card{
+  background:var(--panel);
+  border:1px solid var(--rule);
+  border-top:4px solid var(--rule-firm);
+  border-radius:4px;                       /* nearly square: printed, not app */
+  padding:36px 40px;
+}
+.card h3{margin-bottom:18px;font-size:31px}
+.card p{font-size:28px;margin-top:14px}
+.card li{font-size:28px;margin-bottom:16px;padding-left:36px;max-width:none}
+.card li::before{left:2px;width:10px}
+
+.card.good{background:var(--good-tint);border-color:#CBE3D6;border-top-color:var(--good)}
+.card.good h3{color:var(--good)}
+.card.bad{background:var(--bad-tint);border-color:#EFD2CE;border-top-color:var(--bad)}
+.card.bad h3{color:var(--bad)}
+
+/* ---------- callout ---------- */
+
+.callout{
+  margin-top:40px;
+  background:var(--warn-tint);
+  border:1px solid #EAD9B6;
+  border-left:5px solid var(--warn);
+  border-radius:3px;
+  padding:28px 36px;
+}
+.callout .label{
+  font-size:19px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;
+  color:var(--warn);margin-bottom:10px;
+}
+.callout p{font-size:32px;color:var(--ink);max-width:52ch;margin-top:0}
+
+.layout-callout{justify-content:center}
+.layout-callout .callout{padding:40px 48px}
+.layout-callout .callout p{font-size:38px;max-width:44ch}
+
+/* ---------- definition box (textbook device) ---------- */
+
+.definition{
+  margin-top:40px;
+  border:2px solid var(--accent);
+  border-radius:3px;
+  background:var(--paper);
+  padding:34px 40px;
+  position:relative;
+}
+.definition .label{
+  position:absolute;top:-15px;left:32px;
+  background:var(--paper);padding:0 14px;
+  font-family:var(--mono);font-size:19px;font-weight:600;
+  letter-spacing:.13em;text-transform:uppercase;
+  color:var(--accent);
+}
+.definition p{margin-top:8px;font-size:34px;color:var(--ink);max-width:none}
+.definition .term{font-family:var(--serif);font-weight:700;font-style:italic}
+
+/* ---------- worked example (textbook device) ---------- */
+
+.example{
+  margin-top:38px;
+  background:var(--panel);
+  border-left:5px solid var(--rule-firm);
+  padding:28px 36px;
+  border-radius:0 3px 3px 0;
+}
+.example .label{
+  font-family:var(--serif);font-style:italic;
+  font-size:24px;color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.example p,.example li{font-size:31px;margin-top:10px;max-width:none}
+
+/* Definition and example boxes carry the slide, so they run near full measure
+   and are vertically centred rather than stacked at the top. */
+.layout-definition,.layout-example{justify-content:center}
+
+/* ---------- sidenote layout (margin gloss) ---------- */
+
+.layout-sidenote .body-cols{
+  display:grid;grid-template-columns:1.62fr 1fr;
+  gap:60px;margin-top:34px;
+}
+.sidenote{
+  border-left:2px solid var(--rule);
+  padding-left:28px;
+  font-size:26px;line-height:1.46;
+  color:var(--ink-faint);
+}
+.sidenote .label{
+  font-family:var(--mono);font-size:17px;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--accent);display:block;margin-bottom:12px;
+}
+.sidenote p{font-size:26px;color:var(--ink-faint);margin-top:14px;max-width:none}
+
+/* ---------- table ---------- */
+
+table{
+  width:100%;border-collapse:collapse;
+  margin-top:40px;font-size:28px;
+  font-variant-numeric:tabular-nums;
+}
+thead th{
+  text-align:left;
+  font-family:var(--sans);font-size:20px;font-weight:600;
+  letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink-faint);
+  padding:0 24px 16px;
+  border-bottom:2px solid var(--ink);
+}
+tbody td{
+  padding:20px 24px;
+  border-bottom:1px solid var(--rule);
+  color:var(--ink-soft);vertical-align:top;
+}
+tbody tr:last-child td{border-bottom:1px solid var(--rule-firm)}
+tbody td:first-child{color:var(--ink);font-weight:500}
+
+/* ---------- metrics ---------- */
+
+/* The band grows into the space below the heading and centres its figures in
+   it, so a five-value row reads as a designed panel rather than a short strip
+   stranded above half a frame of white. */
+.metrics{
+  display:flex;gap:0;margin-top:44px;
+  border-top:2px solid var(--ink);
+  flex:1;min-height:0;max-height:520px;
+}
+.metric{
+  flex:1 1 0;padding:38px 34px;
+  border-right:1px solid var(--rule);
+  display:flex;flex-direction:column;justify-content:center;
+}
+.metric:last-child{border-right:none}
+.metric .val{
+  font-family:var(--serif);font-weight:700;
+  font-size:96px;line-height:1;
+  letter-spacing:-.02em;color:var(--ink);
+  font-variant-numeric:tabular-nums;
+}
+.metric .val.good{color:var(--good)}
+.metric .val.bad{color:var(--bad)}
+.metric .val.warn{color:var(--warn)}
+.metric .cap{
+  margin-top:16px;font-size:24px;
+  color:var(--ink-faint);line-height:1.34;
 }
 
-/* ---------- Layout: two column ---------- */
+/* ---------- code ---------- */
 
-.cols {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 56px;
-  margin-top: 50px;
+pre{
+  margin-top:38px;
+  background:var(--panel);
+  border:1px solid var(--rule);
+  border-radius:3px;
+  padding:32px 36px;overflow:hidden;
 }
-.cols.ratio-6040 { grid-template-columns: 1.5fr 1fr; }
-
-.card {
-  background: linear-gradient(160deg, var(--bg-elev) 0%, rgba(20,26,36,.55) 100%);
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  padding: 40px 44px;
+pre code{
+  font-family:var(--mono);font-size:26px;line-height:1.6;
+  color:#1E2632;white-space:pre;display:block;
 }
-.card h3 { margin-bottom: 20px; font-size: 34px; }
-.card p, .card li { font-size: 29px; margin-bottom: 16px; }
-.card li { padding-left: 40px; }
-.card li::before { width: 10px; height: 10px; left: 6px; }
+code{font-family:var(--mono);font-size:.9em;color:var(--accent)}
+pre code .c{color:#7C8A9B;font-style:italic}
+pre code .k{color:#7B3FA0}
+pre code .s{color:#1C6B4C}
+pre code .n{color:#A63229}
+pre code .f{color:#1B4F8F}
 
-.card.good { border-color: rgba(74,222,128,.34); }
-.card.good h3 { color: var(--good); }
-.card.good li::before { background: var(--good); }
+/* ---------- math ---------- */
 
-.card.bad { border-color: rgba(248,113,113,.34); }
-.card.bad h3 { color: var(--bad); }
-.card.bad li::before { background: var(--bad); }
-
-/* ---------- Callout ---------- */
-
-.callout {
-  margin-top: 44px;
-  border-left: 5px solid var(--warn);
-  background: linear-gradient(90deg, rgba(251,191,36,.11), transparent 72%);
-  border-radius: 0 16px 16px 0;
-  padding: 32px 40px;
+.math-block{
+  margin-top:44px;padding:36px 40px;
+  border-top:1px solid var(--rule);
+  border-bottom:1px solid var(--rule);
+  text-align:center;position:relative;
 }
-.callout .label {
-  font-size: 19px;
-  font-weight: 700;
-  letter-spacing: .16em;
-  text-transform: uppercase;
-  color: var(--warn);
-  margin-bottom: 12px;
-}
-.callout p { font-size: 33px; color: var(--ink); max-width: 52ch; }
+.katex{font-size:1.02em!important;color:inherit!important}
+.math-block .katex{font-size:54px!important;color:var(--ink)!important}
+.math-note{margin-top:20px;font-size:25px;color:var(--ink-faint);text-align:center}
 
-/* A slide whose payload *is* the callout — give it room to breathe and scale up. */
-.layout-callout { justify-content: center; }
-.layout-callout .callout { margin-top: 52px; padding: 44px 54px; }
-.layout-callout .callout p { font-size: 40px; line-height: 1.42; max-width: 44ch; }
+/* ---------- figure + numbered caption (textbook device) ---------- */
 
-/* ---------- Data / metric slabs ---------- */
-
-.metrics { display: flex; gap: 34px; margin-top: 54px; flex-wrap: wrap; }
-.metric {
-  flex: 1 1 0;
-  min-width: 300px;
-  background: var(--bg-elev);
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  padding: 38px 40px;
+.diagram{
+  margin-top:34px;
+  display:flex;justify-content:center;align-items:center;
+  flex:1;min-height:0;
 }
-.metric .val {
-  font-family: var(--mono);
-  font-size: 76px;
-  font-weight: 700;
-  letter-spacing: -.04em;
-  color: var(--accent);
-  line-height: 1;
+pre.mermaid{
+  background:none;border:none;border-radius:0;padding:0;margin:0;
+  width:100%;height:100%;
+  display:flex;align-items:center;justify-content:center;
 }
-.metric .val.warn { color: var(--warn); }
-.metric .val.bad  { color: var(--bad); }
-.metric .val.good { color: var(--good); }
-.metric .cap {
-  margin-top: 18px;
-  font-size: 25px;
-  color: var(--ink-muted);
-  line-height: 1.35;
+/* Mermaid writes an inline max-width on the SVG that pins it at intrinsic
+   size. Override so the viewBox scales it to the frame. */
+pre.mermaid svg,.diagram svg{
+  max-width:none!important;width:100%!important;height:100%!important;
+  max-height:520px;
+}
+.figcap{
+  margin-top:22px;padding-top:16px;
+  border-top:1px solid var(--rule);
+  font-size:25px;color:var(--ink-faint);
+  text-align:left;max-width:70ch;
+}
+.figcap b{
+  font-family:var(--sans);font-weight:600;
+  color:var(--accent);margin-right:12px;
 }
 
-/* ---------- Table ---------- */
+/* ---------- quote ---------- */
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 46px;
-  font-size: 29px;
+.layout-quote{justify-content:center}
+.layout-quote blockquote{
+  font-family:var(--serif);
+  font-size:58px;font-weight:400;font-style:italic;
+  line-height:1.26;max-width:26ch;
+  color:var(--ink);
+  border-left:5px solid var(--accent);
+  padding-left:44px;
 }
-thead th {
-  text-align: left;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  color: var(--accent);
-  padding: 0 26px 20px;
-  border-bottom: 2px solid var(--line-strong);
-}
-tbody td {
-  padding: 24px 26px;
-  border-bottom: 1px solid var(--line);
-  color: var(--ink-soft);
-  vertical-align: top;
-}
-tbody tr:last-child td { border-bottom: none; }
-tbody td:first-child { color: var(--ink); font-weight: 600; }
-
-/* ---------- Code ---------- */
-
-pre {
-  margin-top: 44px;
-  background: #070A0E;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 40px 44px;
-  overflow: hidden;
-}
-pre code {
-  font-family: var(--mono);
-  font-size: 27px;
-  line-height: 1.62;
-  color: #C9D4E3;
-  white-space: pre;
-  display: block;
-}
-code { font-family: var(--mono); font-size: .92em; color: var(--accent); }
-pre code .c  { color: #5B6B80; font-style: italic; }  /* comment */
-pre code .k  { color: #C4B5FD; }                      /* keyword */
-pre code .s  { color: #86EFAC; }                      /* string  */
-pre code .n  { color: #FCD34D; }                      /* number  */
-pre code .f  { color: #7DD3FC; }                      /* func    */
-
-/* ---------- Math (KaTeX) ---------- */
-
-.math-block {
-  margin-top: 52px;
-  padding: 44px;
-  background: var(--bg-elev);
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  text-align: center;
-}
-/* Inline math scales with whatever context it sits in, so a formula inside a
-   metric caption or a bullet keeps that text's size instead of overpowering it.
-   Only display math gets a fixed, deliberately large size. */
-.katex { font-size: 1.04em !important; color: inherit !important; }
-.math-block .katex { font-size: 58px !important; color: var(--ink) !important; }
-.math-note {
-  margin-top: 26px;
-  font-size: 26px;
-  color: var(--ink-muted);
-  text-align: center;
+.layout-quote .attrib{
+  margin-top:32px;padding-left:49px;
+  font-size:26px;color:var(--ink-faint);
 }
 
-/* ---------- Diagram (Mermaid) ---------- */
+/* ---------- density guard ---------- */
 
-.diagram {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  min-height: 0;
-  margin-bottom: 70px;          /* clear the slide footer */
-}
-
-/* Mermaid renders into the <pre> it was authored in, so strip the code-block
-   chrome that would otherwise frame the diagram in a box. */
-pre.mermaid {
-  background: none;
-  border: none;
-  border-radius: 0;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Mermaid writes an inline `max-width` on the SVG, which pins the diagram at its
-   intrinsic size — a postage stamp on a 1920px slide. Override it and let the
-   viewBox scale the drawing to fill the frame. */
-pre.mermaid svg,
-.diagram svg {
-  max-width: none !important;
-  width: 100% !important;
-  height: 100% !important;
-  max-height: 560px;
-}
-
-/* ---------- Quote ---------- */
-
-.layout-quote { justify-content: center; }
-.layout-quote blockquote {
-  font-size: 64px;
-  font-weight: 600;
-  letter-spacing: -.02em;
-  line-height: 1.22;
-  max-width: 26ch;
-  text-wrap: balance;
-}
-.layout-quote blockquote::before {
-  content: '"';
-  display: block;
-  font-size: 130px;
-  line-height: .6;
-  color: var(--accent);
-  margin-bottom: 26px;
-}
-.layout-quote .attrib {
-  margin-top: 40px;
-  font-size: 27px;
-  color: var(--ink-muted);
-  letter-spacing: .05em;
-}
-
-/* ---------- Section divider ---------- */
-
-.layout-section { justify-content: center; }
-.layout-section .sec-num {
-  font-family: var(--mono);
-  font-size: 200px;
-  font-weight: 700;
-  line-height: .82;
-  color: transparent;
-  -webkit-text-stroke: 2px var(--line-strong);
-  margin-bottom: 34px;
-}
-.layout-section h1 { font-size: 96px; max-width: 22ch; }
-.layout-section .lead { color: var(--ink-muted); max-width: 44ch; }
-
-/* Density guard: long bullet lists shrink rather than overflow the frame */
-.slide.dense .layout-bullets li,
-.slide.dense li { font-size: 31px; margin-bottom: 22px; }
-.slide.dense h2 { font-size: 54px; }
+.slide.dense li{font-size:30px;margin-bottom:20px}
+.slide.dense h2{font-size:52px}
+.slide.dense .card li{font-size:26px;margin-bottom:14px}
+.slide.dense table{font-size:26px}

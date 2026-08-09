@@ -225,6 +225,14 @@ def check_lectures(lectures, course: dict, rep: Report) -> None:
             rep.warn(f"{tag} filler/LLM-tell phrases: "
                      f"{', '.join(sorted({f.lower() for f in fill}))}")
 
+        # Em dashes are one of the strongest written tells of generated text, and
+        # they correspond to nothing a speaker actually does. House rule: none in
+        # anything a learner reads or hears.
+        dashes = sum(s.body.count("—") + s.narration.count("—") for s in lec.slides)
+        if dashes:
+            rep.fail(f"{tag} contains {dashes} em dash(es) in learner-facing copy. "
+                     f"Use a colon, a full stop, or brackets.")
+
     lang = course.get("production", {}).get("spellcheck_lang", "en_US")
     bad = _spellcheck(slide_texts, lang)
     if bad:

@@ -37,24 +37,24 @@ _PAGE = """<!doctype html>
   </div>
 </div>
 <script>
-  // Mermaid: dark palette tuned to the deck tokens, rendered inline on load.
+  // Mermaid: printed-diagram palette matching the deck tokens.
   if (window.mermaid) {{
     mermaid.initialize({{
       startOnLoad: true,
       theme: 'base',
       securityLevel: 'loose',
-      fontFamily: 'Inter, system-ui, sans-serif',
+      fontFamily: 'Plex, system-ui, sans-serif',
       themeVariables: {{
-        background: '#0B0E13',
-        primaryColor: '#141A24',
-        primaryTextColor: '#EDF1F7',
-        primaryBorderColor: '#5EEAD4',
-        lineColor: '#7A8699',
-        secondaryColor: '#1B2331',
-        tertiaryColor: '#1B2331',
+        background: '#FFFFFF',
+        primaryColor: '#F5F7F9',
+        primaryTextColor: '#14181D',
+        primaryBorderColor: '#1B4F8F',
+        lineColor: '#788594',
+        secondaryColor: '#E9F0F9',
+        tertiaryColor: '#FFFFFF',
         fontSize: '22px',
-        clusterBkg: 'transparent',
-        clusterBorder: 'rgba(255,255,255,.18)'
+        clusterBkg: '#F5F7F9',
+        clusterBorder: '#DAE0E7'
       }}
     }});
   }}
@@ -76,9 +76,16 @@ _PAGE = """<!doctype html>
 """
 
 
-def slide_html(slide, *, index: int, total: int, mark: str, title: str = "") -> str:
+def slide_html(slide, *, index: int, total: int, mark: str, title: str = "",
+               figure: str = "") -> str:
     meta = slide.meta
     body = render_markup(slide.body)
+
+    # Numbered figure caption, so diagrams are referenceable the way a textbook's
+    # are ("as we saw in Figure 5.2") rather than floating unlabelled.
+    if meta.get("figcap"):
+        label = f"<b>Figure {figure}</b>" if figure else ""
+        body += f'<div class="figcap">{label}{meta["figcap"]}</div>'
 
     kicker = f'<div class="kicker">{meta["kicker"]}</div>' if meta.get("kicker") else ""
     lead = f'<p class="lead">{meta["lead"]}</p>' if meta.get("lead") else ""
@@ -119,10 +126,16 @@ def write_slides(lecture, out_dir: Path, mark: str) -> list[Path]:
     out_dir.mkdir(parents=True, exist_ok=True)
     paths: list[Path] = []
     total = len(lecture.slides)
+    fig_n = 0
     for i, slide in enumerate(lecture.slides, start=1):
+        figure = ""
+        if slide.meta.get("figcap"):
+            fig_n += 1
+            figure = f"{lecture.id}.{fig_n}"
         p = out_dir / f"slide-{i:03d}.html"
         p.write_text(
-            slide_html(slide, index=i, total=total, mark=mark, title=lecture.title),
+            slide_html(slide, index=i, total=total, mark=mark,
+                       title=lecture.title, figure=figure),
             encoding="utf-8",
         )
         paths.append(p)

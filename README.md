@@ -77,8 +77,33 @@ pipeline/
 
 theme/
   deck.css                  Design system
-  vendor/                   KaTeX, Mermaid, Inter, JetBrains Mono (offline)
+  vendor/                   KaTeX, Mermaid, TeX Gyre Schola, IBM Plex (offline)
 ```
+
+---
+
+## The design system
+
+The deck is set as a **teaching page, not a product deck**: white paper,
+printed-ink colour, and structural devices that carry meaning rather than
+decorate.
+
+| | |
+| --- | --- |
+| Headings | **TeX Gyre Schola** — a Century Schoolbook cut, the face designed for school textbooks |
+| Body | **IBM Plex Sans** |
+| Data, code, labels | **IBM Plex Mono** |
+| Accent | Ink blue `#1B4F8F`; deep green / red / ochre for semantics |
+
+Layouts exist because a textbook has them, and each encodes something true:
+figures are **numbered** so they can be referenced, definitions are **boxed**,
+worked examples are **marked**, and margin notes hold commentary that would
+otherwise interrupt the argument.
+
+Content is top-aligned by default so the eyebrow and heading hold position from
+slide to slide. In video a header that jumps between cuts reads as sloppy; steady
+furniture makes the cut invisible. Add `class: center` to balance a
+content-light slide.
 
 ---
 

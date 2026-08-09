@@ -39,10 +39,11 @@ import yaml
 LAYOUTS = {
     "title", "statement", "bullets", "two-col", "table",
     "code", "math", "diagram", "quote", "section", "metrics", "callout",
+    "sidenote", "definition", "example",
 }
 
 # Slide-level directives that are metadata rather than body content.
-SLIDE_KEYS = {"kicker", "lead", "note", "attrib", "sec_num", "class"}
+SLIDE_KEYS = {"kicker", "lead", "note", "attrib", "sec_num", "class", "figcap"}
 
 _FRONT_MATTER = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 

@@ -102,7 +102,7 @@ def render_png(
         "--disable-dev-shm-usage",
         "--hide-scrollbars",
         "--force-device-scale-factor=1",
-        "--default-background-color=0B0E13",
+        "--default-background-color=FFFFFF",
         f"--window-size={width + dw},{height + dh}",
         "--virtual-time-budget=10000",
         "--run-all-compositor-stages-before-draw",

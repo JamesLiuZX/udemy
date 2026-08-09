@@ -8,7 +8,7 @@ title: "AI Product Skills for PMs & Analysts: Spec, Evaluate & Ship AI Features"
 subtitle: >-
   Stop guessing whether your AI feature works. Learn to write eval-based acceptance
   criteria, build a golden-set eval harness, model token economics, and de-risk
-  hallucination — the judgement work that survives every model upgrade.
+  hallucination: the judgement work that survives every model upgrade.
 
 # --- Landing page -----------------------------------------------------------
 # Paste verbatim into the Udemy course description. The AI disclosure MUST stay
@@ -18,7 +18,7 @@ description: |
   the actual problem this course solves.
 
   Everything you learned about shipping software assumes it behaves the same way
-  twice. AI features don't. Same input, different output — so your acceptance
+  twice. AI features don't. Same input, different output, so your acceptance
   criteria stop working, QA passes things that fail in production, and quality
   arguments get settled by whoever is most senior rather than by evidence.
 
@@ -37,7 +37,7 @@ description: |
 
   **Who this is for:** product managers, project and delivery managers, and
   business or data analysts who are now responsible for AI work. No coding
-  required — the one Python lecture is explained line by line.
+  required: the one Python lecture is explained line by line.
 
   **What this is not:** a prompt library, a tour of this month's tools, or a
   course you could replace with an afternoon of ChatGPT. It's process and
@@ -48,7 +48,7 @@ description: |
 # --- Positioning ------------------------------------------------------------
 big_idea: >-
   An AI feature is a probability distribution, not a function. You cannot write
-  acceptance criteria for it the way you write them for a button — you write them as
+  acceptance criteria for it the way you write them for a button. You write them as
   evaluation thresholds on a golden dataset.
 
 audience:
@@ -162,21 +162,21 @@ sections:
     title: "Start Here: The Shift"
     goal: "Deliver a usable skill and the course's central idea inside 15 minutes."
     lectures:
-      - {id: "0.1", title: "Welcome — and what you'll be able to do by Friday", duration: 3, voice: human}
+      - {id: "0.1", title: "Welcome, and what you'll be able to do by Friday", duration: 3, voice: human}
       - {id: "0.2", title: "How to use this course (and the 11 artifacts you'll build)", duration: 4}
       - {id: "0.3", title: "The one idea: AI features are distributions, not functions", duration: 6}
       - {id: "0.4", title: "Your first win: score an AI output in 5 minutes", duration: 6, hands_on: true}
 
   - id: 1
     title: "The Mental Model You Actually Need"
-    goal: "Enough mechanism to make good decisions — no more."
+    goal: "Enough mechanism to make good decisions, and no more."
     lectures:
       - {id: "1.0", title: "Section intro", duration: 1, voice: human}
       - {id: "1.1", title: "What an LLM actually does, and the 4 consequences for you", duration: 7}
       - {id: "1.2", title: "Tokens and context windows: why your feature broke at scale", duration: 6}
-      - {id: "1.3", title: "Temperature and sampling — the PM's version", duration: 6}
+      - {id: "1.3", title: "Temperature and sampling, the PM's version", duration: 6}
       - {id: "1.4", title: "The capability frontier: what models can and can't do now", duration: 7}
-      - {id: "1.5", title: "Hallucination is not a bug — it's the mechanism", duration: 6}
+      - {id: "1.5", title: "Hallucination is not a bug, it's the mechanism", duration: 6}
       - {id: "1.6", title: "The 7 AI feature archetypes (and which actually ship)", duration: 8}
       - {id: "1.7", title: "When NOT to use AI: the disqualification checklist", duration: 6, hands_on: true}
       - {id: "1.8", title: "Section recap + what's next", duration: 2, voice: human}
@@ -316,4 +316,4 @@ sections:
       - {id: "11.2", title: "Worked solution, part 1: spec and evals", duration: 10, voice: human}
       - {id: "11.3", title: "Worked solution, part 2: cost, risk, metrics", duration: 10, voice: human}
       - {id: "11.4", title: "Self-assessment rubric", duration: 6, hands_on: true}
-      - {id: "11.5", title: "Where to go next — and thank you", duration: 4, voice: human}
+      - {id: "11.5", title: "Where to go next, and thank you", duration: 4, voice: human}

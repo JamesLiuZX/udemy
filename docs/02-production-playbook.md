@@ -88,20 +88,29 @@ Narration for the slide above. Written for the ear, not the eye.
 | --- | --- |
 | `title` | Lecture opener |
 | `statement` | One big idea, nothing else |
-| `bullets` | Lists; `1.` renders as numbered steps |
+| `bullets` | Lists; `1.` renders as a numbered rail |
 | `two-col` | Comparisons, before/after |
 | `table` | Structured comparison |
 | `code` | Code or verbatim text |
 | `math` | KaTeX display formula |
-| `diagram` | Mermaid diagram |
-| `metrics` | Big-number slabs |
+| `diagram` | Mermaid diagram, with numbered figure caption |
+| `metrics` | Big-figure band |
 | `callout` | A single "watch out" |
+| `definition` | Key-term box (textbook device) |
+| `example` | Worked example (textbook device) |
+| `sidenote` | Main column plus a margin gloss |
 | `quote` | Pull quote |
 | `section` | Section divider |
 
 ### Directives (anywhere in a slide body)
 
-`kicker:` `lead:` `note:` `attrib:` `sec_num:` `class:`
+`kicker:` `lead:` `note:` `attrib:` `sec_num:` `class:` `figcap:`
+
+`figcap:` numbers the figure automatically as `Figure <lecture>.<n>`, so
+diagrams can be referenced in narration the way a textbook's are.
+
+`class: center` vertically centres a content-light slide. Use it sparingly:
+slides are top-aligned by default so the heading holds position between cuts.
 
 ### Inline
 
@@ -127,6 +136,23 @@ The thing they must not miss.
 - 0.60 :: End-to-end success after 10 steps :: bad
 - 94% :: Pass rate on the golden set :: good
 :::
+
+::: definition Key idea
+A **rubric** is a fixed set of pass/fail questions written *before* you look at
+the output.
+:::
+
+::: example Worked example
+Run the prompt ten times. Count how many outputs you would ship.
+:::
+
+::: split
+:: main
+1. First step
+2. Second step
+:: aside Why this matters
+The margin gloss holds commentary that would otherwise interrupt the argument.
+:::
 ````
 
 ---
@@ -145,6 +171,9 @@ The QC gate enforces some of this; the rest is craft.
 6. **Read it aloud before you render.** Every time. Non-negotiable.
 7. **No LLM tells.** "delve", "in today's fast-paced world", "unlock the power",
    "game-changer", "it's important to note". QC flags these.
+8. **No em dashes in learner-facing copy.** They are one of the strongest
+   written tells of generated text, and they do not correspond to anything a
+   speaker does. Use a colon, a full stop, or brackets instead.
 
 ### Marking what only you can supply
 

@@ -184,20 +184,14 @@ def _render_lines(lines: list[str]) -> str:
 
         # ---- lists
         if re.match(r"^[-*]\s+", s):
-            j, items = i, []
-            while j < n and re.match(r"^[-*]\s+", lines[j].strip()):
-                items.append(re.sub(r"^[-*]\s+", "", lines[j].strip()))
-                j += 1
+            items, j = _collect_items(lines, i, n, r"^[-*]\s+")
             body = "".join(f"<li>{_inline(x)}</li>" for x in items)
             out.append(f"<ul>{body}</ul>")
             i = j
             continue
 
         if re.match(r"^\d+\.\s+", s):
-            j, items = i, []
-            while j < n and re.match(r"^\d+\.\s+", lines[j].strip()):
-                items.append(re.sub(r"^\d+\.\s+", "", lines[j].strip()))
-                j += 1
+            items, j = _collect_items(lines, i, n, r"^\d+\.\s+")
             body = "".join(f"<li>{_inline(x)}</li>" for x in items)
             out.append(f'<ol class="steps">{body}</ol>')
             i = j
@@ -214,10 +208,45 @@ def _render_lines(lines: list[str]) -> str:
             continue
 
         # ---- paragraph
-        out.append(f"<p>{_inline(s)}</p>")
-        i += 1
+        # Source prose is hard-wrapped for readable diffs, so consecutive plain
+        # lines are one paragraph. Emitting a <p> per line breaks sentences
+        # mid-clause on the rendered slide.
+        para = [s]
+        j = i + 1
+        while j < n:
+            t = lines[j].strip()
+            if not t or _starts_block(t):
+                break
+            para.append(t)
+            j += 1
+        out.append(f"<p>{_inline(' '.join(para))}</p>")
+        i = j
 
     return "\n".join(out)
+
+
+_BLOCK_START = re.compile(r"^(:::|```|\$\$|\||#{1,3}\s|[-*]\s|\d+\.\s|>)")
+
+
+def _starts_block(s: str) -> bool:
+    return bool(_BLOCK_START.match(s))
+
+
+def _collect_items(lines: list[str], i: int, n: int, marker: str) -> tuple[list[str], int]:
+    """Gather list items, folding hard-wrapped continuation lines into the item
+    they belong to rather than spilling them out as a stray paragraph."""
+    items: list[str] = []
+    j = i
+    while j < n:
+        t = lines[j].strip()
+        if re.match(marker, t):
+            items.append(re.sub(marker, "", t))
+        elif items and t and not _starts_block(t):
+            items[-1] = f"{items[-1]} {t}"
+        else:
+            break
+        j += 1
+    return items, j
 
 
 def _table(rows: list[str]) -> str:
@@ -261,6 +290,38 @@ def _container(kind: str, block: list[str]) -> str:
                 f'<div class="cap">{_inline(cap)}</div></div>'
             )
         return f'<div class="metrics">{"".join(slabs)}</div>'
+
+    if name == "definition":
+        label = " ".join(parts[1:]) or "Definition"
+        return (f'<div class="definition"><span class="label">{html.escape(label)}'
+                f"</span>{_render_lines(block)}</div>")
+
+    if name == "example":
+        label = " ".join(parts[1:]) or "Worked example"
+        return (f'<div class="example"><div class="label">{html.escape(label)}'
+                f"</div>{_render_lines(block)}</div>")
+
+    # A body split into main column plus a margin gloss, the way a textbook sets
+    # commentary beside the argument rather than interrupting it.
+    if name == "split":
+        main: list[str] = []
+        aside: list[str] = []
+        aside_label = ""
+        target = main
+        for line in block:
+            t = line.strip()
+            sm = re.match(r"^::\s*(main|aside)\s*(.*)$", t)
+            if sm:
+                if sm.group(1) == "main":
+                    target = main
+                else:
+                    target, aside_label = aside, sm.group(2).strip()
+                continue
+            target.append(line)
+        label = (f'<span class="label">{html.escape(aside_label)}</span>'
+                 if aside_label else "")
+        return (f'<div class="body-cols"><div class="main">{_render_lines(main)}</div>'
+                f'<aside class="sidenote">{label}{_render_lines(aside)}</aside></div>')
 
     if name == "cols":
         ratio = "ratio-6040" if "6040" in parts else ""
