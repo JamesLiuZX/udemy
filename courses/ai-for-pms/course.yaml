@@ -1,0 +1,319 @@
+# =============================================================================
+# Single source of truth for course #1.
+# Drives: build order, QC gates, landing-page generation, artifact packaging.
+# =============================================================================
+
+slug: ai-for-pms
+title: "AI Product Skills for PMs & Analysts: Spec, Evaluate & Ship AI Features"
+subtitle: >-
+  Stop guessing whether your AI feature works. Learn to write eval-based acceptance
+  criteria, build a golden-set eval harness, model token economics, and de-risk
+  hallucination — the judgement work that survives every model upgrade.
+
+# --- Landing page -----------------------------------------------------------
+# Paste verbatim into the Udemy course description. The AI disclosure MUST stay
+# as the final line — qc.py fails the build if it is missing or moved.
+description: |
+  **You're accountable for an AI feature you're not sure how to judge.** That is
+  the actual problem this course solves.
+
+  Everything you learned about shipping software assumes it behaves the same way
+  twice. AI features don't. Same input, different output — so your acceptance
+  criteria stop working, QA passes things that fail in production, and quality
+  arguments get settled by whoever is most senior rather than by evidence.
+
+  This course gives you the judgement work that doesn't disappear when the next
+  model ships. You'll learn to write acceptance criteria as evaluation thresholds
+  on a golden dataset, build an eval harness (in a spreadsheet and in 30 lines of
+  Python), design and defend a RAG system, model what a feature costs per user at
+  scale, scope agents with reliability maths instead of optimism, and run a
+  red-team pass that gets you through legal review.
+
+  **You will build 11 artifacts you can use at work immediately:** an AI Feature
+  PRD, a golden dataset spec, two eval harnesses, a scoring rubric with a
+  calibration protocol, a RAG design doc, a retrieval scorecard, an agent scoping
+  worksheet, a token unit-economics model, a model selection scorecard, and an AI
+  risk register.
+
+  **Who this is for:** product managers, project and delivery managers, and
+  business or data analysts who are now responsible for AI work. No coding
+  required — the one Python lecture is explained line by line.
+
+  **What this is not:** a prompt library, a tour of this month's tools, or a
+  course you could replace with an afternoon of ChatGPT. It's process and
+  judgement, taught through work you actually do.
+
+  This course contains the use of artificial intelligence.
+
+# --- Positioning ------------------------------------------------------------
+big_idea: >-
+  An AI feature is a probability distribution, not a function. You cannot write
+  acceptance criteria for it the way you write them for a button — you write them as
+  evaluation thresholds on a golden dataset.
+
+audience:
+  - Product managers accountable for an AI feature they feel unqualified to judge
+  - Project / delivery managers running AI workstreams
+  - Business & data analysts asked to measure AI systems
+  - Founders and consultants scoping AI work
+
+prerequisites:
+  - No coding required. One optional Python lecture, fully explained line by line.
+  - Comfort with spreadsheets.
+  - Some exposure to product or delivery work.
+
+outcomes:              # keep to 4-7; too many correlates with lower course scores
+  - "Write an AI feature PRD whose acceptance criteria are eval thresholds, not wishes"
+  - "Build a golden-set evaluation harness in a spreadsheet and in 30 lines of Python"
+  - "Design and defend a RAG system in an architecture review"
+  - "Model the token-level unit economics of an AI feature and spot the margin trap"
+  - "Scope agents safely using reliability math and blast-radius analysis"
+  - "Run a red-team pass and produce an AI risk register your legal team accepts"
+
+# --- Commercial -------------------------------------------------------------
+pricing:
+  launch: 24.99          # first ~2 weeks, to build enrollment velocity + reviews
+  standard: 74.99
+  network_coupon: 9.99   # personal network, for initial honest reviews
+
+primary_keywords:        # feed the title/subtitle/description for search ranking
+  - AI product management
+  - AI evaluation
+  - LLM evals
+  - RAG for product managers
+  - AI PRD
+
+free_preview_lectures: ["0.1", "0.3", "4.1"]
+
+# --- Compliance -------------------------------------------------------------
+# QC hard-fails if this exact string is absent from the description tail.
+ai_disclosure: "This course contains the use of artificial intelligence."
+
+# Lectures that MUST be recorded in the instructor's real voice (policy: presence).
+human_voice_required:
+  - promo
+  - "0.1"
+  - section_intros
+  - section_outros
+  - "11.2"
+  - "11.3"
+  - "11.5"
+
+# --- Production defaults ----------------------------------------------------
+production:
+  resolution: [1920, 1080]
+  fps: 30
+  words_per_minute: 150      # narration pacing model for duration estimates
+  target_lufs: -16.0
+  max_lecture_minutes: 12
+  # Scripts are written in British English. Switch this to en_US *and* rewrite
+  # the scripts if you'd rather target US spelling — do not mix the two.
+  spellcheck_lang: en_GB
+  tts:
+    provider: elevenlabs      # elevenlabs | openai | google | offline
+    voice: "instructor_primary"
+    model: "eleven_v3"
+
+# --- Downloadable artifacts (the "wow") -------------------------------------
+artifacts:
+  - id: A01
+    name: "AI Feature PRD template"
+    lecture: "3.7"
+  - id: A02
+    name: "Golden dataset spec + 50-example starter set"
+    lecture: "4.2"
+  - id: A03
+    name: "Eval harness (spreadsheet)"
+    lecture: "4.6"
+  - id: A04
+    name: "Eval harness (Python, 30 lines)"
+    lecture: "4.7"
+  - id: A05
+    name: "Evaluation rubric + inter-rater calibration protocol"
+    lecture: "4.3"
+  - id: A06
+    name: "RAG system design doc template"
+    lecture: "5.7"
+  - id: A07
+    name: "Retrieval quality scorecard"
+    lecture: "5.4"
+  - id: A08
+    name: "Agent scoping + blast-radius worksheet"
+    lecture: "6.7"
+  - id: A09
+    name: "Token unit-economics model"
+    lecture: "7.2"
+  - id: A10
+    name: "Model selection scorecard"
+    lecture: "7.4"
+  - id: A11
+    name: "AI risk register + red-team checklist"
+    lecture: "8.1"
+
+# =============================================================================
+# CURRICULUM  —  12 sections · 100 lectures · 600 min (10h00m)
+# duration values are TARGET minutes; real duration comes from narration length.
+# Targets are deliberately tight — short lectures protect completion rate, which
+# is a Udemy ranking input. qc.py warns on any lecture drifting past 12 minutes.
+# =============================================================================
+sections:
+
+  - id: 0
+    title: "Start Here: The Shift"
+    goal: "Deliver a usable skill and the course's central idea inside 15 minutes."
+    lectures:
+      - {id: "0.1", title: "Welcome — and what you'll be able to do by Friday", duration: 3, voice: human}
+      - {id: "0.2", title: "How to use this course (and the 11 artifacts you'll build)", duration: 4}
+      - {id: "0.3", title: "The one idea: AI features are distributions, not functions", duration: 6}
+      - {id: "0.4", title: "Your first win: score an AI output in 5 minutes", duration: 6, hands_on: true}
+
+  - id: 1
+    title: "The Mental Model You Actually Need"
+    goal: "Enough mechanism to make good decisions — no more."
+    lectures:
+      - {id: "1.0", title: "Section intro", duration: 1, voice: human}
+      - {id: "1.1", title: "What an LLM actually does, and the 4 consequences for you", duration: 7}
+      - {id: "1.2", title: "Tokens and context windows: why your feature broke at scale", duration: 6}
+      - {id: "1.3", title: "Temperature and sampling — the PM's version", duration: 6}
+      - {id: "1.4", title: "The capability frontier: what models can and can't do now", duration: 7}
+      - {id: "1.5", title: "Hallucination is not a bug — it's the mechanism", duration: 6}
+      - {id: "1.6", title: "The 7 AI feature archetypes (and which actually ship)", duration: 8}
+      - {id: "1.7", title: "When NOT to use AI: the disqualification checklist", duration: 6, hands_on: true}
+      - {id: "1.8", title: "Section recap + what's next", duration: 2, voice: human}
+
+  - id: 2
+    title: "Speaking Engineer Without Faking It"
+    goal: "Earn technical credibility in 20 phrases and one diagram."
+    lectures:
+      - {id: "2.0", title: "Section intro", duration: 1, voice: human}
+      - {id: "2.1", title: "The AI stack in one diagram", duration: 6}
+      - {id: "2.2", title: "Prompt vs RAG vs fine-tune vs agent: the decision tree", duration: 8}
+      - {id: "2.3", title: "Embeddings and vector search without the math", duration: 7}
+      - {id: "2.4", title: "What 'context engineering' means in 2026", duration: 6}
+      - {id: "2.5", title: "Latency, throughput, and the p95 conversation", duration: 6}
+      - {id: "2.6", title: "Reading a model card and benchmark table critically", duration: 7}
+      - {id: "2.7", title: "20 phrases that make engineers trust you", duration: 6}
+      - {id: "2.8", title: "Section recap", duration: 2, voice: human}
+
+  - id: 3
+    title: "Specifying an AI Feature"
+    goal: "Replace the PRD that fails with one that survives QA."
+    lectures:
+      - {id: "3.0", title: "Section intro", duration: 1, voice: human}
+      - {id: "3.1", title: "Why your normal PRD fails on an AI feature", duration: 6}
+      - {id: "3.2", title: "Acceptance criteria as evaluation thresholds", duration: 8}
+      - {id: "3.3", title: "Specifying the golden dataset", duration: 7}
+      - {id: "3.4", title: "Defining 'good': rubrics humans actually agree on", duration: 7}
+      - {id: "3.5", title: "Failure taxonomy and graceful degradation", duration: 7}
+      - {id: "3.6", title: "Human-in-the-loop design patterns", duration: 7}
+      - {id: "3.7", title: "The AI Feature PRD template, walked through", duration: 8, hands_on: true}
+      - {id: "3.8", title: "Workshop: write the PRD for a real feature", duration: 7, hands_on: true}
+      - {id: "3.9", title: "Section recap", duration: 2, voice: human}
+
+  - id: 4
+    title: "Evaluation: The Core Skill"
+    goal: "The section that justifies the course price on its own."
+    lectures:
+      - {id: "4.0", title: "Section intro", duration: 1, voice: human}
+      - {id: "4.1", title: "The eval mindset: offline, online, and vibes", duration: 7}
+      - {id: "4.2", title: "Building a golden set: 50 examples that matter", duration: 8}
+      - {id: "4.3", title: "Rubric design and inter-rater reliability", duration: 8}
+      - {id: "4.4", title: "LLM-as-judge: when it works and how it lies", duration: 8}
+      - {id: "4.5", title: "Pass rate, regression testing, and the eval dashboard", duration: 7}
+      - {id: "4.6", title: "Hands-on: build an eval harness in a spreadsheet", duration: 9, hands_on: true}
+      - {id: "4.7", title: "Hands-on: the same harness in 30 lines of Python", duration: 9, hands_on: true}
+      - {id: "4.8", title: "Statistical significance for probabilistic features", duration: 8}
+      - {id: "4.9", title: "Reading eval results without fooling yourself", duration: 7}
+      - {id: "4.10", title: "Section recap", duration: 2, voice: human}
+
+  - id: 5
+    title: "RAG and Knowledge Systems"
+    goal: "Design and defend a retrieval system."
+    lectures:
+      - {id: "5.0", title: "Section intro", duration: 1, voice: human}
+      - {id: "5.1", title: "Why RAG, in one story", duration: 6}
+      - {id: "5.2", title: "The RAG pipeline, stage by stage", duration: 8}
+      - {id: "5.3", title: "Chunking decisions PMs must weigh in on", duration: 7}
+      - {id: "5.4", title: "Retrieval quality metrics that matter", duration: 8, hands_on: true}
+      - {id: "5.5", title: "The 6 places RAG breaks in production", duration: 8}
+      - {id: "5.6", title: "Permissions, freshness, and enterprise reality", duration: 7}
+      - {id: "5.7", title: "The RAG design doc, walked through", duration: 8, hands_on: true}
+      - {id: "5.8", title: "Workshop: design RAG for a support use case", duration: 7, hands_on: true}
+      - {id: "5.9", title: "Section recap", duration: 2, voice: human}
+
+  - id: 6
+    title: "Agents and Automation"
+    goal: "Scope automation using reliability math instead of optimism."
+    lectures:
+      - {id: "6.0", title: "Section intro", duration: 1, voice: human}
+      - {id: "6.1", title: "What an agent actually is", duration: 6}
+      - {id: "6.2", title: "Tools, function calling, and MCP", duration: 7}
+      - {id: "6.3", title: "The reliability math of multi-step agents", duration: 8}
+      - {id: "6.4", title: "Agent design patterns that survive production", duration: 8}
+      - {id: "6.5", title: "Guardrails, approvals, and blast radius", duration: 7}
+      - {id: "6.6", title: "When an agent is the wrong answer", duration: 6}
+      - {id: "6.7", title: "Workshop: scope an agent safely", duration: 7, hands_on: true}
+      - {id: "6.8", title: "Section recap", duration: 2, voice: human}
+
+  - id: 7
+    title: "Cost, Latency and Unit Economics"
+    goal: "Own the number your CFO will ask about."
+    lectures:
+      - {id: "7.0", title: "Section intro", duration: 1, voice: human}
+      - {id: "7.1", title: "How AI features actually get billed", duration: 6}
+      - {id: "7.2", title: "Building the token cost model", duration: 9, hands_on: true}
+      - {id: "7.3", title: "Caching, batching, and model routing", duration: 7}
+      - {id: "7.4", title: "The model selection scorecard", duration: 8, hands_on: true}
+      - {id: "7.5", title: "The margin trap: when your feature loses money per user", duration: 8}
+      - {id: "7.6", title: "Latency budgets and perceived speed", duration: 7}
+      - {id: "7.7", title: "Workshop: build your unit economics model", duration: 7, hands_on: true}
+      - {id: "7.8", title: "Section recap", duration: 2, voice: human}
+
+  - id: 8
+    title: "Risk, Safety and Governance"
+    goal: "Pass legal review without stalling the roadmap."
+    lectures:
+      - {id: "8.0", title: "Section intro", duration: 1, voice: human}
+      - {id: "8.1", title: "The AI risk register", duration: 8, hands_on: true}
+      - {id: "8.2", title: "Prompt injection, explained for PMs", duration: 8}
+      - {id: "8.3", title: "PII, data residency, and training-data rights", duration: 7}
+      - {id: "8.4", title: "The EU AI Act: what actually applies to you", duration: 8}
+      - {id: "8.5", title: "Bias and fairness, scoped to your feature", duration: 7}
+      - {id: "8.6", title: "Incident response for AI features", duration: 7}
+      - {id: "8.7", title: "Workshop: red-team your own feature", duration: 7, hands_on: true}
+      - {id: "8.8", title: "Section recap", duration: 2, voice: human}
+
+  - id: 9
+    title: "Analytics for AI Products"
+    goal: "Measure a probabilistic feature honestly."
+    lectures:
+      - {id: "9.0", title: "Section intro", duration: 1, voice: human}
+      - {id: "9.1", title: "Metrics that survive: adoption, acceptance, deflection", duration: 8}
+      - {id: "9.2", title: "The instrumentation plan for AI features", duration: 7}
+      - {id: "9.3", title: "A/B testing a feature that isn't deterministic", duration: 8}
+      - {id: "9.4", title: "Feedback loops and the data flywheel", duration: 7}
+      - {id: "9.5", title: "Dashboards leadership actually reads", duration: 6}
+      - {id: "9.6", title: "Workshop: build the metric tree", duration: 7, hands_on: true}
+      - {id: "9.7", title: "Section recap", duration: 2, voice: human}
+
+  - id: 10
+    title: "Doing the Job"
+    goal: "Convert skill into visible workplace behaviour."
+    lectures:
+      - {id: "10.0", title: "Section intro", duration: 1, voice: human}
+      - {id: "10.1", title: "Running an AI discovery sprint", duration: 8}
+      - {id: "10.2", title: "Managing stakeholder AI expectations", duration: 7}
+      - {id: "10.3", title: "The AI roadmap that doesn't lie", duration: 7}
+      - {id: "10.4", title: "Packaging your artifacts into a portfolio", duration: 6}
+      - {id: "10.5", title: "Interview questions you can now answer", duration: 8}
+      - {id: "10.6", title: "Your 30-60-90 day plan", duration: 6}
+
+  - id: 11
+    title: "Capstone"
+    goal: "Prove the skill end to end."
+    lectures:
+      - {id: "11.1", title: "Capstone brief: ship an AI feature spec", duration: 6, hands_on: true}
+      - {id: "11.2", title: "Worked solution, part 1: spec and evals", duration: 10, voice: human}
+      - {id: "11.3", title: "Worked solution, part 2: cost, risk, metrics", duration: 10, voice: human}
+      - {id: "11.4", title: "Self-assessment rubric", duration: 6, hands_on: true}
+      - {id: "11.5", title: "Where to go next — and thank you", duration: 4, voice: human}

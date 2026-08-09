@@ -1,0 +1,493 @@
+/* ==========================================================================
+   Course deck design system — 1920×1080 slide surface
+   Editorial/dark aesthetic. Deterministic: no generative imagery, no webfonts
+   over the network. Everything here renders identically on any machine.
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Inter';
+  src: url('vendor/fonts/InterVariable.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-display: block;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('vendor/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: block;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('vendor/fonts/JetBrainsMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: block;
+}
+
+:root {
+  /* Surface */
+  --bg:            #0B0E13;
+  --bg-elev:       #141A24;
+  --bg-elev-2:     #1B2331;
+
+  /* Ink */
+  --ink:           #EDF1F7;
+  --ink-soft:      #B4BECD;
+  --ink-muted:     #7A8699;
+
+  /* Accents — one primary, one secondary, semantic pair */
+  --accent:        #5EEAD4;   /* teal: structure, kickers, rules      */
+  --accent-2:      #818CF8;   /* indigo: secondary emphasis            */
+  --warn:          #FBBF24;   /* amber: the "watch out" colour         */
+  --bad:           #F87171;
+  --good:          #4ADE80;
+
+  --line:          rgba(255,255,255,.10);
+  --line-strong:   rgba(255,255,255,.18);
+
+  --pad-x:         132px;
+  --pad-y:         104px;
+
+  --font:          'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono:          'JetBrains Mono', ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 32px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'ss01' 1, 'cv05' 1, 'tnum' 0;
+}
+
+/* Ambient depth — a single soft accent bloom. Subtle enough to never
+   compete with content, present enough that slides don't read as flat black. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(1100px 620px at 82% -12%, rgba(94,234,212,.10), transparent 62%),
+    radial-gradient(900px 560px at -8% 112%, rgba(129,140,248,.10), transparent 60%);
+  pointer-events: none;
+}
+
+/* Hairline grid — barely perceptible texture, kills the "blank PowerPoint" feel */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.014) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.014) 1px, transparent 1px);
+  background-size: 96px 96px;
+  pointer-events: none;
+}
+
+/* ---------- Slide shell ---------- */
+
+.slide {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  padding: var(--pad-y) var(--pad-x);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.slide > * { position: relative; z-index: 1; }
+
+/* Kicker: the small uppercase label that gives every slide an anchor */
+.kicker {
+  font-size: 21px;
+  font-weight: 650;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.kicker::before {
+  content: '';
+  width: 46px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+  flex: none;
+}
+
+h1 {
+  font-size: 88px;
+  font-weight: 700;
+  letter-spacing: -.028em;
+  line-height: 1.04;
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: 62px;
+  font-weight: 680;
+  letter-spacing: -.022em;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+h3 {
+  font-size: 38px;
+  font-weight: 650;
+  letter-spacing: -.012em;
+  color: var(--ink);
+}
+
+p  { font-size: 34px; color: var(--ink-soft); max-width: 52ch; }
+.lead { font-size: 40px; color: var(--ink-soft); margin-top: 30px; max-width: 46ch; }
+
+strong { color: var(--ink); font-weight: 680; }
+em     { color: var(--accent); font-style: normal; font-weight: 600; }
+
+/* Inline highlight for the phrase that matters on the slide */
+.hl {
+  color: var(--bg);
+  background: var(--accent);
+  padding: .04em .3em;
+  border-radius: 8px;
+  font-weight: 680;
+}
+
+/* ---------- Footer furniture ---------- */
+
+.slide-foot {
+  position: absolute;
+  left: var(--pad-x);
+  right: var(--pad-x);
+  bottom: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 19px;
+  color: var(--ink-muted);
+  letter-spacing: .04em;
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+}
+.slide-foot .mark { font-weight: 600; }
+.slide-foot .num  { font-family: var(--mono); font-size: 18px; }
+
+/* ---------- Layout: title ---------- */
+
+.layout-title { justify-content: center; }
+.layout-title h1 { font-size: 108px; max-width: 20ch; }
+.layout-title .lead { font-size: 42px; color: var(--ink-muted); max-width: 40ch; }
+
+/* ---------- Layout: statement (the single big idea) ---------- */
+
+.layout-statement { justify-content: center; align-items: flex-start; }
+.layout-statement h2 {
+  font-size: 82px;
+  font-weight: 700;
+  max-width: 24ch;
+  line-height: 1.1;
+}
+.layout-statement .lead { font-size: 38px; max-width: 44ch; }
+
+/* ---------- Layout: bullets ---------- */
+
+ul, ol { list-style: none; margin-top: 46px; }
+
+.layout-bullets li,
+.layout-two-col li {
+  font-size: 36px;
+  color: var(--ink-soft);
+  line-height: 1.42;
+  padding-left: 52px;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 40ch;
+}
+.layout-bullets li::before,
+.layout-two-col li::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: .58em;
+  width: 13px;
+  height: 13px;
+  border-radius: 3px;
+  background: var(--accent);
+  transform: rotate(45deg);
+}
+
+/* Numbered variant reads as a sequence, not a pile */
+ol.steps { counter-reset: s; }
+ol.steps li { padding-left: 76px; }
+ol.steps li::before {
+  counter-increment: s;
+  content: counter(s);
+  top: .05em;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: var(--bg-elev-2);
+  border: 1px solid var(--line-strong);
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 22px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  transform: none;
+}
+
+/* ---------- Layout: two column ---------- */
+
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  margin-top: 50px;
+}
+.cols.ratio-6040 { grid-template-columns: 1.5fr 1fr; }
+
+.card {
+  background: linear-gradient(160deg, var(--bg-elev) 0%, rgba(20,26,36,.55) 100%);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 40px 44px;
+}
+.card h3 { margin-bottom: 20px; font-size: 34px; }
+.card p, .card li { font-size: 29px; margin-bottom: 16px; }
+.card li { padding-left: 40px; }
+.card li::before { width: 10px; height: 10px; left: 6px; }
+
+.card.good { border-color: rgba(74,222,128,.34); }
+.card.good h3 { color: var(--good); }
+.card.good li::before { background: var(--good); }
+
+.card.bad { border-color: rgba(248,113,113,.34); }
+.card.bad h3 { color: var(--bad); }
+.card.bad li::before { background: var(--bad); }
+
+/* ---------- Callout ---------- */
+
+.callout {
+  margin-top: 44px;
+  border-left: 5px solid var(--warn);
+  background: linear-gradient(90deg, rgba(251,191,36,.11), transparent 72%);
+  border-radius: 0 16px 16px 0;
+  padding: 32px 40px;
+}
+.callout .label {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--warn);
+  margin-bottom: 12px;
+}
+.callout p { font-size: 33px; color: var(--ink); max-width: 52ch; }
+
+/* A slide whose payload *is* the callout — give it room to breathe and scale up. */
+.layout-callout { justify-content: center; }
+.layout-callout .callout { margin-top: 52px; padding: 44px 54px; }
+.layout-callout .callout p { font-size: 40px; line-height: 1.42; max-width: 44ch; }
+
+/* ---------- Data / metric slabs ---------- */
+
+.metrics { display: flex; gap: 34px; margin-top: 54px; flex-wrap: wrap; }
+.metric {
+  flex: 1 1 0;
+  min-width: 300px;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 38px 40px;
+}
+.metric .val {
+  font-family: var(--mono);
+  font-size: 76px;
+  font-weight: 700;
+  letter-spacing: -.04em;
+  color: var(--accent);
+  line-height: 1;
+}
+.metric .val.warn { color: var(--warn); }
+.metric .val.bad  { color: var(--bad); }
+.metric .val.good { color: var(--good); }
+.metric .cap {
+  margin-top: 18px;
+  font-size: 25px;
+  color: var(--ink-muted);
+  line-height: 1.35;
+}
+
+/* ---------- Table ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 46px;
+  font-size: 29px;
+}
+thead th {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding: 0 26px 20px;
+  border-bottom: 2px solid var(--line-strong);
+}
+tbody td {
+  padding: 24px 26px;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink-soft);
+  vertical-align: top;
+}
+tbody tr:last-child td { border-bottom: none; }
+tbody td:first-child { color: var(--ink); font-weight: 600; }
+
+/* ---------- Code ---------- */
+
+pre {
+  margin-top: 44px;
+  background: #070A0E;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 40px 44px;
+  overflow: hidden;
+}
+pre code {
+  font-family: var(--mono);
+  font-size: 27px;
+  line-height: 1.62;
+  color: #C9D4E3;
+  white-space: pre;
+  display: block;
+}
+code { font-family: var(--mono); font-size: .92em; color: var(--accent); }
+pre code .c  { color: #5B6B80; font-style: italic; }  /* comment */
+pre code .k  { color: #C4B5FD; }                      /* keyword */
+pre code .s  { color: #86EFAC; }                      /* string  */
+pre code .n  { color: #FCD34D; }                      /* number  */
+pre code .f  { color: #7DD3FC; }                      /* func    */
+
+/* ---------- Math (KaTeX) ---------- */
+
+.math-block {
+  margin-top: 52px;
+  padding: 44px;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  text-align: center;
+}
+/* Inline math scales with whatever context it sits in, so a formula inside a
+   metric caption or a bullet keeps that text's size instead of overpowering it.
+   Only display math gets a fixed, deliberately large size. */
+.katex { font-size: 1.04em !important; color: inherit !important; }
+.math-block .katex { font-size: 58px !important; color: var(--ink) !important; }
+.math-note {
+  margin-top: 26px;
+  font-size: 26px;
+  color: var(--ink-muted);
+  text-align: center;
+}
+
+/* ---------- Diagram (Mermaid) ---------- */
+
+.diagram {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-height: 0;
+  margin-bottom: 70px;          /* clear the slide footer */
+}
+
+/* Mermaid renders into the <pre> it was authored in, so strip the code-block
+   chrome that would otherwise frame the diagram in a box. */
+pre.mermaid {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mermaid writes an inline `max-width` on the SVG, which pins the diagram at its
+   intrinsic size — a postage stamp on a 1920px slide. Override it and let the
+   viewBox scale the drawing to fill the frame. */
+pre.mermaid svg,
+.diagram svg {
+  max-width: none !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 560px;
+}
+
+/* ---------- Quote ---------- */
+
+.layout-quote { justify-content: center; }
+.layout-quote blockquote {
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: -.02em;
+  line-height: 1.22;
+  max-width: 26ch;
+  text-wrap: balance;
+}
+.layout-quote blockquote::before {
+  content: '"';
+  display: block;
+  font-size: 130px;
+  line-height: .6;
+  color: var(--accent);
+  margin-bottom: 26px;
+}
+.layout-quote .attrib {
+  margin-top: 40px;
+  font-size: 27px;
+  color: var(--ink-muted);
+  letter-spacing: .05em;
+}
+
+/* ---------- Section divider ---------- */
+
+.layout-section { justify-content: center; }
+.layout-section .sec-num {
+  font-family: var(--mono);
+  font-size: 200px;
+  font-weight: 700;
+  line-height: .82;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--line-strong);
+  margin-bottom: 34px;
+}
+.layout-section h1 { font-size: 96px; max-width: 22ch; }
+.layout-section .lead { color: var(--ink-muted); max-width: 44ch; }
+
+/* Density guard: long bullet lists shrink rather than overflow the frame */
+.slide.dense .layout-bullets li,
+.slide.dense li { font-size: 31px; margin-bottom: 22px; }
+.slide.dense h2 { font-size: 54px; }

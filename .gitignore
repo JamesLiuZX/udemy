@@ -1,0 +1,10 @@
+# Build output: regenerable from sources, and MP4s are far too large for git.
+build/
+
+# Local overrides / secrets — API keys belong in the environment, never here.
+.env
+*.local.yaml
+
+__pycache__/
+*.py[cod]
+.DS_Store
