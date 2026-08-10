@@ -139,7 +139,7 @@ artifacts:
     lecture: "5.4"
   - id: A08
     name: "Agent scoping + blast-radius worksheet"
-    lecture: "6.7"
+    lecture: "6.8"
   - id: A09
     name: "Token unit-economics model"
     lecture: "7.2"
@@ -151,7 +151,7 @@ artifacts:
     lecture: "8.1"
 
 # =============================================================================
-# CURRICULUM  —  12 sections · 100 lectures · 600 min (10h00m)
+# CURRICULUM  —  12 sections · 102 lectures · 614 min (10h14m)
 # duration values are TARGET minutes; real duration comes from narration length.
 # Targets are deliberately tight — short lectures protect completion rate, which
 # is a Udemy ranking input. qc.py warns on any lecture drifting past 12 minutes.
@@ -250,10 +250,11 @@ sections:
       - {id: "6.2", title: "Tools, function calling, and MCP", duration: 7}
       - {id: "6.3", title: "The reliability math of multi-step agents", duration: 8}
       - {id: "6.4", title: "Agent design patterns that survive production", duration: 8}
-      - {id: "6.5", title: "Guardrails, approvals, and blast radius", duration: 7}
-      - {id: "6.6", title: "When an agent is the wrong answer", duration: 6}
-      - {id: "6.7", title: "Workshop: scope an agent safely", duration: 7, hands_on: true}
-      - {id: "6.8", title: "Section recap", duration: 2, voice: human}
+      - {id: "6.5", title: "Multi-agent systems, and why local-first is the safer start", duration: 7}
+      - {id: "6.6", title: "Guardrails, approvals, and blast radius", duration: 7}
+      - {id: "6.7", title: "When an agent is the wrong answer", duration: 6}
+      - {id: "6.8", title: "Workshop: scope an agent safely", duration: 7, hands_on: true}
+      - {id: "6.9", title: "Section recap", duration: 2, voice: human}
 
   - id: 7
     title: "Cost, Latency and Unit Economics"
@@ -304,9 +305,10 @@ sections:
       - {id: "10.1", title: "Running an AI discovery sprint", duration: 8}
       - {id: "10.2", title: "Managing stakeholder AI expectations", duration: 7}
       - {id: "10.3", title: "The AI roadmap that doesn't lie", duration: 7}
-      - {id: "10.4", title: "Packaging your artifacts into a portfolio", duration: 6}
-      - {id: "10.5", title: "Interview questions you can now answer", duration: 8}
-      - {id: "10.6", title: "Your 30-60-90 day plan", duration: 6}
+      - {id: "10.4", title: "Vibe-coding your own tools: what it's for, and what it costs", duration: 7, hands_on: true}
+      - {id: "10.5", title: "Packaging your artifacts into a portfolio", duration: 6}
+      - {id: "10.6", title: "Interview questions you can now answer", duration: 8}
+      - {id: "10.7", title: "Your 30-60-90 day plan", duration: 6}
 
   - id: 11
     title: "Capstone"
