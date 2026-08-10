@@ -142,6 +142,8 @@ def _render_lines(lines: list[str]) -> str:
             if lang == "mermaid":
                 out.append(f'<div class="diagram"><pre class="mermaid">'
                            f'{html.escape(code, quote=False)}</pre></div>')
+            elif lang == "figure":
+                out.append(_figure(code))
             else:
                 out.append(f"<pre><code>{_highlight(code)}</code></pre>")
             i = j + 1
@@ -247,6 +249,23 @@ def _collect_items(lines: list[str], i: int, n: int, marker: str) -> tuple[list[
             break
         j += 1
     return items, j
+
+
+def _figure(spec_text: str) -> str:
+    """A ```figure block holds a YAML spec rendered to inline SVG by figures.py.
+
+    Failures are surfaced on the slide rather than swallowed: a silently missing
+    chart is far worse than a visible error you fix before recording."""
+    import yaml
+
+    import figures
+
+    try:
+        spec = yaml.safe_load(spec_text) or {}
+        return f'<div class="figure">{figures.render(spec)}</div>'
+    except Exception as e:                       # noqa: BLE001 - reported to the slide
+        return (f'<div class="figure figure-error">Figure error: '
+                f"{html.escape(str(e))}</div>")
 
 
 def _table(rows: list[str]) -> str:

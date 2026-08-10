@@ -39,7 +39,7 @@ import yaml
 LAYOUTS = {
     "title", "statement", "bullets", "two-col", "table",
     "code", "math", "diagram", "quote", "section", "metrics", "callout",
-    "sidenote", "definition", "example",
+    "sidenote", "definition", "example", "figure",
 }
 
 # Slide-level directives that are metadata rather than body content.

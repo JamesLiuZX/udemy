@@ -429,6 +429,19 @@ pre.mermaid svg,.diagram svg{
   max-width:none!important;width:100%!important;height:100%!important;
   max-height:520px;
 }
+/* ---------- generated figures (inline SVG) ---------- */
+
+.figure{
+  margin-top:30px;
+  display:flex;align-items:center;justify-content:center;
+  flex:1;min-height:0;
+}
+.figure svg{width:100%;height:auto;max-height:560px}
+.figure-error{
+  border:2px solid var(--bad);background:var(--bad-tint);
+  color:var(--bad);padding:24px 30px;font-family:var(--mono);font-size:24px;
+}
+
 .figcap{
   margin-top:22px;padding-top:16px;
   border-top:1px solid var(--rule);

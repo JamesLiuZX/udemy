@@ -69,6 +69,7 @@ pipeline/
   lecture.py                Source → slides + narration
   markup.py                 Slide markup → HTML
   slides.py                 Slide → standalone 1920×1080 page
+  figures.py                Data → inline SVG charts and schematics
   render.py                 HTML → PNG (headless Chromium)
   tts.py                    Narration → speech (pluggable providers)
   video.py                  PNGs + audio → MP4
@@ -99,6 +100,13 @@ Layouts exist because a textbook has them, and each encodes something true:
 figures are **numbered** so they can be referenced, definitions are **boxed**,
 worked examples are **marked**, and margin notes hold commentary that would
 otherwise interrupt the argument.
+
+**Figures are generated from data**, never drawn and never produced by an image
+model, so a chart cannot ship with a mangled label or an invented number.
+`figures.py` renders dot plots, threshold histograms and schematics to inline
+SVG; Mermaid handles flows. The chart palette is validated for colour-vision
+separation rather than eyeballed — the deck's own green and red failed that
+check and were replaced for charts.
 
 Content is top-aligned by default so the eyebrow and heading hold position from
 slide to slide. In video a header that jumps between cuts reads as sloppy; steady

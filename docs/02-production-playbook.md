@@ -116,6 +116,53 @@ slides are top-aligned by default so the heading holds position between cuts.
 
 `**bold**` · `*accent*` · `` `code` `` · `==highlight==` · `$math$`
 
+### Figures and diagrams
+
+Two kinds, both generated rather than drawn, so a figure can never ship with a
+mangled label or an invented number.
+
+**Charts** come from a ` ```figure ` block holding a YAML spec, rendered to
+inline SVG by `pipeline/figures.py`:
+
+````markdown
+```figure
+kind: dotplot          # dotplot | histogram | sampling
+lo: 1
+hi: 5
+axis_label: "Score out of 5"
+series:
+  - {label: "Before", note: "judgement alone", values: [2, 3, 3, 4, 5]}
+  - {label: "After",  note: "same six questions", values: [3, 3, 3, 3, 4]}
+```
+````
+
+```figure
+kind: histogram
+threshold: 4                       # 1-based bin index; bins below it grey out
+threshold_label: "Pass mark"
+bins:
+  - {label: "1 · unusable", value: 2}
+note: "Optional line under the plot"
+```
+
+**Flow diagrams** use ` ```mermaid `.
+
+Pair either with `figcap:` so the figure is numbered and can be referenced in
+narration the way a textbook's can.
+
+#### Chart rules this pipeline follows
+
+- **The palette is validated, not eyeballed.** The two-series pair is blue
+  `#2E6DB4` / orange `#C1741A`. The deck's semantic green and red were tried
+  first and rejected: they fail colour-vision separation (deutan ΔE 7.1) and the
+  green drops under the chroma floor. Re-validate before adding a hue.
+- **No hover layer exists** — these become video frames. Every value a learner
+  needs is directly labelled or readable off the axis.
+- **Emphasis over identity.** When the story is one boundary, colour one side
+  and grey the rest rather than giving every bin its own hue.
+- Solid hairline grids (never dashed), thin marks, a 2px surface ring on
+  overlapping dots, and chart text in the sans, never the display serif.
+
 ### Containers
 
 ````markdown
