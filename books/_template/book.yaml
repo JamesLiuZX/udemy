@@ -1,0 +1,54 @@
+# =============================================================================
+# Single source of truth for one book. Copy this whole books/_template/
+# directory to books/<your-slug>/ to start a new title.
+# =============================================================================
+
+slug: _template
+title: "Your Book Title"
+subtitle: "A subtitle that tells the reader who this is for"
+author: "Your Name"
+year: 2026
+genre: self-help              # self-help | ai-and-technology | business | ...
+trim: "6x9"                    # 6x9 | 5.5x8.5 | 5x8 | 8.5x11
+target_pages: [300, 500]       # [min, max]; qc.py --release fails outside this
+
+# Never set true except by the real author, after a genuine full read-through.
+verified: false
+
+style:
+  spellcheck_lang: en_US        # en_US | en_GB, a per-book choice
+  em_dash: allow                 # allow | avoid
+
+# KDP listing copy. Not part of the interior PDF.
+description: |
+  One paragraph on what the reader gets and why this book earns its place
+  against everything else in the category.
+
+# Optional. A short line or two; omit the key entirely to skip the page.
+dedication: "For everyone who reads the fine print."
+
+# Optional overrides of the defaults build.py uses on the copyright page.
+# rights_note: "..."
+# ai_disclosure_text: "..."
+# isbn_note: "..."
+
+front_matter:
+  - half_title
+  - title_page
+  - copyright
+  - dedication
+  - toc
+
+chapters:
+  - id: "01"
+    title: "Start Here"
+    file: manuscript/01-start-here.md
+  - id: "02"
+    title: "The Second Idea"
+    file: manuscript/02-the-second-idea.md
+
+# Back-matter items are only included if books/<slug>/back-matter/<item>.md
+# exists; list here without the file, and build.py silently skips it.
+back_matter:
+  - acknowledgments
+  - about_the_author
