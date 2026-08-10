@@ -149,6 +149,9 @@ artifacts:
   - id: A11
     name: "AI risk register + red-team checklist"
     lecture: "8.1"
+  - id: A12
+    name: "The metric tree template"
+    lecture: "9.6"
 
 # =============================================================================
 # CURRICULUM  —  12 sections · 102 lectures · 614 min (10h14m)
