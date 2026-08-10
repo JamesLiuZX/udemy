@@ -62,6 +62,7 @@ ALLOW = {
     "pii", "config", "yaml", "json", "sql", "csv", "url", "urls",
     # hunspell splits hyphenated compounds, so both halves must be known
     "kickoff", "offs", "tradeoff", "tradeoffs", "ship", "red", "teaming",
+    "pts",
 }
 
 
