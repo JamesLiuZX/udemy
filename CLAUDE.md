@@ -197,6 +197,11 @@ These are fixed. Do not "simplify" them back out.
   fixed row pitch drives one row's dots through the row above's spread bracket.
 - **Spellcheck language is `en_GB`** because the scripts are written in British
   English. Do not mix spellings. Switching to `en_US` means rewriting the scripts.
+- **`markup.py`'s math stash pairs any two `$` on the same line.** A table cell
+  or line of prose with two literal currency amounts ("$3/M ... $15/M") reads as
+  one LaTeX span and mangles everything between them, dropping spaces and the
+  closing `$`. Costed real time in Section 7. Write currency as a bare number
+  ("3/M") wherever a second `$` would land on the same line.
 
 ---
 

@@ -36,7 +36,13 @@ _TONES = {"good", "bad", "warn"}
 
 def _inline(text: str) -> str:
     """Escape first, then re-introduce the handful of spans we allow. Math is
-    pulled out ahead of escaping so TeX backslashes survive intact."""
+    pulled out ahead of escaping so TeX backslashes survive intact.
+
+    The stash regex pairs any two `$` on the same line, so a table cell or
+    line of prose with two literal currency amounts ("$3/M ... $15/M") reads
+    as one math span and mangles everything between them. Cost lectures hit
+    this constantly: write currency as a bare number ("3/M") wherever a
+    second `$` would otherwise appear on the same line."""
     math: list[str] = []
 
     def stash(m: re.Match) -> str:
