@@ -64,7 +64,7 @@ ALLOW = {
     # hunspell splits hyphenated compounds, so both halves must be known
     "kickoff", "offs", "tradeoff", "tradeoffs", "ship", "red", "teaming",
     "pts", "cutoff", "groundable", "leaderboard", "leaderboards",
-    "overcorrecting",
+    "overcorrecting", "walkthrough", "walkthroughs",
     # Python identifiers, shown verbatim in the 4.7 code listing
     "defaultdict", "int", "len",
 }
