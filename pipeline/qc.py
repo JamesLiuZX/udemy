@@ -13,6 +13,7 @@ Two severities:
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import re
 import shutil
@@ -62,7 +63,7 @@ ALLOW = {
     "pii", "config", "yaml", "json", "sql", "csv", "url", "urls",
     # hunspell splits hyphenated compounds, so both halves must be known
     "kickoff", "offs", "tradeoff", "tradeoffs", "ship", "red", "teaming",
-    "pts", "cutoff", "groundable",
+    "pts", "cutoff", "groundable", "leaderboard", "leaderboards",
     # Python identifiers, shown verbatim in the 4.7 code listing
     "defaultdict", "int", "len",
 }
@@ -122,8 +123,12 @@ _WORD = re.compile(r"[A-Za-z][A-Za-z'-]+")
 
 
 def _slide_text(slide) -> str:
-    html = render_markup(slide.body)
-    text = re.sub(r"<[^>]+>", " ", html)
+    rendered = render_markup(slide.body)
+    text = re.sub(r"<[^>]+>", " ", rendered)
+    # Figures (figures.py) HTML-escape their text for correct SVG output,
+    # e.g. an apostrophe becomes &#x27;. Undo that before spellchecking, or
+    # hunspell sees the literal entity instead of the word it belongs to.
+    text = html.unescape(text)
     for k in ("kicker", "lead", "note", "attrib"):
         if slide.meta.get(k):
             text += " " + slide.meta[k]
