@@ -175,7 +175,11 @@ def histogram(bins: list[tuple[str, float]], *, threshold: int | None = None,
 
     Emphasis rather than a hue per bin: the story is one boundary, not eight
     identities."""
-    pad_l, pad_r, pad_t = 96, 90, 34
+    pad_l, pad_r = 96, 90
+    # threshold_label sits above the bars, at the top of the SVG. Without
+    # extra headroom its ascenders clip against the viewBox edge (y=0).
+    has_label = threshold is not None and threshold_label
+    pad_t = 60 if has_label else 34
     base = height - 92
     plot_w = W - pad_l - pad_r
     n = max(len(bins), 1)
@@ -201,7 +205,8 @@ def histogram(bins: list[tuple[str, float]], *, threshold: int | None = None,
 
     if threshold is not None:
         xt = pad_l + (threshold - 1) * slot
-        out.append(f'<line x1="{xt:.1f}" y1="{pad_t - 16}" x2="{xt:.1f}" '
+        line_top = 8 if has_label else pad_t - 16
+        out.append(f'<line x1="{xt:.1f}" y1="{line_top}" x2="{xt:.1f}" '
                    f'y2="{base + 8}" stroke="{INK}" stroke-width="2"/>')
         if threshold_label:
             out.append(_txt(xt + 16, pad_t - 20, threshold_label, size=24,
