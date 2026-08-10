@@ -70,12 +70,18 @@ class Series:
 
 
 def dotplot(series: list[Series], *, lo: int = 1, hi: int = 5,
-            axis_label: str = "", height: int | None = None) -> str:
+            axis_label: str = "", height: int | None = None,
+            tick_step: int = 1) -> str:
     """One row per series, dots stacked where values repeat.
 
     The teaching point is the *width* of each row, so each row carries a spread
     bracket and its range is stated in words. Colour is secondary: rows are
-    directly labelled, so the figure survives greyscale and CVD entirely."""
+    directly labelled, so the figure survives greyscale and CVD entirely.
+
+    `tick_step` controls gridline spacing: the default of 1 suits a 1-5
+    rubric scale, but a wide range (e.g. 0-100 for a percentage) needs a
+    coarser step or the hairline grid draws a tick per integer and the axis
+    turns into an unreadable smear."""
     pad_l, pad_r = 300, 90
     top = 40
     r = 15                                    # ≥ 8px marks
@@ -110,7 +116,7 @@ def dotplot(series: list[Series], *, lo: int = 1, hi: int = 5,
     out = [_open(h)]
 
     # Recessive solid hairline grid, one per tick. Never dashed.
-    for t in range(lo, hi + 1):
+    for t in range(lo, hi + 1, tick_step):
         x = x_of(t)
         out.append(f'<line x1="{x:.1f}" y1="{top - 16}" x2="{x:.1f}" '
                    f'y2="{axis_y - 32}" stroke="{RULE}" stroke-width="1"/>')
@@ -284,7 +290,8 @@ def render(spec: dict) -> str:
         ]
         return dotplot(series, lo=int(spec.get("lo", 1)),
                        hi=int(spec.get("hi", 5)),
-                       axis_label=spec.get("axis_label", ""))
+                       axis_label=spec.get("axis_label", ""),
+                       tick_step=int(spec.get("tick_step", 1)))
 
     if kind == "histogram":
         bins = [(b.get("label", ""), float(b.get("value", 0)))
