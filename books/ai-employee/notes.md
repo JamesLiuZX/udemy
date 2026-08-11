@@ -213,6 +213,15 @@ Progress (updated per chapter as expansion happens):
       taxonomy across 73 models, on omission/misinterpretation being as
       common as fabrication). 1,078 words, 5pp standalone. Rendered pages
       checked.
+- [x] 18 Revisiting a Fired Task — new chapter. Pays off chapter seven's
+      promise that firing isn't permanent: a calendar-based, six-month
+      revisit habit, a real fresh trial rather than a memory check, the
+      expectation that most revisits confirm the original firing, and a
+      worked example (Ingrid, a coverage-term task fired then genuinely
+      revived a year later). No new `[KEY-INSIGHT]` box; leans on chapter
+      nine's already-cited METR capability-growth research for its
+      rationale instead of citation fatigue. 956 words, 4pp standalone.
+      Rendered pages checked.
 - [ ] Additional chapters as needed to close the remaining gap to
       [180, 240]pp (still well short after 11-16; author directive is to
       keep adding genuine chapters rather than pad, checking in if

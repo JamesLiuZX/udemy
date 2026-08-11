@@ -99,6 +99,9 @@ chapters:
   - id: "17"
     title: "Common Failure Patterns Across Task Types"
     file: manuscript/17-common-failure-patterns-across-task-types.md
+  - id: "18"
+    title: "Revisiting a Fired Task"
+    file: manuscript/18-revisiting-a-fired-task.md
   # "15 Templates and Worksheets" (manuscript/15-templates-and-worksheets.md)
   # is deliberately placed LAST in this list, after every substantive
   # chapter, even though its id/filename predate later-added chapters.
