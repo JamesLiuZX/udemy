@@ -61,7 +61,7 @@ def build_lecture(lec: Lecture, course: dict, out_root: Path, *,
                               cfg=tts_cfg, force=force_audio)
         segments.append(vid.Segment(png=png, audio=clip.path,
                                     seconds=clip.seconds,
-                                    narration=slide.narration))
+                                    narration=tts.strip_pause(slide.narration)))
 
     narration = work / "narration.wav"
     spans = vid.build_audio(segments, narration, work / "tmp")

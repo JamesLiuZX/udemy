@@ -23,6 +23,12 @@ from pathlib import Path
 
 SAMPLE_RATE = 48000
 
+# docs/04-quality-bar.md §5: a pause the author places deliberately, most
+# often right before a reveal number ("The pass rate was [pause] sixty-eight
+# percent."). ~700ms is long enough to read as a beat, not a glitch.
+PAUSE_MARK = re.compile(r"\[pause\]", re.I)
+PAUSE_SECONDS = 0.7
+
 
 class TTSError(RuntimeError):
     pass
@@ -53,13 +59,20 @@ _SPOKEN = {
 }
 
 
+def strip_pause(text: str) -> str:
+    """Remove [pause] marks for anything that isn't synthesis timing: captions,
+    the narration-vs-slide overlap check, cache-key comparisons. A learner
+    should never see the literal marker, and it should never be read aloud."""
+    return re.sub(r"\s*\[pause\]\s*", " ", text, flags=re.I)
+
+
 def speakable(text: str) -> str:
     """Strip authoring marks and expand things TTS reads badly.
 
     Narration is authored in the same file as slides, so it can pick up markdown
     and production markers. None of that should reach the voice.
     """
-    t = text
+    t = strip_pause(text)
     t = re.sub(r"\[INSTRUCTOR-INPUT:[^\]]*\]", " ", t)     # unfilled markers
     t = re.sub(r"\[[A-Z-]+:[^\]]*\]", " ", t)              # other direction marks
     t = re.sub(r"`([^`]*)`", r"\1", t)
@@ -188,11 +201,11 @@ def audio_seconds(path: Path) -> float:
     return float(out)
 
 
-def synthesize(text: str, out: Path, *, provider: str = "offline",
-               cfg: dict | None = None, force: bool = False) -> Clip:
-    """Render one narration chunk. Cached on disk — re-running a build does not
-    re-spend on unchanged narration."""
-    cfg = cfg or {}
+def _synthesize_chunk(text: str, out: Path, *, provider: str,
+                      cfg: dict, force: bool) -> Clip:
+    """Render one uninterrupted stretch of narration (no [pause] inside it).
+    Cached on disk by its spoken text — re-running a build does not re-spend
+    on an unchanged chunk."""
     out.parent.mkdir(parents=True, exist_ok=True)
     spoken = speakable(text)
 
@@ -212,6 +225,62 @@ def synthesize(text: str, out: Path, *, provider: str = "offline",
     fn(spoken, out, cfg)
     out.with_suffix(".txt").write_text(spoken, encoding="utf-8")
     return Clip(out, audio_seconds(out), spoken)
+
+
+def _concat(clips: list[Path], out: Path) -> None:
+    """Join clips end to end with ffmpeg's concat filter — used to stitch a
+    [pause]-split narration back into one slide's audio."""
+    n = len(clips)
+    inputs: list[str] = []
+    for c in clips:
+        inputs += ["-i", str(c)]
+    filt = "".join(f"[{i}:a]" for i in range(n)) + f"concat=n={n}:v=0:a=1[a]"
+    subprocess.run(
+        [_ffmpeg(), "-y", "-loglevel", "error", *inputs,
+         "-filter_complex", filt, "-map", "[a]", str(out)],
+        check=True, capture_output=True, timeout=300,
+    )
+
+
+def synthesize(text: str, out: Path, *, provider: str = "offline",
+               cfg: dict | None = None, force: bool = False) -> Clip:
+    """Render one slide's narration. Cached on disk — re-running a build does
+    not re-spend on unchanged narration.
+
+    Supports an inline `[pause]` marker (~700ms of silence, docs/04 §5): the
+    text is split at each marker, each stretch is synthesised and cached
+    independently (so editing one line re-synthesises one stretch, not the
+    whole slide), then stitched back together with silence in the gaps.
+    """
+    cfg = cfg or {}
+    # Drop empty pieces (a leading/trailing/doubled [pause]) so they don't turn
+    # into a phantom silent chunk stacked on top of the gap silence.
+    pieces = [p for p in PAUSE_MARK.split(text) if p.strip()]
+
+    if len(pieces) <= 1:
+        return _synthesize_chunk(text, out, provider=provider, cfg=cfg, force=force)
+
+    out.parent.mkdir(parents=True, exist_ok=True)
+    parts_dir = out.parent / f".{out.stem}-parts"
+    gap = parts_dir / "gap.wav"
+    silence(gap, PAUSE_SECONDS)
+
+    clips: list[Path] = []
+    texts: list[str] = []
+    total = 0.0
+    for i, piece in enumerate(pieces):
+        part = parts_dir / f"{out.stem}-{i:02d}.wav"
+        clip = _synthesize_chunk(piece, part, provider=provider, cfg=cfg, force=force)
+        if i > 0:
+            clips.append(gap)
+            total += PAUSE_SECONDS
+        clips.append(clip.path)
+        total += clip.seconds
+        if clip.text:
+            texts.append(clip.text)
+
+    _concat(clips, out)
+    return Clip(out, audio_seconds(out) if out.exists() else total, " ".join(texts))
 
 
 def silence(out: Path, seconds: float) -> Path:
