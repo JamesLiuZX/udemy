@@ -47,4 +47,4 @@ It also won't tell you scope creep is always the client's fault. Plenty of it st
 
 ## Where this goes next
 
-Chapter ten closes the book with the honest edge of everything in it: the specific point where a real accountant, lawyer, or assistant earns their fee, and automating past that line stops being efficient and starts being a real risk to the business you're trying to protect.
+Chapter ten turns to the objections and edge cases the nine chapters so far tend to raise. From there, eleven and twelve put the whole stack to work in worked case studies and a week-by-week build plan, before thirteen closes the book with the honest edge of everything in it: the specific point where a real accountant, lawyer, or assistant earns their fee, and automating past that line stops being efficient and starts being a real risk to the business you're trying to protect.

@@ -11,7 +11,7 @@ author: "Your Name"
 year: 2026
 genre: business
 trim: "6x9"
-target_pages: [110, 160]
+target_pages: [180, 240]
 
 # Never set true except by the real author, after a genuine full read-through.
 verified: false
@@ -79,8 +79,20 @@ chapters:
     title: "Protecting Your Scope"
     file: manuscript/09-protecting-your-scope.md
   - id: "10"
+    title: "Objections and Edge Cases"
+    file: manuscript/10-objections-and-edge-cases.md
+  - id: "11"
+    title: "Two Businesses, Ninety Days: Worked Case Studies"
+    file: manuscript/11-two-businesses-ninety-days.md
+  - id: "12"
+    title: "The 30-Day Build"
+    file: manuscript/12-the-30-day-build.md
+  - id: "13"
     title: "When to Actually Hire a Human"
-    file: manuscript/10-when-to-actually-hire-a-human.md
+    file: manuscript/13-when-to-actually-hire-a-human.md
+  - id: "14"
+    title: "The Templates"
+    file: manuscript/14-the-templates.md
 
 back_matter:
   - acknowledgments

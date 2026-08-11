@@ -14,6 +14,16 @@ That case is now a standard citation in exactly the conversation this book is ha
 
 [PULLQUOTE: Confident and correct are different properties. Every chapter in this book has quietly depended on you remembering that.]
 
+## The same failure, in a different profession
+
+The Mata v. Avianca lawyers are an easy case to file away as a legal-world story, one profession's cautionary tale that doesn't quite transfer to a freelancer deciding whether to trust a chatbot's read on a deduction. It transfers more directly than it looks.
+
+[KEY-INSIGHT: An Adobe survey of tax filers found that 26 percent used AI to help prepare their 2025 tax return, up from 11 percent the year before, more than doubling in a single filing season. The same reporting that surfaced that number quoted tax professionals warning that the tools frequently miss entity-specific rules, apply outdated thresholds, or recommend deductions that don't actually apply to the filer's situation, delivered with the identical unearned confidence that sank the Avianca brief. || Source: Adobe survey data, reported by CBS News and AOL, March 2026.]
+
+Marcus, a freelance backend developer three years into running his own shop, nearly became that statistic the same spring. He'd formed an LLC the year before on a friend's recommendation and asked a general-purpose AI tool whether he should elect S-corp tax treatment now that his income had grown. The answer came back fast, specific, and completely confident: yes, immediately, here's the exact payroll split to use. What it didn't know, because he hadn't told it and it didn't think to ask, was his state's minimum franchise tax on S-corps, which would have erased most of the projected savings in his specific state that first year. He caught it only because the number felt too clean, and a twenty-minute call with a CPA who already knew his state's rules confirmed the S-corp election was right for him eventually, just not yet, and not in the way the chatbot had described it.
+
+Nothing about that answer was reckless-sounding. That's the whole point chapter eight and this chapter keep circling back to: a wrong tax answer and a right one read exactly the same in the moment you receive them. The only reliable difference is whether a professional who knows your specific state, entity, and year is the one who said it.
+
 ## Three questions that tell you it's time to pay a professional
 
 Every chapter in this book drew some version of this line already: contracts, taxes, the boundary between a template and a lawyer's actual judgment. Here's the same test made explicit, so it travels beyond the specific situations already covered.
@@ -24,9 +34,9 @@ Every chapter in this book drew some version of this line already: contracts, ta
 
 **Does this require someone who'll stand behind the answer?** This is the one the Mata v. Avianca lawyers skipped, and it's the sharpest test of all. A tool has no license to lose, no bar association to answer to, no professional judgment shaped by years of seeing what actually goes wrong in practice. When you need not just an answer but someone accountable for that answer being right, that's not a prompting problem. That's the actual job description of a lawyer, an accountant, or any licensed professional, and it's the one thing this entire book has never claimed to replace.
 
-## What ten chapters of this book actually add up to
+## What twelve chapters of this book actually add up to
 
-None of the nine chapters before this one were wrong to automate what they automated. The proposal brief, the invoice template, the inbox triage, the contract first-read, the marketing system, the bookkeeping routine, the scope script: every one of them took a task that was genuinely low-stakes, genuinely reversible, and genuinely repetitive, and gave you back the hours it used to cost. That's not a small thing. Across a year, it's the difference between a business that runs you ragged on its own admin and one where the admin finally gets out of the craft's way.
+None of the chapters before this one were wrong to automate what they automated. The proposal brief, the invoice template, the inbox triage, the contract first-read, the marketing system, the bookkeeping routine, the scope script, and the objections and case studies that stress-tested all of it: every piece took a task that was genuinely low-stakes, genuinely reversible, and genuinely repetitive, and gave you back the hours it used to cost. That's not a small thing. Across a year, it's the difference between a business that runs you ragged on its own admin and one where the admin finally gets out of the craft's way.
 
 What this chapter adds isn't a retraction of any of that. It's the missing edge: the reminder that a stack built to handle the repetitive 90 percent was never meant to handle the 10 percent where the stakes, the irreversibility, or the need for someone accountable make a real professional the only correct answer. Knowing which is which, task by task, is the actual skill this book has been teaching the whole way through, not "use AI" and not "don't," but a working sense of where that line sits and the honesty to stop at it.
 
@@ -38,6 +48,20 @@ What this chapter adds isn't a retraction of any of that. It's the missing edge:
 - The skill this book teaches isn't "automate everything" or "trust nothing." It's knowing, task by task, which side of that line you're standing on.
 
 [/TAKEAWAYS]
+
+## Try this: the two-minute professional check
+
+Next time a client, a contract, or a tax question makes you reach for AI, run the situation through these three prompts before you act on the answer, out loud or on paper, in under two minutes:
+
+1. **Name the number.** If this answer is wrong, what does it actually cost, in dollars or in a relationship, not in abstract "risk"?
+2. **Name the undo.** If it's wrong, can you fix it with an email tomorrow, or is it already out in the world, signed, filed, or sent?
+3. **Name who'd sign it.** Would a lawyer, accountant, or other licensed professional put their name and their license behind this exact answer, for your exact situation? If you're not sure, that uncertainty is itself the answer.
+
+Any one of those three landing on the serious end, real money, no undo, nobody who'd sign it, is your cue to spend the twenty minutes and the fee. Marcus's S-corp question failed the third test the moment he noticed he couldn't picture a CPA nodding along to "immediately, here's the exact split," and that's what sent him to a real one.
+
+## Where this goes next
+
+The last chapter isn't a new argument. It's every template, script, and worksheet from the previous thirteen chapters, collected in one place and formatted to actually fill in, so building the stack this book describes doesn't mean flipping back through chapters looking for the exact wording of a day-14 invoice reminder.
 
 ## The stack, finished
 
