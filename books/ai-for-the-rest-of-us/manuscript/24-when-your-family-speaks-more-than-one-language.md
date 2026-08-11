@@ -6,7 +6,7 @@ Marisol grew up translating for her mother, the way a lot of kids in bilingual h
 
 ## What Marisol actually uses it for
 
-Not everything, and knowing the difference mattered from the start. She uses it to translate the plain-English explanations from earlier chapters, the insurance letter from chapter one's whole opening story, the lease from chapter eighteen, back into Spanish for her mother, so her mother gets the same clarity Marisol gets, not a garbled, secondhand version relayed under time pressure on the phone. "Translate this explanation into natural, conversational Spanish, the way you'd actually explain it to someone, not a stiff, literal translation" produces something her mother can actually read and understand, rather than the word-for-word translations that sometimes technically parse and never actually sound like anything a person would say.
+Not everything, and knowing the difference mattered from the start. She uses it to translate the plain-English explanations from earlier chapters, the insurance letter from chapter one's whole opening story, the lease from chapter seventeen, back into Spanish for her mother, so her mother gets the same clarity Marisol gets, not a garbled, secondhand version relayed under time pressure on the phone. "Translate this explanation into natural, conversational Spanish, the way you'd actually explain it to someone, not a stiff, literal translation" produces something her mother can actually read and understand, rather than the word-for-word translations that sometimes technically parse and never actually sound like anything a person would say.
 
 [PULLQUOTE: A mistranslated word in a casual text message costs almost nothing.]
 
@@ -37,4 +37,4 @@ There's a real risk worth naming honestly: leaning on translation as a crutch th
 
 ## Where this goes next
 
-Chapter twenty-six turns to a smaller, more universal worry: a sick or aging pet, and the specific anxiety of understanding what a vet just told you.
+Chapter twenty-five turns to a smaller, more universal worry: a sick or aging pet, and the specific anxiety of understanding what a vet just told you.

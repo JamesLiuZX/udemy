@@ -8,13 +8,13 @@ Marisol's fifteen-year-old had started talking about college the way teenagers d
 
 She didn't wait for the form itself to start. She typed: "My daughter is a sophomore in high school and we're starting to think about college and financial aid. In plain English, what's the actual timeline, what is the FAFSA, and what should we be doing now, a year and a half before she'd apply, versus what can wait?" The answer gave her something she hadn't had before: an actual order of operations, when the FAFSA typically opens, what a Student Aid Index roughly means for what a family might be expected to contribute, and the plain fact that grades and test scores matter for admission but the FAFSA itself is a separate process entirely, one she'd been quietly conflating with the admissions essay her daughter kept avoiding.
 
-That single conversation didn't fill out anything or commit to anything. It turned a fog with no visible starting point into a rough calendar with real dates on it, eighteen months out, which is exactly the kind of overwhelm chapter fourteen's weekly-reset habit was built to solve, aimed here at a much bigger and more consequential list.
+That single conversation didn't fill out anything or commit to anything. It turned a fog with no visible starting point into a rough calendar with real dates on it, eighteen months out, which is exactly the kind of overwhelm chapter thirteen's weekly-reset habit was built to solve, aimed here at a much bigger and more consequential list.
 
 [PULLQUOTE: That's not a decision an AI tool made. It's a decision Marisol and her daughter could only make once the real numbers were finally visible side by side.]
 
 ## Where the line sits, and it's a firm one
 
-An AI tool can explain terms, walk through the general order of the process, and help draft the honest, plain-language parts of an application, a description of an extracurricular activity, a first pass at brainstorming essay topics before the writing itself becomes entirely the student's own. It cannot and should not fill out the actual FAFSA form with real financial information typed into a chat window, both because that's exactly the kind of sensitive financial data chapter ten said to keep out of these tools, and because the form itself has to be filed on the official federal site, not anywhere else. And it absolutely should not write a college essay a student then submits as their own unaided work, for the same honesty reason chapter seventeen drew around a résumé: an essay claiming to be a student's authentic voice has to actually be their authentic voice.
+An AI tool can explain terms, walk through the general order of the process, and help draft the honest, plain-language parts of an application, a description of an extracurricular activity, a first pass at brainstorming essay topics before the writing itself becomes entirely the student's own. It cannot and should not fill out the actual FAFSA form with real financial information typed into a chat window, both because that's exactly the kind of sensitive financial data chapter ten said to keep out of these tools, and because the form itself has to be filed on the official federal site, not anywhere else. And it absolutely should not write a college essay a student then submits as their own unaided work, for the same honesty reason chapter sixteen drew around a résumé: an essay claiming to be a student's authentic voice has to actually be their authentic voice.
 
 ## Linda's version: a grandmother's version of the same maze
 
@@ -39,4 +39,4 @@ Months later, when acceptance and aid letters finally arrived, Marisol faced a d
 
 ## Where this goes next
 
-Chapter twenty-five turns to a different kind of family complexity: what this book's method looks like in a household where more than one language is spoken, and where translation itself is part of the everyday task.
+Chapter twenty-four turns to a different kind of family complexity: what this book's method looks like in a household where more than one language is spoken, and where translation itself is part of the everyday task.

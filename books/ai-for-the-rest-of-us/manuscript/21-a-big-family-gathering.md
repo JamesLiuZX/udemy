@@ -33,4 +33,4 @@ Big gatherings are hard for a specific, nameable reason: too many moving pieces 
 
 ## Where this goes next
 
-A last handful of everyday tasks are still ahead: caring for a parent, the college and financial aid maze, keeping a family connected across more than one language, an anxious question about a sick pet, making sense of a paycheck, staying close across the generations, the conversation almost nobody starts about a will, and a repair estimate you don't know whether to trust. After that, this book reaches the chapter it's been building toward all along: what it actually looks like to become the person your own family calls.
+A last handful of everyday tasks are still ahead: caring for a parent, the college and financial aid maze, keeping a family connected across more than one language, an anxious question about a sick pet, making sense of a paycheck, the conversation almost nobody starts about a will, a repair estimate you don't know whether to trust, and planning for a sudden gap in income. After that, this book reaches the chapter it's been building toward all along: what it actually looks like to become the person your own family calls.

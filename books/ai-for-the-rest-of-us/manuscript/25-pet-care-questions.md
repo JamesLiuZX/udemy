@@ -12,7 +12,7 @@ An AI tool can't diagnose Biscuit any more than it could diagnose Hal back in ch
 
 ## The line, drawn exactly where chapter six drew it for Hal
 
-Never ask an AI tool what's wrong with your pet and treat the answer as a diagnosis. Use it to understand a symptom in plain English, to gauge roughly how urgent something might be, and to build a sharp list of questions for the actual veterinarian, who has examined the actual animal and can run actual tests. For anything that seems like it could be a real emergency, sudden collapse, difficulty breathing, suspected poisoning, call an emergency vet line immediately, the same call-first instinct chapter fifteen insists on for a person.
+Never ask an AI tool what's wrong with your pet and treat the answer as a diagnosis. Use it to understand a symptom in plain English, to gauge roughly how urgent something might be, and to build a sharp list of questions for the actual veterinarian, who has examined the actual animal and can run actual tests. For anything that seems like it could be a real emergency, sudden collapse, difficulty breathing, suspected poisoning, call an emergency vet line immediately, the same call-first instinct chapter fourteen insists on for a person.
 
 ## Marisol's version: the cost conversation nobody wants to have
 
@@ -37,4 +37,4 @@ Pet insurance is easier to think through calmly before an emergency than during 
 
 ## Where this goes next
 
-Chapter twenty-seven turns to a document that shows up in nearly every mailbox and confuses nearly everyone who opens it: your own paycheck.
+Chapter twenty-six turns to a document that shows up in nearly every mailbox and confuses nearly everyone who opens it: your own paycheck.

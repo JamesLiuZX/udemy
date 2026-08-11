@@ -1,6 +1,6 @@
 # Understanding Your Paycheck and Taxes
 
-Marisol's promotion, the one that came through after chapter seventeen's rewritten résumé, brought a real raise and a new problem: a bigger tax refund than usual the following spring, which sounds like good news until you understand what it actually means, that too much had been withheld from every paycheck all year, an interest-free loan Marisol had unknowingly been giving the government instead of having that money in her own account when she needed it. She'd filled out a W-4 form once, years earlier, for her very first job, glanced at it for thirty seconds, and never touched it again.
+Marisol's promotion, the one that came through after chapter sixteen's rewritten résumé, brought a real raise and a new problem: a bigger tax refund than usual the following spring, which sounds like good news until you understand what it actually means, that too much had been withheld from every paycheck all year, an interest-free loan Marisol had unknowingly been giving the government instead of having that money in her own account when she needed it. She'd filled out a W-4 form once, years earlier, for her very first job, glanced at it for thirty seconds, and never touched it again.
 
 [KEY-INSIGHT: In an H&R Block survey, only 46 percent of taxpayers said they felt prepared to update their own tax withholding without help, and 45 percent weren't sure what actually counts as a withholding allowance in the first place. That survey is several years old now, and there's no real reason to think the confusion has meaningfully eased since. Marisol's untouched W-4 isn't unusual. It's close to the default. || Source: H&R Block, December 2018 consumer survey on tax withholding.]
 
@@ -37,4 +37,4 @@ Linda and Hal's retirement income now came from several different sources, Socia
 
 ## Where this goes next
 
-The last ordinary task in this book is the warmest one: staying genuinely close to family across the distance and the years, not just the language gap chapter twenty-five covered, but the everyday drift that happens in any family, anywhere.
+Chapter twenty-seven turns to the conversation almost nobody starts on their own: wills, advance directives, and the paperwork that answers hard questions in advance instead of in a hospital hallway.

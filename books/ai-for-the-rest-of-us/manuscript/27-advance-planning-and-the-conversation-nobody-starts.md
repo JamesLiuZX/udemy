@@ -1,6 +1,6 @@
 # Advance Planning and the Conversation Nobody Starts
 
-Hal's cousin had a health scare that fall, nothing fatal in the end, but serious enough that for two frightening days his family didn't know who was authorized to make a medical decision on his behalf if it came to that, because he'd never gotten around to filling out the paperwork that would have answered the question in advance. Linda and Hal drove home from visiting him in the hospital mostly quiet, both privately doing the same math: their own will was the outdated one from chapter seven, and neither of them had ever filled out an advance directive, the document that says what kind of care you'd want if you couldn't speak for yourself, at all.
+Hal's cousin had a health scare that fall, nothing fatal in the end, but serious enough that for two frightening days his family didn't know who was authorized to make a medical decision on his behalf if it came to that, because he'd never gotten around to filling out the paperwork that would have answered the question in advance. Linda and Hal drove home from visiting him in the hospital mostly quiet, both privately doing the same math: their own will was years out of date, and neither of them had ever filled out an advance directive, the document that says what kind of care you'd want if you couldn't speak for yourself, at all.
 
 [KEY-INSIGHT: A 2025 Caring.com survey found only 24 percent of Americans currently have a will, down from a third of respondents just three years earlier. Hal's cousin's unanswered question, and Linda and Hal's own outdated paperwork, aren't unusual lapses. They're the ordinary, majority experience of putting this off indefinitely, right up until a hospital hallway makes the cost of that suddenly, uncomfortably concrete. || Source: Caring.com, "2025 Wills and Estate Planning Study," conducted with YouGov.]
 
@@ -12,7 +12,7 @@ That conversation, uncomfortable and important, happened between Linda and Hal t
 
 [PULLQUOTE: That conversation, uncomfortable and important, happened between Linda and Hal themselves, at their own kitchen table, exactly where it belonged.]
 
-## The line, drawn as firmly as chapter eighteen drew it around a lease
+## The line, drawn as firmly as chapter seventeen drew it around a lease
 
 This is not legal advice, and a will or a healthcare directive drafted without a real lawyer's review can fail in ways that matter enormously precisely when a family can least afford a mistake. Use the plain-English pass to understand the vocabulary and have the personal conversation. Have an actual attorney draft or review the real documents. Many communities have free or low-cost legal aid clinics specifically for this, worth asking about directly if cost is the thing standing in the way.
 
@@ -39,4 +39,4 @@ A newer wrinkle worth naming directly: photos, financial accounts, email, and ye
 
 ## Where this goes next
 
-Chapter thirty turns to a smaller, more immediate kind of dread: standing in a repair shop, being handed an estimate you don't fully understand, and not knowing whether to trust it.
+Chapter twenty-eight turns to a smaller, more immediate kind of dread: standing in a repair shop, being handed an estimate you don't fully understand, and not knowing whether to trust it.

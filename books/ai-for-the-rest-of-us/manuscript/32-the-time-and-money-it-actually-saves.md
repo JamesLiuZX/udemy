@@ -1,6 +1,6 @@
 # The Time and Money It Actually Saves
 
-This book has avoided a big, round, satisfying number for a reason: "AI saves the average person eleven hours a week" sounds impressive and means almost nothing, because it isn't measuring your week, your tasks, or your actual life. What follows instead is smaller and more honest, an accounting of the specific things that changed across the one season chapter thirty-three just walked through, added up the way you'd actually add up a season, not the way a marketing claim would.
+This book has avoided a big, round, satisfying number for a reason: "AI saves the average person eleven hours a week" sounds impressive and means almost nothing, because it isn't measuring your week, your tasks, or your actual life. What follows instead is smaller and more honest, an accounting of the specific things that changed across the one season chapter thirty-one just walked through, added up the way you'd actually add up a season, not the way a marketing claim would.
 
 ## The time, counted plainly
 
@@ -14,7 +14,7 @@ Some of it is direct: the full mattress refund Linda would very plausibly have g
 
 ## A rough tally, for anyone who wants a number anyway
 
-If a number genuinely helps make this concrete, here's an honest, conservative one, built only from the tasks this book actually walked through, not a marketing estimate: the trip planning alone (chapter three) saved somewhere in the neighborhood of fourteen hours against the sixteen-hour average. The washing machine comparison (chapter twelve) saved most of an evening. The Thanksgiving timeline (chapter twenty-two) likely saved several hours spread across the week before, hard to pin to a single number precisely because it was spread so thin. Add those three alone, from a single season, and it's a genuine day or more of time back, before counting anything else in this chapter at all, which is exactly the point: the number was never the headline. It was always going to be an honest byproduct of a lot of small, ordinary tasks done a little less painfully.
+If a number genuinely helps make this concrete, here's an honest, conservative one, built only from the tasks this book actually walked through, not a marketing estimate: the trip planning alone (chapter three) saved somewhere in the neighborhood of fourteen hours against the sixteen-hour average. The washing machine comparison (chapter eleven) saved most of an evening. The Thanksgiving timeline (chapter twenty-one) likely saved several hours spread across the week before, hard to pin to a single number precisely because it was spread so thin. Add those three alone, from a single season, and it's a genuine day or more of time back, before counting anything else in this chapter at all, which is exactly the point: the number was never the headline. It was always going to be an honest byproduct of a lot of small, ordinary tasks done a little less painfully.
 
 ## Try this: tally your own week
 
@@ -45,7 +45,7 @@ Some of what changed across the season resists being counted at all, and it woul
 
 ## What this chapter is not claiming
 
-This isn't a claim that AI makes anyone richer or gives anyone more hours in a day, and a book that promised that would be lying in exactly the way chapter one promised, on its first page, this book wouldn't. It's a claim much smaller and much more defensible: that a specific set of ordinary tasks, done with the habits this book teaches, tend to cost less time, less money, and less quiet dread than the same tasks done the old way, staring at a blank box, guessing, or avoiding them entirely. Some weeks that difference is barely noticeable. Some weeks, the way chapter fifteen's dark Tuesday or chapter nine's early morning phone call showed, it's the difference that actually matters.
+This isn't a claim that AI makes anyone richer or gives anyone more hours in a day, and a book that promised that would be lying in exactly the way chapter one promised, on its first page, this book wouldn't. It's a claim much smaller and much more defensible: that a specific set of ordinary tasks, done with the habits this book teaches, tend to cost less time, less money, and less quiet dread than the same tasks done the old way, staring at a blank box, guessing, or avoiding them entirely. Some weeks that difference is barely noticeable. Some weeks, the way chapter fourteen's dark Tuesday or chapter nine's early morning phone call showed, it's the difference that actually matters.
 
 [TAKEAWAYS]
 
@@ -58,4 +58,4 @@ This isn't a claim that AI makes anyone richer or gives anyone more hours in a d
 
 ## Where this goes next
 
-Chapter thirty-five is where this book stops making its own case and lets the honest pushback in: the real questions and real doubts a book like this owes its reader a straight answer to, not just the ones it's comfortable answering.
+Chapter thirty-three is where this book stops making its own case and lets the honest pushback in: the real questions and real doubts a book like this owes its reader a straight answer to, not just the ones it's comfortable answering.

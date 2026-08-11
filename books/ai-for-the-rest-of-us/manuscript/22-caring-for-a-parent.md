@@ -14,7 +14,7 @@ The schedule replaced the sticky note. The actual medical judgment, what her mot
 
 ## The line, drawn as firmly as chapter six drew it
 
-An AI tool can help organize information you already have: a medication list, an appointment history, a shared calendar with siblings who live further away and want to help but don't know how. It cannot replace a doctor's judgment about your parent's specific health, and it should never be asked to weigh in on whether a symptom is serious enough to call someone about. When in doubt about anything urgent, call the doctor or, for anything that feels like an emergency, call emergency services, the same non-negotiable line chapter fifteen drew around a genuine crisis.
+An AI tool can help organize information you already have: a medication list, an appointment history, a shared calendar with siblings who live further away and want to help but don't know how. It cannot replace a doctor's judgment about your parent's specific health, and it should never be asked to weigh in on whether a symptom is serious enough to call someone about. When in doubt about anything urgent, call the doctor or, for anything that feels like an emergency, call emergency services, the same non-negotiable line chapter fourteen drew around a genuine crisis.
 
 ## Linda's version: further along the same road
 
@@ -39,4 +39,4 @@ A real slice of caregiving happens exactly the way Marisol's does, from another 
 
 ## Where this goes next
 
-Chapter twenty-four turns to a different kind of family worry, the paperwork maze of college and financial aid, and the same plain-English approach applied to one of the most notoriously confusing forms a family ever fills out.
+Chapter twenty-three turns to a different kind of family worry, the paperwork maze of college and financial aid, and the same plain-English approach applied to one of the most notoriously confusing forms a family ever fills out.

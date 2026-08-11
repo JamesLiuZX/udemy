@@ -12,7 +12,7 @@ She didn't sign anything immediately, and that alone is worth naming as the actu
 
 ## What this does and doesn't replace
 
-An AI tool has never looked at Marisol's actual car and can't diagnose the noise itself, the same limit chapter six drew around a symptom and chapter twenty-six drew around a sick pet. What it can do well is exactly what it did here: translate an estimate's jargon into plain language and give a rough sense of whether a price and a proposed fix are in a reasonable range, which turns an intimidating wall of unfamiliar terms into a short, specific list of real questions. For anything expensive or where trust is genuinely in doubt, a second opinion from another shop remains the gold standard this book has pointed to in every high-stakes chapter, chapter twelve's verified reviews, chapter eighteen's real lawyer, applied here to a mechanic instead.
+An AI tool has never looked at Marisol's actual car and can't diagnose the noise itself, the same limit chapter six drew around a symptom and chapter twenty-five drew around a sick pet. What it can do well is exactly what it did here: translate an estimate's jargon into plain language and give a rough sense of whether a price and a proposed fix are in a reasonable range, which turns an intimidating wall of unfamiliar terms into a short, specific list of real questions. For anything expensive or where trust is genuinely in doubt, a second opinion from another shop remains the gold standard this book has pointed to in every high-stakes chapter, chapter eleven's verified reviews, chapter seventeen's real lawyer, applied here to a mechanic instead.
 
 ## Linda's version: knowing when not to fight it
 
