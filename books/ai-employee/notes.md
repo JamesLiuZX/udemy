@@ -61,7 +61,12 @@ the below in every chapter):
 
 Progress (updated per chapter as expansion happens):
 
-- [ ] 01 The Delegation Problem
+- [x] 01 The Delegation Problem — added a third worked example (Ravi,
+      management thinking applied from day one instead of as a repair),
+      a second `[KEY-INSIGHT]` (OpenAI's own "Why Language Models
+      Hallucinate" paper, backing the "structural, not a bug" claim), and
+      turned the "five-minute check" into an explicit checklist. 2,397 ->
+      2,932 words. Rendered pages checked.
 - [ ] 02 Writing the Job Description
 - [ ] 03 The Trial Task
 - [ ] 04 Checking the Work Without Redoing It

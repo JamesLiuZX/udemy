@@ -26,6 +26,14 @@ You would never hand an employee like that, on their first morning, a vague task
 
 That is precisely the piece missing from both opening stories, and it's the entire subject of this book. Not "how to use AI." How to manage it, the way you'd manage anyone new, using skills you very likely already have and have simply never thought to point at a piece of software.
 
+## A third way, from day one
+
+Both opening stories show the cost of skipping management. It's worth seeing, just as concretely, what it looks like to never skip it in the first place, because the method in this book isn't only a repair for a bad first experience.
+
+Ravi runs marketing for a four-person dental practice, and before he ever asked AI to write a single social media caption, he did something neither of the two people at the start of this chapter did: he assumed, going in, that a new hire needs onboarding before the stakes get real. His first request wasn't "write a caption for this photo." It was closer to a real brief: three captions he'd written himself over the past year that got good engagement, a note on what the practice never jokes about (needles, pain, cost), and an explicit ask for something in that same voice. The first caption came back close but not quite right, a little too salesy for a small local practice. He said so, specifically, and asked for a second pass. The second one worked. He didn't hand off the practice's whole social calendar that afternoon. He ran the next two weeks of captions through the same close review before letting a week go by with only a light check at the end.
+
+Nothing about Ravi's result was luckier than the other two people's. The tool was the same kind of tool. What was different was the posture: he treated the first attempt as a trial to learn from, not a verdict to render, and he checked closely before he checked lightly, not the other way around. That's the entire method in miniature, and unlike the other two stories, nobody had to get burned first for Ravi to arrive at it.
+
 ## Two ways of relating to the same tool
 
 | Vending-machine thinking | Management thinking |
@@ -53,9 +61,17 @@ The next chapter is entirely about building briefs like the second one, for what
 
 ## A five-minute check before you go further
 
-Think back to the two people from the start of this chapter, or better, find your own version of each: one task you've already tried handing to AI that you gave up on, and one you handed off that came back wrong in a way you only caught later, or didn't catch at all. For each one, ask honestly: did I actually onboard it, brief it the way I'd brief a real hire, give it an example of what good looks like, tell it what it couldn't know on its own? Or did I hand over a task name and expect it to read my mind the way an experienced colleague sometimes can?
+Think back to the two people from the start of this chapter, or better, find your own version of each: one task you've already tried handing to AI that you gave up on, and one you handed off that came back wrong in a way you only caught later, or didn't catch at all.
 
-For most people, most of the time, the honest answer is the second one. That's not a confession of failure. Nobody teaches this skill anywhere, so almost nobody arrives with it already built. It just means the fix is available starting now, on the next task, rather than requiring you to have done anything differently up to this point.
+**Try this now, on paper or in your head, before reading further.** For each of your two examples, answer honestly:
+
+- Did I give it the specific situation, or just the task's category ("reply to a customer" instead of "reply to this specific annoyed customer about this specific delay")?
+- Did I say what couldn't be admitted, offered, or assumed, the way you'd flag a boundary for a new hire?
+- Did I show it one real example of what good looks like in your voice, or only describe the tone in the abstract ("professional but warm")?
+- Did I say what "done" actually means: a length, a format, a specific deliverable?
+- Did I check the first result closely, the way you'd check a new hire's first week, or take it on faith because it read fluently?
+
+For most people, most of the time, most of those answers are no. That's not a confession of failure. Nobody teaches this skill anywhere, so almost nobody arrives with it already built. It just means the fix is available starting now, on the next task, rather than requiring you to have done anything differently up to this point.
 
 ## Why this isn't about being technical
 
@@ -70,6 +86,10 @@ It's a fair question, and worth answering directly before asking anyone to spend
 Three reasons that's not the bet to make. First, even the best-managed employee you've ever had still did better work with a clear brief than a vague one, and that gap doesn't close as someone gets more capable, it usually widens, because a more capable hire can do more with good context, not less. A sharper model is still a model that does better with a real brief than a task name, for the same reason.
 
 Second, the specific failure mode this chapter keeps coming back to, a wrong answer delivered in exactly the same confident tone as a right one, isn't a bug that gets quietly patched out as models improve. It's a structural consequence of how these systems produce language at all, one word chosen after another based on what's likely, not a lookup against a table of known facts. A more capable model gets things right more often. It does not develop a different tone of voice for the answers it's less sure about. The checking habit this book teaches doesn't have an expiration date tied to model quality, because it isn't solving a quality problem.
+
+[KEY-INSIGHT: OpenAI's own research into why language models hallucinate argues the behavior isn't a mysterious glitch but a predictable consequence of how these systems are trained and graded. Standard evaluations reward a confident, specific guess over an honest "I'm not sure," the same incentive a student facing a multiple-choice exam has to guess rather than leave a question blank, so training naturally produces models that guess fluently instead of flagging their own uncertainty. || Source: Kalai, A.T., Nachum, O., Vempala, S.S., & Zhang, E., "Why Language Models Hallucinate," arXiv:2509.04664, September 2025 (OpenAI).]
+
+That finding matters for exactly one reason here: it means the fix was never going to arrive as a side effect of a smarter model. Grading a model on confident guesses and expecting it to spontaneously start hedging instead is expecting the incentive to reverse itself. The checking habit isn't a stopgap while the industry works out hallucination. It's the permanent other half of using a tool that's trained to sound sure of itself.
 
 Third, and this one never goes away no matter how good the tool gets: your clients, your specific standards, the story behind why your last invoice dispute went the way it did, none of that becomes knowable to a general-purpose tool just because the tool gets smarter in general. That's not a capability gap. It's context nobody outside your situation has, and handing it over is still, and will remain, your job.
 
