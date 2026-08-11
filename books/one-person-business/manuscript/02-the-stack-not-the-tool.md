@@ -44,6 +44,14 @@ Two tie-breakers cut through it faster than another round of feature comparison.
 
 When neither tie-breaker resolves it, the honest answer is that it doesn't matter which one you pick. Spending another hour comparing two options that both cleared the six-question bar is itself the kind of low-value admin task chapter one's time audit exists to catch.
 
+## Common mistakes when building the stack
+
+**Building all five or six pieces in one weekend.** Chapter thirteen's thirty-day plan exists specifically because this is the most common way a good stack turns into an abandoned one: every piece gets built at once, none of them get real use before the next one lands on top, and the whole thing collapses under its own weight the first busy week.
+
+**Choosing a tool because a specific business you admire uses it.** What worked for someone else's client mix, working style, and existing habits doesn't automatically transfer. The six-question audit exists to force the question back to your own situation, not someone else's recommendation.
+
+**Treating the stack as finished once it's built.** A stack built in month one and never revisited drifts, quietly, the same way Priya's rate drifted for three years without anyone deciding it should. Chapter nine's habit of occasional re-checking applies to the tools themselves, not just the prompts running inside them.
+
 ## What this book will not do
 
 This book will not recommend a specific brand-name product for each piece of the stack, and that's deliberate, not an oversight. Software changes constantly; a specific app recommended today is a reasonable chance of being acquired, changed, or discontinued before this book is out of print. What it teaches instead is the underlying shape of each solution, the prompt, the template, the workflow, portable to whatever specific tool you're already using or will be using in two years.

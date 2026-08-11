@@ -56,6 +56,14 @@ If the one-hour system sounds modest compared to what marketing advice usually r
 
 It's also not about being everywhere. Pick one platform where your actual clients already spend time, the same fixed slot each week, and stop there. Adding a second platform because it feels like you should isn't marketing discipline, it's doubling the exact cost that made you stop marketing in the first place.
 
+## Common mistakes with the weekly system
+
+**Waiting for a genuinely exciting topic instead of a genuinely real one.** The best material is rarely dramatic. A small, specific client question answered clearly beats a grand insight nobody asked for, and waiting for the second kind is how the habit quietly stops.
+
+**Moving the fixed slot whenever the week gets busy.** The slot surviving a busy week is the entire point; chapter one's structural argument about why marketing loses to client work applies exactly as hard in month six as it did in week one. A slot that moves for every busy week isn't fixed at all.
+
+**Judging the system by weeks instead of quarters.** One quiet week with no obvious response proves nothing either way. The payoff this chapter describes, a recent, specific presence for when a referral finally checks you out, is only visible looking back months, not days.
+
 ## What this chapter will not do
 
 This chapter will not promise a fixed number of new leads from a weekly post, and any specific number would be a guess dressed up as a forecast. What consistency actually buys is different and more reliable: when a past client finally does have new work, or a referral finally does check you out, there's something recent and specific to find instead of a newsletter that stopped four months ago. That's a much smaller promise than "grow your business," and it's the honest one.

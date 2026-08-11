@@ -54,6 +54,14 @@ All three messages above say roughly the same thing a frustrated freelancer migh
 
 This is also where AI genuinely helps beyond the first draft: paste your day-14 template alongside the specific client's original tone (a past thread, a proposal, anything you've written to them before), and ask for a version that keeps the content but matches how you two actually talk. A message to a longtime client who's never been late before should read differently from one to a new client already showing signs of trouble, and getting that adjustment right in thirty seconds beats either sending a mismatched generic template or spending twenty minutes rewriting it from scratch under stress.
 
+## Common mistakes with the sequence
+
+**Sending the day-3 nudge to a client who's always paid on time before.** Chapter one's "not a discipline problem" instinct applies here too: a single late invoice from a reliable client is usually a genuine oversight, not the start of a pattern, and a nudge sent too eagerly can read as distrust rather than diligence.
+
+**Softening the day-14 and day-30 messages under real pressure.** These were written calm, in advance, precisely so they wouldn't get watered down in the moment out of discomfort. If a message feels too firm when the day actually arrives, that's usually the stress talking, not evidence the wording was wrong.
+
+**Forgetting to update the template when payment terms actually change.** A template built once and never revisited can quietly reference an old due-date policy or a bank detail that's no longer current. Check it whenever anything about how you get paid changes, not just when a client complains.
+
 ## What this chapter will not do
 
 This chapter will not tell you to fire off a day-3 nudge to every client the literal morning after a due date passes. Some client relationships run on a slightly looser rhythm than the calendar suggests, and treating every late payment as identical, regardless of history, ignores information you actually have. Use the sequence as a default, not a rule that overrides judgment about a specific client you've worked with for years.

@@ -44,6 +44,14 @@ Priya's version of the two-line check works from memory and a general sense of w
 
 That's a meaningfully easier question to answer under pressure, and a meaningfully easier one to defend to a client who pushes back, because the answer isn't Marcus's judgment call in the moment. It's a line item both of them already agreed to before the project started. When a client asks him to "just also" add a feature that's sitting in that list by name, his yes-and response can point directly at the document instead of asserting a boundary from scratch: "That's the mobile app version we scoped out in the proposal, item three under what's not included, so it'd be a separate quote rather than part of this one. Want me to put a number on it?" The proposal did most of the actual defending. The script just delivers it.
 
+## Common mistakes with the script
+
+**Using the full formal script on a request that was actually a five-minute favor.** Not every ask needs the three-part treatment; chapter nine's own "what this chapter will not do" section exists because over-applying the script to a genuinely small, relationship-building request reads as exactly the nickel-and-diming it's designed to avoid.
+
+**Running the two-line scope check after already agreeing out loud on a call.** The check works best before a commitment gets made, not as a way to walk one back afterward. If a scope question comes up live, on the phone, buy a few minutes ("let me check my notes and get back to you today") rather than committing on the spot.
+
+**Treating a client's reasonable pushback on the script as a bad sign.** Some clients will ask why something's out of scope, honestly, without any bad faith at all. That's a normal part of the conversation the script starts, not evidence the boundary was wrong to raise.
+
 ## What this chapter will not do
 
 This chapter will not tell you every extra request deserves a formal cost conversation. A five-minute favor for a long-term client who sends you steady work all year is a relationship investment, not scope creep, and treating every small ask as billable is its own way of making a client feel nickeled and dimed. The judgment call is real and stays yours; what this chapter removes is only the friction of drafting the response once you've made it.

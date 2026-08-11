@@ -44,6 +44,12 @@ His fix is a small addition to the draft-and-send bucket: any draft going to a c
 
 The draft-and-send bucket is where most of the eleven hours actually lives, and it's also where a five-minute setup pays off for months. Collect eight or ten emails you're genuinely proud of, the ones that sound like you: warm but direct, or brisk and efficient, whatever your real client voice actually is. Save them together as a reference. Every time you ask for a draft, point at that saved reference instead of describing your tone in the abstract, the same way chapter three's proposal brief pointed at a past proposal instead of explaining what "personalized" means each time. A model matching real examples produces something closer to your voice on the first try than one working from an adjective like "friendly."
 
+## Common mistakes with triage
+
+**Letting "needs a real decision" quietly become a second inbox.** The whole point of that bucket is a short list checked at a set time, not an ever-growing pile that starts generating the exact re-reading anxiety chapter five opened on. If it's not getting checked on schedule, the system has quietly reverted to the old one.
+
+**Building the voice reference from only your best, calmest emails.** Priya's first attempt made exactly this mistake, and it produced drafts that sounded one-note. A reference needs range: firm as well as warm, brief as well as detailed, or every draft comes back sounding like a version of you that only shows up on your best days.
+
 ## The exact prompt
 
 For the draft-and-send bucket, once your voice reference exists:

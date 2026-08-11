@@ -52,6 +52,16 @@ This schedule assumes roughly the same handful of hours a week Priya and Marcus 
 
 If thirty days feels slow because a specific piece is costing you real money right now, a slow-paying client, a contract you're nervous about, build that one chapter's system first, out of order, this week. The sequence above optimizes for the average solo business. Your own time audit from day one is the more accurate guide for your specific situation, and it always overrides this chapter's default order.
 
+## When a specific week goes sideways
+
+Real weeks don't always cooperate with a schedule written in advance, and it's worth naming what to do when one doesn't, rather than treating the plan above as something that only works if nothing goes wrong.
+
+**A client emergency eats the week you'd planned to build something.** Skip the week's task, not the week's income; client work always wins that tradeoff. Pick the plan back up the following week rather than trying to cram two weeks of building into one, which tends to produce the same rushed, undertested systems this chapter opened by warning against.
+
+**A system takes longer to build than its allotted day or two.** That's common for the contract read and the proposal brief specifically, both of which ask you to think carefully rather than just fill in a form. Let it run into the next day rather than shipping a half-finished version; a proposal brief missing its "what only you know" section is a worse starting point than one built a day late but complete.
+
+**You finish a week's systems early with time left over.** Resist the urge to pull the next week's tasks forward. Use the extra time to actually use what you just built, on a real client situation if one exists, rather than treating this chapter as a race to the end. The point was never finishing thirty days quickly. It was building something that survives day thirty-one.
+
 [TAKEAWAYS]
 
 - Thirty days builds every system in this book and gets you through several real uses of each. Full automaticity takes longer, an average of 66 days by habit-formation research, and that's normal, not a sign something's wrong.

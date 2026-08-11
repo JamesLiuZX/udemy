@@ -42,6 +42,14 @@ Neither Priya's nor Marcus's ninety days is a claim that every piece of this boo
 
 What both stories do show is the actual shape of the payoff this book has argued for from chapter one onward: not one dramatic transformation, but nine small, deliberately built pieces, each one individually modest, compounding into hours recovered that are large enough, ninety days in, to notice without a stopwatch.
 
+## If your own ninety days looks worse than either of these
+
+Both accounts above are honest but they're also, inevitably, the stories of two businesses where the systems eventually worked. It's worth naming directly what to do if yours doesn't follow that arc as cleanly.
+
+A slower start than either case study is normal, not a sign of failure, especially for a business with more clients, more variety in the kind of work, or less predictable income than Priya's or Marcus's. If week four arrives and only one or two systems are actually running rather than three or four, that's still real progress against a day-one baseline of zero, and chapter thirteen's plan is explicitly designed to stretch rather than to fail if a week doesn't go as scheduled.
+
+A system that genuinely isn't working after real use, not just an unfamiliar first attempt but a repeated pattern of bad drafts or wasted time, is worth diagnosing rather than abandoning silently. Nine times out of ten the fix is in the reference material feeding it, a voice reference that doesn't actually sound like you, a proposal brief missing a detail the model needed, the same lesson the "common mistakes" notes running through chapters two to nine keep returning to. The tenth time, a piece of this book genuinely doesn't fit your specific business, and skipping it is the correct call, not a failure to follow instructions closely enough.
+
 [TAKEAWAYS]
 
 - Neither case study is friction-free. Priya's voice reference and Marcus's out-of-scope section both needed real revision before they worked well; that's normal, not failure.

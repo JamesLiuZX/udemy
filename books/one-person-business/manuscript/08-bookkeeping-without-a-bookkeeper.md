@@ -54,6 +54,14 @@ The "needs review" instruction is the whole point of this prompt, more than the 
 
 Categorizing transactions and flagging ambiguous ones is a task AI does well: pattern matching against clear categories, at speed, with the tedium removed. What it should never be trusted to do alone is decide, with confidence, whether a specific borderline expense is actually deductible under your situation. Tax rules have real edge cases, they vary by where you live and how your business is structured, and a model answering confidently is not the same as a model answering correctly, the identical warning chapter six gave about contracts. Flag the ambiguous ones. Ask your accountant about them at the one meeting a year this system makes short instead of dreadful.
 
+## Common mistakes with the routine
+
+**Photographing receipts but never actually forwarding or filing them.** A phone full of unsorted receipt photos is barely better than the shoebox this chapter opened on; the habit isn't complete until they've actually reached the place your weekly categorization pass looks.
+
+**Letting "needs review" pile up without ever reviewing it.** The categorization prompt's whole value is surfacing genuine ambiguity instead of guessing silently. If that flagged pile just sits there until tax season, it's recreated the shoebox problem one layer downstream.
+
+**Guessing at the tax set-aside percentage instead of asking.** A rough guess that's meaningfully too low defeats the entire point of the habit; the IRS penalty this chapter opened on is exactly what a too-low guess, confidently applied every week, eventually produces.
+
 ## What this chapter will not do
 
 This chapter will not tell you what percentage to set aside for taxes, what counts as a deduction in your situation, or whether you should be structured as a sole proprietor, an LLC, or anything else. Those are exactly the questions a real accountant answers correctly and a general system, however well organized, cannot. What this chapter does is make sure that when you do sit down with one, once a year or once a quarter, you're handing them clean, categorized numbers instead of a shoebox, which is the difference between a productive hour and a wasted one.

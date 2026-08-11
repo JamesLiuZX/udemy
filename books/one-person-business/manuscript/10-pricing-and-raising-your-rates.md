@@ -54,6 +54,14 @@ Marcus's project-based structure gives him a different pricing lever entirely, o
 
 This isn't available to every kind of work, and it isn't automatically higher than hourly, sometimes it's lower, and the honest version of value-based pricing requires actually estimating the client's value rather than just picking a bigger number and calling it "value-based." But for project-based freelancers specifically, it's worth knowing the lever exists, distinct from the rate math worksheet above, which assumes hourly billing throughout.
 
+## Common mistakes with pricing
+
+**Asking an AI tool for a number instead of a synthesis of your own research.** This chapter's exact prompt exists specifically to guard against the shortcut of just asking "what should I charge," the least reliable use of the tool available and, not coincidentally, the first one most freelancers reach for.
+
+**Raising the rate only for new clients while leaving existing ones frozen indefinitely.** A gap that widens every year between what new clients pay and what loyal long-term clients pay eventually becomes its own resentment, on both sides. The raise script exists precisely so existing clients get the update too, on a reasonable schedule, rather than being quietly grandfathered forever.
+
+**Confusing a client's pushback on a rate increase with proof the increase was wrong.** Some pushback is genuine budget constraint, worth a real conversation. Some is just the reflexive response anyone gives to a price going up. The rate math worksheet, not a client's first reaction, is the thing worth trusting.
+
 ## What this chapter will not do
 
 This chapter will not tell you the specific number to charge; that depends on your market, your experience, and your specific business in ways no book can know. It will not promise every client accepts a rate increase gracefully; some won't, and losing a client unwilling to pay a fair, well-researched rate is sometimes the correct outcome, not a failure. And it won't tell you to double your rate overnight on the strength of one chapter; the research and the math above are meant to close an actual confidence and information gap, not license an arbitrary leap unmoored from what your specific market will actually bear.

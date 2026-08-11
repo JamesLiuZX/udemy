@@ -62,6 +62,14 @@ Step back from the specific flags for a moment, because the choice this chapter 
 
 That gap isn't proof a contract magically produces better clients. It's more likely evidence of what a contract represents: a freelancer confident enough in their own value to insist on formal terms tends to also price, negotiate, and select clients more deliberately across the board. Either way, the three-pass read in this chapter only has something to work on if a contract exists in the first place. For any inquiry that doesn't come with one, chapter three's proposal is the document to build the terms into before work starts, not something to add after a dispute makes it necessary.
 
+## Common mistakes with the three-pass read
+
+**Running only pass one and stopping there.** A plain-English translation makes a contract readable. It doesn't, by itself, tell you what's unusual about it, which is the entire job of pass two. Reading a translated contract and feeling reassured because it's now understandable is a different thing from having actually checked it for risk.
+
+**Using the same four flag categories regardless of what kind of work it is.** Chapter three's out-of-scope section and this chapter's fifth category for developers both exist because a generic flag list misses the specific risk that matters most to a specific field. Adjust the categories before running pass two, not after something slips through.
+
+**Treating a client's quick, easy answer to a flagged question as proof the whole contract is fine.** One clarified clause isn't a clean bill of health for the other eleven pages. The three-pass read is a per-clause check, not a single referendum on trustworthiness.
+
 ## What this chapter will not do
 
 This chapter will not tell you which specific clauses are legally enforceable in your jurisdiction, because that genuinely varies by state, country, and the specific facts of a dispute, and getting it wrong with false confidence is worse than not answering at all. It will not tell you a contract is safe. What it gives you is a faster, more honest first read, and a sharper sense of exactly which questions are worth asking a client, or worth taking to an actual lawyer before you sign anything with real money or real risk attached.

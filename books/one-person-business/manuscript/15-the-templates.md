@@ -39,6 +39,8 @@ Build once per type of engagement, reuse with specifics swapped in.
 >
 > **(Project-based work only) What's out of scope:** what's explicitly not included, what assumptions the price depends on, what happens if either turns out wrong.
 
+**Filled in, as an example:** Priya's brief for a returning client's rebrand, built from the version chapter three describes. Situation: "Client said their current logo 'looks like it was made ten years ago by someone's cousin' and they've outgrown it since a recent funding round." Constraints: mentioned a launch event in six weeks, didn't name a budget but referenced a competitor's recent rebrand as a comparison point. Example: her strongest past rebrand proposal, pasted in full. What done looks like: a full visual identity system, logo, color palette, typography, delivered as source files plus a one-page usage guide. What only she knew: the client mentioned, off-handedly on the intro call, that the old logo was originally designed by a co-founder who'd since left the company, a sensitivity worth handling gently in how the new direction gets framed.
+
 [PULLQUOTE: Every template here already did its work once, inside a real story. What's left is the part worth keeping.]
 
 ## The rate math worksheet and raise script (chapter ten)
@@ -62,6 +64,8 @@ Your invoice itself: business name, payment details, terms in plain language ("d
 > **Day-14 follow-up:** "Following up on invoice #[number], now two weeks past due. Can you give me a status update on when I can expect payment?"
 >
 > **Day-30 message:** names the situation plainly and asks for a specific next step, a payment date or a call, rather than another vague promise.
+
+**Filled in, as an example:** the $2,400 invoice from chapter four, day-3 version. "Hi Daniel, just flagging that invoice #0047 was due on the 15th and I don't see it come through yet. Let me know if you need anything from me to get it processed." Direct, assumes good faith, no speculation about why it's late, exactly the shape every version of this template should follow regardless of the number involved.
 
 ## The email voice reference (chapter five)
 
@@ -96,6 +100,8 @@ Once written, it's the filter for every week's topic. The weekly system itself: 
 > "Happy to add [the request]. That's outside the original scope we quoted, so it'd be an extra [X hours / $Y], or we can swap it in for one of the other items on the list if you'd rather keep the total the same. Which works better for you?"
 
 Before sending it, run the two-line check: paste the original scope alongside the new request and ask plainly, "is this inside or outside what was quoted, and by roughly how much."
+
+**Filled in, as an example:** the mobile-version request from chapter nine. "Happy to add a mobile version. That's outside the original scope we quoted, so it'd be an extra 4 hours, or we can swap it in for one of the other items on the list if you'd rather keep the total the same. Which works better for you?" Specific hours, a real alternative offered, no judgment implied anywhere in the wording.
 
 ## The confidentiality check (chapter eleven)
 

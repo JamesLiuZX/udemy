@@ -46,6 +46,18 @@ This happens, and it's worth naming honestly rather than implying every template
 
 Every system in this book costs real time once, up front, and Marcus's two-week project-scoping stretch from chapter one is the most visible example of that cost concentrated into a single block. The honest math is worth doing explicitly rather than taking on faith: chapter one's own time audit exercise gives you the real number for how many hours a given piece of admin costs you monthly, and every chapter's setup time is a fraction of that, paid once, against a cost that otherwise repeats every single week or month indefinitely. A twenty-minute invoice template pays for itself the second month it saves eighteen minutes. It keeps paying for itself every month after that, for exactly as long as you keep freelancing.
 
+## "Do clients need to know I use AI at all, if they never ask?"
+
+There's no blanket legal answer here, it depends on your field, your location, and your specific contract, but the practical guidance most of this book has already modeled is proactive honesty about the craft and quiet confidence about the admin. Priya doesn't announce that a proposal was drafted with AI assistance any more than she'd announce which word processor she typed it in; the thinking, structure, and final judgment are hers, which is the actual thing a client is paying for. Where it changes is anything touching the deliverable itself, the design, the code, the writing a client is specifically paying for as your personal craft. If AI assistance touched that in any meaningful way, the honest answer chapter one already gave applies: say so plainly if asked, and lean toward disclosure over silence whenever you're genuinely unsure which side of that line something falls on.
+
+## "What if a saved prompt or template just stops working after a tool update?"
+
+It happens, and chapter two's tool-audit habit is the actual defense here, not a specific technical fix. Tools change their behavior without asking permission, a prompt that worked reliably in March can produce noticeably different output in June, and the fix is the same either time: notice the drift, adjust the prompt, keep the parts that still work. This is exactly why chapter two frames the stack as something that needs occasional re-checking rather than a one-time setup, and it's worth treating a broken prompt as a five-minute maintenance task, not a sign the whole approach has failed.
+
+## "I'm just not comfortable with any of this. Is that a problem?"
+
+Not a problem this book needs to solve for you. Nothing here requires using AI for parts of the business that don't sit right, and a freelancer who builds only the pieces they're genuinely comfortable with, invoicing but not contract review, say, still gets real value from the pieces they do adopt. The stack in this book is deliberately modular for exactly this reason: chapter two's whole argument against an all-in-one tool applies just as well to an all-or-nothing adoption of this book's advice. Take what's useful. Leave what isn't.
+
 [TAKEAWAYS]
 
 - Automating a first draft isn't dishonest as long as the judgment behind it is genuinely yours; what would be dishonest is claiming hand-crafted attention you didn't actually give.

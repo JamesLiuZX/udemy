@@ -50,6 +50,14 @@ That last line, asking the model to flag its own guesses, does real work. It tur
 
 If the personalized version sounds like it should be a much longer document than the old template, that's not actually the shift, and it's worth being direct about it. A proposal that specifically names a client's real situation is often shorter than a generic one, because it can skip the parts a generic proposal has to include to cover every possible client: the broad capabilities overview, the hedge language covering situations that don't apply here. Specific and long are different qualities. This chapter is asking for the first one, not the second.
 
+## Common mistakes with the brief
+
+**Writing the situation section from the inquiry's subject line instead of its body.** A client's actual words, however roughly written, carry specifics a paraphrase loses. Copy the real sentences, not your summary of them.
+
+**Skipping the constraints section because nothing was said explicitly.** Even a client who never mentions budget usually hints at it: how they described the project's scope, how quickly they want it done, what they compared you to. A blank constraints field is rarely accurate; it's usually a field nobody looked hard enough to fill.
+
+**Reusing a brief built for a different kind of engagement without adjusting it.** A brief built around a small logo project doesn't transfer cleanly to a full brand identity system, even for the same client. The structure travels. The specifics inside it don't.
+
 ## What this chapter will not do
 
 This chapter will not promise every proposal wins, and treating a higher conversion rate as a guarantee rather than a shifted average would be dishonest. Price, timing, and fit still matter enormously, and a well-personalized proposal for a genuinely poor-fit project should lose, correctly. What personalization changes is your odds on the proposals that were actually winnable, not every proposal you send.
