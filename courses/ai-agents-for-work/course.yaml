@@ -260,6 +260,13 @@ sections:
   - id: 10
     title: "Rolling It Out: Your Team and Your Boss"
     goal: "From personal win to visible workplace credibility."
+    lectures:
+      - {id: "10.0", title: "Section intro", duration: 1}
+      - {id: "10.1", title: "Selling the pitch to your boss", duration: 6}
+      - {id: "10.2", title: "What belongs on a one-pager, and what doesn't", duration: 5}
+      - {id: "10.3", title: "The team rollout one-pager", duration: 5, hands_on: true}
+      - {id: "10.4", title: "Dev's first week: the second failure mode", duration: 6}
+      - {id: "10.5", title: "Section recap", duration: 2}
   - id: 11
     title: "Capstone: Automate One Week of Your Job"
     goal: "The learner runs the full onboarding method on their own task."
