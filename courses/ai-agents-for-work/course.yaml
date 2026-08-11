@@ -217,6 +217,14 @@ sections:
   - id: 6
     title: "Agent #4: Follow-Ups That Never Slip (and Never Auto-Send)"
     goal: "Full build with the human gate as the design centre; ships C04."
+    lectures:
+      - {id: "6.0", title: "Section intro", duration: 1}
+      - {id: "6.1", title: "The job description for this agent", duration: 5}
+      - {id: "6.2", title: "Build part 1: finding what needs a chase", duration: 6}
+      - {id: "6.3", title: "Build part 2: the draft prompt", duration: 6}
+      - {id: "6.4", title: "The one dropdown that makes this safe", duration: 7}
+      - {id: "6.5", title: "Connecting it for real, and shipping your template", duration: 6, hands_on: true}
+      - {id: "6.6", title: "Section recap", duration: 2}
   - id: 7
     title: "Checking the Work"
     goal: "Trial tasks, spot checks, failure modes; the judgement section."
