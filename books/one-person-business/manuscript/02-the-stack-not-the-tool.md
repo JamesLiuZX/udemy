@@ -16,6 +16,14 @@ That's the trap on both ends. Too many tools, chosen without discipline, is a re
 
 [PULLQUOTE: A tool that tries to do five jobs well enough for everyone ends up doing each job adequately for almost no one.]
 
+## The opposite mistake looks nothing like Priya's
+
+Marcus never tried an all-in-one dashboard. If anything, he went the other direction, and it cost him just as much time for a completely different reason. By his second year freelancing he was running a spreadsheet for proposals, a separate invoicing app because the spreadsheet felt unprofessional to send a client, a project management tool his biggest client insisted on, a different one he preferred for his own tracking, and a notes app for client context that lived nowhere near any of the others. Six logins, six places a piece of information about a single client could be sitting, and no dashboard problem to blame, because there was no dashboard. Just sprawl.
+
+[KEY-INSIGHT: Research from UC Irvine informatics professor Gloria Mark, most fully documented in her 2023 book "Attention Span" and building on nearly two decades of workplace observation, found that it takes an average of 23 minutes and 15 seconds to fully regain focus after a single interruption, and that people rarely return directly to the interrupted task, typically completing two other tasks first. The cost of Marcus's six logins was never really the six subscription fees. It was the number of times a day his attention had to physically relocate between them. || Source: Gloria Mark, "Attention Span" (2023), UC Irvine informatics research.]
+
+Priya's failure and Marcus's failure look like opposites and are the same mistake wearing different clothes. Neither of them chose their tools. Priya's all-in-one dashboard chose itself by promising to remove the decision entirely. Marcus's six-tool sprawl accumulated one reasonable-sounding addition at a time, each one solving that week's specific annoyance without anyone asking whether it fit the other five. Both are what happens when a stack isn't actually chosen, whether the failure mode is one bloated tool or a dozen thin ones.
+
 ## What "the stack" actually means
 
 Here's the concrete shape this book builds toward, chapter by chapter, rather than a single dashboard: one focused tool or workflow for proposals, built around a template and a specific prompt, covered in chapter three. One for invoicing, covered in chapter four. One for the inbox, chapter five. One for a first-pass contract read, chapter six. One for staying visible without a content calendar eating your week, chapter seven. One for expense tracking, chapter eight. One habit, not really a tool at all, for protecting your scope when a client asks for "just one more thing," chapter nine.
@@ -42,6 +50,19 @@ It also won't pretend a stack, once built, runs itself forever. A prompt that wo
 - Most of this stack is a saved prompt or template behind a tool you already have, not new software to buy. Read the chapters ahead expecting to build habits, not a shopping list.
 
 [/TAKEAWAYS]
+
+## Try this: the six-question tool audit
+
+List every tool, app, and subscription your business currently touches, however minor, from your invoicing software down to the notes app you use for client calls. For each one, answer six short questions:
+
+- What single job does this actually do for me?
+- Is that job one only this tool does, or could it move into a saved prompt or template instead?
+- Have I opened it in the last two weeks?
+- Does it talk to anything else on this list, or does information have to be retyped to move between them?
+- If it disappeared tomorrow, what would I actually lose?
+- Am I paying for capability I use, or capability I liked the idea of?
+
+A tool that survives all six questions earns its place in the stack. One that doesn't isn't necessarily worth cancelling today, but it's worth naming honestly as sprawl rather than infrastructure, the same distinction that separated Marcus's six logins from a deliberately built stack.
 
 ## Where this goes next
 
