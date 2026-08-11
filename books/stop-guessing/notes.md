@@ -4,6 +4,166 @@ Not part of the build. Working notes for continuing this manuscript across
 sessions, mirroring how courses/ai-for-pms/CLAUDE.md tracked "current state
 and what to do next" while that course was being written.
 
+## 2026-08-11: Simplified Chinese edition shipped as a second PDF
+
+Author directive: translate the complete book into idiomatic Simplified
+Chinese and ship it as `proofs/stop-guessing-zh.pdf`, a second, independent
+edition alongside the English one, not a replacement for it.
+
+**KDP policy check, live-searched, not assumed.** Ran three separate live
+searches against KDP's own help pages and current community reporting.
+Finding, consistent across all three: **Amazon KDP does not support
+paperback books in Chinese, Simplified or Traditional, at all.** This is a
+platform-level format restriction, not a content-policy judgment call.
+Chinese is supported for Kindle eBooks (Traditional Chinese fully, with
+Simplified Chinese getting Enhanced Typesetting support), but the paperback
+interior pipeline this repo builds has no KDP paperback destination to
+upload to in this language, regardless of manuscript quality. Sources:
+[KDP Book Supported Languages](https://kdp.amazon.com/en_US/help/topic/G200673300),
+[KDP Chinese (Traditional) Beta](https://kdp.amazon.com/en_US/help/topic/G27T64E65VM6JWKK),
+[KDP Community: how can I publish a paperback in Simplified Chinese on
+KDP?](https://kdpcommunity.com/s/question/0D52T00005GxOuESAV/how-can-i-publish-a-paperback-in-simplified-chinese-on-kdp?language=en_US)
+(community answer: you can't, confirmed by KDP staff replies in-thread).
+**Consequence for this book:** `stop-guessing-zh` targets Google Play
+Books, Apple Books, and direct/lead-gen distribution. It is explicitly
+**not** a KDP upload, and `book-zh.yaml`'s ISBN line and description were
+written without any KDP-specific language. If KDP's policy changes in the
+future (Simplified Chinese ebook support already exists and could extend
+to print), the EPUB this pipeline already produces would be the asset to
+reconsider uploading, not the PDF.
+
+**Translation.** All 17 chapters plus all 6 back-matter pieces (4
+appendices, notes and sources, about the author) translated into
+professional, idiomatic zh-CN for a business reader, not machine-literal.
+Wordplay and rhetorical structure were recreated rather than transliterated
+(e.g. chapter 1's "I'm sold" / "看起来好像可以" framing). Technical terms
+are bilingual on first use inside a chapter and Chinese-only after, e.g.
+评测集（golden set）, 评分标准（rubric）, 影响半径（blast radius）, and stay
+consistent across all 17 chapters via a glossary held across the whole
+translation pass. Product names, company names, and code identifiers stay
+in English (Zillow, Whisper, Klarna, GPT-4, LMArena). `[KEY-INSIGHT: ...]`
+citations translate the claim into Chinese and keep the source title,
+publication name, and case name in their original language so a reader can
+still find and verify the primary document, per the standing sourcing
+discipline; only the date format was localized. Chinese punctuation
+conventions (，。：、《》「」) are used throughout, including the single
+em-dash-rendered 破折号 for an aside or elaboration, which is standard,
+idiomatic Chinese punctuation and not an English-specific AI tell, so
+`book-zh.yaml: style.em_dash` is deliberately set to `allow` for this
+edition only (see the comment in that file). This is a considered
+per-language style decision, not a weakened gate; `qc.py`'s other checks
+(banned LLM-tell phrases, verified/AUTHOR-INPUT gates) were left untouched
+and still apply in full.
+
+**Typesetting.** Added opt-in CJK support to the shared pipeline without
+touching the English build path: `books/theme/kdp-book.cls` gates all
+CJK-specific macros behind `\ifdefined\BookCJK`, only defined when a
+book's `book.yaml` sets `cjk: true`; `books/pipeline/book.py` and
+`build.py` gained `cjk`, `back_matter_dir`, and `back_matter_titles` as
+new, all-optional `Book` properties, defaulting to false / "back-matter" /
+{} so every other book in this repo is unaffected. Verified this directly:
+re-ran the English `stop-guessing` build after all three pipeline file
+changes and confirmed identical output (179 pages, same `qc.py --release`
+result). CJK typesetting uses Noto Serif/Sans CJK SC (`fonts-noto-cjk` via
+apt, OFL-licensed, resolved by fontconfig family name rather than vendored
+as extracted `.ttc` faces) via `xeCJK`, with `\XeTeXlinebreaklocale "zh"`
+for correct Chinese line-breaking, a translated `\contentsname`, and
+translated box labels (关键洞察, 要点总结, 作者补充信息) and chapter-number
+furniture (第N章), all `\renewcommand`'d only inside the CJK conditional.
+
+**Build and visual verification.** Full build: `别再猜它有没有效`, **157
+pages**, EPUB built cleanly (447 KB, valid), `qc.py --release`: 2 fail (the
+required `verified: false` gate, and page count below the [180, 240] target
+band), 1 warn (qc.py's page-count *estimator* reads as ~5pp for this book;
+that estimator is word-count-based and not calibrated for Chinese text,
+which has no whitespace word boundaries, so its pre-build guess is
+meaningless here — the real, built page count is 157, confirmed from the
+actual compiled PDF, not the estimator). Gutter margin correctly picked
+0.5in for the 151-300 page band. Visually inspected, at 150dpi, the title
+page, copyright page (byline, AI-disclosure line, ISBN placeholder), table
+of contents, a chapter opener (第1章, correct blue rule and section
+numbering), a KEY-INSIGHT box (关键洞察, correct green box and bilingual
+source line), a PULLQUOTE (correct centered blue serif), a TAKEAWAYS box
+(要点总结, correct blue box), a regular content table, an appendix
+worksheet table, and the About the Author page (关于作者, last page,
+faithful, unembellished translation of James Liu's real bio, no
+AUTHOR-INPUT box). No tofu boxes, no missing glyphs, no overflow. LaTeX
+log shows 35 `Overfull \hbox` warnings (all sub-2pt, cosmetic, and fewer
+than the English build's 102) and the same `multiply defined` label
+warning class the English build already has from repeated back-matter
+headings across appendices, a pre-existing pandoc-anchor quirk, not
+something this edition introduced.
+
+**Honest shortfall, not padded.** 157 pages is below the [180, 240] target
+band, the same situation the English byline rebuild hit this session (179
+pages) after acknowledgments was removed. This is not a defect introduced
+by the translation: CJK typesetting is inherently denser per page than the
+Latin original at the same trim size and font size, and no content was
+compressed or cut to make the translation fit. Flagging this honestly
+rather than padding, consistent with this project's standing rule against
+inflating page count with restated material. Left as an open item for the
+author below.
+
+**Files.** New: `books/stop-guessing/book-zh.yaml`,
+`manuscript-zh/01-*.md` through `17-*.md`, `back-matter-zh/*.md` (6
+files). Modified (backward-compatible, opt-in only):
+`books/theme/kdp-book.cls`, `books/pipeline/book.py`,
+`books/pipeline/build.py`.
+
+**What's left, and only the author can do it:**
+1. Read the full Chinese manuscript (`proofs/stop-guessing-zh.pdf`) and
+   confirm the translation faithfully represents the book before treating
+   it as a real second edition; `book-zh.yaml`'s `verified: false` is
+   untouched and stays false until that happens, exactly like the English
+   edition.
+2. Decide whether the 157-page count (vs. the [180, 240] target) is
+   acceptable for this edition, or whether it should be brought in line,
+   the same open decision already pending on the English edition's
+   179-page count.
+3. Confirm actual upload targets and mechanics for Google Play Books,
+   Apple Books, and any direct/lead-gen channel before distribution;
+   nothing in this pipeline has touched those platforms' own submission
+   requirements.
+4. `book-zh.yaml`'s `isbn_note` reads "国际标准书号（ISBN）：[发布时分配]"
+   (assigned at publication); a real ISBN, if one is obtained for this
+   edition, needs to replace that placeholder before final release.
+
+## 2026-08-11: English proofs rebuilt with the real author byline
+
+Author directive: `book.yaml`'s `author` field and
+`back-matter/about_the_author.md` were updated outside this session (by
+the author, before this pull) to the real byline, "James Liu," with a
+real, author-supplied bio (Silicon Valley and ByteDance AI product
+experience, NUS Computing with distinction specializing in AI, a year at
+Stanford). `back-matter/acknowledgments.md` was removed from
+`book.yaml`'s `back_matter:` list in the same prior update. This session's
+job was mechanical: rebuild the interior PDF and EPUB against the new
+byline and confirm they render correctly, not to write any new author
+content (none was invented, per standing instruction).
+
+**Rebuild.** Full PDF and EPUB rebuild from the already-updated source.
+**179 pages** (down from 181 in the last build, a direct, expected
+consequence of removing the acknowledgments back-matter item, not a bug in
+this rebuild). `qc.py --release`: 2 fail (`verified: false`, and the page
+count now sitting 1 page below the [180, 240] band), 0 warn. Visually
+confirmed the title page and copyright page carry "James Liu" correctly,
+and the About the Author page (now the last page in the book, since
+acknowledgments no longer precedes it) renders the real bio cleanly with
+no `[AUTHOR-INPUT: ...]` box remaining.
+
+**Honest shortfall, not padded.** The 179-page count is a direct
+consequence of the author's own decision to drop acknowledgments, not
+something this session introduced or should quietly correct by inflating
+other chapters. Flagged here rather than fixed unilaterally, consistent
+with this project's standing rule against padding page count with
+restated material. The author should decide whether to accept 179 pages,
+write a replacement back-matter piece, or expand a chapter that genuinely
+has more to say.
+
+**Committed** `proofs/stop-guessing.pdf` (the same author-requested
+exception to the never-commit-`build/`-artifacts rule as the editorial
+pass below), matching the byline in the rebuilt PDF.
+
 ## 2026-08-11 (editorial pass): manuscript complete, print-ready pending sign-off
 
 Editor directive from the author: a full editorial pass over the finished

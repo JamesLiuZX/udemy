@@ -144,10 +144,21 @@
 % behaviour, not a bug, for the \pullquote box below.
 \if@kdpzh
   \RequirePackage{xeCJK}
+  \RequirePackage{indentfirst}
   \setCJKmainfont{Noto Serif CJK SC}
   \setCJKsansfont{Noto Sans CJK SC}
   \setCJKmonofont{Noto Sans Mono CJK SC}
   \xeCJKsetup{CJKspace=true}
+  % xeCJK breaks lines at CJK character boundaries on its own; this locale
+  % hint plus a near-zero interword glue keeps justification tight instead
+  % of xeCJK's wider default CJK-Latin spacing.
+  \XeTeXlinebreaklocale "zh"
+  \XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
+  % Chinese book convention: every paragraph, including the first after a
+  % heading, opens with a two-character indent. memoir's own default
+  % (English convention: no indent on the paragraph right after a
+  % heading) is what indentfirst overrides.
+  \setlength{\parindent}{2em}
 \fi
 
 \widowpenalty=10000

@@ -1,0 +1,133 @@
+# =============================================================================
+# Simplified Chinese edition of "Stop Guessing Whether It Works".
+# Same book, translated manuscript (manuscript-zh/, back-matter-zh/), CJK
+# typesetting via kdp-book.cls's `[zh]` class option (Book.lang == "zh").
+# This is NOT a KDP title (Amazon KDP does not accept a Simplified Chinese
+# paperback upload as of this writing; see notes.md for the live-checked
+# policy note). It targets Google Play Books, Apple Books, and
+# direct/lead-gen distribution instead.
+# =============================================================================
+
+slug: stop-guessing-zh
+title: "别再猜它有没有效"
+subtitle: "产品经理的AI功能评测、定价与上线实战指南"
+author: "James Liu"
+year: 2026
+genre: business
+trim: "6x9"
+target_pages: [180, 240]
+lang: zh
+
+# Never set true except by the real author, after a genuine full read-through.
+verified: false
+
+style:
+  spellcheck_lang: en_US   # placeholder: qc.py's spellcheck is en_US-only and
+                            # gracefully no-ops without hunspell; not meaningful
+                            # for Chinese text, kept only so qc.py doesn't error
+                            # reading a missing key. Matches the convention in
+                            # books/one-person-business/book-zh.yaml.
+  em_dash: avoid  # Same repo-wide convention as every other book, including
+                  # the other two Chinese editions (ai-employee-zh,
+                  # one-person-business-zh): a single em dash used as 破折号
+                  # is legitimate Chinese punctuation, but this translation
+                  # was written around it entirely, using colons, commas, and
+                  # restructured sentences instead, so the gate applies
+                  # unweakened here too.
+
+# Listing copy for the actual distribution channels (not KDP). Not part of
+# the interior PDF.
+description: |
+  你正为一个自己都说不准好不好用的AI功能负责。过去那套验收标准，假设系统每次
+  都会给出同样的结果。可AI不是这样，于是你的验收标准失灵了，测试通过的功能照
+  样在生产环境翻车，质量争议最后靠职位最高的人一锤定音，而不是靠证据。
+
+  这本书教你的判断力，不会随着模型升级而过时：把验收标准写成可衡量的评测阈值
+  （evaluation threshold），而不是模糊的"通过/不通过"；建一套你能拿出来站得
+  住脚的评测集（golden set）；在功能上线前，而不是账单寄来后，把成本算清楚；
+  用可靠性数学而不是盲目乐观去限定智能体（agent）的权限范围；建一份能顺利通
+  过法务审查、而不是被卡住的风险登记表（risk register）。
+
+  写给现在要为AI相关工作负责、却没有工程背景的产品经理、交付负责人和分析师。
+
+dedication: "献给所有在有人追问“它到底有没有效”之前，就已经把功能上线的人。"
+
+rights_note: "版权所有。未经作者书面许可，不得以任何形式复制、传播或转载本书任何部分，书评中的简短引用除外。"
+ai_disclosure_text: "本书在作者的指导、大纲设计与审阅下，借助人工智能协助完成写作。书中数据与案例均引自标注来源；任何个人经历类陈述均为作者本人真实经历。"
+isbn_note: "国际标准书号（ISBN）：[发布时分配]"
+
+front_matter:
+  - half_title
+  - title_page
+  - copyright
+  - dedication
+  - toc
+
+chapters:
+  - id: "01"
+    title: "问责的空白地带"
+    file: manuscript-zh/01-the-accountability-gap.md
+  - id: "02"
+    title: "七种形态"
+    file: manuscript-zh/02-seven-shapes.md
+  - id: "03"
+    title: "一份没人能反驳的规格文档"
+    file: manuscript-zh/03-the-spec-nobody-can-argue-with.md
+  - id: "04"
+    title: "评测集"
+    file: manuscript-zh/04-the-golden-set.md
+  - id: "05"
+    title: "让两个人达成一致"
+    file: manuscript-zh/05-getting-two-people-to-agree.md
+  - id: "06"
+    title: "它到底花多少钱"
+    file: manuscript-zh/06-what-it-actually-costs.md
+  - id: "07"
+    title: "智能体的可靠性数学"
+    file: manuscript-zh/07-the-reliability-math-of-agents.md
+  - id: "08"
+    title: "风险登记表"
+    file: manuscript-zh/08-the-risk-register.md
+  - id: "09"
+    title: "经得起生产环境考验的指标"
+    file: manuscript-zh/09-metrics-that-survive-production.md
+  - id: "10"
+    title: "管理好那间会议室"
+    file: manuscript-zh/10-managing-the-room.md
+  - id: "11"
+    title: "不装懂地说工程师的语言"
+    file: manuscript-zh/11-speaking-engineer-without-faking-it.md
+  - id: "12"
+    title: "为什么需要RAG，以及如何衡量它"
+    file: manuscript-zh/12-why-rag-and-how-to-measure-it.md
+  - id: "13"
+    title: "RAG在生产环境中如何失灵"
+    file: manuscript-zh/13-where-rag-breaks-in-production.md
+  - id: "14"
+    title: "质疑与反对意见"
+    file: manuscript-zh/14-objections-and-pushback.md
+  - id: "15"
+    title: "实战笔记：三个完整案例"
+    file: manuscript-zh/15-field-notes-three-worked-case-studies.md
+  - id: "16"
+    title: "上任后的前九十天"
+    file: manuscript-zh/16-the-first-ninety-days.md
+  - id: "17"
+    title: "这套方法在哪里会失灵"
+    file: manuscript-zh/17-where-this-breaks.md
+
+back_matter:
+  - appendix_a_the_golden_set_worksheet
+  - appendix_b_the_risk_register_template
+  - appendix_c_the_model_scorecard_template
+  - appendix_d_the_ninety_day_plan_template
+  - notes_and_sources
+  - about_the_author
+
+back_matter_titles:
+  appendix_a_the_golden_set_worksheet: "附录A：评测集工作表"
+  appendix_b_the_risk_register_template: "附录B：风险登记表模板"
+  appendix_c_the_model_scorecard_template: "附录C：模型评分卡模板"
+  appendix_d_the_ninety_day_plan_template: "附录D：九十天计划模板"
+  notes_and_sources: "资料来源说明"
+  about_the_author: "关于作者"
