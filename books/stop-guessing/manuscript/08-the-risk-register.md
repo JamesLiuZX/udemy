@@ -52,6 +52,23 @@ Most ordinary product work, internal drafting tools, search ranking, most copilo
 
 Ninety-one percent looks healthy sitting on its own. Split by how a request is phrased, and whoever writes the way the golden set already expects gets a genuinely strong result, while whoever phrases things differently gets a result seventeen points worse, invisible inside the blended number. Nobody built that gap on purpose. It's what happens when a golden set gets assembled from whichever real cases were easiest to find, which quietly means whichever cases look most like the team's own writing. The fix isn't a bigger golden set. It's a deliberately structured one, with enough cases in each segment you're worried about to score it separately, the same fifty-case discipline from chapter four aimed at one more dimension. A clean aggregate pass rate isn't evidence of fairness. It's often just evidence nobody measured with enough resolution to find the gap, which is a very different claim, and finding a gap doesn't mean abandoning the segment that struggles. It means you now have a specific, fixable target instead of an unmeasured guess.
 
+[KEY-INSIGHT: In August 2023, the tutoring company iTutorGroup agreed to pay $365,000 to settle the US Equal Employment Opportunity Commission's first-ever AI hiring discrimination lawsuit. The company's application-screening software had been programmed to automatically reject female applicants aged 55 or older and male applicants aged 60 or older, rejecting more than 200 qualified tutor applicants on that basis. One rejected applicant discovered the pattern by resubmitting an otherwise identical application with a younger birth date and immediately receiving an interview offer. || Source: US Equal Employment Opportunity Commission, "iTutorGroup to Pay $365,000 to Settle EEOC Discriminatory Hiring Suit," press release, September 11, 2023.]
+
+Notice how that bias was actually found: not by an internal audit segmenting pass rate by age, the fix this section has been describing, but by one rejected applicant running an informal experiment on herself. That's the honest cost of an unmeasured bias register row. It doesn't stay hidden forever. It gets found eventually, just later, by someone with far less patience for your explanation than an internal reviewer would have had, and often in a form, a regulator's complaint or a lawsuit, that costs far more than the afternoon a segmented pass-rate check would have taken.
+
+## What a working row actually looks like
+
+Description earns less trust than an example, so here's what four rows of an actual register look like, filled in, for a feature this book hasn't used yet: an internal tool that lets employees search company documents in plain language.
+
+| Category | Risk | Owner | Mitigation | Review |
+| --- | --- | --- | --- | --- |
+| Prompt injection | A doc with embedded instructions could get the assistant to summarize files outside the requester's access | J. Okafor | Retrieval step returns text only, no tool access; access control checked before retrieval, not after | 2026-03-01 |
+| Data and privacy | Search queries currently logged in full, including anything a user pastes | J. Okafor | Redact query text before logging; keep only query length and result count | 2026-02-15 (open) |
+| Bias and fairness | Golden set has no cases in languages other than English | R. Singh | Pull 15 non-English queries from real logs, score separately before next release | 2026-02-01 (open) |
+| Incident response | No alert exists if answer quality drops; only latency and error rate are monitored | R. Singh | Add weekly sampled-review alert; kill switch untested | 2026-03-15 (open) |
+
+Read the review column, not just the mitigation column, because it's doing the work this chapter has argued for all along. Two rows are already closed with a real, specific fix. Two are still open, dated, and owned, which is a completely different and far more honest state than being silently absent from the register altogether. A launch reviewer reading this table knows exactly what's covered and what still needs attention before the feature ships, which is the entire point of writing any of it down.
+
 ## When prevention wasn't enough
 
 Every category above is about preventing a specific kind of risk. This one is about what happens the day prevention wasn't enough, and it belongs last on the register for a reason: a feature can pass its launch scorecard, clear every row above, and still degrade quietly in production.
@@ -61,6 +78,12 @@ A traditional outage is loud on purpose: error rate spikes, latency climbs, a da
 A plan built only for downtime says "we'll know if it breaks, the dashboard will show it," with no named owner for a quality-specific alert and no way to disable the feature short of a full deploy. A plan built for both has a quality signal watched continuously, a named person who owns quality incidents specifically, not an on-call rotation answering a different question, and a kill switch that's actually been tested, on a quiet day, before anyone needed it for real. A fallback verified working six months ago, against a version of the feature that's since changed twice, is a fact about the past, not a guarantee about today.
 
 Close every incident the same way, and treat this as the actual output, not the postmortem document. A document explaining what went wrong helps the people in the room that day. A new golden-set case, built from the exact input that triggered the incident, helps every build after it, automatically, every time the eval runs from here forward. One of those scales. The other is read once and archived.
+
+## Build your first three rows
+
+Pick one AI feature you own that has never had a real register, and give it exactly three rows today, in the same format as the worked example above: category, risk, owner, mitigation, review date. Don't try to cover all five categories at once. Pick the three that worry you most, specifically, not generically.
+
+Most people doing this for the first time find that writing the mitigation column is harder than writing the risk column. That's useful friction, not a sign you're doing it wrong. A risk you can name but can't yet mitigate is still worth a row, dated and owned, with "no mitigation yet, due by [date]" written honestly in that column instead of left blank.
 
 [TAKEAWAYS]
 
