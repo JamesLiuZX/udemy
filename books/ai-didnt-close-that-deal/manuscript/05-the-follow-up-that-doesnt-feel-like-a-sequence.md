@@ -117,7 +117,17 @@ Here's what a completed row looks like, using the bad sequence from earlier in t
 | 3 (day 13) | "I know you're busy, still interested at all?" | N | Objection: guess at the real hesitation and address it directly instead of asking again. |
 | 4 (day 21) | "Should I close your file?" | N | Timing or honest close: name a real reason timing matters, or close with something they keep regardless of the answer. |
 
-Now do the same with your own sequence, one touch per row, filling in what you actually send today. A useful rule of thumb once the table is filled in: if two or more consecutive touches score "N," that stretch of the sequence is exactly where a prospect starts recognizing the shape rather than reading the words, the pattern from earlier in this chapter, and it's the first place to rebuild. If your table has no "N"s at all on a first honest pass, go back through it again more skeptically. Most real sequences, even good-faith ones, have at least one touch in there that exists purely to keep the cadence moving rather than because it earns its place.
+Now do the same with your own sequence, one touch per row, filling in what you actually send today, not the polished version you'd show a manager.
+
+| Touch | What it currently says | Adds real new information? (Y/N) | If N, redesign: new angle / content / objection / timing / new stakeholder |
+| --- | --- | --- | --- |
+| 1 | | | |
+| 2 | | | |
+| 3 | | | |
+| 4 | | | |
+| 5 | | | |
+
+A useful rule of thumb once the table is filled in: if two or more consecutive touches score "N," that stretch of the sequence is exactly where a prospect starts recognizing the shape rather than reading the words, the pattern from earlier in this chapter, and it's the first place to rebuild. If your table has no "N"s at all on a first honest pass, go back through it again more skeptically. Most real sequences, even good-faith ones, have at least one touch in there that exists purely to keep the cadence moving rather than because it earns its place.
 
 ## What this chapter will not do
 
