@@ -1,0 +1,88 @@
+# =============================================================================
+# Single source of truth for "AI Didn't Close That Deal".
+# Domain-specific book for sales leaders: reply rates cratering because
+# every inbox is full of AI-generated pitches, and how to stand out and
+# coach a team off the habit that stopped working.
+# =============================================================================
+
+slug: ai-didnt-close-that-deal
+title: "AI Didn't Close That Deal"
+subtitle: "How Sales Leaders Cut Through AI-Generated Noise and Actually Get Replies"
+author: "Your Name"
+year: 2026
+genre: business
+trim: "6x9"
+target_pages: [120, 170]
+
+# Never set true except by the real author, after a genuine full read-through.
+verified: false
+
+style:
+  spellcheck_lang: en_US
+  em_dash: avoid
+
+# KDP listing copy. Not part of the interior PDF.
+description: |
+  Every prospect's inbox is drowning in AI-generated pitches that all sound
+  the same, including, if you're honest, some of yours. Reply rates are
+  falling across the board, and the instinct to fix it by sending more
+  is exactly the instinct that caused the problem.
+
+  This book is a practical reset for sales leaders and the teams they run:
+  why volume stopped being a strategy the moment it became free, how to
+  do the kind of research an AI-generated template can't fake, how to
+  coach a team off spray-and-pray without losing their pipeline numbers
+  in the process, where AI still genuinely helps a rep, and how to read
+  the metrics that actually predict revenue instead of the ones that just
+  feel productive.
+
+  Written for sales leaders who need their team's outreach to actually get
+  read again, not another tool promising to send more of it faster.
+
+dedication: "For every rep whose good email got buried under a thousand bad ones."
+
+front_matter:
+  - half_title
+  - title_page
+  - copyright
+  - dedication
+  - toc
+
+# Full planned arc. Chapters without a manuscript file yet are listed here as
+# the outline; build.py only requires the file to exist for the chapter IDs
+# you actually pass to --only. See notes.md in this directory for status.
+chapters:
+  - id: "01"
+    title: "The Inbox Nobody Reads Anymore"
+    file: manuscript/01-the-inbox-nobody-reads-anymore.md
+  - id: "02"
+    title: "Why Volume Stopped Working"
+    file: manuscript/02-why-volume-stopped-working.md
+  - id: "03"
+    title: "The Research Nobody Does Anymore"
+    file: manuscript/03-the-research-nobody-does-anymore.md
+  - id: "04"
+    title: "Writing Like You Actually Read Their Website"
+    file: manuscript/04-writing-like-you-actually-read-their-website.md
+  - id: "05"
+    title: "The Follow-Up That Doesn't Feel Like a Sequence"
+    file: manuscript/05-the-follow-up-that-doesnt-feel-like-a-sequence.md
+  - id: "06"
+    title: "Coaching a Team Off Spray-and-Pray"
+    file: manuscript/06-coaching-a-team-off-spray-and-pray.md
+  - id: "07"
+    title: "When AI Actually Helps a Rep"
+    file: manuscript/07-when-ai-actually-helps-a-rep.md
+  - id: "08"
+    title: "The Metrics That Lie to Sales Leaders"
+    file: manuscript/08-the-metrics-that-lie-to-sales-leaders.md
+  - id: "09"
+    title: "Buyers Can Tell, and What That Costs You"
+    file: manuscript/09-buyers-can-tell-and-what-that-costs-you.md
+  - id: "10"
+    title: "Selling in a Room Full of Robots"
+    file: manuscript/10-selling-in-a-room-full-of-robots.md
+
+back_matter:
+  - acknowledgments
+  - about_the_author
