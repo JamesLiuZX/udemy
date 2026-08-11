@@ -17,10 +17,13 @@ import html
 import json
 import re
 import shutil
+import statistics
 import subprocess
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
+
+import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
@@ -39,6 +42,17 @@ MAX_TRUE_PEAK = -1.0
 # Craft thresholds.
 MAX_LECTURE_MINUTES = 12
 MAX_NARRATION_SLIDE_OVERLAP = 0.25      # narration must not just read the slide
+
+# Delivery and continuity thresholds (docs/04-quality-bar.md §7).
+MIN_SENTENCE_RHYTHM_STDEV = 4.0    # words; below this, sentence length reads as generated
+MAX_STATIC_FRAME_SECONDS = 90      # one slide's narration, at the course wpm
+FIGURE_FLOOR_MINUTES = 4.0         # TTS lectures past this need a figure/diagram/table/metrics slide
+MAX_BULLETS_SHARE = 0.5
+MIN_OPENER_RUN = 3                 # consecutive lectures sharing an opener layout
+MIN_DIRECT_ADDRESS_PER_100 = 1.0   # "you"/"your" per 100 narration words
+QUESTION_FLOOR_MINUTES = 4.0       # lectures past this need at least one "?"
+
+FIGURE_LAYOUTS = {"figure", "diagram", "table", "metrics"}
 
 # LLM tells and empty filler. Deliberately excludes words like "actually" and
 # "of course", which are ordinary spoken English and read as natural narration.
@@ -185,7 +199,165 @@ def _spellcheck(texts: list[str], lang: str = "en_US") -> set[str]:
     return bad
 
 
-def check_lectures(lectures, course: dict, rep: Report) -> None:
+# ---------------------------------------------------------------------------
+# delivery and continuity (docs/04-quality-bar.md §7)
+# ---------------------------------------------------------------------------
+
+_SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+")
+_YOU = re.compile(r"\byou(r|rs)?\b", re.I)
+_ALPHA_WORD = re.compile(r"[A-Za-z]+")
+_NUMERIC = re.compile(r"\d+(?:\.\d+)?%?")
+
+_NUM_WORDS = {
+    "zero": "0", "one": "1", "two": "2", "three": "3", "four": "4",
+    "five": "5", "six": "6", "seven": "7", "eight": "8", "nine": "9",
+    "ten": "10", "eleven": "11", "twelve": "12", "thirteen": "13",
+    "fourteen": "14", "fifteen": "15", "sixteen": "16", "seventeen": "17",
+    "eighteen": "18", "nineteen": "19", "twenty": "20", "thirty": "30",
+    "forty": "40", "fifty": "50", "sixty": "60", "seventy": "70",
+    "eighty": "80", "ninety": "90", "hundred": "100",
+}
+
+_STORY_STOPWORDS = {
+    "the", "a", "an", "of", "to", "and", "or", "in", "on", "at", "for",
+    "with", "is", "are", "it", "that", "this", "as", "by", "be", "than",
+}
+
+
+def _sentences(text: str) -> list[str]:
+    return [s.strip() for s in _SENTENCE_SPLIT.split(text.strip()) if s.strip()]
+
+
+def _normalize_numbers(text: str) -> str:
+    """Spell-out numbers ("six", "twenty") to digits, so a line written for the
+    ear ("Two, three, three, four, five.") can be compared against a bible value
+    written as digits ("2, 3, 3, 4, 5")."""
+    return _ALPHA_WORD.sub(lambda m: _NUM_WORDS.get(m.group(0).lower(), m.group(0)), text)
+
+
+def _story_keywords(meaning: str) -> set[str]:
+    words = _ALPHA_WORD.findall(meaning.lower())
+    return {w for w in words
+            if len(w) > 3 and w not in _STORY_STOPWORDS and w not in _NUM_WORDS}
+
+
+def _check_rhythm(lec, rep: Report) -> None:
+    counts = [c for c in (len(_WORD.findall(s)) for s in _sentences(lec.narration)) if c]
+    if len(counts) < 4:
+        return
+    sd = statistics.pstdev(counts)
+    if sd < MIN_SENTENCE_RHYTHM_STDEV:
+        rep.warn(f"[{lec.id}] sentence-length stdev {sd:.1f} words "
+                 f"(<{MIN_SENTENCE_RHYTHM_STDEV:.0f}) — uniform rhythm reads as generated.")
+
+
+def _check_static_frames(lec, wpm: int, rep: Report) -> None:
+    for i, slide in enumerate(lec.slides, start=1):
+        secs = slide.word_count / wpm * 60
+        if secs > MAX_STATIC_FRAME_SECONDS:
+            rep.warn(f"[{lec.id}] slide {i} ({slide.layout}): ~{secs:.0f}s of "
+                     f"narration on one frame (>{MAX_STATIC_FRAME_SECONDS:.0f}s) "
+                     f"— split the slide or add a build.")
+
+
+def _check_figure_floor(lec, wpm: int, rep: Report) -> None:
+    if lec.voice == "human":
+        return
+    minutes = lec.estimated_seconds(wpm) / 60
+    if minutes <= FIGURE_FLOOR_MINUTES:
+        return
+    if any(s.layout in FIGURE_LAYOUTS for s in lec.slides):
+        return
+    rep.warn(f"[{lec.id}] {minutes:.1f} min with no figure/diagram/table/metrics "
+             f"slide — text-heavy drift.")
+
+
+def _check_bullets_share(lec, rep: Report) -> None:
+    total = len(lec.slides)
+    if not total:
+        return
+    share = sum(1 for s in lec.slides if s.layout == "bullets") / total
+    if share > MAX_BULLETS_SHARE:
+        rep.warn(f"[{lec.id}] {share:.0%} of slides are 'bullets' "
+                 f"(>{MAX_BULLETS_SHARE:.0%}) — vary the layouts.")
+
+
+def _check_direct_address(lec, rep: Report) -> None:
+    wc = lec.word_count
+    if wc < 50:
+        return
+    rate = len(_YOU.findall(lec.narration)) / wc * 100
+    if rate < MIN_DIRECT_ADDRESS_PER_100:
+        rep.warn(f"[{lec.id}] {rate:.2f} 'you/your' per 100 words "
+                 f"(<{MIN_DIRECT_ADDRESS_PER_100:.0f}) — drifting into essay voice.")
+
+
+def _check_question_presence(lec, wpm: int, rep: Report) -> None:
+    minutes = lec.estimated_seconds(wpm) / 60
+    if minutes <= QUESTION_FLOOR_MINUTES:
+        return
+    if "?" not in lec.narration:
+        rep.warn(f"[{lec.id}] no '?' in {minutes:.1f} min of narration — "
+                 f"monologue drift.")
+
+
+def _check_opener_diversity(lectures, rep: Report) -> None:
+    """Scans the whole course in curriculum order for runs of consecutive
+    lectures whose first slide shares a layout — one warning per run, not
+    per lecture, so a run of 5 doesn't produce 3 overlapping warnings."""
+    run_start = 0
+    n = len(lectures)
+    for i in range(1, n + 1):
+        same = (i < n and lectures[i].slides and lectures[run_start].slides
+                and lectures[i].slides[0].layout == lectures[run_start].slides[0].layout)
+        if not same:
+            run_len = i - run_start
+            if run_len >= MIN_OPENER_RUN:
+                ids = ", ".join(l.id for l in lectures[run_start:i])
+                layout = lectures[run_start].slides[0].layout
+                rep.warn(f"Opener layout '{layout}' repeats {run_len} lectures "
+                         f"in a row ({ids}) — agenda-opener monotony.")
+            run_start = i
+
+
+def _check_story_continuity(lectures, bible: dict, rep: Report) -> None:
+    """Simple literal match against story-bible.yaml's `numbers` list: a
+    sentence that talks about the same fact (>=2 keywords from its `meaning`)
+    and states some number, but not the canonical value, is a continuity bug
+    or a false positive from loose phrasing — check by eye either way."""
+    entries = []
+    for n in (bible or {}).get("numbers", []) or []:
+        value = str(n.get("value", "")).strip()
+        meaning = str(n.get("meaning", "")).strip()
+        kws = _story_keywords(meaning)
+        if value and len(kws) >= 2:
+            entries.append((_normalize_numbers(value), kws, meaning))
+    if not entries:
+        return
+
+    for lec in lectures:
+        for sent in _sentences(lec.narration):
+            norm = _normalize_numbers(sent)
+            if not _NUMERIC.search(norm):
+                continue
+            low = norm.lower()
+            for value, kws, meaning in entries:
+                # Require (nearly) the whole keyword set, not just any two. This
+                # course teaches evaluation vocabulary all the way through, so
+                # generic overlap ("same", "rubric", "pass rate") recurs in dozens
+                # of unrelated sentences; only a near-paraphrase of one specific
+                # bible entry's meaning is a real continuity-drift candidate.
+                hits = sum(1 for k in kws if k in low)
+                if hits < max(3, len(kws) - 1):
+                    continue
+                if value.lower() in low:
+                    continue
+                rep.warn(f"[{lec.id}] possible story continuity drift: matches "
+                         f"'{meaning}' (bible value {value!r}) but reads "
+                         f"{sent[:100]!r}")
+
+
+def check_lectures(lectures, course: dict, rep: Report, story_bible: dict | None = None) -> None:
     if not lectures:
         rep.fail("No lecture sources found. Nothing to check.")
         return
@@ -241,6 +413,16 @@ def check_lectures(lectures, course: dict, rep: Report) -> None:
         if dashes:
             rep.fail(f"{tag} contains {dashes} em dash(es) in learner-facing copy. "
                      f"Use a colon, a full stop, or brackets.")
+
+        _check_rhythm(lec, rep)
+        _check_static_frames(lec, wpm, rep)
+        _check_figure_floor(lec, wpm, rep)
+        _check_bullets_share(lec, rep)
+        _check_direct_address(lec, rep)
+        _check_question_presence(lec, wpm, rep)
+
+    _check_opener_diversity(lectures, rep)
+    _check_story_continuity(lectures, story_bible, rep)
 
     lang = course.get("production", {}).get("spellcheck_lang", "en_US")
     bad = _spellcheck(slide_texts, lang)
@@ -310,6 +492,13 @@ def check_release(out_root: Path, rep: Report) -> None:
 
 # ---------------------------------------------------------------------------
 
+def _load_story_bible(course_dir: Path) -> dict:
+    path = course_dir / "story-bible.yaml"
+    if not path.exists():
+        return {}
+    return yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--course", required=True)
@@ -318,11 +507,13 @@ def main() -> int:
                     help="also check built MP4s/SRTs against Udemy standards")
     args = ap.parse_args()
 
-    course, lectures = load_course(Path(args.course))
+    course_dir = Path(args.course)
+    course, lectures = load_course(course_dir)
+    story_bible = _load_story_bible(course_dir)
     rep = Report()
 
     check_policy(course, rep)
-    check_lectures(lectures, course, rep)
+    check_lectures(lectures, course, rep, story_bible)
     if args.release:
         check_release(Path(args.out) / course["slug"], rep)
 
