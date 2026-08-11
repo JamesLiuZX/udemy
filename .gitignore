@@ -5,6 +5,11 @@ build/
 growth/queue/
 growth/data/
 
+# Local n8n install used to build/screenshot course workflows: application
+# cache and database, not source. The exported workflow JSON that matters
+# lives in courses/*/artifacts/ and is committed there.
+.n8n-local/
+
 # Local overrides / secrets — API keys belong in the environment, never here.
 .env
 *.local.yaml
