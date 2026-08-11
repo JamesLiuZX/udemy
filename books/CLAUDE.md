@@ -51,6 +51,21 @@ side's `verified` and `[INSTRUCTOR-INPUT]`:
 `qc.py` fails on both. A QC run that reports only these is a **pass**, not
 a problem to fix.
 
+**When the real author has no anecdote to give**, which is the normal
+case for the titles running in this repo right now, `[KEY-INSIGHT: claim
+|| source]` fills that structural role instead: a real, checked, cited
+statistic or case study rather than a personal story. This is not
+permission to invent a plausible-sounding fact in place of a
+plausible-sounding anecdote. Same rule, different content type: every
+claim inside one must be independently verified against an actual search
+before it's written down, never recalled from training data and assumed
+correct. Full standard in `books/docs/02-research-and-sourcing.md`; read
+it before writing one, not after a bad citation ships. Unlike
+`[AUTHOR-INPUT: ...]`, this device is meant to be fully resolved by
+whoever is writing the chapter, not left blocking for the human author,
+so `qc.py` doesn't gate on its presence, only on whether one that exists
+is well-formed.
+
 ---
 
 ## 2. The loop
@@ -70,10 +85,21 @@ python3 books/pipeline/qc.py --book <slug>
 
 # 5. Release gate: page count in range, fonts embedded, no build warnings
 python3 books/pipeline/qc.py --book <slug> --release
+
+# 6. EPUB, for KDP's ebook listing (and Apple Books/Kobo/Google Play as-is).
+#    Separate conversion path from the PDF (Markdown -> HTML -> Pandoc's
+#    epub3 writer, no LaTeX involved), same book.yaml and chapter source,
+#    same four bracket devices. No --only flag; always builds the whole
+#    book, front matter included, chapter list included even for chapters
+#    that don't exist yet as files (those just render as empty sections).
+python3 books/pipeline/build_epub.py --book <slug>
 ```
 
-`build/` is gitignored, same rule as the video side. The interior PDF is
-regenerable from the manuscript; never commit it.
+`build/` is gitignored, same rule as the video side. The interior PDF and
+the EPUB are both regenerable from the manuscript; never commit either.
+KDP does not accept MOBI/AZW3 uploads anymore, it converts a submitted
+EPUB internally, so EPUB alone covers KDP as well as Apple Books, Kobo,
+and Google Play Books without a second ebook build.
 
 ---
 
@@ -185,7 +211,9 @@ Every chapter needs at least one `[PULLQUOTE: ...]` and closes with one
 `books/docs/01-production-playbook.md` §3). These aren't decoration on
 top of finished writing, they're part of what makes a KDP nonfiction title
 look like it came from a publisher rather than a template, alongside the
-`\authorinput` box the gate already forces. Plan where they land while
+`\authorinput` box the gate already forces and, where the chapter has one,
+the green `[KEY-INSIGHT: ...]` box (§1 above, full standard in
+`books/docs/02-research-and-sourcing.md`). Plan where they land while
 drafting a chapter, not as a pass tacked on afterward.
 
 ---
@@ -231,10 +259,13 @@ drafting a chapter, not as a pass tacked on afterward.
 - [ ] Opens on a concrete scene, not a category summary
 - [ ] At least one `[PULLQUOTE: ...]` and a closing `[TAKEAWAYS]` box,
       both visually confirmed in the render, not just present in source
+- [ ] One `[KEY-INSIGHT: ...]` (or a real `[AUTHOR-INPUT: ...]` if the
+      author has a genuine story), every claim inside it independently
+      verified against an actual search, not recalled and assumed correct
 - [ ] Rendered pages **visually inspected**, not just compiled without
       LaTeX errors
 - [ ] `qc.py` reports no warnings, and no failures other than the sign-off
-      and `[AUTHOR-INPUT]` gates
+      and (if used) `[AUTHOR-INPUT]` gates
 - [ ] Every non-obvious claim has a named source or is explicitly the
       author's own tested experience, flagged for their sign-off
 - [ ] The chapter says what it doesn't apply to, somewhere in its own text
@@ -250,8 +281,10 @@ Report honestly. If a chapter is written but not visually checked, say so.
 books/CLAUDE.md              This file
 books/docs/00-kdp-compliance.md      KDP AI-disclosure + content policy notes
 books/docs/01-production-playbook.md Format reference, chapter structure
+books/docs/02-research-and-sourcing.md  Standard for [KEY-INSIGHT: ...] claims
 books/theme/kdp-book.cls     The LaTeX document class: trim, margins, type
-books/pipeline/               book.py, build.py, qc.py
+books/theme/epub.css         Same design system, for the EPUB build
+books/pipeline/               book.py, build.py, build_epub.py, qc.py
 books/_template/              Copy this to start a new title
 books/<slug>/book.yaml        Per-book source of truth
 books/<slug>/manuscript/*.md  One file per chapter

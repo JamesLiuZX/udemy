@@ -1,0 +1,147 @@
+/* epub.css — same design system as kdp-book.cls (theme/deck.css's palette),
+   translated to what e-reader CSS support can actually be trusted to
+   render. Conservative on purpose: readers routinely override font-family
+   and font-size themselves, so this styles color, weight, and spacing,
+   and lets the reader's own text settings win everywhere else. */
+
+body {
+  font-family: "TeX Gyre Schola", Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0 1em;
+}
+
+h1, h2, h3 {
+  font-family: "TeX Gyre Schola", Georgia, serif;
+  font-weight: bold;
+  color: #1B4F8F;
+  text-align: left;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+  border-bottom: 1.5pt solid #1B4F8F;
+  padding-bottom: 0.3em;
+}
+
+/* Pandoc's own auto-generated title page, built from --metadata title/
+   subtitle/author rather than anything in build_epub.py's HTML (see
+   front_matter_html's comment for why front matter doesn't hand-roll
+   its own title heading). text-align is set explicitly on each child
+   here, not just on .titlepage itself: the general h1/p rules above
+   already set text-align: left explicitly, and an explicit value on the
+   element always beats an inherited one regardless of the parent
+   selector's specificity, so centering only the parent has no effect. */
+.titlepage { margin-top: 3em; }
+.titlepage .title {
+  font-size: 1.9em; border-bottom: none; text-align: center;
+}
+.titlepage .subtitle {
+  font-size: 1.05em; font-style: italic; color: #45505E;
+  margin-top: 0.3em; font-weight: normal; text-align: center;
+}
+.titlepage .author { margin-top: 3em; font-size: 1.05em; text-align: center; }
+
+h2 {
+  font-size: 1.35em;
+  margin-top: 1.6em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.1em;
+  color: #14181D;
+  margin-top: 1.3em;
+  margin-bottom: 0.4em;
+}
+
+p {
+  margin: 0 0 0.9em 0;
+  text-align: left;
+  orphans: 2;
+  widows: 2;
+}
+
+blockquote {
+  margin: 1.2em 1.5em;
+  font-style: italic;
+  color: #1B4F8F;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2em 0;
+}
+
+th, td {
+  border-bottom: 1px solid #B7C1CC;
+  padding: 0.5em 0.7em;
+  text-align: left;
+}
+
+th {
+  border-bottom: 1.5px solid #14181D;
+  font-weight: bold;
+}
+
+/* --- Callout boxes: same four devices as the print interior ------------- */
+
+.callout {
+  margin: 1.4em 0;
+  padding: 0.9em 1.1em;
+  border: 1px solid;
+  border-radius: 2px;
+}
+
+/* The label and source lines are <strong>/<em> rather than classed
+   spans: Pandoc's HTML-to-EPUB round trip drops a class on a nested <p>
+   (see build_epub.py's convert_devices), but reliably keeps emphasis
+   markup, so the box's own class is what carries the colour instead of
+   a class on its children. */
+.callout p:first-child strong {
+  font-size: 0.85em;
+  letter-spacing: 0.03em;
+}
+
+.callout p:last-child {
+  margin-bottom: 0;
+}
+
+.callout p em {
+  font-size: 0.9em;
+  color: #45505E;
+}
+
+.author-input {
+  background: #F7EEDD;
+  border-color: #C1741A;
+}
+.author-input p:first-child strong { color: #C1741A; }
+
+.key-insight {
+  background: #E7F2EC;
+  border-color: #1C6B4C;
+}
+.key-insight p:first-child strong { color: #1C6B4C; }
+
+.takeaways {
+  background: #EAF1F8;
+  border-color: #1B4F8F;
+}
+.takeaways p:first-child strong { color: #1B4F8F; }
+.takeaways ul { margin: 0.3em 0 0 0; padding-left: 1.2em; }
+
+.pullquote {
+  margin: 1.4em 0.5em;
+  padding: 0;
+  border: none;
+  font-size: 1.15em;
+  font-style: italic;
+  color: #1B4F8F;
+  text-align: center;
+  background: none;
+}

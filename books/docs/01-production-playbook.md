@@ -119,14 +119,43 @@ Don't overuse either. A pull quote every page stops being a pull quote
 and starts being a font size. One well-chosen pull quote and one closing
 takeaways box per chapter is the target, not a ceiling to push past.
 
-## 4. `[AUTHOR-INPUT: ...]`
+## 4. `[KEY-INSIGHT: claim || source]`
+
+A researched, cited statistic or case study, for when the real author has
+no personal anecdote to give (the normal case for the titles currently in
+this repo). Green box, claim first, then the source in a smaller line
+underneath.
+
+```markdown
+[KEY-INSIGHT: A Canadian tribunal held Air Canada liable for a refund
+policy its own chatbot invented on the spot || Source: Moffatt v. Air
+Canada, 2024 BCCRT 149 (Feb. 14, 2024).]
+```
+
+The claim and source are separated by `||`. Watch for one Pandoc quirk:
+it rewrites a literal `||` in the source Markdown into `\textbar\textbar{}`
+in its LaTeX output rather than passing the pipe characters through, so
+`build.py`'s regex matches that escaped form, not raw pipes, when
+converting the marker. If you're ever debugging why a `[KEY-INSIGHT: ...]`
+rendered as plain bracket text on the page instead of a box, check the
+generated `.tex` in `build/books/<slug>/chapters/` for this first.
+
+**Every claim inside one of these must be independently verified with an
+actual search before it's written down.** Full sourcing standard,
+including what to do when you can't confirm an exact quote, in
+`books/docs/02-research-and-sourcing.md`. Read it before writing your
+first one.
+
+## 5. `[AUTHOR-INPUT: ...]`
 
 Same rule as the video side's `[INSTRUCTOR-INPUT]`, applied to print:
 marks a claim, story, or credential only the real author can supply.
 `qc.py` fails the build while any remain. Never resolve one by inventing
 plausible-sounding content; leave it blocking until the author writes it.
+Reach for `[KEY-INSIGHT: ...]` first unless there's a genuine personal
+story to tell here; see `books/CLAUDE.md` §1 for why the default flipped.
 
-## 5. Estimating length
+## 6. Estimating length
 
 `book.py` estimates page count from word count using a words-per-page
 constant calibrated to 6"×9" trim at the class's default body size
@@ -136,7 +165,7 @@ writing, not a substitute for rendering and checking the real page count,
 which shifts with how much of the manuscript is dialogue, lists, tables,
 or headings versus dense prose.
 
-## 6. Build commands
+## 7. Build commands
 
 ```bash
 # Full interior PDF

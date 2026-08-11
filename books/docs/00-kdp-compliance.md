@@ -36,12 +36,23 @@ it, published in volume. Enforcement here is account-level. A pattern of
 low-effort titles risks your publishing rights broadly, not just a
 takedown of one book.
 
-The practical implication for this pipeline: **`[AUTHOR-INPUT: ...]` is
-not optional friction, it's the thing that makes a title defensible.** A
-self-help chapter with zero real anecdote, credential, or tested case
-behind it is both a worse book and a flagged pattern. Do not ship a
-chapter that never resolved its `[AUTHOR-INPUT]` markers; that is the
-build correctly refusing to let you.
+The practical implication for this pipeline: **a self-help or business
+chapter with zero real anecdote, credential, or evidence behind it is
+both a worse book and a flagged pattern.** `[AUTHOR-INPUT: ...]` is one
+way to clear that bar, a personal story or credential only the real
+author can supply. It is not the only way. `[KEY-INSIGHT: claim ||
+source]` (`books/docs/02-research-and-sourcing.md`) clears the same bar
+with a different kind of evidence: a real, independently checked
+statistic or case study instead of lived experience. Both are legitimate
+for the "AI-assisted, not AI-generated" declaration this pipeline is
+built to make true, and plenty of well-regarded business nonfiction
+leans mostly on the second (cited research, named case studies) rather
+than the first. What's never legitimate, under either device, is
+inventing content and presenting it as either a real personal story or a
+real citation. Do not ship a chapter with an unresolved `[AUTHOR-INPUT]`
+marker, and do not ship one with a `[KEY-INSIGHT]` claim that wasn't
+actually checked against a live source; both are the build, or the
+author, correctly refusing to let a gap through.
 
 ## 3. Content quality guidelines, generally
 
