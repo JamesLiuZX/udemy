@@ -5,9 +5,52 @@ pattern as the other books.
 
 ## Status
 
-- Chapter 01 written and verified-pending-signoff: built, rendered pages
-  visually inspected, `qc.py` clean beyond the standard gates.
-- Chapters 02-10 outlined in `book.yaml`, files don't exist yet.
+- Chapters 01-02 written, built, rendered pages visually inspected, `qc.py`
+  clean beyond the standard gates.
+- Chapter roster expanded from 10 to 12 chapters to give the `[180, 240]`
+  target (raised from `[120, 170]`) a realistic path through substance:
+  chapter 10 "Objections and Edge Cases" (FAQ format, new) and chapter 12
+  "The Scripts and Templates" (worksheet/reference chapter, new) were
+  added, and the original closing chapter "Selling in a Room Full of
+  Robots" moved from slot 10 to slot 11 so the book still closes on its
+  thesis before the templates appendix, the same shape as
+  one-person-business's ch14-closes/ch15-templates pattern. `book.yaml` is
+  the source of truth for the current 12-chapter list.
+- Chapters 03-12 in progress this session (drafting from scratch).
+
+## Story bible (characters and terms established in ch01-02, hold these fixed)
+
+- **Diane**: the recurring sales-leader persona, first name only (matches
+  ch01-02's own convention of not giving her a surname). VP/Director-level,
+  runs Monday pipeline reviews, has an ops lead she consults (unnamed
+  role, not a named character). Team's reply rate fell from ~7% to ~2%
+  over 18 months before ch01 despite adopting an AI writing tool a year
+  before ch01 opens. Company is deliberately unnamed ("her company", "her
+  team") so it reads as any B2B sales org, not a case study of one firm.
+- **Theo**: individual-contributor AE on Diane's team, introduced starting
+  ch03, carries the "how do I actually do this" throughline for the craft
+  chapters (03-05) and the coaching chapter (06). Mid-market segment.
+- **Naomi**: second AE on Diane's team, the contrast worked example
+  (enterprise/regulated-industry segment, longer sales cycle, more
+  stakeholders per deal) alongside Theo's mid-market motion, the same
+  "two worked examples generalize the point past one kind of seller" role
+  Marcus plays opposite Priya in one-person-business. Introduced no later
+  than ch03 so both are available for every craft/coaching chapter after.
+- **Owen**: buyer-side persona for ch09 specifically (a RevOps/marketing
+  ops leader on the *receiving* end of outreach), giving the reader the
+  view from the other side of the inbox. Not a running character outside
+  ch09.
+- Established terms, keep exact: "spray-and-pray", "reply rate",
+  "deliverability", "complaint rate" (bulk-sender ceiling from ch02),
+  "cadence"/"sequence" (ch05's subject), "ICP", "pipeline review", "quota".
+- House section skeleton, established by ch01-02, keep for every chapter:
+  concrete scene opener -> numbered/`##` sections building the argument ->
+  "What this chapter will not do" section -> `[TAKEAWAYS]` -> "Where this
+  goes next" closing paragraph. One `[KEY-INSIGHT: ...]` and one
+  `[PULLQUOTE: ...]` (verbatim from the chapter's own body) per chapter,
+  same discipline as every other book in this repo.
+- Register: sales-leader peer register (see below), never em dashes
+  (`style.em_dash: avoid`), US spelling, no LLM tells.
 
 ## Register
 
@@ -34,7 +77,9 @@ manager-rep dynamics, buyer-side trust erosion specifically.
 | 07 When AI Actually Helps a Rep | Legitimate uses: call prep, account research, objection-handling practice |
 | 08 The Metrics That Lie to Sales Leaders | Vanity metrics (send volume, open rate) vs metrics that predict revenue |
 | 09 Buyers Can Tell, and What That Costs You | Trust erosion, brand cost of being another AI-spam sender |
-| 10 Selling in a Room Full of Robots | Closing: the honest, durable differentiator |
+| 10 Objections and Edge Cases | FAQ format: "my competitors send more and win," ABM at scale, regulated industries, honesty about time cost |
+| 11 Selling in a Room Full of Robots | Closing: the honest, durable differentiator |
+| 12 The Scripts and Templates | Reference chapter: research checklist, cadence templates, coaching 1:1 script, metrics dashboard, collected last like one-person-business's ch15 |
 
 ## Things to hold onto while writing the rest
 
