@@ -81,4 +81,4 @@ Most people running this exercise for the first time find at least one claim in 
 
 ## Where this goes next
 
-Chapter eleven takes the room one step further: the specific pushback lines you'll actually hear once you start saying calibrated numbers out loud instead of comfortable hedges, and what to say back that isn't just this chapter's advice repeated more forcefully.
+Chapter eleven takes a step back from the room and into the vocabulary: the specific technical judgment calls, spoken in the specific words engineers actually use for them, that let you ask a sharp question in an architecture review instead of nodding along. Chapter fourteen comes back to the room itself, with the pushback lines you'll actually hear once you start saying calibrated numbers out loud instead of comfortable hedges.

@@ -118,6 +118,83 @@ consistency check (compares the gutter actually used against what the real
 final page count wants) passes silently, the same check that already
 caught nothing wrong at 97 pages.
 
+## 2026-08-11 (later same day): closing the page-count gap with two untapped course sections
+
+A checkpoint full build after every chapter above was expanded still landed at
+**125 pages** against the `[180, 240]` target, a 55-115 page gap. Stretching
+the four planned back-matter appendices far enough to close that gap alone
+would have meant 14-21 real pages each, past the point where they'd still
+read as genuine fillable worksheets rather than disguised extra chapters,
+which is exactly the padding-by-a-different-route this expansion is not
+supposed to do. The honest fix is more chapters, not longer appendices, and
+two entire course sections have never been drawn on by this book at all:
+
+- **Section 2, "Speaking Engineer Without Faking It"** (8 lectures): the
+  prompt/RAG/fine-tune/agent decision tree, embeddings without the math,
+  latency and the p95 conversation, and reading a benchmark table
+  critically. Genuinely different material from anything chapters 1-10
+  cover, and it's the vocabulary gap the book's own chapter 10 (Managing
+  the Room) gestures at without ever teaching directly.
+- **Section 5, "RAG and Knowledge Systems"** (10 lectures): why RAG exists,
+  the pipeline stages, chunking decisions, retrieval quality metrics (hit
+  rate, MRR, precision), and the six places RAG breaks in production
+  including permissions and freshness. RAG is the single most common way a
+  real AI feature reaches outside its own model, and this book had never
+  once mentioned it by name.
+
+Three new chapters, drawn from that material, inserted **after chapter 10
+and before the closing sequence** (Objections, Field Notes, First Ninety
+Days, Where This Breaks), which keeps the closing sequence's own internal
+order and relationships intact and only pushes their numbers up by three:
+
+| # | Title | Status |
+| --- | --- | --- |
+| 11 | Speaking Engineer Without Faking It | **new**, adapts 2.2, 2.3, 2.5, 2.6, 2.7 |
+| 12 | Why RAG, and How to Measure It | **new**, adapts 5.1, 5.2, 5.3, 5.4 |
+| 13 | Where RAG Breaks in Production | **new**, adapts 5.5, 5.6, 5.7 |
+| 14 | Objections and Pushback | renumbered from 11 |
+| 15 | Field Notes: Three Worked Case Studies | renumbered from 12 |
+| 16 | The First Ninety Days | renumbered from 13 |
+| 17 | Where This Breaks | renumbered from 14 |
+
+Files: `11-objections-and-pushback.md` -> `14-...`, `12-field-notes-...md`
+-> `15-...`, `13-the-first-ninety-days.md` -> `16-...`,
+`14-where-this-breaks.md` -> `17-...` (all `git mv`'d in reverse order to
+avoid collisions, history preserved). `book.yaml`'s `chapters:` list
+updated to match, new chapters 11-13 filed with new manuscript filenames.
+
+**Cross-references touched, found via
+`grep -noE "[Cc]hapter (one|two|...|seventeen)" manuscript/*.md` before and
+after, the same discipline the first renumbering pass established:**
+
+- `02-seven-shapes.md`: "chapter thirteen's discovery sprint" -> "chapter
+  sixteen's" (First Ninety Days moved from 13 to 16).
+- `10-managing-the-room.md`: its closing "Where this goes next" used to
+  describe old chapter 11 (Objections). Rewritten to describe the new
+  chapter 11 (Speaking Engineer) instead, since that's what actually
+  follows it now.
+- `01-the-accountability-gap.md`: its closing roadmap paragraph named every
+  chapter by ordinal word through "Fourteen, the last chapter." Rewritten
+  to name all seventeen, inserting the vocabulary and RAG chapters in
+  their real position between Ten and the renumbered closing sequence.
+- The renumbered files themselves (now 14, 15, 16, 17): each chapter's own
+  self-references to its neighbours and to "how many chapters this book
+  has spent" bumped by three (e.g. old ch13's "turns twelve chapters of
+  method" -> "turns fifteen chapters", old ch14's "spent thirteen
+  chapters" -> "spent sixteen chapters"), and each "Where this goes next"
+  transition re-pointed at its actual new neighbour.
+- New chapters 11, 12, 13 each get their own "Where this goes next"
+  closing the chain: 11 -> 12, 12 -> 13, 13 -> 14 (back to Objections,
+  the room).
+
+Re-ran the same grep after all edits landed to confirm no stale ordinal
+survived; this is the second time this exact failure mode (a book that
+cross-references itself by chapter number breaking silently on reorder)
+has come up, and it will come up again if the outline changes further.
+
+Gutter band is unaffected: midpoint of `[180, 240]` is still 210,
+comfortably inside the 151-300 -> 0.5in band already documented above.
+
 ## Status
 
 - Chapters 01 through 03 are written and verified-pending-signoff: built

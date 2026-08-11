@@ -2,7 +2,7 @@
 
 A team that had genuinely done everything this book describes still got surprised. The golden set was real, built from actual tickets, split across the four buckets from chapter four. The rubric held up under calibration. The cost model was measured, not guessed. The risk register had five real rows, each one owned and dated. Six months in, a customer wrote in about a refund the agent had approved that never should have qualified, and the failure didn't trace back to any single skipped step. It traced back to a kind of ticket nobody, including the fifty carefully chosen cases, had ever actually seen before.
 
-That story isn't a flaw in the method. It's the honest edge of it, and a book that spent thirteen chapters building confidence in a set of tools owes its last chapter to the places those tools stop being enough. Every method in this book reduces how often you're guessing. None of them reduces it to zero, and pretending otherwise would undo the one thing this book has tried hardest to model: a claim you could actually check.
+That story isn't a flaw in the method. It's the honest edge of it, and a book that spent sixteen chapters building confidence in a set of tools owes its last chapter to the places those tools stop being enough. Every method in this book reduces how often you're guessing. None of them reduces it to zero, and pretending otherwise would undo the one thing this book has tried hardest to model: a claim you could actually check.
 
 ## What this book assumes that isn't always true
 

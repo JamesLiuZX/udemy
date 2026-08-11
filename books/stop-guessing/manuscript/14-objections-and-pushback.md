@@ -8,7 +8,7 @@ None of these objections are unreasonable, and treating them as obstacles to arg
 
 | The objection | The short answer |
 | --- | --- |
-| "We don't have time for this" | The five-day discovery sprint (chapter thirteen) and the rough cost check (chapter six) both fit inside a week. The alternative isn't zero time spent, it's the same time spent later, after launch, under worse conditions. |
+| "We don't have time for this" | The five-day discovery sprint (chapter sixteen) and the rough cost check (chapter six) both fit inside a week. The alternative isn't zero time spent, it's the same time spent later, after launch, under worse conditions. |
 | "The vendor already tested it" | Their number describes their benchmark, not your feature, your users, or your failure modes. Chapter four's golden set exists because a vendor's number and your risk are two different questions. |
 | "Legal will slow everything down" | A risk register (chapter eight) is what makes a legal review fast, because it gives counsel a specific, answerable question instead of an open-ended one. Skipping it doesn't remove the review. It removes your preparation for it. |
 | "Our competitors shipped without this" | You don't know what it's costing them yet. Chapter six's margin trap and chapter nine's metrics exist precisely because a shipped feature and a profitable, safe one are not automatically the same feature. |
@@ -58,4 +58,4 @@ Most people find this harder than it sounds, because an answer prepared under pr
 
 ## Where this goes next
 
-Chapter twelve walks the entire method through three complete worked cases, start to finish, in domains this book hasn't touched yet, so you see every chapter's tools working together on one feature before being asked to run them on your own.
+Chapter fifteen walks the entire method through three complete worked cases, start to finish, in domains this book hasn't touched yet, so you see every chapter's tools working together on one feature before being asked to run them on your own.

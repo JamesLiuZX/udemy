@@ -82,17 +82,26 @@ chapters:
     title: "Managing the Room"
     file: manuscript/10-managing-the-room.md
   - id: "11"
-    title: "Objections and Pushback"
-    file: manuscript/11-objections-and-pushback.md
+    title: "Speaking Engineer Without Faking It"
+    file: manuscript/11-speaking-engineer-without-faking-it.md
   - id: "12"
-    title: "Field Notes: Three Worked Case Studies"
-    file: manuscript/12-field-notes-three-worked-case-studies.md
+    title: "Why RAG, and How to Measure It"
+    file: manuscript/12-why-rag-and-how-to-measure-it.md
   - id: "13"
-    title: "The First Ninety Days"
-    file: manuscript/13-the-first-ninety-days.md
+    title: "Where RAG Breaks in Production"
+    file: manuscript/13-where-rag-breaks-in-production.md
   - id: "14"
+    title: "Objections and Pushback"
+    file: manuscript/14-objections-and-pushback.md
+  - id: "15"
+    title: "Field Notes: Three Worked Case Studies"
+    file: manuscript/15-field-notes-three-worked-case-studies.md
+  - id: "16"
+    title: "The First Ninety Days"
+    file: manuscript/16-the-first-ninety-days.md
+  - id: "17"
     title: "Where This Breaks"
-    file: manuscript/14-where-this-breaks.md
+    file: manuscript/17-where-this-breaks.md
 
 back_matter:
   - appendix_a_the_golden_set_worksheet

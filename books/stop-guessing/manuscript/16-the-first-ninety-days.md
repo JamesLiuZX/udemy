@@ -2,7 +2,7 @@
 
 An idea landed on the desk in the first week of the new role, the way an idea always does: a customer request forwarded with "can we just do this with AI," three lines long, sounding entirely plausible in the room. Everyone wanted an answer by Friday. Nobody wanted to spend a quarter of engineering time finding out the answer was no.
 
-That tension is the actual shape of the job this book has been preparing you for, and it doesn't wait for you to feel ready. This chapter is the part that turns twelve chapters of method into something you can run on a real Tuesday: a five-day process for a new idea, and a ninety-day shape for a new role, both built entirely from tools this book already gave you.
+That tension is the actual shape of the job this book has been preparing you for, and it doesn't wait for you to feel ready. This chapter is the part that turns fifteen chapters of method into something you can run on a real Tuesday: a five-day process for a new idea, and a ninety-day shape for a new role, both built entirely from tools this book already gave you.
 
 ## The discovery sprint: five days, five questions you already have
 
@@ -32,7 +32,7 @@ Compare the cost of a week spent on a sprint against the cost of a quarter of en
 
 ## Three milestones for the first ninety days
 
-The same discipline that evaluates a new idea also shapes a new role, and the generic version of a thirty-sixty-ninety plan, learn the product, build relationships, ship a quick win, isn't wrong so much as it's not specific to anything. It says nothing an interviewer couldn't have guessed before you walked in the door. This book has spent twelve chapters building things more specific than that.
+The same discipline that evaluates a new idea also shapes a new role, and the generic version of a thirty-sixty-ninety plan, learn the product, build relationships, ship a quick win, isn't wrong so much as it's not specific to anything. It says nothing an interviewer couldn't have guessed before you walked in the door. This book has spent fifteen chapters building things more specific than that.
 
 | Window | What it's for | Built from |
 | --- | --- | --- |
@@ -86,4 +86,4 @@ A cost model can pass a shallow version of its own row, every field filled in, w
 
 ## Where this goes next
 
-Chapter fourteen is the last one, and it's the hardest to write honestly: where every method in this book actually stops working, because a book that never says so isn't one worth trusting with a real launch decision.
+Chapter seventeen is the last one, and it's the hardest to write honestly: where every method in this book actually stops working, because a book that never says so isn't one worth trusting with a real launch decision.

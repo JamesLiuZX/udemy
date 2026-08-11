@@ -73,4 +73,4 @@ Keep it to one page. The value of this exercise isn't thoroughness, it's forcing
 
 ## Where this goes next
 
-Chapter thirteen turns from a single feature to a role: the five-day discovery sprint for the next idea that lands on your desk, and the ninety-day shape for making this method a habit rather than a one-time read.
+Chapter sixteen turns from a single feature to a role: the five-day discovery sprint for the next idea that lands on your desk, and the ninety-day shape for making this method a habit rather than a one-time read.

@@ -64,7 +64,7 @@ The skill this chapter is teaching isn't caution. It's precision about where the
 
 List every AI feature you own or are about to own, shipped or planned, one line each. Next to each one, name its shape from the seven above. Most features are actually a chain of shapes rather than one: a support tool that retrieves a policy, generates a reply, and only occasionally escalates is a retriever and a generator stacked together, and the disqualification checklist has to be run against the riskiest shape in that chain, not the average of all of them.
 
-Then run the checklist's five questions against whichever line worries you most, specifically, not against the whole list at once. Most people doing this for the first time find one feature where the honest answer to "is a single error unrecoverable" was never actually asked before it shipped. That's not a reason to panic about it retroactively. It's the same finding chapter thirteen's discovery sprint turns into a five-day, cheap way to answer this question before the next feature, instead of after.
+Then run the checklist's five questions against whichever line worries you most, specifically, not against the whole list at once. Most people doing this for the first time find one feature where the honest answer to "is a single error unrecoverable" was never actually asked before it shipped. That's not a reason to panic about it retroactively. It's the same finding chapter sixteen's discovery sprint turns into a five-day, cheap way to answer this question before the next feature, instead of after.
 
 [TAKEAWAYS]
 
