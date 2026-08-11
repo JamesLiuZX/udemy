@@ -1,0 +1,171 @@
+# =============================================================================
+# Simplified Chinese edition of "AI for the Rest of Us".
+# Separate book.yaml (own slug, own build output dir) rather than a field
+# inside the English book.yaml, so `build.py --book books/ai-for-the-rest-of-us/
+# book-zh.yaml` builds this edition without touching the English path at all.
+# Mirrors the English book.yaml structurally; every value below is the
+# Chinese equivalent of that file's field, not a re-derivation.
+# =============================================================================
+
+slug: ai-for-the-rest-of-us-zh
+title: "写给普通人的 AI"
+subtitle: "零技术基础也能看懂的大白话指南，教你如何真正从 AI 那里获得帮助"
+author: "James Liu"
+year: 2026
+genre: business
+trim: "6x9"
+target_pages: [140, 190]
+lang: zh
+
+# Never set true except by the real author, after a genuine full read-through.
+verified: false
+
+style:
+  spellcheck_lang: en_US   # hunspell has no useful CJK dictionary here; see notes.md
+  em_dash: avoid
+
+# Not part of the interior PDF. Not a KDP listing either -- KDP does not
+# accept a Chinese-language paperback at all, and does not list Simplified
+# Chinese as a supported eBook language (only Traditional Chinese, in beta,
+# ebook-only). This edition targets Google Play Books, Apple Books, and
+# direct/lead-gen distribution instead. See notes.md for what was checked.
+description: |
+  你从不觉得自己是「懂技术的人」，而你翻过的每一本 AI 指南，写书的人似乎都已经
+  忘了那种感觉。这一本不一样。
+
+  没有提示词工程，没有行话，也不会让你对着十七个从没听过的应用软件挨个比较。
+  这本书只谈你手头真正要处理的事：一趟你一直没空细想的旅行，一封你迟迟不敢
+  写的信，帮孩子写作业却不替他写完，带着正确的问题走进诊室，看懂一张让人头
+  疼的账单，还有分清「AI 说错了」和「AI 被人用来害你」这两件完全不同的事。
+
+  写给每个家里网络一出问题就会被叫去帮忙的那个人。只是这一次，答案不再是
+  「我去看看」，而是一本可以直接递过去的书。
+
+dedication: "献给每一个因为不知道该打什么字，而关掉了那个页面的人。"
+
+rights_note: "版权所有，未经作者书面许可，不得以任何形式复制、发行或传播本书的任何部分，书评中的简短引用除外。"
+ai_disclosure_text: "本书在作者的指导、大纲规划与审阅下，借助 AI 辅助完成写作。书中数据与案例均引自已标注来源的公开资料；任何涉及个人经历的表述均为作者本人真实经历。"
+isbn_note: "ISBN：[将在正式发行时分配]"
+
+front_matter:
+  - half_title
+  - title_page
+  - copyright
+  - dedication
+  - toc
+
+chapters:
+  - id: "01"
+    title: "你不必是「科技达人」"
+    file: manuscript-zh/01-you-dont-need-to-be-a-tech-person.md
+  - id: "02"
+    title: "改变一切的那一句话"
+    file: manuscript-zh/02-the-one-sentence-that-changes-everything.md
+  - id: "03"
+    title: "你一直没空规划的那趟旅行"
+    file: manuscript-zh/03-the-trip-you-havent-had-time-to-plan.md
+  - id: "04"
+    title: "你一直拖着不敢下笔的那封信"
+    file: manuscript-zh/04-the-letter-youve-been-avoiding.md
+  - id: "05"
+    title: "帮忙做作业，而不是替孩子做作业"
+    file: manuscript-zh/05-homework-help-without-doing-the-homework.md
+  - id: "06"
+    title: "有准备地走进诊室"
+    file: manuscript-zh/06-walking-into-the-doctors-office-prepared.md
+  - id: "07"
+    title: "那些你羞于启齿的钱的问题"
+    file: manuscript-zh/07-money-questions-youre-embarrassed-to-ask.md
+  - id: "08"
+    title: "当它出错的时候"
+    file: manuscript-zh/08-when-it-gets-it-wrong.md
+  - id: "09"
+    title: "诈骗，以及那些形迹可疑的事"
+    file: manuscript-zh/09-the-scams-and-the-sketchy-stuff.md
+  - id: "10"
+    title: "选择并设置好你的工具"
+    file: manuscript-zh/10-choosing-and-setting-up-your-tool.md
+  - id: "11"
+    title: "开口说，而不是动手打"
+    file: manuscript-zh/11-talking-instead-of-typing.md
+  - id: "12"
+    title: "大宗消费，不用手足无措"
+    file: manuscript-zh/12-big-purchases-without-the-overwhelm.md
+  - id: "13"
+    title: "找不到的那些话"
+    file: manuscript-zh/13-the-words-you-cant-find.md
+  - id: "14"
+    title: "做饭、打扫，还有清单上剩下的那些事"
+    file: manuscript-zh/14-cooking-cleaning-and-the-rest-of-the-list.md
+  - id: "15"
+    title: "寻常的紧急状况"
+    file: manuscript-zh/15-the-ordinary-emergency.md
+  - id: "16"
+    title: "当你所爱的人拒绝尝试"
+    file: manuscript-zh/16-when-someone-you-love-refuses-to-try.md
+  - id: "17"
+    title: "再一次找工作"
+    file: manuscript-zh/17-looking-for-work-again.md
+  - id: "18"
+    title: "细则里的猫腻"
+    file: manuscript-zh/18-the-fine-print.md
+  - id: "19"
+    title: "那些跟AI没什么关系的小技术问题"
+    file: manuscript-zh/19-small-tech-problems-that-arent-really-about-ai.md
+  - id: "20"
+    title: "一件纯粹属于你自己的事"
+    file: manuscript-zh/20-something-just-for-you.md
+  - id: "21"
+    title: "搞懂Medicare和保险该怎么选"
+    file: manuscript-zh/21-making-sense-of-medicare-and-insurance-choices.md
+  - id: "22"
+    title: "一场大型家庭聚会"
+    file: manuscript-zh/22-a-big-family-gathering.md
+  - id: "23"
+    title: "照顾年迈的父母"
+    file: manuscript-zh/23-caring-for-a-parent.md
+  - id: "24"
+    title: "大学申请和助学金这团乱麻"
+    file: manuscript-zh/24-the-college-and-financial-aid-maze.md
+  - id: "25"
+    title: "当你家里不止说一种语言"
+    file: manuscript-zh/25-when-your-family-speaks-more-than-one-language.md
+  - id: "26"
+    title: "关于宠物的那些问题"
+    file: manuscript-zh/26-pet-care-questions.md
+  - id: "27"
+    title: "看懂你的工资单和税"
+    file: manuscript-zh/27-understanding-your-paycheck-and-taxes.md
+  - id: "28"
+    title: "跨代沟通，保持联系"
+    file: manuscript-zh/28-staying-in-touch-across-the-generations.md
+  - id: "29"
+    title: "提前规划，和那场没人愿意开口的谈话"
+    file: manuscript-zh/29-advance-planning-and-the-conversation-nobody-starts.md
+  - id: "30"
+    title: "当车真的需要大修"
+    file: manuscript-zh/30-when-the-car-needs-real-repairs.md
+  - id: "31"
+    title: "规划裁员或收入空窗期"
+    file: manuscript-zh/31-planning-for-a-layoff-or-income-gap.md
+  - id: "32"
+    title: "教别人用"
+    file: manuscript-zh/32-teaching-someone-else.md
+  - id: "33"
+    title: "两个家庭，一个季节"
+    file: manuscript-zh/33-two-families-one-season.md
+  - id: "34"
+    title: "它到底能省下多少时间和钱"
+    file: manuscript-zh/34-the-time-and-money-it-actually-saves.md
+  - id: "35"
+    title: "你心里还没解开的疑问"
+    file: manuscript-zh/35-questions-you-still-have.md
+  - id: "36"
+    title: "工具箱"
+    file: manuscript-zh/36-the-toolkit.md
+
+back_matter:
+  - about_the_author
+
+back_matter_titles:
+  about_the_author: "关于作者"

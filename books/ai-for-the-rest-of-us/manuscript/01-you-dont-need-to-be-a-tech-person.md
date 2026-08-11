@@ -6,7 +6,7 @@ What she wanted to ask was small. A letter had come from her insurance company, 
 
 Linda isn't unusual, and neither is the week she spent avoiding that blank box. She's just a little behind a curve that's moving faster than most people realize.
 
-[KEY-INSIGHT: About half of U.S. adults now use AI chatbots, up from roughly a third of adults just the year before. The habit went from a niche behavior to something close to a coin flip in ordinary conversation in a single year. || Source: Pew Research Center, "Americans' Views on AI Chatbots, Smart Devices and AI's Impact," June 2026.]
+[KEY-INSIGHT: 49 percent of U.S. adults now use AI chatbots, up from 33 percent just two years earlier. The habit went from a niche behavior to something close to a coin flip in ordinary conversation in a short stretch of time. || Source: Pew Research Center, "Americans' Views on AI Chatbots, Smart Devices and AI's Impact," June 2026.]
 
 There is no wrong way to ask. That single fact would have saved Linda a week of a blank text box, and it's the reason this book exists.
 
