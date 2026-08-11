@@ -2,7 +2,7 @@
 
 An idea landed on the desk in the first week of the new role, the way an idea always does: a customer request forwarded with "can we just do this with AI," three lines long, sounding entirely plausible in the room. Everyone wanted an answer by Friday. Nobody wanted to spend a quarter of engineering time finding out the answer was no.
 
-That tension is the actual shape of the job this book has been preparing you for, and it doesn't wait for you to feel ready. This chapter is the part that turns nine chapters of method into something you can run on a real Tuesday: a five-day process for a new idea, and a ninety-day shape for a new role, both built entirely from tools this book already gave you.
+That tension is the actual shape of the job this book has been preparing you for, and it doesn't wait for you to feel ready. This chapter is the part that turns twelve chapters of method into something you can run on a real Tuesday: a five-day process for a new idea, and a ninety-day shape for a new role, both built entirely from tools this book already gave you.
 
 ## The discovery sprint: five days, five questions you already have
 
@@ -32,7 +32,7 @@ Compare the cost of a week spent on a sprint against the cost of a quarter of en
 
 ## Three milestones for the first ninety days
 
-The same discipline that evaluates a new idea also shapes a new role, and the generic version of a thirty-sixty-ninety plan, learn the product, build relationships, ship a quick win, isn't wrong so much as it's not specific to anything. It says nothing an interviewer couldn't have guessed before you walked in the door. This book has spent ten chapters building things more specific than that.
+The same discipline that evaluates a new idea also shapes a new role, and the generic version of a thirty-sixty-ninety plan, learn the product, build relationships, ship a quick win, isn't wrong so much as it's not specific to anything. It says nothing an interviewer couldn't have guessed before you walked in the door. This book has spent twelve chapters building things more specific than that.
 
 | Window | What it's for | Built from |
 | --- | --- | --- |
@@ -41,6 +41,10 @@ The same discipline that evaluates a new idea also shapes a new role, and the ge
 | Days 61-90 | Make the proof outlive you personally working on it | Chapter nine's dashboard, chapter ten's roadmap fix |
 
 Days one to thirty aren't about changing anything. They're about finding out what's actually true, because a new hire has information value long before they have standing to act. Classify every AI-touching feature you can find, shipped or planned, using chapter two's shapes, and check honestly whether any of them has an eval or a risk register row already. Most people doing this for the first time find at least one that has neither, and that finding, stated plainly, is usually the single most useful thing to hand a new manager in week two.
+
+[KEY-INSIGHT: Lou Gerstner spent his first ninety days as IBM's new CEO in 1993 auditing the company rather than announcing a strategy. At a press conference marking roughly his hundredth day, he told reporters, "the last thing IBM needs right now is a vision," explaining that his audit had found the company already owned drawers full of vision statements and had accurately predicted most major technology trends; what it lacked was the ability to act on any of them. Gerstner spent the next nine years executing tough, specific, market-driven strategy instead, and IBM's market capitalization grew from roughly $29 billion to $168 billion over that period. || Source: Louis V. Gerstner Jr., public remarks, 1993, as documented in coverage of his tenure including "Louis V. Gerstner, Who Revived a Faltering IBM in the '90s, Dies at 83," reporting his 1993 remarks and IBM's subsequent market-cap growth.]
+
+Notice what Gerstner refused to do, under exactly the pressure this chapter's day-thirty table is built to resist: perform having a plan before the audit had actually finished. The room wanted a vision on day one. He gave them one on nobody's schedule but his audit's, and it was built from what ninety days of actually checking had found, not from what would have sounded confident at a press conference in week two. The specific number that followed, nearly six times the company's market value over nine years, is not proof this always works. It's proof that refusing to perform certainty before you've earned it is a strategy real leaders have bet a company on, not just a caution this book invented for a smaller stage.
 
 Days thirty-one to sixty are where the audit turns into something real. Pick the single gap that matters most, small enough to actually finish inside a month, and fix it visibly: a golden set for the most fragile shipped feature, or the first honest row in a risk register that didn't exist before you arrived. The point isn't the artifact's size. It's that it's finished and checkable, which a proposal never is.
 
@@ -82,4 +86,4 @@ A cost model can pass a shallow version of its own row, every field filled in, w
 
 ## Where this goes next
 
-Chapter twelve is the last one, and it's the hardest to write honestly: where every method in this book actually stops working, because a book that never says so isn't one worth trusting with a real launch decision.
+Chapter fourteen is the last one, and it's the hardest to write honestly: where every method in this book actually stops working, because a book that never says so isn't one worth trusting with a real launch decision.
