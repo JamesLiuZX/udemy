@@ -1,0 +1,87 @@
+# =============================================================================
+# Single source of truth for "AI for the Rest of Us".
+# Practical / workflow book for non-technical adults: everyday tasks, not
+# productivity-hacking. Plain English throughout, no jargon tolerance.
+# =============================================================================
+
+slug: ai-for-the-rest-of-us
+title: "AI for the Rest of Us"
+subtitle: "The Plain-English Guide to Getting Real Help From AI, No Tech Background Required"
+author: "Your Name"
+year: 2026
+genre: business
+trim: "6x9"
+target_pages: [110, 160]
+
+# Never set true except by the real author, after a genuine full read-through.
+verified: false
+
+style:
+  spellcheck_lang: en_US
+  em_dash: avoid
+
+# KDP listing copy. Not part of the interior PDF.
+description: |
+  You don't think of yourself as a tech person, and every AI guide you've
+  opened so far was written by someone who forgot what that felt like.
+  This one wasn't.
+
+  No prompt engineering, no jargon, no seventeen-tab comparison of apps you've
+  never heard of. Just plain help with the things actually on your plate:
+  planning a trip you haven't had time to think about, writing the letter
+  you've been avoiding, helping with homework without doing it for your
+  kid, walking into a doctor's appointment with the right questions,
+  making sense of a bill, and knowing the difference between AI being
+  wrong and AI being used against you.
+
+  Written for the people every family already calls when the wifi breaks,
+  except this time the answer isn't "let me look at it," it's a book they
+  can hand over instead.
+
+dedication: "For everyone who closed the tab because they didn't know what to type."
+
+front_matter:
+  - half_title
+  - title_page
+  - copyright
+  - dedication
+  - toc
+
+# Full planned arc. Chapters without a manuscript file yet are listed here as
+# the outline; build.py only requires the file to exist for the chapter IDs
+# you actually pass to --only. See notes.md in this directory for status.
+chapters:
+  - id: "01"
+    title: "You Don't Need to Be a Tech Person"
+    file: manuscript/01-you-dont-need-to-be-a-tech-person.md
+  - id: "02"
+    title: "The One Sentence That Changes Everything"
+    file: manuscript/02-the-one-sentence-that-changes-everything.md
+  - id: "03"
+    title: "The Trip You Haven't Had Time to Plan"
+    file: manuscript/03-the-trip-you-havent-had-time-to-plan.md
+  - id: "04"
+    title: "The Letter You've Been Avoiding"
+    file: manuscript/04-the-letter-youve-been-avoiding.md
+  - id: "05"
+    title: "Homework Help Without Doing the Homework"
+    file: manuscript/05-homework-help-without-doing-the-homework.md
+  - id: "06"
+    title: "Walking Into the Doctor's Office Prepared"
+    file: manuscript/06-walking-into-the-doctors-office-prepared.md
+  - id: "07"
+    title: "Money Questions You're Embarrassed to Ask"
+    file: manuscript/07-money-questions-youre-embarrassed-to-ask.md
+  - id: "08"
+    title: "When It Gets It Wrong"
+    file: manuscript/08-when-it-gets-it-wrong.md
+  - id: "09"
+    title: "The Scams and the Sketchy Stuff"
+    file: manuscript/09-the-scams-and-the-sketchy-stuff.md
+  - id: "10"
+    title: "Teaching Someone Else"
+    file: manuscript/10-teaching-someone-else.md
+
+back_matter:
+  - acknowledgments
+  - about_the_author
