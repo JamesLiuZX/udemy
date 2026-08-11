@@ -18,6 +18,14 @@ The same pattern shows up at a much larger scale in one of the more rigorous stu
 
 Same broad task, three specifically built tools, three different failure rates, and one of the three failing in a genuinely different way than the other two, incompleteness instead of invention. A user who walked away from testing Lexis+ AI with a general rule about "AI legal research tools" would carry an unearned, wrong assumption straight into Ask Practical Law AI, where the actual risk isn't confident fabrication at all, it's a confident-sounding answer that's simply missing half of what a complete one would include. The lesson isn't specific to lawyers. It's the same lesson Devon learned the expensive way: the unit that has a failure mode is the task and the tool together, not the tool alone and never "AI" as a category.
 
+## The other half of the same matrix
+
+Devon's story shows one tool, two tasks, two unrelated failure patterns. It's worth seeing the mirror case too: one task, two tools, because the unit that matters is the pairing, and a pairing has two axes, not one.
+
+Simone runs marketing for a regional gym chain and tested two different AI writing tools on the identical task, the weekly member newsletter, before picking one to use going forward. Both tools got the structure right: a workout tip, a member spotlight, a class schedule reminder. Where they differed was specific and consistent. The first tool, run five times, twice quietly changed a class time in the schedule reminder to a plausible-sounding but wrong hour, the kind of error that's invisible unless you already know the real schedule. The second tool never touched the schedule, not once across five runs, but it repeatedly invented a specific member's name and a specific compliment for the spotlight section when Simone's brief didn't supply one, a fabrication problem the first tool never showed.
+
+Same task, same brief, same five inputs. Two genuinely different failure modes, one per tool. If Simone had tested only the first tool and concluded "AI newsletter tools garble schedule times," she'd have carried that exact wrong caution into the second tool, watching for a schedule error that tool was never going to make while missing the fabricated member quote it actually produced twice. The lesson from Devon's story runs in the other direction here, same conclusion from the opposite angle: neither the task nor the tool alone tells you the failure mode. Only the specific pairing does.
+
 ## Building the actual performance review
 
 A real performance review of an employee doesn't say "sometimes makes mistakes." It says what kind, on what kind of work, how often, and under what conditions, because that's the only version of the information that's actually useful for deciding what to double-check next time. Building the same thing for a delegated task takes three ingredients, all of which you already have if you ran the trial from chapter three and the spot-checks from chapter four.
@@ -39,6 +47,18 @@ A useful failure-mode list has two or three entries per task, not ten. Once you'
 This will not promise a stable list. The proposal tool that fabricates statistics today might stop doing that after a model update and start doing something else instead, an unannounced version change with real behavioral consequences, exactly the kind of thing this book avoids anchoring examples to for how fast it goes stale. Treat every failure-mode list as current as of your last several checks, not permanent. Revisit it periodically the same way you'd revisit an employee's performance review, not write it once and file it away for good.
 
 It also won't tell you a short, specific failure-mode list makes a task safe to stop watching entirely. It tells you exactly where to keep watching, and exactly where you can now stop watching as hard, which is a meaningfully smaller task than declaring the whole thing solved.
+
+## Try this: start the file
+
+Pick one task you've spot-checked at least a few times already. Write down, in plain language, every specific miss you can actually remember, not a vague sense of "sometimes it's off":
+
+| What went wrong | How often (roughly) | Under what condition |
+| --- | --- | --- |
+| | | |
+| | | |
+| | | |
+
+If you land on more than three or four real rows, that's not a failure of the task, it's a sign the task is actually several tasks wearing one name. Note which rows would split cleanly into a separate task of their own, and treat that as a flag for the next time you scope a trial the way chapter three describes, not something to solve today.
 
 [TAKEAWAYS]
 

@@ -89,7 +89,14 @@ Progress (updated per chapter as expansion happens):
       worked example (James, apartment-maintenance triage, a keyword-level
       seam rather than a category mix-up), and a "Try this: name your
       seam" exercise. 1,597 -> 2,147 words. Rendered pages checked.
-- [ ] 05 Learning Its Failure Modes
+- [x] 05 Learning Its Failure Modes — added a second worked example
+      (Simone, one task tested across two different newsletter-writing
+      tools, the mirror case of Devon's one-tool-two-tasks story) and a
+      "Try this: start the file" worksheet. No second `[KEY-INSIGHT]`
+      added deliberately: a checklist-length citation search turned up
+      only loosely-fitting matches, and forcing a stretched citation in
+      would violate the sourcing standard rather than serve it. 1,540 ->
+      1,915 words. Rendered pages checked.
 - [ ] 06 Feedback That Actually Sticks
 - [ ] 07 When to Fire It
 - [ ] 08 Your Second Hire, and Your Third
