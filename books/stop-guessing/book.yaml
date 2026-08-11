@@ -18,7 +18,7 @@ verified: false
 
 style:
   spellcheck_lang: en_US
-  em_dash: allow
+  em_dash: avoid
 
 # KDP listing copy. Not part of the interior PDF.
 description: |

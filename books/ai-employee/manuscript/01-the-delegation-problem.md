@@ -1,16 +1,18 @@
 # The Delegation Problem
 
-Two people try AI for the first time, in the same week, for two different tasks. Both conclusions they draw are wrong, and both are wrong for the same reason.
+Two people try AI for the first time in the same week, for two different tasks. Both walk away with a verdict. Both verdicts are wrong, and both are wrong for the same reason.
 
-The first person asks it to draft a reply to an awkward email, one of those messages where a client is annoyed and you need to apologize without admitting fault you don't think is yours. The reply comes back generic, a little stiff, missing the one detail that would have actually landed. She sends her own version instead, closes the tab, and doesn't open it again for a month. Her verdict: overhyped, not actually useful for anything that matters.
+On Tuesday afternoon, the first person pastes in an awkward email, one of those messages where a client is annoyed and you need to apologize without admitting fault you don't think is yours. The reply comes back generic, a little stiff, missing the one detail that would have actually landed. She sends her own version instead, closes the tab, and doesn't open it again for a month. Her verdict: overhyped. Not actually useful for anything that matters.
 
-The second person asks it to summarize a forty-page vendor contract before a renewal meeting. The summary comes back clean, confident, well-organized. He pastes it straight into his notes and walks into the meeting without reading the original document. The summary missed a clause about the auto-renewal notice window, quietly, the way a missed detail doesn't announce itself. Three months later the contract renews automatically, a year early, because nobody flagged it in time. His verdict: dangerous, can't be trusted with anything that matters.
+The night before a renewal meeting, the second person pastes in a forty-page vendor contract and asks for a summary. It comes back clean, confident, well organized. He pastes it straight into his notes and walks into the meeting without reading the original. The summary skipped a clause about the auto-renewal notice window, quietly, the way a missed detail doesn't announce itself. Three months later the contract renews automatically, a year early, because nobody caught it in time. His verdict: dangerous. Can't be trusted with anything that matters.
 
 [AUTHOR-INPUT: your own specific version of one of these two stories, a task you personally handed to AI that went wrong either by being too quick to dismiss it or too quick to trust it, and what it actually cost you]
 
-Notice these two people reached opposite conclusions from what looks like opposite experiences, underuse in one case, overuse in the other, but they made the exact same mistake to get there. Both of them treated the tool like a vending machine: put in a request, get out a finished product, no judgment required on either end. When the product was bad, the first person blamed the machine and walked away. When the product looked fine, the second person trusted it the way you trust a vending machine's contents, which is to say completely, because there's nothing else to do with a vending machine. Neither of them managed anything. They each made one purchase and rendered one verdict.
+Notice these two people reached opposite conclusions from what looks like opposite experiences, underuse in one case, overuse in the other, but they made the exact same mistake to get there. Both of them treated the tool like a vending machine: put in a request, get out a finished product, no judgment required on either end. When the product was bad, the first person blamed the machine and walked away. When the product looked fine, the second person trusted it the way you trust a vending machine's contents, completely, because there's nothing else to do with a vending machine. Neither of them managed anything. They each made one purchase and rendered one verdict.
 
-This book is about the third option, the one almost nobody reaches for by instinct, because it's not the way software has ever worked before: **AI is not a vending machine you judge in one try. It's more like a new hire you manage over many.**
+[PULLQUOTE: AI is not a vending machine you judge in one try. It's more like a new hire you manage over many.]
+
+This book is about that third option, the one almost nobody reaches for by instinct, because it's not the way software has ever worked before.
 
 ## Meet your new employee
 
@@ -49,7 +51,7 @@ The next chapter is entirely about building briefs like the second one, for what
 
 ## A five-minute check before you go further
 
-Think of one task you've already tried handing to AI, that you gave up on, and one you handed off that came back wrong in a way you only caught later, or didn't catch at all. For each one, ask honestly: did I actually onboard it, brief it the way I'd brief a real hire, give it an example of what good looks like, tell it what it couldn't know on its own? Or did I hand over a task name and expect it to read my mind the way an experienced colleague sometimes can?
+Think back to the two people from the start of this chapter, or better, find your own version of each: one task you've already tried handing to AI that you gave up on, and one you handed off that came back wrong in a way you only caught later, or didn't catch at all. For each one, ask honestly: did I actually onboard it, brief it the way I'd brief a real hire, give it an example of what good looks like, tell it what it couldn't know on its own? Or did I hand over a task name and expect it to read my mind the way an experienced colleague sometimes can?
 
 For most people, most of the time, the honest answer is the second one. That's not a confession of failure. Nobody teaches this skill anywhere, so almost nobody arrives with it already built. It just means the fix is available starting now, on the next task, rather than requiring you to have done anything differently up to this point.
 
@@ -84,3 +86,12 @@ And it won't stay perfectly current with whichever specific app you're using thi
 Chapter two is the job description itself: what to actually include in a brief so it reads like the second email example instead of the first, for any task, not just replying to emails. Three walks through choosing your first real trial task on purpose, small enough that a bad result costs you nothing. Four and five cover the two skills that make delegation actually safe: checking output efficiently instead of redoing it yourself, and learning the specific, repeatable ways your particular task tends to fail. Six is how to give feedback that actually changes future output instead of evaporating after one use. Seven is the disqualification list, the tasks that stay yours. Eight and nine are about scaling past one delegated task without losing track of your own systems. Ten turns the whole thing into a thirty-day plan, one task at a time, starting the week you finish this book.
 
 None of it works as theory you read once and file away. Every chapter ends with something to actually try before the next one, on a task you already have sitting in your inbox or your to-do list right now. The gap between the two people at the start of this chapter closes through one small, well-briefed trial at a time, not through finishing the table of contents.
+
+[TAKEAWAYS]
+
+- AI isn't a vending machine you judge in one try. Manage it like a new hire: brief it, check early work closely, extend trust as it's earned.
+- A bad result almost always means a missing instruction, not a broken tool.
+- The briefing habit doesn't expire as models get better. A sharper hire still does better work with real context, not less.
+- Nothing here requires being technical. Every skill in this book is a management skill you already have, pointed somewhere new.
+
+[/TAKEAWAYS]

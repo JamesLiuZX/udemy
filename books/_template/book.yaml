@@ -17,7 +17,7 @@ verified: false
 
 style:
   spellcheck_lang: en_US        # en_US | en_GB, a per-book choice
-  em_dash: allow                 # allow | avoid
+  em_dash: avoid                 # allow | avoid — avoid is the default; see CLAUDE.md §4
 
 # KDP listing copy. Not part of the interior PDF.
 description: |

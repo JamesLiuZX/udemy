@@ -28,8 +28,20 @@ THEME_DIR = BOOKS_DIR / "theme"
 
 # Pandoc defensively escapes a bracket that could be misread as a LaTeX
 # optional-argument opener (typically at a paragraph start) as `{[}`/`{]}`
-# rather than emitting a bare `[`/`]`. Match both forms.
+# rather than emitting a bare `[`/`]`. Match both forms, here and in the
+# two markers below.
 AUTHOR_INPUT_TEX_RE = re.compile(r"(?:\{\[\}|\[)\s*AUTHOR-INPUT:(.*?)(?:\{\]\}|\])", re.S)
+
+# [PULLQUOTE: a line worth setting big] -> \pullquote{...}
+PULLQUOTE_TEX_RE = re.compile(r"(?:\{\[\}|\[)\s*PULLQUOTE:(.*?)(?:\{\]\}|\])", re.S)
+
+# [TAKEAWAYS]\n- a\n- b\n[/TAKEAWAYS] -> \keytakeaways{<already-converted list>}
+# The list between the markers goes through Pandoc as ordinary Markdown
+# first (so `-` items become a real \begin{itemize}), then this wraps the
+# resulting LaTeX rather than the source text.
+TAKEAWAYS_TEX_RE = re.compile(
+    r"(?:\{\[\}|\[)\s*TAKEAWAYS\s*(?:\{\]\}|\])(.*?)"
+    r"(?:\{\[\}|\[)\s*/TAKEAWAYS\s*(?:\{\]\}|\])", re.S)
 
 DEFAULT_RIGHTS_NOTE = (
     "All rights reserved. No part of this book may be reproduced, distributed, "
@@ -87,6 +99,8 @@ def pandoc_chapter(md_path: Path, out_tex: Path) -> None:
         raise SystemExit(f"pandoc failed on {md_path}:\n{result.stderr}")
     tex = out_tex.read_text(encoding="utf-8")
     tex = AUTHOR_INPUT_TEX_RE.sub(lambda mo: f"\\authorinput{{{mo.group(1).strip()}}}", tex)
+    tex = PULLQUOTE_TEX_RE.sub(lambda mo: f"\\pullquote{{{mo.group(1).strip()}}}", tex)
+    tex = TAKEAWAYS_TEX_RE.sub(lambda mo: f"\\keytakeaways{{{mo.group(1).strip()}}}", tex)
     out_tex.write_text(tex, encoding="utf-8")
 
 

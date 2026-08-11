@@ -109,26 +109,39 @@ document that compiles with `kdp-book.cls`.
    Self-help fails when it restates the premise for forty pages before
    giving the reader anything to do differently. State the claim, then
    earn it.
-2. **A claim needs a source: a study, a named mechanism, or the author's
+2. **Open every chapter on a scene, not a summary.** "Two people try AI
+   for the first time" beats "Many people struggle with AI adoption."
+   Commit to one concrete moment, specific enough that a reader pictures
+   an actual room, before zooming out to the argument. A chapter that
+   opens by naming the abstract category first has already lost the
+   reader most likely to recommend the book onward.
+3. **A claim needs a source: a study, a named mechanism, or the author's
    own tested experience.** If it's the author's experience, it's an
    `[AUTHOR-INPUT: ...]`, not something to invent on their behalf.
-3. **No LLM tells.** "delve", "in today's fast-paced world", "unlock your
+4. **No LLM tells.** "delve", "in today's fast-paced world", "unlock your
    potential", "game-changer", "it's important to note", "in conclusion",
    "a testament to". `qc.py` flags these; they read as generic in fiction
    and non-fiction alike and are the single fastest way a reader (or a KDP
    quality reviewer) pattern-matches a book as AI spam.
-3. **Name the limit of the advice.** What kind of reader this doesn't work
+5. **Name the limit of the advice.** What kind of reader this doesn't work
    for, or when the technique fails. Non-negotiable in self-help
    specifically: advice presented as universal is both less credible and
    more likely to actually harm a reader for whom it's the wrong fit.
-4. **Concrete before abstract**, same instinct as the video side. A named
-   scenario beats a generic one.
-5. **Em dashes are a style choice here, not a ban.** The video side bans
-   them because spoken narration with an em dash reads as an unmistakable
-   LLM tell to a listener. Printed prose has no such tell: professionally
-   edited books use em dashes constantly. Pick a convention per book in
-   `book.yaml: style.em_dash` and hold it consistently; `qc.py` checks
-   consistency, not presence.
+6. **Concrete before abstract**, same instinct as the video side. A named
+   scenario beats a generic one. Vary sentence length on purpose: a run of
+   same-length sentences is what makes competent prose read as flat.
+   Follow a long, subordinate-clause sentence with a short one. Let a
+   fragment land sometimes. That's what makes a paragraph.
+7. **Default to minimal em dashes.** `book.yaml: style.em_dash` still
+   takes `allow` or `avoid`, and `avoid` is the default for new books
+   started after this line was written: KDP paperbacks aren't read aloud
+   the way lectures are, so an em dash isn't the same tell here it is on
+   the video side, but a reader who's just spent a year seeing AI text
+   flagged by its em dashes notices them in a book too, and this system
+   would rather a sentence get rebuilt with a colon, a period, or
+   parentheses than give a reader that flicker of doubt. `allow` remains
+   available per book if an author genuinely wants the em dash back as a
+   stylistic choice; don't switch a book to it by default.
 
 Unlike the video side, there is no fixed pacing model. A chapter's length
 is however long the argument actually takes, subject to the book's overall
@@ -162,6 +175,18 @@ one a given title is before leaning on colour for anything meaning-bearing.
 - Running heads: book title on verso, chapter title on recto. Never the
   author's name on both, it wastes the one piece of free navigation a
   print reader has.
+- Section heads (`##`) print in the ink-blue accent, not black. A chapter
+  with five plain-black subheadings and nothing else reads as a Word
+  document; the colour is doing real work making the page look edited.
+
+**A page is not allowed to be five straight paragraphs of body text.**
+Every chapter needs at least one `[PULLQUOTE: ...]` and closes with one
+`[TAKEAWAYS]` box (syntax and rendering in
+`books/docs/01-production-playbook.md` §3). These aren't decoration on
+top of finished writing, they're part of what makes a KDP nonfiction title
+look like it came from a publisher rather than a template, alongside the
+`\authorinput` box the gate already forces. Plan where they land while
+drafting a chapter, not as a pass tacked on afterward.
 
 ---
 
@@ -203,6 +228,9 @@ one a given title is before leaning on colour for anything meaning-bearing.
 
 ## 7. Definition of done for a chapter
 
+- [ ] Opens on a concrete scene, not a category summary
+- [ ] At least one `[PULLQUOTE: ...]` and a closing `[TAKEAWAYS]` box,
+      both visually confirmed in the render, not just present in source
 - [ ] Rendered pages **visually inspected**, not just compiled without
       LaTeX errors
 - [ ] `qc.py` reports no warnings, and no failures other than the sign-off

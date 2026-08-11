@@ -101,6 +101,7 @@
 % --- Brand accent (chapter furniture only; interior stays print-safe B&W
 %     unless a book explicitly buys KDP's colour-interior product) --------
 \definecolor{bookaccent}{HTML}{1B4F8F}
+\definecolor{bookaccenttint}{HTML}{EAF1F8}
 \definecolor{bookflag}{HTML}{C1741A}
 \definecolor{bookflagtint}{HTML}{F7EEDD}
 
@@ -112,6 +113,31 @@
   \fcolorbox{bookflag}{bookflagtint}{%
     \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
       \small\bfseries\color{bookflag}AUTHOR INPUT NEEDED\par\smallskip
+      \normalfont\normalsize\color{black}#1%
+    }%
+  }%
+  \par\medskip
+}
+
+% A single line worth blowing up big on the page, breaking a long run of
+% body paragraphs the way a magazine layout would. build.py converts
+% [PULLQUOTE: ...] into this after Pandoc runs. Ragged both sides so it
+% reads as set apart from justified body text, not as a wide paragraph.
+\newcommand{\pullquote}[1]{%
+  \par\bigskip\noindent
+  {\centering\normalfont\Large\itshape\color{bookaccent}#1\par}
+  \bigskip\noindent
+}
+
+% Chapter-close summary box, the visual and structural bookend to
+% \authorinput: ink blue instead of flag ochre, a takeaway instead of a
+% gap. build.py wraps a [TAKEAWAYS]...[/TAKEAWAYS] block's
+% already-Pandoc-converted list in this after Pandoc runs.
+\newcommand{\keytakeaways}[1]{%
+  \par\medskip\noindent
+  \fcolorbox{bookaccent}{bookaccenttint}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+      \small\bfseries\color{bookaccent}KEY TAKEAWAYS\par\smallskip
       \normalfont\normalsize\color{black}#1%
     }%
   }%
@@ -138,8 +164,19 @@
   }
 }
 \chapterstyle{kdpbook}
-\setsecheadstyle{\normalfont\Large\bfseries\raggedright}
+\setsecheadstyle{\normalfont\Large\bfseries\raggedright\color{bookaccent}}
 \setsubsecheadstyle{\normalfont\large\bfseries\raggedright}
+
+% A thin accent rule under the chapter title (number + name as one unit),
+% the same furniture the video course's slide headers use, so a chapter
+% opener reads as designed rather than as a Word document's Heading 1.
+% afterchaptertitle is memoir's hook for "after the title, before body";
+% afterchapternum fires earlier, between the numeral and the title itself.
+\renewcommand{\afterchaptertitle}{%
+  \par\vspace{0.5\baselineskip}
+  {\color{bookaccent}\rule{0.15\linewidth}{1.2pt}}\par
+  \vskip\afterchapskip
+}
 
 % --- Running heads ----------------------------------------------------------
 \makepagestyle{kdpheadings}

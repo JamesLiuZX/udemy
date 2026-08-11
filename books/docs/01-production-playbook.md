@@ -82,14 +82,51 @@ bold, italic, block quotes, ordered/unordered lists, tables, footnotes
 (`[^1]` / `[^1]: text`). Anything Pandoc's Markdown reader supports works;
 this is intentionally not a custom DSL the way the slide format is.
 
-## 3. `[AUTHOR-INPUT: ...]`
+## 3. Pull quotes and key-takeaway boxes
+
+Two more bracket markers, same convention as `[AUTHOR-INPUT: ...]`: plain
+text in the source, rewritten into a styled LaTeX block by `build.py`
+after Pandoc runs. Use both. A chapter that's five pages of unbroken body
+paragraphs reads as a textbook no matter how good the writing is; these
+two devices are what make a page look like it came from an edited book
+instead of a Word document with a heading style applied.
+
+**Pull quote**, one per chapter at minimum, pulled verbatim from a line
+you already wrote rather than composed fresh: pick the single sentence in
+the chapter with the most bite and set it big.
+
+```markdown
+[PULLQUOTE: The line goes here, verbatim from body text above it.]
+```
+
+**Key takeaways**, one per chapter, at the very end: three to five short
+bullets a reader could screenshot. The list needs a blank line after the
+opening marker and before the closing one, or Pandoc reads the `- item`
+lines as a lazy continuation of the marker's own paragraph instead of a
+list, and it renders as one run-on sentence with literal hyphens in it.
+
+```markdown
+[TAKEAWAYS]
+
+- First point, short enough to scan
+- Second point
+- Third point
+
+[/TAKEAWAYS]
+```
+
+Don't overuse either. A pull quote every page stops being a pull quote
+and starts being a font size. One well-chosen pull quote and one closing
+takeaways box per chapter is the target, not a ceiling to push past.
+
+## 4. `[AUTHOR-INPUT: ...]`
 
 Same rule as the video side's `[INSTRUCTOR-INPUT]`, applied to print:
 marks a claim, story, or credential only the real author can supply.
 `qc.py` fails the build while any remain. Never resolve one by inventing
 plausible-sounding content; leave it blocking until the author writes it.
 
-## 4. Estimating length
+## 5. Estimating length
 
 `book.py` estimates page count from word count using a words-per-page
 constant calibrated to 6"×9" trim at the class's default body size
@@ -99,7 +136,7 @@ writing, not a substitute for rendering and checking the real page count,
 which shifts with how much of the manuscript is dialogue, lists, tables,
 or headings versus dense prose.
 
-## 5. Build commands
+## 6. Build commands
 
 ```bash
 # Full interior PDF
