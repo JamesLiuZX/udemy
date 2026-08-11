@@ -146,14 +146,16 @@ Progress (updated per chapter as expansion happens):
       synthesis chapter leans on the method already established rather
       than introducing new evidence. 1,369 -> 1,696 words. Rendered pages
       checked.
-- [x] 11 Four Delegations, Worked in Full — new chapter. Two full case
-      studies (Bianca, a wedding photographer; Hector, an auto-parts
-      distributor) running the whole method end to end, showing the
-      skills from chapters two through nine overlapping and compounding
-      in real time rather than one at a time. One `[KEY-INSIGHT]`
-      (JPMorganChase Institute's small-business AI adoption data) frames
-      the chapter. A comparison table closes it. 2,031 words, 7pp
-      standalone. Rendered pages checked.
+- [x] 11 Four Delegations, Worked in Full — new chapter, later corrected:
+      the title promised four cases but only shipped two (Bianca, Hector)
+      in the first pass. Added case three (Wren, an insurance agent's
+      quiet, undramatic success) and case four (Cleo, a hot-sauce
+      producer whose task took longest to stabilize because it was
+      genuinely two tasks) to actually deliver on the title, updated the
+      comparison table to four columns and the closing synthesis to cover
+      all four. One `[KEY-INSIGHT]` (JPMorganChase Institute's
+      small-business AI adoption data). 2,750 words, 9pp standalone.
+      Rendered pages checked.
 - [x] 12 Choosing Your First Tool — new chapter. Five durable,
       tool-agnostic evaluation questions (memory/persistence, real cost
       at volume, data handling, honest hedging, workflow fit) instead of

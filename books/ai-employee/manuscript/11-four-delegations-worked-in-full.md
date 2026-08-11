@@ -1,10 +1,10 @@
 # Four Delegations, Worked in Full
 
-Every chapter so far has shown one skill at a time: a brief, a trial, a spot-check, a correction. Real delegation doesn't arrive in tidy, separated pieces like that. It arrives as one continuous relationship with a task, where the skills overlap, compound, and occasionally contradict each other in the space of a single month. This chapter is two full accounts of that, start to finish, on two genuinely different small businesses, so the whole method can be seen working together instead of one exhibit at a time.
+Every chapter so far has shown one skill at a time: a brief, a trial, a spot-check, a correction. Real delegation doesn't arrive in tidy, separated pieces like that. It arrives as one continuous relationship with a task, where the skills overlap, compound, and occasionally contradict each other in the space of a single month. This chapter is four full accounts of that, start to finish, on four genuinely different small businesses, so the whole method can be seen working together instead of one exhibit at a time.
 
 [KEY-INSIGHT: Tracking transaction data from millions of small businesses, researchers found that paid AI adoption among small firms rose from roughly 1.7% in January 2019 to about 17.7% by the end of 2025, with the pace of adoption accelerating sharply after 2023 and employer firms adopting at meaningfully higher rates than businesses with no employees. || Source: Wheat, C., Mac, C., & Passalacqua, A., "Understanding the Use of AI Among Small Businesses," JPMorganChase Institute, May 2026.]
 
-Worth sitting with that number before the two stories below: even at the end of 2025, roughly four out of five small businesses hadn't adopted paid AI tools at all, and most that had were still early in figuring out what "adoption" actually means beyond a subscription. Neither business in this chapter is unusually sophisticated. They're both doing something more specific and more available to any reader: running the method from chapters two through nine on their own real work, patiently, one task at a time.
+Worth sitting with that number before the four stories below: even at the end of 2025, roughly four out of five small businesses hadn't adopted paid AI tools at all, and most that had were still early in figuring out what "adoption" actually means beyond a subscription. None of the four businesses in this chapter is unusually sophisticated. They're all doing something more specific and more available to any reader: running the method from chapters two through nine on their own real work, patiently, one task at a time.
 
 ## Case one: a wedding photographer's four months
 
@@ -36,22 +36,41 @@ Hector runs a small independent auto-parts distributor, six employees, and his p
 
 Three months in, Hector had one task running close to hands-free (supplier follow-ups, tone note included), one running with a permanent manual carve-out for three specific SKUs, and one still under a longer-than-usual checkpoint schedule he was gradually loosening as the numbers kept checking out clean. None of that reads as a triumphant before-and-after story, and it isn't meant to. It reads as a small business owner who came within a week of a real stockout, adjusted, and kept going, which is a more honest picture of what this method looks like in practice than a story where everything works the first time.
 
-## Two paths, side by side
+## Case three: an insurance agent's quiet success
 
-| | Bianca (photography) | Hector (auto parts) |
-| --- | --- | --- |
-| First task | Inquiry email replies | Supplier follow-up emails |
-| Brief needed a second pass? | No, held on first rewrite | Yes, needed a relationship-tone addition |
-| Second task's outcome | Fired (date changes, a judgment call) | Nearly caused a stockout, then fixed and kept |
-| What caught the second task's problem | Chapter seven's disqualifiers, on schedule | A near-miss, caught just in time |
-| Chaining discipline | Standard two-checkpoint chain | Extended, month-long checkpoint given the stakes |
-| End state after three to four months | Three-task roster, one task fired cleanly | Three-task roster, one task permanently carved out |
+Wren runs a small independent property and casualty insurance agency, and her path through the method is worth including precisely because it's the least dramatic of the four. Nothing here nearly went wrong. That's the point: most careful first delegations look like this, not like Hector's near-miss, and a book that only showed dramatic saves would give a misleading picture of what to actually expect.
 
-The shape is different. The discipline underneath it isn't. Both owners ended up with a smaller, evidence-based set of tasks instead of the larger, hopeful set they'd started with, and in both cases that shrinkage is exactly what the method is supposed to produce, not a shortfall from it.
+**Weeks one through three, an ordinary brief and an ordinary trial.** Wren's first task was renewal reminder letters, sent sixty days before a policy's expiration, small, recurring, checkable, textbook chapter three material. Her brief, chapter two's five parts written carefully the first time, produced clean results across all five trial attempts, no seam worth naming beyond a minor formatting preference she fixed in the brief itself before it ever became a real problem.
 
-## What both stories actually show
+**Month two, a second task and an honest disqualifier check.** She added policy comparison summaries, explaining to a client in plain language how their renewed policy differs from last year's. Running chapter seven's checklist against it before scaling up, she caught something worth naming even though nothing had gone wrong yet: any comparison touching a coverage gap, a client newly uninsured for something they used to be covered for, was a judgment call about how to break that news, not a drafting task. She split it in advance, before a bad outcome forced the split: routine comparisons stayed delegated, coverage-gap comparisons went to her directly, from day one rather than after a mistake taught her to.
 
-Neither business ran the method perfectly on the first try, and that's the point worth taking from both of them. Bianca's inquiry-reply task worked close to how the earlier chapters describe it in the abstract. Her date-change task didn't, and firing it correctly was as much a part of the method working as the task that succeeded. Hector's story shows something the individual chapters, by necessity, mostly show one at a time: a near-miss, a real disqualifier catching something expensive before it happened, and a roster doing the quiet, unglamorous work of catching a stale standing instruction before it caused a second problem. Both businesses ended their respective windows with a smaller, more honest set of delegated tasks than they'd hoped to have starting out, and both are meaningfully further ahead than the roughly four in five small businesses that, per the research above, hadn't started this process at all.
+**Month three, a small roster, quietly maintained.** Two tasks, both stable, both checked on the light schedule chapter four describes once a real failure-mode list closes. Wren's roster entry for both tasks has needed exactly one update since month two, and that's the honest, ordinary shape most of this method takes in practice: not a rescue story, a quiet, competent habit that mostly just keeps working.
+
+## Case four: a specialty food producer's slower start
+
+Cleo runs a small-batch hot sauce company selling wholesale to about forty regional stores, and her story is the one where the method took the longest to show results, worth including for exactly that reason.
+
+**Month one, a brief that needed real rework.** Her first task, wholesale order confirmation emails, seemed simple, but her actual constraint set turned out to be unusually long: different stores had different case-size minimums, different standing discounts, and one long-standing account with a legacy price from three years ago nobody had ever formally revised. Her first brief missed the legacy pricing entirely, and the tool, filling that gap the way chapter one predicted it would, applied her current standard pricing confidently to an order that should have used the old rate, a real, if survivable, invoicing error she caught only because that store's owner called to ask about it.
+
+**Month two, a failure-mode list that stayed stubbornly long.** Even after fixing the legacy-pricing gap, Cleo's failure-mode list kept growing past the three or four entries chapter five flags as a warning sign: pricing exceptions, case-size exceptions, and delivery-schedule exceptions, three distinct clusters wearing one task's name. Rather than writing an ever-longer standing instruction, she did what chapter five actually recommends when a list won't stay short: split the task. Standard orders, the large majority, kept running through one simple brief. The handful of accounts with genuine exceptions moved to a short, explicitly flagged list that always routes to her personally.
+
+**Month three, stability, later than either Bianca or Hector reached it.** Once split, both halves of the task stabilized within two weeks. Cleo's honest read of her own three months: the delay wasn't the method failing, it was the method correctly refusing to paper over a task that was actually two tasks, exactly chapter five's warning about a long failure-mode list, until she was willing to see it that way instead of writing one more line onto an already-long standing instruction.
+
+## Four paths, side by side
+
+| | Bianca (photography) | Hector (auto parts) | Wren (insurance) | Cleo (hot sauce) |
+| --- | --- | --- | --- | --- |
+| First task | Inquiry email replies | Supplier follow-up emails | Renewal reminder letters | Wholesale order confirmations |
+| Brief needed a second pass? | No, held on first rewrite | Yes, tone addition | No, clean first attempt | Yes, missed a legacy-pricing exception |
+| Notable event | Fired a judgment-call task | Near-stockout, caught in time | Split a task before any failure | A real pricing error, caught by a client call |
+| What caught the problem | Chapter seven's disqualifiers | A near-miss | Proactive disqualifier check | A stubbornly long failure-mode list |
+| Time to stability | About four months | About three months | About two months | About three months, after a needed split |
+
+The shape is different every time. The discipline underneath it isn't. All four ended up with a smaller, evidence-based set of tasks instead of the larger, hopeful set they'd started with, and in every case that shrinkage, or that delay, is exactly what the method is supposed to produce, not a shortfall from it.
+
+## What all four stories actually show
+
+None of the four businesses ran the method perfectly on the first try, and that's the point worth taking from all of them together. Bianca's inquiry-reply task worked close to how the earlier chapters describe it in the abstract; her date-change task didn't, and firing it correctly was as much the method working as the task that succeeded. Hector's story adds a near-miss and a roster catching a stale correction before it caused a second problem. Wren's adds the quietest, least dramatic version: a disqualifier check that worked proactively, catching nothing dramatic because it caught the right thing early. Cleo's adds patience: a task that took the longest to stabilize precisely because she let a long failure-mode list tell her the truth, that one task was actually two, instead of forcing a single standing instruction to cover both. All four businesses ended their respective windows with a smaller, more honest set of delegated tasks than they'd hoped to have starting out, and all four are meaningfully further ahead than the roughly four in five small businesses that, per the research above, hadn't started this process at all.
 
 [TAKEAWAYS]
 
