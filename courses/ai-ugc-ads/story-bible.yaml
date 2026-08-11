@@ -192,6 +192,11 @@ callbacks:
     use: The 2.6% CTR, $19 CAC winner against the 0.9% baseline
   - lecture: "8.3"
     use: "The same creative's fatigue: frequency past 3.4, CTR down to 1.0%"
+  - lecture: "8.4"
+    use: >-
+      The refresh recovers (Pattern A, stated qualitatively, no new
+      numbers), which is why it is still the creative Section 9.2
+      scales from $25 to $400 a day
   - lecture: "9.2"
     use: The scale-up from $25 to $400 a day and the CAC settling at $21
 
