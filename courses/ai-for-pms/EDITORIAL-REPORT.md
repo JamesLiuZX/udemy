@@ -1,9 +1,11 @@
 # Editorial report: AI Product Skills for PMs & Analysts
 
-Full editorial verification pass, Sections 0-11, plus the QC/pipeline
-additions it was built on. Written per the editor's directive extending the
-original verification-pass assignment. This is a status report, not a
-sign-off: nothing here sets `verified: true`, and it doesn't need to.
+Two passes over Sections 0-11, plus the QC/pipeline additions each was
+built on. §1-5 cover the original editorial verification pass. §6 covers
+the later accessibility and story pass (CLAUDE.md §4 rule 7 / docs/04's
+plug-and-play rule), which used this verified course as its input. This
+is a status report, not a sign-off: nothing here sets `verified: true`,
+and it doesn't need to.
 
 ---
 
@@ -159,3 +161,150 @@ Nothing left in this list can be done by further editing:
 
 Everything upstream of that list, every script, every slide, every figure,
 every continuity check, is done and QC-clean.
+
+---
+
+## 6. Story pass: accessibility and plug-and-play delivery
+
+A second author directive, applied after the verification pass above and
+using its output as input: adapt the course's delivery for an ordinary
+office worker or manager who wants an instant, plug-and-play improvement
+to their daily work, per `CLAUDE.md` §4 rule 7 and docs/04's plug-and-play
+rule. The instruction was explicit that the spine, the judgement, the
+rigour, the honest caveats, is the moat and was not to be gutted: this
+pass changes framing and delivery, not the underlying discipline.
+
+Four things were audited across all 102 lectures: jargon translated at
+first use, technical depth kept only where it changes a decision the
+learner owns, story-first (scene, not category) openers, and a single
+plug-and-play close per lecture wired to an artifact where one exists.
+
+### 6.1 What changed, mechanically, everywhere
+
+The most common structural gap was the close. 78 of 102 lectures ended
+with a "Two things worth doing now" bullet slide, one step beyond what
+the rule asks for. All 78 were rewritten to end on **one** action
+(merging the two steps where they were genuinely sequential parts of the
+same task, e.g. "download the template, then use it" became one
+instruction). Every rewritten close was rebuilt and re-viewed as a
+rendered slide, not just edited as text. Two side effects turned up
+repeatedly during the merge and were fixed in the same commit each time
+they appeared:
+
+- **New slide/narration overlap.** Compressing two bullets into one
+  sentence sometimes made the closing slide's on-screen text and the
+  narration restating it too similar, tripping the (pre-existing)
+  verbatim-overlap QC check. Fixed by rewording the narration side to
+  cover the same instruction in different words (`1.2`, `1.4`, `2.1`,
+  `3.8`, `11.2` all needed this).
+- **Lost question marks.** A few merges accidentally deleted the
+  lecture's only narration question, tripping the question-presence
+  check. Restored as a real question in the merged sentence rather than
+  re-adding a throwaway one (`2.4`, `2.6`).
+
+### 6.2 Story-first openers
+
+Sections 0 through 11 were read opener by opener against the "a lecture
+that opens on a category gets reopened on a moment" rule. The large
+majority already qualified: this course's openers were already built
+from the pattern library in docs/04 §3 (a real quote from a review, a
+specific number, a before/after gap, an incident replay), which is
+mostly synonymous with "a moment, not a category." Only three genuinely
+needed rewriting:
+
+- **`1.1`** ("What an LLM actually does") opened by stating the
+  mechanism first and illustrating it after. Reordered to lead with the
+  demo-vs-production gap as a scene, then state the mechanism; no
+  content cut.
+- **`1.3`** (temperature) opened on a meta "a correction, on purpose"
+  callout with no scene underneath it. Given one sentence of scene (the
+  same prompt run twice this morning, two different answers) ahead of
+  the existing correction framing.
+- **`0.2`** picked up a new question-presence gap only once that QC
+  check existed (see §1); fixed with a direct question, not reframed as
+  a scene, since `0.2` is the course-map/orientation lecture and exempt
+  from the scene-opener expectation by its own nature (this exemption
+  also applies to `10.x`'s occasional table-first openers where the
+  lecture's whole job is a reference document, not an argument).
+
+Two lectures (`10.7`, `11.3`) had their openers changed from `statement`
+to `callout` for the unrelated reason of opener-*diversity* (three
+same-layout lectures in a row), not scene quality; both already opened
+on a moment and stayed that way, just in a different slide layout.
+
+### 6.3 Mechanism depth: the seven flagged candidates
+
+The assignment named seven lectures to inspect hard for machinery beyond
+what changes a decision the learner owns: `1.2`, `1.3`, `2.3`, `4.8`,
+`5.2`, `5.3`, `7.6`. Each was read in full against that test. The honest
+finding: **six of the seven were already correctly scoped**, and one
+(`1.2`) had a small trim worth making.
+
+| Lecture | Verdict | Reasoning |
+| --- | --- | --- |
+| `1.2` (tokens) | Trimmed | The token-mechanics table listed individual word-splitting examples ("the" = 1 token, "summarisation" = 3). No decision depends on the exact splitting rule, only on the rough ratio and the practical size (a ticket reply runs 40-60 tokens). Compressed to that, with an explicit "the mechanics don't change any decision you own" line replacing the removed detail. |
+| `1.3` (temperature) | Kept, already flagged | The lecture already opens by naming itself an optional refinement to `1.1`'s simplified model ("a correction, on purpose") before going into it, exactly the pattern the rule asks for. Content itself never exceeds what's needed to choose low vs. high temperature. |
+| `2.3` (embeddings/vector search) | Kept, given explicit flag | The pipeline diagram was already scoped ("without the maths"). Left the content intact but added one sentence tying it explicitly to the one decision it informs (who owns re-indexing when a source document changes), so it reads as "here's the machinery behind a real decision" rather than required background. |
+| `4.8` (statistical significance) | Kept | Already exemplary before this pass: teaches a plain-English rule of thumb for sample-size intuition, explicitly declines to teach p-values, confidence intervals, or hypothesis-testing formalism, and calls itself "a rule of thumb, not something you'd hand a statistician as proof." Added one line pointing to a data analyst for real statistics, mirroring `4.3`'s existing Cohen's kappa aside. |
+| `5.2` (RAG pipeline stages) | Kept | The seven-stage table has an explicit "whose decision" column separating PM calls (ingestion scope, top-k, citation) from stages marked "mostly engineering" (embed & index, generation), and never goes into the mechanics of those engineering-owned stages. This is what decision-scoped depth looks like. |
+| `5.3` (chunking) | Kept | Stays entirely inside product trade-offs (precision vs. context, cost per query) and never touches embedding mathematics. |
+| `7.6` (latency budgets) | Kept | Stays inside decisions a PM owns (which interaction pattern sets which budget, streaming/narration vs. a real infrastructure fix) and never touches network or infrastructure internals. |
+
+No lecture outside this list of seven needed a mechanism-depth edit; the
+per-section commits note this explicitly where a section (6, 8, 9, 10)
+had no flagged candidates at all and none were found on inspection either.
+
+### 6.4 Jargon before translation
+
+Spot-checked across every section: this was already close to universal
+practice in the drafted course (e.g. "context window" is defined in the
+same sentence it's introduced in `1.2`; "temperature" gets its plain
+definition before its mechanism in `1.3`; "MCP" is defined by what it
+standardises, not by name, in `6.2`). No lecture was found using an
+undefined technical term as a load-bearing fact. No edits were needed
+specifically for this criterion beyond the mechanism-depth trims in §6.3,
+which double as jargon compressions.
+
+### 6.5 Widened course.yaml audience and description
+
+Proposed in a single, clearly marked commit
+(`[PROPOSED, PLEASE REVIEW] Widen course.yaml audience/description to
+managers and team leads`) for the author to review in the diff before it
+ships. Widens the subtitle, the description's "Who this is for" line, and
+the `audience:` list to include managers and team leads whose team ships
+or operates an AI feature, without "product" in the job title, alongside
+the existing PM/analyst/delivery-manager audience. The technical
+vocabulary that differentiates this course (eval-based acceptance
+criteria, golden-set harness, token economics) was deliberately left
+untouched in every changed field, since that vocabulary is the
+positioning, not friction to remove. The title, the description's
+opening hook (already audience-neutral), and outcomes/pricing were left
+alone as out of scope for this proposal.
+
+### 6.6 QC status after the story pass
+
+Every section was rebuilt and QC-checked immediately after its edits,
+and the full course was re-checked after each section commit. Final
+state, identical in shape to §1:
+
+```
+104 fail · 0 warn
+NOT ready to submit.
+```
+
+Same two expected FAIL causes as before (`verified: false` on all 102
+lectures, the 4 legitimate `INSTRUCTOR-INPUT` markers in `11.5`). No
+`INSTRUCTOR-INPUT` marker was touched during this pass. `story-bible.yaml`
+was re-validated as parseable YAML after every section that referenced
+it. Every changed slide (new openers, new closes, the `1.2` table trim)
+was rebuilt with `--slides-only --provider offline` and visually
+inspected as a rendered PNG before its section was committed.
+
+### 6.7 What remains after this pass
+
+Nothing new. The instructor-only list in §5 is unchanged and still
+complete: sign-off, filling the 8 `INSTRUCTOR-INPUT` markers, recording
+the `voice: human` lectures, the production TTS pass, the release gate,
+and the promo video. This pass only touched narration, slide layout, and
+`course.yaml` marketing copy: it neither closes nor reopens any item on
+that list.
