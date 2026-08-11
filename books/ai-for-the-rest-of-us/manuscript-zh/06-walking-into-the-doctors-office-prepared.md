@@ -36,6 +36,29 @@
 
 在你下一次预约之前，不管大事小事，试试这样打：「我有一次关于[症状或检查发现，具体描述]的预约。请用大白话帮我理解我描述的内容里有没有让人困惑的地方，再给我[4到5]个具体的问题，确保我不会问漏，离开时不会比进去时更困惑。」把这些问题写在纸上或存在手机里。全部都问出来，哪怕其中有一个感觉像是个傻问题。通常并不是。
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{4.4cm}p{4.6cm}@{}}
+\toprule
+\textbf{要素} & \textbf{你的答案} \\
+\midrule
+症状或检查发现，具体描述 & \rule{4.6cm}{0.4pt} \\
+\addlinespace[10pt]
+要问的问题一 & \rule{4.6cm}{0.4pt} \\
+\addlinespace[10pt]
+要问的问题二 & \rule{4.6cm}{0.4pt} \\
+\addlinespace[10pt]
+要问的问题三 & \rule{4.6cm}{0.4pt} \\
+\addlinespace[10pt]
+要问的问题四 & \rule{4.6cm}{0.4pt} \\
+\addlinespace[10pt]
+要带的东西(报告、用药清单、笔记) & \rule{4.6cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{一份空白的看病准备清单，就是把本章自己的提示词做成表格。前一天晚上填好，就像琳达为哈尔的复诊做的那样。}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - AI工具不能给你下诊断，也永远不该被要求这样做。它能做好的，是把让人困惑的医学语言翻译清楚，帮你在走进诊室之前，列出一份犀利、具体的问题清单。

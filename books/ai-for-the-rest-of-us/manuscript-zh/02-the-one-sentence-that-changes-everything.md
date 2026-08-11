@@ -28,6 +28,23 @@
 
 这就是全部方法。不是要你死记硬背的公式，而是一个习惯：在按下发送键之前，想象一下，如果是对着身边一个人说同样的话，你会自然而然补上哪些内容，而这些内容，恰恰是你打字时几乎漏掉的。
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{4.6cm}p{4.1cm}@{}}
+\toprule
+\textbf{问题} & \textbf{你的答案} \\
+\midrule
+这到底是为谁准备的？ & \rule{4.1cm}{0.4pt} \\
+\addlinespace[10pt]
+这里真正要紧的是什么？ & \rule{4.1cm}{0.4pt} \\
+\addlinespace[10pt]
+要避开什么？ & \rule{4.1cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{本章这三个问题的习惯，做成了一份可以填空的模板。打字之前先把这些答出来，写在纸上或记在心里，看着下一次的答案变得更精准。}
+\end{bookfigure}
+
 [PULLQUOTE: AI只能依据你实际告诉它的内容来工作。]
 
 ## 你不需要第一次就问对

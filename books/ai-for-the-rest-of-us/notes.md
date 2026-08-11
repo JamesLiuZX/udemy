@@ -3,9 +3,7 @@
 Not part of the build. Working notes for continuing this manuscript across
 sessions, same pattern as the other books.
 
-## Status: English proof reshipped against the author's visual-standard
-
-## directive; Chinese edition still needs the same pass before it ships again.
+## Status: both editions reshipped against the author's visual-standard directive.
 
 The manuscript went from 36 to **34 chapters** this pass, per the author's
 `docs/09-visual-standard.md` directive (quoted in full below). English
@@ -17,13 +15,22 @@ confirmed). Visually spot-checked chapter openers, several filled and
 several blank worksheet tables, and the toolkit's closing figure.
 `proofs/ai-for-the-rest-of-us.pdf` reshipped.
 
-**The Simplified Chinese edition (`book-zh.yaml`, `manuscript-zh/`) has
-NOT been updated to match** — it still reflects the old 36-chapter
-structure, has no worked visuals, and was not touched this pass. Do not
-assume it is current. This is the top item in "Remaining work" below, not
-optional polish: shipping stale `proofs/ai-for-the-rest-of-us-zh.pdf`
-against a materially different English edition would be actively
-misleading to whoever picks this up next.
+**The Simplified Chinese edition is now back in sync with the English
+structure.** Same 36→34 chapter merge, same worked-visual rollout
+(translated, not re-derived), same two continuity-bug fixes mirrored from
+the English source (chapter 27's dangling "will from chapter seven"
+citation, chapter 26/21's stale "staying in touch" preview text). **173
+pages**, comfortably inside the `[140, 190]` band. `qc.py --release`
+clean apart from the `verified` gate and the known CJK word-count false
+positive (see below). `pdffonts` confirms all Latin and CJK faces
+embedded and subsetted. Visually spot-checked chapter 10's merged opener,
+chapter 27's corrected will paragraph, chapter 30's translated
+comparison table, and the toolkit's full 30-entry sequence plus its
+closing blank worksheet. `proofs/ai-for-the-rest-of-us-zh.pdf` reshipped.
+Re-ran the ASCII-punctuation scan that caught a real bug on the original
+translation pass (see the Chinese edition section below) — clean, with
+one minor style fix (an ASCII `...` in a translated table header
+converted to proper full-width `……`).
 
 **Toolchain note for whoever picks this up next**: a fresh container will
 not have `pandoc`/`xelatex`/`latexmk`/`poppler-utils`/`hunspell`
@@ -316,33 +323,54 @@ Season) and chapter 30 (Teaching Someone Else).
 | 33 | Questions You Still Have | FAQ/objections, argued honestly, including the ones without a tidy answer |
 | 34 | The Toolkit | Every reusable prompt from every chapter, collected |
 
-## Simplified Chinese edition — STALE, needs a full re-sync pass
+## Simplified Chinese edition — re-synced, current as of this pass
 
-Shipped once against the old 36-chapter structure (see history below for
-how that pass was done — the method still applies, just re-run it against
-the new 34-chapter English source). **What's now out of date:**
-`book-zh.yaml`'s chapter list (36 entries, wrong titles/count),
-`manuscript-zh/` (still has `11-talking-instead-of-typing.md` and
-`28-staying-in-touch-across-the-generations.md` as separate files, no
-worked-visual tables anywhere, and none of chapter 10's SOTA tool content
-or chapter 27's/34's other English-side fixes). `proofs/ai-for-the-rest-of-us-zh.pdf`
-on disk is the OLD build and should not be treated as current or
-redistributed as-is.
+Fully re-synced to the new 34-chapter structure this pass, mirroring the
+English renumbering exactly: old zh-11 (语音输入) merged into zh-10 with a
+translated version of the SOTA four-tool comparison, old zh-28 (跨代沟通)
+merged into zh-30 as a subsection, files 12-27 and 29-36 renumbered down
+by 1 and 2 respectively via `git mv`. `book-zh.yaml`'s chapter list
+updated to the new 34-entry structure via targeted `Edit` calls, never a
+full `yaml.dump()` re-write. **173 pages**, comfortably inside the
+`[140, 190]` band. `qc.py --release` clean apart from the `verified` gate
+and the known CJK word-count false positive. `pdffonts` confirmed all
+Latin-face and CJK-face glyphs embedded and subsetted.
+`proofs/ai-for-the-rest-of-us-zh.pdf` current.
 
-**To redo this properly**: mirror the English renumbering exactly (old
-zh-11 merges into zh-10 with translated SOTA content; old zh-28 merges
-into zh-30 as a subsection; files 12-27 and 29-36 renumber down by 1 and
-2 respectively, same as the English side), translate each new worked-visual
-table (column headers and cell content, keeping the four bracket-marker
-keywords and any product names in literal English per the existing
-glossary rule), then rebuild, re-inspect visually, and re-run
-`qc.py --release --book books/ai-for-the-rest-of-us/book-zh.yaml`.
-**Not a KDP title** — same reason as `one-person-business-zh`: KDP does
-not accept a Chinese-language paperback, and does not list Simplified
-Chinese as a supported ebook language. Targets Google Play Books, Apple
-Books, and direct/lead-gen distribution instead.
+**Also caught and fixed during the re-sync, mirroring the English
+editorial fixes exactly**: chapter 27's opening paragraph had the same
+dangling "遗嘱是第七章那份过时的版本" (will was the outdated one from
+chapter seven) false citation the English draft originally had — removed
+the false chapter reference, kept the underlying fact, matching the
+English fix precisely. Chapter 21's and chapter 26's closing "接下来"
+sections both still narratively previewed the deleted "staying in touch
+across the generations" chapter as a distinct upcoming topic; both
+rewritten to match the corrected English previews. Chapter 32
+(`the-time-and-money-it-actually-saves.md`) was also missing an entire
+section present in the restructured English version ("Try this: tally
+your own week", the closing exercise plus its worksheet) — this wasn't
+caught by the cross-reference scan since it wasn't a stale reference, it
+was content that had simply never been added to the Chinese file; found
+only because the agent doing the visual-table pass on that chapter
+noticed the table had "no home" without the surrounding prose. **Lesson
+for any future resync**: a chapter-by-chapter content diff against the
+English source (not just a cross-reference and visual-presence check)
+would have caught this proactively rather than by luck.
 
-### History: how the (now-stale) 36-chapter Chinese edition was built
+**Worked visuals**: all 34 chapters now carry a translated
+`\begin{bookfigure}` table, sourced from the corresponding English
+chapter's table (not re-derived from scratch) and adapted only where the
+Chinese chapter's own narrative specifics differed (chapter 31's
+household timeline, for instance). Quoted phrases inside translated
+table cells use Chinese corner brackets `「...」`, not straight or curly
+double quotes — this book's established convention for dialogue, kept
+consistent in the new visual content too, and avoids the same raw-LaTeX
+smart-quote bypass bug the English edition hit (see above): corner
+brackets are typed directly as the correct final characters, so there's
+no ASCII-to-curly conversion step needed the way there was for English
+straight quotes.
+
+### History: how the original 36-chapter Chinese edition was built
 
 Following `one-person-business`'s precedent exactly: separate config at
 `book-zh.yaml` (own slug `ai-for-the-rest-of-us-zh`, `lang: zh`), parallel
@@ -381,26 +409,26 @@ history below).
 
 ## Remaining work
 
-1. **Re-sync the Chinese edition** to the new 34-chapter structure with
-   worked visuals and chapter 10/27/34 content — see above. This is the
-   single largest remaining item.
-2. **Read the whole book (both editions, once Chinese is re-synced) and
-   set `verified: true`** in `book.yaml` and, separately, `book-zh.yaml`,
-   once every claim and every anecdote is one you can personally defend.
-   No one else may set this; it's the author's signature. The two flags
-   are independent.
-3. Byline and About the Author are already set (`author: "James Liu"`,
+Both editions are now structurally and editorially current against the
+author's visual-standard directive. What's left is entirely outside this
+pipeline's scope:
+
+1. **Read the whole book (both editions) and set `verified: true`** in
+   `book.yaml` and, separately, `book-zh.yaml`, once every claim and every
+   anecdote is one you can personally defend. No one else may set this;
+   it's the author's signature. The two flags are independent.
+2. Byline and About the Author are already set (`author: "James Liu"`,
    real bio in `back-matter/about_the_author.md`) and were left untouched
    throughout every pass per instruction.
-4. **Commission a cover** for whichever edition(s) ship — out of this
-   pipeline's scope, needs the final locked page count (223pp English;
-   Chinese count pending the re-sync).
-5. **KDP dashboard AI-disclosure questionnaire** at upload, English
+3. **Commission a cover** for whichever edition(s) ship — out of this
+   pipeline's scope, needs the final locked page count (223pp English,
+   173pp Chinese, both now locked).
+4. **KDP dashboard AI-disclosure questionnaire** at upload, English
    edition only: AI-assisted, not AI-generated (author direction, outline,
    and the required sign-off review); AI-generated images: no, none were
    used anywhere in this book (see the visual-standard section above).
    The Chinese edition doesn't go through KDP at all.
-6. **Pick actual distribution channels for the Chinese edition** (Google
+5. **Pick actual distribution channels for the Chinese edition** (Google
    Play Books, Apple Books, direct/lead-gen) and handle whatever
    author-identity or tax steps each separately requires — not covered by
    this repo's pipeline.

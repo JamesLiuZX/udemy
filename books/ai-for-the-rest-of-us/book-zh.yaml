@@ -86,83 +86,77 @@ chapters:
     title: "选择并设置好你的工具"
     file: manuscript-zh/10-choosing-and-setting-up-your-tool.md
   - id: "11"
-    title: "开口说，而不是动手打"
-    file: manuscript-zh/11-talking-instead-of-typing.md
-  - id: "12"
     title: "大宗消费，不用手足无措"
-    file: manuscript-zh/12-big-purchases-without-the-overwhelm.md
-  - id: "13"
+    file: manuscript-zh/11-big-purchases-without-the-overwhelm.md
+  - id: "12"
     title: "找不到的那些话"
-    file: manuscript-zh/13-the-words-you-cant-find.md
-  - id: "14"
+    file: manuscript-zh/12-the-words-you-cant-find.md
+  - id: "13"
     title: "做饭、打扫，还有清单上剩下的那些事"
-    file: manuscript-zh/14-cooking-cleaning-and-the-rest-of-the-list.md
-  - id: "15"
+    file: manuscript-zh/13-cooking-cleaning-and-the-rest-of-the-list.md
+  - id: "14"
     title: "寻常的紧急状况"
-    file: manuscript-zh/15-the-ordinary-emergency.md
-  - id: "16"
+    file: manuscript-zh/14-the-ordinary-emergency.md
+  - id: "15"
     title: "当你所爱的人拒绝尝试"
-    file: manuscript-zh/16-when-someone-you-love-refuses-to-try.md
-  - id: "17"
+    file: manuscript-zh/15-when-someone-you-love-refuses-to-try.md
+  - id: "16"
     title: "再一次找工作"
-    file: manuscript-zh/17-looking-for-work-again.md
-  - id: "18"
+    file: manuscript-zh/16-looking-for-work-again.md
+  - id: "17"
     title: "细则里的猫腻"
-    file: manuscript-zh/18-the-fine-print.md
-  - id: "19"
+    file: manuscript-zh/17-the-fine-print.md
+  - id: "18"
     title: "那些跟AI没什么关系的小技术问题"
-    file: manuscript-zh/19-small-tech-problems-that-arent-really-about-ai.md
-  - id: "20"
+    file: manuscript-zh/18-small-tech-problems-that-arent-really-about-ai.md
+  - id: "19"
     title: "一件纯粹属于你自己的事"
-    file: manuscript-zh/20-something-just-for-you.md
-  - id: "21"
+    file: manuscript-zh/19-something-just-for-you.md
+  - id: "20"
     title: "搞懂Medicare和保险该怎么选"
-    file: manuscript-zh/21-making-sense-of-medicare-and-insurance-choices.md
-  - id: "22"
+    file: manuscript-zh/20-making-sense-of-medicare-and-insurance-choices.md
+  - id: "21"
     title: "一场大型家庭聚会"
-    file: manuscript-zh/22-a-big-family-gathering.md
-  - id: "23"
+    file: manuscript-zh/21-a-big-family-gathering.md
+  - id: "22"
     title: "照顾年迈的父母"
-    file: manuscript-zh/23-caring-for-a-parent.md
-  - id: "24"
+    file: manuscript-zh/22-caring-for-a-parent.md
+  - id: "23"
     title: "大学申请和助学金这团乱麻"
-    file: manuscript-zh/24-the-college-and-financial-aid-maze.md
-  - id: "25"
+    file: manuscript-zh/23-the-college-and-financial-aid-maze.md
+  - id: "24"
     title: "当你家里不止说一种语言"
-    file: manuscript-zh/25-when-your-family-speaks-more-than-one-language.md
-  - id: "26"
+    file: manuscript-zh/24-when-your-family-speaks-more-than-one-language.md
+  - id: "25"
     title: "关于宠物的那些问题"
-    file: manuscript-zh/26-pet-care-questions.md
-  - id: "27"
+    file: manuscript-zh/25-pet-care-questions.md
+  - id: "26"
     title: "看懂你的工资单和税"
-    file: manuscript-zh/27-understanding-your-paycheck-and-taxes.md
-  - id: "28"
-    title: "跨代沟通，保持联系"
-    file: manuscript-zh/28-staying-in-touch-across-the-generations.md
-  - id: "29"
+    file: manuscript-zh/26-understanding-your-paycheck-and-taxes.md
+  - id: "27"
     title: "提前规划，和那场没人愿意开口的谈话"
-    file: manuscript-zh/29-advance-planning-and-the-conversation-nobody-starts.md
-  - id: "30"
+    file: manuscript-zh/27-advance-planning-and-the-conversation-nobody-starts.md
+  - id: "28"
     title: "当车真的需要大修"
-    file: manuscript-zh/30-when-the-car-needs-real-repairs.md
-  - id: "31"
+    file: manuscript-zh/28-when-the-car-needs-real-repairs.md
+  - id: "29"
     title: "规划裁员或收入空窗期"
-    file: manuscript-zh/31-planning-for-a-layoff-or-income-gap.md
-  - id: "32"
+    file: manuscript-zh/29-planning-for-a-layoff-or-income-gap.md
+  - id: "30"
     title: "教别人用"
-    file: manuscript-zh/32-teaching-someone-else.md
-  - id: "33"
+    file: manuscript-zh/30-teaching-someone-else.md
+  - id: "31"
     title: "两个家庭，一个季节"
-    file: manuscript-zh/33-two-families-one-season.md
-  - id: "34"
+    file: manuscript-zh/31-two-families-one-season.md
+  - id: "32"
     title: "它到底能省下多少时间和钱"
-    file: manuscript-zh/34-the-time-and-money-it-actually-saves.md
-  - id: "35"
+    file: manuscript-zh/32-the-time-and-money-it-actually-saves.md
+  - id: "33"
     title: "你心里还没解开的疑问"
-    file: manuscript-zh/35-questions-you-still-have.md
-  - id: "36"
+    file: manuscript-zh/33-questions-you-still-have.md
+  - id: "34"
     title: "工具箱"
-    file: manuscript-zh/36-the-toolkit.md
+    file: manuscript-zh/34-the-toolkit.md
 
 back_matter:
   - about_the_author

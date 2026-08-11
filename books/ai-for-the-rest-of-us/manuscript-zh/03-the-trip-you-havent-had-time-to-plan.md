@@ -12,6 +12,29 @@
 
 这一条信息，做到了研究工作最初几个小时该做的事，那几个小时其实不是关于哪一家酒店，而是把整个世界的可能行程，收窄成三个真正值得比较的选项。她从这三个里选了一个，然后进入下一层：「帮我在[她选中的那座城市]里找一家步行就能到老城区的酒店，每晚不超过两百美元，而且要有真实的、最近的评论提到晚上很安静。」又是几分钟，又省下了几个小时的滚动翻页。
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{4.4cm}p{4.6cm}@{}}
+\toprule
+\textbf{要素} & \textbf{你的答案} \\
+\midrule
+目的地或旅行类型 & \rule{4.6cm}{0.4pt} \\
+\addlinespace[10pt]
+日期 & \rule{4.6cm}{0.4pt} \\
+\addlinespace[10pt]
+预算(含所有同行人) & \rule{4.6cm}{0.4pt} \\
+\addlinespace[10pt]
+同行人是谁 & \rule{4.6cm}{0.4pt} \\
+\addlinespace[10pt]
+最看重什么(适合步行、安静、放松) & \rule{4.6cm}{0.4pt} \\
+\addlinespace[10pt]
+要避开什么(长时间转机、纯海滩、人群拥挤) & \rule{4.6cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{琳达那条旅行规划信息背后的六个要素，做成了一份空白的工作表。打开聊天窗口之前，先把这六件事填好，这些正是她心里本来就知道、只是还没说出口的六件事。}
+\end{bookfigure}
+
 [PULLQUOTE: 这个工具非常擅长把十六个小时毫无头绪的搜索，压缩成二十分钟聚焦的比较。]
 
 ## 为什么这和第二章讲的道理一样

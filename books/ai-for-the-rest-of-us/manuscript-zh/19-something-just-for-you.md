@@ -28,6 +28,21 @@
 
 某个你曾经跟某个人说过「哪天我真想学学那个」，但一直没开始的事。打这样一行字：「我从没〔试过这件事〕，纯粹想学着玩玩，不图什么。我实际上最少需要准备什么，能不能带我这周试一次简单的第一次尝试？」允许自己画得差。这才是一直以来真正拦住你的那件事。
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{3.2cm}p{3.2cm}p{3.3cm}@{}}
+\toprule
+\textbf{我一直想尝试的事} & \textbf{开始所需的最低限度准备} & \textbf{这周可以试的一个小尝试} \\
+\midrule
+\rule{3.2cm}{0.4pt} & \rule{3.2cm}{0.4pt} & \rule{3.3cm}{0.4pt} \\
+\addlinespace[10pt]
+\rule{3.2cm}{0.4pt} & \rule{3.2cm}{0.4pt} & \rule{3.3cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{这是「动手试试」提示词对应的空白练习表。写下那件事，弄清楚实际需要的最低限度准备，再挑一个小到这周真能挤出时间做的尝试。}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - 这本书里的这些习惯，用在一件你纯粹为自己想要的事情上，跟用在一件家务或一桩急事上一样管用。别让这本书其他地方那些解决问题的内容把这一点挤没了。
