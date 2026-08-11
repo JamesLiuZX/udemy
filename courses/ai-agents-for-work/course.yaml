@@ -164,6 +164,13 @@ sections:
   - id: 1
     title: "The One Idea: An Employee, Not an App"
     goal: "The onboarding frame: job description, trial, trust ladder, blast radius."
+    lectures:
+      - {id: "1.0", title: "Section intro", duration: 1}
+      - {id: "1.1", title: "Onboarding, not installing", duration: 6}
+      - {id: "1.2", title: "The trust ladder: trial, spot checks, earned autonomy", duration: 6}
+      - {id: "1.3", title: "Blast radius: deciding what it can touch before it starts", duration: 6}
+      - {id: "1.4", title: "Writing the job description", duration: 7}
+      - {id: "1.5", title: "Section recap", duration: 2}
   - id: 2
     title: "The Toolbox: n8n and the AI Brain"
     goal: "Set up once, understand the canvas, choose and connect a model; free-tier route first."
