@@ -6,9 +6,20 @@ and what to do next" while that course was being written.
 
 ## Status
 
-- Chapter 01 is written and verified-pending-signoff: built, rendered pages
-  visually inspected, `qc.py` clean beyond the `verified: false` and
-  `[AUTHOR-INPUT]` gates. 2,645 words, renders to 7 real pages at 6x9.
+- Chapters 01 through 03 are written and verified-pending-signoff: built
+  individually with `--only`, rendered pages visually inspected (chapter
+  opener, KEY INSIGHT box, PULLQUOTE, table, KEY TAKEAWAYS box all confirmed
+  rendering correctly, no overflow/widow/orphan on inspected pages), `qc.py`
+  clean beyond the `verified: false` gate. (This file previously said only
+  01 existed; 02 and 03 were written and committed in a prior session and
+  this file just hadn't been updated to match. Corrected 2026-08-11.)
+  - 01 The Accountability Gap: 2,645 words, 8 pages standalone.
+  - 02 Seven Shapes: 5 pages standalone.
+  - 03 The Spec Nobody Can Argue With: 5 pages standalone.
+  Note: page counts from `--only` builds are per-chapter standalone
+  renders (chapter numbering restarts at 1 in that mode, expected per
+  build.py's design, not a bug) and will differ from each chapter's real
+  position once assembled in a full build.
 - `target_pages` was originally guessed at [220, 280] before any real
   chapter existed, matching a typical full-length business book. Chapter
   01 at a genuinely complete, unpadded length (states the thesis, two
@@ -23,14 +34,26 @@ and what to do next" while that course was being written.
   will, given how much more ground they cover), let the estimate move
   again rather than force it. Re-check against the KDP gutter band
   (0.375" through 150pp, 0.5" from 151pp) once the real total is close.
-- Chapters 02 through 12 are outlined in `book.yaml` (titles, order, target
-  page count) but the manuscript files do not exist yet. `build.py --only
-  01` works today; a full `--book stop-guessing` build will fail until every
-  listed chapter has a real file, so don't run a full build until more
-  chapters exist.
-- Work one chapter at a time to the same bar as Chapter 01: write, build
-  `--only <id>`, inspect the rendered pages, `qc.py`, then move on. Same
-  discipline as the video course's "work one lecture at a time."
+- Chapters 04 through 12 are outlined in `book.yaml` (titles, order, target
+  page count); the manuscript files exist as empty placeholders. A full
+  `--book stop-guessing` build will fail until every listed chapter has
+  real content, so don't run a full build until all chapters exist.
+- Work one chapter at a time to the same bar as Chapters 01-03: write,
+  build `--only <id>`, inspect the rendered pages, `qc.py`, then move on.
+  Same discipline as the video course's "work one lecture at a time."
+- Toolchain note: this environment needed `pandoc`, `texlive-xetex`,
+  `texlive-latex-extra`, `texlive-fonts-recommended` (fixes a missing
+  `pzdr`/URW-Dingbats font error from hyperref), `latexmk`, and
+  `poppler-utils` (`pdfinfo`/`pdftoppm`/`pdffonts`) installed via apt
+  before `build.py`/`qc.py --release` would run. `hunspell` was
+  deliberately left uninstalled: `qc.py`'s spellcheck no-ops gracefully
+  without it (by design), and with it installed the en_US dictionary
+  false-positives on real words already in these chapters (Zillow,
+  Zestimate, iBuying, chatbot, roadmap, ...). Fixing that properly means
+  growing `ALLOW` in `books/pipeline/qc.py`, which is shared across all
+  three books being written in parallel on this branch right now and out
+  of scope for a stop-guessing-only session; flagging it here rather than
+  editing that file.
 
 ## Chapter-to-course map
 
