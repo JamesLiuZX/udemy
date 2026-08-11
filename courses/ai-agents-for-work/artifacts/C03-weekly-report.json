@@ -1,0 +1,183 @@
+{
+  "name": "Weekly Renewal Report - Priya",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {}
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        0,
+        0
+      ],
+      "id": "0df6a6f4-c34e-449e-8a53-28f54ebddec5",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "operation": "read",
+        "documentId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "renewals-pipeline-sheet-id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "list",
+          "value": "Pipeline"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        240,
+        0
+      ],
+      "id": "sheets-node-agent3-001",
+      "name": "Read Renewal Pipeline"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Renewal pipeline rows (JSON):\n{{ JSON.stringify($input.all().map(i => i.json)) }}",
+        "options": {
+          "systemMessage": "You are a weekly renewals report assistant for Priya Malhotra, a Client Services Manager at a commercial insurance brokerage. You are given her renewal pipeline as a list of rows: Client, Premium, Renewal Date, Status.\n\nWrite a short report for her director, Marcus Webb, with three parts:\n1. How many renewals are open versus closed this week\n2. Total premium at stake across open renewals\n3. Any renewal within 14 days of its date that is still open, named specifically, since that is the risk that matters\n\nUse only the numbers given to you. Never mark a renewal as closed unless its Status column says so. If you are unsure whether a row means a renewal is closed, say so rather than guessing."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        480,
+        0
+      ],
+      "id": "agent-node-agent3-001",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.5-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        440,
+        200
+      ],
+      "id": "gemini-model-agent3-001",
+      "name": "Google Gemini Chat Model"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        720,
+        0
+      ],
+      "id": "report-noop-agent3-001",
+      "name": "Report drafted - ready for Priya to review"
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Read Renewal Pipeline",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Renewal Pipeline": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Report drafted - ready for Priya to review",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {
+    "Read Renewal Pipeline": [
+      {
+        "json": {
+          "Client": "Brightwell Manufacturing Ltd",
+          "Premium": "18400",
+          "Renewal Date": "2026-09-15",
+          "Status": "Open"
+        }
+      },
+      {
+        "json": {
+          "Client": "Haverstock Logistics",
+          "Premium": "12100",
+          "Renewal Date": "2026-08-22",
+          "Status": "Open"
+        }
+      },
+      {
+        "json": {
+          "Client": "Millfield Foods",
+          "Premium": "9800",
+          "Renewal Date": "2026-10-03",
+          "Status": "Closed"
+        }
+      },
+      {
+        "json": {
+          "Client": "Dunmore Electrical",
+          "Premium": "7300",
+          "Renewal Date": "2026-08-19",
+          "Status": "Open"
+        }
+      },
+      {
+        "json": {
+          "Client": "Northgate Transport",
+          "Premium": "15200",
+          "Renewal Date": "2026-11-01",
+          "Status": "Open"
+        }
+      }
+    ]
+  },
+  "meta": {
+    "instanceId": "ai-agents-for-work-course"
+  }
+}
