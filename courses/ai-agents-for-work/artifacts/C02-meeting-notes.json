@@ -1,0 +1,106 @@
+{
+  "name": "Meeting Notes to Action Items - Priya",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "Meeting notes to action items",
+        "formDescription": "Paste your call transcript below. This turns it into a clean action item list, nothing is sent anywhere automatically.",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Meeting title",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Attendees"
+            },
+            {
+              "fieldLabel": "Transcript",
+              "fieldType": "textarea",
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.6,
+      "position": [
+        0,
+        0
+      ],
+      "id": "7e6c52f0-537f-439a-834a-0623ff3b25b0",
+      "name": "On form submission",
+      "webhookId": "3000faaf-223d-44c8-846a-ec7fabdd7ca2"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Meeting title: {{ $json['Meeting title'] }}\nAttendees: {{ $json['Attendees'] }}\nTranscript:\n{{ $json['Transcript'] }}",
+        "options": {
+          "systemMessage": "You are a meeting-notes assistant for Priya Malhotra, a Client Services Manager at a commercial insurance brokerage. You are given a transcript of a client renewal call.\n\nExtract only concrete action items: things someone explicitly agreed to do. For each one, output a line in this exact format:\n- [Owner] Action (due: date if mentioned, otherwise \"no date given\")\n\nDo not invent an owner, an action, or a date that was not stated. If the transcript contains no clear action items, reply with exactly: \"No action items found in this transcript.\"\n\nIgnore small talk, scheduling chit-chat, and anything that was discussed but not agreed to."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        128,
+        0
+      ],
+      "id": "e8fc304c-fc87-476f-8a35-c194ff131b83",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.5-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        88,
+        200
+      ],
+      "id": "gemini-model-agent2-001",
+      "name": "Google Gemini Chat Model"
+    }
+  ],
+  "connections": {
+    "On form submission": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {
+    "On form submission": [
+      {
+        "json": {
+          "Meeting title": "Brightwell renewal check-in",
+          "Attendees": "Priya Malhotra, Ravi Chandra",
+          "Transcript": "[00:00] Priya: Thanks for jumping on, Ravi. Let's go through the Brightwell renewal.\n[00:15] Ravi: Sure. Before we start, how's your week going?\n[00:20] Priya: Busy, but good. So the property and liability cover renews 15 September.\n[00:40] Ravi: Right. I need to get our updated stock valuation over to you before you can finalise the number.\n[00:55] Priya: Perfect, if you can send that by the 20th of August that gives us time.\n[01:10] Ravi: I'll get finance to pull that together and send it your way by the 20th.\n[01:30] Priya: Great. I'll also need a copy of your fire safety certificate, the old one expires this year.\n[01:45] Ravi: I'll dig that out and send it over too, same deadline works.\n[02:00] Priya: Perfect. I'll draft the renewal paperwork once I have both documents.\n[02:20] Ravi: Sounds good. Oh, did you see the game last night?\n[02:25] Priya: I did not, been heads down on renewals season.\n[02:40] Ravi: Fair enough. I think that's everything from my side.\n[02:45] Priya: Agreed, I'll circle back once the docs land."
+        }
+      }
+    ]
+  },
+  "meta": {
+    "instanceId": "ai-agents-for-work-course"
+  }
+}
