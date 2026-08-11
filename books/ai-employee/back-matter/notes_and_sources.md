@@ -14,7 +14,7 @@ Use it the way chapter twelve asked you to use a vendor's own benchmark claim: a
 
 **Prompt specificity and accuracy.** A 2025 study testing prompt specificity across reasoning tasks on GPT-4 and O3-mini found more detailed, specific prompts measurably improved accuracy, with the effect most pronounced on smaller models and step-by-step procedural tasks, the category most delegated work falls into. *"DETAIL Matters: Measuring the Impact of Prompt Specificity on Reasoning in Large Language Models," arXiv:2512.02246, 2025.*
 
-**The worked example's outsized effect.** A benchmark testing 95 AI models on real-world clinical writing tasks found that a worked example alongside instructions, rather than instructions alone, improved results for 95.8 percent of the models tested, with two out of three seeing that improvement exceed twenty percent. *Wu, J., et al., "BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text," Nature Biomedical Engineering, 2026 (originally arXiv:2504.19467, 2025).*
+**The worked example's outsized effect.** A benchmark testing 95 AI models on real-world clinical writing tasks found that a worked example alongside instructions, rather than instructions alone, measurably improved results: Gemini-1.5-Pro's score rose from 43.8 to 55.5 (a 27% relative gain) and DeepSeek-R1's rose from 44.2 to 51.4 (a 16% relative gain) from the worked example alone. *Wu, J., et al., "BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text," Nature Biomedical Engineering, 2026 (originally arXiv:2504.19467, 2025).*
 
 ## Chapter 3: The Trial Task
 
@@ -40,7 +40,7 @@ Use it the way chapter twelve asked you to use a vendor's own benchmark claim: a
 
 **McDonald's ended its drive-thru AI test.** After roughly two years testing automated AI order-taking with IBM, McDonald's ended the pilot in June 2024 following a sustained, widely documented pattern of order mistakes that never resolved as the system was tuned. *"McDonald's to end AI drive-thru test with IBM," CNBC, June 17, 2024; "McDonald's is ending its drive-thru AI test," Restaurant Business, June 2024.*
 
-**Zillow's home-flipping shutdown.** After removing human override from its automated pricing algorithm in 2021, Zillow wrote down its housing inventory by as much as $569 million, lost roughly $881 million for the year on the division, and shut the business down entirely. *"Zillow Shuts Down Home-Flipping Business After Racking Up Losses," Bloomberg, November 2, 2021; "Zillow to Lay Off 25% of Its Workforce and Shutter House-Flipping Service," CBS News, November 2021.*
+**Zillow's home-flipping shutdown.** After removing human override from its automated pricing algorithm in 2021, Zillow wrote down its housing inventory by as much as $569 million and cut 25% of its workforce as it shut the business down entirely; the division's full-year loss, reported once 2021 results closed out, came to roughly $881 million. *"Zillow Shuts Down Home-Flipping Business After Racking Up Losses," Bloomberg, November 2, 2021; "Zillow to Lay Off 25% of Its Workforce and Shutter House-Flipping Service," CBS News, November 2021; Zillow Group Q4 and full-year 2021 earnings release, February 10, 2022.*
 
 ## Chapter 8: Your Second Hire, and Your Third
 
@@ -52,7 +52,7 @@ Use it the way chapter twelve asked you to use a vendor's own benchmark claim: a
 
 **AI reliability drops on longer tasks.** A widely cited 2025 study found leading AI models complete short, simple tasks reliably, but real-world success falls off sharply as task length and step count grow, a gap that has been closing over time but was still substantial as of the study. *METR (Model Evaluation and Threat Research), Kwa, T., et al., "Measuring AI Ability to Complete Long Tasks," arXiv:2503.14499, March 2025.*
 
-**Defect-cost escalation.** One of the most widely cited findings in software engineering: the cost of fixing a defect rises sharply the later it's caught in a multi-stage process, roughly an order of magnitude at each stage in the classic data. *Boehm, B.W., "Software Engineering Economics," Prentice-Hall, 1981 (data originally in Boehm, B.W., "Software Engineering," IEEE Transactions on Computers, C-25(12), 1976).*
+**Defect-cost escalation.** One of the most widely cited findings in software engineering: the cost of fixing a defect rises sharply the later it's caught in a multi-stage process, by a factor the classic data puts anywhere from roughly four times to as much as a hundred times, depending on the project. *Boehm, B.W., "Software Engineering Economics," Prentice-Hall, 1981 (data originally in Boehm, B.W., "Software Engineering," IEEE Transactions on Computers, C-25(12), 1976).*
 
 ## Chapter 10: A 30-Day Delegation Plan
 
@@ -60,7 +60,7 @@ Use it the way chapter twelve asked you to use a vendor's own benchmark claim: a
 
 ## Chapter 11: Four Delegations, Worked in Full
 
-**Small-business AI adoption, 2019 to 2025.** Tracking transaction data from millions of small businesses, researchers found paid AI adoption rose from roughly 1.7% in January 2019 to about 17.7% by the end of 2025, accelerating sharply after 2023, with employer firms adopting at higher rates than businesses with no employees. *Wheat, C., Mac, C., & Passalacqua, A., "Understanding the Use of AI Among Small Businesses," JPMorganChase Institute, May 2026.*
+**Small-business AI adoption, 2019 to 2025.** Tracking transaction data from millions of small businesses, researchers found paid AI adoption rose sharply between 2019 and 2025: from roughly 2% to about 19.7% among male-owned firms, and from roughly 1.7% to about 17.2% among female-owned firms. Employer firms adopted at meaningfully higher rates than businesses with no employees too, reaching 26.1% versus 15.3% by the end of 2025, a gap that had widened since 2023 rather than closed. *Wheat, C., Mac, C., & Passalacqua, A., "Understanding the Use of AI Among Small Businesses," JPMorganChase Institute, May 2026.*
 
 ## Chapter 12: Choosing Your First Tool
 
@@ -80,7 +80,7 @@ Use it the way chapter twelve asked you to use a vendor's own benchmark claim: a
 
 ## Chapter 16: Common Failure Patterns Across Task Types
 
-**Omission and misreading, not just fabrication.** A large-scale study cataloguing AI model errors across 21 datasets and 73 models found some of the most common failure types are also the least discussed: quietly omitting required information and misinterpreting the actual request, rather than the more commonly assumed failure of stating a wrong fact. *Ashury-Tahan, S., Mai, Y., Bandel, E., Shmueli-Scheuer, M., & Choshen, L., "ErrorMap and ErrorAtlas: Charting the Failure Landscape of Large Language Models," arXiv:2601.15812, January 2026.*
+**Omission and misreading, not just fabrication.** A large-scale study cataloging AI model errors across 35 datasets and 83 models found some of the most common failure types are also the least discussed: quietly omitting required information and misinterpreting the actual request, rather than the more commonly assumed failure of stating a wrong fact. *Ashury-Tahan, S., Mai, Y., Bandel, E., Shmueli-Scheuer, M., & Choshen, L., "ErrorMap and ErrorAtlas: Charting the Failure Landscape of Large Language Models," arXiv:2601.15812, January 2026.*
 
 ## Chapter 18: Six Businesses, One Method
 

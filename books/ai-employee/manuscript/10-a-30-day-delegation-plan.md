@@ -66,7 +66,7 @@ By the end of thirty days, a well-run first task should be able to answer yes to
 - At least one correction has been saved as a standing instruction, somewhere the tool will actually see it next time.
 - The task has been checked against all four disqualifiers, honestly, including the possibility that it fails one.
 
-## What this chapter, and this book, will not do
+## What this chapter will not do
 
 This will not promise thirty days turns you into someone who's finished learning to delegate. The habit research in this chapter says plainly that real automaticity takes longer than a month for most people and most tasks, and every chapter before this one said some version of the same thing about its own piece: a failure-mode list needs revisiting as tools change, a standing instruction needs updating as the tool drifts, a fired task deserves a second look eventually. Nothing in this method is meant to be set once. It's meant to be run, checked, and rerun, the same way managing any real employee never actually finishes either.
 
@@ -81,3 +81,7 @@ It also won't tell you the same thirty-day sequence works identically for every 
 - Thirty days builds a genuinely working system. It doesn't finish the job. Real automaticity, on average, takes longer, and this method is meant to keep running, not to be set once and left alone.
 
 [/TAKEAWAYS]
+
+## Where this goes next
+
+That closes the core method: brief, trial, check, learn, correct, decide, in the order the first ten chapters built it. The rest of this book runs that same method through a wider set of real rooms. Chapter eleven works four delegated tasks all the way through, start to finish, in a single continuous story instead of one skill at a time. The chapters after that widen the lens further: choosing a tool, teaching a team to delegate responsibly, the honest objections this method tends to draw, and the task types, from money to multi-shape tools to a written record of every source behind a claim in this book, that deserve a closer look than the first ten chapters had room for.

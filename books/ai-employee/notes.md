@@ -375,26 +375,131 @@ lighter on prose (worksheet format) but still a real page count from
 layout. Check actual word/page count after each chapter and adjust the
 remaining ones rather than front-loading a rigid per-chapter quota.
 
+## Status — full editorial pass complete (187pp, print-ready apart from sign-off)
+
+Per the author's editorial directive: a full structural edit, line edit,
+citation re-verification, and release build, with the manuscript now
+reduced to a single remaining author action (read and sign off). Full
+detail in "The editorial pass" section below; short version:
+
+- Read all 24 chapters plus front and back matter in rendered order.
+  Fixed a real continuity defect: chapter 9 and chapter 10 both still
+  called chapter 10 "the final chapter"/"this book", leftover framing
+  from before the expansion added 14 more chapters after it. Chapter 10
+  now gets its own "Where this goes next" transition into chapter 11.
+- Re-audited every `chapter <word>` cross-reference across the whole
+  manuscript against the actual rendered chapter numbers (the id-vs-
+  list-order mapping documented below). All clean; no further
+  mislabeled references found beyond the ones already fixed in the
+  prior expansion pass.
+- Confirmed zero `[AUTHOR-INPUT]` markers exist anywhere in the
+  manuscript, `book.yaml`, or back matter. Item 3 of the editorial
+  directive (resolve every remaining `[AUTHOR-INPUT]` the sanctioned
+  way) needed no action: there was nothing left blocking.
+- Live re-verified all 27 `[KEY-INSIGHT]` citations (two parallel
+  research passes, one per half of the book, plus direct follow-up
+  searches on anything flagged). Found and corrected six real issues:
+  - **Ch. 11 (& the matching Notes and Sources entry)**: the
+    JPMorganChase "1.7% in 2019" figure was actually the *female-owned
+    firms* subgroup baseline, silently blended with what read as a
+    topline "17.7% by 2025" figure. Rewrote using the report's real,
+    verifiable numbers: male-owned firms 2%→19.7%, female-owned
+    1.7%→17.2%, and employer vs. non-employer firms 26.1% vs. 15.3% by
+    2025 (a gap that widened since 2023, not the vaguer "meaningfully
+    higher" the original claimed).
+  - **Ch. 17 (& Notes and Sources)**: the ErrorMap/ErrorAtlas citation
+    said "21 datasets and 73 models," which was the arXiv v1 figure;
+    the paper has since been revised and the live arXiv link now shows
+    35 datasets and 83 models. Updated both to match what a reader
+    checking the citation today will actually see.
+  - **Ch. 7 (& Notes and Sources)**: the Zillow KEY-INSIGHT dated its
+    whole citation "November 2021," but the $881M full-year loss figure
+    wasn't reported until Zillow's Q4 earnings release in February
+    2022. Split the citation to date each figure correctly.
+  - **Ch. 2 (& Notes and Sources)**: the BRIDGE benchmark claim's
+    specific "95.8% of models improved, two-thirds by over 20%" figures
+    could not be independently confirmed against the primary paper or
+    any secondary coverage found live. Replaced with two directly
+    confirmed data points instead (Gemini-1.5-Pro +27%, DeepSeek-R1
+    +16%, few-shot vs. zero-shot), and softened the surrounding prose's
+    "held across ninety-five different models" claim to match.
+  - **Ch. 3**: softened "significantly higher on every measured
+    competency" to "across the measured competencies" — the underlying
+    study's exact per-competency breakdown wasn't independently
+    confirmable, "significantly higher overall" was.
+  - **Ch. 9 (& Notes and Sources)**: softened Boehm's "order of
+    magnitude at each stage" to the source's actual range (roughly 4x
+    to 100x depending on project size) rather than implying a clean,
+    uniform 10x.
+  - Everything else (21 of 27 citations) checked out as accurately
+    cited on live re-verification, no changes needed.
+- One real, previously-latent pipeline bug found and fixed in
+  `books/pipeline/build_epub.py`, shared across every book using this
+  pipeline: `build_master_html()` and `back_matter_html()` both
+  hand-rolled an `<h1>{title}</h1>` in front of each chapter/back-matter
+  file's own pandoc-converted HTML, but every one of those files already
+  opens with its own `# Title` markdown heading that pandoc converts to
+  an `<h1>` on its own. With `--epub-chapter-level=1`, that meant every
+  single chapter and back-matter section produced two `<h1>`s and
+  therefore two entries in the EPUB's nav/TOC (confirmed: the built
+  EPUB had 52 nav entries for a 27-section book, with inconsistent
+  title casing and apostrophe escaping between the two duplicate
+  copies). Removed the redundant hand-rolled heading in both functions;
+  rebuilt EPUB now has exactly 27 correctly-titled, non-duplicated nav
+  entries. This fix applies to every book built with this pipeline, not
+  just this one.
+- Full release build: **187 pages**, inside the [180, 240] target.
+  `qc.py --release` clean apart from the sign-off gate. Gutter confirmed
+  locked at 0.5in (151-300pp band) against the real page count. All
+  fonts embedded (`pdffonts` confirms 3 embedded/subset TeX Gyre Schola
+  faces, no external font references). EPUB rebuilds cleanly (both
+  before and after the nav-duplication fix). Rendered spreads visually
+  inspected: title page, copyright page, table of contents, every page
+  touched by a citation rewrite, both new chapter-10/chapter-9
+  cross-reference fixes, and the Notes and Sources appendix.
+- Interior PDF committed to `books/ai-employee/proofs/ai-employee.pdf`,
+  a deliberate, author-requested exception to the never-commit-`build/`
+  rule, so the author can read it directly on GitHub without running
+  the pipeline locally. `build/` itself remains gitignored and
+  untouched by this exception.
+
 ## What's left for the human author
 
-- **Sign-off**: read the full manuscript and set `verified: true` in
-  `book.yaml` yourself. Not something this session can or should do.
-- **No `[AUTHOR-INPUT]` markers exist** to fill in — every chapter reached
-  for `[KEY-INSIGHT]` instead, per the repo's stated preference. If a
-  genuinely strong personal story exists for a specific moment in any
-  chapter, swapping in a real `[AUTHOR-INPUT: ...]` is still an option,
-  just not a requirement.
+Reduced to a single blocking action plus three genuinely author-only
+housekeeping items; everything else the editorial pass could resolve
+has been resolved.
+
+- **Sign-off (the one blocking item)**: read
+  `books/ai-employee/proofs/ai-employee.pdf` end to end and set
+  `verified: true` in `book.yaml` once every claim and every anecdote
+  is one you can personally defend. Not something this or any session
+  should do on the author's behalf; it is the signature that keeps the
+  KDP AI-assisted declaration true.
+- **Byline**: `book.yaml`'s `author:` field is still the literal
+  placeholder `"Your Name"`. Left untouched per the editorial
+  directive; replace it with the real author name before publishing
+  (it flows into the copyright page, title page, and EPUB metadata
+  automatically on the next build).
 - **Back matter**: `book.yaml` lists `acknowledgments` and
-  `about_the_author` in `back_matter`, but neither
-  `books/ai-employee/back-matter/*.md` file exists yet (`build.py` skips a
-  missing back-matter file silently rather than failing). These need the
-  real author's own bio and acknowledgments; not written here for the same
-  reason `[AUTHOR-INPUT]` markers aren't invented.
+  `about_the_author` in `back_matter` alongside the new
+  `notes_and_sources` (now written and shipped). Neither
+  `acknowledgments.md` nor `about_the_author.md` exists yet
+  (`build.py`/`build_epub.py` both skip a missing back-matter file
+  silently rather than failing, which is why the book still builds
+  clean without them). These need the real author's own bio and
+  acknowledgments; not written here for the same reason
+  `[AUTHOR-INPUT]` markers are never invented.
+- **KDP dashboard questionnaire**: at upload, KDP will ask directly
+  whether the book is AI-generated or AI-assisted. Per
+  `books/CLAUDE.md` §1 this is AI-assisted (author direction, outline,
+  and required sign-off review, not autonomous generation) — answer
+  accordingly; the copyright page's disclosure line already says this
+  in the book itself.
 - **ISBN**: the copyright page currently reads "ISBN: [assigned at KDP
   publishing step]" (the class's own default placeholder), correct for
   where this manuscript is in the pipeline.
 - **Cover**: out of scope for this pipeline per `books/CLAUDE.md` §6, a
-  separate step once page count is locked.
+  separate step once page count is locked (it now is, at 187pp).
 
 ## The core device
 

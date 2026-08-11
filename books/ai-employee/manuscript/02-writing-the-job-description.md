@@ -24,9 +24,9 @@ Go back to the ninety-second version from the opening and notice it wasn't rando
 
 **A concrete example.** One real sample of what good looks like, in your voice specifically, not a generic description of tone like "professional but warm." Show, don't describe. This single element does more work than the other four combined.
 
-[KEY-INSIGHT: A large benchmark testing 95 different AI models on real-world clinical writing tasks found that giving the model a worked example alongside its instructions, rather than instructions alone, improved results for the overwhelming majority of models tested, 95.8 percent of them, and two out of three models saw that improvement exceed twenty percent. || Source: Wu, J., et al., "BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text," Nature Biomedical Engineering, 2026 (originally arXiv:2504.19467, 2025).]
+[KEY-INSIGHT: A large benchmark testing 95 different AI models on real-world clinical writing tasks found that giving the model a worked example alongside its instructions, rather than instructions alone, measurably improved results across the models tested. Gemini-1.5-Pro's score rose from 43.8 to 55.5, a 27% relative gain, and DeepSeek-R1's rose from 44.2 to 51.4, a 16% relative gain, from the worked example alone. || Source: Wu, J., et al., "BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text," Nature Biomedical Engineering, 2026 (originally arXiv:2504.19467, 2025).]
 
-Notice that finding held across ninety-five different models, not just one. It's not a quirk of a particular tool getting confused by instructions alone. Showing beats describing broadly enough that it isn't safe to assume your specific tool is the exception.
+Notice that gain showed up on two very different models, not just one. It's not a quirk of a particular tool getting confused by instructions alone. Showing beats describing broadly enough that it isn't safe to assume your specific tool is the exception.
 
 **What "done" looks like.** Format, length, the specific deliverable. "Under 120 words" is a brief. "Keep it short" is a hope.
 

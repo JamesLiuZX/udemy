@@ -133,13 +133,17 @@ def front_matter_html(book: Book) -> str:
 
 def back_matter_html(book: Book) -> str:
     meta = book.meta
-    titles = {"acknowledgments": "Acknowledgments", "about_the_author": "About the Author"}
     out = []
     for item in meta.get("back_matter", []):
         src = book.dir / "back-matter" / f"{item}.md"
         if not src.exists():
             continue
-        out.append(f"<h1>{html_escape(titles.get(item, item.replace('_', ' ').title()))}</h1>")
+        # Every back-matter file, like every chapter, opens with its own
+        # `# Title` line, which pandoc_chapter_html() below already turns
+        # into an <h1>. Emitting a second, hand-rolled <h1> here (as this
+        # used to do) doubled the EPUB's nav/TOC and doubled the title
+        # printed inside the chapter itself, since --epub-chapter-level=1
+        # treats every <h1> as a new TOC entry.
         out.append(pandoc_chapter_html(src))
     return "\n".join(out)
 
@@ -149,7 +153,10 @@ def build_master_html(book: Book) -> str:
     for c in book.chapters:
         if not c.text.strip():
             continue
-        parts.append(f"<h1>{html_escape(c.title)}</h1>")
+        # c.path's markdown already opens with its own `# Title` line
+        # (verified against book.yaml's title for every chapter); pandoc
+        # converts that into this section's <h1>. Do not add a second one
+        # here, see the matching comment in back_matter_html().
         parts.append(pandoc_chapter_html(c.path))
     parts.append(back_matter_html(book))
     return "\n".join(parts)
