@@ -1,0 +1,813 @@
+{
+  "name": "Inbox Triage - Priya's Renewals",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.emailReadImap",
+      "typeVersion": 2.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "88b88b36-deef-4bd9-ac9e-b81d89973904",
+      "name": "Email Trigger (IMAP)"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        224,
+        0
+      ],
+      "id": "0ff9894e-2aa9-4abe-9ede-69f367dbf65a",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1.1,
+      "position": [
+        96,
+        208
+      ],
+      "id": "f8fb1ec9-9bb2-4ad5-b8fa-a574686b0cb2",
+      "name": "Google Gemini Chat Model"
+    }
+  ],
+  "connections": {
+    "Email Trigger (IMAP)": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {
+    "Email Trigger (IMAP)": [
+      {
+        "json": {
+          "subject": "20% off your Q3 software renewal - act fast!",
+          "from": {
+            "text": "deals@saastools.example",
+            "value": [
+              {
+                "address": "deals@saastools.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-08T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Webinar: five commercial insurance trends for 2026",
+          "from": {
+            "text": "events@brokerinsight.example",
+            "value": [
+              {
+                "address": "events@brokerinsight.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-09T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Your weekly LinkedIn digest",
+          "from": {
+            "text": "digest@linkedin.example",
+            "value": [
+              {
+                "address": "digest@linkedin.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-07T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "New feature: AI meeting notes in Zoom",
+          "from": {
+            "text": "updates@zoom.example",
+            "value": [
+              {
+                "address": "updates@zoom.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-07T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Flash sale: office supplies, this weekend only",
+          "from": {
+            "text": "sales@officedepot.example",
+            "value": [
+              {
+                "address": "sales@officedepot.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-08T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "You're invited: Insurtech Leeds meetup",
+          "from": {
+            "text": "events@insurtechleeds.example",
+            "value": [
+              {
+                "address": "events@insurtechleeds.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-09T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Last chance: renew your CPD subscription",
+          "from": {
+            "text": "billing@cpdhub.example",
+            "value": [
+              {
+                "address": "billing@cpdhub.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-09T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "New whitepaper: fleet risk in 2026",
+          "from": {
+            "text": "content@fleetwatch.example",
+            "value": [
+              {
+                "address": "content@fleetwatch.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-10T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Your March expense report is ready",
+          "from": {
+            "text": "noreply@expensify.example",
+            "value": [
+              {
+                "address": "noreply@expensify.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-08T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Reminder: annual conference early-bird ends Friday",
+          "from": {
+            "text": "events@brokerconf.example",
+            "value": [
+              {
+                "address": "events@brokerconf.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-07T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Team lunch Friday?",
+          "from": {
+            "text": "dev.anand@calloway-finch.example",
+            "value": [
+              {
+                "address": "dev.anand@calloway-finch.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-10T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Reminder: timesheets due end of week",
+          "from": {
+            "text": "hr@calloway-finch.example",
+            "value": [
+              {
+                "address": "hr@calloway-finch.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-09T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "All-hands recording now available",
+          "from": {
+            "text": "comms@calloway-finch.example",
+            "value": [
+              {
+                "address": "comms@calloway-finch.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-10T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Parking garage closed this weekend",
+          "from": {
+            "text": "facilities@calloway-finch.example",
+            "value": [
+              {
+                "address": "facilities@calloway-finch.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-06T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Q3 renewal targets - quick look before Monday",
+          "from": {
+            "text": "marcus.webb@calloway-finch.example",
+            "value": [
+              {
+                "address": "marcus.webb@calloway-finch.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-09T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Office move: Leeds floor 3 update",
+          "from": {
+            "text": "facilities@calloway-finch.example",
+            "value": [
+              {
+                "address": "facilities@calloway-finch.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-06T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "New starter welcome - say hi to Tom",
+          "from": {
+            "text": "hr@calloway-finch.example",
+            "value": [
+              {
+                "address": "hr@calloway-finch.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-10T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Client services huddle notes",
+          "from": {
+            "text": "dev.anand@calloway-finch.example",
+            "value": [
+              {
+                "address": "dev.anand@calloway-finch.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-10T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "IT: password policy change next month",
+          "from": {
+            "text": "it@calloway-finch.example",
+            "value": [
+              {
+                "address": "it@calloway-finch.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-06T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Fire drill this Thursday 10am",
+          "from": {
+            "text": "facilities@calloway-finch.example",
+            "value": [
+              {
+                "address": "facilities@calloway-finch.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-09T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Quick question about my policy documents",
+          "from": {
+            "text": "ops@haverstock-logistics.example",
+            "value": [
+              {
+                "address": "ops@haverstock-logistics.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-08T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Following up - documents for our September renewal",
+          "from": {
+            "text": "Ravi Chandra <ravi.chandra@brightwell-mfg.example>",
+            "value": [
+              {
+                "address": "ravi.chandra@brightwell-mfg.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-05T09:00:00.000Z",
+          "textPlain": "Hi Priya, just checking in on the renewal paperwork for our property and liability cover. Our date is 15 September and I want to make sure everything is in before then. Could you confirm you have what you need from us? Thanks, Ravi"
+        }
+      },
+      {
+        "json": {
+          "subject": "Thanks for the quick help last week",
+          "from": {
+            "text": "finance@brightonandcole.example",
+            "value": [
+              {
+                "address": "finance@brightonandcole.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-10T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Certificate of insurance needed for a tender",
+          "from": {
+            "text": "procurement@millfield-foods.example",
+            "value": [
+              {
+                "address": "procurement@millfield-foods.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-08T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Can we move Tuesday's call to 3pm?",
+          "from": {
+            "text": "owner@dunmore-electrical.example",
+            "value": [
+              {
+                "address": "owner@dunmore-electrical.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-10T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Following up on the fleet quote",
+          "from": {
+            "text": "fleet@northgate-transport.example",
+            "value": [
+              {
+                "address": "fleet@northgate-transport.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-09T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Invoice query - March statement",
+          "from": {
+            "text": "accounts@haverstock-logistics.example",
+            "value": [
+              {
+                "address": "accounts@haverstock-logistics.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-07T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "New site address for the property schedule",
+          "from": {
+            "text": "admin@millfield-foods.example",
+            "value": [
+              {
+                "address": "admin@millfield-foods.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-06T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Happy with the renewal, thank you",
+          "from": {
+            "text": "owner@dunmore-electrical.example",
+            "value": [
+              {
+                "address": "owner@dunmore-electrical.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-06T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "You have won a prize!!!",
+          "from": {
+            "text": "noreply@totally-legit-prizes.example",
+            "value": [
+              {
+                "address": "noreply@totally-legit-prizes.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-09T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "URGENT: verify your account now",
+          "from": {
+            "text": "security@bank-alert.example",
+            "value": [
+              {
+                "address": "security@bank-alert.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-07T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Meet singles in your area",
+          "from": {
+            "text": "no-reply@meetup-spam.example",
+            "value": [
+              {
+                "address": "no-reply@meetup-spam.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-06T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Extend your car warranty today",
+          "from": {
+            "text": "offers@warranty-now.example",
+            "value": [
+              {
+                "address": "offers@warranty-now.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-06T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Newsletter #32",
+          "from": {
+            "text": "newsletter@industry-digest.example",
+            "value": [
+              {
+                "address": "newsletter@industry-digest.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-09T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Newsletter #33",
+          "from": {
+            "text": "newsletter@industry-digest.example",
+            "value": [
+              {
+                "address": "newsletter@industry-digest.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-09T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Newsletter #34",
+          "from": {
+            "text": "newsletter@industry-digest.example",
+            "value": [
+              {
+                "address": "newsletter@industry-digest.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-09T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Newsletter #35",
+          "from": {
+            "text": "newsletter@industry-digest.example",
+            "value": [
+              {
+                "address": "newsletter@industry-digest.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-09T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Newsletter #36",
+          "from": {
+            "text": "newsletter@industry-digest.example",
+            "value": [
+              {
+                "address": "newsletter@industry-digest.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-09T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Newsletter #37",
+          "from": {
+            "text": "newsletter@industry-digest.example",
+            "value": [
+              {
+                "address": "newsletter@industry-digest.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-09T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Newsletter #38",
+          "from": {
+            "text": "newsletter@industry-digest.example",
+            "value": [
+              {
+                "address": "newsletter@industry-digest.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-09T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      },
+      {
+        "json": {
+          "subject": "Newsletter #39",
+          "from": {
+            "text": "newsletter@industry-digest.example",
+            "value": [
+              {
+                "address": "newsletter@industry-digest.example"
+              }
+            ]
+          },
+          "to": {
+            "text": "priya.malhotra@calloway-finch.example"
+          },
+          "date": "2026-08-09T09:00:00.000Z",
+          "textPlain": "(routine message, no action needed for this demo)"
+        }
+      }
+    ]
+  },
+  "meta": {
+    "instanceId": "ai-agents-for-work-course"
+  }
+}
