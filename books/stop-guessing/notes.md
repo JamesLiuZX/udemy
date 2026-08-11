@@ -195,6 +195,71 @@ has come up, and it will come up again if the outline changes further.
 Gutter band is unaffected: midpoint of `[180, 240]` is still 210,
 comfortably inside the 151-300 -> 0.5in band already documented above.
 
+## 2026-08-11 (final): expansion complete, 181 pages, release-clean
+
+The three new chapters landed the full book at 125 pages, still short of the
+band. Rather than stretch the four appendices into disguised extra chapters,
+wrote them at genuine worksheet length (instructions, a blank template, one
+worked example using this book's recurring case, a closing checklist) and
+added a fifth back-matter piece, `notes_and_sources`, collecting all 30
+`[KEY-INSIGHT: ...]` citations from the 17 chapters by chapter, each with the
+specific fact worth remembering and its full source. This is genuine,
+useful reference material for a book that cites this many real, checkable
+sources, not padding: an annotated bibliography is a standard nonfiction
+convention, and it's the honest way to close the last few pages of a real
+gap rather than re-inflating a chapter that was already complete at its
+length. `book.yaml`'s `back_matter:` list now reads appendix A-D, then
+`notes_and_sources`, then acknowledgments, then about-the-author.
+
+Two build issues surfaced and were fixed while writing the appendices,
+both scoped to the new files, no shared-pipeline changes:
+- `- [ ] checklist` markdown syntax produces `\item[$\square$]`, which
+  needs `amssymb` and isn't loaded by `kdp-book.cls`. Fixed by using plain
+  `- ` bullets for every "before you call this done" checklist, matching
+  the convention every other chapter in this book already uses.
+- Appendix A's first draft used an 8-column worked-example table, which
+  overflowed the 6x9 trim by up to 19pt in several cells. Fixed by
+  dropping the redundant Bucket column (already encoded in the Case ID
+  prefix) and shortening cell text; the same fix (shorter Notes-column
+  text) resolved a smaller overflow in Appendix C's worked table. Checked
+  via `grep -oP "Overfull \\\\hbox \(\K[0-9.]+(?=pt too wide)" master.log
+  | sort -rn` after every rebuild; the two overfulls still over 20pt
+  after the fix are both pre-existing, in chapter six's margin-trap
+  table, unrelated to this session's changes, and out of scope to fix
+  here.
+
+**Final numbers:**
+- Full PDF build: 181 pages (`[180, 240]` target). Gutter margin correctly
+  0.5in for the 151-300pp band, confirmed by `qc.py --release`'s
+  gutter-consistency check passing silently.
+- EPUB build: valid zip, fonts embedded (`texgyreschola` regular/bold/
+  italic/bold-italic as OTF), builds clean with no `--only` flag.
+- `qc.py --book stop-guessing --release`: **1 fail, 0 warn** — only
+  `verified: false`, the sign-off gate that is never mine to close.
+- Total manuscript: 17 numbered chapters, 4 worksheet appendices, 1
+  sources appendix, plus acknowledgments and about-the-author (both still
+  genuine `[AUTHOR-INPUT: ...]`-gated stubs, correctly left blocking).
+
+**What's left for the human author**, unchanged in kind from the original
+handoff, larger in scope now that the manuscript is longer:
+1. Read all 17 chapters end to end and set `verified: true` once every
+   claim and anecdote is one they'd personally defend.
+2. Fill in `back-matter/acknowledgments.md` and
+   `back-matter/about_the_author.md` with real content; both are still
+   `[AUTHOR-INPUT: ...]` stubs and will keep blocking `qc.py --release`'s
+   sign-off gate until they are.
+3. Decide on `author` in `book.yaml` (currently the placeholder "Your
+   Name") and set a real one before any KDP upload.
+4. Spot-check the roughly 30 live-searched citations in
+   `back-matter/notes_and_sources.md` before publication; several
+   describe fast-moving stories (a February 2026 Microsoft bug fix, a
+   2025 Gartner prediction) that may have moved further by the time this
+   book goes to print, exactly the currency caveat that section itself
+   names.
+5. Generate the cover once page count is locked at 181 (or wherever a
+   final human pass leaves it), per `books/CLAUDE.md` §6: cover design is
+   a separate, later step needing the final page count for spine width.
+
 ## Status
 
 - Chapters 01 through 03 are written and verified-pending-signoff: built
