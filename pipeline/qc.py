@@ -17,13 +17,17 @@ import html
 import json
 import re
 import shutil
+import statistics
 import subprocess
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
 
+import yaml
+
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import captions as cap
 from lecture import load_course
 from markup import render as render_markup
 from video import measure_loudness, probe
@@ -39,6 +43,15 @@ MAX_TRUE_PEAK = -1.0
 # Craft thresholds.
 MAX_LECTURE_MINUTES = 12
 MAX_NARRATION_SLIDE_OVERLAP = 0.25      # narration must not just read the slide
+
+# docs/04-quality-bar.md §7 — rhythm, density, and voice checks.
+MIN_SENTENCE_STDEV = 4.0                # below this, sentence rhythm reads uniform
+MAX_SLIDE_SECONDS = 90                  # a static frame beyond this is "podcast with slides"
+MIN_MINUTES_FOR_FIGURE = 4              # TTS lectures past this need a figure/diagram/table
+MAX_BULLETS_SHARE = 0.5                 # no lecture is more than half bullets slides
+MIN_YOU_PER_100_WORDS = 1.0             # direct-address floor
+MIN_MINUTES_FOR_QUESTION = 4            # monologue drift past this needs a "?"
+_VISUAL_LAYOUTS = {"figure", "diagram", "table", "metrics"}
 
 # LLM tells and empty filler. Deliberately excludes words like "actually" and
 # "of course", which are ordinary spoken English and read as natural narration.
@@ -185,6 +198,160 @@ def _spellcheck(texts: list[str], lang: str = "en_US") -> set[str]:
     return bad
 
 
+def _slide_has_visual(slide) -> bool:
+    """A figure, diagram, table or metrics band, however it's authored — as the
+    slide's own layout, or embedded in the body of another layout (a ```figure
+    block on a two-col slide, a ::: metrics container, a raw pipe table)."""
+    if slide.layout in _VISUAL_LAYOUTS:
+        return True
+    body = slide.body
+    if "```figure" in body or "```mermaid" in body or "::: metrics" in body:
+        return True
+    pipe_lines = [ln for ln in body.splitlines() if ln.strip().startswith("|")]
+    return len(pipe_lines) >= 2
+
+
+_YOU = re.compile(r"\b(you|your|yours|you're|you'll|you've|you'd)\b", re.I)
+
+
+def check_rhythm_and_delivery(lec, rep: Report, wpm: int) -> None:
+    """docs/04-quality-bar.md §7: rhythm, density and direct-address checks that
+    catch uniform, essay-voice, or monologue-drift narration before it's rendered."""
+    tag = f"[{lec.id}]"
+    narration = lec.narration
+    words = narration.split()
+
+    if lec.voice != "human":
+        sentences = cap.split_sentences(narration)
+        counts = [len(s.split()) for s in sentences if s.split()]
+        if len(counts) >= 3:
+            stdev = statistics.stdev(counts)
+            if stdev < MIN_SENTENCE_STDEV:
+                rep.warn(f"{tag} sentence-length stdev {stdev:.1f} words "
+                         f"(<{MIN_SENTENCE_STDEV:g}) across the narration — "
+                         f"uniform rhythm reads as generated. Swing sentence "
+                         f"lengths more; let a short one land like a drum hit.")
+
+    if words:
+        you_rate = len(_YOU.findall(narration)) / len(words) * 100
+        if you_rate < MIN_YOU_PER_100_WORDS:
+            rep.warn(f"{tag} {you_rate:.1f} 'you/your' per 100 words "
+                     f"(<{MIN_YOU_PER_100_WORDS:g}) — drifting into essay voice "
+                     f"instead of talking to the learner.")
+
+    est_min = lec.estimated_seconds(wpm) / 60
+    if est_min > MIN_MINUTES_FOR_QUESTION and "?" not in narration:
+        rep.warn(f"{tag} {est_min:.1f} min with no '?' in the narration — "
+                 f"monologue drift. A question is how a teacher holds attention.")
+
+    for i, slide in enumerate(lec.slides, start=1):
+        slide_seconds = slide.word_count / wpm * 60
+        if slide_seconds > MAX_SLIDE_SECONDS:
+            rep.warn(f"{tag} slide {i}: {slide_seconds:.0f}s of narration on one "
+                     f"static frame (>{MAX_SLIDE_SECONDS}s) — split the slide or "
+                     f"add a build.")
+
+    if lec.slides:
+        bullets_share = sum(1 for s in lec.slides if s.layout == "bullets") / len(lec.slides)
+        if bullets_share > MAX_BULLETS_SHARE:
+            rep.warn(f"{tag} {bullets_share:.0%} of slides are 'bullets' "
+                     f"(>{MAX_BULLETS_SHARE:.0%}) — add a figure, table or diagram "
+                     f"to break up the density.")
+
+    if lec.voice != "human" and est_min > MIN_MINUTES_FOR_FIGURE:
+        if not any(_slide_has_visual(s) for s in lec.slides):
+            rep.warn(f"{tag} {est_min:.1f} min with no figure, diagram, table or "
+                     f"metrics slide (>{MIN_MINUTES_FOR_FIGURE} min) — text-heavy "
+                     f"drift under production pressure.")
+
+
+def check_opener_diversity(lectures, rep: Report) -> None:
+    """docs/04-quality-bar.md §7: 3 consecutive lectures opening on the same
+    slide layout is the agenda-opener monotony tell. Warn once per streak."""
+    run: list = []
+    for lec in lectures:
+        if not lec.slides:
+            run = []
+            continue
+        layout = lec.slides[0].layout
+        if run and run[-1][1] == layout:
+            run.append((lec, layout))
+        else:
+            run = [(lec, layout)]
+        if len(run) == 3:
+            ids = ", ".join(l.id for l, _ in run)
+            rep.warn(f"[{ids}] three consecutive lectures open on a '{layout}' "
+                     f"slide — agenda-opener monotony. Vary the opener pattern "
+                     f"(docs/04 §3).")
+
+
+# Words too generic to anchor a continuity match on their own (a running case's
+# meaning line is prose, not a keyword list — this trims it to the specific
+# nouns worth matching against).
+_CONTINUITY_STOP = {
+    "reviewers", "score", "scores", "scoring", "spread", "without", "before",
+    "after", "above", "below", "fewer", "misses", "fatigues", "consequence",
+    "makes", "common", "explicit", "formally", "retold", "collapses", "steps",
+}
+
+
+def check_story_continuity(lectures, story_bible_path: Path, rep: Report) -> None:
+    """docs/04-quality-bar.md §7 and §2: a number canonical in story-bible.yaml
+    that shows up in narration paired with a different value is exactly the
+    drift long-form generated writing is prone to. Simple literal match: find
+    narration sentences that share enough of a canonical number's topic words
+    and contain a number, then check that number against the ledger."""
+    if not story_bible_path.exists():
+        return
+    bible = yaml.safe_load(story_bible_path.read_text(encoding="utf-8")) or {}
+    numbers = bible.get("numbers", [])
+
+    entries = []
+    for n in numbers:
+        value = str(n.get("value", "")).strip()
+        meaning = str(n.get("meaning", "")).strip()
+        if not value or not meaning:
+            continue
+        keywords = sorted({
+            w.strip(",.").lower() for w in meaning.split()
+            if len(w.strip(",.")) >= 6 and w.strip(",.").lower() not in _CONTINUITY_STOP
+        })
+        if keywords:
+            entries.append((value, keywords, meaning))
+    if not entries:
+        return
+
+    num_re = re.compile(r"\d[\d,]*\.?\d*%?")
+    # "4.2's golden set", "back in 7.4" — lecture cross-references, not case-study
+    # numbers. This course's ids are always section.lecture, so a bare N.N (no
+    # unit) is a citation, not a value; a preceding "lecture/figure/section" word
+    # catches the rest.
+    LECTURE_ID = re.compile(r"^\d{1,2}\.\d{1,2}$")
+    LECTURE_WORD = re.compile(r"(?:lecture|figure|fig\.?|section|chapter)\s*$", re.I)
+
+    for lec in lectures:
+        for sentence in cap.split_sentences(lec.narration):
+            low = sentence.lower()
+            for value, keywords, meaning in entries:
+                need = 1 if len(keywords) == 1 else 2
+                if sum(1 for k in keywords if k in low) < need:
+                    continue
+                found = [
+                    m.group() for m in num_re.finditer(sentence)
+                    if not LECTURE_ID.match(m.group())
+                    and not LECTURE_WORD.search(sentence[max(0, m.start() - 12):m.start()])
+                ]
+                if not found:
+                    continue
+                value_tokens = {v.strip().rstrip("%") for v in value.split(",")}
+                if any(f.rstrip("%").replace(",", "") in value_tokens or f in value
+                       for f in found):
+                    continue
+                rep.warn(f"[{lec.id}] narration has {', '.join(found)} near "
+                         f"'{meaning}' but story-bible.yaml records {value!r} for "
+                         f"it — check for continuity drift.")
+
+
 def check_lectures(lectures, course: dict, rep: Report) -> None:
     if not lectures:
         rep.fail("No lecture sources found. Nothing to check.")
@@ -242,11 +409,15 @@ def check_lectures(lectures, course: dict, rep: Report) -> None:
             rep.fail(f"{tag} contains {dashes} em dash(es) in learner-facing copy. "
                      f"Use a colon, a full stop, or brackets.")
 
+        check_rhythm_and_delivery(lec, rep, wpm)
+
     lang = course.get("production", {}).get("spellcheck_lang", "en_US")
     bad = _spellcheck(slide_texts, lang)
     if bad:
         rep.fail(f"Possible slide typos [{lang}] (fix, or add to ALLOW in qc.py): "
                  f"{', '.join(sorted(bad)[:25])}")
+
+    check_opener_diversity(lectures, rep)
 
 
 # ---------------------------------------------------------------------------
@@ -323,6 +494,7 @@ def main() -> int:
 
     check_policy(course, rep)
     check_lectures(lectures, course, rep)
+    check_story_continuity(lectures, Path(args.course) / "story-bible.yaml", rep)
     if args.release:
         check_release(Path(args.out) / course["slug"], rep)
 
