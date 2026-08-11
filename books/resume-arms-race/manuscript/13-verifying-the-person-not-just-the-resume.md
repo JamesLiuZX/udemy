@@ -28,6 +28,13 @@ This isn't a reason to treat every remote candidate as a suspect, and this chapt
 
 ## What actually helps
 
+| Practice | Why it works |
+| --- | --- |
+| At least one live, unscripted video round | Closes the gap a recorded, one-way submission leaves open |
+| An unscripted question only the real candidate would know | Tests continuity a substitute or coached performance can't sustain |
+| Identity check at offer or onboarding | Standard, cheap, non-negotiable for fully remote roles |
+| Treat two independent odd signals as worth a conversation | One alone rarely means much; two pointing the same way usually do |
+
 **At least one live, unscripted video round, with real interaction, not just a recorded submission.** A recorded one-way video interview, increasingly common at high volume, is exactly the format most vulnerable to a substitute or a heavily assisted performance, because nobody is present to ask the follow-up chapter five's whole method depends on. A live round with a real, responsive human on the other end closes that gap the same way it closes the resume-polish gap chapter four described.
 
 **Ask about something only the real candidate would know, unscripted, mid-conversation.** A specific detail from earlier in their own resume, referenced casually rather than as a formal challenge, tests continuity in a way a substitute or a coached performance struggles with, the identical logic chapter nine used against a real-time answer-feeding tool.

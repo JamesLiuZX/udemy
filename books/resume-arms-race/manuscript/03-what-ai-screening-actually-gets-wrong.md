@@ -12,6 +12,12 @@ An ATS parses a resume for specific terms and patterns, which means it's fundame
 
 [PULLQUOTE: The system wasn't malfunctioning. It was doing exactly what it was built to do, filtering hard on rigid, literal criteria, and that's precisely the problem.]
 
+| Literal criterion | Who it wrongly filters out | What it actually measures |
+| --- | --- | --- |
+| Exact keyword match ("managed" vs. "oversaw") | The candidate who described real work in different words | Word choice, not ability |
+| Any employment gap, regardless of length or reason | Caregivers, the laid-off, career-break returners | Nothing; a layoff and a break look identical to the algorithm |
+| Degree requirement attached out of habit | Self-taught professionals, career-changers | Whether a credential exists, not whether the job needs it |
+
 This is the specific, structural reason a purely automated first pass systematically disadvantages exactly the candidates most worth a second look: career-changers, people returning after a gap, self-taught professionals without the credential a job post assumes, and people from backgrounds where the "right" keywords were never taught the same way. None of these are signals of lower ability. They're signals of a nonstandard path, and a system built to reward standard paths will filter nonstandard ones regardless of the actual talent behind them.
 
 ## The false negative nobody sees

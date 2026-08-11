@@ -28,7 +28,12 @@ Structured doesn't mean stiff, and it doesn't mean reading questions off a card 
 
 ## Marcus builds a scorecard for the analyst role
 
-Back to the four hundred applications from chapter one. Once Marcus narrowed to twelve candidates worth an interview, he wrote four behavioral questions tied directly to what the analyst role actually required: reconciling conflicting data sources, presenting a finding to a skeptical stakeholder, catching an error in someone else's work before it shipped, and prioritizing when two deadlines collided. Each question got a one-to-four anchor written in advance. For the "conflicting data sources" question, a four looked like "identified the specific source of the discrepancy and explained the reasoning for which number to trust and why"; a one looked like "picked a number without being able to explain why."
+Back to the four hundred applications from chapter one. Once Marcus narrowed to twelve candidates worth an interview, he wrote four behavioral questions tied directly to what the analyst role actually required: reconciling conflicting data sources, presenting a finding to a skeptical stakeholder, catching an error in someone else's work before it shipped, and prioritizing when two deadlines collided. Each question got a one-to-four anchor written in advance.
+
+| Question | 1 (weak anchor) | 4 (strong anchor) |
+| --- | --- | --- |
+| Reconciling conflicting data sources | Picked a number without being able to explain why | Identified the specific source of the discrepancy and the reasoning for which number to trust |
+| Presenting a finding to a skeptical stakeholder | Restated the finding without engaging the objection | Named the specific pushback and how it was addressed |
 
 Running it, the difference from his usual approach showed up almost immediately. Two candidates who'd read as roughly equal on paper diverged sharply on the second question once he pushed past their first answer: one candidate's follow-up response added a specific detail about which stakeholder had pushed back and why that hadn't been in the original answer at all; the other candidate, when pressed, essentially repeated the first answer with different words and visibly groped for something more specific to add. That gap didn't show up anywhere in either resume. It only showed up because the follow-up forced it to.
 

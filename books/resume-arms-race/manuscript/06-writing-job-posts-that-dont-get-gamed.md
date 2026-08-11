@@ -30,6 +30,12 @@ The original line: "Looking for a self-starter with excellent communication skil
 
 The rewrite: "You'll reconcile numbers from two systems that don't always agree and be able to explain, to someone who disagrees with your number, why yours is right. Must-have: comfortable working with spreadsheet formulas and pivot tables without training; has presented a finding to someone skeptical of it before, in any context. Nice to have, not required: experience with our specific BI tool, a related degree." The rewrite is longer, which matters less than what it does: nothing in it is a trait-word a template can echo without content behind it, and the must-have list is short enough that a candidate can honestly self-assess against it before applying instead of guessing whether "strong attention to detail" describes them or not.
 
+| Original phrase | What's wrong with it | Rewrite |
+| --- | --- | --- |
+| "Self-starter" | A trait-word; any resume can claim it | (dropped, no task behind it) |
+| "Excellent communication skills" | Nothing specific to demonstrate | "Be able to explain, to someone who disagrees, why your number is right" |
+| "Strong attention to detail" | Every candidate scores a 10/10 on their own resume | "Comfortable with pivot tables without training" (must-have, checkable) |
+
 The volume of applications didn't drop much when Marcus reposted. What changed was the proportion of resumes with at least one bullet that passed chapter four's specificity test, which is the metric that was actually broken, not the raw count chapter one already established isn't going away.
 
 One unplanned effect surprised him more than the metric did. A handful of candidates who applied to the rewritten posting mentioned the specific line about explaining a number to someone who disagrees with it, unprompted, in their cover letter or their first interview answer, treating it as a real signal that the role would involve actual pushback rather than quiet number-crunching. That's not a coincidence. A specific posting doesn't just filter better on the way in. It also tells a genuinely interested candidate something true and useful about the job itself, which a generic posting, by design, never can.

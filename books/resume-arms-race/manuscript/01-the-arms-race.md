@@ -16,6 +16,12 @@ Here's the mechanism. Generating a fluent, keyword-matched, achievement-quantifi
 
 [PULLQUOTE: The distribution of resume quality didn't rise. It collapsed toward the top, and it collapsed for reasons that have nothing to do with candidate quality.]
 
+| | Before cheap generation | Now |
+| --- | --- | --- |
+| Fluent, keyword-matched writing | Costly to produce; correlated with real effort | Free to produce; correlated with nothing |
+| What a polished resume signaled | Career coaching, careful editing, attention | Access to a chat window |
+| Where scrutiny paid off | Reading the resume itself | Wherever fluency can't reach: the follow-up |
+
 Meanwhile the screening side of the pipeline scaled to match, because four hundred resumes for one role was already too many for a human to read closely, and it's about to get worse, not better. The tool built to manage that volume is itself pattern-matching on language, which means it's vulnerable to exactly the kind of fluent, keyword-dense writing the generation side is now producing by default. Two systems, optimizing against each other, and the candidate's actual fit for the job is not a variable either one is directly optimizing for.
 
 ## It isn't only Marcus's kind of role

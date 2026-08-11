@@ -30,6 +30,12 @@ He sent the brief three days before the first interview instead of explaining it
 
 The first debrief under the new format took eight minutes. The old format, for a similarly sized candidate pool the quarter before, had taken closer to thirty, most of it spent on two candidates the panel disagreed about without ever locating precisely where the disagreement came from. With written scores already in hand, the eight minutes located the actual disagreement in about ninety seconds: one interviewer had scored a candidate's answer to the stakeholder-pushback question a four, another a two, and reading their one-sentence justifications side by side showed the two-score interviewer had missed a detail the candidate mentioned quickly and moved past. That's not a debate a freeform debrief would have surfaced efficiently. It's a specific, resolvable gap a structured scorecard made visible in under two minutes.
 
+| | Old debrief | New debrief |
+| --- | --- | --- |
+| Format | Open "what did everyone think" | Independent written scores brought to the room |
+| Length | ~30 minutes | ~8 minutes |
+| Disagreement | Unlocated, argued in the abstract | Pinpointed to a specific missed detail in ~90 seconds |
+
 ## When independent scoring surfaces real disagreement, not just a missed detail
 
 Not every gap resolves as cleanly as that one. Two reqs later, Marcus's panel hit a case where the written scores diverged for a real reason: one interviewer valued a candidate's blunt, efficient answers, another read the same answers as curt and under-elaborated, and neither was wrong about what they'd actually heard. A structured scorecard doesn't manufacture agreement out of a genuine values disagreement, and pretending it does would be its own kind of dishonesty about what the tool is for.

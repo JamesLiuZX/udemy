@@ -18,6 +18,12 @@ The number that mattered most by day ninety wasn't any single decision. It was t
 
 [PULLQUOTE: The number that mattered most by day ninety wasn't any single decision.]
 
+| | Day one | Day ninety |
+| --- | --- | --- |
+| Job posting | Trait-words, generic | Task-words, must-haves an applicant can self-assess |
+| Resumes with a specific, decision-shaped bullet | ~1 in 6 | ~1 in 3 |
+| Advance/reject reasons | Reconstructed impressions | Specific, dated, on record |
+
 ## Sana's quarter
 
 Sana's ninety days looked structurally different from Marcus's from day one, the same way chapter four and chapter five both predicted: her volume was spread across a dozen client reqs rather than concentrated in one, and every technique had to survive being compressed into minutes rather than the hours Marcus had available per candidate.

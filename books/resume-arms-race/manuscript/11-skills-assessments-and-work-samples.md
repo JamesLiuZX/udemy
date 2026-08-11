@@ -32,6 +32,12 @@ The fix isn't detecting AI use in a submission, chapter one's argument again, un
 
 For his next round of analyst finalists, Marcus built a ninety-minute exercise: a small, real (anonymized) reconciliation problem close to the actual daily work, submitted with a short written explanation of the approach. He graded it against a three-point rubric decided the week before any candidate saw the task: did they identify the actual discrepancy, did they flag their own confidence level honestly rather than presenting a guess as certain, did they explain their reasoning in a way someone else could follow and check.
 
+| Rubric element | Weak | Strong |
+| --- | --- | --- |
+| Identifying the discrepancy | Named a number without locating its source | Traced the discrepancy to its specific origin |
+| Confidence honesty | Presented a guess as certain | Flagged low-confidence points explicitly |
+| Explaining reasoning | Conclusion only, no visible logic | A reader could follow and check every step |
+
 The candidate this chapter opened with, in hindsight, would likely have surfaced a real gap here: strong on describing past reconciliation work in the interview, and, per her own account once Marcus asked her directly during her first month, genuinely unpracticed at doing it under this team's specific time pressure and tooling. That's not a failure the interview should be expected to catch. It's exactly the kind of gap a work sample exists to catch instead.
 
 The follow-up conversation surfaced something the rubric alone wouldn't have: one finalist's written explanation was technically correct but oddly generic in its phrasing, close enough to a textbook description of a reconciliation method that Marcus asked her, directly and without accusation, to talk him through why she'd chosen that specific approach for this specific data set. Her answer was immediate, detailed, and clearly her own reasoning, just delivered in more formal language than her interview answers had used, a habit she said came from years of writing client-facing reports. Nothing about the submission was outsourced. It just read, on paper alone, more like a template than the live conversation revealed it to be, exactly why this chapter insists on the follow-up conversation as a required step, not an optional nicety layered on top of a finished, self-explanatory document.

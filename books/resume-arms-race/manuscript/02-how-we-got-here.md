@@ -18,6 +18,12 @@ What generative AI changed wasn't whether screening existed. It changed who coul
 
 [PULLQUOTE: By the time large language models became widely available, the infrastructure for screening at scale was already standard practice, not a new response to a new problem.]
 
+| | Screening side | Generation side |
+| --- | --- | --- |
+| 2000s | Keyword parsing and automated ranking already standard for high-volume postings | Writing a sharp resume required real skill or a paid coach |
+| Pre-2022 | AI/automation features quietly integrated into most existing ATS platforms | Fluent, tailored writing still costly to produce at scale |
+| Today | Same filters, now facing input built to satisfy them by default | Free, on demand, for every candidate regardless of fit |
+
 ## Two systems that were never talking to each other
 
 Here's the part that actually explains why this feels so broken, and it's a coordination problem more than a technology problem. The ATS was built and tuned by one set of people, HR technology vendors and the recruiting teams who configure them, optimizing for filtering efficiency. The generation side, the tools candidates use to write their materials, was built by an entirely different set of people, optimizing for helping a user produce fluent, professional-sounding writing quickly. Neither side was designed with the other in mind. Neither one is doing anything wrong by its own internal logic.

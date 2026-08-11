@@ -24,6 +24,11 @@ One more thing worth naming plainly before this chapter's method: some of the mo
 
 **To the pipeline.** Periodically, run something close to chapter seven's check on your referral program itself: who's being referred, compared to who applies through other channels, broken out by whatever legitimate comparison your data allows. If a referral program is quietly narrowing who reaches your desk in a way that wouldn't survive a four-fifths comparison, that's worth knowing and raising, the same as any other filter in the pipeline, even though nobody wrote a rule that says so explicitly.
 
+| | Treat a referral like... | Because... |
+| --- | --- | --- |
+| The candidate | Any other candidate: same questions, same follow-up | Trust is evidence, not a finished conclusion |
+| The pipeline | Any other filter: checked periodically for skew | Warm networks can narrow a pool without anyone intending it |
+
 ## Internal moves get their own wrinkle
 
 An internal candidate comes with something no external candidate has: a real, extended track record inside your own company, actual performance data rather than a resume's claims about it. That's a genuine, legitimate advantage, not a shortcut to distrust. What internal moves add instead is a different distortion: a hiring manager reluctant to let a strong performer transfer out of their team, quietly slow-walking the process or giving lukewarm feedback to keep someone in place, a dynamic that has nothing to do with the candidate's actual fit for the new role and everything to do with the current manager's own incentives. Watching for that specific pattern, a transfer candidate's own manager being asked for a reference on whether they should be allowed to leave, is worth naming directly to whoever owns the internal mobility process, the same way chapter seven asked you to name a bias pattern to whoever owns the criterion producing it.

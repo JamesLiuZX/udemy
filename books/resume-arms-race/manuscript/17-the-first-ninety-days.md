@@ -10,6 +10,12 @@ Ninety days in this chapter builds every technique in this book and carries you 
 
 [PULLQUOTE: Build the system in ninety days. Give the habit itself the additional time real habit-formation research says habits actually need.]
 
+| Month | Focus | Techniques |
+| --- | --- | --- |
+| One | Fastest win, then the front door | Three-test read, job posting rewrite, structured scorecard |
+| Two | Systems that ask for more trust | Four-fifths check, documentation log, hiring-manager brief |
+| Three | Judgment, culture, the honest recheck | AI-use stance, work sample, referral discipline, identity check, objections prep, recheck |
+
 ## Month one: the fastest win, then the front door
 
 **Week one.** Run chapter four's three tests, specificity, decision, verifiability, against whatever resumes are currently in your queue. This is deliberately first regardless of what your own instincts say to prioritize, because it requires no new process, no stakeholder buy-in, and no data access beyond what you already have open in front of you. It's the fastest possible proof that this book's approach changes something real, and that proof builds the momentum everything after it needs.

@@ -26,6 +26,11 @@ Two details in that regulation matter more than the headline number. First, the 
 
 For his next req, Marcus built a single-page log, one row per candidate past the initial automated screen: name, the specific criteria they were evaluated against (copied straight from the dated note he now writes at the req's opening), the reviewer's one-sentence reasoning for advance or reject, and the date. It took him under two minutes per candidate to fill in, done in the moment rather than reconstructed later, and it lived in a shared drive with the rest of the req's files, not in anyone's personal notes where it would leave with them if they changed teams.
 
+| Candidate | Stage | Decision + one-sentence reason | Date |
+| --- | --- | --- | --- |
+| J. Alvarez | Screen | Rejected: 2 yrs experience against a 5-yr must-have, no offsetting factor found | Mar 4 |
+| R. Okafor | Screen | Advanced: two bullets passed all three specificity tests | Mar 4 |
+
 Six months later, for a different req, a similar demand letter arrived. This time the answer was a specific row in a specific spreadsheet: the criteria, the reasoning, the date, written down before anyone had a reason to think it would ever be needed. The candidate's underlying claim may or may not have had merit; that's a legal question for counsel, not a recruiting one. What had changed was that the company's actual answer to "why" was a documented fact instead of a reconstructed impression, and that difference matters regardless of how the underlying claim resolves.
 
 Legal's own reaction was worth noting too. The first time Marcus's simple spreadsheet crossed a lawyer's desk, expecting to hand over a mess, the response was closer to relief than scrutiny: a specific, dated, contemporaneous record is exactly the artifact counsel wants to see, because it's the difference between defending a decision and defending a story assembled after the fact to sound reasonable. Nobody had asked Marcus to build it in a particular format. The format that made his own job easier turned out to be the same one that made everyone downstream of him more confident too.

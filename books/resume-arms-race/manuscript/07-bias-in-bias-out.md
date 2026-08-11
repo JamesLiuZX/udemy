@@ -34,6 +34,13 @@ That last point is worth repeating on its own: the obligation sits with you, the
 
 Once Marcus understood the four-fifths rule, he didn't need special tooling to apply a rough version of it himself. His ATS already reported pass-through rates by req; he pulled the graduation-year filter's pass rate for candidates with degrees older than eight years against candidates with more recent ones, using the visible proxy of years since graduation printed on the resume itself, not any protected characteristic directly. The ratio came out under 50%, well below the 80% threshold, for a filter that had never been re-examined since someone set it up years earlier for reasons nobody currently at the company could fully reconstruct.
 
+| Group | Applicants | Passed | Pass rate |
+| --- | --- | --- | --- |
+| Degree within 8 years | 210 | 105 | 50% |
+| Degree older than 8 years | 60 | 18 | 30% |
+
+Ratio: 30 ÷ 50 = 60%, below the 80% threshold.
+
 He didn't have the authority to declare the filter illegal or to unilaterally decide it was fine. What he did have, and used, was the ability to bring a specific, quantified finding to his head of talent acquisition and to legal counsel, instead of a vague worry, which turned an abstract discomfort into a concrete decision someone with the actual authority to make it could actually make.
 
 Legal's first question back to him was one he hadn't fully prepared for: was the eight-year cutoff actually necessary for the role, or just a convenient number someone had picked. He didn't have a confident answer on the spot, and said so rather than guessing, which turned out to be the right call. It took a short conversation with the hiring manager to establish that nothing about the role genuinely required currency with tools from the last eight years specifically; the real requirement, comfort with a small number of named systems, was something chapter six's task-word rewrite could name directly instead of leaving it to a proxy. The four-fifths number opened the conversation. The actual fix came from asking what the filter was supposed to measure in the first place, and discovering nobody could answer that precisely either.

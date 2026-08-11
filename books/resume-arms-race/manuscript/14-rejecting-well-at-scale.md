@@ -18,6 +18,11 @@ Read the two findings together. Ghosting isn't evenly distributed, and it's risi
 
 Nobody is asking you to write a bespoke, heartfelt note to every one of four hundred applicants, and pretending that's the standard just guarantees nobody does anything at all. The realistic floor has two tiers.
 
+| Tier | Who | Format | Window |
+| --- | --- | --- | --- |
+| 1 | Past the first automated screen | Templated, but honest and stage-specific | 5 business days |
+| 2 | Reached a live interview | Personal, at least a genuine acknowledgment of why | 1 week at most |
+
 **Every candidate past the first automated screen gets a real, timely response**, even a templated one, as long as it's honest and specific to the stage they reached: "you weren't selected to move forward from the initial review" reads very differently, and is a lower bar to write, than "you weren't selected after your interview," and candidates can tell the difference even in a template. The template doesn't need to be personal. It needs to be true and prompt, which chapter eight's documentation habit already gives you the raw material for: the dated, specific reason you wrote down for your own record is often, in a softened form, shareable with the candidate directly, without inventing anything new.
 
 **Every candidate who reached a live interview gets something closer to a real answer**, not necessarily the full internal reasoning, and this is where your own counsel's guidance matters, since what's safe to share varies by jurisdiction and by how specific the internal record was, but at minimum a genuine acknowledgment that a decision was made and roughly why, sent within a defined window, a week at most, rather than left open indefinitely while the req quietly goes cold.

@@ -6,6 +6,12 @@ That's the actual argument this closing chapter exists to make, stated plainly r
 
 ## Three things neither side of the arms race can do
 
+| What stays human | Why neither side of the arms race can do it |
+| --- | --- |
+| Reading context that isn't written anywhere | A resume can only carry what its author thought to include |
+| Building trust that gets someone to tell the truth | No screening sophistication substitutes for a candidate believing they're being heard |
+| Owning a judgment call, with real accountability | A filter can be wrong without anyone being wrong; a recruiter can't |
+
 **Reading context that isn't written anywhere.** A resume, however honestly and skillfully written, is a document, and a document can only carry what its author thought to include. The two-year gap in the story above wasn't a data field an algorithm could correctly weigh, because the information that made it meaningful, what actually happened and why, existed nowhere any system could read it. It existed only in a conversation, and conversations are the one part of hiring that has never been reducible to a document, generated or screened, on either side of this book's whole argument.
 
 **Building the kind of trust that gets someone to tell the truth.** Chapter nine's candidate, disclosing her own AI use unprompted, did that because something about how the conversation was going made honesty feel safe rather than risky. That's not a technique this book taught in the mechanical sense chapters four and five taught their techniques; it's closer to what chapter five's follow-up questions actually depend on to work at all, since a candidate who doesn't trust the room gives guarded, rehearsed answers regardless of how well the questions are structured. No amount of screening sophistication substitutes for a candidate believing the person across from them is actually listening.
