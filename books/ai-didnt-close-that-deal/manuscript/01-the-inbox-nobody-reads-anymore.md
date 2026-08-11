@@ -12,7 +12,7 @@ Diane's first instinct, and it's worth naming because it's almost everyone's fir
 
 Every prospect Diane's team emails is also being emailed, on the same day, by a dozen other reps using the same category of tool, trained on roughly the same patterns, producing outreach that increasingly reads like it came from the same source even when it didn't. The prospect's inbox didn't get more crowded by accident. It got more crowded because the cost of sending a plausible-sounding email dropped to almost nothing, for every sales team at once, at the same time.
 
-[PULLQUOTE: The math that used to work assumed volume was expensive. The moment it stopped being expensive, everyone sent more, and the thing that made a reply valuable disappeared for everyone at once.]
+[PULLQUOTE: It's not a strategy that stopped working. It's a strategy that was always going to eat itself once the cost of executing it hit zero, and AI tools are what took that cost to zero.]
 
 This is the same mechanism behind a lot of the AI-and-work conversation happening across totally unrelated fields right now, just wearing sales clothes: something that used to require real effort became free to produce, so the market flooded with it, and the market's ability to tell the effortful version from the cheap version collapsed along with it. A recipient scanning their inbox in 2019 could reasonably assume a personalized-sounding cold email meant someone had actually looked at their company. A recipient scanning their inbox today has learned, correctly, that assumption no longer holds, and they've adjusted their filtering accordingly, which shows up in your numbers as a reply rate that keeps sliding no matter how good the tool gets.
 

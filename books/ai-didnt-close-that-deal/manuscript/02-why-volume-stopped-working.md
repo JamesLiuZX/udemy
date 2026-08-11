@@ -10,7 +10,7 @@ Read that threshold carefully, because it's the actual ceiling on Diane's "just 
 
 Picture two campaigns. The first sends two thousand emails to a loosely matched list, a title and an industry, nothing more specific. The second sends four hundred emails to a tightly matched list, researched individually, genuinely relevant to each recipient. The first campaign will almost certainly generate more total replies in raw count, more meetings booked this week. It will also generate a meaningfully higher complaint rate, because a chunk of those two thousand recipients are a poor fit and some fraction of poor fits mark an email as spam rather than just ignoring it.
 
-[PULLQUOTE: Untargeted volume doesn't just fail to convert well. It pushes a sending domain toward the exact threshold that gets its email rejected outright, faster than a smaller, well-targeted campaign ever would.]
+[PULLQUOTE: Sending more doesn't just get diminishing replies. Past a certain point, it risks the domain's ability to land in an inbox at all.]
 
 Do that every week for a quarter, and the second campaign's sender reputation stays healthy while the first campaign's domain edges toward the enforcement threshold, at which point every email from that domain, including the good ones, starts landing worse. The team optimizing for this week's raw reply count is quietly spending down an asset, deliverability, that took months to build and can take months to rebuild once it's damaged. This is the part that doesn't show up on a Monday pipeline review, and it's exactly why it goes unmanaged until it's expensive.
 

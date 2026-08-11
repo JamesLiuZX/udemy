@@ -34,7 +34,7 @@ This is exactly where Theo's draft went wrong, and it's worth being specific abo
 
 That finding covers the whole buying journey, not cold outreach specifically, but the mechanism it describes is exactly the one running in your prospect's inbox. Personalization doesn't fail because it's inaccurate. It fails when the reader can feel the machinery behind it and can't see what the machinery is for. A detail that connects directly to the ask reads as understanding. The identical detail, sitting next to two or three others with no connection to anything, reads as surveillance, and the line between them isn't how the detail was found. It's whether the sentence right after it explains why the detail matters to the reader, not just to you.
 
-[PULLQUOTE: A detail proves you did the homework. Whether it reads as relevant or as surveillance depends entirely on the sentence that comes after it.]
+[PULLQUOTE: Personalization doesn't fail because it's inaccurate. It fails when the reader can feel the machinery behind it and can't see what the machinery is for.]
 
 There's a quick, honest way to check which side of that line a detail falls on before you send it. Ask what you're actually offering to help with, then ask whether the detail you picked is evidence for that specific offer or just evidence that you're paying attention in general. "I saw you're hiring a Returns Coordinator who'll be reconciling manual spreadsheets across three warehouses" is evidence for a specific claim about a specific operational cost. "I saw you have forty-seven employees" isn't evidence for anything; it's a fact that happens to be true. The first kind of detail earns the right to exist in the email. The second kind should get cut in the first editing pass, no matter how impressive it was to find.
 
@@ -107,7 +107,7 @@ Her first draft used that finding well and then made the exact mistake this chap
 
 > Subject: The 12% finding in the market conduct report
 >
-> Hi Elena, [and, separately, Hi Owen,]
+> Hi Elena, [and, separately, Hi Grant,]
 >
 > I saw Larkspur was flagged in the recent market conduct exam for claims turnaround exceeding the thirty-day standard in twelve percent of the sample. That kind of finding tends to create real headaches for compliance and operations teams alike.
 >
@@ -118,7 +118,7 @@ Her first draft used that finding well and then made the exact mistake this chap
 > Best,
 > Naomi
 
-The opener is genuinely specific, and it's the same email in both inboxes with a first name changed. Elena Brandt, the VP of Claims Operations, is the economic buyer: she owns the turnaround-time number, the corrective action plan if it recurs, and the budget to fix it. Owen Castellano, the Director of Compliance, is the technical evaluator: he doesn't own the turnaround number, he owns proving to the next examiner that whatever process produced it is now defensible. Sending them the same ask, "close gaps like this with automated tracking," answers a question neither of them actually asked, because it's generic enough to answer nobody's question in particular.
+The opener is genuinely specific, and it's the same email in both inboxes with a first name changed. Elena Brandt, the VP of Claims Operations, is the economic buyer: she owns the turnaround-time number, the corrective action plan if it recurs, and the budget to fix it. Grant Castellano, the Director of Compliance, is the technical evaluator: he doesn't own the turnaround number, he owns proving to the next examiner that whatever process produced it is now defensible. Sending them the same ask, "close gaps like this with automated tracking," answers a question neither of them actually asked, because it's generic enough to answer nobody's question in particular.
 
 Naomi split it once she noticed. Two emails, same underlying finding, two different reasons the finding matters to two different jobs.
 
@@ -134,11 +134,11 @@ To Elena, the economic buyer:
 >
 > Naomi
 
-To Owen, the technical evaluator:
+To Grant, the technical evaluator:
 
 > Subject: Audit trail for the next exam cycle
 >
-> Hi Owen,
+> Hi Grant,
 >
 > I came across your comments on preparing for the next market conduct cycle, particularly the point about documentation trails across claims systems being the hardest thing to defend to an examiner after the fact.
 >
@@ -146,9 +146,9 @@ To Owen, the technical evaluator:
 >
 > Naomi
 
-Same underlying capability sold into the same account, described two different ways, because Elena and Owen are being asked to defend two different things to two different audiences. Elena has to defend a number to her own leadership and, ultimately, to the state regulator's next exam. Owen has to defend a process to an examiner sitting across the table from him. Naomi's fix wasn't finding two new facts. It was recognizing that one real finding supports two different arguments, and that sending the same argument twice isn't personalization at all, no matter how specific the opening line reads. Multi-threading an enterprise account is often taught as a numbers game, more contacts, more touches. What it actually requires is a separate, specific answer to "why should this particular person care," asked once for every seat at the table, not one good answer copied across all of them.
+Same underlying capability sold into the same account, described two different ways, because Elena and Grant are being asked to defend two different things to two different audiences. Elena has to defend a number to her own leadership and, ultimately, to the state regulator's next exam. Grant has to defend a process to an examiner sitting across the table from him. Naomi's fix wasn't finding two new facts. It was recognizing that one real finding supports two different arguments, and that sending the same argument twice isn't personalization at all, no matter how specific the opening line reads. Multi-threading an enterprise account is often taught as a numbers game, more contacts, more touches. What it actually requires is a separate, specific answer to "why should this particular person care," asked once for every seat at the table, not one good answer copied across all of them.
 
-It's worth being honest about what this does and doesn't solve for a deal like Larkspur's. There's a CFO thread on this account too, and a legal review that will happen somewhere past the point either of these emails leads to, and neither of those conversations gets solved by a well-aimed cold email; they get solved by the deal process chapters six and nine touch on. What the two emails above are actually for is narrower and more specific: getting Elena and Owen each to read past the first line and agree to a first conversation, on the strength of an argument built for their job rather than a generic one built for the account. A regulated enterprise deal has too many stakeholders and too long a cycle for one email, however good, to do more than that. Its only job is to earn the next thirty minutes, with the right person, for the right reason.
+It's worth being honest about what this does and doesn't solve for a deal like Larkspur's. There's a CFO thread on this account too, and a legal review that will happen somewhere past the point either of these emails leads to, and neither of those conversations gets solved by a well-aimed cold email; they get solved by the deal process chapters six and nine touch on. What the two emails above are actually for is narrower and more specific: getting Elena and Grant each to read past the first line and agree to a first conversation, on the strength of an argument built for their job rather than a generic one built for the account. A regulated enterprise deal has too many stakeholders and too long a cycle for one email, however good, to do more than that. Its only job is to earn the next thirty minutes, with the right person, for the right reason.
 
 The regulatory detail also illustrates something about where genuinely specific research comes from at the enterprise level that's worth stating plainly. A funding database or a job board covers almost every company a rep will ever prospect into. A state market conduct exam only exists because Larkspur operates in a regulated industry, files with a state agency, and gets periodically reviewed against a standard a rep could look up. That's not a signal Theo's tools would ever surface for Corrigan Industrial Supply, because industrial distributors aren't subject to the same kind of exam. The specific research move changes by segment even when the underlying discipline, actually reading the primary source instead of trusting a database's suggested talking point, stays exactly the same.
 

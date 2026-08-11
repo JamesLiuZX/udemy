@@ -46,8 +46,8 @@ Theo runs mid-market for Diane's team. He's the rep everyone would point to, bef
 | Opportunities created | 14 | 15 |
 | Opportunity win rate | 14% | 40% |
 | Closed-won deals | 2 | 6 |
-| Average deal size (ACV) | $28,000 | $91,000 |
-| Closed revenue this quarter | $56,000 | $546,000 |
+| Average deal size (ACV) | \$28,000 | \$91,000 |
+| Closed revenue this quarter | \$56,000 | \$546,000 |
 | Quota attainment | 22% | 109% |
 
 Read the top three rows the way Diane's old dashboard would have surfaced them, sorted by activity, and Theo wins every comparison that matters to that view. Nearly eight times the send volume. A higher reported open rate. Two and a half times the meetings booked. If Diane's leadership review had stopped at that slide, the obvious conclusion is that Theo is the stronger rep and Naomi needs a talking-to about pipeline generation, and that conversation has almost certainly happened, in some form, in a lot of sales orgs running exactly this dashboard.

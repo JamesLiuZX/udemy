@@ -29,13 +29,13 @@ The harder skill in this checklist is not finding information. It is telling a r
 | Mission-statement language copied from the homepage | Fake | Evergreen copy, unchanged for years, proves nothing about this week |
 | A trade-press mention naming your specific contact by title, within the last quarter | Real | Dated, names an actual person, independently verifiable |
 
-**Filled in, as an example.** Theo, working Bellwood Systems, a 400-person logistics software company, mid-market segment.
+**Filled in, as an example.** Theo, working Bellcrest Supply, a regional distribution company in the low hundreds of employees, mid-market segment (the account from chapter 3).
 
-- Minute 0-3: Bellwood's press page had a note from six weeks earlier announcing a new regional distribution hub.
-- Minute 3-6: no recent funding round on the usual tracker. Nothing here today; move on rather than force it.
-- Minute 6-11: the VP of Operations, his actual contact, had commented on a LinkedIn post about warehouse automation nine days earlier, naming "visibility across three new sites" as the thing keeping her up at night.
-- Minute 11-14: a logistics trade newsletter had covered the same hub opening and added that Bellwood was hiring for two new operations roles tied to it.
-- Minute 14-15: trigger written down: "the new distribution hub, and the visibility problem across three sites she flagged on LinkedIn last week."
+- Minute 0-3: Bellcrest's careers page had three postings live. Two were unremarkable warehouse roles.
+- Minute 3-6: the third posting, for a "Supply Chain Data Coordinator," named the actual job: consolidate weekly reporting currently maintained across four separate spreadsheets into a single leadership dashboard.
+- Minute 6-11: the hiring manager's LinkedIn showed a director of operations, three years at the company, no public posts in months, no evangelist angle to work with, so Theo didn't force one.
+- Minute 11-14: confirmed the posting had gone up two weeks earlier, current rather than stale, and skimmed the company's most recent local-press mention, which turned out irrelevant and got discarded rather than bolted on anyway.
+- Minute 14-15: trigger written down: "the Supply Chain Data Coordinator posting, and the four-separate-spreadsheets line in it."
 
 Fifteen minutes, one real, specific, dated fact, ready to become the first line of an email instead of the last thing bolted onto a template.
 
@@ -54,13 +54,13 @@ Run every drafted opening line, and ideally every paragraph, through these six c
 | The reversibility test | Delete the personalized line. Does the rest still read as a viable generic pitch? | Yes, nothing depends on it | No, the rest needs the specific detail to make sense |
 | The read-aloud test | Would you actually say the opening line on the phone, in those words? | Reads like copy | Reads like a person talking |
 
-**Filled in, as an example.** Theo's Bellwood email, before and after running the test.
+**Filled in, as an example.** Theo's email to Marcus at Corrigan Industrial Supply, before and after running the test (the full story is in chapter 4).
 
-*Before, fails on four of six:* "Hi [First Name], I hope this finds you well. I wanted to reach out because companies like Bellwood Systems are constantly looking for ways to improve operational efficiency in today's competitive logistics landscape. Our platform helps teams like yours gain visibility."
+*Before, fails on four of six:* "Hi Marcus, I noticed Corrigan Industrial Supply posted a job for a Returns & Warranty Coordinator last week. The listing mentions building and maintaining manual tracking spreadsheets for returned goods across your three regional warehouses. I also saw you have 47 employees on LinkedIn and that your Cincinnati facility expanded its floor space last year. Given all this, I think it's worth a conversation about how we could help."
 
-*After, passes on all six:* "Hi Priya, the new hub in Reno, and the 'visibility across three sites' problem you flagged on LinkedIn last week, is close to exactly what our platform was built for. Worth 15 minutes to see if it actually fits your setup, or is the hub still too new to have a real opinion yet?"
+*After, passes on all six:* "Hi Marcus, your team's hiring a Returns & Warranty Coordinator, and the listing mentions tracking returned goods across three warehouses by hand. That's usually the point where reconciling returns starts eating a full day a week, and it only gets worse the next time you open a location. Our platform was built for exactly that handoff between warehouses. Worth 15 minutes to see whether it would save your new hire the spreadsheet work before they're six months into owning it?"
 
-Notice what changed is not tone or politeness. It is that every claim in the second version is falsifiable against something a stranger could go check, and every claim in the first version could have been written before Theo had ever heard of Bellwood.
+Notice what changed is not tone or politeness. It is that the second version drops the two facts that weren't doing any work (the headcount, the floor-space expansion), keeps the one that was, and ties the ask directly to it. Every claim that survives is falsifiable against something Marcus can check against his own week.
 
 ## 3. A cadence redesign template (chapter 5)
 
@@ -178,7 +178,7 @@ For the moment an objection actually lands in a real conversation, on a real tea
 | "Compliance and legal review slow us down too much to move at this pace already, we can't afford to add research time on top." | Research time and review time solve different problems and don't stack the way it feels like they do; a well-researched email usually clears review faster because it needs fewer rewrites, not slower. |
 | "I don't have fifteen minutes per account, I have a number to hit today." | Ten accounts a week, not the whole territory, is the actual ask (see section 4's script). The other accounts keep running at current pace unchanged. |
 
-[PULLQUOTE: None of this works as a poster on the wall. It only works filled in, on a real account, in a real week.]
+[PULLQUOTE: None of this works as a poster on the wall. Diane's team's reply rate did not recover because someone laminated a checklist and pinned it by the coffee machine.]
 
 None of this works as a poster on the wall. Diane's team's reply rate did not recover because someone laminated a checklist and pinned it by the coffee machine. It recovered because reps filled in the actual fields, on actual accounts, often enough that the discipline stopped being a document and became how the team simply worked, the same way a good cadence stops feeling like a script once you've run it enough times to mean it. Pick one worksheet from this chapter. Run it against one account this week, with a real name in every bracket, not a placeholder. Then run it again next week. That's the whole argument of this book, compressed down into a habit small enough to actually keep.
 
