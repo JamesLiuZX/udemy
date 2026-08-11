@@ -4,7 +4,7 @@ Priya didn't build her stack in a weekend, and neither should you, however tempt
 
 Before week one starts, one honest note about what thirty days actually gets you.
 
-[KEY-INSIGHT: A widely cited UCL study tracking 96 people building a new daily habit found it took an average of 66 days for the behavior to start feeling automatic, ranging from as few as 18 days to as many as 254 depending on the habit and the person, considerably longer than the popular "21 days" myth this research is usually cited to correct. || Source: Phillippa Lally et al., "How Are Habits Formed: Modelling Habit Formation in the Real World," European Journal of Social Psychology, 2010.]
+[KEY-INSIGHT: A widely cited UCL study tracking 96 people building a new daily habit found it took a median of 66 days for the behavior to start feeling automatic, ranging from as few as 18 days to as many as 254 depending on the habit and the person, considerably longer than the popular "21 days" myth this research is usually cited to correct. || Source: Phillippa Lally et al., "How Are Habits Formed: Modelling Habit Formation in the Real World," European Journal of Social Psychology, 2010.]
 
 Thirty days in this chapter builds every system in this book and gets you through several real uses of each one. It does not mean every habit will feel effortless by day thirty; some, especially the ones you use less often, like the contract three-pass read, may take longer to stop feeling like a checklist and start feeling automatic. That's normal, expected, and not a sign anything's wrong. Build the system in thirty days. Give the habit itself the additional time Lally's research says habits actually need.
 
@@ -76,7 +76,7 @@ Real weeks don't always cooperate with a schedule written in advance, and it's w
 
 [TAKEAWAYS]
 
-- Thirty days builds every system in this book and gets you through several real uses of each. Full automaticity takes longer, an average of 66 days by habit-formation research, and that's normal, not a sign something's wrong.
+- Thirty days builds every system in this book and gets you through several real uses of each. Full automaticity takes longer, a median of 66 days by habit-formation research, and that's normal, not a sign something's wrong.
 - Week one starts with the fastest win, invoicing, not necessarily the biggest one, to build momentum before tackling the systems that ask for more trust.
 - The contract-reading and tool-audit systems are scheduled later on purpose, once smaller systems have already proven themselves under real use.
 - Your own day-one time audit overrides this chapter's default order. Build whatever's costing you the most, right now, first, if the default sequence doesn't fit your specific situation.

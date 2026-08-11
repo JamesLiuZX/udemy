@@ -4,9 +4,9 @@
 
 This is the quietest kind of erosion in a solo business, quieter than a late invoice because there's no single moment that feels like a problem. Scope creep doesn't arrive as a demand. It arrives as a favor you're doing for someone you like, one small yes at a time, and the math only becomes visible in hindsight, when you tally the hours against the invoice and realize where they went.
 
-[KEY-INSIGHT: PMI's 2024 Pulse of the Profession research found that 41 percent of projects experienced scope creep in the past year, work expanding past its original agreed boundaries without a corresponding adjustment to budget or timeline. That's a large enterprise-project dataset, not a freelance-specific one, but the underlying mechanism is identical and, if anything, sharper for a solo business: there's no project manager whose job is to catch the drift, because the person catching it and the person being asked the favor are the same tired person. || Source: Project Management Institute, Pulse of the Profession, 2024.]
+[KEY-INSIGHT: PMI's Pulse of the Profession research found that 52 percent of projects experienced scope creep, up from 43 percent just five years earlier, work expanding past its original agreed boundaries without a corresponding adjustment to budget or timeline. That's a large enterprise-project dataset, not a freelance-specific one, but the underlying mechanism is identical and, if anything, sharper for a solo business: there's no project manager whose job is to catch the drift, because the person catching it and the person being asked the favor are the same tired person. || Source: Project Management Institute, "Scope Creep Rising: 2018 Pulse of the Profession In-Depth Report."]
 
-Forty-one percent isn't a rare failure mode. It's closer to a coin flip, on projects with actual project managers watching for it. A solo freelancer without that structural backstop isn't unusually bad at holding boundaries. They're missing the role that, everywhere else this happens, is somebody else's whole job.
+Fifty-two percent isn't a rare failure mode. It's closer to a coin flip, on projects with actual project managers watching for it. A solo freelancer without that structural backstop isn't unusually bad at holding boundaries. They're missing the role that, everywhere else this happens, is somebody else's whole job.
 
 ## Why "just say no" doesn't actually work
 
@@ -60,7 +60,7 @@ It also won't tell you scope creep is always the client's fault. Plenty of it st
 
 [TAKEAWAYS]
 
-- Forty-one percent of projects experience scope creep even with a project manager watching for it. A solo freelancer is missing that structural backstop, not unusually bad at boundaries.
+- Fifty-two percent of projects experience scope creep even with a project manager watching for it. A solo freelancer is missing that structural backstop, not unusually bad at boundaries.
 - The problem was never knowing to say no. It's the absence of a fast middle option between an outright refusal and a quiet, unpaid yes.
 - Use a three-part script: acknowledge the request, name what it actually adds, offer a choice. It makes the cost visible without accusing anyone of bad faith.
 - Check ambiguous requests against the original scope before responding, not after you've already said yes on instinct. A clear original quote, from chapter three, prevents more of this than any script written after the fact.
