@@ -26,6 +26,23 @@ Stop bringing it up as a topic. Every unsolicited pitch reinforces that this is 
 
 And if the door never opens at all, that has to be an acceptable outcome, not a project left permanently unfinished. Chapter thirty's whole argument is about becoming the person your family calls. Sometimes what someone needs isn't to be taught, it's to have someone they can still call instead, indefinitely, no pressure attached to eventually learning it themselves. That's not a failure of this book's method. It's a legitimate, permanent answer for some people, and pretending otherwise does nobody any favors.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{2.8cm}p{2.9cm}p{2.9cm}@{}}
+\toprule
+& \textbf{What backfires} & \textbf{What actually works} \\
+\midrule
+\textbf{They've just said no} & Bringing it up again, a little more insistent each time & Using it visibly in your own life and letting curiosity do the inviting \\
+\addlinespace
+\textbf{They finally ask a question} & Turning it into a full lesson & Answering just that one question, then stopping there \\
+\addlinespace
+\textbf{The door stays shut} & Treating it as an unfinished project & Being the person they can still call, no pressure attached \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{The one pattern that separated Linda's first three tries, which made Hal dig in further, from what actually opened the door two months later.}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - Refusal is rarely about the technology. It's much more often a defense against confirming something the person doesn't want confirmed about their own competence.

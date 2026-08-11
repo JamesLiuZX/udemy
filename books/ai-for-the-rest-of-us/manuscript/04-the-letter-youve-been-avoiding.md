@@ -38,6 +38,23 @@ Who is this actually going to, and what do they need to understand fast? What ou
 
 Type those three things into the chat along with the plain facts, in order, with dates where you have them. Read what comes back once for accuracy and once for whether it sounds like something you'd actually send. Edit the parts that don't sound like you. That's the whole method, and it works whether the letter is about a mattress, a landlord, a school, or an insurance company.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{3.6cm}p{4.9cm}@{}}
+\toprule
+\textbf{Question} & \textbf{Linda's answer, for the mattress letter} \\
+\midrule
+Who is this actually going to? & The mattress company, referencing the delivery date, the tear, and the unanswered call \\
+\addlinespace
+What outcome do you want? & A full refund, not a repair or an exchange \\
+\addlinespace
+What tone do you want? & Firm and clear, not angry, ending with a specific reply-by date \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{The three questions from this chapter, answered for Linda's actual mattress letter: the same three worth answering before you open a chat window for your own.}
+\end{bookfigure}
+
 ## Why this doesn't replace the hard conversation
 
 There's a version of this chapter that promises the AI tool removes the discomfort of confrontation entirely, and that promise would be dishonest. It doesn't. Marisol still had to send the message to her actual landlord and live with whatever he said back. Linda still had to decide, on her own, that a refund and not a replacement was the right ask. The tool removes the specific friction of staring at a blank box not knowing how to start, and it's genuinely good at calibrating tone once you describe what you're going for. It does not make the underlying situation easier, and it doesn't negotiate on your behalf. You're still the one who has to mean what the letter says.

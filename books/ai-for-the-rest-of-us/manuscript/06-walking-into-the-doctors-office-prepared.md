@@ -36,6 +36,29 @@ Preparation doesn't end when the appointment does, and it's worth naming the sec
 
 Before your next appointment, big or small, try this: "I have an appointment about [symptom or finding, described specifically]. Help me understand what I've described in plain English if there's anything confusing about it, and give me [4-5] specific questions to make sure I ask so I don't leave more confused than I came in." Bring the questions on paper or your phone. Ask all of them, even the one that feels like it might be a silly question. It usually isn't.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{4.2cm}p{4.3cm}@{}}
+\toprule
+\textbf{Field} & \textbf{Your answer} \\
+\midrule
+Symptom or finding, described specifically & \rule{4.3cm}{0.4pt} \\
+\addlinespace[10pt]
+Question 1 to ask & \rule{4.3cm}{0.4pt} \\
+\addlinespace[10pt]
+Question 2 to ask & \rule{4.3cm}{0.4pt} \\
+\addlinespace[10pt]
+Question 3 to ask & \rule{4.3cm}{0.4pt} \\
+\addlinespace[10pt]
+Question 4 to ask & \rule{4.3cm}{0.4pt} \\
+\addlinespace[10pt]
+What to bring (scan, medication list, notes) & \rule{4.3cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{A blank appointment-prep sheet, built from this chapter's own prompt. Fill it in the night before, the same way Linda did for Hal's follow-up.}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - An AI tool cannot diagnose you and should never be asked to. What it can do well is translate confusing medical language and help you build a sharp, specific list of questions before you walk in.

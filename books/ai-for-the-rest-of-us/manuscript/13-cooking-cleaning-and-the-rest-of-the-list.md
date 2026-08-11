@@ -32,6 +32,25 @@ An AI tool can suggest a cleaning schedule, but it can't hold you to it, and a c
 
 Once a week, at whatever moment the to-do list starts to feel like noise instead of a list, try: "Here's what's actually on my plate this week: [list it messily, the way it sits in your head]. Help me sort this into what actually needs to happen this week versus what can wait, and suggest an order to tackle it in." Fifteen minutes of unloading a cluttered head into a chat window, most weeks, buys back an evening that would otherwise have gone to staring at the list instead of working through it.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{4.3cm}p{4.3cm}@{}}
+\toprule
+\textbf{Needs to happen this week} & \textbf{Can wait} \\
+\midrule
+\rule{4.3cm}{0.4pt} & \rule{4.3cm}{0.4pt} \\
+\addlinespace[10pt]
+\rule{4.3cm}{0.4pt} & \rule{4.3cm}{0.4pt} \\
+\addlinespace[10pt]
+\rule{4.3cm}{0.4pt} & \rule{4.3cm}{0.4pt} \\
+\addlinespace[10pt]
+\rule{4.3cm}{0.4pt} & \rule{4.3cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{This week's version of the sorting question the chapter itself asks: what actually needs to happen now, and what can honestly wait.}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - The small, undramatic weight of ordinary tasks, meals, cleaning, organizing, responds to the exact same specific-question habit as this book's bigger tasks. Describe your actual situation; ask for a plan, not a single answer.

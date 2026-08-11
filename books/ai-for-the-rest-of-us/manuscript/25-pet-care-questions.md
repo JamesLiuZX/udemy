@@ -26,6 +26,23 @@ Pet insurance is easier to think through calmly before an emergency than during 
 
 "My [pet, age, general health] has [symptom, how long, anything else notable]. I have/don't have a vet appointment [timeframe]. Is this the kind of thing worth an earlier appointment, and what questions should I bring?" For anything that reads as a possible emergency, skip the chat window and call an emergency vet line directly.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{2.6cm}p{1.8cm}p{3.4cm}p{2.5cm}@{}}
+\toprule
+\textbf{Symptom} & \textbf{How long} & \textbf{Other notes} & \textbf{Vet appointment} \\
+\midrule
+\rule{2.6cm}{0.4pt} & \rule{1.8cm}{0.4pt} & \rule{3.4cm}{0.4pt} & \rule{2.5cm}{0.4pt} \\
+\addlinespace[10pt]
+\rule{2.6cm}{0.4pt} & \rule{1.8cm}{0.4pt} & \rule{3.4cm}{0.4pt} & \rule{2.5cm}{0.4pt} \\
+\addlinespace[10pt]
+\rule{2.6cm}{0.4pt} & \rule{1.8cm}{0.4pt} & \rule{3.4cm}{0.4pt} & \rule{2.5cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{A blank version of the pet-symptom prompt from this chapter. Fill it in the next time something seems off, and bring it to the vet whether or not you end up asking the tool anything first.}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - More than half of pet owners have skipped or delayed a vet visit, usually over cost or uncertainty about whether a symptom is serious. That uncertainty is common, not a sign of neglect.

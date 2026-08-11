@@ -14,6 +14,21 @@ Not everything, and knowing the difference mattered from the start. She uses it 
 
 Everyday, lower-stakes communication is where this shines: a text to a relative, understanding a menu, a rough first pass at a letter that needs a native speaker's polish before it goes anywhere important. For anything with real legal or medical weight, an immigration document, a court notice, a serious diagnosis explained by a doctor, a machine translation is a starting point for understanding, never the final word, the same not-a-replacement line this book has drawn everywhere else. Many hospitals and courts have professional human interpreters specifically because the stakes of a mistranslated medical or legal term are too high for anything less, and it's worth asking for one directly rather than assuming a family member, or a chat tool, should carry that weight instead.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{4.8cm}p{5.8cm}@{}}
+\toprule
+\textbf{If you ask for...} & \textbf{What you actually get} \\
+\midrule
+A literal, word-for-word translation & Something that technically parses and doesn't sound like anything a person would actually say \\
+\addlinespace
+Natural, conversational wording, the way you'd explain it to someone & Something your family member can actually read and understand, not a garbled, secondhand version \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{The one phrase that changes the whole result: ask for natural, conversational wording instead of a literal translation, and it actually sounds like something a person would say.}
+\end{bookfigure}
+
 ## Linda's version: the other direction
 
 Linda's daughter-in-law's parents speak mostly Mandarin, and family gatherings had always involved a certain amount of polite nodding across a language gap nobody quite knew how to close warmly. Linda started using a translation app during visits, nothing dramatic, just enough to ask a real question directly, "What was your own wedding like?", instead of routing everything through her son the way they always had before. It didn't erase the language gap. It gave her a few more real, direct exchanges per visit than she'd had in years of polite nodding, and that alone changed something about how those visits felt.

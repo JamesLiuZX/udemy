@@ -36,6 +36,25 @@ It isn't a trait. It's exposure. The people who look effortlessly comfortable wi
 
 This book asks you to borrow that shrug, on purpose, starting now. The first few questions you ask might come back a little off, the way Linda's first answer was slightly too general. That's not a sign you did it wrong. It's the completely normal first round of a conversation, and every chapter after this one exists to make those rounds shorter and the answers more useful, one ordinary task at a time.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{4.0cm}p{4.5cm}@{}}
+\toprule
+\textbf{What people assume it takes} & \textbf{What it actually takes} \\
+\midrule
+Knowing technical terms, like model, token, or prompt & Describing what you want, the way you would explain it to a person \\
+\addlinespace
+Getting the question exactly right on the first try & Trying, then saying "not quite" and asking again \\
+\addlinespace
+Being naturally a tech person & Practice: more tries logged, not more natural talent \\
+\addlinespace
+A hidden manual everyone else already has & No hidden rules. There is no wrong way to ask \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{What Linda was afraid this required, next to what it actually took to write one honest sentence.}
+\end{bookfigure}
+
 Linda isn't the only person whose ordinary week runs through this book. Marisol, a hotel front-desk supervisor two states over, raising two kids mostly on her own, hit the exact same wall Linda did, from a different direction entirely. Her hesitation wasn't about age. It was about time: twelve-hour shifts don't leave much appetite for figuring out a new tool on top of everything else, and a coworker's offhand mention of an app during a lunch break was the only push she ever got. Age, a busy schedule, a career spent around people rather than screens, none of it is really the variable that matters. What matters, every single time, is whether someone finally typed the first honest sentence. This book follows both of their weeks, alongside your own, because the fear at that kitchen table wears a lot of different faces and answers to exactly the same fix.
 
 ## What this book will not do

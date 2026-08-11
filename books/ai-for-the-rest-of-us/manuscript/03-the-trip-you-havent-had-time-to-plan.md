@@ -12,6 +12,29 @@ She started smaller than a whole trip. One evening, she typed: "We want to go so
 
 That single message did the job of the first several hours of research, the part that isn't really about any one hotel, it's about narrowing an entire world of possible trips down to three real options worth actually comparing. She picked one of the three, then went back for the next layer: "For [the city she picked], find us a hotel in walking distance of the old town, under two hundred a night, with real recent reviews mentioning it's quiet at night." Another few minutes, another few hours of scrolling avoided.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{4.2cm}p{4.3cm}@{}}
+\toprule
+\textbf{Field} & \textbf{Your answer} \\
+\midrule
+Destination or type of trip & \rule{4.3cm}{0.4pt} \\
+\addlinespace[10pt]
+Dates & \rule{4.3cm}{0.4pt} \\
+\addlinespace[10pt]
+Budget, all travelers included & \rule{4.3cm}{0.4pt} \\
+\addlinespace[10pt]
+Who is going & \rule{4.3cm}{0.4pt} \\
+\addlinespace[10pt]
+What matters most (walkable, quiet, relaxed) & \rule{4.3cm}{0.4pt} \\
+\addlinespace[10pt]
+What to avoid (long layovers, beach only, crowds) & \rule{4.3cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{The fields behind Linda's trip-planning message, turned into a blank worksheet. Fill in these six things before you open a chat window, the same six she already knew and just had not said yet.}
+\end{bookfigure}
+
 [PULLQUOTE: The tool is excellent at cutting sixteen hours of undifferentiated searching down to twenty minutes of focused comparing.]
 
 ## Why this works the same way chapter two described

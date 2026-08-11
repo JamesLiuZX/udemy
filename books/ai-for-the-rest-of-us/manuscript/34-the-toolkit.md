@@ -132,6 +132,23 @@ Regardless of which template you reach for, these three questions, first named i
 
 Answer those three honestly, in your own words, before you type anything, and most of what makes a request vague instead of useful disappears on its own.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{4.4cm}p{3.8cm}@{}}
+\toprule
+\textbf{The question} & \textbf{Your answer} \\
+\midrule
+Who is this actually for, or what's the real situation? & \rule{3.8cm}{0.4pt} \\
+\addlinespace[10pt]
+What actually matters here, stated as a specific goal? & \rule{3.8cm}{0.4pt} \\
+\addlinespace[10pt]
+What should it avoid, or what boundary matters? & \rule{3.8cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{The three questions from chapter two, blank and ready to photocopy: fill them in honestly before you type anything, for any task in this book or any one it doesn't cover.}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - Every template in this book follows the same underlying rule from chapter two: specific, not vague, the way you'd be specific with a person and not a search box.

@@ -30,6 +30,21 @@ The interview itself brought a different kind of nerves, less about what to writ
 
 "Here's my résumé and the job posting I'm applying for. Rewrite my experience to speak directly to what this posting asks for, using only things that are actually true about my background. Then help me draft a short cover letter in a genuine, non-generic voice." Read every line back afterward and ask yourself the interview-room test: could you explain this exact claim, in detail, to someone's face. If the honest answer is no, cut it before you send it, no matter how good it sounds.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{2.1cm}p{3.2cm}p{3.2cm}@{}}
+\toprule
+& \textbf{Old, generic line} & \textbf{Translated, same true facts} \\
+\midrule
+\textbf{Marisol's résumé} & "Worked with others" & "Team coordination", the posting's own phrase, matching work she'd actually done \\
+\addlinespace
+\textbf{Linda's résumé} & 11 years, no job title, no explanation & 11 years managing complex household finances, budgets, and bookkeeping \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{Same true facts, translated into the words a posting and a hiring manager actually use. Not one invented skill or title in either line.}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - A generic résumé sent unchanged to every posting is one of the biggest reasons a job search drags on. Translating your real experience into each posting's specific language is a skill, not dishonesty, as long as everything stays true.

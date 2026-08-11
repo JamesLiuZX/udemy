@@ -46,6 +46,23 @@ Less than you'd think, and chapter two's whole argument was built around exactly
 
 Chapter eight's habit exists for exactly this moment: check the one fact that would actually matter before you act on it, not after. When it does happen anyway, despite checking, that's not proof the whole approach failed. It's proof the check matters, the way a single wrong measurement doesn't disprove the value of a tape measure.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{3.6cm}p{5.1cm}@{}}
+\toprule
+\textbf{Question} & \textbf{Honest answer} \\
+\midrule
+Isn't this just cheating? & Only if you claim it as unaided work you couldn't defend yourself \\
+\addlinespace
+Will this make me worse at thinking for myself? & Yes, if you let it. One habit, checking the fact that matters, keeps that from happening \\
+\addlinespace
+Is what I type actually private? & Not by default, but every major tool lets you turn training use off \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{Three of this chapter's own questions and their honest one-line answers, for whoever needs the short version before the long one.}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - Half of Americans feel more concerned than excited about AI's growing role in daily life. This book takes that seriously rather than arguing you out of it.

@@ -28,6 +28,27 @@ The fine print doesn't stop mattering after signing day, and it's worth naming t
 
 For any document you're about to sign that's longer than a page and denser than plain English, try: "This is a [lease/contract/agreement] I'm considering. In plain English, what are the five most important things I should understand, especially anything unusual, before I sign?" Use the answer to decide what's actually worth a closer read, or a real question to the other party, or a genuine lawyer's five minutes, rather than trying to parse all twelve pages cold, under a deadline, at the end of a long day.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{0.8cm}p{7.8cm}@{}}
+\toprule
+\textbf{\#} & \textbf{Before I sign this, I need to understand...} \\
+\midrule
+1 & \rule{7.8cm}{0.4pt} \\
+\addlinespace[8pt]
+2 & \rule{7.8cm}{0.4pt} \\
+\addlinespace[8pt]
+3 & \rule{7.8cm}{0.4pt} \\
+\addlinespace[8pt]
+4 & \rule{7.8cm}{0.4pt} \\
+\addlinespace[8pt]
+5 & \rule{7.8cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{A blank worksheet for the five-things prompt. Fill it in after you get the plain-English answer back, before you sign anything, and circle whichever one is unusual enough to ask about.}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - Signing without reading closely is the near-universal default, not a personal failing. The goal isn't becoming someone who reads every word, it's getting the handful of things that actually matter out of a dense document fast.

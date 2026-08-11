@@ -26,6 +26,25 @@ Marisol's actual weeks after the layoff ran two tracks at once, the job search f
 
 Linda and Hal's income gap wasn't a layoff, it was the stretch of months between Hal's retirement and his pension actually starting, a planned gap rather than a sudden one, but one that still benefited from the same bare-bones planning. Knowing the gap was coming months in advance meant Linda could ask the plain-English budgeting question calmly, well ahead of time, turning what could have been a stressful few months into a period they'd genuinely planned for and expected.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{5.4cm}p{3cm}@{}}
+\toprule
+\textbf{Category} & \textbf{Monthly amount} \\
+\midrule
+Fixed bills (rent, insurance, minimum payments) & \rule{3cm}{0.4pt} \\
+\addlinespace
+Flexible spending (groceries, discretionary) & \rule{3cm}{0.4pt} \\
+\addlinespace
+Expected unemployment benefit & \rule{3cm}{0.4pt} \\
+\addlinespace
+Savings on hand & \rule{3cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{The bare-bones three-month budget, blank and ready for your own numbers: what's truly fixed, what has flexibility, and what unemployment and savings actually add up to before you need either.}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - Four in ten workers say their savings wouldn't carry them through a sudden job loss. The fear in that moment is close to universal, not a personal financial failing.

@@ -34,6 +34,25 @@ Linda's November was quieter and heavier: the downsizing schedule's fifth Saturd
 
 December closed the season with two small, unplanned things that mattered more than their size. Marisol's mother, on her own initiative for the first time, asked her phone how to substitute an ingredient she was missing for a holiday recipe she'd made for thirty years without ever needing help before, the same small, unprompted, entirely hers moment chapter thirty named as the real measure of whether teaching someone actually worked. And Linda, wrapping presents on a quiet Tuesday night in December, used the hobby method from chapter nineteen for the first time all season on something that wasn't a chore at all: a simple watercolor card for her granddaughter, badly painted, entirely her own, no problem attached to it whatsoever.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{1.6cm}p{3.4cm}p{3.4cm}@{}}
+\toprule
+\textbf{Month} & \textbf{Linda's household} & \textbf{Marisol's household} \\
+\midrule
+Sept & Mattress refund resolved; downsizing schedule begins & Lease renewal; rent-increase notice rule found \\
+\addlinespace
+Oct & Kidney scan appointment; trip booked; grandson scam call caught & Washing machine replaced; mother's scare becomes a scam-safety talk \\
+\addlinespace
+Nov & Downsizing's fifth Saturday, no AI at all & Résumé rewritten; new job offer \\
+\addlinespace
+Dec & Watercolor card for granddaughter & Mother asks AI unprompted, for the first time \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{How one season actually unfolded for both households, side by side: overlapping, uneven, and never as tidy as four calendar months make it look.}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - Real use of everything in this book looks uneven, not tidy: a schedule that survives a missed Saturday, a habit that spreads sideways to a sister or a mother without being taught on purpose, a task where no shortcut belongs at all.

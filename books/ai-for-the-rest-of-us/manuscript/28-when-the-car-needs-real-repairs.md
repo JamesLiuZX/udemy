@@ -22,6 +22,23 @@ Hal's truck needed a transmission repair that came in at nearly $3,000, a number
 
 Before paying for any repair on a specific, known problem area, one extra question is worth the thirty seconds it takes: "Is [the specific issue] on a [year, make, model] ever the subject of a manufacturer recall?" Recalls get fixed free at a dealership, and a surprising number of drivers never think to check before paying out of pocket for a problem the manufacturer already owes them a free fix for. It won't catch every case, and it's worth confirming directly with a dealership rather than trusting the answer alone, but it takes thirty seconds to ask and has real money on the other side of a yes.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{3cm}p{3.2cm}p{2.5cm}@{}}
+\toprule
+\textbf{Line item} & \textbf{What it means} & \textbf{Matches symptom?} \\
+\midrule
+\rule{3cm}{0.4pt} & \rule{3.2cm}{0.4pt} & \rule{2.5cm}{0.4pt} \\
+\addlinespace[10pt]
+\rule{3cm}{0.4pt} & \rule{3.2cm}{0.4pt} & \rule{2.5cm}{0.4pt} \\
+\addlinespace[10pt]
+\rule{3cm}{0.4pt} & \rule{3.2cm}{0.4pt} & \rule{2.5cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{A blank copy of the repair-estimate prompt, ready to fill in line by line the next time an estimate lands in your hands: what it says, what it means, and whether it actually matches the noise or the problem you brought the car in for.}
+\end{bookfigure}
+
 ## Try this: the repair-estimate prompt
 
 "My mechanic gave me this estimate for [the symptom, described specifically]: [list the actual line items]. In plain English, what do these mean, does this fix match my symptom, and is this price reasonable?" Use the answer to ask one sharp, informed question back at the counter. For anything expensive or in doubt, get a second opinion from an actual second shop before committing.

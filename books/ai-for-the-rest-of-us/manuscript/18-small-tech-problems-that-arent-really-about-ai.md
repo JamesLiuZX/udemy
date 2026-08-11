@@ -30,6 +30,21 @@ Wi-Fi problems deserve one specific extra word, because the advice for them is u
 
 Next time something ordinary breaks, resist the urge to just restart everything and hope. Instead: "My [device/app] was working fine until [what changed or when it started]. Now [exactly what happens, word for word if there's an error message]. What's the most likely cause and what should I try first?" Specific symptoms get specific, useful answers, the exact same lesson as chapter two, aimed at a stuck printer instead of a dinner plan.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{1.9cm}p{2.2cm}p{2.3cm}p{2.3cm}@{}}
+\toprule
+& \textbf{What changed} & \textbf{Exact symptom} & \textbf{What fixed it} \\
+\midrule
+\textbf{Linda's printer} & Nothing, until that morning & Blinking amber light, nothing printed & Checked the ink; it was low \\
+\addlinespace
+\textbf{Marisol's banking app} & The app updated itself & Crashed immediately on open & Cleared the app's stored data \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{Two ordinary glitches, run through the exact-symptom prompt's own structure: what changed, what exactly happened, and the cheapest fix that actually worked.}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - A stuck printer, a crashing app, or dead Wi-Fi isn't proof you're "not a tech person." It's the single most universal kind of tech frustration there is, and an AI tool is well suited to exactly this kind of pattern-matching.

@@ -10,6 +10,23 @@ What she typed instead was this: "My ten-year-old is stuck on a fractions word p
 
 Here is the actual line, the one Marisol was reaching for without the words for it yet: using AI to give your kid the answer is doing the homework for them. Using it to ask your kid the questions a good tutor would ask, so they arrive at the answer themselves, is not. The difference isn't the tool. It's which side of the desk the tool is sitting on.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{2.9cm}p{2.8cm}p{2.8cm}@{}}
+\toprule
+& \textbf{Giving the answer} & \textbf{Asking the questions} \\
+\midrule
+\textbf{What the AI does} & States the answer directly & Asks one question at a time \\
+\addlinespace
+\textbf{What your kid does} & Copies it down & Thinks, answers, builds the idea \\
+\addlinespace
+\textbf{Is it their homework?} & No & Yes \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{The line this chapter draws, laid out side by side: which side of the desk is the tool sitting on?}
+\end{bookfigure}
+
 [KEY-INSIGHT: More than half of U.S. teens, 54 percent, say they've used an AI chatbot for help with schoolwork, and a majority of teens, 59 percent, believe using AI to cheat has become a normal, regular part of student life now. The anxiety this chapter addresses isn't hypothetical. It's already the water kids are swimming in. || Source: Pew Research Center, "How Teens Use and View AI," February 2026.]
 
 That second number is the one worth sitting with. If most teens already believe AI-assisted cheating is normal, the question isn't whether your kid will encounter this pressure. It's whether they learn, at your kitchen table, what the honest version of using the tool looks like, before they learn the dishonest version from a classmate who just wants the worksheet done by nine.

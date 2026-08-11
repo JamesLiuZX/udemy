@@ -28,6 +28,23 @@ The pattern across both examples: state the actual situation in one sentence, st
 
 The best time to think about this chapter is not during the emergency. Take five minutes sometime this week to note, in your phone, the handful of things you'd want fast answers about if something ordinary went wrong tonight: what medications in your house need refrigeration and for how long, your insurance and roadside assistance basics, the non-emergency number for your local police department for something urgent but not a 911 situation. None of that requires an AI tool to gather. It just means that when a Tuesday night goes dark, you're not starting completely cold.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{4.6cm}p{4.0cm}@{}}
+\toprule
+\textbf{What to note now} & \textbf{Your answer} \\
+\midrule
+Medications that need refrigeration, and how long they're safe & \rule{4.0cm}{0.4pt} \\
+\addlinespace[10pt]
+Insurance and roadside assistance basics & \rule{4.0cm}{0.4pt} \\
+\addlinespace[10pt]
+The non-emergency number for your local police department & \rule{4.0cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{Five minutes now, filled in before a dark Tuesday, so the next ordinary emergency doesn't start from zero.}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - For an actual medical emergency, chest pain, trouble breathing, a serious injury, call emergency services first, always, before typing anything anywhere.

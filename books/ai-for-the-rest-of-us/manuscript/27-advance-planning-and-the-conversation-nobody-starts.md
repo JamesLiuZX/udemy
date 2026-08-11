@@ -24,6 +24,25 @@ Marisol was thirty-four, with two young kids and no will at all, the kind of thi
 
 A newer wrinkle worth naming directly: photos, financial accounts, email, and years of messages now live in accounts that don't automatically pass to anyone the way a physical box of letters would. "In plain English, what's a digital estate plan, and what basic steps should I take to make sure someone I trust can access or close my important online accounts if something happens to me?" surfaced something Linda hadn't considered at all: most major services let you designate a legacy contact or beneficiary in advance, a five-minute setting most people never find because nobody thinks to look for it until it's too late to ask the account holder directly.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{3.3cm}p{5.2cm}@{}}
+\toprule
+\textbf{Document} & \textbf{What it actually does} \\
+\midrule
+Will & Says who gets what after you die \\
+\addlinespace
+Advance directive & Says what care you want if you can't speak for yourself while alive \\
+\addlinespace
+Healthcare power of attorney & Names who can make medical decisions for you if you can't \\
+\addlinespace
+Guardianship designation & Names who would raise your kids if you couldn't \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{Four documents this chapter untangles, decoded once so the actual attorney's office is spent finishing them, not explaining them from scratch.}
+\end{bookfigure}
+
 ## Try this: the plain-English estate-planning prompt
 
 "I'm [your situation: age, family structure, whether you have existing documents]. In plain English, what's the difference between a will, a healthcare directive, and [other relevant document], and what personal decisions should I think through before meeting with a lawyer?" Have the hard conversation with the people it actually involves first. Then get a real attorney, or a legal aid clinic, to make it official.

@@ -24,6 +24,23 @@ Linda's granddaughter, a year further along than Marisol's daughter, was draftin
 
 Months later, when acceptance and aid letters finally arrived, Marisol faced a different kind of overwhelm: three schools, three completely differently formatted financial aid packages, each using its own shorthand for grants versus loans versus work-study, none of them presented in a way that made an honest side-by-side comparison easy. "Here are the financial aid offers from three schools: [she listed the actual figures from each]. Help me build a simple comparison of the real, out-of-pocket cost per year at each one, separating grants and scholarships that don't need repaying from loans that do." That single comparison did something the schools' own paperwork seemed almost designed to obscure: it showed plainly that the school with the most impressive-looking total aid number actually cost more out of pocket per year than a second option, once the loan portion was separated out from the grant portion. That's not a decision an AI tool made. It's a decision Marisol and her daughter could only make once the real numbers were finally visible side by side.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{3.0cm}p{5.0cm}p{2.8cm}@{}}
+\toprule
+\textbf{Aid type} & \textbf{What it actually is} & \textbf{Do you pay it back?} \\
+\midrule
+Grant or scholarship & Money awarded based on need or merit & No \\
+\addlinespace
+Work-study & A part-time job the aid package funds & You earn it by working \\
+\addlinespace
+Loan & Money borrowed to cover the rest & Yes, with interest \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{The three categories every aid letter mixes together under its own shorthand. Separate them out first, and the real cost per year usually looks different from the total number at the top of the page.}
+\end{bookfigure}
+
 ## Try this: the process-orientation prompt
 
 "We're starting to think about college and financial aid for [student's grade level]. In plain English, what's the realistic timeline, what do the major terms mean, and what should we actually be doing now versus later?" Use it to build a calendar and understand the vocabulary. File the actual forms on the official government site, and keep any essay entirely the student's own voice, found through questions, not handed to them finished.

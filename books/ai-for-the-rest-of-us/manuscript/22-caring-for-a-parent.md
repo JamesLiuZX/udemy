@@ -28,6 +28,25 @@ A real slice of caregiving happens exactly the way Marisol's does, from another 
 
 "I'm helping care for [family member]. Here's the current situation: [medications, appointments, or concerns, described honestly]. Help me organize this into a clear, shareable [schedule / summary / calendar] I can use myself and share with other family members helping out." Use the result to stay organized and to sharpen the questions you bring to the actual doctor. Never let it replace that doctor's judgment, and never treat a symptom question as anything but a reason to call a real person.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{3.4cm}p{2.3cm}p{4.6cm}@{}}
+\toprule
+\textbf{Medication} & \textbf{When taken} & \textbf{Note for the doctor} \\
+\midrule
+\rule{3.4cm}{0.4pt} & \rule{2.3cm}{0.4pt} & \rule{4.6cm}{0.4pt} \\
+\addlinespace[10pt]
+\rule{3.4cm}{0.4pt} & \rule{2.3cm}{0.4pt} & \rule{4.6cm}{0.4pt} \\
+\addlinespace[10pt]
+\rule{3.4cm}{0.4pt} & \rule{2.3cm}{0.4pt} & \rule{4.6cm}{0.4pt} \\
+\addlinespace[10pt]
+\rule{3.4cm}{0.4pt} & \rule{2.3cm}{0.4pt} & \rule{4.6cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{A blank version of the schedule that replaced Marisol's sticky note. Photocopy it, or copy the three columns into a shared document any sibling helping out can update after an appointment.}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - Nearly one in four American adults provides unpaid care for a family member. If this feels overwhelming and improvised, that's the ordinary experience of an enormous, largely invisible group, not a sign you're doing it wrong.

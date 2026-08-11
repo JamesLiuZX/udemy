@@ -26,6 +26,21 @@ Marisol's confusion wasn't Medicare, it was her employer's open enrollment, the 
 
 "I'm comparing [insurance/Medicare plan options]. My situation is [honest specifics: age, health needs, current plan]. In plain English, what's the real difference between these options, and what questions should I bring to [a counselor / HR / the plan's help line] to actually decide?" Bring the questions somewhere a real person can answer them with your actual numbers in front of them.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{3.2cm}p{5.4cm}@{}}
+\toprule
+\textbf{Option} & \textbf{What it actually means} \\
+\midrule
+Original Medicare + supplement & More flexibility in which doctors you see; usually a higher monthly premium \\
+\addlinespace
+Medicare Advantage & Often costs less monthly; usually a specific network, with more approvals needed for certain care \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{The two paths behind this chapter's own question, decoded once in plain English. Which one fits you still depends on your actual doctors and numbers, not this table.}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - Three out of four Medicare beneficiaries find plan selection confusing. The fog Linda felt every October is the documented norm, not a personal gap.

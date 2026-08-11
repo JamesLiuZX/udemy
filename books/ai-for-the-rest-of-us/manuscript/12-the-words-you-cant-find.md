@@ -30,6 +30,23 @@ Not every version of this chapter is grief. A toast, a birthday message, a note 
 
 Whatever the occasion, a toast, a card, a hard message you can't find the opening line for, start the same way Linda and Marisol both did without planning it that way: say or write down three specific, true things, unpolished, in whatever order they come out. A memory. A detail only you would know. The thing you actually feel, stated plainly, even if it's "I don't know what to say." Then ask the AI tool to help you find the shape connecting those three things into something you could actually say out loud or send. Rewrite the parts that don't sound like you. The true things were always the hard part, and they were always yours. This just finds the shape faster than a blank page at 11 p.m. usually lets you.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{4.3cm}p{4.3cm}@{}}
+\toprule
+\textbf{The three true things} & \textbf{Write yours here} \\
+\midrule
+A memory & \rule{4.3cm}{0.4pt} \\
+\addlinespace[10pt]
+A detail only you would know & \rule{4.3cm}{0.4pt} \\
+\addlinespace[10pt]
+What you actually feel, stated plainly & \rule{4.3cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{Blank space for your own three true things, the same raw material Linda's eulogy and Marisol's card both started from. Fill it in before you open the chat window.}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - An AI tool can help you find the shape of something you already feel. It should never generate the feeling, memory, or fondness itself. The room, or the reader, will know the difference even when they can't say how.

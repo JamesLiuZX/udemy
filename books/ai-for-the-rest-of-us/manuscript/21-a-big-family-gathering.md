@@ -22,6 +22,25 @@ What helped most wasn't the food list, which was fairly obvious once written dow
 
 Big gatherings are hard for a specific, nameable reason: too many moving pieces to hold in one head at once, not because any single piece is complicated. A timeline, a shopping list split by timing, an activity schedule with real time estimates, these are exactly the kind of externalized-memory tasks an AI tool does well, the same shape as chapter thirteen's weekly reset, just scaled up to a bigger, higher-stakes day. What still belongs entirely to you: knowing your own family, the seating that avoids an old argument, the dish someone specifically requested, the small human details no planning tool anywhere could ever have known to include.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{4.2cm}p{2.3cm}p{4.0cm}@{}}
+\toprule
+\textbf{Task} & \textbf{Time} & \textbf{Who's doing it} \\
+\midrule
+\rule{4.2cm}{0.4pt} & \rule{2.3cm}{0.4pt} & \rule{4.0cm}{0.4pt} \\
+\addlinespace[10pt]
+\rule{4.2cm}{0.4pt} & \rule{2.3cm}{0.4pt} & \rule{4.0cm}{0.4pt} \\
+\addlinespace[10pt]
+\rule{4.2cm}{0.4pt} & \rule{2.3cm}{0.4pt} & \rule{4.0cm}{0.4pt} \\
+\addlinespace[10pt]
+\rule{4.2cm}{0.4pt} & \rule{2.3cm}{0.4pt} & \rule{4.0cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{A blank day-of timeline, built the same way Linda's finally was: work backward from when you actually want the meal on the table, and write down who's handling each piece before the Tuesday-before panic sets in.}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - A big gathering overwhelms because of the number of moving pieces, not their individual complexity. A written timeline and a split shopping list solve exactly that kind of problem.

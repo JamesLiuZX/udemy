@@ -28,6 +28,21 @@ Not everything worth learning happens on a screen or a page, and it's worth sayi
 
 Something you've said "I'd love to learn that someday" about, at some point, to someone, and never started. Type: "I've never [tried this] before and want to learn just for fun, no pressure. What's the minimum I need to get started, and walk me through one simple first attempt I could try this week." Give yourself permission for it to be bad. That's most of what stopped you before.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{2.8cm}p{2.8cm}p{2.9cm}@{}}
+\toprule
+\textbf{Something I've always wanted to try} & \textbf{The minimum to get started} & \textbf{One small first attempt this week} \\
+\midrule
+\rule{2.8cm}{0.4pt} & \rule{2.8cm}{0.4pt} & \rule{2.9cm}{0.4pt} \\
+\addlinespace[10pt]
+\rule{2.8cm}{0.4pt} & \rule{2.8cm}{0.4pt} & \rule{2.9cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{A blank worksheet for the try-this prompt. Name the thing, find the minimum you actually need, then pick one attempt small enough to actually fit this week.}
+\end{bookfigure}
+
 [TAKEAWAYS]
 
 - The habits in this book work just as well on something you want purely for yourself as they do on a chore or a crisis. Don't let the rest of this book's problem-solving crowd that out.

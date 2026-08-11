@@ -34,6 +34,25 @@ Voice cloning is the sharpest version of this, but it's not the only one. Fake c
 
 One more specific pattern worth naming, because it's common enough to deserve its own line: a text or email claiming to be your bank, asking you to click a link and "verify" your account. A real bank does not ask you to confirm your password, PIN, or full account number by text or email, ever. If a message claims to be your bank and asks for exactly that, it isn't your bank. Close it, and if you're genuinely unsure, call the number printed on the back of your actual card, never a number or link inside the suspicious message itself.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{4.3cm}p{4.3cm}@{}}
+\toprule
+\textbf{Warning sign} & \textbf{What to do instead} \\
+\midrule
+A family-emergency call demanding money, gift cards, or a wire transfer, urgently & Hang up. Call that person back on a number you already have, not the one that called you \\
+\addlinespace
+A text or email asking you to click a link and confirm your account & Close it. A real bank never asks for a password, PIN, or full account number this way \\
+\addlinespace
+Any urgent request for money, gift card codes, or account access & Verify through a channel the caller doesn't control before doing anything else \\
+\addlinespace
+A family-emergency call that doesn't know your family password & That's your answer, before you've said a word back \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{The pattern underneath every scam in this chapter, urgency plus a request for money or access, and the one response that defeats all of them.}
+\end{bookfigure}
+
 ## Try this: the family password
 
 A specific tool worth setting up before you need it, not after: agree on a word or short phrase with the people you'd trust to call you about a real emergency, something a scammer voice-cloned from a public video would have no way to know. If a "family emergency" call doesn't include it, that's your answer before you've said a word back.

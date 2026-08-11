@@ -14,6 +14,25 @@ She typed: "I got a raise and my tax refund was unusually large this year, which
 
 The same plain-English habit works on the pay stub itself, dense with abbreviations nobody explains: FICA, gross versus net, a line for a benefit deduction that's easy to stop noticing entirely. "Here's my pay stub, explain each line in plain English" turns a document most people stop actually reading after their first few paychecks back into something legible, worth doing at least once a year, especially after any raise, benefit change, or new deduction appears.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{3.0cm}p{7.6cm}@{}}
+\toprule
+\textbf{Term} & \textbf{What it actually means} \\
+\midrule
+Gross pay & What you earned before anything is taken out \\
+\addlinespace
+Net pay & What actually lands in your account after deductions \\
+\addlinespace
+FICA & The line for Social Security and Medicare taxes \\
+\addlinespace
+W-4 & The form that tells your employer how much to withhold from each paycheck \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{Four lines almost every pay stub and W-4 form include, decoded once so you're not re-figuring them out from scratch every time one changes.}
+\end{bookfigure}
+
 ## The credit or deduction you didn't know to ask about
 
 A second, related use worth naming: tax credits and deductions are numerous enough that most people only ever learn about the two or three that apply to their own situation, usually by accident. Marisol didn't know a Child and Dependent Care Credit existed until a coworker mentioned it offhand, well after a year she could have claimed it. "I'm a single parent with two kids, [rough income range], paying for after-school care. In plain English, what common tax credits or deductions might apply to a situation like mine, that I should ask a real tax preparer about?" isn't a substitute for a professional doing the actual filing, but it's a genuinely useful way to walk into that appointment with informed questions instead of hoping the preparer happens to ask the right ones.

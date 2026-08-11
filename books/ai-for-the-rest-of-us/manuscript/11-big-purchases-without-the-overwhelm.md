@@ -30,6 +30,25 @@ The answer reframed the decision usefully: for their actual use, mostly short tr
 
 For purchases where the price itself is negotiable, a car especially, the narrowing conversation naturally leads to a second, different one: what's actually a fair starting offer. "I'm looking at a [year, make, model] priced at [amount] with [mileage/condition]. In plain English, what's a reasonable target price range for this, and what's a respectful way to open a negotiation without insulting the seller?" doesn't replace the actual back-and-forth, which still happens face to face, in person, the way it always has. It replaces walking in with no sense at all of what a fair number even looks like, which is usually the thing that makes the whole negotiation feel more intimidating than it needs to be.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{4.3cm}p{4.3cm}@{}}
+\toprule
+\textbf{What actually matters} & \textbf{What's usually just marketing} \\
+\midrule
+Load capacity and a solid reliability track record for your household & Extra wash cycle options most models advertise \\
+\addlinespace
+Interior drum size against your actual biggest load, towels and bedding & Smart features and an app you don't need \\
+\addlinespace
+Reliability and highway comfort for how you'll actually drive & Towing capacity and cargo space sized for a trip you don't take \\
+\addlinespace
+Recent reviews and today's actual price, checked yourself & The overall star rating alone \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{What Marisol's washing machine search and Linda's car search actually turned on, once the marketing noise was stripped away.}
+\end{bookfigure}
+
 ## Try this: the narrow-then-verify prompt for any big purchase
 
 "I need to buy [item] within [timeframe], budget around [amount], mainly for [how you'll actually use it]. What actually matters for my situation, what's just marketing, and what do people commonly get wrong buying this kind of thing?" Then take whatever short list comes back and do the fifteen minutes of real verification yourself: recent reviews from a source you trust, the actual current price, and for anything with a safety component, a genuine recall check.

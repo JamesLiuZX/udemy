@@ -28,6 +28,23 @@ Linda's second try wasn't complicated. It just answered three quiet questions th
 
 That's the whole method. Not a formula to memorize, just a habit: before you hit send, picture explaining the same thing to a person standing next to you, and notice what you'd naturally add that you almost left out of the typed version.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{4.4cm}p{3.9cm}@{}}
+\toprule
+\textbf{Question} & \textbf{Your answer} \\
+\midrule
+Who is this actually for? & \rule{3.9cm}{0.4pt} \\
+\addlinespace[10pt]
+What actually matters here? & \rule{3.9cm}{0.4pt} \\
+\addlinespace[10pt]
+What should it avoid? & \rule{3.9cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{The three-question habit from this chapter, turned into a fill-in template. Answer these before you type, on paper or in your head, and watch the next answer get sharper.}
+\end{bookfigure}
+
 [PULLQUOTE: The AI can only work with what you actually tell it.]
 
 ## You don't need a perfect first try

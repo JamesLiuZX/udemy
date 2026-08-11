@@ -24,6 +24,23 @@ Here's what would have caught both of Linda's and Marisol's mistakes, and it's a
 
 This isn't "don't trust AI." It's the same habit you'd already use with any other single source: one confident voice, checked once, before it changes something real.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{2.6cm}p{3.1cm}p{3.0cm}@{}}
+\toprule
+\textbf{Situation} & \textbf{The fact that mattered} & \textbf{Checked before acting?} \\
+\midrule
+Linda's blood pressure question & Whether the two drugs actually interact & No. She almost told Hal, then asked the pharmacist and learned the interaction didn't exist \\
+\addlinespace
+Marisol's library question & Whether the library was actually open on Sunday & No. They drove over and found it closed, it had been for over a year \\
+\addlinespace
+\rule{2.6cm}{0.4pt} & \rule{3.1cm}{0.4pt} & \rule{3.0cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{The two-question check, run against what actually happened to Linda and Marisol, with a blank row ready for the next answer you're not sure whether to trust.}
+\end{bookfigure}
+
 ## A quick way to tell when you're at risk
 
 The moment to be most careful is exactly the moment an answer feels most reassuring: specific, confident, exactly what you were hoping to hear, and delivered fast. That combination feels like relief, and relief is precisely when people stop checking. Slow down for one extra question in that specific moment, not because the answer is more likely to be wrong then than any other time, but because it's the moment you're least likely to notice if it is.
