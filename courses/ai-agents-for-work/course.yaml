@@ -250,6 +250,13 @@ sections:
   - id: 9
     title: "What It Costs, What It Saves, and When Not To"
     goal: "Honest economics and the never-automate list."
+    lectures:
+      - {id: "9.0", title: "Section intro", duration: 1}
+      - {id: "9.1", title: "What a call actually costs", duration: 6}
+      - {id: "9.2", title: "The cost and savings tracker", duration: 5, hands_on: true}
+      - {id: "9.3", title: "The honest number: what four agents actually bought back", duration: 6}
+      - {id: "9.4", title: "The never-automate list", duration: 6}
+      - {id: "9.5", title: "Section recap", duration: 2}
   - id: 10
     title: "Rolling It Out: Your Team and Your Boss"
     goal: "From personal win to visible workplace credibility."
