@@ -4,6 +4,38 @@ Not part of the build. Working notes for continuing this manuscript across
 sessions, mirroring how courses/ai-for-pms/CLAUDE.md tracked "current state
 and what to do next" while that course was being written.
 
+## 2026-08-11: TOC number-column fix verified, both proofs recommitted
+
+Author directive: a fix landed in `books/theme/kdp-book.cls` (commit
+`be1fcbe`, shared across all seven titles) widening memoir's TOC chapter/
+section/subsection number columns and page-number margin, because
+two-digit section numbers (e.g. "14.10") were colliding with entry titles
+and three-digit page numbers were crowding the leader dots in shipped
+proofs. The author couldn't compile locally and asked this session to
+verify, adjust the em-based widths if anything still collided, and
+recommit both `stop-guessing` proofs.
+
+**Verification.** Rebuilt both editions from source (this fix was already
+an ancestor of this session's own rebased commit, pulled in automatically,
+not a separate pull). English: 179 pages, unchanged. Chinese: 157 pages,
+unchanged. Rendered every page of both books' full table of contents at
+150dpi (English: 5 pages, chapters 1-17 plus four appendices and two
+back-matter entries; Chinese: 5 pages, same structure with 目录/附录
+headings) and visually inspected each one. Finding: **no collisions in
+either edition, no width adjustment needed.** Every section number,
+one-digit or two, sits with a clean gap before its title; every page
+number, one to three digits, sits clear of the leader dots. Chapters in
+this particular book top out at nine subsections (8.9, the highest), so
+the exact "14.10" collision the fix targeted doesn't occur here, but the
+column widths were still visibly tight enough beforehand in earlier
+renders (see the two-digit "11.x"/"12.x"/etc. entries and 100+ page
+numbers on TOC pages 3-5) that the fix reads as a real, needed correction,
+not a no-op for this title.
+
+**Recommitted** `proofs/stop-guessing.pdf` and `proofs/stop-guessing-zh.pdf`
+from these rebuilds, both bytes now reflecting the widened TOC columns, in
+a single commit alongside this note.
+
 ## 2026-08-11: Simplified Chinese edition shipped as a second PDF
 
 Author directive: translate the complete book into idiomatic Simplified
@@ -46,30 +78,45 @@ citations translate the claim into Chinese and keep the source title,
 publication name, and case name in their original language so a reader can
 still find and verify the primary document, per the standing sourcing
 discipline; only the date format was localized. Chinese punctuation
-conventions (，。：、《》「」) are used throughout, including the single
-em-dash-rendered 破折号 for an aside or elaboration, which is standard,
-idiomatic Chinese punctuation and not an English-specific AI tell, so
-`book-zh.yaml: style.em_dash` is deliberately set to `allow` for this
-edition only (see the comment in that file). This is a considered
-per-language style decision, not a weakened gate; `qc.py`'s other checks
-(banned LLM-tell phrases, verified/AUTHOR-INPUT gates) were left untouched
-and still apply in full.
+conventions (，。：、《》「」) are used throughout. The translation was
+written with **zero em dashes**: `book-zh.yaml: style.em_dash` stays
+`avoid`, the same repo-wide default every other book uses, including the
+two other Chinese editions that already existed in this repo when this
+one was finished (`ai-employee-zh`, `one-person-business-zh`, both
+independently written with no em dashes at all). An early draft of this
+edition used a single em-dash-rendered 破折号 for asides, on the reasoning
+that it's legitimate Chinese punctuation and not an English-specific AI
+tell; caught this against the sibling-book convention during the pull
+described below and rewrote every instance (140+ occurrences across 16
+files) into colons, commas, parentheses, or split sentences instead, to
+keep the em-dash gate meaningful and uniform across every book and every
+language edition rather than carving out a per-book exception.
 
-**Typesetting.** Added opt-in CJK support to the shared pipeline without
-touching the English build path: `books/theme/kdp-book.cls` gates all
-CJK-specific macros behind `\ifdefined\BookCJK`, only defined when a
-book's `book.yaml` sets `cjk: true`; `books/pipeline/book.py` and
-`build.py` gained `cjk`, `back_matter_dir`, and `back_matter_titles` as
-new, all-optional `Book` properties, defaulting to false / "back-matter" /
-{} so every other book in this repo is unaffected. Verified this directly:
-re-ran the English `stop-guessing` build after all three pipeline file
-changes and confirmed identical output (179 pages, same `qc.py --release`
-result). CJK typesetting uses Noto Serif/Sans CJK SC (`fonts-noto-cjk` via
+**Typesetting, and a mid-flight convergence with two sibling sessions.**
+Built opt-in CJK support into the shared pipeline, then hit merge
+conflicts on `git pull --rebase`: two other sessions, working on
+`ai-employee-zh` and `one-person-business-zh` in parallel, had
+independently built the same feature. Their version was already more
+mature (used by two other books, not one) and used a cleaner mechanism:
+`book.yaml: lang: zh` (a `Book.lang` property already in `book.py`) drives
+`kdp-book.cls`'s `[zh]` class option directly, rather than this session's
+first draft, which used a separate `cjk: true` flag and an
+`\ifdefined\BookCJK` conditional block appended at the end of the class
+file. Resolved every conflict in favor of the established convention,
+deleted this session's now-redundant `cjk`/`back_matter_dir`/
+`back_matter_titles` `Book` properties (superseded by `lang` and by
+`build.py` reading `back_matter_titles` straight off `book.yaml`), and
+switched `book-zh.yaml` from `cjk: true` / `back_matter_dir: back-matter-zh`
+to `lang: zh` (the back-matter directory is now found automatically from
+`lang`, no explicit key needed). Re-verified after resolving: `stop-guessing`
+(English), `ai-employee-zh`, and `one-person-business-zh` all still build
+cleanly. CJK typesetting uses Noto Serif/Sans CJK SC (`fonts-noto-cjk` via
 apt, OFL-licensed, resolved by fontconfig family name rather than vendored
 as extracted `.ttc` faces) via `xeCJK`, with `\XeTeXlinebreaklocale "zh"`
 for correct Chinese line-breaking, a translated `\contentsname`, and
 translated box labels (关键洞察, 要点总结, 作者补充信息) and chapter-number
-furniture (第N章), all `\renewcommand`'d only inside the CJK conditional.
+furniture (第N章), all gated behind `\if@kdpzh`, defined once, next to
+each macro's English default, not in a separate trailing block.
 
 **Build and visual verification.** Full build: `别再猜它有没有效`, **157
 pages**, EPUB built cleanly (447 KB, valid), `qc.py --release`: 2 fail (the
