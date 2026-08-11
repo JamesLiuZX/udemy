@@ -30,13 +30,25 @@ These aren't the only way to categorize AI features, but they cover the overwhel
 
 **Agent.** Takes multi-step, tool-using action with reduced human review between steps: rebooking a flight, executing a refund, modifying a database record. Fails by compounding: each step's error rate multiplies against every other step's, and unlike the other six shapes, the agent can act on its own mistake before a human ever sees it. Chapter seven covers this shape in far more depth, because the math involved deserves its own chapter.
 
+The map, compressed to one page a reader can come back to:
+
+| Shape | What it does | How it fails |
+| --- | --- | --- |
+| Classifier | Sorts input into known categories | Wrong queue, usually recoverable |
+| Extractor | Pulls structured fields from messy input | Invents or drops a field, silently |
+| Generator | Produces new text or content | States false things fluently |
+| Retriever | Answers from your own documents | Wrong passage, or right one misread |
+| Recommender | Ranks options among many | Degrades quietly, no single wrong answer |
+| Predictor | Estimates a future outcome | Confidently wrong at scale, in one direction |
+| Agent | Acts in multiple steps, less review | Errors compound; acts on its own mistake |
+
 [KEY-INSIGHT: Zillow's home-buying algorithm, Zestimate-derived and wired directly into automatic purchase offers, was cited by the company's own leadership as the direct cause of the 2021 shutdown of its Zillow Offers division: a predictor shape, in a market with sudden regime change, with no human check absorbing the tail risk before a purchase was committed. || Source: Zillow Group, Inc. Form 10-K, FY2021; company statements on the Zillow Offers wind-down, November 2021.]
 
 ## A quieter shape fails just as badly
 
 Zillow's failure was loud eventually, a shutdown and a nine-figure write-down anyone could read about. An extractor shape fails the opposite way: quietly, inside a document nobody re-reads, which makes it worth a second worked example specifically because the damage doesn't announce itself the way a housing write-down does.
 
-In October 2024, the Associated Press reported on Whisper, OpenAI's widely used speech-to-text model, being deployed inside a medical transcription tool built by a company called Nabla, already in use across more than thirty thousand clinicians and forty health systems for an estimated seven million patient visits. Researchers who audited the tool's output found it didn't just mistranscribe unclear audio. It invented content outright: fabricated medications, invented medical histories, and other material no patient or doctor had actually said, appearing in transcripts with the same clean, formatted confidence as the real content around it. One study the AP cited found 187 hallucinated passages across roughly thirteen thousand otherwise clear audio snippets, a rate that, at the deployment scale Nabla reported, implies a meaningful number of clinical records now contain sentences nobody in the room ever spoke.
+In October 2024, the Associated Press reported on Whisper, OpenAI's widely used speech-to-text model, being deployed inside a medical transcription tool built by a company called Nabla, already in use across more than thirty thousand clinicians and forty health systems for an estimated seven million patient visits. Researchers who audited the tool's output found it didn't just mistranscribe unclear audio. It invented content outright: fabricated medications, invented medical treatments, and other material no patient or doctor had actually said, appearing in transcripts with the same clean, formatted confidence as the real content around it. One study the AP cited found 187 hallucinated passages across roughly thirteen thousand otherwise clear audio snippets, a rate that, at the deployment scale Nabla reported, implies a meaningful number of clinical records now contain sentences nobody in the room ever spoke.
 
 [KEY-INSIGHT: An Associated Press investigation published October 26, 2024 found that Whisper, OpenAI's speech-to-text model, fabricates content when transcribing audio, including invented medications and medical details that were never actually said. A Whisper-based medical transcription tool built by Nabla was, at the time of reporting, in use by more than 30,000 clinicians and 40 health systems for an estimated 7 million patient visits, and a cited academic audit found 187 hallucinated passages across roughly 13,000 otherwise clear audio snippets. || Source: Associated Press, "Researchers say an AI-powered transcription tool used in hospitals invents things no one ever said," October 26, 2024.]
 

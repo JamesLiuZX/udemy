@@ -1,0 +1,20 @@
+# 第6章：利润陷阱。成本线与盈亏平衡点由渲染器按每次对话成本
+# （$0.042）与分摊收入（$5.00）计算，与英文版同源，仅标签翻译。
+kind: crossover
+cost_per_use: 0.042
+revenue: 5.00
+x_max: 160
+x_tick: 40
+y_tick: 2
+unit: "每位用户每月的对话次数"
+y_label: "每位用户，每月"
+revenue_label: "分摊收入 $5.00（固定）"
+breakeven_label: "盈亏平衡点 ≈ {n} 次"
+cost_label: "模型成本（随使用量增长）"
+tiers:
+  - label: "轻度用户"
+    x: 2
+  - label: "重度用户"
+    x: 40
+  - label: "超重度用户"
+    x: 150

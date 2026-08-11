@@ -8,7 +8,7 @@ Use this section the way chapter eleven asked you to use a vendor's benchmark cl
 
 **The bereavement-fare chatbot ruling.** A Canadian small claims tribunal held Air Canada liable for its own chatbot's invented refund policy, rejecting the airline's argument that the chatbot was a separate entity responsible for its own words. *Civil Resolution Tribunal of British Columbia, Moffatt v. Air Canada, 2024 BCCRT 149 (Feb. 14, 2024).*
 
-**New York City's MyCity chatbot.** An official city chatbot told business owners that employers could legally keep workers' tips and that landlords could reject housing-voucher tenants, both illegal, and stayed live for months after the mayor acknowledged the errors. *"NYC's AI Chatbot Tells Businesses to Break the Law," The Markup, March 29, 2024.*
+**New York City's MyCity chatbot.** An official city chatbot told business owners that employers could legally keep workers' tips and that landlords could reject housing-voucher tenants, both illegal, and stayed live for almost two years after the mayor acknowledged the errors; a late-2025 comptroller's audit found it still unreliable, and the incoming mayor shut it down in January 2026. *"NYC's AI Chatbot Tells Businesses to Break the Law," The Markup, March 29, 2024; NYC Comptroller audit of the MyCity system, December 2025; The Markup, January 30, 2026.*
 
 ## Chapter 2: Seven Shapes
 
@@ -42,9 +42,9 @@ Use this section the way chapter eleven asked you to use a vendor's benchmark cl
 
 ## Chapter 7: The Reliability Math of Agents
 
-**The Replit database deletion.** An AI coding agent deleted a live production database during an explicit code freeze, then fabricated status reports covering up what had happened rather than surfacing the failure. *"Vibe coding service Replit deleted production database," The Register, July 21, 2025.*
+**The Replit database deletion.** An AI coding agent deleted a live production database during an explicit code freeze, wrongly claimed no rollback was available, and fabricated status reports covering up what had happened; the data was later restored from backup. *"Vibe coding service Replit deleted production database," The Register, July 21, 2025.*
 
-**The Knight Capital trading incident.** A dormant algorithm, reactivated by a deployment error, executed over four million erroneous trades in 45 minutes with no automated detection or documented escalation path, costing the firm roughly $440 million. *US Securities and Exchange Commission, Release No. 70694, In the Matter of Knight Capital Americas LLC, October 16, 2013.*
+**The Knight Capital trading incident.** A dormant algorithm, reactivated by a deployment error, executed over four million erroneous trades in 45 minutes with no automated detection or documented escalation path; Knight reported a roughly $440 million pre-tax loss, and the SEC put the trading loss above $460 million. *US Securities and Exchange Commission, Release No. 70694, In the Matter of Knight Capital Americas LLC, October 16, 2013.*
 
 ## Chapter 8: The Risk Register
 
@@ -68,7 +68,7 @@ Use this section the way chapter eleven asked you to use a vendor's benchmark cl
 
 **Latency fan-out at scale.** A single server with a 1-in-10,000 chance of a slow response can still produce almost one in five user-facing requests exceeding one second, once a service depends on thousands of such servers in parallel. *Jeffrey Dean and Luiz Andre Barroso, "The Tail at Scale," Communications of the ACM, Vol. 56, No. 2, February 2013, pp. 74-80.*
 
-**MMLU benchmark contamination.** A masking test found GPT-3.5 and GPT-4 could guess missing benchmark answers from context alone at rates far above chance, evidence that roughly 29% of test items had likely leaked into training data. *Chunyuan Deng et al., "Investigating Data Contamination in Modern Benchmarks for Large Language Models," Proceedings of NAACL 2024.*
+**MMLU benchmark contamination.** An open-source contamination report estimated 29.1% of MMLU test items had leaked into training data; a separate Yale-led masking test found ChatGPT and GPT-4 could reproduce masked answer options verbatim at 52% and 57%, far above what the question alone should allow. *Yucheng Li et al., "An Open-Source Data Contamination Report for Large Language Models," Findings of EMNLP 2024; Chunyuan Deng et al., "Investigating Data Contamination in Modern Benchmarks for Large Language Models," Proceedings of NAACL 2024.*
 
 ## Chapter 12: Why RAG, and How to Measure It
 
@@ -80,7 +80,7 @@ Use this section the way chapter eleven asked you to use a vendor's benchmark cl
 
 ## Chapter 14: Objections and Pushback
 
-**Gartner's abandonment prediction.** Gartner projected at least 30% of generative AI projects would be abandoned after proof of concept by the end of 2025, citing poor data quality and unclear business value as leading causes. *Gartner, "Gartner Predicts 30% of Generative AI Projects Will Be Abandoned After Proof of Concept By End of 2025," press release, July 29, 2024.*
+**Gartner's abandonment prediction, and the outcome.** Gartner projected at least 30% of generative AI projects would be abandoned after proof of concept by the end of 2025; by its own subsequent accounting, the measured figure passed 50%, for the same causes. *Gartner, "Gartner Predicts 30% of Generative AI Projects Will Be Abandoned After Proof of Concept By End of 2025," press release, July 29, 2024; Gartner, "Why 50% of GenAI Projects Fail - And How to Beat the Odds," 2026.*
 
 **The Llama 4 Maverick benchmark gap.** A specially tuned variant reached second place on a public leaderboard; the actual publicly released model, tested directly, fell to 32nd on the same board. *The Register, "Meta accused of Llama 4 bait-n-switch to juice LMArena rank," April 8, 2025.*
 
@@ -90,13 +90,13 @@ Use this section the way chapter eleven asked you to use a vendor's benchmark cl
 
 ## Chapter 16: The First Ninety Days
 
-**The MIT Media Lab study.** A review of over 300 disclosed enterprise generative AI initiatives found 95% saw no measurable return despite an estimated $30 to 40 billion in category spending that year. *MIT Media Lab, Project NANDA, "The GenAI Divide: State of AI in Business 2025," July 2025.*
+**The MIT Project NANDA report.** A preliminary, methodologically contested review of over 300 disclosed enterprise generative AI initiatives found 95% saw no measurable return despite an estimated $30 to 40 billion in category spending; read it as directional, alongside Gartner's independent abandonment figures above. *MIT Project NANDA, "The GenAI Divide: State of AI in Business 2025," July 2025.*
 
-**Lou Gerstner's audit-first ninety days.** IBM's new CEO spent his first hundred days auditing rather than announcing a strategy, later executing specific, market-driven decisions that grew the company's market value from roughly $29 billion to $168 billion over nine years. *Louis V. Gerstner Jr., public remarks, 1993, as documented in coverage of his tenure, including "Louis V. Gerstner, Who Revived a Faltering IBM in the '90s, Dies at 83."*
+**Lou Gerstner's audit-first start.** IBM's new CEO spent his first months auditing rather than announcing a strategy, later executing specific, market-driven decisions that grew the company's market value from roughly $29 billion to $168 billion over nine years. *Louis V. Gerstner Jr., public remarks, 1993, as documented in coverage of his tenure, including "Louis V. Gerstner, Who Revived a Faltering IBM in the '90s, Dies at 83."*
 
 ## Chapter 17: Where This Breaks
 
-**External validation of Epic's Sepsis Model.** Independently tested on real patient data after strong internal validation, the model's sensitivity measured just 33%, missing two-thirds of actual sepsis cases while alerting on 18% of all hospitalized patients. *Wong A, et al., "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients," JAMA Internal Medicine, 2021.*
+**External validation of Epic's Sepsis Model.** Independently tested on real patient data after strong internal validation, the model's sensitivity measured just 33%, missing two-thirds of actual sepsis cases while alerting on 18% of all hospitalized patients; Epic revised the model in 2022 to require local tuning before use. *Wong A, et al., "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients," JAMA Internal Medicine, 2021; STAT News, October 3, 2022.*
 
 **Volkswagen's defeat-device software.** Roughly 11 million diesel vehicles worldwide were fitted with software that detected emissions testing and tightened pollution controls only for its duration, emitting up to 40 times the legal limit on the road. *US Environmental Protection Agency, Notice of Violation to Volkswagen, September 18, 2015; US Department of Justice civil complaint, January 2016.*
 

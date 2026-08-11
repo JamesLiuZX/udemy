@@ -1,0 +1,9 @@
+# Chapter 7: whole-chain success rate p^n. Values are computed from the
+# per-step probabilities at render time, so the curve cannot drift from
+# the chapter's own table (which shows the same arithmetic at steps
+# 1/3/5/7/10).
+kind: decay
+probs: [0.90, 0.95, 0.99]
+steps: 10
+x_label: "Steps in the chain (no checkpoint between them)"
+y_label: "Whole-task success rate"

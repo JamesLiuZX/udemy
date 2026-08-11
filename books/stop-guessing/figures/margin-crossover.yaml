@@ -1,0 +1,21 @@
+# Chapter 6: the margin trap. Cost line and break-even point are computed
+# from the same per-conversation cost and allocated revenue the chapter's
+# tier table uses ($0.042/conversation, $5.00/user/month), so the figure
+# and the table cannot disagree.
+kind: crossover
+cost_per_use: 0.042
+revenue: 5.00
+x_max: 160
+x_tick: 40
+y_tick: 2
+unit: "Conversations per user, per month"
+y_label: "Per user, per month"
+revenue_label: "Allocated revenue $5.00 (flat)"
+cost_label: "Model cost (scales with usage)"
+tiers:
+  - label: "Light user"
+    x: 2
+  - label: "Heavy user"
+    x: 40
+  - label: "Power user"
+    x: 150

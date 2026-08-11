@@ -1,0 +1,9 @@
+# 第7章：整链成功率 p^n。数值由渲染器按每步可靠性实时计算，
+# 与英文版 reliability-decay.yaml 完全同源，仅标签翻译。
+kind: decay
+probs: [0.90, 0.95, 0.99]
+steps: 10
+x_label: "链条中的步骤数（步骤之间没有检查点）"
+y_label: "整个任务的成功率"
+per_step_label: "每步 {p}"
+ends_at_label: "最终 {v}"

@@ -8,7 +8,7 @@
 
 **丧亲票价聊天机器人裁决。** 加拿大一个小额索赔仲裁庭裁定，加拿大航空（Air Canada）需要为自己的聊天机器人编造出来的退款政策承担责任，驳回了该航空公司提出的、认为聊天机器人是一个独立实体、应为自己说的话单独负责的论点。*Civil Resolution Tribunal of British Columbia, Moffatt v. Air Canada, 2024 BCCRT 149（2024年2月14日）。*
 
-**纽约市MyCity聊天机器人。** 一个官方城市聊天机器人告诉企业主，雇主可以合法扣留员工的小费、房东可以合法拒绝持住房补助券的租客，这两条都是违法的，而且在市长承认这些错误之后，这个机器人还在线上继续运行了好几个月。*"NYC's AI Chatbot Tells Businesses to Break the Law," The Markup, 2024年3月29日。*
+**纽约市MyCity聊天机器人。** 一个官方城市聊天机器人告诉企业主，雇主可以合法扣留员工的小费、房东可以合法拒绝持住房补助券的租客，这两条都是违法的，而且在市长承认这些错误之后，这个机器人还在线上继续运行了将近两年；2025年底，市主计长的一次审计发现它依然不可靠，新上任的市长在2026年1月将其关停。*"NYC's AI Chatbot Tells Businesses to Break the Law," The Markup, 2024年3月29日；纽约市主计长（NYC Comptroller）对MyCity系统的审计，2025年12月；The Markup, 2026年1月30日。*
 
 ## 第二章：七种形态
 
@@ -42,9 +42,9 @@
 
 ## 第七章：智能体的可靠性数学
 
-**Replit数据库删除事件。** 一个AI编程智能体，在一次明确的代码冻结期间，删除了一个正在运行的生产数据库，随后不是把这次故障暴露出来，而是编造状态报告来掩盖发生过的事。*"Vibe coding service Replit deleted production database," The Register, 2025年7月21日。*
+**Replit数据库删除事件。** 一个AI编程智能体，在一次明确的代码冻结期间，删除了一个正在运行的生产数据库，错误地声称没有任何可用的回滚方案，还编造状态报告来掩盖发生过的事；数据后来从备份中恢复了。*"Vibe coding service Replit deleted production database," The Register, 2025年7月21日。*
 
-**Knight Capital交易事故。** 一个休眠算法，因为一次部署错误被重新激活，在45分钟内执行了超过四百万笔错误交易，期间没有任何自动检测机制、也没有任何成文的升级流程，导致这家公司损失了大约四点四亿美元。*US Securities and Exchange Commission, Release No. 70694, In the Matter of Knight Capital Americas LLC, 2013年10月16日。*
+**Knight Capital交易事故。** 一个休眠算法，因为一次部署错误被重新激活，在45分钟内执行了超过四百万笔错误交易，期间没有任何自动检测机制、也没有任何成文的升级流程；Knight公告的税前亏损约四点四亿美元，SEC则认定交易损失超过四点六亿美元。*US Securities and Exchange Commission, Release No. 70694, In the Matter of Knight Capital Americas LLC, 2013年10月16日。*
 
 ## 第八章：风险登记表
 
@@ -68,7 +68,7 @@
 
 **规模化下的延迟叠加效应。** 一台单独的服务器，哪怕只有万分之一的概率给出一次缓慢响应，一旦一项服务同时依赖成千上万台这样的服务器并行工作，最终也能让接近五分之一的面向用户请求，耗时超过一秒。*Jeffrey Dean and Luiz Andre Barroso, "The Tail at Scale," Communications of the ACM, Vol. 56, No. 2, 2013年2月, pp. 74-80。*
 
-**MMLU基准测试的数据污染。** 一项遮蔽测试发现，GPT-3.5和GPT-4能仅凭上下文，猜出基准测试里被隐去的答案，准确率远高于随机水平，这证明大约百分之二十九的测试题目，很可能已经泄漏进了训练数据里。*Chunyuan Deng et al., "Investigating Data Contamination in Modern Benchmarks for Large Language Models," Proceedings of NAACL 2024。*
+**MMLU基准测试的数据污染。** 一份开源数据污染报告估计，MMLU中百分之二十九点一的测试题目已经泄漏进训练数据；另一项由耶鲁大学研究者主导的遮蔽测试发现，ChatGPT和GPT-4能分别以百分之五十二和百分之五十七的比例，逐字复原被遮住的答案选项，远高于仅凭题目本身应有的水平。*Yucheng Li et al., "An Open-Source Data Contamination Report for Large Language Models," Findings of EMNLP 2024；Chunyuan Deng et al., "Investigating Data Contamination in Modern Benchmarks for Large Language Models," Proceedings of NAACL 2024。*
 
 ## 第十二章：为什么要用RAG，以及怎么衡量它
 
@@ -80,7 +80,7 @@
 
 ## 第十四章：质疑与反对意见
 
-**Gartner的放弃率预测。** Gartner预测，到2025年年底，至少百分之三十的生成式AI项目会在完成概念验证之后被放弃，主要原因包括数据质量差和商业价值不明确。*Gartner, "Gartner Predicts 30% of Generative AI Projects Will Be Abandoned After Proof of Concept By End of 2025," 新闻稿, 2024年7月29日。*
+**Gartner的放弃率预测，及其结局。** Gartner预测，到2025年年底，至少百分之三十的生成式AI项目会在完成概念验证之后被放弃；按Gartner自己后来的统计，实测数字超过了百分之五十，原因还是同样那几条。*Gartner, "Gartner Predicts 30% of Generative AI Projects Will Be Abandoned After Proof of Concept By End of 2025," 新闻稿, 2024年7月29日；Gartner, "Why 50% of GenAI Projects Fail - And How to Beat the Odds," 2026。*
 
 **Llama 4 Maverick的基准测试差距。** 一个经过专门调优的变体，在一份公开排行榜上冲到了第二名；而真正公开发布给所有人使用的那个模型，一旦被直接测试，在同一份排行榜上跌到了第三十二名。*The Register, "Meta accused of Llama 4 bait-n-switch to juice LMArena rank," 2025年4月8日。*
 
@@ -90,13 +90,13 @@
 
 ## 第十六章：上任后的前九十天
 
-**MIT媒体实验室的研究。** 一项对三百多个已披露的企业级生成式AI项目的复核发现，尽管当年这一领域的估计支出高达三百亿到四百亿美元，其中百分之九十五都没有看到任何可衡量的回报。*MIT Media Lab, Project NANDA, "The GenAI Divide: State of AI in Business 2025," 2025年7月。*
+**MIT Project NANDA报告。** 一项初步的、方法论存在争议的复核，审阅了三百多个已披露的企业级生成式AI项目，发现尽管这一类别的估计支出高达三百亿到四百亿美元，其中百分之九十五都没有看到任何可衡量的回报；请把它当作方向性的发现来读，并对照上文Gartner独立的放弃率数字。*MIT Project NANDA, "The GenAI Divide: State of AI in Business 2025," 2025年7月。*
 
-**Lou Gerstner"先审计再行动"的前九十天。** IBM的新任首席执行官，把上任后的头一百天，用在审计上，而不是宣布战略上，随后执行了一系列具体的、由市场驱动的决策，在九年间，把这家公司的市值从大约二百九十亿美元，做到了一千六百八十亿美元。*Louis V. Gerstner Jr., 公开发言, 1993年，收录于关于他任期的报道，包括"Louis V. Gerstner, Who Revived a Faltering IBM in the '90s, Dies at 83."*
+**Lou Gerstner"先审计再行动"的开局。** IBM的新任首席执行官，把上任后的头几个月，用在审计上，而不是宣布战略上，随后执行了一系列具体的、由市场驱动的决策，在九年间，把这家公司的市值从大约二百九十亿美元，做到了一千六百八十亿美元。*Louis V. Gerstner Jr., 公开发言, 1993年，收录于关于他任期的报道，包括"Louis V. Gerstner, Who Revived a Faltering IBM in the '90s, Dies at 83."*
 
 ## 第十七章：这套方法在哪里会失灵
 
-**Epic脓毒症预测模型的外部验证。** 在经受住有力的内部验证之后，这个模型在真实患者数据上被独立测试，测出的敏感度只有百分之三十三，漏掉了三分之二真正的脓毒症病例，同时对所有住院病人中的百分之十八发出了警报。*Wong A, et al., "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients," JAMA Internal Medicine, 2021年。*
+**Epic脓毒症预测模型的外部验证。** 在经受住有力的内部验证之后，这个模型在真实患者数据上被独立测试，测出的敏感度只有百分之三十三，漏掉了三分之二真正的脓毒症病例，同时对所有住院病人中的百分之十八发出了警报；Epic在2022年修订了这个模型，要求使用前先做本地调优。*Wong A, et al., "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients," JAMA Internal Medicine, 2021年；STAT News, 2022年10月3日。*
 
 **大众汽车的排放作弊装置软件。** 全球大约一千一百万辆柴油车被装上了能侦测排放检测、并仅在检测期间收紧污染控制的软件，在真实道路上，排放量最高达到法定限值的四十倍。*US Environmental Protection Agency, Notice of Violation to Volkswagen, 2015年9月18日；US Department of Justice civil complaint, 2016年1月。*
 

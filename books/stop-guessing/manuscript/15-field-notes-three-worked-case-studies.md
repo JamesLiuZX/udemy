@@ -56,6 +56,17 @@ An engineering team wants an agent that reads an internal bug ticket, writes a c
 
 None of these three needed every tool in this book at full strength. The extraction tool leaned hardest on the golden set and the injection risk. The predictor leaned hardest on bias and drift. The agent leaned hardest on the reliability math and blast radius. That's the actual skill this chapter has been demonstrating: not running every chapter's checklist in full on every feature, but recognizing which two or three questions carry the real risk for the specific shape in front of you, and spending your limited hours there.
 
+[PULLQUOTE: Not every chapter's checklist in full on every feature: recognize which two or three questions carry the real risk for the shape in front of you, and spend your limited hours there.]
+
+The three verdicts, side by side, are the compressed version of the whole exercise:
+
+| | Invoice extraction | Lead scoring | Coding agent |
+| --- | --- | --- | --- |
+| Shape | Extractor | Predictor | Agent |
+| The risk that mattered | Silent wrong field | Learned bias, drift | Compounding, blast radius |
+| The chapters that carried it | Four, eight | Four, eight, nine | Seven, eight |
+| The boundary it shipped with | No payment without a named approver | Signal shown, never a hidden filter | No merge, no deploy, test-gated |
+
 ## Write your own field note
 
 Pick a real AI feature you own or are about to propose, and write your own version of one of these three notes: shape, disqualification check, spec, golden set sketch, the one or two risk-register rows that actually worry you, and a verdict.

@@ -4,6 +4,173 @@ Not part of the build. Working notes for continuing this manuscript across
 sessions, mirroring how courses/ai-for-pms/CLAUDE.md tracked "current state
 and what to do next" while that course was being written.
 
+## 2026-08-11: Chief Quality Editor pass (hook/nugget, SOTA re-verification, visual devices)
+
+Author mandate: raise finished work from competent to recommendable; every
+book rigorously researched against live sources, hook and golden nugget
+explicit per chapter, worked visuals per docs/09-visual-standard.md §3.
+
+### Who this book's reader is
+
+A product manager, delivery lead, or analyst who has just become
+accountable for an AI feature. They already own normal product craft
+(specs, QA, roadmaps, stakeholder reviews) and are fluent in that
+vocabulary; they have no ML background and don't want one. What they lack
+is evaluation practice: they cannot yet turn "it seems to work" into a
+defensible number. Chapters 11-13 deliberately teach engineer-room
+vocabulary at this reader's altitude; nothing in the book assumes they can
+code. Checked every chapter against this reader during the pass: no
+chapter drifts into writing for an ML engineer, and the two places closest
+to the line (ch7's math, ch12's pipeline stages) both stay decision-first.
+
+### Hook and golden nugget, per chapter
+
+| Ch | Hook (why keep reading past the first half page) | Golden nugget (usable today) |
+| --- | --- | --- |
+| 1 | The demo your VP loved becomes the Friday ticket you can't answer for | The two-row status-update table; the N-cases/threshold sentence that replaces acceptance criteria |
+| 2 | Zillow shut down a division and laid off a quarter of its staff over a forecasting error | The seven-shapes map + five-question disqualification checklist, run on your own roadmap |
+| 3 | The meeting two days before launch where "it feels ready" decides everything | The two-part spec template sentence, copy-paste ready |
+| 4 | The 91% eval score that was never asked the question that mattered | The four-bucket split (20/15/10/5) and "an empty bucket is a finding" |
+| 5 | Two trusted reviewers, same 15 tickets, 60% agreement | The calibration loop; pre-register the threshold before seeing the score |
+| 6 | Finance asks "four cents times how many conversations?" and nobody has it | The three-multiplication cost model; find your own crossover point in an hour |
+| 7 | "It's practically the same feature, just let it act" | 95% per step = coin flip at ten steps; checkpoint placement beats model upgrades; the blast-radius 2x2 |
+| 8 | An approval that isn't an approval: "get a risk assessment done first" | The five-category register; a working row = risk, owner, mitigation, date |
+| 9 | Usage up 20%: delight or friction? Nobody in the room can say | Adoption/acceptance/deflection; find your unpaired metric before the next report |
+| 10 | "Q3, ninety-five percent" - two guesses wearing one number | The hedge-translation table; roadmap rows earn dates only after thresholds |
+| 11 | The PM whose two questions killed a fine-tune proposal in ten minutes | Prompt→retrieve→act→fine-tune order; ask for p95 under real load |
+| 12 | The benefits bot that invented a vacation schedule a manager approved | The seven-stage pipeline with "whose call is it"; hit rate / MRR / precision by hand |
+| 13 | Ticket 4471 comes back from the dead, retrieved next to the real one | The six production failure modes; trim history before retrieval; audit your index this week |
+| 14 | The workshop where the slides stopped mattering | The objection→answer quick-reference table, rehearsed before the meeting |
+| 15 | Does the method survive contact with features that look nothing like the running example? | Three complete worked field notes + the one-page field-note format |
+| 16 | An idea lands Monday, everyone wants an answer by Friday | The five-day discovery sprint; the 30/60/90 with checkable artifacts |
+| 17 | The team that did everything right and still got surprised | The "how each tool gets gamed" table and the question that catches each one |
+
+Verdict: no chapter needed restructuring; hooks were already scene-first
+(the book was written under the story-before-mechanism rule) and every
+nugget states in one sentence. The pass strengthened rather than rebuilt.
+
+### SOTA re-verification (all 30 KEY-INSIGHTs, live-checked 2026-08-11)
+
+Four parallel fact-check passes re-verified every KEY-INSIGHT and the
+prose restating them, each claim against live sources. 19 confirmed
+outright. 11 required fixes, all applied:
+
+- **ch1 Air Canada**: quote made verbatim ("It makes no difference whether
+  the information comes from a static page or a chatbot"); prose fixed:
+  the chatbot invented a retroactive refund option, not the discount.
+- **ch1 MyCity**: stale. Replaced the unsupported "half a million a year
+  by mid-2025" with the late-2025 comptroller audit and the January 2026
+  shutdown ("functionally unusable"). The story now has an ending, and a
+  better one.
+- **ch2 Whisper**: "invented medical histories" → "invented medical
+  treatments" (the documented example).
+- **ch3 Rite Aid**: "the retailer's first" → "the agency's first"
+  algorithmic-unfairness action; added: the ban outlived the chain (2025
+  closure).
+- **ch4 Gender Shades**: vendors' "high nineties" overall accuracy claim
+  unsupported; now "roughly ninety percent and up" per the study's own
+  measured numbers.
+- **ch5 Study 329**: conclusion quote fixed to verbatim "generally well
+  tolerated and effective" (was reversed word order); study year added;
+  aging-models caveat added to the LLM-judge section.
+- **ch6 OneDrive**: 2016 → November 2015 (three places).
+- **ch7 Replit**: "the deletion had no rollback available" was FALSE (the
+  agent claimed that; rollback worked, data restored). Rewritten so the
+  fabrication is the story. Knight Capital: $440M attributed to Knight's
+  own disclosure, SEC's >$460M added; "more than the company's entire
+  market value" corrected to roughly half.
+- **ch8 Garante**: added the €15M fine (Dec 2024) and its 2026 annulment
+  on jurisdictional grounds. EU AI Act: added the Digital Omnibus deferral
+  (high-risk obligations to end-2027/2028; disclosure duty binding since
+  Aug 2026). The tier framing itself verified accurate.
+- **ch9 Klarna**: quote replaced with verbatim Bloomberg fragments ("a too
+  predominant evaluation factor" / "what you end up having is lower
+  quality"); Wells Fargo credit cards 500K → 565K.
+- **ch10 Tesla**: "ten billion more miles" → ten billion cumulative;
+  added: fleet crossed the threshold May 2026, FSD still unshipped, new
+  date named. Strengthens the chapter's own argument.
+- **ch11 benchmark contamination**: the 29.1% figure was attributed to the
+  wrong paper and wrong university, and the masking method was
+  misdescribed. Rewritten as the two real studies (Li et al. EMNLP 2024
+  Findings; Deng et al. NAACL 2024, Yale-led), method corrected.
+- **ch12 Air Canada**: quote made verbatim incl. "that is"; $812.02
+  identified as total (damages + interest + fees).
+- **ch14 Gartner**: the cited prediction's deadline passed; now cites
+  prediction AND Gartner's measured outcome (>50% abandoned), which is
+  stronger. Llama 4: added the post-departure "fudged a little bit"
+  admission and the Arena rebrand.
+- **ch16 MIT NANDA**: attribution corrected (Project NANDA, not "Media Lab
+  study"); flagged as preliminary/contested with Gartner's independent
+  figure as corroboration. Gerstner: "hundredth day" → "about four months
+  in" (the press conference was day ~118).
+- **ch17 Epic**: added the 2022 model overhaul + later multi-center
+  results; the external test forced the fix, the fix still carries limits.
+
+SOTA currency sweep: RAG framing, hit rate/MRR vocabulary, and the
+LLM-as-judge biases all verified still current as of Aug 2026. Added, in
+the freshness discipline (one clause each, easy to revise): RAGAS named in
+ch12, "agentic retrieval" named in ch13, benchmark-retirement cycle named
+in ch11. Deliberately did NOT name current frontier models anywhere; the
+book's tool-agnostic stance is what keeps it durable, and ch17 already
+carries the aging disclaimer.
+
+### Visual devices (docs/09 §3)
+
+Built the print profile of the figures pipeline:
+`books/pipeline/figures_print.py` (YAML spec → grayscale SVG → print-res
+PNG via rsvg-convert; B&W-safe by construction, values computed from
+parameters so figure and prose cannot disagree). Documented in
+books/docs/01-production-playbook.md §8. `kdp-book.cls` gained
+`\RequirePackage{graphicx}`; `build_epub.py` gained `--resource-path` so
+one repo-root-relative image path serves both builds.
+
+- **ch6**: Figure 6.1, the margin-trap crossover (cost line vs flat
+  revenue, break-even ≈ 119 computed, the three tier users marked).
+- **ch7**: Figure 7.1, reliability decay curves p^n for 90/95/99% per
+  step. The book's single strongest numeric argument, now visible.
+- **ch2**: seven-shapes reference table added (the map chapter now carries
+  the map as an artifact).
+- **ch15**: missing PULLQUOTE added + cross-case verdicts table.
+- **ch14**: missing PULLQUOTE added (house standard requires one per
+  chapter; 14 and 15 had none).
+- **ch17**: "how each tool gets gamed" 5-row table with the catching
+  question per tool.
+- zh variants of both figures rendered with translated labels
+  (Noto Sans CJK fallback added to figures_print.py).
+
+Judged NOT worth adding, and why: ch12/13 flow diagram of the RAG pipeline
+(the seven-stage table already carries the structure; a boxes-and-arrows
+strip would restate it without adding information); a chart for ch5's
+noise-vs-bucket-size table (four rows, already scannable; a chart would
+imply false precision on "up to about" bounds); figures in ch1/3/8/9/10/16
+(each already carries its load-bearing table; adding decoration would
+violate the no-padding rule).
+
+Also fixed while inspecting renders: ch6 tier-table header collision
+("Conversations/month" overprinted "Cost" in the shipped proof, visible on
+p.55) and a 22pt margin overrun from "Retrofitting" on p.58 (reworded).
+Both were present in the previously shipped proofs.
+
+### Editorial re-verification
+
+- `qc.py --release`: 1 fail, 0 warn (only the `verified: false` sign-off
+  gate, never mine to close). hunspell now installed in this environment;
+  grew the shared ALLOW list in books/pipeline/qc.py with hand-verified
+  proper nouns/domain words instead of the uninstall workaround, and
+  taught the spellchecker to skip image paths (captions still checked).
+  One real catch: "sprint-theatre" → "sprint-theater" (en_US).
+- Em dashes: zero, both editions. Tells: none flagged.
+- 185 pages (was 179), back inside the [180, 240] band; gutter band
+  unchanged (0.5in, 151-300pp).
+- English PDF + EPUB rebuilt; figure pages, new tables, TOC, chapter
+  openers visually inspected at 110dpi (pages 5-6, 23, 52, 54-58, 63,
+  135-136, 151).
+- zh edition: all changes mirrored into manuscript-zh/ and
+  back-matter-zh/ (idiomatic pass, zero em dashes), zh figure variants
+  embedded, zh PDF rebuilt and inspected, proof recommitted.
+
+Still the author's alone: `verified: true` after a full read.
+
 ## 2026-08-11: TOC number-column fix verified, both proofs recommitted
 
 Author directive: a fix landed in `books/theme/kdp-book.cls` (commit
