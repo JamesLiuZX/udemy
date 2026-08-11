@@ -194,7 +194,7 @@ sections:
       - {id: "1.1", title: "What zero-cost creative actually changes (and what it doesn't)", duration: 6}
       - {id: "1.2", title: "The distribution of ad performance: power laws, not averages", duration: 7}
       - {id: "1.3", title: "The coin-flip problem: why your taste stopped mattering", duration: 6}
-      - {id: "1.4", title: "The volume math: how many variants finding a winner takes", duration: 7}
+      - {id: "1.4", title: "The volume maths: how many variants finding a winner takes", duration: 7}
       - {id: "1.5", title: "Where humans still win: the AOV threshold and brand work", duration: 7}
       - {id: "1.6", title: "Section recap", duration: 2, voice: human}
 
