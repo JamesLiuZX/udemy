@@ -123,6 +123,26 @@ callbacks:
       this course keeps returning to" (7.7's phrasing) as the worked
       example for a deflection-led metric tree, swapped in during
       Section 9's verification pass for a generic "a support assistant".
+  - lecture: "11.1"
+    use: The capstone brief names the refund agent as a fallback feature
+      choice for anyone without a real feature of their own, alongside
+      support-ticket triage and contract review. Confirmed during
+      Section 11's verification pass, no edit needed.
+  - lecture: "11.2"
+    use: The worked solution builds all three capstone spec artifacts
+      (PRD, golden set, rubric) against the exact bounded refund-agent
+      scope from 6.7 ($50/verified/3-per-day), reusing 6.1's two-branch
+      loop, 8.2's read-then-act separation and exact injection sentence
+      verbatim. Confirmed during Section 11's verification pass, no
+      edit needed.
+  - lecture: "11.3"
+    use: The worked solution builds the remaining four capstone
+      artifacts (cost model, model scorecard, risk register, metric
+      tree) against the same refund agent, reusing 7.6's three tool
+      calls, 7.4's scorecard shape, 8.1's exact five risk categories,
+      9.1's exact three-metric floor, 8.6's drift warning and 9.6's
+      metric-tree convention. Confirmed during Section 11's
+      verification pass, no edit needed.
 
 # Canonical numbers. A different value for any of these in any lecture is a
 # continuity bug, and qc.py's continuity check (docs/04 §7) matches on them.
