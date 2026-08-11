@@ -26,6 +26,20 @@ The actual reason the shoebox system failed wasn't laziness. It's that a task wi
 
 [AUTHOR-INPUT: your own numbers here, the actual hours a year-end scramble used to cost you versus what the weekly routine costs now, or a specific deduction you nearly missed before you had a system]
 
+## The shoebox problem is bigger than any one freelancer's habits
+
+It's worth knowing that Priya's old system wasn't an unusual failure. A recent government audit of exactly this population found the same pattern at scale.
+
+[KEY-INSIGHT: A 2024 US Government Accountability Office review of sole proprietor tax compliance found that 52 percent of sole proprietor returns with net profit underreported net income by at least $100, and 40 percent underreported by at least $1,000, contributing to an estimated $80 billion gap attributable to this group alone. The GAO's own analysis attributes most of this to recordkeeping breakdowns rather than deliberate evasion: income and expenses tracked inconsistently across the year, reconstructed imperfectly at filing time. || Source: US Government Accountability Office, "Sole Proprietor Compliance: Treasury and IRS Have Opportunities to Reduce the Tax Gap," GAO-24-105281, 2024.]
+
+Read charitably and accurately, that's not a statistic about dishonesty. It's a statistic about exactly the shoebox problem this chapter opened on, playing out across millions of returns: numbers reconstructed once a year from memory and scattered receipts are numbers with errors in them, in both directions, missed income and missed deductions alike. A five-minute weekly habit doesn't just protect against the penalty named earlier. It's the direct fix for the recordkeeping gap the GAO's own auditors point to as the underlying cause.
+
+## Marcus sets aside per payment, not per month
+
+Priya's weekly tax set-aside works cleanly against a roughly steady monthly retainer. Marcus's income doesn't arrive that way: a milestone payment from chapter four might be a third of a project's total value landing in a single week, followed by six quiet weeks until the next one. Setting aside a percentage "per week" doesn't map onto that rhythm the way it maps onto Priya's, and waiting to do the math until a slower week catches up is exactly the gap that produces the IRS's underpayment penalty from earlier in this chapter.
+
+His fix is to trigger the set-aside off the payment, not the calendar: the same day a milestone invoice clears, before it touches his main account, his weekly routine's third step runs immediately rather than waiting for its usual weekly slot. A large payment gets its tax percentage moved out within the same day it arrives, every time, regardless of where in the week that lands. The habit is identical to Priya's in spirit, immediate, automatic, no willpower required at the moment it matters, just triggered by a different event for a business whose income doesn't arrive on a predictable schedule.
+
 ## What AI genuinely helps with here, and where it stops
 
 Categorizing transactions and flagging ambiguous ones is a task AI does well: pattern matching against clear categories, at speed, with the tedium removed. What it should never be trusted to do alone is decide, with confidence, whether a specific borderline expense is actually deductible under your situation. Tax rules have real edge cases, they vary by where you live and how your business is structured, and a model answering confidently is not the same as a model answering correctly, the identical warning chapter six gave about contracts. Flag the ambiguous ones. Ask your accountant about them at the one meeting a year this system makes short instead of dreadful.
@@ -42,6 +56,16 @@ This chapter will not tell you what percentage to set aside for taxes, what coun
 - This system prepares clean numbers for an accountant. It doesn't replace one, and no chapter in this book will tell you what your specific tax situation actually requires.
 
 [/TAKEAWAYS]
+
+## Try this: set up the routine before this week ends
+
+Three small setup tasks, none longer than a few minutes, that turn this chapter from an idea into a running habit:
+
+- **Open a separate account today** for the tax set-aside, even if you fund it with nothing yet. Having it ready removes the only friction left once real money needs to move into it.
+- **Pick your trigger.** A fixed weekly day and time if your income arrives steadily, like Priya's; the moment a payment clears if it arrives in large, irregular chunks, like Marcus's.
+- **Ask your accountant one question**, if you have one, or note it as your first question if you don't yet: what percentage should I actually be setting aside, given my specific income and situation. Everything else in this system runs without them. This one number shouldn't be guessed.
+
+None of this requires waiting for a clean slate or a new calendar year. The best time to stop reconstructing a year from memory is this week, on whatever income already came in.
 
 ## Where this goes next
 
