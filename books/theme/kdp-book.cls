@@ -115,10 +115,14 @@
 
 % --- Brand accent (chapter furniture only; interior stays print-safe B&W
 %     unless a book explicitly buys KDP's colour-interior product) --------
+% Same semantic palette as the video course's theme/deck.css (--accent,
+% --good), so the two product lines read as one design system.
 \definecolor{bookaccent}{HTML}{1B4F8F}
 \definecolor{bookaccenttint}{HTML}{EAF1F8}
 \definecolor{bookflag}{HTML}{C1741A}
 \definecolor{bookflagtint}{HTML}{F7EEDD}
+\definecolor{bookgood}{HTML}{1C6B4C}
+\definecolor{bookgoodtint}{HTML}{E7F2EC}
 
 % Both callout boxes below share this interior padding. LaTeX's fboxsep
 % default (3pt) reads as cramped once a box holds a bold label plus a full
@@ -163,6 +167,28 @@
     \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
       \small\bfseries\color{bookaccent}KEY TAKEAWAYS\par\medskip
       \normalfont\normalsize\color{black}#1%
+    }%
+  }%
+  \par\bigskip
+}
+
+% A researched, sourced statistic or case study, standing in for a
+% personal anecdote when the real author doesn't have one to give.
+% Green (bookgood), the same "verified" semantic the video course uses
+% for a confirmed claim, distinct from the ochre flag (a gap) and the
+% blue takeaway (a summary). Two arguments: the claim, then its source
+% in a smaller, quieter line, exactly the way a pull quote's attribution
+% sits under the quote itself rather than competing with it. build.py
+% converts [KEY-INSIGHT: claim || source] into this after Pandoc runs.
+% Every claim inside one of these must be real and checked, never
+% invented to sound plausible; see books/docs/02-research-and-sourcing.md.
+\newcommand{\keyinsight}[2]{%
+  \par\bigskip\noindent
+  \fcolorbox{bookgood}{bookgoodtint}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+      \small\bfseries\color{bookgood}KEY INSIGHT\par\medskip
+      \normalfont\normalsize\color{black}#1\par\smallskip
+      \normalfont\small\itshape\color{black!60}#2%
     }%
   }%
   \par\bigskip

@@ -44,6 +44,8 @@ ALLOW = {
 }
 
 AUTHOR_INPUT_RE = re.compile(r"\[AUTHOR-INPUT:(.*?)\]", re.S)
+KEY_INSIGHT_RE = re.compile(r"\[KEY-INSIGHT:(.*?)\]", re.S)
+KEY_INSIGHT_WELLFORMED_RE = re.compile(r"\[KEY-INSIGHT:.*?\|\|.*?\]", re.S)
 
 
 @dataclass
@@ -112,6 +114,15 @@ def check_manuscript(book: Book, rep: Report) -> None:
             continue
 
         clean_for_check = AUTHOR_INPUT_RE.sub(" ", c.text)
+
+        insights = KEY_INSIGHT_RE.findall(c.text)
+        wellformed = len(KEY_INSIGHT_WELLFORMED_RE.findall(c.text))
+        if len(insights) != wellformed:
+            rep.fail(f"{tag} {len(insights) - wellformed} [KEY-INSIGHT: ...] marker(s) "
+                     f"missing the '||' claim/source separator — these will render as "
+                     f"raw bracket text instead of a box. Format is "
+                     f"[KEY-INSIGHT: claim || source].")
+        clean_for_check = KEY_INSIGHT_RE.sub(" ", clean_for_check)
         all_texts.append(clean_for_check)
 
         fill = FILLER.findall(clean_for_check)

@@ -43,6 +43,21 @@ TAKEAWAYS_TEX_RE = re.compile(
     r"(?:\{\[\}|\[)\s*TAKEAWAYS\s*(?:\{\]\}|\])(.*?)"
     r"(?:\{\[\}|\[)\s*/TAKEAWAYS\s*(?:\{\]\}|\])", re.S)
 
+# [KEY-INSIGHT: claim || source] -> \keyinsight{claim}{source}
+# Stands in for [AUTHOR-INPUT: ...] when the real author has no personal
+# anecdote to give: a researched, cited statistic or case study instead.
+# The "||" separates the claim from its source citation; see
+# books/docs/02-research-and-sourcing.md for the sourcing bar this has to
+# clear before it's allowed to appear in a chapter. Pandoc converts a
+# literal "||" in the source text to "\textbar\textbar{}" in its LaTeX
+# output (same family of defensive escaping as the bracket handling
+# above), so the separator has to be matched in its escaped form here,
+# not the raw pipe characters that were actually typed in the .md file.
+KEY_INSIGHT_TEX_RE = re.compile(
+    r"(?:\{\[\}|\[)\s*KEY-INSIGHT:(.*?)"
+    r"(?:\|\||\\textbar\\textbar(?:\{\})?)"
+    r"(.*?)(?:\{\]\}|\])", re.S)
+
 DEFAULT_RIGHTS_NOTE = (
     "All rights reserved. No part of this book may be reproduced, distributed, "
     "or transmitted in any form without prior written permission from the "
@@ -50,7 +65,8 @@ DEFAULT_RIGHTS_NOTE = (
 )
 DEFAULT_AI_DISCLOSURE = (
     "This book was written with AI assistance under the author's direction, "
-    "outline, and review. Every claim of personal experience is the author's own."
+    "outline, and review. Statistics and case studies are drawn from cited "
+    "public sources; any claim of personal experience is the author's own."
 )
 DEFAULT_ISBN_NOTE = "ISBN: [assigned at KDP publishing step]"
 
@@ -101,6 +117,8 @@ def pandoc_chapter(md_path: Path, out_tex: Path) -> None:
     tex = AUTHOR_INPUT_TEX_RE.sub(lambda mo: f"\\authorinput{{{mo.group(1).strip()}}}", tex)
     tex = PULLQUOTE_TEX_RE.sub(lambda mo: f"\\pullquote{{{mo.group(1).strip()}}}", tex)
     tex = TAKEAWAYS_TEX_RE.sub(lambda mo: f"\\keytakeaways{{{mo.group(1).strip()}}}", tex)
+    tex = KEY_INSIGHT_TEX_RE.sub(
+        lambda mo: f"\\keyinsight{{{mo.group(1).strip()}}}{{{mo.group(2).strip()}}}", tex)
     out_tex.write_text(tex, encoding="utf-8")
 
 

@@ -32,6 +32,10 @@ Nothing about the system changed between the demo and that Friday ticket. The in
 
 This is the specific reason a single successful demo is close to worthless as evidence, and most launch decisions still get made on exactly that evidence. Your own VP said "I'm sold" after two tickets. Two tickets was never enough to be sold on. It was enough to be intrigued by, which is a different, much smaller thing.
 
+The Friday ticket above is a composite, built to be recognizable rather than to name names. What happened to Air Canada wasn't. In February 2024, a Canadian tribunal ordered the airline to honor a bereavement discount its own support chatbot had invented on the spot, a policy that didn't exist, stated in the same confident tone the airline's real policy would have used. Air Canada argued in its defense that the chatbot was responsible for its own words, separately from the airline itself. The tribunal did not find that argument persuasive.
+
+[KEY-INSIGHT: A Canadian small claims tribunal ordered Air Canada to pay damages after its customer service chatbot invented a bereavement fare refund policy that did not exist and stated it as fact. The airline argued it wasn't liable for its own chatbot's words; the tribunal disagreed, ruling a company is responsible for all information on its website, "whether it comes from a static page or a chatbot." || Source: Civil Resolution Tribunal of British Columbia, Moffatt v. Air Canada, 2024 BCCRT 149 (Feb. 14, 2024).]
+
 ## What replaces a test case
 
 The replacement isn't a better test case. It's a different kind of claim entirely: an **evaluation threshold**, measured against a representative set of real cases, with a number attached that you check before every launch and every meaningful change.
@@ -54,8 +58,6 @@ Before any of the framework, it's worth seeing the actual size of the problem wi
 Take one real, finished piece of output from an AI feature you already have, something a colleague hasn't seen. Show it to three or four colleagues separately, with no discussion between them, and ask each one to rate it from one to ten on whether it's good enough to ship as is. Don't tell them what "good enough" means. Let them decide.
 
 The scores will not agree. Not roughly agree: disagree by a wide margin, on the same piece of text, from people whose judgment you trust individually. Run this exercise inside a team for the first time and the most common reaction isn't "the AI output was bad." It's a quiet unease about how much of the team's current confidence in "it seems fine" was ever actually shared confidence at all, as opposed to four different private definitions of fine that happened to sound like agreement in a meeting.
-
-[AUTHOR-INPUT: the specific story of a feature you personally shipped, reviewed, or inherited where two reasonable people scored the same output very differently, and what that disagreement actually cost, in time, in a delayed launch, or in a decision made on a number that turned out not to mean what everyone assumed]
 
 That disagreement is not a character flaw in your colleagues, and it isn't fixable by finding smarter reviewers. It's what happens whenever a group of people are asked to judge something the same way without ever having written down what "the same way" means. A rubric fixes exactly this, and chapter five is entirely about building one that two people can actually apply the same way, consistently, on the second try and the fiftieth.
 

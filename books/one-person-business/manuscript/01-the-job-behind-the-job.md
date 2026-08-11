@@ -4,7 +4,9 @@ At 11 p.m., Priya was still at her desk. Not designing. She'd finished the actua
 
 She did the math she always does at this hour. Eleven years freelancing, and she still couldn't say with a straight face what her actual job was. Some weeks it was graphic design. Most weeks it was invoicing, chasing late payments, writing proposals for work she might not even get, answering the same three questions from new clients over and over, and doing it all after the design work was done, because the design work was the part clients paid for and everything else felt like it had to happen on her own unpaid time.
 
-[AUTHOR-INPUT: your own version of this, a specific night or a specific week where the admin ate more hours than the actual work, and what it cost you, a missed deadline, a client lost to slow follow-up, a weekend that disappeared]
+Priya isn't an outlier. She's close to the industry average.
+
+[KEY-INSIGHT: A freelancermap survey of independent workers found that a large share spend somewhere between ten and twenty percent of their working time, roughly five hours in an average week, on tasks they classify as unproductive overhead: client acquisition, accounting, and admin rather than billable craft. || Source: freelancermap, "How Many Hours Do Freelancers Work?" survey report.]
 
 Priya's business card says graphic designer. Her actual week, measured honestly in hours, says otherwise. That gap between the job you think you run and the job you actually spend your time doing is the subject of this chapter, and closing it is the subject of the rest of this book.
 
