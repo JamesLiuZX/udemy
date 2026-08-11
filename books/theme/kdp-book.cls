@@ -36,6 +36,12 @@
 \RequirePackage{array}
 \RequirePackage{calc}
 
+% Pandoc emits longtable rows separated only by a bare `\\`, which gives
+% zero gap between rows. Fine for short one-line cells; as soon as any
+% cell wraps to two or more lines, the next row's text sits flush against
+% it with no visual break, table row spacing is set uniformly here.
+\setlength{\extrarowheight}{5pt}
+
 % Pandoc's fragment output (no --standalone) assumes a handful of macros
 % its own default template would otherwise define. Provide them here so
 % chapter .tex fragments compile without pulling in pandoc's preamble.

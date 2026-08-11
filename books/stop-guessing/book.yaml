@@ -1,0 +1,93 @@
+# =============================================================================
+# Single source of truth for "Stop Guessing Whether It Works".
+# Companion book to courses/ai-for-pms: the same practitioner frameworks,
+# translated to print for readers who won't take the video course.
+# =============================================================================
+
+slug: stop-guessing
+title: "Stop Guessing Whether It Works"
+subtitle: "The Product Manager's Field Guide to Evaluating, Costing, and Shipping AI Features"
+author: "Your Name"
+year: 2026
+genre: business
+trim: "6x9"
+target_pages: [120, 170]
+
+# Never set true except by the real author, after a genuine full read-through.
+verified: false
+
+style:
+  spellcheck_lang: en_US
+  em_dash: allow
+
+# KDP listing copy. Not part of the interior PDF.
+description: |
+  You are accountable for an AI feature you're not sure how to judge. Every
+  method you learned for shipping software assumes it behaves the same way
+  twice. This one doesn't, so your acceptance criteria stop working, QA
+  passes things that fail in production, and quality arguments get settled
+  by whoever is most senior rather than by evidence.
+
+  This book gives you the judgement work that survives every model upgrade:
+  writing acceptance criteria as evaluation thresholds instead of pass/fail
+  rules, building a golden set you can actually defend, pricing a feature
+  before it ships instead of on the invoice, scoping an agent with
+  reliability math instead of optimism, and running a risk register that
+  gets you through legal review instead of stalling in it.
+
+  Written for product managers, delivery leads, and analysts who are now
+  responsible for AI work with no engineering background required.
+
+dedication: "For everyone who shipped the feature before anyone asked whether it worked."
+
+front_matter:
+  - half_title
+  - title_page
+  - copyright
+  - dedication
+  - toc
+
+# Full planned arc. Chapters without a manuscript file yet are listed here as
+# the outline; build.py only requires the file to exist for the chapter IDs
+# you actually pass to --only. See notes.md in this directory for status.
+chapters:
+  - id: "01"
+    title: "The Accountability Gap"
+    file: manuscript/01-the-accountability-gap.md
+  - id: "02"
+    title: "Seven Shapes"
+    file: manuscript/02-seven-shapes.md
+  - id: "03"
+    title: "The Spec Nobody Can Argue With"
+    file: manuscript/03-the-spec-nobody-can-argue-with.md
+  - id: "04"
+    title: "The Golden Set"
+    file: manuscript/04-the-golden-set.md
+  - id: "05"
+    title: "Getting Two People to Agree"
+    file: manuscript/05-getting-two-people-to-agree.md
+  - id: "06"
+    title: "What It Actually Costs"
+    file: manuscript/06-what-it-actually-costs.md
+  - id: "07"
+    title: "The Reliability Math of Agents"
+    file: manuscript/07-the-reliability-math-of-agents.md
+  - id: "08"
+    title: "The Risk Register"
+    file: manuscript/08-the-risk-register.md
+  - id: "09"
+    title: "Metrics That Survive Production"
+    file: manuscript/09-metrics-that-survive-production.md
+  - id: "10"
+    title: "Managing the Room"
+    file: manuscript/10-managing-the-room.md
+  - id: "11"
+    title: "The First Ninety Days"
+    file: manuscript/11-the-first-ninety-days.md
+  - id: "12"
+    title: "Where This Breaks"
+    file: manuscript/12-where-this-breaks.md
+
+back_matter:
+  - acknowledgments
+  - about_the_author

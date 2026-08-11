@@ -30,7 +30,7 @@ from build import REPO_ROOT, pdf_page_count, resolve_book_yaml  # noqa: E402
 FILLER = re.compile(
     r"\b(basically|obviously|simply put|as we all know|needless to say|"
     r"it goes without saying|delve|in today's fast-paced world|"
-    r"unlock (your|the) (potential|power)|unleash your|game-?changer|"
+    r"unlock (?:your|the) (?:potential|power)|unleash your|game-?changer|"
     r"revolutioniz|it's important to note|in conclusion|tapestry|"
     r"testament to|navigate the complexities|in the realm of|"
     r"transform your life|at the end of the day)\w*\b", re.I)
