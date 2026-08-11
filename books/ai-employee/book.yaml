@@ -131,5 +131,6 @@ chapters:
     file: manuscript/15-templates-and-worksheets.md
 
 back_matter:
+  - notes_and_sources
   - acknowledgments
   - about_the_author

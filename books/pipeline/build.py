@@ -127,7 +127,20 @@ def pandoc_backmatter(md_path: Path, out_tex: Path, title: str) -> None:
     pandoc_chapter(md_path, out_tex)
     tex = out_tex.read_text(encoding="utf-8")
     tex = re.sub(r"\\chapter\{[^}]*\}", "", tex, count=1)
-    header = f"\\chapter*{{{tex_escape(title)}}}\\addcontentsline{{toc}}{{chapter}}{{{tex_escape(title)}}}\n"
+    # A back-matter \chapter* doesn't advance memoir's chapter counter, so any
+    # numbered \section/\subsection inside would keep counting from whatever
+    # real chapter precedes it (e.g. a stray "24.17"). Back matter is
+    # reference material with no cross-references to its own headings, so
+    # make every heading unnumbered instead.
+    tex = re.sub(r"\\((?:sub)*section)\{", r"\\\1*{", tex)
+    # \chapter* (unlike \chapter) never calls \chaptermark, so without this
+    # the recto running head keeps showing the last real chapter's title
+    # straight through every back-matter section -- exactly the "running
+    # head repeats the wrong chapter title" trap books/CLAUDE.md warns about.
+    header = (
+        f"\\chapter*{{{tex_escape(title)}}}\\chaptermark{{{tex_escape(title)}}}"
+        f"\\addcontentsline{{toc}}{{chapter}}{{{tex_escape(title)}}}\n"
+    )
     out_tex.write_text(header + tex, encoding="utf-8")
 
 
@@ -160,7 +173,11 @@ def front_matter_tex(book: Book) -> str:
 
 def back_matter_tex(book: Book, out_dir: Path) -> str:
     meta = book.meta
-    titles = {"acknowledgments": "Acknowledgments", "about_the_author": "About the Author"}
+    titles = {
+        "acknowledgments": "Acknowledgments",
+        "about_the_author": "About the Author",
+        "notes_and_sources": "Notes and Sources",
+    }
     out = []
     for item in meta.get("back_matter", []):
         src = book.dir / "back-matter" / f"{item}.md"
