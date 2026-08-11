@@ -1,0 +1,109 @@
+# =============================================================================
+# Simplified Chinese edition of "The One-Person Business's AI Stack".
+# Separate book.yaml (own slug, own build output dir) rather than a field
+# inside the English book.yaml, so `build.py --book books/one-person-business/
+# book-zh.yaml` builds this edition without touching the English path at all.
+# Mirrors the English book.yaml structurally; every value below is the
+# Chinese equivalent of that file's field, not a re-derivation.
+# =============================================================================
+
+slug: one-person-business-zh
+title: "一人公司的 AI 系统组合"
+subtitle: "自由职业者和个体创业者如何借助 AI 搞定行政杂务，把时间留给真正能创造收入的专业工作"
+author: "James Liu"
+year: 2026
+genre: business
+trim: "6x9"
+target_pages: [95, 130]
+lang: zh
+
+# Never set true except by the real author, after a genuine full read-through.
+verified: false
+
+style:
+  spellcheck_lang: en_US   # hunspell has no useful CJK dictionary here; see notes.md
+  em_dash: avoid
+
+# Not part of the interior PDF. Not a KDP listing either -- KDP does not
+# accept a Chinese-language paperback at all, and does not list Simplified
+# Chinese as a supported eBook language (only Traditional Chinese, in beta,
+# ebook-only). This edition targets Google Play Books, Apple Books, and
+# direct/lead-gen distribution instead. See notes.md for what was checked.
+description: |
+  你创办一人公司，不是为了变成开发票的文员、兼职合同律师，外加一个没有薪水的
+  记账员。可不知不觉间，工作的大部分内容，就悄悄变成了这些。
+
+  这本书搭建的是一整套真正管用的系统组合，而不是某个包治百病的单一应用，专门
+  对付吞噬个人事业的行政杂务：曾经要花一整晚才能写完的报价方案，曾经迟迟没有
+  寄出的发票，保护你不被范围蔓延拖垮的合同条款，你一直在逃避的记账工作，以及
+  每到周五就再也挤不出精力去做的营销。每一章结尾，你都会拿到一件本周就能真正
+  动手搭建的东西，而不是一个留到以后再想的概念。
+
+  写给那些为了做真正的专业工作而入行、却不想被后台杂务拖住的自由职业者、独立
+  顾问和一人工作室的经营者。
+
+dedication: "献给每一张还躺在草稿箱里的发票。"
+
+rights_note: "版权所有，未经作者书面许可，不得以任何形式复制、发行或传播本书的任何部分，书评中的简短引用除外。"
+ai_disclosure_text: "本书在作者的指导、大纲规划与审阅下，借助 AI 辅助完成写作。书中数据与案例均引自已标注来源的公开资料；任何涉及个人经历的表述均为作者本人真实经历。"
+isbn_note: "ISBN：[将在正式发行时分配]"
+
+front_matter:
+  - half_title
+  - title_page
+  - copyright
+  - dedication
+  - toc
+
+chapters:
+  - id: "01"
+    title: "工作背后的工作"
+    file: manuscript-zh/01-the-job-behind-the-job.md
+  - id: "02"
+    title: "要系统组合，不要单一工具"
+    file: manuscript-zh/02-the-stack-not-the-tool.md
+  - id: "03"
+    title: "自动生成的报价方案"
+    file: manuscript-zh/03-the-proposal-that-writes-itself.md
+  - id: "04"
+    title: "不再让人抗拒的开票流程"
+    file: manuscript-zh/04-invoicing-without-the-dread.md
+  - id: "05"
+    title: "不再被收件箱绑架"
+    file: manuscript-zh/05-the-inbox-that-doesnt-own-you.md
+  - id: "06"
+    title: "看得懂的合同"
+    file: manuscript-zh/06-contracts-you-can-actually-understand.md
+  - id: "07"
+    title: "一人营销部"
+    file: manuscript-zh/07-your-marketing-department-of-one.md
+  - id: "08"
+    title: "没有记账员的记账法"
+    file: manuscript-zh/08-bookkeeping-without-a-bookkeeper.md
+  - id: "09"
+    title: "守住你的项目范围"
+    file: manuscript-zh/09-protecting-your-scope.md
+  - id: "10"
+    title: "定价与涨价"
+    file: manuscript-zh/10-pricing-and-raising-your-rates.md
+  - id: "11"
+    title: "常见疑虑与边缘情况"
+    file: manuscript-zh/11-objections-and-edge-cases.md
+  - id: "12"
+    title: "两门生意，九十天：实战案例"
+    file: manuscript-zh/12-two-businesses-ninety-days.md
+  - id: "13"
+    title: "三十天搭建计划"
+    file: manuscript-zh/13-the-30-day-build.md
+  - id: "14"
+    title: "什么时候真正该请人"
+    file: manuscript-zh/14-when-to-actually-hire-a-human.md
+  - id: "15"
+    title: "模板合集"
+    file: manuscript-zh/15-the-templates.md
+
+back_matter:
+  - about_the_author
+
+back_matter_titles:
+  about_the_author: "关于作者"

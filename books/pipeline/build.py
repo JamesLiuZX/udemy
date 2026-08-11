@@ -178,9 +178,22 @@ def back_matter_tex(book: Book, out_dir: Path) -> str:
         "about_the_author": "About the Author",
         "notes_and_sources": "Notes and Sources",
     }
+    # Per-book override, e.g. a zh edition's book.yaml sets
+    # back_matter_titles: {about_the_author: "关于作者"}. Absent for every
+    # other book, so this is a no-op on the English path.
+    titles.update(meta.get("back_matter_titles", {}))
+    # A translated edition's own back matter lives in a parallel
+    # back-matter-<lang> directory (books/<slug>/back-matter-zh/...), the
+    # same mirroring convention as manuscript-zh/ for chapters, rather than
+    # in the English book's back-matter/ dir it shares a parent folder
+    # with. Every other book has no back-matter-<lang> dir, so this always
+    # falls through to the plain "back-matter" english path unchanged.
+    back_matter_dir = f"back-matter-{book.lang}" if book.lang != "en" else "back-matter"
+    if not (book.dir / back_matter_dir).is_dir():
+        back_matter_dir = "back-matter"
     out = []
     for item in meta.get("back_matter", []):
-        src = book.dir / "back-matter" / f"{item}.md"
+        src = book.dir / back_matter_dir / f"{item}.md"
         if not src.exists():
             continue
         dst = out_dir / "chapters" / f"back-{item}.tex"
@@ -204,9 +217,10 @@ def build_master(book: Book, out_dir: Path, only: str | None) -> Path:
         pandoc_chapter(c.path, dst)
         chapter_inputs.append(f"\\input{{{dst.relative_to(REPO_ROOT)}}}")
 
+    class_opts = "[zh]" if book.lang == "zh" else ""
     parts = [
         f"\\input{{{(out_dir / 'config.tex').relative_to(REPO_ROOT)}}}",
-        "\\documentclass{kdp-book}",
+        f"\\documentclass{class_opts}{{kdp-book}}",
         f"\\def\\booktitleshort{{{tex_escape(book.title)}}}",
         "\\begin{document}",
     ]

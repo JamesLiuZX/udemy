@@ -81,6 +81,13 @@ class Book:
         return self.meta.get("trim", "6x9")
 
     @property
+    def lang(self) -> str:
+        """'en' (default) or 'zh'. Drives the kdp-book.cls [zh] option and
+        the back-matter chapter-title table in build.py; every other book
+        in the repo omits this key and gets the unchanged English path."""
+        return self.meta.get("lang", "en")
+
+    @property
     def target_pages(self) -> tuple[int, int]:
         lo, hi = self.meta.get("target_pages", [300, 500])
         return (int(lo), int(hi))

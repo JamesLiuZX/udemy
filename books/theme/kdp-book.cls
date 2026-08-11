@@ -17,6 +17,15 @@
 
 \newif\if@kdpdraft
 \DeclareOption{draft}{\@kdpdrafttrue}
+% zh: Simplified Chinese interior. Loads xeCJK and Noto Serif/Sans CJK SC,
+% and swaps the class's hard-coded English box labels, TOC name, chapter
+% numeral style, and copyright-line wording for Chinese ones. Everything
+% else (trim/margin geometry, box colours, widow/orphan control, running
+% head mechanics) is language-agnostic and applies unchanged to both
+% variants. Never disturbs the English path: a book that doesn't pass
+% this option gets exactly the class's original behaviour.
+\newif\if@kdpzh
+\DeclareOption{zh}{\@kdpzhtrue}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{memoir}}
 \ProcessOptions\relax
 
@@ -98,6 +107,36 @@
   Scale = 0.92,
 ]
 
+% --- CJK (Simplified Chinese editions only) --------------------------------
+% Two system packages, neither vendored, needed before building a
+% \documentclass[zh]{kdp-book} title:
+%   apt-get install -y fonts-noto-cjk texlive-lang-chinese
+% fonts-noto-cjk ships four .ttc files (~92MB total) bundling five CJK
+% language subsets each, far larger than this repo's usual small per-face
+% vendored files; fontconfig exposes "Noto Serif CJK SC" / "Noto Sans CJK
+% SC" as addressable family names once installed, Regular and Bold both,
+% so fontspec's ordinary system-font lookup (no explicit Path/Extension,
+% same as looking up any installed OS font) resolves weights
+% automatically. texlive-lang-chinese provides xeCJK.sty itself, which
+% TeX Live's base install does not include. See
+% books/one-person-business/notes.md for the full context.
+%
+% xeCJK auto-detects CJK codepoints anywhere in the document, including
+% inside \bfseries/\itshape/coloured text, and renders them with the CJK
+% family below instead of the Latin \setmainfont, entirely automatically;
+% \setmainfont above still handles every Latin letter, digit, and piece of
+% English (product names, pasted prompts) that appears inside CJK prose.
+% CJK has no italic tradition, so xeCJK silently renders \itshape CJK text
+% upright rather than faking a slant, which is the typographically correct
+% behaviour, not a bug, for the \pullquote box below.
+\if@kdpzh
+  \RequirePackage{xeCJK}
+  \setCJKmainfont{Noto Serif CJK SC}
+  \setCJKsansfont{Noto Sans CJK SC}
+  \setCJKmonofont{Noto Sans Mono CJK SC}
+  \xeCJKsetup{CJKspace=true}
+\fi
+
 \widowpenalty=10000
 \clubpenalty=10000
 \brokenpenalty=10000
@@ -133,11 +172,13 @@
 % Visible marker for unresolved [AUTHOR-INPUT: ...] text, so a draft PDF
 % shows the gap on the page, not only in qc.py's terminal output. build.py
 % rewrites the bracket syntax into this macro after Pandoc conversion.
+\newcommand{\authorinputlabel}{AUTHOR INPUT NEEDED}
+\if@kdpzh\renewcommand{\authorinputlabel}{作者内容待补}\fi
 \newcommand{\authorinput}[1]{%
   \par\bigskip\noindent
   \fcolorbox{bookflag}{bookflagtint}{%
     \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
-      \small\bfseries\color{bookflag}AUTHOR INPUT NEEDED\par\medskip
+      \small\bfseries\color{bookflag}\authorinputlabel\par\medskip
       \normalfont\normalsize\color{black}#1%
     }%
   }%
@@ -161,11 +202,13 @@
 % \authorinput: ink blue instead of flag ochre, a takeaway instead of a
 % gap. build.py wraps a [TAKEAWAYS]...[/TAKEAWAYS] block's
 % already-Pandoc-converted list in this after Pandoc runs.
+\newcommand{\keytakeawayslabel}{KEY TAKEAWAYS}
+\if@kdpzh\renewcommand{\keytakeawayslabel}{要点总结}\fi
 \newcommand{\keytakeaways}[1]{%
   \par\bigskip\noindent
   \fcolorbox{bookaccent}{bookaccenttint}{%
     \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
-      \small\bfseries\color{bookaccent}KEY TAKEAWAYS\par\medskip
+      \small\bfseries\color{bookaccent}\keytakeawayslabel\par\medskip
       \normalfont\normalsize\color{black}#1%
     }%
   }%
@@ -182,11 +225,13 @@
 % converts [KEY-INSIGHT: claim || source] into this after Pandoc runs.
 % Every claim inside one of these must be real and checked, never
 % invented to sound plausible; see books/docs/02-research-and-sourcing.md.
+\newcommand{\keyinsightlabel}{KEY INSIGHT}
+\if@kdpzh\renewcommand{\keyinsightlabel}{关键洞察}\fi
 \newcommand{\keyinsight}[2]{%
   \par\bigskip\noindent
   \fcolorbox{bookgood}{bookgoodtint}{%
     \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
-      \small\bfseries\color{bookgood}KEY INSIGHT\par\medskip
+      \small\bfseries\color{bookgood}\keyinsightlabel\par\medskip
       \normalfont\normalsize\color{black}#1\par\smallskip
       \normalfont\small\itshape\color{black!60}#2%
     }%
@@ -214,6 +259,20 @@
   }
 }
 \chapterstyle{kdpbook}
+% Chinese nonfiction convention folds the chapter word and number into one
+% compound label ("第3章") rather than the English pattern of a small
+% word ("CHAPTER") sitting above an unrelated giant numeral; printing both
+% here would just repeat the same number twice on the page. SmallCaps is a
+% Latin OpenType feature with no meaning for CJK glyphs, so it's dropped
+% rather than silently no-op'd on the character range it can't affect.
+\if@kdpzh
+  \renewcommand{\printchaptername}{}
+  \renewcommand{\printchapternum}{%
+    \raggedright\normalfont
+    \fontsize{30pt}{34pt}\selectfont\color{bookaccent}%
+    第\thechapter{}章\par
+  }
+\fi
 \setsecheadstyle{\normalfont\Large\bfseries\raggedright\color{bookaccent}}
 \setsubsecheadstyle{\normalfont\large\bfseries\raggedright}
 % Memoir's default section spacing is tuned for black-on-black headings
@@ -275,7 +334,7 @@
   \thispagestyle{empty}
   \vspace*{\fill}
   {\small\normalfont
-    Copyright \copyright\ #2\ #1\par
+    \if@kdpzh 版权所有\ \copyright\ #2\ #1\else Copyright \copyright\ #2\ #1\fi\par
     \vspace{0.6\baselineskip}
     #3\par
     \vspace{0.6\baselineskip}
@@ -285,6 +344,12 @@
   }
   \clearpage
 }
+
+% memoir/book's default TOC heading is babel[english]'s "Contents"; the
+% zh variant wants the Chinese equivalent instead. \tableofcontents itself
+% is invoked later, from front_matter_tex() in build.py, so overriding the
+% name here (any point before that call) is enough.
+\if@kdpzh\renewcommand{\contentsname}{目录}\fi
 
 \newcommand{\dedicationpage}[1]{%
   \thispagestyle{empty}

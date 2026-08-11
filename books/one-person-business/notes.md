@@ -3,7 +3,22 @@
 Not part of the build. Working notes for continuing across sessions, same
 pattern as the other books.
 
-## Status: editorial pass complete. Manuscript is print-ready except the author's own read-through.
+## Status: byline set, Simplified Chinese edition shipped. English manuscript is print-ready except the author's own read-through.
+
+Two things happened after the editorial pass below: the real author's
+byline landed (`author: "James Liu"`, a real bio in
+`back-matter/about_the_author.md`, acknowledgments dropped from
+`back_matter` entirely since there wasn't a real thank-you list to give),
+and the English proofs were rebuilt and recommitted against it
+(127 pages now, down from 129, since dropping the acknowledgments
+back-matter page removed one page; still within the `[120, 150]` band, no
+gutter change). Then, at the author's request, the whole book was
+translated into Simplified Chinese and shipped as a second, separate
+proofs PDF. See "Simplified Chinese edition" below for that whole story;
+it's substantial enough to warrant its own section rather than folding
+into this one.
+
+## Status: editorial pass complete (English). Manuscript is print-ready except the author's own read-through.
 
 The book went through three phases: initial draft (10 chapters), an
 expansion pass toward a 180-240 page target, and a full editorial pass
@@ -13,17 +28,19 @@ real author's: read it, sign off, supply a byline and bio, commission a
 cover, and answer KDP's dashboard questionnaire. See "Remaining author
 actions" below.
 
-**Final page count: 129 pages, 15 chapters, ~30,000 words.** `book.yaml`'s
-`target_pages` has been brought down from `[180, 240]` to `[120, 150]` to
-match reality, honestly, rather than left pointing at an aspiration the
-book didn't reach. Report this straight to the author: the expansion pass
-that preceded this editorial pass was told mid-run to reach 180-240 pages
-and landed at 129, short of even the 180 floor. When the next directive
-arrived, it said to finish what was in flight and then stop writing new
-material and move to editorial-only work. That instruction is what closed
-the expansion effort at 129 pages rather than pushing further; it wasn't a
-decision made unilaterally to abandon the target. If the author wants
-180-240 pages, that's a fourth pass, deliberately not attempted here, and
+**Final page count: 127 pages** (was 129 before the acknowledgments
+back-matter page was dropped; see the byline update below), **15
+chapters, ~30,000 words.** `book.yaml`'s `target_pages` has been brought
+down from `[180, 240]` to `[120, 150]` to match reality, honestly, rather
+than left pointing at an aspiration the book didn't reach. Report this
+straight to the author: the expansion pass that preceded this editorial
+pass was told mid-run to reach 180-240 pages and landed short of even the
+180 floor. When the next directive arrived, it said to finish what was in
+flight and then stop writing new material and move to editorial-only
+work. That instruction is what closed the expansion effort early rather
+than pushing further; it wasn't a decision made unilaterally to abandon
+the target. If the author wants 180-240 pages, that's a fourth pass,
+deliberately not attempted here, and
 the honest paths to it are the same two named in this file's prior
 revision: **more chapters** (Client Onboarding and post-sale
 follow-up/retention were both scoped out as credible, unclaimed topics)
@@ -135,6 +152,182 @@ Xin, not Yin`) so it isn't a silent error to chase.
    one-person-business` and re-copy to `proofs/` any time the manuscript
    changes; this file will go stale otherwise.
 
+## Simplified Chinese edition
+
+Shipped as `proofs/one-person-business-zh.pdf`, 107 pages, built from a
+full retranslation of all 15 chapters plus the About the Author back
+matter. Source of truth is `books/one-person-business/book-zh.yaml`, a
+separate book config (own slug `one-person-business-zh`, own
+`lang: zh` field) rather than a variant field inside the English
+`book.yaml`, so `python3 books/pipeline/build.py --book
+books/one-person-business/book-zh.yaml` builds this edition without
+touching the English path at all. Manuscript lives in parallel
+directories mirroring the English ones file-for-file:
+`manuscript-zh/01-the-job-behind-the-job.md` through `15-the-templates.md`,
+and `back-matter-zh/about_the_author.md`.
+
+**Not a KDP title.** Checked live before starting: Amazon KDP does not
+accept a Chinese-language paperback at all (print is more limited on
+supported languages than ebook, and Chinese isn't one of them). On the
+ebook side, KDP lists Chinese (Traditional) as a supported language, and
+only in beta; nothing in what was found lists Simplified Chinese as a
+supported KDP ebook language at all. `book-zh.yaml`'s `description` field
+and this note both say so explicitly, so nobody accidentally tries to
+upload this to KDP later. The edition instead targets Google Play Books,
+Apple Books, and direct/lead-gen distribution, none of which this repo's
+pipeline touches past producing the interior PDF.
+
+**Build dependencies, not vendored.** Two system packages, absent by
+default in this environment and not carried by git:
+```
+apt-get install -y fonts-noto-cjk texlive-lang-chinese
+```
+`fonts-noto-cjk` provides Noto Serif/Sans CJK SC (~92MB across four .ttc
+files, each bundling five regional CJK subsets, which is why these were
+installed rather than vendored the way TeX Gyre Schola and IBM Plex Mono
+are: vendoring would mean committing that whole 92MB into git for content
+only one book needs). `texlive-lang-chinese` provides `xeCJK.sty` itself,
+which TeX Live's base install doesn't carry. Both are documented in a
+comment in `books/theme/kdp-book.cls` right above the CJK block. Any
+future session building this edition on a fresh container needs to run
+that install first, or `xelatex` fails immediately on `File 'xeCJK.sty'
+not found`.
+
+**Shared class changes** (`books/theme/kdp-book.cls`, `books/pipeline/
+book.py`, `books/pipeline/build.py`), gated so the English path and every
+other book in the repo is provably unaffected (rebuilt and diffed the
+English PDF before and after: identical page count, no warnings):
+- A `zh` class option (`\documentclass[zh]{kdp-book}`) loads `xeCJK` and
+  sets `\setCJKmainfont`/`\setCJKsansfont`/`\setCJKmonofont` to the Noto
+  CJK SC faces. xeCJK auto-detects CJK codepoints anywhere in the
+  document, including inside `\bfseries`/`\itshape`/coloured text, and
+  renders them with the CJK family instead of the Latin `\setmainfont`,
+  entirely automatically; the Latin font still handles every English
+  product name, prompt, or citation title embedded in the Chinese prose.
+  CJK has no italic tradition, so xeCJK silently renders `\itshape` CJK
+  text upright rather than faking a slant. That's correct behaviour, not
+  a bug, and it's what the `\pullquote` box does in the Chinese edition.
+- The four box-label macros (`\authorinput`, `\keytakeaways`,
+  `\keyinsight`, and the TOC's `\contentsname`) now read from an
+  indirection (`\keyinsightlabel` etc.) that's redefined to the Chinese
+  label under `\if@kdpzh`, so "KEY INSIGHT"/"关键洞察",
+  "KEY TAKEAWAYS"/"要点总结" etc. swap automatically. The copyright
+  page's hard-coded "Copyright ©" line got the same treatment
+  ("版权所有 ©"). Every other book's macro calls are byte-for-byte
+  unchanged, since the label indirection is a no-op without the option.
+- The chapter-opener style drops the English "CHAPTER" small-caps label
+  (SmallCaps is a Latin OpenType feature with no meaning for CJK glyphs)
+  and folds the number into a single Chinese compound label ("第3章")
+  instead of printing a word and a giant numeral separately, matching
+  Chinese nonfiction convention rather than repeating the same number
+  twice on the page.
+- `book.py` gained a `Book.lang` property (`meta.get("lang", "en")`).
+  `build.py` reads it to choose the `[zh]` class option, and to choose
+  which back-matter directory to read from: `back-matter-<lang>/` if one
+  exists next to `book.yaml`, else the plain `back-matter/` every other
+  book already uses. **This directory-selection logic was a real bug the
+  first time through**: `back_matter_tex()` originally always read from
+  the hard-coded `book.dir / "back-matter"`, so the first full render of
+  the Chinese edition rendered the About the Author *page heading* in
+  Chinese ("关于作者", since that comes from `back_matter_titles` in
+  `book-zh.yaml`) but the *body text* in English, silently pulling the
+  English bio instead of the translated one. Caught on visual inspection
+  of the last page, not by any automated check. Fixed by deriving the
+  back-matter directory from `book.lang`; re-verify this specific page
+  after any future pipeline change that touches back-matter resolution.
+- `back_matter_tex()` also gained a `back_matter_titles` override read
+  from `book.yaml`/`book-zh.yaml` (`back_matter_titles: {about_the_author:
+  "关于作者"}`), falling back to the existing English title table. Every
+  other book omits this key and is unaffected.
+
+**Translation methodology.** All 15 chapters were translated by five
+parallel agents (three chapters each), each given the same fixed
+glossary and structural rules, then cross-checked against each other for
+consistency once all five landed. Key decisions, in case a future
+retranslation or expansion needs to stay consistent with them:
+- Character names transliterated, not kept in Latin script: Priya →
+  普丽娅, Marcus → 马库斯, Daniel (the chapter 4 client) → 丹尼尔. The
+  real author's own name, James Liu, stays in Latin script throughout,
+  as given.
+- Fixed terms: "the stack" → 系统组合, "admin" → 行政杂务, "the craft" →
+  本行工作, "scope creep" → 范围蔓延, "solopreneur"/"solo business" →
+  个体创业者/一人公司. Recurring section headers: "Try this: X" → "动手
+  试试：X", "Common mistakes with X" → "X的常见错误", "The exact
+  prompt(s)" → "具体提示词", "What this chapter will not do" → "本章不会
+  做什么" (chapter 1 alone says "本书不会做什么", matching its English
+  source's own "What this *book* will not do"), "Where this goes next" →
+  "接下来".
+- `[PULLQUOTE: ...]`/`[KEY-INSIGHT: ...]`/`[TAKEAWAYS]`/`[/TAKEAWAYS]`
+  marker keywords stay in English exactly as written (the build
+  pipeline's regex matches those literal English keywords regardless of
+  book language); only the human-readable content inside them is
+  Chinese. Every `[PULLQUOTE: ...]` was verified to be an exact
+  substring of its own chapter's translated body, the same verbatim
+  discipline as the English editorial pass.
+- `[KEY-INSIGHT: ...]` claims are translated; source titles/publishers/
+  legal case names stay in English (so a reader can still find and
+  verify the actual source) with a brief Chinese gloss added in
+  parentheses, e.g. `来源：Harvard Business Review（《哈佛商业评论》）,
+  ...`. Currency converted from `$X` to "X美元" throughout (correctly
+  scaling billion→亿, trillion→万亿, not a literal transliteration).
+  Percentages and most quantities use Arabic numerals; chapter titles
+  and a few headline round numbers (九十天, 三十天) stay spelled out,
+  matching ordinary Chinese publishing convention of spelling out title-
+  level and rhetorical numbers while using digits for granular data.
+  This produces mild, defensible stylistic variance chapter to chapter
+  rather than one rigid rule; not worth a forced uniformity pass.
+- What stays in English vs. gets translated, inside a chapter's own
+  content: text under a genuine "## The exact prompt" heading (meant to
+  be pasted verbatim into an AI chat tool) stays in English; client-
+  facing message scripts the reader would send to their own client
+  (invoice follow-ups, the scope-creep "yes, and" script, the rate-
+  increase message) get translated into natural professional Chinese,
+  since those are sent to people, not pasted into a tool; worksheet
+  fill-in fields (the rate-math worksheet, the time-audit template) get
+  translated fully, including bracket placeholders like `[dollar
+  amount]` → `[具体金额]`.
+- **One real classification bug, caught and fixed after translation**:
+  chapter 2's six-question tool audit is a self-answered reflection
+  checklist ("List every tool... answer six short questions"), not an
+  AI-tool prompt, and its own chapter-2 translation correctly rendered
+  it in Chinese. But the instructions handed to the chapter-13-15
+  translation batch mischaracterized it as an "exact prompt" (matching a
+  keyword search on the surrounding text rather than reading how chapter
+  2 actually frames it), so chapter 15's *duplicate* copy of the same six
+  questions was left in English, contradicting chapter 2's already-
+  correct Chinese version of the identical content 13 chapters earlier.
+  Caught by the translating agent's own honest self-flag, not by
+  automated review; fixed by replacing chapter 15's English list with
+  chapter 2's exact Chinese wording. Worth remembering for any future
+  translation pass: whether a blockquoted list is a genuine AI prompt or
+  a self-answered checklist has to be judged from how the *source*
+  chapter frames it, not from surface pattern-matching on "numbered
+  list under a Try/audit heading."
+
+**Visual QA.** Full rebuild, `qc.py --release` clean apart from the
+`verified` gate (the estimated-page-count WARN is a known false positive:
+`Book.word_count()`/`estimated_pages()` splits on whitespace, which
+undercounts Chinese text severely since CJK has no spaces between words;
+the real, accurate check is the built PDF's actual page count via
+`pdfinfo`, which passed). All fonts embedded per `pdffonts`. Spot-checked
+roughly 15 pages spanning front matter, TOC, multiple chapter openers,
+all four box types, and the About the Author page; confirmed the
+`[PULLQUOTE: ...]` verbatim match visually in at least one case (chapter
+1's, word-for-word identical between its box and its body occurrence).
+`pdffonts` labels the embedded CJK subset "NotoSerifCJKjp-Regular"
+despite `\setCJKmainfont{Noto Serif CJK SC}` being used correctly; this
+is a cosmetic naming artifact of how Noto's CJK "Super OTC" files store
+all five regional variants' internal PostScript name, not evidence of
+the wrong regional glyph set being selected. Every rendered page was
+visually confirmed to show standard Simplified Chinese glyph forms, not
+Japanese ones.
+
+**target_pages** initially guessed at `[100, 160]` before a first build
+existed; brought down to `[95, 130]` once the real 107-page count landed,
+same honesty discipline as the English edition's `target_pages`
+correction. Gutter stayed 0.375in throughout (both bands' midpoints fall
+under the 150-page boundary), so no gutter mismatch to chase.
+
 ## Deliberately left alone
 
 - **One stylistic deviation, noted rather than force-fixed**: the
@@ -188,28 +381,42 @@ repeating Priya's scenario with different words.
 
 ## Remaining author actions
 
-Everything production-side is done. What's left is exclusively the real
-author's:
-
-1. **Read the whole book and set `verified: true` in `book.yaml`** once
-   every claim and every anecdote is one they can personally defend. No
-   one else may set this flag; it is the author's signature and the fact
-   that keeps the KDP AI-assisted declaration true.
-2. **Supply a real byline**: `book.yaml`'s `author` field is still the
-   placeholder `"Your Name"`.
-3. **Write the back matter**: `back-matter/acknowledgments.md` and
-   `back-matter/about_the_author.md` are both real `[AUTHOR-INPUT: ...]`
-   stubs (a real thank-you list; a real bio and the specific freelance or
-   solo-business credentials that make this book's advice earned).
-4. **Commission a cover.** This pipeline only produces the interior; KDP
-   needs a separate cover file, and cover spine width depends on the
-   final locked page count (129pp interior, once the author's own edits
-   during read-through are accounted for).
-5. **Answer KDP's dashboard AI-disclosure questionnaire** at upload time
-   (AI-assisted, not AI-generated; see `books/CLAUDE.md` §1).
-6. **Decide whether to pursue the 180-240 page expansion** that was
-   paused for this editorial pass, and if so, which of the two paths
-   above (more chapters vs. more depth) to take.
+1. **Read the whole book (English and, if the Chinese edition is going
+   out, the Chinese one too) and set `verified: true` in both
+   `book.yaml` and `book-zh.yaml`** once every claim and every anecdote is
+   one they can personally defend. No one else may set this flag; it is
+   the author's signature and the fact that keeps the AI-assisted
+   declaration true. The two `verified` flags are independent, since the
+   English and Chinese texts are different artifacts a human has to read
+   separately, not one signature covering both.
+2. ~~Supply a real byline~~ **Done**: `author: "James Liu"` in both
+   `book.yaml` and `book-zh.yaml`, with a real bio in
+   `back-matter/about_the_author.md` (English) and
+   `back-matter-zh/about_the_author.md` (Chinese, a direct translation of
+   the same bio, not a separate story). Acknowledgments was dropped from
+   `back_matter` in both editions since there wasn't a real thank-you
+   list to give; the field can be added back if the author supplies one
+   later.
+3. **Commission a cover** for whichever edition(s) actually ship. This
+   pipeline only produces interiors; a cover needs a separate file, and
+   spine width depends on the final locked page count, which differs
+   between editions (127pp English, 107pp Chinese) and will move again
+   once the author's own read-through edits land.
+4. **Answer KDP's dashboard AI-disclosure questionnaire** at upload time
+   for the English edition (AI-assisted, not AI-generated; see
+   `books/CLAUDE.md` §1). The Chinese edition doesn't go through this
+   step at all, since it isn't going to KDP; see "Simplified Chinese
+   edition" below for where it does go and why.
+5. **Decide whether to pursue the 180-240 page expansion** that was
+   paused for the English editorial pass, and if so, which of the two
+   paths above (more chapters vs. more depth) to take. A decision here
+   also means a decision about whether to re-translate the Chinese
+   edition against the expanded English text or let it stay at its
+   current, complete-but-shorter length.
+6. **Pick actual distribution channels for the Chinese edition** (Google
+   Play Books, Apple Books, and/or direct/lead-gen sale) and go through
+   whatever author-identity or tax steps each one separately requires;
+   none of that is covered by this repo's pipeline.
 
 ## Things to hold onto continuing this
 
