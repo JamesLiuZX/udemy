@@ -162,6 +162,8 @@ arc:
 # Where Harlan Supply Co. is deliberately called back after its Section-0
 # introduction. Append as each callback is actually written.
 callbacks:
+  - lecture: "5.1"
+    use: The clinical-authority framing winning on Meta, set up against 5.2's TikTok result
   - lecture: "1.1"
     use: Harlan's $34 margin as the concrete case for what zero-cost creative changes
   - lecture: "1.5"
