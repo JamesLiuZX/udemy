@@ -24,6 +24,12 @@ This isn't a new rule so much as a naming of something the disqualification logi
 
 **When in doubt, the "clear and conspicuous" test is a useful gut check.** Would a reasonable customer, reading this, be surprised or misled to learn AI helped produce it. If the honest answer is yes, that's the task that needs either a plain disclosure or a fully human replacement, not a task to quietly hope nobody asks about.
 
+## Where the line actually got drawn
+
+Wanda runs the small marketing agency introduced in an earlier chapter and ran into this line directly when a client asked her team to produce a set of "client testimonials" for a product launch page, based loosely on a handful of real but informal comments customers had made in passing during calls, nothing any of them had actually reviewed or approved as a quoted statement. The instinct to hand that straight to AI to polish into publishable quotes was strong. A launch deadline was close, and the raw material technically came from real customers.
+
+Wanda's team stopped short of publishing them for the reason this chapter names directly: a polished, specific quote attributed by name to a real person, that person hadn't actually seen or approved, is exactly the FTC's targeted category, a testimonial presented as someone's own firsthand word when it wasn't genuinely theirs. She went back to each customer with the drafted quote and asked them to confirm, edit, or decline it before anything went on the launch page. Two approved as written, one asked for a change to a specific number that had drifted from what they'd actually said, and one declined being quoted at all. The launch page ran a day late with three real, confirmed testimonials instead of on time with four fabricated-sounding ones, and the difference didn't cost Wanda anything a client ever noticed. It's a smaller version of the same discipline as Renata's illness-adjacent reviews: the closer an output gets to claiming to be someone's own unmediated word, the more that word needs to have actually come from them.
+
 ## Try this: run the reasonable-person test
 
 Pick one AI-assisted output your business currently sends to clients or customers without any disclosure. Ask honestly: would a reasonable person, learning exactly how this was produced, feel misled?

@@ -26,6 +26,12 @@ Felix runs a small custom furniture workshop and delegated the first pass of pri
 
 Felix didn't fire the task. He added the one check that actually mattered: every quote now gets its final total independently recalculated from the same three numbers, materials, dimensions, labor rate, before it goes out, a task that takes ninety seconds and would have caught the underpriced quote before it ever reached a customer. The drafting still saves him real time. The arithmetic just never gets trusted on its own say-so anymore.
 
+## The judgment call inside a financial task
+
+Not every seam in a financial task is arithmetic, and it's worth naming the judgment-call version this chapter's stricter disqualifier reading was built for. Farrah, whose nonprofit trial appeared earlier in this book, also delegated a first pass of expense reimbursement decisions for staff travel: was a given receipt within policy, did it need a manager's second signature, did a borderline category, a working meal that was arguably also a social one, count as reimbursable at all. The arithmetic on any single reimbursement was trivial, adding a few line items correctly. The actual risk lived entirely in the borderline calls, and those calls depended on institutional context no receipt line item could supply: which donor-restricted funds a given trip's expenses could legitimately draw against, and which staff member's history of borderline claims warranted a closer look this time.
+
+Farrah applied this chapter's stricter reading of chapter seven's first disqualifier and kept every borderline reimbursement decision human, letting the tool handle only the mechanical parts: pulling receipt totals, checking basic policy thresholds, flagging anything ambiguous for her review rather than guessing at it. The volume made this cheap to sustain, most reimbursements weren't borderline at all, so the human review queue stayed short even with every genuinely ambiguous case routed there by design. The distinction that mattered wasn't between arithmetic and judgment in the abstract. It was noticing, task by task, which parts of a single financial process were which, and refusing to let a tool's confidence on the easy ninety percent obscure a judgment call sitting in the other ten.
+
 ## Try this: reconcile one number
 
 Pick one financial task, or one delegated task with a financial number embedded in it, that you currently trust without checking. Recalculate its most recent output independently, from source, the way Felix recalculated his quotes.

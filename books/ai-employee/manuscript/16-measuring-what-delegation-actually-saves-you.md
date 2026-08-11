@@ -28,6 +28,12 @@ Renaldo runs a small catering company and had assumed, without ever timing it, t
 
 Renaldo fired the thank-you-note task, not because AI had failed some abstract test, but because the actual number said so plainly once he looked at it: a task he'd assumed was saving him time was quietly costing him more of it. The proposal task, measured the same honest way, kept running exactly as it had been. Nothing about this required sophisticated tracking, three weeks of a simple time log per task told him what three months of a confident guess never would have.
 
+## The other direction
+
+Soo-ah runs a small tutoring center and had the opposite problem: she'd assumed the AI-drafted rescheduling emails she sent to parents were only a minor convenience, quick enough by hand that automating them barely seemed worth the setup effort. She logged the task for two weeks mostly to have a clean number for a staff meeting, expecting it to confirm the setup wasn't worth much. It didn't. The old version, written by hand, took longer than she remembered, four to six minutes each once she accounted for looking up the family's current schedule and checking for conflicts, something the delegated version now pulled automatically as part of the brief. The logged average came out to ninety seconds per email, correction included, against a genuine six-minute baseline she'd never actually timed before.
+
+The lesson Soo-ah took from the number ran the opposite direction from Renaldo's: a task that felt marginal was worth defending, not questioning, and she stopped nearly cutting it during a slow month specifically because the log gave her a real figure to point to instead of a vague sense that it was "probably fine." Measuring doesn't only catch tasks quietly costing more than they save. It also catches the reverse, a task worth more than it feels like in the moment, which is just as easy to misjudge from memory alone.
+
 ## Try this: log one task for two weeks
 
 Pick one task you're currently delegating and believe is saving you time. For every real instance over two weeks:

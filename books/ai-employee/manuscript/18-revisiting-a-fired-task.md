@@ -24,6 +24,12 @@ Ingrid runs a small veterinary supply distributor and had fired a task the year 
 
 The second revisit, in fall, was different. The specific coverage-term confusion that had failed the task twice now didn't appear across five fresh attempts. Rather than reinstating the task on that strength alone, Ingrid ran chapter two's real brief from scratch, since the version she'd have used a year earlier no longer reflected her current supplier terms, and spot-checked the new attempts against chapter four's method before trusting any of it. Six weeks later the task was running, genuinely, on a task that had been correctly off-limits for most of a year. Nothing about the eventual success required guessing right the first time. It required a habit that kept checking after the exciting part of the decision, the initial firing, was long over.
 
+## When the revisit should keep failing
+
+Not every fired task is waiting for the tool to improve, and it's worth naming the case where a revisit habit correctly produces the same answer every single time. Odalys, from an earlier chapter's tool-shape comparison, had also fired a task once: drafting personalized apology notes for customers whose orders shipped genuinely late, following a real complaint about their specific situation. The disqualifier that caught it wasn't the third one, an expensive single error, the way Ingrid's coverage-term task was. It was the second: the task depended on relationship history the tool structurally couldn't have, which customer had complained twice before, which one had been a loyal buyer for three years and deserved a different tone than a first-time customer's identical complaint.
+
+Odalys revisits that task on the same six-month cadence as everything else on her fired list, and it fails the same disqualifier every time, not because the underlying writing has gotten worse, but because a better model doesn't create relationship history it was never given access to in the first place. That's the honest, useful outcome of a revisit habit applied to a judgment-call or relationship-dependent task rather than an error-rate one: most revisits confirm the firing, and for tasks disqualified on those specific grounds, they're likely to keep confirming it for as long as the underlying limitation, not knowing your specific customers, remains true regardless of how capable the tool otherwise becomes.
+
 ## Try this: schedule your first revisit
 
 For any task currently on your fired list, chapter seven's roster entry should already say why. Add one more line to that same entry:
