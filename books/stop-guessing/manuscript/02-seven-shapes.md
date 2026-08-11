@@ -32,6 +32,16 @@ These aren't the only way to categorize AI features, but they cover the overwhel
 
 [KEY-INSIGHT: Zillow's home-buying algorithm, Zestimate-derived and wired directly into automatic purchase offers, was cited by the company's own leadership as the direct cause of the 2021 shutdown of its Zillow Offers division: a predictor shape, in a market with sudden regime change, with no human check absorbing the tail risk before a purchase was committed. || Source: Zillow Group, Inc. Form 10-K, FY2021; company statements on the Zillow Offers wind-down, November 2021.]
 
+## A quieter shape fails just as badly
+
+Zillow's failure was loud eventually, a shutdown and a nine-figure write-down anyone could read about. An extractor shape fails the opposite way: quietly, inside a document nobody re-reads, which makes it worth a second worked example specifically because the damage doesn't announce itself the way a housing write-down does.
+
+In October 2024, the Associated Press reported on Whisper, OpenAI's widely used speech-to-text model, being deployed inside a medical transcription tool built by a company called Nabla, already in use across more than thirty thousand clinicians and forty health systems for an estimated seven million patient visits. Researchers who audited the tool's output found it didn't just mistranscribe unclear audio. It invented content outright: fabricated medications, invented medical histories, and other material no patient or doctor had actually said, appearing in transcripts with the same clean, formatted confidence as the real content around it. One study the AP cited found 187 hallucinated passages across roughly thirteen thousand otherwise clear audio snippets, a rate that, at the deployment scale Nabla reported, implies a meaningful number of clinical records now contain sentences nobody in the room ever spoke.
+
+[KEY-INSIGHT: An Associated Press investigation published October 26, 2024 found that Whisper, OpenAI's speech-to-text model, fabricates content when transcribing audio, including invented medications and medical details that were never actually said. A Whisper-based medical transcription tool built by Nabla was, at the time of reporting, in use by more than 30,000 clinicians and 40 health systems for an estimated 7 million patient visits, and a cited academic audit found 187 hallucinated passages across roughly 13,000 otherwise clear audio snippets. || Source: Associated Press, "Researchers say an AI-powered transcription tool used in hospitals invents things no one ever said," October 26, 2024.]
+
+Compare what actually broke in each story, because the two shapes fail in genuinely different ways worth telling apart. Zillow's predictor was wrong in aggregate, in one direction, at a scale that showed up on a balance sheet the moment the market moved. Whisper's extractor shape is wrong per-instance, in either direction, in a way that never shows up in an aggregate number at all: a fabricated sentence sits inside one patient's chart, read by one clinician, indistinguishable from the transcript's accurate ninety-nine percent unless someone happens to check that specific line against what was actually said. An extractor's failure mode is exactly the one this chapter opened by naming: inventing or dropping a field silently, with no visible hedge, which is precisely why it's the shape most likely to still be running undetected in a system you already trust.
+
 ## The disqualification checklist
 
 Before evaluating how well an AI feature performs, ask whether it should exist in its proposed shape at all. Any yes below is a reason to change the shape, not necessarily to abandon the feature.
@@ -49,6 +59,12 @@ Before evaluating how well an AI feature performs, ask whether it should exist i
 None of this is an argument for caution as a general posture, and it's worth being clear about that, because "when in doubt, don't" is not actually the lesson here. Zillow's own core business, the search and valuation tool that made Zestimate a household name in the first place, still runs a similar underlying model today, informationally, without an automatic purchase attached to it, and it's one of the most-used real estate tools in the world. The model didn't get safer. The shape did.
 
 The skill this chapter is teaching isn't caution. It's precision about where the actual risk in a feature lives, so you can put your energy into the one or two shape decisions that matter instead of treating every AI feature as equally dangerous or equally safe.
+
+## Try this on your own roadmap
+
+List every AI feature you own or are about to own, shipped or planned, one line each. Next to each one, name its shape from the seven above. Most features are actually a chain of shapes rather than one: a support tool that retrieves a policy, generates a reply, and only occasionally escalates is a retriever and a generator stacked together, and the disqualification checklist has to be run against the riskiest shape in that chain, not the average of all of them.
+
+Then run the checklist's five questions against whichever line worries you most, specifically, not against the whole list at once. Most people doing this for the first time find one feature where the honest answer to "is a single error unrecoverable" was never actually asked before it shipped. That's not a reason to panic about it retroactively. It's the same finding chapter thirteen's discovery sprint turns into a five-day, cheap way to answer this question before the next feature, instead of after.
 
 [TAKEAWAYS]
 
