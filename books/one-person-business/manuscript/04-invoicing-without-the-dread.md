@@ -38,6 +38,16 @@ It creates a different failure mode instead, one his template has to handle expl
 
 [AUTHOR-INPUT: your own before-and-after here, the actual number of days it used to take you to send a first follow-up versus how fast it goes out now that it's a saved template, and if you have one, the real story of a client relationship that survived a firm day-30 message because the tone was right]
 
+## The exact prompt
+
+The two-line version from chapter one, in full, worth keeping saved alongside the template itself:
+
+> "Here's this month's hours by project: [paste]. Draft the invoice in my usual format using the template below, flag anything that looks off compared to what we quoted, and don't invent any numbers I haven't given you.
+>
+> Template: [paste your saved invoice template]"
+
+The "don't invent any numbers" line matters more than it looks. A model asked to fill in a document will, left unchecked, sometimes smooth over a gap in the data with a plausible-sounding placeholder rather than flagging it as missing, exactly the same failure mode chapter three's prompt guards against for proposals. Naming it explicitly turns a silent, easy-to-miss error into a visible flag you catch before the invoice goes out.
+
 ## Why the tone matters more than the content
 
 All three messages above say roughly the same thing a frustrated freelancer might blurt out over email at 11 p.m.: you owe me money and I'd like it. What separates them from that version isn't the information, it's the absence of anything a client could read as an accusation. None of them speculate about why the payment is late. None of them threaten anything in the first two messages. They ask a direct, specific question and wait for an answer, which is both more effective and easier to send without agonizing over the wording, because the wording was already decided when you weren't upset.

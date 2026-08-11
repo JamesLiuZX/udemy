@@ -50,6 +50,12 @@ Different rhythm, same underlying shape. Marcus doesn't lose eighteen minutes a 
 
 That's the reason this book follows two businesses instead of one. A weekly-retainer creative practice and a project-based technical one hit the identical structural problem at different points in their rhythm, and a reader who only sees Priya's nightly version might reasonably wonder whether any of this applies to a business that doesn't run on monthly retainers. It does. Where Marcus's version of a chapter's advice looks different from Priya's, later chapters say so directly.
 
+## Why this is solvable now, and wasn't five years ago
+
+It's worth naming directly why this book exists now rather than a decade ago, because the honest answer isn't that freelancers only recently started drowning in admin. Priya's eleven years of it predate every tool this book describes. What's changed isn't the problem, it's that a genuinely useful first-draft partner for the specific kind of writing admin requires, an invoice's tone, a contract's plain-English translation, a proposal that actually reflects what a client said, only became reliably good enough to trust with a quick human review in the last few years.
+
+Older attempts at automating this exact problem, a decade of "smart" invoicing software and canned email templates, automated the format without automating the thinking, which is why they never actually closed the gap this book is about. A rigid template still requires a human to do all the actual composing, just inside smaller boxes. What's different about the systems in the chapters ahead is that the thinking part, matching a specific client's tone, reading a specific clause for risk, drafting a specific difficult message, finally has a genuine first-pass partner, provided the human stays the one deciding and reviewing, the rule this book repeats in every single chapter that follows.
+
 ## What this book will not do
 
 This book will not do your craft for you, and if you came here hoping AI could design the logo, write the copy, or run the client call, that's a different book than this one, and probably a worse business than the one you have now. What it automates is everything around the craft, never the craft itself.

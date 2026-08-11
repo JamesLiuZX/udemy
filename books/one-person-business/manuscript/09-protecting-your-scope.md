@@ -30,6 +30,14 @@ Once you have that read, drafting the "yes, and" message in the client's own est
 
 [AUTHOR-INPUT: your own scope-creep story here, a specific request that crept past the original quote, and how the conversation actually went once you named the cost instead of absorbing it silently]
 
+## The exact prompt
+
+The two-line scope check from earlier in this chapter, in full:
+
+> "Here's the scope I originally quoted: [paste from your proposal]. Here's a new request from the client: [paste]. Is this inside or outside what was quoted, and by roughly how much? Don't soften the answer to avoid an awkward conversation, just tell me plainly."
+
+That last line exists because a model asked a question this sensitive will sometimes hedge toward the more comfortable-sounding answer, the same way a person avoiding conflict might, unless told explicitly not to. Asking for a plain answer rather than a diplomatic one keeps the check honest, which is the entire reason it's useful: a scope check that quietly tells you what you want to hear is worse than no check at all.
+
 ## Marcus's script starts from a document, not a feeling
 
 Priya's version of the two-line check works from memory and a general sense of what she quoted. Marcus has an advantage here that's worth naming, because it's a direct payoff of a decision made two chapters earlier rather than a new skill: chapter three's sixth brief section, the one naming exactly what's out of scope on every fixed-price proposal, means his version of the check isn't "does this feel like extra work," it's "does this appear on the explicit not-included list I already sent the client and they already signed."

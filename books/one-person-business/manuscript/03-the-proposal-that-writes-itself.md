@@ -28,6 +28,24 @@ A client who reaches out to three freelancers on the same afternoon isn't just c
 
 The fifteen-minute brief doesn't just produce a better document. It makes same-day genuinely achievable on a normal working day, which the forty-five-minute version rarely was once client work, the actual paid craft, was already competing for the same hour.
 
+## The exact prompt
+
+Here's the actual text Priya types once her five-part brief is filled in, worth using close to verbatim rather than reinventing each time:
+
+> "Using the brief below, write a proposal in my voice, matching the structure and tone of the example proposal. Open by naming the client's specific situation in language that echoes what they said, not generic category language. Move directly from their specific problem to my specific approach, no general capabilities section. Keep it as short as the content allows. Flag anywhere you had to guess at something the brief didn't cover.
+>
+> Situation: [paste]
+>
+> Constraints: [paste]
+>
+> Example proposal: [paste in full]
+>
+> What done looks like: [paste]
+>
+> What I know that wasn't written down: [paste]"
+
+That last line, asking the model to flag its own guesses, does real work. It turns a silent gap, the model quietly inventing a plausible-sounding detail the brief never actually supplied, into a visible one you catch on the read-through instead of one that ships in a signed proposal.
+
 ## Why this isn't about writing a longer proposal
 
 If the personalized version sounds like it should be a much longer document than the old template, that's not actually the shift, and it's worth being direct about it. A proposal that specifically names a client's real situation is often shorter than a generic one, because it can skip the parts a generic proposal has to include to cover every possible client: the broad capabilities overview, the hedge language covering situations that don't apply here. Specific and long are different qualities. This chapter is asking for the first one, not the second.

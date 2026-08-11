@@ -40,6 +40,16 @@ Priya's weekly tax set-aside works cleanly against a roughly steady monthly reta
 
 His fix is to trigger the set-aside off the payment, not the calendar: the same day a milestone invoice clears, before it touches his main account, his weekly routine's third step runs immediately rather than waiting for its usual weekly slot. A large payment gets its tax percentage moved out within the same day it arrives, every time, regardless of where in the week that lands. The habit is identical to Priya's in spirit, immediate, automatic, no willpower required at the moment it matters, just triggered by a different event for a business whose income doesn't arrive on a predictable schedule.
 
+## The exact prompt
+
+For the weekly categorization pass:
+
+> "Categorize these transactions against standard small-business expense categories: software, travel, meals, equipment, professional services, other. For anything ambiguous, don't guess silently, list it separately as 'needs review' with a one-line reason it's unclear.
+>
+> Transactions: [paste this week's list from your bank or card statement]"
+
+The "needs review" instruction is the whole point of this prompt, more than the categorization itself. A model asked only to categorize will categorize everything, including the ambiguous charges, with the same flat confidence as the obvious ones, which is exactly the confident-but-not-necessarily-correct pattern chapter six already warned about for contracts. Forcing a visible third pile turns silent guessing into a short list you actually look at.
+
 ## What AI genuinely helps with here, and where it stops
 
 Categorizing transactions and flagging ambiguous ones is a task AI does well: pattern matching against clear categories, at speed, with the tedium removed. What it should never be trusted to do alone is decide, with confidence, whether a specific borderline expense is actually deductible under your situation. Tax rules have real edge cases, they vary by where you live and how your business is structured, and a model answering confidently is not the same as a model answering correctly, the identical warning chapter six gave about contracts. Flag the ambiguous ones. Ask your accountant about them at the one meeting a year this system makes short instead of dreadful.

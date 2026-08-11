@@ -38,6 +38,18 @@ Marcus's version of staying visible looks nothing like a newsletter, and naming 
 
 His one-hour system produces the same weekly cadence but a completely different artifact: not a public post, but a short, personal update sent directly to that dozen-person list, what he shipped, what he learned, what kind of work he has room for next month. No public platform involved at all. The topic-selection, drafting, and editing structure is identical to Priya's; only the destination changes, because the trust Nielsen's research describes doesn't require an audience of thousands to work. It requires staying recent and specific in the minds of the dozen people actually positioned to recommend you.
 
+## The exact prompt
+
+For the thirty-minute drafting block:
+
+> "Turn these rough notes into a [post / newsletter / update] matching my usual voice, using the reference below. Lead with the specific client situation or lesson, not a general topic introduction. Keep it roughly the length of the reference examples, not longer.
+>
+> Notes: [paste this week's topic, in whatever rough form you jotted it down]
+>
+> Voice reference: [paste your saved email or past-post reference]"
+
+Notice this reuses the same voice reference chapter five built for email, rather than requiring a separate one. One saved reference, pointed at from multiple prompts across multiple chapters, is exactly the kind of small, deliberately built asset chapter two's "stack, not sprawl" argument is actually about: reuse what you've already built carefully once, instead of creating a new bespoke version for every new use case.
+
 ## Why this isn't about posting more
 
 If the one-hour system sounds modest compared to what marketing advice usually recommends, that's deliberate. The evidence above points at time, not volume, as the actual constraint, and a system built to survive a busy week has to cost less than an hour or it will get dropped exactly like the old one did. One genuinely useful post a week, tied to real client work and written in your own voice, beats five generic posts nobody asked for and you resented writing.

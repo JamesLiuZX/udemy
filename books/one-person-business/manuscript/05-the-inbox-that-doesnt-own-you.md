@@ -44,6 +44,14 @@ His fix is a small addition to the draft-and-send bucket: any draft going to a c
 
 The draft-and-send bucket is where most of the eleven hours actually lives, and it's also where a five-minute setup pays off for months. Collect eight or ten emails you're genuinely proud of, the ones that sound like you: warm but direct, or brisk and efficient, whatever your real client voice actually is. Save them together as a reference. Every time you ask for a draft, point at that saved reference instead of describing your tone in the abstract, the same way chapter three's proposal brief pointed at a past proposal instead of explaining what "personalized" means each time. A model matching real examples produces something closer to your voice on the first try than one working from an adjective like "friendly."
 
+## The exact prompt
+
+For the draft-and-send bucket, once your voice reference exists:
+
+> "Here's an email I need to reply to: [paste]. Here's a reference of emails that already sound like me: [paste voice reference]. Draft a reply matching that voice, not a generic professional tone. If the email is asking something you don't have enough context to answer confidently, say so instead of guessing."
+
+The last sentence is the one worth never dropping. An email reply that guesses at a fact it doesn't actually have, a deadline, a price, a decision you haven't made yet, is a worse failure than a slow reply, because it goes out sounding confident and specific about something that was never actually confirmed. Asking the model to flag its own uncertainty turns that risk into a visible note in the draft instead of a wrong promise sitting in a client's inbox with your name on it.
+
 ## What this chapter will not do
 
 This chapter will not tell you to auto-send anything. Every draft in the "draft and send today" bucket gets read by you before it leaves your outbox, always, without exception. The task this chapter automates is the blank page, not the judgment call about what a specific client needs to hear. A drafted email that goes out unread is how a wrong number, a mismatched tone, or a promise you didn't mean to make ends up in a client's inbox with your name on it.

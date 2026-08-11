@@ -40,6 +40,20 @@ What it doesn't save is the moment a contract is genuinely unusual, high-value, 
 
 [AUTHOR-INPUT: your own story here, a specific clause you almost missed, or almost signed, that a plain-English pass caught, and what you actually did about it]
 
+## The exact prompts
+
+All three passes, worth saving together as a sequence:
+
+> **Pass one:** "Summarize this contract section by section in plain English, no legal jargon retained. Where a section is genuinely ambiguous rather than just densely worded, say so explicitly instead of picking one interpretation silently.
+>
+> [paste contract]"
+>
+> **Pass two:** "Review this contract for anything unusual, one-sided, or worth a question before signing, specifically: payment terms that favor the other party heavily, IP or ownership language broader than the project needs, an indemnification clause that exposes me personally, a termination clause with no notice period[, and pre-existing IP or open-source license conflicts, if applicable]. List each flag with the specific clause it comes from."
+>
+> **Pass three:** "Turn each flag above into one plain, non-confrontational question I could send to the other party."
+
+Pass two's bracketed addition is Marcus's fifth category from earlier in this chapter; adjust the named categories to your own field's specific risks rather than using the four generic ones unmodified. A flag list built from named categories that don't actually match your kind of work misses exactly the risk that matters most to you.
+
 ## Why having any real contract matters more than any single clause
 
 Step back from the specific flags for a moment, because the choice this chapter really cares about happens earlier than any clause-by-clause read: whether a written contract exists at all.

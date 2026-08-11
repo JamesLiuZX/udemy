@@ -28,10 +28,15 @@ Run this against every tool, app, and subscription your business currently touch
 Build once per type of engagement, reuse with specifics swapped in.
 
 > **The situation:** what the client actually said, in their own words.
+>
 > **The constraints:** budget hints, timeline pressure, anything they specifically flagged.
+>
 > **The example:** your strongest past proposal, pasted in full, as voice and structure reference.
+>
 > **What done looks like:** the specific scope you're quoting, not a general description of your services.
+>
 > **What only you know:** anything from the actual conversation that never made it into writing.
+>
 > **(Project-based work only) What's out of scope:** what's explicitly not included, what assumptions the price depends on, what happens if either turns out wrong.
 
 [PULLQUOTE: Every template here already did its work once, inside a real story. What's left is the part worth keeping.]

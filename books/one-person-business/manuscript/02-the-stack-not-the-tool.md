@@ -36,6 +36,14 @@ If the word "stack" sounds like an invitation to go shopping for software, that'
 
 The actual skill is choosing deliberately: for each piece of the admin workload, deciding on purpose whether it needs its own small, specific solution, and building that solution once instead of either ignoring the problem or reaching for whichever all-in-one tool promised to make it disappear.
 
+## How to choose when two options look equally good
+
+The six-question audit sorts most tools quickly, but it leaves a genuinely hard case unresolved: two options that both survive all six questions, both do the one job well, and both cost roughly the same. Freelancers routinely lose real hours to this decision specifically, comparing feature lists for a tool that will get maybe twenty minutes of attention a week, because a wrong-feeling choice here feels expensive in a way that's out of proportion to what's actually at stake.
+
+Two tie-breakers cut through it faster than another round of feature comparison. First, which option requires less setup to reach its useful state, because a stack built from several small pieces only stays small if each piece is genuinely quick to stand up; a marginally more powerful tool that takes a weekend to configure properly is rarely worth it against one that's usable in twenty minutes. Second, which option is easier to leave, meaning your data exports cleanly and your habits transfer to something else without much friction, because chapter nine's point about a stack needing occasional re-checking applies to the tools themselves, not just the prompts running inside them. A tool you can leave easily is a tool you chose deliberately. One you can't is a tool that's quietly chosen you.
+
+When neither tie-breaker resolves it, the honest answer is that it doesn't matter which one you pick. Spending another hour comparing two options that both cleared the six-question bar is itself the kind of low-value admin task chapter one's time audit exists to catch.
+
 ## What this book will not do
 
 This book will not recommend a specific brand-name product for each piece of the stack, and that's deliberate, not an oversight. Software changes constantly; a specific app recommended today is a reasonable chance of being acquired, changed, or discontinued before this book is out of print. What it teaches instead is the underlying shape of each solution, the prompt, the template, the workflow, portable to whatever specific tool you're already using or will be using in two years.

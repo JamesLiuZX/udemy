@@ -49,6 +49,20 @@ What this chapter adds isn't a retraction of any of that. It's the missing edge:
 
 [/TAKEAWAYS]
 
+## The rationalizations that override the three questions
+
+Knowing the three questions and actually asking them under pressure are different skills, and it's worth naming the specific excuses that tend to short-circuit the check before it happens, because they're more persuasive in the moment than they sound written down here.
+
+**"I'm probably overthinking this."** Usually said right after a genuinely accurate first instinct that something feels off. The discomfort is data, not an overreaction to talk yourself out of.
+
+**"A professional would just tell me the same thing anyway."** Sometimes true, and the twenty minutes to confirm it is cheap insurance against the times it isn't, which is exactly when it matters most.
+
+**"I don't have time to deal with this properly right now."** The single most dangerous version, because it's often genuinely true and still the wrong conclusion. A rushed decision on something serious is a worse use of that same scarce time than a short delay to get it checked.
+
+**"The tool sounded really confident."** Addressed directly earlier in this chapter, and worth repeating as its own line because it's the most common rationalization of all: confidence was never evidence of correctness, on this page or on a screen.
+
+Notice what all four have in common: none of them are actually arguments that the situation is safe. They're all reasons it would be more convenient right now if it were. The two-minute check below exists specifically to separate those two things when a rationalization is already halfway to talking you out of asking.
+
 ## Try this: the two-minute professional check
 
 Next time a client, a contract, or a tax question makes you reach for AI, run the situation through these three prompts before you act on the answer, out loud or on paper, in under two minutes:
