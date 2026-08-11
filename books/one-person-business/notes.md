@@ -5,9 +5,34 @@ pattern as the other books.
 
 ## Status
 
-- Chapter 01 written and verified-pending-signoff: built, rendered pages
-  visually inspected, `qc.py` clean beyond the standard gates.
-- Chapters 02-10 outlined in `book.yaml`, files don't exist yet.
+All 10 chapters are now written, built, and visually inspected, individually
+(`--only NN`) and as the full assembled `master.pdf`. `qc.py` (authoring mode)
+is clean except the standard gates: `verified: false` and 5 unresolved
+`[AUTHOR-INPUT: ...]` markers (chapters 04, 06, 07, 08, 09), all intentionally
+left blocking for the real author, per `books/CLAUDE.md` §1. No filler/LLM-tell
+warnings, no em dash failures, no malformed `[KEY-INSIGHT: ...]` markers.
+
+Each chapter has one `[KEY-INSIGHT: ...]`, sourced from a live search at
+writing time (not recalled from memory): Bonsai late-invoice data (04),
+McKinsey's 2012 "Social Economy" email-time benchmark (05), the 2018 LawGeex
+AI-vs-lawyers NDA study (06), a 2024 Constant Contact small-business marketing
+survey (07), IRS Fact Sheet FS-2017-12 on estimated-tax penalties (08), PMI's
+2024 Pulse of the Profession scope-creep finding (09), and Mata v. Avianca,
+678 F. Supp. 3d 443 (S.D.N.Y. 2023) (10). Full citation lines are in the
+manuscript files themselves.
+
+EPUB builds clean (`build_epub.py`). `qc.py --release` currently fails on
+two things, both expected at this stage, not bugs: the 5 `[AUTHOR-INPUT]`
+markers, and total page count. The full interior PDF is **54 pages**
+(chapters average ~1,150 words each, consistent with chapters 01-03's
+established length), well under the `target_pages: [110, 160]` band in
+`book.yaml`. Closing that gap means either a deliberate pass to substantially
+deepen each chapter (more worked examples, longer prompt walkthroughs, real
+before/after numbers once `[AUTHOR-INPUT]` is filled) or revising
+`target_pages` to match the book's actual voice. That's an editorial call
+for the real author, not something to solve by padding chapters to hit a
+number. Gutter margin (0.375in, correct for the 24-150pp band) and font
+embedding both check out at the current page count.
 
 ## Register
 
