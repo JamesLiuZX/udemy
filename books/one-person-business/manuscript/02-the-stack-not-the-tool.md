@@ -1,0 +1,48 @@
+# The Stack, Not the Tool
+
+Priya's first move, the week after her 11 p.m. Thursday, was to go looking for one tool that would fix all of it. A single "AI business assistant" that promised to handle invoicing, client email, proposals, and bookkeeping in one dashboard, all from one login. She signed up for a free trial that same night, hopeful in the specific way you're hopeful right after a bad night, when a single fix feels not just possible but overdue.
+
+Three weeks later she'd stopped opening it. The invoicing feature was fine but not as good as a dedicated invoicing tool. The email drafting was generic, worse than what she could get from a tool built only for that one job. The dashboard itself became one more thing to check, one more login, one more place a task could get lost, and it hadn't actually replaced any of her old habits, just sat next to them, unused, another tab she kept meaning to close.
+
+This isn't a story about picking the wrong all-in-one tool. Priya tried three different ones over the following months, and it happened again each time, for a structural reason that has nothing to do with which specific product she chose.
+
+## Why the all-in-one promise doesn't hold
+
+A tool that tries to do five different jobs well enough for everyone ends up doing each of those five jobs adequately for almost no one. Invoicing has its own specific needs: payment terms, tax handling, a format clients actually recognize as an invoice. Client email has a completely different set of needs: tone-matching, thread context, timing. A tool built to be good at all five spreads its actual engineering effort across all five, and the result is a product that's never anyone's first choice for any single job, only ever a compromise chosen for the other four.
+
+[KEY-INSIGHT: Even at the enterprise scale, tool sprawl is a real and expensive failure mode, not an argument for more tools of any kind: SaaS-asset research finds companies routinely accumulate hundreds of underused applications, with roughly 30% of software spending going toward unused licenses and redundant tools. The lesson isn't "add more software." It's that an undisciplined pile of tools and one bloated all-in-one tool fail for the same underlying reason: neither was chosen deliberately for the specific job it needed to do. || Source: aggregated SaaS-asset management research (Zylo, Spendesk, and related industry usage indices), 2025-2026.]
+
+That's the trap on both ends. Too many tools, chosen without discipline, is a real, well-documented failure mode. So is one tool trying to be everything. The fix isn't more software or less software. It's a small, deliberately chosen stack, each piece earning its specific place, connected simply enough that using all of them together doesn't feel like managing five separate jobs.
+
+[PULLQUOTE: A tool that tries to do five jobs well enough for everyone ends up doing each job adequately for almost no one.]
+
+## What "the stack" actually means
+
+Here's the concrete shape this book builds toward, chapter by chapter, rather than a single dashboard: one focused tool or workflow for proposals, built around a template and a specific prompt, covered in chapter three. One for invoicing, covered in chapter four. One for the inbox, chapter five. One for a first-pass contract read, chapter six. One for staying visible without a content calendar eating your week, chapter seven. One for expense tracking, chapter eight. One habit, not really a tool at all, for protecting your scope when a client asks for "just one more thing," chapter nine.
+
+Five or six pieces, not fifty. Each one chosen because it's specifically good at the one job it does, not because it also happens to do four other things passably. And critically, each one built around a saved prompt or template you already trust, the same discipline chapter one's invoice example demonstrated: write it carefully once, reuse it every time after, rather than starting from a blank screen inside a bloated dashboard every single time.
+
+## Why this isn't about collecting more tools
+
+If the word "stack" sounds like an invitation to go shopping for software, that's the opposite of the actual lesson, and worth correcting directly. The goal of this book is not five new subscriptions. Several of the chapters ahead use a tool you already have, an AI chat interface you're probably already paying for, with a better-built prompt behind it, not a new piece of software at all. The proposal chapter and the inbox chapter in particular are mostly about what you type, not what you install.
+
+The actual skill is choosing deliberately: for each piece of the admin workload, deciding on purpose whether it needs its own small, specific solution, and building that solution once instead of either ignoring the problem or reaching for whichever all-in-one tool promised to make it disappear.
+
+## What this book will not do
+
+This book will not recommend a specific brand-name product for each piece of the stack, and that's deliberate, not an oversight. Software changes constantly; a specific app recommended today is a reasonable chance of being acquired, changed, or discontinued before this book is out of print. What it teaches instead is the underlying shape of each solution, the prompt, the template, the workflow, portable to whatever specific tool you're already using or will be using in two years.
+
+It also won't pretend a stack, once built, runs itself forever. A prompt that worked perfectly in March can quietly drift by June, a client's needs change, a tool updates its own behavior without asking you. Chapter nine exists specifically because even a well-built stack needs active protecting and occasional re-checking, not a one-time setup you never look at again.
+
+[TAKEAWAYS]
+
+- An all-in-one tool that tries to do five jobs ends up doing each one adequately for almost no one. Spreading effort across five jobs means none of them gets the depth a dedicated solution would.
+- Tool sprawl, an undisciplined pile of half-used software, is a real, well-documented failure mode too. The fix isn't more tools or fewer tools, it's deliberate choice.
+- The stack this book builds is five or six pieces, each earning its place for one specific job, not fifty apps and not one bloated dashboard.
+- Most of this stack is a saved prompt or template behind a tool you already have, not new software to buy. Read the chapters ahead expecting to build habits, not a shopping list.
+
+[/TAKEAWAYS]
+
+## Where this goes next
+
+Chapter three starts building, with the first and often most dreaded piece: the proposal. Every chapter after it follows the same pattern, one piece of the admin workload, one deliberately built solution, something you keep and reuse, not a concept to remember and forget.
