@@ -375,6 +375,14 @@ def check_lectures(lectures, course: dict, rep: Report) -> None:
             n = raw.count("[INSTRUCTOR-INPUT")
             rep.fail(f"{tag} has {n} unfilled [INSTRUCTOR-INPUT] marker(s). "
                      f"These are the moments the course depends on you for.")
+        # docs/09-visual-standard.md §2: a [SCREENSHOT-NEEDED: ...] marker
+        # records a real-tool screenshot only the author's logged-in account
+        # can capture. It blocks release exactly like INSTRUCTOR-INPUT does.
+        if "[SCREENSHOT-NEEDED" in raw:
+            n = raw.count("[SCREENSHOT-NEEDED")
+            rep.fail(f"{tag} has {n} open [SCREENSHOT-NEEDED] marker(s). "
+                     f"Capture the annotated screenshot(s) and replace the "
+                     f"marker(s) before release (docs/09-visual-standard.md §2).")
 
         est = lec.estimated_seconds(wpm) / 60
         if est > MAX_LECTURE_MINUTES:

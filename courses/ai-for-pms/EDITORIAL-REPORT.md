@@ -308,3 +308,70 @@ the `voice: human` lectures, the production TTS pass, the release gate,
 and the promo video. This pass only touched narration, slide layout, and
 `course.yaml` marketing copy: it neither closes nor reopens any item on
 that list.
+
+---
+
+## 7. Visual-standard pass (docs/09), 2026-08-11
+
+A dedicated audit of all 102 lectures against `docs/09-visual-standard.md`
+§2, run after the story pass above concluded.
+
+### 7.1 The audit result
+
+The visual floor was already met before this pass touched anything: every
+substantive lecture carries at least one figure, mermaid diagram, table,
+or metrics band. The only lectures with none are the twelve section
+intros, the eleven recaps, and 0.1, exactly the connective-tissue
+exceptions docs/04 §7's severity note anticipates, and none of them
+warrants a decorative addition. Sections 4 and 9 already use the `trend`
+and `grid` figure kinds docs/04 §6 asked for (4.5, 9.1). Full-course QC
+stood at 0 warnings before and after this pass.
+
+### 7.2 What this pass added
+
+**The screenshot lane** (docs/09 §2). Three lectures genuinely teach or
+lean on a real tool surface, and each now carries a `[SCREENSHOT-NEEDED]`
+marker with capture instructions:
+
+- `2.6` (in frontmatter notes): a current public model-card benchmark
+  table, annotated to the two things the lecture teaches learners to
+  find. Public and headlessly capturable; waiting only on a slide-DSL
+  image-embed lane, which does not exist yet (see 7.3).
+- `6.2` (on the tool-call diagram slide, rendered and inspected): the
+  author's own assistant-connector settings showing a real Workspace or
+  Notion connection, annotated to the permission-scope line.
+- `10.4` (in frontmatter notes): a real vibe-coding session from the
+  author's own account, cropped to prompt and generated diff.
+
+No other lecture clears the "teaches a tool surface" bar: the course is
+deliberately judgment-led, its numbers-bearing visuals are all
+pipeline-generated (the only lane allowed to carry them), and adding
+screenshots of surfaces the course doesn't actually teach would be
+decoration.
+
+**The missing gate.** docs/09 §2 says `[SCREENSHOT-NEEDED]` markers
+"block the release build like INSTRUCTOR-INPUT does," but `qc.py` never
+implemented that. Implemented now, next to the INSTRUCTOR-INPUT check.
+Verified against both courses: the three markers above fail correctly,
+and ai-ugc-ads's ten pre-existing markers (added by its own
+visual-standard session) are now actually enforced instead of decorative.
+
+### 7.3 Flagged for the pipeline, not silently built
+
+The slide DSL has no image-embed lane, so even a public, headlessly
+capturable screenshot (2.6's) currently has nowhere to land on a slide.
+That lane (markup.py image directive + house-style annotation pass per
+docs/09 §2's mechanics) is the one piece of pipeline the screenshot
+standard still needs. Flagged here rather than built mid-pass: it is
+shared infrastructure both courses will use, and it deserves its own
+focused session rather than a bolt-on at the tail of an audit.
+
+### 7.4 QC state after this pass
+
+107 fail · 0 warn: the 102 sign-off gates, the 4 INSTRUCTOR-INPUT
+markers in 11.5, and the 3 new SCREENSHOT-NEEDED markers, every one an
+intentional block owned by the instructor or the capture session. Zero
+warnings. All three touched lectures re-rendered and their changed
+slides visually inspected (6.2's marker renders below the diagram; 2.6's
+sits in notes after a first placement made the table slide dense, caught
+by QC's own density warning and fixed).
