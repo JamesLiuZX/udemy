@@ -183,6 +183,15 @@ sections:
   - id: 3
     title: "Agent #1: Inbox Triage"
     goal: "Full build, screen by screen; ships C01."
+    lectures:
+      - {id: "3.0", title: "Section intro", duration: 1}
+      - {id: "3.1", title: "The job description for this agent", duration: 6}
+      - {id: "3.2", title: "Build part 1: connecting the inbox", duration: 6}
+      - {id: "3.3", title: "Build part 2: the system prompt, where the judgement lives", duration: 8}
+      - {id: "3.4", title: "Build part 3: routing the decision", duration: 7}
+      - {id: "3.5", title: "Testing without spending a call", duration: 6}
+      - {id: "3.6", title: "Connecting it for real, and shipping your template", duration: 7, hands_on: true}
+      - {id: "3.7", title: "Section recap", duration: 2}
   - id: 4
     title: "Agent #2: Meeting Notes to Action Items"
     goal: "Full build; ships C02."
