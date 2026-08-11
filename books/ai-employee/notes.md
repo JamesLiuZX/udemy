@@ -261,6 +261,16 @@ Progress (updated per chapter as expansion happens):
       for 2019-founded firms), a worked example (Yusuf, eighteen months
       of correctly-reasoned deliberation resolved in one afternoon). 949
       words, 4pp standalone. Rendered pages checked.
+- [x] 23 Conclusion: The Manager You're Becoming — new chapter, a genuine
+      capstone the book lacked (chapter 10 closed the original 10-chapter
+      arc tactically; this closes the now much longer book thematically).
+      Returns to chapter one's two opening people, names the single
+      orientation underneath all twenty-two chapters, and states plainly
+      what the book asked the reader to give up (a "set and forget" tool,
+      a category-level verdict on AI) and what actually measures
+      progress. No `[KEY-INSIGHT]`; a synthesis chapter, not a new claim.
+      1,065 words, 4pp standalone. Rendered pages checked. Sits between
+      chapter 22 and the templates appendix.
 - [ ] Additional chapters as needed to close the remaining gap to
       [180, 240]pp (still well short after 11-16; author directive is to
       keep adding genuine chapters rather than pad, checking in if

@@ -114,6 +114,9 @@ chapters:
   - id: "22"
     title: "The Cost of Never Trying"
     file: manuscript/22-the-cost-of-never-trying.md
+  - id: "23"
+    title: "Conclusion: The Manager You're Becoming"
+    file: manuscript/23-conclusion-the-manager-youre-becoming.md
   # "15 Templates and Worksheets" (manuscript/15-templates-and-worksheets.md)
   # is deliberately placed LAST in this list, after every substantive
   # chapter, even though its id/filename predate later-added chapters.
