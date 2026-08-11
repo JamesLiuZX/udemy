@@ -1,0 +1,256 @@
+# =============================================================================
+# Story bible: the running case that threads course #2.
+# See docs/04-quality-bar.md §2 and CLAUDE.md §10. Course #2 gets the fully
+# named serial reserved for it: one product, one brand, one tiny cast, followed
+# from first brief through a failed batch, a pre-flight catch, a real test,
+# fatigue, and a scaled winner.
+#
+# Rules, same as course #1's ledger:
+#   - Every fact quoted about Harlan Supply Co. comes FROM this file. If a
+#     lecture needs a new fact, add it here first, then use it. Never let two
+#     lectures state the same fact with a different value.
+#   - This file is written BEFORE any lecture, per the section-0-first order in
+#     new-course. Extend `callbacks` as each use is actually written; do not
+#     let this file describe a callback that the lectures don't carry.
+#   - `numbers` is read literally by qc.py's story-continuity check
+#     (docs/04-quality-bar.md §7): a number here that shows up in narration
+#     with a different value is flagged. Keep values exact and round.
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# The brand
+# ---------------------------------------------------------------------------
+brand:
+  name: "Harlan Supply Co."
+  founded: "14 months before the course's present tense"
+  category: "graduated compression socks for people on their feet 10+ hours a shift"
+  hero_sku: "The Harlan Crew Sock, 3-pack"
+  positioning: "medical-grade support without the beige, priced for a nurse's budget, not an athlete's"
+  why_unglamorous: >-
+    Not a beauty or wellness scroll-stopper. A workwear staple bought out of
+    foot pain, re-bought out of habit. Chosen deliberately: the case has to
+    survive real constraints (a real claims boundary, a real thin margin,
+    a channel that already existed before AI creative did) rather than a
+    frictionless category where everything works.
+  stage_at_open: >-
+    One SKU, DTC-only on Shopify, $340k trailing-twelve-month revenue, about
+    380 orders a month. The first year of ads ran entirely on Dana's taste:
+    whichever variant she personally liked best got the budget. That is the
+    habit Section 0 breaks.
+
+# ---------------------------------------------------------------------------
+# The cast
+# ---------------------------------------------------------------------------
+cast:
+  - name: "Dana Whitfield"
+    role: "Founder"
+    established: "0.4"
+    notes: >-
+      Former ER nurse, twelve years on shift before she left to start Harlan.
+      The origin fact she can defend without a study behind it: she wore out
+      three pairs of drugstore compression socks in one winter of twelve-hour
+      shifts before she designed her own. She holds the claims line hard
+      because she has watched a hospital's compliance team reject far smaller
+      overstatements than the ones her early ad drafts make.
+  - name: "Sam Cortez"
+    role: "Media buyer"
+    established: "0.4"
+    notes: >-
+      Freelance performance marketer, brought on part time (15 hours a week)
+      from Section 0 onward. Ran ad accounts for two other small DTC brands
+      before Harlan; neither had a testing system, both ran on the same
+      taste-picks-the-winner habit Dana is about to unlearn. His Harlan case
+      study becomes his own pitch material in Section 10.
+
+# ---------------------------------------------------------------------------
+# The margin structure — locked once, quoted everywhere
+# ---------------------------------------------------------------------------
+economics:
+  price: "$58 for the 3-pack, the hero SKU"
+  cogs: "$16 landed, manufacturing and packaging"
+  fulfilment: "$6 to pick, pack and ship one order"
+  payment_processing: "$2 per order"
+  contribution_margin: "$34 per order before any ad spend (58 minus 16 minus 6 minus 2)"
+  cac_ceiling: "$24 — roughly 70% of the $34 margin, leaving Dana a $10 buffer per order"
+  claims_boundary: >-
+    The socks are engineered to 15-20 mmHg graduated compression, a spec
+    Dana can defend. What she will not let ship: any claim that names a
+    medical outcome or invents a number ("reduces swelling", "prevents
+    clots", any percentage without a study behind it). This boundary is
+    the one Section 6 exists to enforce.
+
+# ---------------------------------------------------------------------------
+# Per-section beats — the arc this case follows across the course
+# ---------------------------------------------------------------------------
+arc:
+  - section: 0
+    beat: >-
+      A real generated ad set for Harlan: four static variants from one
+      brief. Dana and Sam each privately pick a winner before any data
+      exists. Both are wrong about which one actually wins, which is the
+      discovery the whole course explains.
+  - section: 1
+    beat: >-
+      Why zero-cost creative matters at Harlan's numbers specifically: a
+      $3,000 shoot amortised over a handful of ads does not pencil against a
+      $34 margin, but a same-cost batch of 20 AI statics does. The AOV
+      threshold lecture states where Dana would still hire a human: a
+      hypothetical $150+ bundle she hasn't built yet.
+  - section: 2
+    beat: >-
+      The product truth doc gets built: price, margin, the 15-20 mmHg spec,
+      and the claims boundary, written down before any brief exists. Hook
+      taxonomy and awareness levels get mapped to Harlan's actual audiences
+      (a nurse who already searches "compression socks for 12 hour shift"
+      versus a cold retail-worker audience who doesn't know the category
+      exists). The angle map turns that one product truth doc into 20
+      testable angles.
+  - section: 3
+    beat: >-
+      Batch generation turns the Section-2 brief into 20 statics. The first
+      batch ships two failures: Harlan Navy renders as royal blue across
+      several variants, and the "15-20 mmHg" spec overlay garbles into
+      unreadable text. Both are caught and fixed before the set is used.
+  - section: 4
+    beat: >-
+      Sam scripts a 15-second "12-hour shift" hook and a 30-second founder
+      explainer. The first AI avatar draft uses a stock avatar whose licence
+      tier doesn't clear paid social use, caught before any spend and
+      recast with a properly licensed avatar.
+  - section: 5
+    beat: >-
+      The same brief performs differently by placement: Meta rewards the
+      clinical-authority framing (ex-ER nurse, the compression spec), TikTok
+      rewards the raw "12-hour shift" cut with no framing at all.
+  - section: 6
+    beat: >-
+      The pre-flight checklist catches the worst draft of the run: an early
+      cut claims the socks are "clinically proven to reduce swelling by 40%",
+      a number Dana never tested and cannot defend. Killed before it spends a
+      dollar, rewritten to the 15-20 mmHg spec claim instead. The AI avatar
+      video is flagged separately for synthetic-media disclosure and ships
+      with an on-screen caption.
+  - section: 7
+    beat: >-
+      The testing architecture for the fixed, cleared creative set: 8 ad
+      sets built from the strongest angles, $25 a day each, the $24 CAC
+      ceiling as the pass line, and a kill rule of $50 spent with zero
+      add-to-carts.
+  - section: 8
+    beat: >-
+      The "12-hour shift" creative posts a 2.6% CTR and a $19 CAC against a
+      0.9% gut-era baseline: a real winner against seven ad sets that are
+      mostly noise. Weeks later the same creative is tired: frequency past
+      3.4, CTR down to 1.0%.
+  - section: 9
+    beat: >-
+      The winning angle moves from its $25-a-day test ad set to a $400-a-day
+      core campaign. CAC settles at $21, still under the $24 ceiling. The
+      weekly sprint keeps the angle map stocked so a refresh is ready before
+      the next fatigue cycle, not scrambled together after.
+  - section: 10
+    beat: >-
+      Sam's redacted Harlan case study, angle map to scaled winner, becomes
+      the proof of work he pitches with when he takes his first outside
+      client.
+  - section: 11
+    beat: >-
+      The capstone asks the learner to run one full sprint on their own
+      product, structured exactly like Harlan's: brief, batch, pre-flight,
+      test, read, decide.
+
+# Where Harlan Supply Co. is deliberately called back after its Section-0
+# introduction. Append as each callback is actually written.
+callbacks:
+  - lecture: "1.1"
+    use: Harlan's $34 margin as the concrete case for what zero-cost creative changes
+  - lecture: "1.5"
+    use: The AOV threshold, using Harlan's $58 AOV against a hypothetical $150+ bundle
+  - lecture: "2.1"
+    use: The product truth doc built from Harlan's price, margin and claims boundary
+  - lecture: "2.4"
+    use: The angle map, one product truth doc to 20 testable angles
+  - lecture: "3.2"
+    use: Batch generation, one brief to 20 statics
+  - lecture: "3.3"
+    use: The Harlan Navy render failure, brand control
+  - lecture: "3.4"
+    use: The mangled 15-20 mmHg overlay, text on image
+  - lecture: "4.1"
+    use: The licence-tier gap on the first avatar draft
+  - lecture: "6.2"
+    use: The killed 40% swelling claim, claims boundary
+  - lecture: "6.3"
+    use: The AI avatar video's synthetic-media disclosure caption
+  - lecture: "7.2"
+    use: The $24 CAC ceiling and the $50 zero-add-to-cart kill rule, stated as the account's actual numbers
+  - lecture: "8.2"
+    use: The 2.6% CTR, $19 CAC winner against the 0.9% baseline
+  - lecture: "8.3"
+    use: The same creative's fatigue: frequency past 3.4, CTR down to 1.0%
+  - lecture: "9.2"
+    use: The scale-up from $25 to $400 a day and the CAC settling at $21
+
+# Canonical numbers. A different value for any of these in any lecture is a
+# continuity bug; qc.py's continuity check (docs/04 §7) matches on them.
+numbers:
+  - value: "$58"
+    established: "0.4"
+    meaning: Harlan Crew Sock 3-pack retail price, the hero SKU
+  - value: "$16"
+    established: "0.4"
+    meaning: Landed COGS per 3-pack, manufacturing and packaging
+  - value: "$6"
+    established: "0.4"
+    meaning: Fulfilment cost per order, pick pack and ship
+  - value: "$2"
+    established: "0.4"
+    meaning: Payment processing cost per order
+  - value: "$34"
+    established: "0.4"
+    meaning: Contribution margin per order before ad spend
+  - value: "$24"
+    established: "1.5"
+    meaning: CAC ceiling, the maximum cost per purchase before an order stops paying for itself
+  - value: "15-20 mmHg"
+    established: "2.1"
+    meaning: The graduated compression spec Dana can defend without a study
+  - value: "20"
+    established: "2.4"
+    meaning: Number of testable angles the angle map produces from one product truth doc
+  - value: "20"
+    established: "3.2"
+    meaning: Number of statics batch-generated from one brief, same count as the angle map by design
+  - value: "8"
+    established: "7.2"
+    meaning: Number of ad sets in Harlan's first testing architecture
+  - value: "$25"
+    established: "7.2"
+    meaning: Daily budget per ad set in the first test
+  - value: "$50"
+    established: "7.2"
+    meaning: Kill-rule spend threshold when an ad has zero add-to-carts
+  - value: "40%"
+    established: "6.2"
+    meaning: The fabricated swelling-reduction figure the pre-flight checklist killed; never a real Harlan claim
+  - value: "0.9%"
+    established: "8.2"
+    meaning: Gut-era baseline CTR before the testing machine existed
+  - value: "2.6%"
+    established: "8.2"
+    meaning: CTR of the winning "12-hour shift" creative during the first test
+  - value: "$19"
+    established: "8.2"
+    meaning: CAC of the winning creative during the first test
+  - value: "3.4"
+    established: "8.3"
+    meaning: Frequency at which the winning creative's fatigue became visible
+  - value: "1.0%"
+    established: "8.3"
+    meaning: CTR of the winning creative after fatigue set in
+  - value: "$400"
+    established: "9.2"
+    meaning: Daily spend on the winning angle once scaled from test to core campaign
+  - value: "$21"
+    established: "9.2"
+    meaning: CAC of the winning angle once scaled, still under the $24 ceiling
