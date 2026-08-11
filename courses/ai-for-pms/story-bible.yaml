@@ -1,0 +1,86 @@
+# =============================================================================
+# Story bible: the serial case study threaded through the course.
+# See docs/04-quality-bar.md §2. Rules:
+#   - Every story fact quoted in a lecture comes FROM this file. Never re-invent.
+#   - Numbers here are canonical. If a lecture needs a new fact, add it here
+#     first, then use it. qc.py's continuity check matches against `numbers`.
+#   - Section 0 shipped before this file existed; its figures are the seed and
+#     are recorded here verbatim. Do not change them.
+# =============================================================================
+
+company:
+  name: Fernhill
+  what: Mid-market subscription-billing platform (B2B SaaS)
+  staff: 140
+  customers: 9000          # business customers
+  support_team: 14         # agents
+  ticket_volume_per_day: 600
+
+feature:
+  name: Ticket summarisation
+  what: >-
+    AI summaries of inbound support tickets so agents can triage without
+    reading every thread. The feature the learner follows from demo to
+    production incident, and the template for their own capstone.
+
+cast:
+  - name: Priya
+    role: Support lead
+    function: Wants the feature, owns the outcome, presents the programme in §10
+  - name: Marcus
+    role: Staff engineer
+    function: Sceptical, wins arguments with numbers; the learner learns to argue like him
+  - name: Dana
+    role: CFO
+    function: Appears twice, once to approve (§3) and once to ask what it costs (§7)
+
+# Canonical numbers. Format: value, where it is established, what it means.
+numbers:
+  - value: "4471"
+    established: "0.4"
+    meaning: The ticket. Double charge, April 1st deadline, overdraft risk, mismatched account/billing emails.
+  - value: "2, 3, 3, 4, 5"
+    established: "0.4"
+    meaning: Five reviewers score the summary without a rubric; three-point spread.
+  - value: "3, 3, 3, 3, 4"
+    established: "0.4"
+    meaning: Same reviewers with the six-question rubric; spread collapses to one.
+  - value: "68%"
+    established: "0.3"
+    meaning: Baseline pass rate, 34 of 50 on the golden set. The number Section 4 improves.
+  - value: "92%"
+    established: "3.2 (planned)"
+    meaning: Target pass rate written into the PRD threshold, reached by prompt v3 in §4.
+  - value: "50"
+    established: "0.3"
+    meaning: Golden set size.
+  - value: "0.95^10 = 0.60"
+    established: "6.3 (planned)"
+    meaning: Marcus's reliability math against the auto-refund agent proposal.
+  - value: "1 in 400"
+    established: "8 (planned)"
+    meaning: Tail failure rate of the incident case; at 600 tickets/day support sees it daily.
+
+timeline:
+  - beat: Demo impresses leadership, feature committed
+    section: 0
+  - beat: Why summaries drop deadlines (mechanism)
+    section: 1
+  - beat: Priya's PRD rewritten from wishes to thresholds; Dana approves
+    section: 3
+  - beat: The instrument gets built; 68% baseline hurts; v3 hits 92%
+    section: 4
+  - beat: Account-history RAG added; retrieval fails on mismatched-email cases
+    section: 5
+  - beat: Auto-refund agent proposed; Marcus kills it with 0.95^10
+    section: 6
+  - beat: Dana's cost question; long-thread power users are under water
+    section: 7
+  - beat: The incident, a summary invents a refund promise; legal review
+    section: 8
+  - beat: Instrumented recovery, the dashboard leadership reads
+    section: 9
+  - beat: Priya presents the programme; learner portfolio mirrors it
+    section: 10
+  - beat: Capstone, the learner runs the playbook on their own feature
+    section: 11

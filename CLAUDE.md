@@ -222,7 +222,12 @@ docs/00-strategy.md        Research: policy, pitfalls, positioning
 docs/01-compliance-checklist.md   Pre-submission checklist
 docs/02-production-playbook.md    Format reference, writing rules, troubleshooting
 docs/03-launch-playbook.md        Title, promo script, pricing, reviews
+docs/04-quality-bar.md            Serial case study, cold opens, presence, QC additions
+docs/05-kdp-playbook.md           The companion book: craft bar, pipeline, Amazon mechanics
+docs/06-growth-engine.md          Channels, asset flywheel, automated growth jobs
+growth/                           Paste-ready automation prompts (cron / Cowork)
 courses/<slug>/course.yaml        Curriculum, landing copy, config (source of truth)
+courses/<slug>/story-bible.yaml   Canonical facts for the serial case study
 courses/<slug>/lectures/*.md      One file per lecture
 courses/_template/                Lecture template
 pipeline/                         build, lecture, markup, slides, render, figures,
