@@ -69,7 +69,19 @@ You will hear a version of this sentence, probably from someone reasonable, unde
 
 The fix borrows a term from clinical trials, which solved this exact problem before product teams had to: pre-registration. Write the pass threshold down, get one other person to see it, and timestamp it, before the eval runs and before anyone has seen a score. Now the conversation in the room isn't "is eighty-seven close enough." It's "we wrote ninety, here's why, do we still believe that," which is a different and much more honest conversation to be having with a deadline in the room.
 
+Clinical trials didn't adopt pre-registration as an abstract best practice. They adopted it after a specific, well-documented failure of exactly this discipline, worth knowing because it shows what "not really representative" and "close enough" look like at a much higher stakes table than a launch review. A 1990s trial of the antidepressant paroxetine in adolescents, run by GlaxoSmithKline and known afterward as Study 329, specified two primary outcome measures and seven secondary ones in its protocol before the trial began, the equivalent of a pre-registered threshold. When the results came in, the drug missed every single one of those nine pre-specified outcomes. It did not beat placebo on any of them. The published paper, appearing in a respected journal in 2001, reported four different, more favorable measures that had never been named in the original protocol, and concluded the drug was "effective and well tolerated" for adolescent depression.
+
+[KEY-INSIGHT: GlaxoSmithKline's Study 329, a 1990s clinical trial of paroxetine in adolescents, pre-specified two primary and seven secondary outcome measures in its protocol. The drug failed to outperform placebo on any of the nine pre-specified outcomes. The paper as published in 2001 instead reported four new, more favorable outcome measures that had not been named in the original protocol, and concluded the drug was "effective and well tolerated," a conclusion later reanalyses found the pre-registered data did not support. || Source: Le Noury et al., "Restoring Study 329: efficacy and harms of paroxetine and imipramine in treatment of major depression in adolescence," BMJ, 2015.]
+
+That's the goalpost move this chapter has been warning about, played out with a drug prescribed to real teenagers rather than a feature launch: not one dishonest number, but nine failed outcomes quietly set aside in favor of whichever measures, found after the fact, told the story the sponsor needed. The fix that followed, years later, was regulatory: clinical trial registries now require the primary outcome to be declared publicly before a trial starts, precisely so a sponsor can't do after the fact what Study 329's authors did. A pre-registered eval threshold is the same fix, borrowed early, before your own version of this story needs a regulator to force it.
+
 Sometimes the disciplined answer really is: don't ship. That costs a date occasionally, and it's supposed to. A threshold that bends every time it's inconvenient was never a threshold. It was decoration, and every number you report after that stops being one anyone has real reason to trust without rechecking it themselves.
+
+## Run the loop this week
+
+Pick the rubric you trust least, the one you built fastest or have never actually tested against a second reviewer. Find a colleague, hand them fifteen real cases and the rubric with no briefing, and score the same fifteen yourself, separately, today. Compare tonight or tomorrow, not next sprint.
+
+Before you look at the disagreements, write down what percentage you'd consider acceptable, and why. That single sentence, written before you see the number, is the entire pre-registration habit this chapter asks for, practiced on something small enough to cost you an afternoon instead of a launch.
 
 [TAKEAWAYS]
 
