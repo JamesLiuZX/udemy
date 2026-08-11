@@ -18,6 +18,14 @@ At a company, that second business has a name, and mostly it isn't yours. Someon
 
 [PULLQUOTE: Every solo business is secretly two businesses, and only one of them is the one you trained for.]
 
+## This isn't a niche problem
+
+It's worth being clear about scale before going any further, because a book aimed at a small, unusual audience reads very differently from one aimed at a condition most working adults will pass through at some point.
+
+[KEY-INSIGHT: Upwork's Freelance Forward study found that 64 million Americans performed freelance work in the prior twelve months, 38 percent of the entire US workforce, contributing an estimated $1.27 trillion in annual earnings to the economy. That's not a fringe labor arrangement or a side hustle statistic. It's more than a third of the working population carrying some version of the second, unpaid business this chapter describes. || Source: Upwork, "Freelance Forward" study, reported via Upwork Inc. investor press release, 2023.]
+
+Priya and the freelancer you'll meet across the rest of this book, a developer named Marcus, aren't outliers dramatized for a case study. They're two shapes of a genuinely common condition, and the specific shape it takes depends heavily on what you sell.
+
 This isn't a productivity problem you fix by working faster. Priya doesn't need to write invoices more efficiently at 11 p.m. She needs the invoice handled so thoroughly that 11 p.m. never has one waiting in it again.
 
 ## What actually changes
@@ -33,6 +41,14 @@ None of the chapters ahead are about becoming a different kind of business owner
 It's worth saying plainly, because the freelance world has a way of turning every operational problem into a character flaw: this was never about Priya lacking discipline. She has more of it than most people with a boss to answer to, or she wouldn't still be in business eleven years in.
 
 The actual problem is that nobody scales down the back-office work when a business scales down to one person. A ten-person studio and a one-person studio both need invoices sent, contracts reviewed, and a pipeline of new work coming in. The ten-person studio splits that across several people, most of whom aren't the one doing the creative work at all. The one-person studio puts all of it on the same person, in the same hours, competing with the actual paid craft every single week. That's not a discipline gap. That's an unreasonable staffing ratio that nobody ever officially assigned to you.
+
+## It looks different depending on what you sell
+
+Marcus, three years into freelance backend development, would tell Priya's Thursday-night story completely differently, and that difference matters more than it first seems. He doesn't bill by the retainer the way Priya does; he bills by the project, usually two to four months of work at a time, which means his version of the second business front-loads instead of trickling out weekly. For him, the job behind the job isn't a steady drip of invoices and inbox triage. It's a brutal two-week stretch at the start of every engagement, scoping the work precisely enough to quote it honestly, drafting the contract, and getting a new client's expectations calibrated before a single line of code gets written, followed by months where the admin mostly goes quiet and the craft takes over entirely.
+
+Different rhythm, same underlying shape. Marcus doesn't lose eighteen minutes a night to an invoice. He loses a full week, sometimes two, at the front of every project to admin that has nothing to do with the code he was hired to write, and because it's front-loaded rather than nightly, it's easier for him to mistake it for "just how consulting works" rather than naming it as the same second business Priya is fighting. It isn't just how consulting works. It's the same unscaled staffing ratio, concentrated into a different part of the calendar.
+
+That's the reason this book follows two businesses instead of one. A weekly-retainer creative practice and a project-based technical one hit the identical structural problem at different points in their rhythm, and a reader who only sees Priya's nightly version might reasonably wonder whether any of this applies to a business that doesn't run on monthly retainers. It does. Where Marcus's version of a chapter's advice looks different from Priya's, later chapters say so directly.
 
 ## What this book will not do
 
@@ -50,6 +66,16 @@ And it won't make a slow-paying client pay faster, or a scope-creeping client st
 - This book automates the business around the craft. It never touches the craft itself, and it isn't legal or tax advice.
 
 [/TAKEAWAYS]
+
+## Try this: a one-week time audit
+
+Before chapter two starts building anything, spend one week finding out what your own version of the gap actually looks like. You don't need special software for this, just five seconds at the top of every hour you work.
+
+- Keep a running list, paper or phone, one line per work session: the time, a rough duration, and one word for what kind of work it was, "craft" or "admin." Don't overthink the label; if you paused the actual paid work to do it, it's admin.
+- At the end of the week, add up each column. Most freelancers doing this for the first time are surprised by which direction they're wrong: some discover admin is a much bigger share than they assumed, others discover it's concentrated in one brutal day rather than spread evenly, which changes what kind of fix actually helps.
+- Circle the single admin task that cost the most total minutes. That's not necessarily the one that felt worst in the moment, the late-invoice dread or the inbox guilt; it's the one the stopwatch says actually won. Chapters three through nine are organized by task specifically so you can skip straight to the one your own week just identified.
+
+This isn't a productivity exercise you need to repeat every month. Once, honestly, is enough to replace a vague sense of "I feel behind" with an actual number you can act on.
 
 ## Where this goes next
 
