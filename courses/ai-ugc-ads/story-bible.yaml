@@ -187,7 +187,7 @@ callbacks:
   - lecture: "8.2"
     use: The 2.6% CTR, $19 CAC winner against the 0.9% baseline
   - lecture: "8.3"
-    use: The same creative's fatigue: frequency past 3.4, CTR down to 1.0%
+    use: "The same creative's fatigue: frequency past 3.4, CTR down to 1.0%"
   - lecture: "9.2"
     use: The scale-up from $25 to $400 a day and the CAC settling at $21
 
