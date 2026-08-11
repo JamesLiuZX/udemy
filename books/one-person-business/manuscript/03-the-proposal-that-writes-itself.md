@@ -2,7 +2,7 @@
 
 Priya's old system for a new inquiry was the same for every client: a saved document called "proposal template," a Sunday evening, and forty-five minutes of swapping in a name, a scope, and a price before sending something that, if she was honest, read almost exactly like the last one. It got the job done. It also wasn't winning her very much.
 
-[KEY-INSIGHT: Analysis of freelance proposal performance across platforms consistently finds a wide gap by quality: generic, templated proposals convert at roughly 1 to 3 percent, while proposals with genuine, specific personalization convert at 15 to 25 percent or more, a five-to-tenfold difference driven almost entirely by how much the proposal demonstrates real understanding of the specific client's situation rather than a swapped-in name. || Source: aggregated freelance proposal win-rate research (Jobbers, Proposify's proposal benchmark analysis, and platform-level Upwork data), 2024-2026.]
+[KEY-INSIGHT: Analysis of freelance proposal win rates finds a real, sizable gap by quality, not just anecdote: fully generic templates convert around 15 to 25 percent, semi-customized proposals, a swapped-in name and a generic nod to the client, rise to roughly 35 to 45 percent, and proposals built around genuine, specific personalization run 55 to 70 percent, more than double the generic rate. The single biggest driver across that range isn't writing quality. It's how much the proposal demonstrates real understanding of the specific client's situation. || Source: Jobbers, "Complete Proposal Win Rate Optimization Guide," proposal performance benchmarks, 2024-2026.]
 
 That gap isn't really about writing quality in the usual sense. Priya's old proposals were perfectly well written. What they lacked was evidence, visible on the page, that she'd actually understood this specific client's situation rather than adapted a generic one to fit. Clients can tell the difference, the same way you can tell a form letter from a real one, and the difference shows up directly in whether they say yes.
 
@@ -72,7 +72,7 @@ His sixth section is short, usually three or four lines: what's explicitly not i
 
 [TAKEAWAYS]
 
-- Generic, templated proposals convert at roughly 1 to 3 percent. Genuinely personalized ones convert five to ten times higher. The gap is mostly about visible evidence of understanding, not writing quality.
+- Generic, templated proposals convert around 15 to 25 percent. Proposals built around genuine, specific personalization run more than double that, 55 to 70 percent. The gap is mostly about visible evidence of understanding, not writing quality.
 - Write the five-part brief before writing the proposal itself: the client's actual situation in their own words, constraints, your strongest past example, the specific scope, and anything you know that wasn't in writing.
 - A personalized proposal is often shorter than a generic one, not longer. It skips the hedge language a generic proposal needs to cover every possible reader.
 - Personalization shifts your odds on winnable proposals. It doesn't guarantee a win on every proposal, and a poor-fit project should still lose.
