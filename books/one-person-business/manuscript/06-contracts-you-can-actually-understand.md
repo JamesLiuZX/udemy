@@ -24,6 +24,14 @@ Here's the actual workflow, built around what a first pass is good for rather th
 
 **Pass three: the question list, not the redline.** Turn the flags into plain questions you'd actually ask the client: "This says the deliverables become your exclusive property on payment, but the agreement doesn't define what happens to my source files if you cancel mid-project. Can we add a line covering that?" Sending a short list of specific questions reads as careful, not difficult, and most legitimate clients answer them without friction. A contract that generates real pushback on a reasonable question is itself useful information about that client.
 
+## Marcus's flag list has one category Priya's doesn't
+
+Pass two's flag categories, payment, IP, indemnification, termination, cover most of what a services agreement needs checked. Development contracts routinely carry one more risk that a generically trained flag list can miss unless you name it explicitly: ownership language broad enough to claim code that existed before the project started.
+
+Marcus reuses a personal library of utility functions and boilerplate across nearly every engagement, the accumulated efficiency of three years of similar work, and some client contracts, usually not out of malice but out of a template nobody customized, define "work product" broadly enough to technically claim anything delivered as part of the project, pre-existing code included. His addition to pass two is a fifth flag category specific to his kind of work: does the IP clause distinguish between code written for this project and code Marcus already owned and brought to it. A well-drafted contract does. A copy-pasted one often doesn't, not out of bad faith, just because whoever assembled the client's template never worked with a developer who reuses infrastructure across clients.
+
+The same instinct extends to open-source dependencies. If a project's stack leans on open-source libraries carrying their own licenses, a flag-list pass that asks specifically whether the contract's IP language conflicts with any dependency's license terms catches a problem months before it becomes a hard-to-unwind mess, rather than after a client's own legal team notices it during due diligence on an acquisition.
+
 ## What this genuinely saves, and what it doesn't
 
 What this workflow saves is the Sunday evening Priya used to lose to a contract she'd sign anyway, uncertain the whole time whether she'd actually understood it. Fifteen minutes of a structured three-pass read replaces hours of skimming and hoping, and it replaces "probably standard" with an actual list of what's standard and what isn't, in language you can evaluate instead of just accept.
@@ -31,6 +39,14 @@ What this workflow saves is the Sunday evening Priya used to lose to a contract 
 What it doesn't save is the moment a contract is genuinely unusual, high-value, or clearly drafted to favor the other side. A twenty-minute AI-assisted read of an eleven-page standard services agreement is a reasonable use of the tool. The same read on a six-figure exclusivity agreement, or one with a non-compete clause reaching further than feels right, is not a substitute for twenty minutes of an actual lawyer's time, and the cost comparison there favors the lawyer by a wide margin once you weigh what's actually at stake.
 
 [AUTHOR-INPUT: your own story here, a specific clause you almost missed, or almost signed, that a plain-English pass caught, and what you actually did about it]
+
+## Why having any real contract matters more than any single clause
+
+Step back from the specific flags for a moment, because the choice this chapter really cares about happens earlier than any clause-by-clause read: whether a written contract exists at all.
+
+[KEY-INSIGHT: A peer-reviewed study analyzing Freelancers Union Independent Worker Survey data found that using a written contract was associated with income roughly 13.7 percent higher than working without one, rising to 21.7 percent higher among the New York respondents specifically studied, even after accounting for the contract not guaranteeing full, on-time payment by itself. || Source: William M. Rodgers, Sara Horowitz, and Gabrielle Wuolo, "The Impact of Client Nonpayment on the Income of Contingent Workers: Evidence from the Freelancers Union Independent Worker Survey," 2014.]
+
+That gap isn't proof a contract magically produces better clients. It's more likely evidence of what a contract represents: a freelancer confident enough in their own value to insist on formal terms tends to also price, negotiate, and select clients more deliberately across the board. Either way, the three-pass read in this chapter only has something to work on if a contract exists in the first place. For any inquiry that doesn't come with one, chapter three's proposal is the document to build the terms into before work starts, not something to add after a dispute makes it necessary.
 
 ## What this chapter will not do
 
@@ -44,6 +60,16 @@ This chapter will not tell you which specific clauses are legally enforceable in
 - The line is value and unfamiliarity, not effort. A standard services agreement is a reasonable AI-assisted read. A six-figure or unusual agreement is worth an actual lawyer's twenty minutes.
 
 [/TAKEAWAYS]
+
+## Try this: run the three-pass read on your current contract
+
+Pull up whatever contract governs your most active client relationship right now, even one you signed months ago and never revisited. Run all three passes tonight:
+
+1. **Translate.** Ask for a plain-English, section-by-section summary.
+2. **Flag.** Ask specifically about payment terms, IP and ownership, indemnification, and termination notice, plus your own kind of work's specific risk (pre-existing IP and open-source licensing, if you build software; usage rights and revision limits, if you create).
+3. **Question.** Turn anything flagged into one plain question. You don't have to send it today. Just write it down.
+
+Most freelancers running this for the first time on a contract they already signed find at least one thing worth a question, not because the contract is bad, but because nobody reads a document this closely the first time, under deadline pressure, with a new client waiting for a signature.
 
 ## Where this goes next
 
