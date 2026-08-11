@@ -206,6 +206,14 @@ sections:
   - id: 5
     title: "Agent #3: The Weekly Report"
     goal: "Full build; ships C03."
+    lectures:
+      - {id: "5.0", title: "Section intro", duration: 1}
+      - {id: "5.1", title: "The job description for this agent", duration: 5}
+      - {id: "5.2", title: "Build part 1: reading a spreadsheet on a schedule", duration: 7}
+      - {id: "5.3", title: "Build part 2: turning rows into a report a director reads", duration: 7}
+      - {id: "5.4", title: "Testing without spending a call", duration: 5}
+      - {id: "5.5", title: "Connecting it for real, and shipping your template", duration: 6, hands_on: true}
+      - {id: "5.6", title: "Section recap", duration: 2}
   - id: 6
     title: "Agent #4: Follow-Ups That Never Slip (and Never Auto-Send)"
     goal: "Full build with the human gate as the design centre; ships C04."
