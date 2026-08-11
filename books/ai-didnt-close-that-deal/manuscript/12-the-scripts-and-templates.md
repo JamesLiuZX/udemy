@@ -4,7 +4,7 @@ Every tool in this chapter already appeared somewhere in the eleven chapters bef
 
 ## 1. The bounded-time account research checklist (chapter 3)
 
-Chapter three's argument was that real research beats fake personalization, but only if it stays fast enough to run at the volume a quota actually requires. Fifteen minutes, hard stop, is the number that chapter converged on: long enough to find one real signal, short enough that choosing research over dial time stops being a real tradeoff.
+Chapter three's argument was that real research beats fake personalization, but only if it stays fast enough to run at the volume a quota actually requires. That chapter gives a working range, twelve to twenty-five minutes depending on how many stakeholders are involved; what follows operationalizes that range into one fixed number and order for the common case, a single-stakeholder account: fifteen minutes, no exceptions, long enough to find one real signal, short enough that choosing research over dial time stops being a real tradeoff. For a multi-stakeholder enterprise account, budget fifteen to twenty-five minutes per stakeholder instead, per chapter three's own guidance, and run this same checklist once for each person worth researching individually.
 
 Run the search in this fixed order every time. The order matters more than it looks like it should, because a fixed order is what keeps the fifteen minutes from turning into forty the moment an account gets interesting.
 

@@ -14,7 +14,7 @@ author: "James Liu"
 year: 2026
 genre: business
 trim: "6x9"
-target_pages: [140, 210]
+target_pages: [120, 160]
 lang: zh
 
 # Never set true except by the real author, after a genuine full read-through.
