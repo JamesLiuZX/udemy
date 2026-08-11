@@ -103,7 +103,14 @@ Progress (updated per chapter as expansion happens):
       of stacked, never-edited standing instructions actively making
       output worse), and a "Try this: audit your standing instructions"
       exercise. 1,361 -> 1,931 words. Rendered pages checked.
-- [ ] 07 When to Fire It
+- [x] 07 When to Fire It — added a second worked example (Teodora, a
+      financial advisor whose two months of rigorous, correct effort
+      still didn't converge on bond-allocation rebalancing notes,
+      illustrating criterion four without a rushed process), a second
+      `[KEY-INSIGHT]` (Zillow Offers' 2021 shutdown after removing human
+      override from its pricing algorithm, illustrating criterion three
+      at scale), and a "Try this" disqualification-checklist worksheet.
+      1,587 -> 2,254 words. Rendered pages checked.
 - [ ] 08 Your Second Hire, and Your Third
 - [ ] 09 The Team of One
 - [ ] 10 A 30-Day Delegation Plan
