@@ -178,7 +178,7 @@ def run_pandoc_epub(html: str, book: Book, out_path: Path) -> None:
         "--metadata", f"title={book.title}",
         "--metadata", f"subtitle={book.meta.get('subtitle', '')}",
         "--metadata", f"author={book.meta.get('author', '')}",
-        "--metadata", f"lang=en-{'GB' if book.style.get('spellcheck_lang') == 'en_GB' else 'US'}",
+        "--metadata", f"lang={'zh-CN' if book.lang == 'zh' else 'en-' + ('GB' if book.style.get('spellcheck_lang') == 'en_GB' else 'US')}",
         "-o", str(out_path),
     ]
     for weight, path in [
