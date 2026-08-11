@@ -45,4 +45,4 @@ When that date arrives, the work is already done: run chapter three's trial, aim
 
 ## Where this goes next
 
-The final chapter is reference material: the book's templates and worksheets in one place, ready to copy and fill in on whatever task, new or revisited, you're about to try next.
+Chapter nineteen moves fast across six more businesses, different enough from every example so far that at least one should resemble yours, each one showing the same method catching a genuinely different kind of seam.

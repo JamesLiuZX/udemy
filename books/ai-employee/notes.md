@@ -222,6 +222,13 @@ Progress (updated per chapter as expansion happens):
       nine's already-cited METR capability-growth research for its
       rationale instead of citation fatigue. 956 words, 4pp standalone.
       Rendered pages checked.
+- [x] 19 Six Businesses, One Method — new chapter. Six fast vignettes
+      (boutique clothing, HVAC contractor, independent bookstore,
+      residential real estate, yoga studio, paralegal support) each
+      showing a genuine first task and its real, narrow seam, proving the
+      method isn't specific to the deeper examples used elsewhere. One
+      `[KEY-INSIGHT]` (OECD's Dec 2025 SME AI-adoption-by-sector data).
+      1,073 words, 4pp standalone. Rendered pages checked.
 - [ ] Additional chapters as needed to close the remaining gap to
       [180, 240]pp (still well short after 11-16; author directive is to
       keep adding genuine chapters rather than pad, checking in if
