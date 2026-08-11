@@ -44,6 +44,19 @@ because their kid told them to. Concretely:
 | 09 The Scams and the Sketchy Stuff | AI-enabled scams, deepfakes, protecting older relatives specifically |
 | 10 Teaching Someone Else | Closing chapter: become the family's go-to, pay it forward |
 
+## Research leads for later chapters
+
+- MIT News (Feb 2026): a study on AI chatbots giving less-accurate
+  information to vulnerable users. Couldn't fetch the full article
+  (network egress blocked news.mit.edu directly), only have the
+  headline from a search result, so it needs proper verification before
+  it can be cited, but it's a strong, credible, on-topic lead for
+  chapter 8 (when it gets it wrong) or chapter 9 (scams and sketchy
+  stuff). Search "MIT study AI chatbots vulnerable users accuracy 2026"
+  and try fetching via a different route (search snippet, cached
+  version, or a secondary report on the same study) when writing
+  that chapter.
+
 ## Things to hold onto while writing the rest
 
 - `[AUTHOR-INPUT: ...]` markers here should lean toward warm, personal,
