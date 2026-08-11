@@ -32,7 +32,7 @@ What to avoid (long layovers, beach only, crowds) & \rule{4.3cm}{0.4pt} \\
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{The fields behind Linda's trip-planning message, turned into a blank worksheet. Fill in these six things before you open a chat window, the same six she already knew and just had not said yet.}
+\bookfigurecaption{The fields behind Linda’s trip-planning message, turned into a blank worksheet. Fill in these six things before you open a chat window, the same six she already knew and just had not said yet.}
 \end{bookfigure}
 
 [PULLQUOTE: The tool is excellent at cutting sixteen hours of undifferentiated searching down to twenty minutes of focused comparing.]

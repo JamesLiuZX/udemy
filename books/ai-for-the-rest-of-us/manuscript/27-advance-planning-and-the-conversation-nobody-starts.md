@@ -32,15 +32,15 @@ A newer wrinkle worth naming directly: photos, financial accounts, email, and ye
 \midrule
 Will & Says who gets what after you die \\
 \addlinespace
-Advance directive & Says what care you want if you can't speak for yourself while alive \\
+Advance directive & Says what care you want if you can’t speak for yourself while alive \\
 \addlinespace
-Healthcare power of attorney & Names who can make medical decisions for you if you can't \\
+Healthcare power of attorney & Names who can make medical decisions for you if you can’t \\
 \addlinespace
-Guardianship designation & Names who would raise your kids if you couldn't \\
+Guardianship designation & Names who would raise your kids if you couldn’t \\
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{Four documents this chapter untangles, decoded once so the actual attorney's office is spent finishing them, not explaining them from scratch.}
+\bookfigurecaption{Four documents this chapter untangles, decoded once so the actual attorney’s office is spent finishing them, not explaining them from scratch.}
 \end{bookfigure}
 
 ## Try this: the plain-English estate-planning prompt

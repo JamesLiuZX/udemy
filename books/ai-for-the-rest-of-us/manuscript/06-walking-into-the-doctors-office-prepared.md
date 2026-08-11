@@ -56,7 +56,7 @@ What to bring (scan, medication list, notes) & \rule{4.3cm}{0.4pt} \\
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{A blank appointment-prep sheet, built from this chapter's own prompt. Fill it in the night before, the same way Linda did for Hal's follow-up.}
+\bookfigurecaption{A blank appointment-prep sheet, built from this chapter’s own prompt. Fill it in the night before, the same way Linda did for Hal’s follow-up.}
 \end{bookfigure}
 
 [TAKEAWAYS]

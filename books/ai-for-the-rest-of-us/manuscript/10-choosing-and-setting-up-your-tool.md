@@ -40,7 +40,7 @@ Copilot & Microsoft & Only one of the four with no sign-in required at all \\
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{The four most-mentioned AI chat tools, compared honestly. Exact free-tier limits change often enough not to print here; what's stable is the shape of each trade-off.}
+\bookfigurecaption{The four most-mentioned AI chat tools, compared honestly. Exact free-tier limits change often enough not to print here; what’s stable is the shape of each trade-off.}
 \end{bookfigure}
 
 ## Free versus paid, in plain terms

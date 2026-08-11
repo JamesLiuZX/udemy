@@ -38,13 +38,13 @@ December closed the season with two small, unplanned things that mattered more t
 \begin{worksheet}
 \begin{tabular}{@{}p{1.6cm}p{3.4cm}p{3.4cm}@{}}
 \toprule
-\textbf{Month} & \textbf{Linda's household} & \textbf{Marisol's household} \\
+\textbf{Month} & \textbf{Linda’s household} & \textbf{Marisol’s household} \\
 \midrule
 Sept & Mattress refund resolved; downsizing schedule begins & Lease renewal; rent-increase notice rule found \\
 \addlinespace
-Oct & Kidney scan appointment; trip booked; grandson scam call caught & Washing machine replaced; mother's scare becomes a scam-safety talk \\
+Oct & Kidney scan appointment; trip booked; grandson scam call caught & Washing machine replaced; mother’s scare becomes a scam-safety talk \\
 \addlinespace
-Nov & Downsizing's fifth Saturday, no AI at all & Résumé rewritten; new job offer \\
+Nov & Downsizing’s fifth Saturday, no AI at all & Résumé rewritten; new job offer \\
 \addlinespace
 Dec & Watercolor card for granddaughter & Mother asks AI unprompted, for the first time \\
 \bottomrule

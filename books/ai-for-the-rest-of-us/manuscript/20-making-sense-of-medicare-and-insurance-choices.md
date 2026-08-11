@@ -38,7 +38,7 @@ Medicare Advantage & Often costs less monthly; usually a specific network, with 
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{The two paths behind this chapter's own question, decoded once in plain English. Which one fits you still depends on your actual doctors and numbers, not this table.}
+\bookfigurecaption{The two paths behind this chapter’s own question, decoded once in plain English. Which one fits you still depends on your actual doctors and numbers, not this table.}
 \end{bookfigure}
 
 [TAKEAWAYS]

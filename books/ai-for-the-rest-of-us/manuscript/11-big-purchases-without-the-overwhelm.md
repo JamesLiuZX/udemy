@@ -34,19 +34,19 @@ For purchases where the price itself is negotiable, a car especially, the narrow
 \begin{worksheet}
 \begin{tabular}{@{}p{4.3cm}p{4.3cm}@{}}
 \toprule
-\textbf{What actually matters} & \textbf{What's usually just marketing} \\
+\textbf{What actually matters} & \textbf{What’s usually just marketing} \\
 \midrule
 Load capacity and a solid reliability track record for your household & Extra wash cycle options most models advertise \\
 \addlinespace
-Interior drum size against your actual biggest load, towels and bedding & Smart features and an app you don't need \\
+Interior drum size against your actual biggest load, towels and bedding & Smart features and an app you don’t need \\
 \addlinespace
-Reliability and highway comfort for how you'll actually drive & Towing capacity and cargo space sized for a trip you don't take \\
+Reliability and highway comfort for how you’ll actually drive & Towing capacity and cargo space sized for a trip you don’t take \\
 \addlinespace
-Recent reviews and today's actual price, checked yourself & The overall star rating alone \\
+Recent reviews and today’s actual price, checked yourself & The overall star rating alone \\
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{What Marisol's washing machine search and Linda's car search actually turned on, once the marketing noise was stripped away.}
+\bookfigurecaption{What Marisol’s washing machine search and Linda’s car search actually turned on, once the marketing noise was stripped away.}
 \end{bookfigure}
 
 ## Try this: the narrow-then-verify prompt for any big purchase

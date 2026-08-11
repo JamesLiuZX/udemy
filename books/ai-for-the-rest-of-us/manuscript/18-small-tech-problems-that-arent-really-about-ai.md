@@ -36,13 +36,13 @@ Next time something ordinary breaks, resist the urge to just restart everything 
 \toprule
 & \textbf{What changed} & \textbf{Exact symptom} & \textbf{What fixed it} \\
 \midrule
-\textbf{Linda's printer} & Nothing, until that morning & Blinking amber light, nothing printed & Checked the ink; it was low \\
+\textbf{Linda’s printer} & Nothing, until that morning & Blinking amber light, nothing printed & Checked the ink; it was low \\
 \addlinespace
-\textbf{Marisol's banking app} & The app updated itself & Crashed immediately on open & Cleared the app's stored data \\
+\textbf{Marisol’s banking app} & The app updated itself & Crashed immediately on open & Cleared the app’s stored data \\
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{Two ordinary glitches, run through the exact-symptom prompt's own structure: what changed, what exactly happened, and the cheapest fix that actually worked.}
+\bookfigurecaption{Two ordinary glitches, run through the exact-symptom prompt’s own structure: what changed, what exactly happened, and the cheapest fix that actually worked.}
 \end{bookfigure}
 
 [TAKEAWAYS]

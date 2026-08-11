@@ -34,7 +34,7 @@ The best time to think about this chapter is not during the emergency. Take five
 \toprule
 \textbf{What to note now} & \textbf{Your answer} \\
 \midrule
-Medications that need refrigeration, and how long they're safe & \rule{4.0cm}{0.4pt} \\
+Medications that need refrigeration, and how long they’re safe & \rule{4.0cm}{0.4pt} \\
 \addlinespace[10pt]
 Insurance and roadside assistance basics & \rule{4.0cm}{0.4pt} \\
 \addlinespace[10pt]
@@ -42,7 +42,7 @@ The non-emergency number for your local police department & \rule{4.0cm}{0.4pt} 
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{Five minutes now, filled in before a dark Tuesday, so the next ordinary emergency doesn't start from zero.}
+\bookfigurecaption{Five minutes now, filled in before a dark Tuesday, so the next ordinary emergency doesn’t start from zero.}
 \end{bookfigure}
 
 [TAKEAWAYS]

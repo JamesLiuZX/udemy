@@ -44,7 +44,7 @@ What you actually feel, stated plainly & \rule{4.3cm}{0.4pt} \\
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{Blank space for your own three true things, the same raw material Linda's eulogy and Marisol's card both started from. Fill it in before you open the chat window.}
+\bookfigurecaption{Blank space for your own three true things, the same raw material Linda’s eulogy and Marisol’s card both started from. Fill it in before you open the chat window.}
 \end{bookfigure}
 
 [TAKEAWAYS]

@@ -138,7 +138,7 @@ Answer those three honestly, in your own words, before you type anything, and mo
 \toprule
 \textbf{The question} & \textbf{Your answer} \\
 \midrule
-Who is this actually for, or what's the real situation? & \rule{3.8cm}{0.4pt} \\
+Who is this actually for, or what’s the real situation? & \rule{3.8cm}{0.4pt} \\
 \addlinespace[10pt]
 What actually matters here, stated as a specific goal? & \rule{3.8cm}{0.4pt} \\
 \addlinespace[10pt]
@@ -146,7 +146,7 @@ What should it avoid, or what boundary matters? & \rule{3.8cm}{0.4pt} \\
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{The three questions from chapter two, blank and ready to photocopy: fill them in honestly before you type anything, for any task in this book or any one it doesn't cover.}
+\bookfigurecaption{The three questions from chapter two, blank and ready to photocopy: fill them in honestly before you type anything, for any task in this book or any one it doesn’t cover.}
 \end{bookfigure}
 
 [TAKEAWAYS]

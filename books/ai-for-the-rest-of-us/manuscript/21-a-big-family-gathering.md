@@ -26,7 +26,7 @@ Big gatherings are hard for a specific, nameable reason: too many moving pieces 
 \begin{worksheet}
 \begin{tabular}{@{}p{4.2cm}p{2.3cm}p{4.0cm}@{}}
 \toprule
-\textbf{Task} & \textbf{Time} & \textbf{Who's doing it} \\
+\textbf{Task} & \textbf{Time} & \textbf{Who’s doing it} \\
 \midrule
 \rule{4.2cm}{0.4pt} & \rule{2.3cm}{0.4pt} & \rule{4.0cm}{0.4pt} \\
 \addlinespace[10pt]
@@ -38,7 +38,7 @@ Big gatherings are hard for a specific, nameable reason: too many moving pieces 
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{A blank day-of timeline, built the same way Linda's finally was: work backward from when you actually want the meal on the table, and write down who's handling each piece before the Tuesday-before panic sets in.}
+\bookfigurecaption{A blank day-of timeline, built the same way Linda’s finally was: work backward from when you actually want the meal on the table, and write down who’s handling each piece before the Tuesday-before panic sets in.}
 \end{bookfigure}
 
 [TAKEAWAYS]

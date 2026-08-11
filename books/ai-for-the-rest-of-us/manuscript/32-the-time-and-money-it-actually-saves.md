@@ -34,7 +34,7 @@ The rough tally above is Linda's and Marisol's, not yours, and the point was nev
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{A blank week's tally. Photocopy it, or just copy the three columns onto a phone note, and fill it in as the week actually happens, not from memory afterward.}
+\bookfigurecaption{A blank week’s tally. Photocopy it, or just copy the three columns onto a phone note, and fill it in as the week actually happens, not from memory afterward.}
 \end{bookfigure}
 
 Three weeks of this, and you'll have your own honest number, built from your own actual tasks, worth more than any average this chapter or anyone else could print.

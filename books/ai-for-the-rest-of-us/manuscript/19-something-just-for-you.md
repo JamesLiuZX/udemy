@@ -32,7 +32,7 @@ Something you've said "I'd love to learn that someday" about, at some point, to 
 \begin{worksheet}
 \begin{tabular}{@{}p{2.8cm}p{2.8cm}p{2.9cm}@{}}
 \toprule
-\textbf{Something I've always wanted to try} & \textbf{The minimum to get started} & \textbf{One small first attempt this week} \\
+\textbf{Something I’ve always wanted to try} & \textbf{The minimum to get started} & \textbf{One small first attempt this week} \\
 \midrule
 \rule{2.8cm}{0.4pt} & \rule{2.8cm}{0.4pt} & \rule{2.9cm}{0.4pt} \\
 \addlinespace[10pt]

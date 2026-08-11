@@ -32,7 +32,7 @@ And if the door never opens at all, that has to be an acceptable outcome, not a 
 \toprule
 & \textbf{What backfires} & \textbf{What actually works} \\
 \midrule
-\textbf{They've just said no} & Bringing it up again, a little more insistent each time & Using it visibly in your own life and letting curiosity do the inviting \\
+\textbf{They’ve just said no} & Bringing it up again, a little more insistent each time & Using it visibly in your own life and letting curiosity do the inviting \\
 \addlinespace
 \textbf{They finally ask a question} & Turning it into a full lesson & Answering just that one question, then stopping there \\
 \addlinespace
@@ -40,7 +40,7 @@ And if the door never opens at all, that has to be an acceptable outcome, not a 
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{The one pattern that separated Linda's first three tries, which made Hal dig in further, from what actually opened the door two months later.}
+\bookfigurecaption{The one pattern that separated Linda’s first three tries, which made Hal dig in further, from what actually opened the door two months later.}
 \end{bookfigure}
 
 [TAKEAWAYS]

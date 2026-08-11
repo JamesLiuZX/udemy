@@ -52,7 +52,7 @@ Chapter eight's habit exists for exactly this moment: check the one fact that wo
 \toprule
 \textbf{Question} & \textbf{Honest answer} \\
 \midrule
-Isn't this just cheating? & Only if you claim it as unaided work you couldn't defend yourself \\
+Isn’t this just cheating? & Only if you claim it as unaided work you couldn’t defend yourself \\
 \addlinespace
 Will this make me worse at thinking for myself? & Yes, if you let it. One habit, checking the fact that matters, keeps that from happening \\
 \addlinespace
@@ -60,7 +60,7 @@ Is what I type actually private? & Not by default, but every major tool lets you
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{Three of this chapter's own questions and their honest one-line answers, for whoever needs the short version before the long one.}
+\bookfigurecaption{Three of this chapter’s own questions and their honest one-line answers, for whoever needs the short version before the long one.}
 \end{bookfigure}
 
 [TAKEAWAYS]

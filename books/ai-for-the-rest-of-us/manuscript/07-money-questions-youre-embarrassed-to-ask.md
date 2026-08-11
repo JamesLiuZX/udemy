@@ -30,13 +30,13 @@ Deductible & What you pay yourself before insurance starts paying anything \\
 \addlinespace
 Coinsurance & The percentage you keep paying after the deductible, insurance covers the rest \\
 \addlinespace
-Out-of-pocket maximum & The most you'll pay in a year total; insurance covers 100\% after that \\
+Out-of-pocket maximum & The most you’ll pay in a year total; insurance covers 100\% after that \\
 \addlinespace
 Claiming age (Social Security) & Earlier claim = smaller check for life; waiting until 70 = the largest possible check \\
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{Four terms behind two of this chapter's questions, decoded once so you don't have to ask twice.}
+\bookfigurecaption{Four terms behind two of this chapter’s questions, decoded once so you don’t have to ask twice.}
 \end{bookfigure}
 
 ## When the number itself feels shameful, not just confusing

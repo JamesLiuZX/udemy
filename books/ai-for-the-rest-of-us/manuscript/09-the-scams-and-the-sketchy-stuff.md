@@ -44,9 +44,9 @@ A family-emergency call demanding money, gift cards, or a wire transfer, urgentl
 \addlinespace
 A text or email asking you to click a link and confirm your account & Close it. A real bank never asks for a password, PIN, or full account number this way \\
 \addlinespace
-Any urgent request for money, gift card codes, or account access & Verify through a channel the caller doesn't control before doing anything else \\
+Any urgent request for money, gift card codes, or account access & Verify through a channel the caller doesn’t control before doing anything else \\
 \addlinespace
-A family-emergency call that doesn't know your family password & That's your answer, before you've said a word back \\
+A family-emergency call that doesn’t know your family password & That’s your answer, before you’ve said a word back \\
 \bottomrule
 \end{tabular}
 \end{worksheet}

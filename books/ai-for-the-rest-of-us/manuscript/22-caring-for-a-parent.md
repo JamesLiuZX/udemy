@@ -44,7 +44,7 @@ A real slice of caregiving happens exactly the way Marisol's does, from another 
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{A blank version of the schedule that replaced Marisol's sticky note. Photocopy it, or copy the three columns into a shared document any sibling helping out can update after an appointment.}
+\bookfigurecaption{A blank version of the schedule that replaced Marisol’s sticky note. Photocopy it, or copy the three columns into a shared document any sibling helping out can update after an appointment.}
 \end{bookfigure}
 
 [TAKEAWAYS]

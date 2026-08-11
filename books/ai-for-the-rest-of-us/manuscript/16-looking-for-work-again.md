@@ -36,9 +36,9 @@ The interview itself brought a different kind of nerves, less about what to writ
 \toprule
 & \textbf{Old, generic line} & \textbf{Translated, same true facts} \\
 \midrule
-\textbf{Marisol's résumé} & "Worked with others" & "Team coordination", the posting's own phrase, matching work she'd actually done \\
+\textbf{Marisol’s résumé} & “Worked with others” & “Team coordination”, the posting’s own phrase, matching work she’d actually done \\
 \addlinespace
-\textbf{Linda's résumé} & 11 years, no job title, no explanation & 11 years managing complex household finances, budgets, and bookkeeping \\
+\textbf{Linda’s résumé} & 11 years, no job title, no explanation & 11 years managing complex household finances, budgets, and bookkeeping \\
 \bottomrule
 \end{tabular}
 \end{worksheet}

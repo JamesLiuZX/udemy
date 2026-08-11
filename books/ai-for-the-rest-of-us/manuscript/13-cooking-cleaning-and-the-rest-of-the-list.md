@@ -48,7 +48,7 @@ Once a week, at whatever moment the to-do list starts to feel like noise instead
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{This week's version of the sorting question the chapter itself asks: what actually needs to happen now, and what can honestly wait.}
+\bookfigurecaption{This week’s version of the sorting question the chapter itself asks: what actually needs to happen now, and what can honestly wait.}
 \end{bookfigure}
 
 [TAKEAWAYS]

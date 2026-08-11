@@ -30,7 +30,7 @@ W-4 & The form that tells your employer how much to withhold from each paycheck 
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{Four lines almost every pay stub and W-4 form include, decoded once so you're not re-figuring them out from scratch every time one changes.}
+\bookfigurecaption{Four lines almost every pay stub and W-4 form include, decoded once so you’re not re-figuring them out from scratch every time one changes.}
 \end{bookfigure}
 
 ## The credit or deduction you didn't know to ask about

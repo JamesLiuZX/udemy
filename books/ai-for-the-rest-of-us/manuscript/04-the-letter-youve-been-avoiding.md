@@ -42,7 +42,7 @@ Type those three things into the chat along with the plain facts, in order, with
 \begin{worksheet}
 \begin{tabular}{@{}p{3.6cm}p{4.9cm}@{}}
 \toprule
-\textbf{Question} & \textbf{Linda's answer, for the mattress letter} \\
+\textbf{Question} & \textbf{Linda’s answer, for the mattress letter} \\
 \midrule
 Who is this actually going to? & The mattress company, referencing the delivery date, the tear, and the unanswered call \\
 \addlinespace
@@ -52,7 +52,7 @@ What tone do you want? & Firm and clear, not angry, ending with a specific reply
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{The three questions from this chapter, answered for Linda's actual mattress letter: the same three worth answering before you open a chat window for your own.}
+\bookfigurecaption{The three questions from this chapter, answered for Linda’s actual mattress letter: the same three worth answering before you open a chat window for your own.}
 \end{bookfigure}
 
 ## Why this doesn't replace the hard conversation

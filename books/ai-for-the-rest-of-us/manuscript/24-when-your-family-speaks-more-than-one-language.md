@@ -20,9 +20,9 @@ Everyday, lower-stakes communication is where this shines: a text to a relative,
 \toprule
 \textbf{If you ask for...} & \textbf{What you actually get} \\
 \midrule
-A literal, word-for-word translation & Something that technically parses and doesn't sound like anything a person would actually say \\
+A literal, word-for-word translation & Something that technically parses and doesn’t sound like anything a person would actually say \\
 \addlinespace
-Natural, conversational wording, the way you'd explain it to someone & Something your family member can actually read and understand, not a garbled, secondhand version \\
+Natural, conversational wording, the way you’d explain it to someone & Something your family member can actually read and understand, not a garbled, secondhand version \\
 \bottomrule
 \end{tabular}
 \end{worksheet}

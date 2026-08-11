@@ -59,7 +59,12 @@ ALLOW = {
     "marisol", "marisol's", "diego", "diego's", "sofia", "sofia's",
     "pixma", "autocorrect", "chatbot", "chatbots", "grandkids", "olds",
     "reframe", "reframed", "roading", "résumé", "stovetop", "timeframe",
-    "tradeoff", "walkability",
+    "tradeoff", "walkability", "gmail", "microsoft",
+    # LaTeX commands/environments inside \begin{bookfigure} worked-visual
+    # blocks (docs/09-visual-standard.md §3): raw LaTeX, not prose, but
+    # hunspell scans the manuscript source as plain text regardless.
+    "bookfigure", "bookfigurecaption", "toprule", "midrule", "bottomrule",
+    "addlinespace", "textbf",
     # stop-guessing: real proper nouns (case parties, researchers, products)
     # and real domain words hunspell's en_US list doesn't carry. Verified by
     # hand against the manuscript, not typos.

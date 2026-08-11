@@ -44,7 +44,7 @@ This book asks you to borrow that shrug, on purpose, starting now. The first few
 \midrule
 Knowing technical terms, like model, token, or prompt & Describing what you want, the way you would explain it to a person \\
 \addlinespace
-Getting the question exactly right on the first try & Trying, then saying "not quite" and asking again \\
+Getting the question exactly right on the first try & Trying, then saying “not quite” and asking again \\
 \addlinespace
 Being naturally a tech person & Practice: more tries logged, not more natural talent \\
 \addlinespace

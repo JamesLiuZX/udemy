@@ -42,7 +42,7 @@ Savings on hand & \rule{3cm}{0.4pt} \\
 \bottomrule
 \end{tabular}
 \end{worksheet}
-\bookfigurecaption{The bare-bones three-month budget, blank and ready for your own numbers: what's truly fixed, what has flexibility, and what unemployment and savings actually add up to before you need either.}
+\bookfigurecaption{The bare-bones three-month budget, blank and ready for your own numbers: what’s truly fixed, what has flexibility, and what unemployment and savings actually add up to before you need either.}
 \end{bookfigure}
 
 [TAKEAWAYS]
