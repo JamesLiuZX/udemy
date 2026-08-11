@@ -50,6 +50,7 @@ ALLOW = {
     "whatever's", "ravi", "ravi's", "else's", "farrah", "triages", "malik",
     "teodora", "rebalancing", "priyanka", "overclaimed", "disqualifier",
     "reputational", "mistriaged", "pre", "stockout", "listicle's",
+    "pushback", "whoever's",
 }
 
 AUTHOR_INPUT_RE = re.compile(r"\[AUTHOR-INPUT:(.*?)\]", re.S)

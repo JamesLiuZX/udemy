@@ -161,7 +161,15 @@ Progress (updated per chapter as expansion happens):
       (S&P Global's 2025 enterprise AI abandonment survey) and a "Try
       this: score your candidates" worksheet. 1,550 words, 6pp
       standalone. Rendered pages checked.
-- [ ] 13 When Your Team Delegates Too (new)
+- [x] 13 When Your Team Delegates Too — new chapter. The new failure mode
+      that only appears once a second person is delegating (Wanda's
+      marketing agency; an unverified AI draft reaching a client), a
+      team-scaled version of the brief/seam/disclosure skills, and the
+      manager's role shifting to spot-checking the team's checking. One
+      `[KEY-INSIGHT]` (Glean's 2026 "Work AI Index" on "botshitting"), a
+      second worked example (the norm catching a real error three months
+      later), and a team-standard worksheet. 1,681 words, 6pp standalone.
+      Rendered pages checked.
 - [ ] 14 Objections and Edge Cases (new)
 - [ ] 15 Templates and Worksheets (new)
 - [ ] Full rebuild + EPUB rebuild + `qc.py --release` at the new target,
