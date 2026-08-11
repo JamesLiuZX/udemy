@@ -1,0 +1,101 @@
+# =============================================================================
+# Simplified Chinese edition of "AI Didn't Close That Deal".
+# Separate book.yaml (own slug, own build output dir) rather than a field
+# inside the English book.yaml, so `build.py --book books/ai-didnt-close-
+# that-deal/book-zh.yaml` builds this edition without touching the English
+# path at all. Mirrors the English book.yaml structurally; every value below
+# is the Chinese equivalent of that file's field, not a re-derivation.
+# =============================================================================
+
+slug: ai-didnt-close-that-deal-zh
+title: "这一单，AI 拿不下"
+subtitle: "销售负责人如何穿透 AI 生成的外联噪音，让团队的邮件重新获得回复"
+author: "James Liu"
+year: 2026
+genre: business
+trim: "6x9"
+target_pages: [140, 210]
+lang: zh
+
+# Never set true except by the real author, after a genuine full read-through.
+verified: false
+
+style:
+  spellcheck_lang: en_US   # hunspell has no useful CJK dictionary here; see notes.md
+  em_dash: avoid
+
+# Not part of the interior PDF. Not a KDP listing either -- KDP does not
+# accept a Chinese-language paperback at all, and does not list Simplified
+# Chinese as a supported eBook language (only Traditional Chinese, in beta,
+# ebook-only). This edition targets Google Play Books, Apple Books, and
+# direct/lead-gen distribution instead. See notes.md for what was checked.
+description: |
+  每一位潜在客户的收件箱里，都堆满了千篇一律的 AI 生成销售邮件，包括，说句
+  实话，你团队发出的一部分邮件。回复率正在全线下滑，而"发得更多"这个本能反
+  应，恰恰就是造成这个问题的原因。
+
+  这本书为销售负责人和他们带领的团队提供了一套务实的重启方案：为什么"发送
+  量"在变得免费的那一刻就不再是一种有效策略；如何做 AI 生成模板做不出来的
+  那种真正的研究；如何在不牺牲本季度业绩数字的前提下，帮团队戒掉"广撒网"
+  的习惯；AI 到底在哪些地方真正能帮到销售代表；以及如何解读那些真正预测营
+  收的指标，而不是那些只是看起来有成效的指标。
+
+  写给那些希望团队的外联邮件重新被人认真阅读的销售负责人，而不是又一个承
+  诺"发得更快"的工具。
+
+dedication: "献给每一位好邮件被埋没在成千上万封烂邮件之下的销售代表。"
+
+rights_note: "版权所有，未经作者书面许可，不得以任何形式复制、发行或传播本书的任何部分，书评中的简短引用除外。"
+ai_disclosure_text: "本书在作者的指导、大纲规划与审阅下，借助 AI 辅助完成写作。书中数据与案例均引自已标注来源的公开资料；任何涉及个人经历的表述均为作者本人真实经历。"
+isbn_note: "ISBN：[将在正式发行时分配]"
+
+front_matter:
+  - half_title
+  - title_page
+  - copyright
+  - dedication
+  - toc
+
+chapters:
+  - id: "01"
+    title: "再没人看的收件箱"
+    file: manuscript-zh/01-the-inbox-nobody-reads-anymore.md
+  - id: "02"
+    title: "为什么发送量不再管用"
+    file: manuscript-zh/02-why-volume-stopped-working.md
+  - id: "03"
+    title: "再没人做的那种研究"
+    file: manuscript-zh/03-the-research-nobody-does-anymore.md
+  - id: "04"
+    title: "像真读过对方官网那样去写"
+    file: manuscript-zh/04-writing-like-you-actually-read-their-website.md
+  - id: "05"
+    title: "不像「跟进序列」的跟进"
+    file: manuscript-zh/05-the-follow-up-that-doesnt-feel-like-a-sequence.md
+  - id: "06"
+    title: "带团队戒掉广撒网"
+    file: manuscript-zh/06-coaching-a-team-off-spray-and-pray.md
+  - id: "07"
+    title: "AI 真正能帮上销售代表的地方"
+    file: manuscript-zh/07-when-ai-actually-helps-a-rep.md
+  - id: "08"
+    title: "那些骗了销售负责人的指标"
+    file: manuscript-zh/08-the-metrics-that-lie-to-sales-leaders.md
+  - id: "09"
+    title: "买家看得出来，而这要付出代价"
+    file: manuscript-zh/09-buyers-can-tell-and-what-that-costs-you.md
+  - id: "10"
+    title: "常见疑虑与边缘情况"
+    file: manuscript-zh/10-objections-and-edge-cases.md
+  - id: "11"
+    title: "在一屋子机器人中卖东西"
+    file: manuscript-zh/11-selling-in-a-room-full-of-robots.md
+  - id: "12"
+    title: "话术与模板合集"
+    file: manuscript-zh/12-the-scripts-and-templates.md
+
+back_matter:
+  - about_the_author
+
+back_matter_titles:
+  about_the_author: "关于作者"
