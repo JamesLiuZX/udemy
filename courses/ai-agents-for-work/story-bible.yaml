@@ -137,17 +137,23 @@ arc:
       still fails when the structure moves under it.
   - section: 8
     beat: >-
-      The contained incident. Priya's mailbox connection for the follow-up
-      chaser was meant to be scoped to her Renewals folder only. A setup
-      step during Section 3 had granted it read access to Calloway &
-      Finch's whole shared mailbox, Legal folder included. Chasing an
-      overdue Brightwell signature, the agent's draft references a line
-      from a Legal thread about a different, unrelated dispute: content it
-      should never have been able to see, let alone draft from. The
-      guardrail holds because the chaser is draft-only: nothing sent, the
-      draft sits for Priya's review, she deletes it and narrows the scope
-      to the Renewals folder alone before rebuilding the connection. Blast
-      radius, not disaster.
+      The contained incident. A week after shipping the Section 6 build,
+      Priya adds one small capability to her own copy of the follow-up
+      chaser: a "search my mail" tool, so the agent can check whether a
+      client already replied before drafting a chase nobody needed. She
+      connects it with her personal Gmail credential and does not notice
+      it was authorised with full-mailbox access rather than scoped to her
+      Renewals label. Chasing an overdue Brightwell signature, the agent's
+      search reaches into a Legal-labelled thread about an unrelated
+      dispute and the resulting draft references a line from it: content
+      it should never have been able to see, let alone draft from. The
+      guardrail holds because the chaser is still draft-only, exactly as
+      built in Section 6: nothing sent, the draft sits for Priya's review.
+      She deletes it, removes the tool, and when she re-adds it, scopes
+      the credential to the Renewals label alone. Blast radius, not
+      disaster: the near miss came from the one piece Priya added herself
+      without running it through the Section 1 job-description method
+      first.
   - section: 9
     beat: >-
       What the four agents cost Priya in AI calls against what they saved

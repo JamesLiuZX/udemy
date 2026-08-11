@@ -239,6 +239,14 @@ sections:
   - id: 8
     title: "Guardrails and Blast Radius"
     goal: "Approvals, scopes, the incident beat and its contained ending."
+    lectures:
+      - {id: "8.0", title: "Section intro", duration: 1}
+      - {id: "8.1", title: "Approval gates: the step between draft and done", duration: 6}
+      - {id: "8.2", title: "Every new capability gets the job-description treatment", duration: 6}
+      - {id: "8.3", title: "The guardrails worksheet", duration: 5, hands_on: true}
+      - {id: "8.4", title: "The day the scope was too wide", duration: 8}
+      - {id: "8.5", title: "Why the guardrail held", duration: 6}
+      - {id: "8.6", title: "Section recap", duration: 2}
   - id: 9
     title: "What It Costs, What It Saves, and When Not To"
     goal: "Honest economics and the never-automate list."
