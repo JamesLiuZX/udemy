@@ -13,7 +13,7 @@ author: "James Liu"
 year: 2026
 genre: self-help
 trim: "6x9"
-target_pages: [110, 160]
+target_pages: [180, 240]
 
 # Never set true except by the real author, after a genuine full read-through.
 verified: false
@@ -80,11 +80,62 @@ chapters:
     title: "When AI Makes It Worse, Not Better"
     file: manuscript/08-when-ai-makes-it-worse-not-better.md
   - id: "09"
-    title: "Telling Your Team or Family What Changed"
-    file: manuscript/09-telling-your-team-or-family-what-changed.md
+    title: "Common Ways the Hour Gets Recolonized"
+    file: manuscript/09-common-ways-the-hour-gets-recolonized.md
   - id: "10"
+    title: "Three Hours, Reclaimed in Full"
+    file: manuscript/10-three-hours-reclaimed-in-full.md
+  - id: "11"
+    title: "When It's Not Actually About Time"
+    file: manuscript/11-when-its-not-actually-about-time.md
+  - id: "12"
+    title: "Measuring What You Actually Reclaimed"
+    file: manuscript/12-measuring-what-you-actually-reclaimed.md
+  - id: "13"
+    title: "The Reclaimed Hour at Work"
+    file: manuscript/13-the-reclaimed-hour-at-work.md
+  - id: "14"
+    title: "Telling Your Team or Family What Changed"
+    file: manuscript/14-telling-your-team-or-family-what-changed.md
+  - id: "15"
+    title: "Objections and Edge Cases"
+    file: manuscript/15-objections-and-edge-cases.md
+  - id: "16"
+    title: "The Templates"
+    file: manuscript/16-the-templates.md
+  - id: "17"
+    title: "Choosing What to Automate With"
+    file: manuscript/17-choosing-what-to-automate-with.md
+  - id: "18"
+    title: "The Cost of Never Trying"
+    file: manuscript/18-the-cost-of-never-trying.md
+  - id: "19"
+    title: "What This Actually Costs"
+    file: manuscript/19-what-this-actually-costs.md
+  - id: "20"
+    title: "Six Months Later"
+    file: manuscript/20-six-months-later.md
+  - id: "21"
+    title: "When the Work Isn't a Job at All"
+    file: manuscript/21-when-the-work-isnt-a-job-at-all.md
+  - id: "22"
+    title: "Revisiting an Hour You Lost Again"
+    file: manuscript/22-revisiting-an-hour-you-lost-again.md
+  - id: "23"
     title: "A Week in the Reclaimed Life"
-    file: manuscript/10-a-week-in-the-reclaimed-life.md
+    file: manuscript/23-a-week-in-the-reclaimed-life.md
+  - id: "24"
+    title: "Conclusion: What You Do With the Time Now"
+    file: manuscript/24-conclusion-what-you-do-with-the-time-now.md
 
 back_matter:
+  - notes_and_sources
+  - discussion_guide
+  - quick_start
+  - further_reading
+  - a_note_on_how_this_was_written
   - about_the_author
+
+back_matter_titles:
+  quick_start: "The Quick-Start Version"
+  a_note_on_how_this_was_written: "A Note on How This Was Written"
