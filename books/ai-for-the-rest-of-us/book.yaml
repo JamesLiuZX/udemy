@@ -7,7 +7,7 @@
 slug: ai-for-the-rest-of-us
 title: "AI for the Rest of Us"
 subtitle: "The Plain-English Guide to Getting Real Help From AI, No Tech Background Required"
-author: "Your Name"
+author: "James Liu"
 year: 2026
 genre: business
 trim: "6x9"
@@ -83,5 +83,4 @@ chapters:
     file: manuscript/10-teaching-someone-else.md
 
 back_matter:
-  - acknowledgments
   - about_the_author

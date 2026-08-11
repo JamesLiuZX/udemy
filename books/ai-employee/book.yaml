@@ -8,7 +8,7 @@
 slug: ai-employee
 title: "Your First AI Employee"
 subtitle: "How to Delegate Real Work to AI, Check Its Output, and Know When to Fire It"
-author: "Your Name"
+author: "James Liu"
 year: 2026
 genre: business
 trim: "6x9"
@@ -132,5 +132,4 @@ chapters:
 
 back_matter:
   - notes_and_sources
-  - acknowledgments
   - about_the_author

@@ -8,7 +8,7 @@
 slug: ai-didnt-close-that-deal
 title: "AI Didn't Close That Deal"
 subtitle: "How Sales Leaders Cut Through AI-Generated Noise and Actually Get Replies"
-author: "Your Name"
+author: "James Liu"
 year: 2026
 genre: business
 trim: "6x9"
@@ -84,5 +84,4 @@ chapters:
     file: manuscript/10-selling-in-a-room-full-of-robots.md
 
 back_matter:
-  - acknowledgments
   - about_the_author

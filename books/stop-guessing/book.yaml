@@ -7,7 +7,7 @@
 slug: stop-guessing
 title: "Stop Guessing Whether It Works"
 subtitle: "The Product Manager's Field Guide to Evaluating, Costing, and Shipping AI Features"
-author: "Your Name"
+author: "James Liu"
 year: 2026
 genre: business
 trim: "6x9"
@@ -109,5 +109,4 @@ back_matter:
   - appendix_c_the_model_scorecard_template
   - appendix_d_the_ninety_day_plan_template
   - notes_and_sources
-  - acknowledgments
   - about_the_author

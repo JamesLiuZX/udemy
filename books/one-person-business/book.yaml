@@ -7,7 +7,7 @@
 slug: one-person-business
 title: "The One-Person Business's AI Stack"
 subtitle: "How Freelancers and Solopreneurs Use AI to Handle the Admin So They Can Do the Work They're Actually Paid For"
-author: "Your Name"
+author: "James Liu"
 year: 2026
 genre: business
 trim: "6x9"
@@ -98,5 +98,4 @@ chapters:
     file: manuscript/15-the-templates.md
 
 back_matter:
-  - acknowledgments
   - about_the_author

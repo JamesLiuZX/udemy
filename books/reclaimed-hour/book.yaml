@@ -9,7 +9,7 @@
 slug: reclaimed-hour
 title: "The Reclaimed Hour"
 subtitle: "A Guide to Using AI to Buy Back Your Time, Not Fill It With More Work"
-author: "Your Name"
+author: "James Liu"
 year: 2026
 genre: self-help
 trim: "6x9"
@@ -87,5 +87,4 @@ chapters:
     file: manuscript/10-a-week-in-the-reclaimed-life.md
 
 back_matter:
-  - acknowledgments
   - about_the_author

@@ -8,7 +8,7 @@
 slug: resume-arms-race
 title: "The Resume Arms Race"
 subtitle: "How Recruiters Stay Useful and Fair When Every Resume Is AI-Written and Every Screen Is AI-Powered"
-author: "Your Name"
+author: "James Liu"
 year: 2026
 genre: business
 trim: "6x9"
@@ -87,5 +87,4 @@ chapters:
     file: manuscript/10-the-recruiters-actual-value-now.md
 
 back_matter:
-  - acknowledgments
   - about_the_author
