@@ -82,6 +82,19 @@
 \setulmarginsandblock{\BookTop}{\BookBottom}{*}
 \checkandfixthelayout
 
+% --- Table of contents ------------------------------------------------------
+% memoir's default TOC number columns were sized for single-digit chapters.
+% Once a book reaches chapter 10, a section number like "14.10" overflows
+% the 2.3em section column and collides with the entry's title ("14.10Isn't
+% this just..."), and once it passes page 99 the page column crowds the
+% leader dots on long titles. Shipped like that in real proofs; widen the
+% columns once instead of hoping books stay short.
+\setlength{\cftchapternumwidth}{2.1em}
+\cftsetindents{section}{1.5em}{3.2em}
+\cftsetindents{subsection}{4.7em}{4.0em}
+\setpnumwidth{2.2em}
+\setrmarg{3.4em}
+
 % --- Typography -----------------------------------------------------------
 % Single-spaced LaTeX defaults read tight for a printed trade book; this is
 % the single biggest lever for a page feeling "squished" versus "edited".
