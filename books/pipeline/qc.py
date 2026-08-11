@@ -41,6 +41,13 @@ ALLOW = {
     "ai", "llm", "llms", "kdp", "isbn", "ebook", "audiobook", "chatgpt",
     "openai", "anthropic", "workflow", "workflows", "mindset", "self",
     "config", "yaml",
+    # ai-employee: character names and real words hunspell's en_US list
+    # doesn't carry. See the comment above: grows per real content hit.
+    "priya", "priya's", "renata", "renata's", "another's", "automatable",
+    "automaticity", "disqualifiers", "foodborne", "misclassifications",
+    "onboarded", "onboarding", "overclaim", "overhyped", "pairing's",
+    "salesy", "thrus", "underperform", "underuse", "unfile", "unretained",
+    "whatever's",
 }
 
 AUTHOR_INPUT_RE = re.compile(r"\[AUTHOR-INPUT:(.*?)\]", re.S)

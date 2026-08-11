@@ -3,29 +3,68 @@
 Not part of the build. Working notes for continuing this manuscript across
 sessions, same pattern as books/stop-guessing/notes.md.
 
-## Status
+## Status — manuscript complete, release-gate clean
 
-- All 10 chapters are now written and verified-pending-signoff: built,
-  rendered pages visually inspected, `qc.py` clean beyond the
-  `verified: false` and (where present) `[AUTHOR-INPUT]` gates. Chapters 04
-  through 10 have no `[AUTHOR-INPUT]` marker; their load-bearing evidence is
-  a `[KEY-INSIGHT]` instead (see below), consistent with the repo's stated
-  default. Chapters 01-03 (written in an earlier session) each carry
-  `[AUTHOR-INPUT]` markers still blocking on the real author.
-- Next: a full `--book ai-employee` build (front/back matter included),
-  the EPUB build, and `qc.py --release`, then fix whatever those surface.
-- `target_pages` starts at [120, 170], the same starting estimate used for
-  stop-guessing before any chapter existed. At 10 of 10 chapters (single-
-  chapter build estimator, no front/back matter yet), `book.py` reads
-  ~47pp; recalibrate against the real full-build page count once that
-  runs.
-- The local environment had neither `pandoc` nor a LaTeX toolchain nor
-  `hunspell` installed at the start of this session; all three were
-  installed via `apt-get` (pandoc, texlive-xetex + texlive-latex-recommended
-  + texlive-latex-extra + texlive-fonts-recommended + latexmk, hunspell +
+- All 10 chapters are written, built, and visually inspected (rendered
+  pages checked for every chapter, not just compiled). None of the 10
+  chapters use `[AUTHOR-INPUT: ...]`; every chapter's load-bearing evidence
+  is a `[KEY-INSIGHT: claim || source]` instead, each one independently
+  verified against a live web search at writing time, consistent with the
+  repo's stated default for this book (`books/CLAUDE.md` §1,
+  `books/docs/02-research-and-sourcing.md`). There is nothing blocking on
+  `[AUTHOR-INPUT]` anywhere in the manuscript right now.
+- Full build (`python3 books/pipeline/build.py --book ai-employee`): 69
+  pages. EPUB build (`build_epub.py`): succeeds, 347 KB. Front matter,
+  table of contents, and a chapter opener spread were all visually
+  spot-checked in the full assembled PDF (not just the per-chapter
+  `--only` renders) — running heads, recto chapter starts, and TOC page
+  numbers all check out.
+- `qc.py --book ai-employee --release`: **1 fail, 0 warn** — the single
+  fail is `verified: false`, which is correct and must stay that way until
+  the real author reads the whole thing and signs off. That is the only
+  thing standing between this manuscript and being release-ready.
+- `target_pages` was rebased from the initial guess of [120, 170] (the
+  same placeholder stop-guessing started with) down to **[65, 90]**, once
+  the real full-build page count (69pp, all 10 chapters, no back matter
+  yet) was known. Same reasoning stop-guessing used: padding chapters to
+  hit a number that was only ever a guess would violate the no-padding
+  discipline the video course holds, so the target moved to match real,
+  unpadded density instead. 69pp sits inside the 24-150 gutter band
+  (0.375in) with room to spare even if back matter adds a few pages.
+- Toolchain note: this session's environment had neither `pandoc`, a LaTeX
+  toolchain, nor `hunspell` installed at the start. All were installed via
+  `apt-get` (pandoc; texlive-xetex + texlive-latex-recommended +
+  texlive-latex-extra + texlive-fonts-recommended + latexmk; hunspell +
   hunspell-en-us) before the first build. `qc.py`'s spellcheck silently
-  no-ops when `hunspell` isn't on PATH, so a prior "qc.py clean" report for
-  chapter 01 may not have actually run the spellcheck step.
+  no-ops when `hunspell` isn't on PATH, so any prior "qc.py clean" report
+  for chapters 01-03 may not have actually run the spellcheck step. Once
+  hunspell was installed, spellcheck flagged real words/names not in its
+  en_US list (character names Priya/Renata, and words like "onboarding",
+  "foodborne", "salesy", "disqualifiers"); these were added to `ALLOW` in
+  `books/pipeline/qc.py`, the sanctioned extension point per that file's
+  own comment, not worked around.
+
+## What's left for the human author
+
+- **Sign-off**: read the full manuscript and set `verified: true` in
+  `book.yaml` yourself. Not something this session can or should do.
+- **No `[AUTHOR-INPUT]` markers exist** to fill in — every chapter reached
+  for `[KEY-INSIGHT]` instead, per the repo's stated preference. If a
+  genuinely strong personal story exists for a specific moment in any
+  chapter (chapter one's "vending machine" opener, or chapter seven's
+  bakery scene, are both natural spots), swapping in a real
+  `[AUTHOR-INPUT: ...]` is still an option, just not a requirement.
+- **Back matter**: `book.yaml` lists `acknowledgments` and
+  `about_the_author` in `back_matter`, but neither
+  `books/ai-employee/back-matter/*.md` file exists yet (`build.py` skips a
+  missing back-matter file silently rather than failing). These need the
+  real author's own bio and acknowledgments; not written here for the same
+  reason `[AUTHOR-INPUT]` markers aren't invented.
+- **ISBN**: the copyright page currently reads "ISBN: [assigned at KDP
+  publishing step]" (the class's own default placeholder), correct for
+  where this manuscript is in the pipeline.
+- **Cover**: out of scope for this pipeline per `books/CLAUDE.md` §6, a
+  separate step once page count is locked.
 
 ## The core device
 
