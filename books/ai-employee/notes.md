@@ -67,7 +67,13 @@ Progress (updated per chapter as expansion happens):
       Hallucinate" paper, backing the "structural, not a bug" claim), and
       turned the "five-minute check" into an explicit checklist. 2,397 ->
       2,932 words. Rendered pages checked.
-- [ ] 02 Writing the Job Description
+- [x] 02 Writing the Job Description — added a second worked example
+      (Dana, a weekly hardware-store inventory report, showing the
+      five-part brief applied to a non-conversational task) and a second
+      `[KEY-INSIGHT]` (the BRIDGE clinical-LLM benchmark on few-shot vs.
+      zero-shot across 95 models, backing "the concrete example does more
+      work than the other four combined"), plus a "Try this" exercise.
+      1,284 -> 1,836 words. Rendered pages checked.
 - [ ] 03 The Trial Task
 - [ ] 04 Checking the Work Without Redoing It
 - [ ] 05 Learning Its Failure Modes

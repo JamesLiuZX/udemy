@@ -24,6 +24,10 @@ Go back to the ninety-second version from the opening and notice it wasn't rando
 
 **A concrete example.** One real sample of what good looks like, in your voice specifically, not a generic description of tone like "professional but warm." Show, don't describe. This single element does more work than the other four combined.
 
+[KEY-INSIGHT: A large benchmark testing 95 different AI models on real-world clinical writing tasks found that giving the model a worked example alongside its instructions, rather than instructions alone, improved results for the overwhelming majority of models tested, 95.8 percent of them, and two out of three models saw that improvement exceed twenty percent. || Source: Wu, J., et al., "BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text," Nature Biomedical Engineering, 2026 (originally arXiv:2504.19467, 2025).]
+
+Notice that finding held across ninety-five different models, not just one. It's not a quirk of a particular tool getting confused by instructions alone. Showing beats describing broadly enough that it isn't safe to assume your specific tool is the exception.
+
 **What "done" looks like.** Format, length, the specific deliverable. "Under 120 words" is a brief. "Keep it short" is a hope.
 
 **What it can't know on its own.** Anything specific to your situation that isn't in the prompt and isn't guessable: the account's history, an internal policy, a relationship detail. If you don't say it, assume it isn't known, the same way you wouldn't expect a new hire to intuit your company's unwritten history on day one.
@@ -36,6 +40,16 @@ The five-part brief above sounds like a lot for a task that used to take four wo
 
 Once you've written one full, careful brief for a recurring task, save it. The next nine times that task comes up, you're not writing a new brief, you're swapping the one variable that changed, the specific customer or document or number, into a template you already trust. The upfront cost is real and it's paid exactly once per task type. Every rep after that is close to free, which is the actual argument for spending the ninety seconds the first time instead of the four-word version every time.
 
+## A second brief, on a task nothing like an email
+
+The five-part structure isn't specific to customer replies, and it's worth seeing it applied somewhere that doesn't involve writing to anyone at all, so it's clear the method travels.
+
+Dana manages inventory for a small hardware store chain, three locations, and every Friday she used to spend forty minutes turning the week's point-of-sale export into a plain-English update for the owner: what sold well, what's running low, what needs reordering before Monday. Her first attempt at delegating it read: "Summarize this week's sales data." The result was a wall of generic observations, "sales were steady," "some items sold more than others," technically about her data but useless to anyone who'd actually have to act on it.
+
+Here's the same five parts, applied to a spreadsheet instead of a conversation. **The situation**: not "sales data," but "a weekly owner update for a three-location hardware store, read in under two minutes over coffee." **The constraints**: don't recommend specific reorder quantities, that's still the owner's call; flag anything down more than thirty percent from its four-week average, that's the threshold that actually gets his attention. **A concrete example**: last month's update, the one the owner said was exactly right, pasted in whole. **What "done" looks like**: three sections, top movers, low stock, anomalies, under two hundred words total. **What it can't know on its own**: that the paint aisle always dips in January regardless of demand, a seasonal fact no spreadsheet contains.
+
+The rewritten brief produced, on the first real attempt, almost exactly the update Dana used to spend forty minutes writing by hand. Nothing about the underlying task changed. What changed is that a report is a job description too, the same five parts, just answering to a spreadsheet instead of a customer's inbox.
+
 ## Why this isn't about being a better writer
 
 If the five-part structure sounds like a writing skill you don't have, that's the wrong read on it, and worth correcting directly. Nothing about a good brief requires elegant prose. The ninety-second version from the opening wasn't well-written. It was complete. Those are different qualities, and the second one is the only one that matters here.
@@ -47,6 +61,18 @@ The actual skill underneath all five parts is one you already practice constantl
 This will not turn briefing into a rigid script you have to follow word for word. The five parts are what a complete brief covers, not a required order or required phrasing, and plenty of good briefs blend two parts into one sentence naturally.
 
 It also won't make every task worth this much upfront investment. A genuinely one-off task, something you'll never do again, might not earn a saved template, and a rough four-word attempt followed by a quick correction can be faster overall than writing five parts for something you'll never reuse. Chapter three is entirely about telling that apart from a task worth the full investment.
+
+## Try this before you turn the page
+
+Pick one task you already hand to AI with something close to a four-word brief. Write the real version, all five parts, using this as the shape:
+
+- **Situation:** what's actually going on, specifically, not the task's category.
+- **Constraints:** what can't be said, offered, or assumed.
+- **Example:** paste one real, specific sample of what good looks like.
+- **Done looks like:** a length, a format, a concrete deliverable.
+- **Can't know on its own:** the one piece of context that's obvious to you and invisible to the tool.
+
+Run the task once with this brief and once with your old four-word version, side by side. The gap between the two results is the whole argument of this chapter, made concrete on your own work instead of someone else's.
 
 [TAKEAWAYS]
 
