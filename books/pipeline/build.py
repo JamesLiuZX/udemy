@@ -108,7 +108,7 @@ def pandoc_chapter(md_path: Path, out_tex: Path) -> None:
         raise SystemExit("pandoc not found. Install it: apt-get install pandoc")
     result = subprocess.run(
         [exe, str(md_path), "-f", "markdown+smart", "-t", "latex",
-         "--top-level-division=chapter", "-o", str(out_tex)],
+         "--top-level-division=chapter", "--columns=40", "-o", str(out_tex)],
         capture_output=True, text=True,
     )
     if result.returncode != 0:

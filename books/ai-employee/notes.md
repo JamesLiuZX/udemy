@@ -180,7 +180,21 @@ Progress (updated per chapter as expansion happens):
       `[KEY-INSIGHT]` (the EU AI Act's Article 14 human-oversight
       requirement, backing the regulated-work answer with real, current
       law). 1,594 words, 7pp standalone. Rendered pages checked.
-- [ ] 15 Templates and Worksheets (new)
+- [x] 15 Templates and Worksheets — new chapter. Ten copyable templates
+      (brief, trial log, seam worksheet, failure-mode list, standing-
+      instruction audit, disqualifier checklist, roster, chain map, tool
+      scorecard, team standard, 30-day plan) plus a short glossary, all
+      reference material, no `[KEY-INSIGHT]`/`[PULLQUOTE]` by design.
+      844 words but 8pp standalone: worksheets are meant to be
+      low-word-density, real blank space, not padding. Found and fixed a
+      real pipeline bug while building this: pandoc's default 72-column
+      heuristic picks non-wrapping table columns for tables whose header
+      row is short even when a body cell's text is long, which overflowed
+      the page margin (both here and in chapter 12's identical table).
+      Fixed by passing `--columns=40` to every pandoc chapter conversion
+      in `books/pipeline/build.py`, forcing consistent wrapped/proportional
+      table columns; re-verified every table-bearing chapter in the book
+      (01, 08, 11, 12, 15) still renders correctly after the change.
 - [ ] Full rebuild + EPUB rebuild + `qc.py --release` at the new target,
       gutter confirmed at 0.5in against the real page count. Recheck real
       page count after chapter 11 specifically and adjust the scope of
