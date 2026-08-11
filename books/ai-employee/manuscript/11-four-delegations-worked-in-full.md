@@ -83,4 +83,4 @@ None of the four businesses ran the method perfectly on the first try, and that'
 
 ## Where this goes next
 
-Chapter twelve turns to a question that's been sitting underneath both stories: what actually separates a tool worth trusting with any of this from one that isn't, and how to evaluate that honestly before the first real task ever gets briefed.
+Chapter twelve turns to a question that's been sitting underneath all four stories: what actually separates a tool worth trusting with any of this from one that isn't, and how to evaluate that honestly before the first real task ever gets briefed.

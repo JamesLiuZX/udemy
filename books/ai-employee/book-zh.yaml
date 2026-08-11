@@ -1,0 +1,153 @@
+# =============================================================================
+# Simplified Chinese (zh-CN) edition of "Your First AI Employee".
+# Sibling config to book.yaml, not a variant of it: same design system, same
+# four bracket devices, same qc.py/build.py pipeline, but a distinct slug
+# (own build/ output dir, own proofs/ file) and its own manuscript-zh/ and
+# back-matter-zh/ source trees. See notes.md for the full status record and
+# for why this edition does not target KDP (KDP does not accept a Simplified
+# Chinese paperback upload; see notes.md's citations).
+# =============================================================================
+
+slug: ai-employee-zh
+title: "你的第一位AI员工"
+subtitle: "如何把真实工作交给AI，检查它的产出，并知道何时该“解雇”它"
+author: "James Liu"
+year: 2026
+genre: business
+trim: "6x9"
+target_pages: [150, 190]
+lang: zh
+
+# Never set true except by the real author, after a genuine full read-through
+# of THIS edition (a sign-off on the English edition does not carry over).
+verified: false
+
+# Chinese versions of the copyright-page text. Without these, build.py falls
+# back to its English DEFAULT_RIGHTS_NOTE/DEFAULT_AI_DISCLOSURE/DEFAULT_ISBN_NOTE
+# constants, which is wrong for this edition -- ai_disclosure_text especially,
+# since it is the compliance-critical AI-assistance disclosure line books/
+# CLAUDE.md SS1 requires, and it has to actually be readable by this book's
+# reader, not silently left in English.
+rights_note: "保留所有权利。未经作者事先书面许可，不得以任何形式复制、分发或传播本书的任何部分，书评中引用的简短片段除外。"
+ai_disclosure_text: "本书在作者的指导、大纲设计与审阅下，借助AI辅助撰写完成。书中统计数据与案例研究均引自已标注来源的公开资料；任何关于亲身经历的表述均为作者本人的真实经历。"
+isbn_note: "ISBN：[发行前由出版方或平台指定]"
+
+style:
+  spellcheck_lang: zh_CN
+  em_dash: avoid
+
+# back-matter-zh/ is picked up automatically by build.py's back-matter-<lang>
+# convention (no field needed for that); this overrides the printed section
+# titles, which otherwise default to the English titles dict.
+back_matter_titles:
+  notes_and_sources: "说明与资料来源"
+  about_the_author: "关于作者"
+
+# Not KDP listing copy (this edition isn't a KDP upload) -- kept for other
+# storefronts (Google Play Books, Apple Books) and direct/lead-gen use.
+description: |
+  你不需要成为技术专家，就能真正从AI身上获得杠杆效应。你需要的是管理它，
+  就像管理一位反应迅速、渴望表现、偶尔又过度自信的新员工一样：给它一份
+  真正的工作说明，而不是一句含糊的请求；仔细检查它最初几次的成果；摸清
+  它到底会在哪里出错；并清楚哪些任务永远不该交给它。
+
+  这是一套实用的、不依赖具体工具的方法，教你把真实的工作一项一项交给AI
+  处理，从周二下午那件已经拖了很久的任务开始。书中没有功能导览，也没有
+  任何会在某个应用改版之后就过时的内容。它讲的是这套管理技能本身，而这
+  项技能不会因工具更新而改变。
+
+  写给每一个手头有重复性工作、又不想再听炒作、也不想再翻四十个浏览器标
+  签页去看"最佳AI工具"榜单的人。
+
+dedication: "献给每一个仍未清空的收件箱。"
+
+front_matter:
+  - half_title
+  - title_page
+  - copyright
+  - dedication
+  - toc
+
+# Mirrors book.yaml's chapter list exactly: same ids, same order (which is
+# what actually drives the rendered chapter numbers -- see the comment on
+# id "15" below), same file-naming convention, pointed at manuscript-zh/.
+chapters:
+  - id: "01"
+    title: "委派难题"
+    file: manuscript-zh/01-the-delegation-problem.md
+  - id: "02"
+    title: "撰写工作说明书"
+    file: manuscript-zh/02-writing-the-job-description.md
+  - id: "03"
+    title: "试运行任务"
+    file: manuscript-zh/03-the-trial-task.md
+  - id: "04"
+    title: "检查工作成果，而不是重做一遍"
+    file: manuscript-zh/04-checking-the-work-without-redoing-it.md
+  - id: "05"
+    title: "摸清它的失败模式"
+    file: manuscript-zh/05-learning-its-failure-modes.md
+  - id: "06"
+    title: "真正管用的反馈方式"
+    file: manuscript-zh/06-feedback-that-actually-sticks.md
+  - id: "07"
+    title: "何时该“解雇”它"
+    file: manuscript-zh/07-when-to-fire-it.md
+  - id: "08"
+    title: "你的第二位，第三位“员工”"
+    file: manuscript-zh/08-your-second-hire-and-your-third.md
+  - id: "09"
+    title: "一人团队"
+    file: manuscript-zh/09-the-team-of-one.md
+  - id: "10"
+    title: "三十天委派计划"
+    file: manuscript-zh/10-a-30-day-delegation-plan.md
+  - id: "11"
+    title: "四个完整的委派案例"
+    file: manuscript-zh/11-four-delegations-worked-in-full.md
+  - id: "12"
+    title: "选择你的第一个工具"
+    file: manuscript-zh/12-choosing-your-first-tool.md
+  - id: "13"
+    title: "当你的团队也开始委派"
+    file: manuscript-zh/13-when-your-team-delegates-too.md
+  - id: "14"
+    title: "常见质疑与边界情况"
+    file: manuscript-zh/14-objections-and-edge-cases.md
+  - id: "16"
+    title: "衡量委派究竟为你节省了什么"
+    file: manuscript-zh/16-measuring-what-delegation-actually-saves-you.md
+  - id: "17"
+    title: "不同任务类型的常见失败模式"
+    file: manuscript-zh/17-common-failure-patterns-across-task-types.md
+  - id: "18"
+    title: "重新审视一个曾被“解雇”的任务"
+    file: manuscript-zh/18-revisiting-a-fired-task.md
+  - id: "19"
+    title: "六个行业，一套方法"
+    file: manuscript-zh/19-six-businesses-one-method.md
+  - id: "20"
+    title: "并非所有AI工具都是同一类工具"
+    file: manuscript-zh/20-not-all-ai-tools-are-the-same-kind-of-tool.md
+  - id: "21"
+    title: "当任务涉及金钱时，什么会变"
+    file: manuscript-zh/21-what-changes-when-the-task-involves-money.md
+  - id: "22"
+    title: "从不尝试的代价"
+    file: manuscript-zh/22-the-cost-of-never-trying.md
+  - id: "24"
+    title: "向客户解释这一切"
+    file: manuscript-zh/24-explaining-this-to-clients-and-customers.md
+  - id: "23"
+    title: "结语：你正在成为的那种管理者"
+    file: manuscript-zh/23-conclusion-the-manager-youre-becoming.md
+  # See book.yaml's matching comment: id "15" (Templates and Worksheets)
+  # is deliberately placed LAST in this list; rendered chapter numbering
+  # comes from list ORDER, not from the id string.
+  - id: "15"
+    title: "模板与练习表"
+    file: manuscript-zh/15-templates-and-worksheets.md
+
+back_matter:
+  - notes_and_sources
+  - about_the_author

@@ -359,10 +359,17 @@
 }
 
 % memoir/book's default TOC heading is babel[english]'s "Contents"; the
-% zh variant wants the Chinese equivalent instead. \tableofcontents itself
-% is invoked later, from front_matter_tex() in build.py, so overriding the
-% name here (any point before that call) is enough.
-\if@kdpzh\renewcommand{\contentsname}{目录}\fi
+% zh variant wants the Chinese equivalent instead. A plain \renewcommand
+% here in the class preamble is NOT enough on its own: babel re-applies
+% its English caption strings, \contentsname included, via
+% \select@language at \begin{document}, which runs after (and so wins
+% over) anything set earlier in the class. \AtBeginDocument queues this
+% redefinition to fire after that same hook instead, which is what
+% actually makes "目录" stick on the printed page rather than silently
+% reverting to "Contents" (verified: without this wrapper the TOC page
+% prints the English heading even though \contentsname was "correctly"
+% redefined moments before \begin{document}).
+\if@kdpzh\AtBeginDocument{\renewcommand{\contentsname}{目录}}\fi
 
 \newcommand{\dedicationpage}[1]{%
   \thispagestyle{empty}

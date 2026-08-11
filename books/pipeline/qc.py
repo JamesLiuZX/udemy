@@ -153,11 +153,17 @@ def check_manuscript(book: Book, rep: Report) -> None:
             rep.warn(f"{tag} doesn't open with a heading — check the chapter title "
                      f"renders correctly.")
 
-    lang = book.style.get("spellcheck_lang", "en_US")
-    bad = _spellcheck(all_texts, lang)
-    if bad:
-        rep.fail(f"[{book.slug}] possible typos [{lang}] (fix, or add to ALLOW in "
-                 f"books/pipeline/qc.py): {', '.join(sorted(bad)[:25])}")
+    # Hunspell tokenizes on whitespace; CJK text has none, so running an
+    # en_US/en_GB dictionary against a zh manuscript would either see one
+    # giant unspellable "word" per line or nothing at all, not real typos.
+    # A translated edition's own language is proofread by the human
+    # translation pass, not this ASCII spellchecker.
+    if book.meta.get("lang") != "zh":
+        lang = book.style.get("spellcheck_lang", "en_US")
+        bad = _spellcheck(all_texts, lang)
+        if bad:
+            rep.fail(f"[{book.slug}] possible typos [{lang}] (fix, or add to ALLOW in "
+                     f"books/pipeline/qc.py): {', '.join(sorted(bad)[:25])}")
 
 
 def check_release(book: Book, out_dir: Path, rep: Report) -> None:

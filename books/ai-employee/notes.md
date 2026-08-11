@@ -3,6 +3,142 @@
 Not part of the build. Working notes for continuing this manuscript across
 sessions, same pattern as books/stop-guessing/notes.md.
 
+## Status — Simplified Chinese edition shipped (159pp), English proofs rebuilt with byline
+
+Two author directives landed after the editorial pass closed the English
+edition out at 187pp: (1) set the real byline, James Liu, replacing the
+`"Your Name"` placeholder, and drop the placeholder acknowledgments file
+in favor of the real About the Author bio the author supplied; (2)
+translate the complete book into Simplified Chinese as a second edition.
+Both are done. Detail below; short version:
+
+**English proofs rebuilt.** `book.yaml`'s `author` is now `"James Liu"`,
+`back-matter/about_the_author.md` carries the real bio he supplied
+(not embellished), `back_matter` no longer lists `acknowledgments`.
+Rebuilt: 189 pages (within [180, 240]), `qc.py --release` clean apart
+from the sign-off gate, EPUB TOC has 28 correctly-titled entries with no
+Acknowledgments leftover. Title page, copyright page, and the About the
+Author page all visually confirmed. `proofs/ai-employee.pdf` recommitted.
+Also fixed one real leftover bug the byline pass surfaced: chapter 11's
+closing line still said "underneath both stories" from before the
+expansion pass added a third and fourth case study; now reads "all four
+stories," in both the English chapter and its zh translation.
+
+**Simplified Chinese edition shipped, as a second, parallel book.**
+`book-zh.yaml` (slug `ai-employee-zh`) is a sibling config to `book.yaml`,
+not a variant of it: same design system, same four bracket devices, same
+`build.py`/`qc.py` pipeline, driven by `lang: zh`, its own
+`manuscript-zh/` and `back-matter-zh/` source trees. Full chapter-by-
+chapter translation, not a summary: every paragraph, table, KEY-INSIGHT/
+PULLQUOTE/TAKEAWAYS box, and citation in all 24 chapters plus both
+back-matter files.
+
+- **Typesetting mechanism: reused, not reinvented.** Mid-build, the
+  `one-person-business` session independently landed its own `[zh]`
+  option on this same shared `books/theme/kdp-book.cls`, a few minutes
+  ahead of this one. Per the standing rule for shared-file work
+  (coordinate through git, reuse an already-landed mechanism rather than
+  ship a second, incompatible one), this session discarded its own
+  from-scratch draft (which had vendored two extracted CJK OTF faces
+  under `theme/vendor/fonts-cjk/`, since removed) and rebuilt on top of
+  theirs after `git pull --rebase`: `book.py` gained a `Book.lang`
+  property; `build.py` picks `[zh]` up from it automatically and resolves
+  back matter from a `back-matter-<lang>/` directory when one exists
+  (falls back to `back-matter/` otherwise, so every English-only book is
+  unaffected); `book-zh.yaml` sets `back_matter_titles` to override the
+  printed section titles for `notes_and_sources`/`about_the_author`. CJK
+  fonts are **not vendored** under their approach: `apt-get install -y
+  fonts-noto-cjk texlive-lang-chinese` puts `Noto Serif/Sans CJK SC` on
+  the system font path, and `xeCJK` finds them by family name, no `Path`/
+  `Extension` fontspec options needed the way the Latin faces use. Their
+  box-label and copyright-line Chinese strings match what this edition
+  needed too, so no further class changes were required there.
+- **One real bug found in their mechanism and fixed as a shared
+  improvement**, benefiting both zh editions: `\if@kdpzh\renewcommand{
+  \contentsname}{目录}\fi`, placed directly in the class preamble, looked
+  correct but silently lost to babel: babel's `[english]` option
+  re-applies its own caption strings (`\contentsname` included) via
+  `\select@language` at `\begin{document}`, which runs *after* anything
+  set earlier in the class file and so wins. First render of this
+  edition's table of contents printed "Contents" in English despite the
+  override; confirmed by testing, fixed by wrapping the same
+  `\renewcommand` in `\AtBeginDocument{...}`, which queues it to fire
+  after babel's own hook instead. Rebuilt and confirmed "目录" prints
+  correctly; this also silently fixes the same latent bug in
+  `one-person-business-zh.pdf`'s table of contents, worth a rebuild there
+  too.
+- **A real, previously-latent build.py bug**, fixed earlier in this same
+  editorial pass and unrelated to the zh work: back matter's chapter/
+  section title used to come only from a hardcoded Python dict keyed by
+  filename slug, not from the back-matter file's own `# Title` line the
+  way chapter titles already work. `back_matter_titles` (the
+  one-person-business session's override mechanism, adopted here too)
+  composes cleanly with that fix: the dict is still the source of the
+  printed title, `back_matter_titles` is a per-book override on top of
+  it, and English behaviour is unchanged when a book doesn't set one.
+- **Translation quality control**, beyond the individual translation
+  passes: a full punctuation audit across all 26 zh files caught two real
+  defects a first read missed -- chapter 6 used half-width ASCII
+  punctuation throughout instead of full-width Chinese punctuation
+  (retranslated from scratch with explicit instructions), and chapter 18
+  used straight ASCII quote marks instead of curly Chinese quotes
+  (fixed with a script that alternates open/close curly quotes while
+  protecting the citation portion of every KEY-INSIGHT box and every
+  `back-matter-zh/notes_and_sources.md` entry's trailing italic
+  citation, since those stay in their original English form on purpose).
+  A second full-book scan after both fixes found zero remaining
+  half-width-punctuation or straight-quote instances. Also caught and
+  fixed: `notes_and_sources.md`'s section headers read "Chapter N:" in
+  English instead of "第N章："; a book.yaml YAML folded-scalar (`>-`)
+  quirk that silently inserted a literal space into the copyright page's
+  rights/AI-disclosure text at the point I'd wrapped the line, rewritten
+  as unwrapped single-line strings; and one inconsistent Chinese term for
+  the coined survey word "botshitting" between its in-chapter KEY-INSIGHT
+  box and its `notes_and_sources.md` entry, aligned to match.
+- **The copyright page's rights/AI-disclosure/ISBN text is translated**,
+  not left defaulting to English: `book-zh.yaml` sets its own
+  `rights_note`, `ai_disclosure_text`, and `isbn_note` fields (build.py
+  otherwise falls back to English-only defaults). The AI-assistance
+  disclosure line especially needed this: it is the compliance-critical
+  sentence books/CLAUDE.md SS1 requires, and it has to actually be
+  readable by this edition's reader, not silently left in English because
+  no one overrode the default.
+- **KDP will not take this edition.** Live-checked (not assumed): KDP's
+  own "Book Supported Languages" help page and its paperback PDF-upload
+  path list English, French, German, Italian, Portuguese, Spanish,
+  Catalan, Galician, and Basque only; Chinese does not appear for print
+  at all. Chinese (Traditional) exists only as a beta *eBook* language,
+  with no Simplified Chinese eBook or paperback support found anywhere in
+  KDP's current documentation. Multiple KDP Community threads from 2021
+  through 2024 ask why Simplified Chinese still isn't supported, with no
+  resolution. This edition is not a KDP upload by design: the interior
+  PDF (this proof) targets other print/distribution channels, and the
+  same manuscript-zh/ source could feed Google Play Books or Apple Books
+  through an EPUB path later (not built this pass; only the PDF proof was
+  requested) or a direct/lead-gen PDF sale, none of which share KDP's
+  language restriction.
+- **Target pages recalibrated to reality**, the same way the English
+  edition's was earlier: Chinese typesets measurably denser than English
+  at equivalent content (full-width punctuation and no inter-word spaces
+  both compress line length), so the same manuscript that runs 189pp in
+  English renders at 159pp in Chinese. `target_pages` set to `[150, 190]`
+  to bracket the real count; the word-count-based pre-render estimate in
+  `qc.py` (`~6pp estimated`) is a known, harmless false positive for any
+  CJK book, since it splits on whitespace and Chinese has none between
+  characters -- the real page count from the built PDF, not that
+  estimate, is what actually gates `--release`.
+- **Release build**: 159 pages, within [150, 190], gutter correctly at
+  0.5in (151-300pp band), `qc.py --release` clean apart from the
+  sign-off gate (hunspell is skipped entirely for `lang: zh` books,
+  since it isn't CJK-aware and would either flag the whole manuscript or
+  nothing at all). All fonts embedded and subset. Rendered spreads
+  visually inspected: title page, copyright page, table of contents,
+  chapter 1's opener and its KEY-INSIGHT/PULLQUOTE boxes, the four-column
+  case-study comparison table in chapter 11, the templates chapter's
+  worksheet layout, Notes and Sources, and About the Author.
+  `proofs/ai-employee-zh.pdf` committed, same deliberate exception to the
+  never-commit-`build/` rule as the English proof.
+
 ## Status — expansion complete, target reached (185pp, within [180, 240])
 
 The author raised the target from a tight [65, 90]pp field guide to a
