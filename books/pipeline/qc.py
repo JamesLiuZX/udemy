@@ -54,6 +54,12 @@ ALLOW = {
     "misattributed", "reframing", "aditi", "yuki", "odalys", "dropdown",
     "zillow", "underpriced", "felix", "yusuf", "yusuf's",
     "malik's", "renaldo's", "soo",
+    # ai-for-the-rest-of-us: character names and real words hunspell's
+    # en_US list doesn't carry.
+    "marisol", "marisol's", "diego", "diego's", "sofia", "sofia's",
+    "pixma", "autocorrect", "chatbot", "chatbots", "grandkids", "olds",
+    "reframe", "reframed", "roading", "résumé", "stovetop", "timeframe",
+    "tradeoff", "walkability",
 }
 
 AUTHOR_INPUT_RE = re.compile(r"\[AUTHOR-INPUT:(.*?)\]", re.S)

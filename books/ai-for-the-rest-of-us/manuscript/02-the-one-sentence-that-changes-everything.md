@@ -12,9 +12,9 @@ Same tool. Completely different answer. A specific dish. A reason it worked for 
 
 Think about what happened between those two questions. In the first one, Linda knew she was cooking for six people, that one of them was vegetarian, that her husband doesn't like spicy food. All of that was true and sitting in her head the whole time. None of it made it into the question. The tool never had it, so it couldn't use it, the same way a friend couldn't help plan the meal if Linda called and only said "give me dinner ideas" and hung up before saying anything else.
 
-This is really the whole chapter, so it's worth saying it plainly: **the AI can only work with what you actually tell it.** Not what you're thinking. Not what seems obvious to you. What you typed. When an answer feels generic, that's almost never the tool being bad at its job. It's the question being a smaller version of what you actually meant, and the answer coming back exactly as small.
+This is really the whole chapter, so it's worth saying it plainly. **The AI can only work with what you actually tell it.** Not what you're thinking. Not what seems obvious to you. What you typed. When an answer feels generic, that's almost never the tool being bad at its job. It's the question being a smaller version of what you actually meant, and the answer coming back exactly as small.
 
-[KEY-INSIGHT: Usability research on how people interact with AI chatbots consistently finds the same pattern: a vague, open-ended question produces a generic, one-size-fits-all answer, while a specific request, one that includes the actual goal and a bit of real context, produces an answer people rate as noticeably more useful and on target. || Source: aggregated usability findings on AI chatbot prompting, multiple published guides and research summaries, 2025-2026.]
+[KEY-INSIGHT: Nielsen Norman Group, a usability research firm that has studied how people use technology for decades, tested how prompt specificity changes an AI tool's output and built their published "CARE" framework around the same finding: a prompt carrying real context, who it's for, what you're actually trying to do, produces results people rate as far more usable than a vague one-liner carrying none of it. || Source: Nielsen Norman Group, "CARE: A Structure for Crafting AI Prompts," nngroup.com, 2025.]
 
 ## The one sentence, broken down
 
@@ -28,13 +28,17 @@ Linda's second try wasn't complicated. It just answered three quiet questions th
 
 That's the whole method. Not a formula to memorize, just a habit: before you hit send, picture explaining the same thing to a person standing next to you, and notice what you'd naturally add that you almost left out of the typed version.
 
-[PULLQUOTE: The AI can only work with what you actually tell it. When an answer feels generic, that's the question being small, not the tool being bad at its job.]
+[PULLQUOTE: The AI can only work with what you actually tell it.]
 
 ## You don't need a perfect first try
 
 It's worth saying clearly: Linda didn't get the good version on her first attempt, and that's completely normal, not a sign she did it wrong. The first, vague question wasn't a failure. It was a first draft, the same as anyone's first draft of anything. The fix wasn't starting over. It was adding the three things she already knew and just hadn't said yet.
 
 This matters because a lot of people quietly decide, after one generic answer, that the tool "doesn't really work for this." Usually what happened is closer to Linda's first try: a real question, just a smaller one than the real question in her head. One more sentence, and the same tool answered the actual question instead.
+
+## Marisol's version, the same habit at work
+
+Marisol hit the exact same wall a week later, from a different direction. She needed a quick note to Diego's teacher explaining he'd miss a day for a family event, typed "write a note excusing my kid from school," and got back something so generic it could have excused any child from anything, three sentences of nothing in particular. She caught herself doing what Linda had done, adding the three missing pieces on the second try: who it was for (Diego, third grade, his specific teacher's name), what actually mattered (one day, a family event, nothing requiring a doctor's note), and what to avoid (anything that sounded overly formal for a note to a teacher she saw at pickup most days). The second version read like an actual parent wrote it, because an actual parent had, just with three sentences' worth of help finding the words.
 
 ## Where this stops helping
 

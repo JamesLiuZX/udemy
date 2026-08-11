@@ -12,11 +12,15 @@ She started smaller than a whole trip. One evening, she typed: "We want to go so
 
 That single message did the job of the first several hours of research, the part that isn't really about any one hotel, it's about narrowing an entire world of possible trips down to three real options worth actually comparing. She picked one of the three, then went back for the next layer: "For [the city she picked], find us a hotel in walking distance of the old town, under two hundred a night, with real recent reviews mentioning it's quiet at night." Another few minutes, another few hours of scrolling avoided.
 
-[PULLQUOTE: The sixteen hours were never really about any one hotel. They were about narrowing an entire world of options down to a few worth actually comparing.]
+[PULLQUOTE: The tool is excellent at cutting sixteen hours of undifferentiated searching down to twenty minutes of focused comparing.]
 
 ## Why this works the same way chapter two described
 
 Notice Linda's message wasn't just "plan our anniversary trip," the vague version that would have produced the same generic overwhelm she was already drowning in. It had the three things from chapter two: who it's for (two people, a specific budget), what actually matters (walkable city, not a long layover), and what to avoid (long layovers, beach-only destinations). The trip-planning version of a good question isn't a new skill. It's the same one sentence habit, aimed at a bigger, messier decision than dinner.
+
+## Marisol's version: a smaller trip, the same wall
+
+Marisol's version of this wasn't an anniversary trip, it was a weekend visit to see her sister four hours away, and the wall she hit was smaller but just as real: which route to drive, where to stop with two kids who'd need a break, whether it was worth the extra hour to avoid a stretch of highway construction she'd heard about but hadn't confirmed. She typed: "Driving from [her city] to [her sister's city] this weekend with two kids, ages 10 and 15. Give me a route, a good stopping point roughly halfway for a break, and whether the construction on [the highway] is worth avoiding." Ten minutes, not sixteen hours, because the decision was smaller, but the exact same shape: specific origin and destination, who's actually along for the ride, and the one real constraint worth asking about by name instead of hoping it wouldn't matter.
 
 ## What to still do yourself
 
