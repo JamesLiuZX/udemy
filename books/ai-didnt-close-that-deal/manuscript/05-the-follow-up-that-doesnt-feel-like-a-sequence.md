@@ -98,7 +98,7 @@ The fix in her world is not "nudge the same person again with something new," th
 
 Five touches, three different people, and at no point does any single inbox receive more than two messages in a row. The sequence isn't longer because Naomi is more persistent than Theo. It's structured differently because the deal itself is structured differently, and a cadence that ignores that structure and just nudges the one person who happened to answer the phone first is solving the wrong problem entirely.
 
-[PULLQUOTE: It is the moment the automation admits, out loud, that it was an automation the entire time.]
+[PULLQUOTE: It is the one moment in the whole sequence where the automation admits, out loud, that it was an automation the entire time.]
 
 ## Exercise: audit your own cadence
 
