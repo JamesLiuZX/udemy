@@ -51,9 +51,9 @@ python3 pipeline/build.py --course courses/ai-for-pms --only 4.2
 # 5. Authoring checks
 python3 pipeline/qc.py --course courses/ai-for-pms
 
-# 6. Production voice, only once the script is final
-export ELEVENLABS_API_KEY=... ELEVENLABS_VOICE_ID=...
-python3 pipeline/build.py --course courses/ai-for-pms --provider elevenlabs
+# 6. Production voice, only once the script is final (free local Kokoro;
+#    setup and alternatives in docs/07-tts.md)
+python3 pipeline/build.py --course courses/ai-for-pms --provider kokoro
 
 # 7. Release gate against Udemy's technical standards
 python3 pipeline/qc.py --course courses/ai-for-pms --release
@@ -230,6 +230,7 @@ docs/03-launch-playbook.md        Title, promo script, pricing, reviews
 docs/04-quality-bar.md            Callback thread, cold opens, presence, QC additions
 docs/05-kdp-playbook.md           Book portfolio strategy: sequencing, launch, Amazon mechanics
 docs/06-growth-engine.md          Channels, asset flywheel, automated growth jobs
+docs/07-tts.md                    Voice decision: Kokoro default, costs, audiobook routes
 growth/                           Paste-ready automation prompts (cron / Cowork)
 books/                            KDP publishing system (own CLAUDE.md; read it first)
 courses/<slug>/course.yaml        Curriculum, landing copy, config (source of truth)

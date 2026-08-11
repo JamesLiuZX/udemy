@@ -238,7 +238,7 @@ difference between passing Udemy's AI policy and violating it.
 
 | Setting | Value |
 | --- | --- |
-| Provider | ElevenLabs (`eleven_v3`) — best for long-form narration |
+| Provider | Kokoro-82M local, free (`kokoro`) — decision and setup in docs/07-tts.md |
 | Alternatives | `openai`, or add one in `pipeline/tts.py::PROVIDERS` |
 | Stability | 0.45 — enough variation to sound alive |
 | Style | 0.35 — expressive without drifting |
