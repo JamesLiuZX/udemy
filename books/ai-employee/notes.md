@@ -154,7 +154,13 @@ Progress (updated per chapter as expansion happens):
       (JPMorganChase Institute's small-business AI adoption data) frames
       the chapter. A comparison table closes it. 2,031 words, 7pp
       standalone. Rendered pages checked.
-- [ ] 12 Choosing Your First Tool (new)
+- [x] 12 Choosing Your First Tool — new chapter. Five durable,
+      tool-agnostic evaluation questions (memory/persistence, real cost
+      at volume, data handling, honest hedging, workflow fit) instead of
+      a ranked list that goes stale within a season. One `[KEY-INSIGHT]`
+      (S&P Global's 2025 enterprise AI abandonment survey) and a "Try
+      this: score your candidates" worksheet. 1,550 words, 6pp
+      standalone. Rendered pages checked.
 - [ ] 13 When Your Team Delegates Too (new)
 - [ ] 14 Objections and Edge Cases (new)
 - [ ] 15 Templates and Worksheets (new)
