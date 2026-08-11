@@ -105,6 +105,9 @@ chapters:
   - id: "19"
     title: "Six Businesses, One Method"
     file: manuscript/19-six-businesses-one-method.md
+  - id: "20"
+    title: "Not All AI Tools Are the Same Kind of Tool"
+    file: manuscript/20-not-all-ai-tools-are-the-same-kind-of-tool.md
   # "15 Templates and Worksheets" (manuscript/15-templates-and-worksheets.md)
   # is deliberately placed LAST in this list, after every substantive
   # chapter, even though its id/filename predate later-added chapters.

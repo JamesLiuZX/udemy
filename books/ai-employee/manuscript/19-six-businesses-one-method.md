@@ -44,4 +44,4 @@ None of these six businesses have much in common on the surface, retail, HVAC, b
 
 ## Where this goes next
 
-The final chapter is reference material: the book's templates and worksheets in one place, ready to copy and fill in on whatever task, from any of these business types or your own, you're about to try next.
+Chapter twenty steps back from any single business to a distinction this book has glossed over so far: "AI tool" actually covers a few genuinely different shapes of software, and knowing which shape you're delegating to changes exactly how a few pieces of this method apply.

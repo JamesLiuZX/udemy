@@ -229,6 +229,15 @@ Progress (updated per chapter as expansion happens):
       method isn't specific to the deeper examples used elsewhere. One
       `[KEY-INSIGHT]` (OECD's Dec 2025 SME AI-adoption-by-sector data).
       1,073 words, 4pp standalone. Rendered pages checked.
+- [x] 20 Not All AI Tools Are the Same Kind of Tool — new chapter.
+      Distinguishes three shapes of AI tool (general chat assistant,
+      narrow purpose-built tool, action-taking agent) and how briefing,
+      checking, and firing apply differently to each, especially agents
+      needing a pre-action checkpoint rather than a post-draft one. A
+      worked example (Odalys running all three shapes across different
+      tasks). No new `[KEY-INSIGHT]`; this chapter reorganizes and
+      extends the method itself rather than resting on a new external
+      claim. 1,022 words, 4pp standalone. Rendered pages checked.
 - [ ] Additional chapters as needed to close the remaining gap to
       [180, 240]pp (still well short after 11-16; author directive is to
       keep adding genuine chapters rather than pad, checking in if
