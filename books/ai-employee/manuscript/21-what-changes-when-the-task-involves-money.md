@@ -37,4 +37,4 @@ Felix didn't fire the task. He added the one check that actually mattered: every
 
 ## Where this goes next
 
-The final chapter is reference material: the book's templates and worksheets in one place, ready to copy and fill in on whatever task you're about to try next.
+Chapter twenty-two names a risk this book's own caution can create if it's the only lesson taken from it: using careful evaluation as a permanent excuse to never actually try.

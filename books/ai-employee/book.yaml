@@ -111,6 +111,9 @@ chapters:
   - id: "21"
     title: "What Changes When the Task Involves Money"
     file: manuscript/21-what-changes-when-the-task-involves-money.md
+  - id: "22"
+    title: "The Cost of Never Trying"
+    file: manuscript/22-the-cost-of-never-trying.md
   # "15 Templates and Worksheets" (manuscript/15-templates-and-worksheets.md)
   # is deliberately placed LAST in this list, after every substantive
   # chapter, even though its id/filename predate later-added chapters.

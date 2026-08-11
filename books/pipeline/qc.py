@@ -52,7 +52,7 @@ ALLOW = {
     "reputational", "mistriaged", "pre", "stockout", "listicle's",
     "pushback", "whoever's", "strawman", "undertested", "renaldo",
     "misattributed", "reframing", "aditi", "yuki", "odalys", "dropdown",
-    "zillow", "underpriced", "felix",
+    "zillow", "underpriced", "felix", "yusuf", "yusuf's",
 }
 
 AUTHOR_INPUT_RE = re.compile(r"\[AUTHOR-INPUT:(.*?)\]", re.S)

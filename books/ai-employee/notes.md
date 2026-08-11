@@ -251,6 +251,16 @@ Progress (updated per chapter as expansion happens):
       furniture-quoting task and the underpriced quote reconciliation
       caught). 1,008 words, 4pp standalone. Rendered pages checked. This
       is the last new substantive chapter before the templates appendix.
+- [x] 22 The Cost of Never Trying — new chapter. Names the risk the
+      book's own caution can create if it's the only lesson taken: using
+      chapter seven's disqualification logic (which governs whether to
+      keep running a task you've tried) as an excuse to never run chapter
+      three's cheap trial in the first place. One `[KEY-INSIGHT]` (reused
+      JPMorganChase Institute report, a different specific stat: new-
+      business AI adoption cohorts reaching 10% in 6 months vs. 6+ years
+      for 2019-founded firms), a worked example (Yusuf, eighteen months
+      of correctly-reasoned deliberation resolved in one afternoon). 949
+      words, 4pp standalone. Rendered pages checked.
 - [ ] Additional chapters as needed to close the remaining gap to
       [180, 240]pp (still well short after 11-16; author directive is to
       keep adding genuine chapters rather than pad, checking in if
