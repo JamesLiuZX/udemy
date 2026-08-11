@@ -28,6 +28,14 @@ A **day-30 message**, which names the situation plainly and asks for a specific 
 
 Having all three written in advance does the actual work here. The task on the day a payment goes overdue stops being "compose a difficult message" and becomes "send the message I already approved of, on schedule." That's the same shift chapter one made for the invoice itself, applied to the harder document.
 
+One more message is worth saving alongside the three, and it's the one most freelancers never think to write because it happens before anything's actually wrong: a **day-minus-3 heads-up**, sent a few days before the due date, on any invoice above your usual size or for any client newer than a few months. "Just a friendly note that invoice #[number] is due on [date], sending it your way in case it needs to route through anyone else on your end first." It costs nothing, it never reads as anxious because nothing is overdue yet, and it catches the single most common reason a payment actually goes late: not bad faith, but the invoice sitting unrouted in someone else's approval queue.
+
+## Marcus's version: invoicing against milestones, not hours
+
+Priya's invoice is a monthly rhythm. Marcus's is a project rhythm, and the template underneath it looks different in one specific way: instead of hours against a rate, each line item is a milestone against the fixed price from the proposal, "40 percent on kickoff, 30 percent on staging deployment, 30 percent on final handoff," the exact split written into the contract before the project ever started. That structure removes an entire category of dispute the hourly version doesn't have to worry about: nobody's arguing over how many hours a task took, because the price was never tied to hours in the first place.
+
+It creates a different failure mode instead, one his template has to handle explicitly: a milestone that's ambiguous enough that the client and Marcus don't agree it's actually been hit. "Staging deployment" sounds objective until a client believes staging means something slightly different than what Marcus delivered. His fix lives in the proposal from chapter three, not the invoice itself: each milestone gets one sentence defining exactly what "done" looks like for that milestone specifically, agreed before the project starts, so the invoice that follows is confirming a definition both sides already accepted rather than asserting one for the first time.
+
 [AUTHOR-INPUT: your own before-and-after here, the actual number of days it used to take you to send a first follow-up versus how fast it goes out now that it's a saved template, and if you have one, the real story of a client relationship that survived a firm day-30 message because the tone was right]
 
 ## Why the tone matters more than the content
@@ -50,6 +58,17 @@ It also won't cover what to do about genuinely unpaid work, months overdue, wher
 - Tone, not content, is what makes a payment reminder work. All three messages ask the same direct question; only the firmness changes.
 
 [/TAKEAWAYS]
+
+## Try this: build the four documents this week
+
+None of this requires new software, just twenty focused minutes and somewhere to save the result.
+
+- **The invoice template**: your business name, payment details, terms spelled out in plain language, and a line-item format matching how you actually bill, hours or milestones.
+- **The day-minus-3 heads-up**: one short paragraph, sent before anything's overdue.
+- **The day-3 and day-14 nudges**: friendly, then firmer, both assuming good faith, both asking a direct question rather than making an accusation.
+- **The day-30 message**: names the situation plainly and asks for a specific next step, a date or a call.
+
+Write all four now, while no invoice is actually overdue and no client has gone quiet on you. The whole point is that the version of you dealing with a real overdue payment three months from now never has to compose anything under stress. They just send what present-you already approved.
 
 ## Where this goes next
 
