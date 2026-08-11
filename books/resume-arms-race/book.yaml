@@ -1,0 +1,91 @@
+# =============================================================================
+# Single source of truth for "The Resume Arms Race".
+# Domain-specific book for recruiters and talent acquisition professionals:
+# AI-written resumes on one side, AI-powered screening on the other, and how
+# a recruiter stays useful and fair caught in the middle.
+# =============================================================================
+
+slug: resume-arms-race
+title: "The Resume Arms Race"
+subtitle: "How Recruiters Stay Useful and Fair When Every Resume Is AI-Written and Every Screen Is AI-Powered"
+author: "Your Name"
+year: 2026
+genre: business
+trim: "6x9"
+target_pages: [120, 170]
+
+# Never set true except by the real author, after a genuine full read-through.
+verified: false
+
+style:
+  spellcheck_lang: en_US
+  em_dash: avoid
+
+# KDP listing copy. Not part of the interior PDF.
+description: |
+  Every resume in your queue reads a little too well now, and the tool
+  you're using to screen them was built by the same kind of technology
+  that wrote them. Something in the middle, the actual signal about
+  whether this person can do this job, is getting crushed between the
+  two, and nobody trained you for what to do about it.
+
+  This book is a practical answer, not a lament. It covers what AI
+  screening actually gets wrong and who it wrongly filters out, how to
+  read past a fluent resume to the real signal underneath, why the
+  interview just became the most important tool you have, how to write
+  job posts that select for fit instead of keyword-matching, the bias and
+  liability exposure nobody's talent acquisition training covered, and
+  how to build a hiring process you could defend in front of a regulator
+  or a rejected candidate's lawyer.
+
+  Written for recruiters and talent acquisition professionals who didn't
+  sign up to referee an arms race, but are the ones standing in the
+  middle of it regardless.
+
+dedication: "For every good candidate a keyword filter never saw."
+
+front_matter:
+  - half_title
+  - title_page
+  - copyright
+  - dedication
+  - toc
+
+# Full planned arc. Chapters without a manuscript file yet are listed here as
+# the outline; build.py only requires the file to exist for the chapter IDs
+# you actually pass to --only. See notes.md in this directory for status.
+chapters:
+  - id: "01"
+    title: "The Arms Race"
+    file: manuscript/01-the-arms-race.md
+  - id: "02"
+    title: "How We Got Here"
+    file: manuscript/02-how-we-got-here.md
+  - id: "03"
+    title: "What AI Screening Actually Gets Wrong"
+    file: manuscript/03-what-ai-screening-actually-gets-wrong.md
+  - id: "04"
+    title: "Reading Past the Polish"
+    file: manuscript/04-reading-past-the-polish.md
+  - id: "05"
+    title: "The Interview Is the Only Thing Left That's Real"
+    file: manuscript/05-the-interview-is-the-only-thing-left-thats-real.md
+  - id: "06"
+    title: "Writing Job Posts That Don't Get Gamed"
+    file: manuscript/06-writing-job-posts-that-dont-get-gamed.md
+  - id: "07"
+    title: "Bias In, Bias Out"
+    file: manuscript/07-bias-in-bias-out.md
+  - id: "08"
+    title: "Building a Screen You Can Defend"
+    file: manuscript/08-building-a-screen-you-can-defend.md
+  - id: "09"
+    title: "Candidates Use AI Too, and That's Not Automatically Cheating"
+    file: manuscript/09-candidates-use-ai-too.md
+  - id: "10"
+    title: "The Recruiter's Actual Value Now"
+    file: manuscript/10-the-recruiters-actual-value-now.md
+
+back_matter:
+  - acknowledgments
+  - about_the_author
