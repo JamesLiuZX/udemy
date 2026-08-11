@@ -6,9 +6,10 @@
 slug: ai-for-pms
 title: "AI Product Skills for PMs & Analysts: Spec, Evaluate & Ship AI Features"
 subtitle: >-
-  Stop guessing whether your AI feature works. Learn to write eval-based acceptance
-  criteria, build a golden-set eval harness, model token economics, and de-risk
-  hallucination: the judgement work that survives every model upgrade.
+  Stop guessing whether the AI feature your team ships actually works. For PMs,
+  analysts, and the managers and team leads now accountable for AI: eval-based
+  acceptance criteria, a golden-set eval harness, token economics, and de-risking
+  hallucination, the judgement work that survives every model upgrade.
 
 # --- Landing page -----------------------------------------------------------
 # Paste verbatim into the Udemy course description. The AI disclosure MUST stay
@@ -35,8 +36,9 @@ description: |
   worksheet, a token unit-economics model, a model selection scorecard, an AI
   risk register, and a metric tree for the numbers that matter after launch.
 
-  **Who this is for:** product managers, project and delivery managers, and
-  business or data analysts who are now responsible for AI work. No coding
+  **Who this is for:** product managers, project and delivery managers, business
+  or data analysts, and any manager or team lead now responsible for an AI
+  feature or workflow, whether or not "product" is in your title. No coding
   required: the one Python lecture is explained line by line.
 
   **What this is not:** a prompt library, a tour of this month's tools, or a
@@ -56,6 +58,7 @@ audience:
   - Project / delivery managers running AI workstreams
   - Business & data analysts asked to measure AI systems
   - Founders and consultants scoping AI work
+  - Managers and team leads whose team now ships or operates an AI feature, even without "product" in the job title
 
 prerequisites:
   - No coding required. One optional Python lecture, fully explained line by line.
