@@ -1,0 +1,87 @@
+# =============================================================================
+# Single source of truth for "Your First AI Employee".
+# Practical / workflow book: delegating real tasks to AI tools, framed as
+# management rather than a feature tour, so the skill outlasts any one tool's
+# interface.
+# =============================================================================
+
+slug: ai-employee
+title: "Your First AI Employee"
+subtitle: "How to Delegate Real Work to AI, Check Its Output, and Know When to Fire It"
+author: "Your Name"
+year: 2026
+genre: business
+trim: "6x9"
+target_pages: [120, 170]
+
+# Never set true except by the real author, after a genuine full read-through.
+verified: false
+
+style:
+  spellcheck_lang: en_US
+  em_dash: allow
+
+# KDP listing copy. Not part of the interior PDF.
+description: |
+  You don't need to become technical to get real leverage from AI. You need
+  to manage it, the way you'd manage a fast, eager, occasionally
+  overconfident new hire: give it a real job description instead of a vague
+  request, check its first attempts closely, learn exactly how it fails,
+  and know which tasks it should never touch.
+
+  This is a practical, tool-agnostic system for delegating real work to AI,
+  one task at a time, starting with the one already eating your Tuesday
+  afternoon. No feature tours, nothing that goes stale the next time an
+  app redesigns its interface. Just the management skill underneath it,
+  which doesn't change when the tools do.
+
+  Written for anyone with a repetitive task and no patience left for either
+  hype or a 40-tab browser of "best AI tools" listicles.
+
+dedication: "For every inbox that's still full."
+
+front_matter:
+  - half_title
+  - title_page
+  - copyright
+  - dedication
+  - toc
+
+# Full planned arc. Chapters without a manuscript file yet are listed here as
+# the outline; build.py only requires the file to exist for the chapter IDs
+# you actually pass to --only. See notes.md in this directory for status.
+chapters:
+  - id: "01"
+    title: "The Delegation Problem"
+    file: manuscript/01-the-delegation-problem.md
+  - id: "02"
+    title: "Writing the Job Description"
+    file: manuscript/02-writing-the-job-description.md
+  - id: "03"
+    title: "The Trial Task"
+    file: manuscript/03-the-trial-task.md
+  - id: "04"
+    title: "Checking the Work Without Redoing It"
+    file: manuscript/04-checking-the-work-without-redoing-it.md
+  - id: "05"
+    title: "Learning Its Failure Modes"
+    file: manuscript/05-learning-its-failure-modes.md
+  - id: "06"
+    title: "Feedback That Actually Sticks"
+    file: manuscript/06-feedback-that-actually-sticks.md
+  - id: "07"
+    title: "When to Fire It"
+    file: manuscript/07-when-to-fire-it.md
+  - id: "08"
+    title: "Your Second Hire, and Your Third"
+    file: manuscript/08-your-second-hire-and-your-third.md
+  - id: "09"
+    title: "The Team of One"
+    file: manuscript/09-the-team-of-one.md
+  - id: "10"
+    title: "A 30-Day Delegation Plan"
+    file: manuscript/10-a-30-day-delegation-plan.md
+
+back_matter:
+  - acknowledgments
+  - about_the_author

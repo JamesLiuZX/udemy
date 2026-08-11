@@ -1,0 +1,86 @@
+# The Delegation Problem
+
+Two people try AI for the first time, in the same week, for two different tasks. Both conclusions they draw are wrong, and both are wrong for the same reason.
+
+The first person asks it to draft a reply to an awkward email, one of those messages where a client is annoyed and you need to apologize without admitting fault you don't think is yours. The reply comes back generic, a little stiff, missing the one detail that would have actually landed. She sends her own version instead, closes the tab, and doesn't open it again for a month. Her verdict: overhyped, not actually useful for anything that matters.
+
+The second person asks it to summarize a forty-page vendor contract before a renewal meeting. The summary comes back clean, confident, well-organized. He pastes it straight into his notes and walks into the meeting without reading the original document. The summary missed a clause about the auto-renewal notice window, quietly, the way a missed detail doesn't announce itself. Three months later the contract renews automatically, a year early, because nobody flagged it in time. His verdict: dangerous, can't be trusted with anything that matters.
+
+[AUTHOR-INPUT: your own specific version of one of these two stories, a task you personally handed to AI that went wrong either by being too quick to dismiss it or too quick to trust it, and what it actually cost you]
+
+Notice these two people reached opposite conclusions from what looks like opposite experiences, underuse in one case, overuse in the other, but they made the exact same mistake to get there. Both of them treated the tool like a vending machine: put in a request, get out a finished product, no judgment required on either end. When the product was bad, the first person blamed the machine and walked away. When the product looked fine, the second person trusted it the way you trust a vending machine's contents, which is to say completely, because there's nothing else to do with a vending machine. Neither of them managed anything. They each made one purchase and rendered one verdict.
+
+This book is about the third option, the one almost nobody reaches for by instinct, because it's not the way software has ever worked before: **AI is not a vending machine you judge in one try. It's more like a new hire you manage over many.**
+
+## Meet your new employee
+
+Picture the most capable, fastest new hire you have ever onboarded. They've read more than anyone else on your team combined. They never get tired, never have a bad morning, and can produce a full first draft of almost anything in under a minute.
+
+Now picture their first day properly. They have never met your clients. They don't know that your boss hates the word "circle back," or that your biggest customer had a billing dispute two years ago and gets touchy about invoices. They have no idea what "done" looks like on your team specifically, because nobody has shown them one real example of it. And here's the part that actually matters: when they don't know something, they will tell you the wrong answer in exactly the same confident, fluent voice they use for the right one. No hedge in their tone. No tell.
+
+You would never hand an employee like that, on their first morning, a vague task and an unsupervised client relationship, with no examples of good work and no check-in planned. If you did, and it went badly, you wouldn't conclude that hiring people doesn't work. And if it happened to go fine once, you wouldn't hand them the company's biggest account the next morning on the strength of that one lucky result either. You'd manage them: clear brief, small stakes first, check the early work closely, extend trust as they earn it.
+
+That is precisely the piece missing from both opening stories, and it's the entire subject of this book. Not "how to use AI." How to manage it, the way you'd manage anyone new, using skills you very likely already have and have simply never thought to point at a piece of software.
+
+## Two ways of relating to the same tool
+
+| Vending-machine thinking | Management thinking |
+| --- | --- |
+| One try, then a verdict | A trial, then a track record |
+| Trust it completely or not at all | Trust grows with evidence, task by task |
+| A bad result means the tool is bad | A bad result means an instruction was missing |
+| The first output is the typical output | The tenth output, after onboarding, is the typical one |
+
+Almost every disappointing AI story and every AI horror story you've heard traces back to the left column. The fix isn't a better tool. It's moving to the right column, on purpose, with a method, which is what the rest of this book actually is.
+
+## The same task, given two different ways
+
+Here's what that difference looks like in practice, on the exact awkward-email task from the start of this chapter.
+
+> Write a reply to this client email. Be professional.
+
+That's the whole brief. It's not really a brief, it's a task name. Nothing in it says what tone you actually want, what you're and aren't willing to admit, what the relationship history is, or what a good reply from you personally sounds like. The result comes back generic because generic is the only thing that request could possibly produce. There was no way for it to know your voice, because you never told it.
+
+> Write a reply to this client email. Context: they're annoyed about a two-day shipping delay, which was our fulfillment partner's fault, not theirs and not fully ours either. Acknowledge the frustration without admitting fault we don't own. Offer the standard delay credit (10% off next order). Keep it under 120 words. Here's an email I sent a different annoyed client last month that landed well, match this tone: [paste example].
+
+Same task. Completely different brief. It names the specific situation, the boundary around what can and can't be admitted, the concrete offer, a length constraint, and a worked example of your own voice to match. Nothing about the underlying tool changed between these two attempts. The only thing that changed is that the second one was actually managed, the way you'd brief a new hire on a real assignment instead of leaving a sticky note that says "handle this."
+
+The next chapter is entirely about building briefs like the second one, for whatever task you're about to hand off first. For now, the point is narrower: the quality gap between those two replies is not a gap in the tool. It's a gap in the instruction, and a gap in instruction is fixable in a way that "the tool is bad" never is.
+
+## A five-minute check before you go further
+
+Think of one task you've already tried handing to AI, that you gave up on, and one you handed off that came back wrong in a way you only caught later, or didn't catch at all. For each one, ask honestly: did I actually onboard it, brief it the way I'd brief a real hire, give it an example of what good looks like, tell it what it couldn't know on its own? Or did I hand over a task name and expect it to read my mind the way an experienced colleague sometimes can?
+
+For most people, most of the time, the honest answer is the second one. That's not a confession of failure. Nobody teaches this skill anywhere, so almost nobody arrives with it already built. It just means the fix is available starting now, on the next task, rather than requiring you to have done anything differently up to this point.
+
+## Why this isn't about being technical
+
+If you've quietly filed yourself under "not a tech person," this is the moment to unfile yourself, because that label describes a different problem than the one this book solves.
+
+Nothing ahead requires understanding how the model works internally, writing a line of code, or learning a new piece of software's menu structure. Every skill in this book is a management skill you already own from somewhere else in your life, whether that's running a household, coordinating a school fundraiser, or training a new hire at work: describe the task clearly, start small, check early results closely, give specific feedback, extend trust as it's earned, and know some jobs you just don't hand to someone new. The only new part is the target. You're pointing an old, familiar skill at an unfamiliar thing, not learning an entirely new skill from nothing.
+
+## Won't the tool just get better on its own?
+
+It's a fair question, and worth answering directly before asking anyone to spend a whole book on a management skill: if these tools keep improving as fast as they have been, won't the briefing and checking just become unnecessary eventually, the way you don't need to explain a search engine what a good result looks like anymore?
+
+Three reasons that's not the bet to make. First, even the best-managed employee you've ever had still did better work with a clear brief than a vague one, and that gap doesn't close as someone gets more capable, it usually widens, because a more capable hire can do more with good context, not less. A sharper model is still a model that does better with a real brief than a task name, for the same reason.
+
+Second, the specific failure mode this chapter keeps coming back to, a wrong answer delivered in exactly the same confident tone as a right one, isn't a bug that gets quietly patched out as models improve. It's a structural consequence of how these systems produce language at all, one word chosen after another based on what's likely, not a lookup against a table of known facts. A more capable model gets things right more often. It does not develop a different tone of voice for the answers it's less sure about. The checking habit this book teaches doesn't have an expiration date tied to model quality, because it isn't solving a quality problem.
+
+Third, and this one never goes away no matter how good the tool gets: your clients, your specific standards, the story behind why your last invoice dispute went the way it did, none of that becomes knowable to a general-purpose tool just because the tool gets smarter in general. That's not a capability gap. It's context nobody outside your situation has, and handing it over is still, and will remain, your job.
+
+## What this book will not do
+
+A book that only tells you where a method works isn't one you should actually plan your week around, so here's where this one stops.
+
+It will not make every task automatable. Chapter seven is entirely about the tasks that should stay with you: the ones where a mistake is expensive, the ones that depend on a relationship AI has no part of, and the ones where the error rate simply never comes down no matter how well you brief it. Handing those off anyway isn't advanced delegation, it's just risk with extra steps.
+
+It will not save you time on the first attempt. Writing a real brief, the kind from the second email example, takes longer than typing four words and hoping. The payoff shows up on the fifth time you reuse that brief, not the first, the same way training a new hire costs you time in week one and pays it back for the rest of the year.
+
+And it won't stay perfectly current with whichever specific app you're using this month. On purpose. Every example ahead is written to survive a redesign, because the underlying skill, briefing clearly, checking early work, learning specific failure patterns, giving feedback that sticks, doesn't expire when a company changes its interface.
+
+## Where this goes next
+
+Chapter two is the job description itself: what to actually include in a brief so it reads like the second email example instead of the first, for any task, not just replying to emails. Three walks through choosing your first real trial task on purpose, small enough that a bad result costs you nothing. Four and five cover the two skills that make delegation actually safe: checking output efficiently instead of redoing it yourself, and learning the specific, repeatable ways your particular task tends to fail. Six is how to give feedback that actually changes future output instead of evaporating after one use. Seven is the disqualification list, the tasks that stay yours. Eight and nine are about scaling past one delegated task without losing track of your own systems. Ten turns the whole thing into a thirty-day plan, one task at a time, starting the week you finish this book.
+
+None of it works as theory you read once and file away. Every chapter ends with something to actually try before the next one, on a task you already have sitting in your inbox or your to-do list right now. The gap between the two people at the start of this chapter closes through one small, well-briefed trial at a time, not through finishing the table of contents.
