@@ -1,0 +1,87 @@
+# =============================================================================
+# Single source of truth for "The One-Person Business's AI Stack".
+# Practical / workflow book for freelancers and solopreneurs: automating
+# the admin around the work, never the work itself.
+# =============================================================================
+
+slug: one-person-business
+title: "The One-Person Business's AI Stack"
+subtitle: "How Freelancers and Solopreneurs Use AI to Handle the Admin So They Can Do the Work They're Actually Paid For"
+author: "Your Name"
+year: 2026
+genre: business
+trim: "6x9"
+target_pages: [110, 160]
+
+# Never set true except by the real author, after a genuine full read-through.
+verified: false
+
+style:
+  spellcheck_lang: en_US
+  em_dash: avoid
+
+# KDP listing copy. Not part of the interior PDF.
+description: |
+  You didn't start a one-person business to become an invoicing clerk,
+  a part-time contract lawyer, and an unpaid bookkeeper. But somewhere
+  between the client work and the actual craft, that's most of what the
+  job quietly turned into.
+
+  This book builds a real stack, not a single silver-bullet app, for the
+  admin that eats a solo business alive: proposals that used to take an
+  evening, invoices that used to sit unsent, the contract clause that
+  protects you from scope creep, the bookkeeping you've been avoiding,
+  and the marketing you never have energy left for by Friday. Every
+  chapter ends with something you actually build that week, not a
+  concept to think about later.
+
+  Written for freelancers, consultants, and solo agency owners who got
+  into this to do the work, not to run its back office.
+
+dedication: "For every invoice sitting in drafts."
+
+front_matter:
+  - half_title
+  - title_page
+  - copyright
+  - dedication
+  - toc
+
+# Full planned arc. Chapters without a manuscript file yet are listed here as
+# the outline; build.py only requires the file to exist for the chapter IDs
+# you actually pass to --only. See notes.md in this directory for status.
+chapters:
+  - id: "01"
+    title: "The Job Behind the Job"
+    file: manuscript/01-the-job-behind-the-job.md
+  - id: "02"
+    title: "The Stack, Not the Tool"
+    file: manuscript/02-the-stack-not-the-tool.md
+  - id: "03"
+    title: "The Proposal That Writes Itself"
+    file: manuscript/03-the-proposal-that-writes-itself.md
+  - id: "04"
+    title: "Invoicing Without the Dread"
+    file: manuscript/04-invoicing-without-the-dread.md
+  - id: "05"
+    title: "The Inbox That Doesn't Own You"
+    file: manuscript/05-the-inbox-that-doesnt-own-you.md
+  - id: "06"
+    title: "Contracts You Can Actually Understand"
+    file: manuscript/06-contracts-you-can-actually-understand.md
+  - id: "07"
+    title: "Your Marketing Department of One"
+    file: manuscript/07-your-marketing-department-of-one.md
+  - id: "08"
+    title: "Bookkeeping Without a Bookkeeper"
+    file: manuscript/08-bookkeeping-without-a-bookkeeper.md
+  - id: "09"
+    title: "Protecting Your Scope"
+    file: manuscript/09-protecting-your-scope.md
+  - id: "10"
+    title: "When to Actually Hire a Human"
+    file: manuscript/10-when-to-actually-hire-a-human.md
+
+back_matter:
+  - acknowledgments
+  - about_the_author
