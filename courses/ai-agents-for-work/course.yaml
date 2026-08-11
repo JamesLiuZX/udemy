@@ -156,6 +156,11 @@ sections:
   - id: 0
     title: "Start Here: Your First Agent in 20 Minutes"
     goal: "Import a working inbox-triage template, connect it, watch it work; feel the possibility and the first doubt."
+    lectures:
+      - {id: "0.1", title: "Welcome, and what you'll have by Friday", duration: 3, voice: human}
+      - {id: "0.2", title: "How this course works: n8n, your own AI, and the 10 artifacts", duration: 4}
+      - {id: "0.3", title: "Your first agent in 20 minutes", duration: 8, hands_on: true}
+      - {id: "0.4", title: "What it just read, and the doubt that should follow", duration: 6}
   - id: 1
     title: "The One Idea: An Employee, Not an App"
     goal: "The onboarding frame: job description, trial, trust ladder, blast radius."

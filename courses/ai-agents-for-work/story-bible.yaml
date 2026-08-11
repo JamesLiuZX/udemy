@@ -1,0 +1,197 @@
+# =============================================================================
+# Story bible: the running case that threads course #3.
+# See docs/04-quality-bar.md §2 and the writer-session brief. Course #3 gets
+# the fully named serial: one office worker, one mid-size company, followed
+# from her first agent through a first win, a trial that catches a failure,
+# one contained incident where an agent nearly acts outside its lane, and a
+# team rollout.
+#
+# Rules, same as courses #1 and #2:
+#   - Every fact quoted about Priya, Calloway & Finch, or the Brightwell
+#     account comes FROM this file. If a lecture needs a new fact, add it
+#     here first, then use it. Never let two lectures state the same fact
+#     with a different value.
+#   - This file is written BEFORE any lecture, per the section-0-first order
+#     in write-lecture. Extend `callbacks` as each use is actually written;
+#     do not let this file describe a callback the lectures don't carry.
+#   - `numbers` is read literally by qc.py's story-continuity check
+#     (docs/04-quality-bar.md §7): a number here that shows up in narration
+#     with a different value is flagged. Keep values exact and round.
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# The company
+# ---------------------------------------------------------------------------
+company:
+  name: "Calloway & Finch"
+  category: "commercial insurance brokerage: property, liability and fleet cover for mid-market businesses"
+  size: "180 staff, three regional offices, one head office"
+  stage_at_open: >-
+    Twenty-six years old, profitable, and run the way a 26-year-old broker
+    runs: on spreadsheets, shared inboxes and whoever remembers to chase
+    what. No one at Calloway & Finch has an IT budget for engineers. This is
+    deliberately unglamorous and deliberately not a tech company: the case
+    has to survive real constraints (a compliance-sensitive product, client
+    correspondence that cannot be casual, a boss who has to be sold on this
+    in one meeting) rather than a frictionless setting where anything goes.
+  why_agents_now: >-
+    Renewal season is flat out from July to September. Nothing about the
+    work changed this year. The volume did.
+
+# ---------------------------------------------------------------------------
+# The cast
+# ---------------------------------------------------------------------------
+cast:
+  - name: "Priya Malhotra"
+    role: "Client Services Manager"
+    established: "0.1"
+    notes: >-
+      Seven years at Calloway & Finch, the last three managing renewals for
+      41 mid-market accounts on her own book. Not technical: she has never
+      written a line of code and the course never asks her to. She is the
+      learner's stand-in, not an expert the learner watches from outside.
+      Her tell is that she double-checks everything once, out loud, before
+      she trusts it: that habit is what Section 7 formalises into a method.
+  - name: "Marcus Webb"
+    role: "Director of Client Services, Priya's manager"
+    established: "1.4"
+    notes: >-
+      Approves what Priya rolls out to the wider team. Wants numbers, not
+      enthusiasm: a boss who has to be sold in one meeting, which is exactly
+      the meeting Section 10 prepares Priya for. Skeptical of "AI" as a
+      word, persuadable by a saved afternoon he can see.
+  - name: "Dev Anand"
+    role: "Client Services colleague, one of three others on Priya's team"
+    established: "10.2"
+    notes: >-
+      First teammate to adopt Priya's templates in the Section 10 rollout.
+      Runs the smaller accounts; his trial run is where a second failure
+      mode shows up that Priya's own trial hadn't hit, which is the honest
+      reason spot checks stay part of the method even after the templates
+      are proven.
+
+# ---------------------------------------------------------------------------
+# The anchor account — quoted everywhere, never re-numbered
+# ---------------------------------------------------------------------------
+anchor:
+  id: "The Brightwell renewal"
+  client: "Brightwell Manufacturing Ltd"
+  established: "0.4"
+  facts:
+    - "Commercial property and liability cover, premium $18,400 a year"
+    - "Renewal date 15 September"
+    - "Brightwell's query arrived buried under 40 promotional and internal emails"
+    - "The query sat unread for 6 days before the first agent existed"
+    - "A lapsed commercial policy is not a late invoice: it is uninsured stock on the renewal date"
+
+# Per-section beats: the arc the case follows across the course. Confirm
+# each during writing; append detail as the actual lecture is drafted.
+arc:
+  - section: 0
+    beat: >-
+      Priya imports a working inbox-triage template and connects it to a
+      practice inbox live, in one sitting. It immediately surfaces the
+      6-day-old Brightwell query from underneath 40 other emails: the first
+      win, and in the same slide the first doubt ("it read my client's
+      email, what else can it read").
+  - section: 1
+    beat: >-
+      The onboarding frame stated against Priya's own instinct: she would
+      never hand a new hire her whole inbox on day one, and she should not
+      hand an agent full access on day one either. Job description first.
+  - section: 2
+    beat: >-
+      Priya sets up n8n and picks a model. She starts on Google's free
+      Gemini tier for the practice build (no card, no cost) and the lecture
+      names exactly where that tier's limits would force an upgrade for her
+      real renewal volume.
+  - section: 3
+    beat: >-
+      The inbox-triage agent, built in full against a mailbox seeded with
+      Brightwell's account and 40 other emails. Ships C01. This is also the
+      real build proven in this writing session: the agent was constructed
+      and run in a local n8n instance before a word of the lecture was
+      written.
+  - section: 4
+    beat: >-
+      Meeting notes to action items, built against Priya's weekly renewal
+      call with Brightwell's account holder. Ships C02.
+  - section: 5
+    beat: >-
+      The weekly report agent, built against Priya's renewal pipeline
+      sheet, with Brightwell as one of the rows it has to get right. Ships
+      C03.
+  - section: 6
+    beat: >-
+      The follow-up chaser, scoped to Priya's own renewals folder and built
+      draft-only from the first version, not as an afterthought: it drafts
+      the chase to Brightwell's contact but never sends without Priya's
+      review. Ships C04.
+  - section: 7
+    beat: >-
+      Priya's two-week trial of the weekly-report agent catches it marking
+      Brightwell's $18,400 renewal as closed, because a colleague inserted
+      a row above it in the shared sheet and the agent read the wrong line
+      after that. Caught by a spot check before Monday's report went to
+      Marcus. The failure mode: an agent that reads a structure correctly
+      still fails when the structure moves under it.
+  - section: 8
+    beat: >-
+      The contained incident. Priya's mailbox connection for the follow-up
+      chaser was meant to be scoped to her Renewals folder only. A setup
+      step during Section 3 had granted it read access to Calloway &
+      Finch's whole shared mailbox, Legal folder included. Chasing an
+      overdue Brightwell signature, the agent's draft references a line
+      from a Legal thread about a different, unrelated dispute: content it
+      should never have been able to see, let alone draft from. The
+      guardrail holds because the chaser is draft-only: nothing sent, the
+      draft sits for Priya's review, she deletes it and narrows the scope
+      to the Renewals folder alone before rebuilding the connection. Blast
+      radius, not disaster.
+  - section: 9
+    beat: >-
+      What the four agents cost Priya in AI calls against what they saved
+      her in hours, told with the real numbers this section locks, and one
+      task on Priya's list (final commercial-policy sign-off) named
+      explicitly as one she will not hand to an agent.
+  - section: 10
+    beat: >-
+      Priya's one-page rollout to Marcus, built from Section 9's real
+      numbers, gets her the go-ahead to share the four templates with the
+      rest of her team. Dev Anand adopts them first and finds the second
+      failure mode within his first week, which is why the rollout plan
+      keeps the spot-check habit mandatory rather than optional once trust
+      is earned.
+  - section: 11
+    beat: >-
+      The learner runs Priya's exact onboarding method (job description,
+      trial, spot checks, guardrails, rollout) on one task of their own,
+      using the capstone worksheet built from the same six artifacts
+      Priya used on Brightwell.
+
+# ---------------------------------------------------------------------------
+# Canonical numbers. A different value for any of these in any lecture is a
+# continuity bug, and qc.py's continuity check (docs/04 §7) matches on them.
+# ---------------------------------------------------------------------------
+numbers:
+  - value: "$18,400"
+    established: "0.4"
+    meaning: "Brightwell Manufacturing Ltd's annual premium, property and liability"
+  - value: "15 September"
+    established: "0.4"
+    meaning: "Brightwell's renewal date"
+  - value: "40"
+    established: "0.4"
+    meaning: "Promotional and internal emails burying Brightwell's query in Priya's inbox"
+  - value: "6 days"
+    established: "0.4"
+    meaning: "How long Brightwell's query sat unread before the triage agent existed"
+  - value: "41"
+    established: "0.1"
+    meaning: "Mid-market accounts on Priya's own renewals book"
+  - value: "180"
+    established: "0.1"
+    meaning: "Staff at Calloway & Finch"
+  - value: "two weeks"
+    established: "7.1"
+    meaning: "Length of Priya's trial period for a new agent before she trusts it unsupervised"
