@@ -34,13 +34,42 @@ and what to do next" while that course was being written.
   will, given how much more ground they cover), let the estimate move
   again rather than force it. Re-check against the KDP gutter band
   (0.375" through 150pp, 0.5" from 151pp) once the real total is close.
-- Chapters 04 through 12 are outlined in `book.yaml` (titles, order, target
-  page count); the manuscript files exist as empty placeholders. A full
-  `--book stop-guessing` build will fail until every listed chapter has
-  real content, so don't run a full build until all chapters exist.
-- Work one chapter at a time to the same bar as Chapters 01-03: write,
-  build `--only <id>`, inspect the rendered pages, `qc.py`, then move on.
-  Same discipline as the video course's "work one lecture at a time."
+- **All 12 chapters are now written, verified-pending-signoff, and the full
+  book builds clean.** (Status as of the session that finished the
+  manuscript, 2026-08-11.) Chapters 04-12 were each built individually
+  with `--only`, every page visually inspected, `qc.py` clean beyond the
+  `verified: false` gate. Full-book build: `python3 books/pipeline/build.py
+  --book stop-guessing` -> 97 pages. EPUB: `python3
+  books/pipeline/build_epub.py --book stop-guessing` -> builds clean,
+  valid zip, 38 files. `qc.py --book stop-guessing --release` -> only the
+  `verified: false` gate fails; page count, gutter margin, and font
+  embedding all pass.
+- `back-matter/acknowledgments.md` and `back-matter/about_the_author.md`
+  didn't exist for this book (only `_template/` had them, and the
+  template's filename is `about-the-author.md` with a hyphen while
+  `book.yaml`'s `back_matter:` list says `about_the_author` with an
+  underscore, which is what `build.py` actually looks up). Without them,
+  the full build silently ended at chapter 12 with no back matter at all.
+  Created both here as `[AUTHOR-INPUT: ...]`-gated stubs, same convention
+  as every other real-story marker in this book: never fill these in with
+  an invented bio or a fabricated thank-you list. They render as visible
+  "AUTHOR INPUT NEEDED" boxes and are currently the two open items
+  blocking a genuine release, alongside `verified: false` itself.
+- `target_pages` moved twice as real content accumulated. [220, 280] (pre-
+  chapter-1 guess) -> [120, 170] (after chapter 1 alone, see below) ->
+  **[85, 110]** (after all 12 chapters existed and the full build came in
+  at 94 pages before back matter, 97 after). This is not a shortfall to
+  patch by padding chapters: total manuscript word count across all 12
+  chapters is 23,920 words, consistent with the book's own subtitle ("field
+  guide") and the no-padding discipline stated in `books/CLAUDE.md` and
+  held throughout. If a real human pass adds material, let the band move
+  again rather than force it back up artificially. Gutter margin at 97pp
+  is correctly 0.375in (24-150pp band); re-check only if a future edit
+  pushes the total past 150.
+- Work one chapter at a time to the same bar as Chapters 01-03 was held for
+  every later chapter too: write, build `--only <id>`, inspect the
+  rendered pages, `qc.py`, then move on. Same discipline as the video
+  course's "work one lecture at a time," now applied end to end.
 - Toolchain note: this environment needed `pandoc`, `texlive-xetex`,
   `texlive-latex-extra`, `texlive-fonts-recommended` (fixes a missing
   `pzdr`/URW-Dingbats font error from hyperref), `latexmk`, and
@@ -73,7 +102,7 @@ has never seen "6.6" and the book should never assume they have.
 | 08 The Risk Register | 8.1-8.6 | The five-category register, red-teaming |
 | 09 Metrics That Survive Production | 9.1, 9.2, 9.5 | Adoption/acceptance/deflection, the leadership dashboard |
 | 10 Managing the Room | 10.2, 10.3 | Calibrated stakeholder claims, the roadmap that doesn't lie |
-| 11 The First Ninety Days | 10.1, 10.7, 11.1-11.4 | Discovery sprints, the capstone package, the portfolio |
+| 11 The First Ninety Days | 10.1, 10.7, 11.4 | Discovery sprints, a 30-60-90 plan, a closing self-assessment checklist (11.1-11.3's capstone-brief/worked-solution mechanics are course-specific workshop scaffolding and weren't adapted directly) |
 | 12 Where This Breaks | Repo-wide | Honest limits chapter; no equivalent single lecture |
 
 ## Things to hold onto while writing the rest

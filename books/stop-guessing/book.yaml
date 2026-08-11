@@ -11,7 +11,7 @@ author: "Your Name"
 year: 2026
 genre: business
 trim: "6x9"
-target_pages: [120, 170]
+target_pages: [85, 110]
 
 # Never set true except by the real author, after a genuine full read-through.
 verified: false
