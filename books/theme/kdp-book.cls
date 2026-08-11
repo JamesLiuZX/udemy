@@ -48,7 +48,6 @@
 \RequirePackage{graphicx}
 \RequirePackage{array}
 \RequirePackage{calc}
-\RequirePackage{graphicx}
 \RequirePackage{tikz}
 \usetikzlibrary{arrows.meta,positioning,shapes.geometric,calc}
 
