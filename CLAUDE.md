@@ -231,6 +231,7 @@ docs/04-quality-bar.md            Callback thread, cold opens, presence, QC addi
 docs/05-kdp-playbook.md           Book portfolio strategy: sequencing, launch, Amazon mechanics
 docs/06-growth-engine.md          Channels, asset flywheel, automated growth jobs
 docs/07-tts.md                    Voice decision: Kokoro default, costs, audiobook routes
+docs/08-channels.md               Channel map: Udemy, KDP, Spotify, YouTube; cuts and requirements
 growth/                           Paste-ready automation prompts (cron / Cowork)
 books/                            KDP publishing system (own CLAUDE.md; read it first)
 courses/<slug>/course.yaml        Curriculum, landing copy, config (source of truth)
