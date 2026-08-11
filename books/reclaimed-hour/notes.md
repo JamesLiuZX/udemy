@@ -89,11 +89,77 @@ pattern as the other books.
   sanctioned exception to the never-commit-builds rule; EPUB intentionally
   not committed (matches every sibling book's proofs/ directory, PDF
   only).
-- Not yet done: the Simplified Chinese edition (manuscript-zh/,
-  `book-zh.yaml`, zh proofs). Author-only actions remain untouched by
-  design: reading the manuscript and setting `verified: true`, the cover,
-  and the KDP questionnaire (listing sheet already drafted in
-  `books/docs/03-kdp-listings.md` §8).
+- 2026-08-11: Simplified Chinese edition shipped. `book-zh.yaml` (slug
+  `reclaimed-hour-zh`, `lang: zh`), `manuscript-zh/` (all 24 chapters,
+  translated idiomatically, not literally: recreated the English wordplay
+  where it existed, kept product/tool names and typed-into-English-tools
+  language in English, bilingual-glossed every KEY-INSIGHT citation's
+  original-language title per the standard), and `back-matter-zh/` (all
+  6 pieces, including notes/sources, discussion guide, quick-start,
+  further reading, and the note on how the book was written).
+  `target_pages` set to `[150, 190]` for this edition specifically,
+  lower than the English `[180, 240]`: CJK setting at this trim runs
+  denser per page, same precedent as `ai-employee-zh`'s own lower band.
+  Builds at 167pp, within target.
+  - Two real bugs caught and fixed during this pass, worth flagging for
+    any future zh work in this repo: (1) straight double quotes typed
+    directly in zh markdown, when adjacent to CJK characters with no
+    Latin word-boundary spacing, defeat pandoc's `markdown+smart` open/
+    close detection (its heuristic assumes Latin-script spacing) and
+    both quote marks in a pair silently collapse to the closing glyph,
+    dropping the opening one, in body text, chapter titles, and TOC/
+    running heads alike; the fix is to type real curly quotes (“ ”)
+    directly in zh source rather than relying on smart-quote conversion,
+    the same convention `ai-employee-zh`'s manuscript already used. Swept
+    and fixed across all 24 chapters plus back matter with a script that
+    converts straight-quote pairs to curly ones specifically where at
+    least one side touches a CJK character, deliberately leaving English
+    citation titles (which have normal Latin spacing) untouched. (2) An
+    em-dash-as-parenthetical habit crept into several chapters even
+    though `book.yaml: style.em_dash: avoid` carries over to this
+    edition; qc.py caught these directly (`--release` flags em dashes
+    per chapter) and they were replaced with Chinese full-width
+    parentheses or restructured sentences.
+  - `qc.py --release` now reports only the expected `verified: false`
+    gate, plus a benign warning: its word-count-based page estimate
+    (used for pacing while writing) undercounts CJK text badly since it
+    splits on Latin whitespace, which doesn't exist between Chinese
+    words; the real, rendered page count (167pp, confirmed via
+    `pdfinfo`) is what actually matters and is within band. Worth
+    flagging in `books/pipeline/qc.py`'s own backlog if a future session
+    wants to fix the estimator for CJK books generally, not specific to
+    this title.
+  - Spreads visually inspected across front matter, multiple chapter
+    openers, KEY-INSIGHT/PULLQUOTE boxes, section headings with quoted
+    terms (where the quote bug would have been most visible), and back
+    matter; all clean after the fixes above. Fonts embedded (`pdffonts`
+    confirms Noto Serif CJK + TeX Gyre Schola + IBM Plex Mono, all
+    embedded and subset). Interior PDF committed to
+    `books/reclaimed-hour/proofs/reclaimed-hour-zh.pdf`. No EPUB built
+    for this edition: `build_epub.py` has no `lang: zh` support yet
+    (hardcodes en-GB/en-US metadata), and no sibling zh edition in this
+    repo has shipped one either; PDF-only matches precedent.
+  - **KDP does not accept this edition.** KDP does not offer a Simplified
+    Chinese paperback upload, and does not list Simplified Chinese as a
+    supported Kindle eBook language (only Traditional Chinese, in beta,
+    ebook-only). This edition targets Google Play Books, Apple Books, and
+    direct/lead-gen distribution instead, the same channel decision every
+    other zh edition in this repo has made.
+
+## What's left, and it's all author-only by design
+
+- Read the full English and zh manuscripts and set `verified: true` in
+  `book.yaml` and `book-zh.yaml` separately (a sign-off on one edition
+  does not carry over to the other). This is the author's signature, not
+  a build step, and this session has correctly never touched it.
+- Cover design for both editions (needs final page count, which is now
+  locked: 185pp English, 167pp zh).
+- The KDP AI-disclosure and content-guidelines questionnaire for the
+  English edition (listing sheet already drafted in
+  `books/docs/03-kdp-listings.md` §8); no KDP questionnaire applies to
+  the zh edition since KDP won't accept it.
+- Decide and execute Google Play Books / Apple Books / direct
+  distribution for the zh edition once its own sign-off is done.
 
 ## Why this book gets extra scrutiny, and what that changes
 

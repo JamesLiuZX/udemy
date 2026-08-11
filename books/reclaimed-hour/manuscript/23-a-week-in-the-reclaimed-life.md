@@ -1,6 +1,6 @@
 # A Week in the Reclaimed Life
 
-Here is a week, close to a year after Devon first ran the audit in chapter three. Not a perfect week. A real one, with the actual texture of everything this book has spent seventeen chapters building, including a wobble on Wednesday that would have looked like failure a year earlier and now barely registers as one.
+Here is a week, close to a year after Devon first ran the audit in chapter three. Not a perfect week. A real one, with the actual texture of everything this book has spent twenty-two chapters building, including a wobble on Wednesday that would have looked like failure a year earlier and now barely registers as one.
 
 ## Monday
 
@@ -32,7 +32,7 @@ A message from her manager, midafternoon: nothing like the Meridian conversation
 
 It's worth briefly imagining the counterfactual, the version of Devon's week from a year earlier, before any of this book's method had been applied, because the contrast is where the actual value shows up rather than in the calm week itself. Monday's automated status report would have existed the same way; the tool doesn't know or care whether the surrounding practice is in place. But the forty minutes it freed would have gone, by default, to whatever Slack thread was still open, the way chapter one's Rachel lost her ninety minutes to nothing anyone decided on purpose. Wednesday's creeping meeting wouldn't have been caught in its third week; it would have calcified into a permanent fixture by month three, indistinguishable from every other unquestioned recurring commitment already on the calendar. Friday's manager comment would have landed as an opening for more scope, unresisted, because there would have been no ninety minutes of protected time worth defending in the first place, nothing to negotiate around.
 
-The tool would have looked identical in both versions of this week. Only the eighteen chapters standing behind it, or their absence, would have made the difference between a genuinely reclaimed hour and one that quietly evaporated the way it always had before anyone thought to ask where it was going.
+The tool would have looked identical in both versions of this week. Only the twenty-two chapters standing behind it, or their absence, would have made the difference between a genuinely reclaimed hour and one that quietly evaporated the way it always had before anyone thought to ask where it was going.
 
 ## What actually changed, added up
 
@@ -44,7 +44,7 @@ Total the week honestly and it doesn't look dramatic on paper: roughly ninety mi
 
 Ken's version of this same week, run around the same time as Devon's, looked almost nothing like hers on the surface and produced the identical underlying shape. Two Thursday afternoons protected instead of two mornings, a novel replaced by pages of an actual manuscript, a Slack-polishing habit still fully intact because chapter four's flinch test correctly identified it as something to keep rather than remove. His own lapse-inside-a-lapse from chapter twenty-two sat four months behind him by this point, distant enough that it registered as part of the practice's normal texture rather than an open wound. His Wednesday equivalent wasn't a creeping meeting; it was catching himself, mid-scroll, reaching for his phone during the block, and using the physical book on his desk instead, the small, practiced substitution from chapter six's third if-then plan, executed without any real deliberation at all by this point, months in.
 
-Two different weeks, two different hours, two different honest answers to chapter seven's question. The same underlying shape: small, specific, imperfect, real, and reliably theirs. That's what this book was actually offering the whole time, under eighteen chapters of mechanism and research and other people's stories. Not their week. A version of it, built out of your own audit, your own resentment, your own honest answer, defended the same unglamorous way.
+Two different weeks, two different hours, two different honest answers to chapter seven's question. The same underlying shape: small, specific, imperfect, real, and reliably theirs. That's what this book was actually offering the whole time, under twenty-two chapters of mechanism and research and other people's stories. Not their week. A version of it, built out of your own audit, your own resentment, your own honest answer, defended the same unglamorous way.
 
 [TAKEAWAYS]
 

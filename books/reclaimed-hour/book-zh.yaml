@@ -1,0 +1,165 @@
+# =============================================================================
+# Simplified Chinese (zh-CN) edition of "The Reclaimed Hour".
+# Sibling config to book.yaml, not a variant of it: same design system, same
+# four bracket devices, same qc.py/build.py pipeline, but a distinct slug
+# (own build/ output dir, own proofs/ file) and its own manuscript-zh/ and
+# back-matter-zh/ source trees. See notes.md for the full status record and
+# for why this edition does not target KDP (KDP does not accept a Simplified
+# Chinese paperback upload, and does not list Simplified Chinese as a
+# supported ebook language either).
+# =============================================================================
+
+slug: reclaimed-hour-zh
+title: "失而复得的那一小时"
+subtitle: "如何用AI换回属于自己的时间，而不是让它重新被工作填满"
+author: "James Liu"
+year: 2026
+genre: self-help
+trim: "6x9"
+# Lower than the English edition's [180, 240]: CJK setting at this trim runs
+# denser per page (this edition lands at 167pp from a manuscript that
+# faithfully mirrors all 24 English chapters plus all 6 back-matter pieces,
+# nothing shortened or omitted). Same precedent as this repo's other zh
+# editions running their own, lower band than their English counterpart
+# (ai-employee-zh: [150, 190] against ai-employee's [180, 240]).
+target_pages: [150, 190]
+lang: zh
+
+# Never set true except by the real author, after a genuine full read-through
+# of THIS edition (a sign-off on the English edition does not carry over).
+verified: false
+
+# Chinese versions of the copyright-page text. Without these, build.py falls
+# back to its English DEFAULT_RIGHTS_NOTE/DEFAULT_AI_DISCLOSURE/DEFAULT_ISBN_NOTE
+# constants, which is wrong for this edition -- ai_disclosure_text especially,
+# since it is the compliance-critical AI-assistance disclosure line books/
+# CLAUDE.md SS1 requires, and it has to actually be readable by this book's
+# reader, not silently left in English.
+rights_note: "保留所有权利。未经作者事先书面许可，不得以任何形式复制、分发或传播本书的任何部分，书评中引用的简短片段除外。"
+ai_disclosure_text: "本书在作者的指导、大纲设计与审阅下，借助AI辅助撰写完成。书中统计数据与案例研究均引自已标注来源的公开资料；任何关于亲身经历的表述均为作者本人的真实经历。"
+isbn_note: "ISBN：[发行前由出版方或平台指定]"
+
+style:
+  spellcheck_lang: zh_CN
+  em_dash: avoid
+
+# back-matter-zh/ is picked up automatically by build.py's back-matter-<lang>
+# convention (no field needed for that); this overrides the printed section
+# titles, which otherwise default to the English titles dict.
+back_matter_titles:
+  notes_and_sources: "说明与资料来源"
+  discussion_guide: "共读指南"
+  quick_start: "快速上手版"
+  further_reading: "延伸阅读"
+  a_note_on_how_this_was_written: "关于本书写作方式的说明"
+  about_the_author: "关于作者"
+
+# Not KDP listing copy (this edition isn't a KDP upload) -- kept for other
+# storefronts (Google Play Books, Apple Books) and direct/lead-gen use.
+description: |
+  货架上几乎每一本"AI效率"书，骨子里都是一本奋斗式的书：用AI做得更多、
+  产出更多，在相同甚至更短的时间里。这不是那样一本书，如果你找的正是那
+  种书，它会让你失望，而且是故意的。
+
+  这本书从一个不同的、更诚实的观察出发：大多数用AI自动化了某项任务的人，
+  并没有真正把那段时间拿回来。他们把它重新填满了别的东西，通常是更多的
+  工作，因为"找回时间"其实是一个披着技术外衣的行为问题。这本书讲的正是
+  这项真正的行为功课：找到那一小时，坐下来面对拥有它之后的不自在，保护
+  它不被重新占据，并且把它用在你最初真正想用它做的事情上，在你忘记问自
+  己那个问题之前。
+
+  写给每一个自动化过某项任务、感到片刻如释重负、却在一周之内发现那种轻
+  松感悄然蒸发的人，因为别的什么东西又扩张进来，填满了那段空间。
+
+dedication: "献给你一直想要找回、却还没找回的那一小时。"
+
+front_matter:
+  - half_title
+  - title_page
+  - copyright
+  - dedication
+  - toc
+
+# Mirrors book.yaml's chapter list exactly: same ids, same order, same
+# file-naming convention, pointed at manuscript-zh/.
+chapters:
+  - id: "01"
+    title: "你早已失去的那一小时"
+    file: manuscript-zh/01-the-hour-you-already-lost.md
+  - id: "02"
+    title: "为什么“直接自动化”行不通"
+    file: manuscript-zh/02-why-just-automate-it-doesnt-work.md
+  - id: "03"
+    title: "一小时审计法"
+    file: manuscript-zh/03-the-one-hour-audit.md
+  - id: "04"
+    title: "自动化你最抵触的那件事"
+    file: manuscript-zh/04-automating-the-task-you-resent-most.md
+  - id: "05"
+    title: "拥有空闲时间的愧疚感"
+    file: manuscript-zh/05-the-guilt-of-having-free-time.md
+  - id: "06"
+    title: "拿到那一小时之后，如何守住它"
+    file: manuscript-zh/06-protecting-the-hour-once-you-have-it.md
+  - id: "07"
+    title: "你真正想用这段时间做什么"
+    file: manuscript-zh/07-what-you-actually-wanted-the-time-for.md
+  - id: "08"
+    title: "AI什么时候会让情况更糟，而不是更好"
+    file: manuscript-zh/08-when-ai-makes-it-worse-not-better.md
+  - id: "09"
+    title: "那一小时是怎样被重新占据的"
+    file: manuscript-zh/09-common-ways-the-hour-gets-recolonized.md
+  - id: "10"
+    title: "三个完整的找回时间的故事"
+    file: manuscript-zh/10-three-hours-reclaimed-in-full.md
+  - id: "11"
+    title: "有时候，问题根本不是时间"
+    file: manuscript-zh/11-when-its-not-actually-about-time.md
+  - id: "12"
+    title: "衡量你到底找回了什么"
+    file: manuscript-zh/12-measuring-what-you-actually-reclaimed.md
+  - id: "13"
+    title: "在职场中示范“找回的一小时”"
+    file: manuscript-zh/13-the-reclaimed-hour-at-work.md
+  - id: "14"
+    title: "告诉团队或家人，什么变了"
+    file: manuscript-zh/14-telling-your-team-or-family-what-changed.md
+  - id: "15"
+    title: "常见质疑与边界情况"
+    file: manuscript-zh/15-objections-and-edge-cases.md
+  - id: "16"
+    title: "工具与练习表合集"
+    file: manuscript-zh/16-the-templates.md
+  - id: "17"
+    title: "选择用什么来自动化"
+    file: manuscript-zh/17-choosing-what-to-automate-with.md
+  - id: "18"
+    title: "从不开始的代价"
+    file: manuscript-zh/18-the-cost-of-never-trying.md
+  - id: "19"
+    title: "这一切到底要花多少代价"
+    file: manuscript-zh/19-what-this-actually-costs.md
+  - id: "20"
+    title: "六个月之后"
+    file: manuscript-zh/20-six-months-later.md
+  - id: "21"
+    title: "当这份工作根本不是一份“工作”"
+    file: manuscript-zh/21-when-the-work-isnt-a-job-at-all.md
+  - id: "22"
+    title: "再一次失去这一小时之后"
+    file: manuscript-zh/22-revisiting-an-hour-you-lost-again.md
+  - id: "23"
+    title: "找回人生的那一周"
+    file: manuscript-zh/23-a-week-in-the-reclaimed-life.md
+  - id: "24"
+    title: "结语：你现在打算拿这段时间做什么"
+    file: manuscript-zh/24-conclusion-what-you-do-with-the-time-now.md
+
+back_matter:
+  - notes_and_sources
+  - discussion_guide
+  - quick_start
+  - further_reading
+  - a_note_on_how_this_was_written
+  - about_the_author
