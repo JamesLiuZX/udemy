@@ -40,7 +40,7 @@ Marcus's client base skews further from home than Priya's, which adds one wrinkl
 
 His fix is a small addition to the draft-and-send bucket: any draft going to a client in a meaningfully different time zone gets one line added automatically, a next-availability note ("I'll be back online around 9 a.m. my time, happy to hop on a call then if useful") rather than silence that reads as unresponsiveness until his morning. It costs one sentence. What it prevents is a client in a different time zone quietly concluding, across a few slow-feeling exchanges, that Marcus is harder to reach than he actually is, when the truth is just that "once a day" lands at different clock times depending on which day you're the one waiting.
 
-## Building the voice profile once
+## Building the voice reference once
 
 The draft-and-send bucket is where most of the eleven hours actually lives, and it's also where a five-minute setup pays off for months. Collect eight or ten emails you're genuinely proud of, the ones that sound like you: warm but direct, or brisk and efficient, whatever your real client voice actually is. Save them together as a reference. Every time you ask for a draft, point at that saved reference instead of describing your tone in the abstract, the same way chapter three's proposal brief pointed at a past proposal instead of explaining what "personalized" means each time. A model matching real examples produces something closer to your voice on the first try than one working from an adjective like "friendly."
 

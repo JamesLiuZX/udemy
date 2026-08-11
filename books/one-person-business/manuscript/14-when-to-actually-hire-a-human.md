@@ -12,7 +12,7 @@ That distinction, a confident answer versus one someone will stand behind, is th
 
 That case is now a standard citation in exactly the conversation this book is having, because it's such a clean illustration of the actual failure mode. It wasn't that AI is useless for legal work; the tool drafted something that read as competent, well-structured legal prose. It's that confident and correct are different properties, a distinction chapter six already named for contracts and chapter eight named for tax categorization, and here the gap cost two careers a public sanction and a client a competent defense.
 
-[PULLQUOTE: Confident and correct are different properties. Every chapter in this book has quietly depended on you remembering that.]
+[PULLQUOTE: That's not a prompting problem. That's the actual job description of a lawyer, an accountant, or any licensed professional, and it's the one thing this entire book has never claimed to replace.]
 
 ## The same failure, in a different profession
 

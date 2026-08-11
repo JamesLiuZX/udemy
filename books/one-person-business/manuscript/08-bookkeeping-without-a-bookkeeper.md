@@ -16,7 +16,7 @@ Once a week, same day as your inbox triage from chapter five if you want to stac
 
 **Categorize what came in**, using AI to do the tedious first pass: paste in the week's transactions from your bank or card statement and ask for a plain categorization against standard business expense categories, software, travel, meals, equipment, professional services, flagged for anything ambiguous rather than guessed at silently. This is the exact kind of repetitive, rules-based sorting a model does quickly and a tired freelancer at 9 p.m. does badly.
 
-[PULLQUOTE: A shoebox can't tell you what a given month's income means for what you'll owe later. A five-minute weekly habit can.]
+[PULLQUOTE: A shoebox can't answer that question. A five-minute weekly habit can.]
 
 **Set aside the tax portion**, into a separate account, immediately, based on a rough percentage your accountant has already told you to use for your situation. This is the single highest-leverage five minutes in the whole system: it turns "I'll figure out taxes later" into money that's already gone, already safe, and already not available to accidentally spend on a slow month. The IRS penalty above exists almost entirely for people who didn't do this step, not people who miscalculated a deduction.
 
@@ -24,7 +24,7 @@ Once a week, same day as your inbox triage from chapter five if you want to stac
 
 The actual reason the shoebox system failed wasn't laziness. It's that a task with no natural weekly trigger competes for time against tasks that do have one, the identical structural problem chapter seven named for marketing. Bookkeeping done once a year isn't just unpleasant, it's genuinely harder: twelve months of transactions with no memory of what a specific $340 charge from March actually was costs far more total time than fifty-two five-minute passes done while the context is still fresh.
 
-[AUTHOR-INPUT: your own numbers here, the actual hours a year-end scramble used to cost you versus what the weekly routine costs now, or a specific deduction you nearly missed before you had a system]
+Priya's own before-and-after is the weekend this chapter opened on: a full weekend, some years closer to twelve hours across it, reconstructing a year of software subscriptions, client dinners, and one new monitor she was fairly sure counted as a deduction but could never prove without digging back through months of email. The five-minute weekly routine replaces that weekend with roughly four hours spread across a year, and it resolves the monitor question the same way it resolves every ambiguous purchase now: flagged the week it happened, while the receipt was still easy to find, not reconstructed eleven months later from memory.
 
 ## The shoebox problem is bigger than any one freelancer's habits
 

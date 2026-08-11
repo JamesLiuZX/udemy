@@ -14,7 +14,7 @@ A tool that tries to do five different jobs well enough for everyone ends up doi
 
 That's the trap on both ends. Too many tools, chosen without discipline, is a real, well-documented failure mode. So is one tool trying to be everything. The fix isn't more software or less software. It's a small, deliberately chosen stack, each piece earning its specific place, connected simply enough that using all of them together doesn't feel like managing five separate jobs.
 
-[PULLQUOTE: A tool that tries to do five jobs well enough for everyone ends up doing each job adequately for almost no one.]
+[PULLQUOTE: A tool that tries to do five different jobs well enough for everyone ends up doing each of those five jobs adequately for almost no one.]
 
 ## The opposite mistake looks nothing like Priya's
 
@@ -40,7 +40,7 @@ The actual skill is choosing deliberately: for each piece of the admin workload,
 
 The six-question audit sorts most tools quickly, but it leaves a genuinely hard case unresolved: two options that both survive all six questions, both do the one job well, and both cost roughly the same. Freelancers routinely lose real hours to this decision specifically, comparing feature lists for a tool that will get maybe twenty minutes of attention a week, because a wrong-feeling choice here feels expensive in a way that's out of proportion to what's actually at stake.
 
-Two tie-breakers cut through it faster than another round of feature comparison. First, which option requires less setup to reach its useful state, because a stack built from several small pieces only stays small if each piece is genuinely quick to stand up; a marginally more powerful tool that takes a weekend to configure properly is rarely worth it against one that's usable in twenty minutes. Second, which option is easier to leave, meaning your data exports cleanly and your habits transfer to something else without much friction, because chapter nine's point about a stack needing occasional re-checking applies to the tools themselves, not just the prompts running inside them. A tool you can leave easily is a tool you chose deliberately. One you can't is a tool that's quietly chosen you.
+Two tie-breakers cut through it faster than another round of feature comparison. First, which option requires less setup to reach its useful state, because a stack built from several small pieces only stays small if each piece is genuinely quick to stand up; a marginally more powerful tool that takes a weekend to configure properly is rarely worth it against one that's usable in twenty minutes. Second, which option is easier to leave, meaning your data exports cleanly and your habits transfer to something else without much friction. A stack needs occasional re-checking, the tools themselves and not just the prompts running inside them, and that's far cheaper to do when nothing is locked in. A tool you can leave easily is a tool you chose deliberately. One you can't is a tool that's quietly chosen you.
 
 When neither tie-breaker resolves it, the honest answer is that it doesn't matter which one you pick. Spending another hour comparing two options that both cleared the six-question bar is itself the kind of low-value admin task chapter one's time audit exists to catch.
 
@@ -50,13 +50,13 @@ When neither tie-breaker resolves it, the honest answer is that it doesn't matte
 
 **Choosing a tool because a specific business you admire uses it.** What worked for someone else's client mix, working style, and existing habits doesn't automatically transfer. The six-question audit exists to force the question back to your own situation, not someone else's recommendation.
 
-**Treating the stack as finished once it's built.** A stack built in month one and never revisited drifts, quietly, the same way Priya's rate drifted for three years without anyone deciding it should. Chapter nine's habit of occasional re-checking applies to the tools themselves, not just the prompts running inside them.
+**Treating the stack as finished once it's built.** A stack built in month one and never revisited drifts, quietly, the same way Priya's rate drifted for three years without anyone deciding it should, the story chapter ten opens on. Revisit each piece occasionally, on purpose, rather than waiting for something to visibly break.
 
 ## What this book will not do
 
 This book will not recommend a specific brand-name product for each piece of the stack, and that's deliberate, not an oversight. Software changes constantly; a specific app recommended today is a reasonable chance of being acquired, changed, or discontinued before this book is out of print. What it teaches instead is the underlying shape of each solution, the prompt, the template, the workflow, portable to whatever specific tool you're already using or will be using in two years.
 
-It also won't pretend a stack, once built, runs itself forever. A prompt that worked perfectly in March can quietly drift by June, a client's needs change, a tool updates its own behavior without asking you. Chapter nine exists specifically because even a well-built stack needs active protecting and occasional re-checking, not a one-time setup you never look at again.
+It also won't pretend a stack, once built, runs itself forever. A prompt that worked perfectly in March can quietly drift by June, a client's needs change, a tool updates its own behavior without asking you, exactly the scenario chapter eleven comes back to. A well-built stack needs active protecting and occasional re-checking, not a one-time setup you never look at again.
 
 [TAKEAWAYS]
 

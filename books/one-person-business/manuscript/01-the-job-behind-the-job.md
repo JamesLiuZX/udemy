@@ -16,7 +16,7 @@ Every solo business is secretly two businesses. There's the one you trained for,
 
 At a company, that second business has a name, and mostly it isn't yours. Someone in finance sends the invoices. Someone in legal reviews the contracts. Someone in marketing keeps the pipeline full. When you went independent, you didn't just take on the craft. You quietly absorbed four or five other jobs along with it, unpaid, untrained for, and usually done at the hour Priya was sitting at her desk.
 
-[PULLQUOTE: Every solo business is secretly two businesses, and only one of them is the one you trained for.]
+[PULLQUOTE: That's not a discipline gap. That's an unreasonable staffing ratio that nobody ever officially assigned to you.]
 
 ## This isn't a niche problem
 

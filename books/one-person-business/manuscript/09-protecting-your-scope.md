@@ -28,7 +28,7 @@ Having the words ready solves half the problem. The other half is catching the m
 
 Once you have that read, drafting the "yes, and" message in the client's own established tone, using the same saved-voice approach from chapter five, takes under a minute. The entire loop, from ambiguous ask to a clear, kind, boundary-holding response, drops from the internal debate that used to cost Priya an afternoon of low-grade guilt to something closer to ninety seconds.
 
-[AUTHOR-INPUT: your own scope-creep story here, a specific request that crept past the original quote, and how the conversation actually went once you named the cost instead of absorbing it silently]
+Priya's own version of that story is the mobile-version request this chapter opened on, the fourth "just one more small thing" in three weeks. She'd absorbed the first three silently, the same afternoon-guilt loop chapter one described for admin generally. The fourth time, she ran the two-line check before answering, confirmed what she already suspected, and sent the three-part script instead of another quiet yes. The client said yes to the extra four hours without any pushback at all, the same outcome the script below models.
 
 ## The exact prompt
 
@@ -46,7 +46,7 @@ That's a meaningfully easier question to answer under pressure, and a meaningful
 
 ## Common mistakes with the script
 
-**Using the full formal script on a request that was actually a five-minute favor.** Not every ask needs the three-part treatment; chapter nine's own "what this chapter will not do" section exists because over-applying the script to a genuinely small, relationship-building request reads as exactly the nickel-and-diming it's designed to avoid.
+**Using the full formal script on a request that was actually a five-minute favor.** Not every ask needs the three-part treatment; over-applying the script to a genuinely small, relationship-building request reads as exactly the nickel-and-diming it's designed to avoid, the point the next section makes directly.
 
 **Running the two-line scope check after already agreeing out loud on a call.** The check works best before a commitment gets made, not as a way to walk one back afterward. If a scope question comes up live, on the phone, buy a few minutes ("let me check my notes and get back to you today") rather than committing on the spot.
 

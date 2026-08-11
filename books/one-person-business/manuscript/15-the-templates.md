@@ -1,6 +1,6 @@
 # The Templates
 
-Every template in this chapter already appeared somewhere in the previous thirteen, in the middle of a story about Priya or Marcus using it under real conditions. This chapter strips the story back out. What's left is the reusable part: every worksheet, script, and checklist from this book, collected in one place and written to be filled in directly, not read once and paraphrased later from memory.
+Every template in this chapter already appeared somewhere in the previous fourteen, in the middle of a story about Priya or Marcus using it under real conditions. This chapter strips the story back out. What's left is the reusable part: every worksheet, script, and checklist from this book, collected in one place and written to be filled in directly, not read once and paraphrased later from memory.
 
 Work through these in whatever order chapter thirteen's plan already has you building them, or use this chapter as a standalone reference once the stack is running and you just need the exact wording of a specific piece again.
 
@@ -43,7 +43,7 @@ Build once per type of engagement, reuse with specifics swapped in.
 
 **Filled in, as an example:** Priya's brief for a returning client's rebrand, built from the version chapter three describes. Situation: "Client said their current logo 'looks like it was made ten years ago by someone's cousin' and they've outgrown it since a recent funding round." Constraints: mentioned a launch event in six weeks, didn't name a budget but referenced a competitor's recent rebrand as a comparison point. Example: her strongest past rebrand proposal, pasted in full. What done looks like: a full visual identity system, logo, color palette, typography, delivered as source files plus a one-page usage guide. What only she knew: the client mentioned, off-handedly on the intro call, that the old logo was originally designed by a co-founder who'd since left the company, a sensitivity worth handling gently in how the new direction gets framed.
 
-[PULLQUOTE: Every template here already did its work once, inside a real story. What's left is the part worth keeping.]
+[PULLQUOTE: This chapter strips the story back out. What's left is the reusable part: every worksheet, script, and checklist from this book, collected in one place and written to be filled in directly, not read once and paraphrased later from memory.]
 
 ## The rate math worksheet and raise script (chapter ten)
 

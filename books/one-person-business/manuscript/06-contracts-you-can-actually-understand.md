@@ -12,7 +12,7 @@ Before anything else in this chapter: what follows is not legal advice, and no t
 
 Read that result carefully rather than as a headline. It's genuinely striking that an AI system matched or beat experienced lawyers on speed and average accuracy for a narrow, standardized document type. It is not evidence that AI review replaces a lawyer's judgment on a contract that's unusual, high-stakes, or drafted by the other side to favor them, which describes a meaningful share of what actually lands in a freelancer's inbox. Use the speed. Stay honest about the ceiling.
 
-[PULLQUOTE: A model will produce confidence whether or not it has correctness. Those are different things, and only one of them protects you.]
+[PULLQUOTE: Confidence and correctness are different things, and a model will produce the first one whether or not it has the second.]
 
 ## The three-pass read
 
@@ -38,7 +38,7 @@ What this workflow saves is the Sunday evening Priya used to lose to a contract 
 
 What it doesn't save is the moment a contract is genuinely unusual, high-value, or clearly drafted to favor the other side. A twenty-minute AI-assisted read of an eleven-page standard services agreement is a reasonable use of the tool. The same read on a six-figure exclusivity agreement, or one with a non-compete clause reaching further than feels right, is not a substitute for twenty minutes of an actual lawyer's time, and the cost comparison there favors the lawyer by a wide margin once you weigh what's actually at stake.
 
-[AUTHOR-INPUT: your own story here, a specific clause you almost missed, or almost signed, that a plain-English pass caught, and what you actually did about it]
+The clause worth naming here is Priya's own, the one this chapter opened on: a deliverables provision that defined ownership transferring on payment but stayed silent on what happens to her source files if the client cancels mid-project. She'd already signed past it once, the "probably standard" instinct this chapter opened by naming. Chapter twelve picks the same contract back up once the three-pass read actually exists as a habit, and the fix there wasn't refusing to sign anything. It was running the check anyway, months late, and asking the one plain question the original signing skipped.
 
 ## The exact prompts
 

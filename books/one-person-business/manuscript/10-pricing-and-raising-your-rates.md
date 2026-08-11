@@ -12,7 +12,7 @@ Twelve percent confident means eighty-eight percent of freelancers are pricing f
 
 Rates don't usually get raised because a freelancer decides to raise them. They get raised, if at all, in a moment of frustration, right after a project that felt underpaid, which is the worst possible moment to make a calm, well-reasoned pricing decision. Absent that trigger, the old number just keeps working well enough to never force the question: clients keep saying yes, the business stays afloat, and "well enough" quietly substitutes for "correctly priced" for years at a stretch.
 
-[PULLQUOTE: Rates don't usually get raised because a freelancer decides to. They get raised in a moment of frustration, the worst possible moment to make a calm pricing decision.]
+[PULLQUOTE: Rates don't usually get raised because a freelancer decides to raise them. They get raised, if at all, in a moment of frustration, right after a project that felt underpaid, which is the worst possible moment to make a calm, well-reasoned pricing decision.]
 
 The fix isn't waiting for frustration to force the issue. It's the same instinct chapter one's time audit already taught: replace a vague feeling with an actual number, on a schedule, rather than waiting for a bad project to make the decision for you under stress.
 

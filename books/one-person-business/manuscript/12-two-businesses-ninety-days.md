@@ -12,7 +12,7 @@ Neither business transformed overnight, and neither story is a highlight reel. B
 
 By the end of the first month, the proposal brief from chapter three was built and used twice, once for a new inquiry that turned into a signed project within four days instead of Priya's old two-week average, once for a poor-fit lead she was almost relieved to lose quickly rather than agonize over for a week.
 
-**Month two.** This is when the contract-reading workflow from chapter six actually got tested, on the eleven-page agency contract this book opened its sixth chapter with. The three-pass read surfaced the exact ambiguity described there, and this time Priya sent the question instead of assuming and signing. The client's answer came back within a day, unbothered, and the clause got clarified in writing before anyone signed anything. Nothing dramatic happened. That was the point: the dramatic version, the one where an unclear clause becomes a real dispute eighteen months later, is the version chapter fourteen is about, and it's the version this system exists to prevent quietly, before it ever becomes a story worth telling.
+**Month two.** This is when the contract-reading workflow from chapter six actually got tested for real, on the same eleven-page agency contract this book opened its sixth chapter with, the one she'd already signed on a hope months earlier. Running it retroactively through the three-pass read surfaced the exact ambiguity described there, and this time, instead of leaving a signed contract's gaps a mystery, Priya sent the question anyway. The client's answer came back within a day, unbothered, and the clause got clarified in a written amendment. Nothing dramatic happened. That was the point: the dramatic version, the one where an unclear clause becomes a real dispute eighteen months later, is the version chapter fourteen is about, and it's the version this system exists to prevent quietly, before it ever becomes a story worth telling.
 
 Marketing started in month two as well, later than the other pieces, because Priya kept deprioritizing an hour that felt optional against work that felt urgent, the exact trap chapter seven named. What actually got it moving wasn't willpower. It was stacking it onto a day she'd already protected for the inbox triage, so the marketing hour rode along on a habit that was already sticking rather than needing to become its own new habit from nothing.
 
@@ -20,7 +20,7 @@ Marketing started in month two as well, later than the other pieces, because Pri
 
 The number that mattered most by day ninety wasn't a single dramatic win. It was the same time audit from week one, run again: admin down from eleven hours to just under four, most weeks. Seven hours a week, recovered, not through any single system but through all of them stacking, compounding the way the individual chapters promised only in the abstract.
 
-[PULLQUOTE: The number that mattered most wasn't a single dramatic win. It was the same audit, run again, ninety days later.]
+[PULLQUOTE: The number that mattered most by day ninety wasn't a single dramatic win. It was the same time audit from week one, run again: admin down from eleven hours to just under four, most weeks.]
 
 ## Marcus's ninety days
 
@@ -48,7 +48,7 @@ Both accounts above are honest but they're also, inevitably, the stories of two 
 
 A slower start than either case study is normal, not a sign of failure, especially for a business with more clients, more variety in the kind of work, or less predictable income than Priya's or Marcus's. If week four arrives and only one or two systems are actually running rather than three or four, that's still real progress against a day-one baseline of zero, and chapter thirteen's plan is explicitly designed to stretch rather than to fail if a week doesn't go as scheduled.
 
-A system that genuinely isn't working after real use, not just an unfamiliar first attempt but a repeated pattern of bad drafts or wasted time, is worth diagnosing rather than abandoning silently. Nine times out of ten the fix is in the reference material feeding it, a voice reference that doesn't actually sound like you, a proposal brief missing a detail the model needed, the same lesson the "common mistakes" notes running through chapters two to nine keep returning to. The tenth time, a piece of this book genuinely doesn't fit your specific business, and skipping it is the correct call, not a failure to follow instructions closely enough.
+A system that genuinely isn't working after real use, not just an unfamiliar first attempt but a repeated pattern of bad drafts or wasted time, is worth diagnosing rather than abandoning silently. Nine times out of ten the fix is in the reference material feeding it, a voice reference that doesn't actually sound like you, a proposal brief missing a detail the model needed, the same lesson the "common mistakes" notes running through chapters two to ten keep returning to. The tenth time, a piece of this book genuinely doesn't fit your specific business, and skipping it is the correct call, not a failure to follow instructions closely enough.
 
 [TAKEAWAYS]
 

@@ -8,9 +8,9 @@ That gap isn't really about writing quality in the usual sense. Priya's old prop
 
 ## The brief behind the proposal
 
-This is chapter two's job description, aimed at a new target. Before Priya writes a word of the proposal itself, she now spends ten minutes writing a brief for it, using the same five parts: the situation (what the client actually said in their inquiry, in their own words), the constraints (budget hints, timeline pressure, anything they specifically flagged as a concern), a concrete example (her own strongest past proposal, to anchor the voice and structure), what "done" looks like (the specific scope she's quoting, not a vague description of her services), and what the tool can't know on its own (anything from the client conversation that wasn't in writing, like a hesitation she picked up on a call).
+Before Priya writes a word of the proposal itself, she now spends ten minutes writing a brief for it, in five parts: the situation (what the client actually said in their inquiry, in their own words), the constraints (budget hints, timeline pressure, anything they specifically flagged as a concern), a concrete example (her own strongest past proposal, to anchor the voice and structure), what "done" looks like (the specific scope she's quoting, not a vague description of her services), and what the tool can't know on its own (anything from the client conversation that wasn't in writing, like a hesitation she picked up on a call).
 
-[PULLQUOTE: The gap between a 2% proposal and a 20% proposal usually isn't writing quality. It's visible evidence that you actually understood this specific client's situation.]
+[PULLQUOTE: Clients can tell the difference, the same way you can tell a form letter from a real one, and the difference shows up directly in whether they say yes.]
 
 That brief, reused with the client's specific details swapped in each time, is what replaces the old forty-five-minute Sunday ritual. The first one for a new type of engagement still takes real time to get right. Every proposal after that, for a similar engagement, takes closer to fifteen minutes, because the structure and the voice are already proven and only the specifics change.
 
@@ -73,7 +73,7 @@ His sixth section is short, usually three or four lines: what's explicitly not i
 [TAKEAWAYS]
 
 - Generic, templated proposals convert at roughly 1 to 3 percent. Genuinely personalized ones convert five to ten times higher. The gap is mostly about visible evidence of understanding, not writing quality.
-- Use the five-part brief from chapter two before writing the proposal itself: the client's actual situation in their own words, constraints, your strongest past example, the specific scope, and anything you know that wasn't in writing.
+- Write the five-part brief before writing the proposal itself: the client's actual situation in their own words, constraints, your strongest past example, the specific scope, and anything you know that wasn't in writing.
 - A personalized proposal is often shorter than a generic one, not longer. It skips the hedge language a generic proposal needs to cover every possible reader.
 - Personalization shifts your odds on winnable proposals. It doesn't guarantee a win on every proposal, and a poor-fit project should still lose.
 

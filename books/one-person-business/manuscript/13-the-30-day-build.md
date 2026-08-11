@@ -18,7 +18,7 @@ Thirty days in this chapter builds every system in this book and gets you throug
 
 **Days 5 through 7.** Use the invoice template on whatever real invoice is due this week. Notice what feels off about the wording, the same way Priya's did in chapter twelve, and fix it now rather than living with an imperfect version for months.
 
-[PULLQUOTE: Build the system in thirty days. Give the habit itself the additional time habit-formation research says habits actually need.]
+[PULLQUOTE: Build the system in thirty days. Give the habit itself the additional time Lally's research says habits actually need.]
 
 ## Week two: the documents that win and protect work
 
@@ -56,7 +56,7 @@ It helps to know what "on track" looks like along the way, not just at day thirt
 
 **End of week three:** at least one contract actually read using the three-pass method, a positioning sentence written down, and a first week of the marketing system sent, published, or delivered to whatever destination fits your business. The systems that ask for the most trust have now been tested against something real rather than left as an idea from a book.
 
-**End of week four:** every piece from chapters one through nine is built, the tool list has been audited and trimmed, and you have a second time-audit number to compare honestly against day one. What that comparison shows, more than any individual system, is whether the month actually worked.
+**End of week four:** every piece from chapters one through ten is built, the tool list has been audited and trimmed, and you have a second time-audit number to compare honestly against day one. What that comparison shows, more than any individual system, is whether the month actually worked.
 
 ## If thirty days feels like too much, or not enough
 

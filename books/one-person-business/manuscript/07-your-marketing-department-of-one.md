@@ -14,7 +14,7 @@ Here's what replaces the newsletter Priya kept meaning to write: one hour, once 
 
 The hour breaks into three parts. Fifteen minutes to pick the week's topic, which should almost never be invented from scratch: the best source is a question a client actually asked that week, a decision you made on a project, a small win worth naming. Client work generates raw material for marketing constantly; the old system just never captured it. Thirty minutes to draft, using AI to turn rough notes into a finished piece in your established voice, the same saved-voice-reference trick from chapter five's inbox workflow, applied here to a newsletter or post instead of an email. Fifteen minutes to edit and send, because a draft that goes out unread is exactly the risk chapter five already named, and it applies here too.
 
-[PULLQUOTE: A newsletter has no due date. An invoice does. Marketing doesn't lose because it doesn't matter. It loses because nothing competes with a deadline someone else is watching.]
+[PULLQUOTE: Marketing was never the thing she forgot to do. It was the thing that lost every single week to whatever client work was actually due that day, because a newsletter has no due date and an invoice does.]
 
 ## Positioning before content
 
@@ -22,7 +22,7 @@ Before the one-hour system produces anything worth sending, it needs one thing d
 
 That sentence, once written, becomes the filter for every week's topic choice. A client question that illustrates it is worth a post. A client question that doesn't has nothing to do with marketing, however interesting it was that day. Most freelancers who feel like they have "nothing to talk about" haven't run out of material. They've never decided what they're actually talking about, so everything and nothing both look equally worth posting.
 
-[AUTHOR-INPUT: your own positioning sentence here, and if you have a real before-and-after, what your marketing output looked like before you had a fixed weekly system versus after]
+Priya's own before-and-after tracks directly against the newsletter gap this chapter opened on: four months of nothing, a pipeline thin enough that a past client's gentle question about it felt like a relief rather than an accusation. The one-hour system didn't fix that by producing more content than before. It fixed it by producing any content on a schedule reliable enough that four-months-quiet stopped being the default state a busy month reverted to.
 
 ## Why staying visible beats being loud
 

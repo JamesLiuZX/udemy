@@ -14,7 +14,7 @@ Chapter one showed the two-line prompt Priya uses now: "Here's this month's hour
 
 Building that template takes about twenty minutes, one time. Write out an invoice exactly the way you want every future one to look: your business name and payment details, your standard net terms spelled out in plain language ("due within 14 days of the invoice date," not just "net 14," which some clients genuinely don't know how to read), and a line item format that matches how you actually bill, whether that's hours, a flat project fee, or milestones. Save it. Every invoice after that is a fill-in against a document you already trust, not a blank page.
 
-[PULLQUOTE: The invoice was never the hard part. The hard part was the message you have to write when it doesn't get paid.]
+[PULLQUOTE: Most freelancers avoid writing that message for days. Some avoid it for weeks. The invoice was never the hard part.]
 
 ## The follow-up sequence, written before you need it
 
@@ -36,7 +36,7 @@ Priya's invoice is a monthly rhythm. Marcus's is a project rhythm, and the templ
 
 It creates a different failure mode instead, one his template has to handle explicitly: a milestone that's ambiguous enough that the client and Marcus don't agree it's actually been hit. "Staging deployment" sounds objective until a client believes staging means something slightly different than what Marcus delivered. His fix lives in the proposal from chapter three, not the invoice itself: each milestone gets one sentence defining exactly what "done" looks like for that milestone specifically, agreed before the project starts, so the invoice that follows is confirming a definition both sides already accepted rather than asserting one for the first time.
 
-[AUTHOR-INPUT: your own before-and-after here, the actual number of days it used to take you to send a first follow-up versus how fast it goes out now that it's a saved template, and if you have one, the real story of a client relationship that survived a firm day-30 message because the tone was right]
+Priya's own before-and-after is the $2,400 invoice this chapter opened on. Before the templates existed, a client going quiet meant days of putting off the follow-up, unsure each time whether firmer wording would cost her the relationship. After, the day-3 nudge to Daniel went out the same afternoon it was due, no rewriting, no agonizing over tone, because the wording had already been decided weeks earlier when nothing was overdue. He answered within a day: an approval delay on his end, nothing about the working relationship at all, and the invoice cleared four days later. The relationship never had to survive a firm message, because the message was never actually firm. It was direct, and a direct question answered honestly isn't the same test as a firm one answered defensively.
 
 ## The exact prompt
 
