@@ -34,6 +34,14 @@ Foster runs a small paralegal support service for solo attorneys and delegated f
 
 None of these six businesses have much in common on the surface, retail, HVAC, books, real estate, wellness, legal support. What's identical across all of them is the shape of how the method actually worked: a real trial surfaced a specific, narrow seam that a generic warning like "AI makes mistakes" would never have named, and a specific correction, in the brief or the standing instruction, closed it. The task categories differ. The discipline that catches their failures doesn't.
 
+## Try this: find your closest match
+
+Which of the six businesses above sits closest to your own, not by industry label, but by the shape of the task you're considering delegating first, a written description, a categorization, a schedule-adjacent detail, a numeric reconciliation?
+
+________________________________________________________________
+
+Read that one case again, specifically for the seam it hit. That's a reasonable first hypothesis for your own trial, chapter three's discipline, to confirm or correct.
+
 [TAKEAWAYS]
 
 - The method in this book doesn't require a business that looks like the examples already given. Six genuinely different businesses hit six genuinely different, narrow seams, and the same discipline caught every one of them.

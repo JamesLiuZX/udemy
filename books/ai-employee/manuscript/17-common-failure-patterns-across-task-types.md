@@ -30,6 +30,14 @@ Chapter nine covered this in depth and it's worth summarizing here for completen
 
 None of these five patterns replace the failure-mode list chapter five asks you to build for your own specific task and tool. They're a starting hypothesis, not a substitute for the evidence a real trial produces. A new writing task probably fails somewhere close to the writing-task pattern above; confirm that with your own three to five attempts rather than assuming it, the same discipline chapter three has argued for from the start. What this chapter buys you is a better first guess about where to look first, not a reason to skip looking.
 
+## Try this: guess before you trial
+
+Before running the trial on your next new task, write down which of the five patterns above you'd expect it to match, and why, in one sentence:
+
+________________________________________________________________
+
+Run the actual trial, then check your guess against what really happened. Being right builds confidence in reading a task's shape quickly. Being wrong is just as useful. It means this specific task doesn't match its category the way most do, exactly the kind of fact a written failure-mode list is for.
+
 [TAKEAWAYS]
 
 - Tasks that share a basic shape tend to share a basic failure pattern: writing tasks fabricate specifics inside fluent prose, categorization tasks fail at category boundaries, scheduling tasks fail on silent assumptions, research tasks misattribute real facts, and chains compound an early, small error.
