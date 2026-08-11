@@ -234,6 +234,9 @@ numbers:
   - value: "$50"
     established: "7.2"
     meaning: Kill-rule spend threshold when an ad has zero add-to-carts
+  - value: "$200"
+    established: "7.2"
+    meaning: Total daily spend across all 8 ad sets in the first test (25 x 8)
   - value: "40%"
     established: "6.2"
     meaning: The fabricated swelling-reduction figure the pre-flight checklist killed; never a real Harlan claim
