@@ -69,4 +69,4 @@ Chapter twelve's five questions still apply, just aimed at understanding a tool 
 
 ## Where this goes next
 
-The final chapter is reference material: the book's templates and worksheets in one place, ready to copy and fill in on whatever task you're about to try next.
+Chapter sixteen turns to a question most of this book has assumed an honest answer to rather than tested: how much time delegation is actually saving you, measured, not felt.

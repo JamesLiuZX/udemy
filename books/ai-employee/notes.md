@@ -195,11 +195,23 @@ Progress (updated per chapter as expansion happens):
       in `books/pipeline/build.py`, forcing consistent wrapped/proportional
       table columns; re-verified every table-bearing chapter in the book
       (01, 08, 11, 12, 15) still renders correctly after the change.
+- [x] 16 Measuring What Delegation Actually Saves You — new chapter,
+      inserted before the templates appendix. One `[KEY-INSIGHT]` (METR's
+      2025 RCT on developers self-reporting AI made them faster while
+      measured 19% slower), a worked example (Renaldo measuring two tasks
+      and firing the one that only felt efficient), and a two-week
+      time-log worksheet. 1,160 words, 5pp standalone. Rendered pages
+      checked. Note: chapter ordering fix — book.yaml list order (not the
+      `id` field) controls displayed chapter order, so "15 Templates and
+      Worksheets" was repositioned to the end of the `chapters:` list
+      without a file rename; see the comment left in book.yaml.
+- [ ] Additional chapters as needed to close the remaining gap to
+      [180, 240]pp (still well short after 11-16; author directive is to
+      keep adding genuine chapters rather than pad, checking in if
+      authentic material runs out before the target is reached).
 - [ ] Full rebuild + EPUB rebuild + `qc.py --release` at the new target,
-      gutter confirmed at 0.5in against the real page count. Recheck real
-      page count after chapter 11 specifically and adjust the scope of
-      12-15 against the sizing math below if the gap looks different than
-      projected, rather than forcing a rigid per-chapter quota.
+      gutter confirmed at 0.5in against the real page count once all
+      chapters exist.
 
 ### Sizing math behind the plan
 

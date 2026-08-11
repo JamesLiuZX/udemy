@@ -93,6 +93,15 @@ chapters:
   - id: "14"
     title: "Objections and Edge Cases"
     file: manuscript/14-objections-and-edge-cases.md
+  - id: "16"
+    title: "Measuring What Delegation Actually Saves You"
+    file: manuscript/16-measuring-what-delegation-actually-saves-you.md
+  # "15 Templates and Worksheets" (manuscript/15-templates-and-worksheets.md)
+  # is deliberately placed LAST in this list, after every substantive
+  # chapter, even though its id/filename predate later-added chapters.
+  # Chapter numbering in the rendered book comes from list ORDER here, not
+  # from the id string (see book.py's parse_book: chapters load in this
+  # list's order) -- so id "15" can sit at the end without a file rename.
   - id: "15"
     title: "Templates and Worksheets"
     file: manuscript/15-templates-and-worksheets.md
