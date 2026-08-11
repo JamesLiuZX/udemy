@@ -67,7 +67,7 @@ outcomes:              # keep to 4-7; too many correlates with lower course scor
   - "Build a golden-set evaluation harness in a spreadsheet and in 30 lines of Python"
   - "Design and defend a RAG system in an architecture review"
   - "Model the token-level unit economics of an AI feature and spot the margin trap"
-  - "Scope agents safely using reliability math and blast-radius analysis"
+  - "Scope agents safely using reliability maths and blast-radius analysis"
   - "Run a red-team pass and produce an AI risk register your legal team accepts"
 
 # --- Commercial -------------------------------------------------------------
@@ -191,7 +191,7 @@ sections:
       - {id: "2.0", title: "Section intro", duration: 1, voice: human}
       - {id: "2.1", title: "The AI stack in one diagram", duration: 6}
       - {id: "2.2", title: "Prompt vs RAG vs fine-tune vs agent: the decision tree", duration: 8}
-      - {id: "2.3", title: "Embeddings and vector search without the math", duration: 7}
+      - {id: "2.3", title: "Embeddings and vector search without the maths", duration: 7}
       - {id: "2.4", title: "What 'context engineering' means in 2026", duration: 6}
       - {id: "2.5", title: "Latency, throughput, and the p95 conversation", duration: 6}
       - {id: "2.6", title: "Reading a model card and benchmark table critically", duration: 7}
@@ -246,12 +246,12 @@ sections:
 
   - id: 6
     title: "Agents and Automation"
-    goal: "Scope automation using reliability math instead of optimism."
+    goal: "Scope automation using reliability maths instead of optimism."
     lectures:
       - {id: "6.0", title: "Section intro", duration: 1, voice: human}
       - {id: "6.1", title: "What an agent actually is", duration: 6}
       - {id: "6.2", title: "Tools, function calling, and MCP", duration: 7}
-      - {id: "6.3", title: "The reliability math of multi-step agents", duration: 8}
+      - {id: "6.3", title: "The reliability maths of multi-step agents", duration: 8}
       - {id: "6.4", title: "Agent design patterns that survive production", duration: 8}
       - {id: "6.5", title: "Multi-agent systems, and why local-first is the safer start", duration: 7}
       - {id: "6.6", title: "Guardrails, approvals, and blast radius", duration: 7}

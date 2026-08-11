@@ -76,8 +76,10 @@ ALLOW = {
     "pii", "config", "yaml", "json", "sql", "csv", "url", "urls",
     # hunspell splits hyphenated compounds, so both halves must be known
     "kickoff", "offs", "tradeoff", "tradeoffs", "ship", "red", "teaming",
-    "pts", "cutoff", "groundable", "leaderboard", "leaderboards",
+    "pts", "cutoff", "groundable", "ungroundable", "leaderboard", "leaderboards",
     "overcorrecting", "walkthrough", "walkthroughs", "offboarding",
+    "handoff", "handoffs", "checkpointed", "inspectable", "overpromises",
+    "screenshotted", "underpowering",
     # Python identifiers, shown verbatim in the 4.7 code listing
     "defaultdict", "int", "len",
 }
