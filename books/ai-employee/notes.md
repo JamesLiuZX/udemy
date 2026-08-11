@@ -83,7 +83,12 @@ Progress (updated per chapter as expansion happens):
       scorecard + five-attempt run log — confirms blank markdown tables
       render cleanly as fillable pages, useful for chapter 13). 1,156 ->
       1,590 words. Rendered pages checked.
-- [ ] 04 Checking the Work Without Redoing It
+- [x] 04 Checking the Work Without Redoing It — added a second
+      `[KEY-INSIGHT]` (Mackworth's classic 1948 vigilance-decrement study,
+      backing the previously-uncited "reviewer fatigue" claim), a second
+      worked example (James, apartment-maintenance triage, a keyword-level
+      seam rather than a category mix-up), and a "Try this: name your
+      seam" exercise. 1,597 -> 2,147 words. Rendered pages checked.
 - [ ] 05 Learning Its Failure Modes
 - [ ] 06 Feedback That Actually Sticks
 - [ ] 07 When to Fire It

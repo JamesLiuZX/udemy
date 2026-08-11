@@ -47,7 +47,7 @@ ALLOW = {
     "automaticity", "disqualifiers", "foodborne", "misclassifications",
     "onboarded", "onboarding", "overclaim", "overhyped", "pairing's",
     "salesy", "thrus", "underperform", "underuse", "unfile", "unretained",
-    "whatever's", "ravi", "ravi's", "else's", "farrah",
+    "whatever's", "ravi", "ravi's", "else's", "farrah", "triages",
 }
 
 AUTHOR_INPUT_RE = re.compile(r"\[AUTHOR-INPUT:(.*?)\]", re.S)
