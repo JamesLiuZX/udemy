@@ -26,6 +26,20 @@ Once a day, ideally at a set time rather than continuously, sort everything unre
 
 **Needs a real decision**, for anything that genuinely requires you to think, a new project scope, a rate negotiation, feedback that stings and needs a considered response rather than a reflexive one. These get moved out of the inbox entirely, into a short running list you check once, at a set time, rather than left to interrupt you every time the inbox opens. The point isn't ignoring them. It's separating "I need to think about this" from "this is sitting in my inbox making me feel behind."
 
+## How fast is fast enough
+
+Once-a-day triage sounds, to a lot of freelancers hearing it for the first time, like it risks looking unresponsive. It's worth checking that worry against what clients actually expect before building a habit around avoiding it.
+
+[KEY-INSIGHT: Customer-response research, including surveys published by customer-service consultant Jeff Toister, has repeatedly found that a large majority of customers now expect a reply to a service-related email within about an hour, and that expectation has shortened noticeably over the past several years even as most companies' actual average response time sits closer to half a day. || Source: Jeff Toister, Toister Performance Solutions, customer-service response-time research, aggregated across industry studies, 2018-2026.]
+
+That number sounds like it argues against once-a-day triage, and it's worth being precise about why it doesn't. That research measures consumer-facing customer service, a stranger emailing a company with a problem and no existing relationship to draw patience from. A freelancer's client inbox is a different kind of relationship entirely: an ongoing collaboration with someone who already knows you, has your phone number for anything genuinely urgent, and isn't measuring you against a call center's SLA. Once a day, at a consistent time the client can learn to expect, comfortably beats the twelve-hour average that same research finds most businesses actually deliver. The goal was never matching consumer helpdesk speed. It's not falling behind what a reasonable client relationship expects, which a predictable daily rhythm clears easily.
+
+## Marcus, across time zones
+
+Marcus's client base skews further from home than Priya's, which adds one wrinkle to the three-bucket system worth naming. A message that lands in his inbox at 11 p.m. his time from a client eight hours ahead isn't something he can triage into "answer now" even if it would otherwise qualify, because "now" for him is the middle of someone else's workday and the middle of his own night.
+
+His fix is a small addition to the draft-and-send bucket: any draft going to a client in a meaningfully different time zone gets one line added automatically, a next-availability note ("I'll be back online around 9 a.m. my time, happy to hop on a call then if useful") rather than silence that reads as unresponsiveness until his morning. It costs one sentence. What it prevents is a client in a different time zone quietly concluding, across a few slow-feeling exchanges, that Marcus is harder to reach than he actually is, when the truth is just that "once a day" lands at different clock times depending on which day you're the one waiting.
+
 ## Building the voice profile once
 
 The draft-and-send bucket is where most of the eleven hours actually lives, and it's also where a five-minute setup pays off for months. Collect eight or ten emails you're genuinely proud of, the ones that sound like you: warm but direct, or brisk and efficient, whatever your real client voice actually is. Save them together as a reference. Every time you ask for a draft, point at that saved reference instead of describing your tone in the abstract, the same way chapter three's proposal brief pointed at a past proposal instead of explaining what "personalized" means each time. A model matching real examples produces something closer to your voice on the first try than one working from an adjective like "friendly."
@@ -44,6 +58,12 @@ It also won't pretend triage alone gets you to inbox zero, and chasing that numb
 - Every drafted email gets read before it sends. Automating the blank page is not automating the judgment call.
 
 [/TAKEAWAYS]
+
+## Try this: build your voice reference in ten minutes
+
+Search your sent folder for eight to ten emails you're genuinely proud of, ones that sound unmistakably like you rather than like a template. Aim for variety on purpose: a few warm ones, a few brisk ones, a difficult message you handled well, a routine update. Copy them into one saved document, nothing fancy, just the raw text.
+
+That's the whole exercise. Next time you draft a reply, paste this reference in alongside the email you're answering and ask for a draft that matches the voice in the reference rather than a generic professional tone. You built the same kind of reusable asset in chapter three for proposals; this is the email-sized version, and it pays for its ten minutes the first time it saves you from staring at a blank reply window.
 
 ## Where this goes next
 
