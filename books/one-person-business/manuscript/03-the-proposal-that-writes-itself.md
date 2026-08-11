@@ -18,6 +18,16 @@ That brief, reused with the client's specific details swapped in each time, is w
 
 The old proposal described Priya's services in general terms and let the client infer how those services applied to their specific situation. The new one does that inferring for them, explicitly: it names the client's actual stated problem in the first paragraph, in language that echoes what they said rather than generic category language, then walks directly from that specific problem to the specific approach, without a generic capabilities section in between. A client reading it recognizes their own words within the first thirty seconds, which is most of what the conversion research above is actually measuring.
 
+## Speed is part of the pitch, not just the writing
+
+There's a second reason the fifteen-minute version beats the forty-five-minute one, separate from personalization, and it has nothing to do with what the proposal says.
+
+[KEY-INSIGHT: Research published in Harvard Business Review, analyzing sales lead response patterns, found that firms attempting to contact a new inquiry within an hour of receiving it were roughly seven times as likely to successfully qualify that lead as firms that waited even sixty minutes, and the odds kept falling the longer the delay ran. || Source: James B. Oldroyd et al., "To Whom and How Quickly You Should Respond to New Leads," Harvard Business Review, 2011.]
+
+A client who reaches out to three freelancers on the same afternoon isn't just comparing the eventual proposals. They're comparing responsiveness itself, often before any proposal exists, and a same-day reply signals something a beautifully written proposal sent four days later can't undo: that this is a business that's actually paying attention right now. Priya's old Sunday-evening ritual meant a client who wrote on Tuesday waited five days for a response by default, purely because that was when her proposal-writing habit happened to fall on the calendar, not because the inquiry itself was low priority.
+
+The fifteen-minute brief doesn't just produce a better document. It makes same-day genuinely achievable on a normal working day, which the forty-five-minute version rarely was once client work, the actual paid craft, was already competing for the same hour.
+
 ## Why this isn't about writing a longer proposal
 
 If the personalized version sounds like it should be a much longer document than the old template, that's not actually the shift, and it's worth being direct about it. A proposal that specifically names a client's real situation is often shorter than a generic one, because it can skip the parts a generic proposal has to include to cover every possible client: the broad capabilities overview, the hedge language covering situations that don't apply here. Specific and long are different qualities. This chapter is asking for the first one, not the second.
@@ -28,6 +38,12 @@ This chapter will not promise every proposal wins, and treating a higher convers
 
 It also won't tell you to spend an hour of research on every single inquiry regardless of how promising it looks. Chapter nine's scope-protection instincts apply here too: a quick, honest read on whether an inquiry is worth your full ten-minute brief is itself a skill, and spending equal effort on every lead regardless of fit is its own kind of waste.
 
+## The brief, adapted for a project instead of a retainer
+
+Marcus's version of this same brief carries one extra part Priya's doesn't need, and it maps directly onto the two-week front-loaded scoping stretch from chapter one: a sixth section naming exactly what's out of scope. A design retainer flexes month to month by nature, so Priya's proposal describes an ongoing relationship more than a fixed boundary. A fixed-price development project doesn't have that flexibility built in, and every dollar of scope Marcus fails to name explicitly in the proposal becomes a dollar he's arguing about for free later, which is exactly the problem chapter nine exists to solve after the fact. Naming it here, in the document the client actually signs off on, prevents most of that argument from ever needing to happen.
+
+His sixth section is short, usually three or four lines: what's explicitly not included (a mobile app version, ongoing hosting and maintenance, integration with a system the client hasn't mentioned yet but might ask about), what assumptions the price depends on (existing codebase in a specific reasonable state, no major requirement changes mid-project), and what happens if either assumption turns out to be wrong (a change order process, named plainly, not left to an awkward conversation later). None of that makes the proposal read as defensive. It reads as precise, and clients who've been burned by a vague contractor before recognize the difference immediately.
+
 [TAKEAWAYS]
 
 - Generic, templated proposals convert at roughly 1 to 3 percent. Genuinely personalized ones convert five to ten times higher. The gap is mostly about visible evidence of understanding, not writing quality.
@@ -36,6 +52,18 @@ It also won't tell you to spend an hour of research on every single inquiry rega
 - Personalization shifts your odds on winnable proposals. It doesn't guarantee a win on every proposal, and a poor-fit project should still lose.
 
 [/TAKEAWAYS]
+
+## Try this: write your reusable brief today
+
+Pick your single best past proposal, the one you're proudest of regardless of whether it won, and turn it into a reusable brief in five parts. Save it somewhere you'll actually find it next time an inquiry lands.
+
+- **The situation**: rewrite the client's original inquiry in their own words, the two or three sentences that actually explained what they needed.
+- **The constraints**: whatever they told you about budget, timeline, or a specific worry, even in passing.
+- **The example**: paste in the full text of this proposal itself, as the voice and structure reference for every future one.
+- **What done looks like**: the specific scope you quoted, written as concretely as you'd write it for a contract, not a general description of your services.
+- **What only you know**: anything from the actual conversation, a call, a hesitation, a detail, that never made it into writing anywhere else.
+
+If your work is closer to Marcus's than Priya's, project-based rather than ongoing, add the sixth part now: what's explicitly out of scope, and what assumption the price depends on. Next inquiry that lands, you're not starting from a blank page. You're filling in five or six blanks against a structure you already trust.
 
 ## Where this goes next
 
