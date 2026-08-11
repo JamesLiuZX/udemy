@@ -12,7 +12,7 @@ author: "James Liu"
 year: 2026
 genre: business
 trim: "6x9"
-target_pages: [130, 165]
+target_pages: [155, 175]
 
 # Never set true except by the real author, after a genuine full read-through.
 verified: false
