@@ -45,6 +45,13 @@ callbacks:
       rubric question count (six, in 3.4). 3.8 names the feature explicitly as
       "the support ticket summariser's" acceptance criteria and reuses the
       sentence verbatim as the workshop's worked example.
+  - lecture: "6.1"
+    use: The summariser extended one step further, into an action-taking agent.
+      Section 6's worked example (an agent that pulls order history and decides
+      refunds) is framed explicitly as the same summariser from Section two,
+      pushed past drafting a summary into acting on a ticket like 4471 (a
+      double charge needing a refund). The rest of the section's refund-agent
+      thread (6.4, 6.6, 6.7, 6.8) inherits this framing from 6.1.
 
 # Canonical numbers. A different value for any of these in any lecture is a
 # continuity bug, and qc.py's continuity check (docs/04 §7) matches on them.
