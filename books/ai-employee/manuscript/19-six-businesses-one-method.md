@@ -52,4 +52,4 @@ Read that one case again, specifically for the seam it hit. That's a reasonable 
 
 ## Where this goes next
 
-Chapter twenty steps back from any single business to a distinction this book has glossed over so far: "AI tool" actually covers a few genuinely different shapes of software, and knowing which shape you're delegating to changes exactly how a few pieces of this method apply.
+Chapter nineteen steps back from any single business to a distinction this book has glossed over so far: "AI tool" actually covers a few genuinely different shapes of software, and knowing which shape you're delegating to changes exactly how a few pieces of this method apply.

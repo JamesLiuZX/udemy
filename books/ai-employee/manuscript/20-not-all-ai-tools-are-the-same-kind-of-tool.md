@@ -24,6 +24,14 @@ This book has talked about "AI" and "the tool" as if they were one kind of thing
 
 Odalys runs a small subscription box business and uses all three shapes for different tasks, which makes her setup a clean illustration. A general chat assistant drafts customer support replies, chapter four's ordinary spot-check discipline, read the draft, check the seam, send it. A narrow, purpose-built tool categorizes returned items by reason code from a dropdown-style interface, and her "brief" for it is really just a one-time configuration of which reason codes map to which categories, checked once at setup and revisited only when she adds a new code. An automation reorders low-stock items from her primary supplier automatically once inventory crosses a threshold, and for that one, alone among her three tools, she requires a checkpoint before the action fires, not after: any reorder over five hundred dollars pauses for her approval before the order actually goes out, because an agent's mistake here isn't a bad draft to fix, it's money already spent on inventory she might not have wanted.
 
+## Try this: name your own three shapes
+
+List every AI tool you or your team currently uses, or are seriously considering. For each one, write which of the three shapes it is: a general chat assistant, a narrow purpose-built tool, or an agent that takes real actions on its own.
+
+________________________________________________________________
+
+For any tool you marked as an agent, write down what it can currently do without a human pausing to approve it first. If you can't answer that precisely, that's the seam to close before delegating anything further to it.
+
 [TAKEAWAYS]
 
 - "AI tool" spans at least three genuinely different shapes: a general chat assistant, a narrow purpose-built tool, and an agent that takes real actions on its own. The underlying management skill is the same across all three; a few specifics of how it applies aren't.
@@ -35,4 +43,4 @@ Odalys runs a small subscription box business and uses all three shapes for diff
 
 ## Where this goes next
 
-Chapter twenty-one looks at a category of task this book has mostly sidestepped until now on purpose: anything involving money directly, where the ordinary stakes of a delegated task go up by an order of magnitude.
+Chapter twenty looks at a category of task this book has mostly sidestepped until now on purpose: anything involving money directly, where the ordinary stakes of a delegated task go up by an order of magnitude.

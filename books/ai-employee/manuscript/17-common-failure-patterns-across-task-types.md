@@ -48,4 +48,4 @@ Run the actual trial, then check your guess against what really happened. Being 
 
 ## Where this goes next
 
-Chapter eighteen covers a discipline this book has mentioned in passing several times without giving it its own space: periodically revisiting a task you already fired, on purpose, rather than assuming a closed door stays closed forever.
+Chapter seventeen covers a discipline this book has mentioned in passing several times without giving it its own space: periodically revisiting a task you already fired, on purpose, rather than assuming a closed door stays closed forever.

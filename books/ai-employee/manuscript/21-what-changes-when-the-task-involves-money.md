@@ -26,6 +26,14 @@ Felix runs a small custom furniture workshop and delegated the first pass of pri
 
 Felix didn't fire the task. He added the one check that actually mattered: every quote now gets its final total independently recalculated from the same three numbers, materials, dimensions, labor rate, before it goes out, a task that takes ninety seconds and would have caught the underpriced quote before it ever reached a customer. The drafting still saves him real time. The arithmetic just never gets trusted on its own say-so anymore.
 
+## Try this: reconcile one number
+
+Pick one financial task, or one delegated task with a financial number embedded in it, that you currently trust without checking. Recalculate its most recent output independently, from source, the way Felix recalculated his quotes.
+
+________________________________________________________________
+
+Did the number hold up? If it didn't, that's real evidence for a standing instruction or a stricter checkpoint. If it did, you've earned a lighter, faster reconciliation habit for that task going forward, not zero checking.
+
 [TAKEAWAYS]
 
 - A wrong output in a financial task costs money that's already moved, not just time to fix, a fundamentally different risk profile than most tasks in this book.
@@ -37,4 +45,4 @@ Felix didn't fire the task. He added the one check that actually mattered: every
 
 ## Where this goes next
 
-Chapter twenty-two names a risk this book's own caution can create if it's the only lesson taken from it: using careful evaluation as a permanent excuse to never actually try.
+Chapter twenty-one names a risk this book's own caution can create if it's the only lesson taken from it: using careful evaluation as a permanent excuse to never actually try.

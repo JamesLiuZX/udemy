@@ -24,6 +24,14 @@ This isn't a new rule so much as a naming of something the disqualification logi
 
 **When in doubt, the "clear and conspicuous" test is a useful gut check.** Would a reasonable customer, reading this, be surprised or misled to learn AI helped produce it. If the honest answer is yes, that's the task that needs either a plain disclosure or a fully human replacement, not a task to quietly hope nobody asks about.
 
+## Try this: run the reasonable-person test
+
+Pick one AI-assisted output your business currently sends to clients or customers without any disclosure. Ask honestly: would a reasonable person, learning exactly how this was produced, feel misled?
+
+________________________________________________________________
+
+If the honest answer is yes, or even a genuine maybe, that output belongs on the "disclose plainly, or make it real" side of the line this chapter drew, not on the side you've been quietly hoping nobody asks about.
+
 [TAKEAWAYS]
 
 - Not every AI-assisted task needs a disclosure to the person receiving it. The line that matters is whether knowing would change how a reasonable person interprets what they're looking at, the same standard regulators use.

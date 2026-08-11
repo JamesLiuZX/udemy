@@ -53,4 +53,4 @@ At the end of two weeks, compare the average against your honest best estimate o
 
 ## Where this goes next
 
-Chapter seventeen steps back from any single task to look across all of them: the failure patterns that recur by task type, writing, categorizing, scheduling, researching, so the next task you delegate starts with a head start instead of a blank slate.
+Chapter sixteen steps back from any single task to look across all of them: the failure patterns that recur by task type, writing, categorizing, scheduling, researching, so the next task you delegate starts with a head start instead of a blank slate.

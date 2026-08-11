@@ -158,7 +158,7 @@ ________________________________________________________________
 | 3 | Save the standing instruction, run the disqualifiers | | |
 | 4 | Add a second task if earned, or start a fresh trial if week 3 said no | | |
 
-## The revisit tracker (chapter eighteen)
+## The revisit tracker (chapter seventeen)
 
 For any task currently fired. Add a row each time you fire one; update the last two columns at each revisit.
 
@@ -168,7 +168,7 @@ For any task currently fired. Add a row each time you fire one; update the last 
 | | | | |
 | | | | |
 
-## The agent pre-action checkpoint (chapter twenty)
+## The agent pre-action checkpoint (chapter nineteen)
 
 For any tool that takes real-world actions rather than only producing drafts:
 
@@ -184,7 +184,7 @@ ________________________________________________________________
 
 ________________________________________________________________
 
-## The financial task reconciliation checklist (chapter twenty-one)
+## The financial task reconciliation checklist (chapter twenty)
 
 For any task producing a number that governs real money:
 
@@ -195,7 +195,7 @@ For any task producing a number that governs real money:
 | Does this task's judgment-call slice, if any, still route to a human? | |
 | Has the third disqualifier (a single error outweighing every success) been checked at this task's real volume? | |
 
-## The disclosure decision (chapter twenty-four)
+## The disclosure decision (chapter twenty-two)
 
 For any task whose output reaches a client or customer directly:
 
@@ -225,9 +225,9 @@ ________________________________________________________________
 
 **Chain.** A multi-step delegated process, each step's output feeding the next, checked at every seam rather than only at the end. Chapter nine.
 
-**Reconciliation.** Verifying a financial task's output against a source that didn't come from the same process that produced it, rather than checking whether the output merely looks internally consistent. Chapter twenty-one.
+**Reconciliation.** Verifying a financial task's output against a source that didn't come from the same process that produced it, rather than checking whether the output merely looks internally consistent. Chapter twenty.
 
-**Revisit.** A fresh, real trial run on a task that was previously fired, on a set schedule, to check whether the original disqualifying failure still holds. Chapter eighteen.
+**Revisit.** A fresh, real trial run on a task that was previously fired, on a set schedule, to check whether the original disqualifying failure still holds. Chapter seventeen.
 
 [TAKEAWAYS]
 

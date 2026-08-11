@@ -24,6 +24,14 @@ Chapter three made this argument once already, at the level of a single trial: a
 
 Yusuf's own resolution, once he saw it named this way, was almost anticlimactic: he picked the smallest, safest task he could find, drafting responses to routine customer service inquiries about scheduling, ran chapter three's five-attempt trial in a single afternoon, and had real, specific evidence in hand by the end of the day, evidence no amount of further deliberation had produced in a year and a half. The trial wasn't perfect. It found a real seam, the same kind of thing every example in this book has found. That's not a failure of the eighteen months of caution. It's exactly what the first afternoon of actually trying was always going to produce, available the entire time, underneath a year and a half of correctly-reasoned reluctance that had quietly become its own kind of risk.
 
+## Try this: name your own eighteen months
+
+Is there a task you've been "about to try" for longer than you'd admit out loud? Name it, and name the actual reason you haven't started, in one honest sentence.
+
+________________________________________________________________
+
+Now check that reason against chapter three's criteria alone: is this task small, recurring, low-stakes, and checkable in under a minute? If it clears those four, the reason you wrote down probably belongs to chapter seven's disqualifiers, a question for after a trial, not before one.
+
 [TAKEAWAYS]
 
 - Every caution in this book governs whether to keep running a task you've actually tried. None of it is a reason to avoid running the trial in the first place; that decision belongs to chapter three's criteria alone.
@@ -35,4 +43,4 @@ Yusuf's own resolution, once he saw it named this way, was almost anticlimactic:
 
 ## Where this goes next
 
-Chapter twenty-three turns to one more audience this book hasn't addressed directly: what you owe the client or customer on the other end of a delegated task, when they don't already know how it was produced.
+Chapter twenty-two turns to one more audience this book hasn't addressed directly: what you owe the client or customer on the other end of a delegated task, when they don't already know how it was produced.

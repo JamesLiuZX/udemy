@@ -69,4 +69,4 @@ Chapter twelve's five questions still apply, just aimed at understanding a tool 
 
 ## Where this goes next
 
-Chapter sixteen turns to a question most of this book has assumed an honest answer to rather than tested: how much time delegation is actually saving you, measured, not felt.
+Chapter fifteen turns to a question most of this book has assumed an honest answer to rather than tested: how much time delegation is actually saving you, measured, not felt.

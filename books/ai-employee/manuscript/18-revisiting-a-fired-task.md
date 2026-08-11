@@ -45,4 +45,4 @@ When that date arrives, the work is already done: run chapter three's trial, aim
 
 ## Where this goes next
 
-Chapter nineteen moves fast across six more businesses, different enough from every example so far that at least one should resemble yours, each one showing the same method catching a genuinely different kind of seam.
+Chapter eighteen moves fast across six more businesses, different enough from every example so far that at least one should resemble yours, each one showing the same method catching a genuinely different kind of seam.
