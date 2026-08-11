@@ -4,7 +4,7 @@ Every tool in this chapter already appeared somewhere in the eleven chapters bef
 
 ## 1. The bounded-time account research checklist (chapter 3)
 
-Chapter three's argument was that real research beats fake personalization, but only if it stays fast enough to run at the volume a quota actually requires. That chapter gives a working range, twelve to twenty-five minutes depending on how many stakeholders are involved; what follows operationalizes that range into one fixed number and order for the common case, a single-stakeholder account: fifteen minutes, no exceptions, long enough to find one real signal, short enough that choosing research over dial time stops being a real tradeoff. For a multi-stakeholder enterprise account, budget fifteen to twenty-five minutes per stakeholder instead, per chapter three's own guidance, and run this same checklist once for each person worth researching individually.
+Chapter three's argument was that real research beats fake personalization, but only if it stays fast enough to run at the volume a quota actually requires. That chapter gives a working range, twelve to twenty-five minutes depending on how many stakeholders are involved; what follows operationalizes that range into one fixed number and order for the common case, a single-stakeholder account: fifteen minutes, no exceptions, long enough to find one real signal, short enough that choosing research over dial time stops being a real tradeoff. (When chapters ten and eleven talk about the forty-minute treatment, that's this fifteen plus the writing that follows it, chapters three and four run back to back.) For a multi-stakeholder enterprise account, budget fifteen to twenty-five minutes per stakeholder instead, per chapter three's own guidance, and run this same checklist once for each person worth researching individually.
 
 Run the search in this fixed order every time. The order matters more than it looks like it should, because a fixed order is what keeps the fifteen minutes from turning into forty the moment an account gets interesting.
 
@@ -114,7 +114,7 @@ The pattern worth keeping across all three exchanges: name the real cost the rep
 
 Chapter seven's dividing line between a legitimate use of an AI tool and one that quietly undermines everything else in this book is a single question, asked honestly: does this compress a cost, or does it fake an effort? Compressing a cost is real: summarizing a long account history before a call, drafting scaffolding from research you actually did, rehearsing an objection out loud against a tool that talks back. Faking effort is the tool inventing the appearance of research that never happened, which is the exact failure mode chapter three spent its whole argument warning against, just automated instead of lazy.
 
-Run any proposed tool or use through these questions before it becomes part of your team's workflow.
+Chapter seven's five-question adoption test is the source of everything below; this version rewords it for the specific moment a tool is on the table for the whole team, and adds a sixth stress test of its own. If an answer here seems to disagree with chapter seven's wording, chapter seven wins.
 
 1. Does this save time on a step I would have done anyway, or does it produce the appearance of a step I skipped?
 2. If the prospect knew exactly how this specific sentence or insight was produced, would they still trust it?
@@ -129,17 +129,20 @@ Run any proposed tool or use through these questions before it becomes part of y
 
 ## 6. A metrics dashboard template (chapter 8)
 
-Chapter eight's argument is that most sales dashboards reward the wrong layer: send volume and open rate feel productive and move first, but they predict almost nothing about revenue, while the metrics that do predict revenue move slower and get checked less. Build the weekly view around what actually predicts pipeline, not what changes fastest.
+Chapter eight's argument is that most sales dashboards reward the wrong layer: send volume and open rate feel productive and move first, but they predict almost nothing about revenue, while the metrics that do predict revenue move slower and get checked less. Build the view around chapter eight's four headline numbers, and start with its one prerequisite field: a Volume/Targeted tag set on every outreach touch when it's logged, because every segmented number below depends on it existing.
+
+The four headline rows, exactly as chapter eight defined them, then the supporting rows:
 
 | Metric | Formula | Cadence | What it actually predicts | Watch for |
 | --- | --- | --- | --- | --- |
-| Reply rate | Replies ÷ sends | Weekly | Whether outreach is landing as relevant at all | A number propped up by volume alone is not the same as a healthy number |
-| Positive reply rate | Meeting-relevant replies ÷ sends | Weekly | Actual pipeline generation, not just engagement | The gap between total replies and positive replies; a wide gap means the email gets read but doesn't land |
+| Meetings held | Count, per rep or segment | Monthly | The top of the funnel that actually happened | Meaningless without the three rows below it |
+| Meeting-to-opportunity rate | Opportunities created ÷ meetings held | Monthly | Whether the accounts being reached are actually right-fit accounts | A low rate here often means the ICP filter upstream, not the email, is the real problem |
+| Opportunity win rate, by tag | Won ÷ closed, split by the Volume/Targeted tag | Monthly | Whether researched outreach actually closes better, this book's core claim, tested on your own data | An unsegmented win rate hides exactly the difference that matters |
+| Pipeline dollars per rep-hour | Pipeline created ÷ estimated prospecting hours | Monthly | What an hour of a rep's time actually buys | An estimate; label it as one on the dashboard itself (chapter eight's own caveat) |
+| Reply rate / positive reply rate | Replies ÷ sends; meeting-relevant replies ÷ sends | Weekly | Leading indicator only; chapter eight files reply rate on its own under vanity | Never the headline; a number propped up by volume is not a healthy number |
 | Complaint rate | Spam complaints ÷ sends | Weekly | Domain and deliverability health (chapter 2's ceiling) | Anything trending toward 0.1% is a live risk, not a future one |
-| Meeting-to-opportunity rate | Opportunities created ÷ meetings held | Monthly | Whether the accounts being researched are actually the right-fit accounts | A low rate here often means the ICP filter upstream, not the email, is the real problem |
-| Research-to-send time ratio | Minutes researching ÷ minutes drafting and sending, per touch | Monthly | Whether the team is actually running the checklist or skipping to the template | A ratio that drifts toward zero means the discipline is quietly eroding |
-| Pipeline sourced per rep | Total opportunity value (dollars) ÷ rep | Monthly | The number that actually matters to the business, downstream of all the others | Rises later than activity metrics; do not panic in month one |
-| Sequence completion without edits | Touches sent unmodified from the template ÷ total touches | Monthly | Whether "personalized" cadences are quietly reverting to spray-and-pray | Rising toward 100% is the early warning sign the sequence has gone stale |
+| Research-to-send time ratio | Minutes researching ÷ minutes drafting and sending, per touch | Monthly | Whether the team is actually running the checklist or skipping to the template | A ratio drifting toward zero means the discipline is quietly eroding |
+| Sequence completion without edits | Touches sent unmodified ÷ total touches | Monthly | Whether "personalized" cadences are reverting to spray-and-pray | Rising toward 100% is the early warning the sequence has gone stale |
 
 **Filled in, as an example.** Diane's team, one representative week, showing why the volume number alone would have told a misleading story.
 
@@ -153,7 +156,7 @@ Chapter eight's argument is that most sales dashboards reward the wrong layer: s
 | Opportunities created | 2 | 2 | n/a |
 | Pipeline sourced this month | \$34,000 | \$210,000 | segment-specific |
 
-Read the raw send count alone and Theo looks like the more active rep by a wide margin. Read the full table and Naomi's smaller, more researched volume is producing a comparable number of opportunities and a far larger pipeline value per touch, exactly the outcome chapter eight predicts once send volume stops being the metric a dashboard leads with.
+Read the raw send count alone and Theo looks like the more active rep by a wide margin. Read the full table and Naomi's smaller, more researched volume is producing a comparable number of opportunities and a far larger pipeline value per touch, exactly the outcome chapter eight predicts once send volume stops being the metric a dashboard leads with. One row this weekly example deliberately omits: the tag-segmented win rate, because a single week of closed deals is an anecdote wearing a percentage sign, chapter eight's own caveat about young data, run it monthly against a quarter's worth of closes.
 
 ## 7. The buyer's-eye audit (chapter 9)
 
@@ -162,7 +165,7 @@ Chapter nine's exercise asks the team to do something most reps never do volunta
 1. Pull the last ten sent emails from your own outbox, cold, without rereading your notes on why you sent each one first.
 2. For each one, read only the first two sentences and ask: could I, as the recipient, tell this was written specifically about my company within those two sentences, or does it take until sentence four to become specific, if it ever does?
 3. Ask, honestly: if a colleague forwarded me this exact email with the subject line "is this normal now," would I feel it deserved that, or would I feel a little embarrassed on the sender's behalf?
-4. Count how many of the ten pass the specificity test from section two of this chapter. A team average worth aiming for is at least eight of ten; below five of ten, the researched-account discipline has quietly slipped back toward volume.
+4. Count how many of the ten pass chapter nine's five questions, run as written there: the twenty-company swap test, the one-fact-that-required-actually-looking test, the ask-before-earning-attention test, the forwarded-to-three-peers test, and the sarcastic read-aloud test. A team average worth aiming for is at least eight of ten; below five of ten, the researched-account discipline has quietly slipped back toward volume.
 5. Pick the single worst email in the batch and rewrite its opening line using the checklist from section 1, out loud, in the next team meeting, as a shared exercise rather than a callout of whoever sent it.
 
 **Filled in, as an example.** Naomi ran this audit on her own last ten sends and found seven passed cleanly, two were borderline (specific in sentence one but generic in every sentence after), and one had reused a research trigger from a different account entirely, a copy-paste error rather than a judgment failure, but exactly the kind of thing this audit catches before a prospect does. She flagged the process gap to Diane: her draft folder needed a per-account label, not a general fix to her research.
@@ -175,7 +178,9 @@ For the moment an objection actually lands in a real conversation, on a real tea
 | --- | --- |
 | "Our competitors send more volume than us and they're still winning deals." | They're winning the deals volume can still win: fast-cycle, low-consideration, price-sensitive accounts. Ask which deals on the current pipeline actually fit that shape before matching their volume. |
 | "This doesn't scale, we can't research every account in a territory this size." | It was never meant to cover every account. Segment by ICP fit first; researched touches go to the top tier, volume-appropriate outreach covers the rest. Scaling the wrong tier is the actual problem. |
-| "Compliance and legal review slow us down too much to move at this pace already, we can't afford to add research time on top." | Research time and review time solve different problems and don't stack the way it feels like they do; a well-researched email usually clears review faster because it needs fewer rewrites, not slower. |
+| "Researching people this closely feels like surveillance." | Run chapter ten's thirty-second test: public and professional (their company's site, filings, job posts, what they posted about work) is research; private and personal (their personal accounts, their life outside the role) is off limits, full stop. |
+| "Isn't a 2% reply rate just normal now?" | Normal for undifferentiated volume, yes; that's the average eating itself. The gap between volume-tier and researched-tier replies on your own dashboard is the number that answers this, not the industry average. |
+| "My newest reps don't have the judgment to know a real signal from a routine announcement." | Correct, and that's an argument for scaffolding, not for templates: pair the checklist with a tenured rep reviewing signal picks in real time for the first month (chapter ten's answer in full). |
 | "I don't have fifteen minutes per account, I have a number to hit today." | Ten accounts a week, not the whole territory, is the actual ask (see section 4's script). The other accounts keep running at current pace unchanged. |
 
 [PULLQUOTE: None of this works as a poster on the wall. Diane's team's reply rate did not recover because someone laminated a checklist and pinned it by the coffee machine.]

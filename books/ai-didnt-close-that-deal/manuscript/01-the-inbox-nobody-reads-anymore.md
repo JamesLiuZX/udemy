@@ -1,5 +1,7 @@
 # The Inbox Nobody Reads Anymore
 
+Thirty-one cold emails, read back to back on a Friday afternoon. Eleven opened with some version of "I noticed [her company] recently." Six referenced a conference she had never attended. Four got her title wrong. Diane replied to exactly two of them, and the reason she replied to those two is most of what this book has to teach. But the experiment came later. First came the chart.
+
 Diane pulled up the quarterly numbers before the Monday pipeline review, the way she always did, and stared at the reply rate chart for longer than she meant to. Eighteen months ago her team's cold email replies sat around seven percent, respectable, nothing to brag about, enough to keep the pipeline fed. This quarter it had fallen to two.
 
 Nothing about her team had gotten worse. If anything they were sending more, faster, with better-looking emails than they'd ever sent before, since the whole team had adopted an AI writing tool the year before specifically to fix a slower version of this same problem. The emails were grammatically perfect. They mentioned the prospect's company by name, occasionally a recent funding round, once in a while something that sounded almost like it might have come from actually reading the prospect's LinkedIn. And almost nobody replied to them anymore.
@@ -17,6 +19,18 @@ Every prospect Diane's team emails is also being emailed, on the same day, by a 
 This is the same mechanism behind a lot of the AI-and-work conversation happening across totally unrelated fields right now, just wearing sales clothes: something that used to require real effort became free to produce, so the market flooded with it, and the market's ability to tell the effortful version from the cheap version collapsed along with it. A recipient scanning their inbox in 2019 could reasonably assume a personalized-sounding cold email meant someone had actually looked at their company. A recipient scanning their inbox today has learned, correctly, that assumption no longer holds, and they've adjusted their filtering accordingly, which shows up in your numbers as a reply rate that keeps sliding no matter how good the tool gets.
 
 Diane didn't fully believe the mechanism until she ran a small, uncomfortable experiment the week after that pipeline review. She asked her assistant to forward her every cold email that had landed in her own inbox that month, the ones she'd normally archive without reading, and she read all thirty-one of them back to back on a Friday afternoon. Eleven opened with some version of "I noticed [her company] recently," followed by a fact anyone could pull from a homepage. Six referenced a conference she'd never attended. Four got her title wrong in a way that suggested the tool had scraped an old LinkedIn cache rather than her current one. Only two, out of thirty-one, contained a detail specific enough that she couldn't picture the same sentence landing in a hundred other inboxes that week with a different company name swapped in. She replied to both of those. She hadn't consciously decided to use "would this survive being sent to someone else" as her filter. She'd just done what every recipient on the other end of her own team's emails was already doing without a name for it.
+
+Her thirty-one, sorted:
+
+| What the opener did | Count | What happened |
+| --- | --- | --- |
+| "I noticed [company] recently" plus a homepage fact | 11 | Archived unread |
+| Referenced a conference she never attended | 6 | Archived unread |
+| Got her title wrong from a stale profile scrape | 4 | Archived unread |
+| Generic in some other flavor | 8 | Archived unread |
+| A detail that couldn't be sent to anyone else | 2 | Both got replies |
+
+Run this on your own inbox this month, before you audit your team's outbound. The sorting takes twenty minutes, and the last row will teach you more about your own market than any benchmark report.
 
 ## Why sending more makes it worse, not better
 

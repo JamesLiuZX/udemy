@@ -10,6 +10,15 @@ The defending itself was not abstract. Diane's own VP asked her directly, in the
 
 The Monday review itself looks different too. Diane used to open with how many they'd sent. Now she opens with a different question, the one this book kept circling back to without her fully registering it the first few times: how many accounts got the forty-minute treatment this week, and how many of those forty minutes actually turned up something a mail-merge field could never have found. That is the number she tracks now. Send volume is still on the dashboard, several tabs over, mostly so ops can watch the domain's spam-complaint rate stay where it belongs.
 
+Eighteen months, on one card:
+
+| | Eighteen months ago | Now |
+| --- | --- | --- |
+| Team reply rate | 7%, then 2% | 4.3% |
+| Theo's weekly sends | 150 and up | About 40 |
+| What Monday review opens with | Send count | How many accounts got the forty-minute treatment |
+| Where send volume lives | The headline | An ops tab, next to the complaint rate |
+
 ## The room full of robots
 
 Here is the plain version of what Diane's team, and every team like it, is actually operating inside now. Pull up any prospect's inbox on any given Tuesday and most of what has arrived there was produced by some flavor of the same handful of AI writing tools, trained on some flavor of the same patterns, sent by a rep who spent under a minute on each one because the tool made that minute possible. The emails are not badly written. That was never the problem this book set out to solve. They are competently, forgettably, interchangeably written, in a way that makes an inbox read less like a series of individual people trying to reach you and more like a stack of form letters that happen to know your first name.

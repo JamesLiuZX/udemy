@@ -3,6 +3,89 @@
 Not part of the build. Working notes for continuing across sessions, same
 pattern as the other books.
 
+## 2026-08-11: Chief Quality Editor pass (hook/nugget, SOTA, visual devices)
+
+Same mandate as the same-date entries in the other three titles. This book
+was drafted to the house spec (cold opens, pullquotes, limits sections
+enforced per chapter), so hooks and nuggets were largely in place; the
+pass found one continuity defect the earlier fix missed, realigned ch12
+with its source chapters, and closed the visual gaps.
+
+### Who this book's reader is
+
+A sales leader (or a senior rep about to become one) running a team whose
+outbound stopped working. They know sales vocabulary at practitioner
+level; the pass still glossed the acronym debt at first use (SDR, AE,
+ICP, ACV, SPIFF, 10-K, TMS, QBR, ABM, TAM, firmographic, champion,
+economic buyer, pipeline coverage) because "sales leader" spans people
+promoted last month as well as veterans, and a gloss costs one clause.
+
+### Hook and golden nugget, per chapter
+
+| Ch | Hook | Nugget |
+| --- | --- | --- |
+| 01 | 31 cold emails read back to back; she replied to two (teaser promoted this pass) | The would-this-survive-being-sent-to-someone-else filter; run the audit on your own inbox |
+| 02 | The ops lead's dashboard: "If this crosses point-three, Google stops delivering us" (dramatized this pass) | The complaint-rate ceiling arithmetic: spray spends it, research never touches it |
+| 03 | Same sentence, different noun, two rows apart in the queue | Merge field vs signal; the 12-25-minute timed research worksheet |
+| 04 | Six funding-round openers, two stale, one to a nonprofit | The swap test and the paste test; the annotated before/after emails |
+| 05 | She recognized the vendor's sequence from subject lines alone, then found her own | Every touch must contain something the recipient didn't already have |
+| 06 | Four drafts of the same Sunday-night Slack message, deleted | The 30-account split with segment-specific scorecards; tell your boss about the dip first |
+| 07 | "So are we just not allowed to use AI anymore?" | Compresses a cost vs fakes a signal; the task-sort table |
+| 08 | Every tile green, coverage at 1.4x against 3x, "walk me through the gap" | Top rows measure effort, bottom rows measure fit; MPP kills open rate |
+| 09 | Owen, the ICP himself, 41 unread on a Tuesday | The pattern costs shortlists, not replies; the five buyer's-eye tests |
+| 10 | 45 minutes on the leadership agenda, taken apart in order of who was most annoyed | Tiering with real arithmetic: 400/1,200/2,400 and 266 rep-hours |
+| 11 | This time she did not stare: 4.3% | The third scarce thing: writing something specific enough to be wrong |
+| 12 | (reference chapter) | Every checklist with a hard cap or yes/no gate built in |
+
+### What changed this pass
+
+- **The continuity defect**: the book's headline research-time cost
+  disagreed with itself by 2.5x (ch12 pinned fifteen minutes; ch7/10/11
+  built on forty). Reconciled without changing either number: ch3's 12-25
+  minutes is research alone; the forty-minute treatment is research plus
+  the writing it feeds (chs 3+4 back to back). Two attribution fixes in
+  ch10 and one bridging sentence in ch12 §1 close it.
+- **ch12 realigned with its source chapters**: §6's dashboard had quietly
+  led with reply rate (which ch8 files under vanity) and dropped ch8's
+  Volume/Targeted tag and two of its four headline metrics; rebuilt to
+  lead with ch8's four numbers, tag prerequisite stated, reply rate
+  demoted with the reason on the row. §5 now names ch7 as its source
+  (chapter seven wins on any wording clash). §7's audit now runs ch9's
+  five original tests by name. §8 gained the two missing objections and
+  its compliance row now answers the objection ch10 actually raised
+  (surveillance optics, the public/professional vs private/personal
+  test) instead of one it didn't.
+- **All 11 KEY-INSIGHTs re-verified live: 11 confirmed, zero corrections.**
+  Two one-clause updates applied: Microsoft joined the bulk-sender regime
+  (May 2025), so ch2 now says all three major inbox providers enforce
+  authentication-or-rejection; ch9's 94% fact-check stat now carries the
+  source's "at least some of the time" qualifier. ch3's Gartner survey is
+  the 2025 edition of an annually refreshed series (2026 edition exists,
+  67% rep-free); left as-is since the cited figures are correctly tied to
+  their wave, noted here for the next revision.
+- **Worked visuals added to six chapters**, all from in-chapter material:
+  ch1's sorted inbox audit (now also a reader exercise), ch2's
+  spray-vs-researched campaign table, ch6's six-week arc judged the way
+  the deal was structured, ch7's task-sort verdict table, ch10's tiering
+  worksheet with a blank row, ch11's eighteen-months scoreboard.
+- **One security sentence** added to ch7's limits section (a breached
+  chatbot integration exposed CRM data at hundreds of companies in 2025;
+  vet security posture like the feature list), phrased without naming the
+  vendor so it ages as a lesson rather than a news item.
+- ch9's misplaced cross-reference fixed. ALLOW grown with hand-verified
+  words. Rebuilt: EN PDF 183pp (inside [180, 240]) + EPUB; new pages
+  inspected; qc --release clean apart from the sign-off gate. zh edition
+  mirrored in full; zh PDF rebuilt; proofs recommitted.
+
+Judged NOT worth fixing, and why: naming the 11x scandal in ch7 (the
+category cautionary tale is real, but pinning a specific startup's
+collapse into print trades a season of topicality for a decade of datedness;
+the CRM-breach sentence carries the same lesson anonymously). ch10's
+opener stays (the roll-call framing is the chapter's structure, and the
+hospital near-miss belongs where its objection lives). ch2's
+Yahoo-and-AOL corporate-umbrella clause left (accurate as written,
+low-stakes if it drifts).
+
 ## Status: manuscript complete, editorial pass done, both editions shipped as proofs. English manuscript is print-ready except the author's own read-through.
 
 All 12 chapters are written, edited, citation-re-verified, and built.

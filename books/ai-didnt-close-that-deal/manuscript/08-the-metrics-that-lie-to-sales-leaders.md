@@ -1,6 +1,6 @@
 # The Metrics That Lie to Sales Leaders
 
-Diane had built the slide herself, and she'd built it to look good, because for two quarters running it had. Activity dashboard, top of the leadership deck, every tile green: sends up nineteen percent quarter over quarter, open rate holding in the high fifties, meetings booked ahead of target. She clicked to the next slide, the one the CRO actually cared about, and the room went quiet in the specific way a room goes quiet when a number doesn't match the story that came before it. Pipeline coverage for the coming quarter sat at 1.4x. Target was 3x.
+Diane had built the slide herself, and she'd built it to look good, because for two quarters running it had. Activity dashboard, top of the leadership deck, every tile green: sends up nineteen percent quarter over quarter, open rate holding in the high fifties, meetings booked ahead of target. She clicked to the next slide, the one the CRO actually cared about, and the room went quiet in the specific way a room goes quiet when a number doesn't match the story that came before it. Pipeline coverage for the coming quarter, the ratio of pipeline dollars in play to the quota they had to close, sat at 1.4x. Target was 3x.
 
 "Walk me through the gap," the CRO said. Not unkindly. He'd asked variations of that question in this room for six years and he already knew, from the pause before Diane answered, that she didn't have a clean explanation ready.
 

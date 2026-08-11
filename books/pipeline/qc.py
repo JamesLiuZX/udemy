@@ -87,6 +87,17 @@ ALLOW = {
     "deprioritizing", "dimed", "diming", "handedly", "helpdesk",
     "informationless", "nickeled", "rebrand", "recordkeeping",
     "templated", "unmoored", "unrouted",
+    # ai-didnt-close-that-deal quality pass additions (verified by hand)
+    "bellcrest", "bellcrest's", "castellano", "gartner", "corrigan",
+    "theo", "theo's", "untargeted", "battlecards", "callout", "cc'd",
+    "checkmark", "closeable", "companyname", "cutover", "firmographic",
+    "forgettably", "lifecycle", "misattribution", "multithreaded",
+    "operationalize", "operationalizes", "orgs", "overcorrected",
+    "plannable", "prefetch", "prefetching", "productized", "recalibrates",
+    "relitigate", "reweights", "shortcutting", "signups", "teardown",
+    "templatize", "there'd", "throughs", "tiering", "tradeoffs",
+    "underperformer", "underperformers", "unfakeable", "unmanaged",
+    "unscored",
 }
 
 AUTHOR_INPUT_RE = re.compile(r"\[AUTHOR-INPUT:(.*?)\]", re.S)
