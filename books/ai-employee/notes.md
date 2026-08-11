@@ -123,7 +123,14 @@ Progress (updated per chapter as expansion happens):
       worked example (Desmond, a seven-step chain cut to three once the
       review overhead itself became the problem), and a "Try this: map
       your chain" worksheet. 1,499 -> 2,004 words. Rendered pages checked.
-- [ ] 10 A 30-Day Delegation Plan
+- [x] 10 A 30-Day Delegation Plan — added a second worked example (Owen,
+      a property manager whose week-three disqualifier check correctly
+      says no to part of his first task, showing that outcome is the plan
+      working, not failing) and a fillable "Your thirty days, on one
+      page" calendar worksheet. No second `[KEY-INSIGHT]`: this closing,
+      synthesis chapter leans on the method already established rather
+      than introducing new evidence. 1,369 -> 1,696 words. Rendered pages
+      checked.
 - [ ] 11 Four Delegations, Worked in Full (new)
 - [ ] 12 Objections and Edge Cases (new)
 - [ ] 13 Templates and Worksheets (new)

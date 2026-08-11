@@ -30,11 +30,30 @@ Then run chapter seven's four disqualifiers honestly against this task: is any p
 
 Worth being honest about what that means for this plan. Thirty days gets you a genuinely working system for one or two tasks, briefed properly, checked, corrected. It does not get you to the point where delegating no longer takes any conscious attention at all, that milestone, on average, is still more than a month past the end of this plan, and for some people and some tasks meaningfully longer. Don't mistake a working system at day thirty for a finished one. It's a real result. It's just not the last one.
 
+## When week three says no
+
+Not every first task survives, and it's worth seeing that outcome up close instead of only as a hypothetical, because it's a common enough result to expect going in, not a sign anything went wrong.
+
+Owen, a property manager, picked tenant maintenance-request triage as his first task, small, recurring, seemingly low-stakes. Weeks one and two went fine, a real brief, a five-attempt trial, a spot-check that found a narrow seam around water-related keywords, close to the example from chapter four. Week three's honest disqualifier check surfaced something he hadn't weighed properly at the start: a mistriaged emergency, a burst pipe filed as routine, wasn't just an inconvenience to fix later. It was the kind of single error that could cost thousands in water damage and a legitimate habitability complaint, exactly the third disqualifier, a single error costing more than every success combined.
+
+Owen didn't spend week four forcing a task that had already given him a clear answer. He kept the parts of triage that were genuinely low-stakes, general repair requests, and moved anything water-, electrical-, or safety-adjacent back to a human first read, permanently, not as a temporary patch. Then he used week four to start a fresh trial on a different task entirely, drafting move-in welcome packets, which had none of the same failure economics. His first month produced one working, if narrower, delegated task and one clean, well-evidenced "no." Both are the plan working. Only one of them looks like a finish line.
+
 ## Week four: add carefully, and only if it's earned
 
 Only now, with one task genuinely stable, consider a second. Apply chapter eight's two honest checks first: is the first task still actively teaching you something new, and would you actually notice if its spot-check failed most weeks. If the answer to the second question is "probably not," you've earned real room for another task. If it's "I'm not sure," give the first task another week before adding anything.
 
 Start the one-page roster from chapter eight for whichever tasks you're now running, and if any task genuinely involves multiple chained steps, research then draft then format, the way chapter nine described, resist the urge to automate the whole chain at once. Add a checkpoint at each seam before you add a second step to anything.
+
+## Your thirty days, on one page
+
+Fill this in as you go, one row at a time, rather than all at once tonight.
+
+| Week | What you're doing | Task name | Result |
+| --- | --- | --- | --- |
+| 1 | Pick a task, write the real brief, run the trial | | |
+| 2 | Spot-check the seam, start the failure-mode list | | |
+| 3 | Save the standing instruction, run the disqualifiers | | |
+| 4 | Add a second task if earned, or start a fresh trial if week 3 said no | | |
 
 ## The closing checklist
 
