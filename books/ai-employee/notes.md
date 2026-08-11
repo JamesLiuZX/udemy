@@ -5,19 +5,19 @@ sessions, same pattern as books/stop-guessing/notes.md.
 
 ## Status
 
-- Chapters 01 through 07 are written and verified-pending-signoff: built,
+- Chapters 01 through 08 are written and verified-pending-signoff: built,
   rendered pages visually inspected, `qc.py` clean beyond the
-  `verified: false` and (where present) `[AUTHOR-INPUT]` gates. Chapters 04,
-  05, 06 and 07 have no `[AUTHOR-INPUT]` marker; their load-bearing evidence
-  is a `[KEY-INSIGHT]` instead (see below), consistent with the repo's
-  stated default.
-- Chapters 08 through 10 are outlined in `book.yaml` (titles, order) but the
-  manuscript files do not exist yet. `build.py --only 07` (or any of
-  01-07) works today; a full `--book ai-employee` build will fail until
+  `verified: false` and (where present) `[AUTHOR-INPUT]` gates. Chapters 04
+  through 08 have no `[AUTHOR-INPUT]` marker; their load-bearing evidence is
+  a `[KEY-INSIGHT]` instead (see below), consistent with the repo's stated
+  default.
+- Chapters 09 and 10 are outlined in `book.yaml` (titles, order) but the
+  manuscript files do not exist yet. `build.py --only 08` (or any of
+  01-08) works today; a full `--book ai-employee` build will fail until
   every listed chapter has a real file.
 - `target_pages` starts at [120, 170], the same starting estimate used for
-  stop-guessing before any chapter existed. At 7 of 10 chapters,
-  `book.py`'s estimator reads ~34pp; too early to recalibrate the target
+  stop-guessing before any chapter existed. At 8 of 10 chapters,
+  `book.py`'s estimator reads ~38pp; too early to recalibrate the target
   off of, but worth revisiting once more chapters exist. Don't pad
   chapters to hit a number that was only ever a guess.
 - The local environment had neither `pandoc` nor a LaTeX toolchain nor
