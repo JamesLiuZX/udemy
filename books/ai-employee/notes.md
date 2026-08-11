@@ -238,6 +238,17 @@ Progress (updated per chapter as expansion happens):
       tasks). No new `[KEY-INSIGHT]`; this chapter reorganizes and
       extends the method itself rather than resting on a new external
       claim. 1,022 words, 4pp standalone. Rendered pages checked.
+- [x] 21 What Changes When the Task Involves Money — new chapter. Why
+      financial tasks carry a fundamentally different risk (money already
+      moved, not just time to fix), raw arithmetic as a structural weak
+      point, reconciliation against an independent source instead of
+      internal-consistency spot-checking, and a stricter reading of
+      chapter seven's disqualifiers. One `[KEY-INSIGHT]` (Dziri et al.
+      2023's GPT-4 multiplication-accuracy findings, honestly hedged as
+      dated but structurally still relevant), a worked example (Felix's
+      furniture-quoting task and the underpriced quote reconciliation
+      caught). 1,008 words, 4pp standalone. Rendered pages checked. This
+      is the last new substantive chapter before the templates appendix.
 - [ ] Additional chapters as needed to close the remaining gap to
       [180, 240]pp (still well short after 11-16; author directive is to
       keep adding genuine chapters rather than pad, checking in if
