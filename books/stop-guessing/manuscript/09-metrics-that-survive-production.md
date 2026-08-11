@@ -38,6 +38,16 @@ A high acceptance rate isn't automatically the reassuring opposite either, and i
 
 Read that against this chapter's own table and the mechanism is precise, not vague. Deflection told a genuinely true story: the assistant really was resolving a large share of chats without a human. It just wasn't the only story, and nobody was reading a quality signal next to it with enough weight to catch the gap before customers did and a CEO had to say so publicly. A single strong metric, celebrated without a second one to check it against, is exactly how a real company arrived at exactly this chapter's warning, at a scale far larger than a quarterly review.
 
+## A single metric, celebrated for years, before anyone checked underneath it
+
+This trap isn't unique to AI features, and it's worth seeing it at a scale that has nothing to do with software at all, because the mechanism is identical: a headline number gets celebrated, repeatedly, without anyone checking a second number that would have told a different story.
+
+For years, Wells Fargo publicly touted its "cross-sell ratio," the average number of financial products each customer held, as proof of the bank's success, with an internal goal of eight products per customer. Investors and analysts read the rising ratio the way the leadership team in this chapter's opening scene read a rising engagement chart: as unambiguous evidence the strategy was working. It wasn't checked against a second number until regulators did the checking instead. Employees under intense pressure to hit the cross-sell target had opened roughly 1.5 million bank accounts and about 500,000 credit card accounts that customers never authorized or, in many cases, never knew existed.
+
+[KEY-INSIGHT: Wells Fargo publicly promoted its "cross-sell ratio," the average number of financial products per customer, as evidence of its Community Bank's success between 2011 and 2016, with an internal target of eight products per customer. Regulators later found that employees, under pressure to hit that target, had opened approximately 1.5 million unauthorized bank accounts and 500,000 unauthorized credit card accounts. The Consumer Financial Protection Bureau and other regulators fined Wells Fargo a combined $185 million in 2016. || Source: Consumer Financial Protection Bureau, "CFPB Fines Wells Fargo $100 Million for Widespread Illegal Practice of Secretly Opening Unauthorized Accounts," press release, September 8, 2016.]
+
+The cross-sell ratio wasn't a lying number, in the narrow sense. Every one of those accounts really did exist and really did count. That's exactly what makes the parallel worth sitting with: a metric can be completely accurate and still tell a false story, because nobody paired it with the second number, complaint volume, unauthorized-account reports, anything that would have shown the ratio was being hit the wrong way. An engagement chart moving the right direction deserves exactly the same skepticism before anyone treats it as the whole story.
+
 ## Instrument before, not after
 
 None of the three metrics above exist unless something captures them at the only moment they can be captured: when a suggestion first appears on screen. A deterministic feature can afford to instrument late, because the button does the same thing in month three that it did in month one, so a metric added later can still be reasoned about honestly for the months before it. An AI feature can't. The exact prompt version and model behind a specific answer exists for one moment, and if nothing recorded it, that moment is gone for good. Add acceptance tracking three months after launch and the real cost isn't three months of a missing number. It's the permanent inability to know what those three months of real usage actually looked like.
@@ -55,6 +65,12 @@ Hand that same dashboard to a leadership review and it fails, not because the nu
 Refresh cadence matters more than it looks like it should. A dashboard refreshing every minute doesn't help a monthly decision; it just adds noise between the meetings that actually matter, so match the refresh rate to the decision cycle, not to whatever the infrastructure happens to support. The two dashboards, the team's and leadership's, can share one source of truth without sharing a screen: the same instrumentation feeds both, one queried in full diagnostic detail, the other rolled up to a handful of numbers built for the person actually looking at them.
 
 Say the honest caveat plainly, because the pressure on a leadership dashboard runs in one direction: make it look good, quietly drop the panel that doesn't. A dashboard that only ever shows good news has stopped reporting and started performing, the same trap chapter eight named for a stale risk register. A trustworthy version has to be allowed to show a bad number, with a sentence next to it about what's being done, because the version that only ever shows green gets believed right up until the quarter it can't hide the real number any longer, and every green quarter before that one loses its credibility retroactively the moment it happens.
+
+## Find your unpaired metric
+
+Pick the one number about an AI feature you report most often, the one that would headline your own version of the quarterly review this chapter opened with. Ask honestly: what second number would have to move the wrong way for that first number to actually be bad news, and do you currently have it.
+
+If the answer is no, that's this chapter's finding, worth fixing before the next report goes out rather than after someone in the room asks the question this chapter's opening scene did. Most headline metrics already have an obvious pairing, acceptance next to engagement, complaint volume next to a sales ratio, a quality signal next to deflection. The fix is rarely building something new. It's usually putting a number you already have on the same page as the one everyone already watches.
 
 [TAKEAWAYS]
 
