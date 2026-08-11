@@ -1,0 +1,168 @@
+{
+  "name": "Follow-Up Chaser (Draft Only) - Priya",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {}
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        0,
+        0
+      ],
+      "id": "c2a45c97-8336-4c2d-b399-dea43280ff1d",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "operation": "read",
+        "documentId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "renewals-pipeline-sheet-id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "list",
+          "value": "Pipeline"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        240,
+        0
+      ],
+      "id": "sheets-node-agent4-001",
+      "name": "Read Renewal Pipeline"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Renewal pipeline rows due for a chase (JSON):\n{{ JSON.stringify($input.all().map(i => i.json)) }}",
+        "options": {
+          "systemMessage": "You are a follow-up drafting assistant for Priya Malhotra, a Client Services Manager at a commercial insurance brokerage. You are given rows from her renewal pipeline: Client, Premium, Renewal Date, Status, Days Until Renewal.\n\nFor each row where Status is \"Open\" and Days Until Renewal is 21 or fewer, draft a short, polite chase email to the client asking for any outstanding documents needed to complete their renewal. Name the client and the renewal date. Do not mention the premium amount. Do not imply any penalty or threat.\n\nYou are drafting only. Never write as though the email has been sent. Never invent a document name that was not given to you. If a row is missing information you need, draft the email without inventing the missing detail."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        480,
+        0
+      ],
+      "id": "agent-node-agent4-001",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.5-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        440,
+        200
+      ],
+      "id": "gemini-model-agent4-001",
+      "name": "Google Gemini Chat Model"
+    },
+    {
+      "parameters": {
+        "resource": "draft",
+        "operation": "create",
+        "subject": "=Following up on your renewal - {{ $('Read Renewal Pipeline').item.json.Client }}",
+        "message": "={{ $json.output }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        720,
+        0
+      ],
+      "id": "gmail-draft-agent4-001",
+      "name": "Create Gmail Draft (never Send)",
+      "webhookId": "0a882e73-0557-4298-a9e8-801c35cf8afc"
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Read Renewal Pipeline",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Renewal Pipeline": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Create Gmail Draft (never Send)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {
+    "Read Renewal Pipeline": [
+      {
+        "json": {
+          "Client": "Brightwell Manufacturing Ltd",
+          "Contact": "Ravi Chandra",
+          "Premium": "18400",
+          "Renewal Date": "2026-09-15",
+          "Status": "Open",
+          "Days Until Renewal": "18"
+        }
+      },
+      {
+        "json": {
+          "Client": "Dunmore Electrical",
+          "Contact": "Owner, Dunmore Electrical",
+          "Premium": "7300",
+          "Renewal Date": "2026-08-19",
+          "Status": "Open",
+          "Days Until Renewal": "8"
+        }
+      }
+    ]
+  },
+  "meta": {
+    "instanceId": "ai-agents-for-work-course"
+  }
+}
