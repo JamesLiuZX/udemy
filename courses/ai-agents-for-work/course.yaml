@@ -270,3 +270,10 @@ sections:
   - id: 11
     title: "Capstone: Automate One Week of Your Job"
     goal: "The learner runs the full onboarding method on their own task."
+    lectures:
+      - {id: "11.0", title: "Section intro", duration: 1}
+      - {id: "11.1", title: "The capstone brief", duration: 6, hands_on: true}
+      - {id: "11.2", title: "Worked solution, part 1: job description and build", duration: 8, voice: human}
+      - {id: "11.3", title: "Worked solution, part 2: trial, guardrails and cost", duration: 8, voice: human}
+      - {id: "11.4", title: "The self-assessment rubric", duration: 5}
+      - {id: "11.5", title: "Thank you, and where to go next", duration: 3, voice: human}
