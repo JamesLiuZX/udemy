@@ -195,6 +195,14 @@ sections:
   - id: 4
     title: "Agent #2: Meeting Notes to Action Items"
     goal: "Full build; ships C02."
+    lectures:
+      - {id: "4.0", title: "Section intro", duration: 1}
+      - {id: "4.1", title: "The job description for this agent", duration: 5}
+      - {id: "4.2", title: "Build part 1: a form instead of an inbox", duration: 6}
+      - {id: "4.3", title: "Build part 2: the extraction prompt", duration: 7}
+      - {id: "4.4", title: "Testing without spending a call", duration: 5}
+      - {id: "4.5", title: "Connecting it for real, and shipping your template", duration: 6, hands_on: true}
+      - {id: "4.6", title: "Section recap", duration: 2}
   - id: 5
     title: "Agent #3: The Weekly Report"
     goal: "Full build; ships C03."
