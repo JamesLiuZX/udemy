@@ -37,4 +37,4 @@ Marisol's confusion wasn't Medicare, it was her employer's open enrollment, the 
 
 ## Where this goes next
 
-Chapter twenty-two turns to something warmer and considerably less bureaucratic: pulling off a big family gathering, a holiday, a reunion, without the whole month before it disappearing into logistics.
+Chapter twenty-one turns to something warmer and considerably less bureaucratic: pulling off a big family gathering, a holiday, a reunion, without the whole month before it disappearing into logistics.

@@ -39,4 +39,4 @@ For any document you're about to sign that's longer than a page and denser than 
 
 ## Where this goes next
 
-Chapter nineteen steps back from the emotionally loaded tasks for a chapter and takes on something purely mechanical: the small tech problems, a printer that won't connect, an app that keeps crashing, that have nothing to do with AI and everything to do with the same plain-question habit fixing them anyway.
+Chapter eighteen steps back from the emotionally loaded tasks for a chapter and takes on something purely mechanical: the small tech problems, a printer that won't connect, an app that keeps crashing, that have nothing to do with AI and everything to do with the same plain-question habit fixing them anyway.

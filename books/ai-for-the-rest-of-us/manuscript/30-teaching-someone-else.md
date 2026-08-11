@@ -20,6 +20,25 @@ The single most common way this goes wrong is the most well-meaning one: taking 
 
 The fix is almost annoyingly simple: whoever has the problem holds the phone. You can look over their shoulder, suggest the words, catch a typo, but their thumbs do the typing. It takes longer in the moment. It's the only version that actually transfers anything.
 
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{3.6cm}p{3.7cm}p{3.7cm}@{}}
+\toprule
+& \textbf{Doing it for them} & \textbf{Walking them through it} \\
+\midrule
+\textbf{Who holds the phone} & You & Them \\
+\addlinespace
+\textbf{Who types} & You & Them, while you suggest words \\
+\addlinespace
+\textbf{Speed, this time} & Faster & Slower \\
+\addlinespace
+\textbf{What they can do alone next time} & Nothing new & The same task, unprompted \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{The one choice that decides whether teaching someone actually transfers anything.}
+\end{bookfigure}
+
 ## Marisol's version: the same fix, aimed backward
 
 Chapter nine's script gave Marisol a way to talk to her mother about scams. What came after that first conversation surprised her: her mother, once the immediate fear of the scam call was addressed, got curious about the rest of it, what else this thing could actually help with. Marisol found herself doing with her own mother exactly what Linda did with Rose, minutes at a time on video calls, letting her mother hold her own phone and type her own words while Marisol narrated. Her mother's first real, unprompted use of it, weeks later and entirely on her own, was working out a substitution for an ingredient she didn't have for a recipe she'd made a hundred times without ever needing help before. Small. Also entirely hers, unprompted, and that's the actual measure of whether the teaching worked.
@@ -27,6 +46,14 @@ Chapter nine's script gave Marisol a way to talk to her mother about scams. What
 ## What to actually say the first time
 
 If you're looking for a place to start with your own Rose, here's a version worth borrowing, close to what actually worked for both Linda and Marisol: "Show me something you've been wanting to ask or figure out, doesn't matter how small. Let's type it together, you hold the phone, I'll just help if you get stuck." Small and low-stakes on purpose, the same instinct as chapter three's advice to start with dinner, not a trip: the goal of a first lesson is one real win, not a comprehensive tour.
+
+## The quieter version of the same skill
+
+Teaching someone doesn't only mean sitting down for a lesson. It also shows up as a habit worth keeping alive long after the first lesson is over: actually understanding each other, not just staying in touch. Linda's granddaughter texts in a language Linda mostly follows and occasionally doesn't at all, an abbreviation, an emoji used in a way that means something other than its obvious meaning. Linda used to just reply warmly and vaguely, the way you nod along at a party conversation you've lost the thread of. Now, instead of nodding along, she asks: "My teenage granddaughter texted me '[the actual phrase], no cap.' What does that mean in this context?" Two minutes, and one fewer small gap between them.
+
+Marisol uses the same instinct in the other direction. Her own mother sends long, rambling voice messages instead of texts, a style Marisol doesn't always have five uninterrupted minutes to listen to properly. She started using her phone's own transcription feature to skim a quick text version first, catching anything urgent immediately, then going back to actually listen to the full message later when she had the time it deserved. And before video calls with her granddaughter, Linda started preparing one specific question, pulled from something Rose had mentioned in passing, instead of the same broad "so, what's new" that always got the same thin "nothing much" back, the same lesson chapter two taught about talking to an AI tool, applied here to a grandchild instead.
+
+None of this is about mediating a family relationship through a screen. It's the opposite: fewer moments of nodding along without understanding, so the real conversation underneath actually happens.
 
 ## The book's actual last argument
 
@@ -37,7 +64,7 @@ Back near the start, this book opened by saying the hesitation at Linda's kitche
 - Adults 65 and older use AI chatbots at roughly a third the rate of adults under 50. That gap closes one real conversation at a time, not on its own.
 - The single most common teaching mistake is taking over and doing it for them. Whoever has the problem holds the phone and does the typing, every time, even when it's slower.
 - Start small and low-stakes, the same instinct as chapter three's first trip-planning message: one real win beats a comprehensive tour.
-- The fear this book opened with was never really about the technology. It closes the same way it started: one person, one kitchen table, one twenty-minute conversation at a time.
+- The same instinct that teaches someone a new skill keeps a relationship close afterward: a two-minute check on an unfamiliar phrase, one specific question instead of a broad one, is worth as much as the first lesson was.
 
 [/TAKEAWAYS]
 

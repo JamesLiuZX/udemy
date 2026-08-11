@@ -82,83 +82,77 @@ chapters:
     title: "Choosing and Setting Up Your Tool"
     file: manuscript/10-choosing-and-setting-up-your-tool.md
   - id: "11"
-    title: "Talking Instead of Typing"
-    file: manuscript/11-talking-instead-of-typing.md
-  - id: "12"
     title: "Big Purchases Without the Overwhelm"
-    file: manuscript/12-big-purchases-without-the-overwhelm.md
-  - id: "13"
+    file: manuscript/11-big-purchases-without-the-overwhelm.md
+  - id: "12"
     title: "The Words You Can't Find"
-    file: manuscript/13-the-words-you-cant-find.md
-  - id: "14"
+    file: manuscript/12-the-words-you-cant-find.md
+  - id: "13"
     title: "Cooking, Cleaning, and the Rest of the List"
-    file: manuscript/14-cooking-cleaning-and-the-rest-of-the-list.md
-  - id: "15"
+    file: manuscript/13-cooking-cleaning-and-the-rest-of-the-list.md
+  - id: "14"
     title: "The Ordinary Emergency"
-    file: manuscript/15-the-ordinary-emergency.md
-  - id: "16"
+    file: manuscript/14-the-ordinary-emergency.md
+  - id: "15"
     title: "When Someone You Love Refuses to Try"
-    file: manuscript/16-when-someone-you-love-refuses-to-try.md
-  - id: "17"
+    file: manuscript/15-when-someone-you-love-refuses-to-try.md
+  - id: "16"
     title: "Looking for Work Again"
-    file: manuscript/17-looking-for-work-again.md
-  - id: "18"
+    file: manuscript/16-looking-for-work-again.md
+  - id: "17"
     title: "The Fine Print"
-    file: manuscript/18-the-fine-print.md
-  - id: "19"
+    file: manuscript/17-the-fine-print.md
+  - id: "18"
     title: "Small Tech Problems That Aren't Really About AI"
-    file: manuscript/19-small-tech-problems-that-arent-really-about-ai.md
-  - id: "20"
+    file: manuscript/18-small-tech-problems-that-arent-really-about-ai.md
+  - id: "19"
     title: "Something Just for You"
-    file: manuscript/20-something-just-for-you.md
-  - id: "21"
+    file: manuscript/19-something-just-for-you.md
+  - id: "20"
     title: "Making Sense of Medicare and Insurance Choices"
-    file: manuscript/21-making-sense-of-medicare-and-insurance-choices.md
-  - id: "22"
+    file: manuscript/20-making-sense-of-medicare-and-insurance-choices.md
+  - id: "21"
     title: "A Big Family Gathering"
-    file: manuscript/22-a-big-family-gathering.md
-  - id: "23"
+    file: manuscript/21-a-big-family-gathering.md
+  - id: "22"
     title: "Caring for a Parent"
-    file: manuscript/23-caring-for-a-parent.md
-  - id: "24"
+    file: manuscript/22-caring-for-a-parent.md
+  - id: "23"
     title: "The College and Financial Aid Maze"
-    file: manuscript/24-the-college-and-financial-aid-maze.md
-  - id: "25"
+    file: manuscript/23-the-college-and-financial-aid-maze.md
+  - id: "24"
     title: "When Your Family Speaks More Than One Language"
-    file: manuscript/25-when-your-family-speaks-more-than-one-language.md
-  - id: "26"
+    file: manuscript/24-when-your-family-speaks-more-than-one-language.md
+  - id: "25"
     title: "Pet Care Questions"
-    file: manuscript/26-pet-care-questions.md
-  - id: "27"
+    file: manuscript/25-pet-care-questions.md
+  - id: "26"
     title: "Understanding Your Paycheck and Taxes"
-    file: manuscript/27-understanding-your-paycheck-and-taxes.md
-  - id: "28"
-    title: "Staying in Touch Across the Generations"
-    file: manuscript/28-staying-in-touch-across-the-generations.md
-  - id: "29"
+    file: manuscript/26-understanding-your-paycheck-and-taxes.md
+  - id: "27"
     title: "Advance Planning and the Conversation Nobody Starts"
-    file: manuscript/29-advance-planning-and-the-conversation-nobody-starts.md
-  - id: "30"
+    file: manuscript/27-advance-planning-and-the-conversation-nobody-starts.md
+  - id: "28"
     title: "When the Car Needs Real Repairs"
-    file: manuscript/30-when-the-car-needs-real-repairs.md
-  - id: "31"
+    file: manuscript/28-when-the-car-needs-real-repairs.md
+  - id: "29"
     title: "Planning for a Layoff or Income Gap"
-    file: manuscript/31-planning-for-a-layoff-or-income-gap.md
-  - id: "32"
+    file: manuscript/29-planning-for-a-layoff-or-income-gap.md
+  - id: "30"
     title: "Teaching Someone Else"
-    file: manuscript/32-teaching-someone-else.md
-  - id: "33"
+    file: manuscript/30-teaching-someone-else.md
+  - id: "31"
     title: "Two Families, One Season"
-    file: manuscript/33-two-families-one-season.md
-  - id: "34"
+    file: manuscript/31-two-families-one-season.md
+  - id: "32"
     title: "The Time and Money It Actually Saves"
-    file: manuscript/34-the-time-and-money-it-actually-saves.md
-  - id: "35"
+    file: manuscript/32-the-time-and-money-it-actually-saves.md
+  - id: "33"
     title: "Questions You Still Have"
-    file: manuscript/35-questions-you-still-have.md
-  - id: "36"
+    file: manuscript/33-questions-you-still-have.md
+  - id: "34"
     title: "The Toolkit"
-    file: manuscript/36-the-toolkit.md
+    file: manuscript/34-the-toolkit.md
 
 back_matter:
   - about_the_author

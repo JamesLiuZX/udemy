@@ -44,6 +44,9 @@
 \RequirePackage{booktabs}
 \RequirePackage{array}
 \RequirePackage{calc}
+\RequirePackage{graphicx}
+\RequirePackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,calc}
 
 % Pandoc emits longtable rows separated only by a bare `\\`, which gives
 % zero gap between rows. Fine for short one-line cells; as soon as any
@@ -261,6 +264,51 @@
     }%
   }%
   \par\bigskip
+}
+
+% --- Worked visuals (docs/09-visual-standard.md §3) -------------------------
+% Every chapter needs at least one worked visual: a diagram (TikZ, drawn from
+% the chapter's own structure, never an AI generation, so it can't mangle a
+% label), a filled-in worksheet page (a bordered tabular), or an annotated
+% screenshot (\includegraphics + numbered TikZ callouts over it). All three
+% share one frame-and-caption treatment so the book reads as one system.
+% Print-safe on purpose: the frame is a plain black hairline rule, not a
+% colour fill, because a diagram specifically has to survive a B&W press run
+% with no colour information lost, unlike the KEY-INSIGHT/TAKEAWAYS boxes
+% above (whose light tints are allowed to degrade to pale grey, since they
+% carry no meaning by colour alone). Numbered per chapter, like a real trade
+% nonfiction book's figures, not sequentially through the whole volume, so
+% inserting or moving a chapter never renumbers a figure in an unrelated one.
+\newcounter{bookfigure}[chapter]
+\renewcommand{\thebookfigure}{\thechapter.\arabic{bookfigure}}
+\newcommand{\figurelabel}{FIGURE}
+\if@kdpzh\renewcommand{\figurelabel}{图}\fi
+\newcommand{\bookfigurecaption}[1]{%
+  \refstepcounter{bookfigure}%
+  \par\smallskip\noindent
+  {\small\normalfont\bfseries\color{bookaccent}\figurelabel~\thebookfigure.\ }%
+  {\small\normalfont\itshape\color{black!70}#1\par}%
+}
+\newenvironment{bookfigure}{%
+  \par\bigskip\noindent
+  {\color{black}\rule{\linewidth}{0.6pt}}\par
+  \vspace{8pt}
+  \begin{center}
+}{%
+  \end{center}
+  \vspace{6pt}\noindent
+  {\color{black}\rule{\linewidth}{0.6pt}}\par
+  \bigskip
+}
+% A worksheet-style filled table: a bordered grid a reader could photocopy
+% and fill in themselves, shown here already filled with a chapter's own
+% worked example. Thin black rules only (booktabs), never a shaded fill,
+% so it photocopies and prints identically to how it reads on screen.
+\newenvironment{worksheet}{%
+  \small\normalfont
+  \renewcommand{\arraystretch}{1.35}
+}{%
+  \renewcommand{\arraystretch}{1}
 }
 
 % --- Chapter style ----------------------------------------------------------

@@ -45,4 +45,4 @@ For purchases where the price itself is negotiable, a car especially, the narrow
 
 ## Where this goes next
 
-Chapter thirteen turns from the practical to the personal: the eulogy, the wedding toast, the sympathy card, the message you've rewritten nine times and still can't send. Different kind of stuck than a washing machine wall of options, and the chapter treats it that way.
+Chapter twelve turns from the practical to the personal: the eulogy, the wedding toast, the sympathy card, the message you've rewritten nine times and still can't send. Different kind of stuck than a washing machine wall of options, and the chapter treats it that way.

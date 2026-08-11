@@ -6,7 +6,7 @@ She typed into her phone, one-handed, the porch light from a neighbor's house th
 
 ## Why this is a different chapter than the rest of the book
 
-Every other chapter in this book has room to slow down: pause, think, ask a follow-up, walk away and come back. This one doesn't, by definition, and it's worth saying plainly what changes when the clock is the actual constraint. Speed matters more than the careful verification chapter eight and chapter twelve both insisted on. Chapter eight is still right that AI can be confidently wrong, and that risk doesn't disappear here. What changes is the tradeoff: at 9:40 on a dark Tuesday, a fast, generally-reliable answer about refrigerator safety beats a slower, more thoroughly verified one you don't have time to get. This is the one place in the book where "good enough, right now" is a genuinely correct choice, not a shortcut you're settling for.
+Every other chapter in this book has room to slow down: pause, think, ask a follow-up, walk away and come back. This one doesn't, by definition, and it's worth saying plainly what changes when the clock is the actual constraint. Speed matters more than the careful verification chapter eight and chapter eleven both insisted on. Chapter eight is still right that AI can be confidently wrong, and that risk doesn't disappear here. What changes is the tradeoff: at 9:40 on a dark Tuesday, a fast, generally-reliable answer about refrigerator safety beats a slower, more thoroughly verified one you don't have time to get. This is the one place in the book where "good enough, right now" is a genuinely correct choice, not a shortcut you're settling for.
 
 [PULLQUOTE: This is the one place in the book where "good enough, right now" is a genuinely correct choice, not a shortcut you're settling for.]
 
@@ -39,4 +39,4 @@ The best time to think about this chapter is not during the emergency. Take five
 
 ## Where this goes next
 
-Chapter sixteen turns to a different kind of hard moment, not a crisis, just a wall: what to actually do when someone you love won't even try any of this, and why pushing harder is usually the wrong response.
+Chapter fifteen turns to a different kind of hard moment, not a crisis, just a wall: what to actually do when someone you love won't even try any of this, and why pushing harder is usually the wrong response.

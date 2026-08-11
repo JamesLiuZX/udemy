@@ -41,4 +41,4 @@ The interview itself brought a different kind of nerves, less about what to writ
 
 ## Where this goes next
 
-Chapter eighteen turns from selling yourself on paper to understanding the paper someone else hands you: a lease, a contract, a set of terms you're about to agree to without reading, and what plain-English help actually looks like there.
+Chapter seventeen turns from selling yourself on paper to understanding the paper someone else hands you: a lease, a contract, a set of terms you're about to agree to without reading, and what plain-English help actually looks like there.

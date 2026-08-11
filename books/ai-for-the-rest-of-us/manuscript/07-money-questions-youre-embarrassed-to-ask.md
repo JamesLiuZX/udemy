@@ -14,13 +14,30 @@ An AI tool is genuinely useful for exactly the thing Marisol used it for: explai
 
 [PULLQUOTE: Financial confusion isn't a sign you're behind. It's close to the median experience, just one nobody says out loud at the office.]
 
-## Linda's version: the question she'd been avoiding for a decade
+## Linda's version: the question she'd been avoiding since Hal's last birthday
 
-Linda and Hal had a will, drafted years ago, before their grandkids were born and before a piece of property changed hands in the family. She'd meant to ask a lawyer whether it still made sense. She hadn't, for the same reason a lot of these questions get avoided: it felt like it should be a simple yes-or-no question, and admitting she didn't already know the answer felt like admitting she'd been careless about something important for a decade.
+Linda had a specific number stuck in her head and no idea whether it meant anything: the age Hal could start claiming Social Security versus the age that would get him a bigger monthly check if he waited. Everyone at their community center seemed to have a confident opinion about when to claim, most of them contradicting each other, and Linda had stopped bringing it up at their table because she didn't actually understand the tradeoff well enough to argue either side.
 
-She typed: "Our will was drafted twelve years ago, before two grandkids were born and before we sold a rental property. In plain English, what are the general reasons a will might need updating after changes like that, and what specific questions should I bring to a lawyer so the meeting isn't wasted figuring out what to even ask?" What came back wasn't legal advice, and it said so. It was a plain-English orientation to why timing and life changes matter for a will, and a genuinely useful list of questions that turned a vague, dreaded "I should probably talk to someone about the will sometime" into an actual appointment booked for the following Tuesday, with a list in hand instead of a fuzzy sense that something might be out of date.
+She typed: "My husband is 63 and can start Social Security anytime between now and 70. In plain English, what's the actual tradeoff between claiming earlier versus later, and what personal factors should we be weighing, not what we should decide?" What came back wasn't a recommendation, and it said so directly. It explained the basic mechanics, an earlier claim means a smaller check for life, waiting increases it up to age 70, and named the real personal factors the confident opinions at the community center never mentioned: health and family longevity, whether one spouse earns significantly more, whether either of them planned to keep working past 63. That framing turned a vague, embarrassing gap into a short, specific conversation Linda and Hal could actually have with each other, and later with the Social Security Administration's own free benefits counselors, who deal with exactly this question all day.
 
-That's the real value here: not skipping the lawyer, getting to the lawyer's office already oriented, so the paid hour goes toward the parts only a lawyer can actually do.
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{3.4cm}p{7.7cm}@{}}
+\toprule
+\textbf{Term} & \textbf{What it actually means} \\
+\midrule
+Deductible & What you pay yourself before insurance starts paying anything \\
+\addlinespace
+Coinsurance & The percentage you keep paying after the deductible, insurance covers the rest \\
+\addlinespace
+Out-of-pocket maximum & The most you'll pay in a year total; insurance covers 100\% after that \\
+\addlinespace
+Claiming age (Social Security) & Earlier claim = smaller check for life; waiting until 70 = the largest possible check \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{Four terms behind two of this chapter's questions, decoded once so you don't have to ask twice.}
+\end{bookfigure}
 
 ## When the number itself feels shameful, not just confusing
 

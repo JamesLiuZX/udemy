@@ -43,4 +43,4 @@ Once a week, at whatever moment the to-do list starts to feel like noise instead
 
 ## Where this goes next
 
-Chapter fifteen turns to the moment none of this chapter's calm planning applies: something breaks, goes wrong, or falls apart without warning, and there's no fifteen minutes of quiet Sunday planning available at all.
+Chapter fourteen turns to the moment none of this chapter's calm planning applies: something breaks, goes wrong, or falls apart without warning, and there's no fifteen minutes of quiet Sunday planning available at all.

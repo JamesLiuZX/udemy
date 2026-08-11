@@ -2,7 +2,7 @@
 
 Thanksgiving landed at Linda and Hal's house that year, all of it: both kids' families, Rose and her husband, a cousin visiting from out of state, eleven people total, one of them the same vegetarian granddaughter from chapter two's dinner, two others with a shellfish allergy Linda always worried about cross-contaminating without meaning to. Eleven people is a different animal than chapter two's six-person Sunday dinner, not just bigger, but layered: a full day's schedule, a kitchen that only fits so many dishes cooking at once, seating that has to account for a toddler's high chair and a great-aunt who needs to sit somewhere she can hear.
 
-Linda had hosted this exact meal a dozen times before and every single year found herself, the Tuesday before, staring at a legal pad covered in crossed-out lists that never quite came together into an actual plan. This year she tried the chapter fourteen weekly-reset habit, scaled up: "I'm hosting Thanksgiving for 11 people, including one vegetarian and two people with shellfish allergies. Help me build a full timeline for the day, what to cook when so everything's hot at the same time, and a shopping list organized by what needs to be bought fresh versus what can be bought ahead."
+Linda had hosted this exact meal a dozen times before and every single year found herself, the Tuesday before, staring at a legal pad covered in crossed-out lists that never quite came together into an actual plan. This year she tried the chapter thirteen weekly-reset habit, scaled up: "I'm hosting Thanksgiving for 11 people, including one vegetarian and two people with shellfish allergies. Help me build a full timeline for the day, what to cook when so everything's hot at the same time, and a shopping list organized by what needs to be bought fresh versus what can be bought ahead."
 
 ## What actually came back, and what she still had to do herself
 
@@ -20,7 +20,7 @@ What helped most wasn't the food list, which was fairly obvious once written dow
 
 ## The actual value here, stated plainly
 
-Big gatherings are hard for a specific, nameable reason: too many moving pieces to hold in one head at once, not because any single piece is complicated. A timeline, a shopping list split by timing, an activity schedule with real time estimates, these are exactly the kind of externalized-memory tasks an AI tool does well, the same shape as chapter fourteen's weekly reset, just scaled up to a bigger, higher-stakes day. What still belongs entirely to you: knowing your own family, the seating that avoids an old argument, the dish someone specifically requested, the small human details no planning tool anywhere could ever have known to include.
+Big gatherings are hard for a specific, nameable reason: too many moving pieces to hold in one head at once, not because any single piece is complicated. A timeline, a shopping list split by timing, an activity schedule with real time estimates, these are exactly the kind of externalized-memory tasks an AI tool does well, the same shape as chapter thirteen's weekly reset, just scaled up to a bigger, higher-stakes day. What still belongs entirely to you: knowing your own family, the seating that avoids an old argument, the dish someone specifically requested, the small human details no planning tool anywhere could ever have known to include.
 
 [TAKEAWAYS]
 

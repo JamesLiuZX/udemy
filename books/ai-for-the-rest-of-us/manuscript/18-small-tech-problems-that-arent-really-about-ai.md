@@ -41,4 +41,4 @@ Next time something ordinary breaks, resist the urge to just restart everything 
 
 ## Where this goes next
 
-Chapter twenty is the lightest chapter in this book on purpose: something to try purely because you want to, not because a chore or a crisis demands it.
+Chapter nineteen is the lightest chapter in this book on purpose: something to try purely because you want to, not because a chore or a crisis demands it.

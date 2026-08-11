@@ -24,7 +24,7 @@ What she sent was four sentences. It named the actual conversation about names. 
 
 ## When it's a happy occasion instead of a hard one
 
-Not every version of this chapter is grief. A toast, a birthday message, a note tucked into a graduation gift all hit the same blank-page wall for a happier reason: the words matter enough that the ordinary, generic version feels like it undersells how much you actually mean it. Hal's retirement-dinner toast from chapter sixteen used exactly this three-true-things method, three specific memories of a forty-year friendship rather than a generic "he'll be missed," and the room laughed at the right moment because the memory was real and specific, not because a joke had been engineered to land. The method doesn't change with the occasion. Only the true things being gathered do.
+Not every version of this chapter is grief. A toast, a birthday message, a note tucked into a graduation gift all hit the same blank-page wall for a happier reason: the words matter enough that the ordinary, generic version feels like it undersells how much you actually mean it. Hal's retirement-dinner toast from chapter fifteen used exactly this three-true-things method, three specific memories of a forty-year friendship rather than a generic "he'll be missed," and the room laughed at the right moment because the memory was real and specific, not because a joke had been engineered to land. The method doesn't change with the occasion. Only the true things being gathered do.
 
 ## Try this: the three-true-things method
 
@@ -41,4 +41,4 @@ Whatever the occasion, a toast, a card, a hard message you can't find the openin
 
 ## Where this goes next
 
-Chapter fourteen comes back down from the emotional to the everyday: the ordinary grind of meals, laundry, and a to-do list that never quite empties, and the smaller, steadier ways this same set of habits helps there too.
+Chapter thirteen comes back down from the emotional to the everyday: the ordinary grind of meals, laundry, and a to-do list that never quite empties, and the smaller, steadier ways this same set of habits helps there too.

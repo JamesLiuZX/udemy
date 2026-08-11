@@ -16,6 +16,29 @@ Some of it is direct: the full mattress refund Linda would very plausibly have g
 
 If a number genuinely helps make this concrete, here's an honest, conservative one, built only from the tasks this book actually walked through, not a marketing estimate: the trip planning alone (chapter three) saved somewhere in the neighborhood of fourteen hours against the sixteen-hour average. The washing machine comparison (chapter twelve) saved most of an evening. The Thanksgiving timeline (chapter twenty-two) likely saved several hours spread across the week before, hard to pin to a single number precisely because it was spread so thin. Add those three alone, from a single season, and it's a genuine day or more of time back, before counting anything else in this chapter at all, which is exactly the point: the number was never the headline. It was always going to be an honest byproduct of a lot of small, ordinary tasks done a little less painfully.
 
+## Try this: tally your own week
+
+The rough tally above is Linda's and Marisol's, not yours, and the point was never to borrow their number. Pick one real week, and after each task in this book you actually try, jot down two things: about how long the old way would have taken, and about how long it actually took. Nothing fancy, a phone note is enough.
+
+\begin{bookfigure}
+\begin{worksheet}
+\begin{tabular}{@{}p{4.3cm}p{2.6cm}p{2.6cm}@{}}
+\toprule
+\textbf{Task} & \textbf{Old way} & \textbf{This week} \\
+\midrule
+\rule{4.3cm}{0.4pt} & \rule{2.6cm}{0.4pt} & \rule{2.6cm}{0.4pt} \\
+\addlinespace[10pt]
+\rule{4.3cm}{0.4pt} & \rule{2.6cm}{0.4pt} & \rule{2.6cm}{0.4pt} \\
+\addlinespace[10pt]
+\rule{4.3cm}{0.4pt} & \rule{2.6cm}{0.4pt} & \rule{2.6cm}{0.4pt} \\
+\bottomrule
+\end{tabular}
+\end{worksheet}
+\bookfigurecaption{A blank week's tally. Photocopy it, or just copy the three columns onto a phone note, and fill it in as the week actually happens, not from memory afterward.}
+\end{bookfigure}
+
+Three weeks of this, and you'll have your own honest number, built from your own actual tasks, worth more than any average this chapter or anyone else could print.
+
 ## What doesn't show up on either list
 
 Some of what changed across the season resists being counted at all, and it would be dishonest to pretend otherwise just to round out a tidy chapter. Rose sounding steadier on the phone after twenty minutes with a confusing letter isn't a number. Marisol's mother asking her own question, unprompted, for the first time, isn't a number either. Hal's slow, genuine change of heart about a toast he'd have otherwise dreaded giving isn't measurable in hours or dollars, and trying to force it into either column would flatten something that mattered more than either column can hold. The honest accounting includes an acknowledgment that the biggest parts of what changed this season aren't on this page at all.
