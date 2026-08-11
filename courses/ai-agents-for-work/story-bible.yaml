@@ -62,13 +62,15 @@ cast:
       word, persuadable by a saved afternoon he can see.
   - name: "Dev Anand"
     role: "Client Services colleague, one of three others on Priya's team"
-    established: "10.2"
+    established: "10.4"
     notes: >-
       First teammate to adopt Priya's templates in the Section 10 rollout.
-      Runs the smaller accounts; his trial run is where a second failure
-      mode shows up that Priya's own trial hadn't hit, which is the honest
-      reason spot checks stay part of the method even after the templates
-      are proven.
+      Runs the smaller accounts; his trial run of Agent 2 (meeting notes)
+      surfaces ambiguity, not invention: an action item assigned to "Alex"
+      when two attendees shared that first name. A different failure mode
+      from Priya's own trial (Section 7.3's moved row), which is the
+      honest reason spot checks and individual trials stay part of the
+      method even after a template is proven.
 
 # ---------------------------------------------------------------------------
 # The anchor account — quoted everywhere, never re-numbered
