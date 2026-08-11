@@ -158,11 +158,16 @@ between cuts. A header that jumps between slides reads as sloppy in video. Use
 
 ---
 
-## 6. Figures and charts
+## 6. Figures, charts, screenshots and images
 
-Every figure is **generated from data**, never drawn and never image-generated,
-so it cannot ship with a mangled label or an invented number. Learners
-specifically call out AI images with broken text.
+Visual policy lives in `docs/09-visual-standard.md`; read it before adding
+any visual. The short version: real annotated screenshots are first-class
+and mandatory in tool lectures; anything carrying numbers, labels or factual
+structure is **generated from data** (figures pipeline, mermaid), never
+drawn and never image-generated, so it cannot ship with a mangled label;
+AI-generated images are allowed only as subject-matter specimens or
+text-free atmosphere, never as diagrams. Learners specifically call out AI
+images with broken text.
 
 - Charts: a ` ```figure ` block with a YAML spec, rendered by `pipeline/figures.py`
   (`dotplot`, `histogram`, `sampling`).
@@ -239,6 +244,7 @@ docs/05-kdp-playbook.md           Book portfolio strategy: sequencing, launch, A
 docs/06-growth-engine.md          Channels, asset flywheel, automated growth jobs
 docs/07-tts.md                    Voice decision: Kokoro default, costs, audiobook routes
 docs/08-channels.md               Channel map: Udemy, KDP, Spotify, YouTube; cuts and requirements
+docs/09-visual-standard.md        Screenshots, diagrams, AI-image lanes, the hook standard
 growth/                           Paste-ready automation prompts (cron / Cowork)
 books/                            KDP publishing system (own CLAUDE.md; read it first)
 courses/<slug>/course.yaml        Curriculum, landing copy, config (source of truth)

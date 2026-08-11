@@ -1,0 +1,191 @@
+# =============================================================================
+# Single source of truth for course #3.
+# STATUS: scaffolded from 2026 demand research (agents / no-code automation is
+# the top learning demand; n8n the leading tool). The writer session may adjust
+# lecture grain within sections; sections and positioning are settled.
+# Positioning note: docs/00-strategy.md ranked generic "AI productivity" last,
+# and that judgement stands. This course escapes the commodity zone the same
+# way courses #1 and #2 did: a judgement spine (agents are onboarded like
+# employees, not installed like apps) that a tool tour cannot copy, plus
+# exportable working agents as artifacts. Visual standard: docs/09; this is
+# the most screenshot-heavy course in the portfolio by design.
+# =============================================================================
+
+slug: ai-agents-for-work
+title: "AI Agents for Your Job: Automate Real Office Work, No Code Required"
+subtitle: >-
+  Build agents that triage your inbox, draft your reports and chase your
+  invoices, using n8n and the AI of your choice. Then learn the part no tool
+  course teaches: checking their work, setting guardrails, and knowing what
+  never to automate.
+
+# --- Landing page -----------------------------------------------------------
+description: |
+  **You keep hearing that AI agents will change office work. Nobody shows you
+  how to get one doing YOUR work, safely, this week.** That is what this
+  course does.
+
+  You will build four working agents for the tasks that actually eat your
+  week: inbox triage, meeting notes into action items, the weekly report,
+  and follow-ups that never slip. All in n8n, the leading open-source
+  automation tool, with the AI model of your choice plugged in. Every build
+  is shown screen by screen, and every agent you build is also provided as a
+  downloadable template you can import and adapt in minutes.
+
+  Then the part that separates people who run agents from people who clean
+  up after them: how to onboard an agent like an employee rather than
+  install it like an app. A job description before it starts. A trial task
+  before you trust it. Spot checks that catch its failure modes early.
+  Guardrails and approval steps so a mistake stays small. And an honest map
+  of the tasks you should never hand over at all.
+
+  **You will build 10 artifacts you can use immediately**, including four
+  importable agent workflow templates, an agent job-description template, a
+  trial-task checklist, a spot-check rubric, a guardrails worksheet, a
+  running-cost tracker, and a one-page rollout plan for your team.
+
+  **Who this is for:** office workers, managers, ops and admin professionals
+  who want real hours back. No code anywhere in the course.
+
+  **What this is not:** a tool tour that ages in a quarter, or a hype reel.
+  Every technique names its cost, every agent gets checked before it gets
+  trusted, and the course tells you plainly where automation is the wrong
+  answer.
+
+  This course contains the use of artificial intelligence.
+
+# --- Positioning ------------------------------------------------------------
+big_idea: >-
+  An agent is an employee, not an app. You do not install it, you onboard it:
+  job description first, trial task next, spot checks always, trust only as
+  it is earned, and a blast radius you chose before it acts. Tools change
+  quarterly; onboarding judgement is permanent.
+
+audience:
+  - Office workers and managers drowning in repetitive admin
+  - Ops, admin and customer-facing professionals who own recurring processes
+  - Team leads asked to "look into AI" with no budget for engineers
+  - Freelancers running their own back office
+
+prerequisites:
+  - Comfort using web apps; no code anywhere in the course
+  - A task you do every week and would rather not
+  - "Some builds use paid AI credits; the course shows free-tier routes first"
+
+outcomes:
+  - "Build and import four working agents: inbox triage, meeting notes, weekly report, follow-ups"
+  - "Write an agent job description that turns a vague wish into a delegable task"
+  - "Run a trial task and spot checks that catch an agent's failure modes before they cost you"
+  - "Set guardrails, approval gates and blast radius so mistakes stay small"
+  - "Track what an agent costs and saves, honestly, and present it to your boss"
+  - "Recognise the tasks that should never be automated, and say why with confidence"
+
+# --- Commercial -------------------------------------------------------------
+pricing:
+  launch: 24.99
+  standard: 74.99
+  network_coupon: 9.99
+
+primary_keywords:
+  - AI agents
+  - n8n
+  - AI automation
+  - no-code automation
+  - automate work with AI
+
+free_preview_lectures: ["0.1", "0.3", "3.1"]
+
+# --- Compliance -------------------------------------------------------------
+ai_disclosure: "This course contains the use of artificial intelligence."
+
+human_voice_required:
+  - promo
+  - "0.1"
+  - section_intros
+  - section_outros
+  - "11.2"
+  - "11.3"
+  - "11.5"
+
+# --- Freshness registry ------------------------------------------------------
+# The screenshot-heavy course decays through its screenshots. Every lecture
+# listed here carries UI captures or prices that the quarterly pass re-takes.
+freshness_watch:
+  - {lecture: "2.1", why: "n8n UI, editions and hosting options"}
+  - {lecture: "2.2", why: "AI model choices and per-call pricing"}
+  - {lecture: "3.x", why: "inbox triage build: n8n canvas + mail node UI"}
+  - {lecture: "4.x", why: "meeting-notes build: transcript source UIs"}
+  - {lecture: "5.x", why: "weekly report build: sheet/data node UIs"}
+  - {lecture: "6.x", why: "follow-ups build: draft-only send gating UI"}
+  - {lecture: "9.1", why: "cost per run: current model prices"}
+
+# --- Production defaults ----------------------------------------------------
+production:
+  resolution: [1920, 1080]
+  fps: 30
+  words_per_minute: 150
+  target_lufs: -16.0
+  max_lecture_minutes: 12
+  spellcheck_lang: en_GB
+  tts:
+    provider: kokoro
+    voice: "bf_emma"
+    lang: "en-gb"
+
+# --- Downloadable artifacts (the "wow") -------------------------------------
+# C01-C04 are working n8n workflow JSON exports: import, connect accounts, go.
+artifacts:
+  - {id: C01, name: "Agent template: inbox triage (n8n workflow JSON)", lecture: "3.6"}
+  - {id: C02, name: "Agent template: meeting notes to action items (n8n JSON)", lecture: "4.5"}
+  - {id: C03, name: "Agent template: the weekly report (n8n JSON)", lecture: "5.5"}
+  - {id: C04, name: "Agent template: follow-up chaser, draft-only (n8n JSON)", lecture: "6.5"}
+  - {id: C05, name: "Agent job-description template", lecture: "1.4"}
+  - {id: C06, name: "Trial-task checklist", lecture: "7.2"}
+  - {id: C07, name: "Spot-check rubric", lecture: "7.4"}
+  - {id: C08, name: "Guardrails + approval worksheet", lecture: "8.3"}
+  - {id: C09, name: "Agent cost + savings tracker", lecture: "9.2"}
+  - {id: C10, name: "Team rollout one-pager", lecture: "10.3"}
+
+# =============================================================================
+# CURRICULUM — 12 sections. The writer session sets lecture grain per section
+# (target ~70 lectures, ~7h) and builds the story bible FIRST: one office
+# worker at a mid-size company automating her own week, task by task, through
+# a trial, a save, one contained incident, and a team rollout.
+# =============================================================================
+sections:
+  - id: 0
+    title: "Start Here: Your First Agent in 20 Minutes"
+    goal: "Import a working inbox-triage template, connect it, watch it work; feel the possibility and the first doubt."
+  - id: 1
+    title: "The One Idea: An Employee, Not an App"
+    goal: "The onboarding frame: job description, trial, trust ladder, blast radius."
+  - id: 2
+    title: "The Toolbox: n8n and the AI Brain"
+    goal: "Set up once, understand the canvas, choose and connect a model; free-tier route first."
+  - id: 3
+    title: "Agent #1: Inbox Triage"
+    goal: "Full build, screen by screen; ships C01."
+  - id: 4
+    title: "Agent #2: Meeting Notes to Action Items"
+    goal: "Full build; ships C02."
+  - id: 5
+    title: "Agent #3: The Weekly Report"
+    goal: "Full build; ships C03."
+  - id: 6
+    title: "Agent #4: Follow-Ups That Never Slip (and Never Auto-Send)"
+    goal: "Full build with the human gate as the design centre; ships C04."
+  - id: 7
+    title: "Checking the Work"
+    goal: "Trial tasks, spot checks, failure modes; the judgement section."
+  - id: 8
+    title: "Guardrails and Blast Radius"
+    goal: "Approvals, scopes, the incident beat and its contained ending."
+  - id: 9
+    title: "What It Costs, What It Saves, and When Not To"
+    goal: "Honest economics and the never-automate list."
+  - id: 10
+    title: "Rolling It Out: Your Team and Your Boss"
+    goal: "From personal win to visible workplace credibility."
+  - id: 11
+    title: "Capstone: Automate One Week of Your Job"
+    goal: "The learner runs the full onboarding method on their own task."
