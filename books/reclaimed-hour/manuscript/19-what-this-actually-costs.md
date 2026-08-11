@@ -30,6 +30,18 @@ One more cost worth naming, distinct from both money and setup time: the cost of
 
 Sometimes it genuinely doesn't, and it's worth saying so rather than implying every task clears the bar with enough effort. If a task is rare, if the available tools all handle its specific complexity poorly, or if the setup time keeps ballooning past a reasonable budget on a second and third attempt, the honest conclusion is that this particular task isn't a good automation candidate right now, not a personal failure to make the math work through sheer persistence. Chapter four's resentment inventory and chapter seventeen's tool-selection process both remain useful for other tasks on your list even when one specific task turns out not to clear the bar; a stalled attempt at one task is information about that task, not a verdict on the whole approach.
 
+## Two break-evens, counted honestly
+
+| | Owen (clean case) | Marcus (messy case) |
+| --- | --- | --- |
+| Subscription cost | $14/month | Comparable, after a second, corrected setup |
+| Setup time | About 90 minutes, one sitting | About 6 hours, across two false starts |
+| Weekly time reclaimed | About 3.5 hours (9% of his week) | Real, but delayed by the failed first attempt |
+| Break-even point | Inside the first invoice | About six weeks in |
+| First month, counted honestly | A clear net gain | A net time loss |
+
+Both cases ended up worth it. Only one of them felt that way in month one.
+
 [TAKEAWAYS]
 
 - Do the break-even arithmetic explicitly before committing setup time: weekly time cost times a realistic number of weeks, compared against setup time plus any subscription cost over the same period.

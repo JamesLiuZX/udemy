@@ -52,6 +52,15 @@ If you genuinely have no landmark, real or personal, within a reasonable window,
 
 Not every landmark-anchored announcement works on the first try, and it's worth saying so plainly rather than implying the fresh-start research is a guarantee. Grace, the teacher from chapter ten, announced her department-level boundary at the start of a semester, a strong landmark by any measure, and still got a tutoring-block request within a month anyway. What the landmark bought her wasn't immunity from every future request. It was a much clearer, more legitimate position to decline from, because she'd stated the boundary publicly, at a moment everyone recognized as a genuine reset, rather than having to construct the case for the boundary from scratch in the moment the request arrived. The landmark makes the boundary easier to hold, not automatic to keep.
 
+## Two announcements, same structure, different audiences
+
+| Part | Marcus, at work | Owen, at home |
+| --- | --- | --- |
+| What's changing | Logging off at six most weekdays | Friday afternoons are no longer client time |
+| Why, in one sentence | For family time | Because Fridays had quietly become work by default |
+| What stays the same | Reachable for anything genuinely urgent | Nothing lost; the change starts now, not retroactively argued about |
+| Landmark used | Start of a new quarter | Start of a new month |
+
 [TAKEAWAYS]
 
 - A boundary announced casually, with no timing behind it, tends not to register as a real change; the same boundary announced at a genuine temporal landmark (a new quarter, a new month, a new school year) lands as one, reliably, because landmarks create a psychological reset that carries the announcement with it.

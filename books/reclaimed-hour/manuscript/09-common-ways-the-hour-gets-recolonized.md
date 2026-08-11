@@ -32,6 +32,17 @@ One pattern is worth adding as a near-seventh door, distinct enough from the ori
 
 The tell for this seventh pattern is different from the other six: it doesn't produce dread or reluctance the way the recolonizing doors usually do. It produces a mild, pleasant loss of track of time, followed by a genuine schedule collision an hour or two later, when the next commitment arrives and the protected block has silently doubled in length without anyone deciding it should. The fix is the same structural tool as everywhere else in this book, a hard external stop, an alarm, a calendar block with a real end time, applied even to time you're glad to be spending, because enjoyment is not, on its own, a reliable brake.
 
+## The six doors, at a glance
+
+| Door | The tell | The fix |
+| --- | --- | --- |
+| Favor becomes a fixture | You can't remember deciding this was now standing | Chapter six's scripted alternative, not a flat no |
+| Standard quietly rises | This month's version is visibly more elaborate, with no one moment that caused it | A defined, stated standard rather than an open-ended "better" |
+| Reachability leak | You were "around," not doing anything you can name | Close the laptop; treat availability itself as the thing being protected |
+| No natural stopping point | The task had no defined done state before, and still doesn't | Set the finish line in advance: "two more passes, then it ships" |
+| Borrowed urgency | Several individually reasonable exceptions add up to most of a month | A firmer boundary for the next genuine emergency specifically |
+| Bandwidth trap | New capacity got noticed right before new scope arrived | Keep freed time invisible until it's protected (chapter eight) |
+
 ## Using the list in the moment it matters
 
 The point of naming six doors isn't to memorize them like a taxonomy. It's to give you a fast, specific question to ask the next time an hour starts slipping: which door is this. "A colleague wants ten minutes" is the favor-becomes-fixture door, and the useful response is chapter six's scripted alternative, not a flat no. "I want this deck a little more polished" is the no-natural-stopping-point door, and the useful response is a defined done state set in advance, "two more passes, then it ships," not an open-ended "make it better." Naming the door tells you which fix from the earlier chapters actually applies, because the six doors don't all call for the same response, and treating them as interchangeable is its own way of losing the hour.

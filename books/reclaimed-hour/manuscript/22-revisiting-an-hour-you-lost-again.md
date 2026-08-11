@@ -40,6 +40,15 @@ Naming this specifically, a lapse about a lapse, was what let him break it: he w
 
 Grace's lapse looked different: not a stretch of missed blocks, but a full semester where the department-level boundary she'd announced in chapter fourteen quietly stopped being enforced, mostly by her own choice, as a new curriculum rollout genuinely did require more of her time for a defined, temporary period. The distinction she made, looking back, is worth naming directly: a deliberate, named, temporary suspension of a boundary for a real reason is not the same event as an unnoticed drift, even though both produce the identical outward result of a missed protected hour. She restarted the boundary explicitly at the semester's end, using the same landmark structure that had worked the first time, and described the whole episode afterward not as a failure of the method but as the method correctly flexing for something that actually warranted it.
 
+## The four steps, applied to Devon's actual lapse
+
+| Step | What it means | Devon's version |
+| --- | --- | --- |
+| Name it as a lapse first | One factual sentence, no story about your character | "I missed my protected block for two weeks during a rough stretch." |
+| Diagnose the door | Use chapter nine's six doors, since the fix differs by door | Borrowed urgency: a colleague's genuine emergency, twice |
+| Restart at the next landmark | Don't wait for a perfect moment | The next Monday, marked deliberately as a fresh start |
+| Expect it again | Build the expectation into the plan, not just the recovery | Reason this chapter exists at all |
+
 [TAKEAWAYS]
 
 - A single lapse and a full collapse of the practice are different events, and research on behavior change found the guilt-driven reaction to a lapse, not the lapse itself, is what usually determines whether it turns into the second one.

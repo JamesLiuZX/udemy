@@ -60,6 +60,27 @@ Ken ran a version of this audit on himself two months after the ticket-summary s
 
 He hadn't resisted the audit itself by the time he ran it on himself; chapter two had already convinced him of the mechanism in the abstract. What he'd resisted, without realizing it, was applying the same scrutiny to his own week that he'd applied to his team's, an easy blind spot for exactly the kind of person disciplined enough to run the audit on other people in the first place.
 
+## Marcus's audit, filled in
+
+What the gap between guess and reality actually looks like on paper, before any interpretation gets layered on top of it:
+
+| Category | Marcus's guess | Audit's actual finding |
+| --- | --- | --- |
+| Meetings | 50% | 31% |
+| Email | 20% | 12% |
+| Re-explaining context | Not listed | 23% |
+| Planning and other | 30% | 34% |
+
+And a single day from the log itself, the format every entry actually took:
+
+| Time | Duration | Category | Note |
+| --- | --- | --- | --- |
+| 9:05-9:40 | 35 min | Meetings | Standup plus a follow-up |
+| 9:40-10:10 | 30 min | Re-explaining | Walked a new hire through Q3 client history, second time that week |
+| 10:15-11:00 | 45 min | Deep work | Vendor checklist review |
+
+The category he hadn't listed going in was the one that, totaled across five days, turned out to be the largest.
+
 [TAKEAWAYS]
 
 - Guessing where your time goes is unreliable even for careful, self-aware people, because memory weighs vividness, not volume; a bruising meeting outweighs a dozen small interruptions in recall even when the interruptions cost more total time.

@@ -50,6 +50,19 @@ For a smaller number of people, even the indirect prompts from earlier in this c
 
 One caution before this chapter ends: naming what you want the time for doesn't make it automatic any more than freeing the time did. Devon's reading and Marcus's bedtime both required chapter six's protection to actually happen; a named intention without a protected slot degrades into the same default drift this whole book is about, just with better vocabulary attached to the drift. Chapters six and seven aren't sequential steps you complete once. They're two halves of the same ongoing practice, and the rest of this book keeps returning to both.
 
+## Three prompts, three real answers
+
+None of these arrived on the first, direct question. Each surfaced through one of the indirect prompts instead:
+
+| Prompt that worked | Devon | Marcus | Ken |
+| --- | --- | --- | --- |
+| What did you do with a free hour before you stopped having them? | Read fiction | (Didn't land for him) | Wrote seriously |
+| What do you do on the one day everything genuinely clears? | (Didn't land for her) | Bedtime with his kids | (Didn't land for him) |
+| What would you be embarrassed to admit you want more of? | (Already answered) | (Already answered) | Writing, after nearly a decade filed under "eventually" |
+| Time to a usable answer | One follow-up question | A longer, slower answer | Nearly a week |
+
+None of the three answers is ambitious. All three were specific enough to actually schedule.
+
 [TAKEAWAYS]
 
 - Protecting a freed hour from more work is necessary but not sufficient. An hour with nothing decided for it gets filled by something, and that something is rarely what you'd choose on purpose.

@@ -36,6 +36,17 @@ The fix that followed wasn't an automation at all, which is worth naming as its 
 
 This chapter is not a full treatment of unpaid caregiving labor, its gendered distribution, or the broader economic and social questions around how that labor is valued, none of which this book is equipped to resolve in one chapter or, honestly, at all. What it offers is narrower: the same audit-resentment-protection method from earlier chapters, applied honestly to work that doesn't fit a conventional job's shape, with the specific limits (anticipation resists automation, invisibility undermines protection) named rather than smoothed over.
 
+## The same distinction, as a table
+
+| Task | Automates well | Why |
+| --- | --- | --- |
+| Conflict-checking a shared calendar | Yes | A defined rule (do these two events overlap) a tool can apply consistently |
+| Generating a shopping list from approved recipes | Yes | A defined transformation from an existing, stable input |
+| Anticipating a need before it's urgent | No | Requires judgment about a specific person's mood or context, not pattern-matching on entered data |
+| Deciding whose turn it is to track a category | No | A household negotiation, not a task with a correct output |
+
+The two "no" rows are exactly where chapter eight's honest-limits discipline matters most: overselling automation's reach into anticipation costs more here than anywhere else in this book.
+
 [TAKEAWAYS]
 
 - A significant share of unpaid household and caregiving work is cognitive labor: anticipating, deciding, and monitoring, running continuously rather than as discrete tasks, and research has found it disproportionately invisible to the person doing it as much as to anyone else.

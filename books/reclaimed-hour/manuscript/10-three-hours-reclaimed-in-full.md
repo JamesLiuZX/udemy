@@ -54,6 +54,17 @@ Before moving on, it's worth doing briefly what this chapter just did for four o
 
 A product manager, an operations lead, and a biology teacher ended up following the identical sequence: an honest audit that overturned their own assumption about where time went, a task chosen by resentment rather than raw volume, a guilt response that had to be worked through rather than argued away, a specific if-then plan rather than a vague intention, an honest answer to what the time was actually for, and a bandwidth trap that arrived on schedule and had to be met deliberately rather than avoided. None of the three got a clean, permanent win. All three got something real anyway, which is a more honest promise than this book has any interest in improving on.
 
+## Four cases, the same four beats
+
+| | Devon | Marcus | Grace | Ken |
+| --- | --- | --- | --- | --- |
+| Audit finding | Waiting on colleagues, largest; status reports, smaller | Re-explaining context, largest, unlisted going in | Grading, largest, mostly repeated corrections | Slack-polishing, largest, unlisted going in |
+| Task chosen, and why | Status reports, by resentment not size | Vendor onboarding, by resentment not size | Grading feedback, by the flinch test | Compliance documentation, not the largest category |
+| Guilt flavor | Status, resolved by using the time, not hiding the label | Solved on the second attempt, not a guilt case | Public: named the time's destination to her department | Comparison, resolved by sharing the automation |
+| Answer to chapter seven | Reading fiction | Kids' bedtime, four nights a week | Better first-pass lesson materials | Writing, after a decade filed under "eventually" |
+
+None of the four got a clean, permanent win. All four got something real anyway.
+
 [TAKEAWAYS]
 
 - The full arc, watched across three different jobs, follows the same sequence every time: audit, resentment-led choice, guilt worked through rather than dismissed, a specific protection plan, a named purpose for the time, and a bandwidth trap met deliberately.

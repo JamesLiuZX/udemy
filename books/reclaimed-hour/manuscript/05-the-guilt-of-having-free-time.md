@@ -48,6 +48,18 @@ Ken's guilt, once he automated the compliance documentation from chapter four, a
 
 Before moving to chapter six's practical protection work, it's worth spending ten honest minutes with a single page, because the fix that worked for Marcus (a visible calendar label) does very little for someone whose guilt is mostly the identity kind, and the reverse is equally true. Write down the three stories above, status, identity, comparison, and rate your own reaction to a free hour against each one, one to five. Most people land clearly higher on one than the other two. Whichever one dominates should point you toward the corresponding fix: a visible signal for status guilt, the slower work of chapter seven for identity guilt, and open sharing rather than concealment for comparison guilt. Getting this diagnosis wrong, applying a calendar label to identity guilt or reconnecting-to-values work to a purely status-driven discomfort, is a common reason the "just relax" advice this chapter already rejected doesn't work: it isn't just too generic, it's often aimed at the wrong one of the three.
 
+## Three guilts, three fixes
+
+The three flavors this chapter names, side by side with who carried which and what actually resolved it:
+
+| Guilt | What it feels like | Who showed it | What fixed it |
+| --- | --- | --- | --- |
+| Status | The time looks low-value to others, watching or not | Marcus | A visible signal (closing the laptop, not just stepping away) |
+| Identity | The time feels like a threat to who you are | Owen | Slower work reconnecting the hour to something actually valued (chapter seven) |
+| Comparison | The time feels unearned next to teammates still doing it the slow way | Ken | Sharing the automation instead of hiding the time saved |
+
+Applying the status fix to identity guilt, or the reverse, is a common reason "just relax" style advice fails: it is often aimed at the wrong one of the three.
+
 [TAKEAWAYS]
 
 - Free time producing guilt instead of relief isn't a personal failing. Research on "conspicuous consumption of time" found busyness itself functions as a status signal in cultures that reward hard work with advancement, so an empty hour can register as a quiet demotion.

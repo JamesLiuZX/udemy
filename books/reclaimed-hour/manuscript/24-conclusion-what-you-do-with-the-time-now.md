@@ -26,6 +26,19 @@ Not a transformed life. Not a fully optimized schedule with every hour accounted
 
 That's a modest-sounding goal for something this long, and it's worth saying plainly why it isn't. Nearly every "AI productivity" book on the shelf next to this one promises more: a fully optimized life, hours multiplied, output maximized, the same hustle-culture premise this book opened by declining to make. The modest goal is the one that actually survives contact with an ordinary week, a demanding job, a family, a manager who notices your new capacity before you've decided what to do with it. The ambitious version doesn't survive that contact. It never did, for anyone, tool or no tool, which is most of why the burnout numbers in chapter one never moved the way the ambitious version promised they would.
 
+## The whole practice, on one page
+
+| Step | Chapter | The one-line version |
+| --- | --- | --- |
+| Find the hour | 3 | Log it for five days; the real answer is rarely the guessed one |
+| Choose by resentment | 4 | The flinch test beats raw volume |
+| Name the guilt | 5 | Status, identity, or comparison, each with a different fix |
+| Protect it | 6 | A specific if-then plan, written before the request arrives |
+| Name its purpose | 7 | What do you actually want the time for, specifically |
+| Know the traps | 9 | Six doors an hour walks through, each with its own fix |
+| Check the trend | 12 | Recorded and shared, weekly, five minutes |
+| Survive a lapse | 22 | Name it factually; restart at the next landmark |
+
 ## The one question, asked once more
 
 Chapter seven asked it and this book is going to end on it, because it was always the actual point, underneath the audits and the scripts and the six chapters of practical mechanics built to protect the answer once you had it: what do you actually want the time for.

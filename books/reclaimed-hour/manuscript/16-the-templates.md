@@ -28,6 +28,17 @@ Two or more yeses, regardless of the category's total minutes, is a strong candi
 
 **Filled in, as an example:** Owen's invoicing entry. Flinch: yes, described as "a tax on being self-employed." Repeats identically: yes. Disconnected from what he cares about: yes. Performed for an audience: no. Three yeses, at nine percent of his logged week, well below his largest category. He automated it first anyway.
 
+The same entry, as it would sit on the actual page:
+
+| Question | Owen's answer |
+| --- | --- |
+| Category | Invoicing, 9% of logged week |
+| Immediate flinch? | Yes |
+| Repeats identically, no learning curve? | Yes |
+| Disconnected from what I care about? | Yes |
+| Performed for an audience, not helping one? | No |
+| Verdict | Three yeses; automate first, despite the low percentage |
+
 ## The if-then protection plan (chapter six)
 
 > Trigger, named specifically: [the literal event, not a feeling]

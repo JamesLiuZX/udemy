@@ -55,6 +55,15 @@ Before this chapter closes, it's worth running a version of chapter three's audi
 
 Marcus ran this after the fact, once his team's early departures had already told him the modeling was working, and found one gap worth naming as its own lesson: his calendar showed his 6:00pm block as free, not busy, an old habit from before he'd started protecting it, meaning anyone scheduling a meeting would see an open slot with no visible signal that it was actually spoken for. The behavior was real and consistent. The visible record contradicted it. Fixing the calendar entry itself, a two-minute change, closed a gap that had nothing to do with willpower and everything to do with a stale setting nobody had thought to revisit once the underlying practice had become second nature.
 
+What Marcus's own audit found, filled in:
+
+| Question | What his record showed |
+| --- | --- |
+| Does status show active or away accurately? | Yes, no gap found |
+| Are outside-window messages timestamped visibly? | Yes, no gap found |
+| Does the calendar show the block as busy? | No: showed free, an old setting |
+| Has the boundary been stated out loud? | Only once, informally, before chapter fourteen's timing fix |
+
 ## Where this goes next
 
 Modeling it for a team is one audience. Chapter fourteen is about the other one: the people at home who notice the change in your schedule before you've explained it, and what to actually say to them.

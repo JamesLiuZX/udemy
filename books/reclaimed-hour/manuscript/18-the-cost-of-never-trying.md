@@ -28,6 +28,16 @@ This isn't an argument that every task should be automated immediately, or that 
 
 If that description matches something specific in your own week right now, the honest next step isn't more research or more certainty. It's the twenty-minute version chapter seventeen already described: three options, a real deadline, one actual attempt against a real task, this week rather than the next one.
 
+## What breaks the default, mapped to this book's advice
+
+| What the research found interrupts status quo bias | What that becomes in chapter seventeen's terms |
+| --- | --- |
+| A forced, active choice rather than a passive default | Limit the search to three options, on purpose, rather than defaulting to "keep doing it by hand" |
+| A genuine deadline that removes indefinite delay | Set a real decision deadline before you start comparing |
+| A small, low-stakes first exposure to the alternative | Test the tool against a real task, in the first ten minutes of a trial |
+
+Two separate bodies of research, chapter seventeen's on choice overload and this chapter's on status quo bias, converge on the identical short process from opposite directions.
+
 [TAKEAWAYS]
 
 - Status quo bias is a well-documented, measurable tendency to stick with the current way of doing something even when a switch would clearly serve you better, operating below conscious calculation rather than through a reasoned preference for the old way.

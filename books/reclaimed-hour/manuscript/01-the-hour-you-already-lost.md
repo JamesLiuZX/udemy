@@ -50,6 +50,16 @@ It also will not pretend the discomfort of an unfilled hour is trivial or quickl
 
 And it will not work as a one-time read. Protecting reclaimed time is a practice, not a fact you learn once, the same way a boundary with anyone else has to be reasserted more than once before it holds. Chapter six is built around exactly that repetition, not around a single insight that's supposed to fix things permanently.
 
+Laid out plainly, before and after, the gap is easy to see and easy to miss at the same time:
+
+| | Before automating | After automating |
+| --- | --- | --- |
+| Status report time | 90 minutes | About 4 minutes drafted, plus a quick check |
+| Time she left her desk on Friday | Same time | Same time |
+| What filled the freed 86 minutes | Not applicable | A deferred project, extra Slack replies, an early pass on Monday's work |
+
+Nothing in the left column changed. Everything in the right column did, except the one number that was supposed to.
+
 [TAKEAWAYS]
 
 - Automating a task frees the hour it used to take. It does not decide what happens to that hour next; that part is a separate, unaddressed problem.

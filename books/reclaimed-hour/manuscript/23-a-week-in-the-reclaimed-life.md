@@ -34,6 +34,18 @@ It's worth briefly imagining the counterfactual, the version of Devon's week fro
 
 The tool would have looked identical in both versions of this week. Only the twenty-two chapters standing behind it, or their absence, would have made the difference between a genuinely reclaimed hour and one that quietly evaporated the way it always had before anyone thought to ask where it was going.
 
+## The week, real versus counterfactual
+
+| Day | What actually happened | What would have happened, a year earlier |
+| --- | --- | --- |
+| Monday | The status report runs itself; the freed 40 minutes go to a novel | The report still runs itself; the freed time defaults to whatever Slack thread is open |
+| Tuesday | A real client fire, handled, protected blocks left untouched | Same fire; no protected block existed to leave untouched in the first place |
+| Wednesday | A creeping 8am sync caught in week three and moved | The same sync calcifies into a permanent fixture by month three, unquestioned |
+| Thursday | An hour of real, undistracted priority work, unremarkable | The equivalent hour is already gone to something else, also unremarkable, also unnoticed |
+| Friday | A manager's compliment lands with nothing to give up, because nothing's undefended | The identical compliment becomes an opening for more scope, unresisted |
+
+The tool looks identical in both columns. Only the twenty-two chapters behind one of them make the difference.
+
 ## What actually changed, added up
 
 Total the week honestly and it doesn't look dramatic on paper: roughly ninety minutes of genuinely protected time across five days, one small correction to a creeping meeting, one real fire handled without becoming a crisis about the boundary itself. No chapter of this book promised more than that, and by now, a year in, Devon wouldn't want more than that either. The promise was never a transformed life. It was an hour, reliably hers, used for something she'd actually chosen, defended without heroics against the ordinary, everyday forces that would otherwise have quietly taken it back the way they took Rachel's Friday in chapter one, before either of them had a name for what was happening.

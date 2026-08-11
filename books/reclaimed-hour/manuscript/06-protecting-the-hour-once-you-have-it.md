@@ -54,6 +54,19 @@ One more honest addition worth making before this chapter closes: even a well-bu
 
 Not every trigger deserves the same rigid response, and pretending otherwise sets you up to abandon the whole system the first time a genuine emergency breaks it. Build one honest exception into the plan from the start: "unless it's X," where X is something specific and rare, a direct request from your actual manager, a client emergency with a defined cost of delay, not "unless it feels important," which is a door wide enough to let almost anything back through. The plan's power comes from how few things qualify as the exception, not from having no exception at all.
 
+## Marcus's plan, filled in
+
+The four parts of a working if-then plan, with the version that actually held:
+
+| Part | Marcus's version |
+| --- | --- |
+| Trigger, named specifically | A colleague messages between 6:00 and 6:15pm asking for "a few minutes" |
+| Scripted response | "I'm off the clock right now, can we grab ten minutes tomorrow at 9?" |
+| Default alternative offered | 9:00am the next day, stated specifically |
+| The one honest exception | A direct request from his own manager, and nothing else |
+
+His first attempt, before this version, had a trigger and a hope but no scripted response and no named exception. It lasted nine days.
+
 [TAKEAWAYS]
 
 - A vague intention to protect your time gives you nothing to recognize in the moment; a specific if-then plan does the noticing and the responding for you before social pressure gets a vote.

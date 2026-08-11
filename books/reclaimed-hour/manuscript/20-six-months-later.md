@@ -26,6 +26,16 @@ Not every practice survived six months intact, and it would be dishonest to repo
 
 This is worth including specifically because it complicates a tidy ending: the goal of this book was never a permanently fixed schedule that looks the same in month one and month twelve. It was the underlying skill and awareness chapter one named from the start, and Priya's evolving, less rigidly scheduled version of that skill is arguably a more mature outcome than a block held perfectly static for six months would have been, evidence the practice had become genuinely internalized rather than a rule still being externally enforced.
 
+## All five cases, side by side
+
+| | Chapter it started in | Six months later |
+| --- | --- | --- |
+| Devon | Six | Renegotiated back to both protected mornings; reading became a book club |
+| Marcus | Six | Boundary no longer needs active defense; caught and fixed uneven modeling on his team |
+| Grace | Ten | Survived one strained semester, held cleanly through a second |
+| Owen | Six | The weekly freelancer call, not the invoicing automation, became the practice he protects hardest |
+| Priya | Three | The forty-minute block dissolved as a named thing; the underlying skill remained, redistributed |
+
 [TAKEAWAYS]
 
 - Habit-formation research found the median time to near-full automaticity for a daily practice was sixty-six days, with a wide individual range from eighteen to over two hundred fifty days; a lapse well past that median isn't evidence the practice failed to take hold.

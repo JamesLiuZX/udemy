@@ -32,6 +32,16 @@ Availability creep hit the second analyst hardest, and hit her the way it hits a
 
 Ken's fix, once he'd actually named all three mechanisms happening on his own team, wasn't a new tool. It was a fifteen-minute conversation naming each one out loud, by name, to both analysts, and asking directly: is this what we want the freed time doing. Neither answer was yes. Both mechanisms got deliberately redirected within a week, not because Ken found a better process, but because naming a default is most of what it takes to stop treating it as inevitable.
 
+## The three mechanisms, side by side
+
+Ken's team showed all three operating on the same six freed hours, which makes them easier to tell apart than any abstract definition does on its own:
+
+| Mechanism | What it looks like | On Ken's team |
+| --- | --- | --- |
+| Task expansion | A task that felt too expensive now feels affordable, so it gets attempted | An analyst built a second, unrequested root-cause report |
+| Standard creep | Old tasks get done to a higher bar, quietly, with no one deciding that was the plan | The summary gained commentary and formatting until it took nearly as long as the manual version had |
+| Availability creep | The freed hour goes to being reachable, not to any task | The second analyst's Monday filled with ad hoc questions once her old excuse was gone |
+
 ## Why none of these are personal failures
 
 Every one of these three mechanisms operates below the level of a conscious decision, and that's worth sitting with directly, because the instinct is to read this as evidence of a discipline problem. It generally isn't. Task expansion, standard creep, and availability creep all share a common feature: they don't require you to decide anything. They're what happens by default when capacity opens up in an environment that was already treating "more" as the correct response to available room, which describes most modern workplaces whether or not anyone ever said so explicitly.

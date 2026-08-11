@@ -146,6 +146,77 @@ pattern as the other books.
     direct/lead-gen distribution instead, the same channel decision every
     other zh edition in this repo has made.
 
+- 2026-08-11: standards update applied, per the author's directive to
+  adopt `docs/09-visual-standard.md` (the same visual-standard rewrite
+  applied across courses and books). Three additions, all inherited by
+  the zh edition as instructed:
+  1. **The hook and the nugget** (docs/09 §4). Read all 24 chapters
+     against the standard: a one-line hook (why a browser keeps reading
+     past the first half page) and a golden nugget (the one concrete,
+     usable-today thing). All 24 chapters passed on both counts without
+     needing a rewrite — every chapter already opens on a concrete scene
+     and already closes on an actionable `[TAKEAWAYS]` box, which turned
+     out to already satisfy the standard. The one-line hook/nugget pair
+     for every chapter is recorded in the chapter map below (see the
+     "Hook" and "Nugget" columns). No chapter needed prose changes for
+     this item.
+  2. **Visual devices** (docs/09 §3). This book pipeline has no figures.py
+     equivalent (no diagram/chart generator, no tikz, no image support in
+     `kdp-book.cls`) so every worked visual is a markdown pipe table,
+     rendered through the pipeline's existing booktabs styling (same
+     mechanism already used once in this book's `book.yaml`-adjacent
+     sibling `ai-employee` ch. 12's scoring table). Added exactly one
+     worked visual to each of the 24 chapters, every one derived from
+     that chapter's own already-published content, no new facts
+     introduced: filled worksheets (ch. 3's audit log matches the
+     standard's own example verbatim, ch. 4's flinch log, ch. 6's if-then
+     plan, ch. 16's resentment-inventory entry), before/after and
+     six-week trend grids (ch. 1, ch. 12, ch. 20), comparison tables
+     across the book's recurring cast (ch. 5, ch. 7, ch. 9, ch. 10, ch.
+     11, ch. 14, ch. 15, ch. 18, ch. 19, ch. 21, ch. 22), and ch. 23's
+     day-by-day real-vs-counterfactual week grid, which matches the
+     standard's own named example. English rebuilds at 213pp (was 185),
+     zh at 183pp (was 167); both still comfortably inside their target
+     bands (180-240 / 150-190).
+  3. **SOTA rigor, concentrated** (docs/09 §4's "current tools" bar).
+     This book is deliberately tool-agnostic by design (ch. 17 states
+     the reasoning directly: naming products dates badly), so the pass
+     was concentrated in ch. 17 rather than spread across all ~30 generic
+     "an AI tool" mentions elsewhere, which stay generic on purpose since
+     they describe a fictional persona's task, not a live recommendation.
+     Live-searched (web search, August 2026) three tool categories
+     relevant to the book's illustrative tasks — recurring-report/
+     workflow automation (n8n, Zapier, Make), AI scheduling (Reclaim,
+     Motion), and household meal-planning (Plan to Eat, Mealime, Samsung
+     Food) — and added them as a dated, honestly-caveated table. One
+     finding doubled as an unplanned demonstration of the chapter's own
+     thesis: Clockwise, a scheduling tool with real market share in early
+     2026, shut down in March 2026 after acquisition; the chapter now
+     cites this directly as the real-world case for ch. 15's "what if the
+     tool disappears" answer. Behavioral/psychological claims (every
+     `[KEY-INSIGHT]`) were untouched — same highest-bar citation standard
+     as before, no changes needed.
+  - Two smaller issues caught during this pass, fixed in both editions:
+    (a) two exact-duplicate section headings (ch. 20 had two sections
+    both titled "Where each case actually stood, six months on"; ch. 21
+    had two near-identically-titled "what automates" sections) — renamed
+    the newly-added one in each case; (b) four pre-existing straight
+    single-quotes in the zh manuscript (chs. 6, 7, 15) that touched CJK
+    characters directly, the same class of bug documented above for
+    double quotes — converted to curly quotes defensively, verified via
+    a script that the only remaining straight quotes in `manuscript-zh/`
+    are the expected English citation titles inside `Source:` lines.
+  - Both editions rebuilt, `qc.py --release` clean apart from the
+    expected `verified: false` gate (English) and that same gate plus
+    the benign CJK word-count-estimator warning (zh, unchanged from
+    before). Spreads visually inspected across roughly a dozen of the
+    new tables in both languages, including the TOC (no duplicate/
+    colliding entries), the ch. 3 and ch. 17 exemplar tables the
+    standard specifically calls out, and a table split across a page
+    break (renders with repeated headers, no overflow). Fonts still
+    fully embedded in both. Proofs refreshed: `proofs/reclaimed-hour.pdf`
+    (213pp) and `proofs/reclaimed-hour-zh.pdf` (183pp).
+
 ## What's left, and it's all author-only by design
 
 - Read the full English and zh manuscripts and set `verified: true` in
@@ -153,7 +224,7 @@ pattern as the other books.
   does not carry over to the other). This is the author's signature, not
   a build step, and this session has correctly never touched it.
 - Cover design for both editions (needs final page count, which is now
-  locked: 185pp English, 167pp zh).
+  locked: 213pp English, 183pp zh).
 - The KDP AI-disclosure and content-guidelines questionnaire for the
   English edition (listing sheet already drafted in
   `books/docs/03-kdp-listings.md` §8); no KDP questionnaire applies to
@@ -214,6 +285,38 @@ book.
 | 22 Revisiting an Hour You Lost Again | Relapse is normal, not failure: what to do the week the hour gets away from you again |
 | 23 A Week in the Reclaimed Life | Closing: a concrete week, practical and specific, not an abstract promise |
 | 24 Conclusion: What You Do With the Time Now | Short closing chapter, the one question the whole book has been building to |
+
+## Hook and nugget, per chapter (docs/09-visual-standard.md §4)
+
+All 24 passed on both counts as originally drafted; none needed a rewrite.
+Applies to the zh edition too (same chapters, translated).
+
+| Ch. | Hook (why keep reading past half a page) | Golden nugget (the usable-today thing) |
+| --- | --- | --- |
+| 01 | Rachel's ninety minutes vanish the same week they're freed, and nobody made her stay | An empty hour needs a decision made about it, actively, or it defaults to whatever's nearest |
+| 02 | A 160-year-old economics observation about coal explains exactly why Rachel's Friday refilled itself | Name which of three mechanisms (task expansion, standard creep, availability creep) is eating your freed hour |
+| 03 | A confident operations manager guesses his week wrong by nineteen points | Log every task switch in the moment for five days; the category you didn't list going in is usually where the time is |
+| 04 | The smallest item on the list gets automated first, on purpose | The flinch test beats raw time spent as a signal for what to automate first |
+| 05 | Forty minutes of silence feels like getting away with something | Name your guilt as status, identity, or comparison, then apply the matching fix |
+| 06 | A nine-day-old automation is gone by week six, one friendly yes at a time | Write a three-part if-then plan before the request arrives, not during it |
+| 07 | A sister's blunt question stops a two-month streak cold: what do you actually do with it? | If the direct question stalls, ask what you did with free time before, what a fully clear day looks like, or what you'd be embarrassed to admit wanting |
+| 08 | A manager's compliment ("more bandwidth now") is the trap arriving with a name and a face | Keep freed time invisible until it's protected, and budget real review time as the actual cost |
+| 09 | A pattern behind the patterns: six specific doors an hour walks through | Run the end-of-week checklist naming which door took the time |
+| 10 | Three ordinary jobs, one identical six-step arc, none of it a clean win | Write your own audit finding, chosen task, guilt flavor, and honest purpose in four sentences |
+| 11 | Sometimes the hour isn't taken, it's given away, fast, on purpose | If a protected hour still feels specifically bad no matter how much practice, that's a signal for a therapist, not a script |
+| 12 | Three months of "mostly, I think so" turns out to mean nothing stuck | Run four questions weekly, written down and shared; a downward trend is the real signal |
+| 13 | Two employees start leaving at 5:45 without ever being told they could | Make your protected block visible, not just real, or your team learns nothing |
+| 14 | The identical boundary fails on a random Wednesday, lands instantly at the start of a quarter | Anchor any announcement to a real landmark, in three parts: what's changing, why, what stays the same |
+| 15 | The honest rebuttal to twelve chapters of advice, taken on directly | Use the audit to test whether a workload genuinely has no slack before concluding this doesn't apply |
+| 16 | Every worksheet in this book, stripped out of the stories and left ready to use | Fill in your own version directly rather than paraphrasing from memory |
+| 17 | Three weeks lost comparing tools before a single one gets tried | Pick three options, test against a real task, set a decision deadline before you start |
+| 18 | A sister with the identical time-drain, three years unautomated, agreeing the whole time | A forced choice, a real deadline, and one small first exposure break a status-quo default |
+| 19 | The honest line-item a book this long owes its reader, in dollars and setup hours | Do the break-even arithmetic before committing setup time to anything |
+| 20 | Every case study so far has shown weeks, not the longer haul that actually proves anything | Judge a practice on a six-month horizon, not a six-week one |
+| 21 | The biggest share of one parent's week isn't a task at all, it's tracking | Anticipating a need resists automation almost entirely; name who's tracking what, out loud |
+| 22 | A five-month streak breaks for two weeks, and the story you tell about it matters more than the break | Name a lapse factually, diagnose which door caused it, restart at the next landmark |
+| 23 | A real week, wobble included, close to a year after the audit that started it | The weekly check is what catches a three-week drift before it becomes a three-month fixture |
+| 24 | Back to Rachel, the same question asked once more now that there's an actual answer | The real measure of success is one hour, somewhere in your week, you can name as genuinely yours |
 
 ## Things to hold onto while writing the rest
 

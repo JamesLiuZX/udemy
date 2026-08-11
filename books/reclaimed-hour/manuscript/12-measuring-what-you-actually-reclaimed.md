@@ -38,6 +38,16 @@ Ken ran this weekly check for four months before it caught something he wouldn't
 
 The trend, laid out as six numbers in a row rather than six separate impressions, was unambiguous in a way no single week's feeling could have been. It turned out to trace back to a change Ken hadn't consciously registered: his writing time had quietly shifted, over those six weeks, from actual drafting to research and planning that never quite turned into pages, a version of Owen's task-with-no-defined-stopping-point pattern from chapter nine applied to something meant to be restorative rather than obligatory. Seeing the number, not the feeling, is what let him catch it early enough to fix with a small rule (a defined word count each session, not just "time spent writing") rather than needing chapter twenty-two's lapse-recovery process after the fact.
 
+## What the trend actually looked like
+
+Ken's own six-week run of question four's rating, the number that caught the drift no single week's feeling could have:
+
+| Week | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Rating (1-5) | 4 | 4 | 3 | 3 | 2 | 2 |
+
+Any single week in that row reads as unremarkable. Laid out in sequence, the decline is unambiguous, which is exactly what a recorded, weekly number does that a private impression can't.
+
 ## What a bad week actually means, and what it doesn't
 
 A single week where the block didn't happen, or happened but got filled with scrolling instead of anything chosen on purpose, is not evidence the method has failed. Chapter seventeen is built entirely around this and deserves its own space, but it's worth saying here too: the check exists to catch a pattern, not to punish a single miss. If you're using this weekly check to feel bad about yourself rather than to notice a trend, you've replaced one problem with another, and that's worth catching as its own kind of signal.

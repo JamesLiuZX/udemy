@@ -64,6 +64,16 @@ None of these three questions are diagnostic on their own, and this chapter isn'
 
 Owen, whose invoicing-hour story ran through chapters five and six, described a milder version of this near the end of his own process: the first several protected hours felt, in his words, "itchy," not because he didn't know what to do with them but because sitting still long enough to actually notice how he felt about freelancing itself, three years in, alone, without the daily texture of an office, was uncomfortable in a way that had nothing to do with productivity. He didn't need a therapist for it. He needed, in his case, a standing weekly call with another freelancer, itself a form of the community chapter thirteen discusses in a different context, which turned out to be enough to make the itchiness pass. Not everyone's version resolves that easily, and it's worth saying plainly that his did, rather than implying every case does.
 
+## Which case you're actually in
+
+| Signal | This book's method (chapters three through ten) | A different signal, worth a real conversation |
+| --- | --- | --- |
+| How the discomfort moves | Fades or stays flat, then resolves into real engagement | Gets worse the longer the hour sits unstructured |
+| Where attention wanders | Toward the next task, a mild itch to be productive | Toward one specific unresolved person, loss, or decision, repeatedly |
+| How long the pattern has held | New, matching the early friction of any new practice | Steady, or a sudden shift that coincides with a real external event |
+
+If the right column describes your own protected hours more than the left, the honest next step is a therapist or counselor, not a better boundary script.
+
 [TAKEAWAYS]
 
 - For most readers, most of the time, a freed hour gets taken by drift, guilt, or a bandwidth trap, and chapters three through ten's method genuinely addresses that.

@@ -46,6 +46,14 @@ The honest response isn't to avoid automating anything you might get rusty at. I
 
 This chapter can name the pattern. It can't fix your specific employer's incentive structure, and for some readers, in some jobs, the bandwidth trap described here is not a personal habit to correct but a real structural fact of a workplace that will keep asking for more exactly in proportion to how much faster you get, no matter how carefully you protect any individual hour. If that's your situation, the honest next step isn't a better boundary script. It's recognizing that the problem has moved outside what an individual practice can solve, which is worth naming plainly rather than implying, falsely, that six good habits fix every job.
 
+## Three honest limits, and the response to each
+
+| Limit | Why it happens | What to do instead |
+| --- | --- | --- |
+| The always-available expectation | A fast response quietly resets what "fast" means for everyone who emails you | Notice the new baseline deliberately, and reset it on purpose, the way Owen reset his with an honest auto-reply |
+| Review work eats the savings | Fluent AI output is harder to fact-check than a rough draft, not easier | Budget the tool's stated time savings as a ceiling, not a floor |
+| The workday gets longer, not shorter | Freed capacity is visible to a manager in a way protected time never is | Keep freed time invisible until it's actually protected (chapter six) |
+
 [TAKEAWAYS]
 
 - Visible new capacity gets read by managers as room for more work, not evidence you've earned less. This is a predictable, documented pattern, not a personal misreading of your workplace.

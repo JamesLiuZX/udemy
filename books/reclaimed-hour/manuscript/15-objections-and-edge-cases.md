@@ -50,6 +50,19 @@ For the specific hour you're protecting, yes, somewhat, and that's the point rat
 
 Fair, since "set better boundaries" is genuinely common advice, available for free in a thousand articles, and it's worth being specific about what this book actually adds rather than claiming the whole idea as original. The difference isn't the boundary itself. It's the two things most boundary-setting advice skips entirely: chapter three's audit, which locates the actual hour worth protecting instead of asking you to be generally more boundaried everywhere at once, and chapter six's implementation-intention structure, which replaces vague resolve with a pre-scripted, triggered response. Generic boundary advice tells you to have better boundaries. This book tries to tell you specifically which hour, triggered by what, defended with which exact sentence, which is a narrower and, per the research cited throughout, a measurably more effective kind of advice than the general encouragement alone.
 
+## The objections, at a glance
+
+| Objection | Short answer | Where the full answer lives |
+| --- | --- | --- |
+| Won't this make me look less hardworking? | Sometimes, yes; know your culture before assuming visibility is free | Chapter thirteen |
+| I'm a solo freelancer, does this apply? | Yes, more directly; you just play both roles | Chapters six, nine |
+| My job genuinely has no slack | Run the audit to confirm that honestly rather than assume it | Chapter three |
+| Isn't "find the right use" just optimization again? | No, if the honest answer doesn't need to justify itself in output | Chapter seven |
+| My work is physical, nothing to automate | The administrative layer on top of it usually still is | Chapter three |
+| What if the tool disappears? | The audit and the boundary survive a tool swap; only the mechanics change | Chapter twenty-two |
+| This is a lot of setup for time I don't have | Mostly a single afternoon, once, not a recurring tax | Chapter sixteen |
+| My team pushed back hard | Check whether the announcement followed the three-part structure | Chapter fourteen |
+
 [TAKEAWAYS]
 
 - Passive face time bias is real and measured; protecting visible time isn't risk-free in every workplace culture, and it's worth knowing which culture you're in before assuming transparency costs nothing.

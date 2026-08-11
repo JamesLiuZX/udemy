@@ -60,6 +60,20 @@ He automated the report anyway, and the flinch didn't fully go away, because aut
 
 Resentment is the better starting signal, not the only signal that matters. If a task is small, low-resentment, and genuinely nobody's actual priority, automating it first can be a form of procrastination itself, a way to feel productive about fixing something that was never really costing you anything. Use the audit's numbers as a floor: a task under roughly five percent of your logged time probably isn't worth the setup effort automating it will cost you, resentment or not, unless the resentment is severe enough that the wellbeing cost alone justifies it.
 
+## A flinch log, filled in
+
+What the two-week log actually looked like for Ken, once he started tracking his reaction instead of trusting a single gut check:
+
+| Date | Task | Reaction |
+| --- | --- | --- |
+| Mon | Slack message polishing | + |
+| Tue | Compliance documentation update | - |
+| Wed | Slack message polishing | + |
+| Thu | Compliance documentation update | - |
+| Fri | Slack message polishing | + |
+
+Five entries, one pattern. The task the audit had ranked highest by volume never once produced a minus.
+
 [TAKEAWAYS]
 
 - Volume measures the minutes a task takes. Resentment measures the minutes lost avoiding it beforehand and recovering from it afterward, which is often the larger real cost.
