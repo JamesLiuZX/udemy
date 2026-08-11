@@ -180,3 +180,43 @@ python3 books/pipeline/qc.py --book your-book-slug
 # Release gate
 python3 books/pipeline/qc.py --book your-book-slug --release
 ```
+
+## 8. Print figures (`figures_print.py`)
+
+The book-side print profile of the visual standard's "diagrams generated
+from data" lane (`docs/09-visual-standard.md` §3). Each figure is a YAML
+spec in `books/<slug>/figures/`, rendered to a grayscale, B&W-print-safe
+PNG:
+
+```bash
+python3 books/pipeline/figures_print.py --book <slug>
+```
+
+The chapter Markdown embeds the PNG with an ordinary image reference,
+using a repo-root-relative path (this exact form works in both the PDF
+and EPUB builds; do not use a path relative to the chapter file):
+
+```markdown
+![Caption, set under the figure and numbered automatically.](books/<slug>/figures/<name>.png){width=100%}
+```
+
+Rules, mirroring the slide figures' discipline:
+
+- Grayscale only; series separate by line weight, dash pattern and direct
+  labels, never by color. KDP prints standard interiors in B&W.
+- Values that are a function of a parameter (a compounding curve, a
+  break-even point) are computed by the renderer from the spec's inputs,
+  never transcribed, so the figure cannot drift from the arithmetic the
+  chapter states.
+- Look at the rendered PNG before embedding it, and at the built page
+  after. Label collisions are invisible in the spec and obvious in the
+  image, the same rule as §3 of `books/CLAUDE.md`.
+- Requires `librsvg2-bin` (`rsvg-convert`) and the repo's IBM Plex fonts
+  visible to fontconfig (copy `theme/vendor/fonts/IBMPlex*` into
+  `/usr/local/share/fonts/` and run `fc-cache`). A zh edition's figure
+  needs a `-zh` spec with translated labels; Noto Sans CJK must be
+  installed for those glyphs.
+
+Commit the YAML spec, the SVG and the PNG together: the spec is the
+source of truth, the PNG is what the builds embed, and a reviewer diffing
+the spec can see what changed without re-rendering.

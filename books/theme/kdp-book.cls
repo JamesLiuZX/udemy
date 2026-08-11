@@ -42,6 +42,10 @@
 \RequirePackage[hidelinks]{hyperref}
 \RequirePackage{longtable}
 \RequirePackage{booktabs}
+% Print figures (books/pipeline/figures_print.py). Grayscale PNGs embedded
+% via ordinary Markdown image syntax; paths resolve because build.py always
+% compiles with cwd = repo root.
+\RequirePackage{graphicx}
 \RequirePackage{array}
 \RequirePackage{calc}
 \RequirePackage{graphicx}
@@ -429,6 +433,10 @@
 % prints the English heading even though \contentsname was "correctly"
 % redefined moments before \begin{document}).
 \if@kdpzh\AtBeginDocument{\renewcommand{\contentsname}{目录}}\fi
+% Figure/table caption labels, same babel-timing caveat as \contentsname.
+\if@kdpzh\AtBeginDocument{%
+  \renewcommand{\figurename}{图}%
+  \renewcommand{\tablename}{表}}\fi
 
 \newcommand{\dedicationpage}[1]{%
   \thispagestyle{empty}

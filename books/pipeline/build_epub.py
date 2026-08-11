@@ -173,6 +173,11 @@ def run_pandoc_epub(html: str, book: Book, out_path: Path) -> None:
     cmd = [
         exe, str(tmp_html), "-f", "html", "-t", "epub3",
         "--css", str(THEME_DIR / "epub.css"),
+        # Figure references in chapter Markdown are repo-root-relative
+        # (books/<slug>/figures/x.png) so the same path works for both the
+        # LaTeX build (cwd = repo root) and this EPUB build regardless of
+        # the caller's cwd.
+        "--resource-path", str(REPO_ROOT),
         "--epub-chapter-level=1",
         "--toc", "--toc-depth=1",
         "--metadata", f"title={book.title}",

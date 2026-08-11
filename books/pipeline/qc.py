@@ -60,6 +60,19 @@ ALLOW = {
     "pixma", "autocorrect", "chatbot", "chatbots", "grandkids", "olds",
     "reframe", "reframed", "roading", "résumé", "stovetop", "timeframe",
     "tradeoff", "walkability",
+    # stop-guessing: real proper nouns (case parties, researchers, products)
+    # and real domain words hunspell's en_US list doesn't carry. Verified by
+    # hand against the manuscript, not typos.
+    "arup", "buolamwini", "elon", "gebru", "gerstner", "nabla", "okafor",
+    "recommender", "timnit", "zestimate", "zillow's", "asker's",
+    "bootcamps", "data's", "eval", "evals", "ibuying", "leaderboard",
+    "misclassifying", "mistranscribe", "offboarding", "overcorrect",
+    "overcorrection", "oversized", "paroxetine", "rebooking", "klarna",
+    "klarna's", "siemiatkowski", "moffatt", "mmlu", "ragas", "agentic",
+    "yucheng", "chunyuan", "roadmap", "roadmaps", "robotaxis", "rollout",
+    "rollouts", "todo", "unbuilt", "uncited", "unescaped", "untrusted",
+    "watchlist", "watchlisted", "recoverably", "redesign's", "reframes",
+    "relitigating", "requester's", "rebranded",
 }
 
 AUTHOR_INPUT_RE = re.compile(r"\[AUTHOR-INPUT:(.*?)\]", re.S)
@@ -133,6 +146,10 @@ def check_manuscript(book: Book, rep: Report) -> None:
             continue
 
         clean_for_check = AUTHOR_INPUT_RE.sub(" ", c.text)
+        # Image references: the caption is prose worth spellchecking, the
+        # target path/attributes are not ("png", a slug, "width=100%").
+        clean_for_check = re.sub(r"!\[([^\]]*)\]\([^)]*\)(\{[^}]*\})?",
+                                 r"\1", clean_for_check)
 
         insights = KEY_INSIGHT_RE.findall(c.text)
         wellformed = len(KEY_INSIGHT_WELLFORMED_RE.findall(c.text))
