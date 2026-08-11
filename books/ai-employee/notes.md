@@ -146,7 +146,14 @@ Progress (updated per chapter as expansion happens):
       synthesis chapter leans on the method already established rather
       than introducing new evidence. 1,369 -> 1,696 words. Rendered pages
       checked.
-- [ ] 11 Four Delegations, Worked in Full (new)
+- [x] 11 Four Delegations, Worked in Full — new chapter. Two full case
+      studies (Bianca, a wedding photographer; Hector, an auto-parts
+      distributor) running the whole method end to end, showing the
+      skills from chapters two through nine overlapping and compounding
+      in real time rather than one at a time. One `[KEY-INSIGHT]`
+      (JPMorganChase Institute's small-business AI adoption data) frames
+      the chapter. A comparison table closes it. 2,031 words, 7pp
+      standalone. Rendered pages checked.
 - [ ] 12 Choosing Your First Tool (new)
 - [ ] 13 When Your Team Delegates Too (new)
 - [ ] 14 Objections and Edge Cases (new)
