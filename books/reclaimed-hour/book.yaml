@@ -1,0 +1,91 @@
+# =============================================================================
+# Single source of truth for "The Reclaimed Hour".
+# Self-help book, the most heavily KDP-scrutinised genre in this repo
+# (books/docs/00-kdp-compliance.md §2). Sharp psychological angle required:
+# AI as the trigger for a real behavioural problem, not generic
+# self-improvement with AI sprinkled on top.
+# =============================================================================
+
+slug: reclaimed-hour
+title: "The Reclaimed Hour"
+subtitle: "A Guide to Using AI to Buy Back Your Time, Not Fill It With More Work"
+author: "Your Name"
+year: 2026
+genre: self-help
+trim: "6x9"
+target_pages: [110, 160]
+
+# Never set true except by the real author, after a genuine full read-through.
+verified: false
+
+style:
+  spellcheck_lang: en_US
+  em_dash: avoid
+
+# KDP listing copy. Not part of the interior PDF.
+description: |
+  Every "AI productivity" book on the shelf is quietly a hustle book: use
+  AI to do more, ship more, output more, in the same or fewer hours. This
+  isn't that book, and if that's what you're looking for, it will
+  disappoint you on purpose.
+
+  This book starts from a different, more honest observation: most people
+  who automate a task with AI don't actually get the hour back. They fill
+  it with something else, usually more work, because reclaiming time
+  turns out to be a behavioral problem wearing a technical costume. This
+  book is about the actual behavioral work: finding the hour, sitting
+  with the discomfort of having it, protecting it from being recolonized,
+  and using it for whatever you actually wanted it for in the first
+  place, before you forgot to ask.
+
+  Written for anyone who has automated a task, felt briefly relieved, and
+  then noticed the relief evaporate within a week because something else
+  expanded to fill the space.
+
+dedication: "For the hour you keep meaning to get back."
+
+front_matter:
+  - half_title
+  - title_page
+  - copyright
+  - dedication
+  - toc
+
+# Full planned arc. Chapters without a manuscript file yet are listed here as
+# the outline; build.py only requires the file to exist for the chapter IDs
+# you actually pass to --only. See notes.md in this directory for status.
+chapters:
+  - id: "01"
+    title: "The Hour You Already Lost"
+    file: manuscript/01-the-hour-you-already-lost.md
+  - id: "02"
+    title: "Why 'Just Automate It' Doesn't Work"
+    file: manuscript/02-why-just-automate-it-doesnt-work.md
+  - id: "03"
+    title: "The One-Hour Audit"
+    file: manuscript/03-the-one-hour-audit.md
+  - id: "04"
+    title: "Automating the Task You Resent Most"
+    file: manuscript/04-automating-the-task-you-resent-most.md
+  - id: "05"
+    title: "The Guilt of Having Free Time"
+    file: manuscript/05-the-guilt-of-having-free-time.md
+  - id: "06"
+    title: "Protecting the Hour Once You Have It"
+    file: manuscript/06-protecting-the-hour-once-you-have-it.md
+  - id: "07"
+    title: "What You Actually Wanted the Time For"
+    file: manuscript/07-what-you-actually-wanted-the-time-for.md
+  - id: "08"
+    title: "When AI Makes It Worse, Not Better"
+    file: manuscript/08-when-ai-makes-it-worse-not-better.md
+  - id: "09"
+    title: "Telling Your Team or Family What Changed"
+    file: manuscript/09-telling-your-team-or-family-what-changed.md
+  - id: "10"
+    title: "A Week in the Reclaimed Life"
+    file: manuscript/10-a-week-in-the-reclaimed-life.md
+
+back_matter:
+  - acknowledgments
+  - about_the_author
