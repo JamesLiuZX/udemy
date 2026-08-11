@@ -97,7 +97,12 @@ Progress (updated per chapter as expansion happens):
       only loosely-fitting matches, and forcing a stretched citation in
       would violate the sourcing standard rather than serve it. 1,540 ->
       1,915 words. Rendered pages checked.
-- [ ] 06 Feedback That Actually Sticks
+- [x] 06 Feedback That Actually Sticks — added a second `[KEY-INSIGHT]`
+      (Locke & Latham's goal-setting research, backing "write it as a
+      rule, not a complaint"), a second worked example (Malik, six months
+      of stacked, never-edited standing instructions actively making
+      output worse), and a "Try this: audit your standing instructions"
+      exercise. 1,361 -> 1,931 words. Rendered pages checked.
 - [ ] 07 When to Fire It
 - [ ] 08 Your Second Hire, and Your Third
 - [ ] 09 The Team of One
