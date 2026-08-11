@@ -281,6 +281,14 @@ Progress (updated per chapter as expansion happens):
       review rule). 885 words, 4pp standalone. Rendered pages checked.
       Chapter order is now ...22, 24, 23 (conclusion), 15 (templates,
       last); ids don't need to match position, see the book.yaml note.
+- [x] 15 Templates and Worksheets — expanded with four more templates
+      matching the new chapters (revisit tracker for ch18, agent
+      pre-action checkpoint for ch20, financial reconciliation checklist
+      for ch21, disclosure decision for ch24) plus two glossary entries
+      (reconciliation, revisit). 844 -> 1,145 words, 8 -> 10pp standalone.
+      Genuine low-word-density reference growth, not padding; also
+      improves cohesion between the new chapters and the appendix.
+      Rendered pages checked, no overflow issues.
 - [ ] Additional chapters as needed to close the remaining gap to
       [180, 240]pp (still well short after 11-16; author directive is to
       keep adding genuine chapters rather than pad, checking in if

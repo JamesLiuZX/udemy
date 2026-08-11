@@ -158,6 +158,55 @@ ________________________________________________________________
 | 3 | Save the standing instruction, run the disqualifiers | | |
 | 4 | Add a second task if earned, or start a fresh trial if week 3 said no | | |
 
+## The revisit tracker (chapter eighteen)
+
+For any task currently fired. Add a row each time you fire one; update the last two columns at each revisit.
+
+| Task | What failed | Next revisit date | Last revisit result |
+| --- | --- | --- | --- |
+| | | | |
+| | | | |
+| | | | |
+
+## The agent pre-action checkpoint (chapter twenty)
+
+For any tool that takes real-world actions rather than only producing drafts:
+
+**What action can this tool take without stopping for a human first?**
+
+________________________________________________________________
+
+**What dollar amount, or what kind of action, requires a pause for approval before it fires?**
+
+________________________________________________________________
+
+**Where does that pause actually happen** (a setting, a review queue, an approval step)? Confirm this is real and tested, not assumed:
+
+________________________________________________________________
+
+## The financial task reconciliation checklist (chapter twenty-one)
+
+For any task producing a number that governs real money:
+
+| Question | Yes / No |
+| --- | --- |
+| Does every number trace back to a source that didn't come from the same process that produced it? | |
+| Has the final total been independently recalculated, not just read for plausibility? | |
+| Does this task's judgment-call slice, if any, still route to a human? | |
+| Has the third disqualifier (a single error outweighing every success) been checked at this task's real volume? | |
+
+## The disclosure decision (chapter twenty-four)
+
+For any task whose output reaches a client or customer directly:
+
+**Is this routine communication you've reviewed and would stand behind personally?** If yes, no disclosure needed; move on.
+
+**Does this output claim to be a specific person's firsthand judgment, testimonial, or account?**
+
+________________________________________________________________
+
+**Would a reasonable person feel misled to learn how this was actually produced?** If yes, either replace it with a genuine firsthand account or disclose plainly, don't publish it as-is.
+
 ## A short glossary
 
 **Brief.** The five-part instruction a task actually needs: situation, constraints, example, what "done" looks like, and what the tool can't know on its own. Chapter two.
@@ -175,6 +224,10 @@ ________________________________________________________________
 **Roster.** A one-page written record of every delegated task's trial, failure-mode list, standing instructions, and disqualifier status, kept current instead of held in memory. Chapter eight.
 
 **Chain.** A multi-step delegated process, each step's output feeding the next, checked at every seam rather than only at the end. Chapter nine.
+
+**Reconciliation.** Verifying a financial task's output against a source that didn't come from the same process that produced it, rather than checking whether the output merely looks internally consistent. Chapter twenty-one.
+
+**Revisit.** A fresh, real trial run on a task that was previously fired, on a set schedule, to check whether the original disqualifying failure still holds. Chapter eighteen.
 
 [TAKEAWAYS]
 
