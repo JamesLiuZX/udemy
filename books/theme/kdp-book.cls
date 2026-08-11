@@ -40,7 +40,7 @@
 % zero gap between rows. Fine for short one-line cells; as soon as any
 % cell wraps to two or more lines, the next row's text sits flush against
 % it with no visual break, table row spacing is set uniformly here.
-\setlength{\extrarowheight}{5pt}
+\setlength{\extrarowheight}{7pt}
 
 % Pandoc's fragment output (no --standalone) assumes a handful of macros
 % its own default template would otherwise define. Provide them here so
@@ -74,6 +74,11 @@
 \checkandfixthelayout
 
 % --- Typography -----------------------------------------------------------
+% Single-spaced LaTeX defaults read tight for a printed trade book; this is
+% the single biggest lever for a page feeling "squished" versus "edited".
+% Placed before \setmainfont so the font's \selectfont picks it up.
+\linespread{1.14}
+
 % TeX Gyre Schola: same family as the video course (theme/vendor/fonts),
 % a Century Schoolbook cut drawn for long-form reading.
 \setmainfont{texgyreschola}[
@@ -98,6 +103,16 @@
 \brokenpenalty=10000
 \frenchspacing
 
+% memoir defaults twoside documents to \flushbottom, stretching interline
+% and interparagraph glue so every page's last line lands on the same
+% baseline. That's fine for uniform running prose; it looks broken the
+% moment a page mixes plain paragraphs with a pull quote, a callout box,
+% or a table, none of which stretch, so all the slack piles into whatever
+% paragraph glue is left, as one or two huge gaps rather than a page's
+% worth of small, invisible ones. Ragged bottom is the standard trade
+% nonfiction answer once a book has any non-uniform content on the page.
+\raggedbottom
+
 % --- Brand accent (chapter furniture only; interior stays print-safe B&W
 %     unless a book explicitly buys KDP's colour-interior product) --------
 \definecolor{bookaccent}{HTML}{1B4F8F}
@@ -105,28 +120,37 @@
 \definecolor{bookflag}{HTML}{C1741A}
 \definecolor{bookflagtint}{HTML}{F7EEDD}
 
+% Both callout boxes below share this interior padding. LaTeX's fboxsep
+% default (3pt) reads as cramped once a box holds a bold label plus a full
+% paragraph rather than a single short word; this is the fix for both at
+% once rather than a per-box patch.
+\setlength{\fboxsep}{11pt}
+
 % Visible marker for unresolved [AUTHOR-INPUT: ...] text, so a draft PDF
 % shows the gap on the page, not only in qc.py's terminal output. build.py
 % rewrites the bracket syntax into this macro after Pandoc conversion.
 \newcommand{\authorinput}[1]{%
-  \par\medskip\noindent
+  \par\bigskip\noindent
   \fcolorbox{bookflag}{bookflagtint}{%
     \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
-      \small\bfseries\color{bookflag}AUTHOR INPUT NEEDED\par\smallskip
+      \small\bfseries\color{bookflag}AUTHOR INPUT NEEDED\par\medskip
       \normalfont\normalsize\color{black}#1%
     }%
   }%
-  \par\medskip
+  \par\bigskip
 }
 
 % A single line worth blowing up big on the page, breaking a long run of
 % body paragraphs the way a magazine layout would. build.py converts
 % [PULLQUOTE: ...] into this after Pandoc runs. Ragged both sides so it
 % reads as set apart from justified body text, not as a wide paragraph.
+% The explicit vspace is larger than a bare \bigskip: a pull quote sitting
+% only a bigskip from body text still reads as a crowded paragraph, not
+% as a deliberate break in the page.
 \newcommand{\pullquote}[1]{%
-  \par\bigskip\noindent
+  \par\vspace{1.4\baselineskip}\noindent
   {\centering\normalfont\Large\itshape\color{bookaccent}#1\par}
-  \bigskip\noindent
+  \vspace{1.4\baselineskip}\noindent
 }
 
 % Chapter-close summary box, the visual and structural bookend to
@@ -134,14 +158,14 @@
 % gap. build.py wraps a [TAKEAWAYS]...[/TAKEAWAYS] block's
 % already-Pandoc-converted list in this after Pandoc runs.
 \newcommand{\keytakeaways}[1]{%
-  \par\medskip\noindent
+  \par\bigskip\noindent
   \fcolorbox{bookaccent}{bookaccenttint}{%
     \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
-      \small\bfseries\color{bookaccent}KEY TAKEAWAYS\par\smallskip
+      \small\bfseries\color{bookaccent}KEY TAKEAWAYS\par\medskip
       \normalfont\normalsize\color{black}#1%
     }%
   }%
-  \par\medskip
+  \par\bigskip
 }
 
 % --- Chapter style ----------------------------------------------------------
@@ -166,6 +190,15 @@
 \chapterstyle{kdpbook}
 \setsecheadstyle{\normalfont\Large\bfseries\raggedright\color{bookaccent}}
 \setsubsecheadstyle{\normalfont\large\bfseries\raggedright}
+% Memoir's default section spacing is tuned for black-on-black headings
+% that don't need to visually separate themselves; the coloured heading
+% above draws the eye more and reads as cramped against the preceding
+% paragraph at the old spacing. More air above than below, so a heading
+% stays visually attached to the text it introduces.
+\setlength{\beforesecskip}{2.6\baselineskip}
+\setlength{\aftersecskip}{1.1\baselineskip}
+\setlength{\beforesubsecskip}{2\baselineskip}
+\setlength{\aftersubsecskip}{0.8\baselineskip}
 
 % A thin accent rule under the chapter title (number + name as one unit),
 % the same furniture the video course's slide headers use, so a chapter
