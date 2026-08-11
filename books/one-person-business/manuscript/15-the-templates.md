@@ -23,6 +23,8 @@ Run this against every tool, app, and subscription your business currently touch
 5. If it disappeared tomorrow, what would I actually lose?
 6. Am I paying for capability I use, or capability I liked the idea of?
 
+**Filled in, as an example:** Marcus running this against a project-management tool he'd kept paying for out of habit. What single job: task tracking for solo projects. Could it move into a prompt: mostly yes, a saved checklist template covers the same ground for work he isn't sharing with a client. Opened in the last two weeks: no, not for three months. Talks to anything else: no, it's fully standalone. What would he lose if it vanished: almost nothing, since his active client-facing project tool already duplicates the function. Paying for capability he uses or liked the idea of: the second one, clearly, once he actually answered the other five questions honestly. He cancelled it that week.
+
 ## The five-part proposal brief (chapter three)
 
 Build once per type of engagement, reuse with specifics swapped in.
@@ -83,17 +85,23 @@ Not a template to fill in, an asset to build once: eight to ten emails you're ge
 2. **Flag**: ask specifically about payment terms, IP and ownership, indemnification, and termination notice, plus your own field's specific risk (pre-existing IP and open-source licensing for developers; usage rights and revision limits for creative work).
 3. **Question**: turn every flag into one plain question you'd actually ask the client. You don't have to send it today. Write it down.
 
+**Filled in, as an example:** the ambiguity from Priya's eleven-page agency contract in chapter six. Flagged: the deliverables clause defined ownership on payment but never addressed what happens to source files if the client cancels mid-project. Question sent: "This says the deliverables become your exclusive property on payment, but the agreement doesn't define what happens to my source files if you cancel mid-project. Can we add a line covering that?" Answered within a day, clause added, no friction.
+
 ## The one-sentence positioning statement and one-hour marketing system (chapter seven)
 
 > I help [specific kind of client] do [specific outcome], the way [what makes your approach different].
 
 Once written, it's the filter for every week's topic. The weekly system itself: fifteen minutes to pick a topic from real client work, thirty to draft against your voice reference, fifteen to edit and send, to one platform or one private list, at a fixed weekly time.
 
+**Filled in, as an example:** Priya's version, from chapter seven. "I help small consumer brands build a visual identity that survives their first real growth spurt, because most of my clients come to me after outgrowing a logo someone made them for free."
+
 ## The five-minute weekly bookkeeping routine (chapter eight)
 
 - Photograph or forward every receipt from the week, the moment you have it.
 - Paste the week's transactions and ask for a plain categorization against standard expense categories, flagged for anything ambiguous.
 - Move your tax percentage to a separate account immediately, triggered weekly or per payment depending on how your income arrives.
+
+**Filled in, as an example:** Marcus's version, triggered by payment rather than by the calendar. A milestone invoice for a third of a project's value clears on a Tuesday; the same day, before the money touches his main account, his saved tax percentage moves straight to the separate holding account chapter eight describes, regardless of what day his weekly routine usually falls on.
 
 ## The three-part "yes, and" scope script (chapter nine)
 
