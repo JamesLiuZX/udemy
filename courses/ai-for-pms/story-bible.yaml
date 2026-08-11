@@ -52,6 +52,25 @@ callbacks:
       pushed past drafting a summary into acting on a ticket like 4471 (a
       double charge needing a refund). The rest of the section's refund-agent
       thread (6.4, 6.6, 6.7, 6.8) inherits this framing from 6.1.
+  - lecture: "7.2"
+    use: The measured-versus-guessed conversations-per-user estimate uses the
+      support-ticket summariser as the worked example of borrowing a usage
+      figure from the closest real analogue (ticket volume on the channel it
+      replaces) instead of inventing one. Added during Section 7's
+      verification pass, swapped in for a generic "support chat feature".
+  - lecture: "7.5"
+    use: The margin trap is illustrated with the summariser scaled to the
+      desk that clears the most tickets a month, a retention win on the
+      engagement dashboard that can cross into a margin loss once its real,
+      scaling cost is set against its allocated revenue. Added during
+      Section 7's verification pass, alongside the section's own generic
+      light/heavy/power-user table (kept, since it teaches the crossover
+      shape more clearly than a ticket-specific version would).
+  - lecture: "7.7"
+    use: The workshop's fallback prompt ("pick a feature you actually own...
+      or the refund agent this course keeps returning to") inherits 6.1's
+      refund-agent framing of the summariser as the default worked example
+      when a learner has nothing of their own to model.
 
 # Canonical numbers. A different value for any of these in any lecture is a
 # continuity bug, and qc.py's continuity check (docs/04 §7) matches on them.
