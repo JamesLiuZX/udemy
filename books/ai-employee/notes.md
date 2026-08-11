@@ -205,6 +205,14 @@ Progress (updated per chapter as expansion happens):
       `id` field) controls displayed chapter order, so "15 Templates and
       Worksheets" was repositioned to the end of the `chapters:` list
       without a file rename; see the comment left in book.yaml.
+- [x] 17 Common Failure Patterns Across Task Types — new chapter.
+      Synthesizes the book's own examples into five patterns by task
+      shape (writing/drafting, categorization/triage, scheduling,
+      research/summarization, chains), a new organizing lens rather than
+      new anecdotes. One `[KEY-INSIGHT]` (IBM's 2026 ErrorMap/ErrorAtlas
+      taxonomy across 73 models, on omission/misinterpretation being as
+      common as fabrication). 1,078 words, 5pp standalone. Rendered pages
+      checked.
 - [ ] Additional chapters as needed to close the remaining gap to
       [180, 240]pp (still well short after 11-16; author directive is to
       keep adding genuine chapters rather than pad, checking in if

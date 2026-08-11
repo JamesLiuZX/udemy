@@ -96,6 +96,9 @@ chapters:
   - id: "16"
     title: "Measuring What Delegation Actually Saves You"
     file: manuscript/16-measuring-what-delegation-actually-saves-you.md
+  - id: "17"
+    title: "Common Failure Patterns Across Task Types"
+    file: manuscript/17-common-failure-patterns-across-task-types.md
   # "15 Templates and Worksheets" (manuscript/15-templates-and-worksheets.md)
   # is deliberately placed LAST in this list, after every substantive
   # chapter, even though its id/filename predate later-added chapters.
