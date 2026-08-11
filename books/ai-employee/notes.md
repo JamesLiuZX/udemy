@@ -170,7 +170,16 @@ Progress (updated per chapter as expansion happens):
       second worked example (the norm catching a real error three months
       later), and a team-standard worksheet. 1,681 words, 6pp standalone.
       Rendered pages checked.
-- [ ] 14 Objections and Edge Cases (new)
+- [x] 14 Objections and Edge Cases — new chapter. Twelve real objections
+      argued honestly (time, model drift, regulated work, distrust of AI
+      on principle, team disagreement, feeling like overkill, a past bad
+      experience, sensitive data, "won't AI just improve," a
+      company-mandated tool, "isn't this just common sense," telling
+      earned trust from complacency, an ever-growing failure-mode list),
+      each conceding real ground rather than a strawman. One
+      `[KEY-INSIGHT]` (the EU AI Act's Article 14 human-oversight
+      requirement, backing the regulated-work answer with real, current
+      law). 1,594 words, 7pp standalone. Rendered pages checked.
 - [ ] 15 Templates and Worksheets (new)
 - [ ] Full rebuild + EPUB rebuild + `qc.py --release` at the new target,
       gutter confirmed at 0.5in against the real page count. Recheck real
