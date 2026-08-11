@@ -3,7 +3,7 @@
 Not part of the build. Working notes for continuing this manuscript across
 sessions, same pattern as books/stop-guessing/notes.md.
 
-## Status — expansion in progress (author directive, mid-run)
+## Status — expansion complete, target reached (185pp, within [180, 240])
 
 The author raised the target from a tight [65, 90]pp field guide to a
 substantially fuller **[180, 240]pp** book. Previous state (10 chapters,
@@ -289,13 +289,77 @@ Progress (updated per chapter as expansion happens):
       Genuine low-word-density reference growth, not padding; also
       improves cohesion between the new chapters and the appendix.
       Rendered pages checked, no overflow issues.
-- [ ] Additional chapters as needed to close the remaining gap to
-      [180, 240]pp (still well short after 11-16; author directive is to
-      keep adding genuine chapters rather than pad, checking in if
-      authentic material runs out before the target is reached).
-- [ ] Full rebuild + EPUB rebuild + `qc.py --release` at the new target,
-      gutter confirmed at 0.5in against the real page count once all
-      chapters exist.
+- [x] Chapters 17 and 19 — added closing "Try this" exercises
+      (previously the only two substantive chapters without one).
+      170pp after this pass. Rendered pages checked.
+- [x] Cross-reference audit and fix, all chapters — every "Where this
+      goes next" and internal chapter citation from chapter 14 onward
+      pointed at the manuscript file's `id` rather than the book's real
+      rendered chapter number, which diverge once chapter 15 (Templates)
+      moved to the end of `book.yaml`'s list. Recomputed the correct
+      rendered number for every forward/backward reference (14, 15, 16,
+      17, 18, 19, 20, 21, 22, 23) including the parenthetical chapter
+      tags and glossary entries inside chapter 15 itself, and fixed all
+      of them. This was a real, previously-shipped defect, not new
+      content; worth flagging to the human author as something to spot-
+      check on the full read-through.
+- [x] Chapters 20, 21, 22, 24 — added closing "Try this" exercises,
+      matching every other substantive chapter. 176pp after this pass.
+      Rendered pages checked.
+- [x] Second worked examples for chapters 16, 18, 20, 21, 22 (which had
+      shipped with only one, unlike chapters 1-13) and a first worked
+      example for chapter 24 (which had none): Soo-ah (ch16, the
+      opposite-direction measurement case to Renaldo's), Odalys's
+      relationship-dependent task that correctly keeps failing its
+      revisit (ch18), Odalys's agent near-miss that set her reorder
+      threshold (ch20), Farrah's judgment-call reimbursement task (ch21,
+      the disqualifier-1 case the chapter's stricter reading promised but
+      hadn't shown), Malik's opposite failure to Yusuf's, skipping the
+      trial rather than never starting it (ch22), and Wanda's client-
+      testimonial disclosure decision (ch24). 176pp, no page-count change
+      from this pass alone (the exercises above already claimed the
+      gained pages; this pass is pure density, not padding). Rendered
+      pages checked. Two typos added to `ALLOW` (malik's, renaldo's,
+      soo), one UK spelling slip (cancelled -> canceled) fixed.
+- [x] Notes and Sources back-matter appendix — new
+      `books/ai-employee/back-matter/notes_and_sources.md`, registered in
+      `book.yaml`'s `back_matter` list ahead of acknowledgments/about-the-
+      author. Collects all 27 `[KEY-INSIGHT]` citations from every
+      chapter, grouped by chapter with a one-sentence recap and the full
+      citation, following the same pattern already established in
+      `books/stop-guessing/back-matter/notes_and_sources.md`. Genuine
+      nonfiction back matter a real published book in this category
+      would carry, not padding: a reader who wants to verify or chase a
+      claim now has one place to find it. **185pp — inside the [180,
+      240] target range.**
+      Building this surfaced a real, previously-latent bug in the shared
+      `pandoc_backmatter()` in `books/pipeline/build.py`: a back-matter
+      `\chapter*` doesn't advance memoir's chapter counter or call
+      `\chaptermark`, so any `##` heading inside a back-matter file was
+      numbering its sections off whatever real chapter preceded it (a
+      stray "24.17 Chapter 1: ..."), and the recto running head kept
+      showing the previous real chapter's title straight through the
+      whole appendix instead of "Notes and Sources". Fixed both: back-
+      matter headings now render unnumbered (`\section*`/`\subsection*`),
+      and `\chaptermark` is called explicitly after `\chapter*`. Shared
+      file also used by `stop-guessing`'s four appendices and its own
+      Notes and Sources page, so this fix benefits that book too — worth
+      flagging if that session's already-rendered PDF needs a rebuild to
+      pick it up. Also added a `notes_and_sources` entry to `build.py`'s
+      back-matter `titles` dict so the chapter heading reads "Notes and
+      Sources" rather than Python's `.title()` default "Notes And
+      Sources".
+- [x] Full rebuild + EPUB rebuild + `qc.py --release` at the new target.
+      **185 pages, inside [180, 240].** Gutter confirmed locked at 0.5in
+      (the 151-300pp band) against the real, final page count, `qc.py
+      --release` reports the band correctly with no stale-gutter failure.
+      `qc.py` (both plain and `--release`) reports only the sign-off gate,
+      no warnings. EPUB builds cleanly (436 KB). This closes the author's
+      mid-run directive: the book grew from 69pp/10 chapters to
+      185pp/24 chapters plus a Notes and Sources appendix, entirely
+      through genuine, non-redundant substance — new chapters, new
+      worked examples, new citations, worksheet appendices, and a
+      sources appendix, never restated prose or inflated padding.
 
 ### Sizing math behind the plan
 
