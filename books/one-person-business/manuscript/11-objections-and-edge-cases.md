@@ -4,7 +4,7 @@
 
 She does now, and the honest answer she settled on is worth stating here before anything else in this chapter: yes, she wrote it, using a tool the way she'd use a calculator or a spell-checker, on a structure and in a voice that were entirely hers, built from her own past work and her own read of his specific situation. That answer holds up. It's worth having ready before the question catches you off guard the way it caught Priya.
 
-Nine chapters of specific fixes tend to raise general worries that don't fit neatly inside any one of them. This chapter collects the ones that come up most, honestly, rather than pretending they don't exist.
+Ten chapters of specific fixes tend to raise general worries that don't fit neatly inside any one of them. This chapter collects the ones that come up most, honestly, rather than pretending they don't exist.
 
 ## "Isn't this dishonest? Am I misleading my clients?"
 
@@ -30,7 +30,7 @@ Only if you let the draft go out exactly as generated, which every chapter in th
 
 ## "What if the AI gets something wrong and I don't catch it?"
 
-This is the risk this entire book takes most seriously, and it's why chapter thirteen exists as a dedicated closing argument rather than a footnote. The short version, repeated throughout: never send a draft unread, treat a model's confidence as informationless (it sounds equally sure whether it's right or wrong), and scale your verification effort to what's actually at stake, a typo in a day-3 nudge costs an awkward exchange, a wrong number in a contract clause costs real money. The templates and scripts in this book exist specifically to make the review step fast and habitual, not to remove it.
+This is the risk this entire book takes most seriously, and it's why chapter fourteen exists as a dedicated closing argument rather than a footnote. The short version, repeated throughout: never send a draft unread, treat a model's confidence as informationless (it sounds equally sure whether it's right or wrong), and scale your verification effort to what's actually at stake, a typo in a day-3 nudge costs an awkward exchange, a wrong number in a contract clause costs real money. The templates and scripts in this book exist specifically to make the review step fast and habitual, not to remove it.
 
 ## "I work in a regulated industry. Does any of this still apply?"
 
@@ -58,4 +58,4 @@ Every system in this book costs real time once, up front, and Marcus's two-week 
 
 ## Where this goes next
 
-Chapters eleven and twelve stop answering objections and start showing the whole stack in motion: two full worked case studies over a real quarter, then a week-by-week plan for building every piece of it yourself, starting from wherever you are right now.
+Chapters twelve and thirteen stop answering objections and start showing the whole stack in motion: two full worked case studies over a real quarter, then a week-by-week plan for building every piece of it yourself, starting from wherever you are right now.

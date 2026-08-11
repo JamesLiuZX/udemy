@@ -67,4 +67,4 @@ Add up the total. Most freelancers running this exercise for the first time are 
 
 ## Where this goes next
 
-Chapter ten turns to the objections and edge cases the nine chapters so far tend to raise. From there, eleven and twelve put the whole stack to work in worked case studies and a week-by-week build plan, before thirteen closes the book with the honest edge of everything in it: the specific point where a real accountant, lawyer, or assistant earns their fee, and automating past that line stops being efficient and starts being a real risk to the business you're trying to protect.
+Chapter ten turns to a question the nine chapters so far mostly sidestepped: what to actually charge. Eleven works through the objections and edge cases this stack tends to raise. From there, twelve and thirteen put the whole stack to work in worked case studies and a week-by-week build plan, before fourteen closes the book with the honest edge of everything in it: the specific point where a real accountant, lawyer, or assistant earns their fee, and automating past that line stops being efficient and starts being a real risk to the business you're trying to protect.

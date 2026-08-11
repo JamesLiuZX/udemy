@@ -34,9 +34,9 @@ Every chapter in this book drew some version of this line already: contracts, ta
 
 **Does this require someone who'll stand behind the answer?** This is the one the Mata v. Avianca lawyers skipped, and it's the sharpest test of all. A tool has no license to lose, no bar association to answer to, no professional judgment shaped by years of seeing what actually goes wrong in practice. When you need not just an answer but someone accountable for that answer being right, that's not a prompting problem. That's the actual job description of a lawyer, an accountant, or any licensed professional, and it's the one thing this entire book has never claimed to replace.
 
-## What twelve chapters of this book actually add up to
+## What thirteen chapters of this book actually add up to
 
-None of the chapters before this one were wrong to automate what they automated. The proposal brief, the invoice template, the inbox triage, the contract first-read, the marketing system, the bookkeeping routine, the scope script, and the objections and case studies that stress-tested all of it: every piece took a task that was genuinely low-stakes, genuinely reversible, and genuinely repetitive, and gave you back the hours it used to cost. That's not a small thing. Across a year, it's the difference between a business that runs you ragged on its own admin and one where the admin finally gets out of the craft's way.
+None of the chapters before this one were wrong to automate what they automated. The proposal brief, the invoice template, the inbox triage, the contract first-read, the marketing system, the bookkeeping routine, the scope script, the pricing worksheet, and the objections and case studies that stress-tested all of it: every piece took a task that was genuinely low-stakes, genuinely reversible, and genuinely repetitive, and gave you back the hours it used to cost. That's not a small thing. Across a year, it's the difference between a business that runs you ragged on its own admin and one where the admin finally gets out of the craft's way.
 
 What this chapter adds isn't a retraction of any of that. It's the missing edge: the reminder that a stack built to handle the repetitive 90 percent was never meant to handle the 10 percent where the stakes, the irreversibility, or the need for someone accountable make a real professional the only correct answer. Knowing which is which, task by task, is the actual skill this book has been teaching the whole way through, not "use AI" and not "don't," but a working sense of where that line sits and the honesty to stop at it.
 
@@ -75,7 +75,7 @@ Any one of those three landing on the serious end, real money, no undo, nobody w
 
 ## Where this goes next
 
-The last chapter isn't a new argument. It's every template, script, and worksheet from the previous thirteen chapters, collected in one place and formatted to actually fill in, so building the stack this book describes doesn't mean flipping back through chapters looking for the exact wording of a day-14 invoice reminder.
+The last chapter isn't a new argument. It's every template, script, and worksheet from the previous fourteen chapters, collected in one place and formatted to actually fill in, so building the stack this book describes doesn't mean flipping back through chapters looking for the exact wording of a day-14 invoice reminder.
 
 ## The stack, finished
 

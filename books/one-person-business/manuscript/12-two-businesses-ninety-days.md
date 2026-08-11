@@ -12,7 +12,7 @@ Neither business transformed overnight, and neither story is a highlight reel. B
 
 By the end of the first month, the proposal brief from chapter three was built and used twice, once for a new inquiry that turned into a signed project within four days instead of Priya's old two-week average, once for a poor-fit lead she was almost relieved to lose quickly rather than agonize over for a week.
 
-**Month two.** This is when the contract-reading workflow from chapter six actually got tested, on the eleven-page agency contract this book opened its sixth chapter with. The three-pass read surfaced the exact ambiguity described there, and this time Priya sent the question instead of assuming and signing. The client's answer came back within a day, unbothered, and the clause got clarified in writing before anyone signed anything. Nothing dramatic happened. That was the point: the dramatic version, the one where an unclear clause becomes a real dispute eighteen months later, is the version chapter thirteen is about, and it's the version this system exists to prevent quietly, before it ever becomes a story worth telling.
+**Month two.** This is when the contract-reading workflow from chapter six actually got tested, on the eleven-page agency contract this book opened its sixth chapter with. The three-pass read surfaced the exact ambiguity described there, and this time Priya sent the question instead of assuming and signing. The client's answer came back within a day, unbothered, and the clause got clarified in writing before anyone signed anything. Nothing dramatic happened. That was the point: the dramatic version, the one where an unclear clause becomes a real dispute eighteen months later, is the version chapter fourteen is about, and it's the version this system exists to prevent quietly, before it ever becomes a story worth telling.
 
 Marketing started in month two as well, later than the other pieces, because Priya kept deprioritizing an hour that felt optional against work that felt urgent, the exact trap chapter seven named. What actually got it moving wasn't willpower. It was stacking it onto a day she'd already protected for the inbox triage, so the marketing hour rode along on a habit that was already sticking rather than needing to become its own new habit from nothing.
 
@@ -53,8 +53,8 @@ What both stories do show is the actual shape of the payoff this book has argued
 
 ## Try this: sketch your own ninety days
 
-Before chapter twelve turns this into a week-by-week plan, take five minutes to sketch what your own version of these ninety days might actually look like. Which chapter's system would you build first, the one your own time audit from chapter one already pointed at? Which one do you expect to need real revision before it fits your voice, the way Priya's did? You don't need precise answers. You need a rough map, because chapter twelve is about to turn it into a schedule.
+Before chapter thirteen turns this into a week-by-week plan, take five minutes to sketch what your own version of these ninety days might actually look like. Which chapter's system would you build first, the one your own time audit from chapter one already pointed at? Which one do you expect to need real revision before it fits your voice, the way Priya's did? You don't need precise answers. You need a rough map, because chapter thirteen is about to turn it into a schedule.
 
 ## Where this goes next
 
-Chapter twelve takes everything both case studies used and sequences it: a week-by-week plan for building this entire stack from nothing, in the order that actually works, whether your business runs closer to Priya's rhythm or Marcus's.
+Chapter thirteen takes everything both case studies used and sequences it: a week-by-week plan for building this entire stack from nothing, in the order that actually works, whether your business runs closer to Priya's rhythm or Marcus's.

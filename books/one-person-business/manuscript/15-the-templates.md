@@ -2,7 +2,7 @@
 
 Every template in this chapter already appeared somewhere in the previous thirteen, in the middle of a story about Priya or Marcus using it under real conditions. This chapter strips the story back out. What's left is the reusable part: every worksheet, script, and checklist from this book, collected in one place and written to be filled in directly, not read once and paraphrased later from memory.
 
-Work through these in whatever order chapter twelve's plan already has you building them, or use this chapter as a standalone reference once the stack is running and you just need the exact wording of a specific piece again.
+Work through these in whatever order chapter thirteen's plan already has you building them, or use this chapter as a standalone reference once the stack is running and you just need the exact wording of a specific piece again.
 
 ## The one-week time audit (chapter one)
 
@@ -10,7 +10,7 @@ Track every work session for one week: the time, the rough duration, and one wor
 
 > [time], [duration], [craft or admin], [one-line note on what it was]
 
-At the end of the week, total each column and circle the single admin task that cost the most total minutes. That's the one to build first if you're not following chapter twelve's default order.
+At the end of the week, total each column and circle the single admin task that cost the most total minutes. That's the one to build first if you're not following chapter thirteen's default order.
 
 ## The six-question tool audit (chapter two)
 
@@ -40,6 +40,16 @@ Build once per type of engagement, reuse with specifics swapped in.
 > **(Project-based work only) What's out of scope:** what's explicitly not included, what assumptions the price depends on, what happens if either turns out wrong.
 
 [PULLQUOTE: Every template here already did its work once, inside a real story. What's left is the part worth keeping.]
+
+## The rate math worksheet and raise script (chapter ten)
+
+> Target annual income: [dollar amount]
+>
+> Divided by actual billable hours per year (from your chapter one time audit): [hours]
+>
+> Equals minimum viable hourly rate: [dollar amount]
+
+> "I'm updating my rates starting [date], to [new rate]. This applies to new projects going forward; anything already in progress stays at the rate we agreed. Happy to talk through it if useful."
 
 ## The invoice template and four-message follow-up sequence (chapter four)
 
@@ -87,11 +97,11 @@ Once written, it's the filter for every week's topic. The weekly system itself: 
 
 Before sending it, run the two-line check: paste the original scope alongside the new request and ask plainly, "is this inside or outside what was quoted, and by roughly how much."
 
-## The confidentiality check (chapter ten)
+## The confidentiality check (chapter eleven)
 
 Before pasting anything client-related into an AI tool: check the tool's data-retention and training-use policy, check your contract's confidentiality clause, and check whether a no-training-use business tier is available and worth paying for. When in doubt, strip identifying details, names, dollar figures, anything that would matter if it leaked, before pasting.
 
-## The two-minute professional check (chapter thirteen)
+## The two-minute professional check (chapter fourteen)
 
 Before acting on any AI-generated answer to something that matters:
 

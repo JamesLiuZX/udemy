@@ -58,7 +58,7 @@ This is also where AI genuinely helps beyond the first draft: paste your day-14 
 
 This chapter will not tell you to fire off a day-3 nudge to every client the literal morning after a due date passes. Some client relationships run on a slightly looser rhythm than the calendar suggests, and treating every late payment as identical, regardless of history, ignores information you actually have. Use the sequence as a default, not a rule that overrides judgment about a specific client you've worked with for years.
 
-It also won't cover what to do about genuinely unpaid work, months overdue, where a firm message has already failed. That's a collections and, in the worst cases, a legal question, not a template question, and chapter thirteen is where this book is honest about exactly that line.
+It also won't cover what to do about genuinely unpaid work, months overdue, where a firm message has already failed. That's a collections and, in the worst cases, a legal question, not a template question, and chapter fourteen is where this book is honest about exactly that line.
 
 [TAKEAWAYS]
 

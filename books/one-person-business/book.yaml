@@ -79,20 +79,23 @@ chapters:
     title: "Protecting Your Scope"
     file: manuscript/09-protecting-your-scope.md
   - id: "10"
-    title: "Objections and Edge Cases"
-    file: manuscript/10-objections-and-edge-cases.md
+    title: "Pricing and Raising Your Rates"
+    file: manuscript/10-pricing-and-raising-your-rates.md
   - id: "11"
-    title: "Two Businesses, Ninety Days: Worked Case Studies"
-    file: manuscript/11-two-businesses-ninety-days.md
+    title: "Objections and Edge Cases"
+    file: manuscript/11-objections-and-edge-cases.md
   - id: "12"
-    title: "The 30-Day Build"
-    file: manuscript/12-the-30-day-build.md
+    title: "Two Businesses, Ninety Days: Worked Case Studies"
+    file: manuscript/12-two-businesses-ninety-days.md
   - id: "13"
-    title: "When to Actually Hire a Human"
-    file: manuscript/13-when-to-actually-hire-a-human.md
+    title: "The 30-Day Build"
+    file: manuscript/13-the-30-day-build.md
   - id: "14"
+    title: "When to Actually Hire a Human"
+    file: manuscript/14-when-to-actually-hire-a-human.md
+  - id: "15"
     title: "The Templates"
-    file: manuscript/14-the-templates.md
+    file: manuscript/15-the-templates.md
 
 back_matter:
   - acknowledgments
