@@ -3,46 +3,93 @@
 Not part of the build. Working notes for continuing this manuscript across
 sessions, same pattern as books/stop-guessing/notes.md.
 
-## Status — manuscript complete, release-gate clean
+## Status — expansion in progress (author directive, mid-run)
 
-- All 10 chapters are written, built, and visually inspected (rendered
-  pages checked for every chapter, not just compiled). None of the 10
-  chapters use `[AUTHOR-INPUT: ...]`; every chapter's load-bearing evidence
-  is a `[KEY-INSIGHT: claim || source]` instead, each one independently
-  verified against a live web search at writing time, consistent with the
-  repo's stated default for this book (`books/CLAUDE.md` §1,
-  `books/docs/02-research-and-sourcing.md`). There is nothing blocking on
-  `[AUTHOR-INPUT]` anywhere in the manuscript right now.
-- Full build (`python3 books/pipeline/build.py --book ai-employee`): 69
-  pages. EPUB build (`build_epub.py`): succeeds, 347 KB. Front matter,
-  table of contents, and a chapter opener spread were all visually
-  spot-checked in the full assembled PDF (not just the per-chapter
-  `--only` renders) — running heads, recto chapter starts, and TOC page
-  numbers all check out.
-- `qc.py --book ai-employee --release`: **1 fail, 0 warn** — the single
-  fail is `verified: false`, which is correct and must stay that way until
-  the real author reads the whole thing and signs off. That is the only
-  thing standing between this manuscript and being release-ready.
-- `target_pages` was rebased from the initial guess of [120, 170] (the
-  same placeholder stop-guessing started with) down to **[65, 90]**, once
-  the real full-build page count (69pp, all 10 chapters, no back matter
-  yet) was known. Same reasoning stop-guessing used: padding chapters to
-  hit a number that was only ever a guess would violate the no-padding
-  discipline the video course holds, so the target moved to match real,
-  unpadded density instead. 69pp sits inside the 24-150 gutter band
-  (0.375in) with room to spare even if back matter adds a few pages.
-- Toolchain note: this session's environment had neither `pandoc`, a LaTeX
-  toolchain, nor `hunspell` installed at the start. All were installed via
-  `apt-get` (pandoc; texlive-xetex + texlive-latex-recommended +
-  texlive-latex-extra + texlive-fonts-recommended + latexmk; hunspell +
-  hunspell-en-us) before the first build. `qc.py`'s spellcheck silently
-  no-ops when `hunspell` isn't on PATH, so any prior "qc.py clean" report
-  for chapters 01-03 may not have actually run the spellcheck step. Once
-  hunspell was installed, spellcheck flagged real words/names not in its
-  en_US list (character names Priya/Renata, and words like "onboarding",
-  "foodborne", "salesy", "disqualifiers"); these were added to `ALLOW` in
-  `books/pipeline/qc.py`, the sanctioned extension point per that file's
-  own comment, not worked around.
+The author raised the target from a tight [65, 90]pp field guide to a
+substantially fuller **[180, 240]pp** book. Previous state (10 chapters,
+69pp, release-gate clean at the old target) is preserved in git history;
+this section tracks the expansion, not a restart.
+
+**The expansion rule, absolute:** grow through substance, never padding.
+No restating a point in more words, no inflated prose, no drop in
+information density. If a chapter is complete at its current length, the
+book grows by adding a new chapter, not by bloating that one. Every added
+worked example is a genuinely new, distinct scenario, not a rephrasing of
+the existing one. Every added `[KEY-INSIGHT]` is independently verified
+against a live search at writing time, same standard as the first pass,
+and only added where it strengthens a claim already made, not stapled on
+to hit a page count.
+
+**Gutter band mechanic**: `book.py`'s `margins()` picks the gutter from
+`target_pages`'s midpoint before a real page count exists, and from the
+real rendered page count once `build.py` has actually run (`gutter_for_pages()`
+in `books/pipeline/book.py`, table in `book.py:GUTTER_BANDS`). There is no
+separate hand-set "pages-band" class option to touch in `kdp-book.cls`
+itself; raising `target_pages` to [180, 240] (midpoint 210) already moved
+the pre-render guess to the 151-300 band, 0.5in, confirmed via
+`Book.margins()`. The real, final gutter locks in on the first full
+rebuild once the actual page count is known; `qc.py --release` checks the
+built PDF's actual gutter against `gutter_for_pages(real_pages)` and fails
+if a stale 0.375in survives a rebuild that crossed the 150pp line.
+
+### Revised outline
+
+Chapters 01-10 keep their numbers and core argument; each is being
+expanded in place (see "Expansion plan per chapter" below), not replaced.
+Three new chapters are being added after them:
+
+| Chapter | Addition |
+| --- | --- |
+| 11 Four Delegations, Worked in Full | New. Two extended, deep case studies (not the same small worked examples used inline elsewhere) that each run the *entire* method start to finish on one real business, showing how brief, trial, spot-check, failure-mode list, standing instruction, disqualifiers, roster, and chaining actually interact in one continuous story rather than one skill at a time. |
+| 12 Objections and Edge Cases | New. FAQ-style chapter, real pushback argued honestly: "I don't have time to write a five-part brief," "the tool changed and broke my failure-mode list," "what about regulated work," "what if I don't trust AI at all," and similar. Each answer names the objection's real merit before answering it, consistent with "name the limit of the advice" already governing the rest of the book. |
+| 13 Templates and Worksheets | New. Reference appendix, not narrative: the five-part brief template, the failure-mode list template, the roster template from chapter eight, the four-disqualifier worksheet from chapter seven, and a blank 30-day calendar page, laid out as literal fillable pages. No `[KEY-INSIGHT]`/`[PULLQUOTE]`/`[TAKEAWAYS]` expected here; it's reference material, not argument. |
+
+### Expansion plan per chapter (01-10)
+
+Each chapter gets, where it genuinely earns it (not mechanically all of
+the below in every chapter):
+
+- A second worked example, a genuinely distinct scenario from the
+  chapter's existing one, integrated into the argument rather than
+  tacked on at the end.
+- A closing "Try this" exercise or checklist the reader can act on
+  immediately, placed before `[TAKEAWAYS]`.
+- A second `[KEY-INSIGHT]` only where a second, independently verified
+  source materially strengthens a claim already being made (the
+  sourcing standard's "one well-chosen citation is the target, not a
+  ceiling" still governs; this is not "every chapter gets exactly two").
+
+Progress (updated per chapter as expansion happens):
+
+- [ ] 01 The Delegation Problem
+- [ ] 02 Writing the Job Description
+- [ ] 03 The Trial Task
+- [ ] 04 Checking the Work Without Redoing It
+- [ ] 05 Learning Its Failure Modes
+- [ ] 06 Feedback That Actually Sticks
+- [ ] 07 When to Fire It
+- [ ] 08 Your Second Hire, and Your Third
+- [ ] 09 The Team of One
+- [ ] 10 A 30-Day Delegation Plan
+- [ ] 11 Four Delegations, Worked in Full (new)
+- [ ] 12 Objections and Edge Cases (new)
+- [ ] 13 Templates and Worksheets (new)
+- [ ] Full rebuild + EPUB rebuild + `qc.py --release` at the new target,
+      gutter confirmed at 0.5in against the real page count.
+
+### Sizing math behind the plan
+
+Pre-expansion: 10 chapters, 15,166 words, real full-build page count 69pp
+(word-count estimator undercounts real pages by roughly 1.45x once
+`[PULLQUOTE]`/`[KEY-INSIGHT]`/`[TAKEAWAYS]` box whitespace and chapter-opener
+spacing are counted, per `book.py`'s plain word/320wpp estimator vs. the
+actual rendered PDF). To land inside [180, 240]pp real, targeting roughly
+42,000-50,000 total words across 13 chapters: existing chapters roughly
+double to 2,500-3,500 words each with real added substance, the two new
+narrative chapters (11, 12) at roughly 3,500-4,500 words each, chapter 13
+lighter on prose (worksheet format) but still a real page count from
+layout. Check actual word/page count after each chapter and adjust the
+remaining ones rather than front-loading a rigid per-chapter quota.
 
 ## What's left for the human author
 
@@ -51,9 +98,8 @@ sessions, same pattern as books/stop-guessing/notes.md.
 - **No `[AUTHOR-INPUT]` markers exist** to fill in — every chapter reached
   for `[KEY-INSIGHT]` instead, per the repo's stated preference. If a
   genuinely strong personal story exists for a specific moment in any
-  chapter (chapter one's "vending machine" opener, or chapter seven's
-  bakery scene, are both natural spots), swapping in a real
-  `[AUTHOR-INPUT: ...]` is still an option, just not a requirement.
+  chapter, swapping in a real `[AUTHOR-INPUT: ...]` is still an option,
+  just not a requirement.
 - **Back matter**: `book.yaml` lists `acknowledgments` and
   `about_the_author` in `back_matter`, but neither
   `books/ai-employee/back-matter/*.md` file exists yet (`build.py` skips a
@@ -78,7 +124,7 @@ giving feedback that sticks, and knowing what never to hand off. Reach for
 management vocabulary the reader already owns before reaching for AI
 vocabulary they don't.
 
-## Chapter map
+## Chapter map (see "Revised outline" above for the current, full version)
 
 | Chapter | Core idea |
 | --- | --- |
@@ -92,6 +138,9 @@ vocabulary they don't.
 | 08 Your Second Hire, and Your Third | Scaling to several delegated tasks without losing track of your own systems |
 | 09 The Team of One | Chaining simple steps together (research, then draft, then format) without turning into a coding book |
 | 10 A 30-Day Delegation Plan | Week-by-week plan from zero to a small working portfolio; closing checklist |
+| 11 Four Delegations, Worked in Full | New: two full, extended case studies running the whole method start to finish |
+| 12 Objections and Edge Cases | New: FAQ-style chapter, real pushback argued honestly |
+| 13 Templates and Worksheets | New: reference appendix, the book's templates as fillable pages |
 
 ## Things to hold onto while writing the rest
 
