@@ -4,6 +4,108 @@ Not part of the build. Working notes for continuing this manuscript across
 sessions, mirroring how courses/ai-for-pms/CLAUDE.md tracked "current state
 and what to do next" while that course was being written.
 
+## 2026-08-11 (editorial pass): manuscript complete, print-ready pending sign-off
+
+Editor directive from the author: a full editorial pass over the finished
+[180, 240]-page manuscript, structural and line edit, citation
+verification, resolve any remaining `[AUTHOR-INPUT: ...]` the sanctioned
+way, then ship a readable deliverable. `verified: false` was explicitly
+**not** touched, per standing instruction; it stays false until the real
+author reads the book end to end.
+
+**Structural edit.** Read all 17 chapters and all 5 back-matter pieces in
+full, in order, checking continuity, chapter numbering, cross-references,
+and repeated material. Ran `grep -noiE "[Cc]hapters? (one|...|seventeen)"`
+against every manuscript and back-matter file and manually checked every
+match against the actual current chapter map; all resolved correctly, no
+stale references survived the earlier renumbering pass. No padding found:
+every chapter carries specific, non-repeated content, and the recurring
+structural devices (`Say the honest caveat`, `Notice that...`, `Where this
+goes next`) appear a handful of times across 17 chapters, consistent with
+an intentional stylistic signature rather than filler.
+
+**Line edit and proofread.** Installed `hunspell` + `hunspell-en-us`
+temporarily (not normally installed in this environment, see the toolchain
+note below) to run a real spellcheck pass, then manually reviewed every
+flagged word. Found and fixed five genuine issues:
+- Two British spellings that had slipped past the `en_US` style setting:
+  "maths" -> "math" (twice, chapter 7) and "defence" -> "defense"
+  (chapter 8).
+- "judgement" -> "judgment" in `book.yaml`'s KDP description field (not
+  part of the interior PDF, but still en_US-inconsistent).
+- Two awkward word choices that read as errors on a close pass:
+  "coverable" (chapter 7, reworded to "a task whose blast radius can't be
+  bounded") and "checkpointed" (chapter 7's table, reworded to "even with
+  a checkpoint added"), plus "informationally" in chapter 2, reworded to
+  "purely to inform a homeowner's estimate."
+Everything else hunspell flagged (Arup, Buolamwini, Gebru, Gerstner,
+Nabla, Okafor, Timnit, Zillow, Zestimate, iBuying, chatbot(s), eval,
+leaderboard, misclassifying, mistranscribe, offboarding, overcorrect(ion),
+Recommender, asker's, data's, bootcamps) is a real proper noun or a real
+English/tech word absent from the en_US dictionary, verified by hand, not
+a typo. Uninstalled hunspell again afterward to restore `qc.py`'s
+documented graceful no-op fallback, matching the "clean apart from the
+verified gate" release bar and the shared-pipeline scope discipline held
+throughout this project (growing the shared `ALLOW` list in
+`books/pipeline/qc.py` is out of scope for a stop-guessing-only session).
+Checked em dashes (`grep -rn "—"`, zero remaining), banned-tell phrases,
+and double-space/repeated-word patterns across every file: clean.
+
+**Citation verification.** All 30 `[KEY-INSIGHT: ...]` citations were
+already live-searched at writing time across earlier sessions. For this
+pass, re-verified six of the higher-risk ones live (specific quotes or
+exact figures, where memory drift is most likely): the Klarna CEO quote
+("we went too far... we focused too much on cost"), MD Anderson's
+original "six-month, $2.4 million" IBM Watson pilot scope, Amazon's
+hiring tool detail ("penalized graduates of two all-women's colleges"),
+and the Microsoft Copilot CW1226324 bug (already triple-sourced when
+written). All six confirmed accurate against multiple independent
+sources. No corrections needed.
+
+**`[AUTHOR-INPUT: ...]` markers.** `grep -rn "AUTHOR-INPUT" manuscript/`
+returns zero matches: no chapter carries one, so there was nothing to
+restructure per books/CLAUDE.md §1's sanctioned path (replace a personal
+anecdote with verified research or the book's own running examples).
+The only two markers left are in `back-matter/acknowledgments.md` and
+`back-matter/about_the_author.md`, both structurally author-exclusive
+content (a real name, a real thank-you list) that no research substitute
+can honestly fill. Left both blocking, exactly as books/CLAUDE.md
+sanctions ("Leaving it blocking the build is correct behaviour"), and
+listed as a remaining author action below. `book.yaml`'s `author: "Your
+Name"` placeholder is untouched for the same reason.
+
+**Final release build.** Full PDF (181 pages, unchanged from the last
+session's build; the line edits didn't shift the page count), EPUB
+(valid zip, fonts embedded), `qc.py --release`: **1 fail, 0 warn**, only
+the `verified: false` gate. Visually spot-checked front matter (half
+title, title page, dedication, TOC), every chapter opener, and several
+table/box pages across the full page range: all recto, all correctly
+running-headed, no widow/orphan, no table overflow. Committed the
+interior PDF to `proofs/stop-guessing.pdf`, a deliberate, author-
+requested exception to the normal never-commit-`build/`-artifacts rule,
+specifically so the author can read the finished interior directly on
+GitHub without running the toolchain themselves. `build/` itself stays
+gitignored and untracked.
+
+**What's left, and only the author can do it:**
+1. Read all 17 chapters end to end in `proofs/stop-guessing.pdf` (or
+   rebuild from source) and set `verified: true` in `book.yaml` once
+   every claim and anecdote is one they'd personally defend. This is the
+   single remaining blocking gate.
+2. Fill in `back-matter/acknowledgments.md` and
+   `back-matter/about_the_author.md` with real content, and set a real
+   `author:` in `book.yaml` in place of the "Your Name" placeholder.
+3. Spot-check the fast-moving citations in
+   `back-matter/notes_and_sources.md` immediately before upload; the
+   Microsoft Copilot bug (Feb 2026) and the Gartner 2025 prediction are
+   the two most likely to have moved further by print time.
+4. Generate the KDP cover once the final page count (currently 181, may
+   shift slightly if the author's own read prompts further edits) is
+   locked, per books/CLAUDE.md §6.
+5. Complete KDP's publishing-dashboard AI-disclosure questionnaire
+   (AI-assisted, per the copyright page's existing disclosure line) at
+   actual upload time.
+
 ## 2026-08-11: author directive, expansion to [180, 240] pages
 
 The author reviewed the completed-but-tight 97-page manuscript and asked for

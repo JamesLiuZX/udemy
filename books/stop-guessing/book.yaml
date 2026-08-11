@@ -28,7 +28,7 @@ description: |
   passes things that fail in production, and quality arguments get settled
   by whoever is most senior rather than by evidence.
 
-  This book gives you the judgement work that survives every model upgrade:
+  This book gives you the judgment work that survives every model upgrade:
   writing acceptance criteria as evaluation thresholds instead of pass/fail
   rules, building a golden set you can actually defend, pricing a feature
   before it ships instead of on the invoice, scoping an agent with

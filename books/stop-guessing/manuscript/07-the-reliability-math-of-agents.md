@@ -32,7 +32,7 @@ There are two honest responses to this table, and they are not equally efficient
 
 [PULLQUOTE: Ninety-five percent accurate per step sounds excellent. At ten steps, with nothing checking the work in between, it is a coin flip.]
 
-Say the honest caveat plainly, because the maths above assumes something that isn't exactly true: real steps are rarely fully independent. Sometimes that helps a chain do better than raw multiplication predicts, when a checkpoint catches an error before it compounds. Sometimes it hurts, when one bad piece of context early on, a wrong order history, a misread date, quietly drags every step downstream with it. Neither correction changes the shape of the lesson. More autonomous steps between checks means more compounding, in whichever direction a specific chain happens to break, and the multiplied estimate is a far stronger starting position than assuming independence doesn't apply to you.
+Say the honest caveat plainly, because the math above assumes something that isn't exactly true: real steps are rarely fully independent. Sometimes that helps a chain do better than raw multiplication predicts, when a checkpoint catches an error before it compounds. Sometimes it hurts, when one bad piece of context early on, a wrong order history, a misread date, quietly drags every step downstream with it. Neither correction changes the shape of the lesson. More autonomous steps between checks means more compounding, in whichever direction a specific chain happens to break, and the multiplied estimate is a far stronger starting position than assuming independence doesn't apply to you.
 
 ## Blast radius: the two questions that actually matter
 
@@ -71,10 +71,10 @@ Assume a feature has already cleared chapter two's general disqualification chec
 | --- | --- |
 | A workflow could specify every path in advance | Pay for autonomy only where branches genuinely can't be predicted |
 | You can't build a guardrail for its riskiest action | Blast radius with no gate is just blast radius |
-| The reliability math doesn't clear your bar, even checkpointed | More steps won't fix what the maths already ruled out |
+| The reliability math doesn't clear your bar, even with a checkpoint added | More steps won't fix what the math already ruled out |
 | Nobody can meaningfully review its escalations | An escalation path nobody watches isn't a safety valve |
 
-Treat this as a list of independent reasons to stop, not a score to average. A proposal can pass three rows and fail the fourth, and the fourth is still the one that matters: a task with no coverable blast radius doesn't get rescued by acing the other three. It gets rescued by fixing that row, or by not shipping.
+Treat this as a list of independent reasons to stop, not a score to average. A proposal can pass three rows and fail the fourth, and the fourth is still the one that matters: a task whose blast radius can't be bounded doesn't get rescued by acing the other three. It gets rescued by fixing that row, or by not shipping.
 
 Run the refund proposal from the start of this chapter through the table honestly, and the outcome depends entirely on how it's scoped, not on how promising the idea sounds. "Auto-approve refunds under any amount" fails on sight: no cap means the reliability math is never actually checked against a real bar, and any escalation path likely exists on paper only. "Auto-approve refunds under fifty dollars, verified account, capped at three a day" is a different proposal entirely. The blast radius is small and bounded. The chain is short enough that the reliability math holds up. A workflow could nearly specify the whole thing, with the agent's judgment reserved for the genuine edge cases a fixed rule set can't anticipate.
 

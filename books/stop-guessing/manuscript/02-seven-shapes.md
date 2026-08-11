@@ -56,7 +56,7 @@ Before evaluating how well an AI feature performs, ask whether it should exist i
 
 ## Why this isn't about being anti-AI
 
-None of this is an argument for caution as a general posture, and it's worth being clear about that, because "when in doubt, don't" is not actually the lesson here. Zillow's own core business, the search and valuation tool that made Zestimate a household name in the first place, still runs a similar underlying model today, informationally, without an automatic purchase attached to it, and it's one of the most-used real estate tools in the world. The model didn't get safer. The shape did.
+None of this is an argument for caution as a general posture, and it's worth being clear about that, because "when in doubt, don't" is not actually the lesson here. Zillow's own core business, the search and valuation tool that made Zestimate a household name in the first place, still runs a similar underlying model today, purely to inform a homeowner's estimate, without an automatic purchase attached to it, and it's one of the most-used real estate tools in the world. The model didn't get safer. The shape did.
 
 The skill this chapter is teaching isn't caution. It's precision about where the actual risk in a feature lives, so you can put your energy into the one or two shape decisions that matter instead of treating every AI feature as equally dangerous or equally safe.
 
