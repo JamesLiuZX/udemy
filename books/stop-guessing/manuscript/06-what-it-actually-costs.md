@@ -64,11 +64,27 @@ Two dashboards can look at that same power user and reach opposite verdicts, and
 
 Notice which part of that story is the actual lesson and which part is a separate, avoidable mistake. The pricing change itself was the correct response to a real crossover: flat-rate revenue meeting a cost that genuinely scales with usage always eventually needs a structural fix, not a hope that usage stays low. The backlash was a communication failure layered on top of a sound economic decision, and it's worth treating those as two different problems with two different fixes. Get the crossover math right early, the way this chapter has walked through, and the pricing change can happen quietly, ahead of the users who'd actually be affected by it, instead of arriving as a surprise on someone's bill.
 
+## This problem predates AI, it just used to be rare
+
+It's worth being clear that the margin trap isn't a new failure mode invented by language models. It's an old one, and AI features are simply the first category of product where almost every single feature carries a real marginal cost, which makes a trap that used to catch one unlucky product a year into something worth checking by default.
+
+Microsoft learned this the hard way in 2016, years before any of this book's subject matter existed, with a much simpler product: cloud storage. Office 365 had offered "unlimited" OneDrive storage to consumer subscribers on a flat monthly fee. Most users stored a modest, genuinely low-cost amount of data. A small number treated "unlimited" as a literal challenge: Microsoft later said some individual accounts exceeded 75 terabytes of storage, more than fourteen thousand times the average user's usage, all under the same flat subscription price as everyone else. Microsoft ended the unlimited tier in 2016 and capped consumer storage at 1TB.
+
+[KEY-INSIGHT: In 2016, Microsoft discontinued unlimited OneDrive cloud storage for Office 365 consumer subscribers after finding that a small number of accounts had stored more than 75 terabytes of data each under a flat monthly fee, more than 14,000 times the average user's usage. Microsoft capped consumer storage at 1TB going forward. || Source: Microsoft OneDrive team announcement, reported by InformationWeek, "Microsoft Kills Unlimited OneDrive Storage, Blames User Abuse," November 2015.]
+
+The shape is identical to Cursor's, a decade earlier and in a completely unrelated product category: a flat price meets a cost that scales with usage, and the heaviest users, the ones a growth dashboard would have celebrated, are the ones quietly losing the company money. What's different for an AI feature is the odds. Cloud storage only crosses into this trap when a genuinely unusual user shows up, fourteen thousand times average, rare enough that most companies never see it. An AI feature's per-use cost is real for every single user, light and heavy alike, which is why this chapter treats the crossover point as something to calculate before launch rather than something to notice after a support ticket from finance.
+
 ## Fixing it without punishing success
 
 The tempting wrong conclusion here is that heavy usage is the problem. It isn't. Heavy usage is proof the feature works. The actual problem is a flat-rate structure that was never designed to track a cost that isn't flat, and the fix is pricing or limits that scale with cost the same way the cost itself already scales with usage: a tiered plan, a usage-based add-on past a threshold, or a generous but real cap with a clear upgrade path.
 
 Design that fix before the power-user tier exists in large numbers. Retrofitting pricing onto users who are already used to unlimited use is a far harder, far more public conversation than shipping the structure correctly from the start, and it's the conversation Cursor's users had in public in 2025. Set the cap from your own measured crossover point, not a guess: generous enough that a genuinely typical user never touches it, specific enough that it sits comfortably above the point where this chapter's table turns negative. Then treat the whole model, tokens, usage estimates, and crossover point alike, as something to recheck on a schedule, not a one-time exercise filed away after launch. Prices change, models change, and usage patterns shift as a feature matures; a cost model built once and never revisited is exactly how a feature quietly stops making money without anyone noticing until finance asks the question that opened this chapter.
+
+## Find your own crossover point
+
+Take your heaviest real user on any AI feature you own, an actual account, not a hypothetical average, and run their real usage through this chapter's three-level model. If you can't produce that number within an hour, that's this chapter's finding on its own: cost and usage have never been checked against each other for this feature.
+
+If you can produce it, compare the result against current pricing or limits. A margin that's still positive at your heaviest real user's usage is worth writing down and rechecking next quarter. A margin that's already negative is worth raising this week, in plain terms, before that user's usage pattern becomes normal instead of exceptional.
 
 [TAKEAWAYS]
 
