@@ -5,21 +5,22 @@ sessions, same pattern as books/stop-guessing/notes.md.
 
 ## Status
 
-- Chapters 01 through 08 are written and verified-pending-signoff: built,
+- Chapters 01 through 09 are written and verified-pending-signoff: built,
   rendered pages visually inspected, `qc.py` clean beyond the
   `verified: false` and (where present) `[AUTHOR-INPUT]` gates. Chapters 04
-  through 08 have no `[AUTHOR-INPUT]` marker; their load-bearing evidence is
+  through 09 have no `[AUTHOR-INPUT]` marker; their load-bearing evidence is
   a `[KEY-INSIGHT]` instead (see below), consistent with the repo's stated
   default.
-- Chapters 09 and 10 are outlined in `book.yaml` (titles, order) but the
-  manuscript files do not exist yet. `build.py --only 08` (or any of
-  01-08) works today; a full `--book ai-employee` build will fail until
-  every listed chapter has a real file.
+- Chapter 10 is outlined in `book.yaml` (title, order) but the manuscript
+  file does not exist yet. `build.py --only 09` (or any of 01-09) works
+  today; a full `--book ai-employee` build will fail until chapter 10 has a
+  real file too.
 - `target_pages` starts at [120, 170], the same starting estimate used for
-  stop-guessing before any chapter existed. At 8 of 10 chapters,
-  `book.py`'s estimator reads ~38pp; too early to recalibrate the target
-  off of, but worth revisiting once more chapters exist. Don't pad
-  chapters to hit a number that was only ever a guess.
+  stop-guessing before any chapter existed. At 9 of 10 chapters,
+  `book.py`'s estimator reads ~43pp; too early to recalibrate the target
+  off of, but worth revisiting once chapter 10 and front/back matter are
+  in and a full build's real page count is known. Don't pad chapters to
+  hit a number that was only ever a guess.
 - The local environment had neither `pandoc` nor a LaTeX toolchain nor
   `hunspell` installed at the start of this session; all three were
   installed via `apt-get` (pandoc, texlive-xetex + texlive-latex-recommended
