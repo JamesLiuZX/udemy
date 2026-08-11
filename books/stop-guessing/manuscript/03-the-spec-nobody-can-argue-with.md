@@ -32,6 +32,16 @@ Here's the same acceptance criterion, written the old way and the new way, for a
 
 The old version reads fine in a document and settles nothing in a room. The new version is longer, and it's also the only one of the two that a skeptical engineer, a nervous legal reviewer, or a tribunal, could actually check against evidence rather than against a feeling in the room two days before launch.
 
+## A second industry learns the same lesson
+
+Air Canada shows what happens when a threshold is missing from a single customer-facing answer. Rite Aid shows what happens when the same gap sits underneath an entire program, running for years, across hundreds of stores, before anyone outside the company found out.
+
+Rite Aid deployed facial recognition technology in hundreds of its US stores to flag shoppers it believed were likely shoplifters, comparing customers against a watchlist in real time. In December 2023 the Federal Trade Commission announced a settlement banning Rite Aid from using facial recognition for surveillance for five years. The FTC's complaint didn't turn on whether facial recognition can work. It turned on what Rite Aid had never actually checked: the agency found the company had never tested the technology's accuracy before rolling it out, never enforced the image-quality standards the system needed to function reliably, and never adequately trained the employees acting on its alerts. The result, according to the FTC, was a program that disproportionately misidentified women and people of color as shoplifters, sometimes leading staff to search or eject a real customer over a match nobody had verified was reliable in the first place.
+
+[KEY-INSIGHT: The FTC's December 2023 settlement with Rite Aid, the retailer's first algorithmic-unfairness enforcement action, banned Rite Aid from using facial recognition for surveillance for five years. The FTC's complaint centered on Rite Aid's failure to test the technology's accuracy before deployment, its failure to enforce image-quality standards the system needed to function, and its failure to adequately train staff acting on its alerts, resulting in a pattern of false matches that disproportionately flagged women and people of color. || Source: Federal Trade Commission, "Rite Aid Banned from Using AI Facial Recognition After FTC Says Retailer Deployed Technology without Reasonable Safeguards," press release, December 19, 2023.]
+
+Notice that every failure the FTC cited is a missing threshold from this chapter's own two-part spec, just written in the language of a regulatory complaint instead of a product document. "Never tested the technology's accuracy" is the absence of an evaluation threshold. "Never enforced image-quality standards" is the absence of the input conditions a threshold has to specify to mean anything. A spec for that program, written the way this chapter argues for, would have forced someone to write a sentence like "on a representative set of real store footage, including low light and partial-face angles, the system correctly matches a watchlisted individual at least N% of the time, and falsely flags an uninvolved customer no more than M% of the time," and then to actually check it before the cameras went live in a single store, let alone hundreds. Nobody has to guess what would have happened next if that number had come back bad. That's the entire value of writing it down before launch instead of after a five-year ban.
+
 ## Why this isn't extra process for its own sake
 
 If two numeric thresholds sound like bureaucracy layered onto a spec that used to be one paragraph, it's worth being direct about why that reading is backwards. The old one-paragraph spec didn't actually avoid the work. It deferred it, from a deliberate exercise before launch to a reactive scramble after the first customer complaint, the exact trade chapter one's status-update comparison already walked through. The threshold isn't new work invented by this chapter. It's the same work, moved earlier, where it's cheaper and where it protects the launch decision instead of only explaining it after the fact.
@@ -41,6 +51,12 @@ If two numeric thresholds sound like bureaucracy layered onto a spec that used t
 This chapter will not give you one universal threshold number to copy into every spec. Ninety-six percent is right for some features and dangerously low for others; chapter eight is entirely about sizing a threshold to the actual cost of the failure it's guarding against, not picking a number that sounds rigorous.
 
 It also won't turn spec-writing into a solo activity you do at your desk and hand down. A threshold that only you believe in doesn't survive the same room that used to accept "should answer accurately" on faith. Getting a second person to actually apply your threshold the same way you would, consistently, is a separate skill, and it's the entire subject of chapter five.
+
+## Write the sentence, not the paragraph
+
+Take one AI feature you own, shipped or planned, and find its current spec. Find the sentence that describes what "done" means. Read it back and ask honestly: could a skeptical engineer, using only that sentence, determine whether the feature is ready without asking you a follow-up question.
+
+If the answer is no, rewrite it using this chapter's exact template: on a set of N real cases, chosen to include the hard ones, the feature achieves [specific outcome] at least [percentage] of the time, and fails in [specific way] no more than [percentage] of the time. Don't worry yet about whether the percentages are right. Chapter four covers building the case set that number gets measured against, and chapter eight covers sizing the threshold itself to the actual cost of being wrong. For now, the exercise is narrower and cheaper: notice how many specs on your own roadmap are still, honestly, the old way, one paragraph that sounds like a decision and settles nothing.
 
 [TAKEAWAYS]
 
