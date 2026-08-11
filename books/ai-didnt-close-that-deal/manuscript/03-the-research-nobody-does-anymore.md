@@ -23,7 +23,7 @@ A signal works differently, and the difference is worth stating precisely becaus
 
 The test underneath the table is blunt and it works every time: read the sentence you wrote and ask whether it could have gone out to anyone else on your list with only the company name changed. If the honest answer is yes, you didn't do research. You ran a lookup, and a lookup is what got Theo forty identical-looking emails in four minutes flat.
 
-[PULLQUOTE: A merge field works from a category and a signal works from an instance, and specificity is exactly the thing a merge field cannot fake.]
+[PULLQUOTE: The twelve minutes is not a tax on the method. It's the entire mechanism by which the method still functions when everyone has access to the same automation you do.]
 
 This distinction sounds obvious once it's stated, and it is genuinely hard to hold onto at nine in the morning with a quota number in your head and a tool that promises to close the gap for you in four seconds a company. That gap, between what's obvious in principle and what actually happens under pressure on a Tuesday, is the entire subject of this chapter.
 
