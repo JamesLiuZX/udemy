@@ -3,6 +3,91 @@
 Not part of the build. Working notes for continuing across sessions, same
 pattern as the other books.
 
+## 2026-08-11: Chief Quality Editor pass (hook/nugget, SOTA, visual devices)
+
+Same mandate as the entries of this date in stop-guessing and ai-employee.
+This book arrived in the best shape of the three: hooks 10 strong / 5 OK /
+none weak, nuggets strong in every chapter, prompts already blockquoted.
+The pass was targeted strengthening, not repair.
+
+### Who this book's reader is
+
+A freelancer, consultant, or solo agency owner drowning in admin, with no
+technical background and no interest in acquiring one. They know their
+craft and their clients; they do not know (and should never need) API,
+SaaS, SLA, or model vocabulary. Audience fixes this pass: SLA removed
+(ch5), change-order glossed (ch3), S-corp glossed (ch14), training-data
+glossed and the business-tier category named (ch11), IP spelled out
+(ch15), the silent US-only frame of ch8 signposted honestly.
+
+### Hook and golden nugget, per chapter
+
+| Ch | Hook | Nugget |
+| --- | --- | --- |
+| 01 | Priya at 11 p.m., design done for hours, invoice half-written | The one-week craft/admin time audit |
+| 02 | Signing up for the all-in-one trial after a bad night | Five or six deliberate pieces, mostly saved prompts |
+| 03 | The Sunday-evening 45-minute proposal ritual | The five-part brief before the proposal |
+| 04 | The \$2,400 invoice gone quiet | Write the day-3/14/30 follow-ups before anyone is late |
+| 05 | Two buzzes at Tuesday dinner; 31 unread by morning | Three buckets, once a day, at a time clients learn |
+| 06 | Eleven pages, skimmed to the signature line, signed | The three-pass read; never "safe to sign" |
+| 07 | The newsletter four months dead, noticed by a kind email | One hour a week, filtered by one positioning sentence |
+| 08 | The shoebox and the January weekend | Five minutes weekly: capture, categorize, set aside |
+| 09 | "Can you just also add a mobile version" (fourth this month) | The three-part yes-and script; don't-soften check |
+| 10 | The new client's passing comment exposing a 40% gap | Rate = target income over honest billable hours |
+| 11 | "Wait, did you write this yourself?" | The three-check confidentiality test before pasting |
+| 12 | Day 90: rerunning the audit, staring at four against eleven (opener promoted this pass) | Rerun the day-one audit; it's the only metric |
+| 13 | The one ambitious Saturday that kills good stacks | The 30-day build order; fastest win first |
+| 14 | The lawyer's letter, eighteen months later | Three questions: at risk, reversible, who'd stand behind it |
+| 15 | (reference chapter) | Every prompt and template, verbatim, fillable |
+
+### What changed this pass
+
+- **SOTA, the mandate's centerpiece for this title**: the book was
+  tool-agnostic to a fault for a book subtitled "AI Stack." Added §2.7
+  "The names, as of this writing": one deliberately dated page naming
+  current products per stack slot (assistants, bookkeeping, e-sign,
+  scheduling, email AI) with verified August 2026 prices and one honest
+  trade-off each, framed to be revised, not trusted past a year. Only
+  live-verified items included; everything the research pass could not
+  confirm from a live source (ChatGPT Go tier, PayPal fees, exact
+  Wave/FreshBooks/Bonsai figures) was left out on purpose.
+- **Citation corrections from the live re-check** (7 time-sensitive of 21
+  checked; 14 historical ones stable): Zylo's unused-license figure
+  updated to cover its 2026 index (36%, down from ~half); the GAO
+  citation was conflating two reports and is now split correctly
+  (GAO-24-106449 for the 65%/\$13,500, GAO-24-105281 for the tax-gap
+  share, released Nov 2023); Cyberhaven's baseline was three years
+  earlier, not two, and the metric shift (share of interactions vs share
+  of pasted data) is now stated precisely; the Bonsai study is honestly
+  dated "undated; accessed 2026."
+- **Worked visuals added** (ch1 audit rows, ch2 Marcus audit verdicts,
+  ch3 old/new opener pair, ch4 sequence table, ch8 categorization output
+  with the needs-review row doing the arguing, ch10 assumed-vs-honest
+  week, ch12 both-businesses accounting, ch13 the photocopiable month).
+  All are compressions of numbers already in each chapter's own prose;
+  ch12's opener promoted to the day-90 audit scene.
+- **ch15 fillability**: the day-30 message got real copy (it was the only
+  described-not-written template); the three-pass contract prompts and
+  the scope check (with its load-bearing don't-soften line) are now
+  quoted verbatim; the confidentiality check is a numbered checklist;
+  ch10's market-research prompt was missing entirely and is now
+  collected; the rate-math entry moved into chapter order.
+- **The systemic fix**: every chapter said "paste in and ask" without
+  naming a destination; each chapter's first prompt now anchors once to
+  "your AI chat assistant" with ch2 as the naming reference.
+- en_US: cancelled/cancelling corrected; ALLOW grown with hand-verified
+  words. Rebuilt: EN PDF 133pp (was 127, inside [120, 150]) + EPUB;
+  qc --release clean apart from the sign-off gate; new pages inspected.
+- zh edition mirrored in full; zh PDF rebuilt; proofs recommitted.
+
+Judged NOT worth fixing, and why: ch12 has no KEY-INSIGHT box; it is the
+worked-case synthesis chapter and forcing a citation in would be the
+padding the sourcing standard bans (same reasoning as ai-employee ch23).
+ch13's advice-frame opener stays: a schedule chapter has no scene to
+promote, and the one-ambitious-Saturday image does the picturing work.
+The 52%/12%/66-day restatements outside boxes are intentional recaps of
+boxed, cited claims, not uncited claims.
+
 ## Status: byline set, Simplified Chinese edition shipped. English manuscript is print-ready except the author's own read-through.
 
 Two things happened after the editorial pass below: the real author's

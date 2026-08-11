@@ -18,7 +18,9 @@ The standard advice here, hold your boundaries, say no to extra asks, is true an
 
 The move that closes that gap is a three-part response, said or written in under a minute, that says yes to the relationship without saying yes to free work: acknowledge the request without judgment, name what it actually adds, and offer a choice rather than a refusal.
 
-"Happy to add a mobile version. That's outside the original scope we quoted, so it'd be an extra [X hours / $Y], or we can swap it in for one of the other items on the list if you'd rather keep the total the same. Which works better for you?"
+> **Acknowledge:** "Happy to add a mobile version."
+> **Name the cost:** "That's outside the original scope we quoted, so it'd be an extra [X hours / \$Y], or we can swap it in for one of the other items on the list if you'd rather keep the total the same."
+> **Offer the choice:** "Which works better for you?"
 
 Notice what that script doesn't do. It doesn't accuse the client of trying to get free work, which they usually aren't; most scope creep comes from a client who genuinely doesn't track what was and wasn't in the original quote, not from bad faith. It doesn't say no. It makes the cost visible and hands the decision back to the person who's actually in a position to make it, which is nearly always the client, once they can see the tradeoff clearly instead of assuming a request this small must be free.
 

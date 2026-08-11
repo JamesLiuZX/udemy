@@ -8,6 +8,15 @@ Before week one starts, one honest note about what thirty days actually gets you
 
 Thirty days in this chapter builds every system in this book and gets you through several real uses of each one. It does not mean every habit will feel effortless by day thirty; some, especially the ones you use less often, like the contract three-pass read, may take longer to stop feeling like a checklist and start feeling automatic. That's normal, expected, and not a sign anything's wrong. Build the system in thirty days. Give the habit itself the additional time Lally's research says habits actually need.
 
+The whole month, on the page you will actually photocopy:
+
+| Week | Days | Build | On track looks like |
+| --- | --- | --- | --- |
+| One | 1-7 | Time audit, rate math, invoice template + four follow-ups, tax-holding account | One real invoice sent from the template |
+| Two | 8-14 | Proposal brief, email voice reference, daily three-bucket triage | Triage running at a fixed time most days |
+| Three | 15-21 | Three-pass contract read, positioning statement, first weekly marketing hour | The contract questions actually sent |
+| Four | 22-30 | Scope script, six-question tool audit, objections reread, day-30 audit rerun | Your own before/after numbers, honestly counted |
+
 ## Week one: the foundation and the fastest win
 
 **Day 1.** Run chapter one's time audit for real, this week, not hypothetically. You need your own number before deciding what to build first. Same day, run chapter ten's rate math against it: target income divided by your actual billable hours. If the number that comes out is higher than your current rate, note the gap; you'll act on it once the rest of the stack is running.

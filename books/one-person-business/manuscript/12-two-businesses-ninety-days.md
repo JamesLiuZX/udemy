@@ -1,6 +1,6 @@
 # Two Businesses, Ninety Days: Worked Case Studies
 
-Ninety days after Priya built her first invoice template, on that same Thursday night this book opened with, her business didn't look dramatically different from the outside. Same clients, mostly. Same rates. Same design work, still the thing she was actually good at and actually paid for. What had changed was quieter than any of that, and harder to see unless you'd been watching her calendar rather than her invoices: the hours. Ninety days earlier, admin had been eating something close to a full extra day a week, unpaid, invisible on any client-facing document, and entirely real. This chapter is the honest accounting of where those hours actually went, for Priya and for Marcus, told as it happened rather than as a tidy summary.
+On day ninety, Priya reran the same one-week time audit she'd done in week one, the same paper list, the same one-word labels, and stared at the total for a while: just under four hours of admin, most weeks, against the eleven the first audit had clocked. Nothing else about her business looked dramatically different from the outside. Same clients, mostly. Same rates. Same design work, still the thing she was actually good at and actually paid for. The change was seven hours a week, unpaid hours nobody ever saw on an invoice, quietly returned. This chapter is the honest accounting of where those hours actually went, for Priya and for Marcus, told as it happened rather than as a tidy summary.
 
 Neither business transformed overnight, and neither story is a highlight reel. Both include a piece that didn't work the first time, because that's what actually happens when nine chapters of systems meet a real, messy, ongoing business rather than a clean example.
 
@@ -17,6 +17,16 @@ By the end of the first month, the proposal brief from chapter three was built a
 Marketing started in month two as well, later than the other pieces, because Priya kept deprioritizing an hour that felt optional against work that felt urgent, the exact trap chapter seven named. What actually got it moving wasn't willpower. It was stacking it onto a day she'd already protected for the inbox triage, so the marketing hour rode along on a habit that was already sticking rather than needing to become its own new habit from nothing.
 
 **Month three.** By month three, the boundary-setting script from chapter nine got its real test: a long-standing client's "can you just also" request, the kind Priya used to absorb silently. She used the three-part script, almost verbatim from the book, and the client said yes to the extra fee without any friction at all, the outcome the research in that chapter predicted and Priya hadn't quite believed would actually happen to her, specifically, with a client she genuinely liked.
+
+The honest accounting, both businesses, in one table:
+
+| | Day 1 | Day 90 |
+| --- | --- | --- |
+| Priya: admin hours a week | Eleven | Just under four, most weeks |
+| Priya: proposal turnaround | About two weeks | Four days |
+| Priya: scope requests | Absorbed silently | Priced, with a choice attached |
+| Marcus: scoping stretch | About three weeks | Nine to eleven days |
+| Marcus: marketing | None | A second project, from the monthly referral-network update |
 
 The number that mattered most by day ninety wasn't a single dramatic win. It was the same time audit from week one, run again: admin down from eleven hours to just under four, most weeks. Seven hours a week, recovered, not through any single system but through all of them stacking, compounding the way the individual chapters promised only in the abstract.
 

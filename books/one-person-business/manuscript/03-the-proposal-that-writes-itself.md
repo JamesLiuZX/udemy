@@ -18,6 +18,14 @@ That brief, reused with the client's specific details swapped in each time, is w
 
 The old proposal described Priya's services in general terms and let the client infer how those services applied to their specific situation. The new one does that inferring for them, explicitly: it names the client's actual stated problem in the first paragraph, in language that echoes what they said rather than generic category language, then walks directly from that specific problem to the specific approach, without a generic capabilities section in between. A client reading it recognizes their own words within the first thirty seconds, which is most of what the conversion research above is actually measuring.
 
+The two opening paragraphs, side by side:
+
+> **The old opener:** "I'm a brand designer with over a decade of experience helping businesses of all sizes develop distinctive visual identities across print and digital."
+>
+> **The new opener:** "You said the rebrand keeps stalling because every vendor wants to start from a blank slate, and you can't afford another quarter of exploration. Here's an approach that starts from the equity your current mark already has."
+
+The first could open any designer's proposal to any client. The second could only have been written after actually reading what this client said, and that's the visible evidence the win-rate tiers are measuring.
+
 ## Speed is part of the pitch, not just the writing
 
 There's a second reason the fifteen-minute version beats the forty-five-minute one, separate from personalization, and it has nothing to do with what the proposal says.
@@ -30,7 +38,7 @@ The fifteen-minute brief doesn't just produce a better document. It makes same-d
 
 ## The exact prompt
 
-Here's the actual text Priya types once her five-part brief is filled in, worth using close to verbatim rather than reinventing each time:
+Here's the actual text Priya types into her AI chat assistant, the one piece of the stack chapter two made non-negotiable, once her five-part brief is filled in, worth using close to verbatim rather than reinventing each time:
 
 > "Using the brief below, write a proposal in my voice, matching the structure and tone of the example proposal. Open by naming the client's specific situation in language that echoes what they said, not generic category language. Move directly from their specific problem to my specific approach, no general capabilities section. Keep it as short as the content allows. Flag anywhere you had to guess at something the brief didn't cover.
 >
@@ -68,7 +76,7 @@ It also won't tell you to spend an hour of research on every single inquiry rega
 
 Marcus's version of this same brief carries one extra part Priya's doesn't need, and it maps directly onto the two-week front-loaded scoping stretch from chapter one: a sixth section naming exactly what's out of scope. A design retainer flexes month to month by nature, so Priya's proposal describes an ongoing relationship more than a fixed boundary. A fixed-price development project doesn't have that flexibility built in, and every dollar of scope Marcus fails to name explicitly in the proposal becomes a dollar he's arguing about for free later, which is exactly the problem chapter nine exists to solve after the fact. Naming it here, in the document the client actually signs off on, prevents most of that argument from ever needing to happen.
 
-His sixth section is short, usually three or four lines: what's explicitly not included (a mobile app version, ongoing hosting and maintenance, integration with a system the client hasn't mentioned yet but might ask about), what assumptions the price depends on (existing codebase in a specific reasonable state, no major requirement changes mid-project), and what happens if either assumption turns out to be wrong (a change order process, named plainly, not left to an awkward conversation later). None of that makes the proposal read as defensive. It reads as precise, and clients who've been burned by a vague contractor before recognize the difference immediately.
+His sixth section is short, usually three or four lines: what's explicitly not included (a mobile app version, ongoing hosting and maintenance, integration with a system the client hasn't mentioned yet but might ask about), what assumptions the price depends on (existing codebase in a specific reasonable state, no major requirement changes mid-project), and what happens if either assumption turns out to be wrong (a change order process, named plainly: a short written agreement pricing any addition before it starts, not an awkward conversation later). None of that makes the proposal read as defensive. It reads as precise, and clients who've been burned by a vague contractor before recognize the difference immediately.
 
 [TAKEAWAYS]
 

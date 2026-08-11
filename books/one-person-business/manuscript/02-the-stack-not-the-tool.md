@@ -10,7 +10,7 @@ This isn't a story about picking the wrong all-in-one tool. Priya tried three di
 
 A tool that tries to do five different jobs well enough for everyone ends up doing each of those five jobs adequately for almost no one. Invoicing has its own specific needs: payment terms, tax handling, a format clients actually recognize as an invoice. Client email has a completely different set of needs: tone-matching, thread context, timing. A tool built to be good at all five spreads its actual engineering effort across all five, and the result is a product that's never anyone's first choice for any single job, only ever a compromise chosen for the other four.
 
-[KEY-INSIGHT: Even at the enterprise scale, tool sprawl is a real and expensive failure mode, not an argument for more tools of any kind: Zylo's own SaaS-management research puts the average share of purchased software licenses that go completely unused at somewhere between 46 and 53 percent, year over year. The lesson isn't "add more software." It's that an undisciplined pile of tools and one bloated all-in-one tool fail for the same underlying reason: neither was chosen deliberately for the specific job it needed to do. || Source: Zylo, SaaS Management Index / State of SaaS reports, 2024-2026.]
+[KEY-INSIGHT: Even at the enterprise scale, tool sprawl is a real and expensive failure mode, not an argument for more tools of any kind: Zylo's own research on subscription-software management puts the share of purchased software licenses that go unused at roughly a third to a half, depending on the year measured (about half in its 2024 and 2025 indexes; 36 percent, with nearly half of applications underused, in its 2026 one). The lesson isn't "add more software." It's that an undisciplined pile of tools and one bloated all-in-one tool fail for the same underlying reason: neither was chosen deliberately for the specific job it needed to do. || Source: Zylo, SaaS Management Index / State of SaaS reports, 2024-2026.]
 
 That's the trap on both ends. Too many tools, chosen without discipline, is a real, well-documented failure mode. So is one tool trying to be everything. The fix isn't more software or less software. It's a small, deliberately chosen stack, each piece earning its specific place, connected simply enough that using all of them together doesn't feel like managing five separate jobs.
 
@@ -23,6 +23,16 @@ Marcus never tried an all-in-one dashboard. If anything, he went the other direc
 [KEY-INSIGHT: Research from UC Irvine informatics professor Gloria Mark, building on nearly two decades of workplace observation and popularized in her 2023 book "Attention Span," found that it takes people roughly 25 minutes on average to fully regain focus after a single interruption, and that people rarely return directly to the interrupted task, typically completing two other tasks first. The cost of Marcus's six logins was never really the six subscription fees. It was the number of times a day his attention had to physically relocate between them. || Source: Gloria Mark, "Attention Span" (2023), building on Gloria Mark, Victor M. Gonzalez, and Justin Harris, "No Task Left Behind? Examining the Nature of Fragmented Work," CHI 2005.]
 
 Priya's failure and Marcus's failure look like opposites and are the same mistake wearing different clothes. Neither of them chose their tools. Priya's all-in-one dashboard chose itself by promising to remove the decision entirely. Marcus's six-tool sprawl accumulated one reasonable-sounding addition at a time, each one solving that week's specific annoyance without anyone asking whether it fit the other five. Both are what happens when a stack isn't actually chosen, whether the failure mode is one bloated tool or a dozen thin ones.
+
+Run Marcus's sprawl through the six-question audit this chapter builds below, and the verdicts fall out fast:
+
+| Tool | Single job? | Opened in two weeks? | Talks to anything? | Verdict |
+| --- | --- | --- | --- | --- |
+| Proposal spreadsheet | Drafting proposals | Yes | No | Becomes a saved prompt (chapter three) |
+| Invoicing app | Looking professional | Yes | No | Keep: the one job a prompt can't do is take payment |
+| Client's project tool | The client requires it | Yes | No | Keep: not his decision to make |
+| His own project tool | Duplicate of the client's | Rarely | No | Sprawl: fold into the client's |
+| Notes app | Client context | Sometimes | No | Becomes the reference doc chapter three builds |
 
 ## What "the stack" actually means
 
@@ -52,6 +62,20 @@ When neither tie-breaker resolves it, the honest answer is that it doesn't matte
 
 **Treating the stack as finished once it's built.** A stack built in month one and never revisited drifts, quietly, the same way Priya's rate drifted for three years without anyone deciding it should, the story chapter ten opens on. Revisit each piece occasionally, on purpose, rather than waiting for something to visibly break.
 
+## The names, as of this writing
+
+This book stays deliberately tool-agnostic everywhere else, because brand advice is the fastest-dating content a book can carry. This one page is the deliberate exception, for the reader who wants to know what the categories actually contain today. Prices and plan names below were verified in August 2026 against vendor pages and current coverage. This is the fastest-dating page in the book, on purpose: check the vendor's page before acting on any number here, and past a year, don't trust this table at all.
+
+| Stack slot | Current options | Roughly | The honest trade-off |
+| --- | --- | --- | --- |
+| The AI chat assistant (the piece every chapter's prompts assume) | ChatGPT Plus; Claude Pro; Google Gemini AI Pro | \$20 a month each, give or take | ChatGPT has the broadest features and a fast-shifting tier lineup; Claude is strong on long documents with tighter usage limits; Gemini wins only if you already live in Gmail and Docs |
+| Bookkeeping | QuickBooks Solopreneur; Wave; FreshBooks | Free (Wave's basic tier) to about \$20 a month | QuickBooks is built for US Schedule C filers but caps its features; Wave's free tier now keeps automatic bank import behind the paid plan; FreshBooks is the friendliest and keeps repricing upward |
+| E-signature | Dropbox Sign; DocuSign | \$10 to \$15 a month on annual plans | Dropbox Sign signs contracts but doesn't supply them; DocuSign's cheapest plan caps you at five envelopes a month, which a busy freelancer hits fast |
+| Scheduling | Calendly (free tier, or Standard) | Free; Standard about \$10 a month | The free tier's single event type is the wall most solos hit, which is exactly the plan's design |
+| Email AI | Gemini in Gmail; Copilot in Microsoft 365 Personal | Bundled with the suites above | The genuinely useful ask-your-inbox features sit behind the paid tiers; what each tier includes shifts every few months |
+
+None of these purchases is required by any chapter in this book. Every prompt in chapters three through fourteen runs in whichever chat assistant you pick from the first row, and most of the other rows exist to be consciously declined until a specific chapter's system earns them a place.
+
 ## What this book will not do
 
 This book will not recommend a specific brand-name product for each piece of the stack, and that's deliberate, not an oversight. Software changes constantly; a specific app recommended today is a reasonable chance of being acquired, changed, or discontinued before this book is out of print. What it teaches instead is the underlying shape of each solution, the prompt, the template, the workflow, portable to whatever specific tool you're already using or will be using in two years.
@@ -78,7 +102,7 @@ List every tool, app, and subscription your business currently touches, however 
 - If it disappeared tomorrow, what would I actually lose?
 - Am I paying for capability I use, or capability I liked the idea of?
 
-A tool that survives all six questions earns its place in the stack. One that doesn't isn't necessarily worth cancelling today, but it's worth naming honestly as sprawl rather than infrastructure, the same distinction that separated Marcus's six logins from a deliberately built stack.
+A tool that survives all six questions earns its place in the stack. One that doesn't isn't necessarily worth canceling today, but it's worth naming honestly as sprawl rather than infrastructure, the same distinction that separated Marcus's six logins from a deliberately built stack.
 
 ## Where this goes next
 

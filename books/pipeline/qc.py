@@ -81,6 +81,12 @@ ALLOW = {
     # ai-employee quality pass additions (real words, checked by hand)
     "odalys's", "autocorrects", "botshitting", "categorizer",
     "miscategorized",
+    # one-person-business quality pass additions (real words, checked)
+    "avianca", "calendly", "figma", "lally's", "mata", "solopreneur",
+    "automations", "backend", "chatbot's", "codebase", "deprioritize",
+    "deprioritizing", "dimed", "diming", "handedly", "helpdesk",
+    "informationless", "nickeled", "rebrand", "recordkeeping",
+    "templated", "unmoored", "unrouted",
 }
 
 AUTHOR_INPUT_RE = re.compile(r"\[AUTHOR-INPUT:(.*?)\]", re.S)

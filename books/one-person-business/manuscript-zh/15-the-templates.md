@@ -45,16 +45,6 @@
 
 [PULLQUOTE: 这一章把故事抽掉。剩下的是可以反复使用的部分：这本书里的每一份工作表、话术和清单，集中收在一处，写成可以直接填写的样子，而不是只读一遍、日后再凭记忆去转述。]
 
-## 费率算法工作表与加价话术（第十章）
-
-> 目标年收入：[具体金额]
->
-> 除以每年实际计费小时数（来自你在第一章做的时间审计）：[小时数]
->
-> 等于最低可行时薪：[具体金额]
-
-> "从[日期]起，我会把报价更新为[新费率]。这只适用于此后的新项目，目前正在进行中的项目仍按我们原先谈好的价格执行。如果需要，我很乐意和你聊聊具体情况。"
-
 ## 发票模板与四条催款消息序列（第四章）
 
 发票本身：公司名称、付款信息、用大白话写清楚的付款条件（写"开票之日起14天内到期"，而不只是"net 14"这种缩写），以及和你收费方式相匹配的分项格式。
@@ -65,7 +55,7 @@
 >
 > **第14天跟进：** "跟进一下发票#[编号]，目前已经逾期两周了。能否告诉我大概什么时候能收到付款？"
 >
-> **第30天消息：** 直截了当地说明情况，并要求给出一个具体的下一步，比如一个付款日期或者一通电话，而不是又一个含糊的承诺。
+> **第30天消息：** "发票#[编号]已经逾期一个月了，我希望把这件事解决掉，而不是继续发提醒。能否在本周内给我一个确切的付款日期，或者花十五分钟通个电话，看看是什么卡住了？"
 
 **填写示例：** 第四章那张2400美元发票的第3天催款版本。"丹尼尔你好，提醒一下发票#0047已于15号到期，我这边还没看到款项到账。如果你需要我提供什么资料来推进处理，请告诉我。"直接、假定对方是善意的、不去揣测拖欠的原因，无论涉及的金额是多少，这份模板的每个版本都应该遵循这个样子。
 
@@ -81,9 +71,13 @@
 
 ## 合同三遍读法（第六章）
 
-1. **翻译：** 要求对方给出逐段的大白话摘要，不保留任何行话。
-2. **标记：** 具体询问付款条款、知识产权和所有权、赔偿条款、终止通知，再加上你所在行业特有的风险（开发者要注意既有知识产权和开源许可；创意工作者要注意使用权和修改次数上限）。
-3. **提问：** 把每一处标记，都变成一个你会真的问客户的大白话问题。不必今天就发出去，先写下来。
+三句提示词，存放在一起，措辞与第六章完全一致：
+
+> **第一遍（翻译）：** "Summarize this contract section by section in plain English, no legal jargon retained. Where a section is genuinely ambiguous rather than just densely worded, say so explicitly instead of picking one interpretation silently. [paste contract]"
+>
+> **第二遍（标记）：** "Review this contract for anything unusual, one-sided, or worth a question before signing, specifically: payment terms that favor the other party heavily, IP (intellectual property) or ownership language broader than the project needs, an indemnification clause that exposes me personally, a termination clause with no notice period[, plus your own field's specific risk]. List each flag with the specific clause it comes from."
+>
+> **第三遍（提问）：** "Turn each flag above into one plain, non-confrontational question I could send to the other party." 不必今天就发出去，先写下来。
 
 **填写示例：** 第六章里普丽娅那份十一页代理机构合同里的那处模糊地带。标记出来的问题：交付物条款规定了付款即转移所有权，却完全没提到如果客户在项目中途取消，源文件该怎么处理。发出去的问题："这里写的是交付物在付款后归贵方独家所有，但协议没有说明如果贵方在项目中途取消，我的源文件该怎么处理。我们能不能加一条把这个补上？"一天之内就有了回复，条款加上了，没有任何摩擦。
 
@@ -107,13 +101,35 @@
 
 > "很乐意加上[具体请求]。这超出了我们最初报价的范围，所以会多花[X小时/Y美元]，或者，如果你想保持总价不变，我们也可以用它替换清单上的其他某一项。你觉得哪种方式更合适？"
 
-发出去之前，先做一遍两行检查：把最初的范围和这个新请求贴在一起，直白地问一句，"is this inside or outside what was quoted, and by roughly how much"（这算在最初报价的范围之内还是之外，大概相差多少）。
+发出去之前，先做一遍两行检查，措辞与第九章完全一致：
+
+> "Here's the scope I originally quoted: [paste from your proposal]. Here's a new request from the client: [paste]. Is this inside or outside what was quoted, and by roughly how much? Don't soften the answer to avoid an awkward conversation, just tell me plainly."
 
 **填写示例：** 第九章里那个要求加一个移动版的例子。"很乐意加上一个移动版。这超出了我们最初报价的范围，所以会多花4个小时，或者，如果你想保持总价不变，我们也可以用它替换清单上的其他某一项。你觉得哪种方式更合适？"具体的小时数，一个真实的替代方案，措辞里没有任何评判的意味。
 
+## 费率算法工作表与加价话术（第十章）
+
+> 目标年收入：[具体金额]
+>
+> 除以每年实际计费小时数（来自你在第一章做的时间审计）：[小时数]
+>
+> 等于最低可行时薪：[具体金额]
+
+> "从[日期]起，我会把报价更新为[新费率]。这只适用于此后的新项目，目前正在进行中的项目仍按我们原先谈好的价格执行。如果需要，我很乐意和你聊聊具体情况。"
+
+同一章里的市场调研提示词，用来把你的数字和外部世界对一对：
+
+> "Here are rate surveys and job postings I found for [skill] in [region]: [paste]. Summarize the range, note anything that looks like an outlier worth double-checking, and tell me where a rate of [your worksheet number] sits within it. Synthesize only from what I pasted; don't add numbers of your own."
+
 ## 保密性检查（第十一章）
 
-在把任何与客户相关的内容贴进AI工具之前：先查一查这个工具的数据留存和训练使用政策，查一查你和客户合同里的保密条款，再查一查是否有一个不用于训练的商业版可选，值不值得为它付费。拿不准的时候，先把能识别身份的细节，姓名、具体金额，任何一旦泄露就会造成影响的信息，都去掉，再粘贴。
+在把任何与客户相关的内容贴进AI工具之前：
+
+1. **工具：** 它的数据留存和训练使用政策，是否允许它从我粘贴的内容里学习？
+2. **合同：** 我和这位客户的保密条款，是否恰好禁止向第三方披露这类内容？
+3. **版本：** 是否有一个商用套餐（几家主流助手以Team、Work之类的名称出售），能在合同层面保证我的输入不用于训练？
+
+只要有任何一条答案不确定：先剥掉能识别身份的细节，姓名、具体金额，任何一旦泄露就会造成影响的信息，只拿结构去处理（"客户A"）。
 
 ## 两分钟专业人士检验（第十四章）
 

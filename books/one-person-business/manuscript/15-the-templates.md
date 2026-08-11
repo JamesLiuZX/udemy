@@ -23,7 +23,7 @@ Run this against every tool, app, and subscription your business currently touch
 5. If it disappeared tomorrow, what would I actually lose?
 6. Am I paying for capability I use, or capability I liked the idea of?
 
-**Filled in, as an example:** Marcus running this against a project-management tool he'd kept paying for out of habit. What single job: task tracking for solo projects. Could it move into a prompt: mostly yes, a saved checklist template covers the same ground for work he isn't sharing with a client. Opened in the last two weeks: no, not for three months. Talks to anything else: no, it's fully standalone. What would he lose if it vanished: almost nothing, since his active client-facing project tool already duplicates the function. Paying for capability he uses or liked the idea of: the second one, clearly, once he actually answered the other five questions honestly. He cancelled it that week.
+**Filled in, as an example:** Marcus running this against a project-management tool he'd kept paying for out of habit. What single job: task tracking for solo projects. Could it move into a prompt: mostly yes, a saved checklist template covers the same ground for work he isn't sharing with a client. Opened in the last two weeks: no, not for three months. Talks to anything else: no, it's fully standalone. What would he lose if it vanished: almost nothing, since his active client-facing project tool already duplicates the function. Paying for capability he uses or liked the idea of: the second one, clearly, once he actually answered the other five questions honestly. He canceled it that week.
 
 ## The five-part proposal brief (chapter three)
 
@@ -45,16 +45,6 @@ Build once per type of engagement, reuse with specifics swapped in.
 
 [PULLQUOTE: This chapter strips the story back out. What's left is the reusable part: every worksheet, script, and checklist from this book, collected in one place and written to be filled in directly, not read once and paraphrased later from memory.]
 
-## The rate math worksheet and raise script (chapter ten)
-
-> Target annual income: [dollar amount]
->
-> Divided by actual billable hours per year (from your chapter one time audit): [hours]
->
-> Equals minimum viable hourly rate: [dollar amount]
-
-> "I'm updating my rates starting [date], to [new rate]. This applies to new projects going forward; anything already in progress stays at the rate we agreed. Happy to talk through it if useful."
-
 ## The invoice template and four-message follow-up sequence (chapter four)
 
 Your invoice itself: business name, payment details, terms in plain language ("due within 14 days of the invoice date," not just "net 14"), and a line-item format matching how you bill.
@@ -65,7 +55,7 @@ Your invoice itself: business name, payment details, terms in plain language ("d
 >
 > **Day-14 follow-up:** "Following up on invoice #[number], now two weeks past due. Can you give me a status update on when I can expect payment?"
 >
-> **Day-30 message:** names the situation plainly and asks for a specific next step, a payment date or a call, rather than another vague promise.
+> **Day-30 message:** "Invoice #[number] is now a month past due, and I want to get this resolved rather than keep sending reminders. Can you give me a firm payment date this week, or fifteen minutes on a call to sort out whatever's holding it up?"
 
 **Filled in, as an example:** the $2,400 invoice from chapter four, day-3 version. "Hi Daniel, just flagging that invoice #0047 was due on the 15th and I don't see it come through yet. Let me know if you need anything from me to get it processed." Direct, assumes good faith, no speculation about why it's late, exactly the shape every version of this template should follow regardless of the number involved.
 
@@ -81,9 +71,13 @@ Not a template to fill in, an asset to build once: eight to ten emails you're ge
 
 ## The three-pass contract read (chapter six)
 
-1. **Translate**: ask for a section-by-section summary in plain English, no jargon retained.
-2. **Flag**: ask specifically about payment terms, IP and ownership, indemnification, and termination notice, plus your own field's specific risk (pre-existing IP and open-source licensing for developers; usage rights and revision limits for creative work).
-3. **Question**: turn every flag into one plain question you'd actually ask the client. You don't have to send it today. Write it down.
+The three prompts, saved together, exactly as chapter six words them:
+
+> **Pass one (translate):** "Summarize this contract section by section in plain English, no legal jargon retained. Where a section is genuinely ambiguous rather than just densely worded, say so explicitly instead of picking one interpretation silently. [paste contract]"
+>
+> **Pass two (flag):** "Review this contract for anything unusual, one-sided, or worth a question before signing, specifically: payment terms that favor the other party heavily, IP (intellectual property) or ownership language broader than the project needs, an indemnification clause that exposes me personally, a termination clause with no notice period[, plus your own field's specific risk]. List each flag with the specific clause it comes from."
+>
+> **Pass three (question):** "Turn each flag above into one plain, non-confrontational question I could send to the other party." You don't have to send it today. Write it down.
 
 **Filled in, as an example:** the ambiguity from Priya's eleven-page agency contract in chapter six. Flagged: the deliverables clause defined ownership on payment but never addressed what happens to source files if the client cancels mid-project. Question sent: "This says the deliverables become your exclusive property on payment, but the agreement doesn't define what happens to my source files if you cancel mid-project. Can we add a line covering that?" Answered within a day, clause added, no friction.
 
@@ -107,13 +101,35 @@ Once written, it's the filter for every week's topic. The weekly system itself: 
 
 > "Happy to add [the request]. That's outside the original scope we quoted, so it'd be an extra [X hours / $Y], or we can swap it in for one of the other items on the list if you'd rather keep the total the same. Which works better for you?"
 
-Before sending it, run the two-line check: paste the original scope alongside the new request and ask plainly, "is this inside or outside what was quoted, and by roughly how much."
+Before sending it, run the two-line check, exactly as chapter nine words it:
+
+> "Here's the scope I originally quoted: [paste from your proposal]. Here's a new request from the client: [paste]. Is this inside or outside what was quoted, and by roughly how much? Don't soften the answer to avoid an awkward conversation, just tell me plainly."
 
 **Filled in, as an example:** the mobile-version request from chapter nine. "Happy to add a mobile version. That's outside the original scope we quoted, so it'd be an extra 4 hours, or we can swap it in for one of the other items on the list if you'd rather keep the total the same. Which works better for you?" Specific hours, a real alternative offered, no judgment implied anywhere in the wording.
 
+## The rate math worksheet and raise script (chapter ten)
+
+> Target annual income: [dollar amount]
+>
+> Divided by actual billable hours per year (from your chapter one time audit): [hours]
+>
+> Equals minimum viable hourly rate: [dollar amount]
+
+> "I'm updating my rates starting [date], to [new rate]. This applies to new projects going forward; anything already in progress stays at the rate we agreed. Happy to talk through it if useful."
+
+The market-research prompt from the same chapter, for checking your number against the outside world:
+
+> "Here are rate surveys and job postings I found for [skill] in [region]: [paste]. Summarize the range, note anything that looks like an outlier worth double-checking, and tell me where a rate of [your worksheet number] sits within it. Synthesize only from what I pasted; don't add numbers of your own."
+
 ## The confidentiality check (chapter eleven)
 
-Before pasting anything client-related into an AI tool: check the tool's data-retention and training-use policy, check your contract's confidentiality clause, and check whether a no-training-use business tier is available and worth paying for. When in doubt, strip identifying details, names, dollar figures, anything that would matter if it leaked, before pasting.
+Before pasting anything client-related into an AI tool:
+
+1. **The tool:** does its data-retention and training-use policy let it learn from what I paste?
+2. **The contract:** does my confidentiality clause with this client prohibit third-party disclosure of exactly this?
+3. **The tier:** is there a business plan (the major assistants sell these under names like Team or Work) that contractually excludes my inputs from training?
+
+Any answer unknown: strip identifying details, names, dollar figures, anything that would matter if it leaked, and work from the structure instead ("Client A").
 
 ## The two-minute professional check (chapter fourteen)
 

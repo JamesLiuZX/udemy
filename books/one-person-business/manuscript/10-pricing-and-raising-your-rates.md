@@ -20,7 +20,7 @@ The fix isn't waiting for frustration to force the issue. It's the same instinct
 
 A language model can help close the confidence gap the Fast Company survey describes, but the way most freelancers reach for it first, asking "what should I charge," is close to useless. A model has no reliable, current, location-specific data about your actual market, and an answer that sounds authoritative isn't the same as one that's grounded in anything real, the identical warning chapter eleven's confidentiality answer and chapter fourteen's whole argument both make about confident-sounding output in general.
 
-What works instead is using AI to organize research you do yourself, not to invent the numbers directly: search recent rate surveys and job postings for your specific skill and region, paste what you find, and ask for a structured summary of the range, plus anything that looks like an outlier worth double-checking rather than trusting. The model's job is synthesis, not the underlying fact.
+What works instead is using AI to organize research you do yourself, not to invent the numbers directly: search recent rate surveys and job postings for your specific skill and region (freelance-marketplace rate reports, your industry association's survey if one exists, and salary listings for the employed equivalent of your role), paste what you find, and ask for a structured summary of the range, plus anything that looks like an outlier worth double-checking rather than trusting. The model's job is synthesis, not the underlying fact.
 
 ## The exact prompt
 
@@ -38,7 +38,15 @@ Market data gives you a range. This calculation gives you the specific number in
 >
 > Equals minimum viable hourly rate: [dollar amount]
 
-Run this once, honestly, and the number that comes out is frequently higher than freelancers expect, for a specific reason: billable hours are always fewer than total working hours, often far fewer once admin, unpaid pitching, and slow weeks are subtracted out. A freelancer targeting $80,000 a year who assumes forty billable hours a week, every week, is quietly underpricing against reality, because closer to twenty-five to thirty billable hours a week is typical once everything else this book has spent nine chapters addressing is accounted for. This is also where the whole rest of this book pays into this specific number directly: every hour chapters two through nine give back from admin is an hour that either becomes more billable capacity at the same rate, or the same income at fewer total hours worked. Which one you want is a choice this worksheet makes visible instead of leaving invisible.
+Run this once, honestly, and the number that comes out is frequently higher than freelancers expect, for a specific reason: billable hours are always fewer than total working hours, often far fewer once admin, unpaid pitching, and slow weeks are subtracted out. A freelancer targeting $80,000 a year who assumes forty billable hours a week, every week, is quietly underpricing against reality, because closer to twenty-five to thirty billable hours a week is typical once everything else this book has spent nine chapters addressing is accounted for. The same target, run through the worksheet both ways, at 48 working weeks:
+
+| | The assumed week | The honest week |
+| --- | --- | --- |
+| Billable hours a week | Forty | Twenty-seven |
+| Hours a year | 1,920 | 1,296 |
+| Rate that hits \$80,000 | About \$42 an hour | About \$62 an hour |
+
+That twenty-dollar gap is what pricing against an imagined week costs. This is also where the whole rest of this book pays into this specific number directly: every hour chapters two through nine give back from admin is an hour that either becomes more billable capacity at the same rate, or the same income at fewer total hours worked. Which one you want is a choice this worksheet makes visible instead of leaving invisible.
 
 ## The raise script
 

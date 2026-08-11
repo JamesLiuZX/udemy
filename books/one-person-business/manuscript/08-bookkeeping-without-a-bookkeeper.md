@@ -14,7 +14,16 @@ Once a week, same day as your inbox triage from chapter five if you want to stac
 
 **Photograph or forward every receipt from the week**, into one place, the moment you have it rather than trusting future-you to remember where it went. A phone photo of a paper receipt, forwarded immediately, beats a perfect filing system you only use twice a year.
 
-**Categorize what came in**, using AI to do the tedious first pass: paste in the week's transactions from your bank or card statement and ask for a plain categorization against standard business expense categories, software, travel, meals, equipment, professional services, flagged for anything ambiguous rather than guessed at silently. This is the exact kind of repetitive, rules-based sorting a model does quickly and a tired freelancer at 9 p.m. does badly.
+**Categorize what came in**, using AI to do the tedious first pass: paste the week's transactions from your bank or card statement into your chat assistant and ask for a plain categorization against standard business expense categories, software, travel, meals, equipment, professional services, flagged for anything ambiguous rather than guessed at silently. This is the exact kind of repetitive, rules-based sorting a model does quickly and a tired freelancer at 9 p.m. does badly. One week of Priya's output looks like this:
+
+| Transaction | Amount | Category | Needs review? |
+| --- | --- | --- | --- |
+| Figma subscription | 15 | Software | |
+| Dinner, R. Alvarez | 84 | Meals | |
+| 27" monitor | 340 | Equipment | Review: partly personal use? |
+| Parking, client visit | 12 | Travel | |
+
+The third row is the whole system working: the ambiguous purchase surfaced the week it happened, while the receipt was easy to find, instead of reconstructed eleven months later from memory.
 
 [PULLQUOTE: A shoebox can't answer that question. A five-minute weekly habit can.]
 
@@ -30,7 +39,7 @@ Priya's own before-and-after is the weekend this chapter opened on: a full weeke
 
 It's worth knowing that Priya's old system wasn't an unusual failure. A recent government audit of exactly this population found the same pattern at scale.
 
-[KEY-INSIGHT: A 2024 US Government Accountability Office review of sole proprietor tax compliance found that roughly 65 percent of sole proprietors underreported their income, by an average of about $13,500, contributing an estimated $80 billion, about 16 percent of the entire federal tax gap for the years studied, attributable to this group alone. The GAO's own analysis attributes most of this to recordkeeping breakdowns rather than deliberate evasion: income and expenses tracked inconsistently across the year, reconstructed imperfectly at filing time. || Source: US Government Accountability Office, "Sole Proprietor Compliance: Treasury and IRS Have Opportunities to Reduce the Tax Gap," GAO-24-105281, 2024.]
+[KEY-INSIGHT: US Government Accountability Office work on sole proprietor tax compliance found that roughly 65 percent of sole proprietors underreported their income, by an average of about $13,500, and that underreporting by this group contributes an estimated $80 billion, about 16 percent of the entire federal tax gap for the years studied. The GAO's own analysis attributes most of this to recordkeeping breakdowns rather than deliberate evasion: income and expenses tracked inconsistently across the year, reconstructed imperfectly at filing time. || Source: US Government Accountability Office, GAO-24-106449 (the 65 percent and average-dollar figures) and GAO-24-105281, "Sole Proprietor Compliance" (the tax-gap share), released November 2023.]
 
 Read charitably and accurately, that's not a statistic about dishonesty. It's a statistic about exactly the shoebox problem this chapter opened on, playing out across millions of returns: numbers reconstructed once a year from memory and scattered receipts are numbers with errors in them, in both directions, missed income and missed deductions alike. A five-minute weekly habit doesn't just protect against the penalty named earlier. It's the direct fix for the recordkeeping gap the GAO's own auditors point to as the underlying cause.
 
@@ -64,7 +73,7 @@ Categorizing transactions and flagging ambiguous ones is a task AI does well: pa
 
 ## What this chapter will not do
 
-This chapter will not tell you what percentage to set aside for taxes, what counts as a deduction in your situation, or whether you should be structured as a sole proprietor, an LLC, or anything else. Those are exactly the questions a real accountant answers correctly and a general system, however well organized, cannot. What this chapter does is make sure that when you do sit down with one, once a year or once a quarter, you're handing them clean, categorized numbers instead of a shoebox, which is the difference between a productive hour and a wasted one.
+One boundary to name plainly: the tax specifics in this chapter, the IRS, estimated payments, Schedule C categories, are United States specifics. The weekly capture-categorize-set-aside rhythm travels to any tax system; the numbers and form names do not, so a reader elsewhere should swap in their own country's equivalents. And this chapter will not tell you what percentage to set aside for taxes, what counts as a deduction in your situation, or whether you should be structured as a sole proprietor, an LLC, or anything else. Those are exactly the questions a real accountant answers correctly and a general system, however well organized, cannot. What this chapter does is make sure that when you do sit down with one, once a year or once a quarter, you're handing them clean, categorized numbers instead of a shoebox, which is the difference between a productive hour and a wasted one.
 
 [TAKEAWAYS]
 

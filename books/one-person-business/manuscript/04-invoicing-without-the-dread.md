@@ -4,7 +4,7 @@ Priya's invoice took ninety seconds, the Thursday after she built the template t
 
 Invoicing dread isn't really about the document. Writing an invoice is a solved problem: rate times hours, a due date, a template you reuse. The dread lives one step further on, in the moment a payment doesn't arrive and you have to write something harder than an invoice: a message to a client you like, asking for money they already owe you, without sounding like you're accusing them of anything. Most freelancers avoid writing that message for days. Some avoid it for weeks. The invoice was never the hard part.
 
-[KEY-INSIGHT: An analysis of invoicing data from more than 100,000 freelancers found that roughly 29 percent of invoices are paid at least one day late, though the news isn't as bad as that headline number suggests: over 75 percent of late invoices are paid within two weeks of the due date, and 90 percent within a month. || Source: Bonsai, analysis of freelance invoicing platform data (three years, 100,000+ freelancers), 2026.]
+[KEY-INSIGHT: An analysis of invoicing data from more than 100,000 freelancers found that roughly 29 percent of invoices are paid at least one day late, though the news isn't as bad as that headline number suggests: over 75 percent of late invoices are paid within two weeks of the due date, and 90 percent within a month. || Source: Bonsai, analysis of freelance invoicing platform data (three years, 100,000+ freelancers), undated; accessed 2026.]
 
 Late isn't the same as unpaid. Most late invoices are paid within a month, and most of the anxious re-checking freelancers do in that window changes nothing about when the money arrives. What actually shortens that window is a follow-up that goes out on schedule, drafted in a tone that doesn't have to be reinvented under stress each time.
 
@@ -30,13 +30,22 @@ Having all three written in advance does the actual work here. The task on the d
 
 One more message is worth saving alongside the three, and it's the one most freelancers never think to write because it happens before anything's actually wrong: a **day-minus-3 heads-up**, sent a few days before the due date, on any invoice above your usual size or for any client newer than a few months. "Just a friendly note that invoice #[number] is due on [date], sending it your way in case it needs to route through anyone else on your end first." It costs nothing, it never reads as anxious because nothing is overdue yet, and it catches the single most common reason a payment actually goes late: not bad faith, but the invoice sitting unrouted in someone else's approval queue.
 
+The whole sequence at a glance:
+
+| When | The message | The tone | The ask |
+| --- | --- | --- | --- |
+| Three days before due | Friendly heads-up with the invoice number | Zero pressure | Route it early if it needs approval |
+| Three days late | "I don't see it come through yet" | Assumes good faith | Anything needed to process it? |
+| Two weeks late | Status request, plainly worded | Direct, not accusatory | A date |
+| A month late | Names the situation, no more reminders | Firm and specific | A firm payment date this week, or a call |
+
 ## Marcus's version: invoicing against milestones, not hours
 
 Priya's invoice is a monthly rhythm. Marcus's is a project rhythm, and the template underneath it looks different in one specific way: instead of hours against a rate, each line item is a milestone against the fixed price from the proposal, "40 percent on kickoff, 30 percent on staging deployment, 30 percent on final handoff," the exact split written into the contract before the project ever started. That structure removes an entire category of dispute the hourly version doesn't have to worry about: nobody's arguing over how many hours a task took, because the price was never tied to hours in the first place.
 
 It creates a different failure mode instead, one his template has to handle explicitly: a milestone that's ambiguous enough that the client and Marcus don't agree it's actually been hit. "Staging deployment" sounds objective until a client believes staging means something slightly different than what Marcus delivered. His fix lives in the proposal from chapter three, not the invoice itself: each milestone gets one sentence defining exactly what "done" looks like for that milestone specifically, agreed before the project starts, so the invoice that follows is confirming a definition both sides already accepted rather than asserting one for the first time.
 
-Priya's own before-and-after is the $2,400 invoice this chapter opened on. Before the templates existed, a client going quiet meant days of putting off the follow-up, unsure each time whether firmer wording would cost her the relationship. After, the day-3 nudge to Daniel went out the same afternoon it was due, no rewriting, no agonizing over tone, because the wording had already been decided weeks earlier when nothing was overdue. He answered within a day: an approval delay on his end, nothing about the working relationship at all, and the invoice cleared four days later. The relationship never had to survive a firm message, because the message was never actually firm. It was direct, and a direct question answered honestly isn't the same test as a firm one answered defensively.
+Priya's own before-and-after is the $2,400 invoice this chapter opened on. Before the templates existed, a client going quiet meant days of putting off the follow-up, unsure each time whether firmer wording would cost her the relationship. After, the day-3 nudge to the client, Daniel, went out the same afternoon it was due, no rewriting, no agonizing over tone, because the wording had already been decided weeks earlier when nothing was overdue. He answered within a day: an approval delay on his end, nothing about the working relationship at all, and the invoice cleared four days later. The relationship never had to survive a firm message, because the message was never actually firm. It was direct, and a direct question answered honestly isn't the same test as a firm one answered defensively.
 
 ## The exact prompt
 
@@ -52,7 +61,7 @@ The "don't invent any numbers" line matters more than it looks. A model asked to
 
 All three messages above say roughly the same thing a frustrated freelancer might blurt out over email at 11 p.m.: you owe me money and I'd like it. What separates them from that version isn't the information, it's the absence of anything a client could read as an accusation. None of them speculate about why the payment is late. None of them threaten anything in the first two messages. They ask a direct, specific question and wait for an answer, which is both more effective and easier to send without agonizing over the wording, because the wording was already decided when you weren't upset.
 
-This is also where AI genuinely helps beyond the first draft: paste your day-14 template alongside the specific client's original tone (a past thread, a proposal, anything you've written to them before), and ask for a version that keeps the content but matches how you two actually talk. A message to a longtime client who's never been late before should read differently from one to a new client already showing signs of trouble, and getting that adjustment right in thirty seconds beats either sending a mismatched generic template or spending twenty minutes rewriting it from scratch under stress.
+This is also where AI genuinely helps beyond the first draft: paste your day-14 template into your chat assistant alongside the specific client's original tone (a past thread, a proposal, anything you've written to them before), and ask for a version that keeps the content but matches how you two actually talk. A message to a longtime client who's never been late before should read differently from one to a new client already showing signs of trouble, and getting that adjustment right in thirty seconds beats either sending a mismatched generic template or spending twenty minutes rewriting it from scratch under stress.
 
 ## Common mistakes with the sequence
 

@@ -32,7 +32,7 @@ This isn't a productivity problem you fix by working faster. Priya doesn't need 
 
 Here's the concrete shift, on the exact invoice Priya was avoiding. The old way: open a blank document, try to remember the agreed rate and hours, second-guess the wording of the payment terms, format it, proofread it, send it, and repeat the entire process from scratch next month. Twenty minutes if nothing interrupts you, which nothing ever does at 11 p.m. on a Thursday.
 
-The new way: a saved template that already has her rate, her payment terms, and her invoice number format built in, paired with a two-line prompt: "Here's this month's hours by project. Draft the invoice in my usual format, flag anything that looks off compared to what we quoted." Ninety seconds, most of them spent checking the number, not writing the document. The other eighteen minutes go back to Priya, and over a year, that's not a rounding error. That's weeks.
+The new way: a saved template that already has her rate, her payment terms, and her invoice number format built in, paired with a two-line prompt typed into the AI chat assistant she already pays for (chapter two names the current options): "Here's this month's hours by project. Draft the invoice in my usual format, flag anything that looks off compared to what we quoted." Ninety seconds, most of them spent checking the number, not writing the document. The other eighteen minutes go back to Priya, and over a year, that's not a rounding error. That's weeks.
 
 None of the chapters ahead are about becoming a different kind of business owner. They're about getting those eighteen minutes back, one task at a time, starting with whichever one is keeping you at your own desk tonight.
 
@@ -77,7 +77,14 @@ And it won't make a slow-paying client pay faster, or a scope-creeping client st
 
 Before chapter two starts building anything, spend one week finding out what your own version of the gap actually looks like. You don't need special software for this, just five seconds at the top of every hour you work.
 
-- Keep a running list, paper or phone, one line per work session: the time, a rough duration, and one word for what kind of work it was, "craft" or "admin." Don't overthink the label; if you paused the actual paid work to do it, it's admin.
+- Keep a running list, paper or phone, one line per work session: the time, a rough duration, and one word for what kind of work it was, "craft" or "admin." Don't overthink the label; if you paused the actual paid work to do it, it's admin. A few of Priya's rows, to show the grain:
+
+| Time | Duration | Craft or admin | What it was |
+| --- | --- | --- | --- |
+| Mon 9:00 | 90 min | Craft | Logo revisions |
+| Mon 10:30 | 20 min | Admin | Invoice draft |
+| Thu 22:40 | 25 min | Admin | Payment chase |
+| (your week) | | | |
 - At the end of the week, add up each column. Most freelancers doing this for the first time are surprised by which direction they're wrong: some discover admin is a much bigger share than they assumed, others discover it's concentrated in one brutal day rather than spread evenly, which changes what kind of fix actually helps.
 - Circle the single admin task that cost the most total minutes. That's not necessarily the one that felt worst in the moment, the late-invoice dread or the inbox guilt; it's the one the stopwatch says actually won. Chapters three through nine are organized by task specifically so you can skip straight to the one your own week just identified.
 
