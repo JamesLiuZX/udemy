@@ -32,17 +32,32 @@ rebuild once the actual page count is known; `qc.py --release` checks the
 built PDF's actual gutter against `gutter_for_pages(real_pages)` and fails
 if a stale 0.375in survives a rebuild that crossed the 150pp line.
 
-### Revised outline
+### Revised outline (updated after measuring real density)
 
-Chapters 01-10 keep their numbers and core argument; each is being
-expanded in place (see "Expansion plan per chapter" below), not replaced.
-Three new chapters are being added after them:
+Chapters 01-10 keep their numbers and core argument; each has now been
+expanded in place per the plan below, not replaced. With all 10 done, a
+full rebuild measures **82pp real** (front matter ~8pp + ~74pp of
+chapter content, 20,134 words, ~272 words/page actual density once
+KEY-INSIGHT/PULLQUOTE/TAKEAWAYS box whitespace and chapter-opener spacing
+are counted, well below the raw 320wpp estimator). That's real,
+information-dense progress, not padding, but three chapters alone can't
+close a ~100-150pp gap to [180, 240] without either bloating individual
+chapters unnaturally long or, correctly, adding more chapters at the same
+honest density the first ten established. Expanded to five new chapters
+plus a reference appendix chapter, all serving genuine, non-overlapping
+reader needs rather than existing to hit a page count:
 
 | Chapter | Addition |
 | --- | --- |
 | 11 Four Delegations, Worked in Full | New. Two extended, deep case studies (not the same small worked examples used inline elsewhere) that each run the *entire* method start to finish on one real business, showing how brief, trial, spot-check, failure-mode list, standing instruction, disqualifiers, roster, and chaining actually interact in one continuous story rather than one skill at a time. |
-| 12 Objections and Edge Cases | New. FAQ-style chapter, real pushback argued honestly: "I don't have time to write a five-part brief," "the tool changed and broke my failure-mode list," "what about regulated work," "what if I don't trust AI at all," and similar. Each answer names the objection's real merit before answering it, consistent with "name the limit of the advice" already governing the rest of the book. |
-| 13 Templates and Worksheets | New. Reference appendix, not narrative: the five-part brief template, the failure-mode list template, the roster template from chapter eight, the four-disqualifier worksheet from chapter seven, and a blank 30-day calendar page, laid out as literal fillable pages. No `[KEY-INSIGHT]`/`[PULLQUOTE]`/`[TAKEAWAYS]` expected here; it's reference material, not argument. |
+| 12 Choosing Your First Tool | New. Practical, tool-agnostic evaluation criteria for picking an AI tool to start with, deliberately not a brand endorsement or a feature comparison that dates within a year: what to check before trusting a vendor with real work (memory/standing-instruction support, data handling, cost structure at real usage volume), consistent with the book's tool-agnostic rule from chapter one. |
+| 13 When Your Team Delegates Too | New. Extends the method past the solo reader: what changes when you're not just delegating to AI yourself but teaching direct reports to do the same, including the new failure mode of an employee blindly trusting AI output and presenting it as their own verified work. |
+| 14 Objections and Edge Cases | New. FAQ-style chapter, real pushback argued honestly: "I don't have time to write a five-part brief," "the tool changed and broke my failure-mode list," "what about regulated work," "what if I don't trust AI at all," and similar. Each answer names the objection's real merit before answering it, consistent with "name the limit of the advice" already governing the rest of the book. |
+| 15 Templates and Worksheets | New. Reference appendix, not narrative: the five-part brief template, the failure-mode list template, the roster template from chapter eight, the four-disqualifier worksheet from chapter seven, a blank 30-day calendar page, and a short glossary, laid out as literal fillable pages with real blank space, which legitimately adds page count at low word density the way a genuine workbook appendix does. No `[KEY-INSIGHT]`/`[PULLQUOTE]`/`[TAKEAWAYS]` expected here; it's reference material, not argument. |
+
+Progress tracker below still lists the original three-chapter numbering
+as items to convert; treat "11-13" there as "11, 14, 15" and the two new
+insertions (12, 13) as additional rows, updated as each is written.
 
 ### Expansion plan per chapter (01-10)
 
@@ -132,10 +147,15 @@ Progress (updated per chapter as expansion happens):
       than introducing new evidence. 1,369 -> 1,696 words. Rendered pages
       checked.
 - [ ] 11 Four Delegations, Worked in Full (new)
-- [ ] 12 Objections and Edge Cases (new)
-- [ ] 13 Templates and Worksheets (new)
+- [ ] 12 Choosing Your First Tool (new)
+- [ ] 13 When Your Team Delegates Too (new)
+- [ ] 14 Objections and Edge Cases (new)
+- [ ] 15 Templates and Worksheets (new)
 - [ ] Full rebuild + EPUB rebuild + `qc.py --release` at the new target,
-      gutter confirmed at 0.5in against the real page count.
+      gutter confirmed at 0.5in against the real page count. Recheck real
+      page count after chapter 11 specifically and adjust the scope of
+      12-15 against the sizing math below if the gap looks different than
+      projected, rather than forcing a rigid per-chapter quota.
 
 ### Sizing math behind the plan
 

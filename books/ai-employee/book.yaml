@@ -81,6 +81,21 @@ chapters:
   - id: "10"
     title: "A 30-Day Delegation Plan"
     file: manuscript/10-a-30-day-delegation-plan.md
+  - id: "11"
+    title: "Four Delegations, Worked in Full"
+    file: manuscript/11-four-delegations-worked-in-full.md
+  - id: "12"
+    title: "Choosing Your First Tool"
+    file: manuscript/12-choosing-your-first-tool.md
+  - id: "13"
+    title: "When Your Team Delegates Too"
+    file: manuscript/13-when-your-team-delegates-too.md
+  - id: "14"
+    title: "Objections and Edge Cases"
+    file: manuscript/14-objections-and-edge-cases.md
+  - id: "15"
+    title: "Templates and Worksheets"
+    file: manuscript/15-templates-and-worksheets.md
 
 back_matter:
   - acknowledgments
