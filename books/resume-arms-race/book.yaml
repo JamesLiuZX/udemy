@@ -12,7 +12,7 @@ author: "James Liu"
 year: 2026
 genre: business
 trim: "6x9"
-target_pages: [120, 170]
+target_pages: [130, 165]
 
 # Never set true except by the real author, after a genuine full read-through.
 verified: false
@@ -83,8 +83,35 @@ chapters:
     title: "Candidates Use AI Too, and That's Not Automatically Cheating"
     file: manuscript/09-candidates-use-ai-too.md
   - id: "10"
+    title: "Coaching Your Hiring Managers"
+    file: manuscript/10-coaching-your-hiring-managers.md
+  - id: "11"
+    title: "Skills Assessments and Work Samples"
+    file: manuscript/11-skills-assessments-and-work-samples.md
+  - id: "12"
+    title: "Referrals, Internal Moves, and Warm Pipelines"
+    file: manuscript/12-referrals-internal-moves-and-warm-pipelines.md
+  - id: "13"
+    title: "Verifying the Person, Not Just the Resume"
+    file: manuscript/13-verifying-the-person-not-just-the-resume.md
+  - id: "14"
+    title: "Rejecting Well, at Scale"
+    file: manuscript/14-rejecting-well-at-scale.md
+  - id: "15"
+    title: "Objections and Edge Cases"
+    file: manuscript/15-objections-and-edge-cases.md
+  - id: "16"
+    title: "Two Recruiters, Two Pipelines"
+    file: manuscript/16-two-recruiters-two-pipelines.md
+  - id: "17"
+    title: "The First Ninety Days"
+    file: manuscript/17-the-first-ninety-days.md
+  - id: "18"
     title: "The Recruiter's Actual Value Now"
-    file: manuscript/10-the-recruiters-actual-value-now.md
+    file: manuscript/18-the-recruiters-actual-value-now.md
+  - id: "19"
+    title: "The Toolkit"
+    file: manuscript/19-the-toolkit.md
 
 back_matter:
   - about_the_author
