@@ -113,6 +113,13 @@ body and are lifted out automatically.
    strongest credibility signal available, and no competing course does it.
 6. **No LLM tells.** "delve", "in today's fast-paced world", "unlock the power",
    "game-changer", "it's important to note", "in conclusion". QC flags these.
+7. **Story before mechanism, plug-and-play before theory.** The buyer is an
+   ordinary office worker or manager, not an engineer. Open on a scene, not a
+   framework. Translate every technical term into plain speech at first use.
+   End every lecture with one thing the learner can do at work tomorrow, using
+   an artifact where one exists. Technical depth earns its place only where it
+   changes a decision the learner actually owns; anything deeper gets a plain
+   "if you want the machinery" flag or gets cut.
 
 ### The voice, by example
 

@@ -109,6 +109,26 @@ verification, and where one opens on the agenda, rewrite just the first
 narration block. Openers are the cheapest high-leverage edit available in a
 drafted course, because they decide whether the lecture gets watched at all.
 
+### The plug-and-play rule (author directive, applies to every course)
+
+The Udemy buyer is an ordinary office worker or manager who wants an
+immediately usable improvement to their working day, not an engineering
+education. Encoded as CLAUDE.md §4 rule 7 and enforced in review passes:
+
+- Story carries every lecture; the technique rides inside it. If a lecture
+  can be summarised as "here is a mechanism", it is misframed; the frame is
+  "here is a Tuesday afternoon this fixes".
+- Jargon is translated into plain speech the first time it appears, every
+  time. A learner who cannot repeat the sentence to a colleague did not
+  receive it.
+- Every lecture closes with one plug-and-play action for tomorrow morning,
+  wired to a downloadable artifact wherever one exists. The artifacts are
+  the product; the lectures are the argument for using them.
+- Technical nitty-gritty survives only where it changes a decision the
+  learner owns. Depth that serves completeness rather than decisions gets a
+  clearly flagged optional beat, or gets cut. Rigour is not the casualty
+  here: the judgement spine stays, delivered in scenes instead of schemas.
+
 ---
 
 ## 4. Upgrade 3: instructor presence (policy moat and quality lever at once)
