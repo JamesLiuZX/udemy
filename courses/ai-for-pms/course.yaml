@@ -29,11 +29,11 @@ description: |
   scale, scope agents with reliability maths instead of optimism, and run a
   red-team pass that gets you through legal review.
 
-  **You will build 11 artifacts you can use at work immediately:** an AI Feature
+  **You will build 12 artifacts you can use at work immediately:** an AI Feature
   PRD, a golden dataset spec, two eval harnesses, a scoring rubric with a
   calibration protocol, a RAG design doc, a retrieval scorecard, an agent scoping
-  worksheet, a token unit-economics model, a model selection scorecard, and an AI
-  risk register.
+  worksheet, a token unit-economics model, a model selection scorecard, an AI
+  risk register, and a metric tree for the numbers that matter after launch.
 
   **Who this is for:** product managers, project and delivery managers, and
   business or data analysts who are now responsible for AI work. No coding
@@ -166,7 +166,7 @@ sections:
     goal: "Deliver a usable skill and the course's central idea inside 15 minutes."
     lectures:
       - {id: "0.1", title: "Welcome, and what you'll be able to do by Friday", duration: 3, voice: human}
-      - {id: "0.2", title: "How to use this course (and the 11 artifacts you'll build)", duration: 4}
+      - {id: "0.2", title: "How to use this course (and the 12 artifacts you'll build)", duration: 4}
       - {id: "0.3", title: "The one idea: AI features are distributions, not functions", duration: 6}
       - {id: "0.4", title: "Your first win: score an AI output in 5 minutes", duration: 6, hands_on: true}
 
