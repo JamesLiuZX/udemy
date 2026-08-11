@@ -38,6 +38,13 @@ callbacks:
     use: Golden-set drift; April refund policy makes tickets like 4471 common
   - lecture: "5.5"
     use: Near-duplicate confusion, retold and named formally as explicit callback
+  - lecture: "3.2"
+    use: The worked acceptance-criteria example ("On the 50-case support golden
+      set, at least 90% of responses score 4 or 5 on the accuracy rubric, with
+      zero responses scoring 1") reuses the canonical golden-set size (50) and
+      rubric question count (six, in 3.4). 3.8 names the feature explicitly as
+      "the support ticket summariser's" acceptance criteria and reuses the
+      sentence verbatim as the workshop's worked example.
 
 # Canonical numbers. A different value for any of these in any lecture is a
 # continuity bug, and qc.py's continuity check (docs/04 §7) matches on them.
