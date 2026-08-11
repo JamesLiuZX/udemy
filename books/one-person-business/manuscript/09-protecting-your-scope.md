@@ -30,6 +30,12 @@ Once you have that read, drafting the "yes, and" message in the client's own est
 
 [AUTHOR-INPUT: your own scope-creep story here, a specific request that crept past the original quote, and how the conversation actually went once you named the cost instead of absorbing it silently]
 
+## Marcus's script starts from a document, not a feeling
+
+Priya's version of the two-line check works from memory and a general sense of what she quoted. Marcus has an advantage here that's worth naming, because it's a direct payoff of a decision made two chapters earlier rather than a new skill: chapter three's sixth brief section, the one naming exactly what's out of scope on every fixed-price proposal, means his version of the check isn't "does this feel like extra work," it's "does this appear on the explicit not-included list I already sent the client and they already signed."
+
+That's a meaningfully easier question to answer under pressure, and a meaningfully easier one to defend to a client who pushes back, because the answer isn't Marcus's judgment call in the moment. It's a line item both of them already agreed to before the project started. When a client asks him to "just also" add a feature that's sitting in that list by name, his yes-and response can point directly at the document instead of asserting a boundary from scratch: "That's the mobile app version we scoped out in the proposal, item three under what's not included, so it'd be a separate quote rather than part of this one. Want me to put a number on it?" The proposal did most of the actual defending. The script just delivers it.
+
 ## What this chapter will not do
 
 This chapter will not tell you every extra request deserves a formal cost conversation. A five-minute favor for a long-term client who sends you steady work all year is a relationship investment, not scope creep, and treating every small ask as billable is its own way of making a client feel nickeled and dimed. The judgment call is real and stays yours; what this chapter removes is only the friction of drafting the response once you've made it.
@@ -44,6 +50,12 @@ It also won't tell you scope creep is always the client's fault. Plenty of it st
 - Check ambiguous requests against the original scope before responding, not after you've already said yes on instinct. A clear original quote, from chapter three, prevents more of this than any script written after the fact.
 
 [/TAKEAWAYS]
+
+## Try this: audit your last three "small" yeses
+
+Think back over your last month of client work and name three requests you said yes to without pausing to check them against the original scope, the ones that felt too small to mention. For each one, ask two questions: was it actually outside what you quoted, and if so, roughly how many minutes or hours did it cost you.
+
+Add up the total. Most freelancers running this exercise for the first time are surprised less by any single item and more by the sum, the same pattern chapter one's time audit surfaced for admin work generally. That total isn't an argument for saying no to everything going forward. It's the number that makes the three-part script worth the ninety seconds it takes to use next time, instead of feeling like an awkward thing to bring up over a genuinely small request.
 
 ## Where this goes next
 
