@@ -114,6 +114,9 @@ chapters:
   - id: "22"
     title: "The Cost of Never Trying"
     file: manuscript/22-the-cost-of-never-trying.md
+  - id: "24"
+    title: "Explaining This to Clients and Customers"
+    file: manuscript/24-explaining-this-to-clients-and-customers.md
   - id: "23"
     title: "Conclusion: The Manager You're Becoming"
     file: manuscript/23-conclusion-the-manager-youre-becoming.md

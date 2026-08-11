@@ -271,6 +271,16 @@ Progress (updated per chapter as expansion happens):
       progress. No `[KEY-INSIGHT]`; a synthesis chapter, not a new claim.
       1,065 words, 4pp standalone. Rendered pages checked. Sits between
       chapter 22 and the templates appendix.
+- [x] 24 Explaining This to Clients and Customers — new chapter, placed
+      before the conclusion. External-facing disclosure, distinct from
+      chapter thirteen's internal team disclosure: the "would a
+      reasonable person feel misled" line, why routine reviewed
+      communication doesn't need a disclosure but a testimonial or
+      firsthand account attributed to a specific person does. One
+      `[KEY-INSIGHT]` (the FTC's AI enforcement policy and its 2024 fake-
+      review rule). 885 words, 4pp standalone. Rendered pages checked.
+      Chapter order is now ...22, 24, 23 (conclusion), 15 (templates,
+      last); ids don't need to match position, see the book.yaml note.
 - [ ] Additional chapters as needed to close the remaining gap to
       [180, 240]pp (still well short after 11-16; author directive is to
       keep adding genuine chapters rather than pad, checking in if

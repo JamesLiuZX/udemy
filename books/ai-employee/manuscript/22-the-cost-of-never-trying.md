@@ -35,4 +35,4 @@ Yusuf's own resolution, once he saw it named this way, was almost anticlimactic:
 
 ## Where this goes next
 
-The conclusion closes the loop this book opened in chapter one. After that, the final chapter is reference material: the book's templates and worksheets in one place, ready to copy and fill in on the task you pick, today, rather than the one you're still deliberating about.
+Chapter twenty-three turns to one more audience this book hasn't addressed directly: what you owe the client or customer on the other end of a delegated task, when they don't already know how it was produced.
