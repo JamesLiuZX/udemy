@@ -102,6 +102,27 @@ callbacks:
     use: The workshop's pacing table and quote both point back to 8.1's
       register and its 4471-specific operational-risk row, closing the
       section's callback loop on the same worked example it opened with.
+  - lecture: "9.1"
+    use: The deflection metric is worked directly against the refund
+      agent (6.1's extension of the summariser) - a rising conversation
+      count says nothing on its own, deflection asks how many refund
+      requests closed without a human touching the case. Confirmed
+      during Section 9's verification pass, no edit needed.
+  - lecture: "9.2"
+    use: The escalation event in the instrumentation schema is grounded
+      against the refund agent, naming "a case like 4471" as the
+      concrete thing the escalation flag has to trace. Swapped in
+      during Section 9's verification pass for a generic "a feature".
+  - lecture: "9.3"
+    use: The week-one-to-week-three A/B test decay example is grounded
+      as "a prompt change to the ticket summariser". Added during
+      Section 9's verification pass to a previously feature-agnostic
+      example.
+  - lecture: "9.6"
+    use: The workshop's North Star discussion names "the refund agent
+      this course keeps returning to" (7.7's phrasing) as the worked
+      example for a deflection-led metric tree, swapped in during
+      Section 9's verification pass for a generic "a support assistant".
 
 # Canonical numbers. A different value for any of these in any lecture is a
 # continuity bug, and qc.py's continuity check (docs/04 §7) matches on them.
