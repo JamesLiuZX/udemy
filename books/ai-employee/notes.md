@@ -5,18 +5,28 @@ sessions, same pattern as books/stop-guessing/notes.md.
 
 ## Status
 
-- Chapter 01 is written and verified-pending-signoff: built, rendered pages
-  visually inspected, `qc.py` clean beyond the `verified: false` and
-  `[AUTHOR-INPUT]` gates.
-- Chapters 02 through 10 are outlined in `book.yaml` (titles, order) but the
-  manuscript files do not exist yet. `build.py --only 01` works today; a
-  full `--book ai-employee` build will fail until every listed chapter has
-  a real file.
+- Chapters 01 through 04 are written and verified-pending-signoff: built,
+  rendered pages visually inspected, `qc.py` clean beyond the
+  `verified: false` and (where present) `[AUTHOR-INPUT]` gates. Chapter 04
+  has no `[AUTHOR-INPUT]` marker; its load-bearing evidence is a
+  `[KEY-INSIGHT]` instead (see below), consistent with the repo's stated
+  default.
+- Chapters 05 through 10 are outlined in `book.yaml` (titles, order) but the
+  manuscript files do not exist yet. `build.py --only 04` (or any of
+  01-04) works today; a full `--book ai-employee` build will fail until
+  every listed chapter has a real file.
 - `target_pages` starts at [120, 170], the same starting estimate used for
-  stop-guessing before any chapter existed. Recalibrate against the real
-  rendered page count once chapter 01 (or a few chapters) exist, the same
-  way stop-guessing's target moved once real density was known. Don't pad
+  stop-guessing before any chapter existed. At 4 of 10 chapters,
+  `book.py`'s estimator reads ~20pp; too early to recalibrate the target
+  off of, but worth revisiting once more chapters exist. Don't pad
   chapters to hit a number that was only ever a guess.
+- The local environment had neither `pandoc` nor a LaTeX toolchain nor
+  `hunspell` installed at the start of this session; all three were
+  installed via `apt-get` (pandoc, texlive-xetex + texlive-latex-recommended
+  + texlive-latex-extra + texlive-fonts-recommended + latexmk, hunspell +
+  hunspell-en-us) before the first build. `qc.py`'s spellcheck silently
+  no-ops when `hunspell` isn't on PATH, so a prior "qc.py clean" report for
+  chapter 01 may not have actually run the spellcheck step.
 
 ## The core device
 
