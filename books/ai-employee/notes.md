@@ -74,7 +74,15 @@ Progress (updated per chapter as expansion happens):
       zero-shot across 95 models, backing "the concrete example does more
       work than the other four combined"), plus a "Try this" exercise.
       1,284 -> 1,836 words. Rendered pages checked.
-- [ ] 03 The Trial Task
+- [x] 03 The Trial Task — upgraded the vague "aggregated... summaries"
+      `[KEY-INSIGHT]` to a real, precise primary study (a 2025
+      quasi-experimental onboarding study, 200 nurses/assistants, three
+      hospitals), added a second worked example (Farrah, a five-attempt
+      trial on nonprofit thank-you letters that surfaces a specific,
+      fixable gap), and a two-part "Try this" worksheet (criteria
+      scorecard + five-attempt run log — confirms blank markdown tables
+      render cleanly as fillable pages, useful for chapter 13). 1,156 ->
+      1,590 words. Rendered pages checked.
 - [ ] 04 Checking the Work Without Redoing It
 - [ ] 05 Learning Its Failure Modes
 - [ ] 06 Feedback That Actually Sticks
