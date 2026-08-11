@@ -26,6 +26,15 @@ Three things separate a correction that becomes a standing instruction from one 
 
 **Write it as a rule, not a complaint about one output.** "This draft was too salesy" describes a single failure. "Buyers here are practical: lead with square footage, lot size, and school district, and avoid adjectives like 'stunning' or 'must-see'" describes a standard the tool can apply to every future draft, not just the one you're looking at right now.
 
+The difference, side by side:
+
+| The complaint | The rule |
+| --- | --- |
+| "This draft was too salesy" | "Buyers here are practical: lead with square footage, lot size, and school district; avoid 'stunning' and 'must-see'" |
+| Describes one output | Describes a standard |
+| Dies when the chat ends | Lives in the saved instruction |
+| You'll type a version of it again next week | Applies itself to every future draft |
+
 [KEY-INSIGHT: One of the most heavily replicated findings in organizational psychology, built from decades of studies across a huge range of tasks, is that specific, well-defined goals reliably produce better performance than vague ones, and outperformed a generic "do your best" instruction in roughly nine out of ten studies where the two were compared directly. || Source: Locke, E.A., & Latham, G.P., "Building a Practically Useful Theory of Goal Setting and Task Motivation: A 35-Year Odyssey," American Psychologist, 57(9), 2002, pp. 705-717.]
 
 That finding was built from studying people, not AI tools, which is exactly why it belongs here: it means "buyers here are practical" beats "make it less salesy" for the same structural reason a specific sales target beats "do your best" for a person on commission. A standing instruction that names the actual standard, not just the complaint, is doing something with real, independently documented backing, not just a guess about what might work better.

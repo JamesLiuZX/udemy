@@ -1,6 +1,8 @@
 # Common Failure Patterns Across Task Types
 
-Every chapter so far built a failure-mode list one task at a time, the way chapter five recommends: specific to this task, this tool, discovered through your own trial. That's still the right way to build the list that actually governs a task you're running. But after a dozen examples across this book, a second, useful pattern comes into view: tasks that share a basic shape tend to share a basic failure pattern too, before you've run a single trial of your own. This chapter organizes what's already been shown by task type, so the next task you delegate starts with a head start instead of a blank slate.
+A loose faucet handle and a leak under the sink read almost identically to a keyword glance, and only one of them stains the ceiling of the apartment below. James's triage tool filed both as routine. Maria's expense tool was accurate everywhere except the one vendor that sells both fuel and equipment. Devon's calendar assistant never got a date wrong, except the week two people meant different things by "3pm." Three different businesses, three different tools, and the failures rhyme.
+
+Every chapter so far built a failure-mode list one task at a time, the way chapter five recommends: specific to this task, this tool, discovered through your own trial. That's still the right way to build the list that actually governs a task you're running. But after a dozen examples across this book, the rhyme is worth naming directly: tasks that share a basic shape tend to share a basic failure pattern too, before you've run a single trial of your own. This chapter organizes what's already been shown by task type, so the next task you delegate starts with a head start instead of a blank slate.
 
 [KEY-INSIGHT: A large-scale study that automatically cataloged AI model errors across 35 datasets and 83 different models found that some of the most common failure types are also among the least discussed: quietly omitting a required piece of information from an otherwise complete-looking answer, and misinterpreting exactly what was being asked, rather than the more commonly assumed failure of simply stating a wrong fact. || Source: Ashury-Tahan, S., Mai, Y., Bandel, E., Shmueli-Scheuer, M., & Choshen, L., "ErrorMap and ErrorAtlas: Charting the Failure Landscape of Large Language Models," arXiv:2601.15812, January 2026.]
 
@@ -25,6 +27,18 @@ Ola's fundraising letter and the AI legal research tools from chapter five share
 ## Chained, multi-step tasks
 
 Chapter nine covered this in depth and it's worth summarizing here for completeness: a chain's failure isn't usually any single step failing badly. It's an ordinary, small imperfection in an early step getting built on, restated, and dressed up in confident prose by every step that follows, until the final output shows no trace of where the actual problem started. Watch for: this is the one pattern that isn't caught by watching the finished output more carefully. It's only caught by checking each step's output before it becomes the next step's input, chapter nine's checkpoint discipline, because by the time a chain's output looks finished, the evidence of where it went wrong is usually already gone.
+
+## The five patterns on one page
+
+| Task type | Cases from this book | Signature failure | Watch for |
+| --- | --- | --- | --- |
+| Writing and drafting | Priya, Renata, Devon | Invented specifics inside fluent prose | Numbers, dates, names more specific than the input |
+| Categorization and triage | Maria, James | Fails at category boundaries, not the middle | Inputs that could belong to two categories |
+| Scheduling | Devon's calendar | Silent defaults: timezone, date format | Any detail resting on assumption, not statement |
+| Research and summarization | Ola, the legal tools | Real facts, wrong source or year | Any fact checkable against a retrievable source |
+| Chained, multi-step | Ola's letter chain | Small early error, compounded and dressed up | Check each step before it feeds the next |
+
+[PULLQUOTE: By the time a chain's output looks finished, the evidence of where it went wrong is usually already gone.]
 
 ## Using this chapter
 

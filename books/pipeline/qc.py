@@ -78,6 +78,9 @@ ALLOW = {
     "rollouts", "todo", "unbuilt", "uncited", "unescaped", "untrusted",
     "watchlist", "watchlisted", "recoverably", "redesign's", "reframes",
     "relitigating", "requester's", "rebranded",
+    # ai-employee quality pass additions (real words, checked by hand)
+    "odalys's", "autocorrects", "botshitting", "categorizer",
+    "miscategorized",
 }
 
 AUTHOR_INPUT_RE = re.compile(r"\[AUTHOR-INPUT:(.*?)\]", re.S)

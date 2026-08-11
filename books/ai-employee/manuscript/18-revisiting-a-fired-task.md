@@ -1,6 +1,8 @@
 # Revisiting a Fired Task
 
-Chapter seven ended with a promise this book hasn't fully kept yet: that firing a task isn't a permanent verdict, and a task worth reconsidering deserves a fresh, small trial rather than being treated as settled forever. This chapter is that promise, paid off, because "revisit it eventually" without an actual practice attached to it tends to mean "never," the same way "check it occasionally" meant nothing until chapter four gave it a real method.
+Ingrid fired the task a year ago and had every reason to forget it. Insurance pre-authorization replies for her veterinary supply business, killed cleanly by chapter seven's third disqualifier: one wrong answer about coverage terms cost more than any amount of saved drafting time was worth. What she did next is the part almost nobody does. She put a date on a calendar, six months out, with no expectation attached, to check whether the verdict still held.
+
+This chapter is about that calendar entry, because chapter seven ended with a promise this book hasn't fully kept yet: firing a task isn't a permanent verdict, and a task worth reconsidering deserves a fresh, small trial rather than being treated as settled forever. "Revisit it eventually" without an actual practice attached tends to mean "never," the same way "check it occasionally" meant nothing until chapter four gave it a real method.
 
 ## Why fired tasks stay fired by default
 
@@ -20,9 +22,16 @@ Nothing about firing a task requires you to ever think about it again, which is 
 
 ## What actually changed, six months later
 
-Ingrid runs a small veterinary supply distributor and had fired a task the year before: drafting responses to insurance pre-authorization inquiries, which chapter seven's third disqualifier caught cleanly, a single wrong answer about coverage terms was expensive enough to outweigh any time saved. She'd calendared a six-month check without much expectation attached to it. The first revisit, in spring, confirmed the original call exactly: the same category of coverage-term error showed up on attempt two of a fresh five-attempt trial. She noted it, closed the trial, and moved on without ceremony.
+The first revisit, in spring, confirmed Ingrid's original call exactly: the same category of coverage-term error showed up on attempt two of a fresh five-attempt trial. She noted it, closed the trial, and moved on without ceremony.
 
 The second revisit, in fall, was different. The specific coverage-term confusion that had failed the task twice now didn't appear across five fresh attempts. Rather than reinstating the task on that strength alone, Ingrid ran chapter two's real brief from scratch, since the version she'd have used a year earlier no longer reflected her current supplier terms, and spot-checked the new attempts against chapter four's method before trusting any of it. Six weeks later the task was running, genuinely, on a task that had been correctly off-limits for most of a year. Nothing about the eventual success required guessing right the first time. It required a habit that kept checking after the exciting part of the decision, the initial firing, was long over.
+
+Her tracker for that task, filled in, is the whole habit on two lines, next to a task whose revisits went the other way:
+
+| Task | Disqualifier that fired it | Revisit 1 | Revisit 2 | Status |
+| --- | --- | --- | --- | --- |
+| Insurance pre-auth replies (Ingrid) | #3: one error too expensive | Same coverage-term error, stays fired | Clean across five attempts; fresh brief, spot-checked | Running |
+| Personalized apology notes (Odalys) | #2: relationship history | Fails the same disqualifier | Fails the same disqualifier | Stays fired, expected to |
 
 ## When the revisit should keep failing
 

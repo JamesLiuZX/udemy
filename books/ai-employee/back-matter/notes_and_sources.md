@@ -64,7 +64,7 @@ Use it the way chapter twelve asked you to use a vendor's own benchmark claim: a
 
 ## Chapter 12: Choosing Your First Tool
 
-**Enterprise AI abandonment.** A 2025 survey of more than 1,000 enterprises across North America and Europe found 42% had abandoned the majority of their AI initiatives before reaching production, up sharply from 17% the year before, citing poor initial fit, unclear value, and underestimated ongoing cost. *S&P Global Market Intelligence, "2025 Enterprise AI Survey (Voice of the Enterprise)," 2025.*
+**Enterprise AI abandonment.** A 2025 survey of more than 1,000 enterprises across North America and Europe found 42% had abandoned the majority of their AI initiatives before reaching production, up sharply from 17% the year before, citing cost, data privacy concerns, and security risks as the leading obstacles. *S&P Global Market Intelligence, "2025 Enterprise AI Survey (Voice of the Enterprise)," 2025.*
 
 ## Chapter 13: When Your Team Delegates Too
 
@@ -72,7 +72,7 @@ Use it the way chapter twelve asked you to use a vendor's own benchmark claim: a
 
 ## Chapter 14: Objections and Edge Cases
 
-**The EU AI Act's human-oversight requirement.** High-risk AI systems must be designed so they "can be effectively overseen by natural persons" during use, with the people assigned to that oversight enabled to properly understand the system's actual capabilities and limitations before relying on it. *Regulation (EU) 2024/1689 (EU Artificial Intelligence Act), Article 14, "Human Oversight," 2024.*
+**The EU AI Act's human-oversight requirement.** High-risk AI systems must be designed so they "can be effectively overseen by natural persons" during use, with the people assigned to that oversight enabled to properly understand the system's actual capabilities and limitations before relying on it. The July 2026 Digital Omnibus left the requirement intact but deferred its application for most high-risk systems to December 2027 (August 2028 for AI embedded in regulated products). *Regulation (EU) 2024/1689 (EU Artificial Intelligence Act), Article 14, "Human Oversight," 2024, as amended by Regulation (EU) 2026/1744, 2026.*
 
 ## Chapter 15: Measuring What Delegation Actually Saves You
 
@@ -96,4 +96,4 @@ Use it the way chapter twelve asked you to use a vendor's own benchmark claim: a
 
 ## Chapter 22: Explaining This to Clients and Customers
 
-**The FTC's rules on AI and deceptive practices.** The Federal Trade Commission applies existing consumer protection law, including the general ban on unfair or deceptive practices, directly to AI use, and a 2024 rule specifically bans AI-generated fake reviews and testimonials, with penalties up to $51,744 per violation. *Federal Trade Commission, AI enforcement policy and "Trade Regulation Rule on the Use of Consumer Reviews and Testimonials," effective October 21, 2024.*
+**The FTC's rules on AI and deceptive practices.** The Federal Trade Commission applies existing consumer protection law, including the general ban on unfair or deceptive practices, directly to AI use, and a 2024 rule specifically bans AI-generated fake reviews and testimonials, with civil penalties currently over $53,000 per violation, a cap adjusted for inflation over time. *Federal Trade Commission, AI enforcement policy and "Trade Regulation Rule on the Use of Consumer Reviews and Testimonials," effective October 21, 2024.*

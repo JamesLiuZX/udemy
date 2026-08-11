@@ -22,7 +22,15 @@ What actually held, for Wanda's team, was teaching the same specific skills this
 
 **A named seam per task, not a vague reminder to "double-check."** For the competitive analysis specifically, the known seam was pricing and positioning claims about named competitors, exactly the kind of detail that goes stale and gets confidently misstated. The team's standard now names that seam explicitly: before sending, every competitor claim gets checked against a source dated within the last thirty days. That's chapter four's spot-check, written down at the team level instead of held only in one person's head.
 
-**A norm that disclosure isn't an admission of failure.** Research on why employees hide their AI use finds the reason is rarely deception for its own sake, it's fear of being judged less capable or handed more work for admitting they used a tool at all. Wanda made a small, deliberate change: team meetings now normally include one line about which tasks used an AI draft as a starting point, said the same way someone would mention using a template, not a confession. Making disclosure ordinary, rather than something to hide, is what actually surfaces a shaky check before a client does.
+**A norm that disclosure isn't an admission of failure.** When employees hide their AI use, the reason is rarely deception for its own sake. It's fear of being judged less capable, or handed more work, for admitting they used a tool at all; the same surveys that coined "botshitting" keep finding exactly that motive underneath it. Wanda made a small, deliberate change: team meetings now normally include one line about which tasks used an AI draft as a starting point, said the same way someone would mention using a template, not a confession. Making disclosure ordinary, rather than something to hide, is what actually surfaces a shaky check before a client does.
+
+Wanda's standard, before and after, element by element:
+
+| Element | The version that failed | The version that held |
+| --- | --- | --- |
+| Brief | Improvised per person, under deadline | One shared five-part brief per task type |
+| Check | A policy to "verify AI output" | A named seam: every competitor claim checked against a source under 30 days old |
+| Disclosure | Hidden, feared as a confession | One routine line per meeting naming AI-drafted starting points |
 
 [PULLQUOTE: An employee who's never been taught to spot-check isn't being lazy when they skip it. They're doing exactly what nobody ever showed them not to do.]
 

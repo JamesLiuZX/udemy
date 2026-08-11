@@ -30,6 +30,15 @@ This chapter's argument is not permission to skip the trial altogether, and it's
 
 The two mistakes look opposite, eighteen months of never starting against zero minutes of caution before going live, but they share a cause: neither Yusuf nor Malik was actually running chapter three's method, small, cheap, and evidence-producing before any real commitment. Yusuf's fix and Malik's fix turned out to be the same fix. Run the trial, on a small task, before either trusting it fully or deciding it's not for you. Neither indefinite deliberation nor skipping the trial gets you there. Only the trial itself does.
 
+Yusuf and Malik made opposite mistakes that were secretly the same one:
+
+| | Yusuf | Malik |
+| --- | --- | --- |
+| The mistake | Eighteen months of deliberation, zero trials | Zero caution, straight to full client-facing volume |
+| What got skipped | The trial | The trial |
+| What it cost | Compounding lost ground, and no evidence either way | A client caught the quality dip before he did |
+| The fix | A five-attempt trial on the smallest task, that afternoon | The same |
+
 ## Try this: name your own eighteen months
 
 Is there a task you've been "about to try" for longer than you'd admit out loud? Name it, and name the actual reason you haven't started, in one honest sentence.

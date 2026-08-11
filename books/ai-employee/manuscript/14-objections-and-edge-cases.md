@@ -1,6 +1,18 @@
 # Objections and Edge Cases
 
-Every idea in this book has a real, honest objection sitting next to it, the kind a smart, skeptical colleague would raise across a coffee, not a strawman easy to knock down. This chapter collects the ones that come up most, and answers each one directly, including the ones where the honest answer concedes real ground rather than talking around it.
+"That's a lovely system. I have nine minutes between site visits and a phone that autocorrects 'brief' to 'brie.' When exactly am I writing five-part job descriptions?" That's a real objection, from the kind of smart, skeptical colleague who has actually read the thing she's objecting to, and she deserves a real answer, not a strawman easy to knock down.
+
+Every idea in this book has an objection like hers sitting next to it. This chapter collects the ones that come up most, and answers each one directly, including the ones where the honest answer concedes real ground rather than talking around it.
+
+The shape of every answer in this chapter, compressed:
+
+| The objection | What it concedes | The narrower answer |
+| --- | --- | --- |
+| "No time for briefs" | True for one-offs | The brief pays only on recurring tasks |
+| "The tool changed overnight" | Lists do go stale | Re-run a small trial periodically |
+| "My work is regulated" | The stakes are higher | The method is what regulators already ask for |
+| "I tried it and it failed" | Maybe the task is unsuitable | Check whether the attempt was a four-word brief |
+| "Isn't this common sense?" | Mostly, yes | The skill is aiming instincts you already own |
 
 ## "I don't have time to write a five-part brief for every little thing."
 
@@ -14,7 +26,7 @@ This will keep happening, and chapters five and six both said so plainly: a fail
 
 The opposite, usually. Regulated industries are exactly where the checking discipline in this book matters most, and increasingly, where regulators are requiring something close to it directly.
 
-[KEY-INSIGHT: The European Union's AI Act requires that high-risk AI systems be designed so they "can be effectively overseen by natural persons" during use, with oversight measures proportionate to the system's risk, and that the people assigned to that oversight be enabled to properly understand the system's actual capabilities and limitations before relying on it. || Source: Regulation (EU) 2024/1689 (EU Artificial Intelligence Act), Article 14, "Human Oversight," 2024.]
+[KEY-INSIGHT: The European Union's AI Act requires that high-risk AI systems be designed so they "can be effectively overseen by natural persons" during use, with oversight measures proportionate to the system's risk, and that the people assigned to that oversight be enabled to properly understand the system's actual capabilities and limitations before relying on it. The requirement is already on the books; the EU's July 2026 "Digital Omnibus" reform kept it intact but pushed the date it becomes enforceable for most high-risk systems to December 2027, and to August 2028 for AI built into regulated products. || Source: Regulation (EU) 2024/1689 (EU Artificial Intelligence Act), Article 14, "Human Oversight," 2024, as amended by Regulation (EU) 2026/1744 (Digital Omnibus on AI), in force July 2026.]
 
 A regulator writing that requirement into law is describing, in different words, exactly what chapters four through seven teach: know a system's real failure modes, check its output where it's likely to be wrong, and keep a human genuinely in the loop rather than a human whose sign-off is a formality. If your work is regulated, the disqualification checklist from chapter seven deserves an even more conservative reading, not a looser one, and some tasks that would pass for an unregulated business will correctly fail it for you. That's not this method being unsuited to regulated work. It's this method doing exactly what regulated work already requires.
 
@@ -49,6 +61,8 @@ Most of it is common sense, in the sense that you already apply every piece of i
 ## "How do I know when a task has 'earned' lighter oversight, versus when I'm just getting complacent?"
 
 The honest answer is that the two feel identical from the inside, which is exactly why chapter five insists on a written, specific failure-mode list instead of a general sense that a task is "pretty reliable now." Complacency is a feeling with no evidence behind it. Earned trust is a feeling with a written record behind it: a real trial, a spot-check history, a failure-mode list that's stayed short and stable for weeks, not months of vague confidence. If you can't point to the actual entries in that list and the date you last checked them, treat that as the sign it's complacency, not earned trust, and go check the seam again before assuming the light touch is still warranted.
+
+[PULLQUOTE: Complacency is a feeling with no evidence behind it. Earned trust is a feeling with a written record behind it.]
 
 ## "My failure-mode list keeps growing past three or four entries, no matter how I try to trim it."
 

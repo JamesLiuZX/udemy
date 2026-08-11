@@ -1,6 +1,8 @@
 # Not All AI Tools Are the Same Kind of Tool
 
-This book has talked about "AI" and "the tool" as if they were one kind of thing, on purpose, because the management skill underneath delegation is the same regardless of which specific product you're using. That simplification has done real work for nine chapters. It's time to complicate it slightly, because "AI tool" actually spans at least three genuinely different kinds of software, and knowing which kind you're delegating to changes exactly how a few pieces of this method apply.
+The order was eleven times larger than anything Odalys would have chosen herself, placed automatically, through a supplier she trusted, before she saw a single line of it. Nothing tripped the boundary she'd written, because the boundary was watching for the wrong thing. What made that mistake possible wasn't a worse model or a lazier check. It was a different kind of tool: one that acts, instead of one that drafts, and she'd been supervising it like the kind she already knew.
+
+This book has talked about "AI" and "the tool" as if they were one kind of thing, on purpose, because the management skill underneath delegation is the same regardless of which specific product you're using. That simplification has done real work for nine chapters. It's time to complicate it slightly, because "AI tool" actually spans at least three genuinely different kinds of software, and knowing which kind you're delegating to changes exactly how a few pieces of this method apply. Odalys's near-miss, told in full below, is what the difference costs when it goes unnoticed.
 
 ## Three shapes, one underlying skill
 
@@ -23,6 +25,15 @@ This book has talked about "AI" and "the tool" as if they were one kind of thing
 ## A concrete comparison
 
 Odalys runs a small subscription box business and uses all three shapes for different tasks, which makes her setup a clean illustration. A general chat assistant drafts customer support replies, chapter four's ordinary spot-check discipline, read the draft, check the seam, send it. A narrow, purpose-built tool categorizes returned items by reason code from a dropdown-style interface, and her "brief" for it is really just a one-time configuration of which reason codes map to which categories, checked once at setup and revisited only when she adds a new code. An automation reorders low-stock items from her primary supplier automatically once inventory crosses a threshold, and for that one, alone among her three tools, she requires a checkpoint before the action fires, not after: any reorder over five hundred dollars pauses for her approval before the order actually goes out, because an agent's mistake here isn't a bad draft to fix, it's money already spent on inventory she might not have wanted.
+
+The three shapes, side by side, in Odalys's own operation:
+
+| | Chat assistant | Purpose-built tool | Agent |
+| --- | --- | --- | --- |
+| Her example | Support reply drafts | Return reason-code categorizer | Auto-reorder automation |
+| Where the brief lives | Written five-part prose | Configuration and settings | Allowed-action boundary, dollar threshold |
+| When the checkpoint happens | After the draft, before sending | At setup, and when codes change | Before the action fires |
+| Worst realistic failure | A bad draft you catch | A miscategorized batch | Money already spent |
 
 ## The near-miss that set the threshold
 

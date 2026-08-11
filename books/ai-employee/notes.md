@@ -3,6 +3,99 @@
 Not part of the build. Working notes for continuing this manuscript across
 sessions, same pattern as books/stop-guessing/notes.md.
 
+## 2026-08-11: Chief Quality Editor pass (hook/nugget, SOTA, visual devices)
+
+Same mandate and method as books/stop-guessing/notes.md's entry of the
+same date. This book's citations were already live-verified in the recent
+editorial pass, so lens B here re-checked only the eight time-sensitive
+ones; the deep work was hooks (the back half opened on abstraction) and
+worked visuals (fourteen chapters had none).
+
+### Who this book's reader is
+
+A non-technical professional or small-business owner/manager with a
+repetitive task and no patience for hype: broader and less
+jargon-tolerant than stop-guessing's PM. They already own people-management
+instincts (briefing, trials, feedback, firing); the book's job is aiming
+those instincts at a tool. Audience check found and fixed the handful of
+lapses: "hallucination" now glossed at first use (ch1), "chain API calls"
+replaced with plain speech (ch9), "SKU" glossed (ch11), "train a model"
+glossed (ch12), "zero-shot" removed (ch21).
+
+### Hook and golden nugget, per chapter (file order)
+
+| Ch | Hook | Nugget |
+| --- | --- | --- |
+| 01 | Two people, same week, same tool, opposite verdicts, both wrong | Five-question audit of your own last failed AI attempt |
+| 02 | Listen to yourself train a hire vs prompt a tool | Write the five-part brief once per recurring task, reuse it |
+| 03 | Two managers, two first assignments for a new hire | Four criteria, five attempts, log each in a few words |
+| 04 | Maria's 340 line items, checked three wrong ways | Name the seam, check it 100%, sample the rest lightly |
+| 05 | Devon's one tool, two jobs, two different failure patterns | A written failure file per task: what/how often/when |
+| 06 | Priya's weekly fight with "stunning" and "must-see" | Rewrite the complaint as a rule; save it where the tool looks |
+| 07 | The review alleging Renata's cake made someone sick | The four-disqualifier checklist on one running task |
+| 08 | Marcus checks the newsletter's seam on the insurance notes | The one-page roster; two checks before any new task |
+| 09 | Ola's chain laundered one invented number into a mailing | Map the chain, collapse fake steps, human read at each seam |
+| 10 | Jamie's blank note titled "AI: Week One" | The four-week one-page calendar |
+| 11 | Bianca's four-word brief comes back generic (opener rebuilt this pass) | The whole method in one continuous story; the comparison table |
+| 12 | Naomi's eleven browser tabs of tool roundups | The memory test: correct it, open a new chat, check survival |
+| 13 | The client caught it, not the coordinator | One team standard: shared brief, named seam, spoken disclosure |
+| 14 | "Nine minutes between site visits and a phone that autocorrects brief to brie" (opener new this pass) | The complacency test: earned trust has a written record |
+| 15 | (reference appendix, renders last; no hook by design) | Every template in the book as fillable pages |
+| 16 | The confident yes that arrives before the question ends | Two-week total-time log against an honest baseline |
+| 17 | The faucet handle vs the leak under the sink (opener new this pass) | Guess the failure pattern before the trial; score your guess |
+| 18 | Ingrid's calendar entry for a task she fired (opener new this pass) | Two lines on every fired task: revisit date + what failed |
+| 19 | Three businesses, nothing in common, same fix underneath (new) | Match by task shape, not industry; the six-row table |
+| 20 | The order eleven times too large that tripped no boundary (new) | Name each tool's shape; write the agent's allowed actions |
+| 21 | The quote 30% under cost that read perfectly clean (new) | Reconcile one number against source, ninety seconds |
+| 22 | Yusuf, eighteen months of "about to try AI" | Four pre-trial criteria only; deliberation isn't evidence |
+| 23 | Back to the two people from chapter one | The honest two-list success metric (kept vs deliberately human) |
+| 24 | The testimonial drafts nobody quoted ever approved (new) | The reasonable-person test before anything client-facing |
+
+### What changed this pass
+
+- **Openers rebuilt on eight chapters** (11, 14, 17, 18, 19, 20, 21, 24):
+  each had a strong concrete scene sitting mid-chapter and opened on
+  abstraction or book-machinery instead; the scene was promoted per
+  docs/04 §3's cold-open rule. No new facts introduced anywhere.
+- **Missing pullquotes added** (14, 17, 19), each pulled verbatim from
+  body text per the house rule. Ch15 stays pullquote-free by design
+  (reference matter).
+- **Worked visuals added to eleven chapters** (02, 04, 06, 13, 14, 17,
+  18, 19, 20, 21, 22, 24), every one a compression of the chapter's own
+  existing material: before/after pairs (02, 06, 21), worked comparison
+  tables (04, 13, 18, 20, 22), reference tables (14, 17, 19, 24). Ch23
+  (conclusion) deliberately left visual-free: a table would undercut the
+  closing register, and the reference apparatus lives in ch15. All
+  inspected in the rebuilt PDF.
+- **Time-sensitive citations re-verified live (8 of 27)**: EU AI Act
+  Article 14 gained the July 2026 Digital Omnibus timing hedge
+  (enforcement for most high-risk systems deferred to Dec 2027 / Aug
+  2028; the requirement itself intact); the S&P Global abandonment
+  survey's stated reasons were wrong (actual reported obstacles: cost,
+  data privacy, security; not "poor fit / unclear value") and are fixed
+  in both places; the FTC fake-review penalty updated from the 2024 cap
+  ($51,744) to the current one (over $53,000, inflation-adjusted, 2026
+  adjustment cancelled); METR's follow-up status added (redesigned in
+  early 2026; the 19% figure remains the best measured result). Glean
+  botshitting, ErrorMap v2, OECD SME data, and both JPMC figures
+  confirmed unchanged. The one uncited research claim outside a box
+  (ch13, why employees hide AI use) tied to its actual source.
+- Rebuilt: EN PDF **191pp** (inside [180, 240]) + EPUB; qc --release
+  clean apart from the sign-off gate; spellcheck ALLOW grown with five
+  hand-verified words. zh edition mirrored (all openers, tables,
+  pullquotes, citation fixes), zh PDF rebuilt and inspected, proofs
+  recommitted.
+
+Judged NOT worth fixing, and why: ch2/ch3's imperative/hypothetical
+openers (concrete within a paragraph; rewriting would trade one good
+opening for another); a data-generated figure anywhere in this book (its
+numeric material is illustrative worked examples, not datasets; tables
+carry them honestly, and a chart would imply measurement that doesn't
+exist); ch16's conversational-trap opener (lands within the half page).
+
+Still the author's alone: verified: true, byline back-matter items
+already listed in the section below.
+
 ## Status — Simplified Chinese edition shipped (159pp), English proofs rebuilt with byline
 
 Two author directives landed after the editorial pass closed the English

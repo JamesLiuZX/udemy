@@ -1,6 +1,8 @@
 # Six Businesses, One Method
 
-Every example so far has gone deep on one or two businesses at a time, which is the right way to actually learn the method, but it can leave a real question unanswered: does any of this apply to a business that looks nothing like a bakery or a landscaping company? This chapter answers that by moving fast across six more, each one showing a genuine first task, the real seam it hit, and the same underlying method doing the same underlying work, on businesses different enough that at least one of them should resemble yours.
+A boutique's product description paraphrased a fabric blend and got it wrong; the fix was pulling the composition line verbatim from the tag. An HVAC contractor's confirmation texts kept dropping apartment unit numbers; the fix was flagging any unit-less address for a human look. A paralegal service's reformatting tool silently renumbered clauses and broke every cross-reference pointing at them. Three businesses that share nothing on the surface, and if you've read this far, you can already hear the same method working underneath each fix.
+
+Every example so far has gone deep on one or two businesses at a time, which is the right way to actually learn the method, but it can leave a real question unanswered: does any of this apply to a business that looks nothing like a bakery or a landscaping company? This chapter answers that by moving fast across six, each one showing a genuine first task, the real seam it hit, and the same underlying method doing the same underlying work, on businesses different enough that at least one of them should resemble yours.
 
 [KEY-INSIGHT: An OECD study of small and medium-sized enterprises found AI adoption varies dramatically by industry: nearly 45% of firms in information and communication technology had adopted AI, more than 25% of professional, scientific, and technical service firms had, while construction firms adopted at a rate of only 7.2%. || Source: OECD, "AI Adoption by Small and Medium-Sized Enterprises," December 2025.]
 
@@ -32,7 +34,18 @@ Foster runs a small paralegal support service for solo attorneys and delegated f
 
 ## What holds across all six
 
+| Business | First task | The seam | The fix |
+| --- | --- | --- | --- |
+| Boutique clothing | Product descriptions | Paraphrased fabric composition | Pull the fabric line verbatim from the tag |
+| HVAC contractor | Confirmation texts | Missing unit numbers | Flag unit-less addresses for a human |
+| Bookstore | Staff-pick blurbs | Gradual tonal drift | Refresh the brief every few months |
+| Real estate | Buyer inquiry replies | Wrong flood-zone map | Disclosure-adjacent questions go to a human |
+| Yoga studio | Cancellation notices | Relative day names ("next Tuesday") | Require an actual calendar date |
+| Paralegal support | Document formatting | Reordered clauses broke cross-references | Check every cross-reference after reformat |
+
 None of these six businesses have much in common on the surface, retail, HVAC, books, real estate, wellness, legal support. What's identical across all of them is the shape of how the method actually worked: a real trial surfaced a specific, narrow seam that a generic warning like "AI makes mistakes" would never have named, and a specific correction, in the brief or the standing instruction, closed it. The task categories differ. The discipline that catches their failures doesn't.
+
+[PULLQUOTE: The task categories differ. The discipline that catches their failures doesn't.]
 
 ## Try this: find your closest match
 

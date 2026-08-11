@@ -50,6 +50,14 @@ Reading every message defeated the point of automating triage at all, a hundred 
 
 ## What this is actually trading off
 
+Maria's quarter of expensive learning, compressed to one glance:
+
+| Strategy | Time cost | What it caught | Why |
+| --- | --- | --- | --- |
+| Check all 340 rows | Longer than doing it herself | Nothing new | Attention decays long before row 340 |
+| Check nothing | Minutes | Missed 11 misfiled items for two months | Finished-looking output stopped the question |
+| Check the seam (about 20 rows, one vendor) | About two minutes | All 11 | Errors cluster where categories overlap |
+
 A full check trades time for a false sense of thoroughness, since a tired reviewer three hundred rows in isn't actually thorough no matter how carefully they started. No check at all trades time for real risk, the kind that shows up two months later as a redone depreciation schedule. A targeted spot-check trades neither. It costs a few minutes instead of an afternoon, and it catches the errors that were actually going to happen instead of the errors a random sample might or might not stumble onto.
 
 That trade only works, though, because it depends on already knowing roughly where a task tends to break, which is knowledge you don't have on day one. The first few times you run any new delegated task, before you've built up that picture, check more broadly than this chapter recommends, closer to the trial-run discipline from chapter three than to a narrow, confident seam-check. Spot-checking a seam you haven't actually identified yet isn't efficient. It's just a full check's carelessness wearing a smarter-sounding name.

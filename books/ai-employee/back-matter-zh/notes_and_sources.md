@@ -64,7 +64,7 @@
 
 ## 第十二章：选择你的第一个工具
 
-**企业放弃AI项目的比例。** 一项2025年针对北美和欧洲超过1,000家企业的调查发现，42%的企业在其大多数AI项目投入生产之前就已放弃，这一比例较前一年的17%大幅上升，主要原因是最初的契合度差、价值不明确，以及低估了持续投入的成本。*S&P Global Market Intelligence, "2025 Enterprise AI Survey (Voice of the Enterprise)," 2025.*
+**企业放弃AI项目的比例。** 一项2025年针对北美和欧洲超过1,000家企业的调查发现，42%的企业在其大多数AI项目投入生产之前就已放弃，这一比例较前一年的17%大幅上升，被列为主要障碍的是成本、数据隐私顾虑和安全风险。*S&P Global Market Intelligence, "2025 Enterprise AI Survey (Voice of the Enterprise)," 2025.*
 
 ## 第十三章：当你的团队也开始委派
 
@@ -72,7 +72,7 @@
 
 ## 第十四章：常见质疑与边界情况
 
-**欧盟《人工智能法案》的人工监督要求。** 高风险AI系统的设计必须确保其在使用期间“能够受到自然人的有效监督”，负责监督的人员必须能够在依赖该系统之前，充分理解其实际能力与局限。*Regulation (EU) 2024/1689 (EU Artificial Intelligence Act), Article 14, "Human Oversight," 2024.*
+**欧盟《人工智能法案》的人工监督要求。** 高风险AI系统的设计必须确保其在使用期间“能够受到自然人的有效监督”，负责监督的人员必须能够在依赖该系统之前，充分理解其实际能力与局限。2026年7月的“数字综合法案”（Digital Omnibus）保留了这条要求本身，但把它对大多数高风险系统的适用时间推迟到2027年12月（内置于受监管产品中的AI则推迟到2028年8月）。*Regulation (EU) 2024/1689 (EU Artificial Intelligence Act), Article 14, "Human Oversight," 2024, as amended by Regulation (EU) 2026/1744, 2026.*
 
 ## 第十五章：衡量委派究竟为你节省了什么
 
@@ -96,4 +96,4 @@
 
 ## 第二十二章：向客户解释这一切
 
-**联邦贸易委员会关于AI与欺骗性行为的规定。** 美国联邦贸易委员会（FTC）将现行消费者保护法，包括对不公平或欺骗性行为的一般性禁令，直接适用于AI的使用；2024年的一项规定特别禁止AI生成的虚假评论和推荐语，每项违规最高可处51,744美元罚款。*Federal Trade Commission, AI enforcement policy and "Trade Regulation Rule on the Use of Consumer Reviews and Testimonials," effective October 21, 2024.*
+**联邦贸易委员会关于AI与欺骗性行为的规定。** 美国联邦贸易委员会（FTC）将现行消费者保护法，包括对不公平或欺骗性行为的一般性禁令，直接适用于AI的使用；2024年的一项规定特别禁止AI生成的虚假评论和推荐语，每项违规的民事罚款目前超过53,000美元，且这一上限会随通货膨胀不时调整。*Federal Trade Commission, AI enforcement policy and "Trade Regulation Rule on the Use of Consumer Reviews and Testimonials," effective October 21, 2024.*

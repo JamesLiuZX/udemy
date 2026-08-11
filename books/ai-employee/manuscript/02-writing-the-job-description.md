@@ -50,6 +50,15 @@ Here's the same five parts, applied to a spreadsheet instead of a conversation. 
 
 The rewritten brief produced, on the first real attempt, almost exactly the update Dana used to spend forty minutes writing by hand. Nothing about the underlying task changed. What changed is that a report is a job description too, the same five parts, just answering to a spreadsheet instead of a customer's inbox.
 
+Dana's two briefs, side by side, are the whole chapter in one table:
+
+| | The four-word version | The five-part version |
+| --- | --- | --- |
+| The brief | "Summarize this week's sales data" | Situation, constraints, example, "done," what it can't know, as above |
+| What came back | A wall of generic observations | The update she used to write by hand |
+| Time to write | Five seconds | Ninety seconds, once, then reused |
+| Who did the thinking | Nobody | Dana, exactly once |
+
 ## Why this isn't about being a better writer
 
 If the five-part structure sounds like a writing skill you don't have, that's the wrong read on it, and worth correcting directly. Nothing about a good brief requires elegant prose. The ninety-second version from the opening wasn't well-written. It was complete. Those are different qualities, and the second one is the only one that matters here.
