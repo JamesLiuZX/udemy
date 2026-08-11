@@ -111,7 +111,12 @@ Progress (updated per chapter as expansion happens):
       override from its pricing algorithm, illustrating criterion three
       at scale), and a "Try this" disqualification-checklist worksheet.
       1,587 -> 2,254 words. Rendered pages checked.
-- [ ] 08 Your Second Hire, and Your Third
+- [x] 08 Your Second Hire, and Your Third — added a second `[KEY-INSIGHT]`
+      (Gallup's 200,000-team span-of-control research, backing the span-
+      of-control claim with real numbers), a second worked example
+      (Priyanka, a five-task roster actively deciding against adding a
+      sixth), and a "Try this: start your roster" worksheet. 1,376 ->
+      1,829 words. Rendered pages checked.
 - [ ] 09 The Team of One
 - [ ] 10 A 30-Day Delegation Plan
 - [ ] 11 Four Delegations, Worked in Full (new)

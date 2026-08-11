@@ -36,13 +36,37 @@ A roster also answers a question attention alone answers badly: are you actually
 
 **Would you actually notice if this new task's spot-check failed?** If your honest answer is "probably not, most weeks," that's not a reason to skip the trial. It's a signal you're already past your real span of control, the same warning sign that shows up in every study of managers stretched across too many direct reports: not that any one report is doing badly, but that the manager's own attention has quietly stopped being able to tell.
 
+[KEY-INSIGHT: A large-scale analysis of more than 200,000 manager-led teams found that manager engagement, a proxy for how well a manager is actually tracking what's happening under them, peaks around eight or nine direct reports and declines as the span widens past that point, though skilled, well-supported managers can handle meaningfully more than that median. || Source: Gallup, "Span of Control: What's the Optimal Team Size for Managers?", gallup.com/workplace/700718, January 2026.]
+
+Notice the finding isn't "eight is the maximum," it's that engagement declines past that point without something compensating for it, exactly the role the roster is built to play. A manager tracking a written record of who's strong where extends their real span further than one relying on memory alone, the same way Marcus's four-task roster let him keep watching four tasks well instead of watching all four badly the moment a fifth one tempted him.
+
 Neither check is about a hard number of tasks. Some people manage six delegated tasks well because each one is stable and low-maintenance. Others struggle past two because both are still new and volatile. The roster is what makes the honest answer visible instead of a guess.
+
+## The roster making the call for you
+
+Here's what that looks like when a real decision is on the table, not just a hypothetical one.
+
+Priyanka runs operations for a small logistics brokerage and keeps a roster for five delegated tasks: load-confirmation emails, a weekly carrier-performance summary, invoice categorization, a monthly customer newsletter, and driver-availability check-ins. A sixth candidate came up in March, a first-pass draft of new-customer onboarding packets, small, recurring, checkable, everything chapter three asks for on its own merits. Before starting a trial, she pulled up the roster instead of just going with how she felt that week.
+
+Row four, the customer newsletter, was three weeks old and still revealing new corners of its failure-mode list, a run of overclaimed delivery-time promises she was still actively correcting. Row two, the carrier-performance summary, hadn't needed a real look in over a month, stable, its standing instruction untouched since February. The roster made the answer visible instead of a guess: she wasn't short on total tasks, she was short on attention for the one task that actually still needed it. She held off on the onboarding packets for three more weeks, until the newsletter's seam closed and row four dropped off her list of things needing daily attention, then ran the new trial exactly on schedule. Nothing about that decision required a feeling. It required reading five rows she'd already written down.
 
 ## What this chapter will not do
 
 This will not tell you more delegated tasks is automatically better, or that a roster's job is to help you take on as many as possible. The roster's real job is the opposite: to make it obvious, in writing, when you've already got more than you're actually watching well, before that shows up the expensive way, in a task that's quietly slipped past the point where anyone's checking its real seam.
 
 It also won't pretend a written roster replaces the actual judgment from chapters four through seven. The roster holds what you've already learned. It doesn't learn anything on its own, and a roster nobody updates after the first week is exactly as useless as no roster at all, just with more false confidence attached to it.
+
+## Try this: start your roster
+
+For every task you're currently delegating, one row:
+
+| Task | How trial went | Failure-mode list | Standing instructions | Disqualifier status |
+| --- | --- | --- | --- | --- |
+| | | | | |
+| | | | | |
+| | | | | |
+
+Before adding anything new to this table, answer the two honest checks from this chapter: is an existing row still actively teaching you something, and would you actually notice if its spot-check failed most weeks? If either answer gives you pause, that's the roster doing its job.
 
 [TAKEAWAYS]
 
