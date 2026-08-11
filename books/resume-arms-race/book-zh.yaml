@@ -1,0 +1,122 @@
+# =============================================================================
+# Simplified Chinese edition of "The Resume Arms Race".
+# Separate book.yaml (own slug, own build output dir) rather than a field
+# inside the English book.yaml, so `build.py --book books/resume-arms-race/
+# book-zh.yaml` builds this edition without touching the English path at all.
+# Mirrors the English book.yaml structurally; every value below is the
+# Chinese equivalent of that file's field, not a re-derivation.
+# =============================================================================
+
+slug: resume-arms-race-zh
+title: "简历军备竞赛"
+subtitle: "当每一份简历都由AI撰写、每一次筛选都由AI驱动时，招聘人员如何保持价值与公平"
+author: "James Liu"
+year: 2026
+genre: business
+trim: "6x9"
+target_pages: [110, 150]
+lang: zh
+
+# Never set true except by the real author, after a genuine full read-through.
+verified: false
+
+style:
+  spellcheck_lang: en_US   # hunspell has no useful CJK dictionary here; see notes.md
+  em_dash: avoid
+
+# Not part of the interior PDF. Not a KDP listing either -- KDP does not
+# accept a Chinese-language paperback at all, and does not list Simplified
+# Chinese as a supported eBook language (only Traditional Chinese, in beta,
+# ebook-only). This edition targets Google Play Books, Apple Books, and
+# direct/lead-gen distribution instead. See notes.md for what was checked.
+description: |
+  你队列里的每一份简历现在读起来都顺畅得有点可疑，而你用来筛选它们的工具，
+  出自同一类技术之手。夹在中间的东西，也就是这个人到底能不能做这份工作的
+  真实信号，正被两头一起挤压，而从来没人教过你该怎么办。
+
+  这本书是一个切实可行的答案，不是一声叹息。它讲清楚AI筛选到底错在哪里、
+  又系统性地过滤掉了哪些人，教你如何透过流畅的文字读出真实信号，说明面试
+  为什么变成了你手上最重要的工具，教你写出真正筛选适配度而不是关键词匹配
+  的职位描述，梳理招聘人才培训从未覆盖过的偏见与法律风险，并帮你搭建一套
+  能在监管机构或被拒候选人的律师面前站得住脚的招聘流程。
+
+  写给那些没有主动报名去裁判这场军备竞赛、却恰好站在中间位置的招聘人员和
+  人才招聘专业人士。
+
+dedication: "献给每一位被关键词过滤器错过的优秀候选人。"
+
+rights_note: "版权所有，未经作者书面许可，不得以任何形式复制、发行或传播本书的任何部分，书评中的简短引用除外。"
+ai_disclosure_text: "本书在作者的指导、大纲规划与审阅下，借助 AI 辅助完成写作。书中数据与案例均引自已标注来源的公开资料；任何涉及个人经历的表述均为作者本人真实经历。"
+isbn_note: "ISBN：[将在正式发行时分配]"
+
+front_matter:
+  - half_title
+  - title_page
+  - copyright
+  - dedication
+  - toc
+
+chapters:
+  - id: "01"
+    title: "军备竞赛"
+    file: manuscript-zh/01-the-arms-race.md
+  - id: "02"
+    title: "我们是如何走到这一步的"
+    file: manuscript-zh/02-how-we-got-here.md
+  - id: "03"
+    title: "AI筛选到底错在哪里"
+    file: manuscript-zh/03-what-ai-screening-actually-gets-wrong.md
+  - id: "04"
+    title: "透过润色看本质"
+    file: manuscript-zh/04-reading-past-the-polish.md
+  - id: "05"
+    title: "面试是唯一还算真实的环节"
+    file: manuscript-zh/05-the-interview-is-the-only-thing-left-thats-real.md
+  - id: "06"
+    title: "写一份不会被算计的职位描述"
+    file: manuscript-zh/06-writing-job-posts-that-dont-get-gamed.md
+  - id: "07"
+    title: "偏见进，偏见出"
+    file: manuscript-zh/07-bias-in-bias-out.md
+  - id: "08"
+    title: "建立一套经得起质疑的筛选流程"
+    file: manuscript-zh/08-building-a-screen-you-can-defend.md
+  - id: "09"
+    title: "候选人也在用AI，这不等于作弊"
+    file: manuscript-zh/09-candidates-use-ai-too.md
+  - id: "10"
+    title: "指导你的用人经理"
+    file: manuscript-zh/10-coaching-your-hiring-managers.md
+  - id: "11"
+    title: "技能测评与工作样本"
+    file: manuscript-zh/11-skills-assessments-and-work-samples.md
+  - id: "12"
+    title: "内推、内部转岗与熟人渠道"
+    file: manuscript-zh/12-referrals-internal-moves-and-warm-pipelines.md
+  - id: "13"
+    title: "核实这个人，而不只是这份简历"
+    file: manuscript-zh/13-verifying-the-person-not-just-the-resume.md
+  - id: "14"
+    title: "大规模场景下，如何体面地拒绝"
+    file: manuscript-zh/14-rejecting-well-at-scale.md
+  - id: "15"
+    title: "常见质疑与边界情况"
+    file: manuscript-zh/15-objections-and-edge-cases.md
+  - id: "16"
+    title: "两位招聘人员，两条管线"
+    file: manuscript-zh/16-two-recruiters-two-pipelines.md
+  - id: "17"
+    title: "最初的九十天"
+    file: manuscript-zh/17-the-first-ninety-days.md
+  - id: "18"
+    title: "招聘人员现在真正的价值"
+    file: manuscript-zh/18-the-recruiters-actual-value-now.md
+  - id: "19"
+    title: "工具包"
+    file: manuscript-zh/19-the-toolkit.md
+
+back_matter:
+  - about_the_author
+
+back_matter_titles:
+  about_the_author: "关于作者"
