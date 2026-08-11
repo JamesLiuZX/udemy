@@ -46,6 +46,18 @@ Thirty days in this chapter builds every system in this book and gets you throug
 
 **Days 28 through 30.** Rerun chapter one's time audit, the same exercise, the same format, and compare the number honestly to day one. This is the same check both of chapter twelve's case studies used to know the work had actually paid off, and it's the only metric in this entire plan that matters more than how any single system feels in the moment.
 
+## What you'll actually have at each checkpoint
+
+It helps to know what "on track" looks like along the way, not just at day thirty.
+
+**End of week one:** a saved invoice template, four follow-up messages, an open tax-holding account, and a rate math result you know whether you're going to act on. If a real invoice went out this week, you've already used at least one system on something that mattered, not just in theory.
+
+**End of week two:** a five-part proposal brief and a voice reference, both built, both used at least once on real client communication. This is usually the point where the stack stops feeling like homework and starts feeling like how you already work, because the two most frequent tasks, proposals and email, are now running on saved structure instead of blank pages.
+
+**End of week three:** at least one contract actually read using the three-pass method, a positioning sentence written down, and a first week of the marketing system sent, published, or delivered to whatever destination fits your business. The systems that ask for the most trust have now been tested against something real rather than left as an idea from a book.
+
+**End of week four:** every piece from chapters one through nine is built, the tool list has been audited and trimmed, and you have a second time-audit number to compare honestly against day one. What that comparison shows, more than any individual system, is whether the month actually worked.
+
 ## If thirty days feels like too much, or not enough
 
 This schedule assumes roughly the same handful of hours a week Priya and Marcus were already losing to admin, redirected toward building rather than doing the admin the old way. If your week has less room than that, stretch the plan to sixty days rather than skipping steps; the order matters more than the speed, and a system built carefully in week nine still outperforms nine systems built badly in week one.
