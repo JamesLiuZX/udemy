@@ -4,6 +4,120 @@ Not part of the build. Working notes for continuing this manuscript across
 sessions, mirroring how courses/ai-for-pms/CLAUDE.md tracked "current state
 and what to do next" while that course was being written.
 
+## 2026-08-11: author directive, expansion to [180, 240] pages
+
+The author reviewed the completed-but-tight 97-page manuscript and asked for
+a substantially fuller book, through substance, never padding. Concretely,
+the following are all now in scope:
+
+- `target_pages` raised from `[85, 110]` to **`[180, 240]`**.
+- Every existing chapter (01-10, 13, 14) gets a genuine second worked
+  example, not a restated first one, chosen for a different domain or
+  failure mode than the first so it teaches something the first example
+  didn't.
+- Every existing chapter gets a second `[KEY-INSIGHT: ...]` where a second
+  independently verified claim actually strengthens the argument, sourced
+  the same way as the first: live search at writing time, real citation,
+  never recalled from memory. Not every chapter needs exactly two if a
+  second genuinely well-fitting case can't be found honestly; forcing one
+  in would be exactly the padding this expansion is not supposed to be.
+- Chapter-end exercises or checklists get added where they earn a place
+  (several chapters already had an implicit "try this" habit from the
+  video course's own pattern; this makes it a explicit, work-along
+  element on the page, consistent with the "field guide" framing).
+- Two new chapters, inserted after chapter 10 (see the revised table
+  below), plus four appendices in back matter: worksheet-style templates
+  a reader can work through directly, rendered as tables with room to
+  fill in, not narrated as vaguely as the same content would read as
+  prose.
+- Thin chapters (02, 03, 10 especially; originally 1,436, 1,172, and
+  1,691 words) get expanded on the same terms as new chapters, not just
+  chapters written from here forward. **The expansion pass revisits
+  already-shipped chapters, it doesn't only apply going forward.**
+- Padding is explicitly still banned: no restating a point in different
+  words, no inflated transitions, no drop in information density per
+  page. If a chapter is honestly complete at its current length once it
+  has a real second example and a real second insight, the book grows by
+  adding a chapter instead of stretching that one further.
+
+**Revised chapter order** (renumbering only touches the last two of the
+original twelve; chapters 01-10 keep their existing files and numbers):
+
+| # | Title | Status |
+| --- | --- | --- |
+| 01 | The Accountability Gap | expand |
+| 02 | Seven Shapes | expand (thin) |
+| 03 | The Spec Nobody Can Argue With | expand (thin) |
+| 04 | The Golden Set | expand |
+| 05 | Getting Two People to Agree | expand |
+| 06 | What It Actually Costs | expand |
+| 07 | The Reliability Math of Agents | expand |
+| 08 | The Risk Register | expand |
+| 09 | Metrics That Survive Production | expand |
+| 10 | Managing the Room | expand (thin) |
+| 11 | Objections and Pushback | **new** |
+| 12 | Field Notes: Three Worked Case Studies | **new** |
+| 13 | The First Ninety Days | renumbered from 11, expand |
+| 14 | Where This Breaks | renumbered from 12, expand |
+
+Files: `11-the-first-ninety-days.md` -> `13-the-first-ninety-days.md` and
+`12-where-this-breaks.md` -> `14-where-this-breaks.md` (both `git mv`'d,
+history preserved). `book.yaml`'s `chapters:` list updated to match.
+
+Chapter 11 (Objections and Pushback) sits right after Managing the Room on
+purpose: it's the direct continuation of "the room," now organised around
+the specific pushback lines a PM actually hears (we don't have time for
+this, the vendor says 99% accurate, legal will slow us down, our
+competitors shipped without any of this) rather than the general
+calibration skill chapter 10 already covered. Chapter 12 (Field Notes)
+gives three compressed but complete worked examples that run the whole
+method (shape check, spec, golden set, cost, risk, metrics) against three
+feature types the book's recurring support-ticket-and-refund-agent thread
+never touches directly: a document-extraction feature, a lead-scoring
+predictor, and an internal coding agent. It's placed before chapter 13
+(First Ninety Days) so the reader sees the method applied whole, in
+different domains, immediately before being asked to run it themselves.
+
+**Renumbering broke exactly two cross-references, both already fixed as
+part of this pass:** chapter 10's "Where this goes next" used to point to
+"chapter eleven" meaning the old First Ninety Days; it now points to the
+new chapter 11 (Objections and Pushback), and the Objections/Field Notes/
+First Ninety Days/Where This Breaks chain was rebuilt so each "where this
+goes next" points at its real neighbour. The old chapter 11's "spent nine
+chapters" / "ten chapters" self-references and the old chapter 12's "spent
+eleven chapters" opening line were updated to twelve and thirteen
+respectively to match their new position as chapters 13 and 14. Checked via
+`grep -rn "chapter eleven\|chapter twelve\|chapter thirteen\|chapter
+fourteen" manuscript/*.md` before considering the renumbering done; rerun
+that check after any future chapter reordering, it's cheap and it's the
+actual failure mode of moving chapters around in a book that cross-
+references itself this much.
+
+**Back matter now includes four appendices**, added before acknowledgments
+and about-the-author: `appendix_a_the_golden_set_worksheet`,
+`appendix_b_the_risk_register_template`,
+`appendix_c_the_model_scorecard_template`,
+`appendix_d_the_ninety_day_plan_template`. `build.py`'s
+`back_matter_tex()` derives each one's printed heading from its snake_case
+item name via `.replace("_", " ").title()` since only `acknowledgments` and
+`about_the_author` have hardcoded titles; that's a shared-pipeline
+function, out of scope to edit, so item names were chosen to title-case
+into something readable without a colon (e.g. `appendix_a_the_golden_set_worksheet`
+-> "Appendix A The Golden Set Worksheet") rather than fighting it.
+
+**Gutter band:** no code or class change needed. `kdp-book.cls` never hard-
+codes a gutter; `build.py` computes it from `book.margins()`, which reads
+`target_pages`'s midpoint before a page count is known and would read the
+real measured count on a rebuild once one exists (see `book.py`'s
+`gutter_for_pages()` and `GUTTER_BANDS`: 0.375in through 150pp, 0.5in for
+151-300pp, matching `books/CLAUDE.md` exactly). Midpoint of the new
+`[180, 240]` is 210, comfortably inside the 151-300 band, so the very next
+full build already picks up 0.5in automatically. Re-run `qc.py --release`
+once the manuscript is complete and stable and confirm its gutter-
+consistency check (compares the gutter actually used against what the real
+final page count wants) passes silently, the same check that already
+caught nothing wrong at 97 pages.
+
 ## Status
 
 - Chapters 01 through 03 are written and verified-pending-signoff: built
@@ -102,8 +216,10 @@ has never seen "6.6" and the book should never assume they have.
 | 08 The Risk Register | 8.1-8.6 | The five-category register, red-teaming |
 | 09 Metrics That Survive Production | 9.1, 9.2, 9.5 | Adoption/acceptance/deflection, the leadership dashboard |
 | 10 Managing the Room | 10.2, 10.3 | Calibrated stakeholder claims, the roadmap that doesn't lie |
-| 11 The First Ninety Days | 10.1, 10.7, 11.4 | Discovery sprints, a 30-60-90 plan, a closing self-assessment checklist (11.1-11.3's capstone-brief/worked-solution mechanics are course-specific workshop scaffolding and weren't adapted directly) |
-| 12 Where This Breaks | Repo-wide | Honest limits chapter; no equivalent single lecture |
+| 11 Objections and Pushback | Repo-wide, esp. 1.7, 4.1, 10.2 | New for the expansion; the specific pushback lines a PM hears, answered from tools already in the book |
+| 12 Field Notes: Three Worked Case Studies | Repo-wide | New for the expansion; the method run whole against three feature types outside the book's recurring example |
+| 13 The First Ninety Days | 10.1, 10.7, 11.4 | Discovery sprints, a 30-60-90 plan, a closing self-assessment checklist (11.1-11.3's capstone-brief/worked-solution mechanics are course-specific workshop scaffolding and weren't adapted directly) |
+| 14 Where This Breaks | Repo-wide | Honest limits chapter; no equivalent single lecture |
 
 ## Things to hold onto while writing the rest
 

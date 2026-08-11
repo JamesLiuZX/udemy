@@ -11,7 +11,7 @@ author: "Your Name"
 year: 2026
 genre: business
 trim: "6x9"
-target_pages: [85, 110]
+target_pages: [180, 240]
 
 # Never set true except by the real author, after a genuine full read-through.
 verified: false
@@ -82,12 +82,22 @@ chapters:
     title: "Managing the Room"
     file: manuscript/10-managing-the-room.md
   - id: "11"
-    title: "The First Ninety Days"
-    file: manuscript/11-the-first-ninety-days.md
+    title: "Objections and Pushback"
+    file: manuscript/11-objections-and-pushback.md
   - id: "12"
+    title: "Field Notes: Three Worked Case Studies"
+    file: manuscript/12-field-notes-three-worked-case-studies.md
+  - id: "13"
+    title: "The First Ninety Days"
+    file: manuscript/13-the-first-ninety-days.md
+  - id: "14"
     title: "Where This Breaks"
-    file: manuscript/12-where-this-breaks.md
+    file: manuscript/14-where-this-breaks.md
 
 back_matter:
+  - appendix_a_the_golden_set_worksheet
+  - appendix_b_the_risk_register_template
+  - appendix_c_the_model_scorecard_template
+  - appendix_d_the_ninety_day_plan_template
   - acknowledgments
   - about_the_author
