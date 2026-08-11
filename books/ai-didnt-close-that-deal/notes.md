@@ -17,6 +17,17 @@ pattern as the other books.
   one-person-business's ch14-closes/ch15-templates pattern. `book.yaml` is
   the source of truth for the current 12-chapter list.
 - Chapters 03-12 in progress this session (drafting from scratch).
+- Chapter 03 "The Research Nobody Does Anymore" drafted (~5,630 words).
+  Theo and Naomi introduced here as specified (mid-market vs. enterprise).
+  KEY-INSIGHT uses Gartner's own June 25, 2025 press release ("Gartner
+  Sales Survey Finds 61% of B2B Buyers Prefer a Rep-Free Buying
+  Experience"), citing the 73%-of-buyers-avoid-irrelevant-outreach figure
+  from the same underlying Aug-Sep 2024 survey of 632 B2B buyers; verified
+  live via WebSearch this session, not fetchable directly (gartner.com and
+  every secondary mirror tried were blocked by the network egress proxy),
+  so treat as reasonably but not fully independently confirmed and give it
+  one more check before release if a fetchable source becomes available.
+  Not yet built, rendered, or QC'd.
 
 ## Story bible (characters and terms established in ch01-02, hold these fixed)
 
