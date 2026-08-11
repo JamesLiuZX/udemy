@@ -24,17 +24,41 @@ Run the research step. Read it, specifically checking anything that reads like a
 
 Three short reviews, each cheap because each one is checking a single step's output against a single step's input, cost less total time than a full read-through of the finished letter would, and they catch the exact failure a full read-through is worst at catching: an error that's had two more steps to get dressed up in confident, coherent prose by the time anyone actually looks at it.
 
+[KEY-INSIGHT: One of the most widely cited findings in software engineering is that the cost of fixing a defect rises sharply the later it's caught in a multi-stage process, roughly by an order of magnitude at each stage in the classic data: cheap to fix during early requirements work, meaningfully more expensive once it reaches design or coding, and far more expensive again once it's shipped and found in the field. || Source: Boehm, B.W., "Software Engineering Economics," Prentice-Hall, 1981 (data originally presented in Boehm, B.W., "Software Engineering," IEEE Transactions on Computers, C-25(12), 1976).]
+
+That pattern isn't specific to software, and it's exactly why checking at each seam beats checking only at the end. An invented statistic caught in the research step costs Ola thirty seconds to strike out. The same statistic caught after it's built the emotional core of a drafted appeal costs a rewrite. Caught after formatting and mail merge, on three hundred personalized letters, it costs either an awkward recall email or the reputational cost of never catching it at all. The error didn't get more wrong at each stage. It got more expensive to fix, precisely because more work had been built on top of it.
+
 ## Knowing where to stop chaining
 
 Not every multi-step process is worth chaining through AI at every stage, and the same instinct from chapter seven's disqualification list applies here at the level of an individual step rather than a whole task. If one step in the chain is a judgment call, research prioritization that depends on knowing which donors the board actually cares about impressing this quarter, for instance, that step might belong to Ola herself, with AI picking back up for the drafting and formatting steps that follow her judgment call rather than trying to replace it.
 
 A three-step chain with a checkpoint at each seam is manageable for almost anyone willing to spend a few extra minutes reading between steps. A seven or eight-step chain, even checked carefully at every seam, starts costing more in review time than it saves in drafting time, the same trade chapter four described for a single task's spot-check, now playing out across an entire process instead of one document. When a chain gets that long, the better fix usually isn't more automation. It's cutting the chain down to the steps that actually benefit from delegation and doing the rest yourself, the same triage chapter seven already taught you to run on a single task.
 
+## When the chain itself is the problem
+
+Sometimes the fix isn't more checkpoints. It's a shorter chain.
+
+Desmond runs a small events company and tried automating his post-event client recap into seven chained steps: pull the attendance numbers, summarize vendor feedback, draft a wins section, draft an improvements section, pull it all into a client-facing narrative, format it against the company template, and generate a follow-up email referencing the recap. He dutifully added a checkpoint at every seam, the way this chapter recommends, and found the review time alone ran to nearly an hour per event, almost as long as writing the whole recap by hand used to take.
+
+The problem wasn't that any single checkpoint was hard. It was that seven steps meant seven checkpoints, and the review time chapter four warned about, the cost of checking, had scaled right along with the chain instead of staying cheap. Desmond cut it to three: pull the raw numbers and feedback in one step, draft the full narrative, wins and improvements together, in a second step from that reviewed data, and format it in a third. Two checkpoints, not six. The seven-step version he'd built wasn't a more thorough process. It was one genuine task wearing the shape of a long chain, several sub-steps that never needed to be separate at all, because chaining had started to feel like the default move rather than a deliberate one.
+
 ## What this chapter will not do
 
 This will not tell you every multi-step task is dangerous to delegate, or that chaining is a technique to avoid. Ola's three-step process works well now, with two checkpoints added, and saves her real time every quarter compared to writing the whole letter herself. The danger was never the chain. It was running the whole chain with nobody looking at the seams, mistaking a single polished final output for evidence that every step behind it had gone right.
 
 It also won't pretend a checkpoint at every seam catches everything. A reviewer who's rushed, tired, or checking the wrong thing at a seam can still miss what's actually wrong there, the same limits from chapter four apply here at every joint in the chain, not just at the end. The checkpoint habit lowers the risk a chain compounds silently. It doesn't erase the need for the same real judgment chapters four and five have been building this whole book.
+
+## Try this: map your chain
+
+If you're already running, or considering, a multi-step delegated process, write out the actual steps in order:
+
+| Step | What it produces | Is a checkpoint here worth the time? |
+| --- | --- | --- |
+| | | |
+| | | |
+| | | |
+
+Count the steps. Past three or four, ask honestly whether any two adjacent steps are really one task wearing two labels, the way Desmond's wins and improvements sections were. Collapse what collapses cleanly before you add a single checkpoint.
 
 [TAKEAWAYS]
 

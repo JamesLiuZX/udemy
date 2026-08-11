@@ -117,7 +117,12 @@ Progress (updated per chapter as expansion happens):
       (Priyanka, a five-task roster actively deciding against adding a
       sixth), and a "Try this: start your roster" worksheet. 1,376 ->
       1,829 words. Rendered pages checked.
-- [ ] 09 The Team of One
+- [x] 09 The Team of One — added a second `[KEY-INSIGHT]` (Boehm's classic
+      software-engineering defect-cost-escalation research, backing why
+      checking at each seam beats checking only at the end), a second
+      worked example (Desmond, a seven-step chain cut to three once the
+      review overhead itself became the problem), and a "Try this: map
+      your chain" worksheet. 1,499 -> 2,004 words. Rendered pages checked.
 - [ ] 10 A 30-Day Delegation Plan
 - [ ] 11 Four Delegations, Worked in Full (new)
 - [ ] 12 Objections and Edge Cases (new)
