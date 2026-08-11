@@ -1,0 +1,60 @@
+# =============================================================================
+# Story bible: the running case that threads the course.
+# See docs/04-quality-bar.md §2. Rules:
+#   - Every fact quoted about the running case comes FROM this file. If a
+#     lecture needs a new fact, add it here first, then use it. Never let two
+#     lectures state the same fact with different values.
+#   - This ledger describes what the WRITTEN course already does (the course
+#     was fully drafted before this file existed). Extend it during the
+#     verification pass as callbacks are confirmed or strengthened; do not
+#     invent retroactive story facts that the lectures don't carry.
+# =============================================================================
+
+# The running case: an unnamed company's AI support-ticket summariser, anchored
+# by one concrete ticket. The company is deliberately unnamed in the drafted
+# course; a fully named serial (company, cast) is a course-#2 device, not a
+# retrofit. See docs/04-quality-bar.md §2.
+
+anchor:
+  id: "Ticket 4471"
+  established: "0.4"
+  facts:
+    - Double charge on an annual plan, March 3rd
+    - Customer already cancelled the duplicate through their bank
+    - Deadline April 1st; missing it overdraws the account
+    - Account email differs from billing email (the probable root cause)
+    - The AI summary drops the deadline, the consequence, and the email mismatch
+
+# Where the anchor is deliberately called back in the drafted course.
+# Confirm each during the verification pass; append new ones as found.
+callbacks:
+  - lecture: "1.2"
+    use: April 1st deadline as the concrete detail lost to context truncation
+  - lecture: "2.4"
+    use: The thread at forty-five messages; context engineering framing
+  - lecture: "4.1"
+    use: Golden-set drift; April refund policy makes tickets like 4471 common
+  - lecture: "5.5"
+    use: Near-duplicate confusion, retold and named formally as explicit callback
+
+# Canonical numbers. A different value for any of these in any lecture is a
+# continuity bug, and qc.py's continuity check (docs/04 §7) matches on them.
+numbers:
+  - value: "2, 3, 3, 4, 5"
+    established: "0.4"
+    meaning: Five reviewers score the summary without a rubric; three-point spread
+  - value: "3, 3, 3, 3, 4"
+    established: "0.4"
+    meaning: Same reviewers with the six-question rubric; spread collapses to one
+  - value: "six"
+    established: "0.4"
+    meaning: Rubric question count; fewer than four misses, more than eight fatigues
+  - value: "50"
+    established: "0.3"
+    meaning: Golden set size
+  - value: "68%"
+    established: "0.3"
+    meaning: Baseline pass rate, 34 of 50 at or above the pass mark
+  - value: "95% per step, ten steps, 60% end to end"
+    established: "6.3"
+    meaning: The reliability math of multi-step agents (0.95^10)

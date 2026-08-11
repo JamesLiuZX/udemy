@@ -1,6 +1,10 @@
 # Build output: regenerable from sources, and MP4s are far too large for git.
 build/
 
+# Growth job output and dropped-in inputs: working material, not source.
+growth/queue/
+growth/data/
+
 # Local overrides / secrets — API keys belong in the environment, never here.
 .env
 *.local.yaml

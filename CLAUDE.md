@@ -227,7 +227,13 @@ docs/00-strategy.md        Research: policy, pitfalls, positioning
 docs/01-compliance-checklist.md   Pre-submission checklist
 docs/02-production-playbook.md    Format reference, writing rules, troubleshooting
 docs/03-launch-playbook.md        Title, promo script, pricing, reviews
+docs/04-quality-bar.md            Callback thread, cold opens, presence, QC additions
+docs/05-kdp-playbook.md           Book portfolio strategy: sequencing, launch, Amazon mechanics
+docs/06-growth-engine.md          Channels, asset flywheel, automated growth jobs
+growth/                           Paste-ready automation prompts (cron / Cowork)
+books/                            KDP publishing system (own CLAUDE.md; read it first)
 courses/<slug>/course.yaml        Curriculum, landing copy, config (source of truth)
+courses/<slug>/story-bible.yaml   Canonical facts for the running case study
 courses/<slug>/lectures/*.md      One file per lecture
 courses/_template/                Lecture template
 pipeline/                         build, lecture, markup, slides, render, figures,
@@ -243,21 +249,28 @@ Chromium on purpose, so there is no dependency tree to rot.
 
 ## 10. Current state and what to do next
 
-Course #1 `ai-for-pms`: 12 sections, 100 lectures, 10h targeted.
-**Section 0 is written and built (4 lectures, 19.6 min, 29 slides).**
-Sections 1 to 11 are specced in `course.yaml` but unwritten.
+Course #1 `ai-for-pms`: 12 sections, 10h targeted. **All 102 lecture files
+are drafted.** Section 0 is built and visually verified; Sections 1 to 11
+are unrendered, unverified and unsigned.
 
-**Next: Section 4, Evaluation.** It is the hub the rest of the course plugs into
-and the section that justifies the price. It is also the most figure-hungry
-section: eval dashboards, pass-rate trends over prompt versions, inter-rater
-agreement.
+Sibling system `books/` (own CLAUDE.md, own pipeline) has seven KDP titles
+with chapters 1 to 3 drafted each.
 
-Work one lecture at a time, all the way to verified renders, before starting the
-next. A half-finished section is worth less than one finished lecture.
+**Next, in order (rationale in `docs/04-quality-bar.md` §9 and
+`docs/05-kdp-playbook.md` §7):**
+
+1. Implement the QC additions specced in `docs/04-quality-bar.md` §7.
+2. Run the course verification pass section by section: render, view, read
+   aloud, confirm story-bible callbacks, then instructor sign-off.
+3. On the book side, finish `stop-guessing` end to end before touching the
+   other six titles.
+
+A half-finished section is worth less than one finished lecture, and seven
+three-chapter manuscripts are worth less than one finished book.
 
 ---
 
 ## 11. Git
 
-Develop on `claude/ai-udemy-course-build-55erh5`. `main` tracks the same work.
+Develop on `claude/keep-writing-apht23` (the course and `books/` share it).
 Push with `git push -u origin <branch>`. Do not commit `build/`.

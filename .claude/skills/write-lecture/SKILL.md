@@ -32,8 +32,11 @@ EOF
 
 Note the target duration and whether it is `hands_on` or carries an artifact.
 Then read the two adjacent lectures in `lectures/` so the voice and the running
-example stay continuous. The support-ticket case from lecture 0.4 runs through
-the whole course. Reuse it rather than inventing a new example.
+example stay continuous. The running case (Ticket #4471 and its summariser)
+threads the course: read `courses/ai-for-pms/story-bible.yaml` and quote its
+facts exactly rather than inventing new ones. If the lecture needs a new story
+fact, add it to the bible first; if you add or strengthen a callback, record
+it in the bible's `callbacks` list.
 
 ---
 
@@ -44,6 +47,8 @@ Write down, in your head or to the user:
 - **The one thing** a learner can do after this lecture that they could not before
 - **The moment it lands**: the example, number or figure that makes it real
 - **The cost**: where this technique is expensive, slow, or wrong
+- **The opener**: pick a cold-open pattern from `docs/04-quality-bar.md` §3,
+  different from the previous lecture's. Never open with the agenda.
 - **6 to 9 slides** for a 7 minute lecture, one idea per slide
 
 If you cannot name the one thing, the lecture is not ready to write.
