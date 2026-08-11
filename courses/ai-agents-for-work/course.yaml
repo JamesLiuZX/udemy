@@ -228,6 +228,14 @@ sections:
   - id: 7
     title: "Checking the Work"
     goal: "Trial tasks, spot checks, failure modes; the judgement section."
+    lectures:
+      - {id: "7.0", title: "Section intro", duration: 1}
+      - {id: "7.1", title: "Running a trial properly", duration: 6}
+      - {id: "7.2", title: "The trial-task checklist", duration: 5, hands_on: true}
+      - {id: "7.3", title: "The day the sheet moved", duration: 7}
+      - {id: "7.4", title: "The spot-check rubric", duration: 6, hands_on: true}
+      - {id: "7.5", title: "Failure modes worth naming before you meet them", duration: 7}
+      - {id: "7.6", title: "Section recap", duration: 2}
   - id: 8
     title: "Guardrails and Blast Radius"
     goal: "Approvals, scopes, the incident beat and its contained ending."
