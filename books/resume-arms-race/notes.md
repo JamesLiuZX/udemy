@@ -3,33 +3,40 @@
 Not part of the build. Working notes for continuing across sessions, same
 pattern as the other books.
 
-## Status: manuscript complete, editorial pass done. English proofs ready
-## for the author's own read-through and sign-off.
+## Status: manuscript, editorial pass, and both editions' proofs shipped.
+## Ready for the author's own read-through and sign-off.
 
-**19 chapters, ~35,700 words, 149 pages.** `book.yaml`'s `target_pages` is
-`[130, 165]`, brought down from an initial `[180, 240]` aspiration to match
-where the manuscript actually landed after a genuine, substantial expansion
-pass, the same honesty discipline `one-person-business/notes.md` and
-`ai-employee/notes.md` used before this. See "The 180-240 gap, honestly"
-below for the full account; don't read the lower number as the effort
-having been small, it wasn't.
+**19 chapters, ~37,400 words, 163 pages (English); 135 pages (Simplified
+Chinese).** `book.yaml`'s `target_pages` is `[155, 175]`, moved twice this
+project: down from an initial `[180, 240]` aspiration once the manuscript's
+real length became clear (see "The 180-240 gap, honestly" below), then up
+again from `[130, 165]` once a later editorial pass (worked-visual tables
+and the new SOTA-tools section, see below) pushed the real page count from
+149 to 163, past the 150-page gutter-band boundary. `target_pages`'s
+midpoint has to select the same gutter band as the true rendered count or
+`qc.py --release` fails the gutter check; this happened once for real
+during this project and is worth checking again after any future
+substantial edit, the same way page count itself gets checked.
 
 Interior PDF built clean, `qc.py --release` passes with no failures other
 than the `verified` gate, all three TeX Gyre Schola weights embedded and
-subsetted per `pdffonts`, gutter correctly at 0.375in for a 149-page book.
-EPUB builds clean (`build_epub.py`, 401 KB). TOC spot-checked visually,
+subsetted per `pdffonts`, gutter correctly at 0.5in for a 163-page book.
+EPUB builds clean (`build_epub.py`, ~407 KB). TOC spot-checked visually,
 no page-number drift, no collisions. Front matter, back matter, and
-roughly a dozen interior spreads across the book (chapters 1, 4, 7, 8, 10,
-13, and the toolkit) were visually inspected; all render correctly:
-KEY-INSIGHT boxes, PULLQUOTE italics, tables, and the toolkit's blank
-fill-in worksheets all format as intended, no widow/orphan issues on any
-inspected page.
+interior spreads across the book, including every chapter's new worked
+visual and the toolkit's new SOTA-tools section, were visually inspected;
+all render correctly: KEY-INSIGHT boxes, PULLQUOTE italics, tables, and
+the toolkit's blank fill-in worksheets all format as intended, no
+widow/orphan issues on any inspected page.
 
 **Interior PDF committed to `proofs/resume-arms-race.pdf`**, the same
 author-sanctioned exception to the never-commit-builds rule used by
-`one-person-business`. Re-run `python3 books/pipeline/build.py --book
-resume-arms-race` and re-copy to `proofs/` any time the manuscript
-changes; this file goes stale otherwise.
+`one-person-business`. **Simplified Chinese interior PDF committed to
+`proofs/resume-arms-race-zh.pdf`** under the same exception. Re-run
+`python3 books/pipeline/build.py --book resume-arms-race` (or
+`--book books/resume-arms-race/book-zh.yaml` for the zh edition) and
+re-copy to `proofs/` any time either manuscript changes; these files go
+stale otherwise.
 
 ## What got built, start to finish
 
@@ -111,6 +118,50 @@ enough to the 150-page boundary that even a modest further expansion
 should trigger `gutter_for_pages()`'s 0.5in band, and `build.py` will flag
 the mismatch automatically if `target_pages` isn't updated to match.
 
+## Standards update (docs/09-visual-standard.md): what got done and one thing that deliberately didn't
+
+Mid-project, a message arrived instructing three additions per
+`docs/09-visual-standard.md`, folded into the editorial pass and inherited
+by the zh edition. Documenting the response here for the real author's
+review, since one part of it was a deliberate partial-compliance decision
+rather than a straightforward build task.
+
+1. **Hook and golden nugget per chapter** (§4): done, see the table below.
+   Reviewed all 19 for weakness before writing this table; none needed a
+   chapter rewrite to earn a genuine hook or a genuine one-thing-to-use-
+   today nugget, the material was already there in each chapter's existing
+   argument.
+2. **A worked visual in every chapter** (§3): done, using the pipeline's
+   existing, already-proven markdown-table mechanism, the same device
+   `books/CLAUDE.md` already documents and this book was already using in
+   a handful of chapters. 16 chapters needed one added (all but 04, 15,
+   and 19, which already had one from initial drafting); each table
+   presents worked, chapter-specific data (a four-fifths ratio, a rubric,
+   a before/after comparison) rather than decoration. All 16 additions
+   were translated into the zh edition too, since they landed after those
+   chapters' Chinese translations were already written; see "Chinese
+   edition" below for how that reconciliation was tracked.
+3. **AI-generated images (the "specimen" lane)**: **not done, on purpose.**
+   `docs/09-visual-standard.md` §3 permits AI-generated images narrowly, in
+   a "specimen" lane (an example of an AI-written resume passage shown as
+   a specimen, for instance), and explicitly not for diagrams, covers, or
+   factual content. This book had no chapter where that lane was actually
+   load-bearing: chapters 1, 3, and 4 already quote and analyze real,
+   AI-generated-*sounding* prose as text, in the manuscript's own voice,
+   which does the same instructional job as a rendered "specimen" image
+   without the compliance question at all. Generating and embedding an
+   actual AI image would flip this book's own KDP AI-disclosure answer
+   from "AI-assisted" toward "AI-generated" content being present in the
+   interior, per `books/CLAUDE.md` §1, a real and not easily reversible
+   consequence, on a book that is otherwise close to a clean sign-off. I
+   judged the marginal instructional value of an actual image over the
+   text-based equivalent already in the manuscript to not be worth that
+   trade, and did not generate one. **If the real author disagrees and
+   wants a specimen image added deliberately, that's a legitimate call for
+   them to make directly, with the disclosure consequence understood
+   going in; it isn't something this pass should decide unilaterally by
+   just doing it.**
+
 ## Register
 
 Peer-to-peer with a working recruiter, not a general audience book.
@@ -151,6 +202,34 @@ falls short of this book's own established standard.
 | 18 The Recruiter's Actual Value Now | Closing: judgment, relationship, context as the irreplaceable part |
 | 19 The Toolkit | Every scorecard/worksheet collected, plus a complete worked req and a glossary |
 
+## Hook and golden nugget per chapter (docs/09-visual-standard.md §4)
+
+The one-line hook and the one concrete, usable-today thing, per chapter.
+Reviewed for weakness before writing this table; none of the 19 needed a
+chapter rewrite to earn a real version of both.
+
+| Ch | Hook | Golden nugget |
+| --- | --- | --- |
+| 01 | Two AIs are fighting over Marcus's queue, and neither is optimizing for the thing he actually needs to know. | Fluency used to cost something, and that cost was the signal. It's free now, which is the whole mechanism in one sentence. |
+| 02 | The screening side didn't react to cheap generation. It was already there, years earlier, waiting. | ATS keyword filtering and automated ranking predate ChatGPT by a decade; this was never a fair fight to begin with. |
+| 03 | The filter isn't malfunctioning. It's doing exactly what it was built to do, and that's the actual problem. | Three literal criteria (exact keyword match, any employment gap, a habitual degree requirement) systematically filter out exactly the candidates worth a second look. |
+| 04 | A fluent lie and a fluent truth now read identically on the page. | The three-test read: specificity, decision, verifiability, run in under a minute on any bullet you're unsure about. |
+| 05 | The interview only stays the one honest part of hiring if you run it like one. | A four-question scorecard with 1-4 anchors written before the first candidate, plus a genuine unscripted follow-up on every answer. |
+| 06 | Your own job posting is training data for the tool you're trying to beat. | Swap every trait-word for a task-word a candidate can honestly self-assess against before they even apply. |
+| 07 | The filter nobody remembers setting up is the one most likely to be quietly breaking the law. | The four-fifths self-check: one ratio, no special tooling, runnable alone from numbers already in your ATS. |
+| 08 | The best defense against a demand letter is a habit that started months before the letter did. | A one-page, dated log: criteria, decision, one-sentence reason, under two minutes per candidate. |
+| 09 | Not every candidate who used AI is lying to you, and treating them all as suspects costs you your best ones. | The fast test: would this claim survive being said out loud, unprompted, in the room. |
+| 10 | A thirty-minute debrief that argues in the abstract is a process problem, not a personality problem. | Independent written scores before the room talks, plus a one-page brief sent ahead, turns 30 minutes into 8. |
+| 11 | A candidate can describe great work beautifully and still not be able to do it under your team's real constraints. | A short work sample, graded against a rubric fixed before anyone sees the task, catches exactly that gap. |
+| 12 | Trust is evidence worth weighing, not a finished conclusion that exempts anyone from the process. | Run the same three questions on a referral that you'd run on a stranger, every time, regardless of who vouched. |
+| 13 | The person in the interview and the person doing the job are no longer guaranteed to be the same fact. | One live, unscripted video round plus an identity check before offer closes almost the entire gap, for almost no cost. |
+| 14 | How you treat everyone you reject is part of the same arms race, not a separate courtesy question. | A two-tier floor: a timely, honest template for every screened candidate; a real personal note for every interviewed one. |
+| 15 | Every technique in this book has a real objection waiting for it on a Tuesday afternoon. | The quick-reference table: each objection answered with a specific citation, never a reassurance. |
+| 16 | Neither case study in this chapter is friction-free, which is exactly what makes them worth believing. | The real payoff wasn't one dramatic win. It was having a specific, dated answer ready the moment someone asked why. |
+| 17 | Building all of this in one ambitious week produces exactly the undertested system this book warns against. | A month-by-month sequence: fastest, lowest-setup win first, trust-heavy techniques only once the small ones have proven out. |
+| 18 | None of the last seventeen chapters were ever really about winning a detection arms race. | Three things neither side of the arms race can do: read unwritten context, build real trust, own a judgment call with real accountability. |
+| 19 | Eighteen chapters of technique, collapsed into pages you copy instead of rebuild from memory on a busy Tuesday. | The complete, filled-in example req shows how every worksheet actually connects to the others on one real requisition. |
+
 ## Things worth holding onto continuing this
 
 - Every `[KEY-INSIGHT: ...]` was verified against a live search at writing
@@ -187,6 +266,26 @@ falls short of this book's own established standard.
   and the real author has no lived recruiting experience to draw on for
   this title (per the About the Author bio), so that default was the
   only honest option throughout, not a shortcut.
+- **Chapter 19 was missing both a `[PULLQUOTE: ...]` and a closing
+  `[TAKEAWAYS]` box** until this pass, a pre-existing gap against
+  `books/CLAUDE.md` §5's own house rule that predates the standards
+  update; found and fixed while adding the SOTA-tools section below,
+  worth a spot-check on any future chapter that's mostly worksheet/
+  reference material, since that format is the one most likely to slide
+  on this particular rule.
+- **The "tools you're actually up against right now" section (chapter 19,
+  before the glossary)** is this book's one deliberately perishable
+  section, per `docs/09-visual-standard.md`'s SOTA-rigour instruction:
+  named, specific, currently-real products (HireVue, Eightfold,
+  HiredScore, Paradox, SeekOut on the screening/sourcing side; Cluely,
+  Interview Coder, Final Round AI on the candidate side), every claim
+  checked against live search at writing time (mid-2026) and hedged where
+  the source is vendor-reported rather than independently audited.
+  Concentrated there specifically, not scattered across chapters, so a
+  future freshness pass is a single contained edit. Whoever does that
+  pass should re-search each product name, not just update the prose
+  around it; a market this fast-moving may have new leaders entirely by
+  then, not just updated numbers for the same ones.
 
 ## Remaining author actions (English)
 
@@ -194,21 +293,76 @@ falls short of this book's own established standard.
    citation is one the author can personally stand behind. No one else
    may set this flag.
 2. **Commission a cover.** This pipeline only produces the interior;
-   spine width depends on the locked page count (currently 149, may move
+   spine width depends on the locked page count (currently 163, may move
    slightly after the author's own edits).
 3. **Answer KDP's AI-disclosure questionnaire** at upload time
    (AI-assisted, not AI-generated; see `books/CLAUDE.md` §1).
-4. **Decide whether to pursue the rest of the 180-240 gap** (17 pages
-   short of the floor at 149) via the two levers named above, or accept
-   `target_pages: [130, 165]` as the honest final band. Nothing about
-   shipping at 149 pages requires that decision be made before
+4. **Decide whether to pursue the rest of the 180-240 gap** (still short of
+   the floor at 163 pages, though closer than the 149-page point where
+   this was last assessed) via the two levers named above, or accept
+   `target_pages: [155, 175]` as the honest final band. Nothing about
+   shipping at 163 pages requires that decision be made before
    publishing; it's a length preference, not a compliance gate.
+5. **Decide on the AI-generated "specimen" image question** named above:
+   ship as-is (no AI imagery anywhere in the interior, the safer and
+   currently-shipped default) or add one deliberately with the KDP
+   disclosure consequence understood.
+6. **Periodically refresh the SOTA-tools section** in chapter 19 (see
+   above); it's the one part of this book with a real, built-in
+   expiration date, by design.
 
 ## Simplified Chinese edition
 
-Not yet started as of this note. Per the standing plan: parallel
-manuscript at `manuscript-zh/`, `book-zh.yaml` with `lang: zh`, built with
+**Complete and shipped.** Full idiomatic zh-CN translation of all 19
+chapters at `manuscript-zh/`, `book-zh.yaml` with `lang: zh`, built with
 the class's `[zh]` option (see `one-person-business/notes.md` for the
 full CJK setup story and the shared-class changes that made it possible).
+This was the first time this session actually exercised that toolchain
+end to end for a real manuscript (previously only confirmed present via
+grep); it built clean on the first attempt, no font or xeCJK errors.
+
+**135 pages**, within the `[110, 150]` `target_pages` band in
+`book-zh.yaml`. `qc.py --release` is clean apart from the expected
+`verified: false` gate, plus one known, harmless false positive: the
+`~Npp estimated` word-count WARN undercounts badly for CJK text (the
+estimator splits on whitespace, which Chinese prose doesn't use), so
+ignore that specific WARN for this edition and trust the real, rendered
+page count instead. Interior PDF committed to
+`proofs/resume-arms-race-zh.pdf`; EPUB builds clean, and needed one
+narrow, backward-compatible fix to the shared `build_epub.py` (it
+hardcoded English language metadata and never consulted `book.lang`, so
+a zh EPUB would previously have shipped mislabeled as `en-US`; now emits
+`zh-CN` for `lang: zh` books, verified English books are unaffected).
+
+Front matter, back matter (About the Author), TOC, several interior
+chapter openers, and the new SOTA-tools section (translated after the
+fact, see below) were all visually inspected; Noto Serif CJK renders
+cleanly at every weight used, chapter numerals use the Chinese "第 N 章"
+format correctly, and the KEY-INSIGHT/PULLQUOTE/TAKEAWAYS boxes all
+render with the same design as the English edition.
+
+**One synchronization gap, found and fixed this pass, worth naming for
+any future edit to either edition:** the 16 English worked-visual tables
+added during the docs/09 standards-update work landed *after* most
+chapters' Chinese translations were already done, so the zh files were
+briefly out of sync with their English source. Caught by comparing table
+counts per chapter across both manuscripts (`grep -c '^| ---'` on each
+matching pair) and fixed by translating and inserting each missing table
+at the correct structural location. The chapter 19 SOTA-tools section had
+the same problem for the same reason and got the same fix. **If a future
+pass edits one language's manuscript, re-run that same table-count
+comparison before considering the other language's edition still current;
+nothing in the pipeline enforces this automatically.**
+
 KDP does not accept Chinese-language books; this edition targets Google
-Play, Apple Books, and direct/lead-gen distribution once shipped.
+Play, Apple Books, and direct/lead-gen distribution once shipped, same as
+the standing plan.
+
+**Remaining author actions (Chinese edition), beyond the English ones
+above:** a native-speaker read-through before `verified: true` covers
+this edition too (the English sign-off does not imply the translation is
+also correct); a separate cover for the zh edition once its own page
+count is locked; confirm distribution mechanics for whichever of Google
+Play Books, Apple Books, or a direct storefront the author actually
+pursues, since none of those platforms' submission flows have been
+touched by this pipeline.
