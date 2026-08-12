@@ -69,6 +69,7 @@ Target: 12 sections, 102 lectures, 614 min (10h14m).
 | 6 | 10 | 10/10 | 43.4 min | Visually spot-checked (6.3 slide 3, statement layout): clean. Release QC clean except pre-existing [SCREENSHOT-NEEDED] on 6.2 (unrelated to TTS work). |
 | 7 | 9 | 9/9 | 39.6 min | Checked specifically for CLAUDE.md's known two-`$`-per-line math-stash bug (this section is full of per-token pricing tables): source already writes bare numbers ("3/M", "15/M") correctly, no collisions found or rendered. Release QC clean. |
 | 8 | 9 | 9/9 | 43.9 min | Visually spot-checked (8.4 slide 4, bad/good two-col): clean. Release QC clean. |
+| 9 | 8 | 8/8 | 35.0 min | Visually spot-checked (9.6 slide 3, mermaid metric tree): renders correctly, text wraps within node boxes as authored, no overflow. Release QC clean. |
 
 Build throughput observed: section 0 (17.6 min narration, 4 lectures) took
 14m13s wall clock on CPU (`time` command, `user` 39m52s reflecting
