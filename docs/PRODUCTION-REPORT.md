@@ -64,6 +64,7 @@ Target: 12 sections, 102 lectures, 614 min (10h14m).
 | 1 | 9 | 9/9 | 33.0 min | Visually spot-checked (1.5 slide 3, two-col comparison card): clean. Release QC: only the expected verified:false gate on all 9, no technical failures. |
 | 2 | 9 | 9/9 | 33.0 min | Visually spot-checked (2.1 slide 2, mermaid diagram): renders at full width with numbered figure caption, no postage-stamp sizing bug. Release QC clean except pre-existing [SCREENSHOT-NEEDED] on 2.6 (unrelated to TTS work). |
 | 3 | 10 | 10/10 | 38.6 min | Visually spot-checked (3.7 slide 4, bad/good two-col cards): correct semantic green/red palette, no overflow. Release QC clean. |
+| 4 | 11 | 11/11 | 48.7 min | Visually spot-checked (4.6 slide 5, metrics band): big-figure layout clean. Release QC clean. Section 4 is the eval-mindset core of the course; renders and technical checks solid throughout. |
 
 Build throughput observed: section 0 (17.6 min narration, 4 lectures) took
 14m13s wall clock on CPU (`time` command, `user` 39m52s reflecting
