@@ -98,14 +98,10 @@ free_preview_lectures: ["0.1", "0.3", "3.1"]
 # --- Compliance -------------------------------------------------------------
 ai_disclosure: "This course contains the use of artificial intelligence."
 
-human_voice_required:
-  - promo
-  - "0.1"
-  - section_intros
-  - section_outros
-  - "11.2"
-  - "11.3"
-  - "11.5"
+# Author elected full-TTS delivery, 2026-08-12; presence carried by the AI
+# disclosure, instructor sign-off and Q&A responsiveness rather than recorded
+# voice. No lecture requires the instructor's own voice.
+human_voice_required: []
 
 # --- Freshness registry ------------------------------------------------------
 # The screenshot-heavy course decays through its screenshots. Every lecture

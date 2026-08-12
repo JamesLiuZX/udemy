@@ -27,6 +27,14 @@ Target keywords: `AI product management`, `AI evaluation`, `LLM evals`,
 
 ## 2. Promo video (60–90 seconds)
 
+> **2026-08-12 update:** the author has elected full-TTS delivery; the promo
+> is narrated, not recorded on camera. The script and beats below still
+> apply, "record it in your own voice and face" does not. This trades away
+> some of the single highest-leverage human moment in the listing and will
+> likely cost some conversion; the author has accepted that knowingly.
+> Presence now has to be earned elsewhere: the personal sign-off in 0.1 and
+> 11.5, and fast, genuine Q&A responses once the course is live.
+
 Long promos that don't say what you'll learn are a documented failure. Keep it
 tight, and **record it in your own voice and face**. This is the single
 highest-leverage human moment in the whole listing.

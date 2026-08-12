@@ -28,6 +28,17 @@ The rest are manual sign-offs. Do not submit with any box unchecked.
 
 ## B. Instructor presence — the "personal connection" requirement
 
+> **2026-08-12 update:** the author has elected full-TTS delivery across all
+> three courses, including the promo and every lecture previously marked
+> `voice: human`. No lecture is recorded in the author's own voice. This is
+> policy-compatible (Udemy permits quality TTS narration with the AI
+> disclosure, wired into every `course.yaml`), but it supersedes the
+> face-and-voice advice below: presence is now carried by the disclosure,
+> the instructor's personal sign-off in 0.1/11.5, and Q&A responsiveness,
+> not recorded audio or video. Be honest that this likely costs some
+> conversion relative to a recorded promo and welcome; the trade was made
+> knowingly.
+
 Policy states that even high-quality audio/video "can lead to a poor learner experience
 if it lacks meaningful instructor participation, engagement, or presence."
 
