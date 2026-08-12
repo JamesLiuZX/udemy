@@ -1,0 +1,1069 @@
+# Facts registry: decay-prone claims across the whole portfolio.
+#
+# Powers the freshness sentinel (growth/prompts/freshness-sentinel.md). One
+# entry per claim that could plausibly go stale within 6-12 months: model
+# names, prices, context windows, rate limits, tool/product capabilities,
+# platform policies, "as of <date>" statements, and statistics tied to a
+# named study or report. Timeless claims (general product philosophy,
+# psychological mechanisms stated without a decaying number) are
+# deliberately left out.
+#
+# Course entries use `lecture: "<section>.<number>"` (matches the lecture id
+# in courses/<slug>/lectures/). Book entries use `chapter: "<book-slug>/<NN>"`
+# (matches the two-digit chapter file in books/<slug>/manuscript/). `source`
+# is the URL or citation the lecture/chapter itself names, or `null` if it
+# states the claim without a checkable link (never invent one). `checked` is
+# the date this entry was last verified against source; the freshness
+# sentinel job updates it going forward.
+#
+# Built 2026-08-12 by a full first-pass scan of all three courses' lecture
+# files and all seven books' English manuscripts (courses/ have no separate
+# translation; the Chinese book editions are translations of the same
+# claims, so are not re-registered separately here — a claim that changes in
+# the English source is the same claim in zh and needs the same re-verify).
+# Every entry below is freshly registered, not yet independently checked
+# against a live source: `checked: "2026-08-12"` records when it was found
+# and logged, not when it was confirmed accurate. The freshness sentinel's
+# next run is the first real verification pass.
+
+# =============================================================================
+# COURSE: ai-for-pms
+# =============================================================================
+
+- lecture: "1.2"
+  claim: "Some current LLMs hold context windows of hundreds of thousands of tokens"
+  source: null
+  checked: "2026-08-12"
+- lecture: "1.4"
+  claim: "Current LLMs are reliably strong at rewriting/summarising/classifying text but still unreliable at exact arithmetic, anything past training cutoff, and long unchecked reasoning chains"
+  source: null
+  checked: "2026-08-12"
+- lecture: "1.5"
+  claim: "Current models are measurably more willing to say 'I don't know' than earlier model generations"
+  source: null
+  checked: "2026-08-12"
+- lecture: "6.1"
+  claim: "Most products marketed as 'AI agents' this year are workflows with a model step, not genuine agents"
+  source: null
+  checked: "2026-08-12"
+- lecture: "6.2"
+  claim: "MCP (Model Context Protocol) is presented as the standard that changed how agents connect to tools in the last two years"
+  source: null
+  checked: "2026-08-12"
+- lecture: "6.2"
+  claim: "Google Workspace, Notion, and Lark are named as concrete examples of tools reachable via MCP connectors"
+  source: null
+  checked: "2026-08-12"
+- lecture: "6.5"
+  claim: "Multi-agent planner/worker architecture is described as the architecture every vendor demo reaches for this year specifically"
+  source: null
+  checked: "2026-08-12"
+- lecture: "7.1"
+  claim: "Output tokens are typically priced several times higher than input tokens across providers"
+  source: null
+  checked: "2026-08-12"
+- lecture: "7.3"
+  claim: "Most LLM providers now offer a discount for tokens that repeat exactly from a previous call (prompt caching)"
+  source: null
+  checked: "2026-08-12"
+- lecture: "7.4"
+  claim: "A model selection scorecard's winning model can be beaten by a new, cheaper model release within a quarter, so pricing/capability comparisons need rechecking regularly"
+  source: null
+  checked: "2026-08-12"
+- lecture: "8.2"
+  claim: "No current model can guarantee it will never be tricked by prompt injection, even with a system-prompt instruction to ignore embedded instructions"
+  source: null
+  checked: "2026-08-12"
+- lecture: "8.3"
+  claim: "Most AI vendors offer an account setting to opt data out of model training, but the default is not always off"
+  source: null
+  checked: "2026-08-12"
+- lecture: "8.3"
+  claim: "A single AI vendor's consumer chat product and its enterprise API can sit under different data-training terms"
+  source: null
+  checked: "2026-08-12"
+- lecture: "8.4"
+  claim: "The EU AI Act sorts AI systems into four risk tiers (unacceptable, high-risk, limited risk, minimal risk) based on use case, with guidance and enforcement still evolving"
+  source: null
+  checked: "2026-08-12"
+- lecture: "9.3"
+  claim: "Some LLM providers change the model version served under a fixed API name without warning"
+  source: null
+  checked: "2026-08-12"
+- lecture: "4.4"
+  claim: "LLM judge providers update the underlying judge model on their own schedule without notifying customers, causing judge scoring to drift over time"
+  source: null
+  checked: "2026-08-12"
+- lecture: "10.4"
+  claim: "ChatPRD, general coding assistants, and Workspace/Notion automations are named as the current landscape of tools letting a PM build without an engineer"
+  source: null
+  checked: "2026-08-12"
+
+# =============================================================================
+# COURSE: ai-agents-for-work
+# =============================================================================
+
+- lecture: "0.2"
+  claim: "n8n is open source and can be self-hosted for free indefinitely"
+  source: null
+  checked: "2026-08-12"
+- lecture: "0.3"
+  claim: "The inbox-triage demo agent uses Google's Gemini on its free tier"
+  source: null
+  checked: "2026-08-12"
+- lecture: "2.1"
+  claim: "n8n Cloud Starter plan is priced at $20/month, billed annually"
+  source: null
+  checked: "2026-08-12"
+- lecture: "2.1"
+  claim: "n8n Cloud Starter plan includes 2,500 workflow executions/month vs unlimited on self-hosted Community edition"
+  source: null
+  checked: "2026-08-12"
+- lecture: "2.1"
+  claim: "n8n self-hosted Community edition is free forever with unlimited workflow executions"
+  source: null
+  checked: "2026-08-12"
+- lecture: "2.1"
+  claim: "n8n Cloud offers a free trial claimed to cover the whole course"
+  source: null
+  checked: "2026-08-12"
+- lecture: "2.2"
+  claim: "Google Gemini's free tier requires no card, rate limited to roughly 10-30 requests/minute"
+  source: null
+  checked: "2026-08-12"
+- lecture: "2.2"
+  claim: "OpenAI's new-account free credit expires after three months"
+  source: null
+  checked: "2026-08-12"
+- lecture: "2.2"
+  claim: "Anthropic's new-account free credit expires after thirty days"
+  source: null
+  checked: "2026-08-12"
+- lecture: "2.3"
+  claim: "n8n's Language Models node list includes Gemini, Anthropic, OpenAI and other smaller providers"
+  source: null
+  checked: "2026-08-12"
+- lecture: "2.3"
+  claim: "n8n lets you pin sample data to a node's output for testing without spending a real API call"
+  source: null
+  checked: "2026-08-12"
+- lecture: "2.4"
+  claim: "The course's recommended toolbox is n8n self-hosted plus Gemini's free tier"
+  source: null
+  checked: "2026-08-12"
+- lecture: "3.2"
+  claim: "n8n's email trigger node is named Email Trigger (IMAP), with Mailbox Name and Action as visible settings"
+  source: null
+  checked: "2026-08-12"
+- lecture: "3.2"
+  claim: "n8n's IMAP credential form asks for User, Password, Host and Port"
+  source: null
+  checked: "2026-08-12"
+- lecture: "3.2"
+  claim: "Gmail/Outlook require an app password rather than the normal account password for IMAP credentials"
+  source: null
+  checked: "2026-08-12"
+- lecture: "3.3"
+  claim: "n8n's AI Agent node has three sockets: Chat Model, Memory and Tool"
+  source: null
+  checked: "2026-08-12"
+- lecture: "3.3"
+  claim: "n8n lists dozens of chat-model providers under the AI Agent node, including OpenAI, Anthropic and Gemini"
+  source: null
+  checked: "2026-08-12"
+- lecture: "3.4"
+  claim: "n8n has a Switch node to route a workflow based on a condition"
+  source: null
+  checked: "2026-08-12"
+- lecture: "3.6"
+  claim: "n8n workflows export as JSON via Workflow menu > Download, credentials excluded"
+  source: null
+  checked: "2026-08-12"
+- lecture: "4.2"
+  claim: "n8n's Form Trigger node auto-generates a working web form with a Test URL, made live via Publish"
+  source: null
+  checked: "2026-08-12"
+- lecture: "5.2"
+  claim: "n8n's Schedule Trigger node supports a weekly interval option"
+  source: null
+  checked: "2026-08-12"
+- lecture: "5.2"
+  claim: "n8n's Google Sheets node offers a Get Row(s) operation"
+  source: null
+  checked: "2026-08-12"
+- lecture: "6.4"
+  claim: "n8n's Gmail node Resource dropdown offers Draft (Create) as distinct from Message (Send)"
+  source: null
+  checked: "2026-08-12"
+- lecture: "8.4"
+  claim: "Google's Gmail OAuth consent screen defaults to authorising the whole mailbox unless a narrower scope is selected"
+  source: null
+  checked: "2026-08-12"
+- lecture: "9.1"
+  claim: "Gemini Flash pricing is roughly $0.30/million words input, $2.50/million words output"
+  source: null
+  checked: "2026-08-12"
+- lecture: "9.1"
+  claim: "A month of Agent 1 at 41 emails/day over 22 working days costs well under $1 at Gemini Flash pricing"
+  source: null
+  checked: "2026-08-12"
+- lecture: "9.1"
+  claim: "Gemini's 2.5 generation of models has an announced retirement date later in 2026"
+  source: null
+  checked: "2026-08-12"
+- lecture: "9.2"
+  claim: "Example manager pitch cites all four agents together costing under $5/month in AI costs"
+  source: null
+  checked: "2026-08-12"
+
+# =============================================================================
+# COURSE: ai-ugc-ads
+# =============================================================================
+
+- lecture: "3.1"
+  claim: "Short text and single-word taglines are close to solved across most leading AI image generators; long text and dense layouts remain unreliable"
+  source: null
+  checked: "2026-08-12"
+- lecture: "3.1"
+  claim: "Exact brand typography and logo rendering in AI image generators is still unreliable across the board"
+  source: null
+  checked: "2026-08-12"
+- lecture: "3.1"
+  claim: "Run-to-run brand consistency in AI image generation is still poor without deliberate curation"
+  source: null
+  checked: "2026-08-12"
+- lecture: "3.2"
+  claim: "Ideogram supports spreadsheet-style batch image generation, one row per prompt, up to hundreds at once"
+  source: null
+  checked: "2026-08-12"
+- lecture: "4.1"
+  claim: "AI avatar tools vary on whether commercial/paid-social use ships on every plan or is gated behind a higher tier"
+  source: null
+  checked: "2026-08-12"
+- lecture: "4.1"
+  claim: "Some ad platforms now require a real person's likeness consent uploaded directly, not just held on file"
+  source: null
+  checked: "2026-08-12"
+- lecture: "4.3"
+  claim: "Arcads is a current AI UGC avatar tool generating short-form video with export formats suited to Meta/TikTok paid social by default"
+  source: null
+  checked: "2026-08-12"
+- lecture: "5.1"
+  claim: "Meta's delivery is covered by three creative ratios: 4:5 vertical for Feed, 9:16 for Stories/Reels, 1:1 square as fallback"
+  source: null
+  checked: "2026-08-12"
+- lecture: "5.1"
+  claim: "Instagram folded its separate Explore feed into Reels earlier in 2026"
+  source: null
+  checked: "2026-08-12"
+- lecture: "5.1"
+  claim: "On Meta Stories/Reels, roughly top 14% and bottom 14% of frame are covered by UI chrome"
+  source: null
+  checked: "2026-08-12"
+- lecture: "5.1"
+  claim: "Meta's Advantage+ automated delivery tests a spread of eight to twenty creative variants against each other"
+  source: null
+  checked: "2026-08-12"
+- lecture: "5.2"
+  claim: "TikTok Spark Ads creator authorization codes are time-limited, typically valid 30-60 days"
+  source: null
+  checked: "2026-08-12"
+- lecture: "5.2"
+  claim: "TikTok requires a visible label/disclosure on ad creative that is AI-generated or significantly AI-edited"
+  source: null
+  checked: "2026-08-12"
+- lecture: "5.5"
+  claim: "Meta Advantage+ and TikTok Smart+ automatically generate/test their own creative variations without advertiser action"
+  source: null
+  checked: "2026-08-12"
+- lecture: "5.5"
+  claim: "Most Meta Advantage+/TikTok Smart+ creative enhancements are on by default, individually toggleable at the ad level"
+  source: null
+  checked: "2026-08-12"
+- lecture: "6.3"
+  claim: "Meta requires a visible disclosure label on AI-generated/modified ad content, with account restriction risk for repeated misses"
+  source: null
+  checked: "2026-08-12"
+- lecture: "6.3"
+  claim: "TikTok requires a label/disclosure on significantly AI-edited ad content"
+  source: null
+  checked: "2026-08-12"
+- lecture: "6.3"
+  claim: "New York state requires disclosure for synthetic performers depicting real humans in consumer-facing content, effective June 2026"
+  source: null
+  checked: "2026-08-12"
+- lecture: "6.3"
+  claim: "EU AI Act transparency rules requiring synthetic-media disclosure take effect from August 2026"
+  source: null
+  checked: "2026-08-12"
+- lecture: "6.3"
+  claim: "First-offence penalty under New York's synthetic-media disclosure law runs to five figures per violation"
+  source: null
+  checked: "2026-08-12"
+- lecture: "9.2"
+  claim: "Static AI image generation costs roughly 1 to 8 cents per image depending on tool tier, as of August 2026"
+  source: null
+  checked: "2026-08-12"
+- lecture: "9.2"
+  claim: "AI UGC-style video generation costs roughly 4 to 11 dollars per finished clip depending on platform/tier, as of August 2026"
+  source: null
+  checked: "2026-08-12"
+
+# =============================================================================
+# BOOK: stop-guessing
+# =============================================================================
+
+- chapter: "stop-guessing/01"
+  claim: "A Canadian tribunal (Moffatt v. Air Canada) ordered Air Canada to pay damages after its chatbot invented a bereavement-fare refund policy"
+  source: "CRT of British Columbia, Moffatt v. Air Canada, 2024 BCCRT 149"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/01"
+  claim: "NYC's MyCity chatbot was found giving illegal advice to business owners; incoming mayor called the ~$500k tool functionally unusable and shut it down Jan 2026"
+  source: "The Markup, NYC's AI Chatbot Tells Businesses to Break the Law, March 29, 2024"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/02"
+  claim: "Zillow's Zestimate-derived home-buying algorithm, wired to automatic purchase offers with no human check, was cited as the direct cause of the Zillow Offers shutdown"
+  source: "Zillow Group Form 10-K, FY2021"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/02"
+  claim: "AP investigation found OpenAI's Whisper model fabricates content in a medical transcription tool used by 30,000+ clinicians"
+  source: "AP, Researchers say an AI-powered transcription tool used in hospitals invents things, Oct 26, 2024"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/03"
+  claim: "FTC's Dec 2023 settlement banned Rite Aid from using facial recognition for surveillance for five years"
+  source: "FTC, Rite Aid Banned from Using AI Facial Recognition, Dec 19, 2023"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/04"
+  claim: "Amazon scrapped a secret internal AI hiring tool in 2017 after it taught itself to downgrade resumes containing 'women's'"
+  source: "Dastin, Reuters, Oct 10, 2018"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/04"
+  claim: "The 2018 Gender Shades study found facial-analysis error rates up to 34.7% for darker-skinned women on the worst system"
+  source: "Buolamwini & Gebru, Gender Shades, PMLR, 2018"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/05"
+  claim: "The 2023 MT-Bench study found GPT-4 agreed with expert human judges ~85% of the time, fooled by a padding attack 8.7% of trials"
+  source: "Zheng et al., Judging LLM-as-a-Judge, NeurIPS 2023"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/06"
+  claim: "In June 2025, Cursor moved its Pro plan from flat-rate to usage-based credits after heavy users cost more than subscriptions brought in"
+  source: "TechCrunch, Cursor apologizes for unclear pricing changes, July 7, 2025"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/07"
+  claim: "In July 2025, a Replit AI coding agent deleted a live production database during an explicit code freeze, then fabricated status reports"
+  source: "The Register, Vibe coding service Replit deleted production database, July 21, 2025"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/07"
+  claim: "Knight Capital's 2012 deployment error executed 4M+ erroneous trades in 45 minutes, losses ~$440-460M, $12M SEC penalty"
+  source: "SEC Release No. 70694, In the Matter of Knight Capital Americas LLC, Oct 16, 2013"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/08"
+  claim: "Italy's Garante ordered OpenAI to stop processing Italian users' ChatGPT data in March 2023; later produced a EUR15M fine, set aside by an Italian court in 2026"
+  source: "Garante order, 31 March 2023"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/08"
+  claim: "iTutorGroup agreed to pay $365,000 to settle EEOC's first-ever AI hiring discrimination lawsuit"
+  source: "EEOC, Sept 11, 2023"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/08"
+  claim: "EU AI Act's heavy high-risk-tier obligations (originally due August 2026) were postponed to end of 2027"
+  source: null
+  checked: "2026-08-12"
+- chapter: "stop-guessing/09"
+  claim: "Klarna's AI customer service assistant handled ~two-thirds of chats within a month; by May 2025 CEO said cost was too predominant a factor, announced rehiring human agents"
+  source: "Forbes, Klarna Reverses AI Push, May 18, 2025"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/09"
+  claim: "Wells Fargo's cross-sell ratio push led to ~1.5M unauthorized bank accounts, $185M in combined 2016 fines"
+  source: "CFPB, Sept 8, 2016"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/10"
+  claim: "Musk has repeatedly promised near-term Tesla FSD/robotaxi dates since 2015; Jan 2026 cited a 10-billion-mile threshold crossed by May 2026 with a new year-end date named"
+  source: "Reuters, April 22, 2025; Electrek, May 2026"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/10"
+  claim: "MD Anderson's IBM Watson cancer-treatment pilot ran 4 years past scope and was canceled in 2016 after spending $62 million"
+  source: "UT System audit, Medscape, Feb 2017"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/11"
+  claim: "Google's 2013 Tail at Scale paper: a 2,000-server parallel service sees almost 1 in 5 requests exceed 1 second even at low per-server tail risk"
+  source: "Dean & Barroso, Communications of the ACM 56(2), Feb 2013"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/11"
+  claim: "2024 studies found LLM benchmark contamination: 29.1% of MMLU items estimated leaked into training data"
+  source: "Li et al., EMNLP 2024 Findings; Deng et al., NAACL 2024"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/12"
+  claim: "Moffatt v. Air Canada tribunal ordered CAD $812.02 total, rejecting the argument the chatbot was a separate legal entity"
+  source: "CRT of British Columbia, 2024 BCCRT 149"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/13"
+  claim: "Starting ~Jan 21, 2026, a Microsoft 365 Copilot Chat bug let it read confidentiality-labeled emails despite DLP restrictions; fix rollout began Feb 2026"
+  source: "TechCrunch, Feb 18, 2026"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/14"
+  claim: "Gartner predicted 30% of GenAI projects would be abandoned after POC by end of 2025; later accounting put the actual figure above 50%"
+  source: "Gartner press release, July 29, 2024; Gartner, Why 50% of GenAI Projects Fail, 2026"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/14"
+  claim: "In April 2025, Meta's Llama 4 Maverick reached #2 on LMArena using a specially tuned variant different from the released model; the public version fell to 32nd"
+  source: "The Register, April 8, 2025"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/15"
+  claim: "In early 2024, an Arup employee made 15 wire transfers totaling $25 million after a video call where every other participant was an AI deepfake"
+  source: "CNN, May 16, 2024"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/16"
+  claim: "MIT Project NANDA's July 2025 report found 95% of organizations piloting GenAI saw no measurable ROI despite $30-40B in enterprise spend"
+  source: "MIT Project NANDA, The GenAI Divide, July 2025"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/17"
+  claim: "Epic's Sepsis Model, deployed across hundreds of US hospitals, was independently validated with sensitivity of only 33%"
+  source: "Wong et al., JAMA Internal Medicine, 2021"
+  checked: "2026-08-12"
+- chapter: "stop-guessing/17"
+  claim: "Volkswagen's diesel defeat-device software (installed from ~2009 in ~11M vehicles) became public September 2015"
+  source: "EPA Notice of Violation, Sept 18, 2015"
+  checked: "2026-08-12"
+
+# =============================================================================
+# BOOK: ai-didnt-close-that-deal
+# =============================================================================
+
+- chapter: "ai-didnt-close-that-deal/01"
+  claim: "B2B inboxes now receive 3-5x more cold email than 2023, average reply rates fell from ~8% in 2019 to low 3% range today"
+  source: "Instantly's 2026 Cold Email Benchmark Report; Woodpecker; Cleanlist; Belkins"
+  checked: "2026-08-12"
+- chapter: "ai-didnt-close-that-deal/02"
+  claim: "Google/Yahoo bulk sender requirements (effective Feb 2024) define 5,000+ emails/day as bulk, require authentication, complaint rate under 0.3%; Microsoft joined May 2025"
+  source: "Google/Yahoo bulk sender guidelines, Feb 2024; Microsoft, May 2025"
+  checked: "2026-08-12"
+- chapter: "ai-didnt-close-that-deal/03"
+  claim: "Gartner survey of 632 B2B buyers found 73% actively avoid suppliers whose outreach feels irrelevant"
+  source: "Gartner, June 25, 2025 (survey fielded Aug-Sept 2024)"
+  checked: "2026-08-12"
+- chapter: "ai-didnt-close-that-deal/04"
+  claim: "Gartner survey of 1,464 B2B buyers: personalization created a negative experience for 53%, making them 3.2x more likely to regret the purchase"
+  source: "Gartner, June 3, 2025"
+  checked: "2026-08-12"
+- chapter: "ai-didnt-close-that-deal/05"
+  claim: "Roughly 4 in 10 cold-email replies land on a follow-up rather than the first email; first follow-up often matches or exceeds opener's reply rate"
+  source: "Woodpecker; Saleshandy (~53M emails); Instantly, 2024-2026"
+  checked: "2026-08-12"
+- chapter: "ai-didnt-close-that-deal/06"
+  claim: "Organizations with structured sales coaching report ~28% higher quota attainment and ~32% higher win rates"
+  source: "CSO Insights, Fifth Annual Sales Enablement Study"
+  checked: "2026-08-12"
+- chapter: "ai-didnt-close-that-deal/07"
+  claim: "Salesforce's State of Sales (7th ed., 2026) found sellers expect AI agents to cut prospect-research time by ~34%"
+  source: "Salesforce, State of Sales, 7th edition, 2026"
+  checked: "2026-08-12"
+- chapter: "ai-didnt-close-that-deal/07"
+  claim: "In 2025 a breached chatbot integration exposed CRM data at hundreds of companies"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-didnt-close-that-deal/08"
+  claim: "Apple Mail Privacy Protection fires the open-tracking pixel automatically; combined Apple Mail clients ~45-65% of tracked email opens"
+  source: "Apple Support; Litmus Email Client Market Share tracker"
+  checked: "2026-08-12"
+- chapter: "ai-didnt-close-that-deal/09"
+  claim: "TrustRadius's 2026 report found 47% of buyers trust online resources less than a year earlier; 94% fact-checked AI research output at least some of the time"
+  source: "TrustRadius, 2026 B2B Buying Disconnect Report"
+  checked: "2026-08-12"
+- chapter: "ai-didnt-close-that-deal/10"
+  claim: "Bridge Group's 2025 survey (351 companies): average SDR ramp time ~3.1-3.2 months, 57% hit quota, 41% for software-specific SDRs"
+  source: "The Bridge Group, SDR Models, Motions & Metrics, 2025"
+  checked: "2026-08-12"
+- chapter: "ai-didnt-close-that-deal/11"
+  claim: "Gartner survey of 645 B2B buyers found 69% still turn to a human sales rep to validate AI-generated insights before finalizing a purchase"
+  source: "Gartner, May 20, 2026"
+  checked: "2026-08-12"
+
+# =============================================================================
+# BOOK: ai-employee
+# =============================================================================
+
+- chapter: "ai-employee/01"
+  claim: "A New York lawyer submitted a legal brief with fabricated ChatGPT-generated case citations; the court fined the lawyer, a colleague, and their firm $5,000"
+  source: "Mata v. Avianca, Inc., 678 F. Supp. 3d 443 (S.D.N.Y. 2023)"
+  checked: "2026-08-12"
+- chapter: "ai-employee/01"
+  claim: "OpenAI research argues LLM hallucination is a predictable consequence of training/grading rewarding confident guesses over admitting uncertainty"
+  source: "Kalai, Nachum, Vempala & Zhang, Why Language Models Hallucinate, arXiv:2509.04664, Sept 2025"
+  checked: "2026-08-12"
+- chapter: "ai-employee/02"
+  claim: "A 2025 study found more detailed prompts measurably improved accuracy on GPT-4 and O3-mini"
+  source: "DETAIL Matters, arXiv:2512.02246, 2025"
+  checked: "2026-08-12"
+- chapter: "ai-employee/02"
+  claim: "A benchmark testing 95 AI models on clinical writing found worked examples improved scores; Gemini-1.5-Pro rose 27% relative"
+  source: "Wu et al., BRIDGE, Nature Biomedical Engineering, 2026"
+  checked: "2026-08-12"
+- chapter: "ai-employee/03"
+  claim: "A study of 200 newly hired nurses across 3 hospitals found structured onboarding produced higher competency scores"
+  source: "Montes Muñoz et al., Nursing Reports 15(11), 2025"
+  checked: "2026-08-12"
+- chapter: "ai-employee/04"
+  claim: "Radar-operator vigilance study found detection rate dropped 10-15% within the first 30 minutes"
+  source: "Mackworth, Quarterly Journal of Experimental Psychology, 1, 1948"
+  checked: "2026-08-12"
+- chapter: "ai-employee/04"
+  claim: "Flight-simulator study: 75% of pilots followed a wrong automated checklist recommendation vs 25% using paper checklist"
+  source: "Mosier, Palmer & Degani, Proceedings of the Human Factors Society, 1992"
+  checked: "2026-08-12"
+- chapter: "ai-employee/05"
+  claim: "Stanford-affiliated study found Lexis+ AI incorrect/unsupported on 17%+ of queries, Westlaw AI ~33%, Ask Practical Law AI incomplete 60%+"
+  source: "Magesh et al., Hallucination-Free?, Journal of Empirical Legal Studies, 2025"
+  checked: "2026-08-12"
+- chapter: "ai-employee/06"
+  claim: "Meta-analysis of 607 effect sizes found feedback interventions improved performance on average but over a third made performance worse"
+  source: "Kluger & DeNisi, Psychological Bulletin 119(2), 1996"
+  checked: "2026-08-12"
+- chapter: "ai-employee/06"
+  claim: "Goal-setting research: specific goals outperformed generic 'do your best' instruction in roughly 9 of 10 studies"
+  source: "Locke & Latham, American Psychologist 57(9), 2002"
+  checked: "2026-08-12"
+- chapter: "ai-employee/07"
+  claim: "McDonald's ended its ~2-year AI voice-ordering pilot with IBM in June 2024 after a sustained pattern of order mistakes"
+  source: "CNBC, McDonald's to end AI drive-thru test with IBM, June 17, 2024"
+  checked: "2026-08-12"
+- chapter: "ai-employee/07"
+  claim: "Zillow's algorithm-driven home-flipping business wrote down inventory by up to $569 million, cut 25% workforce, ~$881M FY2021 loss"
+  source: "Bloomberg, Zillow Shuts Down Home-Flipping Business, Nov 2, 2021"
+  checked: "2026-08-12"
+- chapter: "ai-employee/08"
+  claim: "APA-summarized task-switching research: switching costs as much as 40% of otherwise productive time"
+  source: "Rubinstein, Meyer & Evans, Journal of Experimental Psychology 27(4), 2001"
+  checked: "2026-08-12"
+- chapter: "ai-employee/08"
+  claim: "Gallup analysis of 200,000+ manager-led teams found manager engagement peaks around 8-9 direct reports"
+  source: "Gallup, Span of Control, Jan 2026"
+  checked: "2026-08-12"
+- chapter: "ai-employee/09"
+  claim: "METR research: AI task-completion success rates fall off sharply as task length grows, gap closing over time but still substantial"
+  source: "METR, Kwa et al., Measuring AI Ability to Complete Long Tasks, arXiv:2503.14499, March 2025"
+  checked: "2026-08-12"
+- chapter: "ai-employee/09"
+  claim: "Cost of fixing a defect rises roughly 4x to 100x the later it's caught in a multi-stage process"
+  source: "Boehm, Software Engineering Economics, 1981"
+  checked: "2026-08-12"
+- chapter: "ai-employee/10"
+  claim: "Habit-formation study: average 66 days (range 18-254) for a new daily habit to become automatic"
+  source: "Lally et al., European Journal of Social Psychology 40, 2010"
+  checked: "2026-08-12"
+- chapter: "ai-employee/11"
+  claim: "Paid AI adoption among small businesses rose from ~2% to ~19.7% (male-owned), ~1.7% to ~17.2% (female-owned), 2019-2025"
+  source: "JPMorganChase Institute, Understanding the Use of AI Among Small Businesses, May 2026"
+  checked: "2026-08-12"
+- chapter: "ai-employee/12"
+  claim: "2025 survey of 1,000+ enterprises found 42% had abandoned the majority of AI initiatives before production, up from 17%"
+  source: "S&P Global Market Intelligence, 2025 Enterprise AI Survey"
+  checked: "2026-08-12"
+- chapter: "ai-employee/13"
+  claim: "2026 survey of 6,000 digital workers: nearly 7 in 10 AI-using employees admitted submitting unreviewed AI-generated work"
+  source: "Glean Work AI Institute, The Work AI Index 2026"
+  checked: "2026-08-12"
+- chapter: "ai-employee/14"
+  claim: "EU AI Act Article 14 requires human oversight of high-risk AI systems; July 2026 Digital Omnibus pushed enforcement to Dec 2027/Aug 2028"
+  source: "Regulation (EU) 2024/1689, Article 14, as amended by Regulation (EU) 2026/1744"
+  checked: "2026-08-12"
+- chapter: "ai-employee/16"
+  claim: "METR RCT: 16 experienced developers using AI tools took 19% longer on coding tasks, yet estimated AI made them ~20% faster"
+  source: "Becker, Rush, Barnes & Rein, arXiv:2507.09089, July 2025"
+  checked: "2026-08-12"
+- chapter: "ai-employee/17"
+  claim: "Error-cataloging study across 35 datasets/83 models found quiet omission and misinterpreting the request are common LLM failure types"
+  source: "Ashury-Tahan et al., arXiv:2601.15812, Jan 2026"
+  checked: "2026-08-12"
+- chapter: "ai-employee/19"
+  claim: "OECD study: AI adoption among SMEs varies sharply by industry, ~45% in ICT vs 7.2% in construction"
+  source: "OECD, AI Adoption by Small and Medium-Sized Enterprises, Dec 2025"
+  checked: "2026-08-12"
+- chapter: "ai-employee/21"
+  claim: "2023 study found GPT-4 arithmetic accuracy at 59% for 3-digit multiplication, dropping to 0% for 5-digit"
+  source: "Dziri et al., Faith and Fate, NeurIPS 2023"
+  checked: "2026-08-12"
+- chapter: "ai-employee/22"
+  claim: "Businesses founded in 2025 reached 10% AI adoption within 6 months, versus 6+ years for businesses founded in 2019"
+  source: "JPMorganChase Institute, May 2026"
+  checked: "2026-08-12"
+- chapter: "ai-employee/24"
+  claim: "FTC treats undisclosed AI-generated fake reviews as deceptive; 2024 rule bans them, civil penalties over $53,000/violation"
+  source: "FTC, Trade Regulation Rule on Consumer Reviews and Testimonials, effective Oct 21, 2024"
+  checked: "2026-08-12"
+
+# =============================================================================
+# BOOK: one-person-business
+# =============================================================================
+
+- chapter: "one-person-business/01"
+  claim: "Freelancer survey: respondents spend roughly 10-20% of working time (~5 hrs/week) on unproductive overhead"
+  source: "freelancermap, How Many Hours Do Freelancers Work?"
+  checked: "2026-08-12"
+- chapter: "one-person-business/01"
+  claim: "Upwork's Freelance Forward study: 64 million Americans freelanced in the prior 12 months (38% of workforce), $1.27T in earnings"
+  source: "Upwork, Freelance Forward, 2023"
+  checked: "2026-08-12"
+- chapter: "one-person-business/02"
+  claim: "Zylo's SaaS management research: unused purchased software licenses at roughly a third to a half"
+  source: "Zylo, SaaS Management Index, 2024-2026"
+  checked: "2026-08-12"
+- chapter: "one-person-business/02"
+  claim: "It takes roughly 25 minutes on average to fully regain focus after a single interruption"
+  source: "Gloria Mark, Attention Span, 2023"
+  checked: "2026-08-12"
+- chapter: "one-person-business/02"
+  claim: "As of August 2026: AI chat assistant paid tiers (ChatGPT Plus, Claude Pro, Gemini AI Pro) run roughly $20/month each"
+  source: null
+  checked: "2026-08-12"
+- chapter: "one-person-business/02"
+  claim: "As of August 2026: bookkeeping tools (QuickBooks Solopreneur, Wave, FreshBooks) range free to about $20/month; Wave's free tier now gates automatic bank import"
+  source: null
+  checked: "2026-08-12"
+- chapter: "one-person-business/02"
+  claim: "As of August 2026: e-signature tools (Dropbox Sign, DocuSign) cost $10-15/month annual; DocuSign cheapest plan caps at five envelopes/month"
+  source: null
+  checked: "2026-08-12"
+- chapter: "one-person-business/02"
+  claim: "As of August 2026: Calendly free for one event type, Standard tier about $10/month"
+  source: null
+  checked: "2026-08-12"
+- chapter: "one-person-business/02"
+  claim: "As of August 2026: email AI features (Gemini in Gmail, Copilot in M365 Personal) bundled with paid suites, best features behind paid tiers"
+  source: null
+  checked: "2026-08-12"
+- chapter: "one-person-business/03"
+  claim: "Freelance proposal win-rate analysis: generic templates convert 15-25%, semi-customized 35-45%, personalized 55-70%"
+  source: "Jobbers, Complete Proposal Win Rate Optimization Guide, 2024-2026"
+  checked: "2026-08-12"
+- chapter: "one-person-business/03"
+  claim: "Contacting a new inquiry within an hour made a firm ~7x more likely to qualify the lead than waiting even 60 minutes"
+  source: "Oldroyd, McElheran & Elkington, HBR, March 2011"
+  checked: "2026-08-12"
+- chapter: "one-person-business/04"
+  claim: "Analysis of 100,000+ freelancers' invoicing data: ~29% of invoices paid at least one day late, 90% within a month"
+  source: "Bonsai, freelance invoicing platform data analysis"
+  checked: "2026-08-12"
+- chapter: "one-person-business/05"
+  claim: "McKinsey Global Institute: people in frequent-communication roles spend roughly 28% of the workweek (~11 hrs) on email"
+  source: "McKinsey Global Institute, The Social Economy, July 2012"
+  checked: "2026-08-12"
+- chapter: "one-person-business/05"
+  claim: "Replying within about an hour satisfies 80-89% of customers, though average real-world response time is closer to half a day"
+  source: "Jeff Toister, Toister Performance Solutions, 2015-2020"
+  checked: "2026-08-12"
+- chapter: "one-person-business/06"
+  claim: "2018 study: AI contract-review tool averaged 94% accuracy spotting NDA risks vs 85% for 20 experienced lawyers, in 26 sec vs 92 min"
+  source: "LawGeex with Stanford, Duke, USC academics, Feb 2018"
+  checked: "2026-08-12"
+- chapter: "one-person-business/06"
+  claim: "Using a written contract was associated with income roughly 13.7% higher than working without one"
+  source: "Rodgers, Horowitz & Wuolo, 2014"
+  checked: "2026-08-12"
+- chapter: "one-person-business/07"
+  claim: "2024 Constant Contact survey: 40% of small business owners cite lack of time as the reason they delay/skip marketing"
+  source: "Constant Contact, small business marketing research, April 2024"
+  checked: "2026-08-12"
+- chapter: "one-person-business/07"
+  claim: "Nielsen's Global Trust in Advertising research: 88% of consumers trust a recommendation from someone they know most"
+  source: "Nielsen, Global Trust in Advertising, 2021 update"
+  checked: "2026-08-12"
+- chapter: "one-person-business/08"
+  claim: "IRS: taxpayers penalized for underpaying estimated taxes rose from 7.2 million (2010) to 10 million (2015)"
+  source: "IRS, Fact Sheet FS-2017-12, Oct 2017"
+  checked: "2026-08-12"
+- chapter: "one-person-business/08"
+  claim: "GAO found roughly 65% of sole proprietors underreport income by an average of about $13,500"
+  source: "GAO-24-106449 / GAO-24-105281, Sole Proprietor Compliance, Nov 2023"
+  checked: "2026-08-12"
+- chapter: "one-person-business/09"
+  claim: "PMI's Pulse of the Profession research: 52% of projects experienced scope creep, up from 43% five years earlier"
+  source: "PMI, Scope Creep Rising, 2018 Pulse of the Profession"
+  checked: "2026-08-12"
+- chapter: "one-person-business/10"
+  claim: "Fast Company survey of 1,250+ designers: only 12% felt very confident pricing their own work"
+  source: "Fast Company, Freelance Design in 2026, 2026"
+  checked: "2026-08-12"
+- chapter: "one-person-business/11"
+  claim: "Cyberhaven data: roughly 39.7% of workplace AI interactions involve sensitive/confidential data, up from ~10.7% in early 2023"
+  source: "Cyberhaven, Sensitive Enterprise Data Is Flowing Into AI Tools at Scale, 2026"
+  checked: "2026-08-12"
+- chapter: "one-person-business/13"
+  claim: "UCL-associated habit study (96 people): median 66 days for a new daily habit to feel automatic, range 18-254 days"
+  source: "Lally et al., European Journal of Social Psychology, 2010"
+  checked: "2026-08-12"
+- chapter: "one-person-business/14"
+  claim: "Two New York attorneys were sanctioned $5,000 for submitting a brief citing ChatGPT-fabricated court cases"
+  source: "Mata v. Avianca, Inc., 678 F. Supp. 3d 443 (S.D.N.Y. 2023)"
+  checked: "2026-08-12"
+- chapter: "one-person-business/14"
+  claim: "Adobe survey: 26% of tax filers used AI to help prepare their 2025 tax return, up from 11% the year before"
+  source: null
+  checked: "2026-08-12"
+
+# =============================================================================
+# BOOK: ai-for-the-rest-of-us
+# =============================================================================
+
+- chapter: "ai-for-the-rest-of-us/01"
+  claim: "49 percent of U.S. adults now use AI chatbots, up from 33 percent two years earlier"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/02"
+  claim: "Nielsen Norman Group's CARE framework: prompts with real context produce results rated far more usable than vague one-liners"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/03"
+  claim: "Priceline research: average traveler spends around sixteen hours researching/booking a single trip"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/04"
+  claim: "CFPB data: written consumer complaints in 2025 got a timely company response more than 99 percent of the time"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/05"
+  claim: "54 percent of U.S. teens have used an AI chatbot for schoolwork help; 59 percent believe AI-assisted cheating is now normal"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/06"
+  claim: "Brown University study of 189 doctor visits: patients recalled only 49 percent of decisions unprompted, 85 percent when prompted"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/07"
+  claim: "Federal Reserve 2025 survey: 63 percent of U.S. adults could cover a $400 emergency expense with cash"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/08"
+  claim: "Wharton cognitive-surrender research: people accept a correct AI answer 93% of the time and a confidently wrong one 80% of the time"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/09"
+  claim: "FBI IC3 2025 Elder Fraud Report: seniors reported over $7.7 billion in fraud losses; 3,100+ complaints referenced AI, losses over $352 million"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/10"
+  claim: "ChatGPT has the largest free tier of the four major AI chat apps; unlimited text, smaller daily image limits"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/10"
+  claim: "Claude caps free use by a rolling daily message count"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/10"
+  claim: "Gemini signs in with an existing Google account, integrates with Docs/Sheets/Drive, generous free tier"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/10"
+  claim: "Copilot is the only major AI chat app requiring no account/sign-in, at copilot.microsoft.com"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/10"
+  claim: "Paid tiers of major AI chat apps are usually $20/month"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/10"
+  claim: "All four major AI chat tools now offer genuine spoken conversation mode, not just voice-to-text"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/10"
+  claim: "Usability study: older adults typed slower on touchscreens but matched younger adults' speed/accuracy using voice input"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/11"
+  claim: "PowerReviews 2025 survey: 95 percent regularly read product reviews when shopping; 80 percent of car buyers consult reviews"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/15"
+  claim: "2026 scoping review: rushed family tech help increases an older adult's anxiety and discourages continued use"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/16"
+  claim: "Jobscan 2025 survey: roughly 14 percent of job applicants submit 100+ applications before landing an offer"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/17"
+  claim: "Deloitte 2017 survey: 91 percent accept terms and conditions without reading, rising to 97 percent under 35"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/20"
+  claim: "eHealth 2025 survey of 1,500+ Medicare beneficiaries: 75 percent say choosing a plan is confusing"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/22"
+  claim: "63 million Americans provided unpaid caregiving for an adult family member in the past year, up 20 million in a decade"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/23"
+  claim: "NASFAA/EAB survey: roughly 30 percent of first-generation/low-income students found FAFSA difficult"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/24"
+  claim: "More than 22 percent of people in the U.S. speak a language other than English at home; Spanish spoken by ~42 million"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/25"
+  claim: "Gallup poll: 52 percent of U.S. pet owners have skipped/delayed a veterinary visit, mostly over cost"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/26"
+  claim: "H&R Block survey: only 46 percent of taxpayers felt prepared to update their own tax withholding"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/27"
+  claim: "Caring.com 2025 survey: only 24 percent of Americans currently have a will, down from a third three years earlier"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/28"
+  claim: "AAA 2023 consumer survey: 77 percent of U.S. drivers distrust auto repair shops"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/29"
+  claim: "Empower survey: 42 percent of workers said current savings wouldn't be enough if they lost their job tomorrow"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/30"
+  claim: "Pew Research: only 23 percent of U.S. adults 65+ use AI chatbots vs 63 percent of adults under 50"
+  source: null
+  checked: "2026-08-12"
+- chapter: "ai-for-the-rest-of-us/33"
+  claim: "Pew Research: half of U.S. adults feel more concerned than excited about AI's growing role in daily life"
+  source: null
+  checked: "2026-08-12"
+
+# =============================================================================
+# BOOK: reclaimed-hour
+# =============================================================================
+
+- chapter: "reclaimed-hour/01"
+  claim: "Gallup workplace research: a majority of employees report burnout at least sometimes, roughly a quarter very often/always"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/02"
+  claim: "Employees in highly AI-exposed occupations worked roughly three hours more per week post-ChatGPT release than less-exposed employees"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/03"
+  claim: "Day Reconstruction Method study (900+ employed women) validated episodic recall as more reliable than global time-use estimates"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/04"
+  claim: "Procrastination research reframes it as emotion-regulation: people delay tasks causing negative feeling for short-term mood relief"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/05"
+  claim: "Cross-country studies: describing oneself as busy functions as a status signal implying scarce, in-demand competence"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/06"
+  claim: "Meta-analysis of 94 tests: forming an if-then implementation intention produces a medium-to-large improvement in goal achievement"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/07"
+  claim: "People who spent money on time-saving purchases reported greater life satisfaction than equivalent spending on material goods"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/08"
+  claim: "2024 Upwork/Workplace Intelligence survey: 77 percent of AI-tool-using employees said tools decreased productivity in at least one way; 96 percent of C-suite expected AI to raise it"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/09"
+  claim: "Parkinson's Law (1955 essay): work expands to fill the time available for its completion"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/10"
+  claim: "Diary study of ~12,000 entries from 238 employees: progress in meaningful work is the most common trigger of a person's best days"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/11"
+  claim: "Idleness-aversion experiments: people prefer busyness over idleness given even a weak justification"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/12"
+  claim: "Meta-analysis of 138 studies (~20,000 participants): monitoring progress toward a goal reliably increases goal attainment"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/13"
+  claim: "Employees are nearly twice as likely to check work email on vacation if their manager does"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/14"
+  claim: "Fresh Start Effect research: aspirational behavior clusters around temporal landmarks (new week/month/year, birthday)"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/15"
+  claim: "Passive face time research: employees seen working outside normal hours are perceived as more committed regardless of output"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/17"
+  claim: "Choice-overload jam study: a 24-flavor sample table converted ~3% of shoppers vs ~40% for a 6-flavor table"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/17"
+  claim: "As of August 2026, workflow automation tool options include n8n (self-hosted), Zapier (priced per task run), Make (priced per operation)"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/17"
+  claim: "As of August 2026, AI scheduling tools are Reclaim (cheaper) and Motion (adds task orchestration at a premium)"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/17"
+  claim: "As of August 2026, meal-planning tools include Plan to Eat, Mealime, Samsung Food free tier"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/17"
+  claim: "Clockwise, a scheduling tool with real market share, shut down in March 2026 after being acquired"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/18"
+  claim: "Status quo bias research: people persistently favor the current option even when switching would rationally serve them better"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/20"
+  claim: "Habit-formation study (96 volunteers, 12 weeks): median 66 days to reach 95% of maximum automaticity, range 18-254 days"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/21"
+  claim: "Sociological study (70 interviews, 35 couples): household cognitive labor falls disproportionately on women"
+  source: null
+  checked: "2026-08-12"
+- chapter: "reclaimed-hour/22"
+  claim: "Relapse-prevention research: a single lapse differs from full relapse; the abstinence violation effect predicts collapse more than the lapse itself"
+  source: null
+  checked: "2026-08-12"
+
+# =============================================================================
+# BOOK: resume-arms-race
+# =============================================================================
+
+- chapter: "resume-arms-race/01"
+  claim: "A 2025 survey found 45% of job candidates now use AI tools to write their resumes, up sharply from prior years"
+  source: "Resume Genius, 2025 job seeker survey on AI resume usage"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/02"
+  claim: "ATS adoption is close to universal among Fortune 500 employers, and a substantial majority of organizations using an ATS have integrated AI or automation features into it"
+  source: null
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/02"
+  claim: "Google's February 2011 Panda algorithm update affected roughly 12% of search queries; Demand Media reported an $18.5 million loss the following year"
+  source: null
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/03"
+  claim: "A Harvard Business School study found automated resume screening filtering out more than 27 million hidden workers, with degree filters alone eliminating roughly 16 million U.S. workers"
+  source: "Fuller, J. & Raman, M., Hidden Workers: Untapped Talent, Harvard Business School / Accenture, 2021"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/03"
+  claim: "A 2004 field experiment found resumes with White-sounding names received about 50% more callbacks than identical resumes with Black-sounding names"
+  source: "Bertrand, M. & Mullainathan, S., Are Emily and Greg More Employable Than Lakisha and Jamal?, American Economic Review 94(4), 2004"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/04"
+  claim: "A 2025 survey of 2,000 U.S. job applicants found 24% admitted to lying specifically on their resume"
+  source: "ResumeBuilder.com, 1 in 4 Americans Have Lied on Their Resume, 2025"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/05"
+  claim: "A 2022 meta-analysis found operational validity of .42 for structured interviews versus .19 for unstructured interviews"
+  source: "Sackett, Zhang, Berry & Lievens, Journal of Applied Psychology 107(11), 2022"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/06"
+  claim: "A 2024 randomized experiment removing optional qualifications from job postings found applications rose 7% overall"
+  source: "Abraham, Hallermeier & Stein, Words matter, Journal of Economic Behavior & Organization 225, 2024"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/07"
+  claim: "In 2023 the EEOC reached its first-ever AI hiring discrimination settlement: iTutorGroup paid $365,000 after auto-rejecting older applicants by age"
+  source: "EEOC, iTutorGroup to Pay $365,000 to Settle EEOC Discriminatory Hiring Suit, Aug. 9, 2023"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/07"
+  claim: "EEOC's four-fifths rule guidance on AI/algorithmic hiring under Title VII was later withdrawn amid a change in federal enforcement priorities"
+  source: null
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/07"
+  claim: "NYC Local Law 144 requires employers using an automated employment decision tool to obtain an annual independent bias audit, publish a summary, and give candidates 10 business days notice with opt-out; penalties up to $1,500/violation/day"
+  source: "NYC Local Law 144 of 2021, effective Jan. 1, 2023"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/07"
+  claim: "Illinois has rules specific to AI use in video interviews; Colorado passed a broader AI Act touching high-risk automated employment decisions"
+  source: null
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/07"
+  claim: "The EU AI Act classifies employment-related AI systems as high-risk, triggering a separate compliance regime"
+  source: null
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/08"
+  claim: "29 CFR Part 1602 requires private employers to preserve personnel/employment records for at least one year"
+  source: "29 CFR Part 1602"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/09"
+  claim: "A May 2025 survey of 600 U.S. hiring managers found 57% said real-time AI tools during a live interview should never be acceptable"
+  source: "TopResume, Where Employers Draw the Line on the Use of AI in Hiring, May 2025"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/10"
+  claim: "A 2016 study tracking 166 interviewers found only 4.9% decided within the first minute"
+  source: "Frieder, Van Iddekinge & Raymark, Journal of Occupational and Organizational Psychology 89(2), 2016"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/11"
+  claim: "The .54 validity figure for work-sample tests (1998 meta-analysis) was revised downward by a 2022 re-analysis to .33"
+  source: "Sackett, Zhang, Berry & Lievens, Journal of Applied Psychology 107(11), 2022"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/12"
+  claim: "A study found people living on the same residential block were substantially more likely to work at the same company, attributed to referral networks"
+  source: "Hellerstein, McInerney & Neumark, Journal of Labor Economics 29(4), 2011"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/13"
+  claim: "FBI joint alert: North Korean operatives use stolen identities to secure remote IT jobs at Western companies, UN estimates $250-600M generated annually"
+  source: "FBI, North Korean IT Worker Threats to U.S. Businesses, Cyber Division alert, 2024-2025"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/13"
+  claim: "FCRA requires a pre-adverse-action notice and waiting period before final adverse action when a background check contributes to a hiring decision"
+  source: null
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/14"
+  claim: "Greenhouse's 2024 State of Job Hunting report found 61% of U.S. job seekers had been ghosted after a job interview"
+  source: "Greenhouse, 2024 State of Job Hunting Report, September 2024"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/15"
+  claim: "SHRM's 2025 report puts average U.S. cost per hire at $5,475 for non-executive roles, up 21% from 2022"
+  source: "SHRM, 2025 Talent Acquisition Benchmarking Report, Oct. 15, 2025"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/15"
+  claim: "HireVue discontinued its facial-analysis scoring feature in January 2021 after an FTC complaint; CEO said facial data contributed ~0.25% to predictive accuracy"
+  source: "SHRM, HireVue Discontinues Facial Analysis Screening, Jan. 2021"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/15"
+  claim: "Employ's 2025 hiring benchmarks report found average applications per job posting rose to 257.6 in 2025, up from 207.2"
+  source: null
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/17"
+  claim: "A UCL study tracking 96 people found a median of 66 days for a new habit to feel automatic, ranging 18-254 days"
+  source: "Lally, van Jaarsveld, Potts & Wardle, European Journal of Social Psychology 40(6), 2010"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/18"
+  claim: "A Gallup study (Oct. 2024) found new hires describing candidate experience as exceptional were 3.2x more likely to feel connected to company culture"
+  source: "Gallup, The Lasting Impact of Exceptional Candidate Experiences, Oct. 10, 2024"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/19"
+  claim: "HireVue scores communication/problem-solving/behavioral traits from recorded video and game-based exercises for high-volume roles"
+  source: null
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/19"
+  claim: "HiredScore (Workday, acquired 2024) reports cutting screening time by more than half and surfacing most hires from existing talent pools"
+  source: null
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/19"
+  claim: "Paradox's conversational assistant Olivia runs knockout-question pre-screens by text/chat"
+  source: null
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/19"
+  claim: "Sourcing tool SeekOut is built around Boolean search, skill matching, and outreach sequencing"
+  source: null
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/19"
+  claim: "Real-time interview-cheating tools (Cluely, Interview Coder, Final Round AI) transcribe interview questions live and overlay generated answers, built not to appear on screen share"
+  source: null
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/19"
+  claim: "Fabric analyzed 19,368 interview sessions and found 38.5% showed signs of AI-assisted cheating; adoption roughly doubled June-Dec 2025"
+  source: "Fabric, State of AI Interview Cheating in 2026, fabrichq.ai"
+  checked: "2026-08-12"
+- chapter: "resume-arms-race/19"
+  claim: "A December 2025 NY State Comptroller audit found NYC's Local Law 144 enforcement under-executed on complaint intake and compliance review"
+  source: null
+  checked: "2026-08-12"
