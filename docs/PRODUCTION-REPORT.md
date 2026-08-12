@@ -66,6 +66,7 @@ Target: 12 sections, 102 lectures, 614 min (10h14m).
 | 3 | 10 | 10/10 | 38.6 min | Visually spot-checked (3.7 slide 4, bad/good two-col cards): correct semantic green/red palette, no overflow. Release QC clean. |
 | 4 | 11 | 11/11 | 48.7 min | Visually spot-checked (4.6 slide 5, metrics band): big-figure layout clean. Release QC clean. Section 4 is the eval-mindset core of the course; renders and technical checks solid throughout. |
 | 5 | 10 | 10/10 | 40.0 min | Visually spot-checked (5.4 slide 4, callout/name-the-cost): ochre accent, centred content-light layout correct. Release QC fully clean, no warnings at all. |
+| 6 | 10 | 10/10 | 43.4 min | Visually spot-checked (6.3 slide 3, statement layout): clean. Release QC clean except pre-existing [SCREENSHOT-NEEDED] on 6.2 (unrelated to TTS work). |
 
 Build throughput observed: section 0 (17.6 min narration, 4 lectures) took
 14m13s wall clock on CPU (`time` command, `user` 39m52s reflecting
