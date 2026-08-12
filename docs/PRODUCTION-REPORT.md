@@ -56,7 +56,26 @@ already configured as `production.tts.voice` in all three.
 
 ### ai-for-pms
 
-*(filled in as sections complete)*
+Target: 12 sections, 102 lectures, 614 min (10h14m).
+
+| Section | Lectures | Built | Narration | Notes |
+| --- | --- | --- | --- | --- |
+| 0 | 4 | 4/4 | 17.6 min | Visually spot-checked (0.1 slide 2, 0.3 slide 5): design system renders correctly, no overflow/collision. LUFS on 0.3: -16.5 integrated, -4.3 dBTP true peak, both within spec (-14 to -18 LUFS, under -1.5 dBTP). |
+
+Build throughput observed: section 0 (17.6 min narration, 4 lectures) took
+14m13s wall clock on CPU (`time` command, `user` 39m52s reflecting
+multi-threaded ffmpeg/Chromium work). Roughly 0.8x real time. At that rate
+the full course (614 min) is in the region of 8 hours of build time,
+consistent with docs/07-tts.md's "overnight job, not a blocker" framing.
+
+Disk: section 0's `build/ai-for-pms` was 456MB before pruning, 165MB after
+deleting the regenerable `narration.wav` (concatenated audio, rebuilt from
+the per-slide cache on every run) and `tmp/` (video-encode scratch) from
+each lecture's work directory. The per-slide TTS cache under
+`work/<lecture>/audio/` is kept: that's the expensive part
+(Kokoro synthesis), not the cheap part (ffmpeg concat/encode). `dist/*.mp4`
+kept for now while disk headroom is comfortable (~29GB free); will start
+pruning those too if headroom drops.
 
 ### ai-ugc-ads
 
