@@ -94,7 +94,34 @@ pruning those too if headroom drops.
 
 ### ai-ugc-ads
 
-*(filled in as sections complete)*
+Target: 12 sections, 78 lectures, ~440 min (~7h20m). Actual curriculum has
+81 lectures (course.yaml's own header comment says 78; the extra 3 are
+accounted for by section-recap/capstone granularity — not investigated
+further as it's a pre-existing curriculum-vs-header mismatch, not a TTS
+issue).
+
+Built in one full-course pass (`build.py --course courses/ai-ugc-ads
+--provider kokoro`, no `--only`): **81/81 lectures, 5.36h (322 min) total
+narration** against the ~440 min target, the same "Kokoro reads faster than
+the 150 wpm pacing model" gap seen in ai-for-pms.
+
+Visually spot-checked 3.2 (batch generation, a screenshot-heavy tool
+lecture): the code-block prompt slide renders cleanly, and the
+`[SCREENSHOT-NEEDED]` marker renders as visible italic placeholder text on
+the slide, exactly as the QC gate intends. This course is the most
+screenshot-dependent of the three, so this pattern repeats across 10
+lectures (see QC below).
+
+**Release QC** (`qc.py --course courses/ai-ugc-ads --release`): **91 fail ·
+4 warn**. 81 fails are the expected `verified: false` sign-off gate, 10 are
+pre-existing `[SCREENSHOT-NEEDED]` markers on the tool-heavy lectures listed
+in `course.yaml`'s own `freshness_watch` (3.1, 3.2, 4.1, 4.3, 5.1, 5.2, 5.5,
+6.3, 6.4, 9.2) — these need real annotated screenshots before release,
+unrelated to the TTS conversion. Of the 4 warnings: 1 is pre-existing
+(0.1 slide 2, dense slide text, not touched by this work), 3 are the
+short-section-divider warning newly exposed by switching those lectures to
+TTS (7.0, 8.0, 10.0). **Zero technical failures** — loudness, stereo,
+resolution, spelling, overlap all clean across all 81 lectures.
 
 ### ai-agents-for-work
 
