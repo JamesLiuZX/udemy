@@ -71,6 +71,11 @@ Target: 12 sections, 102 lectures, 614 min (10h14m).
 | 8 | 9 | 9/9 | 43.9 min | Visually spot-checked (8.4 slide 4, bad/good two-col): clean. Release QC clean. |
 | 9 | 8 | 8/8 | 35.0 min | Visually spot-checked (9.6 slide 3, mermaid metric tree): renders correctly, text wraps within node boxes as authored, no overflow. Release QC clean. |
 | 10 | 8 | 8/8 | 39.0 min | Visually spot-checked (10.4 slides 2-3, table + sidenote): clean. Release QC clean except pre-existing [SCREENSHOT-NEEDED] on 10.4 (unrelated to TTS work; needs a real annotated vibe-coding screenshot before release). |
+| 11 | 5 | 5/5 | 27.7 min | Visually spot-checked 11.5's rewritten closing sidenote end to end: renders exactly as authored in the sidenote/margin-gloss layout. Course complete. |
+
+**Full-course totals (`build.py --course courses/ai-for-pms --provider kokoro`, no `--only`, all caches hit):** 102/102 lectures built, **7.33h (440 min) total narration** against a 614 min (10h14m) target — Kokoro's actual speech rate at default speed comes in faster than the 150 wpm pacing model used to set per-lecture `duration_target`s, so the built course runs shorter than the source's own estimate. Not a defect (every lecture still passes its individual max/min duration checks), but worth the author knowing before scheduling total watch-time claims on the landing page.
+
+**Full-course release QC** (`qc.py --course courses/ai-for-pms --release`): **105 fail · 3 warn**, all expected — 102 `verified: false` sign-off gates (one per lecture, cannot and must not be set by me) plus the 3 pre-existing `[SCREENSHOT-NEEDED]` markers (2.6, 6.2, 10.4). **Zero technical failures**: every lecture passed resolution (1920×1080), aspect (16:9), stereo audio, loudness (−14 to −18 LUFS), true-peak (under −1.5 dBTP), spelling, and narration/slide-overlap checks. This is the "pass" state per CLAUDE.md §1.
 
 Build throughput observed: section 0 (17.6 min narration, 4 lectures) took
 14m13s wall clock on CPU (`time` command, `user` 39m52s reflecting
