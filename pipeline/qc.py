@@ -390,6 +390,16 @@ def check_lectures(lectures, course: dict, rep: Report) -> None:
                      f"consider splitting.")
         if est < 1.0 and lec.voice != "human":
             rep.warn(f"{tag} estimated {est:.1f} min — very short for a lecture.")
+        # A lecture materially shorter than its own duration_target is a
+        # course silently shrinking against its landing-page promise (§8's
+        # "within roughly 2 minutes of the course.yaml target"). Caught late
+        # once, expensively: a whole course authored at skeleton length
+        # passed every other check because nothing compared the two numbers.
+        target = lec.meta.get("duration_target")
+        if target and est < float(target) - 2.0:
+            rep.warn(f"{tag} estimated {est:.1f} min against a "
+                     f"duration_target of {target} — narration is far under "
+                     f"its own promise; expand it or lower the target.")
 
         for i, slide in enumerate(lec.slides, start=1):
             st = _slide_text(slide)
