@@ -127,7 +127,12 @@ def parse_lecture(path: str | Path) -> Lecture:
         if mode == "slide":
             current.body = chunk
         else:
-            current.narration = chunk
+            # A second @narrate under the same slide used to silently
+            # overwrite the first, which lost narration without any
+            # warning anywhere. Concatenate instead.
+            current.narration = (
+                f"{current.narration}\n\n{chunk}" if current.narration else chunk
+            )
 
     for raw in body.splitlines():
         stripped = raw.strip()
