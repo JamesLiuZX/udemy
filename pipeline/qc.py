@@ -323,7 +323,9 @@ def check_story_continuity(lectures, story_bible_path: Path, rep: Report) -> Non
     if not entries:
         return
 
-    num_re = re.compile(r"\d[\d,]*\.?\d*%?")
+    # (?<![A-Za-z]) so the 8 inside "n8n" is a letter's neighbour, not a value;
+    # course #3 says "n8n" in nearly every lecture.
+    num_re = re.compile(r"(?<![A-Za-z])\d[\d,]*\.?\d*%?")
     # "4.2's golden set", "back in 7.4" — lecture cross-references, not case-study
     # numbers. This course's ids are always section.lecture, so a bare N.N (no
     # unit) is a citation, not a value; a preceding "lecture/figure/section" word
