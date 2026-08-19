@@ -1,7 +1,7 @@
 # Production report: full-TTS conversion and Kokoro builds
 
-> Status: IN PROGRESS. This file is being filled in as the production run
-> completes; do not treat an unfinished section below as a final result.
+> Status: COMPLETE (2026-08-19). All three courses built with production
+> voice and release-QC checked; only author-side gates remain (§6).
 
 Date: 2026-08-12. Author decision: full-TTS delivery across all three
 courses, superseding the `human_voice_required` policy in every
@@ -168,8 +168,38 @@ legitimate product; if the author wants 5h+, the honest route is
 more screen-by-screen build lectures in sections 3 to 6, not longer
 narration on the existing grain.
 
-*(build table and release QC to follow when the full rebuild of the
-expanded course completes)*
+**Full rebuild of the expanded course (19 Aug):** 76/76 lectures,
+**3.35h (201 min) total narration**, built with Kokoro `bf_emma` in
+this container.
+
+| Section | Lectures | Narration |
+| --- | --- | --- |
+| 0 | 4 | 16.6 min |
+| 1 | 6 | 17.1 min |
+| 2 | 5 | 12.4 min |
+| 3 | 8 | 23.1 min |
+| 4 | 7 | 18.4 min |
+| 5 | 7 | 17.0 min |
+| 6 | 7 | 17.4 min |
+| 7 | 7 | 18.4 min |
+| 8 | 7 | 18.5 min |
+| 9 | 6 | 12.6 min |
+| 10 | 6 | 12.0 min |
+| 11 | 6 | 17.7 min |
+
+Visual spot-checks on the rebuilt renders (3.3 prompt-anatomy table,
+7.3 catch-traced-back bullets, 9.3 centred ochre callout, plus the
+~25 slides inspected lecture-by-lecture during the expansion pass):
+design system correct, no overflow or collisions, mermaid diagrams at
+full width with numbered captions.
+
+**Full-course release QC** (`qc.py --course courses/ai-agents-for-work
+--release`): **78 fail · 21 warn, all defined gates** — 76
+`verified: false` sign-offs, 2 `[SCREENSHOT-NEEDED]` (3.2, 5.2), and
+the 21 deliberately spare section dividers. **Zero technical
+failures**: resolution, aspect, stereo, loudness, true-peak, spelling
+and narration/slide-overlap all clean. This is the "pass" state per
+CLAUDE.md §1.
 
 ---
 
@@ -217,6 +247,27 @@ re-run only re-synthesises lines that actually changed.
 
 ## 6. What still blocks a real Udemy upload
 
-*(filled in at the end — tracks `[SCREENSHOT-NEEDED]` markers, the
-`verified: false` sign-off gate on every lecture, and anything else found
-during the build pass)*
+All three courses now build end to end with production voice, pass
+release QC with zero technical failures, and have preview videos at
+`proofs/video/`. What remains is, by design, entirely the author's:
+
+1. **Sign-off**: `verified: true` on every lecture after reading it
+   (102 + 81 + 76). This is the account-protecting gate from CLAUDE.md
+   §1 and nothing in the pipeline will ever set it.
+2. **Screenshots only the author's accounts can produce**:
+   `[SCREENSHOT-NEEDED]` on ai-for-pms 2.6/6.2/10.4 and
+   ai-agents-for-work 3.2/5.2, plus the ai-ugc-ads inventory in its
+   editorial report (§7.2 there also notes the pipeline still lacks
+   image-embed syntax; screenshots currently live as `TODO-IMG` notes
+   and on-slide prose).
+3. **A duration decision on ai-agents-for-work**: accept ~3.35h actual
+   (recommended; the density is the product) or commission deeper
+   screen-by-screen build lectures in sections 3-6 for 5h+. The
+   landing copy makes no hour claim, so nothing published is wrong
+   either way.
+4. **Video files themselves**: `build/` is regenerable and gitignored;
+   the author re-runs the three build commands in §5 locally (or in
+   any fresh session) to produce the upload files, with the narration
+   cache making later script tweaks cheap.
+
+Nothing else was found blocking during the build pass.
