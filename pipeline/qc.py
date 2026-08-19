@@ -323,9 +323,11 @@ def check_story_continuity(lectures, story_bible_path: Path, rep: Report) -> Non
     if not entries:
         return
 
-    # (?<![A-Za-z]) so the 8 inside "n8n" is a letter's neighbour, not a value;
-    # course #3 says "n8n" in nearly every lecture.
-    num_re = re.compile(r"(?<![A-Za-z])\d[\d,]*\.?\d*%?")
+    # (?<![A-Za-z0-9]) so a digit inside a word ("n8n", artifact ids like
+    # "C03") is a neighbour, not a value; course #3 says "n8n" in nearly
+    # every lecture. Digits in the lookbehind stop a match restarting
+    # mid-token ("C03" would otherwise still yield "3").
+    num_re = re.compile(r"(?<![A-Za-z0-9])\d[\d,]*\.?\d*%?")
     # "4.2's golden set", "back in 7.4" — lecture cross-references, not case-study
     # numbers. This course's ids are always section.lecture, so a bare N.N (no
     # unit) is a citation, not a value; a preceding "lecture/figure/section" word
