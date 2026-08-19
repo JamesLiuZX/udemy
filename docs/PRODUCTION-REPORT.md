@@ -125,7 +125,51 @@ resolution, spelling, overlap all clean across all 81 lectures.
 
 ### ai-agents-for-work
 
-*(filled in as sections complete)*
+**A material authoring defect was found and fixed before this build.**
+The first full Kokoro build (19 Aug) came back 76/76 but **1.22h total**
+against the curriculum's ~6h of `duration_target`s: the course had been
+authored at skeleton length, ~180 narration words per lecture (about a
+quarter of design length), on every content lecture except the two
+capstones. It passed every existing check because nothing compared a
+lecture's narration to its own `duration_target`; authoring QC's
+"very short" warning only fires below one minute, which only the
+deliberately spare section dividers trip. Two pipeline fixes came out
+of the investigation, both now on the branch:
+
+- `qc.py` warns when a lecture's estimated duration falls more than
+  2 minutes under its own `duration_target` (the §8 done-rule,
+  mechanised). This is the check that would have caught the defect at
+  authoring time; it now reports clean on all three courses.
+- `lecture.py` used to let a second `@narrate` block under one slide
+  silently overwrite the first (narration lost with no warning
+  anywhere); it now concatenates.
+
+The fix was a full expansion pass, written to the repo's authoring
+rules against the story bible: all ~60 content lectures rewritten to
+teaching depth (sections 0 through 11), preserving the editorial
+pass's continuity fixes, adding figures/tables/diagrams where the
+visual floor demanded them, and extending the Priya/Brightwell serial
+where the bible had assigned beats that the thin lectures never
+carried (anchor numbers now actually established in 0.4, Marcus at
+1.4, the pinned five-row pipeline quoted consistently against the
+captured screenshots). Course narration went from 13,740 words
+(~92 min at the 150 wpm design pace) to ~38,700 words (~4.3h design
+pace). Authoring QC is clean apart from the defined gates: 76
+sign-offs, 2 `[SCREENSHOT-NEEDED]` (3.2, 5.2), and the spare
+dividers.
+
+**An honest note on total duration.** The curriculum's aspirational
+~7h will not be reached by this pass, and should not be reached by
+padding: per-lecture targets are all now met within the ±2 min
+tolerance, which structurally lands the course at ~4.3h nominal /
+roughly 3.5h of actual Kokoro audio (the same faster-than-150wpm
+effect measured on course #1). A ~3.5h course of this density is a
+legitimate product; if the author wants 5h+, the honest route is
+more screen-by-screen build lectures in sections 3 to 6, not longer
+narration on the existing grain.
+
+*(build table and release QC to follow when the full rebuild of the
+expanded course completes)*
 
 ---
 
