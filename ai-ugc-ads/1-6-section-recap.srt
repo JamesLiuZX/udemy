@@ -1,0 +1,99 @@
+1
+00:00:00,350 --> 00:00:04,929
+Five lectures ago, this section promised the numbers underneath "winners are found,
+
+2
+00:00:04,929 --> 00:00:09,563
+not picked." Here's the honest tally, and it's the same one Sam actually wrote down.
+
+3
+00:00:09,563 --> 00:00:14,087
+You know exactly what got cheap, and what stayed exactly as expensive as it always
+
+4
+00:00:14,087 --> 00:00:14,308
+was.
+
+5
+00:00:14,308 --> 00:00:18,832
+You've seen why ad performance piles up near zero with a thin tail stretching past
+
+6
+00:00:18,832 --> 00:00:22,307
+it, and why an average lies about a result that shape produces.
+
+7
+00:00:22,307 --> 00:00:26,666
+You know, mechanically, why confidence can't predict a winner, and you've got a
+
+8
+00:00:26,666 --> 00:00:30,638
+number, around twenty, for how many variants a real test actually needs.
+
+9
+00:00:30,638 --> 00:00:34,831
+And you know the one honest line where a bigger production budget still wins
+
+10
+00:00:34,831 --> 00:00:35,327
+outright.
+
+11
+00:00:35,327 --> 00:00:36,320
+That's not trivia.
+
+12
+00:00:36,320 --> 00:00:40,899
+Every brief, every test, and every scaling decision from here on is built on one of
+
+13
+00:00:40,899 --> 00:00:41,837
+those five ideas.
+
+14
+00:00:42,387 --> 00:00:45,106
+One section ahead before any generation happens.
+
+15
+00:00:45,106 --> 00:00:49,863
+Section two builds the actual document that turns twenty variants from a theoretical
+
+16
+00:00:49,863 --> 00:00:54,621
+number into twenty real, defensible angles: the product truth, the awareness levels,
+
+17
+00:00:54,621 --> 00:00:58,472
+the hook taxonomy, and the map that connects all of it to one brief.
+
+18
+00:00:58,472 --> 00:01:03,230
+Get that brief right, and the maths from this section starts paying off immediately.
+
+19
+00:01:03,230 --> 00:01:07,874
+Get it wrong, and twenty variants just means twenty ways of asking the same narrow
+
+20
+00:01:07,874 --> 00:01:08,383
+question.
+
+21
+00:01:08,383 --> 00:01:10,649
+Before Section two starts, do one thing.
+
+22
+00:01:10,649 --> 00:01:15,350
+Pull together the numbers you've written down across this section, your own margin,
+
+23
+00:01:15,350 --> 00:01:18,408
+your own hit-rate guess, your own AOV, into one place.
+
+24
+00:01:18,408 --> 00:01:19,654
+That's not tidying up.
+
+25
+00:01:19,654 --> 00:01:23,619
+It's the raw material Section 2.6 turns into your brief, artifact B01.

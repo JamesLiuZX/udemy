@@ -1,0 +1,95 @@
+1
+00:00:00,350 --> 00:00:04,723
+Before Sam let a generator anywhere near Harlan's account, he ran the numbers by
+
+2
+00:00:04,723 --> 00:00:09,260
+hand: what a shoot costs, what a thirty-four dollar margin can actually absorb, and
+
+3
+00:00:09,260 --> 00:00:12,758
+how many variants that gap buys once the shoot is off the table.
+
+4
+00:00:12,758 --> 00:00:17,021
+That's section zero's idea, winners are found, not picked, finally earning its
+
+5
+00:00:17,021 --> 00:00:17,458
+numbers.
+
+6
+00:00:17,458 --> 00:00:21,722
+Before you touch a generator yourself, you need to know why this is even worth
+
+7
+00:00:21,722 --> 00:00:22,050
+doing.
+
+8
+00:00:22,050 --> 00:00:26,641
+What actually got cheap, what didn't, how many variants finding a real winner takes,
+
+9
+00:00:26,641 --> 00:00:29,866
+and the one place a human still beats the machine outright.
+
+10
+00:00:29,866 --> 00:00:34,130
+Get this section wrong and you'll either under-test, or waste a budget proving
+
+11
+00:00:34,130 --> 00:00:36,589
+something you could have worked out on paper.
+
+12
+00:00:37,139 --> 00:00:41,783
+Five lectures, building toward one number you'll carry into every section after
+
+13
+00:00:41,783 --> 00:00:42,077
+this.
+
+14
+00:00:42,077 --> 00:00:46,956
+You'll see exactly what got cheap and what stayed exactly as expensive as it always
+
+15
+00:00:46,956 --> 00:00:47,192
+was.
+
+16
+00:00:47,192 --> 00:00:52,012
+You'll meet the actual shape of ad performance, which explains why averages lie to
+
+17
+00:00:52,012 --> 00:00:52,247
+you.
+
+18
+00:00:52,247 --> 00:00:57,067
+Then the coin-flip problem gets a proper name and a number, the volume maths turns
+
+19
+00:00:57,067 --> 00:01:01,770
+"generate more" into an actual target, and we close on the one honest exception:
+
+20
+00:01:01,770 --> 00:01:06,708
+where a bigger production budget still wins, and why that's not where Harlan's money
+
+21
+00:01:06,708 --> 00:01:07,531
+should go yet.
+
+22
+00:01:07,531 --> 00:01:10,706
+One thing to do before lecture one: open a blank note.
+
+23
+00:01:10,706 --> 00:01:15,467
+Every number this section hands you gets written into it, and by Section 2.6 that
+
+24
+00:01:15,467 --> 00:01:18,877
+note is the first draft of the brief itself, artifact B01.

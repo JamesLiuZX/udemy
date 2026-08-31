@@ -1,0 +1,355 @@
+1
+00:00:00,350 --> 00:00:04,367
+Picture Dana at her laptop on a slow Tuesday, deciding between two quotes.
+
+2
+00:00:04,367 --> 00:00:08,492
+A production company wants three thousand dollars for a half-day shoot: four
+
+3
+00:00:08,492 --> 00:00:10,120
+finished ads at the end of it.
+
+4
+00:00:10,120 --> 00:00:14,679
+An AI tool just generated twenty statics from the same brief, in an afternoon, for a
+
+5
+00:00:14,679 --> 00:00:15,873
+fraction of that cost.
+
+6
+00:00:15,873 --> 00:00:20,216
+Most people would look at that gap and conclude "AI made advertising free." That
+
+7
+00:00:20,216 --> 00:00:24,612
+belief sounds true on the surface, and it's wrong in a way that costs real money.
+
+8
+00:00:24,612 --> 00:00:27,543
+It quietly implies testing and judgement got free too.
+
+9
+00:00:27,543 --> 00:00:28,195
+They didn't.
+
+10
+00:00:28,195 --> 00:00:32,048
+Only one part of the job did, the part where the ad actually gets made.
+
+11
+00:00:32,048 --> 00:00:36,608
+I want to spend this whole lecture on that gap, because almost every bad decision in
+
+12
+00:00:36,608 --> 00:00:40,027
+this space traces back to collapsing those two claims into one.
+
+13
+00:00:40,027 --> 00:00:44,315
+Someone hears "AI made ads free", assumes their testing budget is free too, and
+
+14
+00:00:44,315 --> 00:00:46,595
+finds out the expensive way that it isn't.
+
+15
+00:00:47,145 --> 00:00:48,717
+Look at what actually moved.
+
+16
+00:00:48,717 --> 00:00:53,434
+Generating one more variant of an ad used to mean another day of a shoot, or another
+
+17
+00:00:53,434 --> 00:00:55,456
+few hundred dollars to a freelancer.
+
+18
+00:00:55,456 --> 00:00:57,421
+Now it's minutes and a few dollars.
+
+19
+00:00:57,421 --> 00:01:00,341
+That's real, and it's the reason this course exists.
+
+20
+00:01:00,341 --> 00:01:02,082
+But read the left column again.
+
+21
+00:01:02,082 --> 00:01:05,732
+Media spend to run an honest test still costs what it always did.
+
+22
+00:01:05,732 --> 00:01:09,831
+A platform doesn't discount your budget because the creative was AI-made.
+
+23
+00:01:09,831 --> 00:01:14,548
+Deciding which twenty angles are worth trying still takes judgement software doesn't
+
+24
+00:01:14,548 --> 00:01:19,209
+have, because a generator will happily produce twenty confident variations of a bad
+
+25
+00:01:19,209 --> 00:01:21,343
+idea just as fast as twenty good ones.
+
+26
+00:01:21,343 --> 00:01:26,004
+And catching a claim that could get an ad account suspended still needs a human who
+
+27
+00:01:26,004 --> 00:01:30,384
+knows the rules, arguably more urgently now, because it's never been easier to
+
+28
+00:01:30,384 --> 00:01:31,844
+accidentally generate one.
+
+29
+00:01:31,844 --> 00:01:33,248
+None of that got cheaper.
+
+30
+00:01:33,248 --> 00:01:37,740
+If anything, it got more important, because there's more of it to check, in less
+
+31
+00:01:37,740 --> 00:01:39,762
+time, before it reaches an audience.
+
+32
+00:01:40,312 --> 00:01:43,220
+Here's what that looks like against a real account.
+
+33
+00:01:43,220 --> 00:01:47,554
+Remember Harlan's numbers from the last section: fifty-eight dollars a pack,
+
+34
+00:01:47,554 --> 00:01:50,406
+thirty-four dollars of margin before any ad spend.
+
+35
+00:01:50,406 --> 00:01:55,139
+A proper video shoot easily runs into the thousands, split across whatever variants
+
+36
+00:01:55,139 --> 00:01:55,823
+it produces.
+
+37
+00:01:55,823 --> 00:02:00,499
+Amortise that over four ad variants and the cost per variant alone can eat most of
+
+38
+00:02:00,499 --> 00:02:04,947
+one order's entire margin, before the ad has proven it can sell a single pack.
+
+39
+00:02:04,947 --> 00:02:09,623
+Dana would have to sell dozens of packs just to earn back the shoot, regardless of
+
+40
+00:02:09,623 --> 00:02:11,106
+whether the ad ever works.
+
+41
+00:02:11,106 --> 00:02:15,497
+Twenty AI statics from one brief costs a small fraction of that shoot, total.
+
+42
+00:02:15,497 --> 00:02:16,409
+Not per variant.
+
+43
+00:02:16,409 --> 00:02:16,752
+Total.
+
+44
+00:02:16,752 --> 00:02:18,690
+That's not a marginal improvement.
+
+45
+00:02:18,690 --> 00:02:23,424
+It's the difference between an experiment Harlan can actually afford to run and one
+
+46
+00:02:23,424 --> 00:02:26,959
+they can't, and it changes the entire posture of the decision.
+
+47
+00:02:26,959 --> 00:02:29,754
+A shoot forces you to bet big on your best guess.
+
+48
+00:02:29,754 --> 00:02:34,487
+A batch lets you stop betting on a guess at all, and test several honestly instead.
+
+49
+00:02:35,037 --> 00:02:39,563
+I want to be straight about the part that doesn't get said in the "AI made ads free"
+
+50
+00:02:39,563 --> 00:02:39,994
+version.
+
+51
+00:02:39,994 --> 00:02:44,519
+When a variant costs almost nothing to make, it's tempting to skip the thinking that
+
+52
+00:02:44,519 --> 00:02:46,675
+used to be forced on you by the expense.
+
+53
+00:02:46,675 --> 00:02:51,093
+A three-thousand dollar shoot makes you plan the brief carefully, because you only
+
+54
+00:02:51,093 --> 00:02:53,679
+get one take, and everyone in the room knows it.
+
+55
+00:02:53,679 --> 00:02:58,097
+Twenty free-feeling statics tempt you to skip that discipline entirely, because no
+
+56
+00:02:58,097 --> 00:03:00,899
+single one of them feels like it's risking anything.
+
+57
+00:03:00,899 --> 00:03:03,647
+But cheap and low-stakes are not the same property.
+
+58
+00:03:03,647 --> 00:03:08,172
+Any one of those twenty statics can still say something untrue about the compression
+
+59
+00:03:08,172 --> 00:03:12,483
+spec, still carry a claim Meta or TikTok will reject, or still be the one Dana's
+
+60
+00:03:12,483 --> 00:03:15,877
+compliance instinct would have caught if she'd looked properly.
+
+61
+00:03:15,877 --> 00:03:17,170
+Cheap made more of them.
+
+62
+00:03:17,170 --> 00:03:20,080
+It didn't make any single one of them safe by default.
+
+63
+00:03:20,080 --> 00:03:22,181
+So what actually has to happen instead?
+
+64
+00:03:22,181 --> 00:03:26,599
+The brief and the pre-flight check get more important, not less, precisely because
+
+65
+00:03:26,599 --> 00:03:30,856
+nothing expensive is stopping a bad idea from reaching a real customer anymore.
+
+66
+00:03:30,856 --> 00:03:32,795
+Sections 2 and 6 build exactly that.
+
+67
+00:03:33,345 --> 00:03:35,772
+So here's the actual shift, stated precisely.
+
+68
+00:03:35,772 --> 00:03:40,195
+It used to be that having the budget to shoot good creative was the advantage, the
+
+69
+00:03:40,195 --> 00:03:43,054
+"moat" that kept slower competitors from catching up.
+
+70
+00:03:43,054 --> 00:03:47,423
+Most of your competitors couldn't afford to try twenty angles, so trying five was
+
+71
+00:03:47,423 --> 00:03:48,933
+already ahead of the market.
+
+72
+00:03:48,933 --> 00:03:51,899
+Production budget was that moat, and it was a real one.
+
+73
+00:03:51,899 --> 00:03:53,517
+That advantage is mostly gone.
+
+74
+00:03:53,517 --> 00:03:56,753
+Everyone can generate now, at roughly the same cost you can.
+
+75
+00:03:56,753 --> 00:03:59,774
+So if generation itself isn't the edge anymore, what is?
+
+76
+00:03:59,774 --> 00:04:04,250
+What's left as an edge is the machine around the generation: the brief that decides
+
+77
+00:04:04,250 --> 00:04:08,565
+what's worth making, the check that keeps a bad one from spending money, and the
+
+78
+00:04:08,565 --> 00:04:11,909
+test that reads the result honestly instead of guessing at it.
+
+79
+00:04:11,909 --> 00:04:16,386
+That machine is what the rest of this course builds, piece by piece, using Harlan's
+
+80
+00:04:16,386 --> 00:04:18,651
+account as the working example throughout.
+
+81
+00:04:19,201 --> 00:04:23,836
+Next lecture stays with the numbers, because "generate more variants" isn't useful
+
+82
+00:04:23,836 --> 00:04:27,849
+advice until you know how many is enough, and how many is wasted spend.
+
+83
+00:04:27,849 --> 00:04:32,087
+That's the volume maths, and it's a smaller number than most people expect.
+
+84
+00:04:32,087 --> 00:04:36,100
+Before that, do the five-minute version of what Dana already had to do.
+
+85
+00:04:36,100 --> 00:04:40,735
+Open a note and write down your own price, your own cost to deliver it, and what's
+
+86
+00:04:40,735 --> 00:04:41,808
+actually left over.
+
+87
+00:04:41,808 --> 00:04:43,900
+That's not homework for its own sake.
+
+88
+00:04:43,900 --> 00:04:48,308
+It's the exact input the brief in Section 2 needs, and having it ready turns a
+
+89
+00:04:48,308 --> 00:04:52,603
+five-minute Tuesday-night task into a head start on everything that follows.
