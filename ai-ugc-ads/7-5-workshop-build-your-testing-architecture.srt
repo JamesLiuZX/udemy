@@ -1,0 +1,359 @@
+1
+00:00:00,350 --> 00:00:04,852
+Time to build the actual instrument, on your own account, using the batch that's
+
+2
+00:00:04,852 --> 00:00:08,004
+already cleared every pre-flight check from Section six.
+
+3
+00:00:08,004 --> 00:00:10,987
+Pull up your angle map and your cleared creative set.
+
+4
+00:00:10,987 --> 00:00:15,208
+Every angle that survived pre-flight gets its own isolated ad set, the same
+
+5
+00:00:15,208 --> 00:00:17,065
+structure Section 7.1 argued for.
+
+6
+00:00:17,065 --> 00:00:20,555
+No mixing, no shared ad sets, one variable changing at a time.
+
+7
+00:00:20,555 --> 00:00:22,468
+Notice what you're not doing here.
+
+8
+00:00:22,468 --> 00:00:27,083
+You're not deciding whether an angle is any good, that question is Section eight's
+
+9
+00:00:27,083 --> 00:00:29,335
+job, once real data exists to answer it.
+
+10
+00:00:29,335 --> 00:00:34,006
+You're only deciding how many ad sets you need and what each one is allowed to cost
+
+11
+00:00:34,006 --> 00:00:35,694
+you before you'd call it dead.
+
+12
+00:00:35,694 --> 00:00:40,366
+Keep those two questions separate, the same discipline Section 7.4 already asked of
+
+13
+00:00:40,366 --> 00:00:40,591
+you.
+
+14
+00:00:40,591 --> 00:00:44,812
+Ask yourself, before you build a single ad set: which of these angles would
+
+15
+00:00:44,812 --> 00:00:46,725
+genuinely surprise you if it lost?
+
+16
+00:00:46,725 --> 00:00:49,258
+If none of them would, that's worth noticing.
+
+17
+00:00:49,258 --> 00:00:53,929
+A batch built entirely from angles you already feel confident about isn't much of a
+
+18
+00:00:53,929 --> 00:00:54,211
+test.
+
+19
+00:00:54,211 --> 00:00:58,769
+The angles worth including are the ones you're genuinely unsure of, because those
+
+20
+00:00:58,769 --> 00:01:02,653
+are the only ones this architecture can teach you anything new about.
+
+21
+00:01:03,203 --> 00:01:07,688
+This is the whole worksheet, five lines, and every line traces back to a specific
+
+22
+00:01:07,688 --> 00:01:10,346
+lecture you've already sat through this section.
+
+23
+00:01:10,346 --> 00:01:14,776
+Your CAC ceiling comes from Section 1.5's maths, redone for your own margin, not
+
+24
+00:01:14,776 --> 00:01:16,050
+borrowed from Harlan's.
+
+25
+00:01:16,050 --> 00:01:17,822
+Fill in the two blanks honestly.
+
+26
+00:01:17,822 --> 00:01:22,362
+If you don't know your own contribution margin off the top of your head, stop here
+
+27
+00:01:22,362 --> 00:01:25,574
+and work it out properly before you fill in anything else.
+
+28
+00:01:25,574 --> 00:01:30,170
+A testing architecture built on a guessed margin is exactly the "precision borrowed
+
+29
+00:01:30,170 --> 00:01:34,102
+from someone else's numbers" trap Section 7.2 already warned you about.
+
+30
+00:01:34,102 --> 00:01:36,981
+Line five is worth a second look before you move on.
+
+31
+00:01:36,981 --> 00:01:41,467
+"About two days' spend" only means something once you've filled in your own daily
+
+32
+00:01:41,467 --> 00:01:42,685
+budget from line four.
+
+33
+00:01:42,685 --> 00:01:47,060
+Do these in order, top to bottom, or a worksheet like this quietly ends up with
+
+34
+00:01:47,060 --> 00:01:48,444
+numbers that don't agree.
+
+35
+00:01:48,444 --> 00:01:53,095
+Notice, too, that line five doesn't hardcode zero add-to-carts the way Harlan's did.
+
+36
+00:01:53,095 --> 00:01:57,692
+Your key signal might be something else, a lead form, a demo booking, whatever sits
+
+37
+00:01:57,692 --> 00:02:00,183
+closest to a real purchase for what you sell.
+
+38
+00:02:00,183 --> 00:02:04,558
+Pick that signal deliberately, the reasoning Section 7.2 walked through for why
+
+39
+00:02:04,558 --> 00:02:07,105
+add-to-cart was right for Harlan specifically.
+
+40
+00:02:07,655 --> 00:02:12,128
+About forty minutes, and notice more of it goes to the margin calculation than to
+
+41
+00:02:12,128 --> 00:02:14,172
+actually configuring the ad platform.
+
+42
+00:02:14,172 --> 00:02:15,331
+That's not backwards.
+
+43
+00:02:15,331 --> 00:02:19,639
+Getting the number right matters more than clicking through the setup screens,
+
+44
+00:02:19,639 --> 00:02:23,560
+because a wrong number makes every ad set built on top of it wrong too.
+
+45
+00:02:23,560 --> 00:02:28,143
+If you're not ready to spend real money yet, build the structure anyway and hold it
+
+46
+00:02:28,143 --> 00:02:28,475
+ready.
+
+47
+00:02:28,475 --> 00:02:32,285
+A testing architecture sitting finished and unused costs you nothing.
+
+48
+00:02:32,285 --> 00:02:36,592
+One built in a rush, the week you finally decide to spend, costs you the exact
+
+49
+00:02:36,592 --> 00:02:39,077
+mistakes this whole section tried to prevent.
+
+50
+00:02:39,077 --> 00:02:43,661
+Notice, too, that this table's time estimate assumes your margin calculation is the
+
+51
+00:02:43,661 --> 00:02:45,428
+one genuinely new piece of work.
+
+52
+00:02:45,428 --> 00:02:49,901
+Everything else, the ad sets, the budgets, the kill rule, is mostly transcription
+
+53
+00:02:49,901 --> 00:02:51,668
+once that first number is right.
+
+54
+00:02:51,668 --> 00:02:56,031
+Rush the margin step to save ten minutes and you risk redoing the other thirty.
+
+55
+00:02:56,031 --> 00:03:00,394
+Forty minutes is also a useful number to hold onto for a different reason: it's
+
+56
+00:03:00,394 --> 00:03:05,032
+roughly what this whole architecture costs you to build, once, compared to the hours
+
+57
+00:03:05,032 --> 00:03:09,395
+a badly structured account can waste over a single week of confused, unreadable
+
+58
+00:03:09,395 --> 00:03:09,837
+results.
+
+59
+00:03:09,837 --> 00:03:14,310
+That trade is the entire argument this section has been making since Section 7.1.
+
+60
+00:03:14,860 --> 00:03:17,737
+One honest expectation before you call this finished.
+
+61
+00:03:17,737 --> 00:03:21,972
+If your CAC ceiling, your daily budget, and your kill rule all look completely
+
+62
+00:03:21,972 --> 00:03:26,423
+different from Harlan's, that's the workshop working correctly, not a sign you did
+
+63
+00:03:26,423 --> 00:03:27,292
+something wrong.
+
+64
+00:03:27,292 --> 00:03:29,680
+Different margins produce different numbers.
+
+65
+00:03:29,680 --> 00:03:34,077
+What matters is that every one of yours traces back to your own actual economics,
+
+66
+00:03:34,077 --> 00:03:36,357
+the same way Harlan's traced back to hers.
+
+67
+00:03:36,357 --> 00:03:40,809
+If your numbers happen to land close to Harlan's, don't treat that as confirmation
+
+68
+00:03:40,809 --> 00:03:42,166
+you did it right, either.
+
+69
+00:03:42,166 --> 00:03:43,740
+Check the actual maths again.
+
+70
+00:03:43,740 --> 00:03:48,192
+A coincidental match is still a coincidence, not evidence, and this worksheet only
+
+71
+00:03:48,192 --> 00:03:52,698
+means something if every figure on it can be traced back to your own margin, not to
+
+72
+00:03:52,698 --> 00:03:54,869
+a number that happened to look familiar.
+
+73
+00:03:54,869 --> 00:03:58,452
+The same honesty applies to the key signal you chose on line five.
+
+74
+00:03:58,452 --> 00:04:02,958
+If you picked add-to-cart purely because that's what Harlan's example used, go back
+
+75
+00:04:02,958 --> 00:04:06,812
+and ask whether it's actually the right signal for what you're selling.
+
+76
+00:04:06,812 --> 00:04:11,264
+A subscription product, a service booking, a high-ticket item: each of those has a
+
+77
+00:04:11,264 --> 00:04:15,661
+different behaviour that sits closest to real intent, and copying Harlan's choice
+
+78
+00:04:15,661 --> 00:04:19,787
+without checking is the same shortcut this whole callout is warning against.
+
+79
+00:04:20,337 --> 00:04:22,172
+One lecture left in this section.
+
+80
+00:04:22,172 --> 00:04:26,732
+Then Section eight takes whatever this architecture actually produces and reads it
+
+81
+00:04:26,732 --> 00:04:31,236
+honestly: winner, loser, or noise, using exactly the discipline this section just
+
+82
+00:04:31,236 --> 00:04:31,570
+built.
+
+83
+00:04:31,570 --> 00:04:36,185
+Before that, finish the worksheet if you haven't already, even if you're weeks away
+
+84
+00:04:36,185 --> 00:04:38,076
+from actually spending against it.
+
+85
+00:04:38,076 --> 00:04:42,414
+Every lecture between here and the end of the course assumes this architecture
+
+86
+00:04:42,414 --> 00:04:46,863
+exists, built on your own numbers, ready to use the moment you actually need it.
+
+87
+00:04:46,863 --> 00:04:51,423
+Keep a copy somewhere you'll actually find it again, the same brief folder Section
+
+88
+00:04:51,423 --> 00:04:54,203
+4.1 already asked you to build the habit of using.
+
+89
+00:04:54,203 --> 00:04:58,541
+A testing architecture you can't locate six weeks from now is worth exactly as
+
+90
+00:04:58,541 --> 00:05:01,099
+little as a naming convention nobody followed.

@@ -1,0 +1,287 @@
+1
+00:00:00,350 --> 00:00:04,756
+Section 5.4 already gave you a naming pattern: brand, angle, version, placement.
+
+2
+00:00:04,756 --> 00:00:07,676
+That answered a real question, which file goes where.
+
+3
+00:00:07,676 --> 00:00:12,302
+It never answered a different one, which file actually won, and that second question
+
+4
+00:00:12,302 --> 00:00:14,891
+is the one that gets expensive to answer badly.
+
+5
+00:00:14,891 --> 00:00:19,297
+Six months from now, someone, possibly you, is going to need to know whether the
+
+6
+00:00:19,297 --> 00:00:23,814
+"hour eleven" angle has already been tested, what its result was, and whether it's
+
+7
+00:00:23,814 --> 00:00:25,026
+worth another variant.
+
+8
+00:00:25,026 --> 00:00:28,992
+If the answer to that lives only in someone's memory, it's already gone.
+
+9
+00:00:28,992 --> 00:00:32,186
+Why does this matter more here than in most creative work?
+
+10
+00:00:32,186 --> 00:00:34,555
+Because this course is built around volume.
+
+11
+00:00:34,555 --> 00:00:38,355
+A brand running a handful of ads a year can rely on memory just fine.
+
+12
+00:00:38,355 --> 00:00:42,872
+An account running eight ad sets a week, the way Section 9.1's sprint asks you to,
+
+13
+00:00:42,872 --> 00:00:47,498
+generates more history in a month than memory can honestly hold onto by month three,
+
+14
+00:00:47,498 --> 00:00:48,600
+let alone month six.
+
+15
+00:00:49,150 --> 00:00:53,605
+Trying to cram a result into a filename is how you end up with names nobody can
+
+16
+00:00:53,605 --> 00:00:54,676
+parse a year later.
+
+17
+00:00:54,676 --> 00:00:59,074
+The filename's job stays exactly what Section 5.4 gave it: find the file fast.
+
+18
+00:00:59,074 --> 00:01:03,303
+A separate, linked record does the second job: what happened when this ran.
+
+19
+00:01:03,303 --> 00:01:05,728
+That record doesn't need to be complicated.
+
+20
+00:01:05,728 --> 00:01:10,126
+A single spreadsheet row per ad set, linked by the same angle and version tags
+
+21
+00:01:10,126 --> 00:01:12,099
+already in the filename, is enough.
+
+22
+00:01:12,099 --> 00:01:16,497
+The naming convention and the results record are two halves of one system, not
+
+23
+00:01:16,497 --> 00:01:17,625
+competing standards.
+
+24
+00:01:17,625 --> 00:01:21,121
+Notice, too, why the link matters more than either half alone.
+
+25
+00:01:21,121 --> 00:01:25,858
+A filename with no linked record tells you where a file is and nothing about whether
+
+26
+00:01:25,858 --> 00:01:27,324
+it's worth touching again.
+
+27
+00:01:27,324 --> 00:01:31,947
+A results record with no consistent filename convention tells you a winner existed
+
+28
+00:01:31,947 --> 00:01:34,879
+once, with no reliable way back to the actual asset.
+
+29
+00:01:34,879 --> 00:01:36,909
+Neither half does the job by itself.
+
+30
+00:01:37,459 --> 00:01:39,409
+Here's the whole system, assembled.
+
+31
+00:01:39,409 --> 00:01:44,034
+The filename answers "where is it." The record answers "did it work." Both keyed to
+
+32
+00:01:44,034 --> 00:01:48,603
+the same angle and version tag, so anyone can move between them in seconds instead
+
+33
+00:01:48,603 --> 00:01:50,720
+of reconstructing history from memory.
+
+34
+00:01:50,720 --> 00:01:54,843
+Save this exactly as it is, the same way Section 6.6 asked you to save the
+
+35
+00:01:54,843 --> 00:01:56,626
+pre-flight checklist unmodified.
+
+36
+00:01:56,626 --> 00:01:59,524
+The value isn't in the specific spreadsheet columns.
+
+37
+00:01:59,524 --> 00:02:04,092
+It's in having one linked system at all, built before the volume makes it painful,
+
+38
+00:02:04,092 --> 00:02:04,650
+not after.
+
+39
+00:02:04,650 --> 00:02:09,274
+Set this up before your next test, not after your fiftieth ad set makes the backlog
+
+40
+00:02:09,274 --> 00:02:10,667
+feel too large to tackle.
+
+41
+00:02:10,667 --> 00:02:15,347
+Retrofitting a naming system onto months of untracked history is real work, hours of
+
+42
+00:02:15,347 --> 00:02:17,019
+guessing which file was which.
+
+43
+00:02:17,019 --> 00:02:21,421
+Building it into the habit from the start costs you almost nothing, a few extra
+
+44
+00:02:21,421 --> 00:02:24,429
+seconds per ad set, paid the same day you generate it.
+
+45
+00:02:24,979 --> 00:02:29,034
+One honest cost, easy to underweight because it doesn't bite for months.
+
+46
+00:02:29,034 --> 00:02:32,413
+An untracked test doesn't just waste that one test's budget.
+
+47
+00:02:32,413 --> 00:02:35,623
+It quietly disables a decision you'll need to make later.
+
+48
+00:02:35,623 --> 00:02:39,847
+Section 8.4 asks whether to iterate on a tired winner or try something new.
+
+49
+00:02:39,847 --> 00:02:44,521
+Answering that honestly requires knowing what's already been tried, and a memory is
+
+50
+00:02:44,521 --> 00:02:48,632
+a much worse record than a spreadsheet nobody had to remember to consult.
+
+51
+00:02:48,632 --> 00:02:52,293
+Think about the actual failure mode this produces if you skip it.
+
+52
+00:02:52,293 --> 00:02:57,024
+Not a dramatic loss, just a slow one: the same near-identical angle quietly retested
+
+53
+00:02:57,024 --> 00:03:01,585
+twice, eighteen months apart, because nobody could confirm it had already run and
+
+54
+00:03:01,585 --> 00:03:01,867
+lost.
+
+55
+00:03:01,867 --> 00:03:04,063
+That's not a hypothetical inefficiency.
+
+56
+00:03:04,063 --> 00:03:08,794
+It's the single most common way a testing budget gets wasted on established accounts
+
+57
+00:03:08,794 --> 00:03:10,371
+that never built this habit.
+
+58
+00:03:10,921 --> 00:03:15,342
+Next lecture is where the numbers this record holds actually get read properly: at
+
+59
+00:03:15,342 --> 00:03:19,709
+small spend, with real honesty about what a modest sample size can and can't tell
+
+60
+00:03:19,709 --> 00:03:19,924
+you.
+
+61
+00:03:19,924 --> 00:03:24,291
+Before that, go set up the record itself, even if it's just one column added to a
+
+62
+00:03:24,291 --> 00:03:25,855
+spreadsheet you already have.
+
+63
+00:03:25,855 --> 00:03:30,330
+Take whatever's currently running, name it properly using Section 5.4's convention,
+
+64
+00:03:30,330 --> 00:03:34,859
+and add its first row: angle, date, and a blank where the result will eventually go.
+
+65
+00:03:34,859 --> 00:03:39,279
+That single row is the start of a system that gets more valuable every single week
+
+66
+00:03:39,279 --> 00:03:40,358
+you keep it running.
+
+67
+00:03:40,358 --> 00:03:44,455
+Ask yourself, honestly, how many of your past tests you could still name and
+
+68
+00:03:44,455 --> 00:03:47,259
+describe accurately today, off the top of your head.
+
+69
+00:03:47,259 --> 00:03:51,033
+If the number is lower than you'd like, that's not a personal failing.
+
+70
+00:03:51,033 --> 00:03:55,346
+It's exactly what this lecture predicted, and exactly what this system exists to
+
+71
+00:03:55,346 --> 00:03:59,713
+fix, starting now rather than after another six months of untracked history piles
+
+72
+00:03:59,713 --> 00:03:59,875
+up.

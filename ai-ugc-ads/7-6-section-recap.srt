@@ -1,0 +1,67 @@
+1
+00:00:00,350 --> 00:00:04,480
+Six lectures ago, this section promised the account itself would become the
+
+2
+00:00:04,480 --> 00:00:07,233
+instrument that answers which angle actually wins.
+
+3
+00:00:07,233 --> 00:00:08,555
+Here's the honest tally.
+
+4
+00:00:08,555 --> 00:00:13,071
+You know why isolating one variable per ad set is the difference between an answer
+
+5
+00:00:13,071 --> 00:00:14,117
+and a spend report.
+
+6
+00:00:14,117 --> 00:00:18,467
+You've set real numbers, a CAC ceiling worked out from your own margin, a daily
+
+7
+00:00:18,467 --> 00:00:22,763
+budget, a kill rule, decided before any data existed to argue you out of them.
+
+8
+00:00:22,763 --> 00:00:27,113
+And you've built the harder discipline underneath all of it: knowing that three
+
+9
+00:00:27,113 --> 00:00:31,463
+conversions beating one isn't a result yet, and having the patience to wait for
+
+10
+00:00:31,463 --> 00:00:33,996
+volume instead of calling a winner from noise.
+
+11
+00:00:33,996 --> 00:00:35,814
+That's not a small set of skills.
+
+12
+00:00:35,814 --> 00:00:39,448
+It's the actual difference between running ads and running a test.
+
+13
+00:00:39,998 --> 00:00:44,546
+Section eight is where the numbers this structure generates finally get a verdict.
+
+14
+00:00:44,546 --> 00:00:49,095
+Not a feeling about which ad looks best, a decision tree, built on everything this
+
+15
+00:00:49,095 --> 00:00:51,424
+section just taught you to read correctly.
+
+16
+00:00:51,424 --> 00:00:53,144
+Nothing gets rebuilt from here.
+
+17
+00:00:53,144 --> 00:00:53,865
+It gets read.

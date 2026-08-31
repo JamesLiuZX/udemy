@@ -1,0 +1,51 @@
+1
+00:00:00,350 --> 00:00:05,098
+Every lecture up to this point has been about making a batch worth testing: briefed
+
+2
+00:00:05,098 --> 00:00:08,930
+properly, generated at volume, checked for every way it could fail.
+
+3
+00:00:08,930 --> 00:00:12,648
+None of that answers the actual question this course opened with.
+
+4
+00:00:12,648 --> 00:00:13,506
+Which one wins.
+
+5
+00:00:13,506 --> 00:00:17,967
+This section builds the thing that actually answers it: budgets and kill rules
+
+6
+00:00:17,967 --> 00:00:22,658
+decided before the data arrives, a naming system that survives six months, and the
+
+7
+00:00:22,658 --> 00:00:26,890
+statistical honesty to read a small-spend result without fooling yourself.
+
+8
+00:00:26,890 --> 00:00:30,723
+Harlan's own testing architecture is the worked example throughout.
+
+9
+00:00:31,273 --> 00:00:35,589
+Four lectures, then a workshop where you build your own testing architecture from
+
+10
+00:00:35,589 --> 00:00:36,016
+scratch.
+
+11
+00:00:36,016 --> 00:00:40,226
+By the end of this section, you'll have a structure ready for a real test, with
+
+12
+00:00:40,226 --> 00:00:44,649
+every rule that governs it decided in advance, not improvised while the numbers are
+
+13
+00:00:44,649 --> 00:00:45,609
+already coming in.
