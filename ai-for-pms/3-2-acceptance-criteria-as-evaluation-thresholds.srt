@@ -1,0 +1,423 @@
+1
+00:00:00,350 --> 00:00:04,607
+Last lecture ended on a real PRD line that couldn't fail a build if it tried.
+
+2
+00:00:04,607 --> 00:00:05,934
+Here's what replaces it.
+
+3
+00:00:05,934 --> 00:00:10,577
+An evaluation threshold has four parts, always: what you're testing it against, what
+
+4
+00:00:10,577 --> 00:00:15,000
+counts as good, what fraction has to clear that bar, and what's never allowed to
+
+5
+00:00:15,000 --> 00:00:15,940
+happen even once.
+
+6
+00:00:15,940 --> 00:00:20,583
+Get those four parts written down, specifically, and you have a sentence QA can run.
+
+7
+00:00:20,583 --> 00:00:23,513
+Leave any one of them out, and you're back to hoping.
+
+8
+00:00:23,513 --> 00:00:24,619
+This is the rewrite.
+
+9
+00:00:24,619 --> 00:00:27,549
+Watch what happens to the sentence from last lecture.
+
+10
+00:00:27,549 --> 00:00:32,193
+Notice, too, what this format quietly forces you to do before you can even write it.
+
+11
+00:00:32,193 --> 00:00:36,615
+You can't fill in "on the fifty-case golden set" without that golden set already
+
+12
+00:00:36,615 --> 00:00:37,113
+existing.
+
+13
+00:00:37,113 --> 00:00:41,591
+You can't say "score four or five on the rubric" without the rubric already being
+
+14
+00:00:41,591 --> 00:00:44,300
+written down somewhere two people have agreed to.
+
+15
+00:00:44,300 --> 00:00:47,893
+The sentence isn't just a better way of phrasing the requirement.
+
+16
+00:00:47,893 --> 00:00:52,316
+It's a forcing function that makes the real work happen before launch instead of
+
+17
+00:00:52,316 --> 00:00:52,647
+after.
+
+18
+00:00:53,197 --> 00:00:55,566
+Same intent, completely different sentence.
+
+19
+00:00:55,566 --> 00:00:59,972
+Read the second one again and notice it has no adjectives doing the actual work.
+
+20
+00:00:59,972 --> 00:01:03,827
+Every word in it points at something a QA engineer could go and check.
+
+21
+00:01:03,827 --> 00:01:05,424
+Fifty cases, named and fixed.
+
+22
+00:01:05,424 --> 00:01:07,297
+A rubric with defined score bands.
+
+23
+00:01:07,297 --> 00:01:11,593
+Ninety percent, not "most." And a hard floor of zero for the worst category, a
+
+24
+00:01:11,593 --> 00:01:16,109
+factual error stated as fact, no matter how well the other ninety percent perform.
+
+25
+00:01:16,109 --> 00:01:20,681
+That last clause is doing more work than it looks like, because an average can hide
+
+26
+00:01:20,681 --> 00:01:23,765
+exactly the failure a launch review most needs to catch.
+
+27
+00:01:23,765 --> 00:01:26,189
+Try the disagreement test on both sentences.
+
+28
+00:01:26,189 --> 00:01:30,705
+Two reasonable people can argue for hours over whether a given answer was "helpful
+
+29
+00:01:30,705 --> 00:01:34,120
+enough." Which one would you rather defend in a launch review?
+
+30
+00:01:34,120 --> 00:01:38,746
+Almost nobody argues over whether a response scored a four against a written rubric,
+
+31
+00:01:38,746 --> 00:01:41,500
+or whether it was response forty-one out of fifty.
+
+32
+00:01:41,500 --> 00:01:45,961
+The second sentence doesn't just describe the bar more precisely, it changes what
+
+33
+00:01:45,961 --> 00:01:50,423
+kind of conversation happens when someone questions whether the feature is ready.
+
+34
+00:01:50,973 --> 00:01:54,761
+Here's why this lecture comes before the other three, not after them.
+
+35
+00:01:54,761 --> 00:01:59,208
+That one sentence is built from four things you don't have yet, and each one gets
+
+36
+00:01:59,208 --> 00:02:02,997
+its own lecture because each one is a real decision, not a formality.
+
+37
+00:02:02,997 --> 00:02:06,127
+The dataset decides what you're actually testing against.
+
+38
+00:02:06,127 --> 00:02:10,629
+The rubric decides what "good" means precisely enough for two people to agree on a
+
+39
+00:02:10,629 --> 00:02:10,958
+score.
+
+40
+00:02:10,958 --> 00:02:14,472
+The threshold decides how much slack you're willing to tolerate.
+
+41
+00:02:14,472 --> 00:02:19,029
+And the failure floor catches the one thing an average will always hide: a rare but
+
+42
+00:02:19,029 --> 00:02:22,818
+severe failure sitting quietly inside an otherwise healthy pass rate.
+
+43
+00:02:22,818 --> 00:02:27,430
+Miss any of the four and the sentence quietly degrades back toward the one from last
+
+44
+00:02:27,430 --> 00:02:27,869
+lecture.
+
+45
+00:02:27,869 --> 00:02:32,207
+Skip the dataset and you're testing against whatever cases happened to be lying
+
+46
+00:02:32,207 --> 00:02:32,591
+around.
+
+47
+00:02:32,591 --> 00:02:37,148
+Skip the rubric and "score four or five" means whatever the person scoring it feels
+
+48
+00:02:37,148 --> 00:02:37,642
+that day.
+
+49
+00:02:37,642 --> 00:02:42,199
+Skip the floor and a rare, severe failure hides inside a pass rate everyone's happy
+
+50
+00:02:42,199 --> 00:02:42,474
+with.
+
+51
+00:02:42,474 --> 00:02:46,811
+The sentence only works when all four clauses are load-bearing, not decorative.
+
+52
+00:02:47,361 --> 00:02:50,025
+Remember the seven archetypes from Section one.
+
+53
+00:02:50,025 --> 00:02:53,651
+Here's where that chart turns into an actual number in your PRD.
+
+54
+00:02:53,651 --> 00:02:58,354
+A summariser that's wrong four times in twenty is annoying and recoverable, a human
+
+55
+00:02:58,354 --> 00:02:59,714
+reads the source anyway.
+
+56
+00:02:59,714 --> 00:03:04,247
+An agent that acts on the user's behalf at that same failure rate is a different
+
+57
+00:03:04,247 --> 00:03:08,271
+conversation entirely, because there's no draft step catching it first.
+
+58
+00:03:08,271 --> 00:03:12,860
+The threshold climbs with how directly the output reaches the user and how hard a
+
+59
+00:03:12,860 --> 00:03:14,220
+wrong answer is to undo.
+
+60
+00:03:14,220 --> 00:03:16,997
+Don't copy these exact numbers into your own PRD.
+
+61
+00:03:16,997 --> 00:03:21,360
+Copy the habit: name the archetype first, then set the bar it actually earns,
+
+62
+00:03:21,360 --> 00:03:25,553
+instead of reaching for whatever threshold felt reasonable in the meeting.
+
+63
+00:03:25,553 --> 00:03:30,143
+This is also where the disqualification checklist from Section one earns its keep
+
+64
+00:03:30,143 --> 00:03:30,483
+again.
+
+65
+00:03:30,483 --> 00:03:35,073
+If naming the archetype and its blast radius tells you the honest threshold would
+
+66
+00:03:35,073 --> 00:03:39,833
+need to sit above ninety-nine percent just to be responsible, that's not a number to
+
+67
+00:03:39,833 --> 00:03:40,683
+negotiate down.
+
+68
+00:03:40,683 --> 00:03:45,443
+That's the checklist telling you, again, that the feature as scoped might not be the
+
+69
+00:03:45,443 --> 00:03:46,123
+one to ship.
+
+70
+00:03:46,673 --> 00:03:51,107
+Say the honest caveat, because the team that's just been burned by a vague criterion
+
+71
+00:03:51,107 --> 00:03:53,376
+often swings straight to an impossible one.
+
+72
+00:03:53,376 --> 00:03:57,599
+A hundred percent sounds like the safe answer in a room full of people who don't
+
+73
+00:03:57,599 --> 00:03:58,866
+want to be blamed later.
+
+74
+00:03:58,866 --> 00:03:59,341
+It isn't.
+
+75
+00:03:59,341 --> 00:04:03,564
+It's a threshold nothing will ever clear, which means the real decision, ship or
+
+76
+00:04:03,564 --> 00:04:07,840
+don't, still gets made informally, on launch day, by whoever's most persuasive in
+
+77
+00:04:07,840 --> 00:04:08,315
+the room.
+
+78
+00:04:08,315 --> 00:04:12,696
+A threshold's whole job is to make that decision in advance, on paper, where it can
+
+79
+00:04:12,696 --> 00:04:13,910
+be argued about calmly.
+
+80
+00:04:13,910 --> 00:04:17,975
+You'll know a threshold is doing its job when it's specific enough to lose an
+
+81
+00:04:17,975 --> 00:04:18,872
+argument against.
+
+82
+00:04:18,872 --> 00:04:23,306
+If everyone in the room would still agree to ship at ninety percent but the document
+
+83
+00:04:23,306 --> 00:04:27,529
+says ninety-nine, the number wasn't a decision, it was a performance of caution.
+
+84
+00:04:27,529 --> 00:04:31,857
+Set it where you'd actually hold the line, not where it sounds most responsible in
+
+85
+00:04:31,857 --> 00:04:32,491
+the meeting.
+
+86
+00:04:33,041 --> 00:04:37,659
+That's the definition worth keeping for the rest of this section, and notice it's a
+
+87
+00:04:37,659 --> 00:04:41,498
+checklist as much as a definition: dataset, rubric, threshold, floor.
+
+88
+00:04:41,498 --> 00:04:44,614
+The exercise carries forward directly from last lecture.
+
+89
+00:04:44,614 --> 00:04:49,177
+Take that same untestable line and force it into these four parts, even if some of
+
+90
+00:04:49,177 --> 00:04:51,569
+the numbers are placeholders you'll revise.
+
+91
+00:04:51,569 --> 00:04:55,854
+A rough threshold you can argue with beats a fluent sentence nobody can test.
+
+92
+00:04:55,854 --> 00:05:00,194
+Expect the first attempt to feel uncomfortably specific, maybe even arbitrary.
+
+93
+00:05:00,194 --> 00:05:01,808
+That discomfort is the point.
+
+94
+00:05:01,808 --> 00:05:06,426
+A vague criterion never felt uncomfortable because it never committed to anything a
+
+95
+00:05:06,426 --> 00:05:07,984
+reviewer could push back on.
+
+96
+00:05:07,984 --> 00:05:12,435
+The moment your threshold makes someone in the room say "wait, is ninety percent
+
+97
+00:05:12,435 --> 00:05:15,829
+actually enough here," the document is finally doing its job.
+
+98
+00:05:16,379 --> 00:05:18,008
+One thing before you move on.
+
+99
+00:05:18,008 --> 00:05:21,322
+Rewrite one real acceptance criterion using all four parts.
+
+100
+00:05:21,322 --> 00:05:25,985
+Guess at the numbers if you have to, the structure matters more than precision on a
+
+101
+00:05:25,985 --> 00:05:29,748
+first pass, and do the floor first, before the headline percentage.
+
+102
+00:05:29,748 --> 00:05:34,242
+Deciding what you'll never tolerate is a clearer conversation than deciding what
+
+103
+00:05:34,242 --> 00:05:38,679
+counts as usually good enough, and it tends to make the second number easier to
+
+104
+00:05:38,679 --> 00:05:39,409
+agree on too.
+
+105
+00:05:39,409 --> 00:05:43,959
+Next lecture builds the first of those four parts properly: specifying the golden
+
+106
+00:05:43,959 --> 00:05:46,880
+dataset your threshold actually gets tested against.

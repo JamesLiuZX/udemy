@@ -1,0 +1,343 @@
+1
+00:00:00,350 --> 00:00:04,783
+Everything up to this point has been building toward those twenty minutes of actual
+
+2
+00:00:04,783 --> 00:00:05,211
+writing.
+
+3
+00:00:05,211 --> 00:00:07,561
+Open A01 from last lecture and follow along.
+
+4
+00:00:07,561 --> 00:00:10,018
+What does a complete draft actually mean here?
+
+5
+00:00:10,018 --> 00:00:11,300
+Not a polished document.
+
+6
+00:00:11,300 --> 00:00:15,467
+Every section has something in it, even if some of those somethings are rough.
+
+7
+00:00:15,467 --> 00:00:18,511
+A complete rough draft is a document people can react to.
+
+8
+00:00:18,511 --> 00:00:21,129
+A blank section is just a gap nobody's found yet.
+
+9
+00:00:21,129 --> 00:00:24,761
+Choosing the right feature matters more than people expect going in.
+
+10
+00:00:24,761 --> 00:00:29,248
+Pick something hypothetical, or something so simple it barely has any real risk, and
+
+11
+00:00:29,248 --> 00:00:33,521
+the workshop feels easy and teaches you almost nothing, because none of the hard
+
+12
+00:00:33,521 --> 00:00:35,711
+sections have anything real to grip onto.
+
+13
+00:00:35,711 --> 00:00:39,931
+Pick the feature you're actually a little worried about, the one with a genuine
+
+14
+00:00:39,931 --> 00:00:44,257
+failure mode you haven't fully named yet, and every section in this template will
+
+15
+00:00:44,257 --> 00:00:45,059
+earn its place.
+
+16
+00:00:45,609 --> 00:00:50,245
+Notice acceptance criteria gets the most time on this clock, five minutes, almost a
+
+17
+00:00:50,245 --> 00:00:51,920
+quarter of the whole workshop.
+
+18
+00:00:51,920 --> 00:00:53,205
+That's not an accident.
+
+19
+00:00:53,205 --> 00:00:57,729
+Lecture 3.7 already told you why: get that sentence right and everything below it
+
+20
+00:00:57,729 --> 00:01:01,471
+gets easier to write, because you already know what you're proving.
+
+21
+00:01:01,471 --> 00:01:05,102
+Everything after that section should move faster than you expect.
+
+22
+00:01:05,102 --> 00:01:09,514
+Once the threshold exists, the dataset and rubric sections are mostly restating
+
+23
+00:01:09,514 --> 00:01:14,206
+decisions you've already made, and the failure taxonomy is just naming the ways this
+
+24
+00:01:14,206 --> 00:01:16,049
+specific feature actually breaks.
+
+25
+00:01:16,049 --> 00:01:20,685
+If a later section is taking longer than the acceptance criteria did, that's a sign
+
+26
+00:01:20,685 --> 00:01:23,533
+the acceptance criteria wasn't specific enough yet.
+
+27
+00:01:23,533 --> 00:01:26,103
+Treat these numbers as a pace, not a deadline.
+
+28
+00:01:26,103 --> 00:01:30,794
+Twenty minutes is enough time to prove to yourself that a complete draft is possible
+
+29
+00:01:30,794 --> 00:01:33,140
+in one sitting, which is the actual point.
+
+30
+00:01:33,140 --> 00:01:37,776
+If you're at minute twenty-five and still finishing the last section, that's a fine
+
+31
+00:01:37,776 --> 00:01:38,223
+outcome.
+
+32
+00:01:38,223 --> 00:01:42,859
+Stopping at minute twelve with three sections untouched, because the first two felt
+
+33
+00:01:42,859 --> 00:01:47,271
+too important to leave imperfect, is the outcome this pace is built to prevent.
+
+34
+00:01:47,821 --> 00:01:49,142
+Recognise this sentence.
+
+35
+00:01:49,142 --> 00:01:53,653
+It's the exact rewrite from earlier in this section, and that's deliberately not a
+
+36
+00:01:53,653 --> 00:01:54,313
+new example.
+
+37
+00:01:54,313 --> 00:01:58,605
+This is what a real twenty-minute session actually produces when it works: one
+
+38
+00:01:58,605 --> 00:02:02,456
+specific sentence, four parts, nothing left to a reader's imagination.
+
+39
+00:02:02,456 --> 00:02:07,077
+If what you've written in the last few minutes doesn't look roughly like this shape,
+
+40
+00:02:07,077 --> 00:02:11,479
+a dataset, a rubric, a percentage, and a floor, that's worth noticing now, while
+
+41
+00:02:11,479 --> 00:02:15,935
+you're still in the section, rather than three sections later when it's harder to
+
+42
+00:02:15,935 --> 00:02:16,155
+fix.
+
+43
+00:02:16,155 --> 00:02:20,556
+It's worth being honest about what this sentence doesn't need to be: elegant, or
+
+44
+00:02:20,556 --> 00:02:21,161
+even final.
+
+45
+00:02:21,161 --> 00:02:25,563
+It needs to be specific enough that changing your mind about it later would be a
+
+46
+00:02:25,563 --> 00:02:27,323
+visible edit, not a quiet drift.
+
+47
+00:02:27,323 --> 00:02:29,304
+Fifty cases can become seventy-five.
+
+48
+00:02:29,304 --> 00:02:31,395
+Ninety percent can become ninety-five.
+
+49
+00:02:31,395 --> 00:02:35,631
+Both of those are real conversations a document like this one makes possible.
+
+50
+00:02:35,631 --> 00:02:40,197
+A vague sentence never gets edited, because there was never anything precise enough
+
+51
+00:02:40,197 --> 00:02:41,463
+in it to disagree with.
+
+52
+00:02:42,013 --> 00:02:46,264
+Say the honest caveat, because it's the thing that actually derails most people's
+
+53
+00:02:46,264 --> 00:02:49,203
+twenty minutes, and it's rarely the acceptance criteria.
+
+54
+00:02:49,203 --> 00:02:53,506
+It's usually the rubric, or the failure taxonomy, the sections that feel like they
+
+55
+00:02:53,506 --> 00:02:55,605
+need to be right before you can move on.
+
+56
+00:02:55,605 --> 00:02:56,183
+They don't.
+
+57
+00:02:56,183 --> 00:03:00,224
+Write what you know, mark the rest "TBD, owner assigned by Friday," the exact
+
+58
+00:03:00,224 --> 00:03:03,582
+honest-gap move from the golden dataset lecture, and keep going.
+
+59
+00:03:03,582 --> 00:03:06,731
+A stalled section costs you the entire rest of the document.
+
+60
+00:03:06,731 --> 00:03:08,935
+A named gap costs you nothing but honesty.
+
+61
+00:03:08,935 --> 00:03:12,924
+Notice this is the same instinct fighting you here as the one that built the
+
+62
+00:03:12,924 --> 00:03:17,175
+untestable line all the way back in lecture one: the urge to write something that
+
+63
+00:03:17,175 --> 00:03:20,271
+sounds finished rather than something that's actually true.
+
+64
+00:03:20,271 --> 00:03:24,522
+A dated TBD looks less finished than a vague sentence that quietly means nothing.
+
+65
+00:03:24,522 --> 00:03:28,931
+It's the better kind of unfinished, because everyone reading it knows exactly what's
+
+66
+00:03:28,931 --> 00:03:29,665
+still missing.
+
+67
+00:03:30,215 --> 00:03:33,797
+That's the bar for today, and it's lower than perfect on purpose.
+
+68
+00:03:33,797 --> 00:03:38,316
+A complete draft with three honest placeholders is something a colleague can react
+
+69
+00:03:38,316 --> 00:03:39,308
+to this afternoon.
+
+70
+00:03:39,308 --> 00:03:43,717
+A perfect acceptance criteria section sitting above four blank ones is something
+
+71
+00:03:43,717 --> 00:03:48,071
+nobody can react to at all, because there's nothing there yet to disagree with.
+
+72
+00:03:48,071 --> 00:03:51,433
+If you finish with time left, don't polish everything evenly.
+
+73
+00:03:51,433 --> 00:03:56,062
+Go back to the one sentence this whole section has been about, and ask whether you'd
+
+74
+00:03:56,062 --> 00:03:58,156
+actually defend it in a launch review.
+
+75
+00:03:58,706 --> 00:04:00,278
+One thing before you move on.
+
+76
+00:04:00,278 --> 00:04:04,778
+Get every section touched, gaps marked with a date and an owner instead of silence,
+
+77
+00:04:04,778 --> 00:04:08,248
+and put it in front of one real colleague before the day is out.
+
+78
+00:04:08,248 --> 00:04:10,796
+Ask them specifically what they'd push back on.
+
+79
+00:04:10,796 --> 00:04:15,024
+That answer will teach you more about this section than another lecture would.
+
+80
+00:04:15,024 --> 00:04:19,470
+Expect them to push hardest on the acceptance criteria, the same section that took
+
+81
+00:04:19,470 --> 00:04:21,205
+the most of your twenty minutes.
+
+82
+00:04:21,205 --> 00:04:22,397
+That's not a bad sign.
+
+83
+00:04:22,397 --> 00:04:26,789
+It means the document is finally specific enough for someone to disagree with it,
+
+84
+00:04:26,789 --> 00:04:30,042
+which is the entire difference this section set out to make.
+
+85
+00:04:30,042 --> 00:04:34,541
+Next lecture closes out Section three: what you've actually built, and how directly
+
+86
+00:04:34,541 --> 00:04:37,740
+it plugs into the eval methodology waiting in Section four.

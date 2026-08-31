@@ -1,0 +1,287 @@
+1
+00:00:00,350 --> 00:00:05,003
+Every PM has written a PRD that sailed through review: clear problem statement,
+
+2
+00:00:05,003 --> 00:00:08,243
+clean user stories, a tidy list of acceptance criteria.
+
+3
+00:00:08,243 --> 00:00:09,480
+Engineering built it.
+
+4
+00:00:09,480 --> 00:00:10,716
+QA checked the boxes.
+
+5
+00:00:10,716 --> 00:00:11,364
+It shipped.
+
+6
+00:00:11,364 --> 00:00:16,253
+And then it was wrong, in production, in a way nobody in that review had a sentence
+
+7
+00:00:16,253 --> 00:00:16,960
+to point to.
+
+8
+00:00:16,960 --> 00:00:18,315
+So what actually broke?
+
+9
+00:00:18,315 --> 00:00:19,257
+Not the writing.
+
+10
+00:00:19,257 --> 00:00:24,146
+A normal PRD makes one assumption so basic nobody states it, and that assumption is
+
+11
+00:00:24,146 --> 00:00:26,325
+exactly the one an AI feature breaks.
+
+12
+00:00:26,325 --> 00:00:30,507
+The postmortem for that kind of launch almost never blames the writing.
+
+13
+00:00:30,507 --> 00:00:35,160
+It blames "we should have tested more" or "the model wasn't ready", and both of
+
+14
+00:00:35,160 --> 00:00:37,163
+those miss what actually happened.
+
+15
+00:00:37,163 --> 00:00:42,051
+The document itself had no place to write down what "ready" would have looked like.
+
+16
+00:00:42,051 --> 00:00:46,705
+You cannot test your way out of a specification that never defined what passing
+
+17
+00:00:46,705 --> 00:00:47,058
+means.
+
+18
+00:00:47,608 --> 00:00:52,186
+Remember the very first idea this course gave you: an AI feature is a distribution,
+
+19
+00:00:52,186 --> 00:00:53,013
+not a function.
+
+20
+00:00:53,013 --> 00:00:57,591
+Here's where that stops being a slogan and starts being the reason your PRD doesn't
+
+21
+00:00:57,591 --> 00:00:57,867
+work.
+
+22
+00:00:57,867 --> 00:01:02,225
+A normal acceptance criterion assumes you can run the feature once and get your
+
+23
+00:01:02,225 --> 00:01:03,824
+answer: does it pass, or not.
+
+24
+00:01:03,824 --> 00:01:08,457
+Run an AI feature once and you've learned almost nothing, because the next run, same
+
+25
+00:01:08,457 --> 00:01:10,167
+input, can come back different.
+
+26
+00:01:10,167 --> 00:01:13,201
+A single wrong answer isn't a bug to reproduce and fix.
+
+27
+00:01:13,201 --> 00:01:16,455
+It's one draw from a distribution you haven't measured yet.
+
+28
+00:01:16,455 --> 00:01:18,551
+That changes what "works" has to mean.
+
+29
+00:01:18,551 --> 00:01:22,908
+Not a checklist item, a threshold: clears some bar, on some sample, some agreed
+
+30
+00:01:22,908 --> 00:01:24,177
+percentage of the time.
+
+31
+00:01:24,177 --> 00:01:25,942
+And QA can't verify that by eye.
+
+32
+00:01:25,942 --> 00:01:30,299
+They need the rubric this section is about to give you, not a gut feeling about
+
+33
+00:01:30,299 --> 00:01:31,954
+whether an answer looks right.
+
+34
+00:01:32,504 --> 00:01:35,894
+It's the row that trips up experienced PMs, not just new ones.
+
+35
+00:01:35,894 --> 00:01:40,377
+The real question isn't "did we fix it", it's "did we get the rate low enough, and
+
+36
+00:01:40,377 --> 00:01:44,641
+do we know what that rate actually is." That's a different kind of engineering
+
+37
+00:01:44,641 --> 00:01:47,757
+conversation, and it starts with a different kind of PRD.
+
+38
+00:01:48,307 --> 00:01:52,762
+Here's a sentence that passed a real review, and it's worth taking apart, because
+
+39
+00:01:52,762 --> 00:01:56,392
+every word in it feels reasonable and not one of them is testable.
+
+40
+00:01:56,392 --> 00:01:57,987
+Helpfully, by whose judgment.
+
+41
+00:01:57,987 --> 00:01:59,801
+Accurately, checked against what.
+
+42
+00:01:59,801 --> 00:02:04,146
+Customer questions, all of them, or the ones that happen to come up in testing.
+
+43
+00:02:04,146 --> 00:02:08,766
+There is no version of this sentence a QA engineer can run against a feature and get
+
+44
+00:02:08,766 --> 00:02:09,976
+a pass or fail out of.
+
+45
+00:02:09,976 --> 00:02:11,240
+It isn't wrong exactly.
+
+46
+00:02:11,240 --> 00:02:13,110
+It just never was a specification.
+
+47
+00:02:13,110 --> 00:02:15,420
+It was a hope, formatted to look like one.
+
+48
+00:02:15,420 --> 00:02:19,655
+Here's how you can tell the difference for real, on any line in front of you.
+
+49
+00:02:19,655 --> 00:02:23,944
+Picture the worst plausible answer the feature could give, something genuinely
+
+50
+00:02:23,944 --> 00:02:27,904
+wrong, and ask whether this sentence would have caught it before launch.
+
+51
+00:02:27,904 --> 00:02:32,194
+"Helpful and accurate" doesn't catch anything, because whoever's defending the
+
+52
+00:02:32,194 --> 00:02:36,428
+launch can just as easily insist the bad answer was helpful and accurate too.
+
+53
+00:02:36,428 --> 00:02:40,498
+A real specification narrows that argument down to a fact, not an opinion.
+
+54
+00:02:41,048 --> 00:02:45,051
+Say the honest caveat, because the instinct once you spot this is to add more
+
+55
+00:02:45,051 --> 00:02:47,235
+adjectives, and that doesn't fix anything.
+
+56
+00:02:47,235 --> 00:02:50,042
+More detail in the same shape is still the same shape.
+
+57
+00:02:50,042 --> 00:02:54,306
+What's actually missing isn't better prose, it's a different structure entirely: a
+
+58
+00:02:54,306 --> 00:02:58,569
+dataset to test against, a rubric that defines the bar, a threshold that counts as
+
+59
+00:02:58,569 --> 00:03:01,740
+passing, and a plan for what happens on the cases that don't.
+
+60
+00:03:01,740 --> 00:03:02,936
+That's not a paragraph.
+
+61
+00:03:02,936 --> 00:03:04,600
+That's the rest of this section.
+
+62
+00:03:05,150 --> 00:03:09,675
+That's the test worth applying to every acceptance criterion you've ever written for
+
+63
+00:03:09,675 --> 00:03:12,638
+one of these features, not just the plainly vague ones.
+
+64
+00:03:12,638 --> 00:03:15,170
+Do it for real, on a document you actually own.
+
+65
+00:03:15,170 --> 00:03:18,509
+Find one line, and ask honestly whether it could fail a build.
+
+66
+00:03:18,509 --> 00:03:21,257
+If you're not sure, that uncertainty is the answer.
+
+67
+00:03:21,807 --> 00:03:23,479
+One thing before you move on.
+
+68
+00:03:23,479 --> 00:03:28,094
+Find one acceptance criterion in a real PRD that couldn't actually fail a build.
+
+69
+00:03:28,094 --> 00:03:32,939
+Then notice, specifically, what's missing: a sample to test against, a definition of
+
+70
+00:03:32,939 --> 00:03:35,881
+good, a threshold, anything concrete enough to run.
+
+71
+00:03:35,881 --> 00:03:40,668
+Next lecture turns that gap into the fix: acceptance criteria written as evaluation
+
+72
+00:03:40,668 --> 00:03:44,591
+thresholds, the exact sentence that replaces "helpful and accurate."

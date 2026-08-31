@@ -1,0 +1,55 @@
+1
+00:00:00,350 --> 00:00:03,454
+Every section so far has been building toward this one.
+
+2
+00:00:03,454 --> 00:00:05,881
+You have the mechanism, and the vocabulary.
+
+3
+00:00:05,881 --> 00:00:10,453
+Now the actual job: writing a spec an engineer can build against, and QA can hold
+
+4
+00:00:10,453 --> 00:00:10,848
+you to.
+
+5
+00:00:10,848 --> 00:00:12,711
+A normal PRD describes a feature.
+
+6
+00:00:12,711 --> 00:00:17,283
+This section is about a different document, one that describes exactly how you'll
+
+7
+00:00:17,283 --> 00:00:21,065
+know the feature is working, before a single line of it gets built.
+
+8
+00:00:21,615 --> 00:00:25,118
+Five ideas, building in a straight line toward one deliverable.
+
+9
+00:00:25,118 --> 00:00:29,345
+You'll see exactly why "the AI should respond helpfully" isn't an acceptance
+
+10
+00:00:29,345 --> 00:00:31,403
+criterion, and what to write instead.
+
+11
+00:00:31,403 --> 00:00:36,019
+Then the golden dataset, the rubric, the failure taxonomy, and where a human has to
+
+12
+00:00:36,019 --> 00:00:38,188
+check the output before anything ships.
+
+13
+00:00:38,188 --> 00:00:42,582
+It ends with the complete PRD template, and you writing your own, for a feature
+
+14
+00:00:42,582 --> 00:00:43,972
+you're actually close to.

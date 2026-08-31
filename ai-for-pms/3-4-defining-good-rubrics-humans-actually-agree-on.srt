@@ -1,0 +1,363 @@
+1
+00:00:00,350 --> 00:00:04,900
+Here's the rubric equivalent of last lecture's line: reviewed by a subject matter
+
+2
+00:00:04,900 --> 00:00:05,968
+expert for quality.
+
+3
+00:00:05,968 --> 00:00:07,653
+It sounds like a real process.
+
+4
+00:00:07,653 --> 00:00:12,315
+It passes review the same way "helpful and accurate" did, back in the first lecture
+
+5
+00:00:12,315 --> 00:00:13,214
+of this section.
+
+6
+00:00:13,214 --> 00:00:14,843
+The problem isn't the expert.
+
+7
+00:00:14,843 --> 00:00:19,225
+The problem is that "quality" was never written down anywhere two people could
+
+8
+00:00:19,225 --> 00:00:19,675
+compare.
+
+9
+00:00:19,675 --> 00:00:24,225
+Ask that same expert to score the same output twice, a week apart, and there's no
+
+10
+00:00:24,225 --> 00:00:26,416
+guarantee they land on the same answer.
+
+11
+00:00:26,416 --> 00:00:28,550
+Would they even agree with themselves?
+
+12
+00:00:28,550 --> 00:00:31,696
+Ask a different expert, and the bar quietly moves again.
+
+13
+00:00:31,696 --> 00:00:36,246
+Whoever happens to be reviewing that Tuesday is, functionally, the entire rubric.
+
+14
+00:00:36,246 --> 00:00:40,965
+This is the same failure as the untestable acceptance criterion from earlier in this
+
+15
+00:00:40,965 --> 00:00:44,560
+section, just wearing a reviewer's name instead of an adjective.
+
+16
+00:00:44,560 --> 00:00:47,706
+"Helpful and accurate" hid its vagueness in the wording.
+
+17
+00:00:47,706 --> 00:00:52,257
+"Reviewed by an expert" hides the same vagueness behind a person, which is why it
+
+18
+00:00:52,257 --> 00:00:54,110
+survives review even more easily.
+
+19
+00:00:54,110 --> 00:00:58,324
+Nobody wants to question whether the expert knows quality when they see it.
+
+20
+00:00:58,324 --> 00:01:01,245
+The document just never asked them to write it down.
+
+21
+00:01:01,795 --> 00:01:06,259
+Same intention again, and only one version can actually be enforced by someone who
+
+22
+00:01:06,259 --> 00:01:08,383
+wasn't in the room when it was written.
+
+23
+00:01:08,383 --> 00:01:11,323
+The second version points at a document, not a person.
+
+24
+00:01:11,323 --> 00:01:15,896
+Anyone can open it, read the six questions, and understand exactly what "good" means
+
+25
+00:01:15,896 --> 00:01:16,821
+for this feature.
+
+26
+00:01:16,821 --> 00:01:21,340
+And it doesn't just claim the rubric is good, it names the test that proved it: two
+
+27
+00:01:21,340 --> 00:01:25,750
+reviewers, agreeing at least eighty-five percent of the time, on cases neither of
+
+28
+00:01:25,750 --> 00:01:27,166
+them discussed beforehand.
+
+29
+00:01:27,166 --> 00:01:30,324
+Notice what that number is actually doing in the sentence.
+
+30
+00:01:30,324 --> 00:01:31,413
+It isn't decoration.
+
+31
+00:01:31,413 --> 00:01:35,823
+It's evidence that the rubric survived contact with a second person who wasn't in
+
+32
+00:01:35,823 --> 00:01:37,402
+the room when it was written.
+
+33
+00:01:37,402 --> 00:01:41,975
+A rubric that's never been read cold by anyone but its author hasn't earned the word
+
+34
+00:01:41,975 --> 00:01:42,683
+"rubric" yet.
+
+35
+00:01:42,683 --> 00:01:44,861
+It's still a draft with good intentions.
+
+36
+00:01:45,411 --> 00:01:49,964
+Five questions again, and the same discipline as last lecture: none of these ask you
+
+37
+00:01:49,964 --> 00:01:52,132
+to actually write the six questions yet.
+
+38
+00:01:52,132 --> 00:01:56,523
+Section four walks through exactly how to do that, and how to run the calibration
+
+39
+00:01:56,523 --> 00:01:57,987
+check that proves it works.
+
+40
+00:01:57,987 --> 00:02:00,317
+The pass or fail question deserves a pause.
+
+41
+00:02:00,317 --> 00:02:04,708
+Remember the threshold sentence from two lectures back: score four or five on the
+
+42
+00:02:04,708 --> 00:02:05,576
+accuracy rubric.
+
+43
+00:02:05,576 --> 00:02:09,695
+That only means something if the rubric has score bands written down, and if
+
+44
+00:02:09,695 --> 00:02:13,923
+everyone agrees which bands count as passing before a single case gets scored.
+
+45
+00:02:13,923 --> 00:02:18,097
+Decide that after you've seen the results, and you haven't measured anything.
+
+46
+00:02:18,097 --> 00:02:20,753
+You've just picked the answer you already wanted.
+
+47
+00:02:20,753 --> 00:02:25,307
+The versioning question matters for a reason specific to rubrics, not just datasets.
+
+48
+00:02:25,307 --> 00:02:29,860
+A rubric that quietly changes between one release and the next makes every pass-rate
+
+49
+00:02:29,860 --> 00:02:34,305
+comparison meaningless, because you'd be measuring against a different bar without
+
+50
+00:02:34,305 --> 00:02:35,769
+anyone announcing it moved.
+
+51
+00:02:35,769 --> 00:02:39,942
+Treat an edit to the rubric the same way you'd treat an edit to the threshold
+
+52
+00:02:39,942 --> 00:02:42,273
+itself: worth a note, a date, and a reason.
+
+53
+00:02:42,823 --> 00:02:47,293
+Say the honest caveat, because this is the mistake teams make right after they've
+
+54
+00:02:47,293 --> 00:02:49,004
+done everything else correctly.
+
+55
+00:02:49,004 --> 00:02:53,364
+Two reviewers disagree on a case, and the instinct is to escalate: let the most
+
+56
+00:02:53,364 --> 00:02:55,571
+senior person in the room make the call.
+
+57
+00:02:55,571 --> 00:02:59,158
+That feels efficient, and it's the same trap wearing new clothes.
+
+58
+00:02:59,158 --> 00:03:03,739
+It replaces an ambiguous question with an authority's opinion, which is exactly the
+
+59
+00:03:03,739 --> 00:03:06,443
+setup this whole lecture opened by warning about.
+
+60
+00:03:06,443 --> 00:03:09,423
+The right answer to a disagreement isn't a tiebreaker.
+
+61
+00:03:09,423 --> 00:03:13,727
+It's rewording the question those two reviewers actually disagreed on, the way
+
+62
+00:03:13,727 --> 00:03:18,363
+Section four's calibration loop does it, so the next hundred reviewers don't hit the
+
+63
+00:03:18,363 --> 00:03:18,915
+same fork.
+
+64
+00:03:18,915 --> 00:03:22,336
+A senior reviewer can absolutely help find the better wording.
+
+65
+00:03:22,336 --> 00:03:23,992
+They shouldn't be the wording.
+
+66
+00:03:23,992 --> 00:03:28,241
+Put it in the PRD explicitly if you want it to actually happen under deadline
+
+67
+00:03:28,241 --> 00:03:28,738
+pressure.
+
+68
+00:03:28,738 --> 00:03:33,153
+"Disagreements are resolved by rewording the question, not by escalation" is one
+
+69
+00:03:33,153 --> 00:03:37,788
+sentence, and it's the sentence that stops a rushed launch from quietly reverting to
+
+70
+00:03:37,788 --> 00:03:39,665
+whoever's most senior in the room.
+
+71
+00:03:40,215 --> 00:03:44,659
+That's the shape again: a paragraph, not the whole instrument, and every clause in
+
+72
+00:03:44,659 --> 00:03:47,098
+it something a reviewer could actually check.
+
+73
+00:03:47,098 --> 00:03:48,508
+Do the exercise literally.
+
+74
+00:03:48,508 --> 00:03:52,519
+Search your PRD for the word "quality" or "good", and see what defines it.
+
+75
+00:03:52,519 --> 00:03:56,963
+If you land on a role instead of a rubric, you've found this lecture's gap in your
+
+76
+00:03:56,963 --> 00:03:59,023
+own document, not just in the example.
+
+77
+00:03:59,023 --> 00:04:02,709
+It's worth doing this search even on PRDs you didn't write yourself.
+
+78
+00:04:02,709 --> 00:04:07,099
+The pattern is common enough that finding it isn't a criticism of whoever drafted
+
+79
+00:04:07,099 --> 00:04:07,804
+the document.
+
+80
+00:04:07,804 --> 00:04:12,357
+It's just what happens by default, everywhere, until someone deliberately closes the
+
+81
+00:04:12,357 --> 00:04:13,766
+gap this lecture is about.
+
+82
+00:04:14,316 --> 00:04:15,985
+One thing before you move on.
+
+83
+00:04:15,985 --> 00:04:20,703
+Find the place in your PRD where quality gets decided, and check whether it points
+
+84
+00:04:20,703 --> 00:04:22,083
+at a rubric or a person.
+
+85
+00:04:22,083 --> 00:04:24,845
+Most, on a first honest look, point at a person.
+
+86
+00:04:24,845 --> 00:04:28,412
+Then write down, specifically, how disagreement gets resolved.
+
+87
+00:04:28,412 --> 00:04:32,900
+If your answer was a role rather than a process, that's the fix to make before
+
+88
+00:04:32,900 --> 00:04:34,166
+anyone starts scoring.
+
+89
+00:04:34,166 --> 00:04:38,884
+Next lecture takes the dataset and the rubric you've now committed to and asks the
+
+90
+00:04:38,884 --> 00:04:43,544
+harder question: what happens when the feature fails anyway, and how much of that
+
+91
+00:04:43,544 --> 00:04:46,651
+failure a human has to catch before it reaches a user.
