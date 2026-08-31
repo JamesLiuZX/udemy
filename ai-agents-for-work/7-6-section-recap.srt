@@ -1,0 +1,23 @@
+1
+00:00:00,350 --> 00:00:05,255
+You now have C06 and C07 filled in against a real agent, and a concrete story you
+
+2
+00:00:05,255 --> 00:00:09,493
+can retell about exactly the kind of mistake careful checking catches.
+
+3
+00:00:09,493 --> 00:00:10,765
+Hold onto that story.
+
+4
+00:00:10,765 --> 00:00:15,548
+It is the best answer you will ever have to "why bother checking something that
+
+5
+00:00:15,548 --> 00:00:16,457
+already works."
+
+6
+00:00:17,007 --> 00:00:18,009
+See you there.

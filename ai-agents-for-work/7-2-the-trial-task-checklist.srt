@@ -1,0 +1,179 @@
+1
+00:00:00,350 --> 00:00:01,580
+Open the C06 template.
+
+2
+00:00:01,580 --> 00:00:06,276
+It is short on purpose: a list you can actually fill in during a coffee break, not a
+
+3
+00:00:06,276 --> 00:00:09,798
+form that becomes its own chore and gets abandoned by week two.
+
+4
+00:00:09,798 --> 00:00:14,438
+Fill it in for the first agent you built, Agent 1, before you move on, so the habit
+
+5
+00:00:14,438 --> 00:00:17,736
+is real rather than theoretical the first time you need it.
+
+6
+00:00:17,736 --> 00:00:21,762
+Why does this one need paper when the habit already exists in your head?
+
+7
+00:00:21,762 --> 00:00:23,495
+Because trials are rare events.
+
+8
+00:00:23,495 --> 00:00:27,799
+You will run one this month and perhaps not another for a quarter, and skills
+
+9
+00:00:27,799 --> 00:00:30,483
+exercised quarterly do not stay sharp in memory.
+
+10
+00:00:30,483 --> 00:00:35,179
+Paper also travels: when Dev picks up Priya's templates in Section 10, the checklist
+
+11
+00:00:35,179 --> 00:00:39,428
+is what lets him run his own trial properly without Priya standing over him.
+
+12
+00:00:39,428 --> 00:00:40,658
+The videos taught you.
+
+13
+00:00:40,658 --> 00:00:44,739
+The artifact is what survives you, exactly as promised back in Section 0.
+
+14
+00:00:45,289 --> 00:00:48,359
+Notice section three asks for a number, not a feeling.
+
+15
+00:00:48,359 --> 00:00:53,079
+Fill it in before you start, the same way a real experiment sets its sample size in
+
+16
+00:00:53,079 --> 00:00:53,534
+advance.
+
+17
+00:00:53,534 --> 00:00:58,083
+Three to five runs is a reasonable default for a weekly agent, more for anything
+
+18
+00:00:58,083 --> 00:00:59,846
+that touches a client directly.
+
+19
+00:00:59,846 --> 00:01:02,746
+Each section is aimed at a specific way trials rot.
+
+20
+00:01:02,746 --> 00:01:07,522
+Section one stops the trial that starts before there is anything to measure against:
+
+21
+00:01:07,522 --> 00:01:12,014
+no expected answer written down means every output gets graded on plausibility,
+
+22
+00:01:12,014 --> 00:01:14,289
+which extraction taught you to distrust.
+
+23
+00:01:14,289 --> 00:01:18,895
+Section two stops the comfortable sample, the human instinct to check the outputs
+
+24
+00:01:18,895 --> 00:01:22,477
+that look interesting and wave through the ones that look fine.
+
+25
+00:01:22,477 --> 00:01:27,140
+And section three's second pair of eyes is smaller than it sounds: not an approval
+
+26
+00:01:27,140 --> 00:01:31,916
+board, just one colleague reading your trial log for ten minutes, because the person
+
+27
+00:01:31,916 --> 00:01:36,466
+who built the agent is the one person guaranteed to read its results generously.
+
+28
+00:01:36,466 --> 00:01:40,617
+Priya's second pair is whoever the job description's sign off line names.
+
+29
+00:01:40,617 --> 00:01:43,346
+Yours can be anyone who did not build the thing.
+
+30
+00:01:43,896 --> 00:01:48,728
+This is the same instinct behind Agent 4's draft-only build in Section 6, applied to
+
+31
+00:01:48,728 --> 00:01:51,374
+a moment in time instead of a piece of wiring.
+
+32
+00:01:51,374 --> 00:01:55,975
+Both exist because "it has worked so far" is never, on its own, a reason to stop
+
+33
+00:01:55,975 --> 00:01:56,493
+checking.
+
+34
+00:01:56,493 --> 00:02:01,152
+Watch the question produce different answers across your own four agents, because
+
+35
+00:02:01,152 --> 00:02:02,475
+that is what it is for.
+
+36
+00:02:02,475 --> 00:02:07,134
+Triage gone wrong unreviewed costs a flag you disagree with at tomorrow's coffee:
+
+37
+00:02:07,134 --> 00:02:10,701
+low, which is why one clean week can genuinely end that trial.
+
+38
+00:02:10,701 --> 00:02:15,360
+The chaser gone wrong unreviewed is words in front of a client wearing your name:
+
+39
+00:02:15,360 --> 00:02:20,134
+high, which is why its trial reads every single draft and why the wiring beneath it
+
+40
+00:02:20,134 --> 00:02:20,824
+never sends.
+
+41
+00:02:20,824 --> 00:02:25,023
+Same question, honestly answered twice, two different amounts of caution.
+
+42
+00:02:25,023 --> 00:02:28,360
+The checklist is not there to make you careful everywhere.
+
+43
+00:02:28,360 --> 00:02:31,351
+It is there to spend your care where the cost lives.
+
+44
+00:02:31,901 --> 00:02:36,301
+Next lecture is where this checklist gets tested against a real story: a run that
+
+45
+00:02:36,301 --> 00:02:37,767
+failed, and what caught it.

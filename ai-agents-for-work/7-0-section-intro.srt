@@ -1,0 +1,19 @@
+1
+00:00:00,350 --> 00:00:02,378
+Everything so far has been building.
+
+2
+00:00:02,378 --> 00:00:06,827
+This section is where the trust ladder from Section 1 stops being a diagram and
+
+3
+00:00:06,827 --> 00:00:11,446
+becomes a habit: how you actually run a trial, what a spot check actually catches,
+
+4
+00:00:11,446 --> 00:00:16,120
+and a real story about a real mistake one of your own agents made, caught before it
+
+5
+00:00:16,120 --> 00:00:16,627
+mattered.
