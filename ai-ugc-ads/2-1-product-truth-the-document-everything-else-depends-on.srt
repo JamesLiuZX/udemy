@@ -1,0 +1,411 @@
+1
+00:00:00,350 --> 00:00:04,939
+Sam had asked for the usual creative brief: tone words, a mood board, something to
+
+2
+00:00:04,939 --> 00:00:05,890
+hand a generator.
+
+3
+00:00:05,890 --> 00:00:10,311
+Dana opened a blank doc, typed "brand voice: warm, confident, trustworthy," and
+
+4
+00:00:10,311 --> 00:00:10,758
+stopped.
+
+5
+00:00:10,758 --> 00:00:12,997
+None of that was actually true or false.
+
+6
+00:00:12,997 --> 00:00:17,473
+None of it was something a generator, or Dana herself at midnight, could check a
+
+7
+00:00:17,473 --> 00:00:18,816
+line of ad copy against.
+
+8
+00:00:18,816 --> 00:00:23,517
+So she deleted it and wrote three things instead: what Harlan actually charges, what
+
+9
+00:00:23,517 --> 00:00:27,994
+it actually costs to make and ship a pair, and the one claim about the socks she
+
+10
+00:00:27,994 --> 00:00:30,736
+will never let ship, no matter how well it tests.
+
+11
+00:00:30,736 --> 00:00:35,268
+That short page has a name: the product truth document, the page that says what's
+
+12
+00:00:35,268 --> 00:00:38,682
+provably true about a product, not what sounds good about it.
+
+13
+00:00:38,682 --> 00:00:42,935
+Its whole job is answering one question: what can this brand actually prove?
+
+14
+00:00:42,935 --> 00:00:44,725
+Notice what that question isn't.
+
+15
+00:00:44,725 --> 00:00:49,090
+It isn't "what sounds good", and it isn't "what would a competitor say." Those
+
+16
+00:00:49,090 --> 00:00:51,496
+questions come later, and they come easily.
+
+17
+00:00:51,496 --> 00:00:56,197
+This one comes first because it's the only question a generator, a copywriter, or an
+
+18
+00:00:56,197 --> 00:01:00,114
+entire batch of twenty variants can be checked against after the fact.
+
+19
+00:01:00,664 --> 00:01:03,501
+Here's Harlan's, in full, and notice how short it is.
+
+20
+00:01:03,501 --> 00:01:04,839
+That's not a first draft.
+
+21
+00:01:04,839 --> 00:01:06,391
+That's the finished document.
+
+22
+00:01:06,391 --> 00:01:10,834
+The price and the spec are just facts, copied over from what you already know about
+
+23
+00:01:10,834 --> 00:01:11,476
+the account.
+
+24
+00:01:11,476 --> 00:01:14,045
+The interesting part is the bottom two sections.
+
+25
+00:01:14,045 --> 00:01:16,775
+One lists exactly what the brand is allowed to say.
+
+26
+00:01:16,775 --> 00:01:21,218
+The other lists exactly what it isn't, and that second list exists because Dana has
+
+27
+00:01:21,218 --> 00:01:25,714
+watched people overclaim products far less regulated than a compression sock and pay
+
+28
+00:01:25,714 --> 00:01:26,410
+for it later.
+
+29
+00:01:26,410 --> 00:01:30,852
+Read the "what we can claim" section again, and notice how unglamorous it is on its
+
+30
+00:01:30,852 --> 00:01:31,067
+own.
+
+31
+00:01:31,067 --> 00:01:32,298
+Neither line is a hook.
+
+32
+00:01:32,298 --> 00:01:33,529
+Neither is meant to be.
+
+33
+00:01:33,529 --> 00:01:35,991
+This document isn't trying to stop the scroll.
+
+34
+00:01:35,991 --> 00:01:40,380
+It's trying to make sure whatever does stop the scroll, written later, doesn't say
+
+35
+00:01:40,380 --> 00:01:43,538
+anything Dana can't stand behind if someone screenshots it.
+
+36
+00:01:44,088 --> 00:01:48,294
+It's worth being strict about what stays out of this document, because the
+
+37
+00:01:48,294 --> 00:01:50,795
+temptation is to let it become a mood board.
+
+38
+00:01:50,795 --> 00:01:55,286
+Tone, angle ideas (a specific product story you could test), hooks, all of that
+
+39
+00:01:55,286 --> 00:01:58,355
+belongs later, once you're actually briefing creative.
+
+40
+00:01:58,355 --> 00:02:02,732
+If you let those in here, you dilute the one job this document has: being the
+
+41
+00:02:02,732 --> 00:02:05,631
+fact-check every later claim gets measured against.
+
+42
+00:02:05,631 --> 00:02:06,824
+An angle can be bold.
+
+43
+00:02:06,824 --> 00:02:09,837
+A fact either survives Dana reading it or it doesn't.
+
+44
+00:02:09,837 --> 00:02:12,054
+This is also why the document is short.
+
+45
+00:02:12,054 --> 00:02:16,714
+If it ran to three pages, it would start accumulating opinions disguised as facts,
+
+46
+00:02:16,714 --> 00:02:19,670
+and opinions are exactly what it exists to keep out.
+
+47
+00:02:19,670 --> 00:02:24,388
+A page, or less, forces the discipline: only things that are actually true make the
+
+48
+00:02:24,388 --> 00:02:24,615
+cut.
+
+49
+00:02:25,165 --> 00:02:29,775
+Here's the line from the code slide, made concrete with actual sentences, because
+
+50
+00:02:29,775 --> 00:02:34,384
+"spec versus outcome" is easy to agree with in the abstract and easy to miss in a
+
+51
+00:02:34,384 --> 00:02:35,010
+real draft.
+
+52
+00:02:35,010 --> 00:02:37,286
+The first two rows describe the product.
+
+53
+00:02:37,286 --> 00:02:42,066
+They're checkable against the spec sheet, and they stay true no matter who's reading
+
+54
+00:02:42,066 --> 00:02:42,350
+them.
+
+55
+00:02:42,350 --> 00:02:47,130
+The bottom three describe a result in someone's body, or borrow a credibility Harlan
+
+56
+00:02:47,130 --> 00:02:47,927
+hasn't earned.
+
+57
+00:02:47,927 --> 00:02:52,479
+Notice that all five sentences could plausibly come out of a generator asked for
+
+58
+00:02:52,479 --> 00:02:57,031
+"persuasive copy about compression socks." Only two of them are Harlan's to say.
+
+59
+00:02:57,581 --> 00:03:01,959
+Let's be precise about why the boundary matters, because "don't overclaim" sounds
+
+60
+00:03:01,959 --> 00:03:06,444
+obvious until you're the one under deadline pressure, staring at a draft that would
+
+61
+00:03:06,444 --> 00:03:09,092
+perform better with one small exaggeration in it.
+
+62
+00:03:09,092 --> 00:03:13,469
+A claims boundary is a line drawn in advance, by the person who has to answer for
+
+63
+00:03:13,469 --> 00:03:15,198
+it, before that pressure exists.
+
+64
+00:03:15,198 --> 00:03:18,225
+For Harlan, the line runs between a spec and an outcome.
+
+65
+00:03:18,225 --> 00:03:22,602
+Fifteen to twenty millimetres of mercury of graduated compression is a fact about
+
+66
+00:03:22,602 --> 00:03:23,251
+the product.
+
+67
+00:03:23,251 --> 00:03:27,790
+Reducing swelling is a claim about somebody's body, and that's a promise Dana hasn't
+
+68
+00:03:27,790 --> 00:03:29,141
+earned the right to make.
+
+69
+00:03:29,141 --> 00:03:33,572
+You'll see exactly what happens when a draft crosses that line in Section six, and
+
+70
+00:03:33,572 --> 00:03:35,626
+it isn't a small problem when it does.
+
+71
+00:03:35,626 --> 00:03:39,625
+Why draw the line at "outcome" specifically, rather than somewhere looser?
+
+72
+00:03:39,625 --> 00:03:43,840
+Because an outcome claim is the one kind of statement a generator will produce
+
+73
+00:03:43,840 --> 00:03:45,893
+confidently and completely unprompted.
+
+74
+00:03:45,893 --> 00:03:50,379
+Ask for persuasive copy about a compression sock and a health-outcome sentence is a
+
+75
+00:03:50,379 --> 00:03:52,703
+natural, fluent thing for a model to write.
+
+76
+00:03:52,703 --> 00:03:53,945
+It isn't lying exactly.
+
+77
+00:03:53,945 --> 00:03:58,269
+It's doing what persuasive copy about health products has always tended to sound
+
+78
+00:03:58,269 --> 00:04:02,700
+like, without knowing that this specific brand hasn't run the study to back it up.
+
+79
+00:04:03,250 --> 00:04:07,759
+I want to be honest about what this costs you, because a real claims boundary does
+
+80
+00:04:07,759 --> 00:04:08,584
+cost something.
+
+81
+00:04:08,584 --> 00:04:13,038
+Some of the most persuasive lines a generator will hand you will also be the ones
+
+82
+00:04:13,038 --> 00:04:14,687
+that cross the line Dana drew.
+
+83
+00:04:14,687 --> 00:04:19,196
+"Doctor recommended." "Clinically proven." Cutting those isn't caution for its own
+
+84
+00:04:19,196 --> 00:04:19,471
+sake.
+
+85
+00:04:19,471 --> 00:04:24,090
+Every one of them is a liability wearing a good headline, and the account that keeps
+
+86
+00:04:24,090 --> 00:04:28,599
+one in because it tested well is one platform review away from losing the whole ad
+
+87
+00:04:28,599 --> 00:04:30,028
+account, not just that ad.
+
+88
+00:04:30,028 --> 00:04:32,338
+That trade only feels bad in the abstract.
+
+89
+00:04:32,338 --> 00:04:36,902
+In practice, the variants that survive the boundary still have plenty to work with:
+
+90
+00:04:36,902 --> 00:04:39,761
+a real spec number, a real audience, a real problem.
+
+91
+00:04:39,761 --> 00:04:41,685
+You're not trading away persuasion.
+
+92
+00:04:41,685 --> 00:04:46,139
+You're trading away the specific persuasion that was never actually yours to use.
+
+93
+00:04:46,689 --> 00:04:51,360
+Next lecture stays close to the same document, but turns it outward: not what Harlan
+
+94
+00:04:51,360 --> 00:04:55,919
+can say, but who's actually listening, and what they already believe before the ad
+
+95
+00:04:55,919 --> 00:04:56,586
+even starts.
+
+96
+00:04:56,586 --> 00:05:01,257
+Keep the product truth doc open while you read it, because the next few lectures all
+
+97
+00:05:01,257 --> 00:05:02,313
+reach back into it.
+
+98
+00:05:02,313 --> 00:05:06,983
+Everything from here is really the same document, viewed from a different angle each
+
+99
+00:05:06,983 --> 00:05:07,261
+time.
+
+100
+00:05:07,261 --> 00:05:11,654
+Before you write anything else this week, get your own three lines down: price,
+
+101
+00:05:11,654 --> 00:05:15,824
+margin, and the one claim you would not want to defend under bright lights.
+
+102
+00:05:15,824 --> 00:05:20,439
+That's page one of the document the workshop in 2.6 turns into artifact B01, and it
+
+103
+00:05:20,439 --> 00:05:24,998
+takes fifteen minutes if you don't let yourself overthink the claims boundary yet.

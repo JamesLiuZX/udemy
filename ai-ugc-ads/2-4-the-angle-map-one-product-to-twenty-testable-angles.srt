@@ -1,0 +1,339 @@
+1
+00:00:00,350 --> 00:00:04,811
+Sam's fast first draft is the mistake this lecture exists to prevent, and it's worth
+
+2
+00:00:04,811 --> 00:00:06,457
+knowing before you start yours.
+
+3
+00:00:06,457 --> 00:00:10,865
+The angle map is the document that turns twenty from a number in Section one into a
+
+4
+00:00:10,865 --> 00:00:15,220
+real list of twenty genuinely different bets, not twenty confident restatements of
+
+5
+00:00:15,220 --> 00:00:16,972
+the first idea that came to mind.
+
+6
+00:00:16,972 --> 00:00:21,380
+Pull up the product truth doc and the hook matrix from the last two lectures if you
+
+7
+00:00:21,380 --> 00:00:24,991
+have them, because this works better done alongside me than watched.
+
+8
+00:00:24,991 --> 00:00:27,753
+If you don't have them open, pause and get them now.
+
+9
+00:00:27,753 --> 00:00:32,054
+What follows only sticks if you're actually filling in rows as we go, not nodding
+
+10
+00:00:32,054 --> 00:00:33,860
+along and planning to do it later.
+
+11
+00:00:33,860 --> 00:00:38,055
+Later rarely happens, and a half-built angle map is worse than none, because it
+
+12
+00:00:38,055 --> 00:00:41,667
+looks finished without being useful: the exact trap Sam walked into.
+
+13
+00:00:42,217 --> 00:00:46,652
+Here's the actual method, and it's less mysterious than "twenty testable angles"
+
+14
+00:00:46,652 --> 00:00:47,040
+sounds.
+
+15
+00:00:47,040 --> 00:00:51,309
+For each of the five awareness rungs, you ask three questions: what does this
+
+16
+00:00:51,309 --> 00:00:55,578
+specific person feel right now, which hook pattern from last lecture's matrix
+
+17
+00:00:55,578 --> 00:00:59,791
+actually fits that feeling, and which one proof point from the product truth
+
+18
+00:00:59,791 --> 00:01:00,956
+document backs it up.
+
+19
+00:01:00,956 --> 00:01:05,335
+Answer that twice per rung, honestly, in two genuinely different ways, and five
+
+20
+00:01:05,335 --> 00:01:08,606
+rungs times two angles times two passes gets you to twenty.
+
+21
+00:01:08,606 --> 00:01:13,263
+Notice the arithmetic is doing something specific: it forces you through every rung,
+
+22
+00:01:13,263 --> 00:01:17,865
+every time, rather than letting you write ten angles for the rung that's easiest to
+
+23
+00:01:17,865 --> 00:01:19,528
+write for and calling it done.
+
+24
+00:01:19,528 --> 00:01:22,300
+That discipline is the entire value of the method.
+
+25
+00:01:22,300 --> 00:01:26,569
+Anyone can generate twenty variants on the one feeling they thought of first.
+
+26
+00:01:26,569 --> 00:01:29,175
+It's also why Sam's eleven-minute draft failed.
+
+27
+00:01:29,175 --> 00:01:33,721
+He answered the three questions once, fast, then reworded the same answer nineteen
+
+28
+00:01:33,721 --> 00:01:37,823
+more times instead of going back through the rungs a genuinely second way.
+
+29
+00:01:37,823 --> 00:01:42,480
+The method only works if the second pass is honestly different from the first, not a
+
+30
+00:01:42,480 --> 00:01:43,645
+faster version of it.
+
+31
+00:01:44,195 --> 00:01:48,896
+Here are six of the twenty, and notice they're not six versions of one idea wearing
+
+32
+00:01:48,896 --> 00:01:49,916
+different outfits.
+
+33
+00:01:49,916 --> 00:01:54,675
+Hour eight and twelve-hour shift both sit low on the ladder, but interrupt different
+
+34
+00:01:54,675 --> 00:01:59,093
+feelings: one is physical, one is a creeping normalisation the audience hasn't
+
+35
+00:01:59,093 --> 00:01:59,943
+questioned yet.
+
+36
+00:01:59,943 --> 00:02:04,192
+The 15-20 spec and not-just-for-flights sit on the same rung and answer two
+
+37
+00:02:04,192 --> 00:02:05,778
+completely different doubts.
+
+38
+00:02:05,778 --> 00:02:10,423
+That's the actual test for whether your twenty angles are real: could you swap two
+
+39
+00:02:10,423 --> 00:02:13,822
+of them and lose something specific, or would nobody notice?
+
+40
+00:02:13,822 --> 00:02:16,541
+Run that test on the two product-aware rows too.
+
+41
+00:02:16,541 --> 00:02:19,713
+"A nurse's honest review" is answering a trust question.
+
+42
+00:02:19,713 --> 00:02:22,602
+"Cost of a bad pair" is answering a value question.
+
+43
+00:02:22,602 --> 00:02:27,191
+Someone hesitating over Harlan for either reason exists, and they're not the same
+
+44
+00:02:27,191 --> 00:02:31,893
+person, which is exactly why one row for "product-aware, but persuasive" would have
+
+45
+00:02:31,893 --> 00:02:33,932
+quietly served neither of them well.
+
+46
+00:02:34,482 --> 00:02:38,817
+Remember the warning from the volume maths lecture: twenty near-identical variants
+
+47
+00:02:38,817 --> 00:02:41,090
+don't behave like twenty independent shots.
+
+48
+00:02:41,090 --> 00:02:43,257
+This is where that warning gets concrete.
+
+49
+00:02:43,257 --> 00:02:46,059
+A reskin swaps an adjective and calls it a new angle.
+
+50
+00:02:46,059 --> 00:02:50,288
+A real angle answers a different question entirely, even if it lands on the same
+
+51
+00:02:50,288 --> 00:02:51,345
+rung as another one.
+
+52
+00:02:51,345 --> 00:02:55,733
+If you can't say, in one sentence, what specific doubt or feeling an angle is aimed
+
+53
+00:02:55,733 --> 00:02:58,270
+at that the others aren't, it's not a new angle.
+
+54
+00:02:58,270 --> 00:03:02,499
+It's a reskin wearing a different hook, exactly what Sam found buried in his own
+
+55
+00:03:02,499 --> 00:03:04,667
+first draft at the start of this lecture.
+
+56
+00:03:04,667 --> 00:03:08,843
+Here's a quick check you can run on your own map once it's built: read just the
+
+57
+00:03:08,843 --> 00:03:13,178
+middle column, the core feeling each row interrupts, top to bottom, with the angle
+
+58
+00:03:13,178 --> 00:03:13,918
+names covered.
+
+59
+00:03:13,918 --> 00:03:18,252
+If two rows read as the same sentence with different words, you've found a reskin,
+
+60
+00:03:18,252 --> 00:03:21,900
+and it's worth replacing before you generate a single static from it.
+
+61
+00:03:22,450 --> 00:03:25,847
+One honest limit before you treat this map as finished work.
+
+62
+00:03:25,847 --> 00:03:30,546
+Building a real angle map is real craft, and it's tempting to feel done once you've
+
+63
+00:03:30,546 --> 00:03:32,754
+hit twenty rows that all look distinct.
+
+64
+00:03:32,754 --> 00:03:34,565
+Distinct isn't the same as good.
+
+65
+00:03:34,565 --> 00:03:38,528
+Some of these twenty will be flatly wrong for Harlan, and that's fine.
+
+66
+00:03:38,528 --> 00:03:41,189
+The map's job is coverage, not quality control.
+
+67
+00:03:41,189 --> 00:03:45,718
+Quality control starts in Section six, and the test in Section seven is the only
+
+68
+00:03:45,718 --> 00:03:50,021
+thing that actually tells you which of these twenty was worth the afternoon.
+
+69
+00:03:50,021 --> 00:03:54,493
+If that feels like a lot of trust to place in twenty rows on a page, that's the
+
+70
+00:03:54,493 --> 00:03:55,343
+right instinct.
+
+71
+00:03:55,343 --> 00:04:00,042
+It is a lot of trust, and it's exactly the amount the maths in Section one said was
+
+72
+00:04:00,042 --> 00:04:00,664
+reasonable.
+
+73
+00:04:00,664 --> 00:04:03,721
+Not more, chasing certainty the method can't give you.
+
+74
+00:04:03,721 --> 00:04:08,420
+Not less, and quietly recreating the four-variant problem this whole section exists
+
+75
+00:04:08,420 --> 00:04:08,817
+to fix.
+
+76
+00:04:09,367 --> 00:04:13,678
+Next lecture closes a gap that kills otherwise-winning ads: the angle can be
+
+77
+00:04:13,678 --> 00:04:18,386
+perfect, and the ad can convert the scroll, and it still loses the sale if the page
+
+78
+00:04:18,386 --> 00:04:20,485
+it lands on doesn't keep the promise.
+
+79
+00:04:20,485 --> 00:04:23,492
+Before that, do the check Sam wishes he'd done first.
+
+80
+00:04:23,492 --> 00:04:28,200
+Read your own twenty rows the way he eventually did: cover the angle names and read
+
+81
+00:04:28,200 --> 00:04:30,356
+just the middle column, top to bottom.
+
+82
+00:04:30,356 --> 00:04:35,008
+If two rows sound like the same sentence with different words, fix that now, while
+
+83
+00:04:35,008 --> 00:04:38,468
+it costs nothing, not after you've generated statics from it.
+
+84
+00:04:38,468 --> 00:04:43,063
+Whatever survives that pass is the angle map that becomes part of artifact B01 in
+
+85
+00:04:43,063 --> 00:04:44,027
+the 2.6 workshop.

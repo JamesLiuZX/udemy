@@ -1,0 +1,91 @@
+1
+00:00:00,350 --> 00:00:03,715
+Remember the page Dana taped above her monitor last lecture.
+
+2
+00:00:03,715 --> 00:00:06,070
+Seven lectures ago that page didn't exist.
+
+3
+00:00:06,070 --> 00:00:10,612
+This section promised generation quality gets decided before the generator opens.
+
+4
+00:00:10,612 --> 00:00:11,958
+Here's the honest tally.
+
+5
+00:00:11,958 --> 00:00:16,388
+You've written a product truth document with a claims boundary Dana, or whoever
+
+6
+00:00:16,388 --> 00:00:19,136
+you're actually accountable to, can stand behind.
+
+7
+00:00:19,136 --> 00:00:23,453
+You've built an awareness ladder and a hook matrix that turn "write something
+
+8
+00:00:23,453 --> 00:00:26,201
+persuasive" into a specific, answerable question.
+
+9
+00:00:26,201 --> 00:00:30,631
+You've mapped twenty genuinely distinct angles, not twenty reskins of one idea.
+
+10
+00:00:30,631 --> 00:00:35,061
+And you've got a congruence checklist that catches the loss Section eight would
+
+11
+00:00:35,061 --> 00:00:37,360
+otherwise have blamed on the wrong thing.
+
+12
+00:00:37,360 --> 00:00:41,005
+That's B01, assembled and real, for a product you actually chose.
+
+13
+00:00:41,555 --> 00:00:46,036
+Section three is where generation finally starts, and it's shorter work than you'd
+
+14
+00:00:46,036 --> 00:00:49,424
+expect, because the brief already answered the hard questions.
+
+15
+00:00:49,424 --> 00:00:53,795
+You'll batch-generate twenty statics from the angle map, and you'll meet the two
+
+16
+00:00:53,795 --> 00:00:58,167
+failures almost every first batch ships with: a colour that renders wrong, and a
+
+17
+00:00:58,167 --> 00:01:00,625
+spec number that garbles in the overlay text.
+
+18
+00:01:00,625 --> 00:01:05,215
+Both get caught and fixed in that same section, before anything reaches a real test.
+
+19
+00:01:05,215 --> 00:01:09,423
+Before section three, do one last thing with your own brief: read your claims
+
+20
+00:01:09,423 --> 00:01:10,406
+boundary out loud.
+
+21
+00:01:10,406 --> 00:01:13,903
+If any line makes you wince, fix it now, while it costs nothing.
+
+22
+00:01:13,903 --> 00:01:18,439
+Fixing it after twenty statics exist around it is the expensive version of the same
+
+23
+00:01:18,439 --> 00:01:18,712
+edit.
