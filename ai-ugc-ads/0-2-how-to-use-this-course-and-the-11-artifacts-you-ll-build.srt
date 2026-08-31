@@ -1,0 +1,203 @@
+1
+00:00:00,350 --> 00:00:02,684
+Quick housekeeping before the idea lands.
+
+2
+00:00:02,684 --> 00:00:06,384
+Harlan Supply Co.'s account didn't get fixed by an idea Dana had.
+
+3
+00:00:06,384 --> 00:00:11,052
+It got fixed by eleven actual documents Sam built, one section at a time, starting
+
+4
+00:00:11,052 --> 00:00:14,012
+with a single page stating her price and her margin.
+
+5
+00:00:14,012 --> 00:00:16,175
+That's what you're about to build too.
+
+6
+00:00:16,175 --> 00:00:20,843
+Every section here ends in a workshop, and every workshop produces one artifact: a
+
+7
+00:00:20,843 --> 00:00:25,056
+real document you'll use on a real account, not a worksheet you file away.
+
+8
+00:00:25,056 --> 00:00:28,016
+Skip the workshops and you'll still learn the ideas.
+
+9
+00:00:28,016 --> 00:00:30,635
+You just won't have anything to run on Monday.
+
+10
+00:00:30,635 --> 00:00:34,904
+So here's the map: what you're building, and which lecture hands it to you.
+
+11
+00:00:35,454 --> 00:00:39,959
+That's the full set, and notice the shape of it before you notice the details.
+
+12
+00:00:39,959 --> 00:00:44,811
+Two artifacts before you generate anything: the hook matrix, a grid of opening lines
+
+13
+00:00:44,811 --> 00:00:47,468
+proven to stop a scroll, and the brief itself.
+
+14
+00:00:47,468 --> 00:00:50,760
+Two while you're generating, including a UGC video brief.
+
+15
+00:00:50,760 --> 00:00:55,612
+UGC just means it's styled like an ordinary customer's phone footage, not a polished
+
+16
+00:00:55,612 --> 00:00:56,190
+studio ad.
+
+17
+00:00:56,190 --> 00:01:00,059
+One artifact exists purely to stop a bad ad before it spends money.
+
+18
+00:01:00,059 --> 00:01:04,565
+Two for running the test itself, two for reading what it told you, and two for
+
+19
+00:01:04,565 --> 00:01:07,048
+turning one test into an ongoing operation.
+
+20
+00:01:07,048 --> 00:01:11,727
+Most people building this by hand skip straight to generation, because that's the
+
+21
+00:01:11,727 --> 00:01:12,536
+exciting part.
+
+22
+00:01:12,536 --> 00:01:16,579
+The order above is deliberate, and it's the order that actually works.
+
+23
+00:01:17,129 --> 00:01:19,438
+Here's the shape across the whole course.
+
+24
+00:01:19,438 --> 00:01:24,168
+The first two sections are judgement: why AI creative changes the economics, and the
+
+25
+00:01:24,168 --> 00:01:27,547
+brief that decides whether generation is worth doing at all.
+
+26
+00:01:27,547 --> 00:01:32,221
+The next three are production: statics, meaning still-image ad variants rather than
+
+27
+00:01:32,221 --> 00:01:36,444
+video, then moving video, then getting the same set to perform on different
+
+28
+00:01:36,444 --> 00:01:37,007
+platforms.
+
+29
+00:01:37,007 --> 00:01:40,611
+Then comes the stretch that separates this from a tool tutorial.
+
+30
+00:01:40,611 --> 00:01:45,060
+Sections 6 through 9 are pre-flight, testing, reading results, and scaling what
+
+31
+00:01:45,060 --> 00:01:45,398
+works.
+
+32
+00:01:45,398 --> 00:01:49,734
+That's where the actual skill lives, and it's the part almost nobody teaches,
+
+33
+00:01:49,734 --> 00:01:52,493
+because it isn't as fun to film as generation is.
+
+34
+00:01:53,043 --> 00:01:55,006
+One honest note before you go further.
+
+35
+00:01:55,006 --> 00:01:58,467
+Nothing here removes the need to spend real money to find a winner.
+
+36
+00:01:58,467 --> 00:02:02,599
+That part is unavoidable, and any course that tells you otherwise is selling you
+
+37
+00:02:02,599 --> 00:02:03,116
+something.
+
+38
+00:02:03,116 --> 00:02:07,197
+What the system in this course does is stop you spending on ads that were never
+
+39
+00:02:07,197 --> 00:02:08,850
+going to win in the first place.
+
+40
+00:02:08,850 --> 00:02:13,137
+That's a smaller promise than "never spend money", and it's the one that's actually
+
+41
+00:02:13,137 --> 00:02:13,395
+true.
+
+42
+00:02:13,945 --> 00:02:18,201
+Here's the one thing to do before you go any further, and it takes two minutes.
+
+43
+00:02:18,201 --> 00:02:22,565
+Open a note and write down the product or account you'll actually run this course
+
+44
+00:02:22,565 --> 00:02:25,151
+against: yours, a client's, whatever you've got.
+
+45
+00:02:25,151 --> 00:02:29,676
+Every one of those eleven artifacts is built to hold a real price and a real margin,
+
+46
+00:02:29,676 --> 00:02:33,609
+the way Harlan Supply Co.'s brief eventually holds Dana's actual numbers.
+
+47
+00:02:33,609 --> 00:02:37,057
+Without a real account in mind, you'll be filling in a template.
+
+48
+00:02:37,057 --> 00:02:40,127
+With one, you'll be building something you use on Monday.
+
+49
+00:02:40,127 --> 00:02:43,683
+Next lecture is short, and it's the one everything else hangs off.
+
+50
+00:02:43,683 --> 00:02:48,208
+After that, you'll do the exercise I mentioned: a real ad set, your own guess, and a
+
+51
+00:02:48,208 --> 00:02:50,633
+result that's probably going to surprise you.
