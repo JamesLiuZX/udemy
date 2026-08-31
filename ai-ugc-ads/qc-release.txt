@@ -1,5 +1,5 @@
 
-  built total: 0.36h across 5 lectures
+  built total: 5.52h across 81 lectures
 
   WARN  [0.1] slide 2: 717 chars of slide text — dense.
   WARN  [7.0] estimated 0.9 min — very short for a lecture.
@@ -96,8 +96,7 @@
   FAIL  [11.3] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
   FAIL  [11.4] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
   FAIL  [11.5] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
-  FAIL  21.5 min of video; Udemy requires ≥30 min.
 
-  92 fail · 4 warn
+  91 fail · 4 warn
   NOT ready to submit.
 
