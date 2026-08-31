@@ -1,0 +1,82 @@
+{
+  "course": "ai-for-pms",
+  "title": "AI Product Skills for PMs & Analysts: Spec, Evaluate & Ship AI Features",
+  "provider": "kokoro",
+  "lectures": [
+    {
+      "id": "11.1",
+      "title": "Capstone brief: ship an AI feature spec",
+      "slug": "11-1-capstone-brief-ship-an-ai-feature-spec",
+      "video": "dist/11-1-capstone-brief-ship-an-ai-feature-spec.mp4",
+      "srt": "dist/11-1-capstone-brief-ship-an-ai-feature-spec.srt",
+      "slides": 8,
+      "duration": 312.386,
+      "width": 1920,
+      "height": 1080,
+      "channels": 2,
+      "voice": "tts",
+      "verified": false,
+      "words": 955
+    },
+    {
+      "id": "11.2",
+      "title": "Worked solution, part 1: spec and evals",
+      "slug": "11-2-worked-solution-part-1-spec-and-evals",
+      "video": "dist/11-2-worked-solution-part-1-spec-and-evals.mp4",
+      "srt": "dist/11-2-worked-solution-part-1-spec-and-evals.srt",
+      "slides": 11,
+      "duration": 455.053,
+      "width": 1920,
+      "height": 1080,
+      "channels": 2,
+      "voice": "tts",
+      "verified": false,
+      "words": 1332
+    },
+    {
+      "id": "11.3",
+      "title": "Worked solution, part 2: cost, risk, metrics",
+      "slug": "11-3-worked-solution-part-2-cost-risk-metrics",
+      "video": "dist/11-3-worked-solution-part-2-cost-risk-metrics.mp4",
+      "srt": "dist/11-3-worked-solution-part-2-cost-risk-metrics.srt",
+      "slides": 11,
+      "duration": 497.942,
+      "width": 1920,
+      "height": 1080,
+      "channels": 2,
+      "voice": "tts",
+      "verified": false,
+      "words": 1474
+    },
+    {
+      "id": "11.4",
+      "title": "Self-assessment rubric",
+      "slug": "11-4-self-assessment-rubric",
+      "video": "dist/11-4-self-assessment-rubric.mp4",
+      "srt": "dist/11-4-self-assessment-rubric.srt",
+      "slides": 7,
+      "duration": 257.354,
+      "width": 1920,
+      "height": 1080,
+      "channels": 2,
+      "voice": "tts",
+      "verified": false,
+      "words": 800
+    },
+    {
+      "id": "11.5",
+      "title": "Where to go next, and thank you",
+      "slug": "11-5-where-to-go-next-and-thank-you",
+      "video": "dist/11-5-where-to-go-next-and-thank-you.mp4",
+      "srt": "dist/11-5-where-to-go-next-and-thank-you.srt",
+      "slides": 5,
+      "duration": 183.251,
+      "width": 1920,
+      "height": 1080,
+      "channels": 2,
+      "voice": "tts",
+      "verified": false,
+      "words": 598
+    }
+  ]
+}
