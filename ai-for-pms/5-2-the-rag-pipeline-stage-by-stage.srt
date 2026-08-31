@@ -1,0 +1,363 @@
+1
+00:00:00,350 --> 00:00:04,904
+Back in Section two, you learned the core mechanism: chunk, embed, index, retrieve.
+
+2
+00:00:04,904 --> 00:00:09,184
+That diagram was deliberately minimal, enough to understand what vector search
+
+3
+00:00:09,184 --> 00:00:09,952
+actually does.
+
+4
+00:00:09,952 --> 00:00:14,561
+A real production pipeline has two stages that diagram left out entirely, one at the
+
+5
+00:00:14,561 --> 00:00:18,841
+very front and one near the very end, and both of them are exactly the kind of
+
+6
+00:00:18,841 --> 00:00:21,145
+decision a PM needs to have an opinion on.
+
+7
+00:00:21,145 --> 00:00:25,315
+This lecture is the full map, so the next three lectures each have somewhere
+
+8
+00:00:25,315 --> 00:00:26,413
+specific to plug in.
+
+9
+00:00:26,413 --> 00:00:30,638
+Think of this the way an architect thinks of a floor plan versus a structural
+
+10
+00:00:30,638 --> 00:00:31,077
+drawing.
+
+11
+00:00:31,077 --> 00:00:35,631
+Section two gave you the floor plan, enough to understand how someone moves through
+
+12
+00:00:35,631 --> 00:00:36,179
+the space.
+
+13
+00:00:36,179 --> 00:00:40,459
+This lecture is closer to the structural drawing: every load-bearing stage, in
+
+14
+00:00:40,459 --> 00:00:43,971
+order, so you know exactly where a crack would actually show up.
+
+15
+00:00:44,521 --> 00:00:48,879
+Read down that right column and notice the pattern: the stages bracketing the
+
+16
+00:00:48,879 --> 00:00:51,709
+pipeline, the first and the last three, are yours.
+
+17
+00:00:51,709 --> 00:00:55,841
+The middle is mostly engineering's to build once you've made those calls.
+
+18
+00:00:55,841 --> 00:01:00,539
+Ingestion is the one people skip discussing entirely, and it's the highest-leverage
+
+19
+00:01:00,539 --> 00:01:02,124
+decision in the whole table.
+
+20
+00:01:02,124 --> 00:01:06,766
+Every document you include is something that can be retrieved and shown to a user,
+
+21
+00:01:06,766 --> 00:01:11,464
+and every document you exclude is a question the system will now confidently answer
+
+22
+00:01:11,464 --> 00:01:15,313
+wrong instead of well, because it was never told that source exists.
+
+23
+00:01:15,313 --> 00:01:17,067
+That's not an engineering call.
+
+24
+00:01:17,067 --> 00:01:21,596
+It's a scope decision, and it belongs in your PRD's dataset section from Section
+
+25
+00:01:21,596 --> 00:01:21,935
+three.
+
+26
+00:01:21,935 --> 00:01:24,992
+Citation deserves the same attention at the other end.
+
+27
+00:01:24,992 --> 00:01:29,690
+Showing a source next to an answer changes the entire trust relationship a user has
+
+28
+00:01:29,690 --> 00:01:30,652
+with the feature.
+
+29
+00:01:30,652 --> 00:01:34,784
+A cited answer invites verification, an uncited one asks for blind faith.
+
+30
+00:01:34,784 --> 00:01:39,256
+That's a real product decision with real trade-offs, not a formatting detail an
+
+31
+00:01:39,256 --> 00:01:43,218
+engineer bolts on at the end because someone remembered to ask for it.
+
+32
+00:01:43,768 --> 00:01:48,265
+Here's the full sequence, laid out as one line instead of the two parallel paths
+
+33
+00:01:48,265 --> 00:01:49,220
+from Section two.
+
+34
+00:01:49,220 --> 00:01:50,344
+Both views are true.
+
+35
+00:01:50,344 --> 00:01:53,323
+That one showed what runs once versus what runs live.
+
+36
+00:01:53,323 --> 00:01:57,427
+This one shows the complete journey, start to end, for a single question.
+
+37
+00:01:57,427 --> 00:02:01,417
+Re-ranking is the stage most PMs have never heard named, and it's worth
+
+38
+00:02:01,417 --> 00:02:02,991
+understanding why it exists.
+
+39
+00:02:02,991 --> 00:02:07,713
+Initial retrieval is built for speed, scanning thousands of chunks fast, which means
+
+40
+00:02:07,713 --> 00:02:12,434
+it optimises for finding roughly the right neighbourhood, not necessarily the single
+
+41
+00:02:12,434 --> 00:02:13,109
+best answer.
+
+42
+00:02:13,109 --> 00:02:17,661
+Re-ranking takes that shortlist, maybe twenty candidates, and runs a slower, more
+
+43
+00:02:17,661 --> 00:02:22,046
+careful pass to reorder them before only the top few actually reach the model.
+
+44
+00:02:22,046 --> 00:02:24,687
+It's a precision step bolted onto a speed step.
+
+45
+00:02:24,687 --> 00:02:29,240
+Picture it as the difference between a librarian pulling every book that mentions
+
+46
+00:02:29,240 --> 00:02:33,962
+your topic, and then actually reading the first paragraph of each one before handing
+
+47
+00:02:33,962 --> 00:02:35,704
+you the three that matter most.
+
+48
+00:02:35,704 --> 00:02:38,177
+The first pass is fast and broad on purpose.
+
+49
+00:02:38,177 --> 00:02:40,763
+The second pass is slow and narrow on purpose.
+
+50
+00:02:40,763 --> 00:02:44,641
+Neither one alone does the whole job as well as both stages together.
+
+51
+00:02:45,191 --> 00:02:49,953
+Say the honest caveat, because it's tempting to treat every stage on that table as
+
+52
+00:02:49,953 --> 00:02:52,102
+something a good pipeline simply has.
+
+53
+00:02:52,102 --> 00:02:56,806
+Re-ranking adds a real, measurable delay, an entire second pass over a shortlist,
+
+54
+00:02:56,806 --> 00:02:58,548
+before generation even starts.
+
+55
+00:02:58,548 --> 00:03:03,252
+For some features that delay is completely worth it, a legal or medical retrieval
+
+56
+00:03:03,252 --> 00:03:05,691
+system where precision matters enormously.
+
+57
+00:03:05,691 --> 00:03:10,337
+For a low-stakes internal tool, it can be latency spent on a quality improvement
+
+58
+00:03:10,337 --> 00:03:11,441
+nobody will notice.
+
+59
+00:03:11,441 --> 00:03:16,261
+Ask the same question latency and throughput taught you to ask about anything: does
+
+60
+00:03:16,261 --> 00:03:21,023
+this stage earn its cost for this specific feature, or did it just sound like best
+
+61
+00:03:21,023 --> 00:03:21,546
+practice?
+
+62
+00:03:21,546 --> 00:03:25,669
+The same test applies to every stage on the table, not just re-ranking.
+
+63
+00:03:25,669 --> 00:03:30,315
+A pipeline with all seven stages fully built isn't automatically better than one
+
+64
+00:03:30,315 --> 00:03:30,896
+with five.
+
+65
+00:03:30,896 --> 00:03:35,483
+It's appropriate when the feature's archetype and blast radius from Section one
+
+66
+00:03:35,483 --> 00:03:38,852
+actually justify the extra latency and engineering effort.
+
+67
+00:03:38,852 --> 00:03:42,859
+Building every optional stage by default is the RAG equivalent of the
+
+68
+00:03:42,859 --> 00:03:47,505
+hundred-percent threshold from Section three: it sounds thorough and mostly just
+
+69
+00:03:47,505 --> 00:03:49,073
+adds cost nobody asked for.
+
+70
+00:03:49,623 --> 00:03:54,162
+That's the term worth having by name, because "should we add re-ranking" is now a
+
+71
+00:03:54,162 --> 00:03:58,870
+specific, answerable question instead of a vague gesture at making retrieval better.
+
+72
+00:03:58,870 --> 00:04:03,578
+The exercise is the same habit this whole course keeps returning to: name the actual
+
+73
+00:04:03,578 --> 00:04:07,837
+stages, out loud, rather than trusting a mental picture of "it searches some
+
+74
+00:04:07,837 --> 00:04:12,545
+documents." Most people find at least one stage in that table nobody on the team has
+
+75
+00:04:12,545 --> 00:04:13,610
+actually discussed.
+
+76
+00:04:13,610 --> 00:04:18,317
+Do this before your next conversation with engineering about the feature, not during
+
+77
+00:04:18,317 --> 00:04:18,486
+it.
+
+78
+00:04:18,486 --> 00:04:22,745
+Walking in already able to name all seven stages, and which ones your system
+
+79
+00:04:22,745 --> 00:04:27,172
+actually has, changes that conversation from you asking to be educated into you
+
+80
+00:04:27,172 --> 00:04:29,190
+confirming what you already suspect.
+
+81
+00:04:29,740 --> 00:04:31,463
+One thing before you move on.
+
+82
+00:04:31,463 --> 00:04:34,553
+Map your feature against this table, stage by stage.
+
+83
+00:04:34,553 --> 00:04:39,544
+Most real pipelines turn out to be missing at least one row, usually ingestion scope
+
+84
+00:04:39,544 --> 00:04:44,475
+or citation, not because anyone decided against them, but because nobody decided at
+
+85
+00:04:44,475 --> 00:04:44,713
+all.
+
+86
+00:04:44,713 --> 00:04:47,743
+Find that undecided stage and name it specifically.
+
+87
+00:04:47,743 --> 00:04:52,734
+It's exactly the kind of gap that looks fine in a demo and breaks the moment a real,
+
+88
+00:04:52,734 --> 00:04:57,309
+awkward question arrives, usually in front of the one user you most wanted to
+
+89
+00:04:57,309 --> 00:04:57,785
+impress.
+
+90
+00:04:57,785 --> 00:05:02,657
+Next lecture goes deep on the stage most PMs assume is purely technical and isn't:
+
+91
+00:05:02,657 --> 00:05:06,875
+chunking, and the decisions inside it that are genuinely yours to make.

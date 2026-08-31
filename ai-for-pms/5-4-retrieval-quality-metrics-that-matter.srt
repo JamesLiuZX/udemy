@@ -1,0 +1,331 @@
+1
+00:00:00,350 --> 00:00:04,873
+Retrieval quality gets judged the same way most things get judged before someone
+
+2
+00:00:04,873 --> 00:00:09,453
+learns better: a few queries, typed in by whoever built the feature, all of which
+
+3
+00:00:09,453 --> 00:00:10,301
+happen to work.
+
+4
+00:00:10,301 --> 00:00:11,432
+That's not evidence.
+
+5
+00:00:11,432 --> 00:00:16,068
+Section four already taught you why: a small, self-selected sample flatters you by
+
+6
+00:00:16,068 --> 00:00:16,803
+construction.
+
+7
+00:00:16,803 --> 00:00:21,100
+This lecture gives you three specific, plain-language questions to ask about
+
+8
+00:00:21,100 --> 00:00:24,662
+retrieval instead, and the scorecard to actually ask them with.
+
+9
+00:00:24,662 --> 00:00:29,185
+Notice, too, why measuring retrieval separately from the final answer matters at
+
+10
+00:00:29,185 --> 00:00:29,411
+all.
+
+11
+00:00:29,411 --> 00:00:34,160
+If you only ever check whether the finished answer looked right, a retrieval problem
+
+12
+00:00:34,160 --> 00:00:38,344
+and a generation problem produce the exact same symptom: a wrong response.
+
+13
+00:00:38,344 --> 00:00:43,093
+You'd know something failed and have no way to know which of the two stages actually
+
+14
+00:00:43,093 --> 00:00:43,489
+did it.
+
+15
+00:00:43,489 --> 00:00:48,069
+Scoring retrieval on its own is what turns "the bot got it wrong" into "the right
+
+16
+00:00:48,069 --> 00:00:52,479
+chunk was never found" or "it was found and misread," two completely different
+
+17
+00:00:52,479 --> 00:00:52,818
+fixes.
+
+18
+00:00:53,368 --> 00:00:57,502
+Three questions, and notice they catch three completely different failures.
+
+19
+00:00:57,502 --> 00:01:01,913
+Hit rate is the blunt one: for a question with a known right answer somewhere in
+
+20
+00:01:01,913 --> 00:01:06,488
+your corpus, did retrieval surface it anywhere in the results, yes or no. Rank goes
+
+21
+00:01:06,488 --> 00:01:11,063
+a step further, because finding the right chunk at position nine when you only keep
+
+22
+00:01:11,063 --> 00:01:13,820
+the top five is the same as not finding it at all.
+
+23
+00:01:13,820 --> 00:01:18,340
+And precision looks at the other direction entirely: of what you did retrieve, how
+
+24
+00:01:18,340 --> 00:01:22,971
+much was actually relevant, versus padding that dilutes the context the model has to
+
+25
+00:01:22,971 --> 00:01:23,522
+work with.
+
+26
+00:01:23,522 --> 00:01:28,097
+You'll hear these called recall at k, mean reciprocal rank, and precision at k in a
+
+27
+00:01:28,097 --> 00:01:29,751
+real engineering conversation.
+
+28
+00:01:29,751 --> 00:01:31,460
+Same three ideas, formal names.
+
+29
+00:01:31,460 --> 00:01:35,539
+Use them, and you'll sound like you've done this before, because you have.
+
+30
+00:01:35,539 --> 00:01:39,784
+Notice the shape of this table matches the p95 lesson from Section two almost
+
+31
+00:01:39,784 --> 00:01:40,225
+exactly.
+
+32
+00:01:40,225 --> 00:01:44,800
+Hit rate alone is an average dressed up as a metric: it tells you retrieval usually
+
+33
+00:01:44,800 --> 00:01:45,131
+works.
+
+34
+00:01:45,131 --> 00:01:47,226
+But what does "usually" actually mean?
+
+35
+00:01:47,226 --> 00:01:51,526
+Rank and precision are the tail: the specific cases where it technically found
+
+36
+00:01:51,526 --> 00:01:54,668
+something and that something wasn't good enough to trust.
+
+37
+00:01:55,218 --> 00:01:59,597
+Here's what an honest first scorecard tends to look like, and it's usually less
+
+38
+00:01:59,597 --> 00:02:01,205
+flattering than the demo was.
+
+39
+00:02:01,205 --> 00:02:05,695
+Eight of ten found the right source somewhere, which sounds fine until you notice
+
+40
+00:02:05,695 --> 00:02:10,241
+the average rank: third out of five kept, meaning it's riding close to getting cut
+
+41
+00:02:10,241 --> 00:02:11,960
+if anyone tightens that number.
+
+42
+00:02:11,960 --> 00:02:16,339
+And only sixty percent of what actually got retrieved was relevant, which means
+
+43
+00:02:16,339 --> 00:02:20,885
+nearly half the context handed to the model on a typical query was noise it had to
+
+44
+00:02:20,885 --> 00:02:21,439
+read past.
+
+45
+00:02:21,439 --> 00:02:25,819
+None of these numbers show up in a five query demo, because a demo doesn't keep
+
+46
+00:02:25,819 --> 00:02:26,151
+score.
+
+47
+00:02:26,151 --> 00:02:30,420
+Read those two missing queries carefully too, not just the eight that worked.
+
+48
+00:02:30,420 --> 00:02:34,744
+The two the system never found at all are the most important row on this whole
+
+49
+00:02:34,744 --> 00:02:39,234
+scorecard, because a rank problem is something the existing pipeline can improve.
+
+50
+00:02:39,234 --> 00:02:43,780
+A pure miss usually points somewhere upstream entirely, back to chunking from last
+
+51
+00:02:43,780 --> 00:02:48,049
+lecture, or ingestion never having included that document in the first place.
+
+52
+00:02:48,599 --> 00:02:52,665
+Say the honest caveat, because a clean retrieval scorecard can create false
+
+53
+00:02:52,665 --> 00:02:54,833
+confidence about the feature as a whole.
+
+54
+00:02:54,833 --> 00:02:59,171
+Retrieval and generation are two separate stages with two separate ways to fail.
+
+55
+00:02:59,171 --> 00:03:03,453
+You can retrieve exactly the right chunk and still watch the model summarise it
+
+56
+00:03:03,453 --> 00:03:06,273
+wrong, miss a caveat inside it, or misread a number.
+
+57
+00:03:06,273 --> 00:03:08,875
+This scorecard only measures the retrieval half.
+
+58
+00:03:08,875 --> 00:03:12,507
+It's a necessary instrument, and on its own it's an incomplete one.
+
+59
+00:03:12,507 --> 00:03:16,899
+Pair it with the rubric from Section four, which measures the half this scorecard
+
+60
+00:03:16,899 --> 00:03:17,441
+can't see.
+
+61
+00:03:17,441 --> 00:03:21,344
+Think of the two together as a diagnostic order, not a duplicate effort.
+
+62
+00:03:21,344 --> 00:03:25,573
+Run this scorecard first, because if retrieval itself is failing, no amount of
+
+63
+00:03:25,573 --> 00:03:29,531
+rubric scoring on the final answer tells you where to actually intervene.
+
+64
+00:03:29,531 --> 00:03:34,030
+Once retrieval is solid, the rubric from Section four is what tells you whether the
+
+65
+00:03:34,030 --> 00:03:37,446
+model is doing its job with the material it was actually given.
+
+66
+00:03:37,996 --> 00:03:41,753
+That's the artifact for today, and notice it's deliberately small.
+
+67
+00:03:41,753 --> 00:03:46,421
+Ten questions, scored by hand, tells you more than an elaborate dashboard built on
+
+68
+00:03:46,421 --> 00:03:47,673
+data nobody's checked.
+
+69
+00:03:47,673 --> 00:03:49,495
+Do it the unglamorous way first.
+
+70
+00:03:49,495 --> 00:03:54,219
+Pick ten real questions, know the right source for each one yourself before you run
+
+71
+00:03:54,219 --> 00:03:56,781
+anything, and score what actually comes back.
+
+72
+00:03:56,781 --> 00:04:00,765
+The manual pass is what makes the automated version trustworthy later.
+
+73
+00:04:00,765 --> 00:04:03,725
+Resist the urge to skip straight to automating this.
+
+74
+00:04:03,725 --> 00:04:08,336
+Ten scored by hand, once, teaches you what "relevant" actually means for your own
+
+75
+00:04:08,336 --> 00:04:13,061
+content, the exact judgment call that would otherwise get made invisibly by whoever
+
+76
+00:04:13,061 --> 00:04:14,939
+writes the automated check later.
+
+77
+00:04:15,489 --> 00:04:17,067
+One thing before you move on.
+
+78
+00:04:17,067 --> 00:04:21,472
+The scorecard template is A07, attached here, with all three metrics built in and
+
+79
+00:04:21,472 --> 00:04:23,158
+space for ten queries to start.
+
+80
+00:04:23,158 --> 00:04:27,509
+Run it against ten real questions from your own knowledge base, scored honestly,
+
+81
+00:04:27,509 --> 00:04:31,044
+even when the numbers are worse than the demo led you to believe.
+
+82
+00:04:31,044 --> 00:04:35,558
+Next lecture takes these numbers somewhere uncomfortable: the six specific places a
+
+83
+00:04:35,558 --> 00:04:39,745
+RAG system that scored well in testing still breaks once it meets production.

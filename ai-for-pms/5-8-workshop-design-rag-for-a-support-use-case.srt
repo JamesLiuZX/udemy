@@ -1,0 +1,419 @@
+1
+00:00:00,350 --> 00:00:05,157
+The use case itself: agents answering policy questions by searching several systems
+
+2
+00:00:05,157 --> 00:00:05,620
+by hand.
+
+3
+00:00:05,620 --> 00:00:10,311
+Open A06 from last lecture, and give this the same twenty minutes Section three's
+
+4
+00:00:10,311 --> 00:00:11,296
+PRD workshop did.
+
+5
+00:00:11,296 --> 00:00:14,423
+Can you finish all six sections honestly in that time?
+
+6
+00:00:14,423 --> 00:00:16,103
+Not perfectly, just honestly.
+
+7
+00:00:16,103 --> 00:00:20,794
+Every section needs something in it, even where that something is a number you'll
+
+8
+00:00:20,794 --> 00:00:21,663
+validate later.
+
+9
+00:00:21,663 --> 00:00:26,296
+Support is the right use case to practise on precisely because it's the one this
+
+10
+00:00:26,296 --> 00:00:31,103
+course has walked through from every angle already: the archetype from Section one,
+
+11
+00:00:31,103 --> 00:00:35,736
+the threshold from Section three, and now the retrieval mechanics from this one.
+
+12
+00:00:35,736 --> 00:00:40,485
+Designing it end to end here is what turns six separate lectures into one document
+
+13
+00:00:40,485 --> 00:00:42,396
+you actually know how to produce.
+
+14
+00:00:42,396 --> 00:00:47,261
+Skip the exercise, and those six lectures stay six separate ideas in your head, ones
+
+15
+00:00:47,261 --> 00:00:51,894
+you can discuss in a meeting but have never actually tested against a page you'd
+
+16
+00:00:51,894 --> 00:00:53,053
+hand to an engineer.
+
+17
+00:00:53,603 --> 00:00:58,210
+Notice why RAG gets the same five minutes acceptance criteria got in Section three's
+
+18
+00:00:58,210 --> 00:01:02,653
+workshop, and for the identical reason: everything after it gets easier once that
+
+19
+00:01:02,653 --> 00:01:04,792
+argument is actually made, not assumed.
+
+20
+00:01:04,792 --> 00:01:09,071
+For the support case specifically, that argument is usually straightforward to
+
+21
+00:01:09,071 --> 00:01:09,400
+write.
+
+22
+00:01:09,400 --> 00:01:13,843
+Agents are searching policy documents by hand today, the policies are private and
+
+23
+00:01:13,843 --> 00:01:18,176
+change quarterly, and no amount of prompting supplies information the model was
+
+24
+00:01:18,176 --> 00:01:18,834
+never given.
+
+25
+00:01:18,834 --> 00:01:23,387
+If your own case doesn't have an argument that clean, that's worth noticing now, in
+
+26
+00:01:23,387 --> 00:01:25,252
+minute five, not in minute twenty.
+
+27
+00:01:25,252 --> 00:01:29,475
+The pipeline stages minutes go quickly for the same use case, because support
+
+28
+00:01:29,475 --> 00:01:32,382
+content rarely needs the full seven stages built out.
+
+29
+00:01:32,382 --> 00:01:36,825
+Most support corpora don't need query rewriting or a heavy re-ranking pass on day
+
+30
+00:01:36,825 --> 00:01:37,044
+one.
+
+31
+00:01:37,044 --> 00:01:41,432
+Naming what you're deliberately leaving out is as much a decision as naming what
+
+32
+00:01:41,432 --> 00:01:44,669
+you're building, and it belongs in the document either way.
+
+33
+00:01:45,219 --> 00:01:49,926
+Chunking strategy and retrieval targets share the middle eight minutes, and neither
+
+34
+00:01:49,926 --> 00:01:51,855
+has to be perfect on a first pass.
+
+35
+00:01:51,855 --> 00:01:56,562
+Sorting each content type into its own natural chunk, an FAQ pair, a policy clause,
+
+36
+00:01:56,562 --> 00:02:01,100
+a full ticket thread, usually goes faster than people expect with Section five's
+
+37
+00:02:01,100 --> 00:02:02,291
+examples still fresh.
+
+38
+00:02:02,291 --> 00:02:07,055
+The number that actually eats the full four minutes is the retrieval target, because
+
+39
+00:02:07,055 --> 00:02:11,309
+it's the first point in the exercise where you're committing to something a
+
+40
+00:02:11,309 --> 00:02:14,315
+colleague could check against a real scorecard later.
+
+41
+00:02:14,315 --> 00:02:18,909
+The last four minutes, failure coverage and permissions, go fastest if you resist
+
+42
+00:02:18,909 --> 00:02:21,461
+listing every failure from two lectures back.
+
+43
+00:02:21,461 --> 00:02:26,169
+Pick the two failures most likely to actually bite a support corpus: near-duplicate
+
+44
+00:02:26,169 --> 00:02:30,820
+confusion from old tickets nobody archived, and permission leakage from restricted
+
+45
+00:02:30,820 --> 00:02:33,882
+policy pages sitting in the same index as public ones.
+
+46
+00:02:33,882 --> 00:02:38,306
+Two named failures with real fixes beat a generic list copied straight off the
+
+47
+00:02:38,306 --> 00:02:38,647
+table.
+
+48
+00:02:39,197 --> 00:02:40,515
+Recognise this sentence.
+
+49
+00:02:40,515 --> 00:02:44,691
+It's the exact worked example from last lecture, and seeing it again here is
+
+50
+00:02:44,691 --> 00:02:49,306
+deliberate: this is roughly what your own retrieval targets and permissions sections
+
+51
+00:02:49,306 --> 00:02:52,273
+should sound like once you've filled them in for real.
+
+52
+00:02:52,273 --> 00:02:56,779
+If what you've written in the last few minutes doesn't have this shape, a scope, a
+
+53
+00:02:56,779 --> 00:03:01,284
+chunking approach, two numbers, a permission model, a re-index cadence, that's the
+
+54
+00:03:01,284 --> 00:03:05,570
+gap worth closing while you're still in the section, not three sections later.
+
+55
+00:03:05,570 --> 00:03:10,021
+Notice, too, what this sentence deliberately doesn't include: no mention of which
+
+56
+00:03:10,021 --> 00:03:12,493
+vector database, no model name, no framework.
+
+57
+00:03:12,493 --> 00:03:15,185
+None of that belongs in a design doc a PM writes.
+
+58
+00:03:15,185 --> 00:03:18,207
+This sentence specifies what the system has to achieve.
+
+59
+00:03:18,207 --> 00:03:22,768
+It leaves precisely how to engineering, the same boundary Section three drew around
+
+60
+00:03:22,768 --> 00:03:23,702
+the PRD template.
+
+61
+00:03:23,702 --> 00:03:28,262
+It took this section six lectures to earn a sentence that specific, so don't expect
+
+62
+00:03:28,262 --> 00:03:30,350
+your own version on the first attempt.
+
+63
+00:03:30,350 --> 00:03:34,910
+A rougher draft that still names a scope, a chunking approach, and two numbers is a
+
+64
+00:03:34,910 --> 00:03:39,251
+completely reasonable place to be at the sixteen minute mark, with four minutes
+
+65
+00:03:39,251 --> 00:03:40,625
+still left to sharpen it.
+
+66
+00:03:41,175 --> 00:03:45,810
+Say the honest caveat, because this is the section most people stall on, and for a
+
+67
+00:03:45,810 --> 00:03:50,503
+reasonable reason: you genuinely don't know your real hit rate until you've run the
+
+68
+00:03:50,503 --> 00:03:53,160
+scorecard from 5.4, and you haven't run it yet.
+
+69
+00:03:53,160 --> 00:03:54,517
+Write the number anyway.
+
+70
+00:03:54,517 --> 00:03:59,265
+Ninety percent hit rate, seventy percent precision, whatever feels like a defensible
+
+71
+00:03:59,265 --> 00:04:03,618
+starting bar for this specific use case, and mark it "target, to be validated
+
+72
+00:04:03,618 --> 00:04:08,085
+against the scorecard." That's not a weaker answer than a real measured number.
+
+73
+00:04:08,085 --> 00:04:12,777
+It's the honest, correctly-labelled version of exactly where you are right now, and
+
+74
+00:04:12,777 --> 00:04:17,526
+it's infinitely more useful than a blank cell nobody will ever come back to fill in.
+
+75
+00:04:17,526 --> 00:04:22,105
+This is the same move as the placeholder threshold from Section three's workshop,
+
+76
+00:04:22,105 --> 00:04:24,423
+applied one section later in the process.
+
+77
+00:04:24,423 --> 00:04:28,776
+A guessed number, clearly labelled as a guess, is a real decision that can be
+
+78
+00:04:28,776 --> 00:04:29,228
+revised.
+
+79
+00:04:29,228 --> 00:04:33,751
+A blank field is a decision nobody made yet, quietly waiting to become someone's
+
+80
+00:04:33,751 --> 00:04:37,425
+problem during launch week instead of during this twenty minutes.
+
+81
+00:04:37,425 --> 00:04:39,235
+A labelled guess also ages well.
+
+82
+00:04:39,235 --> 00:04:43,757
+Six months from now, whoever reopens this document can see exactly which numbers
+
+83
+00:04:43,757 --> 00:04:48,393
+were real and which were placeholders, instead of wondering whether ninety percent
+
+84
+00:04:48,393 --> 00:04:50,767
+was ever actually tested against anything.
+
+85
+00:04:51,317 --> 00:04:55,497
+That's today's bar, stated plainly: attempted, not perfected, and every number
+
+86
+00:04:55,497 --> 00:04:57,695
+labelled honestly as measured or guessed.
+
+87
+00:04:57,695 --> 00:05:02,035
+Six sections in twenty minutes averages under four minutes each, which is exactly
+
+88
+00:05:02,035 --> 00:05:04,929
+why a labelled guess beats stalling on any single one.
+
+89
+00:05:04,929 --> 00:05:08,359
+If you finish with time left, don't smooth every section evenly.
+
+90
+00:05:08,359 --> 00:05:12,700
+Return to why RAG, the same instruction as Section three's workshop, because it's
+
+91
+00:05:12,700 --> 00:05:15,808
+still the section the other five are quietly depending on.
+
+92
+00:05:16,358 --> 00:05:17,920
+One thing before you move on.
+
+93
+00:05:17,920 --> 00:05:22,445
+Finish the six sections, and anywhere you guessed a number, say so explicitly rather
+
+94
+00:05:22,445 --> 00:05:24,868
+than letting it look more certain than it is.
+
+95
+00:05:24,868 --> 00:05:29,070
+Then send it to whoever actually owns the support content, today, and ask what
+
+96
+00:05:29,070 --> 00:05:30,470
+they'd push back on first.
+
+97
+00:05:30,470 --> 00:05:34,887
+They'll usually find the gap in minutes that would have taken you a week to notice
+
+98
+00:05:34,887 --> 00:05:35,210
+alone.
+
+99
+00:05:35,210 --> 00:05:38,765
+Expect their first question to be about permissions, not chunking.
+
+100
+00:05:38,765 --> 00:05:43,021
+Content owners live inside the access model every day, and they'll notice a gap
+
+101
+00:05:43,021 --> 00:05:47,384
+there faster than anyone else in the room, before you've even finished explaining
+
+102
+00:05:47,384 --> 00:05:48,730
+the rest of the document.
+
+103
+00:05:48,730 --> 00:05:53,147
+Next lecture closes out this section: what you've actually built, and how directly
+
+104
+00:05:53,147 --> 00:05:57,564
+it plugs into Section six, where retrieval meets action and the whole conversation
+
+105
+00:05:57,564 --> 00:05:57,995
+changes.

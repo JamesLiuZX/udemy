@@ -1,0 +1,299 @@
+1
+00:00:00,350 --> 00:00:04,494
+A company built an assistant to answer employee questions about benefits.
+
+2
+00:00:04,494 --> 00:00:08,751
+Version one was a system prompt describing the company and a capable model.
+
+3
+00:00:08,751 --> 00:00:10,681
+It worked beautifully in the demo.
+
+4
+00:00:10,681 --> 00:00:15,279
+Then someone asked it a real question: how many vacation days do I get after five
+
+5
+00:00:15,279 --> 00:00:15,620
+years.
+
+6
+00:00:15,620 --> 00:00:20,161
+The model answered instantly and confidently, a tidy, plausible tiered schedule.
+
+7
+00:00:20,161 --> 00:00:24,816
+It was completely wrong for this company, and a manager approved time off based on
+
+8
+00:00:24,816 --> 00:00:26,860
+that answer before anyone caught it.
+
+9
+00:00:26,860 --> 00:00:27,825
+That's the story.
+
+10
+00:00:27,825 --> 00:00:30,833
+Everything about why RAG exists is sitting inside it.
+
+11
+00:00:30,833 --> 00:00:35,318
+Notice what makes this failure hard to catch in review, not just in production.
+
+12
+00:00:35,318 --> 00:00:38,610
+The wrong answer read exactly like a right one would have.
+
+13
+00:00:38,610 --> 00:00:42,981
+Confident tone, plausible structure, nothing about the phrasing gave it away.
+
+14
+00:00:42,981 --> 00:00:47,750
+That's the hallucination mechanism from Section one, and it's worth sitting with for
+
+15
+00:00:47,750 --> 00:00:52,518
+a moment before moving to the fix, because the fix only makes sense once you've felt
+
+16
+00:00:52,518 --> 00:00:55,186
+how invisible the failure was from the outside.
+
+17
+00:00:55,736 --> 00:01:00,246
+Look closely at what actually changed between those two columns, because it's less
+
+18
+00:01:00,246 --> 00:01:01,236
+than you'd expect.
+
+19
+00:01:01,236 --> 00:01:02,941
+The model didn't get retrained.
+
+20
+00:01:02,941 --> 00:01:07,507
+It didn't get more capable at reasoning, or better at maths, or more careful in any
+
+21
+00:01:07,507 --> 00:01:08,277
+general sense.
+
+22
+00:01:08,277 --> 00:01:12,732
+What changed is that the second version had the actual policy document sitting in
+
+23
+00:01:12,732 --> 00:01:17,352
+its context when it answered, and the first version was reasoning entirely from what
+
+24
+00:01:17,352 --> 00:01:21,973
+vacation policies generally look like, the mechanism from lecture one, doing exactly
+
+25
+00:01:21,973 --> 00:01:24,008
+what it does when nothing grounds it.
+
+26
+00:01:24,008 --> 00:01:27,308
+This is also why the fix couldn't have been a better prompt.
+
+27
+00:01:27,308 --> 00:01:31,928
+No amount of instructing the model to "be accurate about vacation policy" gives it a
+
+28
+00:01:31,928 --> 00:01:36,494
+number that was never in its training data and never will be, because it's specific
+
+29
+00:01:36,494 --> 00:01:38,364
+to one company's private document.
+
+30
+00:01:38,364 --> 00:01:40,674
+Some information isn't a phrasing problem.
+
+31
+00:01:40,674 --> 00:01:45,294
+It's an access problem, and only one fix on the whole decision tree from Section two
+
+32
+00:01:45,294 --> 00:01:47,329
+actually solves that particular kind.
+
+33
+00:01:47,879 --> 00:01:52,178
+Here's the same story again, on the stack diagram from earlier in this course, and
+
+34
+00:01:52,178 --> 00:01:53,698
+it makes the point precisely.
+
+35
+00:01:53,698 --> 00:01:55,742
+Four of five layers didn't move at all.
+
+36
+00:01:55,742 --> 00:01:59,830
+Same product, same guardrails, same orchestration code, same underlying model.
+
+37
+00:01:59,830 --> 00:02:04,181
+Exactly one layer changed: the data layer went from empty to populated with the one
+
+38
+00:02:04,181 --> 00:02:05,858
+document that actually mattered.
+
+39
+00:02:05,858 --> 00:02:08,165
+RAG isn't a smarter version of your feature.
+
+40
+00:02:08,165 --> 00:02:12,148
+It's the same feature, finally given the thing it needed to answer honestly.
+
+41
+00:02:12,148 --> 00:02:16,552
+Keep this table in your back pocket for the rest of this section, because it answers
+
+42
+00:02:16,552 --> 00:02:20,745
+a question that comes up constantly once you start designing one of these: which
+
+43
+00:02:20,745 --> 00:02:23,471
+team actually owns fixing it when something's wrong.
+
+44
+00:02:23,471 --> 00:02:27,874
+If the fact was missing, that's a data-layer problem, and it belongs to whoever owns
+
+45
+00:02:27,874 --> 00:02:30,652
+the document, not to engineering re-tuning the model.
+
+46
+00:02:30,652 --> 00:02:34,950
+Naming the layer, the exact skill from Section two, is what turns a vague "the bot
+
+47
+00:02:34,950 --> 00:02:37,047
+is wrong" into someone's actual Tuesday.
+
+48
+00:02:37,597 --> 00:02:41,797
+Say the honest caveat, because RAG gets reached for as a universal fix, and it
+
+49
+00:02:41,797 --> 00:02:43,682
+solves exactly one kind of failure.
+
+50
+00:02:43,682 --> 00:02:48,044
+The vacation policy question was a missing-fact failure: the answer existed, in a
+
+51
+00:02:48,044 --> 00:02:50,521
+document, and the model simply didn't have it.
+
+52
+00:02:50,521 --> 00:02:52,244
+Retrieval fixes that completely.
+
+53
+00:02:52,244 --> 00:02:56,444
+It does nothing for a feature that's misinterpreting a chart, doing arithmetic
+
+54
+00:02:56,444 --> 00:03:00,591
+wrong, or drawing a bad conclusion from information it already had correctly.
+
+55
+00:03:00,591 --> 00:03:04,737
+Handing that kind of failure more documents doesn't touch the actual problem.
+
+56
+00:03:04,737 --> 00:03:09,153
+Watch for this specifically when a team proposes "adding RAG" as a fix for a vague
+
+57
+00:03:09,153 --> 00:03:13,461
+complaint like "it's not being smart enough." That phrase almost never tells you
+
+58
+00:03:13,461 --> 00:03:15,184
+which failure you're looking at.
+
+59
+00:03:15,184 --> 00:03:19,546
+Ask for one concrete wrong answer first, then diagnose it, before committing to a
+
+60
+00:03:19,546 --> 00:03:22,561
+retrieval system that might not even be the right layer.
+
+61
+00:03:23,111 --> 00:03:27,887
+That's the test worth carrying into every "should we add RAG here" conversation from
+
+62
+00:03:27,887 --> 00:03:31,127
+now on: was the fact missing, or was the reasoning wrong.
+
+63
+00:03:31,127 --> 00:03:34,652
+Run the exercise on a real wrong answer from your own feature.
+
+64
+00:03:34,652 --> 00:03:39,313
+If the honest diagnosis is a reasoning failure, adding retrieval will make the PRD
+
+65
+00:03:39,313 --> 00:03:42,951
+look more sophisticated and change nothing about the actual bug.
+
+66
+00:03:43,501 --> 00:03:45,112
+One thing before you move on.
+
+67
+00:03:45,112 --> 00:03:47,500
+Pull up a real case your feature got wrong.
+
+68
+00:03:47,500 --> 00:03:50,109
+Was the fact missing, or was the reasoning bad?
+
+69
+00:03:50,109 --> 00:03:54,663
+Run it through this lecture's test honestly, rather than assuming you already know
+
+70
+00:03:54,663 --> 00:03:55,274
+the answer.
+
+71
+00:03:55,274 --> 00:03:59,772
+If access was the culprit, push one step further: if you can't point to where the
+
+72
+00:03:59,772 --> 00:04:04,325
+right answer actually lives, that's worth knowing too, because no retrieval system
+
+73
+00:04:04,325 --> 00:04:06,991
+can find a document that was never written down.
+
+74
+00:04:06,991 --> 00:04:11,489
+Next lecture opens the pipeline properly: every stage between a question arriving
+
+75
+00:04:11,489 --> 00:04:15,431
+and an answer coming back, and exactly which stages are yours to shape.

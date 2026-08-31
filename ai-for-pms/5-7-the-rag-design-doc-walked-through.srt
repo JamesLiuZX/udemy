@@ -1,0 +1,343 @@
+1
+00:00:00,350 --> 00:00:05,148
+You've made six real decisions across this section: whether the problem is even a
+
+2
+00:00:05,148 --> 00:00:09,827
+missing-fact problem, what stages the pipeline needs, how to chunk each content
+
+3
+00:00:09,827 --> 00:00:14,624
+type, what retrieval quality actually means, which production failures apply, and
+
+4
+00:00:14,624 --> 00:00:17,112
+how permissions and freshness get handled.
+
+5
+00:00:17,112 --> 00:00:19,540
+Here's where all six become one document.
+
+6
+00:00:19,540 --> 00:00:21,791
+This is A06, attached to this lecture.
+
+7
+00:00:21,791 --> 00:00:26,707
+Open it now and fill sections in as we walk through them, the same way you did with
+
+8
+00:00:26,707 --> 00:00:28,721
+the PRD template in Section three.
+
+9
+00:00:28,721 --> 00:00:32,689
+Think of this document as sitting inside the PRD, not replacing it.
+
+10
+00:00:32,689 --> 00:00:37,486
+The acceptance criteria section from Section three still names the threshold your
+
+11
+00:00:37,486 --> 00:00:38,730
+feature has to clear.
+
+12
+00:00:38,730 --> 00:00:43,350
+This design doc is what makes that threshold achievable in the first place, by
+
+13
+00:00:43,350 --> 00:00:46,608
+specifying the retrieval system underneath it properly.
+
+14
+00:00:46,608 --> 00:00:48,148
+One document sets the bar.
+
+15
+00:00:48,148 --> 00:00:51,346
+The other explains how the system actually reaches it.
+
+16
+00:00:51,896 --> 00:00:56,065
+Read the first row before any of the others, because it's the one that decides
+
+17
+00:00:56,065 --> 00:00:58,951
+whether the rest of this document should exist at all.
+
+18
+00:00:58,951 --> 00:01:02,852
+Section two's decision tree already gave you the test: is this actually a
+
+19
+00:01:02,852 --> 00:01:03,974
+missing-fact problem.
+
+20
+00:01:03,974 --> 00:01:06,860
+If a design doc can't answer that cleanly, stop there.
+
+21
+00:01:06,860 --> 00:01:11,136
+The other five sections are wasted effort on a system solving the wrong problem.
+
+22
+00:01:11,136 --> 00:01:15,518
+Past that gate, the remaining five sections are exactly the decisions this section
+
+23
+00:01:15,518 --> 00:01:19,954
+walked you through, now written down in the order an engineer building against this
+
+24
+00:01:19,954 --> 00:01:21,771
+document would actually want them.
+
+25
+00:01:21,771 --> 00:01:23,802
+Notice the order itself is deliberate.
+
+26
+00:01:23,802 --> 00:01:27,222
+Why doesn't it match the order this section taught the ideas in?
+
+27
+00:01:27,222 --> 00:01:31,230
+Pipeline stages come before chunking, because you can't decide how to chunk
+
+28
+00:01:31,230 --> 00:01:35,559
+something until you know whether re-ranking or query rewriting are even in scope.
+
+29
+00:01:35,559 --> 00:01:39,888
+Retrieval targets come before failure coverage, because you need a number to know
+
+30
+00:01:39,888 --> 00:01:42,935
+what counts as a failure worth naming in the first place.
+
+31
+00:01:42,935 --> 00:01:46,996
+Sequence the document for the reader building from it, not for the order you
+
+32
+00:01:46,996 --> 00:01:48,119
+happened to learn it.
+
+33
+00:01:48,669 --> 00:01:53,395
+Recognise this move from Section three: the same rewrite, aimed at a different
+
+34
+00:01:53,395 --> 00:01:53,940
+document.
+
+35
+00:01:53,940 --> 00:01:56,485
+The first sentence describes an intention.
+
+36
+00:01:56,485 --> 00:02:00,909
+The second describes something a QA engineer could actually go and check.
+
+37
+00:02:00,909 --> 00:02:05,756
+Notice every clause in that second sentence traces back to a specific lecture in
+
+38
+00:02:05,756 --> 00:02:06,544
+this section.
+
+39
+00:02:06,544 --> 00:02:08,846
+The scope is 5.2's ingestion decision.
+
+40
+00:02:08,846 --> 00:02:10,301
+Per content type is 5.3.
+
+41
+00:02:10,301 --> 00:02:11,512
+The numbers are 5.4.
+
+42
+00:02:11,512 --> 00:02:14,421
+Live permissions and a re-index cadence are 5.6.
+
+43
+00:02:14,421 --> 00:02:16,905
+The fallback is 5.5's silent-failure fix.
+
+44
+00:02:16,905 --> 00:02:18,723
+None of it is new information.
+
+45
+00:02:18,723 --> 00:02:22,722
+It's this section's six decisions, in one sentence instead of six.
+
+46
+00:02:22,722 --> 00:02:26,782
+Try the same disagreement test from Section three on both versions.
+
+47
+00:02:26,782 --> 00:02:31,690
+Nobody can push back meaningfully on "we'll use RAG to answer questions," because
+
+48
+00:02:31,690 --> 00:02:35,023
+there's nothing specific enough in it to disagree with.
+
+49
+00:02:35,023 --> 00:02:40,052
+Every clause in the second sentence is a place a reviewer could reasonably say that
+
+50
+00:02:40,052 --> 00:02:42,839
+number's too low, or that cadence is too slow.
+
+51
+00:02:42,839 --> 00:02:47,323
+A document built to survive that kind of pushback is doing its actual job.
+
+52
+00:02:47,873 --> 00:02:52,386
+Say the honest caveat, because it's easy to skip the first row of that table and
+
+53
+00:02:52,386 --> 00:02:56,954
+jump straight to designing pipelines, because pipelines are the interesting part.
+
+54
+00:02:56,954 --> 00:03:01,692
+Remember the tree from Section two: prompt first, retrieval only once a missing fact
+
+55
+00:03:01,692 --> 00:03:02,933
+genuinely requires it.
+
+56
+00:03:02,933 --> 00:03:07,276
+A RAG design doc that never justifies why a better prompt or a simpler answer
+
+57
+00:03:07,276 --> 00:03:10,942
+wouldn't have done is a document that assumed its own conclusion.
+
+58
+00:03:10,942 --> 00:03:15,116
+Make the first section argue for RAG specifically, not assume it, the same
+
+59
+00:03:15,116 --> 00:03:18,106
+discipline as naming a threshold before defending it.
+
+60
+00:03:18,106 --> 00:03:22,505
+This matters more than it sounds like it should, because a retrieval system is
+
+61
+00:03:22,505 --> 00:03:24,874
+genuinely expensive to build and maintain.
+
+62
+00:03:24,874 --> 00:03:29,555
+It's an index to keep current, a permission model to enforce, chunking decisions to
+
+63
+00:03:29,555 --> 00:03:33,560
+revisit, and a whole section's worth of failure modes to guard against.
+
+64
+00:03:33,560 --> 00:03:38,016
+Committing to all of that for a problem a better prompt would have solved in an
+
+65
+00:03:38,016 --> 00:03:42,133
+afternoon is exactly the kind of cost this section keeps warning against.
+
+66
+00:03:42,683 --> 00:03:47,157
+That's today's instruction, not a suggestion for later: write the justification
+
+67
+00:03:47,157 --> 00:03:49,593
+before you write anything downstream of it.
+
+68
+00:03:49,593 --> 00:03:54,237
+It should feel slightly uncomfortable, the way the acceptance criteria section did
+
+69
+00:03:54,237 --> 00:03:55,200
+in Section three.
+
+70
+00:03:55,200 --> 00:03:59,844
+If you can't finish that first section convincingly, that's not a writing problem.
+
+71
+00:03:59,844 --> 00:04:04,374
+It's the document correctly telling you this feature might not need retrieval at
+
+72
+00:04:04,374 --> 00:04:04,601
+all.
+
+73
+00:04:04,601 --> 00:04:09,132
+That outcome is a genuine success for this exercise, not a failed attempt at it.
+
+74
+00:04:09,132 --> 00:04:13,889
+A design doc that talks you out of building a retrieval system you didn't need saved
+
+75
+00:04:13,889 --> 00:04:15,135
+real engineering time.
+
+76
+00:04:15,135 --> 00:04:19,553
+That's worth more than five neatly filled sections defending a decision nobody
+
+77
+00:04:19,553 --> 00:04:20,459
+actually tested.
+
+78
+00:04:21,009 --> 00:04:22,593
+One thing before you move on.
+
+79
+00:04:22,593 --> 00:04:25,215
+Download the template, attached to this lecture.
+
+80
+00:04:25,215 --> 00:04:29,804
+All six sections are in place, with the same prompts this lecture walked through, so
+
+81
+00:04:29,804 --> 00:04:32,808
+you're filling gaps in, not starting from a blank page.
+
+82
+00:04:32,808 --> 00:04:36,850
+Write that first section for real, for a feature you're actually close to.
+
+83
+00:04:36,850 --> 00:04:41,439
+If the honest answer is "maybe this didn't need RAG," that's a more valuable finding
+
+84
+00:04:41,439 --> 00:04:45,099
+today than five more sections built on a premise that doesn't hold.
+
+85
+00:04:45,099 --> 00:04:49,360
+Next lecture is the workshop: the full design doc, filled in end to end, for a
+
+86
+00:04:49,360 --> 00:04:52,747
+support use case you'll recognise from earlier in this course.

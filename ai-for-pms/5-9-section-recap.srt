@@ -1,0 +1,107 @@
+1
+00:00:00,350 --> 00:00:04,759
+Nine lectures ago, this section opened with a benefits assistant that answered a
+
+2
+00:00:04,759 --> 00:00:09,057
+vacation-policy question instantly, confidently, and completely wrong, because
+
+3
+00:00:09,057 --> 00:00:11,261
+nobody had given it the actual document.
+
+4
+00:00:11,261 --> 00:00:13,356
+Here's what you can do about that now.
+
+5
+00:00:13,356 --> 00:00:17,985
+You've got the test from Section two's decision tree in your hands for real: is this
+
+6
+00:00:17,985 --> 00:00:22,614
+actually a missing-fact problem, not a reasoning one, before you reach for retrieval
+
+7
+00:00:22,614 --> 00:00:23,000
+at all.
+
+8
+00:00:23,000 --> 00:00:27,353
+You know the seven pipeline stages, and which ones a first version can honestly
+
+9
+00:00:27,353 --> 00:00:27,629
+skip.
+
+10
+00:00:27,629 --> 00:00:32,037
+You can chunk a document by what it actually is, an FAQ pair, a policy clause, a
+
+11
+00:00:32,037 --> 00:00:35,454
+table row, instead of one default splitter applied everywhere.
+
+12
+00:00:35,454 --> 00:00:39,863
+You can name a retrieval target in hit rate and precision, and defend it the way
+
+13
+00:00:39,863 --> 00:00:42,453
+Section three taught you to defend a threshold.
+
+14
+00:00:42,453 --> 00:00:47,027
+You know six specific ways a system that passed testing still breaks in production,
+
+15
+00:00:47,027 --> 00:00:51,656
+and that two of them, stale answers and permission leaks, are the ones that actually
+
+16
+00:00:51,656 --> 00:00:52,868
+end enterprise pilots.
+
+17
+00:00:52,868 --> 00:00:53,860
+That's not trivia.
+
+18
+00:00:53,860 --> 00:00:58,434
+That's the difference between nodding along in an architecture review and being the
+
+19
+00:00:58,434 --> 00:01:01,245
+person who asks the question that saves the launch.
+
+20
+00:01:01,795 --> 00:01:06,382
+Two downloadable artifacts came out of this section: the retrieval scorecard, and
+
+21
+00:01:06,382 --> 00:01:08,535
+the design doc template it feeds into.
+
+22
+00:01:08,535 --> 00:01:11,140
+Use them on something real before you move on.
+
+23
+00:01:11,140 --> 00:01:15,728
+The support use case from the workshop, if you don't have your own yet, filled in
+
+24
+00:01:15,728 --> 00:01:20,429
+honestly, including the numbers you had to guess and label rather than leave blank.
+
+25
+00:01:20,429 --> 00:01:25,017
+Next section, we leave retrieval and go to agents: what one actually is under the
+
+26
+00:01:25,017 --> 00:01:29,661
+marketing, the reliability maths that tells you when a five-step plan is quietly a
+
+27
+00:01:29,661 --> 00:01:33,853
+coin flip, and how to scope one so it fails safely instead of expensively.
