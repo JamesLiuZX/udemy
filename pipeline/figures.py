@@ -209,6 +209,72 @@ def histogram(bins: list[tuple[str, float]], *, threshold: int | None = None,
 
 
 # ---------------------------------------------------------------------------
+# composition bar — how a whole of N splits into deliberate parts
+# ---------------------------------------------------------------------------
+
+@dataclass
+class Segment:
+    label: str
+    value: float
+    note: str = ""
+    emphasis: bool = False
+
+
+def composition(segments: list[Segment], *, total_label: str = "",
+                height: int = 330) -> str:
+    """One horizontal bar split into labelled parts, widths proportional.
+
+    Emphasis follows the deck rule (colour one thing, grey the rest): segments
+    marked emphasis take the categorical pair in order, everything else stays
+    muted. Labels alternate above/below the bar so adjacent ones never collide,
+    and every part carries its value directly — these are video frames, so
+    nothing may hide in a hover layer."""
+    pad_l, pad_r = 96, 96
+    bar_h = 74
+    bar_y = height / 2 - bar_h / 2
+    gap = 4
+    plot_w = W - pad_l - pad_r
+
+    total = sum(s.value for s in segments) or 1
+    out = [_open(height)]
+
+    accents = [S1, S2]
+    a = 0
+    x = float(pad_l)
+    for i, s in enumerate(segments):
+        seg_w = s.value / total * plot_w - gap
+        if s.emphasis:
+            fill = accents[a % 2]
+            a += 1
+        else:
+            fill = MUTED
+        out.append(f'<rect x="{x:.1f}" y="{bar_y:.1f}" width="{seg_w:.1f}" '
+                   f'height="{bar_h}" rx="4" fill="{fill}"/>')
+
+        cx = x + seg_w / 2
+        above = i % 2 == 0
+        ly = bar_y - 58 if above else bar_y + bar_h + 44
+        ny = ly + 32
+        out.append(_txt(cx, ly, f"{s.label} · {s.value:g}", size=25, fill=INK,
+                        weight=600, anchor="middle", tnum=True))
+        if s.note:
+            out.append(_txt(cx, ny, s.note, size=22, fill=INK_FAINT,
+                            anchor="middle"))
+        # tether label to its part, so ownership never has to be guessed
+        ty0, ty1 = (ly + 10, bar_y - 6) if above else (bar_y + bar_h + 6, ly - 24)
+        out.append(f'<line x1="{cx:.1f}" y1="{ty0:.1f}" x2="{cx:.1f}" '
+                   f'y2="{ty1:.1f}" stroke="{RULE}" stroke-width="1"/>')
+        x += seg_w + gap
+
+    if total_label:
+        out.append(_txt(W - pad_r, bar_y + bar_h + 44, total_label, size=22,
+                        fill=INK_FAINT, anchor="end"))
+
+    out.append("</svg>")
+    return "".join(out)
+
+
+# ---------------------------------------------------------------------------
 # sampling schematic — the course's central image
 # ---------------------------------------------------------------------------
 
@@ -294,8 +360,17 @@ def render(spec: dict) -> str:
                          threshold_label=spec.get("threshold_label", ""),
                          note=spec.get("note", ""))
 
+    if kind == "composition":
+        segments = [
+            Segment(label=s.get("label", ""), value=float(s.get("value", 0)),
+                    note=s.get("note", ""), emphasis=bool(s.get("emphasis")))
+            for s in spec.get("segments", [])
+        ]
+        return composition(segments, total_label=spec.get("total_label", ""))
+
     if kind == "sampling":
         return sampling()
 
     raise ValueError(
-        f"unknown figure kind {kind!r}. Known: dotplot, histogram, sampling")
+        f"unknown figure kind {kind!r}. "
+        f"Known: dotplot, histogram, composition, sampling")
