@@ -1,0 +1,199 @@
+1
+00:00:00,350 --> 00:00:03,306
+If you're here, I'd guess something like this happened.
+
+2
+00:00:03,306 --> 00:00:05,295
+An AI feature landed on your roadmap.
+
+3
+00:00:05,295 --> 00:00:08,090
+Maybe you asked for it, maybe it arrived from above.
+
+4
+00:00:08,090 --> 00:00:12,552
+And somewhere between the demo and the launch date you realised you had no reliable
+
+5
+00:00:12,552 --> 00:00:16,798
+way to tell whether the thing actually works, and that everyone in the room was
+
+6
+00:00:16,798 --> 00:00:18,465
+quietly waiting for you to say.
+
+7
+00:00:18,465 --> 00:00:20,507
+That's not a gap in your intelligence.
+
+8
+00:00:20,507 --> 00:00:21,905
+It's a gap in the toolkit.
+
+9
+00:00:21,905 --> 00:00:26,205
+The methods you were trained on assume software that behaves the same way twice.
+
+10
+00:00:26,205 --> 00:00:26,904
+This doesn't.
+
+11
+00:00:27,454 --> 00:00:31,922
+The résumé version is on screen if you want the specifics: years in AI product work,
+
+12
+00:00:31,922 --> 00:00:34,901
+a computing degree with distinction, a year at Stanford.
+
+13
+00:00:34,901 --> 00:00:39,051
+Read it once and move on, because that isn't actually the reason to trust what
+
+14
+00:00:39,051 --> 00:00:39,476
+follows.
+
+15
+00:00:39,476 --> 00:00:43,945
+Everything from here on is built to be checked, not taken on trust: a golden set you
+
+16
+00:00:43,945 --> 00:00:48,147
+can inspect, a pass rate you can recompute, a risk register you can argue with.
+
+17
+00:00:48,147 --> 00:00:52,137
+Judge the course the same way you're about to learn to judge an AI feature.
+
+18
+00:00:52,687 --> 00:00:54,110
+Here's the concrete change.
+
+19
+00:00:54,110 --> 00:00:58,274
+Right now, the honest version of your status update is "it seems to work well".
+
+20
+00:00:58,274 --> 00:01:02,490
+By the end of this course you'll be saying "ninety-four percent pass rate on our
+
+21
+00:01:02,490 --> 00:01:06,865
+golden set, three known failure modes, and here's the one I'd hold the launch for."
+
+22
+00:01:06,865 --> 00:01:10,765
+You'll settle quality arguments with a number everyone can go and look at.
+
+23
+00:01:10,765 --> 00:01:15,087
+You'll know what the feature costs per user before anyone writes code, rather than
+
+24
+00:01:15,087 --> 00:01:16,405
+when the invoice arrives.
+
+25
+00:01:16,405 --> 00:01:20,832
+And you'll have surfaced the legal and safety issues at kickoff, not in the week you
+
+26
+00:01:20,832 --> 00:01:21,886
+were hoping to ship.
+
+27
+00:01:22,436 --> 00:01:25,144
+Three commitments about how this course is built.
+
+28
+00:01:25,144 --> 00:01:26,471
+First, you build things.
+
+29
+00:01:26,471 --> 00:01:31,113
+There are twelve downloadable artifacts, and they're real work deliverables: a spec,
+
+30
+00:01:31,113 --> 00:01:33,711
+an eval harness, a cost model, a risk register.
+
+31
+00:01:33,711 --> 00:01:36,032
+You'll finish with a portfolio, not notes.
+
+32
+00:01:36,032 --> 00:01:39,348
+Second, I've kept this deliberately light on specific tools.
+
+33
+00:01:39,348 --> 00:01:40,951
+Tools churn every few months.
+
+34
+00:01:40,951 --> 00:01:41,946
+Judgement doesn't.
+
+35
+00:01:41,946 --> 00:01:46,091
+What you learn here will still be true after the next three model releases.
+
+36
+00:01:46,091 --> 00:01:48,026
+Third, I've left the trade-offs in.
+
+37
+00:01:48,026 --> 00:01:51,618
+Where this approach is expensive, or slow, or overkill, I say so.
+
+38
+00:01:51,618 --> 00:01:56,261
+You're going to have to defend these ideas to a skeptical engineer, and you can't do
+
+39
+00:01:56,261 --> 00:01:57,587
+that from a sales pitch.
+
+40
+00:01:58,137 --> 00:01:59,506
+One ask before we start.
+
+41
+00:01:59,506 --> 00:02:00,476
+Do the exercises.
+
+42
+00:02:00,476 --> 00:02:02,815
+I know that's what every instructor says.
+
+43
+00:02:02,815 --> 00:02:07,492
+But this material is skill, not information, and the difference between people who
+
+44
+00:02:07,492 --> 00:02:12,284
+get real value here and people who get a vocabulary refresh is entirely whether they
+
+45
+00:02:12,284 --> 00:02:13,653
+paused and did the work.
+
+46
+00:02:13,653 --> 00:02:18,331
+The exercise two lectures from now takes five minutes and is the one I'd fight you
+
+47
+00:02:18,331 --> 00:02:18,502
+on.
+
+48
+00:02:18,502 --> 00:02:19,186
+Do that one.
+
+49
+00:02:19,186 --> 00:02:23,750
+Next up: how to get through this efficiently, and what all twelve artifacts are.
+
+50
+00:02:23,750 --> 00:02:27,401
+Then we go straight into the idea this whole course is built on.

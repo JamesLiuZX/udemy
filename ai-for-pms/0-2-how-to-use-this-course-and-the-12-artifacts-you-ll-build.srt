@@ -1,0 +1,307 @@
+1
+00:00:00,350 --> 00:00:04,533
+There are three sensible ways through this, and picking one deliberately beats
+
+2
+00:00:04,533 --> 00:00:05,927
+drifting through in order.
+
+3
+00:00:05,927 --> 00:00:10,003
+The full build is every section, in order, with the exercises actually done.
+
+4
+00:00:10,003 --> 00:00:14,454
+That's about twelve hours including the work, and it's what I'd recommend if the AI
+
+5
+00:00:14,454 --> 00:00:16,331
+part of your role is going to grow.
+
+6
+00:00:16,331 --> 00:00:19,870
+The ship-it path is for people with a feature in flight right now.
+
+7
+00:00:19,870 --> 00:00:22,230
+Sections zero, three, four, seven and eight.
+
+8
+00:00:22,230 --> 00:00:26,520
+That's spec, evaluation, cost and risk: everything you need to get something out
+
+9
+00:00:26,520 --> 00:00:28,129
+safely, and nothing you don't.
+
+10
+00:00:28,129 --> 00:00:31,132
+The credibility path is sections one, two, five and six.
+
+11
+00:00:31,132 --> 00:00:35,529
+Take that if your immediate problem is holding your own in technical conversations
+
+12
+00:00:35,529 --> 00:00:37,889
+rather than shipping something this quarter.
+
+13
+00:00:37,889 --> 00:00:42,286
+Which of the three sounds like you right now: the full build, the ship-it path, or
+
+14
+00:00:42,286 --> 00:00:43,413
+the credibility path?
+
+15
+00:00:43,413 --> 00:00:47,703
+Pick honestly, not aspirationally, because the route you'd like to have time for
+
+16
+00:00:47,703 --> 00:00:49,687
+isn't always the one you actually do.
+
+17
+00:00:49,687 --> 00:00:51,725
+You can always come back for the rest.
+
+18
+00:00:51,725 --> 00:00:56,176
+Nothing later depends on you having watched everything earlier, with one exception.
+
+19
+00:00:56,176 --> 00:00:57,302
+Don't skip Section 4.
+
+20
+00:00:57,302 --> 00:00:58,535
+Everything leans on it.
+
+21
+00:00:59,085 --> 00:01:03,021
+Before the artifacts, here's the shape of the whole course on one screen.
+
+22
+00:01:03,021 --> 00:01:05,555
+You start at Section zero, which you're in now.
+
+23
+00:01:05,555 --> 00:01:09,113
+Sections one and two give you the mental model and the vocabulary.
+
+24
+00:01:09,113 --> 00:01:11,377
+Section three is where you write the spec.
+
+25
+00:01:11,377 --> 00:01:14,019
+Then look at Section four, sitting in the middle.
+
+26
+00:01:14,019 --> 00:01:15,960
+That's evaluation, and it's the hub.
+
+27
+00:01:15,960 --> 00:01:19,787
+Everything to the right of it consumes the measurement you build there.
+
+28
+00:01:19,787 --> 00:01:22,375
+RAG and agents in five and six are judged by it.
+
+29
+00:01:22,375 --> 00:01:24,154
+The cost work in seven prices it.
+
+30
+00:01:24,154 --> 00:01:26,257
+The risk work in eight stress-tests it.
+
+31
+00:01:26,257 --> 00:01:28,413
+The analytics in nine and ten report it.
+
+32
+00:01:28,413 --> 00:01:30,677
+That's why I said don't skip Section four.
+
+33
+00:01:30,677 --> 00:01:34,343
+It isn't the hardest section, but it's the one the others plug into.
+
+34
+00:01:34,893 --> 00:01:37,716
+Here's the first half of what you'll walk out with.
+
+35
+00:01:37,716 --> 00:01:41,424
+The PRD template is the one most people tell me changed their week.
+
+36
+00:01:41,424 --> 00:01:45,575
+It's a spec format built for features that don't behave the same way twice.
+
+37
+00:01:45,575 --> 00:01:50,169
+The golden dataset spec and the rubric are how you pick the fifty cases that decide
+
+38
+00:01:50,169 --> 00:01:54,043
+your launch, and how you get two reviewers to score them the same way.
+
+39
+00:01:54,043 --> 00:01:56,146
+Then two versions of the eval harness.
+
+40
+00:01:56,146 --> 00:02:00,740
+One is a spreadsheet, so you can build it this afternoon without asking engineering
+
+41
+00:02:00,740 --> 00:02:01,459
+for anything.
+
+42
+00:02:01,459 --> 00:02:05,389
+The other is about thirty lines of Python, so the same measurement runs
+
+43
+00:02:05,389 --> 00:02:07,049
+automatically on every change.
+
+44
+00:02:07,049 --> 00:02:08,986
+Take whichever fits your situation.
+
+45
+00:02:08,986 --> 00:02:10,813
+Most people start with the sheet.
+
+46
+00:02:11,363 --> 00:02:15,730
+The second half is the part that tends to get people promoted, because it's the part
+
+47
+00:02:15,730 --> 00:02:17,810
+almost nobody else on the team is doing.
+
+48
+00:02:17,810 --> 00:02:21,969
+The retrieval scorecard tells you why answers are wrong, not just that they are,
+
+49
+00:02:21,969 --> 00:02:24,517
+which turns a vague complaint into a fixable one.
+
+50
+00:02:24,517 --> 00:02:28,884
+The agent scoping sheet stops you committing to automation that the maths says can't
+
+51
+00:02:28,884 --> 00:02:29,144
+work.
+
+52
+00:02:29,144 --> 00:02:33,511
+The unit economics model answers the question your finance team will eventually ask,
+
+53
+00:02:33,511 --> 00:02:36,163
+in the meeting where you don't want to be guessing.
+
+54
+00:02:36,163 --> 00:02:39,022
+The risk register is the one that saves whole quarters.
+
+55
+00:02:39,022 --> 00:02:41,726
+Bring it to legal at kickoff and you get conditions.
+
+56
+00:02:41,726 --> 00:02:43,961
+Bring it in launch week and you get a hold.
+
+57
+00:02:43,961 --> 00:02:48,277
+And the metric tree is the one you'll actually keep using longest, because it isn't
+
+58
+00:02:48,277 --> 00:02:49,785
+a pre-launch document at all.
+
+59
+00:02:49,785 --> 00:02:53,840
+One North Star and a couple of branches is what tells you honestly whether the
+
+60
+00:02:53,840 --> 00:02:57,479
+feature earned its keep six months in, not just on the day it shipped.
+
+61
+00:02:58,029 --> 00:02:59,191
+Two practical things.
+
+62
+00:02:59,191 --> 00:03:02,733
+Captions are on every lecture, so if you're a skimmer, use them.
+
+63
+00:03:02,733 --> 00:03:05,499
+More importantly, bring one real feature with you.
+
+64
+00:03:05,499 --> 00:03:09,926
+Every exercise in this course is written so you can do it against something from
+
+65
+00:03:09,926 --> 00:03:12,029
+your own job instead of a toy example.
+
+66
+00:03:12,029 --> 00:03:16,400
+Pick the AI feature you're most unsure about right now, keep it in mind, and by
+
+67
+00:03:16,400 --> 00:03:20,937
+Section 8 you'll have specced, measured, costed and risk-assessed it without doing
+
+68
+00:03:20,937 --> 00:03:21,767
+any extra work.
+
+69
+00:03:21,767 --> 00:03:26,249
+If you genuinely don't have one, use the support-summarisation case from the next
+
+70
+00:03:26,249 --> 00:03:26,692
+lecture.
+
+71
+00:03:26,692 --> 00:03:28,850
+It runs all the way through the course.
+
+72
+00:03:29,400 --> 00:03:29,734
+Right.
+
+73
+00:03:29,734 --> 00:03:31,071
+That's the housekeeping.
+
+74
+00:03:31,071 --> 00:03:33,633
+The next lecture is the one that matters most.
+
+75
+00:03:33,633 --> 00:03:37,923
+It's six minutes, it's a single idea, and everything else in this course is a
+
+76
+00:03:37,923 --> 00:03:38,925
+consequence of it.
+
+77
+00:03:38,925 --> 00:03:39,427
+Let's go.
