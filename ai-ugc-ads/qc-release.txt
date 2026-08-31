@@ -1,0 +1,103 @@
+
+  built total: 0.36h across 5 lectures
+
+  WARN  [0.1] slide 2: 717 chars of slide text — dense.
+  WARN  [7.0] estimated 0.9 min — very short for a lecture.
+  WARN  [8.0] estimated 0.9 min — very short for a lecture.
+  WARN  [10.0] estimated 0.8 min — very short for a lecture.
+  FAIL  [0.1] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [0.2] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [0.3] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [0.4] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [1.0] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [1.1] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [1.2] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [1.3] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [1.4] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [1.5] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [1.6] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [2.0] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [2.1] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [2.2] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [2.3] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [2.4] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [2.5] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [2.6] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [2.7] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [3.0] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [3.1] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [3.1] has 2 open [SCREENSHOT-NEEDED] marker(s). Capture the annotated screenshot(s) and replace the marker(s) before release (docs/09-visual-standard.md §2).
+  FAIL  [3.2] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [3.2] has 4 open [SCREENSHOT-NEEDED] marker(s). Capture the annotated screenshot(s) and replace the marker(s) before release (docs/09-visual-standard.md §2).
+  FAIL  [3.3] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [3.4] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [3.5] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [3.6] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [3.7] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [4.0] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [4.1] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [4.1] has 3 open [SCREENSHOT-NEEDED] marker(s). Capture the annotated screenshot(s) and replace the marker(s) before release (docs/09-visual-standard.md §2).
+  FAIL  [4.2] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [4.3] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [4.3] has 4 open [SCREENSHOT-NEEDED] marker(s). Capture the annotated screenshot(s) and replace the marker(s) before release (docs/09-visual-standard.md §2).
+  FAIL  [4.4] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [4.5] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [4.6] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [4.7] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [5.0] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [5.1] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [5.1] has 2 open [SCREENSHOT-NEEDED] marker(s). Capture the annotated screenshot(s) and replace the marker(s) before release (docs/09-visual-standard.md §2).
+  FAIL  [5.2] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [5.2] has 3 open [SCREENSHOT-NEEDED] marker(s). Capture the annotated screenshot(s) and replace the marker(s) before release (docs/09-visual-standard.md §2).
+  FAIL  [5.3] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [5.4] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [5.5] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [5.5] has 4 open [SCREENSHOT-NEEDED] marker(s). Capture the annotated screenshot(s) and replace the marker(s) before release (docs/09-visual-standard.md §2).
+  FAIL  [5.6] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [6.0] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [6.1] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [6.2] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [6.3] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [6.3] has 4 open [SCREENSHOT-NEEDED] marker(s). Capture the annotated screenshot(s) and replace the marker(s) before release (docs/09-visual-standard.md §2).
+  FAIL  [6.4] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [6.4] has 2 open [SCREENSHOT-NEEDED] marker(s). Capture the annotated screenshot(s) and replace the marker(s) before release (docs/09-visual-standard.md §2).
+  FAIL  [6.5] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [6.6] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [6.7] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [7.0] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [7.1] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [7.2] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [7.3] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [7.4] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [7.5] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [7.6] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [8.0] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [8.1] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [8.2] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [8.3] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [8.4] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [8.5] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [8.6] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [9.0] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [9.1] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [9.2] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [9.2] has 2 open [SCREENSHOT-NEEDED] marker(s). Capture the annotated screenshot(s) and replace the marker(s) before release (docs/09-visual-standard.md §2).
+  FAIL  [9.3] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [9.4] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [9.5] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [9.6] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [10.0] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [10.1] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [10.2] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [10.3] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [10.4] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [11.1] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [11.2] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [11.3] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [11.4] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  [11.5] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
+  FAIL  21.5 min of video; Udemy requires ≥30 min.
+
+  92 fail · 4 warn
+  NOT ready to submit.
+

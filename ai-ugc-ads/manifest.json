@@ -1,0 +1,82 @@
+{
+  "course": "ai-ugc-ads",
+  "title": "AI UGC & Video Ads: Generate, Test & Scale Winning Creatives",
+  "provider": "kokoro",
+  "lectures": [
+    {
+      "id": "11.1",
+      "title": "Capstone brief: one product, one sprint",
+      "slug": "11-1-capstone-brief-one-product-one-sprint",
+      "video": "dist/11-1-capstone-brief-one-product-one-sprint.mp4",
+      "srt": "dist/11-1-capstone-brief-one-product-one-sprint.srt",
+      "slides": 4,
+      "duration": 226.486,
+      "width": 1920,
+      "height": 1080,
+      "channels": 2,
+      "voice": "tts",
+      "verified": false,
+      "words": 684
+    },
+    {
+      "id": "11.2",
+      "title": "Worked solution, part 1: brief to creative set",
+      "slug": "11-2-worked-solution-part-1-brief-to-creative-set",
+      "video": "dist/11-2-worked-solution-part-1-brief-to-creative-set.mp4",
+      "srt": "dist/11-2-worked-solution-part-1-brief-to-creative-set.srt",
+      "slides": 6,
+      "duration": 401.24,
+      "width": 1920,
+      "height": 1080,
+      "channels": 2,
+      "voice": "tts",
+      "verified": false,
+      "words": 1184
+    },
+    {
+      "id": "11.3",
+      "title": "Worked solution, part 2: test, read, decide",
+      "slug": "11-3-worked-solution-part-2-test-read-decide",
+      "video": "dist/11-3-worked-solution-part-2-test-read-decide.mp4",
+      "srt": "dist/11-3-worked-solution-part-2-test-read-decide.srt",
+      "slides": 6,
+      "duration": 395.124,
+      "width": 1920,
+      "height": 1080,
+      "channels": 2,
+      "voice": "tts",
+      "verified": false,
+      "words": 1166
+    },
+    {
+      "id": "11.4",
+      "title": "Self-assessment rubric",
+      "slug": "11-4-self-assessment-rubric",
+      "video": "dist/11-4-self-assessment-rubric.mp4",
+      "srt": "dist/11-4-self-assessment-rubric.srt",
+      "slides": 4,
+      "duration": 171.629,
+      "width": 1920,
+      "height": 1080,
+      "channels": 2,
+      "voice": "tts",
+      "verified": false,
+      "words": 534
+    },
+    {
+      "id": "11.5",
+      "title": "Where to go next, and thank you",
+      "slug": "11-5-where-to-go-next-and-thank-you",
+      "video": "dist/11-5-where-to-go-next-and-thank-you.mp4",
+      "srt": "dist/11-5-where-to-go-next-and-thank-you.srt",
+      "slides": 4,
+      "duration": 92.72,
+      "width": 1920,
+      "height": 1080,
+      "channels": 2,
+      "voice": "tts",
+      "verified": false,
+      "words": 296
+    }
+  ]
+}
