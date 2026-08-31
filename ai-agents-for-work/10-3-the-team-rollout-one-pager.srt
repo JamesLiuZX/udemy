@@ -1,0 +1,175 @@
+1
+00:00:00,350 --> 00:00:03,173
+This is the document Priya actually handed Marcus.
+
+2
+00:00:03,173 --> 00:00:04,415
+Open the C10 template.
+
+3
+00:00:04,415 --> 00:00:08,705
+Six short sections: what this is, the numbers from C09, the safeguards named
+
+4
+00:00:08,705 --> 00:00:13,278
+plainly, what you are asking for, what you are explicitly not asking for, and, if
+
+5
+00:00:13,278 --> 00:00:16,269
+colleagues are involved, what they commit to as well.
+
+6
+00:00:16,269 --> 00:00:20,278
+Read the six as one arc and you can hear the whole course in miniature.
+
+7
+00:00:20,278 --> 00:00:23,665
+What this is: the job description, compressed to a sentence.
+
+8
+00:00:23,665 --> 00:00:25,810
+The numbers: Section 9, counted clean.
+
+9
+00:00:25,810 --> 00:00:28,689
+The safeguards: Sections 6 and 8, in plain clothes.
+
+10
+00:00:28,689 --> 00:00:32,189
+The ask and the not-ask: Section 9.4's limits, turned outward.
+
+11
+00:00:32,189 --> 00:00:35,237
+The commitments: Section 7's trials, made contractual.
+
+12
+00:00:35,237 --> 00:00:39,923
+Nothing on the page is new, which is why filling it in takes twenty minutes and not
+
+13
+00:00:39,923 --> 00:00:43,874
+a weekend: you are transcribing work you already did, into the order a
+
+14
+00:00:43,874 --> 00:00:45,229
+decision-maker reads in.
+
+15
+00:00:45,779 --> 00:00:50,134
+Naming the boundary is what turns a request into something a careful manager can
+
+16
+00:00:50,134 --> 00:00:54,544
+approve quickly, because it closes off the worry they would otherwise have to ask
+
+17
+00:00:54,544 --> 00:00:55,470
+about themselves.
+
+18
+00:00:55,470 --> 00:01:00,042
+You already know why this matters: it is Section 9.4's never-automate list, restated
+
+19
+00:01:00,042 --> 00:01:01,295
+for an audience of one.
+
+20
+00:01:01,295 --> 00:01:05,105
+The section works because approvals are really priced on the downside.
+
+21
+00:01:05,105 --> 00:01:09,460
+Every manager reading a request is privately extending it: if I say yes to this,
+
+22
+00:01:09,460 --> 00:01:11,039
+what am I saying yes to next?
+
+23
+00:01:11,039 --> 00:01:15,449
+The not-asking line answers that unasked question in writing, which collapses the
+
+24
+00:01:15,449 --> 00:01:17,844
+imagined slope back into the actual request.
+
+25
+00:01:17,844 --> 00:01:22,417
+Write yours for your own job: not asking to change who approves invoices, not asking
+
+26
+00:01:22,417 --> 00:01:26,663
+to let anything send without review, whatever the escalation your reader would
+
+27
+00:01:26,663 --> 00:01:27,425
+silently fear.
+
+28
+00:01:27,425 --> 00:01:31,998
+If you cannot think of one, you have not imagined being your manager for long enough
+
+29
+00:01:31,998 --> 00:01:32,216
+yet.
+
+30
+00:01:32,766 --> 00:01:37,302
+That first line matters more than it looks, and the next lecture tells you exactly
+
+31
+00:01:37,302 --> 00:01:41,672
+why: what happened the first week someone other than Priya actually used one of
+
+32
+00:01:41,672 --> 00:01:42,557
+these templates.
+
+33
+00:01:42,557 --> 00:01:45,931
+Resist the urge to soften it for colleagues who seem capable.
+
+34
+00:01:45,931 --> 00:01:48,697
+Capability was never the variable the trial tests.
+
+35
+00:01:48,697 --> 00:01:53,011
+Their world is, and nobody's capability has ever made their world match yours.
+
+36
+00:01:53,561 --> 00:01:56,013
+The "this week" is not motivational garnish.
+
+37
+00:01:56,013 --> 00:02:00,303
+Your C09 numbers are at their most defensible right now, while the weeks they
+
+38
+00:02:00,303 --> 00:02:04,927
+describe are still recent enough to answer questions about, and your own command of
+
+39
+00:02:04,927 --> 00:02:08,437
+the material fades faster than you expect once the course ends.
+
+40
+00:02:08,437 --> 00:02:12,838
+A one-pager delivered this week is a status update from someone on top of their
+
+41
+00:02:12,838 --> 00:02:13,117
+work.
+
+42
+00:02:13,117 --> 00:02:17,017
+The same page in three months is a proposal you have to warm up again.
+
+43
+00:02:17,017 --> 00:02:21,641
+You now have every artifact this course builds toward: ten documents, on your desk.
+
+44
+00:02:21,641 --> 00:02:25,875
+Next lecture tells you what happened the first time someone else opened one.

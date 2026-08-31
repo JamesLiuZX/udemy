@@ -1,0 +1,171 @@
+1
+00:00:00,350 --> 00:00:04,751
+You know how n8n works, what a system prompt is, what draft-only means at the node
+
+2
+00:00:04,751 --> 00:00:05,073
+level.
+
+3
+00:00:05,073 --> 00:00:07,542
+None of that belongs in front of your manager.
+
+4
+00:00:07,542 --> 00:00:11,782
+They need three things: what it does, what it's worth, and what could go wrong.
+
+5
+00:00:11,782 --> 00:00:16,291
+Everything else is for you, not for them, however satisfying it would be to explain.
+
+6
+00:00:16,291 --> 00:00:19,028
+Why does "how" actively hurt, rather than just pad?
+
+7
+00:00:19,028 --> 00:00:23,268
+Because a decision-maker cannot verify it, and unverifiable detail creates work
+
+8
+00:00:23,268 --> 00:00:24,449
+instead of confidence.
+
+9
+00:00:24,449 --> 00:00:28,743
+Every node name on the page is a thing Marcus cannot assess, which quietly turns
+
+10
+00:00:28,743 --> 00:00:33,090
+into a question he has to either ask or swallow, and a page that makes its reader
+
+11
+00:00:33,090 --> 00:00:35,505
+feel unqualified gets deferred, not approved.
+
+12
+00:00:35,505 --> 00:00:39,799
+Deferral is how small good ideas die: not rejected, just moved to a meeting that
+
+13
+00:00:39,799 --> 00:00:40,873
+never quite happens.
+
+14
+00:00:40,873 --> 00:00:42,375
+The cut is not dumbing down.
+
+15
+00:00:42,375 --> 00:00:46,776
+It is moving the conversation onto the only ground where the reader is the expert:
+
+16
+00:00:46,776 --> 00:00:48,387
+whether the trade is worth it.
+
+17
+00:00:48,937 --> 00:00:53,559
+This is a genuinely hard cut for anyone who just spent ten sections learning how the
+
+18
+00:00:53,559 --> 00:00:55,210
+machinery works, you included.
+
+19
+00:00:55,210 --> 00:00:59,668
+The instinct to explain it is exactly the instinct a one-pager has to resist, and
+
+20
+00:00:59,668 --> 00:01:04,180
+the consolation is real: everything you cut still exists, in your notes, ready for
+
+21
+00:01:04,180 --> 00:01:07,262
+the one meeting in ten where somebody actually asks how.
+
+22
+00:01:07,812 --> 00:01:09,068
+That is the whole test.
+
+23
+00:01:09,068 --> 00:01:13,328
+Does this sentence answer what it does, what it saved, or what could go wrong?
+
+24
+00:01:13,328 --> 00:01:17,752
+If it does not do one of those three things, it belongs in your own notes, not on
+
+25
+00:01:17,752 --> 00:01:21,630
+the page you actually hand over to someone deciding whether to say yes.
+
+26
+00:01:21,630 --> 00:01:24,416
+Run two real sentences through it to feel the edge.
+
+27
+00:01:24,416 --> 00:01:29,004
+"The agent uses a Switch node to route on the model's verdict": answers how, cut it,
+
+28
+00:01:29,004 --> 00:01:30,533
+however proud of it you are.
+
+29
+00:01:30,533 --> 00:01:34,793
+"If it misjudges an email, the worst case is a flag I disagree with at review,
+
+30
+00:01:34,793 --> 00:01:39,108
+nothing reaches a client": answers what could go wrong, and stays, jargon-free,
+
+31
+00:01:39,108 --> 00:01:40,146
+exactly as written.
+
+32
+00:01:40,146 --> 00:01:44,734
+Notice the second sentence is actually the more technical achievement, wearing plain
+
+33
+00:01:44,734 --> 00:01:45,171
+clothes.
+
+34
+00:01:45,171 --> 00:01:47,465
+That is the register the whole page wants.
+
+35
+00:01:48,015 --> 00:01:51,183
+The two checks in that list earn their place differently.
+
+36
+00:01:51,183 --> 00:01:55,797
+The ninety second read-aloud is a length gate that cannot be argued with, because a
+
+37
+00:01:55,797 --> 00:02:00,132
+busy reader gives you about that long before deciding whether to keep reading.
+
+38
+00:02:00,132 --> 00:02:04,635
+The naive-reader test catches the subtler failure: words you no longer notice are
+
+39
+00:02:04,635 --> 00:02:08,192
+jargon, because ten sections of this course made them furniture.
+
+40
+00:02:08,192 --> 00:02:12,806
+Whatever your test reader stumbles on, the stumble is the edit list, delivered free
+
+41
+00:02:12,806 --> 00:02:15,919
+by the one reviewer who cannot be fooled by familiarity.
+
+42
+00:02:15,919 --> 00:02:20,532
+Next lecture is where you actually fill the page in, using C10 and your own numbers
+
+43
+00:02:20,532 --> 00:02:21,033
+from C09.
