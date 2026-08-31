@@ -1,0 +1,423 @@
+1
+00:00:00,350 --> 00:00:05,085
+Every job description in this course has opened the same way: one sentence stating
+
+2
+00:00:05,085 --> 00:00:06,067
+the task plainly.
+
+3
+00:00:06,067 --> 00:00:07,568
+This one keeps that habit.
+
+4
+00:00:07,568 --> 00:00:11,842
+The task is to work out which of three standard renewal documents, a stock
+
+5
+00:00:11,842 --> 00:00:16,346
+valuation, a fire safety certificate, a signed renewal form, a client is still
+
+6
+00:00:16,346 --> 00:00:21,139
+missing as their renewal date closes in, and say so before anyone has to go looking
+
+7
+00:00:21,139 --> 00:00:22,467
+for the answer by hand.
+
+8
+00:00:22,467 --> 00:00:23,738
+That is the whole job.
+
+9
+00:00:23,738 --> 00:00:28,473
+What follows is the same six steps from 11.1, run once more end to end, so you can
+
+10
+00:00:28,473 --> 00:00:32,457
+watch the method work on something new before you run it on your own.
+
+11
+00:00:32,457 --> 00:00:36,731
+Nothing about this build is more advanced than what you have already done.
+
+12
+00:00:36,731 --> 00:00:41,235
+It is the same habits, aimed one more time at Priya's paperwork instead of her
+
+13
+00:00:41,235 --> 00:00:41,581
+inbox.
+
+14
+00:00:42,131 --> 00:00:46,892
+Start with the sentence you always start with, because Section 1.4's discipline does
+
+15
+00:00:46,892 --> 00:00:49,499
+not get a pass just for being a demonstration.
+
+16
+00:00:49,499 --> 00:00:51,709
+Notice the verb: works out, not chases.
+
+17
+00:00:51,709 --> 00:00:56,186
+That single word rules out half of what this build could quietly tempt you into
+
+18
+00:00:56,186 --> 00:00:59,870
+adding, and it is worth reading back before you touch n8n at all.
+
+19
+00:00:59,870 --> 00:01:01,570
+Scope stays narrow on purpose.
+
+20
+00:01:01,570 --> 00:01:06,104
+One sheet, the pipeline you already met in Section 5, carrying three new columns
+
+21
+00:01:06,104 --> 00:01:08,371
+Priya added herself for document status.
+
+22
+00:01:08,371 --> 00:01:13,075
+Nothing wider, and nothing written back to it: this agent reads, it never edits the
+
+23
+00:01:13,075 --> 00:01:14,775
+source of truth it depends on.
+
+24
+00:01:14,775 --> 00:01:19,479
+Action follows straight from that: read only, output only, so there is nothing here
+
+25
+00:01:19,479 --> 00:01:21,123
+for a mistaken click to send.
+
+26
+00:01:21,673 --> 00:01:25,126
+The ceiling is where it is worth slowing down, same as always.
+
+27
+00:01:25,126 --> 00:01:27,744
+This agent never decides a document has landed.
+
+28
+00:01:27,744 --> 00:01:32,088
+It only repeats what the column already says, because a checklist that quietly
+
+29
+00:01:32,088 --> 00:01:34,316
+starts guessing stops being a checklist.
+
+30
+00:01:34,316 --> 00:01:38,939
+And it never emails a client to chase a missing signature, because that job already
+
+31
+00:01:38,939 --> 00:01:43,283
+belongs to Agent 4, built with its own draft-only guardrail back in Section 6.
+
+32
+00:01:43,283 --> 00:01:47,739
+Two agents quietly doing the same job with two different safety records is worse
+
+33
+00:01:47,739 --> 00:01:52,417
+than one agent doing it properly, and that is reason enough for you to leave chasing
+
+34
+00:01:52,417 --> 00:01:53,809
+out of this one entirely.
+
+35
+00:01:53,809 --> 00:01:54,812
+One week on trial.
+
+36
+00:01:54,812 --> 00:01:59,490
+Every flagged row checked by eye each morning against the sheet itself: short enough
+
+37
+00:01:59,490 --> 00:02:03,946
+to actually happen, long enough to catch a pattern rather than a fluke, the same
+
+38
+00:02:03,946 --> 00:02:06,787
+balance every trial task in this course has struck.
+
+39
+00:02:07,337 --> 00:02:11,818
+Add a Schedule Trigger first, set to run every morning rather than Agent 3's
+
+40
+00:02:11,818 --> 00:02:12,939
+once-a-week rhythm.
+
+41
+00:02:12,939 --> 00:02:17,656
+Documents shift daily as a renewal date closes in, and a Monday-only check would
+
+42
+00:02:17,656 --> 00:02:19,602
+miss most of the week's movement.
+
+43
+00:02:19,602 --> 00:02:24,143
+After it, add a Google Sheets node, operation Get Row(s), pointed at the same
+
+44
+00:02:24,143 --> 00:02:26,148
+renewal pipeline from Section 5.2.
+
+45
+00:02:26,148 --> 00:02:29,509
+The only real change is what is sitting in the sheet now.
+
+46
+00:02:29,509 --> 00:02:34,344
+Alongside Client, Premium, Renewal Date and Status sit three more columns, one for
+
+47
+00:02:34,344 --> 00:02:39,298
+each document, each one either blank or marked Received the moment Priya's assistant
+
+48
+00:02:39,298 --> 00:02:39,769
+logs it.
+
+49
+00:02:39,769 --> 00:02:44,723
+Pin a handful of rows here the way Section 5.2 did, so you can see real data flowing
+
+50
+00:02:44,723 --> 00:02:46,728
+before you write a word of prompt.
+
+51
+00:02:46,728 --> 00:02:51,681
+Attach an AI Agent node after the Sheets node, model connected the same way as every
+
+52
+00:02:51,681 --> 00:02:52,624
+build before it.
+
+53
+00:02:52,624 --> 00:02:57,401
+The Prompt field hands the model every row the sheet just read, seven columns per
+
+54
+00:02:57,401 --> 00:02:59,347
+client, nothing filtered out yet.
+
+55
+00:02:59,347 --> 00:03:04,300
+What happens to that data next is entirely down to one paragraph you write yourself,
+
+56
+00:03:04,300 --> 00:03:06,482
+and that paragraph is the next slide.
+
+57
+00:03:07,032 --> 00:03:09,684
+Look at what that paragraph is actually doing.
+
+58
+00:03:09,684 --> 00:03:11,241
+One sentence sets the role.
+
+59
+00:03:11,241 --> 00:03:14,124
+One sentence names exactly which columns to trust.
+
+60
+00:03:14,124 --> 00:03:18,736
+One sentence sets the window, fourteen days, not fifty, not one: a number chosen
+
+61
+00:03:18,736 --> 00:03:23,406
+because it gives Priya enough runway to actually chase something before a renewal
+
+62
+00:03:23,406 --> 00:03:23,810
+lapses.
+
+63
+00:03:23,810 --> 00:03:28,307
+And the last sentence is the ceiling from the job description, restated in the
+
+64
+00:03:28,307 --> 00:03:32,804
+model's own instructions rather than left to sit unused on a page nobody opens
+
+65
+00:03:32,804 --> 00:03:33,150
+again.
+
+66
+00:03:33,150 --> 00:03:35,572
+That repetition is deliberate, not sloppy.
+
+67
+00:03:35,572 --> 00:03:40,415
+A ceiling written once in C05 and never mentioned again is a ceiling the model never
+
+68
+00:03:40,415 --> 00:03:41,280
+actually reads.
+
+69
+00:03:41,280 --> 00:03:45,835
+Say it twice: once for the human filing the job description, once for the model
+
+70
+00:03:45,835 --> 00:03:46,642
+doing the job.
+
+71
+00:03:47,192 --> 00:03:52,208
+Add a Switch node after the agent, the same shape as Agent 1's build in Section 3.4.
+
+72
+00:03:52,208 --> 00:03:55,253
+One rule: does the answer contain the word MISSING.
+
+73
+00:03:55,253 --> 00:03:59,612
+Send that exit to a node named plainly, Flag for Priya, documents needed.
+
+74
+00:03:59,612 --> 00:04:04,329
+Everything else falls through to a second node named just as plainly, Clear, no
+
+75
+00:04:04,329 --> 00:04:05,165
+action needed.
+
+76
+00:04:05,165 --> 00:04:08,628
+Both are placeholders, exactly the way Section 3.4's were.
+
+77
+00:04:08,628 --> 00:04:13,584
+The job description says output only, so neither node sends anything or touches the
+
+78
+00:04:13,584 --> 00:04:13,942
+sheet.
+
+79
+00:04:13,942 --> 00:04:18,659
+They exist so a stranger reading this canvas in six months knows what each path
+
+80
+00:04:18,659 --> 00:04:23,436
+means without asking you, which is the whole point of naming a node the way this
+
+81
+00:04:23,436 --> 00:04:24,989
+course keeps insisting on.
+
+82
+00:04:25,539 --> 00:04:30,095
+Pin this against a test date of 1 September and run it once, live, before a single
+
+83
+00:04:30,095 --> 00:04:31,873
+real call goes anywhere near it.
+
+84
+00:04:31,873 --> 00:04:36,374
+Brightwell sits exactly fourteen days out, right at the edge of the window rather
+
+85
+00:04:36,374 --> 00:04:40,819
+than comfortably inside it, and the agent still catches its missing signed form.
+
+86
+00:04:40,819 --> 00:04:42,152
+That is not an accident.
+
+87
+00:04:42,152 --> 00:04:46,486
+A boundary case like that is exactly what pinned test data is for: proving the
+
+88
+00:04:46,486 --> 00:04:49,542
+ceiling holds at the edge, not just in the easy middle.
+
+89
+00:04:49,542 --> 00:04:54,043
+Fenwick sits eight days out with two documents still missing, and the agent names
+
+90
+00:04:54,043 --> 00:04:58,266
+both rather than saying something vague like "some documents outstanding." A
+
+91
+00:04:58,266 --> 00:05:02,767
+checklist that makes Priya go and look again has not actually saved her anything.
+
+92
+00:05:02,767 --> 00:05:05,267
+Oakfield is the row worth staring at longest.
+
+93
+00:05:05,267 --> 00:05:08,656
+All three documents blank, and the agent says nothing at all.
+
+94
+00:05:08,656 --> 00:05:08,879
+Why?
+
+95
+00:05:08,879 --> 00:05:13,490
+Because the thirtieth of September is more than fourteen days from the pinned date,
+
+96
+00:05:13,490 --> 00:05:17,936
+and the system message explicitly says to ignore anything further out than that.
+
+97
+00:05:17,936 --> 00:05:22,547
+An agent that flagged every blank cell regardless of date would bury Priya in noise
+
+98
+00:05:22,547 --> 00:05:24,048
+a month before it mattered.
+
+99
+00:05:24,048 --> 00:05:28,715
+One that only flags what is actually close is doing the job the description actually
+
+100
+00:05:28,715 --> 00:05:29,271
+asked for.
+
+101
+00:05:29,821 --> 00:05:34,313
+That is the whole build: six ordinary steps, and nothing here needed a technique you
+
+102
+00:05:34,313 --> 00:05:37,202
+had not already used somewhere earlier in this course.
+
+103
+00:05:37,202 --> 00:05:41,481
+The trigger is Section 5's, the judgement is Section 3's, the routing is Section
+
+104
+00:05:41,481 --> 00:05:43,887
+3.4's, borrowed and pointed at a new problem.
+
+105
+00:05:43,887 --> 00:05:48,273
+Next lecture picks up exactly here: a real week of trial, the guardrails worksheet
+
+106
+00:05:48,273 --> 00:05:52,285
+filled in honestly, and the actual number this agent would cost you to run.

@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:03,904
+This is the last section, and it is not a new lecture of ideas.
+
+2
+00:00:03,904 --> 00:00:08,643
+It is the moment you stop reading about Priya's week and run the exact method on one
+
+3
+00:00:08,643 --> 00:00:09,715
+task from your own.
+
+4
+00:00:09,715 --> 00:00:13,833
+One brief, one worked example, one rubric to check your own work against.

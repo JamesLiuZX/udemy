@@ -1,0 +1,351 @@
+1
+00:00:00,350 --> 00:00:04,888
+Pick up exactly where the last lecture left off: the checklist agent built, wired
+
+2
+00:00:04,888 --> 00:00:06,905
+and proven once against pinned data.
+
+3
+00:00:06,905 --> 00:00:11,498
+What has not happened yet is a real week watching it run against rows nobody chose
+
+4
+00:00:11,498 --> 00:00:12,563
+in advance for you.
+
+5
+00:00:12,563 --> 00:00:17,101
+That is this lecture: a proper trial, the guardrails worksheet answered honestly,
+
+6
+00:00:17,101 --> 00:00:20,574
+and the number this agent would actually cost to keep running.
+
+7
+00:00:21,124 --> 00:00:25,796
+Open the C06 template the same way you did back in Section 7.2, and fill it in
+
+8
+00:00:25,796 --> 00:00:30,827
+before a single real run happens: the same discipline as every trial in this course.
+
+9
+00:00:30,827 --> 00:00:35,619
+Test data was realistic, not invented: real column values Priya's own colleagues
+
+10
+00:00:35,619 --> 00:00:37,416
+actually type into that sheet.
+
+11
+00:00:37,416 --> 00:00:42,447
+The expected answer for each row was worked out by hand first, so the agent's answer
+
+12
+00:00:42,447 --> 00:00:45,801
+was something to check, not something to trust on sight.
+
+13
+00:00:45,801 --> 00:00:50,533
+And the run count was written down before the trial started: five mornings, one
+
+14
+00:00:50,533 --> 00:00:54,127
+working week, extended only if a miss ever went unexplained.
+
+15
+00:00:54,127 --> 00:00:59,098
+The one question C06 asks that overrides the checklist itself, what would this cost
+
+16
+00:00:59,098 --> 00:01:01,314
+unreviewed, got an honest answer too.
+
+17
+00:01:01,314 --> 00:01:06,226
+A missed document surfacing only at renewal is an awkward phone call, not a lapsed
+
+18
+00:01:06,226 --> 00:01:11,137
+policy, because Agent 4's chaser and Priya's own weekly report both still catch it
+
+19
+00:01:11,137 --> 00:01:12,515
+from a different angle.
+
+20
+00:01:12,515 --> 00:01:17,486
+That answer is what let a one-week trial feel like enough, rather than something to
+
+21
+00:01:17,486 --> 00:01:19,523
+extend indefinitely out of nerves.
+
+22
+00:01:20,073 --> 00:01:21,684
+Monday's run was the easy one.
+
+23
+00:01:21,684 --> 00:01:25,927
+Oakfield had drifted inside the fourteen-day window over the weekend, all three
+
+24
+00:01:25,927 --> 00:01:29,311
+documents still blank, and the agent flagged all three by name.
+
+25
+00:01:29,311 --> 00:01:33,179
+Priya checked it against the sheet herself and moved on inside a minute.
+
+26
+00:01:33,179 --> 00:01:35,649
+Wednesday told her something she already knew.
+
+27
+00:01:35,649 --> 00:01:40,054
+Brightwell's signed form had arrived by post that morning, someone had updated the
+
+28
+00:01:40,054 --> 00:01:42,686
+cell, and the agent correctly called it complete.
+
+29
+00:01:42,686 --> 00:01:47,198
+Two clean passes in a row is exactly the kind of run that tempts you to stop reading
+
+30
+00:01:47,198 --> 00:01:50,528
+closely, which is precisely why Section 7.1 warned against it.
+
+31
+00:01:50,528 --> 00:01:52,945
+Friday is the run worth actually stopping on.
+
+32
+00:01:52,945 --> 00:01:57,457
+Marlowe's fire safety certificate cell no longer read blank, it read "Sent, awaiting
+
+33
+00:01:57,457 --> 00:02:01,754
+review," because a colleague in compliance had logged that the client's copy had
+
+34
+00:02:01,754 --> 00:02:05,192
+arrived but had not yet been checked against the policy wording.
+
+35
+00:02:05,192 --> 00:02:09,542
+So why would not blank versus not blank catch this, the same check you just built
+
+36
+00:02:09,542 --> 00:02:10,617
+into your own agent?
+
+37
+00:02:10,617 --> 00:02:15,075
+Because that phrase is not blank, and the system message never asked whether a cell
+
+38
+00:02:15,075 --> 00:02:18,351
+said something specific, only whether it said nothing at all.
+
+39
+00:02:18,351 --> 00:02:22,057
+Anything non-blank read as received, so the agent called it complete.
+
+40
+00:02:22,057 --> 00:02:26,408
+Priya knew otherwise, because she had spoken to compliance that same morning, and
+
+41
+00:02:26,408 --> 00:02:29,309
+that is the only reason this one did not slip through.
+
+42
+00:02:29,859 --> 00:02:34,536
+Priya's fix was small, the same size as the fix Section 7.3 taught you to expect.
+
+43
+00:02:34,536 --> 00:02:39,271
+She added one sentence to the system message: only count a document as received if
+
+44
+00:02:39,271 --> 00:02:43,948
+the cell says exactly Received, and treat anything else, including a hopeful note
+
+45
+00:02:43,948 --> 00:02:46,893
+like "Sent, awaiting review," as still outstanding.
+
+46
+00:02:46,893 --> 00:02:49,145
+Notice what you do not see happen here.
+
+47
+00:02:49,145 --> 00:02:53,649
+Nobody rewrote the agent, nobody added a second model to check the first one's
+
+48
+00:02:53,649 --> 00:02:54,168
+homework.
+
+49
+00:02:54,168 --> 00:02:58,788
+One person, reading every output during a trial that was still actually running,
+
+50
+00:02:58,788 --> 00:03:03,407
+caught a gap between what a cell not being blank means and what a document being
+
+51
+00:03:03,407 --> 00:03:04,793
+received actually means.
+
+52
+00:03:04,793 --> 00:03:09,297
+That gap is easy for you to miss in the abstract and obvious the moment a real
+
+53
+00:03:09,297 --> 00:03:12,242
+compliance note lands in a real column of your own.
+
+54
+00:03:12,792 --> 00:03:17,119
+Fill this in honestly and sometimes the honest answer is that nothing changed.
+
+55
+00:03:17,119 --> 00:03:21,225
+This build did not need a new credential, a new permission, or a new human
+
+56
+00:03:21,225 --> 00:03:25,774
+checkpoint, because every piece of it was already something Agent 3 had earned the
+
+57
+00:03:25,774 --> 00:03:26,606
+right to touch.
+
+58
+00:03:26,606 --> 00:03:30,933
+Priya still opened the Google account's own consent screen and confirmed that,
+
+59
+00:03:30,933 --> 00:03:34,872
+rather than trusting her memory of what she had granted months earlier.
+
+60
+00:03:34,872 --> 00:03:39,477
+That single check is the reason you run the worksheet even when you are fairly sure
+
+61
+00:03:39,477 --> 00:03:44,082
+of the answer already: Section 8.3 asks the question by name instead of letting you
+
+62
+00:03:44,082 --> 00:03:46,301
+assume a scope stays put once it is set.
+
+63
+00:03:46,851 --> 00:03:51,581
+That estimate is exactly what it says it is: a plausible worked number for a fifth
+
+64
+00:03:51,581 --> 00:03:56,370
+agent inside a course, not a figure pulled off a real invoice, because there is not
+
+65
+00:03:56,370 --> 00:03:58,447
+a real invoice behind Priya's story.
+
+66
+00:03:58,447 --> 00:04:01,158
+The habit is the point, not the specific total.
+
+67
+00:04:01,158 --> 00:04:05,946
+Count the task it replaces, count the time you now spend checking instead of doing,
+
+68
+00:04:05,946 --> 00:04:10,562
+subtract one from the other, and write down what is left even when the number is
+
+69
+00:04:10,562 --> 00:04:10,966
+modest.
+
+70
+00:04:10,966 --> 00:04:15,465
+A number like that survives a follow-up question, which is the entire standard
+
+71
+00:04:15,465 --> 00:04:20,312
+Section 9.2 set: not the biggest figure defensible, the smallest one nobody can poke
+
+72
+00:04:20,312 --> 00:04:20,888
+a hole in.
+
+73
+00:04:20,888 --> 00:04:25,504
+Say the sentence Section 10.1 taught you to say: this agent saves roughly thirty
+
+74
+00:04:25,504 --> 00:04:30,119
+five minutes a week chasing paperwork by hand, costs nothing beyond what you are
+
+75
+00:04:30,119 --> 00:04:34,907
+already spending on the other four, and never marks a document received on its own,
+
+76
+00:04:34,907 --> 00:04:38,657
+so every flag still gets a human look before renewal day arrives.
+
+77
+00:04:39,207 --> 00:04:43,614
+This build went faster than Agent 1 did back in Section 3, and it should have.
+
+78
+00:04:43,614 --> 00:04:48,304
+Every decision inside it, the shape of the trigger, the wording of the ceiling, the
+
+79
+00:04:48,304 --> 00:04:52,937
+two-line system message, was already a decision made once before somewhere earlier
+
+80
+00:04:52,937 --> 00:04:53,785
+in this course.
+
+81
+00:04:53,785 --> 00:04:58,418
+What is different by the fifth agent is not the difficulty, it is the amount of it
+
+82
+00:04:58,418 --> 00:05:01,074
+you no longer have to think about from scratch.
+
+83
+00:05:01,074 --> 00:05:04,520
+What is worth noticing is what did not get faster: the trial.
+
+84
+00:05:04,520 --> 00:05:09,266
+Reading Friday's output carefully took exactly as much attention as reading the very
+
+85
+00:05:09,266 --> 00:05:13,843
+first one back in Section 3.5 did, and it should, because that is the one step in
+
+86
+00:05:13,843 --> 00:05:16,781
+this method that speed is never allowed to shortcut.
+
+87
+00:05:16,781 --> 00:05:21,527
+That is the actual lesson of watching this run twice: the mechanics get quicker, the
+
+88
+00:05:21,527 --> 00:05:22,657
+checking never does.
