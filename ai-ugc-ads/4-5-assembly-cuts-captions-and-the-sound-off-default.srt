@@ -1,0 +1,331 @@
+1
+00:00:00,350 --> 00:00:04,788
+Sam pulled up the assembled "hour eleven" cut on his phone, thumbed the volume to
+
+2
+00:00:04,788 --> 00:00:08,239
+zero, and scrolled past it the way a stranger on a break would.
+
+3
+00:00:08,239 --> 00:00:12,622
+Assembly, cutting the avatar clip, the product footage and the captions into one
+
+4
+00:00:12,622 --> 00:00:17,169
+finished ad, is what this lecture is about, and Sam's test is the one it all has to
+
+5
+00:00:17,169 --> 00:00:19,525
+pass: does the ad still work with no sound?
+
+6
+00:00:19,525 --> 00:00:23,360
+When did you last watch a short-form ad on mute, on purpose, to check?
+
+7
+00:00:23,360 --> 00:00:27,578
+Most people making these ads never have, which is exactly why so many of them
+
+8
+00:00:27,578 --> 00:00:31,797
+quietly fail the one condition most of their real audience is watching under.
+
+9
+00:00:31,797 --> 00:00:36,344
+Short-form video defaults to silent, autoplaying, on a phone in someone's hand in a
+
+10
+00:00:36,344 --> 00:00:37,056
+public place.
+
+11
+00:00:37,056 --> 00:00:41,604
+If your ad only works with audio, you've lost most of your audience before the hook
+
+12
+00:00:41,604 --> 00:00:42,206
+even lands.
+
+13
+00:00:42,206 --> 00:00:46,370
+Design for silence first, and sound becomes something extra your ad has, not
+
+14
+00:00:46,370 --> 00:00:47,685
+something it depends on.
+
+15
+00:00:47,685 --> 00:00:50,150
+This isn't a platform quirk you can wait out.
+
+16
+00:00:50,150 --> 00:00:54,478
+It's a fact about where your ad gets watched: on a bus, in a meeting, next to a
+
+17
+00:00:54,478 --> 00:00:55,245
+sleeping baby.
+
+18
+00:00:55,245 --> 00:00:59,299
+Nobody's turning the sound on to give your fifteen seconds a fair hearing.
+
+19
+00:00:59,299 --> 00:01:03,901
+They decide in the first second whether it's worth the tap, and that decision has to
+
+20
+00:01:03,901 --> 00:01:05,490
+survive on the picture alone.
+
+21
+00:01:06,040 --> 00:01:10,535
+Here's the assembly, and notice the captions run under every second of it, not just
+
+22
+00:01:10,535 --> 00:01:12,647
+the parts where the avatar's on screen.
+
+23
+00:01:12,647 --> 00:01:13,621
+That's deliberate.
+
+24
+00:01:13,621 --> 00:01:18,116
+During the product clip, there's no mouth for your viewer to read lips from, so the
+
+25
+00:01:18,116 --> 00:01:22,231
+caption is the only thing carrying the proof line at all if the sound's off.
+
+26
+00:01:22,231 --> 00:01:26,239
+And you write the caption text exact, word for word from the script, not a
+
+27
+00:01:26,239 --> 00:01:30,733
+paraphrase, for the same reason Section 3.4 wouldn't let you let a spec claim drift
+
+28
+00:01:30,733 --> 00:01:31,816
+in an image overlay.
+
+29
+00:01:31,816 --> 00:01:34,795
+A caption is still a claim, just delivered differently.
+
+30
+00:01:34,795 --> 00:01:39,343
+Notice the third line too: "Harlan · link in bio" stays on screen as on-screen text,
+
+31
+00:01:39,343 --> 00:01:41,455
+separate from the spoken caption track.
+
+32
+00:01:41,455 --> 00:01:42,647
+That's not decoration.
+
+33
+00:01:42,647 --> 00:01:47,195
+It's the one instruction a muted viewer actually needs to act, and it has to survive
+
+34
+00:01:47,195 --> 00:01:49,145
+being read at a glance, not studied.
+
+35
+00:01:49,145 --> 00:01:51,257
+Timing matters here as much as wording.
+
+36
+00:01:51,257 --> 00:01:55,806
+A caption that appears half a second after the word is spoken reads as sloppy, and a
+
+37
+00:01:55,806 --> 00:02:00,138
+caption that outruns the audio reads as a mismatch even when nobody can hear the
+
+38
+00:02:00,138 --> 00:02:00,354
+gap.
+
+39
+00:02:00,354 --> 00:02:04,795
+Cut your captions to the same timing marks you built the script against in Section
+
+40
+00:02:04,795 --> 00:02:08,044
+4.2, not to a rough guess at where a sentence probably ends.
+
+41
+00:02:08,594 --> 00:02:12,941
+There's a real difference between adding captions to a sound-dependent ad and
+
+42
+00:02:12,941 --> 00:02:17,232
+actually designing for silence, and it shows up fastest in the first second.
+
+43
+00:02:17,232 --> 00:02:21,749
+A silence-proof hook puts its key words on your screen immediately, not trailing
+
+44
+00:02:21,749 --> 00:02:23,838
+half a second behind the spoken line.
+
+45
+00:02:23,838 --> 00:02:28,355
+A silence-proof CTA holds its text on screen long enough for someone to actually
+
+46
+00:02:28,355 --> 00:02:31,855
+read it, not just long enough to flash by under a voice track.
+
+47
+00:02:31,855 --> 00:02:36,485
+Here's the test you can run on your own cut, every time: watch the whole ad muted.
+
+48
+00:02:36,485 --> 00:02:41,115
+If it still makes sense, you've actually designed it for how most people are going
+
+49
+00:02:41,115 --> 00:02:41,680
+to see it.
+
+50
+00:02:41,680 --> 00:02:46,027
+If you find yourself narrating along in your head to fill a gap, you haven't.
+
+51
+00:02:46,027 --> 00:02:48,850
+Run that test on Harlan's own cut and it holds up.
+
+52
+00:02:48,850 --> 00:02:53,593
+"Hour eleven" appears as caption text at the exact second it's spoken, and "Harlan ·
+
+53
+00:02:53,593 --> 00:02:58,222
+link in bio" sits on screen for the full four seconds of the CTA, not just a flash
+
+54
+00:02:58,222 --> 00:02:58,843
+at the end.
+
+55
+00:02:59,393 --> 00:03:01,807
+One honest check before this ships anywhere.
+
+56
+00:03:01,807 --> 00:03:06,249
+It's easy to treat captions as an afterthought, auto-generated and barely glanced
+
+57
+00:03:06,249 --> 00:03:09,924
+at, because they feel like a formatting detail rather than content.
+
+58
+00:03:09,924 --> 00:03:10,582
+They aren't.
+
+59
+00:03:10,582 --> 00:03:14,970
+If you let a caption misquote the mmHg spec, that's exactly the same risk as the
+
+60
+00:03:14,970 --> 00:03:19,358
+garbled overlay from Section 3.2, just delivered through a different part of the
+
+61
+00:03:19,358 --> 00:03:19,687
+frame.
+
+62
+00:03:19,687 --> 00:03:23,855
+Give it the same care you'd give any other line a customer might screenshot.
+
+63
+00:03:23,855 --> 00:03:27,475
+Auto-generated captions make this easier to get wrong, not harder.
+
+64
+00:03:27,475 --> 00:03:31,972
+A speech-to-text pass can mishear a number, drop a unit, or smooth an exact phrase
+
+65
+00:03:31,972 --> 00:03:35,263
+into something that sounds similar and isn't the same claim.
+
+66
+00:03:35,263 --> 00:03:39,761
+Read every generated caption against the script it came from, line by line, before
+
+67
+00:03:39,761 --> 00:03:40,474
+you trust it.
+
+68
+00:03:40,474 --> 00:03:45,081
+That's a two-minute check against a mistake that, once it's running as a paid ad, is
+
+69
+00:03:45,081 --> 00:03:47,110
+a great deal more expensive to catch.
+
+70
+00:03:47,660 --> 00:03:51,936
+One thing worth holding onto before you leave this lecture: there's a real gap
+
+71
+00:03:51,936 --> 00:03:56,431
+between an ad that technically has captions and one that was actually designed for
+
+72
+00:03:56,431 --> 00:03:56,870
+silence.
+
+73
+00:03:56,870 --> 00:04:00,433
+Plenty of ads that fail the muted-watch test still have captions.
+
+74
+00:04:00,433 --> 00:04:04,928
+They just got bolted on after a cut built for sound, instead of built into the cut
+
+75
+00:04:04,928 --> 00:04:05,750
+from the start.
+
+76
+00:04:05,750 --> 00:04:09,971
+Design silence-first, and captioning stops being an extra pass at the end and
+
+77
+00:04:09,971 --> 00:04:13,151
+becomes part of the same decision as the shot list itself.
+
+78
+00:04:13,151 --> 00:04:17,646
+Next lecture is where all of this becomes three real, finished ads for B04 instead
+
+79
+00:04:17,646 --> 00:04:19,181
+of a set of separate pieces.
+
+80
+00:04:19,181 --> 00:04:23,731
+Before then, do Sam's test on your own Section 4.3 clip: watch it back muted, right
+
+81
+00:04:23,731 --> 00:04:23,950
+now.
+
+82
+00:04:23,950 --> 00:04:27,130
+If it still lands with no sound, you're ready to assemble.
+
+83
+00:04:27,130 --> 00:04:31,515
+If it doesn't, fix the caption timing tonight, not partway through the workshop.

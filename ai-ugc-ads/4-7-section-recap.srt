@@ -1,0 +1,91 @@
+1
+00:00:00,350 --> 00:00:05,016
+Seven lectures ago, this section opened on Sam, one click from publishing an avatar
+
+2
+00:00:05,016 --> 00:00:07,433
+ad whose licence didn't cover the campaign.
+
+3
+00:00:07,433 --> 00:00:11,706
+Here's the honest tally on what that near miss actually taught, in practice.
+
+4
+00:00:11,706 --> 00:00:16,203
+You've seen a real avatar draft get caught on exactly that point, a licence tier
+
+5
+00:00:16,203 --> 00:00:20,588
+that covered organic use but not paid social, fixed before a dollar was spent.
+
+6
+00:00:20,588 --> 00:00:25,254
+You know how to write a script to an actual word budget instead of a guess, when to
+
+7
+00:00:25,254 --> 00:00:29,920
+trust a generated product shot and when a single filmed clip is the safer call, and
+
+8
+00:00:29,920 --> 00:00:34,643
+how to cut and caption an ad so it works with the sound off, because that's how most
+
+9
+00:00:34,643 --> 00:00:37,285
+of your audience is actually going to watch it.
+
+10
+00:00:37,285 --> 00:00:41,895
+And you've built B04, a brief template that carries every one of those checks into
+
+11
+00:00:41,895 --> 00:00:44,368
+your next video before you generate a frame.
+
+12
+00:00:44,368 --> 00:00:48,922
+That's the same lesson Section 3 taught for statics, showing up again in a harder
+
+13
+00:00:48,922 --> 00:00:53,419
+medium: the checking work is what makes the generation usable, not the other way
+
+14
+00:00:53,419 --> 00:00:53,757
+round.
+
+15
+00:00:54,307 --> 00:00:58,964
+Section five takes the statics and videos you've now built and asks a different
+
+16
+00:00:58,964 --> 00:01:03,916
+question: not how to make them, but where they actually belong, because Meta, TikTok
+
+17
+00:01:03,916 --> 00:01:07,394
+and YouTube don't reward the same cut for the same reasons.
+
+18
+00:01:07,394 --> 00:01:09,929
+Nothing you've built gets rebuilt for this.
+
+19
+00:01:09,929 --> 00:01:11,580
+The creative stays the same.
+
+20
+00:01:11,580 --> 00:01:13,820
+What changes next is how you place it.
+
+21
+00:01:13,820 --> 00:01:18,654
+Before Section 5, do one thing: pick which platform gets your three B04 ads first,
+
+22
+00:01:18,654 --> 00:01:20,658
+Meta or TikTok, and write it down.
+
+23
+00:01:20,658 --> 00:01:25,021
+Next section tells you why that one choice already decides which cut wins.

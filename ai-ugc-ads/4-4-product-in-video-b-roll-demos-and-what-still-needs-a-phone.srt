@@ -1,0 +1,351 @@
+1
+00:00:00,350 --> 00:00:05,091
+Sam generated ten seconds of Harlan's compression sock going onto a foot, watched it
+
+2
+00:00:05,091 --> 00:00:06,558
+back, and nearly moved on.
+
+3
+00:00:06,558 --> 00:00:11,130
+Then he lined the first frame up against the last: the grey trim had crept half a
+
+4
+00:00:11,130 --> 00:00:15,758
+shade warmer, a drift so gradual that no single second of the clip looked wrong on
+
+5
+00:00:15,758 --> 00:00:16,210
+its own.
+
+6
+00:00:16,210 --> 00:00:20,725
+That's the harder problem hiding behind an avatar that already looks convincing.
+
+7
+00:00:20,725 --> 00:00:24,168
+Section 4.3 already gave you the tools for the avatar's face.
+
+8
+00:00:24,168 --> 00:00:28,740
+The product in its hands is separate, and harder, because it has to look right in
+
+9
+00:00:28,740 --> 00:00:30,207
+every frame, not just one.
+
+10
+00:00:30,207 --> 00:00:32,860
+A generated image only has to be accurate once.
+
+11
+00:00:32,860 --> 00:00:37,488
+A generated video has to hold that same accuracy across hundreds of frames without
+
+12
+00:00:37,488 --> 00:00:42,060
+drifting, which is meaningfully harder than the problem Section 3 already solved.
+
+13
+00:00:42,060 --> 00:00:45,220
+Why does this matter more than it sounds like it should?
+
+14
+00:00:45,220 --> 00:00:49,397
+A static that drifts slightly off-brand is one flawed image out of twenty.
+
+15
+00:00:49,397 --> 00:00:54,138
+A video that drifts partway through is one flawed ad, in full, that a viewer watches
+
+16
+00:00:54,138 --> 00:00:56,509
+start to finish, the way Sam's almost did.
+
+17
+00:00:57,059 --> 00:01:00,860
+Here's the honest split, and it follows directly from that mechanism.
+
+18
+00:01:00,860 --> 00:01:05,211
+An avatar talking, with no product in shot, is exactly what Section 4.3 already
+
+19
+00:01:05,211 --> 00:01:05,928
+handles well.
+
+20
+00:01:05,928 --> 00:01:10,500
+A generic background or setting carries almost no risk, because nothing about it is
+
+21
+00:01:10,500 --> 00:01:11,436
+a specific claim.
+
+22
+00:01:11,436 --> 00:01:16,063
+But the moment the actual product needs to be seen being worn, used, or demonstrated
+
+23
+00:01:16,063 --> 00:01:20,691
+across several seconds, generate it and you're betting that accuracy holds for every
+
+24
+00:01:20,691 --> 00:01:21,792
+one of those frames.
+
+25
+00:01:21,792 --> 00:01:26,199
+Film it instead, on an actual phone, and that risk simply isn't there to manage.
+
+26
+00:01:26,199 --> 00:01:30,606
+Run the same test you'd run on a static: would Dana recognise this as the actual
+
+27
+00:01:30,606 --> 00:01:35,123
+product she sells, held for the full length of the shot, not just the first frame?
+
+28
+00:01:35,123 --> 00:01:37,547
+For a filmed clip, that's automatically yes.
+
+29
+00:01:37,547 --> 00:01:42,174
+For a generated one, it's a question you'd have to keep checking, frame after frame,
+
+30
+00:01:42,174 --> 00:01:44,543
+for as long as the product stays on screen.
+
+31
+00:01:44,543 --> 00:01:48,619
+Notice this split isn't about generation being bad at products in general.
+
+32
+00:01:48,619 --> 00:01:53,081
+A product sitting still in a scene, unmoving, is a much easier case, close to the
+
+33
+00:01:53,081 --> 00:01:55,284
+static problem Section 3 already solved.
+
+34
+00:01:55,284 --> 00:01:58,369
+The line is specifically motion: worn, flexed, adjusted.
+
+35
+00:01:58,369 --> 00:02:02,997
+That's where frame-to-frame drift has room to happen, which is why the rule is about
+
+36
+00:02:02,997 --> 00:02:06,081
+action, not about the product's mere presence in a shot.
+
+37
+00:02:06,631 --> 00:02:10,681
+Here's what that actually looks like cut together, and notice it isn't an
+
+38
+00:02:10,681 --> 00:02:13,511
+all-or-nothing choice between generated and filmed.
+
+39
+00:02:13,511 --> 00:02:17,893
+The avatar carries the hook and the close, both generated, both handled well by
+
+40
+00:02:17,893 --> 00:02:19,169
+Section 4.3's workflow.
+
+41
+00:02:19,169 --> 00:02:23,719
+The middle five seconds, the part where the sock itself has to be seen clearly and
+
+42
+00:02:23,719 --> 00:02:28,101
+accurately, is a real phone clip, filmed once, reused across every variant that
+
+43
+00:02:28,101 --> 00:02:29,766
+needs this exact product shot.
+
+44
+00:02:29,766 --> 00:02:34,204
+One short filming session buys accuracy for the one part of the ad that actually
+
+45
+00:02:34,204 --> 00:02:34,759
+needed it.
+
+46
+00:02:34,759 --> 00:02:37,089
+That reuse is the part worth holding onto.
+
+47
+00:02:37,089 --> 00:02:38,531
+You're not filming per ad.
+
+48
+00:02:38,531 --> 00:02:43,080
+You're filming once per product, then cutting that same clip into as many variants
+
+49
+00:02:43,080 --> 00:02:47,463
+as the angle map calls for, which keeps the one-time cost small against a whole
+
+50
+00:02:47,463 --> 00:02:49,793
+batch's worth of generated avatar footage.
+
+51
+00:02:49,793 --> 00:02:52,845
+There's a quality upside here too, not just a cost one.
+
+52
+00:02:52,845 --> 00:02:57,394
+A single filmed clip you actually care about is worth doing properly: steady hands
+
+53
+00:02:57,394 --> 00:03:01,943
+or a small tripod, real daylight rather than a dim room, the product shown exactly
+
+54
+00:03:01,943 --> 00:03:03,441
+the way it's actually used.
+
+55
+00:03:03,441 --> 00:03:07,824
+Because you're only filming it once and reusing it everywhere, it's worth those
+
+56
+00:03:07,824 --> 00:03:12,262
+extra few minutes in a way a one-off clip for a single ad never quite justifies.
+
+57
+00:03:12,812 --> 00:03:17,159
+I want to be honest about what "video ads without a shoot" actually means in
+
+58
+00:03:17,159 --> 00:03:20,819
+practice, because this course isn't claiming zero filming, ever.
+
+59
+00:03:20,819 --> 00:03:23,221
+It means no studio, no crew, no shoot day.
+
+60
+00:03:23,221 --> 00:03:24,879
+It doesn't mean zero footage.
+
+61
+00:03:24,879 --> 00:03:29,683
+One short clip of the real product, filmed once on a phone, gets reused across every
+
+62
+00:03:29,683 --> 00:03:30,942
+variant that needs it.
+
+63
+00:03:30,942 --> 00:03:35,746
+That's a small, one-time cost against the risk of a product that drifts subtly wrong
+
+64
+00:03:35,746 --> 00:03:40,207
+across an entire generated clip, and nobody catching it until the ad's already
+
+65
+00:03:40,207 --> 00:03:40,664
+running.
+
+66
+00:03:40,664 --> 00:03:45,354
+If a course promises zero filming, ever, ask what that promise is actually trading
+
+67
+00:03:45,354 --> 00:03:45,640
+away.
+
+68
+00:03:45,640 --> 00:03:50,444
+Either it means the product itself never appears in motion, which is a real creative
+
+69
+00:03:50,444 --> 00:03:54,962
+limitation, not a bonus, or it means someone's accepting the drift risk without
+
+70
+00:03:54,962 --> 00:03:56,049
+saying so out loud.
+
+71
+00:03:56,049 --> 00:04:00,853
+One phone, one short clip, reused across a whole batch, is a smaller ask than either
+
+72
+00:04:00,853 --> 00:04:04,341
+of those, and it's the one this course is asking you to make.
+
+73
+00:04:04,891 --> 00:04:09,418
+Next lecture is where the pieces actually get cut together into one finished ad, and
+
+74
+00:04:09,418 --> 00:04:12,975
+where most people watching it will never turn the sound on at all.
+
+75
+00:04:12,975 --> 00:04:16,424
+Before then, if you haven't already, film that one product clip.
+
+76
+00:04:16,424 --> 00:04:19,927
+Ten seconds, the actual product, doing the actual thing it's for.
+
+77
+00:04:19,927 --> 00:04:24,454
+It's the single piece of this whole video system that a generator was never going to
+
+78
+00:04:24,454 --> 00:04:28,765
+give you honestly, and it costs you less time than reading this sentence took to
+
+79
+00:04:28,765 --> 00:04:31,675
+film once you're actually holding your phone up to it.
+
+80
+00:04:31,675 --> 00:04:35,986
+That's also the product-shot line in the B04 brief, done two lectures before the
+
+81
+00:04:35,986 --> 00:04:37,118
+workshop asks for it.
+
+82
+00:04:37,118 --> 00:04:41,321
+One more thing worth sitting with: this is the only lecture in the whole video
+
+83
+00:04:41,321 --> 00:04:43,800
+system that asks you to touch a camera at all.
+
+84
+00:04:43,800 --> 00:04:47,842
+Everything else, the script, the avatar, the assembly, happens on a screen.
+
+85
+00:04:47,842 --> 00:04:52,046
+If that balance ever tips the other way, more filming creeping back in because
+
+86
+00:04:52,046 --> 00:04:54,740
+generation felt unreliable, that's worth noticing.
+
+87
+00:04:54,740 --> 00:04:59,213
+It usually means a check from this section got skipped, not that video ads secretly
+
+88
+00:04:59,213 --> 00:05:00,453
+need a shoot after all.

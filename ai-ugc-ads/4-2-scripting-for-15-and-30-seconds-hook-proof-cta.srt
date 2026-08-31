@@ -1,0 +1,443 @@
+1
+00:00:00,350 --> 00:00:04,850
+Sam had two scripts to write for Harlan: a fifteen-second hook and a thirty-second
+
+2
+00:00:04,850 --> 00:00:05,838
+founder explainer.
+
+3
+00:00:05,838 --> 00:00:10,283
+He wrote the thirty first, since it had more to say, then took a red pen to it to
+
+4
+00:00:10,283 --> 00:00:11,216
+make the fifteen.
+
+5
+00:00:11,216 --> 00:00:15,661
+What came out read like exactly what it was: a rushed thirty-second script, not a
+
+6
+00:00:15,661 --> 00:00:16,978
+real fifteen-second one.
+
+7
+00:00:16,978 --> 00:00:19,283
+Video ad scripts fail for the same reason.
+
+8
+00:00:19,283 --> 00:00:23,674
+A fifteen-second script and a thirty-second script aren't the same script at two
+
+9
+00:00:23,674 --> 00:00:24,113
+lengths.
+
+10
+00:00:24,113 --> 00:00:28,558
+They're different structures, built for different jobs, and the difference starts
+
+11
+00:00:28,558 --> 00:00:30,369
+with how many words actually fit.
+
+12
+00:00:30,369 --> 00:00:32,125
+How many words is that, exactly?
+
+13
+00:00:32,125 --> 00:00:32,784
+Not a guess.
+
+14
+00:00:32,784 --> 00:00:37,339
+An actual number, worked out the same way the volume maths in Section 1.4 was: from
+
+15
+00:00:37,339 --> 00:00:40,577
+the constraint, not from a feeling about what sounds right.
+
+16
+00:00:40,577 --> 00:00:45,077
+Sam's mistake is the common one: write what you want to say, time it, find it runs
+
+17
+00:00:45,077 --> 00:00:47,601
+long, then cut individual words until it fits.
+
+18
+00:00:47,601 --> 00:00:52,156
+That's editing under pressure, and it shows: a hook that used to land cleanly reads
+
+19
+00:00:52,156 --> 00:00:53,528
+like it's missing a word.
+
+20
+00:00:53,528 --> 00:00:58,028
+Write to the budget from the first sentence instead, and you never perform surgery
+
+21
+00:00:58,028 --> 00:01:00,882
+on a script that was already trying to say too much.
+
+22
+00:01:01,432 --> 00:01:05,500
+Here's the actual arithmetic, not a rule of thumb pulled from nowhere.
+
+23
+00:01:05,500 --> 00:01:09,858
+At a natural, unhurried spoken pace, fifteen seconds holds somewhere around
+
+24
+00:01:09,858 --> 00:01:11,427
+thirty-five to forty words.
+
+25
+00:01:11,427 --> 00:01:13,519
+Thirty seconds roughly doubles that.
+
+26
+00:01:13,519 --> 00:01:14,507
+That's not a lot.
+
+27
+00:01:14,507 --> 00:01:17,936
+Thirty-five words is barely two sentences of normal speech.
+
+28
+00:01:17,936 --> 00:01:22,817
+A fifteen-second script has room for exactly one hook, one proof point, and one call
+
+29
+00:01:22,817 --> 00:01:26,071
+to action, and nothing left over to handle an objection.
+
+30
+00:01:26,071 --> 00:01:30,313
+Thirty seconds buys you the room to answer one hesitation before the CTA.
+
+31
+00:01:30,313 --> 00:01:32,173
+Neither format has room for two.
+
+32
+00:01:32,173 --> 00:01:36,996
+This is the same discipline Section 2.3 taught for a single hook line, just applied
+
+33
+00:01:36,996 --> 00:01:39,437
+to a whole script instead of one sentence.
+
+34
+00:01:39,437 --> 00:01:41,936
+Specificity earned you a better hook there.
+
+35
+00:01:41,936 --> 00:01:46,643
+A hard word budget earns you a script here that doesn't try to say everything and
+
+36
+00:01:46,643 --> 00:01:48,444
+ends up saying nothing clearly.
+
+37
+00:01:48,444 --> 00:01:51,233
+Notice, too, that this budget isn't pessimistic.
+
+38
+00:01:51,233 --> 00:01:55,069
+Thirty-five words is plenty for one sharp idea, delivered plainly.
+
+39
+00:01:55,069 --> 00:01:59,834
+The budget only feels tight if you're trying to fit a second idea in alongside it,
+
+40
+00:01:59,834 --> 00:02:04,076
+which is exactly the instinct this whole lecture is asking you to resist.
+
+41
+00:02:04,626 --> 00:02:09,209
+Here's that budget applied to a real script, using the raw testimonial hook from
+
+42
+00:02:09,209 --> 00:02:13,391
+Section 2.3's matrix, the same one that ended up winning in Section zero.
+
+43
+00:02:13,391 --> 00:02:16,542
+Four seconds to hook, seven to prove it, four to close.
+
+44
+00:02:16,542 --> 00:02:20,152
+Thirty-one words, comfortably inside budget with room to spare.
+
+45
+00:02:20,152 --> 00:02:24,850
+Notice what's not in here: no objection handling, no second proof point, no aside.
+
+46
+00:02:24,850 --> 00:02:29,605
+Fifteen seconds doesn't have room for a second idea, so this script doesn't pretend
+
+47
+00:02:29,605 --> 00:02:30,063
+it does.
+
+48
+00:02:30,063 --> 00:02:34,818
+Notice, too, that this script doesn't try to close every doubt a viewer might have.
+
+49
+00:02:34,818 --> 00:02:39,402
+It closes the one doubt a fifteen-second cold-audience ad can actually afford to
+
+50
+00:02:39,402 --> 00:02:43,985
+address, and leaves the rest for a warmer audience and a longer format to handle
+
+51
+00:02:43,985 --> 00:02:44,329
+later.
+
+52
+00:02:44,329 --> 00:02:49,026
+Read the proof line again: fifteen to twenty mmHg graduated compression, built for
+
+53
+00:02:49,026 --> 00:02:50,917
+people who don't get to sit down.
+
+54
+00:02:50,917 --> 00:02:55,558
+That's the exact spec from Harlan's product truth doc, the one Section 2.1 built,
+
+55
+00:02:55,558 --> 00:03:00,370
+dropped into the script word for word rather than softened into something vaguer and
+
+56
+00:03:00,370 --> 00:03:01,172
+easier to say.
+
+57
+00:03:01,172 --> 00:03:05,755
+A script this short has no room to paraphrase a claim and still land it clearly.
+
+58
+00:03:06,305 --> 00:03:10,445
+The extra fifteen seconds buys you exactly one thing: room to answer a single
+
+59
+00:03:10,445 --> 00:03:12,595
+hesitation before you ask for the click.
+
+60
+00:03:12,595 --> 00:03:16,949
+That makes the thirty-second format the better fit for an audience further up the
+
+61
+00:03:16,949 --> 00:03:21,411
+ladder from Section 2.2, someone who already half-believes the category and has one
+
+62
+00:03:21,411 --> 00:03:22,486
+specific doubt left.
+
+63
+00:03:22,486 --> 00:03:25,712
+A cold, unaware audience doesn't have a doubt yet to answer.
+
+64
+00:03:25,712 --> 00:03:29,959
+They need the hook to work, full stop, which is exactly what the fifteen-second
+
+65
+00:03:29,959 --> 00:03:31,141
+format is built to do.
+
+66
+00:03:31,141 --> 00:03:35,335
+Picking the wrong format for the audience is a subtler mistake than it sounds.
+
+67
+00:03:35,335 --> 00:03:39,689
+Give a cold audience a thirty-second script with an objection handled, and you've
+
+68
+00:03:39,689 --> 00:03:44,205
+spent ten seconds answering a doubt they hadn't formed yet, seconds a fifteen-second
+
+69
+00:03:44,205 --> 00:03:47,699
+hook would have spent earning their attention in the first place.
+
+70
+00:03:47,699 --> 00:03:51,838
+Give a warm audience only fifteen seconds, and you never get to the one thing
+
+71
+00:03:51,838 --> 00:03:54,150
+actually standing between them and a click.
+
+72
+00:03:54,150 --> 00:03:55,924
+The format isn't a budget choice.
+
+73
+00:03:55,924 --> 00:03:59,579
+It's an audience choice that happens to come with a budget attached.
+
+74
+00:03:59,579 --> 00:04:03,773
+Sam's rule of thumb: cold prospecting traffic gets the fifteen-second cut, and
+
+75
+00:04:03,773 --> 00:04:08,234
+anyone already engaged, a previous ad watched, a site visit, gets the thirty-second
+
+76
+00:04:08,234 --> 00:04:08,665
+version.
+
+77
+00:04:08,665 --> 00:04:13,019
+Same product truth doc, two scripts, matched to how much convincing each audience
+
+78
+00:04:13,019 --> 00:04:13,664
+still needs.
+
+79
+00:04:14,214 --> 00:04:17,477
+One honest check before any of this goes near a generator.
+
+80
+00:04:17,477 --> 00:04:20,290
+Word budgets are a useful estimate, not a promise.
+
+81
+00:04:20,290 --> 00:04:25,016
+Delivery pace varies by person and by avatar, and a script that looks right on paper
+
+82
+00:04:25,016 --> 00:04:27,548
+can still run long once it's actually spoken.
+
+83
+00:04:27,548 --> 00:04:31,823
+Read every script aloud, with an actual timer, before you generate anything.
+
+84
+00:04:31,823 --> 00:04:36,549
+It takes fifteen seconds to find out, which is a much cheaper fifteen seconds than a
+
+85
+00:04:36,549 --> 00:04:39,362
+generated clip that needs trimming after the fact.
+
+86
+00:04:39,362 --> 00:04:43,919
+Read it at the pace you actually want the avatar to speak, not rushed to make the
+
+87
+00:04:43,919 --> 00:04:44,594
+number work.
+
+88
+00:04:44,594 --> 00:04:49,264
+If it runs long at a natural pace, the fix is cutting a word, not asking the avatar
+
+89
+00:04:49,264 --> 00:04:50,108
+to talk faster.
+
+90
+00:04:50,108 --> 00:04:53,258
+There's a second reason to read it aloud, beyond timing.
+
+91
+00:04:53,258 --> 00:04:57,872
+A script that scans fine on a page can still trip on a real mouth: a phrase that's
+
+92
+00:04:57,872 --> 00:05:02,204
+easy to write and awkward to say, a word choice that reads clearly but sounds
+
+93
+00:05:02,204 --> 00:05:03,273
+ambiguous out loud.
+
+94
+00:05:03,273 --> 00:05:07,830
+You'll catch both of those by voice long before an avatar generator does, because
+
+95
+00:05:07,830 --> 00:05:12,105
+the generator has no opinion about whether a line is comfortable to deliver.
+
+96
+00:05:12,105 --> 00:05:15,706
+It just performs whatever you gave it, clumsy phrasing included.
+
+97
+00:05:16,256 --> 00:05:20,741
+Next lecture is where this script actually becomes a video: the avatar, properly
+
+98
+00:05:20,741 --> 00:05:23,600
+licensed this time, performing exactly these words.
+
+99
+00:05:23,600 --> 00:05:25,169
+Before that, write your own.
+
+100
+00:05:25,169 --> 00:05:29,766
+Pull an angle from the map you built in Section 2.4, one you haven't scripted yet,
+
+101
+00:05:29,766 --> 00:05:34,027
+and write it to a fifteen-second budget: one hook, one proof point, one CTA,
+
+102
+00:05:34,027 --> 00:05:38,287
+thirty-five to forty words, read aloud with a timer before you call it done.
+
+103
+00:05:38,287 --> 00:05:42,828
+That script is what you'll actually generate on in the next lecture, and it's the
+
+104
+00:05:42,828 --> 00:05:47,369
+first field in the B04 brief the workshop asks you to fill out four lectures from
+
+105
+00:05:47,369 --> 00:05:47,593
+now.
+
+106
+00:05:47,593 --> 00:05:51,012
+Notice how much of this lecture was really about subtraction.
+
+107
+00:05:51,012 --> 00:05:55,721
+Every draft you write from here on will want a second proof point, a longer CTA, one
+
+108
+00:05:55,721 --> 00:05:57,123
+more sentence of context.
+
+109
+00:05:57,123 --> 00:06:01,776
+The word budget's whole job is to keep telling you no, so the version that actually
+
+110
+00:06:01,776 --> 00:06:06,372
+ships is the one clean idea a viewer can hold in their head after fifteen seconds,
+
+111
+00:06:06,372 --> 00:06:08,447
+not the crowded one you started with.
