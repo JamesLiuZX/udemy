@@ -1,0 +1,311 @@
+1
+00:00:00,350 --> 00:00:03,933
+Everything in this section so far has been a habit or a principle.
+
+2
+00:00:03,933 --> 00:00:08,439
+This lecture turns it into a document, because a principle you cannot point to is a
+
+3
+00:00:08,439 --> 00:00:11,044
+principle you will skip under deadline pressure.
+
+4
+00:00:11,044 --> 00:00:15,496
+The job description is the artifact that makes the four onboarding habits from 1.1
+
+5
+00:00:15,496 --> 00:00:19,676
+impossible to shortcut, because you cannot fill it in without answering them.
+
+6
+00:00:19,676 --> 00:00:22,824
+Be honest about what deadline pressure does to principles.
+
+7
+00:00:22,824 --> 00:00:27,384
+In a calm week you would never grant broad access; in the week the report is due and
+
+8
+00:00:27,384 --> 00:00:31,944
+the tool is nearly working, "connect everything and tidy it later" feels reasonable,
+
+9
+00:00:31,944 --> 00:00:33,138
+and later never comes.
+
+10
+00:00:33,138 --> 00:00:34,984
+The document exists for that week.
+
+11
+00:00:34,984 --> 00:00:39,436
+It takes about half an hour the first time and closer to ten minutes once you have
+
+12
+00:00:39,436 --> 00:00:43,507
+done one, and it is the difference between your judgement being a thing you
+
+13
+00:00:43,507 --> 00:00:47,850
+exercised once, in writing, and a thing you have to re-argue with yourself every
+
+14
+00:00:47,850 --> 00:00:49,533
+time a shortcut looks tempting.
+
+15
+00:00:50,083 --> 00:00:54,876
+Notice question two asks for the exact folder, not "my email." Vague scope is where
+
+16
+00:00:54,876 --> 00:00:57,937
+blast radius quietly grows past what anyone intended.
+
+17
+00:00:57,937 --> 00:01:02,441
+Question four is the one people most often leave blank, and it is the one that
+
+18
+00:01:02,441 --> 00:01:07,119
+matters most: a ceiling only works if you wrote it down before you needed it, not
+
+19
+00:01:07,119 --> 00:01:07,465
+after.
+
+20
+00:01:07,465 --> 00:01:09,660
+Question one has a test built into it.
+
+21
+00:01:09,660 --> 00:01:14,338
+If your one sentence needs the word "and", you are describing two agents, and the
+
+22
+00:01:14,338 --> 00:01:19,131
+course's advice is always the same: build the first half, let the second half wait.
+
+23
+00:01:19,131 --> 00:01:23,866
+"Flags urgent email and drafts replies" is two jobs with two different risk levels
+
+24
+00:01:23,866 --> 00:01:25,079
+wearing one sentence.
+
+25
+00:01:25,079 --> 00:01:29,641
+Question five is where you stop being a form filler and start being the expert.
+
+26
+00:01:29,641 --> 00:01:33,626
+Nobody else in your company can write what urgent means on your desk.
+
+27
+00:01:33,626 --> 00:01:38,304
+That definition, in plain English, is the single highest value paragraph you will
+
+28
+00:01:38,304 --> 00:01:42,751
+produce in this entire course, because it is the paragraph the agent actually
+
+29
+00:01:42,751 --> 00:01:44,599
+reasons from every time it runs.
+
+30
+00:01:45,149 --> 00:01:47,906
+Read that back and notice how ordinary it sounds.
+
+31
+00:01:47,906 --> 00:01:48,919
+That is the point.
+
+32
+00:01:48,919 --> 00:01:53,421
+A good job description is not clever, it is specific enough that someone else in
+
+33
+00:01:53,421 --> 00:01:58,036
+your office could read it and know exactly what the agent is and is not allowed to
+
+34
+00:01:58,036 --> 00:01:59,330
+do, without asking you.
+
+35
+00:01:59,330 --> 00:02:02,200
+Three of Priya's answers are worth slowing down on.
+
+36
+00:02:02,200 --> 00:02:06,871
+Read only, for a triage agent, is not timidity: the job is to point, and a pointing
+
+37
+00:02:06,871 --> 00:02:11,542
+agent that cannot write anything has a blast radius close to zero, which is exactly
+
+38
+00:02:11,542 --> 00:02:14,074
+what you want from a first hire's first week.
+
+39
+00:02:14,074 --> 00:02:18,633
+The ceiling, never marks anything as resolved, is aimed at a specific failure: an
+
+40
+00:02:18,633 --> 00:02:23,304
+agent that closes a query wrongly makes work disappear, and disappeared work is the
+
+41
+00:02:23,304 --> 00:02:25,498
+silent kind of damage from lecture 1.3.
+
+42
+00:02:25,498 --> 00:02:27,581
+Flagging wrongly just costs a glance.
+
+43
+00:02:27,581 --> 00:02:31,126
+And the sign off line introduces Marcus Webb, Priya's director.
+
+44
+00:02:31,126 --> 00:02:35,403
+He does not appear at the trial, because the trial is Priya checking her own
+
+45
+00:02:35,403 --> 00:02:36,022
+delegation.
+
+46
+00:02:36,022 --> 00:02:40,411
+He appears at Review, because that is the rung where the agent's output starts
+
+47
+00:02:40,411 --> 00:02:45,139
+reaching work other people depend on, and that is the moment a boss is entitled to a
+
+48
+00:02:45,139 --> 00:02:45,364
+say.
+
+49
+00:02:45,364 --> 00:02:49,922
+Matching the sign off to the rung is what makes this a real document instead of a
+
+50
+00:02:49,922 --> 00:02:50,203
+form.
+
+51
+00:02:50,753 --> 00:02:53,704
+Nothing on this page is new, and that is its strength.
+
+52
+00:02:53,704 --> 00:02:58,240
+If any row feels unfamiliar, the middle column says which lecture to rewatch before
+
+53
+00:02:58,240 --> 00:02:59,059
+you fill it in.
+
+54
+00:02:59,059 --> 00:03:03,485
+The right column is the honest reason each question earns its place: every one of
+
+55
+00:03:03,485 --> 00:03:08,021
+them is a specific, boring failure that has already cost someone real money, folded
+
+56
+00:03:08,021 --> 00:03:10,316
+down into one line you answer in a minute.
+
+57
+00:03:10,866 --> 00:03:14,927
+Here is a test that works for every row on the left: could you tell, on Friday,
+
+58
+00:03:14,927 --> 00:03:16,469
+whether the job was done well?
+
+59
+00:03:16,469 --> 00:03:20,736
+"Handle my email" cannot be checked, so it cannot be trialled, so it can never earn
+
+60
+00:03:20,736 --> 00:03:21,044
+trust.
+
+61
+00:03:21,044 --> 00:03:25,259
+Each version on the right can be marked right or wrong against reality, one output
+
+62
+00:03:25,259 --> 00:03:25,773
+at a time.
+
+63
+00:03:25,773 --> 00:03:27,212
+That is not a writing style.
+
+64
+00:03:27,212 --> 00:03:31,273
+It is the property that makes the whole trust ladder possible, and when a trial
+
+65
+00:03:31,273 --> 00:03:35,283
+feels unrunnable, the fault is almost always here, in the sentence, not in the
+
+66
+00:03:35,283 --> 00:03:35,591
+agent.
+
+67
+00:03:36,141 --> 00:03:38,625
+What if you genuinely cannot name a ceiling?
+
+68
+00:03:38,625 --> 00:03:40,092
+Treat that as information.
+
+69
+00:03:40,092 --> 00:03:44,776
+It usually means the task involves a judgement you have not yet put into words, and
+
+70
+00:03:44,776 --> 00:03:47,993
+an agent is about to exercise that judgement without you.
+
+71
+00:03:47,993 --> 00:03:52,621
+Shrink the job until a ceiling becomes nameable: narrower folder, draft instead of
+
+72
+00:03:52,621 --> 00:03:54,145
+send, flag instead of file.
+
+73
+00:03:54,145 --> 00:03:58,604
+If it still will not shrink, you may be holding one of the tasks Section 9 says
+
+74
+00:03:58,604 --> 00:04:02,498
+should stay human, and finding that out now, on paper, costs nothing.
+
+75
+00:04:02,498 --> 00:04:04,191
+Keep this filled-in page open.
+
+76
+00:04:04,191 --> 00:04:08,932
+Section 3 builds your first agent from scratch against exactly this document, so the
+
+77
+00:04:08,932 --> 00:04:11,923
+scope and ceiling you just wrote are not theoretical.
+
+78
+00:04:11,923 --> 00:04:13,447
+They are what you build to.

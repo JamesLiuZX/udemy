@@ -1,0 +1,43 @@
+1
+00:00:00,350 --> 00:00:03,173
+You have already built one agent and watched it work.
+
+2
+00:00:03,173 --> 00:00:07,221
+Before you build three more, this section gives you the frame that makes the
+
+3
+00:00:07,221 --> 00:00:11,428
+difference between someone who gets hours back and someone who spends a weekend
+
+4
+00:00:11,428 --> 00:00:12,600
+cleaning up a mistake.
+
+5
+00:00:12,600 --> 00:00:17,074
+You already know this pattern from somewhere else in your life: a new hire given the
+
+6
+00:00:17,074 --> 00:00:21,175
+keys too early, a vendor trusted on a demo alone, a tool switched on with the
+
+7
+00:00:21,175 --> 00:00:23,039
+defaults left exactly as they came.
+
+8
+00:00:23,039 --> 00:00:25,436
+Hold that memory for the next twenty minutes.
+
+9
+00:00:25,436 --> 00:00:29,431
+It's the same mistake this section exists to stop you making with an agent.
+
+10
+00:00:29,431 --> 00:00:33,798
+Four lectures: what onboarding actually means, the trust ladder, the blast radius,
+
+11
+00:00:33,798 --> 00:00:36,461
+and the one document that ties all three together.
