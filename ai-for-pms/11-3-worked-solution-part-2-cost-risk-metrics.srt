@@ -1,0 +1,551 @@
+1
+00:00:00,350 --> 00:00:05,144
+Four artifacts, one feature, continuing directly from 11.2's PRD, golden set and
+
+2
+00:00:05,144 --> 00:00:05,563
+rubric.
+
+3
+00:00:05,563 --> 00:00:10,417
+Nothing about the scope changes here: still refunds under fifty dollars, verified
+
+4
+00:00:10,417 --> 00:00:14,552
+account, capped at three a day, everything else escalated to a human.
+
+5
+00:00:14,552 --> 00:00:19,226
+Watch how directly each artifact here depends on something 11.2 already built,
+
+6
+00:00:19,226 --> 00:00:22,761
+because your own package should show the same dependencies.
+
+7
+00:00:22,761 --> 00:00:26,536
+The cost model needs the tool-call sequence from Section seven.
+
+8
+00:00:26,536 --> 00:00:31,570
+The model scorecard needs the golden set's zero-tolerance bar to even know what it's
+
+9
+00:00:31,570 --> 00:00:32,529
+scoring against.
+
+10
+00:00:32,529 --> 00:00:34,686
+That dependency isn't a coincidence.
+
+11
+00:00:34,686 --> 00:00:39,480
+It's exactly the internal consistency 11.1 asked every capstone package to have.
+
+12
+00:00:39,480 --> 00:00:44,274
+If you skipped straight to this lecture without watching 11.2 first, the numbers
+
+13
+00:00:44,274 --> 00:00:49,068
+here won't fully make sense, and that's the point rather than a gap to apologise
+
+14
+00:00:49,068 --> 00:00:49,307
+for.
+
+15
+00:00:49,307 --> 00:00:54,281
+A real feature's cost, risk and metrics genuinely can't be judged in isolation from
+
+16
+00:00:54,281 --> 00:00:56,678
+its spec and its evidence that it works.
+
+17
+00:00:56,678 --> 00:01:01,592
+Treat that dependency as a feature of the format, not an inconvenience of how this
+
+18
+00:01:01,592 --> 00:01:03,869
+course happened to split two lectures.
+
+19
+00:01:04,419 --> 00:01:09,048
+Three tool calls, checking the account, checking the policy and cap status, issuing
+
+20
+00:01:09,048 --> 00:01:13,621
+the approval, are the same three 7.6 used to explain this exact feature's latency.
+
+21
+00:01:13,621 --> 00:01:18,306
+The cost model and the latency budget are built from the identical sequence, because
+
+22
+00:01:18,306 --> 00:01:22,433
+they're both just different questions asked of the same three round trips.
+
+23
+00:01:22,433 --> 00:01:27,117
+Thirty dollars a month sounds almost too small to justify a whole capstone artifact,
+
+24
+00:01:27,117 --> 00:01:29,739
+and that's the actual point worth sitting with.
+
+25
+00:01:29,739 --> 00:01:34,312
+A support agent's loaded time runs to real money per hour, and if deflection lands
+
+26
+00:01:34,312 --> 00:01:38,829
+anywhere near forty five percent of two thousand monthly requests, that's roughly
+
+27
+00:01:38,829 --> 00:01:42,845
+nine hundred cases a month closing without a human touching them at all.
+
+28
+00:01:42,845 --> 00:01:47,362
+Thirty dollars against that much recovered time is not a close call, and it's the
+
+29
+00:01:47,362 --> 00:01:51,936
+kind of number you want ready before anyone in the room asks whether this is worth
+
+30
+00:01:51,936 --> 00:01:52,438
+building.
+
+31
+00:01:52,438 --> 00:01:55,226
+Notice what this number can't tell you on its own.
+
+32
+00:01:55,226 --> 00:01:58,795
+It's an estimate of cost, not proof the deflection rate is real.
+
+33
+00:01:58,795 --> 00:02:03,201
+That gap is exactly what the metric tree later in this lecture exists to close.
+
+34
+00:02:03,751 --> 00:02:08,120
+A cost model that only counts the model's own API bill is answering a narrower
+
+35
+00:02:08,120 --> 00:02:12,657
+question than "what does this feature cost," and saying so plainly is better than
+
+36
+00:02:12,657 --> 00:02:16,466
+letting a small, honest number imply a completeness it doesn't have.
+
+37
+00:02:17,016 --> 00:02:21,698
+Read the first data column before any other, because it's the only one that gets to
+
+38
+00:02:21,698 --> 00:02:23,164
+disqualify a row outright.
+
+39
+00:02:23,164 --> 00:02:27,395
+Budget's two wrongful approvals fail 11.2's zero-tolerance bar on the spot,
+
+40
+00:02:27,395 --> 00:02:32,133
+regardless of how cheap it is or how respectable eighty eight percent sounds next to
+
+41
+00:02:32,133 --> 00:02:32,923
+the other two.
+
+42
+00:02:32,923 --> 00:02:37,379
+Between the two models left standing, the decision is now genuinely about cost,
+
+43
+00:02:37,379 --> 00:02:40,763
+because both already cleared the bar that actually mattered.
+
+44
+00:02:40,763 --> 00:02:45,445
+Flagship's extra four percentage points of overall pass rate, and its extra two and
+
+45
+00:02:45,445 --> 00:02:50,127
+a half cents per resolution, are buying correctness on cases this feature's bounded
+
+46
+00:02:50,127 --> 00:02:52,383
+scope was already designed to make easy.
+
+47
+00:02:52,383 --> 00:02:57,065
+Mid-tier wins, not because it's cheaper in the abstract, but because the task's own
+
+48
+00:02:57,065 --> 00:03:01,690
+narrowness means the cheaper model didn't have to give up anything on the row that
+
+49
+00:03:01,690 --> 00:03:02,593
+actually counts.
+
+50
+00:03:02,593 --> 00:03:05,582
+This is the direct payoff of 11.2's scope discipline.
+
+51
+00:03:05,582 --> 00:03:10,095
+A wide-open version of this feature would need Flagship's full reasoning just to
+
+52
+00:03:10,095 --> 00:03:11,956
+approach zero wrongful approvals.
+
+53
+00:03:11,956 --> 00:03:16,469
+The bounded version made a cheaper model's ceiling high enough to clear the same
+
+54
+00:03:16,469 --> 00:03:16,695
+bar.
+
+55
+00:03:17,245 --> 00:03:21,604
+Swapping Flagship for Mid-tier barely moves the number a customer actually feels,
+
+56
+00:03:21,604 --> 00:03:26,071
+which is one more reason the safety gate and the cost column are doing all the real
+
+57
+00:03:26,071 --> 00:03:27,847
+work in this particular decision.
+
+58
+00:03:28,397 --> 00:03:33,243
+These are 8.1's exact five categories, not a reinvented list, because the point of a
+
+59
+00:03:33,243 --> 00:03:38,030
+shared register format is that any two features' risks line up in the same rows and
+
+60
+00:03:38,030 --> 00:03:39,472
+can actually be compared.
+
+61
+00:03:39,472 --> 00:03:42,299
+The first row is already handled, not just named.
+
+62
+00:03:42,299 --> 00:03:47,144
+11.2's read-then-act separation is the mitigation, built into the design before this
+
+63
+00:03:47,144 --> 00:03:51,989
+register was even written, which is what a genuinely low residual risk looks like on
+
+64
+00:03:51,989 --> 00:03:53,951
+this row rather than an open item.
+
+65
+00:03:53,951 --> 00:03:58,681
+The second row, data and privacy, is 8.3's territory: send the model only what the
+
+66
+00:03:58,681 --> 00:04:03,526
+decision needs, verification status, today's approval count, the amount, rather than
+
+67
+00:04:03,526 --> 00:04:06,987
+the full order history with stored payment details attached.
+
+68
+00:04:06,987 --> 00:04:11,486
+A refund decision doesn't need to see a card number to get made correctly, and
+
+69
+00:04:11,486 --> 00:04:16,216
+anything the model never receives can't leak in a response or sit exposed in a log
+
+70
+00:04:16,216 --> 00:04:16,562
+later.
+
+71
+00:04:17,112 --> 00:04:21,857
+The third row is easy to skip entirely on a feature this small, which is exactly why
+
+72
+00:04:21,857 --> 00:04:23,777
+it belongs on the register anyway.
+
+73
+00:04:23,777 --> 00:04:28,239
+Refund handling and disclosure rules aren't identical everywhere, so the honest
+
+74
+00:04:28,239 --> 00:04:32,871
+mitigation is a named check before this feature ever expands past its home market,
+
+75
+00:04:32,871 --> 00:04:36,316
+not an assumption that what's legal here is legal everywhere.
+
+76
+00:04:36,316 --> 00:04:40,722
+The fourth row asks a question an aggregate pass rate can't answer on its own.
+
+77
+00:04:40,722 --> 00:04:45,297
+A ninety six percent overall pass rate could still be hiding one customer segment
+
+78
+00:04:45,297 --> 00:04:49,702
+escalated far more often than another, the same blind spot 8.5 warned a single
+
+79
+00:04:49,702 --> 00:04:51,340
+headline number always risks.
+
+80
+00:04:51,340 --> 00:04:55,972
+The mitigation is watching the escalation rate broken out by segment, not just the
+
+81
+00:04:55,972 --> 00:04:59,022
+one number this lecture has been quoting in aggregate.
+
+82
+00:04:59,022 --> 00:05:03,597
+Check your own register the same way: does its headline number hide a segment you
+
+83
+00:05:03,597 --> 00:05:04,840
+haven't looked at yet?
+
+84
+00:05:04,840 --> 00:05:09,302
+The last row deserves the most attention of the three, because it's the one 8.6
+
+85
+00:05:09,302 --> 00:05:12,295
+warned looks completely fine right up until it isn't.
+
+86
+00:05:12,295 --> 00:05:16,870
+Nothing about this feature's infrastructure graphs would move if approval quality
+
+87
+00:05:16,870 --> 00:05:19,525
+quietly drifted after an upstream model update.
+
+88
+00:05:19,525 --> 00:05:24,044
+The mitigation has to be a metric that would actually catch it, which is exactly
+
+89
+00:05:24,044 --> 00:05:25,964
+what the next slide's tree is for.
+
+90
+00:05:26,514 --> 00:05:31,340
+Deflection sits at the top for the same reason 9.1 gave: it's the number that ties
+
+91
+00:05:31,340 --> 00:05:34,106
+directly back to the cost model two slides ago.
+
+92
+00:05:34,106 --> 00:05:38,932
+If deflection lands near the forty five percent this lecture estimated, the ninety
+
+93
+00:05:38,932 --> 00:05:42,875
+hours of monthly human time this feature was built to save is real.
+
+94
+00:05:42,875 --> 00:05:47,818
+If it doesn't, the cost model's promise was a hypothesis that didn't survive contact
+
+95
+00:05:47,818 --> 00:05:48,760
+with production.
+
+96
+00:05:48,760 --> 00:05:53,350
+Notice the second branch isn't 9.1's original acceptance metric, it's a direct
+
+97
+00:05:53,350 --> 00:05:54,057
+replacement.
+
+98
+00:05:54,057 --> 00:05:58,882
+What do you watch instead, when there's no human in the loop to measure acceptance
+
+99
+00:05:58,882 --> 00:05:59,177
+from?
+
+100
+00:05:59,177 --> 00:06:04,061
+Acceptance assumes a human is deciding, and this feature's auto-approve path has no
+
+101
+00:06:04,061 --> 00:06:08,534
+such human, so the honest adaptation is the production version of 11.2's own
+
+102
+00:06:08,534 --> 00:06:12,889
+zero-tolerance bar: wrongful-approval rate, watched continuously, the same
+
+103
+00:06:12,889 --> 00:06:16,244
+discipline 8.6 asked of exactly this kind of quiet drift.
+
+104
+00:06:16,244 --> 00:06:21,187
+The third branch keeps something acceptance-shaped for the half of this feature that
+
+105
+00:06:21,187 --> 00:06:26,013
+does involve a human: when a case escalates, does the reviewer agree it needed to.
+
+106
+00:06:26,013 --> 00:06:30,544
+A falling agreement rate here is an early warning that the agent's escalation
+
+107
+00:06:30,544 --> 00:06:35,488
+judgement is drifting, well before it shows up as a wrongful approval anywhere else.
+
+108
+00:06:36,038 --> 00:06:40,560
+Say the honest caveat, because it's the one place this whole worked package could
+
+109
+00:06:40,560 --> 00:06:43,463
+quietly overstate itself if nobody said it out loud.
+
+110
+00:06:43,463 --> 00:06:47,985
+Every number in the cost model two slides back was an estimate: a volume guess, a
+
+111
+00:06:47,985 --> 00:06:50,050
+deflection guess, a time-saved guess.
+
+112
+00:06:50,050 --> 00:06:54,572
+None of them were measured, because the feature hadn't shipped yet when they were
+
+113
+00:06:54,572 --> 00:06:55,019
+written.
+
+114
+00:06:55,019 --> 00:06:56,917
+That's not a flaw in the artifact.
+
+115
+00:06:56,917 --> 00:06:59,820
+It's exactly what a cost model is for at this stage.
+
+116
+00:06:59,820 --> 00:07:04,453
+But calling it a result instead of a projection is precisely the gap 10.3 warned an
+
+117
+00:07:04,453 --> 00:07:08,752
+entire roadmap against, now showing up in a single feature's numbers instead.
+
+118
+00:07:08,752 --> 00:07:13,218
+The fix is the same one 10.3 gave a whole quarter: say plainly which numbers are
+
+119
+00:07:13,218 --> 00:07:17,572
+measured and which are still projected, and revisit the projection against the
+
+120
+00:07:17,572 --> 00:07:22,094
+metric tree's real deflection number once there's enough production data to trust
+
+121
+00:07:22,094 --> 00:07:22,261
+it.
+
+122
+00:07:22,811 --> 00:07:27,042
+That's the honest state worth leaving your own capstone in, projected numbers
+
+123
+00:07:27,042 --> 00:07:30,283
+labelled as projections, not quietly dressed up as results.
+
+124
+00:07:30,283 --> 00:07:34,513
+Most first-pass cost models, checked this way, turn out to be almost entirely
+
+125
+00:07:34,513 --> 00:07:35,118
+underlined.
+
+126
+00:07:35,118 --> 00:07:37,645
+That's fine at this stage of a feature's life.
+
+127
+00:07:37,645 --> 00:07:42,095
+What matters is knowing which parts of your own package are still hypotheses, the
+
+128
+00:07:42,095 --> 00:07:46,710
+same discipline this lecture just applied to its own numbers rather than only asking
+
+129
+00:07:46,710 --> 00:07:47,259
+it of you.
+
+130
+00:07:47,809 --> 00:07:49,410
+One thing before you move on.
+
+131
+00:07:49,410 --> 00:07:54,046
+Look at your own model scorecard and check whether cost was compared before or after
+
+132
+00:07:54,046 --> 00:07:56,254
+any safety gate you should have applied.
+
+133
+00:07:56,254 --> 00:08:00,283
+If a cheaper model ever won by skipping that order, revisit the decision.
+
+134
+00:08:00,283 --> 00:08:04,864
+Then label your own cost model honestly, the same exercise this lecture just ran on
+
+135
+00:08:04,864 --> 00:08:05,250
+itself.
+
+136
+00:08:05,250 --> 00:08:09,666
+It costs a few minutes and it's the difference between a projection and a claim.
+
+137
+00:08:09,666 --> 00:08:14,026
+Next lecture is the self-assessment rubric: checking your own finished capstone
+
+138
+00:08:14,026 --> 00:08:17,393
+against the same bar this worked solution just tried to meet.

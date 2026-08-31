@@ -1,0 +1,223 @@
+1
+00:00:00,350 --> 00:00:04,863
+Go back and reread that opening claim if you want to feel the actual distance
+
+2
+00:00:04,863 --> 00:00:05,449
+travelled.
+
+3
+00:00:05,449 --> 00:00:10,314
+The gap it named, the one between being responsible for a feature and being able to
+
+4
+00:00:10,314 --> 00:00:14,826
+judge it, was real, and it's the same gap every AI PM without this toolkit is
+
+5
+00:00:14,826 --> 00:00:16,116
+standing in right now.
+
+6
+00:00:16,116 --> 00:00:20,629
+You closed it the only way it actually closes: by building the things, not by
+
+7
+00:00:20,629 --> 00:00:22,739
+watching someone else describe them.
+
+8
+00:00:22,739 --> 00:00:27,369
+A golden set, a risk register, a cost model, a metric tree, built for real, are
+
+9
+00:00:27,369 --> 00:00:30,651
+worth more than every slide in this course put together.
+
+10
+00:00:30,651 --> 00:00:35,457
+If you did the exercises, you already have proof of that sitting in your own files
+
+11
+00:00:35,457 --> 00:00:40,321
+right now: a package built around one feature, the same kind 11.1 through 11.4 just
+
+12
+00:00:40,321 --> 00:00:41,962
+walked you through checking.
+
+13
+00:00:41,962 --> 00:00:43,427
+That's not a certificate.
+
+14
+00:00:43,427 --> 00:00:48,351
+It's evidence, the exact kind this whole course has spent eleven sections arguing is
+
+15
+00:00:48,351 --> 00:00:50,343
+worth more than a confident claim.
+
+16
+00:00:50,893 --> 00:00:53,505
+Bookmark this table instead of the whole course.
+
+17
+00:00:53,505 --> 00:00:57,694
+Nobody remembers a hundred lectures six months from now, and nobody needs to.
+
+18
+00:00:57,694 --> 00:01:01,938
+What's actually useful is knowing which five-minute rewatch fixes the specific
+
+19
+00:01:01,938 --> 00:01:04,658
+problem sitting in front of you on a real Tuesday.
+
+20
+00:01:04,658 --> 00:01:05,528
+Use it that way.
+
+21
+00:01:05,528 --> 00:01:09,718
+The next time a feature idea feels vague, or a stakeholder won't believe your
+
+22
+00:01:09,718 --> 00:01:14,124
+number, come back to the one row that matches, not the whole course from the top.
+
+23
+00:01:14,124 --> 00:01:18,640
+Notice, too, that this table is really just 1.6's seven archetypes and the course's
+
+24
+00:01:18,640 --> 00:01:21,523
+own section spine, pointed back at you one more time.
+
+25
+00:01:21,523 --> 00:01:22,884
+You already have the map.
+
+26
+00:01:22,884 --> 00:01:27,399
+This is only a reminder that it's still there once the lecture playlist stops being
+
+27
+00:01:27,399 --> 00:01:29,031
+the thing organising your day.
+
+28
+00:01:29,581 --> 00:01:33,864
+Thank you for building the artifacts instead of just watching them get built.
+
+29
+00:01:33,864 --> 00:01:38,425
+That was always the actual ask of this course, and if you did it, you already know
+
+30
+00:01:38,425 --> 00:01:40,706
+more than this closing lecture could add.
+
+31
+00:01:40,706 --> 00:01:45,100
+If Section 4's evals or Section 8's risk register changed how you'd argue for a
+
+32
+00:01:45,100 --> 00:01:46,602
+launch, say so in a review.
+
+33
+00:01:46,602 --> 00:01:51,274
+It's the single most useful thing you can do for the next PM standing where you were
+
+34
+00:01:51,274 --> 00:01:51,942
+back at 0.1.
+
+35
+00:01:51,942 --> 00:01:55,224
+And if you're stuck on something specific, use the Q&A tab.
+
+36
+00:01:55,224 --> 00:01:59,674
+I read it and I answer there, that's where this course's presence actually lives
+
+37
+00:01:59,674 --> 00:02:00,786
+once the video ends.
+
+38
+00:02:01,336 --> 00:02:05,770
+Say the honest caveat one last time, aimed at the course itself instead of a feature
+
+39
+00:02:05,770 --> 00:02:09,887
+inside it, because that's the standard this whole thing has tried to hold from
+
+40
+00:02:09,887 --> 00:02:10,520
+lecture one.
+
+41
+00:02:10,520 --> 00:02:14,056
+The model names in this course will be out of date within the year.
+
+42
+00:02:14,056 --> 00:02:18,437
+The judgement underneath them, what a golden set is for, what blast radius actually
+
+43
+00:02:18,437 --> 00:02:20,918
+means, how to read a number honestly, won't be.
+
+44
+00:02:20,918 --> 00:02:25,140
+That's what was actually built here, and it's the part that survives every model
+
+45
+00:02:25,140 --> 00:02:26,302
+release still to come.
+
+46
+00:02:26,302 --> 00:02:30,630
+The first real feature you take this to will still be uncomfortable, probably more
+
+47
+00:02:30,630 --> 00:02:33,427
+than any exercise in this course managed to simulate.
+
+48
+00:02:33,427 --> 00:02:36,066
+That discomfort isn't a sign you learned it wrong.
+
+49
+00:02:36,066 --> 00:02:40,130
+It's what a real stake feels like, and it's exactly what every one of the six
+
+50
+00:02:40,130 --> 00:02:43,719
+artifacts you now know how to build was designed to make survivable.
+
+51
+00:02:44,269 --> 00:02:47,188
+One last thing, before you close this course for good.
+
+52
+00:02:47,188 --> 00:02:51,675
+Pick something real this week, not a hypothetical, and run the two-day version of a
+
+53
+00:02:51,675 --> 00:02:53,458
+discovery sprint from 10.1 on it.
+
+54
+00:02:53,458 --> 00:02:57,242
+That's the fastest way to find out whether any of this actually stuck.
+
+55
+00:02:57,242 --> 00:03:01,188
+Thank you for building alongside this course instead of just watching it.
+
+56
+00:03:01,188 --> 00:03:02,701
+Go use it on something real.

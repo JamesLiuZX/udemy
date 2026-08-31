@@ -1,0 +1,491 @@
+1
+00:00:00,350 --> 00:00:04,995
+Six-point-seven scoped it: auto-approve refunds under fifty dollars, for a verified
+
+2
+00:00:04,995 --> 00:00:09,359
+account, capped at three approvals a day, escalate everything else to a human.
+
+3
+00:00:09,359 --> 00:00:13,948
+That single sentence is where this worked solution starts, because a bounded scope
+
+4
+00:00:13,948 --> 00:00:18,649
+is what turns "let the agent handle refunds" from an unshippable idea into a feature
+
+5
+00:00:18,649 --> 00:00:21,335
+six real artifacts can actually be built around.
+
+6
+00:00:21,335 --> 00:00:25,979
+This lecture covers the first three: the PRD, the golden set, and the rubric behind
+
+7
+00:00:25,979 --> 00:00:28,218
+it, the what-is-it and the does-it-work.
+
+8
+00:00:28,218 --> 00:00:32,918
+The next lecture covers the other three: cost, risk, and metrics, on this exact same
+
+9
+00:00:32,918 --> 00:00:33,366
+feature.
+
+10
+00:00:33,366 --> 00:00:37,955
+Watch how much of this walkthrough is just reassembling things this course already
+
+11
+00:00:37,955 --> 00:00:42,599
+built in earlier sections, not inventing new judgement from scratch, because that's
+
+12
+00:00:42,599 --> 00:00:45,789
+exactly what you'll be doing with your own six artifacts.
+
+13
+00:00:45,789 --> 00:00:50,154
+Treat this the way 11.1 asked you to: as one valid, defensible answer, not the
+
+14
+00:00:50,154 --> 00:00:50,546
+answer.
+
+15
+00:00:50,546 --> 00:00:55,078
+Your own capstone feature almost certainly isn't a refund agent, and it shouldn't
+
+16
+00:00:55,078 --> 00:00:55,694
+need to be.
+
+17
+00:00:55,694 --> 00:01:00,171
+What should transfer to your own package is the shape of the reasoning, not this
+
+18
+00:01:00,171 --> 00:01:01,010
+specific scope.
+
+19
+00:01:01,560 --> 00:01:06,506
+Notice the objective doesn't say "automate refunds." It says exactly whose time it's
+
+20
+00:01:06,506 --> 00:01:11,335
+trying to save and under what condition, which is the difference 3.7 spent a whole
+
+21
+00:01:11,335 --> 00:01:15,751
+lecture on: a PRD that could describe any feature isn't actually a PRD yet.
+
+22
+00:01:15,751 --> 00:01:20,344
+The scope row is 6.7's bounded version, word for word, because a proposal that
+
+23
+00:01:20,344 --> 00:01:24,466
+specific is what let that lecture's checklist pass in the first place.
+
+24
+00:01:24,466 --> 00:01:29,236
+Notice, too, that the out-of-scope row is doing real work, not just restating the
+
+25
+00:01:29,236 --> 00:01:30,591
+in-scope row backwards.
+
+26
+00:01:30,591 --> 00:01:35,419
+"The 4th request in a day" is a case an unbounded version would never have thought
+
+27
+00:01:35,419 --> 00:01:39,718
+to name, and naming it is what makes the daily cap enforceable instead of
+
+28
+00:01:39,718 --> 00:01:40,483
+aspirational.
+
+29
+00:01:40,483 --> 00:01:44,429
+The threshold row is where this PRD commits to something checkable.
+
+30
+00:01:44,429 --> 00:01:49,081
+"Zero wrongful auto-approvals" is a number the golden set on the next slide can
+
+31
+00:01:49,081 --> 00:01:53,909
+actually test, unlike a vaguer goal like "should be accurate," which no eval could
+
+32
+00:01:53,909 --> 00:01:55,735
+ever definitively pass or fail.
+
+33
+00:01:56,285 --> 00:01:58,763
+Four rows are enough to carry this walkthrough.
+
+34
+00:01:58,763 --> 00:02:02,825
+They wouldn't be enough to actually brief an engineering team, and treating a
+
+35
+00:02:02,825 --> 00:02:07,255
+summary like this one as the finished artifact is a shortcut worth naming before you
+
+36
+00:02:07,255 --> 00:02:07,677
+take it.
+
+37
+00:02:08,227 --> 00:02:12,781
+Notice both cases run identical first two steps, and diverge only at step three.
+
+38
+00:02:12,781 --> 00:02:17,564
+That's 6.1's loop made concrete: the agent doesn't know in advance which ending it's
+
+39
+00:02:17,564 --> 00:02:22,175
+heading toward, it decides after observing what the order history actually shows.
+
+40
+00:02:22,175 --> 00:02:26,559
+Notice, too, that step one never has access to the tool that issues a refund.
+
+41
+00:02:26,559 --> 00:02:31,057
+That's 8.2's read-then-act separation, applied here rather than just described.
+
+42
+00:02:31,057 --> 00:02:34,814
+The email-reading step can only ever produce a structured summary.
+
+43
+00:02:34,814 --> 00:02:39,312
+Issuing the refund is a different call entirely, gated behind step two's check,
+
+44
+00:02:39,312 --> 00:02:43,866
+which is exactly what keeps a crafted sentence inside an email from turning into
+
+45
+00:02:43,866 --> 00:02:45,233
+money moving on its own.
+
+46
+00:02:45,233 --> 00:02:49,673
+This is also why the golden set on the next slide tests more than correctness.
+
+47
+00:02:49,673 --> 00:02:54,456
+It tests whether the boundary between reading and acting actually held, under a case
+
+48
+00:02:54,456 --> 00:02:56,221
+built specifically to probe it.
+
+49
+00:02:56,771 --> 00:03:00,414
+What should the agent do when the data itself is inconsistent?
+
+50
+00:03:00,414 --> 00:03:05,114
+The correct move is the same as any case a rubric can't resolve with confidence:
+
+51
+00:03:05,114 --> 00:03:09,756
+escalate by default, because an agent that guesses when the data disagrees with
+
+52
+00:03:09,756 --> 00:03:14,221
+itself is exactly the failure mode 6.1 warned this course to design against.
+
+53
+00:03:14,771 --> 00:03:19,272
+Read the second row specifically, because it's the one most golden sets skip.
+
+54
+00:03:19,272 --> 00:03:24,066
+Exactly fifty dollars is where an implementation's "under fifty" either means what
+
+55
+00:03:24,066 --> 00:03:28,800
+the PRD says or quietly means "fifty or less," and the only way to catch that gap
+
+56
+00:03:28,800 --> 00:03:33,477
+before a customer does is to put the exact boundary value in the set on purpose.
+
+57
+00:03:33,477 --> 00:03:38,387
+The last row is 8.2's exact injection sentence, reused here rather than paraphrased,
+
+58
+00:03:38,387 --> 00:03:43,180
+because a golden set is precisely where that lecture's warning becomes a checkable
+
+59
+00:03:43,180 --> 00:03:44,992
+test instead of a hypothetical.
+
+60
+00:03:44,992 --> 00:03:49,786
+If this row ever fails, meaning the agent acts on the embedded instruction instead
+
+61
+00:03:49,786 --> 00:03:52,358
+of ignoring it, that's not a tuning problem.
+
+62
+00:03:52,358 --> 00:03:56,800
+It's the read-then-act boundary from the previous slide failing in practice.
+
+63
+00:03:56,800 --> 00:03:59,255
+These six are a sample, not the whole set.
+
+64
+00:03:59,255 --> 00:04:03,873
+A02 asks for fifty, and a reasonable split for this feature runs roughly thirty
+
+65
+00:04:03,873 --> 00:04:08,783
+clean auto-approves covering different dollar amounts, and twenty escalations spread
+
+66
+00:04:08,783 --> 00:04:13,518
+across every named reason on this table plus the ambiguous case from the previous
+
+67
+00:04:13,518 --> 00:04:13,869
+slide.
+
+68
+00:04:13,869 --> 00:04:18,545
+Weight it toward the boundary the same way 4.2 originally taught, not toward the
+
+69
+00:04:18,545 --> 00:04:21,234
+easy middle these six rows already moved past.
+
+70
+00:04:21,784 --> 00:04:26,298
+Ambiguity is precisely what the human review step exists to absorb, not something
+
+71
+00:04:26,298 --> 00:04:28,973
+the golden set should try to resolve on its own.
+
+72
+00:04:29,523 --> 00:04:33,490
+Here's the part a rubric for this feature actually has to do work on.
+
+73
+00:04:33,490 --> 00:04:38,032
+The approve-or-escalate decision itself is close to a factual check, two raters
+
+74
+00:04:38,032 --> 00:04:42,746
+looking at the same order history will nearly always agree on it, which makes it a
+
+75
+00:04:42,746 --> 00:04:45,160
+weak test of whether a rubric is any good.
+
+76
+00:04:45,160 --> 00:04:47,977
+The logged reason is where real judgement enters.
+
+77
+00:04:47,977 --> 00:04:52,806
+A human picking up an escalated case reads that reason to decide what to do next, so
+
+78
+00:04:52,806 --> 00:04:57,463
+"right decision, wrong reason" is a genuine failure, not a pass with an asterisk.
+
+79
+00:04:57,463 --> 00:05:02,292
+Getting two raters to agree on what counts as an adequate reason, specific enough to
+
+80
+00:05:02,292 --> 00:05:06,948
+act on, honest about the actual cause, is the calibration work 4.3 actually asked
+
+81
+00:05:06,948 --> 00:05:11,260
+you to practise, applied here to something narrower than a fully open-ended
+
+82
+00:05:11,260 --> 00:05:11,777
+response.
+
+83
+00:05:11,777 --> 00:05:16,319
+Notice this is a smaller, more tractable version of inter-rater work than 4.3's
+
+84
+00:05:16,319 --> 00:05:20,113
+original example, precisely because the decision space is bounded.
+
+85
+00:05:20,113 --> 00:05:21,550
+That's not a coincidence.
+
+86
+00:05:21,550 --> 00:05:26,379
+A feature this narrowly scoped makes every downstream artifact easier to build well,
+
+87
+00:05:26,379 --> 00:05:30,461
+which is its own quiet argument for scoping tightly in the first place.
+
+88
+00:05:31,011 --> 00:05:35,534
+Say the honest caveat, because treating every wrong answer as equally bad is a
+
+89
+00:05:35,534 --> 00:05:38,492
+mistake this specific feature can't afford to make.
+
+90
+00:05:38,492 --> 00:05:43,189
+Recall 1.7's original objection to an unbounded version of this exact feature: it
+
+91
+00:05:43,189 --> 00:05:48,060
+needs to be right every single time, not usually, because "usually" means real money
+
+92
+00:05:48,060 --> 00:05:50,032
+leaving on a predictable schedule.
+
+93
+00:05:50,032 --> 00:05:52,584
+The bounded scope narrowed the blast radius.
+
+94
+00:05:52,584 --> 00:05:54,382
+It didn't remove the asymmetry.
+
+95
+00:05:54,382 --> 00:05:58,615
+Zero tolerance for a wrongful approval, real tolerance for an unnecessary
+
+96
+00:05:58,615 --> 00:06:03,254
+escalation, is how this golden set respects that asymmetry instead of pretending
+
+97
+00:06:03,254 --> 00:06:05,052
+both error types cost the same.
+
+98
+00:06:05,052 --> 00:06:09,865
+This is worth naming explicitly in your own capstone too, whatever your feature is.
+
+99
+00:06:09,865 --> 00:06:12,707
+Almost no real feature has symmetric error costs.
+
+100
+00:06:12,707 --> 00:06:17,578
+A golden set that scores every mistake the same way is quietly hiding that asymmetry
+
+101
+00:06:17,578 --> 00:06:19,144
+rather than confronting it.
+
+102
+00:06:19,144 --> 00:06:23,900
+This is also exactly the kind of answer 10.6 asked you to be able to produce live,
+
+103
+00:06:23,900 --> 00:06:25,465
+under a follow-up question.
+
+104
+00:06:25,465 --> 00:06:30,337
+"Why zero tolerance on one side and not the other" has a specific, defensible answer
+
+105
+00:06:30,337 --> 00:06:35,150
+here, the two error types cost genuinely different amounts, and a candidate who can
+
+106
+00:06:35,150 --> 00:06:39,905
+say that instantly is demonstrating the actual skill this course was built around.
+
+107
+00:06:40,455 --> 00:06:44,899
+That's the standard this artifact pair was actually built to, and the exercise is
+
+108
+00:06:44,899 --> 00:06:48,410
+worth doing on your own feature's real boundary, not this one's.
+
+109
+00:06:48,410 --> 00:06:53,018
+Most first attempts at a golden set cluster entirely around the easy, obvious cases,
+
+110
+00:06:53,018 --> 00:06:55,047
+because they're the fastest to write.
+
+111
+00:06:55,047 --> 00:06:59,655
+The boundary cases, the exact cap, the unverified account, the embedded instruction,
+
+112
+00:06:59,655 --> 00:07:04,099
+are where a golden set either earns its keep or turns out to have been decorative
+
+113
+00:07:04,099 --> 00:07:04,647
+all along.
+
+114
+00:07:05,197 --> 00:07:06,932
+One thing before you move on.
+
+115
+00:07:06,932 --> 00:07:11,836
+Reread your PRD's threshold next to your golden set, the exact check 11.1 asked of
+
+116
+00:07:11,836 --> 00:07:12,913
+the whole package.
+
+117
+00:07:12,913 --> 00:07:17,159
+A mismatch here is the single most common gap in a first-pass capstone.
+
+118
+00:07:17,159 --> 00:07:21,944
+Then add one case that specifically tries to break your feature, not just use it
+
+119
+00:07:21,944 --> 00:07:22,482
+normally.
+
+120
+00:07:22,482 --> 00:07:27,446
+If nothing comes to mind, borrow the shape of this lecture's boundary and injection
+
+121
+00:07:27,446 --> 00:07:27,745
+rows.
+
+122
+00:07:27,745 --> 00:07:32,470
+Next lecture is the worked solution, part two: cost, risk and metrics, the same
+
+123
+00:07:32,470 --> 00:07:34,503
+feature, the other four artifacts.
