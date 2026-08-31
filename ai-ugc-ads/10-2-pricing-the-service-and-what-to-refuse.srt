@@ -1,0 +1,347 @@
+1
+00:00:00,350 --> 00:00:02,794
+Here's a trap specific to this kind of work.
+
+2
+00:00:02,794 --> 00:00:07,459
+Price by the hour, or by the individual asset, and you've just built an incentive to
+
+3
+00:00:07,459 --> 00:00:11,681
+generate more and test less, exactly backwards from Section 9.2's economics.
+
+4
+00:00:11,681 --> 00:00:12,791
+Generation is cheap.
+
+5
+00:00:12,791 --> 00:00:17,346
+The value is in the discipline around it, and hourly pricing charges for the wrong
+
+6
+00:00:17,346 --> 00:00:18,290
+half of the work.
+
+7
+00:00:18,290 --> 00:00:22,956
+Price the sprint itself instead, the whole five-step rhythm from Section 9.1, as one
+
+8
+00:00:22,956 --> 00:00:23,233
+unit.
+
+9
+00:00:23,233 --> 00:00:27,843
+That aligns what you're paid for with what actually matters: running the discipline
+
+10
+00:00:27,843 --> 00:00:31,398
+every week, not producing the largest possible pile of creative.
+
+11
+00:00:31,398 --> 00:00:33,564
+This isn't about charging more or less.
+
+12
+00:00:33,564 --> 00:00:37,896
+It's about charging for the right thing, so the incentive built into the price
+
+13
+00:00:37,896 --> 00:00:42,506
+agrees with the incentive built into the system, instead of quietly working against
+
+14
+00:00:42,506 --> 00:00:42,673
+it.
+
+15
+00:00:42,673 --> 00:00:47,283
+Ask yourself what a prospective client is actually paying for, honestly, before you
+
+16
+00:00:47,283 --> 00:00:48,560
+decide how to price it.
+
+17
+00:00:48,560 --> 00:00:53,226
+If the honest answer is "the weekly discipline that finds a winner and protects it,"
+
+18
+00:00:53,226 --> 00:00:54,337
+price that directly.
+
+19
+00:00:54,337 --> 00:00:58,502
+If the honest answer is still "a pile of video files," you haven't finished
+
+20
+00:00:58,502 --> 00:01:03,112
+explaining the system yet, and that's worth fixing before the pricing conversation,
+
+21
+00:01:03,112 --> 00:01:03,890
+not during it.
+
+22
+00:01:04,440 --> 00:01:08,826
+The retainer row is the closest match to what Section 9.1 actually built.
+
+23
+00:01:08,826 --> 00:01:13,813
+You're not selling creative pieces, you're selling the weekly rhythm that finds and
+
+24
+00:01:13,813 --> 00:01:18,860
+protects a winner, and a retainer prices exactly that, regardless of whether a given
+
+25
+00:01:18,860 --> 00:01:22,044
+week produces one dramatic result or five quiet ones.
+
+26
+00:01:22,044 --> 00:01:25,830
+The third row deserves a caution the table doesn't fully carry.
+
+27
+00:01:25,830 --> 00:01:30,757
+Pricing against media spend only makes sense once Section 7's testing architecture
+
+28
+00:01:30,757 --> 00:01:34,662
+is actually in place and the CAC ceiling is real, not guessed at.
+
+29
+00:01:34,662 --> 00:01:39,709
+Offering that structure before the testing architecture exists ties your income to a
+
+30
+00:01:39,709 --> 00:01:42,653
+number nobody's actually earned control over yet.
+
+31
+00:01:42,653 --> 00:01:47,580
+Whichever model you choose, resist blending it with per-asset pricing on the side.
+
+32
+00:01:47,580 --> 00:01:52,627
+A retainer with an hourly add-on for "extra" creative quietly reintroduces the exact
+
+33
+00:01:52,627 --> 00:01:55,811
+incentive problem the retainer was supposed to solve.
+
+34
+00:01:55,811 --> 00:02:00,017
+This is also where Section 9.3's ownership question comes back around.
+
+35
+00:02:00,017 --> 00:02:04,824
+A solo operator pricing a retainer is pricing their own fifteen hours, honestly,
+
+36
+00:02:04,824 --> 00:02:07,348
+against what those hours actually protect.
+
+37
+00:02:07,348 --> 00:02:12,274
+An agency pricing the same retainer across a pod of people needs the same honesty,
+
+38
+00:02:12,274 --> 00:02:14,257
+just spread across more salaries.
+
+39
+00:02:14,257 --> 00:02:15,279
+The unit changes.
+
+40
+00:02:15,279 --> 00:02:19,665
+The underlying question, what is this actually worth to protect, doesn't.
+
+41
+00:02:20,215 --> 00:02:24,747
+Two components, and notice the second only activates once a winner is real, not
+
+42
+00:02:24,747 --> 00:02:25,321
+hoped for.
+
+43
+00:02:25,321 --> 00:02:26,698
+That sequencing matters.
+
+44
+00:02:26,698 --> 00:02:31,346
+Pricing for scale before anything has actually scaled is pricing against a result
+
+45
+00:02:31,346 --> 00:02:36,050
+you can't yet promise, the same mistake Section 10.1 already warned against making
+
+46
+00:02:36,050 --> 00:02:37,198
+in the pitch itself.
+
+47
+00:02:37,198 --> 00:02:42,017
+Agree on the scale trigger's terms before you need them, in writing, during the same
+
+48
+00:02:42,017 --> 00:02:44,083
+conversation that sets the retainer.
+
+49
+00:02:44,083 --> 00:02:48,443
+Negotiating a price increase in the middle of a winning streak is an awkward
+
+50
+00:02:48,443 --> 00:02:50,452
+conversation for everyone involved.
+
+51
+00:02:50,452 --> 00:02:55,214
+Agreeing to the terms while nothing dramatic is happening yet is a much easier one.
+
+52
+00:02:55,214 --> 00:02:57,279
+Why does the order matter this much?
+
+53
+00:02:57,279 --> 00:03:02,041
+Because a scale trigger negotiated after a winner already exists puts both sides in
+
+54
+00:03:02,041 --> 00:03:02,902
+an unfair spot.
+
+55
+00:03:02,902 --> 00:03:07,263
+The client feels pressured to accept a higher number to keep momentum going.
+
+56
+00:03:07,263 --> 00:03:12,025
+You feel pressured to accept whatever they'll agree to, rather than what the larger
+
+57
+00:03:12,025 --> 00:03:14,549
+media budget genuinely justifies protecting.
+
+58
+00:03:14,549 --> 00:03:19,254
+Deciding the terms before either pressure exists protects the relationship as much
+
+59
+00:03:19,254 --> 00:03:20,000
+as the price.
+
+60
+00:03:20,550 --> 00:03:24,124
+Two requests are worth refusing outright, not negotiating down.
+
+61
+00:03:24,124 --> 00:03:28,833
+A guaranteed result asks you to promise something Section 8's entire tree exists to
+
+62
+00:03:28,833 --> 00:03:30,762
+prove nobody can promise honestly.
+
+63
+00:03:30,762 --> 00:03:35,358
+Taking that deal means either lying to win the client, or quietly padding results
+
+64
+00:03:35,358 --> 00:03:39,045
+later to look like you kept a promise you never should have made.
+
+65
+00:03:39,045 --> 00:03:43,811
+Skipping pre-flight to launch faster asks you to remove the exact check that catches
+
+66
+00:03:43,811 --> 00:03:47,612
+an overreaching claim or a licence gap before it spends real money.
+
+67
+00:03:47,612 --> 00:03:52,321
+Section 6 built that gate for a reason that doesn't go away just because a client's
+
+68
+00:03:52,321 --> 00:03:52,945
+in a hurry.
+
+69
+00:03:52,945 --> 00:03:57,257
+Refusing this one is also the easier of the two conversations: it's not your
+
+70
+00:03:57,257 --> 00:04:01,966
+judgement being overruled, it's the platform's own compliance risk being ignored on
+
+71
+00:04:01,966 --> 00:04:03,101
+the client's behalf.
+
+72
+00:04:03,101 --> 00:04:07,469
+Both refusals get easier with practice, and both get harder to hold if you've
+
+73
+00:04:07,469 --> 00:04:11,044
+already accepted the client's money before the request arrives.
+
+74
+00:04:11,044 --> 00:04:15,809
+Name these two boundaries in the same conversation as the pricing itself, before any
+
+75
+00:04:15,809 --> 00:04:19,781
+retainer is signed, so refusing later isn't a surprise to either side.
+
+76
+00:04:20,331 --> 00:04:24,816
+Next lecture builds the portfolio that makes this pricing conversation credible in
+
+77
+00:04:24,816 --> 00:04:29,356
+the first place, using exactly the reports Section 9.5 already taught you to write.
+
+78
+00:04:29,356 --> 00:04:33,842
+Before that, write down your own version of the two refusals from this lecture, in
+
+79
+00:04:33,842 --> 00:04:34,662
+your own words.
+
+80
+00:04:34,662 --> 00:04:39,257
+Having them ready before a client asks is the difference between refusing calmly and
+
+81
+00:04:39,257 --> 00:04:43,305
+getting talked out of a boundary you never actually decided on in advance.
+
+82
+00:04:43,305 --> 00:04:46,040
+Would either refusal actually cost you the client?
+
+83
+00:04:46,040 --> 00:04:48,447
+Maybe, on a bad day with the wrong prospect.
+
+84
+00:04:48,447 --> 00:04:52,878
+Weigh that honestly against what saying yes would cost you instead: a promise you
+
+85
+00:04:52,878 --> 00:04:56,871
+can't keep, or your name attached to a claim Section 6 would have caught.
+
+86
+00:04:56,871 --> 00:05:01,466
+Most clients worth keeping respect the boundary once you explain it clearly, and the
+
+87
+00:05:01,466 --> 00:05:05,295
+ones who don't were never going to be an easy relationship regardless.

@@ -1,0 +1,367 @@
+1
+00:00:00,350 --> 00:00:04,799
+You've now got every piece: a brief system, a generation pipeline, a pre-flight
+
+2
+00:00:04,799 --> 00:00:09,305
+checklist, a testing architecture, an honest read, a weekly sprint, and a pitch.
+
+3
+00:00:09,305 --> 00:00:13,980
+That's a lot to hold at once, and trying to stand up all of it in the first week is
+
+4
+00:00:13,980 --> 00:00:17,415
+how a genuinely good system collapses under its own ambition.
+
+5
+00:00:17,415 --> 00:00:20,344
+This lecture sequences it into three phases instead.
+
+6
+00:00:20,344 --> 00:00:24,793
+Not because the pieces have to happen in strict isolation, but because each one
+
+7
+00:00:24,793 --> 00:00:27,328
+needs the last one in place to actually work.
+
+8
+00:00:27,328 --> 00:00:31,777
+A testing architecture built before a cleared batch exists has nothing to test.
+
+9
+00:00:31,777 --> 00:00:35,832
+A pitch built before a single honest report exists has nothing to prove.
+
+10
+00:00:35,832 --> 00:00:39,211
+Ninety days is a real target, not an arbitrary round number.
+
+11
+00:00:39,211 --> 00:00:43,942
+It's roughly the time it takes to run several full sprint cycles, enough for Section
+
+12
+00:00:43,942 --> 00:00:48,054
+9.1's rhythm to become a genuine habit rather than something you're still
+
+13
+00:00:48,054 --> 00:00:50,081
+consciously assembling week to week.
+
+14
+00:00:50,081 --> 00:00:54,530
+Why three phases specifically, rather than a longer list of smaller milestones?
+
+15
+00:00:54,530 --> 00:00:58,867
+Because each phase maps to a genuine dependency, not an arbitrary checkpoint.
+
+16
+00:00:58,867 --> 00:01:03,429
+You can't run honestly before you've built properly, and you can't credibly prove
+
+17
+00:01:03,429 --> 00:01:05,626
+anything before you've run it for real.
+
+18
+00:01:05,626 --> 00:01:10,357
+Collapsing the three into one rushed month skips straight past the dependencies that
+
+19
+00:01:10,357 --> 00:01:12,609
+make each phase actually mean something.
+
+20
+00:01:13,159 --> 00:01:16,897
+Notice phase one has no scoring in it at all, and that's deliberate.
+
+21
+00:01:16,897 --> 00:01:21,239
+Section 8's honest read needs real data to read, and real data needs a properly
+
+22
+00:01:21,239 --> 00:01:24,042
+built, isolated testing architecture running first.
+
+23
+00:01:24,042 --> 00:01:28,329
+Rushing into scoring before the structure exists just produces noise you can't
+
+24
+00:01:28,329 --> 00:01:29,154
+actually trust.
+
+25
+00:01:29,154 --> 00:01:31,353
+Phase two is where the real habit forms.
+
+26
+00:01:31,353 --> 00:01:34,211
+One sprint cycle proves you can run the system once.
+
+27
+00:01:34,211 --> 00:01:38,443
+Two or three prove you can run it as a rhythm, which is the entire difference
+
+28
+00:01:38,443 --> 00:01:40,587
+Section 9 spent five lectures building.
+
+29
+00:01:40,587 --> 00:01:44,929
+Don't skip to phase three until this phase has actually happened, not just been
+
+30
+00:01:44,929 --> 00:01:45,368
+planned.
+
+31
+00:01:45,368 --> 00:01:49,656
+Phase three only applies if you're taking this toward outside work or a bigger
+
+32
+00:01:49,656 --> 00:01:50,590
+internal mandate.
+
+33
+00:01:50,590 --> 00:01:55,042
+If you're running this purely for your own account, days sixty-one through ninety
+
+34
+00:01:55,042 --> 00:01:59,494
+are simply more sprint cycles, the habit continuing to compound rather than a new
+
+35
+00:01:59,494 --> 00:02:00,319
+phase starting.
+
+36
+00:02:00,319 --> 00:02:04,496
+Adjust the exact day counts to your own reality without abandoning the order
+
+37
+00:02:04,496 --> 00:02:05,375
+underneath them.
+
+38
+00:02:05,375 --> 00:02:09,937
+A slower-moving account might need forty-five days to reach a genuinely clean first
+
+39
+00:02:09,937 --> 00:02:10,927
+batch, not thirty.
+
+40
+00:02:10,927 --> 00:02:11,586
+That's fine.
+
+41
+00:02:11,586 --> 00:02:16,039
+What matters is that building still comes before running, and running still comes
+
+42
+00:02:16,039 --> 00:02:18,897
+before proving, whatever the calendar actually says.
+
+43
+00:02:19,447 --> 00:02:23,583
+Notice every line traces back to a specific section, not a vague intention.
+
+44
+00:02:23,583 --> 00:02:24,576
+That's on purpose.
+
+45
+00:02:24,576 --> 00:02:29,209
+A thirty-sixty-ninety plan built from generic goals drifts the moment real work gets
+
+46
+00:02:29,209 --> 00:02:29,485
+busy.
+
+47
+00:02:29,485 --> 00:02:34,008
+One built from this course's actual artifacts has a concrete definition of done at
+
+48
+00:02:34,008 --> 00:02:34,945
+every checkpoint.
+
+49
+00:02:34,945 --> 00:02:37,924
+If you're behind this schedule, that's genuinely fine.
+
+50
+00:02:37,924 --> 00:02:39,965
+The order matters more than the pace.
+
+51
+00:02:39,965 --> 00:02:44,598
+Someone who takes six months to reach day ninety, in this sequence, is in a stronger
+
+52
+00:02:44,598 --> 00:02:48,900
+position than someone who rushed all three phases into three weeks and skipped
+
+53
+00:02:48,900 --> 00:02:52,099
+straight to pitching without ever running an honest cycle.
+
+54
+00:02:52,099 --> 00:02:56,566
+Keep this checklist somewhere you'll actually revisit it, the same advice Section
+
+55
+00:02:56,566 --> 00:02:58,331
+9.4 already gave the swipe file.
+
+56
+00:02:58,331 --> 00:03:01,751
+A plan checked once and then forgotten is a plan in name only.
+
+57
+00:03:01,751 --> 00:03:06,108
+Checked weekly, even briefly, it does the actual job of telling you which phase
+
+58
+00:03:06,108 --> 00:03:10,741
+you're honestly in right now, not which phase you assumed you'd be in by this point.
+
+59
+00:03:11,291 --> 00:03:15,894
+One honest trap worth naming, because the pressure to show results early is real,
+
+60
+00:03:15,894 --> 00:03:18,963
+whether it's coming from a client or your own manager.
+
+61
+00:03:18,963 --> 00:03:23,680
+Jumping to phase three before phase two has actually happened means pitching a case
+
+62
+00:03:23,680 --> 00:03:28,282
+study that doesn't exist yet, or reporting a ratio you're guessing at rather than
+
+63
+00:03:28,282 --> 00:03:29,419
+one you've measured.
+
+64
+00:03:29,419 --> 00:03:34,079
+That's the same mistake Section 9.5 warned against in a report, just moved earlier
+
+65
+00:03:34,079 --> 00:03:34,988
+in the timeline.
+
+66
+00:03:34,988 --> 00:03:39,761
+It doesn't stop being dishonest because the pressure came before the work instead of
+
+67
+00:03:39,761 --> 00:03:40,273
+after it.
+
+68
+00:03:40,273 --> 00:03:44,762
+If someone's asking for results before day sixty, tell them honestly what phase
+
+69
+00:03:44,762 --> 00:03:45,842
+you're actually in.
+
+70
+00:03:45,842 --> 00:03:50,331
+"Building the testing architecture, first real read expected in two weeks" is a
+
+71
+00:03:50,331 --> 00:03:51,581
+true, useful sentence.
+
+72
+00:03:51,581 --> 00:03:53,513
+A fabricated early win is neither.
+
+73
+00:03:53,513 --> 00:03:57,037
+Would that honest sentence actually satisfy the person asking?
+
+74
+00:03:57,037 --> 00:03:59,026
+Often, yes, more than you'd expect.
+
+75
+00:03:59,026 --> 00:04:03,572
+Most reasonable stakeholders can handle "here's exactly where we are" far better
+
+76
+00:04:03,572 --> 00:04:08,061
+than they can handle discovering later that an early result was inflated to buy
+
+77
+00:04:08,061 --> 00:04:08,345
+time.
+
+78
+00:04:08,345 --> 00:04:11,243
+The honest answer costs a moment of discomfort now.
+
+79
+00:04:11,243 --> 00:04:14,085
+The fabricated one costs trust later, all at once.
+
+80
+00:04:14,635 --> 00:04:19,157
+Section eleven is the capstone: one full product, one full sprint, brief to honest
+
+81
+00:04:19,157 --> 00:04:23,623
+read, exactly as this plan's first sixty days describes, compressed into a guided
+
+82
+00:04:23,623 --> 00:04:26,767
+exercise you can complete before starting the real thing.
+
+83
+00:04:26,767 --> 00:04:28,862
+Before that, pick your actual day one.
+
+84
+00:04:28,862 --> 00:04:33,439
+Not a hypothetical future Monday, the specific date you'll open Section 2's product
+
+85
+00:04:33,439 --> 00:04:36,528
+truth doc for whatever you're actually building this on.
+
+86
+00:04:36,528 --> 00:04:41,105
+A plan without a start date is a plan that starts whenever motivation happens to be
+
+87
+00:04:41,105 --> 00:04:44,414
+highest, which is a schedule that rarely arrives on its own.
+
+88
+00:04:44,414 --> 00:04:48,880
+Write that date down somewhere visible, the same discipline this whole course has
+
+89
+00:04:48,880 --> 00:04:51,307
+asked of every other decision worth keeping.
+
+90
+00:04:51,307 --> 00:04:55,167
+A start date that only exists in your head is one more good intention.
+
+91
+00:04:55,167 --> 00:04:59,799
+A start date written down, next to the checklist from this lecture, is the beginning
+
+92
+00:04:59,799 --> 00:05:01,178
+of an actual ninety days.

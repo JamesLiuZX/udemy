@@ -1,0 +1,363 @@
+1
+00:00:00,350 --> 00:00:04,908
+Here's what most competing pitches sound like: guaranteed results, a portfolio of
+
+2
+00:00:04,908 --> 00:00:09,579
+nothing but winners, promises about what will "go viral." None of that is a system.
+
+3
+00:00:09,579 --> 00:00:14,306
+It's a hope dressed up as a plan, and anyone who's run ads for more than a month has
+
+4
+00:00:14,306 --> 00:00:17,401
+already been burned by exactly this kind of pitch once.
+
+5
+00:00:17,401 --> 00:00:21,734
+The pitch this lecture teaches sounds almost boring by comparison, and that's
+
+6
+00:00:21,734 --> 00:00:23,028
+precisely why it lands.
+
+7
+00:00:23,028 --> 00:00:27,530
+It leads with the testing architecture, the honest winner-loser-noise ratio, the
+
+8
+00:00:27,530 --> 00:00:31,919
+fatigue watch, all the unglamorous discipline the last three sections actually
+
+9
+00:00:31,919 --> 00:00:32,257
+built.
+
+10
+00:00:32,257 --> 00:00:35,408
+Nobody else selling creative work is pitching a process.
+
+11
+00:00:35,408 --> 00:00:38,109
+Most are pitching luck and calling it expertise.
+
+12
+00:00:38,109 --> 00:00:42,668
+Sam's redacted Harlan report from Section 9.5 is the actual proof this pitch runs
+
+13
+00:00:42,668 --> 00:00:44,975
+on, not a script written in the abstract.
+
+14
+00:00:44,975 --> 00:00:49,589
+A real testing architecture, real numbers, one clear winner against several honest
+
+15
+00:00:49,589 --> 00:00:50,377
+noise results.
+
+16
+00:00:50,377 --> 00:00:52,740
+That report is the pitch, almost unedited.
+
+17
+00:00:52,740 --> 00:00:55,273
+Notice what "almost unedited" is doing there.
+
+18
+00:00:55,273 --> 00:01:00,000
+Redacting Harlan's brand name and specific numbers protects the client relationship.
+
+19
+00:01:00,000 --> 00:01:04,502
+It doesn't soften a single honest line about how the account actually performed.
+
+20
+00:01:04,502 --> 00:01:08,947
+The structure of the report, the ratio, the discipline, travels intact into the
+
+21
+00:01:08,947 --> 00:01:10,354
+pitch exactly as written.
+
+22
+00:01:10,904 --> 00:01:14,714
+Read the left column as a warning, not a rival strategy to borrow from.
+
+23
+00:01:14,714 --> 00:01:19,115
+A prospect who's been pitched the left column before, and most have, recognises it
+
+24
+00:01:19,115 --> 00:01:21,369
+instantly and has learned not to trust it.
+
+25
+00:01:21,369 --> 00:01:25,769
+Leading with the right column signals something different: you know what a testing
+
+26
+00:01:25,769 --> 00:01:29,741
+programme actually looks like, including the parts that aren't flattering.
+
+27
+00:01:29,741 --> 00:01:31,619
+The third row is worth dwelling on.
+
+28
+00:01:31,619 --> 00:01:35,805
+A promise about results is exactly what Section 8's whole tree exists to avoid
+
+29
+00:01:35,805 --> 00:01:40,259
+making about your own account, and it's not honest to make one about someone else's
+
+30
+00:01:40,259 --> 00:01:40,635
+either.
+
+31
+00:01:40,635 --> 00:01:44,821
+A kill rule and a CAC ceiling, decided before any spend happens, is a credible
+
+32
+00:01:44,821 --> 00:01:45,411
+commitment.
+
+33
+00:01:45,411 --> 00:01:49,060
+A results guarantee is a marketing line no structure actually backs.
+
+34
+00:01:49,060 --> 00:01:51,314
+The fourth row matters more than it looks.
+
+35
+00:01:51,314 --> 00:01:55,661
+"AI-powered" describes almost every competitor by now and means nothing specific.
+
+36
+00:01:55,661 --> 00:01:59,847
+Naming the actual artifacts, a brief system, a pre-flight checklist, a testing
+
+37
+00:01:59,847 --> 00:02:04,355
+architecture, tells a prospect exactly what they're buying, which is the opposite of
+
+38
+00:02:04,355 --> 00:02:05,213
+a vague promise.
+
+39
+00:02:05,213 --> 00:02:07,843
+Run a quick test on this table before you use it.
+
+40
+00:02:07,843 --> 00:02:12,297
+Read the left column aloud and notice how familiar it sounds, because you've likely
+
+41
+00:02:12,297 --> 00:02:14,873
+heard some version of it pitched to you already.
+
+42
+00:02:14,873 --> 00:02:19,327
+That recognition, in the room, does real work before you've said a word of your own
+
+43
+00:02:19,327 --> 00:02:19,649
+pitch.
+
+44
+00:02:20,199 --> 00:02:23,787
+Four parts, and notice the proof comes before the ask, not after.
+
+45
+00:02:23,787 --> 00:02:28,312
+Leading with price invites a prospect to evaluate you against a number before they
+
+46
+00:02:28,312 --> 00:02:30,078
+understand what the number buys.
+
+47
+00:02:30,078 --> 00:02:34,328
+Leading with a real, honest report earns the right to name a price afterward.
+
+48
+00:02:34,328 --> 00:02:37,418
+The problem statement in part one is doing careful work.
+
+49
+00:02:37,418 --> 00:02:41,999
+It names the actual shift, cheap generation, expensive judgement, the same argument
+
+50
+00:02:41,999 --> 00:02:44,206
+Section 1 opened this whole course with.
+
+51
+00:02:44,206 --> 00:02:48,732
+A prospect who recognises that problem in their own account is already most of the
+
+52
+00:02:48,732 --> 00:02:51,050
+way to trusting the system that solves it.
+
+53
+00:02:51,050 --> 00:02:55,189
+Notice what's missing from all four parts: a single invented success story.
+
+54
+00:02:55,189 --> 00:02:59,769
+Everything here traces back to a report you can actually produce, not a claim you'd
+
+55
+00:02:59,769 --> 00:03:01,591
+have to defend under questioning.
+
+56
+00:03:01,591 --> 00:03:06,061
+That's deliberate, and it's the entire reason this pitch survives scrutiny that a
+
+57
+00:03:06,061 --> 00:03:07,275
+flashier one wouldn't.
+
+58
+00:03:07,275 --> 00:03:11,469
+Practice all four parts out loud before you use them for real, not just read
+
+59
+00:03:11,469 --> 00:03:11,966
+silently.
+
+60
+00:03:11,966 --> 00:03:16,326
+A pitch that reads well on a page can still trip on "the honest ratio" or "kill
+
+61
+00:03:16,326 --> 00:03:20,576
+rule" the first time you say them under pressure, and stumbling over your own
+
+62
+00:03:20,576 --> 00:03:25,211
+system's vocabulary undercuts the exact credibility this structure is built to earn.
+
+63
+00:03:25,761 --> 00:03:29,329
+One honest trade worth naming before you use this pitch for real.
+
+64
+00:03:29,329 --> 00:03:32,349
+A guarantee is exciting to hear and impossible to keep.
+
+65
+00:03:32,349 --> 00:03:36,960
+The first time a prospect's account produces mostly noise, which Section 8.2 already
+
+66
+00:03:36,960 --> 00:03:41,406
+told you is the honest normal, a guaranteed-results pitch collapses under its own
+
+67
+00:03:41,406 --> 00:03:41,845
+promise.
+
+68
+00:03:41,845 --> 00:03:45,468
+This pitch never made that promise, so it has nothing to collapse.
+
+69
+00:03:45,468 --> 00:03:49,860
+Would you rather win a pitch you can't actually deliver on, or a slightly harder
+
+70
+00:03:49,860 --> 00:03:53,098
+pitch you can defend for as long as the relationship lasts?
+
+71
+00:03:53,098 --> 00:03:57,709
+The honest ratio is a harder sell in the room and a much easier one to live with six
+
+72
+00:03:57,709 --> 00:04:02,211
+months later, when the account's actual results have to match whatever you said at
+
+73
+00:04:02,211 --> 00:04:02,760
+the start.
+
+74
+00:04:02,760 --> 00:04:07,371
+Expect to lose some pitches to the exciting version of this conversation, especially
+
+75
+00:04:07,371 --> 00:04:07,865
+early on.
+
+76
+00:04:07,865 --> 00:04:12,311
+That's not a sign the honest pitch is wrong, it's the cost of refusing to promise
+
+77
+00:04:12,311 --> 00:04:13,683
+something you can't keep.
+
+78
+00:04:13,683 --> 00:04:18,130
+The clients this pitch does win are the ones worth having for six months, not the
+
+79
+00:04:18,130 --> 00:04:21,259
+ones who leave the moment the first noise result arrives.
+
+80
+00:04:21,809 --> 00:04:26,127
+Next lecture prices what you just pitched, and names the work worth turning down
+
+81
+00:04:26,127 --> 00:04:28,340
+before it costs you more than it's worth.
+
+82
+00:04:28,340 --> 00:04:32,821
+Before that, draft your own version of part one, the problem statement, in your own
+
+83
+00:04:32,821 --> 00:04:33,145
+words.
+
+84
+00:04:33,145 --> 00:04:37,463
+If you can't state it without borrowing this lecture's exact phrasing, you don't
+
+85
+00:04:37,463 --> 00:04:41,296
+understand it well enough yet to pitch it convincingly to someone else.
+
+86
+00:04:41,296 --> 00:04:45,830
+Write parts two and three as well, even in rough form, using your own account's real
+
+87
+00:04:45,830 --> 00:04:47,504
+artifacts rather than Harlan's.
+
+88
+00:04:47,504 --> 00:04:52,038
+A pitch you've actually drafted once, however roughly, is genuinely available to you
+
+89
+00:04:52,038 --> 00:04:53,927
+the moment an opportunity shows up.
+
+90
+00:04:53,927 --> 00:04:57,922
+One you've only heard described in a lecture isn't, no matter how well you
+
+91
+00:04:57,922 --> 00:04:59,541
+understood it while listening.
