@@ -1,0 +1,415 @@
+1
+00:00:00,350 --> 00:00:04,475
+This is the lecture the course description warned you about, and promised you
+
+2
+00:00:04,475 --> 00:00:06,457
+wouldn't need to be a programmer for.
+
+3
+00:00:06,457 --> 00:00:07,796
+Here's that promise kept.
+
+4
+00:00:07,796 --> 00:00:09,939
+The spreadsheet from last lecture works.
+
+5
+00:00:09,939 --> 00:00:11,064
+It will keep working.
+
+6
+00:00:11,064 --> 00:00:15,349
+This version exists for one reason: it can run itself, automatically, every time
+
+7
+00:00:15,349 --> 00:00:19,099
+someone proposes a change, without anybody remembering to open a file.
+
+8
+00:00:19,099 --> 00:00:23,331
+Eighteen lines, and we're going to read every single one before this lecture is
+
+9
+00:00:23,331 --> 00:00:23,599
+over.
+
+10
+00:00:23,599 --> 00:00:26,384
+If you've never written a line of code, that's fine.
+
+11
+00:00:26,384 --> 00:00:29,009
+Ever followed a recipe you didn't write yourself?
+
+12
+00:00:29,009 --> 00:00:31,045
+This isn't more complicated than that.
+
+13
+00:00:31,045 --> 00:00:33,241
+Nothing to install, nothing to configure.
+
+14
+00:00:33,241 --> 00:00:36,937
+Python already understands spreadsheets and counting, out of the box.
+
+15
+00:00:36,937 --> 00:00:40,580
+You're not learning a programming language in the next nine minutes.
+
+16
+00:00:40,580 --> 00:00:45,080
+You're reading eighteen lines somebody else already wrote, closely enough to explain
+
+17
+00:00:45,080 --> 00:00:45,615
+them back.
+
+18
+00:00:45,615 --> 00:00:49,901
+And if you never run it yourself, that's a completely reasonable outcome of this
+
+19
+00:00:49,901 --> 00:00:50,329
+lecture.
+
+20
+00:00:50,329 --> 00:00:54,615
+The goal is that you can look at what an engineer built for you and know whether
+
+21
+00:00:54,615 --> 00:00:58,365
+it's doing what you asked, not that you become the one maintaining it.
+
+22
+00:00:58,915 --> 00:01:03,603
+There's the first half, and notice something before we go further: nothing on this
+
+23
+00:01:03,603 --> 00:01:05,433
+slide is longer than a sentence.
+
+24
+00:01:05,433 --> 00:01:09,378
+Lines one and two borrow two tools instead of building them yourself.
+
+25
+00:01:09,378 --> 00:01:12,752
+One reads a file shaped like a spreadsheet, comma by comma.
+
+26
+00:01:12,752 --> 00:01:17,383
+The other lets you count things by bucket without listing the buckets in advance.
+
+27
+00:01:17,383 --> 00:01:22,129
+Lines four to six set up two empty counters, one for totals and one for passes, and
+
+28
+00:01:22,129 --> 00:01:26,760
+name your six rubric columns once so the rest of the script can just say "rubric"
+
+29
+00:01:26,760 --> 00:01:28,818
+instead of repeating them six times.
+
+30
+00:01:28,818 --> 00:01:29,619
+Then the loop.
+
+31
+00:01:29,619 --> 00:01:32,821
+Open the file, and read it one row, one case, at a time.
+
+32
+00:01:32,821 --> 00:01:37,567
+For each row: read its bucket, read its six scores, add one to that bucket's total,
+
+33
+00:01:37,567 --> 00:01:41,683
+and if all six scores say pass, add one to that bucket's pass count too.
+
+34
+00:01:41,683 --> 00:01:45,857
+That's the only real judgement in the whole script, repeated fifty times.
+
+35
+00:01:46,407 --> 00:01:50,949
+Walk case C027 from last lecture through the last block on the previous slide.
+
+36
+00:01:50,949 --> 00:01:52,404
+Bucket reads adversarial.
+
+37
+00:01:52,404 --> 00:01:54,850
+Scores read one, one, zero, one, one, one.
+
+38
+00:01:54,850 --> 00:01:59,217
+Sum that list and you get five, not six, so the if is false, and passes for
+
+39
+00:01:59,217 --> 00:02:00,789
+adversarial does not go up.
+
+40
+00:02:00,789 --> 00:02:02,768
+Totals for adversarial still does.
+
+41
+00:02:02,768 --> 00:02:07,601
+Now the three lines above: for every bucket seen, divide passes by total, and print
+
+42
+00:02:07,601 --> 00:02:09,290
+it, lined up in neat columns.
+
+43
+00:02:09,290 --> 00:02:13,889
+Here's what actually prints, using the same numbers from the dashboard lecture.
+
+44
+00:02:13,889 --> 00:02:18,547
+Adversarial at forty percent, the collapse you already know about, sitting right
+
+45
+00:02:18,547 --> 00:02:19,712
+there in plain text.
+
+46
+00:02:19,712 --> 00:02:24,370
+No spreadsheet required to see it, and no formula to click on to double-check it
+
+47
+00:02:24,370 --> 00:02:24,777
+either.
+
+48
+00:02:24,777 --> 00:02:25,825
+It's just printed.
+
+49
+00:02:26,375 --> 00:02:30,977
+Here's the actual reason this version exists, and it isn't "code is better." Wire
+
+50
+00:02:30,977 --> 00:02:35,636
+this script into wherever your engineers already store the prompt or the code, and
+
+51
+00:02:35,636 --> 00:02:39,500
+it runs itself, automatically, every time someone proposes a change.
+
+52
+00:02:39,500 --> 00:02:40,806
+Nobody has to remember.
+
+53
+00:02:40,806 --> 00:02:43,818
+Nobody has to open a spreadsheet at nine on a Friday.
+
+54
+00:02:43,818 --> 00:02:48,249
+If a bucket falls below whatever threshold you've set, the change gets blocked
+
+55
+00:02:48,249 --> 00:02:50,181
+before it ships, not caught after.
+
+56
+00:02:50,181 --> 00:02:54,612
+If every bucket holds, it merges, and nobody had to be in the room for that to
+
+57
+00:02:54,612 --> 00:02:55,578
+happen correctly.
+
+58
+00:02:55,578 --> 00:03:00,351
+That's the entire pitch for these eighteen lines over the version you already built.
+
+59
+00:03:00,351 --> 00:03:01,032
+Not smarter.
+
+60
+00:03:01,032 --> 00:03:02,680
+Just present when you aren't.
+
+61
+00:03:02,680 --> 00:03:07,396
+This is also exactly what "regression testing" meant, back when the term was just a
+
+62
+00:03:07,396 --> 00:03:07,850
+diagram.
+
+63
+00:03:07,850 --> 00:03:09,271
+The diagram was the idea.
+
+64
+00:03:09,271 --> 00:03:13,986
+This script, wired into that diagram, is the idea actually running, on every single
+
+65
+00:03:13,986 --> 00:03:18,475
+proposed change, including the ones proposed at ten at night by someone who has
+
+66
+00:03:18,475 --> 00:03:19,270
+never met you.
+
+67
+00:03:19,820 --> 00:03:20,984
+Say the cost plainly.
+
+68
+00:03:20,984 --> 00:03:23,366
+This script has never scored a single case.
+
+69
+00:03:23,366 --> 00:03:27,966
+It only reads scores that already exist, from your rubric and your validated judge,
+
+70
+00:03:27,966 --> 00:03:29,794
+exactly like the spreadsheet did.
+
+71
+00:03:29,794 --> 00:03:33,950
+Nothing about switching to code makes the judgement part faster or cheaper.
+
+72
+00:03:33,950 --> 00:03:38,383
+And reading eighteen lines is genuinely different from wiring them into wherever
+
+73
+00:03:38,383 --> 00:03:39,879
+your company runs its code.
+
+74
+00:03:39,879 --> 00:03:44,423
+That step, connecting this script to actually block a bad change automatically, is
+
+75
+00:03:44,423 --> 00:03:48,745
+worth five minutes of an engineer's time, not an argument about whether you're
+
+76
+00:03:48,745 --> 00:03:49,964
+allowed to ask for it.
+
+77
+00:03:49,964 --> 00:03:51,183
+You've read the logic.
+
+78
+00:03:51,183 --> 00:03:54,065
+Let someone who does this daily handle the plumbing.
+
+79
+00:03:54,065 --> 00:03:57,556
+One more honest limit: this script trusts its input completely.
+
+80
+00:03:57,556 --> 00:04:02,155
+Feed it a CSV where a score column holds "yes" instead of one or zero, and it won't
+
+81
+00:04:02,155 --> 00:04:05,480
+warn you, it will simply crash, or worse, silently miscount.
+
+82
+00:04:05,480 --> 00:04:08,583
+A spreadsheet at least shows you the wrong-looking cell.
+
+83
+00:04:08,583 --> 00:04:11,243
+Code shows you a stack trace, or nothing at all.
+
+84
+00:04:11,793 --> 00:04:14,772
+Notice this definition still isn't about programming.
+
+85
+00:04:14,772 --> 00:04:19,045
+It's about who has to be in the room for the check to happen: a human with a
+
+86
+00:04:19,045 --> 00:04:21,069
+spreadsheet open, or nothing at all.
+
+87
+00:04:21,069 --> 00:04:25,567
+The exercise is deliberately the smallest possible test: export what you already
+
+88
+00:04:25,567 --> 00:04:29,109
+built, run this against it, and confirm the two versions agree.
+
+89
+00:04:29,109 --> 00:04:33,550
+If they don't, before you suspect anything clever, check that your CSV's column
+
+90
+00:04:33,550 --> 00:04:36,080
+headers say exactly q1 through q6 and bucket.
+
+91
+00:04:36,080 --> 00:04:39,735
+That single mismatch causes nearly every disagreement you'll see.
+
+92
+00:04:39,735 --> 00:04:44,401
+Two independent implementations of the same arithmetic agreeing is not a formality.
+
+93
+00:04:44,401 --> 00:04:48,786
+It's the same principle as the calibration lecture, applied to code instead of
+
+94
+00:04:48,786 --> 00:04:53,284
+people: two workings, checked against each other, before either one gets trusted
+
+95
+00:04:53,284 --> 00:04:53,621
+alone.
+
+96
+00:04:54,171 --> 00:04:55,839
+One thing before you move on.
+
+97
+00:04:55,839 --> 00:04:59,463
+The script, exactly as shown, is A04, attached to this lecture.
+
+98
+00:04:59,463 --> 00:05:04,294
+Copy it, don't retype it, so a typo doesn't become your first debugging session, and
+
+99
+00:05:04,294 --> 00:05:06,595
+run it against your own exported scores.
+
+100
+00:05:06,595 --> 00:05:11,426
+Confirm it agrees with the spreadsheet before you trust either one for a real launch
+
+101
+00:05:11,426 --> 00:05:11,944
+decision.
+
+102
+00:05:11,944 --> 00:05:16,717
+Next lecture, we answer the question this section has been quietly avoiding: when a
+
+103
+00:05:16,717 --> 00:05:21,549
+pass rate moves, how do you actually know whether that's real, or the ordinary noise
+
+104
+00:05:21,549 --> 00:05:22,987
+of re-running fifty dice.

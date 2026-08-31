@@ -1,0 +1,435 @@
+1
+00:00:00,350 --> 00:00:04,784
+Everything in the last two lectures took real hours: reading transcripts, arguing
+
+2
+00:00:04,784 --> 00:00:07,521
+about wording, running a calibration loop by hand.
+
+3
+00:00:07,521 --> 00:00:09,108
+Here's the tempting shortcut.
+
+4
+00:00:09,108 --> 00:00:13,597
+Hand your rubric and your fifty cases to an AI model, and it scores all of them in
+
+5
+00:00:13,597 --> 00:00:15,130
+under a minute, for pennies.
+
+6
+00:00:15,130 --> 00:00:18,961
+That speed is real, and for most teams it's eventually the right call.
+
+7
+00:00:18,961 --> 00:00:20,549
+But notice what you just did.
+
+8
+00:00:20,549 --> 00:00:24,928
+You handed judgement to a system built from the same technology you're trying to
+
+9
+00:00:24,928 --> 00:00:28,048
+evaluate, and asked it to grade its own kind of homework.
+
+10
+00:00:28,048 --> 00:00:32,427
+Would you trust a student grading their own exam without checking the answer key
+
+11
+00:00:32,427 --> 00:00:32,756
+first?
+
+12
+00:00:32,756 --> 00:00:35,274
+That's the position you just put the model in.
+
+13
+00:00:35,274 --> 00:00:36,533
+It's not disqualifying.
+
+14
+00:00:36,533 --> 00:00:39,051
+It's a reason to check, not to trust outright.
+
+15
+00:00:39,051 --> 00:00:40,912
+An LLM judge doesn't lie randomly.
+
+16
+00:00:40,912 --> 00:00:45,346
+It lies in a small number of specific, well-documented ways, the kind researchers
+
+17
+00:00:45,346 --> 00:00:49,670
+have measured across thousands of comparisons, and once you know what they are,
+
+18
+00:00:49,670 --> 00:00:51,477
+they're straightforward to catch.
+
+19
+00:00:51,477 --> 00:00:55,801
+This isn't a reason to skip straight back to scoring everything by hand either.
+
+20
+00:00:55,801 --> 00:00:58,100
+Section 4 has already cost you real hours.
+
+21
+00:00:58,100 --> 00:01:02,589
+The judge is how those hours stop scaling linearly with how much traffic you have.
+
+22
+00:01:03,139 --> 00:01:06,346
+Two are worth knowing before you use this on anything real.
+
+23
+00:01:06,346 --> 00:01:10,695
+Length bias: judge models consistently rate longer answers higher, even when the
+
+24
+00:01:10,695 --> 00:01:11,999
+extra words add nothing.
+
+25
+00:01:11,999 --> 00:01:16,403
+Politeness, hedging, restating the question, all of it reads as thoroughness to a
+
+26
+00:01:16,403 --> 00:01:20,045
+model pattern-matching on what confident answers usually look like.
+
+27
+00:01:20,045 --> 00:01:24,394
+Position bias shows up when you ask a judge to compare two outputs side by side.
+
+28
+00:01:24,394 --> 00:01:28,742
+Swap which one appears first, and on a meaningful fraction of cases, the verdict
+
+29
+00:01:28,742 --> 00:01:29,503
+flips with it.
+
+30
+00:01:29,503 --> 00:01:31,787
+The judge isn't re-weighing the arguments.
+
+31
+00:01:31,787 --> 00:01:34,994
+It's showing a mild preference for whichever it read first.
+
+32
+00:01:34,994 --> 00:01:37,168
+Neither is a reason to abandon the idea.
+
+33
+00:01:37,168 --> 00:01:41,626
+Both have a five-minute check: does the score track word count more than it tracks
+
+34
+00:01:41,626 --> 00:01:45,975
+the rubric, and does the verdict survive being run again with the order swapped.
+
+35
+00:01:45,975 --> 00:01:50,541
+A third is worth a mention even though it's harder to check yourself: judges tend to
+
+36
+00:01:50,541 --> 00:01:55,107
+favour answers formatted with headings and bullet points over plain prose making the
+
+37
+00:01:55,107 --> 00:01:56,140
+identical argument.
+
+38
+00:01:56,140 --> 00:02:00,489
+If your rubric never mentioned formatting, and the judge is rewarding it anyway,
+
+39
+00:02:00,489 --> 00:02:03,479
+that preference is coming from the judge, not from you.
+
+40
+00:02:04,029 --> 00:02:08,340
+Here's the bias caught in the act, on the ticket-summary case you already know.
+
+41
+00:02:08,340 --> 00:02:12,543
+Two summaries, same underlying facts: charge, refund, deadline, likely cause.
+
+42
+00:02:12,543 --> 00:02:15,054
+One is forty-one words, direct, nothing extra.
+
+43
+00:02:15,054 --> 00:02:19,366
+The other is a hundred and eighteen words, the same four facts, restated with a
+
+44
+00:02:19,366 --> 00:02:21,221
+longer opening and a longer close.
+
+45
+00:02:21,221 --> 00:02:24,551
+Scored against your six-question rubric by a human, they tie.
+
+46
+00:02:24,551 --> 00:02:27,389
+Every fact that needs to survive, survives, in both.
+
+47
+00:02:27,389 --> 00:02:31,974
+Scored by an unchecked LLM judge, the padded version wins outright: five out of five
+
+48
+00:02:31,974 --> 00:02:33,393
+against three out of five.
+
+49
+00:02:33,393 --> 00:02:36,067
+Nothing about the padded version is more correct.
+
+50
+00:02:36,067 --> 00:02:40,324
+It just sounds more thorough, and "sounds thorough" is precisely the pattern a
+
+51
+00:02:40,324 --> 00:02:41,853
+length-biased judge rewards.
+
+52
+00:02:41,853 --> 00:02:46,110
+Ship on that judge's numbers alone and you'd be optimising your feature to get
+
+53
+00:02:46,110 --> 00:02:47,201
+wordier, not better.
+
+54
+00:02:47,751 --> 00:02:49,553
+You already own the tool for this.
+
+55
+00:02:49,553 --> 00:02:53,898
+It's the calibration loop from last lecture, run once more with a different second
+
+56
+00:02:53,898 --> 00:02:54,375
+reviewer.
+
+57
+00:02:54,375 --> 00:02:58,349
+Score fifteen real cases yourself, using the rubric you already calibrated.
+
+58
+00:02:58,349 --> 00:03:01,952
+Have the model score the same fifteen, without seeing your verdicts.
+
+59
+00:03:01,952 --> 00:03:05,767
+Compare, case by case, the same way you compared against your colleague.
+
+60
+00:03:05,767 --> 00:03:10,111
+Clear roughly eighty-five percent agreement, and you've earned the right to let it
+
+61
+00:03:10,111 --> 00:03:13,555
+score the other thirty-five, and every future release after that.
+
+62
+00:03:13,555 --> 00:03:17,953
+Fall short, and look at where it broke: if the disagreements cluster on your longer
+
+63
+00:03:17,953 --> 00:03:20,815
+outputs, you've found length bias, not a broken judge.
+
+64
+00:03:20,815 --> 00:03:23,835
+This is also the one honest way to know a judge is ready.
+
+65
+00:03:23,835 --> 00:03:25,159
+Not a vendor's benchmark.
+
+66
+00:03:25,159 --> 00:03:27,703
+Your rubric, on your cases, checked against you.
+
+67
+00:03:28,253 --> 00:03:29,426
+Say the cost plainly.
+
+68
+00:03:29,426 --> 00:03:33,116
+Per case, an LLM judge is close to free next to a human afternoon.
+
+69
+00:03:33,116 --> 00:03:36,357
+But "validated once" is not the same claim as "validated".
+
+70
+00:03:36,357 --> 00:03:41,053
+The model behind your judge gets updated on a schedule you don't control and usually
+
+71
+00:03:41,053 --> 00:03:45,636
+aren't told about, and an update can shift how it scores without changing a single
+
+72
+00:03:45,636 --> 00:03:46,754
+word of your rubric.
+
+73
+00:03:46,754 --> 00:03:51,058
+That's the same drift idea from earlier in this section, aimed at a different
+
+74
+00:03:51,058 --> 00:03:51,449
+target.
+
+75
+00:03:51,449 --> 00:03:54,747
+There, production traffic moved and your golden set didn't.
+
+76
+00:03:54,747 --> 00:03:57,933
+Here, the judge itself moves and your validation doesn't.
+
+77
+00:03:57,933 --> 00:04:02,572
+The fix costs almost nothing: rerun the fifteen-case check against your judge every
+
+78
+00:04:02,572 --> 00:04:06,988
+time you notice its provider ships an update, or on a calendar, whichever comes
+
+79
+00:04:06,988 --> 00:04:07,323
+first.
+
+80
+00:04:07,323 --> 00:04:10,845
+Treat "validated" as a date-stamped claim, not a permanent one.
+
+81
+00:04:10,845 --> 00:04:13,807
+Put the date on the number itself when you report it.
+
+82
+00:04:13,807 --> 00:04:18,111
+"Ninety-four percent, validated against a human rubric on the third of March"
+
+83
+00:04:18,111 --> 00:04:20,626
+survives a hard question in a review meeting.
+
+84
+00:04:20,626 --> 00:04:22,918
+A bare "ninety-four percent" invites one.
+
+85
+00:04:23,468 --> 00:04:25,928
+Notice the word doing the work again: recently.
+
+86
+00:04:25,928 --> 00:04:27,340
+Not "we checked this once".
+
+87
+00:04:27,340 --> 00:04:29,486
+Trustworthy is a claim with a shelf life.
+
+88
+00:04:29,486 --> 00:04:33,097
+The exercise reuses cases you've already scored, which is deliberate.
+
+89
+00:04:33,097 --> 00:04:37,283
+You're not starting a new curation project, you're pointing a second reviewer at
+
+90
+00:04:37,283 --> 00:04:38,592
+work you've already done.
+
+91
+00:04:38,592 --> 00:04:42,516
+One afternoon, fifteen cases, a model, and a rubric it's never seen before.
+
+92
+00:04:42,516 --> 00:04:46,336
+Sort the disagreements by word count first, before you read a single one.
+
+93
+00:04:46,336 --> 00:04:50,732
+If they cluster at the long end, you've found your bias before it found you, and you
+
+94
+00:04:50,732 --> 00:04:52,878
+know exactly which slide to come back to.
+
+95
+00:04:52,878 --> 00:04:56,489
+If they don't cluster anywhere obvious, that's a genuinely good sign.
+
+96
+00:04:56,489 --> 00:05:00,727
+It means the disagreements are ordinary judgement calls rather than a pattern you
+
+97
+00:05:00,727 --> 00:05:04,757
+can name, which is exactly what you'd expect from two competent reviewers who
+
+98
+00:05:04,757 --> 00:05:06,641
+occasionally see things differently.
+
+99
+00:05:07,191 --> 00:05:08,787
+One thing before you move on.
+
+100
+00:05:08,787 --> 00:05:13,355
+Take the fifteen cases from last lecture's calibration and add one more reviewer: a
+
+101
+00:05:13,355 --> 00:05:15,887
+model, scoring blind, against the same rubric.
+
+102
+00:05:15,887 --> 00:05:18,199
+You already have everything else you need.
+
+103
+00:05:18,199 --> 00:05:22,822
+If the agreement isn't there yet, sort the disagreements by word count before you do
+
+104
+00:05:22,822 --> 00:05:23,813
+anything cleverer.
+
+105
+00:05:23,813 --> 00:05:28,381
+It's the single most common cause, and checking it first will save you an afternoon
+
+106
+00:05:28,381 --> 00:05:30,197
+of chasing the wrong explanation.
+
+107
+00:05:30,197 --> 00:05:34,766
+Next lecture, we stop scoring one batch of fifty and start watching the number over
+
+108
+00:05:34,766 --> 00:05:39,279
+time: pass rate, regression testing, and the dashboard that tells you the moment a
+
+109
+00:05:39,279 --> 00:05:42,086
+change makes things worse, instead of a week later.

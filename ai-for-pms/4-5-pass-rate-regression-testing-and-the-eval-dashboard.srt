@@ -1,0 +1,443 @@
+1
+00:00:00,350 --> 00:00:03,991
+You've built a golden set, a calibrated rubric, and a validated judge.
+
+2
+00:00:03,991 --> 00:00:08,255
+Here's the question this lecture is actually about: what do you do with the number
+
+3
+00:00:08,255 --> 00:00:10,336
+once you have it, release after release.
+
+4
+00:00:10,336 --> 00:00:12,000
+Most teams do the obvious thing.
+
+5
+00:00:12,000 --> 00:00:15,900
+They watch one aggregate pass rate, and if it doesn't move much, they ship.
+
+6
+00:00:15,900 --> 00:00:16,680
+Sound familiar?
+
+7
+00:00:16,680 --> 00:00:20,737
+That habit is about to cost you, and I want to show you exactly how, before it
+
+8
+00:00:20,737 --> 00:00:23,546
+happens to your feature instead of a hypothetical one.
+
+9
+00:00:23,546 --> 00:00:26,354
+A ninety-two percent pass rate is not one measurement.
+
+10
+00:00:26,354 --> 00:00:30,671
+It's fifty measurements averaged into a single number, and averaging is exactly the
+
+11
+00:00:30,671 --> 00:00:34,103
+operation that hides a problem living in a small part of your set.
+
+12
+00:00:34,103 --> 00:00:38,212
+This is the same instinct from earlier in this section, applied one step later.
+
+13
+00:00:38,212 --> 00:00:42,112
+You built four buckets so a random fifty couldn't hide a rare failure mode.
+
+14
+00:00:42,112 --> 00:00:46,221
+Track only the blended number afterwards, and you've thrown that structure away
+
+15
+00:00:46,221 --> 00:00:48,301
+right when it started paying for itself.
+
+16
+00:00:48,851 --> 00:00:50,468
+Here's a real shape of change.
+
+17
+00:00:50,468 --> 00:00:53,917
+A prompt update went out, meant to make responses more thorough.
+
+18
+00:00:53,917 --> 00:00:57,419
+Watch what it did, bucket by bucket, not just at the bottom line.
+
+19
+00:00:57,419 --> 00:01:00,707
+Common path improved, nineteen of twenty instead of eighteen.
+
+20
+00:01:00,707 --> 00:01:02,054
+Known failure modes held.
+
+21
+00:01:02,054 --> 00:01:02,916
+Edge cases held.
+
+22
+00:01:02,916 --> 00:01:04,048
+Nothing alarming yet.
+
+23
+00:01:04,048 --> 00:01:08,089
+Then adversarial: five out of five, before, down to two out of five, after.
+
+24
+00:01:08,089 --> 00:01:12,454
+The instruction to be "more thorough and complete" made the model measurably more
+
+25
+00:01:12,454 --> 00:01:16,334
+willing to comply with a cleverly worded request it should have refused.
+
+26
+00:01:16,334 --> 00:01:17,951
+Now look at the aggregate row.
+
+27
+00:01:17,951 --> 00:01:20,106
+Ninety-two percent down to eighty-eight.
+
+28
+00:01:20,106 --> 00:01:21,884
+Four points, on a fifty-case set.
+
+29
+00:01:21,884 --> 00:01:24,148
+Most teams would call that noise and ship.
+
+30
+00:01:24,148 --> 00:01:28,189
+The bucket breakdown says otherwise: one specific capability didn't dip, it
+
+31
+00:01:28,189 --> 00:01:32,500
+collapsed, and the aggregate buried it under thirty-nine cases that got slightly
+
+32
+00:01:32,500 --> 00:01:32,877
+better.
+
+33
+00:01:33,427 --> 00:01:35,501
+Notice what the definition rules out.
+
+34
+00:01:35,501 --> 00:01:40,154
+Not "one case flipped": a single golden-set case is one data point, and data points
+
+35
+00:01:40,154 --> 00:01:40,547
+wobble.
+
+36
+00:01:40,547 --> 00:01:45,199
+Not "the aggregate moved a bit": you just watched four points of aggregate movement
+
+37
+00:01:45,199 --> 00:01:46,937
+mean almost nothing on its own.
+
+38
+00:01:46,937 --> 00:01:51,254
+What counts is a specific bucket moving more than ordinary re-run noise would
+
+39
+00:01:51,254 --> 00:01:51,702
+explain.
+
+40
+00:01:51,702 --> 00:01:56,299
+Five out of five to two out of five, in a bucket that exists specifically to catch
+
+41
+00:01:56,299 --> 00:01:58,261
+this kind of failure, is not noise.
+
+42
+00:01:58,261 --> 00:01:59,943
+It's the bucket doing its job.
+
+43
+00:01:59,943 --> 00:02:03,586
+The honest version of this rule is exactly that, a rule of thumb.
+
+44
+00:02:03,586 --> 00:02:08,239
+The properly worked-out version, with an actual threshold instead of a gut feeling,
+
+45
+00:02:08,239 --> 00:02:10,033
+is coming later in this section.
+
+46
+00:02:10,033 --> 00:02:14,125
+For now, treat any small bucket's sharp drop as a stop sign, not a shrug.
+
+47
+00:02:14,675 --> 00:02:17,476
+Here's where all of this actually sits in your week.
+
+48
+00:02:17,476 --> 00:02:21,731
+Someone proposes a change: a new prompt, a different model, a tweaked retrieval
+
+49
+00:02:21,731 --> 00:02:22,539
+step, anything.
+
+50
+00:02:22,539 --> 00:02:27,064
+Before it ships, the golden set runs again, all four buckets, not just a spot check.
+
+51
+00:02:27,064 --> 00:02:31,588
+Then the only question that matters: did any bucket move more than you'd expect from
+
+52
+00:02:31,588 --> 00:02:31,912
+noise.
+
+53
+00:02:31,912 --> 00:02:36,221
+If yes, hold, and go read the specific cases in that bucket before anyone argues
+
+54
+00:02:36,221 --> 00:02:37,567
+about it in the abstract.
+
+55
+00:02:37,567 --> 00:02:41,553
+If no, ship it, and log the new pass rate, by bucket, next to the old one.
+
+56
+00:02:41,553 --> 00:02:46,024
+That log is the part most teams skip, and it's the part that turns "feels about the
+
+57
+00:02:46,024 --> 00:02:47,963
+same" into a chart you can point at.
+
+58
+00:02:47,963 --> 00:02:50,010
+None of this requires new tooling yet.
+
+59
+00:02:50,010 --> 00:02:54,480
+A shared spreadsheet, one row per release, four bucket columns and a date, does the
+
+60
+00:02:54,480 --> 00:02:57,443
+job until you have a reason to build something fancier.
+
+61
+00:02:57,993 --> 00:03:02,494
+Remember the promise from earlier in this section: online signal gets a proper home,
+
+62
+00:03:02,494 --> 00:03:06,031
+a dashboard, instead of a Slack message when a customer complains.
+
+63
+00:03:06,031 --> 00:03:09,782
+Here's what that home actually needs, and it's less than people build.
+
+64
+00:03:09,782 --> 00:03:14,069
+Pass rate broken out by bucket, always, never one blended figure standing in for
+
+65
+00:03:14,069 --> 00:03:15,409
+four different questions.
+
+66
+00:03:15,409 --> 00:03:19,642
+Every version plotted against the last, so a trend is visible, not just today's
+
+67
+00:03:19,642 --> 00:03:20,125
+snapshot.
+
+68
+00:03:20,125 --> 00:03:24,626
+And your online samples, pulled from live traffic every release, sitting on the same
+
+69
+00:03:24,626 --> 00:03:27,359
+chart as the offline number they're meant to check.
+
+70
+00:03:27,359 --> 00:03:29,181
+Watch for the kink, not the level.
+
+71
+00:03:29,181 --> 00:03:31,914
+A bucket sitting at ninety percent forever is fine.
+
+72
+00:03:31,914 --> 00:03:36,147
+A bucket that bends sharply in one release is the thing that was actually worth
+
+73
+00:03:36,147 --> 00:03:37,112
+building this for.
+
+74
+00:03:37,112 --> 00:03:41,613
+Here's what that bend actually looks like once you plot it instead of describing it.
+
+75
+00:03:42,163 --> 00:03:43,677
+Two points isn't a trend yet.
+
+76
+00:03:43,677 --> 00:03:44,721
+It's barely a slope.
+
+77
+00:03:44,721 --> 00:03:48,950
+That's the honest state of this particular chart today, and it's also exactly why
+
+78
+00:03:48,950 --> 00:03:53,126
+you keep it running instead of screenshotting one before-and-after: it gets more
+
+79
+00:03:53,126 --> 00:03:54,744
+useful every release, not less.
+
+80
+00:03:54,744 --> 00:03:59,077
+Look at where four of the five lines sit at the second point: bunched near the top,
+
+81
+00:03:59,077 --> 00:03:59,756
+barely moved.
+
+82
+00:03:59,756 --> 00:04:02,105
+One line does something the other four don't.
+
+83
+00:04:02,105 --> 00:04:02,888
+It doesn't dip.
+
+84
+00:04:02,888 --> 00:04:07,117
+It falls through the floor of the chart, on its own, apart from everything around
+
+85
+00:04:07,117 --> 00:04:07,273
+it.
+
+86
+00:04:07,273 --> 00:04:11,554
+That's what a real regression looks like on a line instead of in a row of a table:
+
+87
+00:04:11,554 --> 00:04:15,313
+not a number that changed, a line that bent while its neighbours didn't.
+
+88
+00:04:15,313 --> 00:04:19,437
+By the time this chart has ten releases on it, you won't need anyone to explain
+
+89
+00:04:19,437 --> 00:04:20,951
+which bucket needs attention.
+
+90
+00:04:20,951 --> 00:04:23,352
+You'll be able to see it from across the room.
+
+91
+00:04:23,902 --> 00:04:25,063
+Say the cost plainly.
+
+92
+00:04:25,063 --> 00:04:27,273
+Building the dashboard is the easy part.
+
+93
+00:04:27,273 --> 00:04:31,860
+The ongoing cost is smaller than the calibration work from earlier lectures, but it
+
+94
+00:04:31,860 --> 00:04:36,281
+never ends: every proposed change means a re-run, and every re-run means someone
+
+95
+00:04:36,281 --> 00:04:40,702
+actually opens the breakdown and looks, not just glances at whether the top-line
+
+96
+00:04:40,702 --> 00:04:41,587
+number is green.
+
+97
+00:04:41,587 --> 00:04:46,118
+Skip that ownership and you get the worst outcome in this course: a dashboard that
+
+98
+00:04:46,118 --> 00:04:50,650
+exists, looks rigorous in a slide deck, and hasn't been checked in three releases.
+
+99
+00:04:50,650 --> 00:04:53,579
+That's not a smaller risk than having no eval at all.
+
+100
+00:04:53,579 --> 00:04:58,166
+In some ways it's a bigger one, because everyone in the room now assumes somebody's
+
+101
+00:04:58,166 --> 00:05:02,642
+watching, and the launch conversation moves faster precisely because nobody feels
+
+102
+00:05:02,642 --> 00:05:04,024
+the need to double-check.
+
+103
+00:05:04,574 --> 00:05:06,194
+One thing before you move on.
+
+104
+00:05:06,194 --> 00:05:10,720
+Take whatever pass rate you're currently tracking and split it by bucket, even if
+
+105
+00:05:10,720 --> 00:05:15,358
+that means an afternoon with a spreadsheet and no automation yet, and see whether a
+
+106
+00:05:15,358 --> 00:05:17,649
+blended number has been hiding something.
+
+107
+00:05:17,649 --> 00:05:22,342
+Then name a name, not a team, a person, who actually opens this after every release.
+
+108
+00:05:22,342 --> 00:05:26,589
+A dashboard with no owner quietly reverts to a Slack message within a month.
+
+109
+00:05:26,589 --> 00:05:31,115
+Next two lectures, we build the thing itself: the eval harness that produces this
+
+110
+00:05:31,115 --> 00:05:35,696
+breakdown automatically, first in a spreadsheet you can build this afternoon, then
+
+111
+00:05:35,696 --> 00:05:38,211
+in thirty lines of code that runs it for you.

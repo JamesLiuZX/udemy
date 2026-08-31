@@ -1,0 +1,431 @@
+1
+00:00:00,350 --> 00:00:00,622
+Fair.
+
+2
+00:00:00,622 --> 00:00:04,813
+Everything so far in this section has been judgement: choosing cases, wording
+
+3
+00:00:04,813 --> 00:00:09,276
+questions, checking agreement, and all of that stays real work a spreadsheet can't
+
+4
+00:00:09,276 --> 00:00:09,875
+do for you.
+
+5
+00:00:09,875 --> 00:00:12,433
+But the table you tallied by hand last lecture?
+
+6
+00:00:12,433 --> 00:00:13,903
+That part can tally itself.
+
+7
+00:00:13,903 --> 00:00:17,985
+This is the lecture where you finally build something that runs on its own.
+
+8
+00:00:17,985 --> 00:00:19,400
+You need exactly two tabs.
+
+9
+00:00:19,400 --> 00:00:22,013
+One where you enter scores, one that reads them.
+
+10
+00:00:22,013 --> 00:00:26,095
+No macros, no plugins, nothing beyond formulas you've probably used before.
+
+11
+00:00:26,095 --> 00:00:30,504
+By the end of this you'll have a working version of the exact breakdown from last
+
+12
+00:00:30,504 --> 00:00:35,076
+lecture, the one that caught a bucket collapsing under a flat aggregate, except this
+
+13
+00:00:35,076 --> 00:00:39,648
+one recalculates the moment you type a new score in, instead of you doing it by hand
+
+14
+00:00:39,648 --> 00:00:41,880
+on a Sunday night before a launch review.
+
+15
+00:00:41,880 --> 00:00:46,289
+If you've built a pivot table before, you already have every skill this requires.
+
+16
+00:00:46,289 --> 00:00:48,466
+Nothing here is more advanced than that.
+
+17
+00:00:49,016 --> 00:00:53,611
+Here's tab one, and it's almost exactly the two-column sheet from the calibration
+
+18
+00:00:53,611 --> 00:00:55,256
+lecture, just made permanent.
+
+19
+00:00:55,256 --> 00:00:56,221
+One row per case.
+
+20
+00:00:56,221 --> 00:00:58,263
+A case ID, so you can find it again.
+
+21
+00:00:58,263 --> 00:01:01,100
+The bucket it belongs to, from the four you built.
+
+22
+00:01:01,100 --> 00:01:05,752
+Then six columns, one per rubric question, one for pass and zero for fail, entered
+
+23
+00:01:05,752 --> 00:01:07,680
+by you or by your validated judge.
+
+24
+00:01:07,680 --> 00:01:12,276
+Case C027 there is a shape you'll see constantly: five questions pass, one fails,
+
+25
+00:01:12,276 --> 00:01:13,864
+question three specifically.
+
+26
+00:01:13,864 --> 00:01:16,190
+That's not a rounding error to wave away.
+
+27
+00:01:16,190 --> 00:01:20,615
+It's the exact case you'd pull up when someone asks why the adversarial bucket
+
+28
+00:01:20,615 --> 00:01:21,069
+dropped.
+
+29
+00:01:21,069 --> 00:01:22,487
+Fifty rows, nine columns.
+
+30
+00:01:22,487 --> 00:01:23,735
+That's the entire tab.
+
+31
+00:01:23,735 --> 00:01:28,330
+Nothing about scale here is the hard part; the hard part happened already, in the
+
+32
+00:01:28,330 --> 00:01:32,018
+two lectures that taught you what belongs in columns C through H.
+
+33
+00:01:32,568 --> 00:01:34,321
+Two formulas, and you're done.
+
+34
+00:01:34,321 --> 00:01:37,360
+The first lives in the Scores tab, one copy per row.
+
+35
+00:01:37,360 --> 00:01:42,094
+It adds up the six pass or fail columns, and if all six read one, the case passes
+
+36
+00:01:42,094 --> 00:01:42,562
+overall.
+
+37
+00:01:42,562 --> 00:01:45,251
+Miss a single question and the row reads zero.
+
+38
+00:01:45,251 --> 00:01:49,985
+No partial credit, on purpose: the rubric said pass or fail, so the overall score
+
+39
+00:01:49,985 --> 00:01:50,803
+respects that.
+
+40
+00:01:50,803 --> 00:01:54,017
+The second lives on the Dashboard tab, once per bucket.
+
+41
+00:01:54,017 --> 00:01:58,810
+It's an average-if: average the overall column, but only for rows where the bucket
+
+42
+00:01:58,810 --> 00:02:00,972
+matches, common path in this example.
+
+43
+00:02:00,972 --> 00:02:05,531
+Since overall is just ones and zeros, averaging them is exactly the pass rate.
+
+44
+00:02:05,531 --> 00:02:09,973
+Same formula, four times, once per bucket, and you have last lecture's table
+
+45
+00:02:09,973 --> 00:02:10,966
+computing itself.
+
+46
+00:02:10,966 --> 00:02:15,642
+Change one bucket name in the criteria and the same formula works for any of the
+
+47
+00:02:15,642 --> 00:02:15,934
+four.
+
+48
+00:02:15,934 --> 00:02:20,843
+You are not writing four different formulas, you're writing one formula and changing
+
+49
+00:02:20,843 --> 00:02:22,071
+one word, four times.
+
+50
+00:02:22,621 --> 00:02:27,101
+Here's the actual sequence, because "build a spreadsheet" undersells how little of
+
+51
+00:02:27,101 --> 00:02:28,467
+this is spreadsheet work.
+
+52
+00:02:28,467 --> 00:02:32,729
+Duplicate the template rather than starting blank, so the formulas are already
+
+53
+00:02:32,729 --> 00:02:34,423
+sitting there waiting for data.
+
+54
+00:02:34,423 --> 00:02:38,357
+Paste your case IDs and their buckets into the Scores tab, one row each.
+
+55
+00:02:38,357 --> 00:02:42,837
+Then score every case: six ones or zeros, straight from the rubric you calibrated.
+
+56
+00:02:42,837 --> 00:02:44,968
+Once that's filled in, you're finished.
+
+57
+00:02:44,968 --> 00:02:49,285
+Overall and the Dashboard tab were already computing themselves the whole time.
+
+58
+00:02:49,285 --> 00:02:52,290
+Notice where almost all the real time goes: step three.
+
+59
+00:02:52,290 --> 00:02:54,967
+The sheet itself takes fifteen minutes to set up.
+
+60
+00:02:54,967 --> 00:02:59,557
+Scoring fifty cases against a rubric is the same afternoon of work from two lectures
+
+61
+00:02:59,557 --> 00:03:02,671
+ago, and no formula in this sheet makes that part faster.
+
+62
+00:03:02,671 --> 00:03:03,873
+It was never meant to.
+
+63
+00:03:04,423 --> 00:03:08,433
+Here's the payoff, and it's smaller than people expect, which is the point.
+
+64
+00:03:08,433 --> 00:03:10,571
+Two formulas, written once, copied down.
+
+65
+00:03:10,571 --> 00:03:13,351
+Zero manual retallying, ever again, for this rubric.
+
+66
+00:03:13,351 --> 00:03:17,735
+And the dashboard updates the instant you finish entering one score, which matters
+
+67
+00:03:17,735 --> 00:03:22,226
+more than it sounds: it means the four-bucket table from last lecture is live during
+
+68
+00:03:22,226 --> 00:03:26,664
+the meeting where someone asks "what if we pulled that one case", not something you
+
+69
+00:03:26,664 --> 00:03:28,374
+promise to rerun and send later.
+
+70
+00:03:28,374 --> 00:03:32,865
+One more thing this buys you almost for free: sort the Scores tab by Overall, filter
+
+71
+00:03:32,865 --> 00:03:37,356
+to zero, filter again to one bucket, and you're looking at exactly the failing cases
+
+72
+00:03:37,356 --> 00:03:40,189
+behind whatever number the dashboard just showed you.
+
+73
+00:03:40,189 --> 00:03:44,573
+That's the "go read those cases" step from last lecture's release gate, and it's a
+
+74
+00:03:44,573 --> 00:03:46,231
+two-click filter, not a search.
+
+75
+00:03:46,781 --> 00:03:47,961
+Say the cost plainly.
+
+76
+00:03:47,961 --> 00:03:50,264
+This sheet is bookkeeping, not judgement.
+
+77
+00:03:50,264 --> 00:03:53,242
+Nothing here writes the pass or fail columns for you.
+
+78
+00:03:53,242 --> 00:03:57,512
+That's still the calibrated rubric and the validated judge from the last two
+
+79
+00:03:57,512 --> 00:04:00,434
+lectures, doing the actual work, one case at a time.
+
+80
+00:04:00,434 --> 00:04:01,614
+And it has a ceiling.
+
+81
+00:04:01,614 --> 00:04:05,996
+Past a few hundred rows, formulas scanning whole columns get sluggish, and the
+
+82
+00:04:05,996 --> 00:04:10,547
+failure mode is quiet: type "Common Path" with a capital P in one row, when every
+
+83
+00:04:10,547 --> 00:04:15,267
+other row says "Common path," and that single case silently vanishes from the bucket
+
+84
+00:04:15,267 --> 00:04:15,716
+average.
+
+85
+00:04:15,716 --> 00:04:16,896
+Nobody gets an error.
+
+86
+00:04:16,896 --> 00:04:21,335
+The number is just wrong, and it looks exactly as confident as the correct one.
+
+87
+00:04:21,885 --> 00:04:25,001
+Notice the definition doesn't mention spreadsheets at all.
+
+88
+00:04:25,001 --> 00:04:29,514
+A harness is anything that does this reliably, and a spreadsheet is just the version
+
+89
+00:04:29,514 --> 00:04:31,126
+with the lowest cost to start.
+
+90
+00:04:31,126 --> 00:04:35,263
+The exercise deliberately reuses your fifteen calibration cases, the ones you
+
+91
+00:04:35,263 --> 00:04:38,165
+already hand-scored twice, back in the rubric lecture.
+
+92
+00:04:38,165 --> 00:04:40,045
+You know what the answer should be.
+
+93
+00:04:40,045 --> 00:04:44,451
+Build the sheet against cases where you can already check its homework, before you
+
+94
+00:04:44,451 --> 00:04:48,051
+trust it with the other thirty-five you haven't scored by hand yet.
+
+95
+00:04:48,051 --> 00:04:51,113
+This is also the cheapest way to catch a formula mistake.
+
+96
+00:04:51,113 --> 00:04:55,626
+If your hand tally said sixty percent and the sheet says ninety, the sheet is wrong,
+
+97
+00:04:55,626 --> 00:05:00,032
+not your feature, and you'll want to know that before it's the number in a release
+
+98
+00:05:00,032 --> 00:05:01,644
+review instead of a rehearsal.
+
+99
+00:05:02,194 --> 00:05:03,884
+One thing before you move on.
+
+100
+00:05:03,884 --> 00:05:08,662
+The working spreadsheet, both tabs, both formulas, already built, is A03, attached
+
+101
+00:05:08,662 --> 00:05:09,594
+to this lecture.
+
+102
+00:05:09,594 --> 00:05:14,488
+Duplicate it rather than starting from a blank sheet, enter your fifteen calibration
+
+103
+00:05:14,488 --> 00:05:19,266
+cases first, and check the dashboard against the number you already know is right.
+
+104
+00:05:19,266 --> 00:05:24,161
+Once it matches, add the rest of your fifty with confidence, and keep the sheet open
+
+105
+00:05:24,161 --> 00:05:25,850
+every release after this one.
+
+106
+00:05:25,850 --> 00:05:30,512
+Next lecture, we build the identical harness again, this time in thirty lines of
+
+107
+00:05:30,512 --> 00:05:35,173
+Python, so it can run itself automatically every time someone proposes a change,
+
+108
+00:05:35,173 --> 00:05:38,028
+instead of waiting for you to open a spreadsheet.

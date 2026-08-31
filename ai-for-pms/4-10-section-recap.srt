@@ -1,0 +1,83 @@
+1
+00:00:00,350 --> 00:00:04,841
+Nine lectures ago, this section opened with a promise: build the instrument, and the
+
+2
+00:00:04,841 --> 00:00:06,765
+rest of the course would lean on it.
+
+3
+00:00:06,765 --> 00:00:08,049
+Here's the honest tally.
+
+4
+00:00:08,049 --> 00:00:12,433
+You know the difference between vibes, offline evals, and online signal, and which
+
+5
+00:00:12,433 --> 00:00:13,823
+disaster each one catches.
+
+6
+00:00:13,823 --> 00:00:18,153
+You can choose fifty cases deliberately instead of grabbing whatever's easiest to
+
+7
+00:00:18,153 --> 00:00:18,420
+find.
+
+8
+00:00:18,420 --> 00:00:22,804
+You've calibrated a rubric until two people agree, and checked an AI judge against
+
+9
+00:00:22,804 --> 00:00:24,301
+yourself before trusting it.
+
+10
+00:00:24,301 --> 00:00:28,578
+You've built the harness twice, once you can see through, once that runs itself.
+
+11
+00:00:28,578 --> 00:00:33,016
+You know how much a number needs to move before it means anything, and the two ways
+
+12
+00:00:33,016 --> 00:00:37,079
+teams quietly lie to themselves once every piece of that is built correctly.
+
+13
+00:00:37,079 --> 00:00:38,415
+That's not a study guide.
+
+14
+00:00:38,415 --> 00:00:42,051
+That's a working system you can point at your own feature this week.
+
+15
+00:00:42,601 --> 00:00:47,301
+Four downloadable artifacts came out of this section: the golden dataset spec, the
+
+16
+00:00:47,301 --> 00:00:51,198
+calibration protocol, and both eval harnesses, spreadsheet and code.
+
+17
+00:00:51,198 --> 00:00:53,835
+Use them on something real before you move on.
+
+18
+00:00:53,835 --> 00:00:58,649
+A feature you're genuinely unsure about, scored by fifty cases you chose on purpose.
+
+19
+00:00:58,649 --> 00:01:03,349
+Next section, we leave evaluation and go to RAG: how retrieval systems work, where
+
+20
+00:01:03,349 --> 00:01:07,820
+they break in production, and how to defend one in an architecture review, all
+
+21
+00:01:07,820 --> 00:01:11,373
+judged by the instrument you just spent this section building.
