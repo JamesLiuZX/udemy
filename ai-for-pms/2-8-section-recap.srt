@@ -1,0 +1,67 @@
+1
+00:00:00,350 --> 00:00:04,524
+Seven lectures ago, this section promised one diagram and twenty phrases.
+
+2
+00:00:04,524 --> 00:00:05,896
+Here's the honest tally.
+
+3
+00:00:05,896 --> 00:00:10,584
+You can redraw the five-layer stack from memory, and you know orchestration is the
+
+4
+00:00:10,584 --> 00:00:12,414
+layer most PMs never hear named.
+
+5
+00:00:12,414 --> 00:00:16,645
+You can run the decision tree between a prompt, retrieval, an agent, and a
+
+6
+00:00:16,645 --> 00:00:20,362
+fine-tune, in that order, and explain why fine-tuning comes last.
+
+7
+00:00:20,362 --> 00:00:25,164
+You know what's actually sitting in a context window, why a chunking boundary breaks
+
+8
+00:00:25,164 --> 00:00:29,853
+retrieval before the model ever gets blamed, and the difference between an average
+
+9
+00:00:29,853 --> 00:00:32,883
+and a p95 that actually matters once something ships.
+
+10
+00:00:32,883 --> 00:00:33,912
+That's not trivia.
+
+11
+00:00:33,912 --> 00:00:38,315
+It's the vocabulary that turns "the AI is broken" into a specific, answerable
+
+12
+00:00:38,315 --> 00:00:38,829
+question.
+
+13
+00:00:39,379 --> 00:00:42,177
+One section ahead before you touch a live feature.
+
+14
+00:00:42,177 --> 00:00:46,430
+Section three is where all of this stops being vocabulary and starts being a
+
+15
+00:00:46,430 --> 00:00:51,018
+document: the AI feature PRD, acceptance criteria written as evaluation thresholds
+
+16
+00:00:51,018 --> 00:00:55,719
+instead of hopeful adjectives, and a failure taxonomy that survives contact with QA.
+
+17
+00:00:55,719 --> 00:01:00,307
+You'll write a real one, for a feature you're actually close to, by the end of it.

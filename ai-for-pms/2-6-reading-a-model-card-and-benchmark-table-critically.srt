@@ -1,0 +1,343 @@
+1
+00:00:00,350 --> 00:00:04,383
+Vendors publish a table, one model beats another by a few points on a named
+
+2
+00:00:04,383 --> 00:00:08,899
+benchmark, and the natural reading is "this model is better." Read it that way often
+
+3
+00:00:08,899 --> 00:00:11,480
+enough and you'll eventually ship the wrong one.
+
+4
+00:00:11,480 --> 00:00:15,890
+A benchmark score is a real measurement of a real thing: how a model performs on a
+
+5
+00:00:15,890 --> 00:00:18,686
+specific, fixed set of questions someone else wrote.
+
+6
+00:00:18,686 --> 00:00:23,041
+It is not automatically a measurement of how it'll perform on your specific task,
+
+7
+00:00:23,041 --> 00:00:25,730
+with your specific data, in your specific product.
+
+8
+00:00:25,730 --> 00:00:27,558
+Sometimes those correlate closely.
+
+9
+00:00:27,558 --> 00:00:29,601
+Sometimes they don't correlate at all.
+
+10
+00:00:29,601 --> 00:00:33,741
+This lecture is the handful of questions that tell you which situation you're
+
+11
+00:00:33,741 --> 00:00:37,720
+actually in, before you commit to a model on the strength of a percentage.
+
+12
+00:00:37,720 --> 00:00:42,130
+It matters more than it sounds like it should, because model choice is usually one
+
+13
+00:00:42,130 --> 00:00:44,012
+of the harder decisions to reverse.
+
+14
+00:00:44,012 --> 00:00:48,528
+Swapping a vendor after launch means re-running your evals, re-checking your prompts
+
+15
+00:00:48,528 --> 00:00:52,991
+still hold, and possibly explaining to a room why the number everyone signed off on
+
+16
+00:00:52,991 --> 00:00:54,712
+wasn't the number that mattered.
+
+17
+00:00:54,712 --> 00:00:59,067
+Five minutes of reading the fine print before that decision is a lot cheaper than
+
+18
+00:00:59,067 --> 00:01:01,863
+the version of this conversation that happens after.
+
+19
+00:01:02,413 --> 00:01:06,919
+Four lines you'll see on almost every model announcement, and four questions that
+
+20
+00:01:06,919 --> 00:01:09,812
+turn each one from a headline into an actual answer.
+
+21
+00:01:09,812 --> 00:01:14,318
+A percentage on a named benchmark is real, but it's a score on questions somebody
+
+22
+00:01:14,318 --> 00:01:14,930
+else chose.
+
+23
+00:01:14,930 --> 00:01:19,437
+If none of those resemble what your feature actually does, the number is true and
+
+24
+00:01:19,437 --> 00:01:20,438
+almost irrelevant.
+
+25
+00:01:20,438 --> 00:01:24,777
+"Beats a competitor" does a lot of work in one sentence: it matters enormously
+
+26
+00:01:24,777 --> 00:01:29,339
+whether that comparison came from an independent lab or the vendor grading its own
+
+27
+00:01:29,339 --> 00:01:29,840
+homework.
+
+28
+00:01:29,840 --> 00:01:34,123
+Context window and knowledge cutoff are two you already have a head start on.
+
+29
+00:01:34,123 --> 00:01:38,463
+A stated context window is a ceiling, not a promise, and quality can slip well
+
+30
+00:01:38,463 --> 00:01:39,520
+before it fills up.
+
+31
+00:01:39,520 --> 00:01:42,746
+A cutoff date only gets older from the day it's published.
+
+32
+00:01:42,746 --> 00:01:44,916
+None of these four lines are dishonest.
+
+33
+00:01:44,916 --> 00:01:48,087
+They're just narrower than the headline makes them sound.
+
+34
+00:01:48,087 --> 00:01:52,537
+Notice the pattern: each claim is precisely true and narrower than it reads at a
+
+35
+00:01:52,537 --> 00:01:52,927
+glance.
+
+36
+00:01:52,927 --> 00:01:57,600
+That's what happens whenever a complicated system gets compressed into one line on a
+
+37
+00:01:57,600 --> 00:01:58,490
+comparison page.
+
+38
+00:01:58,490 --> 00:02:00,548
+Your job isn't to catch anyone lying.
+
+39
+00:02:00,548 --> 00:02:04,609
+It's to expand the line back into the question it was actually answering.
+
+40
+00:02:05,159 --> 00:02:09,579
+Here's the shape of a typical general-purpose benchmark, and it's worth actually
+
+41
+00:02:09,579 --> 00:02:10,242
+seeing once.
+
+42
+00:02:10,242 --> 00:02:14,606
+Most public benchmarks are built from maths problems, coding challenges, trivia
+
+43
+00:02:14,606 --> 00:02:18,970
+questions, and logic puzzles, because those are easy to grade automatically and
+
+44
+00:02:18,970 --> 00:02:21,235
+cheap to scale to thousands of questions.
+
+45
+00:02:21,235 --> 00:02:23,721
+That's a reasonable way to build a benchmark.
+
+46
+00:02:23,721 --> 00:02:27,367
+It's just not a survey of everything a model might be asked to do.
+
+47
+00:02:27,367 --> 00:02:31,841
+If your feature summarises support tickets, or drafts marketing copy, or extracts
+
+48
+00:02:31,841 --> 00:02:34,438
+fields from invoices, look again at that chart.
+
+49
+00:02:34,438 --> 00:02:38,360
+There's usually a sliver, if anything, that resembles your actual task.
+
+50
+00:02:38,360 --> 00:02:42,835
+A model can be genuinely excellent at maths and code and still be mediocre at the
+
+51
+00:02:42,835 --> 00:02:46,923
+one thing you're about to ship, because the benchmark never tested for it.
+
+52
+00:02:46,923 --> 00:02:50,679
+There's a second problem worth naming, quietly, alongside the first.
+
+53
+00:02:50,679 --> 00:02:53,165
+Public benchmarks are, by definition, public.
+
+54
+00:02:53,165 --> 00:02:57,529
+Their questions and answers sit somewhere on the internet, and internet text is
+
+55
+00:02:57,529 --> 00:02:59,463
+exactly what these models train on.
+
+56
+00:02:59,463 --> 00:03:03,882
+A model can score well partly because it's genuinely capable, and partly because
+
+57
+00:03:03,882 --> 00:03:06,368
+it's seen something close to the test before.
+
+58
+00:03:06,368 --> 00:03:10,843
+You can't easily tell which from the outside, which is one more reason a headline
+
+59
+00:03:10,843 --> 00:03:13,329
+percentage deserves less weight than it gets.
+
+60
+00:03:13,879 --> 00:03:18,344
+Say the honest caveat, because the lesson here isn't "ignore benchmarks." They're a
+
+61
+00:03:18,344 --> 00:03:19,098
+genuine floor.
+
+62
+00:03:19,098 --> 00:03:23,509
+A model scoring poorly across the board is telling you something real and probably
+
+63
+00:03:23,509 --> 00:03:24,263
+worth heeding.
+
+64
+00:03:24,263 --> 00:03:28,782
+What they can't do is promise a ceiling on your specific task, because your task, in
+
+65
+00:03:28,782 --> 00:03:31,956
+almost every case, was never in the test set to begin with.
+
+66
+00:03:31,956 --> 00:03:36,207
+That's exactly the gap your own golden set from Section four is built to close.
+
+67
+00:03:36,207 --> 00:03:39,112
+The benchmark tells you a model probably isn't broken.
+
+68
+00:03:39,112 --> 00:03:43,255
+Your fifty test cases tell you whether it's actually good at the thing you're
+
+69
+00:03:43,255 --> 00:03:43,739
+shipping.
+
+70
+00:03:44,289 --> 00:03:48,471
+That's the skill in one sentence: read what's actually being measured before you
+
+71
+00:03:48,471 --> 00:03:50,092
+compare the numbers, not after.
+
+72
+00:03:50,092 --> 00:03:53,437
+The exercise takes ten minutes and is worth doing once for real.
+
+73
+00:03:53,437 --> 00:03:57,305
+Open the model card your team already relies on, and find those two things
+
+74
+00:03:57,305 --> 00:03:57,985
+specifically.
+
+75
+00:03:57,985 --> 00:04:01,435
+A card that's thorough about both is a good sign about the vendor.
+
+76
+00:04:01,435 --> 00:04:04,257
+A card that's vague about both is worth noticing, too.
+
+77
+00:04:04,807 --> 00:04:06,478
+One thing before you move on.
+
+78
+00:04:06,478 --> 00:04:11,088
+Find one benchmark claim that influenced a real decision on your team, and check
+
+79
+00:04:11,088 --> 00:04:12,586
+what it actually measured.
+
+80
+00:04:12,586 --> 00:04:14,372
+Independent or vendor-reported?
+
+81
+00:04:14,372 --> 00:04:17,022
+Recent, or from a superseded model generation?
+
+82
+00:04:17,022 --> 00:04:20,998
+And above all, was anything resembling your actual task in it at all?
+
+83
+00:04:20,998 --> 00:04:25,319
+If you can't answer that, neither could whoever made the original decision.
+
+84
+00:04:25,319 --> 00:04:28,315
+That closes out the vocabulary half of this section.
+
+85
+00:04:28,315 --> 00:04:33,097
+Next lecture is the payoff: twenty specific phrases that make an engineer trust you
+
+86
+00:04:33,097 --> 00:04:36,439
+in the first five minutes of a conversation, not the last.

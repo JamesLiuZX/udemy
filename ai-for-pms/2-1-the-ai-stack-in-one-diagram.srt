@@ -1,0 +1,279 @@
+1
+00:00:00,350 --> 00:00:04,827
+Here's a sentence you'll hear in a real meeting: "the model's fine, it's a retrieval
+
+2
+00:00:04,827 --> 00:00:09,038
+problem." If you don't know there's a difference between those two things, that
+
+3
+00:00:09,038 --> 00:00:11,650
+sentence just ended the conversation without you.
+
+4
+00:00:11,650 --> 00:00:15,967
+There are really five layers in any AI feature, stacked on top of each other, and
+
+5
+00:00:15,967 --> 00:00:20,338
+almost every technical disagreement you'll sit through is actually about which one
+
+6
+00:00:20,338 --> 00:00:23,003
+of the five is broken, or which one should change.
+
+7
+00:00:23,003 --> 00:00:26,841
+Learn this diagram well enough to redraw it, and you stop nodding along.
+
+8
+00:00:26,841 --> 00:00:31,051
+You start asking the one question that actually moves the conversation forward:
+
+9
+00:00:31,051 --> 00:00:32,810
+which layer are we talking about?
+
+10
+00:00:32,810 --> 00:00:36,541
+This is also the fastest credibility you'll earn in this whole course.
+
+11
+00:00:36,541 --> 00:00:38,993
+Engineers don't expect a PM to know the stack.
+
+12
+00:00:38,993 --> 00:00:43,417
+Asking "is that a retrieval issue or an orchestration issue" the first time changes
+
+13
+00:00:43,417 --> 00:00:45,443
+how the rest of the conversation goes.
+
+14
+00:00:45,993 --> 00:00:50,375
+Here's the whole thing, top to bottom, the way a user's request actually travels.
+
+15
+00:00:50,375 --> 00:00:54,650
+Your product is what the user sees, the chat window, the button, the summary on
+
+16
+00:00:54,650 --> 00:00:55,028
+screen.
+
+17
+00:00:55,028 --> 00:00:59,249
+Guardrails sit just underneath, checking what goes in and what comes back out.
+
+18
+00:00:59,249 --> 00:01:03,794
+Orchestration is the layer most PMs have never heard named, even though they've been
+
+19
+00:01:03,794 --> 00:01:08,338
+debugging it for months: the code that assembles the prompt, decides what context to
+
+20
+00:01:08,338 --> 00:01:11,260
+include, and calls everything else in the right order.
+
+21
+00:01:11,260 --> 00:01:14,290
+That orchestration layer talks to two things beneath it.
+
+22
+00:01:14,290 --> 00:01:17,158
+The foundation model, the mechanism from Section one.
+
+23
+00:01:17,158 --> 00:01:21,486
+And your data, whatever documents or records get retrieved to ground the answer.
+
+24
+00:01:21,486 --> 00:01:25,977
+Almost every bug you've ever blamed on "the model" actually lived in orchestration:
+
+25
+00:01:25,977 --> 00:01:30,414
+the wrong document got pulled, the prompt assembled the pieces in the wrong order,
+
+26
+00:01:30,414 --> 00:01:33,281
+the context window ran out before the important part.
+
+27
+00:01:33,281 --> 00:01:37,448
+Follow the arrows back up and you get the return trip: the model answers, the
+
+28
+00:01:37,448 --> 00:01:41,235
+guardrails check it again on the way out, and the product displays it.
+
+29
+00:01:41,235 --> 00:01:44,157
+Same five layers, same order, just running in reverse.
+
+30
+00:01:44,707 --> 00:01:49,460
+Here's why naming the layer matters practically: each one has a different owner and
+
+31
+00:01:49,460 --> 00:01:50,376
+a different fix.
+
+32
+00:01:50,376 --> 00:01:55,015
+A product problem is yours, confusing UI, the feature answering a question nobody
+
+33
+00:01:55,015 --> 00:01:55,874
+actually asked.
+
+34
+00:01:55,874 --> 00:02:00,455
+A guardrail problem sits with whoever owns risk, something unsafe got through or
+
+35
+00:02:00,455 --> 00:02:03,490
+something safe got blocked by an overcautious filter.
+
+36
+00:02:03,490 --> 00:02:08,071
+Orchestration problems are engineering's, and they're the most common bug you'll
+
+37
+00:02:08,071 --> 00:02:12,194
+actually hit: the wrong document got retrieved, the prompt assembled the
+
+38
+00:02:12,194 --> 00:02:14,485
+conversation history in the wrong order.
+
+39
+00:02:14,485 --> 00:02:19,295
+A genuine foundation model limit is the one thing you can't patch, only route around
+
+40
+00:02:19,295 --> 00:02:19,982
+or wait out.
+
+41
+00:02:19,982 --> 00:02:24,507
+And a data problem sits with whoever owns the content: stale documents, missing
+
+42
+00:02:24,507 --> 00:02:25,995
+pages, badly chunked text.
+
+43
+00:02:25,995 --> 00:02:29,832
+Five different people, five different Monday morning conversations.
+
+44
+00:02:29,832 --> 00:02:34,471
+Most launch-week arguments are actually two people disagreeing about which row of
+
+45
+00:02:34,471 --> 00:02:37,964
+this table they're in, without either one saying so out loud.
+
+46
+00:02:38,514 --> 00:02:43,221
+Say the honest caveat, because this diagram can look like five separate teams and
+
+47
+00:02:43,221 --> 00:02:43,918
+often isn't.
+
+48
+00:02:43,918 --> 00:02:48,799
+On a small team, or for a simple feature, one engineer might write the orchestration
+
+49
+00:02:48,799 --> 00:02:53,680
+code, choose the guardrails, and pick the data source, all in the same afternoon, in
+
+50
+00:02:53,680 --> 00:02:54,494
+the same file.
+
+51
+00:02:54,494 --> 00:02:56,121
+The five layers still exist.
+
+52
+00:02:56,121 --> 00:02:58,561
+They're just not five separate people yet.
+
+53
+00:02:58,561 --> 00:03:03,384
+That's exactly when bugs hide, because nobody's drawing the line between "this is a
+
+54
+00:03:03,384 --> 00:03:06,987
+data problem" and "this is an orchestration problem" out loud.
+
+55
+00:03:06,987 --> 00:03:11,693
+Naming the layer is useful precisely because it forces that distinction even when
+
+56
+00:03:11,693 --> 00:03:13,495
+one person wears all five hats.
+
+57
+00:03:14,045 --> 00:03:18,495
+That's the entire practical payoff of this diagram: one question, asked before the
+
+58
+00:03:18,495 --> 00:03:21,481
+debugging starts, instead of after an hour of guessing.
+
+59
+00:03:21,481 --> 00:03:24,194
+The exercise is just that question, used for real.
+
+60
+00:03:24,194 --> 00:03:28,265
+Next meeting where something's "not working," ask which of the five layers.
+
+61
+00:03:28,265 --> 00:03:32,553
+You'll be surprised how often the room doesn't actually agree yet, and how much
+
+62
+00:03:32,553 --> 00:03:34,290
+faster things move once it does.
+
+63
+00:03:34,840 --> 00:03:36,451
+One thing before you move on.
+
+64
+00:03:36,451 --> 00:03:40,671
+Pick whatever's currently broken or annoying about your feature, and settle,
+
+65
+00:03:40,671 --> 00:03:43,281
+specifically, which of the five layers owns it.
+
+66
+00:03:43,281 --> 00:03:43,948
+Not a guess.
+
+67
+00:03:43,948 --> 00:03:46,225
+If nothing comes easily, reread that one.
+
+68
+00:03:46,225 --> 00:03:50,779
+Next lecture uses this exact stack to answer the question everyone asks too early:
+
+69
+00:03:50,779 --> 00:03:55,388
+prompt, retrieval, fine-tune, or agent, and the decision tree that actually settles
+
+70
+00:03:55,388 --> 00:03:55,555
+it.

@@ -1,0 +1,55 @@
+1
+00:00:00,350 --> 00:00:03,241
+This is the shortest section in the course, on purpose.
+
+2
+00:00:03,241 --> 00:00:05,607
+You don't need to write code or pass an exam.
+
+3
+00:00:05,607 --> 00:00:09,970
+You need to hold your own for ten minutes in a room with an engineer who's deciding
+
+4
+00:00:09,970 --> 00:00:11,862
+whether to take your spec seriously.
+
+5
+00:00:11,862 --> 00:00:15,962
+That's a narrower goal than it sounds, and it's achievable in under an hour of
+
+6
+00:00:15,962 --> 00:00:16,435
+lectures.
+
+7
+00:00:16,985 --> 00:00:19,848
+Five things, and they build on each other in order.
+
+8
+00:00:19,848 --> 00:00:24,170
+You'll get the whole stack on one diagram, the actual decision tree between a
+
+9
+00:00:24,170 --> 00:00:28,717
+prompt, retrieval, a fine-tune, and an agent, and enough of embeddings and vector
+
+10
+00:00:28,717 --> 00:00:32,758
+search to follow a real conversation without the underlying mathematics.
+
+11
+00:00:32,758 --> 00:00:37,192
+Then latency, throughput, and how to read a benchmark table the way an engineer
+
+12
+00:00:37,192 --> 00:00:37,922
+already does.
+
+13
+00:00:37,922 --> 00:00:42,188
+It closes with twenty specific phrases, the ones that signal you've done the
+
+14
+00:00:42,188 --> 00:00:45,331
+reading, in the first five minutes rather than the last.
