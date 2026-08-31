@@ -1,0 +1,71 @@
+1
+00:00:00,350 --> 00:00:03,988
+Section zero gave you the one idea: a distribution, not a function.
+
+2
+00:00:03,988 --> 00:00:08,494
+This section is where that idea gets a mechanism underneath it, just enough of one.
+
+3
+00:00:08,494 --> 00:00:10,123
+Not a machine learning course.
+
+4
+00:00:10,123 --> 00:00:12,837
+You will not train a model, and you don't need to.
+
+5
+00:00:12,837 --> 00:00:17,289
+You need the six or seven facts about how these things actually work that keep you
+
+6
+00:00:17,289 --> 00:00:19,678
+from making an expensive, avoidable mistake.
+
+7
+00:00:20,228 --> 00:00:23,166
+Six mechanisms, roughly in the order they'll bite you.
+
+8
+00:00:23,166 --> 00:00:27,628
+You'll learn what the model is actually doing under the fluent sentences, and four
+
+9
+00:00:27,628 --> 00:00:29,914
+consequences that follow directly from it.
+
+10
+00:00:29,914 --> 00:00:34,376
+Tokens and context windows, because that's where a feature that worked in the demo
+
+11
+00:00:34,376 --> 00:00:36,498
+quietly breaks once real users show up.
+
+12
+00:00:36,498 --> 00:00:40,797
+Temperature, so you can explain why the same prompt gives two different answers
+
+13
+00:00:40,797 --> 00:00:42,157
+without calling it a bug.
+
+14
+00:00:42,157 --> 00:00:46,619
+Then the honest state of what these models can and can't do, and why hallucination
+
+15
+00:00:46,619 --> 00:00:49,776
+is the mechanism working as designed rather than a defect.
+
+16
+00:00:49,776 --> 00:00:54,292
+It closes with seven archetypes of AI feature so you can name what you're building,
+
+17
+00:00:54,292 --> 00:00:58,808
+and a checklist for the question nobody wants to ask out loud: should this be an AI
+
+18
+00:00:58,808 --> 00:00:59,625
+feature at all.

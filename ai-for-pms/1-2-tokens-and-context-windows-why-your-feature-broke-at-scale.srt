@@ -1,0 +1,343 @@
+1
+00:00:00,350 --> 00:00:04,725
+Here's a failure pattern you will see, almost guaranteed, on any feature that
+
+2
+00:00:04,725 --> 00:00:07,111
+summarises or reasons over a conversation.
+
+3
+00:00:07,111 --> 00:00:11,088
+It works perfectly in the demo, on a short thread you picked yourself.
+
+4
+00:00:11,088 --> 00:00:15,633
+Weeks later, on a real forty-message support thread, it starts missing things it
+
+5
+00:00:15,633 --> 00:00:16,429
+used to catch.
+
+6
+00:00:16,429 --> 00:00:17,906
+Nobody changed the prompt.
+
+7
+00:00:17,906 --> 00:00:19,326
+Nobody changed the model.
+
+8
+00:00:19,326 --> 00:00:23,701
+What changed is length, and length runs straight into a hard limit called the
+
+9
+00:00:23,701 --> 00:00:28,473
+context window: the finite amount of text a model can hold in view at once, measured
+
+10
+00:00:28,473 --> 00:00:30,007
+not in words but in tokens.
+
+11
+00:00:30,007 --> 00:00:34,609
+Understanding that limit, and what happens right at it, is the difference between
+
+12
+00:00:34,609 --> 00:00:38,643
+debugging this in an afternoon and debugging it by guessing for a week.
+
+13
+00:00:38,643 --> 00:00:41,143
+And it will look like a model problem first.
+
+14
+00:00:41,143 --> 00:00:45,632
+Someone will suggest switching providers, or rewriting the prompt for the fifth
+
+15
+00:00:45,632 --> 00:00:45,916
+time.
+
+16
+00:00:45,916 --> 00:00:47,847
+The actual fix is usually neither.
+
+17
+00:00:48,397 --> 00:00:52,975
+First, the unit these models actually think in, because "word count" will mislead
+
+18
+00:00:52,975 --> 00:00:53,202
+you.
+
+19
+00:00:53,202 --> 00:00:57,610
+A token is roughly three quarters of a word: short common words are one token,
+
+20
+00:00:57,610 --> 00:01:00,153
+longer or rarer ones split into two or three.
+
+21
+00:01:00,153 --> 00:01:04,732
+If you want the exact splitting rules, they don't change any decision you own, so
+
+22
+00:01:04,732 --> 00:01:08,744
+the number to remember is the rough ratio, not the mechanics behind it.
+
+23
+00:01:08,744 --> 00:01:13,266
+What matters is the practical size: a typical support ticket reply runs forty to
+
+24
+00:01:13,266 --> 00:01:14,001
+sixty tokens.
+
+25
+00:01:14,001 --> 00:01:18,409
+That number matters in a minute, because your context window has a fixed token
+
+26
+00:01:18,409 --> 00:01:22,987
+budget, and every part of your prompt, the system instructions, the conversation,
+
+27
+00:01:22,987 --> 00:01:26,322
+the documents you retrieved, is drawing from the same pool.
+
+28
+00:01:26,872 --> 00:01:30,483
+Picture that ticket from Section 0, still open, still escalating.
+
+29
+00:01:30,483 --> 00:01:35,095
+By message forty-five, the thread is long enough that it no longer fits the context
+
+30
+00:01:35,095 --> 00:01:35,817
+window whole.
+
+31
+00:01:35,817 --> 00:01:40,373
+The common, simple fix engineering reaches for first is a sliding window: keep the
+
+32
+00:01:40,373 --> 00:01:43,540
+most recent messages, drop the oldest ones until it fits.
+
+33
+00:01:43,540 --> 00:01:47,929
+Straightforward, cheap, and it means the first message, the one with the actual
+
+34
+00:01:47,929 --> 00:01:51,541
+deadline, is exactly the one most likely to get silently dropped.
+
+35
+00:01:51,541 --> 00:01:53,541
+Nobody decided to lose the deadline.
+
+36
+00:01:53,541 --> 00:01:57,708
+The window filled up, and the oldest content, which happened to be the most
+
+37
+00:01:57,708 --> 00:01:59,819
+important content, lost the tie-break.
+
+38
+00:01:59,819 --> 00:02:02,597
+This is also why it's so hard to catch in testing.
+
+39
+00:02:02,597 --> 00:02:05,320
+Fifty short, tidy test cases will not surface it.
+
+40
+00:02:05,320 --> 00:02:09,875
+A length-dependent failure only shows up in a test case that's actually allowed to
+
+41
+00:02:09,875 --> 00:02:14,098
+grow long, which is precisely the kind of case most test sets never include.
+
+42
+00:02:14,648 --> 00:02:17,820
+Here's why the window fills up faster than people expect.
+
+43
+00:02:17,820 --> 00:02:19,545
+It isn't just the conversation.
+
+44
+00:02:19,545 --> 00:02:21,772
+Four things share the exact same budget.
+
+45
+00:02:21,772 --> 00:02:25,333
+Your system instructions take a slice, fixed, every single call.
+
+46
+00:02:25,333 --> 00:02:29,674
+The conversation history takes a slice, and it's the one that grows over time.
+
+47
+00:02:29,674 --> 00:02:32,735
+Any documents you retrieve for the answer take a slice.
+
+48
+00:02:32,735 --> 00:02:37,243
+And whatever's left over is the room the model actually has to write its response
+
+49
+00:02:37,243 --> 00:02:37,410
+in.
+
+50
+00:02:37,410 --> 00:02:41,862
+Grow the conversation history without bound, and you're not just risking dropped
+
+51
+00:02:41,862 --> 00:02:42,363
+messages.
+
+52
+00:02:42,363 --> 00:02:46,871
+You're shrinking the room left for the model to answer in, and a cramped response
+
+53
+00:02:46,871 --> 00:02:49,821
+budget produces answers that get cut off mid-thought.
+
+54
+00:02:50,371 --> 00:02:54,948
+Say the honest caveat, because "just use a bigger context window" is the answer
+
+55
+00:02:54,948 --> 00:02:57,150
+people reach for, and it's incomplete.
+
+56
+00:02:57,150 --> 00:03:01,670
+Modern models do hold enormous windows now, sometimes hundreds of thousands of
+
+57
+00:03:01,670 --> 00:03:02,075
+tokens.
+
+58
+00:03:02,075 --> 00:03:05,378
+But fitting is not the same claim as attending to evenly.
+
+59
+00:03:05,378 --> 00:03:10,187
+Research on these models consistently finds that content buried deep in a very long
+
+60
+00:03:10,187 --> 00:03:14,707
+context gets less reliable recall than content near the start or the very end.
+
+61
+00:03:14,707 --> 00:03:16,909
+Fitting solves the truncation problem.
+
+62
+00:03:16,909 --> 00:03:19,980
+It doesn't fully solve the getting-forgotten problem.
+
+63
+00:03:19,980 --> 00:03:23,398
+And every token you send costs money, on every single call.
+
+64
+00:03:23,398 --> 00:03:25,948
+Section seven puts an actual number on that.
+
+65
+00:03:25,948 --> 00:03:30,757
+For now, just know that "send everything, every time" is a cost decision as much as
+
+66
+00:03:30,757 --> 00:03:31,858
+an engineering one.
+
+67
+00:03:32,408 --> 00:03:35,961
+Name the fix precisely, because "add more context" is not it.
+
+68
+00:03:35,961 --> 00:03:39,631
+Context management means deciding, deliberately, what survives.
+
+69
+00:03:39,631 --> 00:03:44,234
+Summarise older messages into a few sentences instead of keeping them verbatim.
+
+70
+00:03:44,234 --> 00:03:49,069
+Re-inject the details that must never be lost, like a deadline, near the end of the
+
+71
+00:03:49,069 --> 00:03:52,564
+prompt where recall is strongest, not buried at message one.
+
+72
+00:03:52,564 --> 00:03:57,108
+Decide this on purpose, because the alternative is a sliding window making the
+
+73
+00:03:57,108 --> 00:04:00,137
+decision for you, silently, the same way every time.
+
+74
+00:04:00,137 --> 00:04:04,914
+The exercise is one honest question: for your own feature, what happens at message
+
+75
+00:04:04,914 --> 00:04:05,263
+fifty?
+
+76
+00:04:05,263 --> 00:04:09,399
+If the answer is "we haven't tried it," that's not a hypothetical risk.
+
+77
+00:04:09,399 --> 00:04:13,127
+That's an untested path your real users are going to find first.
+
+78
+00:04:13,677 --> 00:04:15,351
+One thing before you move on.
+
+79
+00:04:15,351 --> 00:04:20,084
+Find a real case for your feature: more messages, a longer document, whatever your
+
+80
+00:04:20,084 --> 00:04:21,931
+feature actually takes as input.
+
+81
+00:04:21,931 --> 00:04:26,664
+Push it to three times the length of the longest one you've genuinely handled, run
+
+82
+00:04:26,664 --> 00:04:31,224
+it, and check whether the one fact you'd hate to lose, the equivalent of Ticket
+
+83
+00:04:31,224 --> 00:04:33,706
+4471's deadline, survived to the other end.
+
+84
+00:04:33,706 --> 00:04:37,977
+Next lecture stays inside this same mechanism, but from a different angle:
+
+85
+00:04:37,977 --> 00:04:42,479
+temperature, and why the same prompt, on the same day, gives you two different
+
+86
+00:04:42,479 --> 00:04:42,941
+answers.

@@ -1,0 +1,323 @@
+1
+00:00:00,350 --> 00:00:04,664
+Go back to that refund policy for a second: thirty days, full refund, stated with
+
+2
+00:00:04,664 --> 00:00:06,794
+total confidence, invented from nothing.
+
+3
+00:00:06,794 --> 00:00:11,214
+Notice what it never said, even once: did anything in that sentence sound like "I'm
+
+4
+00:00:11,214 --> 00:00:11,746
+not sure"?
+
+5
+00:00:11,746 --> 00:00:15,900
+That has a name, and understanding the name properly is the difference between
+
+6
+00:00:15,900 --> 00:00:20,373
+explaining it well to a skeptical engineer and just saying "AI does that sometimes."
+
+7
+00:00:20,373 --> 00:00:22,823
+Hallucination is not the model malfunctioning.
+
+8
+00:00:22,823 --> 00:00:27,136
+It's the model doing the exact same thing it does when it's right: predicting the
+
+9
+00:00:27,136 --> 00:00:29,639
+most plausible continuation of the text so far.
+
+10
+00:00:29,639 --> 00:00:33,686
+The only difference is that this time, nothing in its training or its prompt
+
+11
+00:00:33,686 --> 00:00:38,000
+anchored "plausible" to "true." So it filled the gap with whatever sounded right.
+
+12
+00:00:38,000 --> 00:00:42,260
+That distinction matters, because it tells you the fix isn't "make the model try
+
+13
+00:00:42,260 --> 00:00:46,041
+harder." It's giving it something true to anchor to in the first place.
+
+14
+00:00:46,041 --> 00:00:49,130
+It also matters for a conversation you will actually have.
+
+15
+00:00:49,130 --> 00:00:53,497
+Someone will call a wrong answer "a glitch" or "a bug they'll patch." Neither word
+
+16
+00:00:53,497 --> 00:00:57,917
+is accurate, and using the accurate one is how you get taken seriously in the room.
+
+17
+00:00:58,467 --> 00:01:02,177
+Here's why you can't patch this out with a stricter prompt alone.
+
+18
+00:01:02,177 --> 00:01:06,916
+There's no separate "I don't know" system sitting off to the side, waiting to catch
+
+19
+00:01:06,916 --> 00:01:07,373
+the gap.
+
+20
+00:01:07,373 --> 00:01:10,513
+It's the same single loop from lecture one, every time.
+
+21
+00:01:10,513 --> 00:01:14,851
+If the context you gave it actually contains the answer, that same mechanism
+
+22
+00:01:14,851 --> 00:01:19,304
+predicts words anchored to real information, and it's remarkably good at that.
+
+23
+00:01:19,304 --> 00:01:23,986
+If the context doesn't contain the answer, the exact same mechanism keeps running,
+
+24
+00:01:23,986 --> 00:01:26,441
+because that's the only mechanism there is.
+
+25
+00:01:26,441 --> 00:01:31,065
+It predicts the next plausible word anyway, anchored to nothing but "this is what
+
+26
+00:01:31,065 --> 00:01:35,518
+sentences like this usually say." From the outside, both outputs sound equally
+
+27
+00:01:35,518 --> 00:01:37,002
+fluent, equally confident.
+
+28
+00:01:37,002 --> 00:01:40,199
+Only one of them is actually connected to anything true.
+
+29
+00:01:40,199 --> 00:01:44,995
+This is also why hallucination gets worse exactly when you'd least expect it: on the
+
+30
+00:01:44,995 --> 00:01:47,221
+questions that sound the most ordinary.
+
+31
+00:01:47,221 --> 00:01:50,875
+A visibly strange question makes people double-check the answer.
+
+32
+00:01:50,875 --> 00:01:55,499
+A completely mundane one, like a refund policy, doesn't, and mundane is precisely
+
+33
+00:01:55,499 --> 00:01:57,783
+where an invented answer blends in best.
+
+34
+00:01:58,333 --> 00:02:02,777
+Two shapes you'll actually meet, and they need slightly different fixes, so it's
+
+35
+00:02:02,777 --> 00:02:04,166
+worth telling them apart.
+
+36
+00:02:04,166 --> 00:02:08,554
+Knowledge-gap hallucination is the refund policy: ask it something it was never
+
+37
+00:02:08,554 --> 00:02:12,776
+given the means to know, and it answers from general pattern instead of your
+
+38
+00:02:12,776 --> 00:02:13,332
+specifics.
+
+39
+00:02:13,332 --> 00:02:17,498
+Unsupported-detail hallucination is sneakier, because most of the answer is
+
+40
+00:02:17,498 --> 00:02:18,553
+genuinely grounded.
+
+41
+00:02:18,553 --> 00:02:23,164
+Give it a real document to summarise, and it gets the substance right, then invents
+
+42
+00:02:23,164 --> 00:02:27,831
+one small specific, a page number, a date, a quote, that sounds exactly as confident
+
+43
+00:02:27,831 --> 00:02:29,164
+as everything around it.
+
+44
+00:02:29,164 --> 00:02:33,830
+That one's harder to catch, because ninety percent of the sentence earned your trust
+
+45
+00:02:33,830 --> 00:02:34,330
+honestly.
+
+46
+00:02:34,330 --> 00:02:38,163
+Ask which one you're more worried about, and most teams answer wrong.
+
+47
+00:02:38,163 --> 00:02:42,663
+They spend their review time hunting knowledge-gap hallucinations, because that's
+
+48
+00:02:42,663 --> 00:02:47,218
+the dramatic one, and let the quieter unsupported detail through unchecked, on the
+
+49
+00:02:47,218 --> 00:02:49,051
+document they were sure was safe.
+
+50
+00:02:49,601 --> 00:02:54,250
+Here's the honest list, and notice what's missing from it: a cleverer system prompt.
+
+51
+00:02:54,250 --> 00:02:58,732
+Grounding means putting the actual answer inside the context before you ask, your
+
+52
+00:02:58,732 --> 00:03:03,048
+real refund policy, your real document, so the mechanism has something true to
+
+53
+00:03:03,048 --> 00:03:05,151
+predict from instead of a gap to fill.
+
+54
+00:03:05,151 --> 00:03:08,637
+That's most of what Section five, RAG, is built to do properly.
+
+55
+00:03:08,637 --> 00:03:13,175
+Verification means checking the output against a real source after it's generated,
+
+56
+00:03:13,175 --> 00:03:17,657
+catching the unsupported detail that slipped through even when most of the answer
+
+57
+00:03:17,657 --> 00:03:18,376
+was grounded.
+
+58
+00:03:18,376 --> 00:03:23,025
+That's what the rubric and golden set you'll build in Section four are actually for.
+
+59
+00:03:23,575 --> 00:03:27,735
+Say the honest caveat, because "this is unfixable" would be its own kind of
+
+60
+00:03:27,735 --> 00:03:28,456
+overclaiming.
+
+61
+00:03:28,456 --> 00:03:30,508
+Training has genuinely improved here.
+
+62
+00:03:30,508 --> 00:03:35,113
+Models today are measurably more willing to say they don't know something than they
+
+63
+00:03:35,113 --> 00:03:35,390
+were.
+
+64
+00:03:35,390 --> 00:03:39,994
+That's real progress, and it's worth acknowledging rather than pretending nothing's
+
+65
+00:03:39,994 --> 00:03:40,438
+changed.
+
+66
+00:03:40,438 --> 00:03:45,097
+But reduced is not eliminated, and it never will be from training alone, because the
+
+67
+00:03:45,097 --> 00:03:47,372
+mechanism is still next-token prediction.
+
+68
+00:03:47,372 --> 00:03:51,865
+Asking it nicely to only say true things changes the words in the prompt, not the
+
+69
+00:03:51,865 --> 00:03:53,640
+mechanism generating the answer.
+
+70
+00:03:53,640 --> 00:03:57,523
+Grounding and verification change what the mechanism has to work with.
+
+71
+00:03:57,523 --> 00:03:59,131
+That's the actual difference.
+
+72
+00:03:59,681 --> 00:04:01,295
+One thing before you move on.
+
+73
+00:04:01,295 --> 00:04:05,914
+Find one place in your own feature where it's answering a question without actually
+
+74
+00:04:05,914 --> 00:04:08,140
+being given the facts to answer it from.
+
+75
+00:04:08,140 --> 00:04:12,202
+That gap is where your next hallucination is waiting, not hypothetically,
+
+76
+00:04:12,202 --> 00:04:12,925
+specifically.
+
+77
+00:04:12,925 --> 00:04:17,377
+Then name which fix closes it: grounding, if the fact exists somewhere you could
+
+78
+00:04:17,377 --> 00:04:21,717
+retrieve it, or verification, if you can at least check the answer afterwards.
+
+79
+00:04:21,717 --> 00:04:25,835
+If neither is possible yet, that's worth knowing before launch, not after.
+
+80
+00:04:25,835 --> 00:04:30,398
+Next lecture turns this into a map: seven archetypes of AI feature, and which ones
+
+81
+00:04:30,398 --> 00:04:32,123
+actually make it to production.
