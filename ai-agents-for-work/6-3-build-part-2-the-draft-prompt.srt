@@ -1,0 +1,247 @@
+1
+00:00:00,350 --> 00:00:04,956
+Add an AI Agent node after your Sheets node, attach your Gemini model, and open the
+
+2
+00:00:04,956 --> 00:00:05,677
+Prompt field.
+
+3
+00:00:05,677 --> 00:00:10,061
+The User Message hands over every row that made it through your filter: client,
+
+4
+00:00:10,061 --> 00:00:12,170
+contact, renewal date, days remaining.
+
+5
+00:00:12,170 --> 00:00:16,554
+You are not writing the email yourself, you are handing the agent the facts and
+
+6
+00:00:16,554 --> 00:00:19,384
+trusting the system message to shape them properly.
+
+7
+00:00:19,384 --> 00:00:22,270
+Why does tone need engineering when content did not?
+
+8
+00:00:22,270 --> 00:00:26,876
+Because left to their defaults, models write in a voice no real firm uses: a little
+
+9
+00:00:26,876 --> 00:00:30,649
+too enthusiastic, a little too padded, delighted to be following up.
+
+10
+00:00:30,649 --> 00:00:35,089
+Your clients know how your company sounds, and a chase that suddenly sounds like
+
+11
+00:00:35,089 --> 00:00:37,531
+software is a chase that gets screenshotted.
+
+12
+00:00:37,531 --> 00:00:42,026
+The standard to hold every draft to is simple and personal: read it aloud and ask
+
+13
+00:00:42,026 --> 00:00:45,855
+whether you would send it, word for word, under your own name, today.
+
+14
+00:00:45,855 --> 00:00:47,131
+Not whether it is fine.
+
+15
+00:00:47,131 --> 00:00:48,241
+Whether it is yours.
+
+16
+00:00:48,241 --> 00:00:52,847
+The system message gets you most of the way there, and the trial's read-every-draft
+
+17
+00:00:52,847 --> 00:00:55,122
+fortnight is where you sand off the rest.
+
+18
+00:00:55,672 --> 00:01:00,548
+Read it as a client would, not as a builder: nothing in it is clever, and everything
+
+19
+00:01:00,548 --> 00:01:04,205
+in it is a boundary you decided before the first draft existed.
+
+20
+00:01:04,205 --> 00:01:06,701
+The next slide takes it apart line by line.
+
+21
+00:01:07,251 --> 00:01:11,289
+Three sentences in that prompt are doing three different kinds of work.
+
+22
+00:01:11,289 --> 00:01:13,962
+One controls content: name the client and date.
+
+23
+00:01:13,962 --> 00:01:18,569
+One controls tone: no threats, no premium figure sitting in a client's inbox as a
+
+24
+00:01:18,569 --> 00:01:20,161
+number they did not ask for.
+
+25
+00:01:20,161 --> 00:01:24,938
+One controls the agent's own self-understanding: it is drafting, not sending, and it
+
+26
+00:01:24,938 --> 00:01:27,440
+should never write as though it already has.
+
+27
+00:01:27,440 --> 00:01:31,478
+That last sentence sounds philosophical and is actually very practical.
+
+28
+00:01:31,478 --> 00:01:36,255
+A drafting model that believes it is mid-correspondence invents history: "further to
+
+29
+00:01:36,255 --> 00:01:40,862
+my last email", when there was no last email, or "as discussed", when nothing was
+
+30
+00:01:40,862 --> 00:01:41,431
+discussed.
+
+31
+00:01:41,431 --> 00:01:45,525
+Every one of those phrases is a small lie your client can catch, and the
+
+32
+00:01:45,525 --> 00:01:48,255
+never-write-as-sent line is what keeps them out.
+
+33
+00:01:48,255 --> 00:01:52,975
+The missing information clause works the same corner: if a row has no contact name,
+
+34
+00:01:52,975 --> 00:01:57,753
+the honest draft opens generically and Priya fixes it in four seconds, which beats a
+
+35
+00:01:57,753 --> 00:02:00,767
+warm "Dear Sam" addressed to a Sam the model made up.
+
+36
+00:02:00,767 --> 00:02:05,373
+Same escape hatch logic as Section 4, applied to correspondence: give the model a
+
+37
+00:02:05,373 --> 00:02:07,250
+dignified way to not know things.
+
+38
+00:02:07,800 --> 00:02:09,214
+That is the whole prompt.
+
+39
+00:02:09,214 --> 00:02:13,797
+It reads shorter than Section 5's, and it should: the hard part of this build was
+
+40
+00:02:13,797 --> 00:02:14,816
+never the writing.
+
+41
+00:02:14,816 --> 00:02:19,455
+It was deciding, in advance, exactly what a client should never see, and saying so
+
+42
+00:02:19,455 --> 00:02:24,095
+in one sentence rather than trusting the model to guess your standards on its own.
+
+43
+00:02:24,095 --> 00:02:28,791
+And notice the stronger ban hiding in plain sight: the User Message never hands the
+
+44
+00:02:28,791 --> 00:02:29,922
+premium over at all.
+
+45
+00:02:29,922 --> 00:02:34,562
+The filter passes client, contact, date and days remaining, and the Premium column
+
+46
+00:02:34,562 --> 00:02:36,033
+stays behind in the sheet.
+
+47
+00:02:36,033 --> 00:02:39,993
+The prompt's "do not mention" line is the second fence, not the first.
+
+48
+00:02:39,993 --> 00:02:44,520
+That two-layer pattern, exclude the data, then also forbid the mention, is worth
+
+49
+00:02:44,520 --> 00:02:49,272
+stealing for anything sensitive: a model cannot leak a number it never received, and
+
+50
+00:02:49,272 --> 00:02:53,799
+the instruction only has to catch the case where the number sneaks in some other
+
+51
+00:02:53,799 --> 00:02:54,025
+way.
+
+52
+00:02:54,025 --> 00:02:55,722
+Wiring first, briefing second.
+
+53
+00:02:55,722 --> 00:02:57,985
+By now that order should sound familiar.
+
+54
+00:02:58,535 --> 00:03:03,087
+Test the tone the cheap way before the next lecture: pin your filtered rows, run the
+
+55
+00:03:03,087 --> 00:03:07,097
+agent, and read its three drafts aloud, in your voice, as if signing them.
+
+56
+00:03:07,097 --> 00:03:11,161
+Mark anything you would rephrase, tighten the briefing, run again for free.
+
+57
+00:03:11,161 --> 00:03:15,712
+Tone converges fast under that loop, usually in two or three passes, because you are
+
+58
+00:03:15,712 --> 00:03:17,446
+not teaching the model to write.
+
+59
+00:03:17,446 --> 00:03:20,155
+You are teaching it to stop writing like software.
+
+60
+00:03:20,155 --> 00:03:22,160
+The draft now reads the way you want.
+
+61
+00:03:22,160 --> 00:03:26,333
+Next lecture is where you make sure it can never do anything except sit there
+
+62
+00:03:26,333 --> 00:03:27,308
+waiting for Priya.

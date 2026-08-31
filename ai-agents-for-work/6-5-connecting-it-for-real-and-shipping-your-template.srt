@@ -1,0 +1,227 @@
+1
+00:00:00,350 --> 00:00:04,864
+This is the connection ceremony's fourth run, and the last one this course walks
+
+2
+00:00:04,864 --> 00:00:05,371
+with you.
+
+3
+00:00:05,371 --> 00:00:09,828
+It should take about five minutes now, and if some part of you is doing it from
+
+4
+00:00:09,828 --> 00:00:14,568
+memory rather than from the lecture, that is the course working exactly as intended.
+
+5
+00:00:14,568 --> 00:00:19,081
+Open your Sheets node and your Gmail node, unpin the test data on the first, and
+
+6
+00:00:19,081 --> 00:00:20,943
+connect real credentials to both.
+
+7
+00:00:20,943 --> 00:00:25,569
+The Gmail connection asks for the same kind of permission scope Section 1.3 taught
+
+8
+00:00:25,569 --> 00:00:30,139
+you to check: confirm it can create drafts, and do not grant it more than that if
+
+9
+00:00:30,139 --> 00:00:31,832
+your provider lets you choose.
+
+10
+00:00:32,382 --> 00:00:36,298
+Those thirty seconds repay themselves for years, so spend them slowly.
+
+11
+00:00:36,298 --> 00:00:40,829
+Where the offered grant is broader than drafts, and sometimes it is, you have two
+
+12
+00:00:40,829 --> 00:00:44,969
+layers already working for you: the wiring cannot send regardless, and the
+
+13
+00:00:44,969 --> 00:00:49,388
+credential is one you created for this purpose, named for it, per Section 2.2's
+
+14
+00:00:49,388 --> 00:00:53,919
+habit, so it can be revoked on its own from your Google security page the day you
+
+15
+00:00:53,919 --> 00:00:54,870
+retire the agent.
+
+16
+00:00:54,870 --> 00:00:58,786
+Broad grants are a reason for the naming habit, not a reason to panic.
+
+17
+00:00:58,786 --> 00:01:02,925
+You know exactly which key opens what, and exactly which one to take back.
+
+18
+00:01:03,475 --> 00:01:07,641
+The confirmation row might feel redundant after everything you just built.
+
+19
+00:01:07,641 --> 00:01:12,257
+Do it anyway, the first day and again at the end of week one, because it costs one
+
+20
+00:01:12,257 --> 00:01:13,327
+glance at a folder.
+
+21
+00:01:13,327 --> 00:01:15,297
+Configuration is what you intended.
+
+22
+00:01:15,297 --> 00:01:16,817
+Behaviour is what happened.
+
+23
+00:01:16,817 --> 00:01:21,489
+Section 8's incident is a reminder that the gap between "I configured it correctly"
+
+24
+00:01:21,489 --> 00:01:25,542
+and "I confirmed it behaved correctly" is exactly where trouble gets in.
+
+25
+00:01:25,542 --> 00:01:29,426
+The tallies are the trial's actual instrument, so keep them honestly.
+
+26
+00:01:29,426 --> 00:01:31,847
+Sent as written is the agent earning trust.
+
+27
+00:01:31,847 --> 00:01:36,463
+Edited first is tuning material: every edit you make is a sentence that belongs in
+
+28
+00:01:36,463 --> 00:01:41,135
+the briefing, and folding your three commonest edits back in at the end of week one
+
+29
+00:01:41,135 --> 00:01:43,274
+is how the week two drafts get better.
+
+30
+00:01:43,274 --> 00:01:48,003
+Deleted is the important column: a deleted draft means the agent chased something it
+
+31
+00:01:48,003 --> 00:01:51,212
+should not have, and each one gets thirty seconds of why.
+
+32
+00:01:51,212 --> 00:01:55,884
+And a fortnight of those three numbers answers the two questions Section 7 is about
+
+33
+00:01:55,884 --> 00:02:00,612
+to ask of every agent you own: are this agent's mistakes the kind you catch, and are
+
+34
+00:02:00,612 --> 00:02:01,682
+they getting rarer?
+
+35
+00:02:02,232 --> 00:02:06,601
+By now you could probably do this without the reminder, and that is exactly the
+
+36
+00:02:06,601 --> 00:02:09,200
+point of building all four agents the same way.
+
+37
+00:02:09,200 --> 00:02:13,680
+Date the filename, glance through the briefing for anything personal, and file it
+
+38
+00:02:13,680 --> 00:02:14,841
+with the other three.
+
+39
+00:02:14,841 --> 00:02:19,486
+Worth knowing about this particular export: the draft-only wiring travels inside it,
+
+40
+00:02:19,486 --> 00:02:23,523
+so anyone you hand C04 to inherits the guardrail along with the workflow.
+
+41
+00:02:23,523 --> 00:02:28,114
+They can undo it, nothing stops a determined importer choosing Send, but they would
+
+42
+00:02:28,114 --> 00:02:31,487
+have to do it deliberately, in the open, on their own canvas.
+
+43
+00:02:31,487 --> 00:02:35,856
+A template that ships with its restraint built in is quietly doing Section 10's
+
+44
+00:02:35,856 --> 00:02:40,501
+rollout work already: the safe version is the default version, and defaults are what
+
+45
+00:02:40,501 --> 00:02:41,607
+people actually run.
+
+46
+00:02:42,157 --> 00:02:46,480
+Four agents built, and look at Priya's morning now, because it is recognisably a
+
+47
+00:02:46,480 --> 00:02:47,344
+different shape.
+
+48
+00:02:47,344 --> 00:02:50,856
+The inbox is pre-sorted, with the one email that matters flagged.
+
+49
+00:02:50,856 --> 00:02:53,935
+The last call's action items are listed, owners attached.
+
+50
+00:02:53,935 --> 00:02:56,691
+Monday's report drafts itself before she sits down.
+
+51
+00:02:56,691 --> 00:02:59,932
+The chases wait in her drafts folder for a read and a click.
+
+52
+00:02:59,932 --> 00:03:03,498
+Nothing in that list happened because she became more disciplined.
+
+53
+00:03:03,498 --> 00:03:08,036
+It happened because the boring halves of four jobs got delegated, each one on paper,
+
+54
+00:03:08,036 --> 00:03:09,117
+each one on a leash.
+
+55
+00:03:09,117 --> 00:03:10,252
+The building is done.
+
+56
+00:03:10,252 --> 00:03:14,682
+Everything from here is the part that actually separates people who keep the hours
+
+57
+00:03:14,682 --> 00:03:19,058
+they got back from people who lose them again in three months: checking the work.

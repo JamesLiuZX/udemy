@@ -1,0 +1,183 @@
+1
+00:00:00,350 --> 00:00:03,141
+Priya's renewals do not fail because she is careless.
+
+2
+00:00:03,141 --> 00:00:07,458
+They slip because a hundred small tasks compete for the same Tuesday, and a follow
+
+3
+00:00:07,458 --> 00:00:10,196
+up due in eight days loses to whatever is due today.
+
+4
+00:00:10,196 --> 00:00:14,461
+This agent's entire job is noticing the eight-day ones before they become today's
+
+5
+00:00:14,461 --> 00:00:18,041
+problem, and handing you a draft instead of a reason to feel behind.
+
+6
+00:00:18,041 --> 00:00:19,936
+Why a draft, rather than a reminder?
+
+7
+00:00:19,936 --> 00:00:23,464
+Because a reminder adds a task to your day and a draft removes one.
+
+8
+00:00:23,464 --> 00:00:27,729
+"Chase Brightwell" on a to-do list still costs you the finding, the phrasing, the
+
+9
+00:00:27,729 --> 00:00:31,151
+polite-but-firm calibration, at the exact moment you are busiest.
+
+10
+00:00:31,151 --> 00:00:33,784
+A draft sitting ready costs you a read and a send.
+
+11
+00:00:33,784 --> 00:00:37,943
+The difference sounds small and compounds enormously: the chase that takes four
+
+12
+00:00:37,943 --> 00:00:42,261
+seconds happens, every time, and the chase that takes four minutes is the one that
+
+13
+00:00:42,261 --> 00:00:42,576
+slips.
+
+14
+00:00:42,576 --> 00:00:44,998
+This agent does not make you more disciplined.
+
+15
+00:00:44,998 --> 00:00:48,579
+It makes the disciplined action nearly free, which works far better.
+
+16
+00:00:49,129 --> 00:00:53,714
+Read the action line again, because it is written differently from the first three
+
+17
+00:00:53,714 --> 00:00:55,280
+job descriptions on purpose.
+
+18
+00:00:55,280 --> 00:00:59,977
+It does not say "mostly draft" or "draft unless." It says draft only, full stop, and
+
+19
+00:00:59,977 --> 00:01:04,507
+the build in this section is going to prove that sentence is true in your wiring,
+
+20
+00:01:04,507 --> 00:01:05,513
+not just on paper.
+
+21
+00:01:05,513 --> 00:01:08,253
+Write your own version of it before you open n8n.
+
+22
+00:01:08,253 --> 00:01:11,273
+Two other lines have grown teeth since the last build.
+
+23
+00:01:11,273 --> 00:01:15,691
+The scope line says this agent writes drafts into a real mailbox, and that is a
+
+24
+00:01:15,691 --> 00:01:20,053
+threshold worth saying out loud: for the first time in this course, an agent's
+
+25
+00:01:20,053 --> 00:01:24,470
+output will live inside one of your actual work systems, wearing your account's
+
+26
+00:01:24,470 --> 00:01:24,750
+name.
+
+27
+00:01:24,750 --> 00:01:29,280
+That is exactly why the trial is the strictest yet, two weeks, every single draft
+
+28
+00:01:29,280 --> 00:01:31,349
+read before anything is sent by hand.
+
+29
+00:01:31,349 --> 00:01:36,046
+And the ceiling bans the premium amount from every draft, which is not squeamishness
+
+30
+00:01:36,046 --> 00:01:36,717
+about money.
+
+31
+00:01:36,717 --> 00:01:41,135
+A chase email gets forwarded, and a number that was fine between Priya and Ravi
+
+32
+00:01:41,135 --> 00:01:45,049
+reads very differently when it lands in front of his finance director.
+
+33
+00:01:45,049 --> 00:01:49,691
+Money figures belong in conversations a person chose to have, not in nudges a robot
+
+34
+00:01:49,691 --> 00:01:50,138
+drafted.
+
+35
+00:01:50,138 --> 00:01:53,885
+The polite chase works without the number, so the number stays out.
+
+36
+00:01:54,435 --> 00:01:57,106
+The house-framing image is doing precise work.
+
+37
+00:01:57,106 --> 00:02:01,636
+A lock added while framing sits square in the door and nobody ever debates it.
+
+38
+00:02:01,636 --> 00:02:06,339
+A lock bolted on after a break-in arrives as a patch, under stress, argued about,
+
+39
+00:02:06,339 --> 00:02:07,617
+and trusted by nobody.
+
+40
+00:02:07,617 --> 00:02:12,321
+Constraints on agents age exactly the same way: draft-only built in on day one is
+
+41
+00:02:12,321 --> 00:02:17,141
+simply what this agent is, invisible and unresented, while draft-only imposed after
+
+42
+00:02:17,141 --> 00:02:20,741
+an incident reads as a demotion someone will eventually relax.
+
+43
+00:02:20,741 --> 00:02:25,387
+Section 8's near miss shows the difference from the inside, on this exact agent.
+
+44
+00:02:25,387 --> 00:02:29,859
+Next lecture starts the build, and the first piece is deciding which renewals
+
+45
+00:02:29,859 --> 00:02:34,563
+actually deserve a chase this week, using the same pipeline sheet Agent 3 already
+
+46
+00:02:34,563 --> 00:02:35,666
+taught you to read.
