@@ -1,0 +1,195 @@
+1
+00:00:00,350 --> 00:00:02,211
+This rubric isn't a new standard.
+
+2
+00:00:02,211 --> 00:00:06,496
+It's the same five checkpoints from Section 11.1, read against what actually
+
+3
+00:00:06,496 --> 00:00:11,120
+happened in 11.2 and 11.3, so you can score your own capstone honestly rather than
+
+4
+00:00:11,120 --> 00:00:12,812
+guessing whether it went well.
+
+5
+00:00:12,812 --> 00:00:15,969
+Score each line as clear, or genuinely worth revisiting.
+
+6
+00:00:15,969 --> 00:00:19,353
+Don't round up a shaky answer to make the total look better.
+
+7
+00:00:19,353 --> 00:00:23,976
+The whole point of this rubric is the same honesty Section 8 asked of every result
+
+8
+00:00:23,976 --> 00:00:26,908
+on Harlan's account, aimed at your own work instead.
+
+9
+00:00:26,908 --> 00:00:29,953
+Do this alone, without anyone else grading it for you.
+
+10
+00:00:29,953 --> 00:00:34,295
+Nobody else is going to check your capstone the way you'd check a real client
+
+11
+00:00:34,295 --> 00:00:38,637
+account, which means this rubric only works if you hold yourself to the exact
+
+12
+00:00:38,637 --> 00:00:41,795
+standard you'd expect from someone else's honest report.
+
+13
+00:00:42,345 --> 00:00:46,374
+Work through these in order, the same order the two worked passes used.
+
+14
+00:00:46,374 --> 00:00:51,084
+A weak product truth doc quietly weakens every check after it, so starting anywhere
+
+15
+00:00:51,084 --> 00:00:55,794
+else risks scoring a later stage as clear when the foundation underneath it wasn't.
+
+16
+00:00:55,794 --> 00:00:58,462
+"Needs work" on any line isn't a failing grade.
+
+17
+00:00:58,462 --> 00:01:03,229
+It's information: go back to the specific lecture that check traces to, fix that one
+
+18
+00:01:03,229 --> 00:01:04,307
+piece, and move on.
+
+19
+00:01:04,307 --> 00:01:08,961
+A capstone honestly scored as three clear and two needs work is more useful to you
+
+20
+00:01:08,961 --> 00:01:12,990
+than one you told yourself was five for five without actually checking.
+
+21
+00:01:12,990 --> 00:01:17,757
+Notice the right-hand column points you at a specific worked moment in 11.2 or 11.3,
+
+22
+00:01:17,757 --> 00:01:19,232
+not just a section number.
+
+23
+00:01:19,232 --> 00:01:23,829
+If a line reads unclear, watch that exact moment again before rewriting anything.
+
+24
+00:01:23,829 --> 00:01:28,483
+Seeing how the worked example handled it is usually faster than guessing at a fix.
+
+25
+00:01:29,033 --> 00:01:32,358
+Fill in the "because" on every line, not just the verdict.
+
+26
+00:01:32,358 --> 00:01:37,116
+"Clear" without a reason is the same unearned confidence Section 8.2 already warned
+
+27
+00:01:37,116 --> 00:01:37,804
+you against.
+
+28
+00:01:37,804 --> 00:01:42,562
+A real reason forces you to point at the specific evidence, not just a feeling that
+
+29
+00:01:42,562 --> 00:01:43,823
+it probably went fine.
+
+30
+00:01:43,823 --> 00:01:47,836
+The overall line at the bottom isn't automatic from the five above it.
+
+31
+00:01:47,836 --> 00:01:52,479
+Five clears with a genuine winner, read honestly, might still mean one more cycle
+
+32
+00:01:52,479 --> 00:01:57,008
+before scaling makes sense, the same patience Section 8.4 asked of Harlan's own
+
+33
+00:01:57,008 --> 00:01:59,129
+refresh before it earned real budget.
+
+34
+00:01:59,129 --> 00:02:01,079
+Keep this sheet, whatever it says.
+
+35
+00:02:01,079 --> 00:02:05,722
+If every line comes back clear on the first try, that's a genuinely strong result
+
+36
+00:02:05,722 --> 00:02:10,308
+worth being honest with yourself about too, not something to second-guess out of
+
+37
+00:02:10,308 --> 00:02:10,652
+habit.
+
+38
+00:02:10,652 --> 00:02:15,353
+Either way, this sheet is the actual record of where your capstone stood, and it's
+
+39
+00:02:15,353 --> 00:02:18,621
+worth having on hand the next time you run a real sprint.
+
+40
+00:02:19,171 --> 00:02:23,787
+Last lecture is short: where to go next, once this rubric is filled in honestly,
+
+41
+00:02:23,787 --> 00:02:24,768
+whatever it says.
+
+42
+00:02:24,768 --> 00:02:28,461
+If most of this came back "needs work," that's not a bad result.
+
+43
+00:02:28,461 --> 00:02:33,307
+It's the same noise verdict Section 8.2 already told you to expect from a first real
+
+44
+00:02:33,307 --> 00:02:33,596
+pass.
+
+45
+00:02:33,596 --> 00:02:35,904
+Fix what needs fixing, and run it again.
+
+46
+00:02:35,904 --> 00:02:39,366
+Would a client accept this sheet as proof of a real process?
+
+47
+00:02:39,366 --> 00:02:42,424
+That's worth asking honestly before you close it out.
+
+48
+00:02:42,424 --> 00:02:47,040
+It's the same question Section 10.3's case study will eventually put in front of
+
+49
+00:02:47,040 --> 00:02:51,079
+someone else, and this is your chance to answer it for yourself first.

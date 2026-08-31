@@ -1,0 +1,459 @@
+1
+00:00:00,350 --> 00:00:04,171
+Part one ended with a cleared batch sitting ready to spend against.
+
+2
+00:00:04,171 --> 00:00:08,390
+This part is where it actually earns a verdict, the same sequence your own
+
+3
+00:00:08,390 --> 00:00:13,123
+capstone's back half has to run: build the architecture, spend against it, read the
+
+4
+00:00:13,123 --> 00:00:15,746
+result honestly, and decide what happens next.
+
+5
+00:00:15,746 --> 00:00:20,137
+Section 7.2 built the actual structure: eight ad sets, one per cleared angle,
+
+6
+00:00:20,137 --> 00:00:21,904
+twenty-five dollars a day each.
+
+7
+00:00:21,904 --> 00:00:25,554
+A twenty-four-dollar CAC ceiling, worked from Dana's own margin.
+
+8
+00:00:25,554 --> 00:00:28,861
+A kill rule at fifty dollars spent with zero add-to-carts.
+
+9
+00:00:28,861 --> 00:00:33,423
+Every one of those numbers was decided before a single dollar of real spend went
+
+10
+00:00:33,423 --> 00:00:36,388
+out, exactly the discipline Section 7.2 insisted on.
+
+11
+00:00:36,388 --> 00:00:38,327
+Notice the order this happened in.
+
+12
+00:00:38,327 --> 00:00:42,604
+The numbers came first, written down, before Sam looked at a single result.
+
+13
+00:00:42,604 --> 00:00:47,222
+That's the opposite of picking a CAC ceiling that happens to make an early result
+
+14
+00:00:47,222 --> 00:00:47,793
+look good.
+
+15
+00:00:47,793 --> 00:00:52,526
+By the time real data existed, there was no room left to quietly move the goalposts
+
+16
+00:00:52,526 --> 00:00:55,263
+to fit whatever the account was doing that week.
+
+17
+00:00:55,263 --> 00:00:59,938
+A number decided in advance is a genuine commitment, checkable by anyone who looks
+
+18
+00:00:59,938 --> 00:01:00,623
+at it later.
+
+19
+00:01:00,623 --> 00:01:05,299
+A number decided after results are already visible is just a story dressed up as a
+
+20
+00:01:05,299 --> 00:01:08,093
+rule, bent to whatever answer already felt right.
+
+21
+00:01:08,643 --> 00:01:12,009
+Two hundred dollars a day, total, across all eight ad sets.
+
+22
+00:01:12,009 --> 00:01:16,744
+That's the real number this whole test cost to run, against a margin structure that
+
+23
+00:01:16,744 --> 00:01:17,656
+could absorb it.
+
+24
+00:01:17,656 --> 00:01:22,277
+Notice this table has no line for "which angle will win." That question genuinely
+
+25
+00:01:22,277 --> 00:01:26,613
+couldn't be answered yet, and Section 7's entire structure exists to make it
+
+26
+00:01:26,613 --> 00:01:29,922
+answerable honestly once real spend has actually happened.
+
+27
+00:01:29,922 --> 00:01:34,657
+Every one of these four numbers traces back to an earlier lecture, not a guess made
+
+28
+00:01:34,657 --> 00:01:35,456
+in the moment.
+
+29
+00:01:35,456 --> 00:01:39,107
+The budget and CAC ceiling came from Section 1.5's margin maths.
+
+30
+00:01:39,107 --> 00:01:43,899
+The kill rule came from Section 7.2's reasoning about what "no signal at all" should
+
+31
+00:01:43,899 --> 00:01:44,812
+cost to confirm.
+
+32
+00:01:44,812 --> 00:01:48,406
+Nothing here was invented specifically for this worked example.
+
+33
+00:01:48,406 --> 00:01:52,913
+Compare this against your own capstone's numbers, if you've reached this stage.
+
+34
+00:01:52,913 --> 00:01:56,849
+Yours won't match Harlan's, and that's correct, not a problem to fix.
+
+35
+00:01:56,849 --> 00:01:59,587
+A different margin produces a different ceiling.
+
+36
+00:01:59,587 --> 00:02:04,379
+What should match is the discipline: worked from your own real figures, written down
+
+37
+00:02:04,379 --> 00:02:07,745
+before any result existed to tempt you into adjusting them.
+
+38
+00:02:08,295 --> 00:02:11,993
+One winner, against seven ad sets that mostly landed on noise.
+
+39
+00:02:11,993 --> 00:02:16,883
+That ratio isn't a disappointing result, it's what Section 8.2 already told you an
+
+40
+00:02:16,883 --> 00:02:18,314
+honest batch looks like.
+
+41
+00:02:18,314 --> 00:02:23,144
+Two point six percent click-through, nearly three times the old gut-era baseline,
+
+42
+00:02:23,144 --> 00:02:27,676
+and a CAC comfortably under the ceiling rather than barely scraping past it.
+
+43
+00:02:27,676 --> 00:02:30,360
+Notice what earned this creative its verdict.
+
+44
+00:02:30,360 --> 00:02:35,309
+Not one flattering number in isolation, all three questions from Section 8.2's tree
+
+45
+00:02:35,309 --> 00:02:40,140
+answered honestly in sequence: real margin past the kill rule, a genuine gap past
+
+46
+00:02:40,140 --> 00:02:44,731
+the CAC ceiling, and survival through the swap test that catches a result too
+
+47
+00:02:44,731 --> 00:02:45,984
+fragile to trust yet.
+
+48
+00:02:45,984 --> 00:02:50,754
+The other seven ad sets don't get a dramatic callout here, and that's deliberate
+
+49
+00:02:50,754 --> 00:02:50,993
+too.
+
+50
+00:02:50,993 --> 00:02:55,943
+Six or seven quiet noise verdicts sitting alongside one winner is exactly the ratio
+
+51
+00:02:55,943 --> 00:03:00,654
+Section 8.2 told you to expect, not a sign the other angles were poorly chosen.
+
+52
+00:03:00,654 --> 00:03:05,484
+Most of a real batch losing cleanly to noise is the honest, ordinary outcome, not
+
+53
+00:03:05,484 --> 00:03:06,319
+the exception.
+
+54
+00:03:06,319 --> 00:03:11,030
+Read without Section 8's tree behind it, two point six percent alone might have
+
+55
+00:03:11,030 --> 00:03:15,860
+looked convincing enough to call a winner on day one, before the kill rule or the
+
+56
+00:03:15,860 --> 00:03:17,470
+swap test ever got applied.
+
+57
+00:03:17,470 --> 00:03:22,241
+The tree exists precisely to slow that instinct down until a result has actually
+
+58
+00:03:22,241 --> 00:03:22,837
+earned it.
+
+59
+00:03:23,387 --> 00:03:28,154
+This is Section 8.3 and 8.4's entire argument, compressed into one account's real
+
+60
+00:03:28,154 --> 00:03:28,684
+timeline.
+
+61
+00:03:28,684 --> 00:03:33,392
+The same winning creative went tired, and the fix wasn't the kill rule, it was a
+
+62
+00:03:33,392 --> 00:03:37,629
+refresh: same angle, new cut, tested again rather than trusted on faith.
+
+63
+00:03:37,629 --> 00:03:41,337
+That refresh recovering is what actually licensed the scale-up.
+
+64
+00:03:41,337 --> 00:03:46,221
+Four hundred dollars a day is a real core-campaign budget, and it's only defensible
+
+65
+00:03:46,221 --> 00:03:51,047
+because a twenty-one-dollar CAC sits underneath it, tested and proven, not assumed
+
+66
+00:03:51,047 --> 00:03:54,637
+from a feeling about which creative deserved to keep running.
+
+67
+00:03:54,637 --> 00:03:58,638
+Notice this refresh followed Section 8.4's Pattern A, not Pattern B.
+
+68
+00:03:58,638 --> 00:04:03,287
+It recovered close to the original cut's performance rather than fading fast or
+
+69
+00:04:03,287 --> 00:04:04,818
+failing to recover at all.
+
+70
+00:04:04,818 --> 00:04:08,407
+That's why the angle kept scaling instead of getting retired.
+
+71
+00:04:08,407 --> 00:04:13,057
+A different refresh, one that fatigued again quickly, would have sent this same
+
+72
+00:04:13,057 --> 00:04:17,529
+account back to Section 2.4's angle map for something genuinely new instead.
+
+73
+00:04:17,529 --> 00:04:22,472
+Hold the whole arc together for a second: twenty-five dollars a day, a handful of ad
+
+74
+00:04:22,472 --> 00:04:23,591
+sets, mostly noise.
+
+75
+00:04:23,591 --> 00:04:25,474
+One winner, recognised honestly.
+
+76
+00:04:25,474 --> 00:04:28,475
+Fatigue, caught by frequency rather than a feeling.
+
+77
+00:04:28,475 --> 00:04:31,065
+A refresh, tested again rather than trusted.
+
+78
+00:04:31,065 --> 00:04:33,889
+Then, and only then, four hundred dollars a day.
+
+79
+00:04:33,889 --> 00:04:35,714
+Every step earned the next one.
+
+80
+00:04:35,714 --> 00:04:38,185
+None of it was skipped to get here faster.
+
+81
+00:04:38,735 --> 00:04:41,624
+One honest note before you finish your own capstone.
+
+82
+00:04:41,624 --> 00:04:45,790
+The gap between "eight ad sets launched" and "one confirmed winner" in this
+
+83
+00:04:45,790 --> 00:04:48,122
+walkthrough is a few minutes of narration.
+
+84
+00:04:48,122 --> 00:04:52,233
+On the real account it was days of accumulating spend before Section 7.4's
+
+85
+00:04:52,233 --> 00:04:56,565
+small-sample honesty allowed any verdict at all, and weeks more before fatigue
+
+86
+00:04:56,565 --> 00:04:59,454
+showed up and the refresh had to prove itself again.
+
+87
+00:04:59,454 --> 00:05:04,120
+If your own capstone's test is still sitting in noise after a few days, that's not a
+
+88
+00:05:04,120 --> 00:05:05,397
+sign something's wrong.
+
+89
+00:05:05,397 --> 00:05:10,063
+It's Section 7.4's discipline doing its job, refusing to hand you a verdict the data
+
+90
+00:05:10,063 --> 00:05:11,563
+hasn't actually earned yet.
+
+91
+00:05:11,563 --> 00:05:14,340
+Would you rather have a fast answer or a true one?
+
+92
+00:05:14,340 --> 00:05:18,784
+Every shortcut this course has warned against, guessing a winner from a feeling,
+
+93
+00:05:18,784 --> 00:05:23,394
+reading a result before enough spend accumulated, trades a true answer for a faster
+
+94
+00:05:23,394 --> 00:05:23,616
+one.
+
+95
+00:05:23,616 --> 00:05:28,226
+Harlan's account only reached a genuine scaled winner by consistently choosing true
+
+96
+00:05:28,226 --> 00:05:30,837
+over fast, at every single one of these stages.
+
+97
+00:05:30,837 --> 00:05:33,836
+Notice, too, that patience here didn't mean passivity.
+
+98
+00:05:33,836 --> 00:05:38,058
+Waiting for an honest read isn't the same as doing nothing while it arrives.
+
+99
+00:05:38,058 --> 00:05:42,557
+Section 9's weekly sprint kept running the whole time, scoring, checking fatigue,
+
+100
+00:05:42,557 --> 00:05:47,167
+keeping the swipe file stocked, so the account was never simply idle while the data
+
+101
+00:05:47,167 --> 00:05:48,611
+slowly became trustworthy.
+
+102
+00:05:49,161 --> 00:05:54,002
+Next lecture is the rubric, a direct checklist against both worked passes so you can
+
+103
+00:05:54,002 --> 00:05:58,613
+score your own capstone honestly rather than just guessing whether it went well.
+
+104
+00:05:58,613 --> 00:06:03,223
+Run your own test at whatever pace your real spend allows, even if that's slower
+
+105
+00:06:03,223 --> 00:06:05,183
+than either of these two lectures.
+
+106
+00:06:05,183 --> 00:06:09,793
+A verdict rushed past Section 7.4's honesty check isn't a faster version of this
+
+107
+00:06:09,793 --> 00:06:10,254
+process.
+
+108
+00:06:10,254 --> 00:06:12,213
+It just isn't this process at all.
+
+109
+00:06:12,213 --> 00:06:16,882
+Take a moment, before the rubric, to notice what these two worked passes actually
+
+110
+00:06:16,882 --> 00:06:18,149
+demonstrated together.
+
+111
+00:06:18,149 --> 00:06:21,031
+Not a single clever trick, not one lucky creative.
+
+112
+00:06:21,031 --> 00:06:25,757
+A sequence of ordinary, checkable decisions, each one traceable back to a specific
+
+113
+00:06:25,757 --> 00:06:28,869
+lecture, that happened to compound into a real result.
+
+114
+00:06:28,869 --> 00:06:33,652
+That compounding, not any individual step, is the entire thing this course has been
+
+115
+00:06:33,652 --> 00:06:34,574
+trying to teach.
