@@ -1,0 +1,351 @@
+1
+00:00:00,350 --> 00:00:04,844
+Someone in a review will eventually ask exactly that, as though it's one question
+
+2
+00:00:04,844 --> 00:00:05,732
+with one answer.
+
+3
+00:00:05,732 --> 00:00:06,508
+Is it, though?
+
+4
+00:00:06,508 --> 00:00:10,558
+It's actually three separate questions, PII handling, data residency, and
+
+5
+00:00:10,558 --> 00:00:14,997
+training-data rights, each with its own owner, and conflating them is how a team
+
+6
+00:00:14,997 --> 00:00:19,491
+confidently answers the easy one and never notices the other two went unanswered.
+
+7
+00:00:19,491 --> 00:00:24,040
+This lecture keeps the three apart on purpose, and gives you the specific question
+
+8
+00:00:24,040 --> 00:00:28,534
+to ask for each, not a generic reassurance that "we take data privacy seriously."
+
+9
+00:00:28,534 --> 00:00:33,194
+Picture the meeting where this actually comes up: a customer's security team sends a
+
+10
+00:00:33,194 --> 00:00:36,468
+questionnaire, or your own legal team asks before a launch.
+
+11
+00:00:36,468 --> 00:00:38,299
+The question arrives as one line.
+
+12
+00:00:38,299 --> 00:00:42,848
+The honest answer needs three, and arriving with only one prepared is how a launch
+
+13
+00:00:42,848 --> 00:00:44,845
+stalls a week before it should ship.
+
+14
+00:00:45,395 --> 00:00:49,749
+Read the last column, because it's the one that actually matters: three different
+
+15
+00:00:49,749 --> 00:00:54,049
+places, three different owners, and a team that's checked one often assumes it's
+
+16
+00:00:54,049 --> 00:00:55,017
+checked all three.
+
+17
+00:00:55,017 --> 00:00:59,532
+PII handling is the one you can answer yourself, because it's about your own system,
+
+18
+00:00:59,532 --> 00:01:00,445
+not the vendor's.
+
+19
+00:01:00,445 --> 00:01:04,907
+Trace an actual request: what personal information is in it, and everywhere it goes
+
+20
+00:01:04,907 --> 00:01:08,669
+afterward, a prompt, a log line, a support ticket someone reads later.
+
+21
+00:01:08,669 --> 00:01:11,948
+Most teams have mapped this less thoroughly than they assume.
+
+22
+00:01:11,948 --> 00:01:14,205
+Map it further than the obvious path, too.
+
+23
+00:01:14,205 --> 00:01:17,592
+The request itself is rarely the only place personal data sits.
+
+24
+00:01:17,592 --> 00:01:21,730
+A retry queue, an analytics event fired for the product team, an error report
+
+25
+00:01:21,730 --> 00:01:26,138
+captured by a monitoring tool when something crashes mid-request, all of these can
+
+26
+00:01:26,138 --> 00:01:30,438
+carry personal data along with them, invisibly, well outside the one flow anyone
+
+27
+00:01:30,438 --> 00:01:31,405
+actually reviewed.
+
+28
+00:01:31,955 --> 00:01:36,769
+Residency matters most concretely the moment a customer asks whether their data ever
+
+29
+00:01:36,769 --> 00:01:41,584
+leaves a specific region, a question that's become routine in enterprise procurement
+
+30
+00:01:41,584 --> 00:01:45,882
+and impossible to answer honestly without having actually read the vendor's
+
+31
+00:01:45,882 --> 00:01:49,321
+infrastructure documentation, not just their marketing page.
+
+32
+00:01:49,871 --> 00:01:54,318
+Notice the bad column's assumption isn't unreasonable, it's just unchecked, and
+
+33
+00:01:54,318 --> 00:01:57,808
+those are different problems with very different consequences.
+
+34
+00:01:57,808 --> 00:02:02,425
+Most vendors do offer a setting that stops your data from being used for training.
+
+35
+00:02:02,425 --> 00:02:06,928
+Plenty of accounts have it left on whatever the default was, which is not always
+
+36
+00:02:06,928 --> 00:02:11,094
+off, and nobody on the product side ever opened the settings page to look.
+
+37
+00:02:11,094 --> 00:02:14,866
+The gap isn't malice on the vendor's side or carelessness on yours.
+
+38
+00:02:14,866 --> 00:02:19,426
+It's a question that felt like someone else's job until a customer's own security
+
+39
+00:02:19,426 --> 00:02:20,833
+review asked it directly.
+
+40
+00:02:20,833 --> 00:02:25,562
+The fix is almost embarrassingly simple compared to the other risks in this section:
+
+41
+00:02:25,562 --> 00:02:30,291
+open the setting, read what it actually says today, and write the answer down with a
+
+42
+00:02:30,291 --> 00:02:33,612
+date, the same discipline 8.1 asked for every register row.
+
+43
+00:02:33,612 --> 00:02:38,228
+That one afternoon closes a question that otherwise resurfaces every single time a
+
+44
+00:02:38,228 --> 00:02:40,255
+customer's procurement team asks it.
+
+45
+00:02:40,255 --> 00:02:44,590
+Notice, too, that a single vendor can answer this question two different ways
+
+46
+00:02:44,590 --> 00:02:47,911
+depending on which of their products you're actually using.
+
+47
+00:02:47,911 --> 00:02:52,584
+A consumer chat product and its enterprise API often sit under completely different
+
+48
+00:02:52,584 --> 00:02:56,975
+data terms, from the same company, and assuming the friendlier consumer answer
+
+49
+00:02:56,975 --> 00:03:01,366
+applies to the API you're actually calling is its own specific version of this
+
+50
+00:03:01,366 --> 00:03:01,816
+mistake.
+
+51
+00:03:02,366 --> 00:03:06,979
+Say the honest caveat plainly, because a course can't responsibly hand you specific
+
+52
+00:03:06,979 --> 00:03:10,703
+legal answers for every jurisdiction a learner might be sitting in.
+
+53
+00:03:10,703 --> 00:03:14,705
+What doesn't change by jurisdiction is the shape of the three questions.
+
+54
+00:03:14,705 --> 00:03:19,152
+Where does personal data go, whose laws govern where it's processed, and who can
+
+55
+00:03:19,152 --> 00:03:19,819
+train on it.
+
+56
+00:03:19,819 --> 00:03:24,376
+Ask all three, everywhere you operate, and you've done the part of this job that's
+
+57
+00:03:24,376 --> 00:03:25,210
+actually yours.
+
+58
+00:03:25,210 --> 00:03:29,712
+Getting the specific answer right for your specific country and sector is exactly
+
+59
+00:03:29,712 --> 00:03:34,214
+what legal and compliance are for, and asking them a precise question is far more
+
+60
+00:03:34,214 --> 00:03:38,272
+useful to them than asking whether the feature is "compliant" in general.
+
+61
+00:03:38,272 --> 00:03:42,774
+"We're compliant" is the same empty shape as "the model is powerful" from Section
+
+62
+00:03:42,774 --> 00:03:47,443
+two, or "legal will review it" from two lectures ago: a sentence that sounds like an
+
+63
+00:03:47,443 --> 00:03:51,722
+answer and closes the conversation before anyone's actually checked anything.
+
+64
+00:03:51,722 --> 00:03:55,891
+The specific, checkable version is always three separate sentences, one per
+
+65
+00:03:55,891 --> 00:03:58,503
+question, each with its own evidence behind it.
+
+66
+00:03:59,053 --> 00:04:03,735
+That's the check worth running before anyone else asks you to, and the exercise is
+
+67
+00:04:03,735 --> 00:04:08,474
+more valuable than it sounds, because most people tracing their own feature for the
+
+68
+00:04:08,474 --> 00:04:11,101
+first time find a stop they'd forgotten about.
+
+69
+00:04:11,101 --> 00:04:15,726
+A support log, a monitoring dashboard, a debugging export someone downloaded once
+
+70
+00:04:15,726 --> 00:04:16,753
+and never deleted.
+
+71
+00:04:16,753 --> 00:04:18,523
+None of these are exotic risks.
+
+72
+00:04:18,523 --> 00:04:23,262
+They're ordinary infrastructure that happens to be holding personal data in a place
+
+73
+00:04:23,262 --> 00:04:25,832
+nobody's data-residency answer accounted for.
+
+74
+00:04:25,832 --> 00:04:30,171
+Do this for the request pattern that carries the most personal data, not the
+
+75
+00:04:30,171 --> 00:04:34,453
+simplest one, because that's the trace most likely to surface a stop nobody
+
+76
+00:04:34,453 --> 00:04:35,081
+remembered.
+
+77
+00:04:35,081 --> 00:04:39,820
+A password reset flow, or a ticket like 4471 with a billing email that differs from
+
+78
+00:04:39,820 --> 00:04:44,274
+the account email, will teach you more than a generic product query ever will.
+
+79
+00:04:44,824 --> 00:04:46,456
+One thing before you move on.
+
+80
+00:04:46,456 --> 00:04:47,807
+Trace the request first.
+
+81
+00:04:47,807 --> 00:04:52,253
+You already know your feature better than any document does, so this is usually
+
+82
+00:04:52,253 --> 00:04:53,491
+faster than it sounds.
+
+83
+00:04:53,491 --> 00:04:58,050
+Then open the actual setting for training-data rights and write down what it says
+
+84
+00:04:58,050 --> 00:05:00,076
+today, not what you assumed it said.
+
+85
+00:05:00,076 --> 00:05:04,072
+If it's not what you want, change it, and note the date you changed it.
+
+86
+00:05:04,072 --> 00:05:08,518
+Next lecture moves to the third row on 8.1's table: which regulations genuinely
+
+87
+00:05:08,518 --> 00:05:12,851
+apply to your feature, starting with the one everyone's heard of and few have
+
+88
+00:05:12,851 --> 00:05:13,639
+actually read.

@@ -1,0 +1,451 @@
+1
+00:00:00,350 --> 00:00:04,950
+Two sections ago, 6.6 gave you a way to score one agent's action: can it be undone,
+
+2
+00:00:04,950 --> 00:00:06,945
+and what does it cost if it's wrong.
+
+3
+00:00:06,945 --> 00:00:11,600
+This lecture applies the identical question to everything else an AI feature can do,
+
+4
+00:00:11,600 --> 00:00:13,595
+not just the actions an agent takes.
+
+5
+00:00:13,595 --> 00:00:16,145
+That's the entire idea behind a risk register.
+
+6
+00:00:16,145 --> 00:00:20,467
+Not a document that performs caution with checkboxes and adjectives, a list of
+
+7
+00:00:20,467 --> 00:00:25,122
+specific, named risks, each one scored the same honest way, each one owned by a real
+
+8
+00:00:25,122 --> 00:00:27,505
+person, each one dated for its next review.
+
+9
+00:00:27,505 --> 00:00:30,886
+Five categories cover almost everything you'll actually find.
+
+10
+00:00:30,886 --> 00:00:33,602
+The rest of this section walks each one in depth.
+
+11
+00:00:33,602 --> 00:00:36,705
+This lecture gives you the register itself, and the map.
+
+12
+00:00:36,705 --> 00:00:38,866
+Build it before you need it, not after.
+
+13
+00:00:38,866 --> 00:00:43,522
+Every one of these five categories is cheaper to catch in a design review than in an
+
+14
+00:00:43,522 --> 00:00:47,734
+incident review, and a risk register's entire value is moving that discovery
+
+15
+00:00:47,734 --> 00:00:52,001
+earlier, back when a mitigation is still a code change instead of a headline.
+
+16
+00:00:52,001 --> 00:00:56,656
+Think about the feature you're closest to shipping right now while you read the next
+
+17
+00:00:56,656 --> 00:00:56,989
+slide.
+
+18
+00:00:56,989 --> 00:01:01,533
+This works far better against something real than against an abstraction, the same
+
+19
+00:01:01,533 --> 00:01:04,359
+rule as every worksheet this course has handed you.
+
+20
+00:01:04,909 --> 00:01:09,720
+Read the blast radius column the same way you read it in Section six: not a severity
+
+21
+00:01:09,720 --> 00:01:14,245
+label someone assigned by feel, but the answer to two specific questions, asked
+
+22
+00:01:14,245 --> 00:01:16,135
+honestly, for this specific risk.
+
+23
+00:01:16,135 --> 00:01:19,915
+Data and privacy scores high for a structural reason worth naming.
+
+24
+00:01:19,915 --> 00:01:24,669
+Once a person's personal information has actually been seen, by a model provider, a
+
+25
+00:01:24,669 --> 00:01:29,022
+log, a support agent, undoing that is not a technical problem you can patch.
+
+26
+00:01:29,022 --> 00:01:33,718
+That's what makes it different from a regulatory gap, which is real, and costly if
+
+27
+00:01:33,718 --> 00:01:36,926
+caught late, but genuinely fixable once you've found it.
+
+28
+00:01:36,926 --> 00:01:41,679
+Prompt injection scores high for a related but distinct reason: it can act before a
+
+29
+00:01:41,679 --> 00:01:46,433
+human ever reviews the output, the same category of problem 6.1's workflow test was
+
+30
+00:01:46,433 --> 00:01:49,068
+built to catch before anyone builds around it.
+
+31
+00:01:49,068 --> 00:01:53,535
+What about bias and fairness, the row that earns its high score for nearly the
+
+32
+00:01:53,535 --> 00:01:54,451
+opposite reason?
+
+33
+00:01:54,451 --> 00:01:56,456
+It doesn't act fast, it hides well.
+
+34
+00:01:56,456 --> 00:02:00,923
+A feature can run for months producing a quietly unequal outcome before anyone
+
+35
+00:02:00,923 --> 00:02:05,505
+notices the pattern in aggregate, because no single case looks wrong on its own.
+
+36
+00:02:06,055 --> 00:02:10,676
+The operational row looks like the mildest one on the table, and for most features
+
+37
+00:02:10,676 --> 00:02:14,225
+it is, provided the "if someone's paged" clause actually holds.
+
+38
+00:02:14,225 --> 00:02:18,508
+An operational failure with no owner and no page isn't medium risk any more.
+
+39
+00:02:18,508 --> 00:02:22,846
+It's whatever the worst untreated version of that failure looks like, running
+
+40
+00:02:22,846 --> 00:02:26,509
+unattended for as long as it takes someone to notice by accident.
+
+41
+00:02:26,509 --> 00:02:29,833
+4471 is exactly this row, not a hypothetical version of it.
+
+42
+00:02:29,833 --> 00:02:34,510
+Nobody had built a signal for "the summary silently drops the deadline," so the gap
+
+43
+00:02:34,510 --> 00:02:39,073
+sat there, technically operational, low drama, until a human happened to open the
+
+44
+00:02:39,073 --> 00:02:41,891
+original ticket and catch what the summary missed.
+
+45
+00:02:41,891 --> 00:02:43,806
+The right column isn't decoration.
+
+46
+00:02:43,806 --> 00:02:48,483
+It's telling you exactly where the rest of this section goes deep on each category,
+
+47
+00:02:48,483 --> 00:02:50,737
+in the same order this table lists them.
+
+48
+00:02:50,737 --> 00:02:55,357
+If a row here feels thin, that's the lecture to open next, not a gap to guess your
+
+49
+00:02:55,357 --> 00:02:56,033
+way through.
+
+50
+00:02:56,583 --> 00:02:58,960
+Notice the bad column isn't wrong, exactly.
+
+51
+00:02:58,960 --> 00:03:01,391
+Every sentence in it is true and reasonable.
+
+52
+00:03:01,391 --> 00:03:05,757
+It's just not a risk register yet, it's the version of "important" the register
+
+53
+00:03:05,757 --> 00:03:06,751
+exists to replace.
+
+54
+00:03:06,751 --> 00:03:11,283
+The same move you learned for a launch approver in 6.6 applies here identically: a
+
+55
+00:03:11,283 --> 00:03:15,593
+team can't be accountable for anything, because accountability that belongs to
+
+56
+00:03:15,593 --> 00:03:17,527
+everyone quietly belongs to no one.
+
+57
+00:03:17,527 --> 00:03:19,793
+"Legal" isn't a person who checks a date.
+
+58
+00:03:19,793 --> 00:03:24,269
+A named person is, and that's the difference between a register someone maintains
+
+59
+00:03:24,269 --> 00:03:28,690
+and a document that looked thorough the day it was written and stale by the next
+
+60
+00:03:28,690 --> 00:03:29,132
+release.
+
+61
+00:03:29,132 --> 00:03:33,664
+Specificity is doing the same work here as it does everywhere else in this course.
+
+62
+00:03:33,664 --> 00:03:38,195
+"We should think about prompt injection" and "an uploaded PDF's text can currently
+
+63
+00:03:38,195 --> 00:03:42,671
+reach the system prompt unescaped" are not the same sentence, and only the second
+
+64
+00:03:42,671 --> 00:03:45,213
+one is a row someone could actually close out.
+
+65
+00:03:45,213 --> 00:03:49,689
+This is also why the register belongs to product, not to legal or security alone.
+
+66
+00:03:49,689 --> 00:03:54,000
+The person who can name the actual input path, or the actual feature behaviour
+
+67
+00:03:54,000 --> 00:03:58,587
+behind a bias risk, is usually whoever wrote the feature's spec in the first place,
+
+68
+00:03:58,587 --> 00:04:03,007
+not a reviewer meeting the feature for the first time in a compliance sync three
+
+69
+00:04:03,007 --> 00:04:04,113
+weeks before launch.
+
+70
+00:04:04,663 --> 00:04:09,151
+Say the honest caveat, because "under review" is where risk register rows go to
+
+71
+00:04:09,151 --> 00:04:09,832
+quietly die.
+
+72
+00:04:09,832 --> 00:04:14,491
+A mitigation is a specific change: this input gets sanitised before it reaches the
+
+73
+00:04:14,491 --> 00:04:19,036
+prompt, this field gets redacted before logging, this category of request gets a
+
+74
+00:04:19,036 --> 00:04:20,058
+human in the loop.
+
+75
+00:04:20,058 --> 00:04:23,865
+"Someone is looking into it" describes a meeting that might happen.
+
+76
+00:04:23,865 --> 00:04:28,466
+It doesn't lower a single risk's actual blast radius, and a register full of rows
+
+77
+00:04:28,466 --> 00:04:33,125
+like that gives a false sense of coverage to anyone who skims it without checking.
+
+78
+00:04:33,125 --> 00:04:37,726
+If the honest mitigation today is "we haven't built the fix yet," write that down
+
+79
+00:04:37,726 --> 00:04:42,271
+exactly, with a date it's due, rather than dressing up an open risk as a handled
+
+80
+00:04:42,271 --> 00:04:42,498
+one.
+
+81
+00:04:42,498 --> 00:04:46,986
+An honest, open row is worth more than a closed one that isn't actually closed.
+
+82
+00:04:46,986 --> 00:04:51,702
+A stale register carries its own specific danger, close cousin to the one 7.4 named
+
+83
+00:04:51,702 --> 00:04:52,952
+for a stale scorecard.
+
+84
+00:04:52,952 --> 00:04:56,871
+It doesn't just fail to help, it actively reassures the wrong people.
+
+85
+00:04:56,871 --> 00:05:01,303
+A launch reviewer who sees five rows marked mitigated, dated eight months ago,
+
+86
+00:05:01,303 --> 00:05:03,689
+reasonably assumes the feature is covered.
+
+87
+00:05:03,689 --> 00:05:05,507
+Nobody in that meeting is lying.
+
+88
+00:05:05,507 --> 00:05:09,995
+The document is simply no longer describing the feature as it currently exists.
+
+89
+00:05:10,545 --> 00:05:15,156
+That's the standard worth holding every row to, and the definition's order matters:
+
+90
+00:05:15,156 --> 00:05:16,933
+scored, owned, mitigated, dated.
+
+91
+00:05:16,933 --> 00:05:21,044
+Skip any one of those four and the row is decoration, not risk management.
+
+92
+00:05:21,044 --> 00:05:25,322
+Write the one row you're already slightly worried about, specifically, today.
+
+93
+00:05:25,322 --> 00:05:29,933
+Most people opening this template for the first time already know which risk they'd
+
+94
+00:05:29,933 --> 00:05:34,488
+write if they were honest, and have simply never had a document that asked them to
+
+95
+00:05:34,488 --> 00:05:37,155
+name it plainly, with their own name next to it.
+
+96
+00:05:37,155 --> 00:05:40,821
+That first row is usually the realest thing in the whole register.
+
+97
+00:05:40,821 --> 00:05:45,377
+Everything after it gets easier once the habit of writing a specific, owned, dated
+
+98
+00:05:45,377 --> 00:05:46,377
+row exists at all.
+
+99
+00:05:46,377 --> 00:05:49,210
+Run the exercise honestly rather than exhaustively.
+
+100
+00:05:49,210 --> 00:05:53,877
+One well-scored, well-owned row you'll actually revisit is worth more this week than
+
+101
+00:05:53,877 --> 00:05:58,376
+five rows copied from a generic checklist, because a generic row was never scored
+
+102
+00:05:58,376 --> 00:06:02,765
+against your feature's actual blast radius in the first place, and it shows the
+
+103
+00:06:02,765 --> 00:06:05,487
+moment anyone asks a follow-up question about it.
+
+104
+00:06:06,037 --> 00:06:07,693
+One thing before you move on.
+
+105
+00:06:07,693 --> 00:06:12,147
+Download the template and write one row for real, using a risk you can already
+
+106
+00:06:12,147 --> 00:06:14,487
+picture happening to your actual feature.
+
+107
+00:06:14,487 --> 00:06:19,283
+Put a name on it, yours if nobody else's is more appropriate yet, and a real date on
+
+108
+00:06:19,283 --> 00:06:22,195
+the calendar, not "quarterly" as a vague intention.
+
+109
+00:06:22,195 --> 00:06:26,877
+A register with one honestly maintained row beats one with twenty rows nobody will
+
+110
+00:06:26,877 --> 00:06:27,562
+ever reopen.
+
+111
+00:06:27,562 --> 00:06:32,244
+Next lecture goes deep on the first category from today's table: prompt injection,
+
+112
+00:06:32,244 --> 00:06:36,755
+the risk most product people have heard of and fewest can actually explain well
+
+113
+00:06:36,755 --> 00:06:39,781
+enough to judge whether their own feature is exposed.

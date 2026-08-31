@@ -1,0 +1,427 @@
+1
+00:00:00,350 --> 00:00:04,766
+Ask most product people what the EU AI Act actually says, and what do you get?
+
+2
+00:00:04,766 --> 00:00:09,124
+Something vague about "regulating AI," which is roughly as useful as saying a
+
+3
+00:00:09,124 --> 00:00:13,823
+nutrition label "regulates food." The actual document is far more specific, and far
+
+4
+00:00:13,823 --> 00:00:16,370
+more checkable, than its reputation suggests.
+
+5
+00:00:16,370 --> 00:00:20,899
+It sorts every AI system into one of four risk tiers, by what the system is used
+
+6
+00:00:20,899 --> 00:00:23,956
+for, not by which model powers it or how it was built.
+
+7
+00:00:23,956 --> 00:00:28,711
+Two features running the identical underlying model can land in completely different
+
+8
+00:00:28,711 --> 00:00:32,561
+tiers, because the tiers are about the use case, not the technology.
+
+9
+00:00:32,561 --> 00:00:35,334
+That's genuinely good news for most product work.
+
+10
+00:00:35,334 --> 00:00:38,844
+A feature landing in the lightest tier faces close to nothing.
+
+11
+00:00:38,844 --> 00:00:42,977
+A feature landing in the heaviest tier faces a real compliance programme.
+
+12
+00:00:42,977 --> 00:00:47,619
+The entire job is knowing honestly which one you're in, which is what this lecture
+
+13
+00:00:47,619 --> 00:00:48,581
+actually teaches.
+
+14
+00:00:48,581 --> 00:00:52,487
+This is also worth learning even if you never touch a single EU user.
+
+15
+00:00:52,487 --> 00:00:56,789
+Plenty of regulation being drafted elsewhere borrows the same shape: sort by
+
+16
+00:00:56,789 --> 00:00:58,544
+consequence, not by technology.
+
+17
+00:00:58,544 --> 00:01:03,186
+Learn to read this one well and the next one is faster to read, not a fresh start.
+
+18
+00:01:03,736 --> 00:01:08,545
+Read this table from the bottom up, because that's where most real product features
+
+19
+00:01:08,545 --> 00:01:09,356
+actually land.
+
+20
+00:01:09,356 --> 00:01:14,107
+Minimal risk covers an enormous amount of ordinary product work: internal drafting
+
+21
+00:01:14,107 --> 00:01:18,684
+tools, search ranking, most copilots, anything that helps a person do their job
+
+22
+00:01:18,684 --> 00:01:21,696
+without deciding something consequential about them.
+
+23
+00:01:21,696 --> 00:01:26,389
+Limited risk adds exactly one obligation worth remembering: tell the user they're
+
+24
+00:01:26,389 --> 00:01:27,374
+talking to an AI.
+
+25
+00:01:27,374 --> 00:01:31,951
+If your feature already does that, and most chat-style features already should,
+
+26
+00:01:31,951 --> 00:01:35,311
+you've likely cleared this tier without changing anything.
+
+27
+00:01:35,311 --> 00:01:40,062
+High-risk is the tier worth actually stopping for, and it's defined by consequence
+
+28
+00:01:40,062 --> 00:01:42,090
+to a person, not by sophistication.
+
+29
+00:01:42,090 --> 00:01:46,956
+A hiring tool that screens candidates, a system that scores creditworthiness, a tool
+
+30
+00:01:46,956 --> 00:01:51,591
+that affects access to education: these carry real obligations regardless of how
+
+31
+00:01:51,591 --> 00:01:53,445
+simple the underlying prompt is.
+
+32
+00:01:53,445 --> 00:01:57,327
+A basic classifier deciding who gets an interview can be high-risk.
+
+33
+00:01:57,327 --> 00:02:00,513
+A frontier model drafting marketing copy usually isn't.
+
+34
+00:02:01,063 --> 00:02:05,592
+The unacceptable tier is short and worth knowing by name rather than by detail,
+
+35
+00:02:05,592 --> 00:02:08,860
+because almost no legitimate product feature lands there.
+
+36
+00:02:08,860 --> 00:02:13,503
+It exists for practices most teams were never going to build anyway: manipulating
+
+37
+00:02:13,503 --> 00:02:18,319
+people through subliminal techniques, scoring citizens for trustworthiness the way a
+
+38
+00:02:18,319 --> 00:02:20,555
+small number of governments already do.
+
+39
+00:02:20,555 --> 00:02:25,198
+If a feature idea makes you personally uneasy enough to wonder whether it belongs
+
+40
+00:02:25,198 --> 00:02:29,326
+here, that discomfort is worth listening to before the tier confirms it.
+
+41
+00:02:29,326 --> 00:02:31,619
+Tiers can also drift as a feature grows.
+
+42
+00:02:31,619 --> 00:02:35,804
+A recommendation widget that only ever suggests products is minimal risk.
+
+43
+00:02:35,804 --> 00:02:40,447
+The same widget, repurposed eighteen months later to influence which candidates a
+
+44
+00:02:40,447 --> 00:02:45,205
+recruiter sees first, has quietly walked itself toward the high-risk tier without a
+
+45
+00:02:45,205 --> 00:02:47,613
+single line of the original code changing.
+
+46
+00:02:47,613 --> 00:02:51,970
+Re-check the tier when the use case changes, not only when the feature first
+
+47
+00:02:51,970 --> 00:02:52,486
+launches.
+
+48
+00:02:53,036 --> 00:02:57,931
+Notice the parallel to 8.3's training-data mistake, because it's the same shape of
+
+49
+00:02:57,931 --> 00:03:02,468
+error: a comfortable assumption standing in for a check nobody actually ran.
+
+50
+00:03:02,468 --> 00:03:07,243
+The Act is extraterritorial by design, the same way some privacy law already is.
+
+51
+00:03:07,243 --> 00:03:12,138
+What matters is whether your feature's output reaches someone in the EU, not where
+
+52
+00:03:12,138 --> 00:03:15,481
+your company is headquartered or where your servers sit.
+
+53
+00:03:15,481 --> 00:03:20,077
+A US-only company with EU customers, or even EU users of a nominally domestic
+
+54
+00:03:20,077 --> 00:03:24,972
+product, can find the Act applies to that specific feature regardless of where the
+
+55
+00:03:24,972 --> 00:03:25,569
+team sits.
+
+56
+00:03:25,569 --> 00:03:29,986
+Check this deliberately, feature by feature, rather than assuming a single
+
+57
+00:03:29,986 --> 00:03:32,792
+company-wide answer covers everything you ship.
+
+58
+00:03:32,792 --> 00:03:37,567
+A feature with no EU exposure today can gain some the moment sales closes a deal
+
+59
+00:03:37,567 --> 00:03:42,522
+nobody saw coming, which is exactly why this belongs as a dated, owned row in 8.1's
+
+60
+00:03:42,522 --> 00:03:46,104
+register, not a one-time answer everyone forgets to revisit.
+
+61
+00:03:46,104 --> 00:03:50,760
+Checking reach in practice is more concrete than it sounds: look at where your
+
+62
+00:03:50,760 --> 00:03:55,714
+paying customers or registered users are actually located, not where your marketing
+
+63
+00:03:55,714 --> 00:03:56,490
+targets them.
+
+64
+00:03:56,490 --> 00:04:01,505
+A feature built for a domestic audience that quietly picks up EU-based users through
+
+65
+00:04:01,505 --> 00:04:06,220
+an existing customer's global rollout has EU reach the moment those users start
+
+66
+00:04:06,220 --> 00:04:11,175
+sending real requests, whether or not anyone updated a go-to-market document to say
+
+67
+00:04:11,175 --> 00:04:11,354
+so.
+
+68
+00:04:11,904 --> 00:04:16,465
+Say the honest caveat plainly, because regulation of this kind is being actively
+
+69
+00:04:16,465 --> 00:04:21,139
+interpreted in real time, and a course can freeze a mental model far more reliably
+
+70
+00:04:21,139 --> 00:04:23,647
+than it can freeze a set of legal specifics.
+
+71
+00:04:23,647 --> 00:04:28,379
+What's stable is the shape: sort by use case, check reach rather than headquarters,
+
+72
+00:04:28,379 --> 00:04:32,997
+treat consequence to a real person as the signal that pushes a feature toward the
+
+73
+00:04:32,997 --> 00:04:33,795
+heavier tiers.
+
+74
+00:04:33,795 --> 00:04:38,526
+What's not stable is exactly which use cases sit where, and exactly what a specific
+
+75
+00:04:38,526 --> 00:04:42,859
+obligation requires in practice, both still being clarified as the Act's own
+
+76
+00:04:42,859 --> 00:04:43,828
+timeline unfolds.
+
+77
+00:04:43,828 --> 00:04:48,389
+Bring the specific question to counsel, the same instruction as 8.3: not "are we
+
+78
+00:04:48,389 --> 00:04:52,835
+compliant," but "does this specific feature, used this specific way, for these
+
+79
+00:04:52,835 --> 00:04:57,510
+specific users, fall into the high-risk tier." That's a question they can actually
+
+80
+00:04:57,510 --> 00:04:57,909
+answer.
+
+81
+00:04:57,909 --> 00:05:02,241
+Treat this the way 7.4 treated a model selection scorecard: a recheck, not a
+
+82
+00:05:02,241 --> 00:05:03,268
+one-time decision.
+
+83
+00:05:03,268 --> 00:05:07,999
+A feature that cleared the minimal-risk tier this year, under this year's guidance,
+
+84
+00:05:07,999 --> 00:05:12,560
+is worth re-confirming on a cadence, the same discipline as everything else this
+
+85
+00:05:12,560 --> 00:05:14,612
+section has asked of a register row.
+
+86
+00:05:15,162 --> 00:05:19,684
+That's the check worth running honestly, and running it in that order matters: start
+
+87
+00:05:19,684 --> 00:05:24,152
+from your most consequential feature, not your simplest one, because that's the one
+
+88
+00:05:24,152 --> 00:05:25,660
+with something real to find.
+
+89
+00:05:25,660 --> 00:05:30,182
+Most product portfolios have at most one or two features anywhere near the high-risk
+
+90
+00:05:30,182 --> 00:05:34,274
+tier, and most people can name which ones they'd be, before ever opening the
+
+91
+00:05:34,274 --> 00:05:36,373
+regulation, if they're honest about it.
+
+92
+00:05:36,373 --> 00:05:38,042
+That instinct is usually right.
+
+93
+00:05:38,042 --> 00:05:42,564
+Confirm it properly instead of leaving it as an unconfirmed hunch nobody wrote down.
+
+94
+00:05:42,564 --> 00:05:45,740
+Do this before a launch review asks you to, not during one.
+
+95
+00:05:45,740 --> 00:05:50,209
+A tier assessment produced under deadline pressure, the week before a launch, tends
+
+96
+00:05:50,209 --> 00:05:52,578
+to arrive at whatever answer keeps the date.
+
+97
+00:05:52,578 --> 00:05:56,615
+The same assessment done two months earlier has room to actually change the
+
+98
+00:05:56,615 --> 00:06:00,276
+feature's design if the honest answer turns out to be uncomfortable.
+
+99
+00:06:00,826 --> 00:06:02,541
+One thing before you move on.
+
+100
+00:06:02,541 --> 00:06:07,096
+Sort honestly, starting with whichever feature makes a decision that actually
+
+101
+00:06:07,096 --> 00:06:11,710
+affects a person's access to something: a job, a loan, a place in a programme.
+
+102
+00:06:11,710 --> 00:06:16,324
+Then check EU reach specifically for anything that lands in the top two tiers.
+
+103
+00:06:16,324 --> 00:06:21,233
+If the answer is yes, or even genuinely uncertain, that's a row for 8.1's register,
+
+104
+00:06:21,233 --> 00:06:25,078
+owned, dated, and headed for an actual conversation with counsel.
+
+105
+00:06:25,078 --> 00:06:29,928
+Next lecture moves to the fifth row on 8.1's table: bias and fairness, scoped to a
+
+106
+00:06:29,928 --> 00:06:34,838
+question you can actually check on your own feature instead of a topic too broad to
+
+107
+00:06:34,838 --> 00:06:35,252
+act on.

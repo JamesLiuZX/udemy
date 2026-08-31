@@ -1,0 +1,91 @@
+1
+00:00:00,350 --> 00:00:04,787
+Eight lectures ago, this section opened with a question nobody can actually check:
+
+2
+00:00:04,787 --> 00:00:05,923
+is this feature safe.
+
+3
+00:00:05,923 --> 00:00:07,222
+Here's what replaced it.
+
+4
+00:00:07,222 --> 00:00:11,713
+You've got a risk register scored the same honest way Section six scored an agent's
+
+5
+00:00:11,713 --> 00:00:14,094
+blast radius, not a checklist of adjectives.
+
+6
+00:00:14,094 --> 00:00:18,422
+You know the difference between an injection attempt you typed and one hiding in
+
+7
+00:00:18,422 --> 00:00:22,913
+content your feature reads, and where the boundary needs to sit between reading and
+
+8
+00:00:22,913 --> 00:00:23,292
+acting.
+
+9
+00:00:23,292 --> 00:00:27,675
+You've split "is our data safe" into three separate questions with three separate
+
+10
+00:00:27,675 --> 00:00:32,220
+owners, and you can sort a feature into the EU AI Act's four tiers by what it's used
+
+11
+00:00:32,220 --> 00:00:33,844
+for, not what it's built with.
+
+12
+00:00:33,844 --> 00:00:38,389
+You've turned "is it biased" into a measured pass-rate gap instead of a feeling, and
+
+13
+00:00:38,389 --> 00:00:42,880
+you know the difference between a postmortem document and an incident response plan
+
+14
+00:00:42,880 --> 00:00:45,315
+that actually makes your eval suite stronger.
+
+15
+00:00:45,865 --> 00:00:50,353
+One downloadable artifact came out of this section, and the workshop put all six
+
+16
+00:00:50,353 --> 00:00:55,010
+categories through it against a feature of your own: a real attempted attack, not a
+
+17
+00:00:55,010 --> 00:00:55,964
+hypothetical one.
+
+18
+00:00:55,964 --> 00:00:57,984
+Keep the register alive after today.
+
+19
+00:00:57,984 --> 00:01:02,640
+It's only useful with a name and a date on every row, revisited, not filled in once
+
+20
+00:01:02,640 --> 00:01:03,426
+and forgotten.
+
+21
+00:01:03,426 --> 00:01:08,083
+Next section moves from whether a feature is safe to whether it's actually working:
+
+22
+00:01:08,083 --> 00:01:12,739
+the analytics that tell you if people are getting value, not just using the feature
+
+23
+00:01:12,739 --> 00:01:13,805
+because it's there.

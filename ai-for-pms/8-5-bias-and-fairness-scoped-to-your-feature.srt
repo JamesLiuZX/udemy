@@ -1,0 +1,395 @@
+1
+00:00:00,350 --> 00:00:04,833
+"Bias" gets discussed as a single sweeping topic, which is exactly why most teams
+
+2
+00:00:04,833 --> 00:00:06,439
+never get past discussing it.
+
+3
+00:00:06,439 --> 00:00:07,822
+Nobody can check a topic.
+
+4
+00:00:07,822 --> 00:00:12,472
+You can only check a specific, measured question, and this lecture gives you the one
+
+5
+00:00:12,472 --> 00:00:14,465
+worth asking about your own feature.
+
+6
+00:00:14,465 --> 00:00:19,114
+The question is narrower than it sounds, and more useful for being narrow: does this
+
+7
+00:00:19,114 --> 00:00:23,487
+feature's quality, measured the way Section four taught you to measure it, vary
+
+8
+00:00:23,487 --> 00:00:26,587
+systematically by some real dimension of who's using it?
+
+9
+00:00:26,587 --> 00:00:29,243
+Not whether the model is biased in the abstract.
+
+10
+00:00:29,243 --> 00:00:33,893
+Whether your feature's pass rate holds steady across the people who actually use it.
+
+11
+00:00:33,893 --> 00:00:35,886
+You've already met this shape twice.
+
+12
+00:00:35,886 --> 00:00:39,151
+2.5 showed you p95 hiding inside an average latency number.
+
+13
+00:00:39,151 --> 00:00:42,749
+7.5 showed you a margin crossover hiding inside a blended number.
+
+14
+00:00:42,749 --> 00:00:46,292
+This is the same trap, one more time, wearing a different topic.
+
+15
+00:00:46,292 --> 00:00:50,554
+Treat "is it biased" the same way 6.6 taught you to treat "the model is smart
+
+16
+00:00:50,554 --> 00:00:55,148
+enough": a sentence that sounds reassuring and settles nothing, because reassurance
+
+17
+00:00:55,148 --> 00:00:56,919
+was never actually the question.
+
+18
+00:00:56,919 --> 00:01:01,569
+The question is whether you have a number, and whether that number was measured with
+
+19
+00:01:01,569 --> 00:01:03,506
+enough resolution to mean anything.
+
+20
+00:01:04,056 --> 00:01:08,584
+Ninety-one percent looks like a healthy number sitting on its own, the same way
+
+21
+00:01:08,584 --> 00:01:11,737
+7.5's blended margin looked healthy sitting on its own.
+
+22
+00:01:11,737 --> 00:01:16,552
+Read the next two rows and the healthy number turns out to be an average of two very
+
+23
+00:01:16,552 --> 00:01:17,813
+different experiences.
+
+24
+00:01:17,813 --> 00:01:22,341
+Whoever phrases a request the way the eval set already expects gets a genuinely
+
+25
+00:01:22,341 --> 00:01:23,144
+strong result.
+
+26
+00:01:23,144 --> 00:01:27,615
+Whoever phrases it differently, less formally, or in a second language, gets a
+
+27
+00:01:27,615 --> 00:01:32,315
+result seventeen points worse, and nothing in the overall ninety-one percent hints
+
+28
+00:01:32,315 --> 00:01:33,232
+that gap exists.
+
+29
+00:01:33,232 --> 00:01:35,124
+Nobody built this gap on purpose.
+
+30
+00:01:35,124 --> 00:01:39,881
+It's what happens when a golden set gets assembled from whichever real tickets were
+
+31
+00:01:39,881 --> 00:01:44,582
+easiest to find, which quietly means whichever tickets look most like the majority
+
+32
+00:01:44,582 --> 00:01:46,072
+of the team's own writing.
+
+33
+00:01:46,072 --> 00:01:50,428
+This is precisely why 4.2's coverage requirement mattered as much as it did.
+
+34
+00:01:50,428 --> 00:01:54,727
+A golden set that's accidentally narrow doesn't just under-test edge cases.
+
+35
+00:01:54,727 --> 00:01:59,485
+It can systematically under-test one entire group of real users, and produce a pass
+
+36
+00:01:59,485 --> 00:02:03,841
+rate that's honestly reported and substantively misleading at the same time.
+
+37
+00:02:04,391 --> 00:02:08,939
+This is also precisely the kind of number 8.4's high-risk tier expects you to have
+
+38
+00:02:08,939 --> 00:02:09,383
+on hand.
+
+39
+00:02:09,383 --> 00:02:13,987
+A hiring or credit-scoring feature landing in that tier isn't just asked whether it
+
+40
+00:02:13,987 --> 00:02:14,319
+works.
+
+41
+00:02:14,319 --> 00:02:18,923
+It's asked whether it works evenly, and a single blended pass rate is not an answer
+
+42
+00:02:18,923 --> 00:02:22,195
+to that question, however good the number looks on its own.
+
+43
+00:02:22,195 --> 00:02:26,244
+Notice the good column doesn't ask for a bigger golden set, it asks for a
+
+44
+00:02:26,244 --> 00:02:27,797
+deliberately structured one.
+
+45
+00:02:27,797 --> 00:02:32,345
+The size 4.2 already taught you to hit is enough, as long as enough of those cases
+
+46
+00:02:32,345 --> 00:02:35,229
+actually represent the segment you're worried about.
+
+47
+00:02:35,229 --> 00:02:38,391
+Pick the dimension before you build the slice, not after.
+
+48
+00:02:38,391 --> 00:02:43,050
+Phrasing style is this lecture's example, and it's a genuinely common one for a text
+
+49
+00:02:43,050 --> 00:02:47,320
+feature, but your own feature might split more meaningfully by something else
+
+50
+00:02:47,320 --> 00:02:50,371
+entirely: request complexity, device type, account age.
+
+51
+00:02:50,371 --> 00:02:54,919
+The method is identical regardless of which dimension turns out to matter for your
+
+52
+00:02:54,919 --> 00:02:55,862
+specific feature.
+
+53
+00:02:55,862 --> 00:03:00,410
+Ask the people closest to the traffic which dimension they'd guess first, the same
+
+54
+00:03:00,410 --> 00:03:03,793
+instinct 5.8's workshop leaned on for a support corpus owner.
+
+55
+00:03:03,793 --> 00:03:08,286
+A support lead who reads real tickets daily often already has a hunch about which
+
+56
+00:03:08,286 --> 00:03:10,116
+phrasing gets misread more often.
+
+57
+00:03:10,116 --> 00:03:14,775
+That hunch is a legitimate starting point for choosing a slice, not a substitute for
+
+58
+00:03:14,775 --> 00:03:15,995
+actually measuring it.
+
+59
+00:03:16,545 --> 00:03:21,140
+Say the honest caveat plainly, because "we haven't found a problem" and "there isn't
+
+60
+00:03:21,140 --> 00:03:24,915
+one" get treated as the same sentence far too often, and they aren't.
+
+61
+00:03:24,915 --> 00:03:29,510
+A feature that's never been segmented by any real dimension hasn't passed a fairness
+
+62
+00:03:29,510 --> 00:03:29,838
+check.
+
+63
+00:03:29,838 --> 00:03:31,151
+It hasn't taken one yet.
+
+64
+00:03:31,151 --> 00:03:35,746
+That's not a reason for alarm, it's a reason to run the check honestly, the same way
+
+65
+00:03:35,746 --> 00:03:40,287
+an unmeasured cost or an unmeasured latency budget earlier in this course was a gap
+
+66
+00:03:40,287 --> 00:03:42,201
+to close, not a crisis to announce.
+
+67
+00:03:42,201 --> 00:03:44,499
+This cuts both ways, worth saying plainly.
+
+68
+00:03:44,499 --> 00:03:48,984
+Finding a gap doesn't mean the feature is unusable, and it doesn't mean abandoning
+
+69
+00:03:48,984 --> 00:03:50,461
+the segment that struggles.
+
+70
+00:03:50,461 --> 00:03:54,783
+It means you now have a specific, fixable target: a prompt that handles a wider
+
+71
+00:03:54,783 --> 00:03:59,050
+range of phrasing, a preprocessing step, a retrieval query rewritten before it
+
+72
+00:03:59,050 --> 00:03:59,542
+searches.
+
+73
+00:03:59,542 --> 00:04:03,153
+A measured gap is the first step toward closing it, not a verdict.
+
+74
+00:04:03,703 --> 00:04:08,143
+That's the standard worth holding your own eval to, and most people running this
+
+75
+00:04:08,143 --> 00:04:12,749
+exercise for the first time find the honest answer is no, not yet, which is exactly
+
+76
+00:04:12,749 --> 00:04:15,246
+the finding this lecture is built to surface.
+
+77
+00:04:15,246 --> 00:04:17,133
+That's a fine place to start from.
+
+78
+00:04:17,133 --> 00:04:21,795
+A feature with an honestly unmeasured fairness question is in a completely different
+
+79
+00:04:21,795 --> 00:04:25,291
+position than one with a measured, hidden gap nobody addressed.
+
+80
+00:04:25,291 --> 00:04:26,401
+The first is a todo.
+
+81
+00:04:26,401 --> 00:04:29,176
+The second is a register row overdue for an owner.
+
+82
+00:04:29,176 --> 00:04:33,616
+Choose a dimension you can actually act on if a gap turns up, not one that would
+
+83
+00:04:33,616 --> 00:04:35,281
+merely be interesting to know.
+
+84
+00:04:35,281 --> 00:04:38,611
+A slice you'd genuinely fix a prompt over is worth building.
+
+85
+00:04:38,611 --> 00:04:43,273
+A slice you'd only ever write a paragraph about in a report is a much lower priority
+
+86
+00:04:43,273 --> 00:04:45,659
+than the ones ahead of it in your register.
+
+87
+00:04:46,209 --> 00:04:47,836
+One thing before you move on.
+
+88
+00:04:47,836 --> 00:04:52,211
+Name the dimension honestly, the one you'd half-expect if you actually looked.
+
+89
+00:04:52,211 --> 00:04:56,698
+Most people already have a guess, and the guess is usually a reasonable place to
+
+90
+00:04:56,698 --> 00:04:57,596
+start measuring.
+
+91
+00:04:57,596 --> 00:05:00,176
+Then check your current golden set against it.
+
+92
+00:05:00,176 --> 00:05:04,551
+If you don't have enough cases in each segment to say anything, that's today's
+
+93
+00:05:04,551 --> 00:05:07,075
+finding, worth its own row in 8.1's register.
+
+94
+00:05:07,075 --> 00:05:11,786
+Both steps together take an afternoon, and they turn a genuine unknown into either a
+
+95
+00:05:11,786 --> 00:05:16,161
+clean result worth trusting or a specific problem worth fixing, which is a far
+
+96
+00:05:16,161 --> 00:05:19,919
+better place to stand than an unmeasured guess in either direction.
+
+97
+00:05:19,919 --> 00:05:24,350
+Next lecture moves to the last row on 8.1's table: what happens after something
+
+98
+00:05:24,350 --> 00:05:28,894
+actually goes wrong, and the incident response plan worth writing before you need
+
+99
+00:05:28,894 --> 00:05:29,062
+it.

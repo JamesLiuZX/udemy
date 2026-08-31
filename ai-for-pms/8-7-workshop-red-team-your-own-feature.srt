@@ -1,0 +1,423 @@
+1
+00:00:00,350 --> 00:00:04,123
+Pick the feature you're most confident about, not your simplest one.
+
+2
+00:00:04,123 --> 00:00:04,844
+Why that one?
+
+3
+00:00:04,844 --> 00:00:08,506
+Confidence untested is exactly what this workshop exists to check.
+
+4
+00:00:08,506 --> 00:00:13,000
+Open A11, and give this the same twenty minutes every workshop in this course has
+
+5
+00:00:13,000 --> 00:00:13,555
+asked for.
+
+6
+00:00:13,555 --> 00:00:14,942
+The bar is identical too.
+
+7
+00:00:14,942 --> 00:00:15,608
+Not perfect.
+
+8
+00:00:15,608 --> 00:00:16,107
+Complete.
+
+9
+00:00:16,107 --> 00:00:20,213
+Five specific findings, one per category, even where the honest finding is
+
+10
+00:00:20,213 --> 00:00:24,486
+"measured, and it's fine," which is a completely different, far more valuable
+
+11
+00:00:24,486 --> 00:00:28,924
+sentence than "probably fine, never checked." Red-teaming your own feature feels
+
+12
+00:00:28,924 --> 00:00:30,422
+adversarial, and it should.
+
+13
+00:00:30,422 --> 00:00:34,972
+You are looking for the thing that's wrong, not confirming the thing that's right.
+
+14
+00:00:34,972 --> 00:00:39,577
+That's a different mindset from most product work, and it's worth naming before you
+
+15
+00:00:39,577 --> 00:00:43,073
+start, so the exercise doesn't quietly turn into a victory lap.
+
+16
+00:00:43,073 --> 00:00:47,400
+This is also the only lecture in this section that asks you to attack your own
+
+17
+00:00:47,400 --> 00:00:49,065
+feature rather than assess it.
+
+18
+00:00:49,065 --> 00:00:51,229
+Assessment can be generous by accident.
+
+19
+00:00:51,229 --> 00:00:55,889
+An actual attempted injection either works or it doesn't, and there's no comfortable
+
+20
+00:00:55,889 --> 00:00:57,554
+middle ground to retreat into.
+
+21
+00:00:58,104 --> 00:01:02,447
+Notice the first block asks you to actually try an injection, not discuss whether
+
+22
+00:01:02,447 --> 00:01:05,129
+your feature is vulnerable to one in the abstract.
+
+23
+00:01:05,129 --> 00:01:09,579
+Write one sentence that looks like ordinary content and see whether it changes what
+
+24
+00:01:09,579 --> 00:01:10,545
+your feature does.
+
+25
+00:01:10,545 --> 00:01:13,226
+That's the entire test, and it takes four minutes.
+
+26
+00:01:13,226 --> 00:01:17,516
+The second block moves through three separate questions fast, and that's fine as
+
+27
+00:01:17,516 --> 00:01:21,966
+long as all three genuinely get answered rather than folded into one blended "we're
+
+28
+00:01:21,966 --> 00:01:23,468
+careful with data" sentence.
+
+29
+00:01:23,468 --> 00:01:27,919
+Trace one real request for the first, open the actual vendor setting for the third,
+
+30
+00:01:27,919 --> 00:01:31,511
+and resist answering all three with the same comfortable paragraph.
+
+31
+00:01:31,511 --> 00:01:35,962
+The middle block, the EU AI Act tier, moves fast for most features and that's fine.
+
+32
+00:01:35,962 --> 00:01:40,466
+Landing in minimal or limited risk in under four minutes is a genuine finding, not a
+
+33
+00:01:40,466 --> 00:01:41,807
+block you rushed through.
+
+34
+00:01:41,807 --> 00:01:46,311
+The feature that takes the full four minutes to sort is the one worth a second look.
+
+35
+00:01:46,861 --> 00:01:51,548
+Minutes twelve through sixteen ask a question you can only answer by opening your
+
+36
+00:01:51,548 --> 00:01:54,152
+actual golden set, not by reasoning about it.
+
+37
+00:01:54,152 --> 00:01:56,408
+Count the cases in your chosen segment.
+
+38
+00:01:56,408 --> 00:02:01,095
+If the honest count is close to zero, that's the finding, immediately, no further
+
+39
+00:02:01,095 --> 00:02:02,021
+analysis needed.
+
+40
+00:02:02,021 --> 00:02:06,476
+The last block closes the loop back to 8.1's very first row: nobody owns what
+
+41
+00:02:06,476 --> 00:02:07,807
+happens when it breaks.
+
+42
+00:02:07,807 --> 00:02:12,668
+By minute twenty, that row should have an actual name next to it, or an honest blank
+
+43
+00:02:12,668 --> 00:02:15,271
+you're committing to fill by a specific date.
+
+44
+00:02:15,821 --> 00:02:17,017
+Recognise this shape.
+
+45
+00:02:17,017 --> 00:02:21,572
+It's 8.1's own example of what a closeable finding sounds like, and it's roughly
+
+46
+00:02:21,572 --> 00:02:25,671
+what each of your five findings today should read like by minute twenty.
+
+47
+00:02:25,671 --> 00:02:30,454
+Notice what the sentence contains: the exact input path, named, specific enough that
+
+48
+00:02:30,454 --> 00:02:35,123
+an engineer reading it knows exactly what to fix without asking a single follow-up
+
+49
+00:02:35,123 --> 00:02:35,635
+question.
+
+50
+00:02:35,635 --> 00:02:40,361
+Notice what it isn't: "prompt injection is a risk we should think about," the vague
+
+51
+00:02:40,361 --> 00:02:43,948
+version this exact sentence was written to replace back in 8.1.
+
+52
+00:02:43,948 --> 00:02:47,194
+Hold every one of today's five findings to this standard.
+
+53
+00:02:47,194 --> 00:02:49,642
+"PII handling seems fine" is not a finding.
+
+54
+00:02:49,642 --> 00:02:54,026
+"Support ticket logs retain the caller's phone number for ninety days with no
+
+55
+00:02:54,026 --> 00:02:54,823
+redaction" is.
+
+56
+00:02:54,823 --> 00:02:58,069
+Only the second one tells anyone what to actually go fix.
+
+57
+00:02:58,069 --> 00:03:02,567
+Compare it, too, against the register row it replaced, the one 8.1 opened with:
+
+58
+00:03:02,567 --> 00:03:06,951
+"prompt injection is a risk we should think about," owned by no one, reviewed
+
+59
+00:03:06,951 --> 00:03:08,545
+whenever someone remembered.
+
+60
+00:03:08,545 --> 00:03:12,701
+Twenty minutes and one honest attempt turned that sentence into this one.
+
+61
+00:03:12,701 --> 00:03:17,142
+That's the entire distance this workshop is asking you to cover, five separate
+
+62
+00:03:17,142 --> 00:03:17,484
+times.
+
+63
+00:03:18,034 --> 00:03:22,436
+Say the honest caveat, because the instinct under time pressure is to write the
+
+64
+00:03:22,436 --> 00:03:26,726
+reassuring answer rather than the true one, and this workshop is specifically
+
+65
+00:03:26,726 --> 00:03:29,010
+testing your resistance to that instinct.
+
+66
+00:03:29,010 --> 00:03:33,634
+A clean pass in all five categories is a wonderful outcome, if it's actually earned
+
+67
+00:03:33,634 --> 00:03:34,303
+by checking.
+
+68
+00:03:34,303 --> 00:03:38,927
+The same five clean boxes, filled in from confidence rather than a check, are worse
+
+69
+00:03:38,927 --> 00:03:43,273
+than useless, because they'll be trusted exactly as much as if they were real.
+
+70
+00:03:43,273 --> 00:03:47,508
+If minute twenty arrives and a block is genuinely unfinished, write "not yet
+
+71
+00:03:47,508 --> 00:03:48,733
+measured" and move on.
+
+72
+00:03:48,733 --> 00:03:53,358
+That sentence, honestly written, is worth more to whoever reads this afterward than
+
+73
+00:03:53,358 --> 00:03:55,085
+a guess dressed up as a result.
+
+74
+00:03:55,085 --> 00:03:59,598
+This is worth saying twice in one section, because it's the exact same caveat 8.1
+
+75
+00:03:59,598 --> 00:04:03,832
+opened with, aimed at yourself this time instead of a hypothetical teammate.
+
+76
+00:04:03,832 --> 00:04:08,345
+Under time pressure, in your own workshop, the temptation to write the reassuring
+
+77
+00:04:08,345 --> 00:04:11,633
+row is just as real as it was reading about someone else's.
+
+78
+00:04:12,183 --> 00:04:16,574
+That's today's bar, held to the same standard as every workshop before this one:
+
+79
+00:04:16,574 --> 00:04:19,154
+attempted honestly, not performed convincingly.
+
+80
+00:04:19,154 --> 00:04:21,899
+If you finish with time left, don't polish evenly.
+
+81
+00:04:21,899 --> 00:04:26,456
+Return to whichever block you moved through fastest, because speed in this specific
+
+82
+00:04:26,456 --> 00:04:30,957
+exercise is usually a sign of an assumption sliding through unchecked, not genuine
+
+83
+00:04:30,957 --> 00:04:32,549
+confidence earned by a check.
+
+84
+00:04:32,549 --> 00:04:37,105
+Resist the urge to write a summary paragraph at the end declaring the feature safe.
+
+85
+00:04:37,105 --> 00:04:41,497
+That sentence belongs to nobody, and it undoes the entire point of five specific
+
+86
+00:04:41,497 --> 00:04:44,022
+findings by replacing them with one vague one.
+
+87
+00:04:44,022 --> 00:04:48,579
+Most people running this exercise for the first time find at least one block harder
+
+88
+00:04:48,579 --> 00:04:52,586
+than expected, usually the one they were most confident about walking in.
+
+89
+00:04:52,586 --> 00:04:53,903
+That's not a bad result.
+
+90
+00:04:53,903 --> 00:04:58,021
+It's the entire reason a red-team pass is worth twenty minutes instead of a
+
+91
+00:04:58,021 --> 00:04:59,942
+five-second gut check in a hallway.
+
+92
+00:05:00,492 --> 00:05:02,085
+One thing before you move on.
+
+93
+00:05:02,085 --> 00:05:06,481
+Finish all five blocks for real, including the parts that feel unnecessary for a
+
+94
+00:05:06,481 --> 00:05:08,019
+feature you're confident in.
+
+95
+00:05:08,019 --> 00:05:12,195
+Confidence is exactly what a red-team exercise is built to test, not assume.
+
+96
+00:05:12,195 --> 00:05:16,645
+Then take every gap you found, however small, and give it a name, an owner, and a
+
+97
+00:05:16,645 --> 00:05:17,909
+date in 8.1's register.
+
+98
+00:05:17,909 --> 00:05:21,810
+A red-team pass that produces findings nobody follows up on is theatre.
+
+99
+00:05:21,810 --> 00:05:25,491
+One that produces five dated rows is this section actually working.
+
+100
+00:05:25,491 --> 00:05:29,997
+None of this needs to happen today for every feature you own, only for the one you
+
+101
+00:05:29,997 --> 00:05:32,249
+actually opened A11 against this session.
+
+102
+00:05:32,249 --> 00:05:36,590
+Repeat the pass on your next feature before it ships, not after, and the twenty
+
+103
+00:05:36,590 --> 00:05:38,898
+minutes gets faster every time you run it.
+
+104
+00:05:38,898 --> 00:05:43,348
+Next lecture closes this section: what these six lectures actually built, and how
+
+105
+00:05:43,348 --> 00:05:47,634
+directly it plugs into analytics next, where you'll learn to measure whether a
+
+106
+00:05:47,634 --> 00:05:50,875
+feature is actually succeeding, not just whether it's safe.
