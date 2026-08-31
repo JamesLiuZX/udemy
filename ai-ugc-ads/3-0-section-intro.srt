@@ -1,0 +1,87 @@
+1
+00:00:00,350 --> 00:00:04,891
+Picture Sam opening the batch folder on a Wednesday afternoon: twenty statics (a
+
+2
+00:00:04,891 --> 00:00:09,433
+static is one still-image ad, one picture, one message) sitting there, generated
+
+3
+00:00:09,433 --> 00:00:11,079
+overnight from the angle map.
+
+4
+00:00:11,079 --> 00:00:13,179
+At a glance the batch looks finished.
+
+5
+00:00:13,179 --> 00:00:14,031
+It isn't quite.
+
+6
+00:00:14,031 --> 00:00:18,515
+I'm not going to pretend the first batch comes out clean, because Sam's didn't.
+
+7
+00:00:18,515 --> 00:00:23,170
+This section spends as much time on what goes wrong, colour drift, mangled text, a
+
+8
+00:00:23,170 --> 00:00:27,598
+product that doesn't quite look like the product, as it does on the generation
+
+9
+00:00:27,598 --> 00:00:27,995
+itself.
+
+10
+00:00:27,995 --> 00:00:29,528
+Both halves matter equally.
+
+11
+00:00:30,078 --> 00:00:34,284
+Five lectures, and notice the shape: one on what these tools can and can't do
+
+12
+00:00:34,284 --> 00:00:38,872
+honestly, one on the actual batch, and three on the specific ways a batch goes wrong
+
+13
+00:00:38,872 --> 00:00:39,964
+and how to catch it.
+
+14
+00:00:39,964 --> 00:00:41,439
+That balance is deliberate.
+
+15
+00:00:41,439 --> 00:00:45,809
+A course that only shows the wins teaches you to trust a generator more than you
+
+16
+00:00:45,809 --> 00:00:46,191
+should.
+
+17
+00:00:46,191 --> 00:00:50,506
+This one shows you Harlan's first batch failing in two specific, ordinary ways,
+
+18
+00:00:50,506 --> 00:00:55,039
+because that's what actually happens, and knowing the failure in advance is most of
+
+19
+00:00:55,039 --> 00:00:56,296
+the defence against it.
+
+20
+00:00:56,296 --> 00:01:00,829
+Before the next lecture, if you already have a batch of your own sitting somewhere,
+
+21
+00:01:00,829 --> 00:01:02,031
+open it and just look.
+
+22
+00:01:02,031 --> 00:01:05,144
+You'll want that image fresh in mind for what comes next.

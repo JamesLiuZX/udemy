@@ -1,0 +1,87 @@
+1
+00:00:00,350 --> 00:00:04,525
+Picture that folder from the start of this section again: twenty statics, two of
+
+2
+00:00:04,525 --> 00:00:08,543
+them wrong in ways that would have cost real money if nobody had caught them.
+
+3
+00:00:08,543 --> 00:00:10,787
+Here's the honest tally of what changed it.
+
+4
+00:00:10,787 --> 00:00:14,858
+You've seen a real batch fail in two specific, ordinary ways: colour drift and
+
+5
+00:00:14,858 --> 00:00:15,797
+garbled spec text.
+
+6
+00:00:15,797 --> 00:00:19,450
+You know why both happened, mechanically, not just that they happened.
+
+7
+00:00:19,450 --> 00:00:23,468
+You've fixed both without regenerating a single image that was already right.
+
+8
+00:00:23,468 --> 00:00:27,800
+You know the difference between a packshot and a lifestyle scene, and the one photo
+
+9
+00:00:27,800 --> 00:00:30,722
+in this whole system that must stay real no matter what.
+
+10
+00:00:30,722 --> 00:00:34,949
+And you've built B03, a prompt system that carries every one of those checks into
+
+11
+00:00:34,949 --> 00:00:36,463
+the next batch automatically.
+
+12
+00:00:36,463 --> 00:00:37,976
+That's not a lucky first try.
+
+13
+00:00:37,976 --> 00:00:42,255
+It's a repeatable process for getting to a clean batch, which is worth more than a
+
+14
+00:00:42,255 --> 00:00:44,291
+clean batch would have been on its own.
+
+15
+00:00:44,841 --> 00:00:49,193
+Section four takes everything from this section and does it again for video:
+
+16
+00:00:49,193 --> 00:00:53,833
+scripting a hook, generating an AI avatar, and hitting a rights problem before it
+
+17
+00:00:53,833 --> 00:00:55,035
+hits your ad account.
+
+18
+00:00:55,035 --> 00:00:58,300
+The static system you just built doesn't get thrown away.
+
+19
+00:00:58,300 --> 00:01:00,992
+It's the foundation the video system builds on.
+
+20
+00:01:00,992 --> 00:01:05,688
+Before you move on, open B03 one more time and check it's actually yours: your hex
+
+21
+00:01:05,688 --> 00:01:09,068
+code, your checks, filled in, not left as Harlan's example.
+
+22
+00:01:09,068 --> 00:01:12,504
+Section four's video briefs assume that file already exists.

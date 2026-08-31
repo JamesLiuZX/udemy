@@ -1,0 +1,291 @@
+1
+00:00:00,350 --> 00:00:04,495
+Picture Sam the afternoon before Harlan's first real batch, staring at a blank
+
+2
+00:00:04,495 --> 00:00:05,185
+prompt sheet.
+
+3
+00:00:05,185 --> 00:00:09,649
+He could start typing angles straight away, or spend twenty minutes finding out what
+
+4
+00:00:09,649 --> 00:00:11,934
+these tools are actually reliable at first.
+
+5
+00:00:11,934 --> 00:00:16,291
+He chose the twenty minutes, and it's the reason the batch you'll see next lecture
+
+6
+00:00:16,291 --> 00:00:18,576
+only has two problems in it instead of six.
+
+7
+00:00:18,576 --> 00:00:22,508
+Quick warning before the assessment: I'm going to name real tools and real
+
+8
+00:00:22,508 --> 00:00:26,440
+capabilities, and some of those specifics will drift within months of this
+
+9
+00:00:26,440 --> 00:00:26,971
+recording.
+
+10
+00:00:26,971 --> 00:00:28,724
+That's not a flaw in the lecture.
+
+11
+00:00:28,724 --> 00:00:32,922
+It's the reason the rest of this course is built around a brief and a test, not
+
+12
+00:00:32,922 --> 00:00:33,985
+around any one tool.
+
+13
+00:00:33,985 --> 00:00:38,183
+Here's where things actually stand as I'm recording this, checked against real,
+
+14
+00:00:38,183 --> 00:00:42,115
+current results rather than recalled from memory or last year's headlines.
+
+15
+00:00:42,665 --> 00:00:47,273
+Here's the honest split, and it's more nuanced than "AI images are good now" or "AI
+
+16
+00:00:47,273 --> 00:00:49,882
+images can't be trusted." Which is it actually?
+
+17
+00:00:49,882 --> 00:00:53,491
+Both, depending entirely on which specific claim you're checking.
+
+18
+00:00:53,491 --> 00:00:57,155
+Photorealistic scenes are strong across most of the leading tools.
+
+19
+00:00:57,155 --> 00:01:01,763
+Short text, a tagline, a single word, a number, has genuinely improved to the point
+
+20
+00:01:01,763 --> 00:01:05,927
+of being usable directly, which wasn't true even a couple of years earlier.
+
+21
+00:01:05,927 --> 00:01:10,313
+But long text, and this matters a lot for a spec-driven brand like Harlan's, is
+
+22
+00:01:10,313 --> 00:01:14,921
+still weak: every additional line of text is another chance for the model to drop a
+
+23
+00:01:14,921 --> 00:01:16,531
+word or misplace a character.
+
+24
+00:01:16,531 --> 00:01:21,028
+And getting an exact logo or brand typeface right, or getting the same brand feel
+
+25
+00:01:21,028 --> 00:01:25,525
+twice in a row without curating it yourself, is still not something you can trust
+
+26
+00:01:25,525 --> 00:01:26,136
+unattended.
+
+27
+00:01:26,686 --> 00:01:31,409
+There's one finding worth being precise about, because it changes how you actually
+
+28
+00:01:31,409 --> 00:01:34,116
+work: text rendering hasn't uniformly improved.
+
+29
+00:01:34,116 --> 00:01:35,441
+It's improved unevenly.
+
+30
+00:01:35,441 --> 00:01:40,106
+A single word or a short tagline is close to solved territory now, across several
+
+31
+00:01:40,106 --> 00:01:40,912
+serious tools.
+
+32
+00:01:40,912 --> 00:01:45,578
+A full sentence, a paragraph, or a busy layout with several text regions is still
+
+33
+00:01:45,578 --> 00:01:49,897
+genuinely hard, because each region the model has to render correctly is an
+
+34
+00:01:49,897 --> 00:01:52,316
+independent chance to get something wrong.
+
+35
+00:01:52,316 --> 00:01:56,809
+Think of it as compounding odds: get one word right ninety-nine times out of a
+
+36
+00:01:56,809 --> 00:02:01,647
+hundred, and a five-word line still fails noticeably more often than a one-word line
+
+37
+00:02:01,647 --> 00:02:01,935
+does.
+
+38
+00:02:01,935 --> 00:02:06,715
+The practical answer, and you'll build this properly in Section 3.4, is to generate
+
+39
+00:02:06,715 --> 00:02:11,438
+the image clean and add exact copy afterward for anything longer than a few words.
+
+40
+00:02:11,438 --> 00:02:15,873
+That workaround stays true no matter which tool is winning the benchmark this
+
+41
+00:02:15,873 --> 00:02:20,135
+quarter, because it doesn't depend on the generator's text feature at all.
+
+42
+00:02:20,685 --> 00:02:23,375
+Here's the practical rule to actually work by.
+
+43
+00:02:23,375 --> 00:02:28,112
+Trust the clean scene and the short tagline by default, spot-checking rather than
+
+44
+00:02:28,112 --> 00:02:29,574
+scrutinising every pixel.
+
+45
+00:02:29,574 --> 00:02:34,428
+Verify, every single time without exception, anything that's an exact brand colour,
+
+46
+00:02:34,428 --> 00:02:39,106
+an exact logo, a spec number rendered as text, or consistency across more than a
+
+47
+00:02:39,106 --> 00:02:40,861
+couple of images in one batch.
+
+48
+00:02:40,861 --> 00:02:45,481
+You'll see exactly why that verification step matters in the next few lectures,
+
+49
+00:02:45,481 --> 00:02:49,516
+because Harlan's first real batch fails on two of those exact points.
+
+50
+00:02:49,516 --> 00:02:54,311
+Most marketers who've tried batch AI image generation report the same frustration:
+
+51
+00:02:54,311 --> 00:02:58,931
+real adoption, but real difficulty turning it into work they can actually ship.
+
+52
+00:02:58,931 --> 00:03:03,785
+That gap almost always traces back to skipping this exact verification step, not to
+
+53
+00:03:03,785 --> 00:03:05,949
+the generation itself being unusable.
+
+54
+00:03:06,499 --> 00:03:10,454
+One more honest limit, and it applies to me as much as it applies to you.
+
+55
+00:03:10,454 --> 00:03:14,734
+Whatever specific tools get named in the next few lectures were checked against
+
+56
+00:03:14,734 --> 00:03:19,177
+their actual current capabilities at the time of writing, not recalled from memory
+
+57
+00:03:19,177 --> 00:03:19,773
+or assumed.
+
+58
+00:03:19,773 --> 00:03:22,049
+Do the same before you brief a real batch.
+
+59
+00:03:22,049 --> 00:03:26,492
+Five minutes confirming a tool still does what you think it does is cheaper than a
+
+60
+00:03:26,492 --> 00:03:29,146
+batch built on a capability that quietly changed.
+
+61
+00:03:29,146 --> 00:03:31,097
+This isn't a one-time check, either.
+
+62
+00:03:31,097 --> 00:03:35,594
+Build it into a habit: before any batch that matters, spend five minutes confirming
+
+63
+00:03:35,594 --> 00:03:39,929
+the specific claim you're relying on, whether that's a text-rendering feature, a
+
+64
+00:03:39,929 --> 00:03:42,800
+consistency tool, or anything else this course names.
+
+65
+00:03:42,800 --> 00:03:46,322
+Tools in this category move quarter to quarter, not year to year.
+
+66
+00:03:46,872 --> 00:03:49,652
+Next lecture is where generation actually starts.
+
+67
+00:03:49,652 --> 00:03:54,248
+You'll see Harlan's real first batch, including the two things that go wrong with
+
+68
+00:03:54,248 --> 00:03:58,843
+it, because a batch that works perfectly on the first try would be a worse lesson
+
+69
+00:03:58,843 --> 00:04:00,715
+than the one you're about to see.
+
+70
+00:04:00,715 --> 00:04:05,198
+Before you sit down to generate anything of your own, write down those same two
+
+71
+00:04:05,198 --> 00:04:09,680
+checks: your exact brand colour, stated precisely, and any spec text a customer
+
+72
+00:04:09,680 --> 00:04:11,268
+needs to read exactly right.
+
+73
+00:04:11,268 --> 00:04:15,410
+Five minutes, and it's the same list Section 3.6 turns into artifact B03.

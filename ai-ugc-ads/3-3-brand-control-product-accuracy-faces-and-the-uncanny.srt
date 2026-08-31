@@ -1,0 +1,407 @@
+1
+00:00:00,350 --> 00:00:04,714
+Dana was scrolling through the new batch on her lunch break, half-checking, half
+
+2
+00:00:04,714 --> 00:00:07,386
+just looking, when the fourth static stopped her.
+
+3
+00:00:07,386 --> 00:00:11,096
+The sock in it was blue, definitely blue, but it wasn't Harlan Navy.
+
+4
+00:00:11,096 --> 00:00:15,678
+It was a lighter, more generic royal blue, the kind any supermarket brand could use.
+
+5
+00:00:15,678 --> 00:00:16,714
+She kept scrolling.
+
+6
+00:00:16,714 --> 00:00:18,787
+Six more statics had the same problem.
+
+7
+00:00:18,787 --> 00:00:20,314
+The fix isn't starting over.
+
+8
+00:00:20,314 --> 00:00:23,805
+It's smaller than that, and it's worth seeing exactly how small.
+
+9
+00:00:23,805 --> 00:00:28,223
+Dana's first instinct was to junk the whole batch and start again, and it's worth
+
+10
+00:00:28,223 --> 00:00:32,151
+naming why that instinct is wrong before walking through the actual fix.
+
+11
+00:00:32,151 --> 00:00:34,932
+Thirteen statics already held the colour correctly.
+
+12
+00:00:34,932 --> 00:00:39,405
+Regenerating all twenty to fix seven would throw away work that was already right,
+
+13
+00:00:39,405 --> 00:00:42,460
+on top of paying for generation you didn't need to redo.
+
+14
+00:00:42,460 --> 00:00:46,933
+The actual job is narrower: lock down what "correct" means precisely enough that a
+
+15
+00:00:46,933 --> 00:00:49,496
+second, smaller batch can't drift the same way.
+
+16
+00:00:49,496 --> 00:00:52,769
+This distinction matters beyond just saving generation time.
+
+17
+00:00:52,769 --> 00:00:57,242
+Treating a partial failure as a reason to start over is a habit that scales badly.
+
+18
+00:00:57,242 --> 00:01:01,715
+On a real account, running dozens of batches a month, that habit is the difference
+
+19
+00:01:01,715 --> 00:01:05,042
+between an afternoon of fixes and a permanently slow process.
+
+20
+00:01:05,592 --> 00:01:10,205
+Here's the actual change, and it's smaller than "colour drift" sounds like it should
+
+21
+00:01:10,205 --> 00:01:10,644
+require.
+
+22
+00:01:10,644 --> 00:01:14,323
+"Navy" is an instruction a model can interpret several honest ways.
+
+23
+00:01:14,323 --> 00:01:18,772
+A hex code, attached to a reference image and paired with an explicit instruction
+
+24
+00:01:18,772 --> 00:01:20,364
+not to reinterpret it, isn't.
+
+25
+00:01:20,364 --> 00:01:24,702
+Regenerate just the seven flawed statics with that tighter prompt, and Harlan's
+
+26
+00:01:24,702 --> 00:01:28,876
+batch goes from thirteen of twenty to twenty of twenty, without touching the
+
+27
+00:01:28,876 --> 00:01:30,633
+thirteen that were already fine.
+
+28
+00:01:30,633 --> 00:01:35,246
+Keep the reference image itself somewhere permanent, not just pasted into one prompt
+
+29
+00:01:35,246 --> 00:01:36,015
+and forgotten.
+
+30
+00:01:36,015 --> 00:01:40,628
+The next batch, and the one after that, should start from the same locked reference,
+
+31
+00:01:40,628 --> 00:01:43,044
+not a fresh description written from memory.
+
+32
+00:01:43,044 --> 00:01:47,602
+That's how "Harlan Navy" stays one specific colour across months of batches instead
+
+33
+00:01:47,602 --> 00:01:50,622
+of drifting a little every time someone redescribes it.
+
+34
+00:01:50,622 --> 00:01:54,796
+Notice what this fix cost: one afternoon, a saved reference image, and seven
+
+35
+00:01:54,796 --> 00:01:55,564
+regenerations.
+
+36
+00:01:55,564 --> 00:02:00,067
+Compare that to a full reshoot catching the same problem, which would mean another
+
+37
+00:02:00,067 --> 00:02:02,374
+studio booking to fix a detail this small.
+
+38
+00:02:02,374 --> 00:02:06,932
+That gap is most of the argument for this entire section, made concrete on one real
+
+39
+00:02:06,932 --> 00:02:09,623
+mistake instead of stated as a general principle.
+
+40
+00:02:10,173 --> 00:02:14,663
+Colour is the easiest brand-control check, which is exactly why it's tempting to
+
+41
+00:02:14,663 --> 00:02:15,281
+stop there.
+
+42
+00:02:15,281 --> 00:02:17,246
+It isn't the only one that matters.
+
+43
+00:02:17,246 --> 00:02:21,736
+A generator is optimising for a pleasing image, not for matching Harlan's actual
+
+44
+00:02:21,736 --> 00:02:22,185
+product.
+
+45
+00:02:22,185 --> 00:02:26,732
+It can quietly round off the exact cut, smooth a texture, or invent a detail that
+
+46
+00:02:26,732 --> 00:02:31,167
+wasn't in the reference at all, and none of that shows up if the only thing you
+
+47
+00:02:31,167 --> 00:02:32,570
+checked was the hex code.
+
+48
+00:02:32,570 --> 00:02:37,286
+The real question, every time, is whether Dana would recognise the sock in the image
+
+49
+00:02:37,286 --> 00:02:38,970
+as the one she actually sells.
+
+50
+00:02:38,970 --> 00:02:43,404
+This check takes real product knowledge, which is exactly why it can't be fully
+
+51
+00:02:43,404 --> 00:02:45,257
+delegated to a generic checklist.
+
+52
+00:02:45,257 --> 00:02:49,748
+Whoever runs it needs to have actually held the product, the same way Dana would
+
+53
+00:02:49,748 --> 00:02:54,407
+notice a subtly wrong cuff in half a second that a checklist item would never think
+
+54
+00:02:54,407 --> 00:02:55,136
+to ask about.
+
+55
+00:02:55,136 --> 00:02:59,010
+That's also why this check doesn't scale the way the colour fix does.
+
+56
+00:02:59,010 --> 00:03:03,051
+A hex value is a fact anyone on the team can verify against a reference.
+
+57
+00:03:03,051 --> 00:03:07,767
+Product accuracy needs someone who's actually handled the sock, which means it stays
+
+58
+00:03:07,767 --> 00:03:11,921
+a human review step even once everything else in this workflow is routine.
+
+59
+00:03:12,471 --> 00:03:16,973
+The moment a lifestyle static includes a face, the risk profile changes completely,
+
+60
+00:03:16,973 --> 00:03:18,383
+and it's worth naming why.
+
+61
+00:03:18,383 --> 00:03:22,722
+Humans are unusually good at detecting a face that's almost right but not quite:
+
+62
+00:03:22,722 --> 00:03:27,008
+proportions a little off, an expression that doesn't track the scene, skin that
+
+63
+00:03:27,008 --> 00:03:28,689
+reads as too smooth to be real.
+
+64
+00:03:28,689 --> 00:03:32,974
+That's the uncanny valley, and it doesn't need to be dramatically wrong to work
+
+65
+00:03:32,974 --> 00:03:33,625
+against you.
+
+66
+00:03:33,625 --> 00:03:38,019
+A face that's ninety-five percent right often reads worse than one that's plainly
+
+67
+00:03:38,019 --> 00:03:42,575
+stylised, because ninety-five percent right is exactly what triggers the discomfort.
+
+68
+00:03:42,575 --> 00:03:47,023
+This is a genuinely different failure mode from the colour drift a few slides ago.
+
+69
+00:03:47,023 --> 00:03:50,386
+A wrong hex value is a fact you can check against a reference.
+
+70
+00:03:50,386 --> 00:03:54,942
+An uncanny face is a feeling most viewers can't name, which makes it harder to catch
+
+71
+00:03:54,942 --> 00:03:59,227
+on a checklist and easier to miss until real spend has already gone against it.
+
+72
+00:03:59,777 --> 00:04:02,895
+Here's the honest call this section doesn't want to avoid.
+
+73
+00:04:02,895 --> 00:04:07,303
+If a face isn't earning its place in an angle, the safest move is to leave it out.
+
+74
+00:04:07,303 --> 00:04:11,710
+A clean product shot with nobody in frame essentially never triggers this problem.
+
+75
+00:04:11,710 --> 00:04:16,064
+A face that's almost right, sitting in a batch next to nineteen other statics, is
+
+76
+00:04:16,064 --> 00:04:19,182
+the one thing a viewer will remember for the wrong reason.
+
+77
+00:04:19,182 --> 00:04:23,697
+You'll meet a more deliberate answer to faces in Section four, where video needs one
+
+78
+00:04:23,697 --> 00:04:27,782
+on purpose, handled properly rather than as a side effect of a product shot.
+
+79
+00:04:27,782 --> 00:04:32,243
+Ask yourself, honestly, whether the angle actually needs a person in it, or whether
+
+80
+00:04:32,243 --> 00:04:34,555
+a person just felt like the default choice.
+
+81
+00:04:34,555 --> 00:04:39,016
+"The 15-20 spec" and "not just for flights" from the angle map don't need a face at
+
+82
+00:04:39,016 --> 00:04:39,231
+all.
+
+83
+00:04:39,231 --> 00:04:41,381
+"A nurse's honest review" probably does.
+
+84
+00:04:41,381 --> 00:04:44,230
+Not every row on that map should get the same answer.
+
+85
+00:04:44,780 --> 00:04:48,131
+Do you actually need a person for what this angle is arguing?
+
+86
+00:04:48,131 --> 00:04:52,525
+Run that question down your own angle map before you generate a single face, and
+
+87
+00:04:52,525 --> 00:04:56,316
+you'll usually find the honest answer is no more often than it's yes.
+
+88
+00:04:56,316 --> 00:05:00,875
+Two of Harlan's three angles here don't need a face at all, and that ratio holds up
+
+89
+00:05:00,875 --> 00:05:05,270
+on most angle maps once you actually ask the question instead of defaulting to a
+
+90
+00:05:05,270 --> 00:05:09,115
+lifestyle shot because that's what a shoot would have produced anyway.
+
+91
+00:05:09,115 --> 00:05:11,147
+A generator makes adding a face free.
+
+92
+00:05:11,147 --> 00:05:13,894
+It doesn't make adding one a good idea by default.
+
+93
+00:05:14,444 --> 00:05:18,959
+Next lecture closes the second half of Harlan's first-batch problem: the mmHg
+
+94
+00:05:18,959 --> 00:05:23,357
+overlay that garbled on five of twenty, and the workflow that keeps it from
+
+95
+00:05:23,357 --> 00:05:24,295
+happening again.
+
+96
+00:05:24,295 --> 00:05:28,634
+Before that, do the five-minute version of what just fixed Harlan's batch.
+
+97
+00:05:28,634 --> 00:05:33,032
+Pull your own product's exact colour as a hex code, not a word anyone could
+
+98
+00:05:33,032 --> 00:05:37,899
+interpret differently, and keep one clean reference image somewhere you'll actually
+
+99
+00:05:37,899 --> 00:05:38,720
+find it again.
+
+100
+00:05:38,720 --> 00:05:43,353
+That pair, the hex value and the reference image, is the lock Section 3.6's B03
+
+101
+00:05:43,353 --> 00:05:45,346
+workshop assumes you already have.
+
+102
+00:05:45,346 --> 00:05:49,041
+Without it, your own batch drifts exactly the way Harlan's did.

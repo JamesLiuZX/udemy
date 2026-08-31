@@ -1,0 +1,299 @@
+1
+00:00:00,350 --> 00:00:02,234
+Dana almost approved that static.
+
+2
+00:00:02,234 --> 00:00:06,857
+It looked right at a glance: product in frame, right pose, text where text should
+
+3
+00:00:06,857 --> 00:00:07,028
+be.
+
+4
+00:00:07,028 --> 00:00:11,309
+Then she zoomed in on the overlay and read it twice before she believed it.
+
+5
+00:00:11,309 --> 00:00:15,932
+Five of Harlan's twenty statics garbled the mmHg overlay exactly like that: close
+
+6
+00:00:15,932 --> 00:00:19,357
+enough to pass a fast look, wrong enough to fail a real one.
+
+7
+00:00:19,357 --> 00:00:23,980
+Section 3.1 already told you why: long text baked into a generated image is still
+
+8
+00:00:23,980 --> 00:00:26,834
+genuinely unreliable, no matter how good the tool.
+
+9
+00:00:26,834 --> 00:00:28,832
+So the fix isn't a cleverer prompt.
+
+10
+00:00:28,832 --> 00:00:33,569
+It's removing the job from the generator entirely for anything longer than a couple
+
+11
+00:00:33,569 --> 00:00:34,083
+of words.
+
+12
+00:00:34,083 --> 00:00:38,820
+If you recognise this pattern from earlier in the course, you're right to: it's the
+
+13
+00:00:38,820 --> 00:00:43,329
+same move as Section 3.3's colour fix, narrowing exactly what you're asking the
+
+14
+00:00:43,329 --> 00:00:45,156
+generator to be responsible for.
+
+15
+00:00:45,156 --> 00:00:49,665
+It's worth being honest about why a better prompt genuinely doesn't solve this.
+
+16
+00:00:49,665 --> 00:00:54,460
+You could spend an hour rewording the instruction, trying "render this text exactly"
+
+17
+00:00:54,460 --> 00:00:59,197
+or "double-check the spelling before finishing," and the failure rate barely moves,
+
+18
+00:00:59,197 --> 00:01:01,937
+because the model isn't ignoring an instruction.
+
+19
+00:01:01,937 --> 00:01:06,275
+It's attempting the same hard task, glyph by glyph, every time, and a longer
+
+20
+00:01:06,275 --> 00:01:10,156
+sentence is just more chances for one of those glyphs to land wrong.
+
+21
+00:01:10,706 --> 00:01:14,400
+Here's the actual change, and notice it isn't a new capability.
+
+22
+00:01:14,400 --> 00:01:16,511
+It's a different division of labour.
+
+23
+00:01:16,511 --> 00:01:21,260
+Batch two asked the generator to do two jobs at once: make a convincing photo and
+
+24
+00:01:21,260 --> 00:01:23,371
+typeset an exact sentence inside it.
+
+25
+00:01:23,371 --> 00:01:28,120
+Batch three asks it to do one job, the photo, and hands the typesetting to a tool
+
+26
+00:01:28,120 --> 00:01:29,410
+built for typesetting.
+
+27
+00:01:29,410 --> 00:01:34,042
+Twenty clean images, twenty exact overlays added afterward, zero garbled lines,
+
+28
+00:01:34,042 --> 00:01:38,322
+because nothing was ever asked to render text it couldn't reliably place.
+
+29
+00:01:38,322 --> 00:01:42,837
+You'll notice this also makes the overlay itself more flexible, not just more
+
+30
+00:01:42,837 --> 00:01:43,365
+reliable.
+
+31
+00:01:43,365 --> 00:01:48,231
+Once your copy lives in a design tool instead of baked into pixels, changing a word
+
+32
+00:01:48,231 --> 00:01:50,694
+doesn't mean regenerating the whole image.
+
+33
+00:01:50,694 --> 00:01:55,560
+You edit a text layer and export again, in seconds rather than another trip through
+
+34
+00:01:55,560 --> 00:01:56,381
+the generator.
+
+35
+00:01:56,381 --> 00:01:59,841
+That flexibility compounds across a real testing programme.
+
+36
+00:01:59,841 --> 00:02:04,414
+If Section 6.2 ever flags a claim that needs rewording, or if Section 8's test
+
+37
+00:02:04,414 --> 00:02:09,105
+surfaces a line that should say something slightly different, a baked-in version
+
+38
+00:02:09,105 --> 00:02:13,854
+means regenerating the image from scratch and hoping the rest of it comes out the
+
+39
+00:02:13,854 --> 00:02:14,147
+same.
+
+40
+00:02:14,147 --> 00:02:19,014
+A separated overlay means changing one line of text and shipping the correction the
+
+41
+00:02:19,014 --> 00:02:19,893
+same afternoon.
+
+42
+00:02:20,443 --> 00:02:24,212
+This isn't a blanket rule against any text in a generated image.
+
+43
+00:02:24,212 --> 00:02:28,629
+A single word or a bare number is short enough that the risk stays low, and
+
+44
+00:02:28,629 --> 00:02:33,575
+sometimes baking it in genuinely reads more natural than an obvious overlay, sitting
+
+45
+00:02:33,575 --> 00:02:37,403
+inside the scene rather than sitting on top of it like a sticker.
+
+46
+00:02:37,403 --> 00:02:42,232
+The line to hold is specific: anything quoting the product truth document exactly,
+
+47
+00:02:42,232 --> 00:02:47,178
+where a dropped word changes the claim, goes through the generate-clean-then-overlay
+
+48
+00:02:47,178 --> 00:02:49,475
+workflow every time, without exception.
+
+49
+00:02:49,475 --> 00:02:52,007
+The mmHg spec is exactly that kind of line.
+
+50
+00:02:52,007 --> 00:02:54,657
+It's not persuasive copy you can approximate.
+
+51
+00:02:54,657 --> 00:02:56,600
+It's a fact that has to be exact.
+
+52
+00:02:56,600 --> 00:03:01,488
+Ask yourself one question per line of copy before you decide where it belongs: if a
+
+53
+00:03:01,488 --> 00:03:05,905
+single word dropped out silently, would anyone notice, and would it matter?
+
+54
+00:03:05,905 --> 00:03:07,554
+For "Comfort", probably not.
+
+55
+00:03:07,554 --> 00:03:11,205
+For "15 to 20 mmHg", it changes what you're claiming entirely.
+
+56
+00:03:11,755 --> 00:03:16,252
+I want to be honest about what this actually costs, because "generate clean, add
+
+57
+00:03:16,252 --> 00:03:18,501
+text after" sounds free and isn't quite.
+
+58
+00:03:18,501 --> 00:03:23,168
+Twenty images, each needing an overlay placed and checked, is real manual time that
+
+59
+00:03:23,168 --> 00:03:25,416
+a fully automated batch doesn't require.
+
+60
+00:03:25,416 --> 00:03:29,802
+It's also non-negotiable for anything quoting Harlan's exact spec, because the
+
+61
+00:03:29,802 --> 00:03:34,468
+alternative is a claim that reads as garbled at best and wrong at worst, reaching a
+
+62
+00:03:34,468 --> 00:03:35,986
+real customer on a real ad.
+
+63
+00:03:35,986 --> 00:03:38,966
+Twenty minutes of overlay work is cheap against that.
+
+64
+00:03:38,966 --> 00:03:43,520
+Build the overlay step into your actual time budget for a batch, the same way you
+
+65
+00:03:43,520 --> 00:03:47,005
+budgeted twenty minutes for the angle map back in Section 2.6.
+
+66
+00:03:47,005 --> 00:03:51,447
+Treating it as a rounding error is how a workshop that should take an afternoon
+
+67
+00:03:51,447 --> 00:03:52,965
+quietly loses its schedule.
+
+68
+00:03:53,515 --> 00:03:58,174
+Harlan's twenty statics are genuinely clean now: on brand, on spec, and legible.
+
+69
+00:03:58,174 --> 00:04:02,891
+Both of the failures from Section 3.2 are closed, with two narrow, specific fixes
+
+70
+00:04:02,891 --> 00:04:07,200
+rather than one vague instruction to "try again." Next lecture is the last
+
+71
+00:04:07,200 --> 00:04:11,859
+generation technique before the workshop, replacing the parts of a product shoot
+
+72
+00:04:11,859 --> 00:04:13,781
+this system can actually replace.
+
+73
+00:04:13,781 --> 00:04:18,557
+Before then, write down that one line of exact copy your own product cannot afford
+
+74
+00:04:18,557 --> 00:04:19,314
+to get wrong.
+
+75
+00:04:19,314 --> 00:04:23,973
+That's the line B03 will remind you, every batch, to add afterward, not bake in.

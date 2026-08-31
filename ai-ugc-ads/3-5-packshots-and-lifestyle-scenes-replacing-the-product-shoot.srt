@@ -1,0 +1,403 @@
+1
+00:00:00,350 --> 00:00:04,590
+Sam had two more images open side by side: a clean shot of the sock alone, and a
+
+2
+00:00:04,590 --> 00:00:06,763
+scene of someone mid-shift adjusting one.
+
+3
+00:00:06,763 --> 00:00:11,003
+Both had come out of the same batch, both looked fine at a glance, and his first
+
+4
+00:00:11,003 --> 00:00:13,388
+instinct was to run identical checks on both.
+
+5
+00:00:13,388 --> 00:00:15,349
+That instinct turned out to be wrong.
+
+6
+00:00:15,349 --> 00:00:18,211
+Nothing about the two images announced the difference.
+
+7
+00:00:18,211 --> 00:00:22,239
+They were the same resolution, the same brief, generated the same afternoon.
+
+8
+00:00:22,239 --> 00:00:26,690
+The difference only showed up once he asked what each one was actually for, which is
+
+9
+00:00:26,690 --> 00:00:31,036
+exactly the question this lecture wants you asking before you generate either kind
+
+10
+00:00:31,036 --> 00:00:31,354
+again.
+
+11
+00:00:31,354 --> 00:00:35,594
+One more generation technique before the workshop, and it's really a distinction
+
+12
+00:00:35,594 --> 00:00:40,046
+worth having clearly in your head: a packshot, the product alone doing the work of a
+
+13
+00:00:40,046 --> 00:00:44,392
+specification sheet, and a lifestyle scene, the product in a moment doing the work
+
+14
+00:00:44,392 --> 00:00:47,572
+of a story, are not the same job wearing different lighting.
+
+15
+00:00:47,572 --> 00:00:51,865
+Confuse which one you're generating, and you'll brief the wrong thing every time.
+
+16
+00:00:51,865 --> 00:00:56,105
+Which one is which usually isn't hard to tell once you ask what job the image is
+
+17
+00:00:56,105 --> 00:00:56,423
+doing.
+
+18
+00:00:56,423 --> 00:00:59,709
+If it's answering "what exactly am I buying", it's a packshot.
+
+19
+00:00:59,709 --> 00:01:03,790
+If it's answering "what would this feel like to own", it's a lifestyle scene.
+
+20
+00:01:03,790 --> 00:01:06,493
+Different question, different standard of accuracy.
+
+21
+00:01:07,043 --> 00:01:10,868
+Here's why the distinction matters more than it sounds like it should.
+
+22
+00:01:10,868 --> 00:01:15,294
+A packshot often does double duty: it's the ad creative, and it's close enough to
+
+23
+00:01:15,294 --> 00:01:19,829
+what shows on the product page that a mismatch reads as false advertising, not just
+
+24
+00:01:19,829 --> 00:01:20,430
+an off day.
+
+25
+00:01:20,430 --> 00:01:23,818
+A lifestyle scene carries a completely different kind of risk.
+
+26
+00:01:23,818 --> 00:01:28,025
+Nobody assumes the person in a stock-style lifestyle shot is a specific, real
+
+27
+00:01:28,025 --> 00:01:30,211
+customer having a specific, real moment.
+
+28
+00:01:30,211 --> 00:01:31,304
+It has to feel true.
+
+29
+00:01:31,304 --> 00:01:34,637
+It doesn't have to be literally true the way a packshot does.
+
+30
+00:01:34,637 --> 00:01:38,681
+Would a customer feel misled if they knew exactly how this image was made?
+
+31
+00:01:38,681 --> 00:01:43,216
+For a lifestyle scene, almost never, because nobody assumed it was a documentary in
+
+32
+00:01:43,216 --> 00:01:44,090
+the first place.
+
+33
+00:01:44,090 --> 00:01:48,680
+For a packshot standing in as the product photo, the honest answer is often yes, and
+
+34
+00:01:48,680 --> 00:01:53,106
+that's the test worth running before you decide where a given image is allowed to
+
+35
+00:01:53,106 --> 00:01:53,653
+come from.
+
+36
+00:01:53,653 --> 00:01:57,806
+Run that same question down your own angle map before you generate anything.
+
+37
+00:01:57,806 --> 00:02:02,396
+Most rows sort themselves in a few seconds once you ask what job the image is doing,
+
+38
+00:02:02,396 --> 00:02:06,931
+and the ones that don't sort easily are usually the ones worth a second look before
+
+39
+00:02:06,931 --> 00:02:07,532
+you decide.
+
+40
+00:02:08,082 --> 00:02:11,523
+Here's the honest split, applied directly to Harlan's account.
+
+41
+00:02:11,523 --> 00:02:16,074
+An ad packshot, generated from the same locked reference from Section 3.3, is safe
+
+42
+00:02:16,074 --> 00:02:20,569
+territory, because it's testing creative, not standing in for the actual purchase
+
+43
+00:02:20,569 --> 00:02:21,068
+decision.
+
+44
+00:02:21,068 --> 00:02:25,675
+The product listing photo itself is where this course draws a hard line: that image
+
+45
+00:02:25,675 --> 00:02:30,059
+is effectively a promise about what arrives in the box, and it should be a real
+
+46
+00:02:30,059 --> 00:02:32,168
+photo of the real product, every time.
+
+47
+00:02:32,168 --> 00:02:36,608
+Lifestyle scenes, with or without a face, are safe to generate, carrying forward
+
+48
+00:02:36,608 --> 00:02:39,272
+exactly the checks Section 3.3 already gave you.
+
+49
+00:02:39,272 --> 00:02:42,324
+Notice this table doesn't introduce a single new check.
+
+50
+00:02:42,324 --> 00:02:46,986
+Every "yes" in it still owes you the colour lock, the product-accuracy read, and the
+
+51
+00:02:46,986 --> 00:02:49,539
+honest face-or-no-face call from last lecture.
+
+52
+00:02:49,539 --> 00:02:53,923
+What changes here is only the question of which image type this course lets you
+
+53
+00:02:53,923 --> 00:02:57,364
+generate at all, not how carefully you check the ones it does.
+
+54
+00:02:57,364 --> 00:03:01,804
+Notice also there's exactly one "no" on the whole table, and it's not a grudging
+
+55
+00:03:01,804 --> 00:03:02,359
+exception.
+
+56
+00:03:02,359 --> 00:03:06,909
+The listing photo is the one image in this entire workflow where the cost of being
+
+57
+00:03:06,909 --> 00:03:11,349
+wrong isn't a wasted test, it's a customer holding something in their hands that
+
+58
+00:03:11,349 --> 00:03:12,959
+doesn't match what sold them.
+
+59
+00:03:12,959 --> 00:03:17,399
+Everything else on this table earns its "yes" precisely because getting it wrong
+
+60
+00:03:17,399 --> 00:03:18,342
+costs a lot less.
+
+61
+00:03:18,892 --> 00:03:23,521
+Here's what a working prompt actually looks like, carrying forward every discipline
+
+62
+00:03:23,521 --> 00:03:26,532
+from the last two lectures rather than starting fresh.
+
+63
+00:03:26,532 --> 00:03:30,491
+The hex lock and reference image from Section 3.3 come along unchanged.
+
+64
+00:03:30,491 --> 00:03:35,009
+No overlay text, because anything worth saying exactly goes through Section 3.4's
+
+65
+00:03:35,009 --> 00:03:35,957
+workflow instead.
+
+66
+00:03:35,957 --> 00:03:40,530
+And notice the instruction against a face close-up: this scene doesn't need one to
+
+67
+00:03:40,530 --> 00:03:44,600
+do its job, so the safest version of it doesn't generate one to find out.
+
+68
+00:03:44,600 --> 00:03:47,166
+Read this prompt as a template, not a one-off.
+
+69
+00:03:47,166 --> 00:03:51,739
+Every lifestyle angle on Harlan's map can start from this same skeleton, with only
+
+70
+00:03:51,739 --> 00:03:56,423
+the moment and the setting changed: a different break room, a different point in the
+
+71
+00:03:56,423 --> 00:04:00,550
+shift, the same locked colour and the same discipline about faces and text
+
+72
+00:04:00,550 --> 00:04:01,944
+underneath every version.
+
+73
+00:04:01,944 --> 00:04:06,517
+That's the actual efficiency win here, and it's easy to miss under all the detail.
+
+74
+00:04:06,517 --> 00:04:11,034
+Writing one disciplined template once is what lets twenty lifestyle variants take
+
+75
+00:04:11,034 --> 00:04:15,663
+minutes instead of twenty separate negotiations with a generator over what "natural
+
+76
+00:04:15,663 --> 00:04:18,507
+lighting" or "not too posed" should mean each time.
+
+77
+00:04:19,057 --> 00:04:23,622
+One line worth holding onto after this lecture, because it's the one rule in this
+
+78
+00:04:23,622 --> 00:04:25,143
+section with no exceptions.
+
+79
+00:04:25,143 --> 00:04:29,032
+Everything else here is genuinely safe to generate, checked properly.
+
+80
+00:04:29,032 --> 00:04:33,202
+The product listing photo is not, and that's not caution for its own sake.
+
+81
+00:04:33,202 --> 00:04:37,936
+It's the one image where "close enough" becomes a promise you can't keep if the real
+
+82
+00:04:37,936 --> 00:04:41,543
+product doesn't match what a customer saw before they bought it.
+
+83
+00:04:41,543 --> 00:04:46,108
+If you're ever unsure which side of the line a specific image sits on, default to
+
+84
+00:04:46,108 --> 00:04:47,235
+the stricter answer.
+
+85
+00:04:47,235 --> 00:04:51,744
+Treating a borderline case as ad creative when it's really acting as the listing
+
+86
+00:04:51,744 --> 00:04:56,478
+photo is a mistake that surfaces as a return, a complaint, or worse, only after real
+
+87
+00:04:56,478 --> 00:04:58,281
+money has already changed hands.
+
+88
+00:04:58,281 --> 00:05:02,733
+The test is always the same one from earlier in this lecture: does a customer's
+
+89
+00:05:02,733 --> 00:05:06,566
+actual purchase decision rest on this specific image being accurate.
+
+90
+00:05:06,566 --> 00:05:11,187
+If yes, it's a listing photo wearing an ad's clothing, and it gets a camera, not a
+
+91
+00:05:11,187 --> 00:05:15,808
+generator, no matter how good the generated version looks sitting next to the real
+
+92
+00:05:15,808 --> 00:05:16,090
+ones.
+
+93
+00:05:16,640 --> 00:05:21,320
+One lecture left before the section recap, and it's the one where you actually run
+
+94
+00:05:21,320 --> 00:05:26,058
+this on a product of your own, start to finish: brief, batch, colour fix, text fix,
+
+95
+00:05:26,058 --> 00:05:29,254
+and the packshot-versus-lifestyle call, all in one pass.
+
+96
+00:05:29,254 --> 00:05:33,478
+Before you get there, do the sort: two columns, twenty rows, five minutes.
+
+97
+00:05:33,478 --> 00:05:38,272
+Packshot or lifestyle, and one honest check on each: is any row secretly the product
+
+98
+00:05:38,272 --> 00:05:40,498
+listing photo wearing an ad's clothing.
+
+99
+00:05:40,498 --> 00:05:45,293
+Pull those out now, while it's a five-minute decision, not after a batch has already
+
+100
+00:05:45,293 --> 00:05:45,864
+generated.
+
+101
+00:05:45,864 --> 00:05:49,231
+That sort is the last piece Section 3.6 assembles into B03.
