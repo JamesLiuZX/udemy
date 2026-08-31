@@ -1,0 +1,63 @@
+1
+00:00:00,350 --> 00:00:03,258
+On Meta, the clinical-authority cut won as filmed.
+
+2
+00:00:03,258 --> 00:00:08,087
+On TikTok, that same cut barely registered, and the raw, unframed 12-hour shift cut
+
+3
+00:00:08,087 --> 00:00:09,134
+won there instead.
+
+4
+00:00:09,134 --> 00:00:13,613
+Same product, same claims boundary, two different answers to what works here.
+
+5
+00:00:13,613 --> 00:00:16,172
+Nothing ahead asks you to make anything new.
+
+6
+00:00:16,172 --> 00:00:19,255
+Every ad you've already built stays exactly as it is.
+
+7
+00:00:19,255 --> 00:00:23,967
+What changes is where it runs and how it's cut for that placement, because a feed
+
+8
+00:00:23,967 --> 00:00:28,504
+and a For You page don't reward the same fifteen seconds for the same reasons.
+
+9
+00:00:29,054 --> 00:00:33,948
+Five lectures, moving from the two biggest placements to the matrix that ties them
+
+10
+00:00:33,948 --> 00:00:38,663
+together, then closing on something most people skip: how much of the placement
+
+11
+00:00:38,663 --> 00:00:43,378
+decision isn't yours anymore, because the platform's own delivery AI is already
+
+12
+00:00:43,378 --> 00:00:45,347
+making part of that call for you.
+
+13
+00:00:45,347 --> 00:00:50,122
+Before lecture one, pull the two strongest cuts out of your Section 4.6 exports,
+
+14
+00:00:50,122 --> 00:00:50,898
+artifact B04.
+
+15
+00:00:50,898 --> 00:00:55,673
+Those are what get tested against every placement in this section, starting with
+
+16
+00:00:55,673 --> 00:00:56,269
+Meta next.

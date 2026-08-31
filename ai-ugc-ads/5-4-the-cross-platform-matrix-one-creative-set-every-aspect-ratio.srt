@@ -1,0 +1,347 @@
+1
+00:00:00,350 --> 00:00:03,933
+An hour of redundant editing, on one angle, before he caught it.
+
+2
+00:00:03,933 --> 00:00:05,501
+None of it needed to happen.
+
+3
+00:00:05,501 --> 00:00:08,692
+Three lectures back, you were checking Meta's safe zones.
+
+4
+00:00:08,692 --> 00:00:11,435
+Two lectures ago, it was Spark Ads authorization.
+
+5
+00:00:11,435 --> 00:00:13,003
+Last lecture, a skip button.
+
+6
+00:00:13,003 --> 00:00:17,706
+None of that has to live in your head at once, because none of it changes the actual
+
+7
+00:00:17,706 --> 00:00:17,986
+shot.
+
+8
+00:00:17,986 --> 00:00:19,778
+What changes is only the export.
+
+9
+00:00:19,778 --> 00:00:24,369
+Generate and film in full-screen vertical, the way Section 5.1 already argued for,
+
+10
+00:00:24,369 --> 00:00:28,903
+and every placement in this section becomes a crop or a caption adjustment, not a
+
+11
+00:00:28,903 --> 00:00:29,351
+reshoot.
+
+12
+00:00:29,351 --> 00:00:33,886
+Why does this deserve its own lecture, rather than a slide tacked onto the end of
+
+13
+00:00:33,886 --> 00:00:34,110
+5.3?
+
+14
+00:00:34,110 --> 00:00:38,533
+Because without it, the natural instinct is to treat each platform lecture as a
+
+15
+00:00:38,533 --> 00:00:43,124
+separate production task, a Meta cut, a TikTok cut, a YouTube cut, three times the
+
+16
+00:00:43,124 --> 00:00:44,188
+work for one angle.
+
+17
+00:00:44,188 --> 00:00:48,723
+That instinct is wrong, and it's expensive enough in real hours that it's worth a
+
+18
+00:00:48,723 --> 00:00:50,403
+lecture of its own to correct.
+
+19
+00:00:50,403 --> 00:00:52,474
+Think back to Section 4.6's workshop.
+
+20
+00:00:52,474 --> 00:00:54,546
+You already produced three ads there.
+
+21
+00:00:54,546 --> 00:00:59,193
+This lecture asks you to look at those same three files again, not to make anything
+
+22
+00:00:59,193 --> 00:01:03,784
+new, and work out exactly how far each one already gets you across every placement
+
+23
+00:01:03,784 --> 00:01:04,679
+in this section.
+
+24
+00:01:05,229 --> 00:01:09,762
+Fill this out once per angle, and notice most of the row is repetition, not new
+
+25
+00:01:09,762 --> 00:01:10,049
+work.
+
+26
+00:01:10,049 --> 00:01:12,688
+Four of five placements share one master file.
+
+27
+00:01:12,688 --> 00:01:17,450
+Only the in-stream row, and only when Section 5.3's intent test says it's worth it,
+
+28
+00:01:17,450 --> 00:01:19,400
+asks for a genuinely separate cut.
+
+29
+00:01:19,400 --> 00:01:24,220
+That's the actual point of building this matrix instead of improvising per platform.
+
+30
+00:01:24,220 --> 00:01:28,695
+It turns "where does this run" into a checklist you fill out in minutes, not a
+
+31
+00:01:28,695 --> 00:01:31,276
+decision you re-litigate for every single ad.
+
+32
+00:01:31,276 --> 00:01:35,809
+Notice, too, what the matrix quietly assumes: that you generated in full-screen
+
+33
+00:01:35,809 --> 00:01:37,186
+vertical from the start.
+
+34
+00:01:37,186 --> 00:01:41,890
+If you didn't, every row above gets harder, because you're reframing up instead of
+
+35
+00:01:41,890 --> 00:01:46,078
+cropping down, exactly the costly direction Section 5.1 warned you about.
+
+36
+00:01:46,078 --> 00:01:49,176
+The matrix rewards a decision made at generation time.
+
+37
+00:01:49,176 --> 00:01:52,504
+It can't undo one made the wrong way round after the fact.
+
+38
+00:01:52,504 --> 00:01:56,864
+Run this same table for every angle in a batch, not just your favourite one.
+
+39
+00:01:56,864 --> 00:02:01,684
+The whole point of Section 1.4's volume argument was never spending your effort on a
+
+40
+00:02:01,684 --> 00:02:02,257
+single ad.
+
+41
+00:02:02,257 --> 00:02:07,077
+Applying that same discipline to export work is what keeps a twenty-angle batch from
+
+42
+00:02:07,077 --> 00:02:11,896
+turning into twenty separate, one-off production decisions instead of one repeatable
+
+43
+00:02:11,896 --> 00:02:12,183
+pass.
+
+44
+00:02:12,733 --> 00:02:16,932
+One habit worth building now, before the batch gets larger than four files.
+
+45
+00:02:16,932 --> 00:02:21,634
+Name every export by angle, version and placement, consistently, from the very first
+
+46
+00:02:21,634 --> 00:02:23,258
+ad you ever produce this way.
+
+47
+00:02:23,258 --> 00:02:24,378
+This isn't busywork.
+
+48
+00:02:24,378 --> 00:02:29,025
+Section 7.3 builds a whole naming and asset-library standard on top of exactly this
+
+49
+00:02:29,025 --> 00:02:33,560
+pattern, and it's far easier to start consistent than to rename a folder of forty
+
+50
+00:02:33,560 --> 00:02:37,702
+files six weeks from now because nobody could tell which export was which.
+
+51
+00:02:37,702 --> 00:02:42,237
+Notice the convention encodes exactly the information a later decision will need:
+
+52
+00:02:42,237 --> 00:02:44,701
+which angle, which version, which placement.
+
+53
+00:02:44,701 --> 00:02:48,116
+Nothing about performance, nothing about the claim inside it.
+
+54
+00:02:48,116 --> 00:02:49,124
+That's deliberate.
+
+55
+00:02:49,124 --> 00:02:53,435
+A filename is for finding a file fast, not for remembering what made it good.
+
+56
+00:02:53,435 --> 00:02:57,969
+That judgement belongs in the scorecard from Section 8.5, not buried inside forty
+
+57
+00:02:57,969 --> 00:03:01,721
+characters of a filename nobody will read carefully under pressure.
+
+58
+00:03:01,721 --> 00:03:06,423
+Ask yourself, honestly: could you tell, right now, which of your existing exports is
+
+59
+00:03:06,423 --> 00:03:08,607
+which without opening every single one?
+
+60
+00:03:08,607 --> 00:03:11,574
+If the answer's no, that's not a small inconvenience.
+
+61
+00:03:11,574 --> 00:03:16,053
+It's the exact failure mode Section 8's results reading depends on you avoiding,
+
+62
+00:03:16,053 --> 00:03:20,700
+because a scorecard is useless if you can't confidently match a winning result back
+
+63
+00:03:20,700 --> 00:03:22,715
+to the specific file that earned it.
+
+64
+00:03:23,265 --> 00:03:26,917
+One honest limit on what a matrix like this can actually do for you.
+
+65
+00:03:26,917 --> 00:03:28,796
+It tells you which file goes where.
+
+66
+00:03:28,796 --> 00:03:33,252
+It doesn't tell you whether Meta's safe zones moved, or whether your Spark Ads code
+
+67
+00:03:33,252 --> 00:03:37,494
+is about to expire, or whether an audience is intent-driven enough to justify a
+
+68
+00:03:37,494 --> 00:03:38,729
+separate in-stream cut.
+
+69
+00:03:38,729 --> 00:03:43,186
+Those are still judgement calls, made fresh, the way the last three lectures taught
+
+70
+00:03:43,186 --> 00:03:44,099
+you to make them.
+
+71
+00:03:44,099 --> 00:03:46,998
+The matrix removes the busywork around that judgement.
+
+72
+00:03:46,998 --> 00:03:49,683
+It was never going to remove the judgement itself.
+
+73
+00:03:49,683 --> 00:03:53,925
+That's a distinction worth being honest about, because it's tempting to treat a
+
+74
+00:03:53,925 --> 00:03:56,931
+checklist like this as a substitute for staying current.
+
+75
+00:03:56,931 --> 00:03:57,415
+It isn't.
+
+76
+00:03:57,415 --> 00:04:01,818
+Revisit the platform-specific rows in this matrix on the same quarterly rhythm the
+
+77
+00:04:01,818 --> 00:04:06,328
+last three lectures already asked of you, not because the matrix itself changes, but
+
+78
+00:04:06,328 --> 00:04:08,422
+because what belongs in each cell does.
+
+79
+00:04:08,972 --> 00:04:13,955
+Next lecture asks a question this whole section has been circling: once you hand a
+
+80
+00:04:13,955 --> 00:04:18,937
+platform its export, how much of what happens next is still your decision, and how
+
+81
+00:04:18,937 --> 00:04:23,556
+much of it is the platform's own automated delivery system deciding for you.
+
+82
+00:04:23,556 --> 00:04:25,743
+Before that, do the actual exercise.
+
+83
+00:04:25,743 --> 00:04:30,665
+Take one angle from your Section 4.6 workshop, artifact B04, fill in every row of
+
+84
+00:04:30,665 --> 00:04:34,676
+this matrix for it, and name the files using the convention above.
+
+85
+00:04:34,676 --> 00:04:39,172
+It's the last piece of production discipline this section asks of you, and
+
+86
+00:04:39,172 --> 00:04:44,094
+everything from Section 7 onward, including B06's naming standard, assumes you've
+
+87
+00:04:44,094 --> 00:04:45,553
+already got it in place.

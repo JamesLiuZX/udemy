@@ -1,0 +1,103 @@
+1
+00:00:00,350 --> 00:00:05,068
+Six lectures ago, Sam pushed the same two Harlan cuts live on Meta and TikTok inside
+
+2
+00:00:05,068 --> 00:00:08,045
+the same hour, sure one of them would win everywhere.
+
+3
+00:00:08,045 --> 00:00:08,606
+It didn't.
+
+4
+00:00:08,606 --> 00:00:13,268
+That gap is the reason this section ran six lectures instead of one, and here's the
+
+5
+00:00:13,268 --> 00:00:15,740
+honest tally of what it actually taught you.
+
+6
+00:00:15,740 --> 00:00:20,401
+You've seen the same brief split cleanly in two: the clinical, credentialed framing
+
+7
+00:00:20,401 --> 00:00:25,119
+winning on Meta, the raw, unframed cut winning on TikTok, one product and one claims
+
+8
+00:00:25,119 --> 00:00:29,557
+boundary producing two genuinely different winners depending on where they ran.
+
+9
+00:00:29,557 --> 00:00:34,274
+You know Meta's actual placement ratios and safe zones, TikTok's Spark Ads mechanics
+
+10
+00:00:34,274 --> 00:00:38,992
+and disclosure requirement, and YouTube's split between an intent-driven skip window
+
+11
+00:00:38,992 --> 00:00:42,082
+and a Shorts feed that plays by TikTok's rules instead.
+
+12
+00:00:42,082 --> 00:00:46,743
+You've built the matrix that turns all of that into one export checklist instead of
+
+13
+00:00:46,743 --> 00:00:48,709
+five separate production decisions.
+
+14
+00:00:48,709 --> 00:00:53,146
+And you've faced the honest limit this section closed on: the platforms now run
+
+15
+00:00:53,146 --> 00:00:57,752
+their own version of "winners are found, not picked," automatically, on pieces you
+
+16
+00:00:57,752 --> 00:01:00,897
+hand them, with no model of your claims boundary at all.
+
+17
+00:01:01,447 --> 00:01:06,314
+Section six is where the claims boundary, the disclosure requirement, and the rights
+
+18
+00:01:06,314 --> 00:01:11,181
+questions from Section four all get one systematic pass, before any of this creative
+
+19
+00:01:11,181 --> 00:01:13,614
+spends a dollar on any of these platforms.
+
+20
+00:01:13,614 --> 00:01:16,511
+Nothing you've built gets rebuilt for this either.
+
+21
+00:01:16,511 --> 00:01:17,438
+It gets checked.
+
+22
+00:01:17,438 --> 00:01:21,958
+One thing before that: if you've got a live campaign running anywhere, open it
+
+23
+00:01:21,958 --> 00:01:26,709
+tonight and pull the delivered creative report, the exact habit Section 5.5 caught
+
+24
+00:01:26,709 --> 00:01:27,462
+Sam skipping.
+
+25
+00:01:27,462 --> 00:01:32,155
+That's the first line of Section six's checklist, and you can start it before the
+
+26
+00:01:32,155 --> 00:01:32,908
+lecture does.
