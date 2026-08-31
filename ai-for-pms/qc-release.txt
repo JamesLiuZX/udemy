@@ -1,5 +1,5 @@
 
-  built total: 0.47h across 5 lectures
+  built total: 7.53h across 102 lectures
 
   WARN  [1.6] estimated 5.8 min against a duration_target of 8 — narration is far under its own promise; expand it or lower the target.
   WARN  [2.0] estimated 1.0 min — very short for a lecture.
@@ -114,7 +114,7 @@
   FAIL  [11.3] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
   FAIL  [11.4] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
   FAIL  [11.5] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
-  FAIL  28.4 min of video; Udemy requires ≥30 min.
+  FAIL  [3.3] true peak -0.8 dBTP exceeds -1.0; audio will clip.
 
   106 fail · 8 warn
   NOT ready to submit.
