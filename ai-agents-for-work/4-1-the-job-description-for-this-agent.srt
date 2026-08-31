@@ -1,0 +1,251 @@
+1
+00:00:00,350 --> 00:00:03,526
+Priya's calendar carries four or five client calls a week.
+
+2
+00:00:03,526 --> 00:00:07,908
+Every one of them ends with a small handful of things somebody agreed to do, and
+
+3
+00:00:07,908 --> 00:00:10,482
+without fail, some of them evaporate by Friday.
+
+4
+00:00:10,482 --> 00:00:11,686
+Not from carelessness.
+
+5
+00:00:11,686 --> 00:00:14,753
+From nobody writing them down in a form anyone re-reads.
+
+6
+00:00:14,753 --> 00:00:19,244
+Take her weekly Brightwell call as the running example, because this whole section
+
+7
+00:00:19,244 --> 00:00:20,230
+builds against it.
+
+8
+00:00:20,230 --> 00:00:24,556
+Twenty five minutes with the account holder, and somewhere in the middle, three
+
+9
+00:00:24,556 --> 00:00:29,157
+commitments made in passing: she will resend a certificate, he will confirm a figure
+
+10
+00:00:29,157 --> 00:00:33,757
+with his finance person, and someone, this is the dangerous one, will "look into" an
+
+11
+00:00:33,757 --> 00:00:35,345
+open question before renewal.
+
+12
+00:00:35,345 --> 00:00:39,617
+Which of those three is most likely to surface again only when it has become a
+
+13
+00:00:39,617 --> 00:00:40,055
+problem?
+
+14
+00:00:40,055 --> 00:00:41,589
+The unowned one, every time.
+
+15
+00:00:41,589 --> 00:00:46,079
+Meeting notes exist to catch exactly that item, and the reason most people's notes
+
+16
+00:00:46,079 --> 00:00:50,241
+fail is that writing them well takes twenty minutes nobody has after a call.
+
+17
+00:00:50,241 --> 00:00:54,732
+Delegating that twenty minutes, without losing the accuracy, is this agent's whole
+
+18
+00:00:54,732 --> 00:00:54,951
+job.
+
+19
+00:00:55,501 --> 00:00:59,888
+Read that ceiling line again, because it is the one doing the real work in this
+
+20
+00:00:59,888 --> 00:01:00,221
+build.
+
+21
+00:01:00,221 --> 00:01:04,886
+An agent that occasionally invents a due date is worse than no agent at all, because
+
+22
+00:01:04,886 --> 00:01:08,051
+a wrong list looks exactly as confident as a correct one.
+
+23
+00:01:08,051 --> 00:01:11,327
+Why does this agent need that ceiling when Agent 1 did not?
+
+24
+00:01:11,327 --> 00:01:13,104
+Because of how the two can fail.
+
+25
+00:01:13,104 --> 00:01:17,769
+A triage agent's mistakes are visible by construction: a wrong flag sits in front of
+
+26
+00:01:17,769 --> 00:01:19,601
+you, asking to be disagreed with.
+
+27
+00:01:19,601 --> 00:01:23,988
+An extraction agent's natural failure is the plausible gap-fill: the call never
+
+28
+00:01:23,988 --> 00:01:28,541
+named a date, the list would look tidier with one, so a tidy, reasonable, invented
+
+29
+00:01:28,541 --> 00:01:31,540
+"by Friday" appears, and nothing about it looks wrong.
+
+30
+00:01:31,540 --> 00:01:36,094
+The ceiling turns that into a bright line you can check against the transcript: if
+
+31
+00:01:36,094 --> 00:01:40,369
+it was not said out loud, it does not go on the list, and a blank cell is the
+
+32
+00:01:40,369 --> 00:01:42,424
+correct output, not a failure to fix.
+
+33
+00:01:42,424 --> 00:01:46,755
+In two lectures, that exact sentence goes into the briefing, and in the trial,
+
+34
+00:01:46,755 --> 00:01:51,253
+"check every item against your own memory of the call" is checking precisely this
+
+35
+00:01:51,253 --> 00:01:52,641
+line, not the formatting.
+
+36
+00:01:53,191 --> 00:01:58,247
+Same method as last section, different kind of question at its core: Agent 1 sorted,
+
+37
+00:01:58,247 --> 00:01:59,270
+this one distils.
+
+38
+00:01:59,270 --> 00:02:02,279
+Hold that contrast while the next slide prices it.
+
+39
+00:02:02,829 --> 00:02:07,147
+That is a real shift in the kind of judgement you are asking for, not just a
+
+40
+00:02:07,147 --> 00:02:08,397
+different data source.
+
+41
+00:02:08,397 --> 00:02:12,999
+Section 4.3 is where you write a prompt for extraction instead of classification,
+
+42
+00:02:12,999 --> 00:02:15,329
+and the two read differently on the page.
+
+43
+00:02:15,329 --> 00:02:19,931
+The shift matters because the two jobs have different amounts of room to be wrong
+
+44
+00:02:19,931 --> 00:02:20,101
+in.
+
+45
+00:02:20,101 --> 00:02:22,942
+A yes or no question can fail in exactly two ways.
+
+46
+00:02:22,942 --> 00:02:27,430
+Pull three items out of a half hour transcript and there are many more: an item
+
+47
+00:02:27,430 --> 00:02:31,748
+missed, an item duplicated, the right action pinned on the wrong person, two
+
+48
+00:02:31,748 --> 00:02:33,851
+people's commitments merged into one.
+
+49
+00:02:33,851 --> 00:02:38,623
+More freedom, more failure modes, which is why this agent's checking is different in
+
+50
+00:02:38,623 --> 00:02:38,907
+kind.
+
+51
+00:02:38,907 --> 00:02:43,452
+You do not skim its output for plausibility, because inventions are plausible by
+
+52
+00:02:43,452 --> 00:02:43,850
+nature.
+
+53
+00:02:43,850 --> 00:02:48,623
+You check each line against the call you actually sat in, while your memory of it is
+
+54
+00:02:48,623 --> 00:02:49,248
+still warm.
+
+55
+00:02:49,248 --> 00:02:53,793
+That is also why the trial is three transcripts rather than a calendar week: the
+
+56
+00:02:53,793 --> 00:02:56,236
+unit of evidence here is a call, not a day.
+
+57
+00:02:56,786 --> 00:03:01,287
+Notice what the list does not contain this time: no routing lecture, because a list
+
+58
+00:03:01,287 --> 00:03:05,788
+of action items does not fork, and no credential hunt, because of a choice the next
+
+59
+00:03:05,788 --> 00:03:07,361
+lecture explains and defends.
+
+60
+00:03:07,361 --> 00:03:11,754
+Agent 2 is the fastest of the four builds, a single sitting end to end, and it is
+
+61
+00:03:11,754 --> 00:03:16,200
+deliberately sequenced second: same method as Agent 1, smaller mechanical load, so
+
+62
+00:03:16,200 --> 00:03:17,610
+the method is what sticks.
+
+63
+00:03:17,610 --> 00:03:21,298
+Next lecture starts with the trigger, and it is a pleasant surprise.

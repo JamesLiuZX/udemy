@@ -1,0 +1,211 @@
+1
+00:00:00,350 --> 00:00:05,009
+Open your form trigger, find "set mock data," and paste in one realistic transcript.
+
+2
+00:00:05,009 --> 00:00:09,614
+This build was tested against a short, ordinary renewal call between Priya and Ravi
+
+3
+00:00:09,614 --> 00:00:13,996
+Chandra: some scheduling small talk, and two real commitments buried inside it.
+
+4
+00:00:13,996 --> 00:00:16,270
+What does mock data look like for a form?
+
+5
+00:00:16,270 --> 00:00:20,874
+The same shape a real submission would have: a value for each of your three fields,
+
+6
+00:00:20,874 --> 00:00:22,926
+meeting title, attendees, transcript.
+
+7
+00:00:22,926 --> 00:00:27,253
+Pin that once and you can rewire and retune everything downstream without ever
+
+8
+00:00:27,253 --> 00:00:31,913
+re-filling the form, which matters here more than it did for email, because you will
+
+9
+00:00:31,913 --> 00:00:36,517
+be tweaking the extraction prompt several times and pasting a full transcript in by
+
+10
+00:00:36,517 --> 00:00:40,899
+hand each round is exactly the sort of friction that makes people stop testing.
+
+11
+00:00:41,449 --> 00:00:44,501
+That football exchange is doing real work in your test.
+
+12
+00:00:44,501 --> 00:00:48,829
+If your agent extracts it as an action item, you have found a mistake cheaply,
+
+13
+00:00:48,829 --> 00:00:51,160
+before a real client call ever reached it.
+
+14
+00:00:51,160 --> 00:00:55,766
+That is the entire point of testing with something realistically messy instead of a
+
+15
+00:00:55,766 --> 00:00:59,096
+clean, easy sample that was never going to trip anything up.
+
+16
+00:00:59,096 --> 00:01:03,702
+When you write your own test transcript, plant one more trap beyond the small talk:
+
+17
+00:01:03,702 --> 00:01:05,866
+a commitment made and then walked back.
+
+18
+00:01:05,866 --> 00:01:10,361
+Someone says they will send the figures Thursday, then two lines later, actually,
+
+19
+00:01:10,361 --> 00:01:12,470
+hold off until the contract is signed.
+
+20
+00:01:12,470 --> 00:01:16,910
+Real calls do this constantly, and it is the single hardest case for extraction,
+
+21
+00:01:16,910 --> 00:01:19,740
+because the commitment genuinely was said out loud.
+
+22
+00:01:19,740 --> 00:01:24,235
+An agent that reports it anyway is obeying the letter of your ceiling and missing
+
+23
+00:01:24,235 --> 00:01:25,178
+the conversation.
+
+24
+00:01:25,178 --> 00:01:29,784
+Whether yours handles it, and how, is exactly the kind of thing you want to know on
+
+25
+00:01:29,784 --> 00:01:34,279
+pinned data, for free, rather than discover in the minutes of a real client call.
+
+26
+00:01:34,829 --> 00:01:39,639
+This is the single most important habit in this entire course, and it shows up first
+
+27
+00:01:39,639 --> 00:01:44,334
+here because extraction makes it easiest to see: an AI agent's output always looks
+
+28
+00:01:44,334 --> 00:01:47,082
+equally confident, whether it is right or wrong.
+
+29
+00:01:47,082 --> 00:01:51,261
+Reading it critically is not optional, and it never stops being your job.
+
+30
+00:01:51,261 --> 00:01:55,899
+Notice what tidiness does to your own judgement, because that is the mechanism to
+
+31
+00:01:55,899 --> 00:01:56,758
+defend against.
+
+32
+00:01:56,758 --> 00:02:01,453
+A cleanly formatted list borrows the authority of every correct list you have ever
+
+33
+00:02:01,453 --> 00:02:06,262
+read: the brackets are right, the dates are shaped like dates, and your eye wants to
+
+34
+00:02:06,262 --> 00:02:09,698
+approve it on grounds that have nothing to do with the call.
+
+35
+00:02:09,698 --> 00:02:12,045
+The defence is mechanical, not willpower.
+
+36
+00:02:12,045 --> 00:02:16,454
+Put the transcript and the output side by side and tick each line against the
+
+37
+00:02:16,454 --> 00:02:17,999
+sentence that justifies it.
+
+38
+00:02:17,999 --> 00:02:19,202
+No sentence, no tick.
+
+39
+00:02:19,202 --> 00:02:24,011
+Thirty seconds per item, and it is the same side-by-side habit the spot check rubric
+
+40
+00:02:24,011 --> 00:02:26,359
+in Section 7 turns into a permanent tool.
+
+41
+00:02:26,909 --> 00:02:29,679
+The order of the first two steps is not decoration.
+
+42
+00:02:29,679 --> 00:02:34,078
+Count the items yourself before you look at the agent's answer, because whichever
+
+43
+00:02:34,078 --> 00:02:38,043
+list you read first becomes the anchor the other one gets judged against.
+
+44
+00:02:38,043 --> 00:02:42,442
+Read the agent first and its answer quietly replaces your memory of the call; you
+
+45
+00:02:42,442 --> 00:02:46,081
+will find yourself agreeing with items you could not have produced.
+
+46
+00:02:46,081 --> 00:02:49,014
+Count first, and your list does the anchoring instead.
+
+47
+00:02:49,014 --> 00:02:52,924
+And the zero-item transcript in step three is not a throwaway: it is the
+
+48
+00:02:52,924 --> 00:02:56,672
+escape-hatch test, proving the agent can hand back an honest nothing.
+
+49
+00:02:56,672 --> 00:03:00,908
+An extraction agent that cannot say "nothing here" will eventually manufacture
+
+50
+00:03:00,908 --> 00:03:05,362
+something, and you want to know which kind you built while the stakes are a pinned
+
+51
+00:03:05,362 --> 00:03:05,742
+sample.
+
+52
+00:03:05,742 --> 00:03:10,196
+With that proof in hand, next lecture connects this agent to a real form and ships
+
+53
+00:03:10,196 --> 00:03:10,359
+it.
