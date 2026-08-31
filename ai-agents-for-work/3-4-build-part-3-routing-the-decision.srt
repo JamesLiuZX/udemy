@@ -1,0 +1,291 @@
+1
+00:00:00,350 --> 00:00:04,864
+This is an easy step to under-rate, because it looks like the boring part after the
+
+2
+00:00:04,864 --> 00:00:05,789
+interesting part.
+
+3
+00:00:05,789 --> 00:00:06,714
+It is not boring.
+
+4
+00:00:06,714 --> 00:00:11,282
+It is the exact place blast radius, from Section 1.3, becomes a real setting instead
+
+5
+00:00:11,282 --> 00:00:12,098
+of a principle.
+
+6
+00:00:12,098 --> 00:00:13,948
+Picture the workflow as it stands.
+
+7
+00:00:13,948 --> 00:00:18,408
+An email arrives, the agent reads it, and a line of text, URGENT with a reason, or
+
+8
+00:00:18,408 --> 00:00:20,257
+SKIP, lands on the wire and stops.
+
+9
+00:00:20,257 --> 00:00:22,269
+Nothing downstream exists to hear it.
+
+10
+00:00:22,269 --> 00:00:26,784
+Run it a hundred times and you have a hundred verdicts filed in a log nobody opens,
+
+11
+00:00:26,784 --> 00:00:28,959
+which is why the slide calls it a diary.
+
+12
+00:00:28,959 --> 00:00:30,754
+What turns a verdict into triage?
+
+13
+00:00:30,754 --> 00:00:35,269
+Something has to fork on it: urgent goes one way, noise goes the other, and the two
+
+14
+00:00:35,269 --> 00:00:36,465
+paths end differently.
+
+15
+00:00:36,465 --> 00:00:40,925
+Routing is that fork, and it is also where you decide, in wiring, what the agent's
+
+16
+00:00:40,925 --> 00:00:42,394
+words are allowed to cause.
+
+17
+00:00:42,394 --> 00:00:46,147
+That is why this lecture belongs to blast radius and not to plumbing.
+
+18
+00:00:46,697 --> 00:00:51,381
+A Switch node is a fork in the road, built entirely from a condition you write once.
+
+19
+00:00:51,381 --> 00:00:55,842
+Here, the condition is almost embarrassingly simple: does the answer contain the
+
+20
+00:00:55,842 --> 00:00:56,511
+word URGENT.
+
+21
+00:00:56,511 --> 00:01:01,140
+It does not need to be clever, because the hard judgement already happened one node
+
+22
+00:01:01,140 --> 00:01:02,812
+ago, inside the system prompt.
+
+23
+00:01:02,812 --> 00:01:05,489
+The configuration is three choices in one panel.
+
+24
+00:01:05,489 --> 00:01:10,173
+What to look at: the agent's answer, dragged in from the left the same way you built
+
+25
+00:01:10,173 --> 00:01:10,787
+the prompt.
+
+26
+00:01:10,787 --> 00:01:15,081
+How to compare: contains, not equals, and that one word is a small robustness
+
+27
+00:01:15,081 --> 00:01:15,471
+lesson.
+
+28
+00:01:15,471 --> 00:01:20,155
+Your agent writes URGENT and then a reason, so an equals check against the bare word
+
+29
+00:01:20,155 --> 00:01:23,612
+would fail every single time while looking perfectly sensible.
+
+30
+00:01:23,612 --> 00:01:26,122
+Contains matches the answer you actually get.
+
+31
+00:01:26,122 --> 00:01:30,137
+And what to match: the word URGENT, in capitals, as the prompt demanded.
+
+32
+00:01:30,137 --> 00:01:34,486
+Everything that does not match falls through to the other exit on its own, and
+
+33
+00:01:34,486 --> 00:01:39,171
+notice what that quietly handles: the day the model gets creative and answers MAYBE,
+
+34
+00:01:39,171 --> 00:01:43,799
+or apologises, or writes a paragraph, the strange answer drops safely into the skip
+
+35
+00:01:43,799 --> 00:01:45,695
+path instead of crashing anything.
+
+36
+00:01:45,695 --> 00:01:50,045
+The fallback exit is your first guardrail that costs literally nothing to own.
+
+37
+00:01:50,595 --> 00:01:53,089
+Two details of this picture repay attention.
+
+38
+00:01:53,089 --> 00:01:57,794
+The question in the diamond is deliberately dumb: one word, contains, done, because
+
+39
+00:01:57,794 --> 00:02:02,329
+the intelligence already happened a box earlier and duplicating judgement in two
+
+40
+00:02:02,329 --> 00:02:04,993
+places is how systems disagree with themselves.
+
+41
+00:02:04,993 --> 00:02:07,374
+And the lower door is wider than it looks.
+
+42
+00:02:07,374 --> 00:02:12,079
+It is not "answers that said SKIP", it is "everything that failed the urgent test",
+
+43
+00:02:12,079 --> 00:02:15,253
+which is what makes it a safety net rather than a label.
+
+44
+00:02:15,253 --> 00:02:19,845
+When you build your own forks, keep that shape: one smart box, one dumb question,
+
+45
+00:02:19,845 --> 00:02:24,210
+and a default path that catches whatever the smart box does on a strange day.
+
+46
+00:02:24,760 --> 00:02:27,135
+Step back and look at the whole shape now.
+
+47
+00:02:27,135 --> 00:02:29,623
+Five boxes, one line of judgement, one fork.
+
+48
+00:02:29,623 --> 00:02:34,316
+That is the entire agent, and it is also the exact shape from Section 2.3: trigger,
+
+49
+00:02:34,316 --> 00:02:35,956
+node, connection, credential.
+
+50
+00:02:35,956 --> 00:02:39,123
+Nothing about this build needed a fifth vocabulary word.
+
+51
+00:02:39,123 --> 00:02:40,876
+Do the placeholders bother you?
+
+52
+00:02:40,876 --> 00:02:42,685
+Good instinct, wrong conclusion.
+
+53
+00:02:42,685 --> 00:02:45,625
+They are not scaffolding waiting for the real thing.
+
+54
+00:02:45,625 --> 00:02:50,375
+They are what makes next week's trial measurable: every run now exits through a door
+
+55
+00:02:50,375 --> 00:02:55,125
+with a name, so the execution log stops being a list of runs and becomes a tally you
+
+56
+00:02:55,125 --> 00:02:55,634
+can read.
+
+57
+00:02:55,634 --> 00:02:59,649
+How many emails left through the urgent door this week, and which ones?
+
+58
+00:02:59,649 --> 00:03:03,833
+That is exactly the question Priya's one week trial has to answer, and the
+
+59
+00:03:03,833 --> 00:03:08,300
+placeholders are what let her answer it by reading, not by re-running anything.
+
+60
+00:03:08,300 --> 00:03:12,485
+When a real action does earn its place here, it will replace a named door,
+
+61
+00:03:12,485 --> 00:03:14,973
+deliberately, with the job description open.
+
+62
+00:03:14,973 --> 00:03:17,121
+That is how read only grows up safely.
+
+63
+00:03:17,671 --> 00:03:21,987
+Do the renames now, while you still remember why each box exists, and before the
+
+64
+00:03:21,987 --> 00:03:25,332
+next lecture's testing gives you something new to think about.
+
+65
+00:03:25,332 --> 00:03:29,810
+Double click, type the sentence, move on: it costs less than a minute for the whole
+
+66
+00:03:29,810 --> 00:03:34,180
+canvas, and it is the cheapest professionalism available anywhere in this course.
+
+67
+00:03:34,180 --> 00:03:38,604
+Six months from now, this workflow will be something Dev opens cold in the Section
+
+68
+00:03:38,604 --> 00:03:42,812
+10 rollout, and whether he can trust it will depend on whether it reads like a
+
+69
+00:03:42,812 --> 00:03:45,509
+colleague's tidy desk or a stranger's junk drawer.
+
+70
+00:03:45,509 --> 00:03:49,717
+The build is functionally complete: trigger, judgement, fork, two named doors.
+
+71
+00:03:49,717 --> 00:03:54,195
+What is missing is proof that it actually works, without you spending a single real
+
+72
+00:03:54,195 --> 00:03:55,274
+AI call to find out.
+
+73
+00:03:55,274 --> 00:03:56,407
+That is next lecture.

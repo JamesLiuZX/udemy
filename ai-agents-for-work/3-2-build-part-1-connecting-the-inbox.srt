@@ -1,0 +1,239 @@
+1
+00:00:00,350 --> 00:00:00,883
+It is not.
+
+2
+00:00:00,883 --> 00:00:04,720
+You already did the hard part, the job description, back in Section 1.4.
+
+3
+00:00:04,720 --> 00:00:09,036
+What is left is mechanical, and this lecture is where you prove that to yourself.
+
+4
+00:00:09,036 --> 00:00:11,754
+Open a blank n8n canvas and click "Add first step".
+
+5
+00:00:11,754 --> 00:00:16,123
+The very first choice you get is a trigger, and for this agent that trigger is one
+
+6
+00:00:16,123 --> 00:00:19,747
+thing: a new email arriving. n8n calls the node Email Trigger, IMAP.
+
+7
+00:00:19,747 --> 00:00:23,744
+Why does every build start at the trigger rather than the interesting part?
+
+8
+00:00:23,744 --> 00:00:27,634
+Because n8n will not let you start anywhere else, and its reason is worth
+
+9
+00:00:27,634 --> 00:00:31,044
+internalising: a workflow is a sentence that begins with "when".
+
+10
+00:00:31,044 --> 00:00:32,217
+When an email arrives.
+
+11
+00:00:32,217 --> 00:00:33,176
+When Monday comes.
+
+12
+00:00:33,176 --> 00:00:37,386
+Until you have chosen the when, there is nothing for any later box to react to.
+
+13
+00:00:37,386 --> 00:00:41,702
+People who sketch the clever middle first end up with logic that has no doorbell.
+
+14
+00:00:41,702 --> 00:00:45,699
+Choose the doorbell first and the rest of the build has somewhere to stand.
+
+15
+00:00:46,249 --> 00:00:50,542
+This is a shorter configuration screen than most people expect from their first
+
+16
+00:00:50,542 --> 00:00:50,814
+node.
+
+17
+00:00:50,814 --> 00:00:55,325
+Two visible settings, and one button: "Set up credential." That button is doing the
+
+18
+00:00:55,325 --> 00:00:55,978
+actual work.
+
+19
+00:00:55,978 --> 00:01:00,489
+Look at the Mailbox Name field and recognise it, because you have met it before, on
+
+20
+00:01:00,489 --> 00:01:00,815
+paper.
+
+21
+00:01:00,815 --> 00:01:04,674
+This is the scope line of the job description turned into a form field.
+
+22
+00:01:04,674 --> 00:01:09,076
+Leave it on the default and the agent reads everything that lands anywhere in the
+
+23
+00:01:09,076 --> 00:01:09,403
+inbox.
+
+24
+00:01:09,403 --> 00:01:13,425
+Type the name of one folder, the way Priya types Renewals, and the trigger
+
+25
+00:01:13,425 --> 00:01:15,979
+physically cannot see past that folder's walls.
+
+26
+00:01:15,979 --> 00:01:20,382
+One field, and the difference between "reads my email" and "reads the one shelf I
+
+27
+00:01:20,382 --> 00:01:21,034
+pointed at".
+
+28
+00:01:21,034 --> 00:01:25,328
+If your provider does folders as labels, same move, the label's name goes here.
+
+29
+00:01:25,328 --> 00:01:29,621
+Spend the thirty seconds to set it now, even on a practice inbox, purely so the
+
+30
+00:01:29,621 --> 00:01:31,469
+habit exists before the stakes do.
+
+31
+00:01:32,019 --> 00:01:36,179
+Gmail, Outlook and most providers publish these settings on a single support page,
+
+32
+00:01:36,179 --> 00:01:40,086
+and most ask you to generate an app password rather than use your normal one.
+
+33
+00:01:40,086 --> 00:01:44,297
+That is a good sign, not a hurdle: it means a leaked n8n credential cannot log into
+
+34
+00:01:44,297 --> 00:01:47,797
+your actual account settings, only read the mailbox you scoped it to.
+
+35
+00:01:47,797 --> 00:01:51,958
+An app password, if you have never made one, is a spare key your provider cuts for
+
+36
+00:01:51,958 --> 00:01:56,067
+one specific app: a long generated string, shown to you once, that works for mail
+
+37
+00:01:56,067 --> 00:02:00,176
+access and nothing else, and that you can cancel on its own without changing your
+
+38
+00:02:00,176 --> 00:02:00,887
+real password.
+
+39
+00:02:00,887 --> 00:02:04,387
+Generating one takes about a minute on your provider's security page.
+
+40
+00:02:04,387 --> 00:02:08,598
+At Calloway and Finch the mail runs on a company server, so Priya's version of this
+
+41
+00:02:08,598 --> 00:02:12,860
+step was one message to the office IT contact asking for the host name, the port and
+
+42
+00:02:12,860 --> 00:02:14,483
+an app password for her account.
+
+43
+00:02:14,483 --> 00:02:18,694
+If that is your situation too, that one sentence email is the whole step, and it is
+
+44
+00:02:18,694 --> 00:02:20,521
+a normal request, not a strange one.
+
+45
+00:02:20,521 --> 00:02:24,732
+Leave the SSL toggle on wherever you see it: it simply means the connection travels
+
+46
+00:02:24,732 --> 00:02:28,841
+encrypted, and every provider expects it. [SCREENSHOT-NEEDED: your own provider's
+
+47
+00:02:28,841 --> 00:02:33,052
+app-password screen, since that page belongs to your account and cannot be captured
+
+48
+00:02:33,052 --> 00:02:33,661
+generically]
+
+49
+00:02:34,211 --> 00:02:35,858
+That last point is deliberate.
+
+50
+00:02:35,858 --> 00:02:40,414
+A trigger with nothing downstream is not a mistake, it is exactly where every build
+
+51
+00:02:40,414 --> 00:02:40,799
+starts.
+
+52
+00:02:40,799 --> 00:02:45,355
+But do not leave the lecture without watching the trigger actually catch something.
+
+53
+00:02:45,355 --> 00:02:49,802
+Use the node's fetch test option to pull a recent email through, and look at what
+
+54
+00:02:49,802 --> 00:02:54,029
+appears: one row, with the sender, the subject and the body in named columns.
+
+55
+00:02:54,029 --> 00:02:57,653
+That is the wire table habit from Section 0 paying its first rent.
+
+56
+00:02:57,653 --> 00:03:01,935
+If the fetch comes back empty, the folder you named has no mail in it, so send
+
+57
+00:03:01,935 --> 00:03:04,131
+yourself a test message and fetch again.
+
+58
+00:03:04,131 --> 00:03:08,743
+Thirty seconds, and you have seen with your own eyes exactly what the next lecture's
+
+59
+00:03:08,743 --> 00:03:09,895
+agent will be handed.
+
+60
+00:03:09,895 --> 00:03:13,629
+Next lecture connects the piece that actually reads what lands here.

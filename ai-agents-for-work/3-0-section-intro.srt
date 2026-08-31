@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:03,613
+This is the section where building stops being abstract.
+
+2
+00:00:03,613 --> 00:00:08,450
+Seven lectures, one agent, built screen by screen against the exact job description
+
+3
+00:00:08,450 --> 00:00:09,731
+method from Section 1.
+
+4
+00:00:09,731 --> 00:00:14,451
+By the end you will have imported and connected the real thing, not a demo of it.

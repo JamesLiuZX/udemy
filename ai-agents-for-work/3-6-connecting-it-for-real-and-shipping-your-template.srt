@@ -1,0 +1,283 @@
+1
+00:00:00,350 --> 00:00:04,156
+Open the Email Trigger node one more time and unpin the test data.
+
+2
+00:00:04,156 --> 00:00:08,826
+Do the full ritual from Section 2.3 while you are at it: walk every node once and
+
+3
+00:00:08,826 --> 00:00:13,554
+check for the solid pin icon anywhere, because one forgotten pin is the difference
+
+4
+00:00:13,554 --> 00:00:16,495
+between an agent and a very convincing screensaver.
+
+5
+00:00:16,495 --> 00:00:21,107
+Then set up your real IMAP credential, the one from Section 3.2, pointed at your
+
+6
+00:00:21,107 --> 00:00:22,318
+real inbox or folder.
+
+7
+00:00:22,318 --> 00:00:24,452
+Nothing else in the workflow changes.
+
+8
+00:00:24,452 --> 00:00:29,180
+That is the entire point of building it this way: the plumbing was never the risky
+
+9
+00:00:29,180 --> 00:00:29,468
+part.
+
+10
+00:00:29,468 --> 00:00:34,196
+If real client mail is about to flow through this, one errand comes first, and you
+
+11
+00:00:34,196 --> 00:00:39,040
+were warned it was coming: the ten minute read of your model provider's current data
+
+12
+00:00:39,040 --> 00:00:40,423
+terms, from Section 2.2.
+
+13
+00:00:40,423 --> 00:00:41,634
+Do it now, not after.
+
+14
+00:00:41,634 --> 00:00:46,305
+If the terms do not sit right for client content, the fix is the paid tier of the
+
+15
+00:00:46,305 --> 00:00:50,860
+same provider or a different one, and either way it is a two minute swap of the
+
+16
+00:00:50,860 --> 00:00:51,494
+model node.
+
+17
+00:00:51,494 --> 00:00:55,991
+What you should not do is decide the reading can wait until the agent has been
+
+18
+00:00:55,991 --> 00:00:56,914
+running a month.
+
+19
+00:00:57,464 --> 00:01:00,735
+That fourth point matters more than it sounds like it does.
+
+20
+00:01:00,735 --> 00:01:02,232
+You have proven the wiring.
+
+21
+00:01:02,232 --> 00:01:06,723
+You have not yet proven the judgement on your own real, messy inbox, with its own
+
+22
+00:01:06,723 --> 00:01:07,610
+real edge cases.
+
+23
+00:01:07,610 --> 00:01:09,606
+Trial exists precisely for that gap.
+
+24
+00:01:09,606 --> 00:01:12,268
+Two of the other points hide traps worth naming.
+
+25
+00:01:12,268 --> 00:01:16,814
+Connected, not just added, means the credential has actually spoken to the server:
+
+26
+00:01:16,814 --> 00:01:21,471
+use the trigger's fetch test one more time and watch a real email come back, because
+
+27
+00:01:21,471 --> 00:01:25,020
+a credential that saved without erroring has proven nothing yet.
+
+28
+00:01:25,020 --> 00:01:29,455
+And when you flip the workflow's Active toggle, understand what you switched on:
+
+29
+00:01:29,455 --> 00:01:34,002
+from now on it reacts to mail as it arrives, while n8n is running, which on a self
+
+30
+00:01:34,002 --> 00:01:36,552
+hosted install means while your machine is on.
+
+31
+00:01:36,552 --> 00:01:41,099
+Expect it to work your day forward from here, not to sweep the archive, and expect
+
+32
+00:01:41,099 --> 00:01:43,261
+nothing overnight if the laptop sleeps.
+
+33
+00:01:43,261 --> 00:01:47,863
+That is the honest shape of free self hosting from Section 2.1, met in the wild for
+
+34
+00:01:47,863 --> 00:01:48,695
+the first time.
+
+35
+00:01:49,245 --> 00:01:50,892
+Why insist on this exact order?
+
+36
+00:01:50,892 --> 00:01:55,089
+Because each step only proves something if the ones before it already happened.
+
+37
+00:01:55,089 --> 00:01:58,808
+A manual run before unpinning tests the frozen sample, not your inbox.
+
+38
+00:01:58,808 --> 00:02:02,686
+A folder check after activation is an audit of something already running.
+
+39
+00:02:02,686 --> 00:02:07,096
+Done in sequence, each step hands the next one solid ground, and the whole ceremony
+
+40
+00:02:07,096 --> 00:02:08,424
+takes under five minutes.
+
+41
+00:02:08,424 --> 00:02:10,443
+Skipped steps do not fail loudly here.
+
+42
+00:02:10,443 --> 00:02:14,162
+They fail three weeks later, in the middle of the trial, as mysteries.
+
+43
+00:02:14,712 --> 00:02:18,443
+This is exactly how C01, the file in your course resources, was made.
+
+44
+00:02:18,443 --> 00:02:22,930
+Download yours the same way, and you have something genuinely worth forwarding: not
+
+45
+00:02:22,930 --> 00:02:27,094
+a screenshot of an idea, a workflow someone else can open and run in minutes.
+
+46
+00:02:27,094 --> 00:02:31,149
+Be clear about what rides inside that file, because it is more than wiring.
+
+47
+00:02:31,149 --> 00:02:35,366
+The export carries your node layout, your routing rule, and your entire system
+
+48
+00:02:35,366 --> 00:02:38,502
+prompt: the judgement paragraph travels with the template.
+
+49
+00:02:38,502 --> 00:02:42,935
+That is what makes forwarding it generous, a colleague receives your thinking, not
+
+50
+00:02:42,935 --> 00:02:47,423
+just your plumbing, and it is also worth a glance before you share one more widely:
+
+51
+00:02:47,423 --> 00:02:50,775
+anything you typed into the briefing goes where the file goes.
+
+52
+00:02:50,775 --> 00:02:53,100
+Two habits to start with your first export.
+
+53
+00:02:53,100 --> 00:02:57,480
+Put the date in the filename, because prompts get tuned and you will want to know
+
+54
+00:02:57,480 --> 00:02:59,102
+which version a colleague has.
+
+55
+00:02:59,102 --> 00:03:03,589
+And keep each export somewhere deliberate, because in Section 10 these files become
+
+56
+00:03:03,589 --> 00:03:07,915
+the thing Priya hands her team, and a template you cannot find is a rollout that
+
+57
+00:03:07,915 --> 00:03:08,780
+does not happen.
+
+58
+00:03:09,330 --> 00:03:13,481
+Before you leave, put the trial on the calendar the way the job description
+
+59
+00:03:13,481 --> 00:03:16,415
+promised: one week, every flag reviewed each morning.
+
+60
+00:03:16,415 --> 00:03:21,009
+Priya's version is five minutes with the first coffee: read what the agent flagged,
+
+61
+00:03:21,009 --> 00:03:25,437
+say each verdict out loud, and keep two tallies on a sticky note, flags I agreed
+
+62
+00:03:25,437 --> 00:03:28,426
+with, and urgent emails it missed that I found myself.
+
+63
+00:03:28,426 --> 00:03:32,688
+Those two numbers are the whole trial, and Section 7 turns them into the pass
+
+64
+00:03:32,688 --> 00:03:33,187
+decision.
+
+65
+00:03:33,187 --> 00:03:37,615
+The habit costs a coffee's length and buys you the only thing that matters here:
+
+66
+00:03:37,615 --> 00:03:39,275
+trust with evidence behind it.
+
+67
+00:03:39,275 --> 00:03:43,593
+One agent down, three to go, and every one from here reuses something you have
+
+68
+00:03:43,593 --> 00:03:44,589
+already done once.
+
+69
+00:03:44,589 --> 00:03:46,416
+Next lecture closes this section.
+
+70
+00:03:46,416 --> 00:03:50,955
+Section 4 starts the next build: turning a meeting into action items nobody has to
+
+71
+00:03:50,955 --> 00:03:51,287
+chase.
