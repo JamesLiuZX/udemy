@@ -114,8 +114,7 @@
   FAIL  [11.3] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
   FAIL  [11.4] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
   FAIL  [11.5] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
-  FAIL  [3.3] true peak -0.8 dBTP exceeds -1.0; audio will clip.
 
-  106 fail · 8 warn
+  105 fail · 8 warn
   NOT ready to submit.
 
