@@ -1,0 +1,343 @@
+1
+00:00:00,350 --> 00:00:03,260
+Picture the moment right before this section existed.
+
+2
+00:00:03,260 --> 00:00:07,653
+A script lands on Dana's desk claiming the socks are clinically proven to reduce
+
+3
+00:00:07,653 --> 00:00:09,080
+swelling by forty percent.
+
+4
+00:00:09,080 --> 00:00:10,783
+Nobody had ever run that study.
+
+5
+00:00:10,783 --> 00:00:14,571
+If nobody had asked the right question, it ships under Harlan's name.
+
+6
+00:00:14,571 --> 00:00:18,799
+That near miss was one specific kind of failure: a claim nobody could defend.
+
+7
+00:00:18,799 --> 00:00:23,411
+It's one of exactly four ways an AI ad actually gets pulled, refunded, or flagged, a
+
+8
+00:00:23,411 --> 00:00:27,749
+claim that overstates what the product does, a rights or licence gap behind the
+
+9
+00:00:27,749 --> 00:00:32,362
+person or the music, a brand or product that drifted from what it actually is, and a
+
+10
+00:00:32,362 --> 00:00:35,436
+disclosure that's missing where a platform requires one.
+
+11
+00:00:35,436 --> 00:00:38,896
+Nearly every real failure sorts cleanly into one of these four.
+
+12
+00:00:38,896 --> 00:00:43,508
+Naming all four now, not just the one that caught Harlan, is what lets you check for
+
+13
+00:00:43,508 --> 00:00:45,814
+a failure you haven't personally seen yet.
+
+14
+00:00:45,814 --> 00:00:50,371
+You already know what a mangled spec overlay looks like, because Section 3.4 showed
+
+15
+00:00:50,371 --> 00:00:50,811
+you one.
+
+16
+00:00:50,811 --> 00:00:54,050
+You may never have seen a music-licensing gap specifically.
+
+17
+00:00:54,050 --> 00:00:58,498
+But if you know "rights gap" is a category worth checking, you catch it the first
+
+18
+00:00:58,498 --> 00:01:02,781
+time it shows up in your own batch, not after it's already cost you something.
+
+19
+00:01:03,331 --> 00:01:06,238
+Notice this table isn't introducing four new rules.
+
+20
+00:01:06,238 --> 00:01:09,545
+It's naming the pattern connecting rules you already have.
+
+21
+00:01:09,545 --> 00:01:12,567
+Product drift is Section 3.3's brand-control problem.
+
+22
+00:01:12,567 --> 00:01:15,361
+A rights gap is Section 4.1's licence-tier catch.
+
+23
+00:01:15,361 --> 00:01:18,725
+You've been fixing individual instances of these all along.
+
+24
+00:01:18,725 --> 00:01:23,400
+This section just gives you the category, so you can check for the pattern instead
+
+25
+00:01:23,400 --> 00:01:26,421
+of waiting to recognise each specific instance again.
+
+26
+00:01:26,421 --> 00:01:29,956
+That's the actual value of a taxonomy over a list of examples.
+
+27
+00:01:29,956 --> 00:01:32,579
+A list tells you what already went wrong once.
+
+28
+00:01:32,579 --> 00:01:36,969
+A category tells you what to look for in a draft that's never failed this way
+
+29
+00:01:36,969 --> 00:01:37,368
+before.
+
+30
+00:01:37,368 --> 00:01:41,929
+Notice, too, that all four categories share one property: none of them are about
+
+31
+00:01:41,929 --> 00:01:43,241
+whether the ad is good.
+
+32
+00:01:43,241 --> 00:01:47,916
+A perfectly persuasive ad can still fail every one of these checks, and a mediocre
+
+33
+00:01:47,916 --> 00:01:49,626
+one can pass all four cleanly.
+
+34
+00:01:49,626 --> 00:01:51,793
+Section 8 handles whether an ad works.
+
+35
+00:01:51,793 --> 00:01:56,297
+This section only asks whether it's allowed to run at all, a genuinely separate
+
+36
+00:01:56,297 --> 00:01:59,319
+question that's easy to blur under deadline pressure.
+
+37
+00:01:59,869 --> 00:02:04,353
+Four questions, asked of every single draft, not four separate audits run once a
+
+38
+00:02:04,353 --> 00:02:04,801
+quarter.
+
+39
+00:02:04,801 --> 00:02:09,509
+That's the actual shape of the checklist Section 6.6 builds properly, and it's worth
+
+40
+00:02:09,509 --> 00:02:13,096
+previewing here so you recognise it immediately when it arrives.
+
+41
+00:02:13,096 --> 00:02:15,170
+Run them in this order, deliberately.
+
+42
+00:02:15,170 --> 00:02:17,860
+Claims first, cheapest to fix, a line rewritten.
+
+43
+00:02:17,860 --> 00:02:21,840
+Rights second, can force a whole recast but still fixable before spend.
+
+44
+00:02:21,840 --> 00:02:24,530
+Accuracy third, usually just needs regenerating.
+
+45
+00:02:24,530 --> 00:02:28,902
+Disclosure last, almost never a reason to kill a draft, only a reason to add a
+
+46
+00:02:28,902 --> 00:02:29,238
+label.
+
+47
+00:02:29,238 --> 00:02:32,769
+Front-load the checks that catch the biggest problems earliest.
+
+48
+00:02:32,769 --> 00:02:35,628
+Notice the questions are all answerable, not vague.
+
+49
+00:02:35,628 --> 00:02:40,280
+"Could I defend this" has a yes or no. "Is every voice licensed" has a yes or no. A
+
+50
+00:02:40,280 --> 00:02:44,764
+pre-flight check that asks vague questions gets skipped under deadline pressure.
+
+51
+00:02:44,764 --> 00:02:47,734
+One that asks answerable questions gets actually run.
+
+52
+00:02:47,734 --> 00:02:52,330
+Which of these four would you be most tempted to skip on a Friday afternoon, batch
+
+53
+00:02:52,330 --> 00:02:53,956
+due, budget already approved?
+
+54
+00:02:53,956 --> 00:02:58,608
+Be honest with yourself about the answer, because that's exactly the question worth
+
+55
+00:02:58,608 --> 00:03:02,811
+building a habit around rather than trusting willpower to catch every time.
+
+56
+00:03:03,361 --> 00:03:06,980
+One honest note about where the real risk actually concentrates.
+
+57
+00:03:06,980 --> 00:03:11,674
+Of the four categories, claims overreach is the one that catches the most drafts in
+
+58
+00:03:11,674 --> 00:03:15,180
+practice, and it's the one Harlan's account actually ran into.
+
+59
+00:03:15,180 --> 00:03:19,817
+An early cut of an ad claimed a specific swelling-reduction number nobody had ever
+
+60
+00:03:19,817 --> 00:03:20,213
+tested.
+
+61
+00:03:20,213 --> 00:03:21,174
+It never shipped.
+
+62
+00:03:21,174 --> 00:03:25,867
+But it's exactly the kind of claim that's easy to write without noticing, because a
+
+63
+00:03:25,867 --> 00:03:30,448
+specific number sounds more credible than a vague one, and credibility is exactly
+
+64
+00:03:30,448 --> 00:03:32,257
+what a script is trying to earn.
+
+65
+00:03:32,257 --> 00:03:34,350
+That's the trap worth naming plainly.
+
+66
+00:03:34,350 --> 00:03:39,100
+Everything Section 2.3's hook taxonomy taught you about specificity, that a concrete
+
+67
+00:03:39,100 --> 00:03:43,397
+detail beats a vague one, is also exactly what makes an overreached claim so
+
+68
+00:03:43,397 --> 00:03:44,415
+tempting to write.
+
+69
+00:03:44,415 --> 00:03:49,109
+The same instinct that makes a good ad good is the instinct that needs the tightest
+
+70
+00:03:49,109 --> 00:03:49,448
+check.
+
+71
+00:03:49,448 --> 00:03:53,859
+That's not a coincidence, and it's why claims get their own full lecture next,
+
+72
+00:03:53,859 --> 00:03:56,064
+rather than a single bullet point here.
+
+73
+00:03:56,614 --> 00:04:01,080
+Next lecture takes the category that actually caught Harlan's worst draft, and
+
+74
+00:04:01,080 --> 00:04:05,490
+builds the specific test you can run on any claim before it ships, not just a
+
+75
+00:04:05,490 --> 00:04:07,952
+general instinct that something sounds off.
+
+76
+00:04:07,952 --> 00:04:11,388
+Keep the four-question framework close at hand while you go.
+
+77
+00:04:11,388 --> 00:04:15,740
+Each of the next three lectures takes one question and turns it into a real,
+
+78
+00:04:15,740 --> 00:04:16,599
+specific check.
+
+79
+00:04:16,599 --> 00:04:21,409
+By Section 6.6, all four come back together as B05, one checklist you run on a whole
+
+80
+00:04:21,409 --> 00:04:23,413
+batch instead of once per question.
+
+81
+00:04:23,413 --> 00:04:25,818
+Before that, do one honest pass right now.
+
+82
+00:04:25,818 --> 00:04:30,571
+Pull up whatever you generated in Section 4.6's workshop and run the four questions
+
+83
+00:04:30,571 --> 00:04:32,575
+against it, out loud if that helps.
+
+84
+00:04:32,575 --> 00:04:37,270
+You won't have the deep answer to each one yet, this section builds those over the
+
+85
+00:04:37,270 --> 00:04:42,023
+next three lectures, but you'll already know, roughly, where your own set is strong
+
+86
+00:04:42,023 --> 00:04:46,031
+and where it's worth paying closer attention as those lectures arrive.

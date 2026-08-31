@@ -1,0 +1,335 @@
+1
+00:00:00,350 --> 00:00:04,007
+That line was one draft away from going out under Harlan's name.
+
+2
+00:00:04,007 --> 00:00:08,578
+Nobody wrote it to deceive anyone, they were reaching for something that sounded
+
+3
+00:00:08,578 --> 00:00:10,463
+more concrete than the real spec.
+
+4
+00:00:10,463 --> 00:00:14,692
+It also had no study behind it, and no amount of small print changes that.
+
+5
+00:00:14,692 --> 00:00:19,320
+Somewhere in every marketer's instincts is the idea that a small-print disclaimer
+
+6
+00:00:19,320 --> 00:00:21,434
+buys cover for a claim like that one.
+
+7
+00:00:21,434 --> 00:00:22,062
+It doesn't.
+
+8
+00:00:22,062 --> 00:00:26,691
+This is the single most common way an ad crosses a line its writer didn't mean to
+
+9
+00:00:26,691 --> 00:00:27,033
+cross.
+
+10
+00:00:27,033 --> 00:00:29,947
+A claim is either true and defensible, or it isn't.
+
+11
+00:00:29,947 --> 00:00:34,690
+Adding "results may vary" underneath a number you invented doesn't move that number
+
+12
+00:00:34,690 --> 00:00:36,233
+into the defensible column.
+
+13
+00:00:36,233 --> 00:00:40,918
+It just documents, in writing, that you knew the claim needed a caveat and shipped
+
+14
+00:00:40,918 --> 00:00:41,489
+it anyway.
+
+15
+00:00:41,489 --> 00:00:46,060
+A disclaimer does genuinely work around a true but variable outcome, "individual
+
+16
+00:00:46,060 --> 00:00:49,089
+results vary" under an honest before-and-after photo.
+
+17
+00:00:49,089 --> 00:00:50,117
+That's legitimate.
+
+18
+00:00:50,117 --> 00:00:54,803
+The mistake is pointing that same small print at a claim that isn't variable, it's
+
+19
+00:00:54,803 --> 00:00:57,774
+simply false, the way "reduces swelling by 40%" was.
+
+20
+00:00:57,774 --> 00:01:01,202
+No small print turns an invented number into a measured one.
+
+21
+00:01:01,752 --> 00:01:05,987
+Advertising law has a name for the actual test running underneath this table:
+
+22
+00:01:05,987 --> 00:01:10,331
+substantiation, having real evidence behind a claim before you say it out loud.
+
+23
+00:01:10,331 --> 00:01:13,631
+Could you produce the evidence, right now, if someone asked?
+
+24
+00:01:13,631 --> 00:01:17,921
+The spec claim passes because it's a manufacturing fact, checkable against the
+
+25
+00:01:17,921 --> 00:01:18,745
+product itself.
+
+26
+00:01:18,745 --> 00:01:23,200
+The audience description passes because it's not a claim about an outcome at all.
+
+27
+00:01:23,200 --> 00:01:27,820
+The swelling number fails, disclaimer or not, because the evidence it implies simply
+
+28
+00:01:27,820 --> 00:01:28,590
+doesn't exist.
+
+29
+00:01:28,590 --> 00:01:30,734
+That's the whole test, in one question.
+
+30
+00:01:30,734 --> 00:01:35,354
+Not "does this sound defensible." Could you actually defend it, out loud, to someone
+
+31
+00:01:35,354 --> 00:01:36,839
+whose job is to ask you to.
+
+32
+00:01:36,839 --> 00:01:41,348
+Notice the two safe rows pass for different reasons, and that distinction matters.
+
+33
+00:01:41,348 --> 00:01:45,858
+One survives as a checkable fact, the other because it never claimed an outcome at
+
+34
+00:01:45,858 --> 00:01:46,078
+all.
+
+35
+00:01:46,078 --> 00:01:50,588
+Knowing them apart tells you where the real creative freedom lives: you don't lose
+
+36
+00:01:50,588 --> 00:01:53,172
+specificity or a strong hook by staying honest.
+
+37
+00:01:53,172 --> 00:01:57,792
+You lose only the shortcut of inventing an outcome instead of describing the product
+
+38
+00:01:57,792 --> 00:02:01,367
+accurately enough that the description alone does the persuading.
+
+39
+00:02:01,917 --> 00:02:05,218
+The fix here wasn't softening the claim with a disclaimer.
+
+40
+00:02:05,218 --> 00:02:10,000
+It was replacing an invented number with a real one Dana could stand behind in front
+
+41
+00:02:10,000 --> 00:02:11,138
+of anyone who asked.
+
+42
+00:02:11,138 --> 00:02:15,863
+Same product, same confidence in the delivery, a claim that's actually true instead
+
+43
+00:02:15,863 --> 00:02:17,627
+of one that merely sounds true.
+
+44
+00:02:17,627 --> 00:02:20,075
+Notice, too, what this rewrite didn't cost.
+
+45
+00:02:20,075 --> 00:02:24,629
+The delivery is still specific, still concrete, still exactly the kind of detail
+
+46
+00:02:24,629 --> 00:02:26,963
+Section 2.3 taught you a good hook needs.
+
+47
+00:02:26,963 --> 00:02:29,695
+Nothing about honesty here required going vague.
+
+48
+00:02:29,695 --> 00:02:34,306
+It required going true instead of going invented, which turned out to be the same
+
+49
+00:02:34,306 --> 00:02:38,859
+amount of work as the fabricated version, just aimed at a real fact instead of a
+
+50
+00:02:38,859 --> 00:02:39,713
+convenient one.
+
+51
+00:02:40,263 --> 00:02:44,893
+One test, worth running on every claim before it ships, not just the ones that feel
+
+52
+00:02:44,893 --> 00:02:45,228
+risky.
+
+53
+00:02:45,228 --> 00:02:49,691
+Say the line out loud, exactly as written, to an imagined compliance officer, or
+
+54
+00:02:49,691 --> 00:02:52,870
+better, to the actual customer the ad is trying to reach.
+
+55
+00:02:52,870 --> 00:02:57,054
+If that sentence would survive being asked "how do you know that," ship it.
+
+56
+00:02:57,054 --> 00:02:59,564
+If it wouldn't, no disclaimer fixes that gap.
+
+57
+00:02:59,564 --> 00:03:01,293
+Only a different sentence does.
+
+58
+00:03:01,293 --> 00:03:03,469
+Do this before you generate, not after.
+
+59
+00:03:03,469 --> 00:03:08,155
+It's far easier to write a defensible line from the start than to catch an overreach
+
+60
+00:03:08,155 --> 00:03:12,673
+buried in a finished script, especially once it's been performed by an avatar and
+
+61
+00:03:12,673 --> 00:03:15,350
+sounds convincing coming out of someone's mouth.
+
+62
+00:03:15,350 --> 00:03:19,144
+A false claim delivered with real conviction is not easier to catch.
+
+63
+00:03:19,144 --> 00:03:23,662
+It's harder, because the performance itself is doing work to make the words sound
+
+64
+00:03:23,662 --> 00:03:24,778
+truer than they are.
+
+65
+00:03:24,778 --> 00:03:29,185
+That's a genuinely new risk this course's own workflow introduces, worth naming
+
+66
+00:03:29,185 --> 00:03:31,081
+plainly rather than glossing over.
+
+67
+00:03:31,081 --> 00:03:33,368
+A flat script on a page invites scrutiny.
+
+68
+00:03:33,368 --> 00:03:36,157
+A confidently performed avatar clip invites trust.
+
+69
+00:03:36,157 --> 00:03:40,564
+Check the words before the performance gets a chance to earn trust they haven't
+
+70
+00:03:40,564 --> 00:03:41,457
+actually earned.
+
+71
+00:03:42,007 --> 00:03:46,705
+Next lecture takes on a different category entirely: not whether a claim is true,
+
+72
+00:03:46,705 --> 00:03:51,577
+but whether your audience knows they're watching something AI made, and what happens
+
+73
+00:03:51,577 --> 00:03:54,767
+when a platform decides that disclosure isn't optional.
+
+74
+00:03:54,767 --> 00:03:59,639
+Run this exact test on your own three video ads from Section 4.6 before you move on.
+
+75
+00:03:59,639 --> 00:04:04,279
+Say each script's proof line out loud, to yourself, as if you were the one being
+
+76
+00:04:04,279 --> 00:04:05,381
+asked to defend it.
+
+77
+00:04:05,381 --> 00:04:09,789
+If any line makes you hesitate even slightly, that hesitation is the signal.
+
+78
+00:04:09,789 --> 00:04:14,661
+Rewrite it now, while it's one sentence, not later, once it's a finished clip you're
+
+79
+00:04:14,661 --> 00:04:15,763
+reluctant to touch.
+
+80
+00:04:15,763 --> 00:04:18,895
+Do the same pass on your statics from Section 3.6 too.
+
+81
+00:04:18,895 --> 00:04:23,767
+Claims overreach isn't a video-specific risk, and an overlay you generated weeks ago
+
+82
+00:04:23,767 --> 00:04:27,943
+is just as easy to have forgotten about as a script you wrote yesterday.
+
+83
+00:04:27,943 --> 00:04:29,915
+The test doesn't change by format.
+
+84
+00:04:29,915 --> 00:04:32,235
+Only the medium carrying the claim does.

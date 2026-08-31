@@ -1,0 +1,87 @@
+1
+00:00:00,350 --> 00:00:05,012
+Two drafts almost went out under Harlan's name this section: a swelling claim nobody
+
+2
+00:00:05,012 --> 00:00:08,342
+had tested, and an avatar running on the wrong licence tier.
+
+3
+00:00:08,342 --> 00:00:09,230
+Neither shipped.
+
+4
+00:00:09,230 --> 00:00:13,670
+Seven lectures ago, this section opened with a promise: catch the unshippable ad
+
+5
+00:00:13,670 --> 00:00:16,501
+before it spends money or triggers a policy strike.
+
+6
+00:00:16,501 --> 00:00:17,833
+Here's the honest tally.
+
+7
+00:00:17,833 --> 00:00:22,384
+You now know the four ways an AI ad actually fails: an overreached claim, a rights
+
+8
+00:00:22,384 --> 00:00:24,881
+gap, product drift, and a missing disclosure.
+
+9
+00:00:24,881 --> 00:00:29,377
+You've seen two of those categories catch something real on Harlan's own account,
+
+10
+00:00:29,377 --> 00:00:33,428
+the claim and the licence-tier gap, both killed before a dollar of spend.
+
+11
+00:00:33,428 --> 00:00:37,979
+You know disclosure moved this year from a platform courtesy toward actual law, in
+
+12
+00:00:37,979 --> 00:00:39,089
+more than one place.
+
+13
+00:00:39,089 --> 00:00:43,751
+And you've built B05, the checklist that runs all four checks with a named owner and
+
+14
+00:00:43,751 --> 00:00:48,247
+a real checkpoint, not a list you have to reconstruct from memory under pressure.
+
+15
+00:00:48,247 --> 00:00:51,521
+That's not a section about being cautious for its own sake.
+
+16
+00:00:51,521 --> 00:00:56,128
+It's the difference between a batch that's fast to make and a batch that's actually
+
+17
+00:00:56,128 --> 00:00:57,959
+safe to spend real money testing.
+
+18
+00:00:58,509 --> 00:01:03,060
+Section seven is where everything from Sections two through six actually earns its
+
+19
+00:01:03,060 --> 00:01:07,722
+keep: a batch, briefed properly, generated at volume, checked for every way it could
+
+20
+00:01:07,722 --> 00:01:12,106
+fail, and now ready for the one thing that actually tells you which angle wins.
+
+21
+00:01:12,106 --> 00:01:13,826
+Nothing gets rebuilt from here.
+
+22
+00:01:13,826 --> 00:01:14,659
+It gets tested.

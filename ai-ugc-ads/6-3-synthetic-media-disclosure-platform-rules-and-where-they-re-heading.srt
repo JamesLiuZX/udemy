@@ -1,0 +1,363 @@
+1
+00:00:00,350 --> 00:00:04,814
+The question was simple: does this need a synthetic-media disclosure, a caption
+
+2
+00:00:04,814 --> 00:00:09,279
+telling the viewer plainly that the person on screen isn't real, before it goes
+
+3
+00:00:09,279 --> 00:00:10,748
+anywhere near an audience?
+
+4
+00:00:10,748 --> 00:00:11,144
+It did.
+
+5
+00:00:11,144 --> 00:00:14,139
+Adding it took less time than reading this paragraph.
+
+6
+00:00:14,139 --> 00:00:18,716
+Back in Section 4.1, that flag was a line item, one more thing to check before an
+
+7
+00:00:18,716 --> 00:00:19,847
+avatar clip shipped.
+
+8
+00:00:19,847 --> 00:00:23,859
+It deserves its own lecture now, because the ground underneath it moved
+
+9
+00:00:23,859 --> 00:00:25,215
+substantially this year.
+
+10
+00:00:25,215 --> 00:00:29,736
+As of this recording, Meta requires disclosure on AI-generated or AI-modified ad
+
+11
+00:00:29,736 --> 00:00:32,845
+content as a matter of enforced policy, not a courtesy.
+
+12
+00:00:32,845 --> 00:00:36,348
+TikTok requires the same for anything significantly AI-edited.
+
+13
+00:00:36,348 --> 00:00:39,117
+And this is no longer only a platform preference.
+
+14
+00:00:39,117 --> 00:00:43,638
+Regulators have started writing some version of the same requirement into actual
+
+15
+00:00:43,638 --> 00:00:43,864
+law.
+
+16
+00:00:43,864 --> 00:00:48,329
+What does that mean for you, given everything you've built since Section three?
+
+17
+00:00:48,329 --> 00:00:52,963
+Almost every asset in your library qualifies: a generated static, an AI avatar, an
+
+18
+00:00:52,963 --> 00:00:54,489
+AI-touched-up product shot.
+
+19
+00:00:54,489 --> 00:00:55,902
+This isn't a corner case.
+
+20
+00:00:55,902 --> 00:01:00,310
+It's the default condition of the creative this course has taught you to make.
+
+21
+00:01:00,310 --> 00:01:03,531
+That's not a reason for alarm, it's a reason for a habit.
+
+22
+00:01:03,531 --> 00:01:08,165
+Treated as the default assumption, the way this lecture shows you, disclosure is a
+
+23
+00:01:08,165 --> 00:01:12,573
+five-second addition to a workflow you've already built, not a redesign of it.
+
+24
+00:01:13,123 --> 00:01:16,291
+Notice the direction this table moves in, left to right.
+
+25
+00:01:16,291 --> 00:01:20,196
+The platform rows are policy, enforced by rejection and account risk.
+
+26
+00:01:20,196 --> 00:01:23,534
+The regulation rows are law, enforced by an actual penalty.
+
+27
+00:01:23,534 --> 00:01:28,230
+That's the genuinely new development this year: the same underlying idea, don't let
+
+28
+00:01:28,230 --> 00:01:32,757
+a viewer mistake synthetic content for something real, has started showing up in
+
+29
+00:01:32,757 --> 00:01:35,473
+statute, not just a platform's terms of service.
+
+30
+00:01:35,473 --> 00:01:38,132
+Ask yourself which row actually applies to you.
+
+31
+00:01:38,132 --> 00:01:42,829
+If your audience is anywhere near New York, or if you're running ads that reach the
+
+32
+00:01:42,829 --> 00:01:47,582
+EU, the right-hand rows aren't hypothetical, they're your actual exposure, on top of
+
+33
+00:01:47,582 --> 00:01:50,128
+whatever platform policy already asks of you.
+
+34
+00:01:50,128 --> 00:01:54,541
+Check where your audience actually is before you assume only the platform rows
+
+35
+00:01:54,541 --> 00:01:55,843
+matter to your account.
+
+36
+00:01:55,843 --> 00:02:00,086
+Notice, too, that these rows don't require you to run separate creative per
+
+37
+00:02:00,086 --> 00:02:00,822
+jurisdiction.
+
+38
+00:02:00,822 --> 00:02:05,462
+A disclosure caption honest enough to satisfy New York's law is also honest enough
+
+39
+00:02:05,462 --> 00:02:10,158
+to satisfy Meta's policy and the EU's transparency rules, because all four rows are
+
+40
+00:02:10,158 --> 00:02:14,289
+converging on roughly the same underlying ask: tell a viewer plainly when
+
+41
+00:02:14,289 --> 00:02:15,534
+something's synthetic.
+
+42
+00:02:15,534 --> 00:02:20,287
+Build to the strictest row you're actually exposed to, and the looser ones take care
+
+43
+00:02:20,287 --> 00:02:21,079
+of themselves.
+
+44
+00:02:21,629 --> 00:02:26,121
+Here's what disclosure actually looks like on a real ad, not as an abstract
+
+45
+00:02:26,121 --> 00:02:28,877
+requirement but as one line of on-screen text.
+
+46
+00:02:28,877 --> 00:02:30,734
+The clip itself doesn't change.
+
+47
+00:02:30,734 --> 00:02:35,346
+Nothing about the script, the delivery, or the assembly from Section 4.5 gets
+
+48
+00:02:35,346 --> 00:02:35,825
+touched.
+
+49
+00:02:35,825 --> 00:02:40,617
+What changes is one caption, visible for the whole runtime, stating plainly that
+
+50
+00:02:40,617 --> 00:02:41,576
+this is AI-made.
+
+51
+00:02:41,576 --> 00:02:46,608
+Properly flagged in the ad platform, the platform's own label gets applied on top of
+
+52
+00:02:46,608 --> 00:02:51,340
+that, automatically, the same way a caption carries a claim the way Section 4.5
+
+53
+00:02:51,340 --> 00:02:53,257
+already taught you to treat one.
+
+54
+00:02:53,257 --> 00:02:56,551
+Notice what this costs you in practice: almost nothing.
+
+55
+00:02:56,551 --> 00:03:01,343
+One line of on-screen text and one honest answer to a flag in the ads platform's
+
+56
+00:03:01,343 --> 00:03:02,062
+upload flow.
+
+57
+00:03:02,062 --> 00:03:06,914
+Compare that to the cost of skipping it, a rejected ad at best, a real penalty at
+
+58
+00:03:06,914 --> 00:03:11,826
+worst, and this becomes one of the cheapest checks in this entire section relative
+
+59
+00:03:11,826 --> 00:03:13,563
+to what it protects you from.
+
+60
+00:03:14,113 --> 00:03:18,449
+I want to be precise about why this lecture exists at all, rather than folding
+
+61
+00:03:18,449 --> 00:03:21,729
+disclosure into a single bullet point back in Section four.
+
+62
+00:03:21,729 --> 00:03:24,286
+A platform account restriction is a real cost.
+
+63
+00:03:24,286 --> 00:03:28,899
+A penalty under an actual law is a different order of cost entirely, and as of this
+
+64
+00:03:28,899 --> 00:03:33,513
+recording, more than one jurisdiction has started applying real financial penalties
+
+65
+00:03:33,513 --> 00:03:34,847
+to exactly this failure.
+
+66
+00:03:34,847 --> 00:03:39,350
+Whatever the exact numbers are by the time you're watching this, the direction is
+
+67
+00:03:39,350 --> 00:03:43,519
+the one thing worth trusting completely: disclosure moved from optional, to
+
+68
+00:03:43,519 --> 00:03:46,909
+platform-enforced, to legally required, inside a single year.
+
+69
+00:03:46,909 --> 00:03:51,245
+Bet on that direction continuing, not on today's specific numbers staying put.
+
+70
+00:03:51,245 --> 00:03:55,637
+What should you actually do with a trend like that, rather than just noting it?
+
+71
+00:03:55,637 --> 00:04:00,306
+Build the habit now, while the cost of skipping it is still mostly a rejected ad, so
+
+72
+00:04:00,306 --> 00:04:03,196
+it's already automatic by the time it's a legal one.
+
+73
+00:04:03,196 --> 00:04:07,143
+Nobody builds a new habit well under the pressure of an actual penalty.
+
+74
+00:04:07,143 --> 00:04:11,812
+You build it now, cheaply, while the stakes are still forgiving enough to learn from
+
+75
+00:04:11,812 --> 00:04:13,813
+a mistake instead of paying for one.
+
+76
+00:04:14,363 --> 00:04:19,056
+Next lecture takes the rights thread from Sections four and five and finally gives
+
+77
+00:04:19,056 --> 00:04:23,691
+it the full, systematic treatment it's been owed since the licence-tier gap first
+
+78
+00:04:23,691 --> 00:04:25,407
+showed up in Harlan's account.
+
+79
+00:04:25,407 --> 00:04:28,211
+Before that, go check your own current campaigns.
+
+80
+00:04:28,211 --> 00:04:32,789
+Does every AI-generated or AI-edited asset you have running carry the disclosure
+
+81
+00:04:32,789 --> 00:04:37,481
+your platform actually requires, right now, not whatever you remember reading when
+
+82
+00:04:37,481 --> 00:04:38,626
+you first set it up?
+
+83
+00:04:38,626 --> 00:04:43,204
+If you're not sure, that uncertainty is the actual finding here, worth resolving
+
+84
+00:04:43,204 --> 00:04:45,264
+today rather than at the next audit.
+
+85
+00:04:45,264 --> 00:04:50,071
+Write the caption habit down somewhere you'll actually see it, the same brief folder
+
+86
+00:04:50,071 --> 00:04:53,561
+Section 4.1 already asked you to keep licence screenshots in.
+
+87
+00:04:53,561 --> 00:04:58,196
+"Made with AI," visible for the full runtime, on every generated or significantly
+
+88
+00:04:58,196 --> 00:05:02,888
+edited clip, by default, not as a decision you make fresh each time under deadline
+
+89
+00:05:02,888 --> 00:05:03,403
+pressure.
+
+90
+00:05:03,403 --> 00:05:08,039
+A habit you don't have to remember to apply is the only kind that survives a busy
+
+91
+00:05:08,039 --> 00:05:08,325
+week.

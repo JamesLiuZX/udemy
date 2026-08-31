@@ -1,0 +1,315 @@
+1
+00:00:00,350 --> 00:00:04,530
+The swelling claim didn't die because a checklist document existed somewhere.
+
+2
+00:00:04,530 --> 00:00:09,036
+It died because Dana looked at it, said no, and everyone on the account had already
+
+3
+00:00:09,036 --> 00:00:10,339
+agreed her no was final.
+
+4
+00:00:10,339 --> 00:00:13,108
+That's the part a checklist alone never guarantees.
+
+5
+00:00:13,108 --> 00:00:17,452
+Everything from the last four lectures, claims, disclosure, rights, accuracy, is
+
+6
+00:00:17,452 --> 00:00:20,763
+only real if someone is actually accountable for checking it.
+
+7
+00:00:20,763 --> 00:00:25,215
+A checklist that exists in a document but belongs to nobody gets skipped the first
+
+8
+00:00:25,215 --> 00:00:28,798
+time a deadline gets tight, which is exactly when it matters most.
+
+9
+00:00:28,798 --> 00:00:31,187
+So this lecture answers two plain questions.
+
+10
+00:00:31,187 --> 00:00:31,947
+Who signs off.
+
+11
+00:00:31,947 --> 00:00:36,399
+And at what point in the process that sign-off actually happens, before generation
+
+12
+00:00:36,399 --> 00:00:38,028
+starts, or right before spend.
+
+13
+00:00:38,028 --> 00:00:42,588
+Why does this need its own lecture, rather than a line at the bottom of each earlier
+
+14
+00:00:42,588 --> 00:00:42,805
+one?
+
+15
+00:00:42,805 --> 00:00:47,203
+Because a check without an owner tends to quietly become everyone's job, which in
+
+16
+00:00:47,203 --> 00:00:48,994
+practice means it's nobody's job.
+
+17
+00:00:48,994 --> 00:00:52,143
+The four checks from this section are genuinely good ones.
+
+18
+00:00:52,143 --> 00:00:56,595
+They still fail in the field constantly, and almost never because the check itself
+
+19
+00:00:56,595 --> 00:00:57,138
+was wrong.
+
+20
+00:00:57,138 --> 00:01:00,775
+They fail because nobody was actually on the hook for running them.
+
+21
+00:01:01,325 --> 00:01:05,864
+Notice this table assigns a name to every row, not a vague "the team" or "whoever
+
+22
+00:01:05,864 --> 00:01:10,403
+has time." On a two-person account like Harlan's, that's Dana for claims, because
+
+23
+00:01:10,403 --> 00:01:15,110
+she's the one who actually knows what the product can defend, and Sam for rights and
+
+24
+00:01:15,110 --> 00:01:19,817
+disclosure, because he's the one touching the ad account where those checks actually
+
+25
+00:01:19,817 --> 00:01:20,097
+bite.
+
+26
+00:01:20,097 --> 00:01:24,076
+If you're running this solo, all four rows collapse to one name: yours.
+
+27
+00:01:24,076 --> 00:01:28,503
+That's not a smaller job, it just means building the discipline to run all four
+
+28
+00:01:28,503 --> 00:01:33,154
+checks yourself, deliberately, rather than assuming a second set of eyes will catch
+
+29
+00:01:33,154 --> 00:01:34,050
+what you missed.
+
+30
+00:01:34,050 --> 00:01:38,309
+Notice, too, that the table splits ownership by expertise, not by seniority.
+
+31
+00:01:38,309 --> 00:01:42,904
+Dana owns claims because she's the one who actually knows the product, not because
+
+32
+00:01:42,904 --> 00:01:43,913
+she's the founder.
+
+33
+00:01:43,913 --> 00:01:48,508
+Sam owns rights because he's the one inside the ad account daily, not because it's
+
+34
+00:01:48,508 --> 00:01:49,628
+beneath anyone else.
+
+35
+00:01:49,628 --> 00:01:54,279
+Assign each check to whoever's closest to the actual knowledge it requires, and the
+
+36
+00:01:54,279 --> 00:01:57,249
+check gets faster and more accurate as a side effect.
+
+37
+00:01:57,799 --> 00:02:02,215
+Here's why this happens at three separate points instead of one big review at the
+
+38
+00:02:02,215 --> 00:02:02,433
+end.
+
+39
+00:02:02,433 --> 00:02:05,977
+Catching a claims problem before generation costs you a sentence.
+
+40
+00:02:05,977 --> 00:02:10,065
+Catching the same problem after a batch is fully cut costs you a reshoot, a
+
+41
+00:02:10,065 --> 00:02:12,791
+re-render, and the time already spent on assembly.
+
+42
+00:02:12,791 --> 00:02:17,371
+The disclosure checkpoint sitting at upload, rather than earlier, is deliberate too.
+
+43
+00:02:17,371 --> 00:02:21,677
+It's the one check that genuinely doesn't need to slow anything down before it,
+
+44
+00:02:21,677 --> 00:02:25,057
+because adding a caption doesn't touch the script or the shot.
+
+45
+00:02:25,057 --> 00:02:29,637
+Putting it last keeps the earlier checkpoints focused on the things that actually do
+
+46
+00:02:29,637 --> 00:02:31,381
+require a redo if they're wrong.
+
+47
+00:02:31,381 --> 00:02:33,726
+Three checkpoints isn't more work than one.
+
+48
+00:02:33,726 --> 00:02:38,305
+It's the same total checking, moved earlier, where each individual catch is cheaper.
+
+49
+00:02:38,305 --> 00:02:42,666
+That's the entire logic behind pre-flight QC: not doing more checking, doing the
+
+50
+00:02:42,666 --> 00:02:43,811
+same checking sooner.
+
+51
+00:02:43,811 --> 00:02:47,954
+Ask yourself where your own current process actually catches problems today.
+
+52
+00:02:47,954 --> 00:02:51,989
+If the honest answer is "whenever someone happens to notice," that's not a
+
+53
+00:02:51,989 --> 00:02:54,932
+checkpoint, it's luck with a good track record so far.
+
+54
+00:02:54,932 --> 00:02:59,185
+Luck runs out eventually, usually on the exact batch you were rushing to ship.
+
+55
+00:02:59,735 --> 00:03:02,409
+One honest distinction worth being blunt about.
+
+56
+00:03:02,409 --> 00:03:06,960
+A checklist written down somewhere is not the same thing as a checklist that can
+
+57
+00:03:06,960 --> 00:03:09,008
+actually stop a batch from shipping.
+
+58
+00:03:09,008 --> 00:03:13,445
+On Harlan's account, Dana's sign-off genuinely blocks a claim from going live,
+
+59
+00:03:13,445 --> 00:03:16,688
+because everyone involved has agreed that's how it works.
+
+60
+00:03:16,688 --> 00:03:21,353
+If your version of this is just a document nobody's actually empowered to enforce,
+
+61
+00:03:21,353 --> 00:03:22,946
+it's decoration, not a gate.
+
+62
+00:03:22,946 --> 00:03:25,677
+This matters especially once you're moving fast.
+
+63
+00:03:25,677 --> 00:03:30,399
+Section nine's weekly sprint asks you to generate and ship at a real pace, and pace
+
+64
+00:03:30,399 --> 00:03:34,211
+is exactly when an unenforced checklist gets quietly skipped first.
+
+65
+00:03:34,211 --> 00:03:38,819
+Build the authority into the gate now, while there's no deadline pressure testing
+
+66
+00:03:38,819 --> 00:03:40,469
+it, not later, once there is.
+
+67
+00:03:40,469 --> 00:03:43,768
+Think about what "enforced" actually requires in practice.
+
+68
+00:03:43,768 --> 00:03:47,409
+It doesn't need a legal department or a formal process document.
+
+69
+00:03:47,409 --> 00:03:52,131
+It needs one simple rule everyone involved has actually agreed to out loud: nothing
+
+70
+00:03:52,131 --> 00:03:54,236
+ships until the named owner says yes.
+
+71
+00:03:54,236 --> 00:03:55,772
+That's the whole mechanism.
+
+72
+00:03:55,772 --> 00:03:59,755
+It works because everyone knows it's real, not because it's elaborate.
+
+73
+00:04:00,305 --> 00:04:04,787
+Next lecture puts everything from this section together into one document: the
+
+74
+00:04:04,787 --> 00:04:09,441
+actual checklist, with every question, every owner, and every checkpoint from the
+
+75
+00:04:09,441 --> 00:04:13,291
+last five lectures in one place you can run on your own next batch.
+
+76
+00:04:13,291 --> 00:04:17,887
+Before that, write down, right now, who actually owns each of the four checks on
+
+77
+00:04:17,887 --> 00:04:22,427
+your own account, even if the honest answer to all four is still your own name.
+
+78
+00:04:22,427 --> 00:04:27,024
+That's the first line of B05, the checklist next lecture assembles, and the gate
+
+79
+00:04:27,024 --> 00:04:29,035
+only holds once the owner is named.
