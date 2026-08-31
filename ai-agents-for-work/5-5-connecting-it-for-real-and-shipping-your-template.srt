@@ -1,0 +1,219 @@
+1
+00:00:00,350 --> 00:00:05,036
+Open your Google Sheets node, unpin the test data, and connect your real credential.
+
+2
+00:00:05,036 --> 00:00:07,769
+Point Document and Sheet at your actual pipeline.
+
+3
+00:00:07,769 --> 00:00:12,064
+The schedule you set in Section 5.2 means this now runs itself, every Monday,
+
+4
+00:00:12,064 --> 00:00:14,463
+whether or not anyone thinks to trigger it.
+
+5
+00:00:14,463 --> 00:00:18,926
+That is the whole point of building it this way: the twenty minutes it saves you
+
+6
+00:00:18,926 --> 00:00:21,492
+happens whether or not you remember it exists.
+
+7
+00:00:21,492 --> 00:00:25,954
+Expect the real sheet to be scruffier than your pinned rows, because real sheets
+
+8
+00:00:25,954 --> 00:00:30,361
+always are: a stray empty row, a note typed under the table, a client name with
+
+9
+00:00:30,361 --> 00:00:33,485
+trailing spaces, a second tab someone added last spring.
+
+10
+00:00:33,485 --> 00:00:37,948
+None of that appeared in your test, which is exactly why the first live run gets
+
+11
+00:00:37,948 --> 00:00:41,239
+read with the same answer-key discipline as the pinned one.
+
+12
+00:00:41,239 --> 00:00:44,698
+Count your real pipeline by hand once, run the agent, compare.
+
+13
+00:00:44,698 --> 00:00:49,105
+Where the live sheet trips it, the fix is usually to tidy the sheet rather than
+
+14
+00:00:49,105 --> 00:00:53,623
+complicate the briefing: this agent earns its keep for years by reading one clean
+
+15
+00:00:53,623 --> 00:00:57,639
+table, and clean is cheap to maintain once you know an agent is reading.
+
+16
+00:00:58,189 --> 00:01:02,885
+That third point is an easy, boring mistake with a real cost: a report that lands at
+
+17
+00:01:02,885 --> 00:01:07,525
+2am your time because nobody checked the time zone setting is a report nobody reads
+
+18
+00:01:07,525 --> 00:01:09,481
+before their actual Monday meeting.
+
+19
+00:01:09,481 --> 00:01:14,009
+The first point has a principle inside it worth keeping for every scheduled thing
+
+20
+00:01:14,009 --> 00:01:17,922
+you ever build: never let a schedule's first firing happen unobserved.
+
+21
+00:01:17,922 --> 00:01:22,394
+The manual run is you watching the machine do the whole job once, end to end, on
+
+22
+00:01:22,394 --> 00:01:26,027
+live data, while you are standing right there to read the result.
+
+23
+00:01:26,027 --> 00:01:28,934
+After that, the clock takes over with your blessing.
+
+24
+00:01:28,934 --> 00:01:33,629
+Skip it, and the first real run happens alone on Monday morning, and whatever it got
+
+25
+00:01:33,629 --> 00:01:37,990
+wrong waits patiently in a draft until someone notices, which on a bad week is
+
+26
+00:01:37,990 --> 00:01:38,493
+Thursday.
+
+27
+00:01:38,493 --> 00:01:42,853
+Watch the first one land, on purpose, with the sheet open beside it, and every
+
+28
+00:01:42,853 --> 00:01:46,263
+Monday after that inherits the confidence of the one you saw.
+
+29
+00:01:46,813 --> 00:01:50,631
+By now this step should feel routine, and that is exactly the point.
+
+30
+00:01:50,631 --> 00:01:54,169
+Four different agents, one export habit, no new thing to learn.
+
+31
+00:01:54,169 --> 00:01:58,549
+One wrinkle specific to this build: the export names the columns your briefing
+
+32
+00:01:58,549 --> 00:02:02,986
+expects, so a colleague importing C03 onto their own sheet inherits your header
+
+33
+00:02:02,986 --> 00:02:04,558
+contract without knowing it.
+
+34
+00:02:04,558 --> 00:02:08,995
+When you hand this template to anyone, hand it with one sentence attached: your
+
+35
+00:02:08,995 --> 00:02:13,094
+sheet needs these four headers, or the briefing needs your words instead.
+
+36
+00:02:13,094 --> 00:02:17,587
+That sentence is the difference between a template that transplants and one that
+
+37
+00:02:17,587 --> 00:02:20,001
+mysteriously underperforms in its new home.
+
+38
+00:02:20,551 --> 00:02:22,137
+And after the three Mondays?
+
+39
+00:02:22,137 --> 00:02:26,669
+The checking does not end, it thins, the way Section 1.2's ladder said it would.
+
+40
+00:02:26,669 --> 00:02:31,201
+Priya's version at Review: every Monday she still reads the report before anyone
+
+41
+00:02:31,201 --> 00:02:35,846
+else does, and one Monday in a few she re-counts one line of it against the sheet,
+
+42
+00:02:35,846 --> 00:02:36,809
+chosen at random.
+
+43
+00:02:36,809 --> 00:02:40,945
+Five minutes a month, permanently, in exchange for twenty minutes a week.
+
+44
+00:02:40,945 --> 00:02:45,703
+That is the ratio this whole course is selling, and it only stays honest if the five
+
+45
+00:02:45,703 --> 00:02:47,063
+minutes actually happen.
+
+46
+00:02:47,063 --> 00:02:51,595
+C03 is also the template most worth re-aiming at other sheets in your life: same
+
+47
+00:02:51,595 --> 00:02:53,747
+build, different columns, as 5.1 said.
+
+48
+00:02:53,747 --> 00:02:56,183
+When you adapt it, the trial comes with it.
+
+49
+00:02:56,183 --> 00:02:57,826
+New sheet, new three Mondays.
+
+50
+00:02:57,826 --> 00:02:59,469
+Three agents down, one to go.
+
+51
+00:02:59,469 --> 00:03:04,114
+Notice how each has stepped further from your hands: Agent 1 waited for the world,
+
+52
+00:03:04,114 --> 00:03:06,947
+Agent 2 waited for you, this one waits for nobody.
+
+53
+00:03:06,947 --> 00:03:11,478
+The last agent takes the next step, towards writing words a client might one day
+
+54
+00:03:11,478 --> 00:03:15,954
+read, and that is exactly why it is the most carefully constrained of the four.
+
+55
+00:03:15,954 --> 00:03:17,030
+Section 6 explains.

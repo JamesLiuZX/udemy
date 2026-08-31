@@ -1,0 +1,263 @@
+1
+00:00:00,350 --> 00:00:04,847
+Add an AI Agent node after your Sheets node, attach your Gemini model the same way
+
+2
+00:00:04,847 --> 00:00:07,590
+as the last two builds, and open the Prompt field.
+
+3
+00:00:07,590 --> 00:00:12,142
+By the third build this should take you about two minutes, and noticing that it now
+
+4
+00:00:12,142 --> 00:00:15,487
+does is the quiet payoff of doing the same steps three times.
+
+5
+00:00:15,487 --> 00:00:19,985
+This time the User Message is simple: hand over every row the Sheets node read, as
+
+6
+00:00:19,985 --> 00:00:20,533
+one block.
+
+7
+00:00:20,533 --> 00:00:24,756
+You are not selecting which rows matter, you are handing over all of them and
+
+8
+00:00:24,756 --> 00:00:27,992
+letting the system message decide what to do with each one.
+
+9
+00:00:28,542 --> 00:00:31,793
+Fair question, and the honest answer has a boundary on it.
+
+10
+00:00:31,793 --> 00:00:36,220
+Over a pipeline of five, ten, forty rows, counting and summing sits comfortably
+
+11
+00:00:36,220 --> 00:00:40,704
+inside what these models do reliably, and the trial exists to prove that against
+
+12
+00:00:40,704 --> 00:00:42,945
+hand counts before anything rides on it.
+
+13
+00:00:42,945 --> 00:00:46,028
+Over five hundred rows, stop: that is spreadsheet work.
+
+14
+00:00:46,028 --> 00:00:50,399
+At that scale the right design is to let the sheet compute its own totals in a
+
+15
+00:00:50,399 --> 00:00:55,107
+summary row and hand the agent those, so the model writes and the sheet counts, each
+
+16
+00:00:55,107 --> 00:00:57,181
+doing the job it is actually good at.
+
+17
+00:00:57,181 --> 00:01:00,767
+Priya's forty one accounts sit well inside the comfortable zone.
+
+18
+00:01:00,767 --> 00:01:04,803
+Know which zone your own sheet is in before you copy this build onto it.
+
+19
+00:01:05,353 --> 00:01:09,760
+That last sentence is new, and it matters more here than anywhere else so far.
+
+20
+00:01:09,760 --> 00:01:11,569
+Agent 1 was told what to ignore.
+
+21
+00:01:11,569 --> 00:01:13,603
+Agent 2 was told what not to invent.
+
+22
+00:01:13,603 --> 00:01:18,011
+This one is told to say "I'm not sure" out loud rather than quietly picking an
+
+23
+00:01:18,011 --> 00:01:18,407
+answer.
+
+24
+00:01:18,407 --> 00:01:22,871
+A report that admits uncertainty is more useful than one that hides it, because
+
+25
+00:01:22,871 --> 00:01:26,601
+Priya can act on the first kind and gets blindsided by the second.
+
+26
+00:01:27,151 --> 00:01:31,757
+The columns are named in the exact words of the header row, because Section 5.2 made
+
+27
+00:01:31,757 --> 00:01:36,308
+those headers an interface and the briefing is where the other end of that contract
+
+28
+00:01:36,308 --> 00:01:36,637
+lives.
+
+29
+00:01:36,637 --> 00:01:41,078
+Fourteen days is not a magic number, it is Priya's chasing window: far enough out
+
+30
+00:01:41,078 --> 00:01:45,684
+that a reminder still helps, near enough that it is worth interrupting a Monday for.
+
+31
+00:01:45,684 --> 00:01:50,236
+Yours might be seven or thirty, and the point is that somebody chose it on purpose.
+
+32
+00:01:50,236 --> 00:01:54,513
+"Named specifically" keeps the risk list concrete, because a warning without a
+
+33
+00:01:54,513 --> 00:01:56,541
+client name is a mood, not an action.
+
+34
+00:01:56,541 --> 00:02:00,983
+And "use only the numbers given" quietly blocks a failure you might not expect: a
+
+35
+00:02:00,983 --> 00:02:04,876
+model helpfully rounding, or adjusting a figure that looks like a typo.
+
+36
+00:02:04,876 --> 00:02:06,357
+The sheet is the authority.
+
+37
+00:02:06,357 --> 00:02:09,427
+The agent repeats it or questions it, never improves it.
+
+38
+00:02:09,977 --> 00:02:14,492
+Read the right hand column aloud and notice it survives being said in a corridor.
+
+39
+00:02:14,492 --> 00:02:18,952
+That is the actual test of a director's report: can the reader repeat it, thirty
+
+40
+00:02:18,952 --> 00:02:23,077
+seconds later, to someone more senior, without the sheet in front of them?
+
+41
+00:02:23,077 --> 00:02:25,139
+Rows cannot be repeated in corridors.
+
+42
+00:02:25,139 --> 00:02:27,090
+Sentences with one number each can.
+
+43
+00:02:27,090 --> 00:02:31,550
+Everything this prompt does, the counting, the summing, the fourteen day window,
+
+44
+00:02:31,550 --> 00:02:36,009
+exists to manufacture that repeatability, and nothing in it exists for any other
+
+45
+00:02:36,009 --> 00:02:36,399
+reason.
+
+46
+00:02:36,399 --> 00:02:40,859
+It is also why the report stays short on purpose: a third paragraph would be the
+
+47
+00:02:40,859 --> 00:02:42,364
+place a wrong number hides.
+
+48
+00:02:42,364 --> 00:02:46,600
+Three parts, three sentences each at most, every number traceable to a cell.
+
+49
+00:02:46,600 --> 00:02:51,227
+If Marcus wants more, the sheet is one click away, and the report's job was to make
+
+50
+00:02:51,227 --> 00:02:52,843
+him know which click to want.
+
+51
+00:02:52,843 --> 00:02:57,414
+When you adapt this build, keep the discipline: pick the two or three numbers your
+
+52
+00:02:57,414 --> 00:03:01,985
+reader would repeat upward, and refuse the rest of the sheet a seat in the report,
+
+53
+00:03:01,985 --> 00:03:04,493
+however interesting it looks on a quiet week.
+
+54
+00:03:05,043 --> 00:03:09,682
+A word on where the draft should physically land, because "ready for review" has to
+
+55
+00:03:09,682 --> 00:03:12,253
+mean somewhere you will actually be on Monday.
+
+56
+00:03:12,253 --> 00:03:16,947
+Point the final step at your own eyes, whatever that means in your setup: a document
+
+57
+00:03:16,947 --> 00:03:21,586
+the workflow appends to, a message to yourself, a file in a folder you open anyway.
+
+58
+00:03:21,586 --> 00:03:25,330
+The one address it must not have yet is Marcus's, or your Marcus's.
+
+59
+00:03:25,330 --> 00:03:30,025
+The report earns its way into a director's inbox at the end of a three-Monday trial,
+
+60
+00:03:30,025 --> 00:03:33,098
+carried there by Priya, not posted there by a schedule.
+
+61
+00:03:33,098 --> 00:03:37,066
+With the prompt written, your agent can now turn a table into a report.
+
+62
+00:03:37,066 --> 00:03:41,369
+Before testing it, read your briefing aloud once, the standing ritual: if any
+
+63
+00:03:41,369 --> 00:03:46,064
+sentence in it is one you could not say to a temp taking over the Monday report, the
+
+64
+00:03:46,064 --> 00:03:47,685
+model will stumble on it too.
+
+65
+00:03:47,685 --> 00:03:52,267
+Next lecture proves the build, against the exact numbers you would want checked by
+
+66
+00:03:52,267 --> 00:03:52,882
+hand first.

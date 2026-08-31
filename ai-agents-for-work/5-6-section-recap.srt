@@ -1,0 +1,23 @@
+1
+00:00:00,350 --> 00:00:03,386
+Three agents built, three job descriptions held to.
+
+2
+00:00:03,386 --> 00:00:08,090
+This one's output reaches someone who never sees the wiring behind it, which is
+
+3
+00:00:08,090 --> 00:00:12,436
+exactly why "say so rather than guessing" earned its place in the prompt.
+
+4
+00:00:12,436 --> 00:00:13,805
+Remember this pipeline.
+
+5
+00:00:13,805 --> 00:00:15,710
+It is not finished with you yet.
+
+6
+00:00:16,260 --> 00:00:17,263
+See you there.
