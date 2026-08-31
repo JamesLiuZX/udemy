@@ -167,10 +167,64 @@ def _synth_openai(text: str, out: Path, cfg: dict) -> None:
     tmp.unlink(missing_ok=True)
 
 
+# Loaded once per process; reloading the ONNX graph per slide would dominate
+# synthesis time on a 100-lecture build.
+_KOKORO: tuple[tuple[str, str], object] | None = None
+
+
+def _synth_kokoro(text: str, out: Path, cfg: dict) -> None:
+    """Free local synthesis via Kokoro-82M (Apache-2.0), through kokoro-onnx.
+
+    No API key, no per-character spend, commercial use permitted. Unlike the
+    espeak scaffold this is a *production* voice: near-commercial narration
+    quality from an 82M model that runs acceptably on CPU. One-time setup
+    (details and voice list in docs/07-tts.md):
+
+        pip install kokoro-onnx soundfile
+        # plus kokoro-v1.0.onnx and voices-v1.0.bin on disk,
+        # pointed to by KOKORO_MODEL / KOKORO_VOICES or cfg paths
+    """
+    try:
+        import soundfile  # type: ignore
+        from kokoro_onnx import Kokoro  # type: ignore
+    except ImportError as e:
+        raise TTSError(
+            "kokoro provider needs 'pip install kokoro-onnx soundfile' plus "
+            "the model files. Setup steps in docs/07-tts.md"
+        ) from e
+
+    model = Path(cfg.get("model_path")
+                 or os.environ.get("KOKORO_MODEL", "kokoro-v1.0.onnx"))
+    voices = Path(cfg.get("voices_path")
+                  or os.environ.get("KOKORO_VOICES", "voices-v1.0.bin"))
+    for p in (model, voices):
+        if not p.exists():
+            raise TTSError(f"kokoro model file missing: {p} "
+                           f"(download per docs/07-tts.md)")
+
+    global _KOKORO
+    key = (str(model), str(voices))
+    if _KOKORO is None or _KOKORO[0] != key:
+        _KOKORO = (key, Kokoro(str(model), str(voices)))
+    engine = _KOKORO[1]
+
+    samples, sr = engine.create(
+        text,
+        voice=cfg.get("voice", "bf_emma"),
+        speed=float(cfg.get("speed", 1.0)),
+        lang=cfg.get("lang", "en-gb"),
+    )
+    raw = out.with_suffix(".raw.wav")
+    soundfile.write(str(raw), samples, sr)
+    _to_wav(raw, out)
+    raw.unlink(missing_ok=True)
+
+
 PROVIDERS = {
     "offline": _synth_offline,
     "elevenlabs": _synth_elevenlabs,
     "openai": _synth_openai,
+    "kokoro": _synth_kokoro,
 }
 
 

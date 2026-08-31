@@ -107,10 +107,13 @@ production:
   # Scripts are written in British English. Switch this to en_US *and* rewrite
   # the scripts if you'd rather target US spelling — do not mix the two.
   spellcheck_lang: en_GB
+  # Zero-cost local narration per James (2026-08-31): Kokoro-82M via
+  # kokoro-onnx, no API key, Apache-2.0, proven on main's three course builds
+  # (docs/PRODUCTION-REPORT.md there; setup + voices in docs/07-tts.md).
+  # elevenlabs/openai remain available as paid overrides via this same block.
   tts:
-    provider: elevenlabs      # elevenlabs | openai | google | offline
-    voice: "instructor_primary"
-    model: "eleven_v3"
+    provider: kokoro          # kokoro | elevenlabs | openai | offline
+    voice: "bf_emma"
 
 # --- Downloadable artifacts (the "wow") -------------------------------------
 artifacts:
