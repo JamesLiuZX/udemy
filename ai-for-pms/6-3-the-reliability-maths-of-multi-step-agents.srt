@@ -1,0 +1,423 @@
+1
+00:00:00,350 --> 00:00:04,702
+Two lectures ago, the honest caveat said a five-step agent makes five separate
+
+2
+00:00:04,702 --> 00:00:06,320
+chances to be wrong, not one.
+
+3
+00:00:06,320 --> 00:00:11,007
+Here's exactly what that costs, in a number you can compute yourself in ten seconds.
+
+4
+00:00:11,007 --> 00:00:15,415
+A demo runs an agent through the same two or three steps a dozen times until it
+
+5
+00:00:15,415 --> 00:00:16,252
+looks polished.
+
+6
+00:00:16,252 --> 00:00:20,716
+Production runs it thousands of times, often chaining five, eight, ten steps per
+
+7
+00:00:20,716 --> 00:00:20,995
+task.
+
+8
+00:00:20,995 --> 00:00:25,124
+Same per-step accuracy, wildly different odds of the whole chain finishing
+
+9
+00:00:25,124 --> 00:00:25,682
+correctly.
+
+10
+00:00:25,682 --> 00:00:27,803
+That gap is not a bug in your rollout.
+
+11
+00:00:27,803 --> 00:00:28,695
+It's arithmetic.
+
+12
+00:00:28,695 --> 00:00:32,043
+You don't need a statistics background to follow it, either.
+
+13
+00:00:32,043 --> 00:00:36,730
+Everything in this lecture is one operation, multiplication, repeated once per step,
+
+14
+00:00:36,730 --> 00:00:41,027
+and you can do the whole thing on the calculator already open in another tab.
+
+15
+00:00:41,577 --> 00:00:46,299
+Read the ninety-five percent column first, because it's the one that catches people.
+
+16
+00:00:46,299 --> 00:00:48,942
+Ninety-five percent per step is genuinely good.
+
+17
+00:00:48,942 --> 00:00:51,753
+Individually, you'd approve it without hesitation.
+
+18
+00:00:51,753 --> 00:00:56,475
+Chained across ten steps, the whole task now finishes correctly sixty percent of the
+
+19
+00:00:56,475 --> 00:00:56,756
+time.
+
+20
+00:00:56,756 --> 00:00:58,330
+That's not a rounding error.
+
+21
+00:00:58,330 --> 00:01:00,917
+That's a coin flip wearing a good report card.
+
+22
+00:01:00,917 --> 00:01:02,997
+So what's actually driving that drop?
+
+23
+00:01:02,997 --> 00:01:04,121
+Just multiplication.
+
+24
+00:01:04,121 --> 00:01:08,450
+If each step succeeds independently with probability p, and nothing catches a
+
+25
+00:01:08,450 --> 00:01:13,173
+mistake before the next step builds on it, the whole chain succeeds with probability
+
+26
+00:01:13,173 --> 00:01:15,253
+p multiplied by itself once per step.
+
+27
+00:01:15,253 --> 00:01:19,301
+Five steps at ninety-five percent isn't ninety-five percent minus a bit.
+
+28
+00:01:19,301 --> 00:01:23,911
+It's zero point nine five to the fifth power, seventy-seven percent, because every
+
+29
+00:01:23,911 --> 00:01:26,947
+single step has to land for the task to count as done.
+
+30
+00:01:27,497 --> 00:01:30,907
+Walk the five steps out loud and it stops feeling abstract.
+
+31
+00:01:30,907 --> 00:01:35,646
+Point nine five, times point nine five, is point nine oh two five after two steps,
+
+32
+00:01:35,646 --> 00:01:37,554
+already under ninety-one percent.
+
+33
+00:01:37,554 --> 00:01:41,368
+Times point nine five again is point eight five seven after three.
+
+34
+00:01:41,368 --> 00:01:43,738
+Again is point eight one five after four.
+
+35
+00:01:43,738 --> 00:01:47,380
+Again is point seven seven four after five, matching the table.
+
+36
+00:01:47,380 --> 00:01:50,559
+Each individual multiplication barely moves the number.
+
+37
+00:01:50,559 --> 00:01:53,102
+Five of them in a row move it twenty points.
+
+38
+00:01:53,102 --> 00:01:57,899
+Now picture that fifth step being the one that actually issues the refund, or sends
+
+39
+00:01:57,899 --> 00:01:59,402
+the email a customer sees.
+
+40
+00:01:59,402 --> 00:02:02,812
+The four steps before it were invisible to anyone watching.
+
+41
+00:02:02,812 --> 00:02:04,141
+The compounding wasn't.
+
+42
+00:02:04,691 --> 00:02:09,170
+Look at the ninety-nine percent column too, because it's the argument for why that
+
+43
+00:02:09,170 --> 00:02:12,337
+number matters so much more than it sounds like it should.
+
+44
+00:02:12,337 --> 00:02:15,778
+The jump from ninety-five to ninety-nine per step looks modest.
+
+45
+00:02:15,778 --> 00:02:20,038
+Chained ten deep, it's the difference between a coin flip and a system you can
+
+46
+00:02:20,038 --> 00:02:22,386
+actually trust with something that matters.
+
+47
+00:02:22,386 --> 00:02:26,974
+Compare the two columns at ten steps directly: sixty percent against ninety percent.
+
+48
+00:02:26,974 --> 00:02:31,506
+Four points of per-step accuracy, the gap between ninety-five and ninety-nine, buys
+
+49
+00:02:31,506 --> 00:02:35,930
+you thirty points of whole-chain reliability once it's compounded ten times over.
+
+50
+00:02:35,930 --> 00:02:40,408
+That's the entire argument for why teams spend so much effort chasing the last few
+
+51
+00:02:40,408 --> 00:02:43,631
+points of model accuracy on anything that runs long chains.
+
+52
+00:02:43,631 --> 00:02:44,887
+It isn't perfectionism.
+
+53
+00:02:44,887 --> 00:02:49,037
+It's the only lever in that column that actually moves the number this much.
+
+54
+00:02:49,587 --> 00:02:51,274
+Both responses are legitimate.
+
+55
+00:02:51,274 --> 00:02:54,705
+They are not equally efficient, and the table is exactly why.
+
+56
+00:02:54,705 --> 00:02:58,867
+Pushing a step's accuracy from ninety-five to ninety-seven percent is real
+
+57
+00:02:58,867 --> 00:03:00,779
+engineering work for a small gain.
+
+58
+00:03:00,779 --> 00:03:05,447
+Cutting a ten-step chain to five steps, or inserting one checkpoint that catches an
+
+59
+00:03:05,447 --> 00:03:10,171
+error before it compounds into the next three steps, moves the whole-chain number by
+
+60
+00:03:10,171 --> 00:03:13,882
+tens of points, for a design decision rather than a model upgrade.
+
+61
+00:03:13,882 --> 00:03:18,494
+When you're scoping an agent, this is the lever worth reaching for first, and it's
+
+62
+00:03:18,494 --> 00:03:23,162
+the same instinct behind the checkpoint idea Section three's degradation paths were
+
+63
+00:03:23,162 --> 00:03:23,893
+built around.
+
+64
+00:03:23,893 --> 00:03:27,492
+A checkpoint doesn't have to mean a person reading every output.
+
+65
+00:03:27,492 --> 00:03:32,103
+Often it's a cheap rule: confirm the order number the agent pulled actually exists
+
+66
+00:03:32,103 --> 00:03:34,859
+before letting it decide anything about a refund.
+
+67
+00:03:34,859 --> 00:03:37,727
+That single check doesn't just catch its own error.
+
+68
+00:03:37,727 --> 00:03:42,170
+It resets the compounding, because every step after it now starts from verified
+
+69
+00:03:42,170 --> 00:03:46,557
+ground instead of carrying forward whatever the chain assumed five steps back.
+
+70
+00:03:47,107 --> 00:03:51,781
+Say the honest caveat plainly, because the maths above assumes something that isn't
+
+71
+00:03:51,781 --> 00:03:52,513
+exactly true.
+
+72
+00:03:52,513 --> 00:03:54,541
+Real steps aren't fully independent.
+
+73
+00:03:54,541 --> 00:03:59,271
+Sometimes that helps: a checkpoint catches an error before it compounds, so the real
+
+74
+00:03:59,271 --> 00:04:02,143
+chain does better than raw multiplication predicts.
+
+75
+00:04:02,143 --> 00:04:06,536
+Sometimes it hurts: one bad piece of context early in the chain, a wrong order
+
+76
+00:04:06,536 --> 00:04:11,098
+history, a misread date, quietly drags every step downstream with it, so the real
+
+77
+00:04:11,098 --> 00:04:12,055
+chain does worse.
+
+78
+00:04:12,055 --> 00:04:14,927
+Neither correction changes the shape of the lesson.
+
+79
+00:04:14,927 --> 00:04:19,602
+More autonomous steps between checks means more compounding, in whichever direction
+
+80
+00:04:19,602 --> 00:04:21,686
+your specific chain happens to break.
+
+81
+00:04:21,686 --> 00:04:25,571
+Don't let that honesty become an excuse to wave the whole table away.
+
+82
+00:04:25,571 --> 00:04:30,133
+Nobody in the room disputing this number can tell you, on the spot, whether their
+
+83
+00:04:30,133 --> 00:04:33,625
+agent's steps happen to correlate for the better or the worse.
+
+84
+00:04:33,625 --> 00:04:38,130
+Treating the multiplied estimate as a reasonable starting point, and checking it
+
+85
+00:04:38,130 --> 00:04:42,636
+against real production data once you have some, is a far stronger position than
+
+86
+00:04:42,636 --> 00:04:45,057
+assuming independence doesn't apply to you.
+
+87
+00:04:45,607 --> 00:04:50,043
+That's the definition worth carrying past today, and the exercise takes less time
+
+88
+00:04:50,043 --> 00:04:52,342
+than most people expect to be worth doing.
+
+89
+00:04:52,342 --> 00:04:53,164
+Count honestly.
+
+90
+00:04:53,164 --> 00:04:57,708
+Every tool call, every branch where the model decides something, not just the steps
+
+91
+00:04:57,708 --> 00:04:59,953
+that show up on the architecture diagram.
+
+92
+00:04:59,953 --> 00:05:01,432
+Then do the multiplication.
+
+93
+00:05:01,432 --> 00:05:05,539
+Most people who run this for the first time on their own proposed agent are
+
+94
+00:05:05,539 --> 00:05:10,083
+surprised by how far the real number sits below the number they'd have guessed from
+
+95
+00:05:10,083 --> 00:05:10,576
+the demo.
+
+96
+00:05:10,576 --> 00:05:14,792
+Bring the result into the next conversation about that agent, whatever it is.
+
+97
+00:05:14,792 --> 00:05:17,859
+A budget request, a launch review, a debate about scope.
+
+98
+00:05:17,859 --> 00:05:22,458
+A specific number, computed in front of the room, changes that conversation in a way
+
+99
+00:05:22,458 --> 00:05:25,196
+that a general worry about reliability never does.
+
+100
+00:05:25,196 --> 00:05:29,686
+It's the same shift Section four spent a whole section teaching: a measured number
+
+101
+00:05:29,686 --> 00:05:33,409
+beats a confident feeling every time someone tries to argue with it.
+
+102
+00:05:33,959 --> 00:05:35,561
+One thing before you move on.
+
+103
+00:05:35,561 --> 00:05:39,318
+Run the actual computation, on a real chain, not a hypothetical one.
+
+104
+00:05:39,318 --> 00:05:43,904
+Write the number down even if it's uncomfortable, especially if it's uncomfortable.
+
+105
+00:05:43,904 --> 00:05:48,323
+Then find one point in that chain where a checkpoint, a human glance or a simple
+
+106
+00:05:48,323 --> 00:05:52,135
+rule, would split it into two shorter chains instead of one long one.

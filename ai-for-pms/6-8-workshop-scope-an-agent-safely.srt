@@ -1,0 +1,355 @@
+1
+00:00:00,350 --> 00:00:04,975
+Pick something you've genuinely considered automating with an agent, or the refund
+
+2
+00:00:04,975 --> 00:00:08,754
+case this section keeps returning to if nothing else comes to mind.
+
+3
+00:00:08,754 --> 00:00:13,323
+Open A08, and give this the same twenty minutes every workshop in this course has
+
+4
+00:00:13,323 --> 00:00:13,887
+asked for.
+
+5
+00:00:13,887 --> 00:00:15,297
+The bar is identical too.
+
+6
+00:00:15,297 --> 00:00:15,974
+Not perfect.
+
+7
+00:00:15,974 --> 00:00:16,482
+Complete.
+
+8
+00:00:16,482 --> 00:00:21,220
+Every question answered with something, even where that something is a number you'll
+
+9
+00:00:21,220 --> 00:00:25,845
+validate later, the same move as Section three and Section five's workshops before
+
+10
+00:00:25,845 --> 00:00:26,353
+this one.
+
+11
+00:00:26,353 --> 00:00:30,809
+Automation is the right thing to practise scoping on precisely because it's the
+
+12
+00:00:30,809 --> 00:00:35,152
+branch of Section two's decision tree with the most ways to go wrong quietly.
+
+13
+00:00:35,152 --> 00:00:37,521
+Retrieval fails by returning a bad answer.
+
+14
+00:00:37,521 --> 00:00:40,003
+An agent that's scoped badly can act on one.
+
+15
+00:00:40,553 --> 00:00:45,070
+Notice minutes four through eight ask you to actually compute 6.3's number, not
+
+16
+00:00:45,070 --> 00:00:46,443
+estimate it from memory.
+
+17
+00:00:46,443 --> 00:00:51,132
+Count the real steps in your chain, pick a defensible per-step accuracy, and raise
+
+18
+00:00:51,132 --> 00:00:52,105
+it to that power.
+
+19
+00:00:52,105 --> 00:00:56,050
+Most people find this the slowest four minutes and the most valuable.
+
+20
+00:00:56,050 --> 00:00:58,910
+Why does the blast radius block get the most time?
+
+21
+00:00:58,910 --> 00:01:03,656
+Because sorting every single action into last lecture's four rows, not just the one
+
+22
+00:01:03,656 --> 00:01:08,231
+you already suspected was risky, is usually where a workshop like this finds the
+
+23
+00:01:08,231 --> 00:01:11,320
+thing worth actually changing before anyone builds it.
+
+24
+00:01:11,320 --> 00:01:16,123
+The middle block, minutes eight through twelve, goes quickly for most proposals, and
+
+25
+00:01:16,123 --> 00:01:16,810
+that's fine.
+
+26
+00:01:16,810 --> 00:01:21,442
+Plan-then-execute is usually the obvious right call once you say it out loud, and
+
+27
+00:01:21,442 --> 00:01:25,959
+most tasks turn out not to need a second agent at all once 6.5's question, what
+
+28
+00:01:25,959 --> 00:01:30,477
+specifically would one agent fail to do, gets asked directly instead of assumed
+
+29
+00:01:30,477 --> 00:01:30,763
+away.
+
+30
+00:01:30,763 --> 00:01:35,338
+The last three minutes are a single pass, not a new topic: run your own proposal
+
+31
+00:01:35,338 --> 00:01:39,970
+against all four of last lecture's disqualifying rows, out loud, with the numbers
+
+32
+00:01:39,970 --> 00:01:42,487
+you just computed rather than a fresh guess.
+
+33
+00:01:43,037 --> 00:01:44,240
+Recognise this shape.
+
+34
+00:01:44,240 --> 00:01:48,998
+It's last lecture's good column, and it's roughly what your own worksheet's summary
+
+35
+00:01:48,998 --> 00:01:53,412
+should sound like once minutes zero through seventeen are actually filled in.
+
+36
+00:01:53,412 --> 00:01:57,826
+Notice everything this sentence specifies: the scope, the bound, the cap, and
+
+37
+00:01:57,826 --> 00:02:00,004
+exactly who gets the cases outside it.
+
+38
+00:02:00,004 --> 00:02:04,188
+Notice too what it doesn't specify: no tool name, no framework, no model.
+
+39
+00:02:04,188 --> 00:02:08,774
+That's the same boundary Section three drew around the PRD and Section five drew
+
+40
+00:02:08,774 --> 00:02:10,265
+around the RAG design doc.
+
+41
+00:02:10,265 --> 00:02:14,621
+This document says what the system must do and where a human stays involved.
+
+42
+00:02:14,621 --> 00:02:17,258
+How to build it stays an engineering decision.
+
+43
+00:02:17,258 --> 00:02:21,557
+Compare it against whatever you'd have written before this section started.
+
+44
+00:02:21,557 --> 00:02:26,028
+Most first attempts at describing an automation idea sound like "let the agent
+
+45
+00:02:26,028 --> 00:02:30,556
+handle refunds automatically," a sentence with nothing specific enough in it to
+
+46
+00:02:30,556 --> 00:02:32,505
+actually scope, let alone approve.
+
+47
+00:02:32,505 --> 00:02:36,059
+Twenty minutes from now, yours should read closer to this one.
+
+48
+00:02:36,609 --> 00:02:40,755
+Say the honest caveat, because minute four is where people quietly stop being
+
+49
+00:02:40,755 --> 00:02:44,308
+rigorous, exactly when rigour is the entire point of the exercise.
+
+50
+00:02:44,308 --> 00:02:48,830
+If your honest chain length and a defensible per-step accuracy produce a whole-chain
+
+51
+00:02:48,830 --> 00:02:52,168
+number that makes you wince, that's not the worksheet failing.
+
+52
+00:02:52,168 --> 00:02:56,637
+That's the worksheet doing its job four sections before launch instead of during an
+
+53
+00:02:56,637 --> 00:02:57,498
+incident review.
+
+54
+00:02:57,498 --> 00:03:01,966
+Write the real number down, then decide what to do about it: shorten the chain, add
+
+55
+00:03:01,966 --> 00:03:05,520
+a checkpoint, or accept that this one stays manual a while longer.
+
+56
+00:03:05,520 --> 00:03:09,234
+The same discipline applies to the blast radius block right after it.
+
+57
+00:03:09,234 --> 00:03:13,703
+It's tempting to sort a borderline action into the safer row because that's the row
+
+58
+00:03:13,703 --> 00:03:15,103
+that lets you keep moving.
+
+59
+00:03:15,103 --> 00:03:16,448
+Sort it honestly instead.
+
+60
+00:03:16,448 --> 00:03:20,809
+The worksheet only protects you if the rows reflect the action as it actually is,
+
+61
+00:03:20,809 --> 00:03:22,747
+not as you'd prefer it to be scored.
+
+62
+00:03:23,297 --> 00:03:27,953
+That's today's bar, stated as plainly as it was in Section three and Section five:
+
+63
+00:03:27,953 --> 00:03:32,609
+attempted, not perfected, and the one number that actually matters computed rather
+
+64
+00:03:32,609 --> 00:03:33,347
+than guessed.
+
+65
+00:03:33,347 --> 00:03:36,185
+If you finish with time left, don't polish evenly.
+
+66
+00:03:36,185 --> 00:03:40,727
+Return to the blast radius section specifically, the same instruction as always,
+
+67
+00:03:40,727 --> 00:03:44,247
+because it's the section most likely to be quietly incomplete.
+
+68
+00:03:44,247 --> 00:03:48,960
+Resist the urge to smooth the reliability section instead, even though it's the one
+
+69
+00:03:48,960 --> 00:03:50,890
+with a satisfying number attached.
+
+70
+00:03:50,890 --> 00:03:55,546
+A tidy number sitting next to an unsorted blast radius section is a worksheet that
+
+71
+00:03:55,546 --> 00:04:00,315
+looks more finished than it is, and looking finished is exactly the trap this course
+
+72
+00:04:00,315 --> 00:04:01,905
+keeps warning you away from.
+
+73
+00:04:02,455 --> 00:04:04,048
+One thing before you move on.
+
+74
+00:04:04,048 --> 00:04:05,531
+Finish all seven questions.
+
+75
+00:04:05,531 --> 00:04:10,091
+Anywhere the honest answer is a guess, label it a guess rather than letting it read
+
+76
+00:04:10,091 --> 00:04:11,574
+as more certain than it is.
+
+77
+00:04:11,574 --> 00:04:16,079
+Then send it to whoever would actually build this, today, and ask which row they'd
+
+78
+00:04:16,079 --> 00:04:16,958
+challenge first.
+
+79
+00:04:16,958 --> 00:04:20,694
+Expect it to be the blast radius section, not the reliability maths.
+
+80
+00:04:20,694 --> 00:04:22,892
+Engineers usually trust your arithmetic.
+
+81
+00:04:22,892 --> 00:04:27,287
+They want to know exactly who's approving what before they write a line of code.
+
+82
+00:04:27,287 --> 00:04:31,737
+That question alone is often worth more than the twenty minutes you spent writing
+
+83
+00:04:31,737 --> 00:04:32,286
+the draft.
+
+84
+00:04:32,286 --> 00:04:36,736
+It's the same finding the support-corpus owner gave you back in Section five: the
+
+85
+00:04:36,736 --> 00:04:41,131
+person closest to the system sees the gap in minutes that would have taken you a
+
+86
+00:04:41,131 --> 00:04:42,724
+week to notice working alone.
+
+87
+00:04:42,724 --> 00:04:47,174
+Next lecture closes this section: what you've actually built across ten lectures,
+
+88
+00:04:47,174 --> 00:04:51,789
+and how directly it plugs into Section seven, where every one of these agents gets a
+
+89
+00:04:51,789 --> 00:04:54,261
+real number attached to what it costs to run.

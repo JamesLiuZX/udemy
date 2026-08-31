@@ -1,0 +1,323 @@
+1
+00:00:00,350 --> 00:00:04,964
+Section one's disqualification checklist asked whether AI belongs in this feature at
+
+2
+00:00:04,964 --> 00:00:05,184
+all.
+
+3
+00:00:05,184 --> 00:00:06,667
+Assume it passed that test.
+
+4
+00:00:06,667 --> 00:00:11,227
+This lecture asks the narrower, later question: given that AI helps here, should it
+
+5
+00:00:11,227 --> 00:00:15,237
+act autonomously, or should a human stay in the loop pulling the trigger.
+
+6
+00:00:15,237 --> 00:00:19,796
+Four signals answer that question, and you've already met every one of them earlier
+
+7
+00:00:19,796 --> 00:00:20,675
+in this section.
+
+8
+00:00:20,675 --> 00:00:22,927
+This lecture just puts them in one place.
+
+9
+00:00:22,927 --> 00:00:24,795
+That's deliberate, not a shortcut.
+
+10
+00:00:24,795 --> 00:00:29,354
+A checklist built from ideas you've already tested against real examples is one you
+
+11
+00:00:29,354 --> 00:00:33,694
+can actually defend in a review, because you can point to exactly which earlier
+
+12
+00:00:33,694 --> 00:00:38,253
+lecture backs each row, instead of asserting caution and hoping it sounds credible.
+
+13
+00:00:38,803 --> 00:00:43,639
+Read down that left column and notice each phrase is a callback, not a new idea.
+
+14
+00:00:43,639 --> 00:00:44,969
+Row one is 6.1's test.
+
+15
+00:00:44,969 --> 00:00:49,140
+Row two is 6.6's blast radius framework finding nowhere safe to land.
+
+16
+00:00:49,140 --> 00:00:53,009
+Row three is 6.3's table, applied honestly instead of hopefully.
+
+17
+00:00:53,009 --> 00:00:57,724
+Row four is 6.4's escalation pattern, checked for whether it actually works in
+
+18
+00:00:57,724 --> 00:00:58,268
+practice.
+
+19
+00:00:58,268 --> 00:01:01,231
+Do you need to fail every row for this to matter?
+
+20
+00:01:01,231 --> 00:01:03,890
+No, any single row is sufficient on its own.
+
+21
+00:01:03,890 --> 00:01:08,908
+A task can pass three of these and fail the fourth, and the fourth is still the one
+
+22
+00:01:08,908 --> 00:01:09,694
+that matters.
+
+23
+00:01:09,694 --> 00:01:11,507
+This isn't a score to average.
+
+24
+00:01:11,507 --> 00:01:14,107
+It's a list of independent reasons to stop.
+
+25
+00:01:14,107 --> 00:01:18,580
+Treating it as a score is the most common way this checklist gets misused.
+
+26
+00:01:18,580 --> 00:01:23,597
+"Three out of four, that's mostly fine" is exactly the reasoning that ships the one
+
+27
+00:01:23,597 --> 00:01:25,411
+row that was never negotiable.
+
+28
+00:01:25,411 --> 00:01:30,368
+A task that fails row two, no coverable blast radius, doesn't get rescued by acing
+
+29
+00:01:30,368 --> 00:01:31,335
+the other three.
+
+30
+00:01:31,335 --> 00:01:34,599
+It gets rescued by fixing row two, or by not shipping.
+
+31
+00:01:35,149 --> 00:01:39,585
+Same word, refund automation, and the checklist gives two completely different
+
+32
+00:01:39,585 --> 00:01:44,192
+verdicts because the actual answers are different, not because one request sounds
+
+33
+00:01:44,192 --> 00:01:45,841
+more cautious than the other.
+
+34
+00:01:45,841 --> 00:01:48,969
+Notice the good column doesn't pass every row for free.
+
+35
+00:01:48,969 --> 00:01:53,632
+It passes because someone did the work of bounding the amount, the account status,
+
+36
+00:01:53,632 --> 00:01:58,409
+and the daily count until the blast radius was actually small and the chain actually
+
+37
+00:01:58,409 --> 00:01:58,750
+short.
+
+38
+00:01:58,750 --> 00:02:01,423
+The checklist doesn't reward caution as a vibe.
+
+39
+00:02:01,423 --> 00:02:04,039
+It rewards a request specific enough to check.
+
+40
+00:02:04,039 --> 00:02:08,702
+That specificity is also what makes row one, the workflow test, worth re-asking on
+
+41
+00:02:08,702 --> 00:02:09,839
+the bounded version.
+
+42
+00:02:09,839 --> 00:02:14,446
+A refund under fifty dollars to a verified account capped at three a day is close
+
+43
+00:02:14,446 --> 00:02:19,166
+enough to fully specifiable that a plain workflow might handle most of it, with the
+
+44
+00:02:19,166 --> 00:02:23,943
+agent's judgement reserved for the genuine edge cases a workflow's fixed rules can't
+
+45
+00:02:23,943 --> 00:02:24,569
+anticipate.
+
+46
+00:02:24,569 --> 00:02:29,175
+Bounding a proposal often reveals how much of it was never autonomy-shaped in the
+
+47
+00:02:29,175 --> 00:02:29,857
+first place.
+
+48
+00:02:30,407 --> 00:02:35,153
+Say the honest caveat, because a section this focused on what goes wrong can leave
+
+49
+00:02:35,153 --> 00:02:39,957
+the impression that agents rarely clear the bar, and that's not the honest finding.
+
+50
+00:02:39,957 --> 00:02:44,761
+Most proposals that fail this checklist fail on an unbounded version of a perfectly
+
+51
+00:02:44,761 --> 00:02:48,292
+reasonable idea: no cap, no gate, no defined escalation path.
+
+52
+00:02:48,292 --> 00:02:53,038
+Bound it the way the good column just did, and the same idea often passes cleanly.
+
+53
+00:02:53,038 --> 00:02:57,900
+The checklist's real job is forcing that bounding to happen before launch, not after
+
+54
+00:02:57,900 --> 00:03:00,215
+the version with no cap already shipped.
+
+55
+00:03:00,215 --> 00:03:05,019
+Genuine disqualifications, the idea itself being wrong rather than under-specified,
+
+56
+00:03:05,019 --> 00:03:08,434
+are real but rarer than they feel from inside this section.
+
+57
+00:03:08,434 --> 00:03:12,948
+A task with catastrophic, irreversible downside and no way to add a checkpoint
+
+58
+00:03:12,948 --> 00:03:17,289
+anywhere in its chain is a real row-two failure no amount of scoping fixes.
+
+59
+00:03:17,289 --> 00:03:20,125
+Most requests that land on your desk aren't that.
+
+60
+00:03:20,125 --> 00:03:24,177
+They're an unbounded good idea waiting for someone to do the bounding.
+
+61
+00:03:24,727 --> 00:03:29,292
+That's the checklist worth keeping, and running it with real numbers is the entire
+
+62
+00:03:29,292 --> 00:03:32,353
+difference between this exercise and a vague gut check.
+
+63
+00:03:32,353 --> 00:03:37,030
+Most people can guess which row their proposal is weakest on before they even finish
+
+64
+00:03:37,030 --> 00:03:37,531
+counting.
+
+65
+00:03:37,531 --> 00:03:42,096
+Counting anyway is what turns that guess into something you can actually defend in
+
+66
+00:03:42,096 --> 00:03:44,768
+the review where someone asks you to justify it.
+
+67
+00:03:44,768 --> 00:03:48,331
+Write the failing row down specifically, not as a general worry.
+
+68
+00:03:48,331 --> 00:03:52,896
+"Row two, no way to cap or gate the refund amount" is something an engineer can go
+
+69
+00:03:52,896 --> 00:03:53,675
+fix this week.
+
+70
+00:03:53,675 --> 00:03:58,128
+"I have a bad feeling about this one" is not, and it's the version most unscoped
+
+71
+00:03:58,128 --> 00:04:01,691
+concerns arrive in if nobody forces the specific question first.
+
+72
+00:04:02,241 --> 00:04:03,817
+One thing before you move on.
+
+73
+00:04:03,817 --> 00:04:07,404
+Run the full checklist, not just the row that already worried you.
+
+74
+00:04:07,404 --> 00:04:10,610
+The row you weren't watching is usually the one that fails.
+
+75
+00:04:10,610 --> 00:04:15,121
+Then ask the harder follow-up: a failure from unbounded scope is fixable today, but
+
+76
+00:04:15,121 --> 00:04:19,632
+a failure baked into the fundamental idea, something no amount of bounding rescues,
+
+77
+00:04:19,632 --> 00:04:24,033
+is worth saying so plainly, and saying it now costs far less than saying it after
+
+78
+00:04:24,033 --> 00:04:24,414
+launch.
+
+79
+00:04:24,414 --> 00:04:28,761
+Before the workshop next lecture, where you'll scope one of these for real, make
+
+80
+00:04:28,761 --> 00:04:31,479
+sure you can tell the two failures apart on sight.
+
+81
+00:04:31,479 --> 00:04:35,174
+That distinction is most of what this lecture was actually teaching.

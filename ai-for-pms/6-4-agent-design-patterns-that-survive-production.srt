@@ -1,0 +1,383 @@
+1
+00:00:00,350 --> 00:00:04,818
+The refund agent from earlier in this section worked perfectly in every demo anyone
+
+2
+00:00:04,818 --> 00:00:05,411
+showed you.
+
+3
+00:00:05,411 --> 00:00:09,771
+It also had never hit a network timeout calling the payment system, never seen an
+
+4
+00:00:09,771 --> 00:00:14,294
+order history come back empty, and never been asked to do the same task twice by two
+
+5
+00:00:14,294 --> 00:00:16,070
+different support agents at once.
+
+6
+00:00:16,070 --> 00:00:18,439
+Production hits all three in the first week.
+
+7
+00:00:18,439 --> 00:00:20,700
+None of those three are exotic edge cases.
+
+8
+00:00:20,700 --> 00:00:21,562
+They're Tuesday.
+
+9
+00:00:21,562 --> 00:00:26,030
+A network blips, a record is mid-update when something reads it, two people on your
+
+10
+00:00:26,030 --> 00:00:27,376
+team work the same queue.
+
+11
+00:00:27,376 --> 00:00:31,898
+Any system that touches real infrastructure meets all three eventually, and the only
+
+12
+00:00:31,898 --> 00:00:36,367
+real choice you have is whether it meets them with a plan already in place or finds
+
+13
+00:00:36,367 --> 00:00:36,851
+out live.
+
+14
+00:00:36,851 --> 00:00:38,574
+None of that is a model problem.
+
+15
+00:00:38,574 --> 00:00:42,666
+It's an architecture problem, and there are three patterns that consistently
+
+16
+00:00:42,666 --> 00:00:47,080
+separate the agents that survive contact with production from the ones that don't.
+
+17
+00:00:47,080 --> 00:00:50,903
+Notice none of the three require a better model, and that's deliberate.
+
+18
+00:00:50,903 --> 00:00:55,048
+Every one of them is a design decision you can ask about and evaluate without
+
+19
+00:00:55,048 --> 00:00:59,355
+reading a line of code, the same way you'd ask about error handling in any other
+
+20
+00:00:59,355 --> 00:01:00,647
+feature before it ships.
+
+21
+00:01:01,197 --> 00:01:05,943
+The difference sounds small and changes everything about how debuggable the system
+
+22
+00:01:05,943 --> 00:01:06,117
+is.
+
+23
+00:01:06,117 --> 00:01:10,746
+An agent that decides one step at a time is genuinely reactive: observe, decide,
+
+24
+00:01:10,746 --> 00:01:15,434
+act, exactly like 6.1's loop, with no plan you could inspect before it commits to
+
+25
+00:01:15,434 --> 00:01:15,608
+it.
+
+26
+00:01:15,608 --> 00:01:20,295
+An agent that plans first states, in plain language, what it intends to do and in
+
+27
+00:01:20,295 --> 00:01:22,668
+what order, before calling a single tool.
+
+28
+00:01:22,668 --> 00:01:25,504
+That plan is cheap to review and cheap to reject.
+
+29
+00:01:25,504 --> 00:01:30,018
+The refund agent that plans "check order history, confirm no prior refund this
+
+30
+00:01:30,018 --> 00:01:34,648
+month, then issue the refund" lets you catch a missing check before it runs, not
+
+31
+00:01:34,648 --> 00:01:36,442
+after it's already moved money.
+
+32
+00:01:36,442 --> 00:01:40,840
+Does that mean every agent should plan-then-execute, regardless of the task?
+
+33
+00:01:40,840 --> 00:01:45,644
+No. A single lookup barely benefits from a written plan; there's nothing to review.
+
+34
+00:01:45,644 --> 00:01:50,331
+The pattern earns its cost specifically once a task spans several steps with real
+
+35
+00:01:50,331 --> 00:01:55,193
+consequences, which describes most of the agents actually worth scoping carefully in
+
+36
+00:01:55,193 --> 00:01:56,119
+the first place.
+
+37
+00:01:56,669 --> 00:02:01,052
+Retrying a failed step sounds like the safe, resilient choice, and unbounded
+
+38
+00:02:01,052 --> 00:02:05,839
+retrying is one of the most common ways an agent quietly turns a small failure into
+
+39
+00:02:05,839 --> 00:02:06,820
+an expensive one.
+
+40
+00:02:06,820 --> 00:02:09,300
+A payment system timing out once is normal.
+
+41
+00:02:09,300 --> 00:02:13,972
+An agent that retries a timed-out refund call five times without checking whether
+
+42
+00:02:13,972 --> 00:02:18,413
+the first attempt actually went through can issue the same refund five times.
+
+43
+00:02:18,413 --> 00:02:23,085
+Bound the retries, and more importantly, decide in advance what happens when they
+
+44
+00:02:23,085 --> 00:02:23,547
+run out.
+
+45
+00:02:23,547 --> 00:02:28,392
+The honest answer is almost never "keep trying forever." It's "stop, and put this in
+
+46
+00:02:28,392 --> 00:02:32,948
+front of a person," the same escalation instinct as Section three's degradation
+
+47
+00:02:32,948 --> 00:02:37,216
+paths, now applied to a system that acts instead of one that only answers.
+
+48
+00:02:37,216 --> 00:02:41,196
+Notice the diagram has exactly one exit that isn't success: escalate.
+
+49
+00:02:41,196 --> 00:02:45,868
+Not "try a different approach automatically," which just substitutes one untested
+
+50
+00:02:45,868 --> 00:02:50,482
+path for another, and not "silently give up," which is 5.5's silent-failure mode
+
+51
+00:02:50,482 --> 00:02:52,674
+wearing a different section's clothes.
+
+52
+00:02:52,674 --> 00:02:57,231
+A human seeing the failure and the full context around it is the only exit that
+
+53
+00:02:57,231 --> 00:03:01,787
+reliably turns a stuck agent into a solved problem instead of a mysterious one.
+
+54
+00:03:02,337 --> 00:03:06,970
+Say the honest caveat, because plan-then-execute and bounded retries aren't free,
+
+55
+00:03:06,970 --> 00:03:11,603
+and treating them as a checklist every agent must satisfy regardless of stakes is
+
+56
+00:03:11,603 --> 00:03:12,861
+its own kind of waste.
+
+57
+00:03:12,861 --> 00:03:17,609
+An internal agent that drafts a weekly summary nobody reads unattended can probably
+
+58
+00:03:17,609 --> 00:03:18,638
+skip most of this.
+
+59
+00:03:18,638 --> 00:03:23,042
+An agent that touches customer refunds, sends external email, or edits a live
+
+60
+00:03:23,042 --> 00:03:27,675
+document cannot, and the difference between those two is exactly the blast radius
+
+61
+00:03:27,675 --> 00:03:32,479
+question the guardrails lecture two lectures from now makes the actual scoping tool.
+
+62
+00:03:32,479 --> 00:03:37,284
+For today, just hold the principle: match the engineering investment to what happens
+
+63
+00:03:37,284 --> 00:03:39,514
+when this specific agent gets it wrong.
+
+64
+00:03:39,514 --> 00:03:43,918
+Watch for the opposite mistake too, the one that's easier to make in a budget
+
+65
+00:03:43,918 --> 00:03:45,520
+conversation than it sounds.
+
+66
+00:03:45,520 --> 00:03:49,981
+A team under time pressure skips the plan-review step or the idempotency check
+
+67
+00:03:49,981 --> 00:03:54,786
+specifically on the agent that touches money, because that's the one everyone's most
+
+68
+00:03:54,786 --> 00:03:55,586
+eager to ship.
+
+69
+00:03:55,586 --> 00:04:00,162
+That's precisely backwards, and it's worth saying out loud in the room where the
+
+70
+00:04:00,162 --> 00:04:03,765
+schedule gets decided, not after the duplicate refund shows up.
+
+71
+00:04:04,315 --> 00:04:08,778
+That's the third pattern, and it's the one people skip because it sounds like a
+
+72
+00:04:08,778 --> 00:04:11,377
+backend detail rather than a product decision.
+
+73
+00:04:11,377 --> 00:04:11,886
+It isn't.
+
+74
+00:04:11,886 --> 00:04:16,349
+Whether an action is safe to repeat is exactly as much your call as whether the
+
+75
+00:04:16,349 --> 00:04:18,269
+agent needs a plan reviewed first.
+
+76
+00:04:18,269 --> 00:04:20,473
+Run the exercise on something concrete.
+
+77
+00:04:20,473 --> 00:04:23,523
+"Send a confirmation email" running twice is annoying.
+
+78
+00:04:23,523 --> 00:04:28,156
+"Issue a refund" running twice is a real financial loss, and both can be caused by
+
+79
+00:04:28,156 --> 00:04:32,732
+the exact same retry that looked like the safe, cautious choice from pattern two.
+
+80
+00:04:32,732 --> 00:04:35,613
+The fix is usually cheaper than the finding sounds.
+
+81
+00:04:35,613 --> 00:04:40,246
+Often it's a single check added before the risky call: has this order already been
+
+82
+00:04:40,246 --> 00:04:42,958
+refunded today, has this email already gone out.
+
+83
+00:04:42,958 --> 00:04:47,421
+That one addition is what makes pattern two's retries genuinely safe instead of
+
+84
+00:04:47,421 --> 00:04:51,884
+merely convenient, and it's worth costing out at the same time you cost out the
+
+85
+00:04:51,884 --> 00:04:55,951
+retry logic itself, not as an afterthought once someone notices the gap.
+
+86
+00:04:56,501 --> 00:04:58,138
+One thing before you move on.
+
+87
+00:04:58,138 --> 00:05:00,452
+Ask to see the plan, not just the output.
+
+88
+00:05:00,452 --> 00:05:04,855
+If there isn't one, because the system decides one step at a time with nothing
+
+89
+00:05:04,855 --> 00:05:09,426
+written down first, that's worth knowing before you're debugging it in production
+
+90
+00:05:09,426 --> 00:05:11,684
+instead of reviewing it in a design doc.
+
+91
+00:05:11,684 --> 00:05:16,199
+Then ask the retry question directly, and expect a specific answer, not a shrug.
+
+92
+00:05:16,199 --> 00:05:19,360
+"It handles errors gracefully" is not a specific answer.
+
+93
+00:05:19,360 --> 00:05:22,972
+"Three retries, then it stops and pings the on-call channel" is.
+
+94
+00:05:22,972 --> 00:05:27,601
+Next lecture takes this same production-survival lens and points it at a different
+
+95
+00:05:27,601 --> 00:05:32,172
+question: when do you actually need more than one agent working together, and why
+
+96
+00:05:32,172 --> 00:05:34,938
+local-first is usually the safer way to find out.

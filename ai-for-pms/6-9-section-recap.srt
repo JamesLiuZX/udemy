@@ -1,0 +1,95 @@
+1
+00:00:00,350 --> 00:00:04,723
+Ten lectures ago, this section opened with the riskiest, most expensive box on
+
+2
+00:00:04,723 --> 00:00:08,143
+Section two's decision tree, the one worth reaching for last.
+
+3
+00:00:08,143 --> 00:00:10,610
+Here's what you can actually do with it now.
+
+4
+00:00:10,610 --> 00:00:14,984
+You've got the one-question test for whether something calling itself an agent
+
+5
+00:00:14,984 --> 00:00:19,581
+actually is one: who decides the next step, its builder in advance or the model in
+
+6
+00:00:19,581 --> 00:00:20,198
+the moment.
+
+7
+00:00:20,198 --> 00:00:24,907
+You can compute the real cost of a multi-step chain instead of trusting how reliable
+
+8
+00:00:24,907 --> 00:00:29,225
+a demo felt, and you know that a second agent adds a handoff, not a shortcut.
+
+9
+00:00:29,225 --> 00:00:33,654
+You know the three patterns that keep an agent alive past its first bad network
+
+10
+00:00:33,654 --> 00:00:38,364
+timeout, and the two questions, reversible and how much it costs if wrong, that tell
+
+11
+00:00:38,364 --> 00:00:40,606
+you exactly where a guardrail has to go.
+
+12
+00:00:40,606 --> 00:00:45,148
+And you've got a four-row checklist for the moments none of that is enough, where
+
+13
+00:00:45,148 --> 00:00:48,231
+the honest answer is to stay a workflow a while longer.
+
+14
+00:00:48,781 --> 00:00:53,373
+One downloadable artifact came out of this section, but don't let the count fool
+
+15
+00:00:53,373 --> 00:00:53,602
+you.
+
+16
+00:00:53,602 --> 00:00:58,251
+It's carrying seven separate decisions from seven separate lectures, the same way
+
+17
+00:00:58,251 --> 00:01:03,014
+Section three's PRD and Section five's design doc each compressed their own section
+
+18
+00:01:03,014 --> 00:01:04,047
+into one document.
+
+19
+00:01:04,047 --> 00:01:06,572
+Use it on something real before you move on.
+
+20
+00:01:06,572 --> 00:01:11,106
+Not a hypothetical automation, the one you've actually been asked about or have
+
+21
+00:01:11,106 --> 00:01:12,598
+actually been considering.
+
+22
+00:01:12,598 --> 00:01:17,132
+Next section leaves reliability and risk behind for a number every one of these
+
+23
+00:01:17,132 --> 00:01:21,780
+agents eventually has to answer to: what it costs to run, per user, per call, and
+
+24
+00:01:21,780 --> 00:01:24,765
+the margin trap that shows up when nobody's checked.
