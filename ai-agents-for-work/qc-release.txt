@@ -1,5 +1,5 @@
 
-  built total: 0.30h across 6 lectures
+  built total: 3.35h across 76 lectures
 
   WARN  [1.0] estimated 0.8 min — very short for a lecture.
   WARN  [1.5] estimated 0.5 min — very short for a lecture.
@@ -100,8 +100,7 @@
   FAIL  [11.3] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
   FAIL  [11.4] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
   FAIL  [11.5] verified: false — you have not signed off this script. Read it and set verified: true once every claim is one you can personally defend.
-  FAIL  17.8 min of video; Udemy requires ≥30 min.
 
-  79 fail · 21 warn
+  78 fail · 21 warn
   NOT ready to submit.
 
