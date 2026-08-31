@@ -1,0 +1,331 @@
+1
+00:00:00,350 --> 00:00:04,502
+Every call to a model bills the tokens it actually processes, in and out.
+
+2
+00:00:04,502 --> 00:00:08,653
+That sounds simple, and the surprising part is what counts as "in" once a
+
+3
+00:00:08,653 --> 00:00:10,701
+conversation has more than one turn.
+
+4
+00:00:10,701 --> 00:00:15,307
+This is worth learning properly, not just accepting as a line item on an invoice,
+
+5
+00:00:15,307 --> 00:00:19,857
+because it's the number every finance conversation about this feature eventually
+
+6
+00:00:19,857 --> 00:00:20,653
+comes back to.
+
+7
+00:00:20,653 --> 00:00:25,203
+Get the mechanism right here and the rest of this section, cost models, caching,
+
+8
+00:00:25,203 --> 00:00:27,137
+margins, all rest on solid ground.
+
+9
+00:00:27,137 --> 00:00:29,981
+Why does turn ten cost so much more than turn one?
+
+10
+00:00:29,981 --> 00:00:34,530
+Because most chat features resend the entire conversation history with every new
+
+11
+00:00:34,530 --> 00:00:39,023
+message: the model has no memory between calls, and it only knows what's in the
+
+12
+00:00:39,023 --> 00:00:40,502
+prompt you send this time.
+
+13
+00:00:40,502 --> 00:00:42,777
+Turn ten doesn't bill turn ten's tokens.
+
+14
+00:00:42,777 --> 00:00:46,189
+It bills turn ten's tokens plus every turn before it, again.
+
+15
+00:00:46,189 --> 00:00:50,853
+That single fact explains more surprising invoices than any other mechanic in this
+
+16
+00:00:50,853 --> 00:00:51,308
+section.
+
+17
+00:00:51,308 --> 00:00:55,914
+You ship a feature, test it with short three or four turn conversations, price it
+
+18
+00:00:55,914 --> 00:00:57,166
+from that, and launch.
+
+19
+00:00:57,166 --> 00:01:01,772
+Your real users have longer conversations than your test users do, almost always,
+
+20
+00:01:01,772 --> 00:01:06,208
+and the bill scales with conversation length in a way three-turn testing never
+
+21
+00:01:06,208 --> 00:01:06,663
+reveals.
+
+22
+00:01:07,213 --> 00:01:11,040
+Read the middle column, because it's the one nobody budgets for.
+
+23
+00:01:11,040 --> 00:01:14,746
+Two hundred tokens of genuinely new content arrives each turn.
+
+24
+00:01:14,746 --> 00:01:19,589
+Everything else in that row is the same conversation being billed again, in full,
+
+25
+00:01:19,589 --> 00:01:23,176
+because the model needed it in context to answer coherently.
+
+26
+00:01:23,176 --> 00:01:28,138
+Sum the whole conversation and the total billed across ten turns is eleven thousand
+
+27
+00:01:28,138 --> 00:01:32,562
+tokens, not the two thousand you'd get multiplying one turn's cost by ten.
+
+28
+00:01:32,562 --> 00:01:35,192
+That's not a bug in anyone's implementation.
+
+29
+00:01:35,192 --> 00:01:40,214
+It's the direct, mechanical consequence of 1.2's lesson: the model has no memory, so
+
+30
+00:01:40,214 --> 00:01:43,443
+the full context has to travel with every single call.
+
+31
+00:01:43,443 --> 00:01:46,791
+Notice the shape of that growth too, not just the total.
+
+32
+00:01:46,791 --> 00:01:51,753
+It's linear, turn by turn, which means a feature that seems perfectly affordable at
+
+33
+00:01:51,753 --> 00:01:55,639
+turn three can be paying five times as much per turn by turn ten.
+
+34
+00:01:55,639 --> 00:01:57,372
+Nobody decided to spend more.
+
+35
+00:01:57,372 --> 00:02:02,335
+The conversation simply kept going, the way real support and coaching conversations
+
+36
+00:02:02,335 --> 00:02:03,052
+actually do.
+
+37
+00:02:03,602 --> 00:02:08,210
+This asymmetry exists because generating a token is more computationally expensive
+
+38
+00:02:08,210 --> 00:02:11,021
+than reading one, and providers price accordingly.
+
+39
+00:02:11,021 --> 00:02:14,730
+The practical consequence lands squarely on your feature's design.
+
+40
+00:02:14,730 --> 00:02:19,394
+A feature that asks a model to summarise in three bullet points costs less than one
+
+41
+00:02:19,394 --> 00:02:23,778
+that asks for a detailed paragraph, even if the input prompt is identical both
+
+42
+00:02:23,778 --> 00:02:24,115
+times.
+
+43
+00:02:24,115 --> 00:02:28,836
+Before optimising your prompt to be shorter, check which side of the conversation is
+
+44
+00:02:28,836 --> 00:02:30,297
+actually driving the bill.
+
+45
+00:02:30,297 --> 00:02:34,569
+It's often the output length, not the input you spent an afternoon trimming.
+
+46
+00:02:34,569 --> 00:02:39,009
+This is worth checking specifically because the two fixes look similar from the
+
+47
+00:02:39,009 --> 00:02:42,830
+outside and cost completely different amounts of engineering effort.
+
+48
+00:02:42,830 --> 00:02:47,270
+Trimming a system prompt by a hundred words is an afternoon's work for a modest
+
+49
+00:02:47,270 --> 00:02:47,663
+saving.
+
+50
+00:02:47,663 --> 00:02:52,216
+Capping response length, or restructuring a prompt so the model naturally answers
+
+51
+00:02:52,216 --> 00:02:56,656
+more concisely, often moves the bill further for less effort, precisely because
+
+52
+00:02:56,656 --> 00:02:59,185
+output is the side carrying the higher price.
+
+53
+00:02:59,735 --> 00:03:04,291
+Say the honest caveat, because the instinct after seeing that table is to treat
+
+54
+00:03:04,291 --> 00:03:06,771
+resent history as pure waste, and it isn't.
+
+55
+00:03:06,771 --> 00:03:11,616
+Without the full history in context, the model has no idea what "it" referred to two
+
+56
+00:03:11,616 --> 00:03:13,981
+turns ago, and the feature stops working.
+
+57
+00:03:13,981 --> 00:03:16,288
+The real fix isn't sending less history.
+
+58
+00:03:16,288 --> 00:03:20,960
+It's paying less to send it, which is exactly what prompt caching exists for, and
+
+59
+00:03:20,960 --> 00:03:22,575
+that's next lecture but one.
+
+60
+00:03:22,575 --> 00:03:27,362
+For now, just carry the honest number: a long conversation costs more per turn than
+
+61
+00:03:27,362 --> 00:03:30,072
+the turn before it, by design, not by accident.
+
+62
+00:03:30,072 --> 00:03:34,514
+Some teams respond to this table by truncating history aggressively, dropping
+
+63
+00:03:34,514 --> 00:03:37,455
+everything past the last few turns to control cost.
+
+64
+00:03:37,455 --> 00:03:41,838
+That trades a real dollar saving for a real quality cost: the feature starts
+
+65
+00:03:41,838 --> 00:03:45,472
+forgetting things a user said honestly expected it to remember.
+
+66
+00:03:45,472 --> 00:03:50,259
+Whether that trade is worth it depends entirely on the feature, and it's a decision
+
+67
+00:03:50,259 --> 00:03:55,104
+worth making deliberately rather than discovering by accident once the bill arrives.
+
+68
+00:03:55,654 --> 00:04:00,343
+That's the definition worth keeping, and the word doing the real work is combined.
+
+69
+00:04:00,343 --> 00:04:03,832
+Input, output, and history, all counted together, every call.
+
+70
+00:04:03,832 --> 00:04:08,293
+Run the estimate on your own feature's longest realistic conversation, not the
+
+71
+00:04:08,293 --> 00:04:10,866
+three-turn demo everyone actually tests with.
+
+72
+00:04:10,866 --> 00:04:15,556
+The gap between that number and what you assumed is usually the first real finding
+
+73
+00:04:15,556 --> 00:04:16,814
+this section produces.
+
+74
+00:04:16,814 --> 00:04:21,217
+It's worth doing this before the model selection conversation too, not after.
+
+75
+00:04:21,217 --> 00:04:26,021
+A cheaper model looks like the obvious fix for a high bill, but if the actual driver
+
+76
+00:04:26,021 --> 00:04:30,082
+is history resend or output length, switching models barely touches it.
+
+77
+00:04:30,082 --> 00:04:34,828
+Diagnosing which mechanic is actually responsible comes first; the fix follows from
+
+78
+00:04:34,828 --> 00:04:36,544
+that, not the other way round.
+
+79
+00:04:37,094 --> 00:04:38,736
+One thing before you move on.
+
+80
+00:04:38,736 --> 00:04:43,265
+Do the estimate honestly, using a conversation length a real user would actually
+
+81
+00:04:43,265 --> 00:04:46,436
+reach, not the tidy few-turn exchange in a product demo.
+
+82
+00:04:46,436 --> 00:04:50,003
+Then check which side of the bill is actually doing the damage.
+
+83
+00:04:50,003 --> 00:04:51,985
+Most people assume it's the prompt.

@@ -1,0 +1,383 @@
+1
+00:00:00,350 --> 00:00:05,139
+Every engagement dashboard you've ever seen treats more usage as unambiguously good.
+
+2
+00:00:05,139 --> 00:00:09,758
+Traditional software costs almost nothing per extra use, an extra page view or an
+
+3
+00:00:09,758 --> 00:00:14,262
+extra saved document, so a feature that gets used more is simply a feature that
+
+4
+00:00:14,262 --> 00:00:15,459
+succeeded, full stop.
+
+5
+00:00:15,459 --> 00:00:19,565
+AI features don't, and that one difference changes what "success" means.
+
+6
+00:00:19,565 --> 00:00:24,126
+Every single use has a real, measurable cost, the one you built in 7.2, and that
+
+7
+00:00:24,126 --> 00:00:26,350
+cost scales up exactly when usage does.
+
+8
+00:00:26,350 --> 00:00:28,345
+That's the trap this lecture names.
+
+9
+00:00:28,345 --> 00:00:32,849
+A feature can pass every row of last lecture's scorecard, launch with a healthy
+
+10
+00:00:32,849 --> 00:00:37,639
+margin, and still lose money on its most active users the moment they use it enough.
+
+11
+00:00:37,639 --> 00:00:42,257
+Nobody put that number in the launch deck, because nobody was looking at cost and
+
+12
+00:00:42,257 --> 00:00:43,683
+revenue on the same page.
+
+13
+00:00:43,683 --> 00:00:48,358
+Picture the support-ticket summariser this course keeps returning to, scaled up to
+
+14
+00:00:48,358 --> 00:00:50,981
+the desk that clears the most tickets a month.
+
+15
+00:00:50,981 --> 00:00:55,656
+That desk looks like the retention win on every dashboard, right up until the same
+
+16
+00:00:55,656 --> 00:01:00,217
+feature's cost line quietly crosses its allocated revenue for exactly that user.
+
+17
+00:01:00,217 --> 00:01:04,893
+Most teams are still running the old, safe intuition about what heavy usage means.
+
+18
+00:01:05,443 --> 00:01:10,179
+Read the margin column down, not the cost column, because the cost column looks fine
+
+19
+00:01:10,179 --> 00:01:11,306
+at every single row.
+
+20
+00:01:11,306 --> 00:01:15,647
+Eight cents, a dollar sixty eight, six dollars thirty, all individually small
+
+21
+00:01:15,647 --> 00:01:18,297
+numbers that don't sound alarming on their own.
+
+22
+00:01:18,297 --> 00:01:20,665
+The margin column tells a different story.
+
+23
+00:01:20,665 --> 00:01:25,345
+Somewhere between forty and a hundred and fifty conversations a month, this feature
+
+24
+00:01:25,345 --> 00:01:29,855
+crosses from genuinely profitable to actively losing money, on the exact users a
+
+25
+00:01:29,855 --> 00:01:32,674
+product team would normally celebrate as its best.
+
+26
+00:01:32,674 --> 00:01:35,098
+That crossover point is the actual finding.
+
+27
+00:01:35,098 --> 00:01:38,819
+Everything else in this table is just arithmetic leading up to it.
+
+28
+00:01:38,819 --> 00:01:42,259
+Find your own crossover point rather than borrowing this one.
+
+29
+00:01:42,259 --> 00:01:46,882
+It moves with your actual per-conversation cost and your actual allocated revenue,
+
+30
+00:01:46,882 --> 00:01:51,505
+and a feature with thinner margins per user or a higher cost per conversation will
+
+31
+00:01:51,505 --> 00:01:54,549
+cross into loss much earlier than a hundred and fifty.
+
+32
+00:01:54,549 --> 00:01:59,116
+The shape of the table matters more than these specific three rows: cost climbing
+
+33
+00:01:59,116 --> 00:02:02,668
+steadily while revenue holds flat, until one crosses the other.
+
+34
+00:02:03,218 --> 00:02:07,890
+Both dashboards are describing the identical user, honestly, from the data each one
+
+35
+00:02:07,890 --> 00:02:08,904
+was built to show.
+
+36
+00:02:08,904 --> 00:02:09,861
+Neither is lying.
+
+37
+00:02:09,861 --> 00:02:14,477
+They're just answering different questions, and only one of them is the question a
+
+38
+00:02:14,477 --> 00:02:16,616
+margin review actually needs answered.
+
+39
+00:02:16,616 --> 00:02:21,232
+That's worth sitting with, because it means nobody has to be careless or dishonest
+
+40
+00:02:21,232 --> 00:02:22,583
+for this trap to spring.
+
+41
+00:02:22,583 --> 00:02:26,298
+Every dashboard involved is doing exactly what it was built to do.
+
+42
+00:02:26,298 --> 00:02:30,746
+The failure is architectural, not personal: a metrics system with no page where
+
+43
+00:02:30,746 --> 00:02:33,054
+usage and cost sit next to the same user.
+
+44
+00:02:33,054 --> 00:02:37,613
+This is precisely why the two numbers need to live on the same page, the way last
+
+45
+00:02:37,613 --> 00:02:42,342
+lecture's scorecard put quality, cost, and speed together instead of leaving them in
+
+46
+00:02:42,342 --> 00:02:45,157
+three separate documents nobody cross- references.
+
+47
+00:02:45,157 --> 00:02:49,773
+An engagement win that's quietly a margin loss stays invisible for exactly as long
+
+48
+00:02:49,773 --> 00:02:51,574
+as those two numbers never meet.
+
+49
+00:02:51,574 --> 00:02:55,177
+Who in your organisation actually owns that meeting point today?
+
+50
+00:02:55,177 --> 00:02:57,767
+Product usually owns the engagement dashboard.
+
+51
+00:02:57,767 --> 00:03:02,045
+Finance usually owns the margin conversation, if anyone does, and often only
+
+52
+00:03:02,045 --> 00:03:06,436
+discovers it quarterly, long after a cohort of power users has already formed.
+
+53
+00:03:06,436 --> 00:03:10,939
+The gap between those two owners is exactly where this trap survives undetected.
+
+54
+00:03:11,489 --> 00:03:16,102
+Say the honest caveat clearly, because the tempting wrong conclusion here is that
+
+55
+00:03:16,102 --> 00:03:17,639
+heavy usage is the problem.
+
+56
+00:03:17,639 --> 00:03:18,152
+It isn't.
+
+57
+00:03:18,152 --> 00:03:20,258
+Heavy usage proved the feature works.
+
+58
+00:03:20,258 --> 00:03:24,871
+The problem is a flat-rate structure that was never designed to track a cost that
+
+59
+00:03:24,871 --> 00:03:25,497
+isn't flat.
+
+60
+00:03:25,497 --> 00:03:30,109
+The real fix looks like tiered plans, a usage-based add-on past a threshold, or a
+
+61
+00:03:30,109 --> 00:03:34,836
+generous-but-real cap with a clear upgrade path, not a feature quietly punished for
+
+62
+00:03:34,836 --> 00:03:35,462
+succeeding.
+
+63
+00:03:35,462 --> 00:03:39,790
+Whichever fix you pick, design it before the power-user tier exists in large
+
+64
+00:03:39,790 --> 00:03:44,459
+numbers, because retrofitting pricing onto users who are already used to unlimited
+
+65
+00:03:44,459 --> 00:03:47,989
+is a far harder conversation than shipping it with the launch.
+
+66
+00:03:47,989 --> 00:03:52,715
+Frame the cap generously enough that it never touches a genuinely typical user, and
+
+67
+00:03:52,715 --> 00:03:56,986
+specifically enough that the crossover point from this lecture's table sits
+
+68
+00:03:56,986 --> 00:03:58,182
+comfortably above it.
+
+69
+00:03:58,182 --> 00:04:00,460
+A cap set from a guess protects nothing.
+
+70
+00:04:00,460 --> 00:04:05,186
+A cap set from your own measured crossover protects the feature's economics without
+
+71
+00:04:05,186 --> 00:04:07,179
+most users ever noticing it exists.
+
+72
+00:04:07,729 --> 00:04:11,867
+That's the definition worth carrying past today, and it's worth carrying
+
+73
+00:04:11,867 --> 00:04:14,339
+specifically because it's counterintuitive.
+
+74
+00:04:14,339 --> 00:04:16,868
+More usage is supposed to mean more success.
+
+75
+00:04:16,868 --> 00:04:21,236
+For a feature with real marginal cost, past a certain point, it can mean the
+
+76
+00:04:21,236 --> 00:04:21,753
+opposite.
+
+77
+00:04:21,753 --> 00:04:25,260
+Run the exercise on someone real, not a hypothetical average.
+
+78
+00:04:25,260 --> 00:04:29,973
+Averages hide exactly this crossover, because they blend your light users and your
+
+79
+00:04:29,973 --> 00:04:34,743
+power users into one comfortable-looking number that no single real person actually
+
+80
+00:04:34,743 --> 00:04:34,973
+has.
+
+81
+00:04:34,973 --> 00:04:39,514
+A blended average margin that looks healthy can be sitting directly on top of a
+
+82
+00:04:39,514 --> 00:04:44,170
+profitable majority and a loss-making tail, and the average alone will never tell
+
+83
+00:04:44,170 --> 00:04:45,319
+you the tail exists.
+
+84
+00:04:45,319 --> 00:04:50,033
+Segment by actual usage before you trust any single margin number presented as the
+
+85
+00:04:50,033 --> 00:04:50,837
+whole picture.
+
+86
+00:04:51,387 --> 00:04:53,036
+One thing before you move on.
+
+87
+00:04:53,036 --> 00:04:57,585
+Find a real power user, not an estimate, and run their actual usage through your
+
+88
+00:04:57,585 --> 00:04:58,210
+cost model.
+
+89
+00:04:58,210 --> 00:05:02,645
+If nobody can produce that number quickly, that's itself the finding: cost and
+
+90
+00:05:02,645 --> 00:05:06,682
+engagement have never been checked against each other for this feature.
+
+91
+00:05:06,682 --> 00:05:09,752
+Then look honestly at today's pricing or usage limits.
+
+92
+00:05:09,752 --> 00:05:14,528
+If neither one moves as usage climbs, that gap is worth raising in the next planning
+
+93
+00:05:14,528 --> 00:05:15,267
+conversation.
+
+94
+00:05:15,267 --> 00:05:19,816
+This section's next lecture, latency budgets, will matter to you either way, but
+
+95
+00:05:19,816 --> 00:05:24,308
+this margin question is the one worth raising first, before a power-user cohort
+
+96
+00:05:24,308 --> 00:05:27,605
+makes it an expensive conversation instead of a cheap one.

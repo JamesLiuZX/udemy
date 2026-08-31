@@ -1,0 +1,371 @@
+1
+00:00:00,350 --> 00:00:03,590
+Section two taught you to read a benchmark table critically.
+
+2
+00:00:03,590 --> 00:00:07,909
+Here's what replaces it when an actual decision is on the table: your own golden
+
+3
+00:00:07,909 --> 00:00:12,337
+set's pass rate, your own cost model's number, and a latency figure, side by side,
+
+4
+00:00:12,337 --> 00:00:14,767
+for every model you're genuinely considering.
+
+5
+00:00:14,767 --> 00:00:19,194
+Skepticism about benchmarks was always meant to lead somewhere, not just leave you
+
+6
+00:00:19,194 --> 00:00:21,138
+doubting every number you're handed.
+
+7
+00:00:21,138 --> 00:00:25,674
+This is where it leads: build the table yourself, from your own evidence, instead of
+
+8
+00:00:25,674 --> 00:00:29,183
+distrusting someone else's and having nothing to replace it with.
+
+9
+00:00:29,183 --> 00:00:33,125
+A public benchmark tells you how a model performs on someone else's task.
+
+10
+00:00:33,125 --> 00:00:37,499
+Your scorecard tells you how it performs on yours, at what it actually costs you,
+
+11
+00:00:37,499 --> 00:00:39,658
+and how long a real user actually waits.
+
+12
+00:00:39,658 --> 00:00:43,762
+That's the document worth building before anyone commits to a model, not the
+
+13
+00:00:43,762 --> 00:00:46,462
+leaderboard screenshot from the announcement post.
+
+14
+00:00:46,462 --> 00:00:50,997
+This is the natural endpoint of three separate threads this course has been building
+
+15
+00:00:50,997 --> 00:00:55,533
+since Section two: reading a benchmark critically, so you know what it isn't telling
+
+16
+00:00:55,533 --> 00:00:59,961
+you; building a golden set, so you have something better to score against; and the
+
+17
+00:00:59,961 --> 00:01:04,442
+cost model from two lectures ago, so price sits on the same page as quality instead
+
+18
+00:01:04,442 --> 00:01:06,386
+of arriving as a surprise afterward.
+
+19
+00:01:06,936 --> 00:01:11,429
+Read this table in a specific order, because reading it left to right, model by
+
+20
+00:01:11,429 --> 00:01:14,558
+model, is how teams talk themselves into the wrong row.
+
+21
+00:01:14,558 --> 00:01:18,994
+Read the pass rate column first, alone, against whatever floor Section three's
+
+22
+00:01:18,994 --> 00:01:21,838
+acceptance criteria actually set for this feature.
+
+23
+00:01:21,838 --> 00:01:26,502
+If that floor is eighty-five percent, the budget model is gone before its price or
+
+24
+00:01:26,502 --> 00:01:27,868
+its speed matter at all.
+
+25
+00:01:27,868 --> 00:01:32,190
+Seventy-one percent isn't a cheaper, slower version of an acceptable answer.
+
+26
+00:01:32,190 --> 00:01:36,741
+It's a model that fails the threshold, and no amount of savings on the other two
+
+27
+00:01:36,741 --> 00:01:37,935
+columns changes that.
+
+28
+00:01:37,935 --> 00:01:42,087
+Notice, too, that the pass rate in this table isn't a number you look up.
+
+29
+00:01:42,087 --> 00:01:46,694
+It's the same fifty-case golden set from Section four, the same rubric, run three
+
+30
+00:01:46,694 --> 00:01:50,619
+separate times, once per candidate model, under identical conditions.
+
+31
+00:01:50,619 --> 00:01:54,885
+Nothing else in this table means anything if that first column was measured
+
+32
+00:01:54,885 --> 00:01:56,478
+inconsistently between rows.
+
+33
+00:01:56,478 --> 00:02:00,801
+Identical conditions is doing more work in that sentence than it looks like.
+
+34
+00:02:00,801 --> 00:02:05,521
+Same prompt, same cases, same rubric, same judge, whether that judge is a person or
+
+35
+00:02:05,521 --> 00:02:08,138
+the calibrated LLM-as-judge from Section four.
+
+36
+00:02:08,138 --> 00:02:12,404
+Change any one of those between rows and the pass rate column stops being a
+
+37
+00:02:12,404 --> 00:02:16,727
+comparison and becomes three unrelated numbers that happen to share a table.
+
+38
+00:02:17,277 --> 00:02:21,719
+Notice what the floor actually buys you: it turns a three-way comparison into a
+
+39
+00:02:21,719 --> 00:02:25,769
+two-way one, and a cleaner argument in the room where this gets decided.
+
+40
+00:02:25,769 --> 00:02:30,324
+Once the budget model is out, the real question is this: do flagship's five extra
+
+41
+00:02:30,324 --> 00:02:34,542
+points of pass rate justify four times the cost and double the latency over
+
+42
+00:02:34,542 --> 00:02:35,048
+mid-tier?
+
+43
+00:02:35,048 --> 00:02:39,772
+That's a genuine trade-off, worth an actual conversation, and a completely different
+
+44
+00:02:39,772 --> 00:02:44,327
+one from accidentally comparing a disqualified model against two that cleared the
+
+45
+00:02:44,327 --> 00:02:44,552
+bar.
+
+46
+00:02:44,552 --> 00:02:49,220
+There's no universal right answer to that trade-off, and this lecture won't pretend
+
+47
+00:02:49,220 --> 00:02:49,951
+there is one.
+
+48
+00:02:49,951 --> 00:02:54,506
+A feature where a wrong answer is expensive, the kind of blast radius Section six
+
+49
+00:02:54,506 --> 00:02:58,443
+spent a whole lecture naming, leans toward paying for the five points.
+
+50
+00:02:58,443 --> 00:03:02,885
+A feature where speed is the actual product experience, and both models already
+
+51
+00:03:02,885 --> 00:03:05,528
+clear the bar comfortably, leans the other way.
+
+52
+00:03:05,528 --> 00:03:09,746
+The scorecard's job is making that a visible choice, not making it for you.
+
+53
+00:03:09,746 --> 00:03:13,908
+Write the reasoning down alongside the choice, not just the choice itself.
+
+54
+00:03:13,908 --> 00:03:18,463
+"We picked flagship because the failure cost outweighs four times the spend" is a
+
+55
+00:03:18,463 --> 00:03:21,669
+decision someone can revisit intelligently in six months.
+
+56
+00:03:21,669 --> 00:03:26,055
+"We picked flagship" on its own is a decision nobody can argue with or defend,
+
+57
+00:03:26,055 --> 00:03:30,667
+because the actual reasoning behind it left the room the moment the meeting ended.
+
+58
+00:03:31,217 --> 00:03:35,654
+Say the honest caveat, because a scorecard built once and treated as permanent
+
+59
+00:03:35,654 --> 00:03:39,863
+quietly goes stale in exactly the way a corpus does if nobody revisits it.
+
+60
+00:03:39,863 --> 00:03:40,773
+Pricing changes.
+
+61
+00:03:40,773 --> 00:03:41,683
+New models ship.
+
+62
+00:03:41,683 --> 00:03:46,348
+The mid-tier option that won this quarter's comparison might be beaten outright by
+
+63
+00:03:46,348 --> 00:03:50,955
+something released next month, at a lower price, that didn't exist when you built
+
+64
+00:03:50,955 --> 00:03:51,581
+this table.
+
+65
+00:03:51,581 --> 00:03:56,132
+Put a date on every scorecard, and a reminder to rerun it, because the model you
+
+66
+00:03:56,132 --> 00:04:00,170
+locked in eight months ago is not guaranteed to still be the right row.
+
+67
+00:04:00,170 --> 00:04:04,949
+This is also the argument for keeping your golden set genuinely reusable rather than
+
+68
+00:04:04,949 --> 00:04:06,086
+a one-time artifact.
+
+69
+00:04:06,086 --> 00:04:10,808
+Rerunning the scorecard against a new model release should take an afternoon, not a
+
+70
+00:04:10,808 --> 00:04:15,586
+fresh round of case selection, because the fifty cases and the rubric already exist.
+
+71
+00:04:15,586 --> 00:04:20,023
+Treat the golden set as permanent infrastructure and the recheck becomes cheap
+
+72
+00:04:20,023 --> 00:04:21,957
+enough that people actually do it.
+
+73
+00:04:22,507 --> 00:04:26,829
+That's the document worth building, and the definition's last clause does the real
+
+74
+00:04:26,829 --> 00:04:30,360
+work: below the floor, removed, before anything else gets compared.
+
+75
+00:04:30,360 --> 00:04:33,048
+Try it on a real decision if one's in front of you.
+
+76
+00:04:33,048 --> 00:04:37,054
+Most people building this for the first time discover they've been comparing
+
+77
+00:04:37,054 --> 00:04:41,271
+benchmark numbers for one model against a gut feeling for another, which isn't a
+
+78
+00:04:41,271 --> 00:04:45,487
+comparison at all, just two different kinds of guess sitting next to each other.
+
+79
+00:04:45,487 --> 00:04:46,911
+The fix is rarely dramatic.
+
+80
+00:04:46,911 --> 00:04:51,127
+It's usually one afternoon spent running the same fifty cases through the second
+
+81
+00:04:51,127 --> 00:04:55,080
+model, so the comparison is finally apples to apples instead of a benchmark
+
+82
+00:04:55,080 --> 00:04:58,085
+screenshot against a vague impression from using it once.
+
+83
+00:04:58,635 --> 00:05:00,265
+One thing before you move on.
+
+84
+00:05:00,265 --> 00:05:04,649
+Download the template and confirm the floor first, in writing, before any cost
+
+85
+00:05:04,649 --> 00:05:06,054
+number goes in the sheet.
+
+86
+00:05:06,054 --> 00:05:10,663
+Write it down even if it feels obvious, because "obvious" thresholds have a way of
+
+87
+00:05:10,663 --> 00:05:15,328
+quietly shifting once a cheap, fast option is sitting right there in the same table
+
+88
+00:05:15,328 --> 00:05:16,283
+looking tempting.
+
+89
+00:05:16,283 --> 00:05:20,892
+Then run at least two real candidates through it, using your own golden set, not a
+
+90
+00:05:20,892 --> 00:05:21,567
+leaderboard.
+
+91
+00:05:21,567 --> 00:05:26,232
+Next lecture is the margin trap: what happens when a model clears every row of this
+
+92
+00:05:26,232 --> 00:05:30,672
+scorecard and the feature still loses money per user, because the scorecard was
+
+93
+00:05:30,672 --> 00:05:31,909
+never the whole story.

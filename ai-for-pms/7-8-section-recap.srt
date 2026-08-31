@@ -1,0 +1,91 @@
+1
+00:00:00,350 --> 00:00:04,727
+Eight lectures ago, this section opened with a number most product people had never
+
+2
+00:00:04,727 --> 00:00:08,998
+actually built themselves: what a single call to their own feature costs, in real
+
+3
+00:00:08,998 --> 00:00:10,950
+terms, not a vendor's marketing page.
+
+4
+00:00:10,950 --> 00:00:14,219
+You've got that number now, and everything built on top of it.
+
+5
+00:00:14,219 --> 00:00:18,649
+You know how billing actually works, tokens in and tokens out, and you've built your
+
+6
+00:00:18,649 --> 00:00:21,813
+own cost model instead of borrowing someone else's estimate.
+
+7
+00:00:21,813 --> 00:00:26,190
+You can tell which of three cost-saving levers, if any, actually fits your traffic,
+
+8
+00:00:26,190 --> 00:00:30,198
+instead of building all three because each one sounds reasonable on its own.
+
+9
+00:00:30,198 --> 00:00:34,522
+You've scored real candidates on your own golden set before comparing their price,
+
+10
+00:00:34,522 --> 00:00:38,583
+and you've found the exact tier where a feature's margin quietly crosses from
+
+11
+00:00:38,583 --> 00:00:39,954
+profitable to loss-making.
+
+12
+00:00:39,954 --> 00:00:44,278
+And you've got a latency budget set from what an interaction actually needs, not a
+
+13
+00:00:44,278 --> 00:00:46,915
+number borrowed from a different feature entirely.
+
+14
+00:00:47,465 --> 00:00:52,083
+Two downloadable artifacts came out of this section, and the workshop put both of
+
+15
+00:00:52,083 --> 00:00:56,645
+them, plus a margin tier and a latency budget, on one page for a feature of your
+
+16
+00:00:56,645 --> 00:00:56,873
+own.
+
+17
+00:00:56,873 --> 00:00:59,781
+Use that page on something real before you move on.
+
+18
+00:00:59,781 --> 00:01:04,457
+A pricing conversation is coming for every AI feature that ships, and it goes very
+
+19
+00:01:04,457 --> 00:01:08,848
+differently when you walk in with a number you computed instead of one you're
+
+20
+00:01:08,848 --> 00:01:10,102
+defending on instinct.
+
+21
+00:01:10,102 --> 00:01:14,664
+Next section leaves cost behind for the other number every one of these features
+
+22
+00:01:14,664 --> 00:01:19,283
+eventually has to answer to: risk, and exactly how much oversight a feature needs
+
+23
+00:01:19,283 --> 00:01:21,507
+before anyone lets it run unsupervised.

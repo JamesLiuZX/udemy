@@ -1,0 +1,383 @@
+1
+00:00:00,350 --> 00:00:05,152
+Open A09 and A10 side by side, and give this the same twenty minutes every workshop
+
+2
+00:00:05,152 --> 00:00:06,830
+in this course has asked for.
+
+3
+00:00:06,830 --> 00:00:08,277
+The bar is identical too.
+
+4
+00:00:08,277 --> 00:00:08,971
+Not perfect.
+
+5
+00:00:08,971 --> 00:00:09,492
+Complete.
+
+6
+00:00:09,492 --> 00:00:14,063
+Every number filled in with something, even where that something is an estimate
+
+7
+00:00:14,063 --> 00:00:18,576
+you'll refine later, the same move as Section three, five, and six's workshops
+
+8
+00:00:18,576 --> 00:00:19,502
+before this one.
+
+9
+00:00:19,502 --> 00:00:24,188
+Cost and quality live on completely different spreadsheets in most companies, and
+
+10
+00:00:24,188 --> 00:00:27,197
+latency lives on a dashboard neither one ever opens.
+
+11
+00:00:27,197 --> 00:00:31,942
+This workshop's entire point is putting all three on one page, for one feature, so
+
+12
+00:00:31,942 --> 00:00:36,686
+the trade-offs this section named stop being abstract and start being a number you
+
+13
+00:00:36,686 --> 00:00:37,901
+can defend in a room.
+
+14
+00:00:37,901 --> 00:00:40,910
+That room is usually closer than it feels right now.
+
+15
+00:00:40,910 --> 00:00:45,481
+A pricing review, a roadmap prioritisation meeting, a CFO asking what a feature
+
+16
+00:00:45,481 --> 00:00:49,936
+actually costs to run at scale: this model is the document you'd want in hand
+
+17
+00:00:49,936 --> 00:00:54,738
+walking into any of those, built once instead of assembled under pressure the night
+
+18
+00:00:54,738 --> 00:00:55,143
+before.
+
+19
+00:00:55,693 --> 00:01:00,419
+Notice the first block leans on two lectures at once, because cost never stands
+
+20
+00:01:00,419 --> 00:01:00,778
+alone.
+
+21
+00:01:00,778 --> 00:01:05,563
+7.1 gave you the billing shape, tokens in and tokens out, and 7.2 turned it into
+
+22
+00:01:05,563 --> 00:01:06,520
+your own number.
+
+23
+00:01:06,520 --> 00:01:11,306
+If you already have A09 filled in from that lecture, this block is a five-minute
+
+24
+00:01:11,306 --> 00:01:12,502
+copy, not a rebuild.
+
+25
+00:01:12,502 --> 00:01:16,629
+The second block is where most people find the workshop's real value.
+
+26
+00:01:16,629 --> 00:01:21,534
+Running your own numbers through 7.4's floor first, before cost enters the picture
+
+27
+00:01:21,534 --> 00:01:26,499
+at all, usually disqualifies a candidate someone was quietly already leaning toward
+
+28
+00:01:26,499 --> 00:01:27,696
+for its price alone.
+
+29
+00:01:27,696 --> 00:01:30,627
+The third block moves fastest for most proposals.
+
+30
+00:01:30,627 --> 00:01:35,472
+Check your traffic against caching, batching, and routing's "earns its cost when"
+
+31
+00:01:35,472 --> 00:01:40,497
+column from 7.3, and if nothing matches yet, write down "none of these yet" and move
+
+32
+00:01:40,497 --> 00:01:40,676
+on.
+
+33
+00:01:40,676 --> 00:01:44,684
+That's a legitimate finding, the same honesty 7.3 itself asked for.
+
+34
+00:01:44,684 --> 00:01:48,452
+What's the exact tier where your feature's margin crosses zero?
+
+35
+00:01:48,452 --> 00:01:52,400
+Minutes twelve through sixteen ask for that number, not a feeling.
+
+36
+00:01:52,400 --> 00:01:57,186
+If you don't know your heaviest real user's usage, that's the finding this block
+
+37
+00:01:57,186 --> 00:02:00,356
+exists to produce, the same way it was in 7.5 itself.
+
+38
+00:02:00,356 --> 00:02:03,048
+The last block is the newest tool in the kit.
+
+39
+00:02:03,048 --> 00:02:07,893
+Name your interaction pattern from 7.6's table, read off its real tolerance, then
+
+40
+00:02:07,893 --> 00:02:11,003
+check whether today's build actually fits inside it.
+
+41
+00:02:11,553 --> 00:02:12,687
+Recognise this shape.
+
+42
+00:02:12,687 --> 00:02:17,169
+It's 7.4's own worked example of a decision written down properly, and it's roughly
+
+43
+00:02:17,169 --> 00:02:21,651
+what your workshop's final line should sound like once all five blocks are actually
+
+44
+00:02:21,651 --> 00:02:22,191
+filled in.
+
+45
+00:02:22,191 --> 00:02:26,726
+Notice what the sentence contains: a choice, a number, and the reason the number was
+
+46
+00:02:26,726 --> 00:02:27,428
+worth paying.
+
+47
+00:02:27,428 --> 00:02:31,910
+Notice what it leaves out: no apology, no hedge, no "we'll revisit this eventually"
+
+48
+00:02:31,910 --> 00:02:34,286
+doing the work an actual decision should do.
+
+49
+00:02:34,286 --> 00:02:38,498
+That's the standard this workshop is asking you to hit, not just for the model
+
+50
+00:02:38,498 --> 00:02:42,008
+choice, but for the pricing and latency lines sitting next to it.
+
+51
+00:02:42,008 --> 00:02:46,057
+Compare it against whatever you'd have written before this section started.
+
+52
+00:02:46,057 --> 00:02:50,323
+Most first attempts at justifying a model or a price point sound like "flagship
+
+53
+00:02:50,323 --> 00:02:54,859
+seemed like the safer choice," a sentence with no number in it anyone could actually
+
+54
+00:02:54,859 --> 00:02:55,453
+argue with.
+
+55
+00:02:55,453 --> 00:02:58,801
+Twenty minutes from now, yours should read closer to this one.
+
+56
+00:02:59,351 --> 00:03:03,849
+Say the honest caveat, because minute twelve is where people quietly stop being
+
+57
+00:03:03,849 --> 00:03:06,354
+rigorous, exactly where rigour matters most.
+
+58
+00:03:06,354 --> 00:03:10,966
+If your heaviest real user's actual usage produces a margin number that makes you
+
+59
+00:03:10,966 --> 00:03:13,016
+wince, that's not the model failing.
+
+60
+00:03:13,016 --> 00:03:17,628
+That's the model doing its job before a launch instead of during a finance review
+
+61
+00:03:17,628 --> 00:03:20,076
+that catches you off guard a quarter later.
+
+62
+00:03:20,076 --> 00:03:24,745
+Write the real tier down, then decide what to do about it: a usage-based add-on, a
+
+63
+00:03:24,745 --> 00:03:29,528
+generous cap, or accepting the loss deliberately because the tier is rare enough not
+
+64
+00:03:29,528 --> 00:03:30,097
+to matter.
+
+65
+00:03:30,097 --> 00:03:33,741
+The same discipline applies to the latency block right after it.
+
+66
+00:03:33,741 --> 00:03:38,296
+It's tempting to write down today's measured number and call the budget question
+
+67
+00:03:38,296 --> 00:03:38,809
+answered.
+
+68
+00:03:38,809 --> 00:03:43,591
+Set the budget from the interaction first instead, the way 7.6 argued, and only then
+
+69
+00:03:43,591 --> 00:03:48,374
+check whether today's build actually fits inside it, rather than defining the budget
+
+70
+00:03:48,374 --> 00:03:51,392
+as whatever the current build happens to already hit.
+
+71
+00:03:51,942 --> 00:03:56,439
+That's today's bar, stated as plainly as it was in every workshop before this one:
+
+72
+00:03:56,439 --> 00:04:01,046
+attempted, not perfected, and the one number most likely to be quietly softened, the
+
+73
+00:04:01,046 --> 00:04:02,747
+margin tier, computed for real.
+
+74
+00:04:02,747 --> 00:04:05,489
+If you finish with time left, don't polish evenly.
+
+75
+00:04:05,489 --> 00:04:09,876
+Return to the margin block specifically, the same instruction as always, because
+
+76
+00:04:09,876 --> 00:04:14,483
+it's the block most likely to be quietly incomplete or rounded toward comfort rather
+
+77
+00:04:14,483 --> 00:04:15,251
+than measured.
+
+78
+00:04:15,251 --> 00:04:19,749
+Resist the urge to smooth the cost and quality blocks instead, even though they're
+
+79
+00:04:19,749 --> 00:04:23,039
+the ones with the most satisfying numbers already filled in.
+
+80
+00:04:23,039 --> 00:04:27,591
+A tidy scorecard sitting next to an unchecked margin question is a model that looks
+
+81
+00:04:27,591 --> 00:04:31,979
+more finished than it actually is, and looking finished is exactly the trap this
+
+82
+00:04:31,979 --> 00:04:33,899
+course keeps warning you away from.
+
+83
+00:04:34,449 --> 00:04:36,008
+One thing before you move on.
+
+84
+00:04:36,008 --> 00:04:37,244
+Finish all five blocks.
+
+85
+00:04:37,244 --> 00:04:41,707
+Anywhere the honest answer is an estimate, label it an estimate rather than letting
+
+86
+00:04:41,707 --> 00:04:43,588
+it read as more certain than it is.
+
+87
+00:04:43,588 --> 00:04:48,050
+Then send it to whoever actually owns pricing for this feature, today, and ask what
+
+88
+00:04:48,050 --> 00:04:49,502
+number surprises them most.
+
+89
+00:04:49,502 --> 00:04:52,459
+Expect it to be the margin tier, not the cost per call.
+
+90
+00:04:52,459 --> 00:04:56,867
+That question alone is often worth more than the twenty minutes you spent building
+
+91
+00:04:56,867 --> 00:04:57,405
+the model.
+
+92
+00:04:57,405 --> 00:05:01,921
+It's the same finding this course keeps returning to: the person closest to a number
+
+93
+00:05:01,921 --> 00:05:05,953
+sees the gap in minutes that would take you a week to notice working alone.
+
+94
+00:05:05,953 --> 00:05:10,308
+Next lecture closes this section: what these six lectures actually built, and how
+
+95
+00:05:10,308 --> 00:05:14,824
+directly it plugs into risk and governance next, where a feature's blast radius gets
+
+96
+00:05:14,824 --> 00:05:17,835
+weighed against exactly the economics you just modelled.

@@ -1,0 +1,67 @@
+1
+00:00:00,350 --> 00:00:04,717
+Back in Section one, tokens were a mechanism: why your feature broke at scale, why
+
+2
+00:00:04,717 --> 00:00:06,368
+context windows have a ceiling.
+
+3
+00:00:06,368 --> 00:00:10,842
+This section is the other half of that idea, the half with a dollar sign in front of
+
+4
+00:00:10,842 --> 00:00:11,002
+it.
+
+5
+00:00:11,002 --> 00:00:15,423
+By the end, you'll be able to build a real cost model per user, per call, know when
+
+6
+00:00:15,423 --> 00:00:19,843
+caching or a cheaper model actually helps and when it's a distraction, and spot the
+
+7
+00:00:19,843 --> 00:00:23,838
+margin trap before it shows up in a finance review instead of a design doc.
+
+8
+00:00:24,388 --> 00:00:28,981
+Five ideas, and they build toward the same kind of deliverable every section in this
+
+9
+00:00:28,981 --> 00:00:32,425
+course has: something you actually take into a room and defend.
+
+10
+00:00:32,425 --> 00:00:36,854
+You'll learn exactly how billing works underneath the sticker price, build a real
+
+11
+00:00:36,854 --> 00:00:41,446
+cost model instead of a guess, and learn which of the common cost-cutting tricks are
+
+12
+00:00:41,446 --> 00:00:43,961
+worth the engineering effort and which aren't.
+
+13
+00:00:43,961 --> 00:00:48,445
+Then the margin trap, the specific way a feature quietly loses money per user, and
+
+14
+00:00:48,445 --> 00:00:52,983
+the latency budget that decides whether anyone sticks around long enough to see the
+
+15
+00:00:52,983 --> 00:00:53,365
+answer.
+
+16
+00:00:53,365 --> 00:00:57,794
+It closes with you building the full model yourself, for a feature you'd actually
+
+17
+00:00:57,794 --> 00:00:58,067
+ship.
