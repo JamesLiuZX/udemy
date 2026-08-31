@@ -1,0 +1,387 @@
+1
+00:00:00,350 --> 00:00:04,331
+Here's a number worth sitting with before anything else in this lecture.
+
+2
+00:00:04,331 --> 00:00:08,864
+A batch of twenty statics, the kind Section 3 walked you through generating, costs
+
+3
+00:00:08,864 --> 00:00:11,961
+somewhere around a dollar or two in raw generation fees.
+
+4
+00:00:11,961 --> 00:00:16,273
+A single day of Section 7's testing architecture, eight ad sets at twenty-five
+
+5
+00:00:16,273 --> 00:00:18,042
+dollars each, costs two hundred.
+
+6
+00:00:18,042 --> 00:00:19,867
+That gap is not a rounding error.
+
+7
+00:00:19,867 --> 00:00:21,415
+Generation is close to free.
+
+8
+00:00:21,415 --> 00:00:25,008
+Media spend is the real cost this whole system exists to protect.
+
+9
+00:00:25,008 --> 00:00:29,266
+Worrying about generation cost the way you'd worry about media spend gets the
+
+10
+00:00:29,266 --> 00:00:33,689
+proportions backwards, and it's an easy mistake to make, because both show up as
+
+11
+00:00:33,689 --> 00:00:34,905
+numbers on an invoice.
+
+12
+00:00:34,905 --> 00:00:39,549
+The honest question isn't "can I afford to generate a big batch." At current prices,
+
+13
+00:00:39,549 --> 00:00:40,544
+almost always yes.
+
+14
+00:00:40,544 --> 00:00:44,746
+It's "can I afford to properly test what I generate," which is a media-spend
+
+15
+00:00:44,746 --> 00:00:49,225
+question, not a generation-spend one, and it's the question this lecture actually
+
+16
+00:00:49,225 --> 00:00:49,667
+answers.
+
+17
+00:00:49,667 --> 00:00:51,934
+Why does this confusion happen so easily?
+
+18
+00:00:51,934 --> 00:00:56,523
+Because generation is the part you actively do, click a button, wait a few seconds,
+
+19
+00:00:56,523 --> 00:01:00,890
+watch a result appear, while media spend just quietly accrues in the background
+
+20
+00:01:00,890 --> 00:01:02,217
+across a whole campaign.
+
+21
+00:01:02,217 --> 00:01:04,484
+The visible cost feels like the real one.
+
+22
+00:01:04,484 --> 00:01:08,797
+The one compounding silently in an ad account is where your actual money goes.
+
+23
+00:01:09,347 --> 00:01:12,567
+Read down that table and notice where the real money sits.
+
+24
+00:01:12,567 --> 00:01:16,953
+Generating even a large batch, statics and video variants together, lands under
+
+25
+00:01:16,953 --> 00:01:18,063
+fifty dollars total.
+
+26
+00:01:18,063 --> 00:01:22,727
+Testing that batch properly, even at Harlan's modest scale, costs four times that in
+
+27
+00:01:22,727 --> 00:01:23,448
+a single day.
+
+28
+00:01:23,448 --> 00:01:28,001
+This is why Section 1's volume maths held up economically, not just statistically.
+
+29
+00:01:28,001 --> 00:01:32,498
+Generating more variants to test barely moves your total cost, because generation
+
+30
+00:01:32,498 --> 00:01:34,108
+was never the expensive part.
+
+31
+00:01:34,108 --> 00:01:38,661
+Media spend was always the expensive part, which is why Section 7's kill rules and
+
+32
+00:01:38,661 --> 00:01:42,325
+CAC ceiling matter so much more than anything about the generator.
+
+33
+00:01:42,325 --> 00:01:45,212
+Once an angle actually wins, the gap widens further.
+
+34
+00:01:45,212 --> 00:01:49,820
+Harlan's winning angle now runs at four hundred dollars a day, a real core-campaign
+
+35
+00:01:49,820 --> 00:01:54,261
+budget, while the generation cost that produced the winning cut was a handful of
+
+36
+00:01:54,261 --> 00:01:56,038
+dollars, spent once, months ago.
+
+37
+00:01:56,038 --> 00:01:59,480
+The return on that original spend, at this point, is enormous.
+
+38
+00:01:59,480 --> 00:02:02,867
+Hold both figures from that bottom row together for a moment.
+
+39
+00:02:02,867 --> 00:02:07,475
+A core-campaign budget of four hundred dollars a day is only defensible because the
+
+40
+00:02:07,475 --> 00:02:11,861
+twenty-one-dollar CAC underneath it is real, tested, proven against Section 8's
+
+41
+00:02:11,861 --> 00:02:16,136
+decision tree, not assumed from a feeling about which creative "should" work.
+
+42
+00:02:16,136 --> 00:02:18,634
+The generation cost that got here is trivial.
+
+43
+00:02:18,634 --> 00:02:23,020
+The discipline that turned a cheap batch into a budget worth scaling to is not.
+
+44
+00:02:23,570 --> 00:02:26,168
+Five lines, and the entire point is line five.
+
+45
+00:02:26,168 --> 00:02:30,573
+For almost every account at almost any real scale, that ratio comes out large,
+
+46
+00:02:30,573 --> 00:02:35,316
+meaning one day of testing costs many times more than the entire batch that made the
+
+47
+00:02:35,316 --> 00:02:36,107
+test possible.
+
+48
+00:02:36,107 --> 00:02:40,286
+Fill in your own numbers rather than borrowing Harlan's or this lecture's.
+
+49
+00:02:40,286 --> 00:02:44,748
+Generation pricing moves quickly, tool to tool and month to month, and whatever
+
+50
+00:02:44,748 --> 00:02:49,491
+specific price you pay today is worth checking again before you trust this model six
+
+51
+00:02:49,491 --> 00:02:50,395
+months from now.
+
+52
+00:02:50,395 --> 00:02:52,315
+Notice what this model is not for.
+
+53
+00:02:52,315 --> 00:02:57,002
+It won't tell you whether to spend more on testing, that's Section 7's job, decided
+
+54
+00:02:57,002 --> 00:03:00,504
+from your margin, not from how cheap generation happens to be.
+
+55
+00:03:00,504 --> 00:03:05,191
+It only tells you where your actual cost pressure sits, so you stop rationing batch
+
+56
+00:03:05,191 --> 00:03:09,935
+size to save pennies while the real budget decision happens somewhere else entirely.
+
+57
+00:03:09,935 --> 00:03:12,928
+Line three deserves a second look before you move on.
+
+58
+00:03:12,928 --> 00:03:17,446
+It's tempting to round it to zero once you've compared it against line four, and
+
+59
+00:03:17,446 --> 00:03:19,817
+that temptation is itself worth resisting.
+
+60
+00:03:19,817 --> 00:03:24,279
+A batch that costs almost nothing still costs something, and tracking that real
+
+61
+00:03:24,279 --> 00:03:29,023
+number, however small, is what keeps this whole model honest rather than becoming an
+
+62
+00:03:29,023 --> 00:03:31,733
+excuse to stop counting generation spend at all.
+
+63
+00:03:32,283 --> 00:03:36,898
+One honest trap worth naming, because cheap generation makes it genuinely tempting.
+
+64
+00:03:36,898 --> 00:03:41,346
+If a static costs eight cents and a video clip costs a few dollars, it's easy to
+
+65
+00:03:41,346 --> 00:03:45,293
+reason that a mistake barely matters, you'll just generate another one.
+
+66
+00:03:45,293 --> 00:03:47,683
+That's true for the generation cost itself.
+
+67
+00:03:47,683 --> 00:03:52,187
+It is not true for what happens if the mistake ships before Section 6's checklist
+
+68
+00:03:52,187 --> 00:03:52,798
+catches it.
+
+69
+00:03:52,798 --> 00:03:57,246
+A claim that oversteps the boundary, or a licence gap on an avatar, costs you in
+
+70
+00:03:57,246 --> 00:04:00,693
+policy strikes and wasted media spend, not in generation fees.
+
+71
+00:04:00,693 --> 00:04:05,196
+Keep the pre-flight discipline exactly as tight as this course already taught it,
+
+72
+00:04:05,196 --> 00:04:07,587
+regardless of how cheap the generator gets.
+
+73
+00:04:07,587 --> 00:04:10,422
+Cheap generation is a reason to test more variants.
+
+74
+00:04:10,422 --> 00:04:15,037
+It is never a reason to check them less carefully before they spend a single dollar
+
+75
+00:04:15,037 --> 00:04:15,871
+of real budget.
+
+76
+00:04:15,871 --> 00:04:20,541
+Would you skip a safety check on something expensive just because replacing it would
+
+77
+00:04:20,541 --> 00:04:21,041
+be cheap?
+
+78
+00:04:21,041 --> 00:04:23,098
+Framed that way, the trap is obvious.
+
+79
+00:04:23,098 --> 00:04:27,490
+It's only the cheapness of generation that makes it feel like an exception, and
+
+80
+00:04:27,490 --> 00:04:32,049
+nothing about a claim, a rights gap, or a missing disclosure caption actually gets
+
+81
+00:04:32,049 --> 00:04:36,719
+cheaper to fix once it's already spending real media budget against a live audience.
+
+82
+00:04:37,269 --> 00:04:42,020
+Next lecture asks a different question about the same economics: who should actually
+
+83
+00:04:42,020 --> 00:04:46,545
+be doing this work, given how little of the real cost sits in generation and how
+
+84
+00:04:46,545 --> 00:04:48,411
+much sits in disciplined testing.
+
+85
+00:04:48,411 --> 00:04:52,880
+Before that, run your own numbers through this lecture's five-line model, using
+
+86
+00:04:52,880 --> 00:04:55,594
+today's actual prices, not the ones quoted here.
+
+87
+00:04:55,594 --> 00:05:00,345
+Prices in this category move fast, and a stale number is worse than no number at all
+
+88
+00:05:00,345 --> 00:05:01,816
+if you end up trusting it.
+
+89
+00:05:01,816 --> 00:05:06,228
+Hold onto the ratio you calculate, not just the raw numbers either side of it.
+
+90
+00:05:06,228 --> 00:05:10,979
+A ratio of fifty to one tells a different story than a ratio of five to one, even if
+
+91
+00:05:10,979 --> 00:05:13,580
+both accounts spend roughly the same on media.
+
+92
+00:05:13,580 --> 00:05:18,162
+The lower the ratio, the closer generation cost actually is to mattering, and for
+
+93
+00:05:18,162 --> 00:05:22,686
+most accounts running current tools, that ratio sits high enough that generation
+
+94
+00:05:22,686 --> 00:05:24,440
+genuinely isn't the constraint.
+
+95
+00:05:24,440 --> 00:05:28,795
+Check your own, though, rather than assuming that holds for you specifically.
+
+96
+00:05:28,795 --> 00:05:33,489
+Tool pricing and account scale both vary enough that the honest number is worth the
+
+97
+00:05:33,489 --> 00:05:35,412
+two minutes it takes to calculate.

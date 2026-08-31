@@ -1,0 +1,351 @@
+1
+00:00:00,350 --> 00:00:03,324
+Here's what a single successful test doesn't tell you.
+
+2
+00:00:03,324 --> 00:00:07,180
+It doesn't tell you what happens when that winner eventually fatigues.
+
+3
+00:00:07,180 --> 00:00:11,696
+It doesn't tell you whether a fresh angle is ready to test next, or whether you'll
+
+4
+00:00:11,696 --> 00:00:15,552
+be starting from a blank angle map the week fatigue actually shows up.
+
+5
+00:00:15,552 --> 00:00:19,958
+Every skill this course has built so far works on one batch at a time: brief it,
+
+6
+00:00:19,958 --> 00:00:22,436
+generate it, pre-flight it, test it, read it.
+
+7
+00:00:22,436 --> 00:00:25,355
+None of those lectures said how often to do it again.
+
+8
+00:00:25,355 --> 00:00:29,652
+That's this lecture's entire job: turning a one-time project into a rhythm the
+
+9
+00:00:29,652 --> 00:00:33,342
+account runs on, whether or not this week happens to be a busy one.
+
+10
+00:00:33,342 --> 00:00:37,693
+Without that rhythm, Section 8.4's iterate-or-new-angle call becomes a scramble
+
+11
+00:00:37,693 --> 00:00:38,905
+instead of a decision.
+
+12
+00:00:38,905 --> 00:00:43,476
+A refresh built calmly, in advance, because the sprint scheduled it, is a different
+
+13
+00:00:43,476 --> 00:00:47,938
+thing entirely from one built in a rush the day a winner's numbers finally crack.
+
+14
+00:00:47,938 --> 00:00:51,077
+Harlan's account is a useful example of this gap closing.
+
+15
+00:00:51,077 --> 00:00:55,648
+The angle that won its first small test no longer runs on twenty-five dollars a day
+
+16
+00:00:55,648 --> 00:00:56,860
+in an isolated ad set.
+
+17
+00:00:56,860 --> 00:01:01,377
+It's scaled into real budget, and the sprint you're about to build keeps a refresh
+
+18
+00:01:01,377 --> 00:01:05,728
+ready for it before fatigue forces a scramble, not a system that only exists on
+
+19
+00:01:05,728 --> 00:01:07,986
+paper until the day it's actually needed.
+
+20
+00:01:08,536 --> 00:01:09,469
+Notice the order.
+
+21
+00:01:09,469 --> 00:01:13,146
+Scoring comes first, every week, before any new creative gets made.
+
+22
+00:01:13,146 --> 00:01:17,428
+Generating first and scoring later is exactly the taste-picks-the-winner habit
+
+23
+00:01:17,428 --> 00:01:21,873
+Section 0 broke, just moved a few months downstream and dressed up as a schedule.
+
+24
+00:01:21,873 --> 00:01:26,484
+Thursday's pre-flight step isn't optional just because Wednesday's batch came from a
+
+25
+00:01:26,484 --> 00:01:27,197
+proven brief.
+
+26
+00:01:27,197 --> 00:01:31,698
+Section 6's checklist exists precisely because speed is when a claim slips through
+
+27
+00:01:31,698 --> 00:01:36,034
+or a licence gap goes unnoticed, and a weekly sprint moving fast is exactly the
+
+28
+00:01:36,034 --> 00:01:38,175
+condition that checklist was built for.
+
+29
+00:01:38,175 --> 00:01:42,675
+This rhythm doesn't require a full week's worth of new creative every single week.
+
+30
+00:01:42,675 --> 00:01:47,121
+Some weeks, Monday's scoring turns up nothing that needs a refresh, and Wednesday
+
+31
+00:01:47,121 --> 00:01:49,042
+through Friday are genuinely quiet.
+
+32
+00:01:49,042 --> 00:01:52,665
+That's the sprint working correctly, not a sign it's been skipped.
+
+33
+00:01:52,665 --> 00:01:56,836
+The schedule exists so you notice when something does need attention, not to
+
+34
+00:01:56,836 --> 00:01:59,471
+manufacture busywork on weeks when nothing does.
+
+35
+00:01:59,471 --> 00:02:04,081
+Why does the order matter this much, rather than just the presence of all five steps
+
+36
+00:02:04,081 --> 00:02:05,289
+somewhere in the week?
+
+37
+00:02:05,289 --> 00:02:09,240
+Because each step depends on the one before it having actually happened.
+
+38
+00:02:09,240 --> 00:02:12,424
+Generating before scoring means guessing at what's needed.
+
+39
+00:02:12,424 --> 00:02:16,595
+Launching before pre-flight means shipping whatever was made instead of what
+
+40
+00:02:16,595 --> 00:02:17,528
+actually cleared.
+
+41
+00:02:17,528 --> 00:02:22,029
+The order isn't a style preference, it's what makes each step's output the correct
+
+42
+00:02:22,029 --> 00:02:23,291
+input for the next one.
+
+43
+00:02:23,841 --> 00:02:28,417
+Five steps, and every one of them already exists somewhere earlier in this course.
+
+44
+00:02:28,417 --> 00:02:30,314
+Nothing here is new work to learn.
+
+45
+00:02:30,314 --> 00:02:34,833
+The runbook's entire value is the order and the cadence, not any individual step.
+
+46
+00:02:34,833 --> 00:02:39,297
+Fill in your own weekday mapping if Monday through Friday doesn't match how your
+
+47
+00:02:39,297 --> 00:02:40,357
+week actually runs.
+
+48
+00:02:40,357 --> 00:02:44,876
+What matters is that scoring always comes first in the cycle and launching always
+
+49
+00:02:44,876 --> 00:02:47,387
+comes last, whatever days you attach to them.
+
+50
+00:02:47,387 --> 00:02:52,074
+Notice, too, that step three says "only what Monday and Tuesday actually require." A
+
+51
+00:02:52,074 --> 00:02:56,705
+sprint that generates a fixed quota of new creative every week, whether or not last
+
+52
+00:02:56,705 --> 00:03:01,280
+week's scoring called for it, is optimising for busyness, not for what the account
+
+53
+00:03:01,280 --> 00:03:02,117
+actually needs.
+
+54
+00:03:02,117 --> 00:03:06,693
+Print this, pin it, or keep it wherever you'd actually see it on a Monday morning.
+
+55
+00:03:06,693 --> 00:03:11,380
+A runbook that lives in a folder nobody opens is worth exactly as much as no runbook
+
+56
+00:03:11,380 --> 00:03:11,770
+at all.
+
+57
+00:03:11,770 --> 00:03:16,457
+The five steps only do their job if something makes you look at them at the start of
+
+58
+00:03:16,457 --> 00:03:17,461
+every single week.
+
+59
+00:03:18,011 --> 00:03:22,580
+One honest trap worth naming, because it's the kind that only shows up months later.
+
+60
+00:03:22,580 --> 00:03:27,149
+A quiet Monday, nothing scored, nothing to refresh, feels like nothing happened, and
+
+61
+00:03:27,149 --> 00:03:31,555
+it's tempting to skip the check-in entirely next week since this week didn't need
+
+62
+00:03:31,555 --> 00:03:31,718
+it.
+
+63
+00:03:31,718 --> 00:03:34,710
+Do that a few times and the sprint stops being a habit.
+
+64
+00:03:34,710 --> 00:03:39,224
+It becomes something you do only when a problem's already visible, which is exactly
+
+65
+00:03:39,224 --> 00:03:42,379
+the reactive posture this whole section exists to prevent.
+
+66
+00:03:42,379 --> 00:03:46,458
+Run the scoring step every week regardless, even on the weeks you're fairly
+
+67
+00:03:46,458 --> 00:03:47,981
+confident nothing's changed.
+
+68
+00:03:47,981 --> 00:03:52,278
+A five-minute check that confirms nothing needs doing costs you almost nothing.
+
+69
+00:03:52,278 --> 00:03:56,847
+Losing the habit entirely, and rebuilding it from scratch the week a winner actually
+
+70
+00:03:56,847 --> 00:03:59,023
+goes tired, costs you considerably more.
+
+71
+00:03:59,023 --> 00:04:03,266
+Ask yourself honestly, at the end of each quiet week: did you actually run the
+
+72
+00:04:03,266 --> 00:04:06,856
+check, or did you just feel confident enough to assume the answer?
+
+73
+00:04:06,856 --> 00:04:11,153
+Those are not the same thing, and only one of them is the habit this lecture is
+
+74
+00:04:11,153 --> 00:04:12,186
+asking you to keep.
+
+75
+00:04:12,736 --> 00:04:17,085
+Next lecture puts real numbers against this rhythm: what a week of generation
+
+76
+00:04:17,085 --> 00:04:20,531
+actually costs, set against the media budget it's protecting.
+
+77
+00:04:20,531 --> 00:04:24,146
+Before that, sketch out your own five-day version, even roughly.
+
+78
+00:04:24,146 --> 00:04:28,890
+The exact days matter less than the order: score first, decide second, generate only
+
+79
+00:04:28,890 --> 00:04:30,980
+what's needed, check it, then launch.
+
+80
+00:04:30,980 --> 00:04:35,442
+Get that order right and the schedule underneath it can flex to fit your actual
+
+81
+00:04:35,442 --> 00:04:35,725
+week.
+
+82
+00:04:35,725 --> 00:04:40,469
+Notice what this rhythm quietly assumes, too: that scoring, deciding, and generating
+
+83
+00:04:40,469 --> 00:04:45,101
+are each somebody's actual job on a given day, not a vague intention floating over
+
+84
+00:04:45,101 --> 00:04:45,948
+the whole week.
+
+85
+00:04:45,948 --> 00:04:50,580
+If nobody owns Monday's scoring step specifically, it's the first thing that slips
+
+86
+00:04:50,580 --> 00:04:52,387
+when a busier priority shows up.
+
+87
+00:04:52,387 --> 00:04:57,132
+Section 9.3 picks up exactly that question next, who runs which day, once the rhythm
+
+88
+00:04:57,132 --> 00:04:58,149
+itself is settled.

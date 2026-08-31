@@ -1,0 +1,367 @@
+1
+00:00:00,350 --> 00:00:04,912
+Section 9.1's Wednesday step says "generate whatever Tuesday's decisions require."
+
+2
+00:00:04,912 --> 00:00:06,637
+That sentence hides a real gap.
+
+3
+00:00:06,637 --> 00:00:11,143
+Deciding you need a new angle is not the same as knowing what that angle actually
+
+4
+00:00:11,143 --> 00:00:15,427
+is, and staring at a blank brief on a Wednesday is where a lot of sprint time
+
+5
+00:00:15,427 --> 00:00:16,150
+quietly goes.
+
+6
+00:00:16,150 --> 00:00:18,653
+A swipe file closes that gap before it opens.
+
+7
+00:00:18,653 --> 00:00:22,882
+It's a running collection of angles, hooks, and reference creative, gathered
+
+8
+00:00:22,882 --> 00:00:27,054
+continuously rather than assembled from scratch under Wednesday's deadline.
+
+9
+00:00:27,054 --> 00:00:31,561
+When Tuesday's decision says "new angle needed," you're choosing from a list, not
+
+10
+00:00:31,561 --> 00:00:33,007
+inventing one on the spot.
+
+11
+00:00:33,007 --> 00:00:34,287
+This isn't a new skill.
+
+12
+00:00:34,287 --> 00:00:38,626
+Section 2.3 already taught you the hook taxonomy that makes a swipe file worth
+
+13
+00:00:38,626 --> 00:00:39,071
+keeping.
+
+14
+00:00:39,071 --> 00:00:43,299
+This lecture is about building the habit of feeding it continuously, so that
+
+15
+00:00:43,299 --> 00:00:46,137
+taxonomy has somewhere real to live between briefs.
+
+16
+00:00:46,137 --> 00:00:50,420
+Why does this matter enough for its own lecture, rather than a single line in
+
+17
+00:00:50,420 --> 00:00:51,088
+Section 9.1?
+
+18
+00:00:51,088 --> 00:00:55,260
+Because the gap it closes is invisible until you're actually staring at it.
+
+19
+00:00:55,260 --> 00:00:59,600
+A sprint that runs perfectly for three weeks can still stall completely on the
+
+20
+00:00:59,600 --> 00:01:04,106
+fourth, the moment Tuesday calls for a genuinely new angle and nothing's ready to
+
+21
+00:01:04,106 --> 00:01:04,551
+meet it.
+
+22
+00:01:05,101 --> 00:01:06,345
+Notice the fourth row.
+
+23
+00:01:06,345 --> 00:01:09,227
+Most swipe files only collect things worth copying.
+
+24
+00:01:09,227 --> 00:01:13,466
+This one deliberately keeps a few things worth avoiding too, an overclaimed
+
+25
+00:01:13,466 --> 00:01:18,213
+competitor ad, an obvious AI tell, because remembering what failure looks like is as
+
+26
+00:01:18,213 --> 00:01:20,135
+useful as remembering what worked.
+
+27
+00:01:20,135 --> 00:01:22,848
+The first row is the one that compounds fastest.
+
+28
+00:01:22,848 --> 00:01:27,595
+Every winner Section 8.5's scorecard confirms is worth adding here, not just logging
+
+29
+00:01:27,595 --> 00:01:28,443
+and forgetting.
+
+30
+00:01:28,443 --> 00:01:33,021
+A year into running this sprint, your own proven angles become the single richest
+
+31
+00:01:33,021 --> 00:01:37,260
+source in the file, richer than anything borrowed from outside the account.
+
+32
+00:01:37,260 --> 00:01:41,894
+Tag entries by awareness level as you add them, the same ladder Section 2.2 built.
+
+33
+00:01:41,894 --> 00:01:46,415
+A swipe file sorted this way answers Wednesday's actual question directly: given
+
+34
+00:01:46,415 --> 00:01:51,163
+this angle map's gaps, what's already sitting in the file for a cold audience versus
+
+35
+00:01:51,163 --> 00:01:51,784
+a warm one.
+
+36
+00:01:51,784 --> 00:01:55,402
+The second and third rows work together in a way worth noticing.
+
+37
+00:01:55,402 --> 00:01:59,301
+Competitor and category ads show you what the wider market is trying.
+
+38
+00:01:59,301 --> 00:02:03,936
+Your own hook taxonomy tells you which pattern that ad is actually an instance of.
+
+39
+00:02:03,936 --> 00:02:08,457
+Read together, they turn "I saw an ad I liked" into "that's a curiosity-gap hook
+
+40
+00:02:08,457 --> 00:02:12,865
+aimed at a cold audience," which is the form Wednesday's brief actually needs.
+
+41
+00:02:13,415 --> 00:02:17,826
+The first half of this habit happens whenever it happens, on a train, scrolling a
+
+42
+00:02:17,826 --> 00:02:20,658
+competitor's feed, mid-conversation with a customer.
+
+43
+00:02:20,658 --> 00:02:21,856
+Capture takes seconds.
+
+44
+00:02:21,856 --> 00:02:26,049
+The one-line tag is deliberate: full detail later, on Wednesday, when there's
+
+45
+00:02:26,049 --> 00:02:28,064
+actually time to develop it properly.
+
+46
+00:02:28,064 --> 00:02:31,985
+The second half is what makes Wednesday faster, not just more organised.
+
+47
+00:02:31,985 --> 00:02:36,396
+Checking the file before opening a blank brief means the default question becomes
+
+48
+00:02:36,396 --> 00:02:40,861
+"does something here fit" rather than "what should I make," and the first question
+
+49
+00:02:40,861 --> 00:02:42,713
+is almost always faster to answer.
+
+50
+00:02:42,713 --> 00:02:45,653
+Notice this doesn't replace Section 2's brief process.
+
+51
+00:02:45,653 --> 00:02:46,307
+It feeds it.
+
+52
+00:02:46,307 --> 00:02:50,827
+A swipe file entry becomes the seed of a proper brief, run through the same product
+
+53
+00:02:50,827 --> 00:02:53,277
+truth doc and hook taxonomy as anything else.
+
+54
+00:02:53,277 --> 00:02:57,851
+It just means that seed already exists on Wednesday morning instead of needing to be
+
+55
+00:02:57,851 --> 00:02:59,158
+invented under deadline.
+
+56
+00:02:59,158 --> 00:03:01,119
+Where should you actually keep this?
+
+57
+00:03:01,119 --> 00:03:03,624
+Anywhere you'll genuinely open on a Wednesday.
+
+58
+00:03:03,624 --> 00:03:08,144
+A shared document, a simple spreadsheet, even a folder of screenshots with one-line
+
+59
+00:03:08,144 --> 00:03:08,634
+captions.
+
+60
+00:03:08,634 --> 00:03:13,208
+The specific tool matters far less than whether it's somewhere you'll actually check
+
+61
+00:03:13,208 --> 00:03:17,510
+before reaching for a blank brief, which is the entire reason this file exists.
+
+62
+00:03:18,060 --> 00:03:22,595
+One honest trap worth naming, because a well-stocked swipe file makes it genuinely
+
+63
+00:03:22,595 --> 00:03:23,093
+tempting.
+
+64
+00:03:23,093 --> 00:03:27,518
+Studying why a competitor's hook works, the structure, the pacing, the awareness
+
+65
+00:03:27,518 --> 00:03:30,504
+level it's aimed at, is exactly what this file is for.
+
+66
+00:03:30,504 --> 00:03:35,039
+Copying their actual claim word for word is a different act entirely, and it skips
+
+67
+00:03:35,039 --> 00:03:38,081
+straight past Section 6's entire pre-flight discipline.
+
+68
+00:03:38,081 --> 00:03:42,229
+You have no idea whether that claim would survive your own product's claims
+
+69
+00:03:42,229 --> 00:03:46,156
+boundary, because it was never tested against yours in the first place.
+
+70
+00:03:46,156 --> 00:03:48,645
+Keep the two separate in how you tag entries.
+
+71
+00:03:48,645 --> 00:03:53,180
+Note the pattern that caught your attention, never the exact line, and rebuild the
+
+72
+00:03:53,180 --> 00:03:55,890
+claim from your own product truth doc every time.
+
+73
+00:03:55,890 --> 00:03:57,328
+The structure is reusable.
+
+74
+00:03:57,328 --> 00:03:59,706
+The specific words underneath it never are.
+
+75
+00:03:59,706 --> 00:04:03,910
+This is the same discipline Section 6.2 already built around Harlan's killed
+
+76
+00:04:03,910 --> 00:04:06,288
+swelling claim, aimed at a new entry point.
+
+77
+00:04:06,288 --> 00:04:10,768
+A borrowed claim never even reaches a human sign-off gate to catch it, because it
+
+78
+00:04:10,768 --> 00:04:13,588
+looks like it's already been proven somewhere else.
+
+79
+00:04:13,588 --> 00:04:14,141
+It hasn't.
+
+80
+00:04:14,141 --> 00:04:18,787
+It's only been proven on a product, an audience, and a legal footing that were never
+
+81
+00:04:18,787 --> 00:04:19,893
+yours to begin with.
+
+82
+00:04:20,443 --> 00:04:24,910
+Next lecture turns everything this section has built, the sprint, the economics,
+
+83
+00:04:24,910 --> 00:04:28,818
+this file, into a report someone outside the work can actually follow.
+
+84
+00:04:28,818 --> 00:04:32,112
+Before that, start the file today, even with three entries.
+
+85
+00:04:32,112 --> 00:04:36,579
+An angle you noticed this week, a hook pattern from Section 2.3 you haven't used
+
+86
+00:04:36,579 --> 00:04:38,142
+yet, one cautionary example.
+
+87
+00:04:38,142 --> 00:04:42,051
+Three entries beats an empty folder the next time Wednesday needs one.
+
+88
+00:04:42,051 --> 00:04:46,406
+Revisit it at the end of every sprint, too, not only when you're adding to it.
+
+89
+00:04:46,406 --> 00:04:50,928
+A swipe file nobody prunes eventually turns into noise, dozens of half-remembered
+
+90
+00:04:50,928 --> 00:04:53,832
+entries with no clear reason any of them were saved.
+
+91
+00:04:53,832 --> 00:04:58,298
+Five minutes a week, deciding what's still worth keeping and what's quietly gone
+
+92
+00:04:58,298 --> 00:05:01,760
+stale, keeps the file genuinely useful rather than just large.

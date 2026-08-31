@@ -1,0 +1,335 @@
+1
+00:00:00,350 --> 00:00:04,871
+Section 9.1 ended with a real question left open: if nobody owns Monday's scoring
+
+2
+00:00:04,871 --> 00:00:07,718
+step specifically, it's the first thing that slips.
+
+3
+00:00:07,718 --> 00:00:12,184
+This lecture answers who "somebody" actually is, across the three ways this work
+
+4
+00:00:12,184 --> 00:00:13,300
+genuinely gets done.
+
+5
+00:00:13,300 --> 00:00:16,258
+None of the three is the correct one in the abstract.
+
+6
+00:00:16,258 --> 00:00:20,724
+Sam runs Harlan's account solo, fifteen hours a week, and the sprint still runs.
+
+7
+00:00:20,724 --> 00:00:24,687
+A larger brand might split it across a media buyer and a creative lead.
+
+8
+00:00:24,687 --> 00:00:29,208
+An agency might run it for several accounts at once, each with a different client
+
+9
+00:00:29,208 --> 00:00:30,324
+relationship on top.
+
+10
+00:00:30,324 --> 00:00:31,887
+The five steps don't change.
+
+11
+00:00:31,887 --> 00:00:33,897
+Who's accountable for each one does.
+
+12
+00:00:33,897 --> 00:00:37,134
+What doesn't survive any of the three models is vagueness.
+
+13
+00:00:37,134 --> 00:00:39,200
+"The team handles it" isn't an owner.
+
+14
+00:00:39,200 --> 00:00:42,660
+A specific name against Monday's scoring step, every week, is.
+
+15
+00:00:42,660 --> 00:00:44,893
+Which model is actually yours right now?
+
+16
+00:00:44,893 --> 00:00:49,191
+Not the one you're planning to grow into eventually, the one you're genuinely
+
+17
+00:00:49,191 --> 00:00:52,708
+running this week, with the hours and people you actually have.
+
+18
+00:00:52,708 --> 00:00:57,285
+This lecture is easiest to use if you answer that honestly before the table below,
+
+19
+00:00:57,285 --> 00:01:01,415
+rather than reading it as three options to choose between in the abstract.
+
+20
+00:01:01,965 --> 00:01:05,670
+Notice the solo row is the tightest constraint, not the loosest.
+
+21
+00:01:05,670 --> 00:01:10,416
+One person doing all five steps means nothing gets caught by a second set of eyes,
+
+22
+00:01:10,416 --> 00:01:15,047
+and it means the time-box from Section 9.1 matters more here than anywhere else.
+
+23
+00:01:15,047 --> 00:01:19,851
+Without it, scoring quietly eats into the hours meant for generating, and the whole
+
+24
+00:01:19,851 --> 00:01:21,414
+week slips a day at a time.
+
+25
+00:01:21,414 --> 00:01:26,045
+The in-house row splits scoring from generating across two different skill sets,
+
+26
+00:01:26,045 --> 00:01:30,618
+which is closer to how Harlan's setup could grow if the account scales further.
+
+27
+00:01:30,618 --> 00:01:35,307
+That split only works if the two people actually talk on the same weekly cadence.
+
+28
+00:01:35,307 --> 00:01:40,169
+A media buyer scoring in isolation, handing results to a creative lead who checks in
+
+29
+00:01:40,169 --> 00:01:43,758
+irregularly, quietly breaks the order Section 9.1 insisted on.
+
+30
+00:01:43,758 --> 00:01:48,446
+The agency row carries a responsibility the other two don't: reporting this whole
+
+31
+00:01:48,446 --> 00:01:51,572
+rhythm to someone who isn't in the room for any of it.
+
+32
+00:01:51,572 --> 00:01:55,971
+That's exactly what Section 9.5 covers next, and it's worth knowing now that
+
+33
+00:01:55,971 --> 00:02:00,544
+whichever model you're running, someone eventually has to explain it to someone
+
+34
+00:02:00,544 --> 00:02:00,833
+else.
+
+35
+00:02:01,383 --> 00:02:05,075
+Three questions, and none of them has a universally right answer.
+
+36
+00:02:05,075 --> 00:02:09,846
+The right model is whichever one actually gets all five of Section 9.1's steps done,
+
+37
+00:02:09,846 --> 00:02:14,220
+honestly, every week, given the real hours and approvals you're working with.
+
+38
+00:02:14,220 --> 00:02:17,401
+Notice question one is really about capacity, not skill.
+
+39
+00:02:17,401 --> 00:02:22,058
+Sam could plausibly run a larger account than Harlan's solo, if the hours existed.
+
+40
+00:02:22,058 --> 00:02:26,772
+They don't, which is exactly why fifteen hours a week and one account is the honest
+
+41
+00:02:26,772 --> 00:02:29,271
+ceiling on what his current model can carry.
+
+42
+00:02:29,271 --> 00:02:33,702
+Answer these for your own situation before the next lecture, which assumes you
+
+43
+00:02:33,702 --> 00:02:36,030
+already know roughly which row you're in.
+
+44
+00:02:36,030 --> 00:02:40,745
+The swipe file Section 9.4 builds works differently depending on whether one person
+
+45
+00:02:40,745 --> 00:02:41,881
+feeds it or several.
+
+46
+00:02:41,881 --> 00:02:46,595
+None of these three questions asks which model sounds more professional, and that's
+
+47
+00:02:46,595 --> 00:02:47,220
+deliberate.
+
+48
+00:02:47,220 --> 00:02:51,877
+A solo operator running Section 9.1's rhythm honestly, every week, is doing better
+
+49
+00:02:51,877 --> 00:02:56,648
+work than a three- person team that's quietly skipping Monday's scoring step because
+
+50
+00:02:56,648 --> 00:02:58,977
+nobody's individually accountable for it.
+
+51
+00:02:58,977 --> 00:03:02,555
+The model is a means to the rhythm, not the achievement itself.
+
+52
+00:03:03,105 --> 00:03:07,452
+One honest trap worth naming, because it looks different depending on which row
+
+53
+00:03:07,452 --> 00:03:10,918
+you're in, and it's easy to assume it's someone else's problem.
+
+54
+00:03:10,918 --> 00:03:15,210
+Working solo, the busiest weeks are exactly when scoring gets skipped, because
+
+55
+00:03:15,210 --> 00:03:17,796
+there's no one else to notice it didn't happen.
+
+56
+00:03:17,796 --> 00:03:22,197
+Working at an agency, the same skip happens for a different reason: a client who
+
+57
+00:03:22,197 --> 00:03:26,819
+isn't reviewing the weekly numbers closely enough to notice a quiet week of unscored
+
+58
+00:03:26,819 --> 00:03:27,259
+ad sets.
+
+59
+00:03:27,259 --> 00:03:30,175
+Both failures look identical from the account's side.
+
+60
+00:03:30,175 --> 00:03:32,321
+A winner nobody checked on for a month.
+
+61
+00:03:32,321 --> 00:03:36,943
+Whichever model you're running, build in one honest check: something that would make
+
+62
+00:03:36,943 --> 00:03:41,234
+a skipped week visible to you, not just something that trusts you'll remember.
+
+63
+00:03:41,234 --> 00:03:45,856
+A shared calendar reminder, a client report due every Friday, anything that turns "I
+
+64
+00:03:45,856 --> 00:03:50,423
+should score this" into "I have to show someone I scored this." Notice that the fix
+
+65
+00:03:50,423 --> 00:03:54,659
+is the same shape across all three models, even though the failure mode looks
+
+66
+00:03:54,659 --> 00:03:55,210
+different.
+
+67
+00:03:55,210 --> 00:03:59,831
+Visibility, to someone other than the person doing the work, is what closes the gap.
+
+68
+00:03:59,831 --> 00:04:04,398
+Working entirely alone removes that safeguard by definition, which is exactly why a
+
+69
+00:04:04,398 --> 00:04:09,020
+solo operator has to manufacture it deliberately rather than assume a colleague will
+
+70
+00:04:09,020 --> 00:04:10,010
+eventually notice.
+
+71
+00:04:10,560 --> 00:04:15,187
+Next lecture builds the swipe file that feeds Wednesday's generation step, whichever
+
+72
+00:04:15,187 --> 00:04:16,289
+model is running it.
+
+73
+00:04:16,289 --> 00:04:20,641
+A solo operator and an agency pod both need somewhere to pull from that isn't a
+
+74
+00:04:20,641 --> 00:04:21,247
+blank page.
+
+75
+00:04:21,247 --> 00:04:25,819
+Before that, name the actual person, even if it's only you, against each of Section
+
+76
+00:04:25,819 --> 00:04:26,756
+9.1's five steps.
+
+77
+00:04:26,756 --> 00:04:30,887
+An unnamed owner is how a good rhythm quietly turns into an occasional one.
+
+78
+00:04:30,887 --> 00:04:35,239
+Sam's setup is worth returning to here, because it's the least glamorous of the
+
+79
+00:04:35,239 --> 00:04:37,939
+three models and the one that's actually working.
+
+80
+00:04:37,939 --> 00:04:42,566
+Fifteen hours a week, one account, every step owned by the same person, with nothing
+
+81
+00:04:42,566 --> 00:04:46,863
+more sophisticated than a calendar block protecting Monday's scoring step from
+
+82
+00:04:46,863 --> 00:04:49,507
+getting eaten by whatever else that week brings.
+
+83
+00:04:49,507 --> 00:04:54,134
+It scales further than it looks like it should, precisely because the rhythm itself,
+
+84
+00:04:54,134 --> 00:04:57,935
+not the org chart around it, is what's actually carrying the account.

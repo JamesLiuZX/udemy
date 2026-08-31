@@ -1,0 +1,55 @@
+1
+00:00:00,350 --> 00:00:04,656
+You ended Section eight with a single ad set, properly read: winner, loser, or
+
+2
+00:00:04,656 --> 00:00:06,036
+noise, honestly labelled.
+
+3
+00:00:06,036 --> 00:00:07,582
+That's not yet an operation.
+
+4
+00:00:07,582 --> 00:00:12,108
+It's one result, on one day, and nothing here yet guarantees it happens again next
+
+5
+00:00:12,108 --> 00:00:12,384
+week.
+
+6
+00:00:12,384 --> 00:00:16,745
+This section builds the machine around that habit for you: a weekly sprint that
+
+7
+00:00:16,745 --> 00:00:20,996
+keeps fresh angles ready before fatigue forces the issue, a real look at what
+
+8
+00:00:20,996 --> 00:00:25,412
+generation actually costs against your media spend, and the reporting that shows
+
+9
+00:00:25,412 --> 00:00:28,283
+your whole system's work to whoever's paying for it.
+
+10
+00:00:28,283 --> 00:00:32,920
+Harlan's account, now scaling past its first test, is the worked example throughout.
+
+11
+00:00:33,470 --> 00:00:37,364
+Five lectures, covering the operating rhythm rather than any single skill.
+
+12
+00:00:37,364 --> 00:00:41,680
+By the end, you'll know how the whole system runs week over week, what it actually
+
+13
+00:00:41,680 --> 00:00:46,048
+costs to run, who should be running which part of it, and how to prove it's working
+
+14
+00:00:46,048 --> 00:00:48,574
+to someone who wasn't in the room for any of it.
