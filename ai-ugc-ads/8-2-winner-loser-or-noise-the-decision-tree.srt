@@ -1,0 +1,335 @@
+1
+00:00:00,350 --> 00:00:05,021
+Most people reading a test result reach for one of two conclusions: this worked, or
+
+2
+00:00:05,021 --> 00:00:05,697
+this didn't.
+
+3
+00:00:05,697 --> 00:00:08,342
+That's an honest instinct, and it's incomplete.
+
+4
+00:00:08,342 --> 00:00:12,732
+A huge share of real results belong in a third bucket neither of those options
+
+5
+00:00:12,732 --> 00:00:13,125
+covers.
+
+6
+00:00:13,125 --> 00:00:15,771
+Think about why a binary read feels so natural.
+
+7
+00:00:15,771 --> 00:00:20,386
+Everything up to this point in the course rewarded a clean decision: kill or keep,
+
+8
+00:00:20,386 --> 00:00:21,173
+ship or don't.
+
+9
+00:00:21,173 --> 00:00:22,749
+A results read is different.
+
+10
+00:00:22,749 --> 00:00:25,788
+The most common honest answer isn't a decision at all.
+
+11
+00:00:25,788 --> 00:00:30,178
+It's a deferral, and deferrals don't feel like progress, even when they're the
+
+12
+00:00:30,178 --> 00:00:30,910
+correct call.
+
+13
+00:00:30,910 --> 00:00:35,469
+Noise means exactly what Section 7.4 already taught you to look for: a result too
+
+14
+00:00:35,469 --> 00:00:39,070
+small, too fragile, or too recent to actually mean anything yet.
+
+15
+00:00:39,070 --> 00:00:43,404
+Sorting into winner or loser when the honest answer is noise isn't a harmless
+
+16
+00:00:43,404 --> 00:00:44,248
+simplification.
+
+17
+00:00:44,248 --> 00:00:48,694
+It's the single most common way a testing programme quietly stops being honest.
+
+18
+00:00:48,694 --> 00:00:50,439
+Why does this happen so easily?
+
+19
+00:00:50,439 --> 00:00:54,885
+Because "still noise" is an unsatisfying thing to report, especially after real
+
+20
+00:00:54,885 --> 00:00:56,799
+budget's already gone into a test.
+
+21
+00:00:56,799 --> 00:00:59,106
+Winner and loser both feel like progress.
+
+22
+00:00:59,106 --> 00:01:03,440
+Noise feels like nothing happened, even though correctly identifying noise is
+
+23
+00:01:03,440 --> 00:01:07,154
+exactly the discipline Section 7.4 spent a whole lecture building.
+
+24
+00:01:07,704 --> 00:01:12,190
+Run these three questions in order, and notice the tree only produces a winner
+
+25
+00:01:12,190 --> 00:01:16,849
+through one specific path: real margin past the kill rule, a genuine gap past the
+
+26
+00:01:16,849 --> 00:01:20,587
+CAC ceiling, and a sample robust enough to survive the swap test.
+
+27
+00:01:20,587 --> 00:01:24,786
+Miss any one of those and the honest label is noise or loser, not winner.
+
+28
+00:01:24,786 --> 00:01:29,387
+This is deliberately harder to reach than just "beat the ceiling once." A single
+
+29
+00:01:29,387 --> 00:01:34,218
+result that clears the CAC line on a tiny sample still routes back to noise, because
+
+30
+00:01:34,218 --> 00:01:38,934
+Section 7.4 already showed you how easily a small sample produces a gap that isn't
+
+31
+00:01:38,934 --> 00:01:39,222
+real.
+
+32
+00:01:39,222 --> 00:01:43,938
+Notice, too, that a loser can arrive two different ways on this tree, and both are
+
+33
+00:01:43,938 --> 00:01:44,858
+genuinely final.
+
+34
+00:01:44,858 --> 00:01:47,734
+Failing the kill rule outright is the obvious one.
+
+35
+00:01:47,734 --> 00:01:52,220
+Passing the kill rule but never producing a swap-proof gap past the ceiling is
+
+36
+00:01:52,220 --> 00:01:56,821
+quieter, and easy to miss if you stop checking once an ad set survives its first
+
+37
+00:01:56,821 --> 00:01:57,397
+threshold.
+
+38
+00:01:57,397 --> 00:02:02,113
+Walk through what happens to an ad set that never quite clears row two, week after
+
+39
+00:02:02,113 --> 00:02:02,400
+week.
+
+40
+00:02:02,400 --> 00:02:05,334
+It's not failing outright, so it never gets killed.
+
+41
+00:02:05,334 --> 00:02:07,232
+It's also never actually winning.
+
+42
+00:02:07,232 --> 00:02:12,063
+Left unchecked, that ad set can sit in your account indefinitely, spending steadily,
+
+43
+00:02:12,063 --> 00:02:16,606
+contributing nothing, simply because nobody ran the third question against it a
+
+44
+00:02:16,606 --> 00:02:17,297
+second time.
+
+45
+00:02:17,847 --> 00:02:21,793
+Here's a real result, read against the tree instead of against a feeling.
+
+46
+00:02:21,793 --> 00:02:26,279
+Two point six percent click-through, nearly three times the old gut-era baseline of
+
+47
+00:02:26,279 --> 00:02:27,576
+zero point nine percent.
+
+48
+00:02:27,576 --> 00:02:31,901
+Nineteen dollars CAC, comfortably under the twenty-four-dollar ceiling, not just
+
+49
+00:02:31,901 --> 00:02:32,820
+scraping past it.
+
+50
+00:02:32,820 --> 00:02:37,198
+Notice what made this a genuine winner rather than a lucky early lead: it cleared
+
+51
+00:02:37,198 --> 00:02:40,225
+every question on the tree, not just the flattering one.
+
+52
+00:02:40,225 --> 00:02:44,766
+Against six other ad sets that were mostly noise, this is the one result that earned
+
+53
+00:02:44,766 --> 00:02:46,928
+its verdict instead of being handed one.
+
+54
+00:02:46,928 --> 00:02:51,252
+Would this still count as a winner if the CAC had landed at twenty-three dollars
+
+55
+00:02:51,252 --> 00:02:55,522
+instead of nineteen, barely under the ceiling rather than comfortably under it?
+
+56
+00:02:55,522 --> 00:02:59,955
+Worth asking yourself that question now, because a margin that thin is exactly the
+
+57
+00:02:59,955 --> 00:03:03,793
+kind Section 7.4's swap test exists to interrogate before you trust it.
+
+58
+00:03:04,343 --> 00:03:08,190
+One honest expectation before you run this tree on your own results.
+
+59
+00:03:08,190 --> 00:03:12,830
+Out of Harlan's first batch of ad sets, most of them landed in noise or loser, and
+
+60
+00:03:12,830 --> 00:03:15,037
+only one earned a clean winner verdict.
+
+61
+00:03:15,037 --> 00:03:17,922
+That ratio isn't a sign the testing machine failed.
+
+62
+00:03:17,922 --> 00:03:21,374
+It's what an honest read of a real batch actually looks like.
+
+63
+00:03:21,374 --> 00:03:26,014
+A tree that called every ad set a winner or a loser would be lying to you far more
+
+64
+00:03:26,014 --> 00:03:27,428
+often than this one does.
+
+65
+00:03:27,428 --> 00:03:32,068
+Hold that ratio against Section 1.4's volume maths, because it's the same argument
+
+66
+00:03:32,068 --> 00:03:34,331
+showing up again from a different angle.
+
+67
+00:03:34,331 --> 00:03:39,084
+You generate a real batch, not one hero ad, precisely because most individual angles
+
+68
+00:03:39,084 --> 00:03:40,669
+won't earn a winner verdict.
+
+69
+00:03:40,669 --> 00:03:43,950
+The system was never designed to make every angle succeed.
+
+70
+00:03:43,950 --> 00:03:48,364
+It was designed to find the one that does, honestly, among several that don't.
+
+71
+00:03:48,364 --> 00:03:51,306
+That reframing matters for morale as much as method.
+
+72
+00:03:51,306 --> 00:03:55,606
+If you expect most of a batch to win, a normal result feels like a string of
+
+73
+00:03:55,606 --> 00:03:56,116
+failures.
+
+74
+00:03:56,116 --> 00:04:00,812
+If you expect most of a batch to land in noise or loser by design, that same result
+
+75
+00:04:00,812 --> 00:04:04,320
+feels like exactly what a real test looks like, because it is.
+
+76
+00:04:04,870 --> 00:04:09,008
+Next lecture picks up exactly where this one ends: what happens to a real winner,
+
+77
+00:04:09,008 --> 00:04:13,196
+weeks later, when the same creative that earned this verdict quietly stops earning
+
+78
+00:04:13,196 --> 00:04:13,349
+it.
+
+79
+00:04:13,349 --> 00:04:16,823
+Before that, run this tree on whatever test you have live right now.
+
+80
+00:04:16,823 --> 00:04:21,011
+Answer the three questions honestly, in order, and write down the verdict, even if
+
+81
+00:04:21,011 --> 00:04:21,573
+it's noise.
+
+82
+00:04:21,573 --> 00:04:22,850
+Especially if it's noise.
+
+83
+00:04:22,850 --> 00:04:26,988
+That's the result most people skip past, and it's the one this lecture most wants
+
+84
+00:04:26,988 --> 00:04:28,571
+you to be able to name plainly.

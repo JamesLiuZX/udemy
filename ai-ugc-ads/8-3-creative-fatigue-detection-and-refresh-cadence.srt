@@ -1,0 +1,415 @@
+1
+00:00:00,350 --> 00:00:03,887
+Here's a genuinely confusing moment if you're not watching for it.
+
+2
+00:00:03,887 --> 00:00:06,085
+A winning ad set's numbers start sliding.
+
+3
+00:00:06,085 --> 00:00:07,157
+Click-through drops.
+
+4
+00:00:07,157 --> 00:00:08,818
+Cost per acquisition creeps up.
+
+5
+00:00:08,818 --> 00:00:13,213
+It looks exactly like the early warning signs Section 7.2's kill rule was built to
+
+6
+00:00:13,213 --> 00:00:13,534
+catch.
+
+7
+00:00:13,534 --> 00:00:17,608
+It isn't the same problem, and treating it like one wastes a genuine winner.
+
+8
+00:00:17,608 --> 00:00:19,162
+A losing ad set never worked.
+
+9
+00:00:19,162 --> 00:00:23,664
+A fatigued ad set worked, then the same audience saw it enough times that it stopped
+
+10
+00:00:23,664 --> 00:00:24,092
+landing.
+
+11
+00:00:24,092 --> 00:00:26,022
+The fix for the first is killing it.
+
+12
+00:00:26,022 --> 00:00:28,166
+The fix for the second is refreshing it.
+
+13
+00:00:28,166 --> 00:00:31,381
+Why does this distinction matter enough for its own lecture?
+
+14
+00:00:31,381 --> 00:00:34,490
+Because the wrong response is expensive in a specific way.
+
+15
+00:00:34,490 --> 00:00:38,885
+Kill a genuine winner by mistake and you've thrown away the one angle that already
+
+16
+00:00:38,885 --> 00:00:41,296
+proved itself, right when you needed it most.
+
+17
+00:00:41,296 --> 00:00:45,691
+Refresh a genuine loser instead of killing it, and you've spent effort dressing up
+
+18
+00:00:45,691 --> 00:00:49,175
+an angle that was never going to work regardless of how it's cut.
+
+19
+00:00:49,175 --> 00:00:53,570
+There's a practical fix for the moment of confusion itself: check frequency before
+
+20
+00:00:53,570 --> 00:00:54,642
+you decide anything.
+
+21
+00:00:54,642 --> 00:00:59,143
+It's sitting right there on the same dashboard that gave you the click-through drop.
+
+22
+00:00:59,143 --> 00:01:03,485
+You don't need a new tool, only a column you were probably already skimming past.
+
+23
+00:01:04,035 --> 00:01:06,696
+Frequency is the tell that separates these two.
+
+24
+00:01:06,696 --> 00:01:11,227
+A never-worked loser dies early, before frequency has time to climb, because the
+
+25
+00:01:11,227 --> 00:01:12,416
+kill rule catches it.
+
+26
+00:01:12,416 --> 00:01:17,116
+A fatigued winner has been running long enough, to the same audience, for frequency
+
+27
+00:01:17,116 --> 00:01:20,118
+to climb well past where a fresh ad set usually sits.
+
+28
+00:01:20,118 --> 00:01:24,761
+That's the actual signal worth watching, not just the declining click-through rate
+
+29
+00:01:24,761 --> 00:01:25,384
+on its own.
+
+30
+00:01:25,384 --> 00:01:29,122
+Rising frequency plus declining performance, together, is fatigue.
+
+31
+00:01:29,122 --> 00:01:33,539
+Declining performance with frequency that never climbed is a different problem
+
+32
+00:01:33,539 --> 00:01:36,200
+entirely, worth investigating on its own terms.
+
+33
+00:01:36,200 --> 00:01:38,975
+Think about why frequency specifically does this.
+
+34
+00:01:38,975 --> 00:01:43,336
+Every person in an audience only has so much genuine curiosity about the same
+
+35
+00:01:43,336 --> 00:01:44,752
+fifteen seconds of video.
+
+36
+00:01:44,752 --> 00:01:46,790
+The first view earns real attention.
+
+37
+00:01:46,790 --> 00:01:51,264
+The fifth or sixth view from the same person is mostly being ignored, or worse,
+
+38
+00:01:51,264 --> 00:01:55,794
+actively tuned out, and frequency is the number that tells you how many of those
+
+39
+00:01:55,794 --> 00:01:57,833
+repeat views have actually piled up.
+
+40
+00:01:57,833 --> 00:02:02,590
+This is the same mechanic across both platforms from Section five, even if the exact
+
+41
+00:02:02,590 --> 00:02:05,705
+dashboard column isn't labelled identically everywhere.
+
+42
+00:02:05,705 --> 00:02:10,405
+Whatever a given platform calls the number, you're watching for the same underlying
+
+43
+00:02:10,405 --> 00:02:14,482
+drift: the same audience seeing the same fifteen seconds too many times.
+
+44
+00:02:14,482 --> 00:02:16,294
+The label on the column changes.
+
+45
+00:02:16,294 --> 00:02:21,051
+The audience running out of patience for a cut it's already seen five times doesn't.
+
+46
+00:02:21,601 --> 00:02:25,099
+Here's the exact same winning creative, read again weeks later.
+
+47
+00:02:25,099 --> 00:02:29,651
+Frequency past three point four, click-through down to one percent, nearly back to
+
+48
+00:02:29,651 --> 00:02:32,371
+the pre-testing baseline it started so far above.
+
+49
+00:02:32,371 --> 00:02:35,313
+Notice what didn't happen: nobody killed this ad set.
+
+50
+00:02:35,313 --> 00:02:39,976
+The angle itself was never the problem, the same audience had simply seen this exact
+
+51
+00:02:39,976 --> 00:02:43,140
+cut enough times that it stopped earning fresh attention.
+
+52
+00:02:43,140 --> 00:02:47,637
+The response was a new cut of the same angle, not a new angle entirely, sent back
+
+53
+00:02:47,637 --> 00:02:52,189
+through the same isolated testing structure from Section seven to confirm it still
+
+54
+00:02:52,189 --> 00:02:52,522
+works.
+
+55
+00:02:52,522 --> 00:02:56,963
+Notice, too, that the new cut goes back through testing rather than launching on
+
+56
+00:02:56,963 --> 00:02:57,296
+faith.
+
+57
+00:02:57,296 --> 00:03:01,793
+A refresh isn't automatically going to perform, just because the underlying angle
+
+58
+00:03:01,793 --> 00:03:02,459
+worked once.
+
+59
+00:03:02,459 --> 00:03:06,622
+It earns its own winner verdict from Section 8.2's tree, on its own merits.
+
+60
+00:03:06,622 --> 00:03:09,453
+What actually changes in a refresh cut, concretely?
+
+61
+00:03:09,453 --> 00:03:14,005
+Not the claim, and not the angle: that already proved itself, and re-litigating it
+
+62
+00:03:14,005 --> 00:03:16,504
+would waste the one thing this winner earned.
+
+63
+00:03:16,504 --> 00:03:21,056
+What changes is the surface, a different hook, a different pace, a different actor
+
+64
+00:03:21,056 --> 00:03:24,886
+reading the same underlying script from Section 4.5's assembly stage.
+
+65
+00:03:24,886 --> 00:03:27,218
+The audience needs a reason to look again.
+
+66
+00:03:27,218 --> 00:03:29,216
+The argument doesn't need to change.
+
+67
+00:03:29,766 --> 00:03:33,804
+One honest habit worth building before your own first winner goes tired.
+
+68
+00:03:33,804 --> 00:03:35,992
+Fatigue doesn't arrive without warning.
+
+69
+00:03:35,992 --> 00:03:39,974
+Frequency climbs steadily, visibly, before performance actually cracks.
+
+70
+00:03:39,974 --> 00:03:44,404
+Watching frequency specifically, on every ad set currently winning, catches the
+
+71
+00:03:44,404 --> 00:03:45,078
+trend early.
+
+72
+00:03:45,078 --> 00:03:49,508
+Waiting for click-through to confirm it means you've already spent several days
+
+73
+00:03:49,508 --> 00:03:54,220
+paying a fatigued creative's higher cost per acquisition before you noticed anything
+
+74
+00:03:54,220 --> 00:03:54,780
+was wrong.
+
+75
+00:03:54,780 --> 00:03:59,436
+Build this into the same weekly habit Section 7.3's naming system already asked you
+
+76
+00:03:59,436 --> 00:03:59,884
+to keep.
+
+77
+00:03:59,884 --> 00:04:04,596
+A watchlist is only useful if you actually look at it on a schedule, not just when a
+
+78
+00:04:04,596 --> 00:04:06,446
+number happens to catch your eye.
+
+79
+00:04:06,446 --> 00:04:10,877
+Check frequency on every current winner once a week, the same discipline you're
+
+80
+00:04:10,877 --> 00:04:13,008
+already applying to spend and results.
+
+81
+00:04:13,008 --> 00:04:15,701
+There's a mirror-image mistake worth naming too.
+
+82
+00:04:15,701 --> 00:04:20,187
+Don't refresh a winner that isn't actually tired yet, just because its frequency
+
+83
+00:04:20,187 --> 00:04:21,253
+ticked up slightly.
+
+84
+00:04:21,253 --> 00:04:24,057
+A small rise is normal as an ad set keeps running.
+
+85
+00:04:24,057 --> 00:04:28,769
+Refreshing reflexively at the first tick wastes production effort on a creative that
+
+86
+00:04:28,769 --> 00:04:33,424
+was still earning its keep, and it's the same impatience Section 7.4 already warned
+
+87
+00:04:33,424 --> 00:04:35,836
+you against, aimed at a different decision.
+
+88
+00:04:35,836 --> 00:04:40,435
+Watch for the pairing this table describes, climbing frequency alongside genuinely
+
+89
+00:04:40,435 --> 00:04:43,071
+declining performance, not either signal alone.
+
+90
+00:04:43,621 --> 00:04:48,067
+Next lecture answers the question this one leaves open: when a winner does go tired,
+
+91
+00:04:48,067 --> 00:04:52,354
+do you refresh the exact same angle, or is it time to try something genuinely new
+
+92
+00:04:52,354 --> 00:04:52,778
+instead.
+
+93
+00:04:52,778 --> 00:04:55,424
+Worth sitting with one thing before you get there.
+
+94
+00:04:55,424 --> 00:04:57,594
+Fatigue isn't a sign anything went wrong.
+
+95
+00:04:57,594 --> 00:05:01,935
+It's what success looks like after enough time has passed, because the audience it
+
+96
+00:05:01,935 --> 00:05:06,275
+worked on is a fixed, finite group of people, and no creative reaches every one of
+
+97
+00:05:06,275 --> 00:05:08,022
+them with the same force forever.
+
+98
+00:05:08,022 --> 00:05:12,150
+Treating a tired winner as a maintenance cost, something you plan for from the
+
+99
+00:05:12,150 --> 00:05:16,438
+moment an angle first wins, is a different posture than treating it as a surprise
+
+100
+00:05:16,438 --> 00:05:17,496
+failure to react to.
+
+101
+00:05:17,496 --> 00:05:20,037
+One of those keeps the account running smoothly.
+
+102
+00:05:20,037 --> 00:05:24,483
+The other has you scrambling every few weeks, wondering why a proven winner suddenly
+
+103
+00:05:24,483 --> 00:05:28,664
+stopped working, when the honest answer was sitting in the frequency column the
+
+104
+00:05:28,664 --> 00:05:29,247
+whole time.
