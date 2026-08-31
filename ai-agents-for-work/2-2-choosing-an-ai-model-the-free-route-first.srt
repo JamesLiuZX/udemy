@@ -1,0 +1,295 @@
+1
+00:00:00,350 --> 00:00:05,085
+When you watched the inbox triage agent work in Section 0, the box doing the actual
+
+2
+00:00:05,085 --> 00:00:07,709
+reading was Google's Gemini, on its free tier.
+
+3
+00:00:07,709 --> 00:00:10,219
+That was not an arbitrary choice for a demo.
+
+4
+00:00:10,219 --> 00:00:14,954
+It is genuinely the easiest way into this course, and Priya starts here too, before
+
+5
+00:00:14,954 --> 00:00:17,692
+her volume forces an upgrade later in Section 9.
+
+6
+00:00:17,692 --> 00:00:20,088
+What is a model, stripped of the mystique?
+
+7
+00:00:20,088 --> 00:00:23,796
+A service on the internet that takes text in and gives text back.
+
+8
+00:00:23,796 --> 00:00:28,189
+Your workflow sends it an email plus your plain English rules; it returns its
+
+9
+00:00:28,189 --> 00:00:28,645
+reading.
+
+10
+00:00:28,645 --> 00:00:31,554
+That is the entire transaction, repeated every run.
+
+11
+00:00:31,554 --> 00:00:32,981
+Two useful things follow.
+
+12
+00:00:32,981 --> 00:00:37,658
+The providers are largely interchangeable from n8n's point of view: the model sits
+
+13
+00:00:37,658 --> 00:00:42,051
+in its own box, so swapping Gemini for another provider later is a two minute
+
+14
+00:00:42,051 --> 00:00:43,306
+change, not a rebuild.
+
+15
+00:00:43,306 --> 00:00:47,927
+And because the models improve every few months on their own, your agents quietly
+
+16
+00:00:47,927 --> 00:00:50,266
+get better without you touching anything.
+
+17
+00:00:50,266 --> 00:00:55,058
+You are renting judgement by the call, from a market that keeps cutting the price of
+
+18
+00:00:55,058 --> 00:00:55,229
+it.
+
+19
+00:00:55,779 --> 00:00:57,267
+Read that middle row again.
+
+20
+00:00:57,267 --> 00:01:01,844
+Gemini's free tier is not a trial that runs out, it is a genuinely free tier with a
+
+21
+00:01:01,844 --> 00:01:03,498
+rate limit instead of a clock.
+
+22
+00:01:03,498 --> 00:01:07,910
+For one person automating their own inbox, that rate limit will not be the thing
+
+23
+00:01:07,910 --> 00:01:08,737
+that stops you.
+
+24
+00:01:08,737 --> 00:01:11,659
+That is why this course builds every demo against it.
+
+25
+00:01:11,659 --> 00:01:15,244
+Now the cost that is not on the table, because it is not a price.
+
+26
+00:01:15,244 --> 00:01:19,765
+Free tiers are free because the provider gets something: on some of them, what you
+
+27
+00:01:19,765 --> 00:01:24,176
+send can be used to improve the service, under terms that change more often than
+
+28
+00:01:24,176 --> 00:01:25,445
+this course re-renders.
+
+29
+00:01:25,445 --> 00:01:29,580
+That is a fine trade for a practice inbox and a terrible default for client
+
+30
+00:01:29,580 --> 00:01:30,407
+correspondence.
+
+31
+00:01:30,407 --> 00:01:34,598
+So the working rule while you learn is the one Priya follows: free tier plus
+
+32
+00:01:34,598 --> 00:01:38,899
+practice data until you have read your provider's current data terms with work
+
+33
+00:01:38,899 --> 00:01:40,498
+content specifically in mind.
+
+34
+00:01:40,498 --> 00:01:44,909
+When the agents go live on real client email in Section 3, that reading is a ten
+
+35
+00:01:44,909 --> 00:01:49,266
+minute task you do once, and it belongs to you, not to this course, because the
+
+36
+00:01:49,266 --> 00:01:52,023
+terms will be whatever they are the week you look.
+
+37
+00:01:52,573 --> 00:01:57,035
+Section 9 puts real numbers against this, but the shape of the decision is simple.
+
+38
+00:01:57,035 --> 00:01:59,321
+Free tiers are rate limited, not crippled.
+
+39
+00:01:59,321 --> 00:02:03,892
+You will feel the ceiling as a slowdown, not a bill, and by the time you feel it you
+
+40
+00:02:03,892 --> 00:02:08,463
+will already know exactly how much of your week the agent is worth, because you will
+
+41
+00:02:08,463 --> 00:02:10,585
+have been running it for weeks by then.
+
+42
+00:02:10,585 --> 00:02:15,157
+It is worth knowing what the ceiling feels like from inside n8n, so it does not read
+
+43
+00:02:15,157 --> 00:02:16,626
+as breakage the first time.
+
+44
+00:02:16,626 --> 00:02:20,272
+The model's box goes red, and the message mentions limits or quota.
+
+45
+00:02:20,272 --> 00:02:21,197
+Nothing is wrong.
+
+46
+00:02:21,197 --> 00:02:25,605
+The provider is saying not this minute, and a minute later the same run succeeds.
+
+47
+00:02:25,605 --> 00:02:29,959
+If you see it more than occasionally, that is your volume talking, and it is the
+
+48
+00:02:29,959 --> 00:02:34,530
+most pleasant upgrade prompt in software: it means the agent is being used enough to
+
+49
+00:02:34,530 --> 00:02:34,911
+matter.
+
+50
+00:02:34,911 --> 00:02:39,428
+One more choice hides inside each provider: models come in families, small and fast
+
+51
+00:02:39,428 --> 00:02:40,679
+against large and deep.
+
+52
+00:02:40,679 --> 00:02:45,087
+Triage, extraction and sorting, which is most of office work, belong to the small
+
+53
+00:02:45,087 --> 00:02:49,550
+fast ones, and every build in this course names the model tier it uses for exactly
+
+54
+00:02:49,550 --> 00:02:50,203
+that reason.
+
+55
+00:02:50,203 --> 00:02:54,774
+Reaching for the biggest model for a sorting job is paying for a surgeon to open the
+
+56
+00:02:54,774 --> 00:02:55,046
+post.
+
+57
+00:02:55,596 --> 00:02:59,870
+Getting the key itself is the one step this course cannot walk you through on
+
+58
+00:02:59,870 --> 00:03:03,700
+screen, because it means logging into an account only you can create.
+
+59
+00:03:03,700 --> 00:03:08,140
+It takes about two minutes on Google's side, and once it is pasted into n8n, you
+
+60
+00:03:08,140 --> 00:03:11,471
+will not need to touch it again for the rest of this course.
+
+61
+00:03:11,471 --> 00:03:15,800
+Two small habits while you are on the provider's dashboard, both thirty second
+
+62
+00:03:15,800 --> 00:03:16,466
+investments.
+
+63
+00:03:16,466 --> 00:03:20,962
+Name the key for what it does, something like n8n dash agents, because six months
+
+64
+00:03:20,962 --> 00:03:25,569
+from now a list of unnamed keys is a list of things you are afraid to delete, and a
+
+65
+00:03:25,569 --> 00:03:29,233
+named key can be revoked surgically the day a laptop goes missing.
+
+66
+00:03:29,233 --> 00:03:33,729
+And make one key per purpose rather than reusing one everywhere: if this key ever
+
+67
+00:03:33,729 --> 00:03:38,391
+needs cutting, you want to cut the agents, not everything else you built on the same
+
+68
+00:03:38,391 --> 00:03:38,836
+account.
+
+69
+00:03:38,836 --> 00:03:40,778
+Neither habit costs anything today.
+
+70
+00:03:40,778 --> 00:03:44,331
+Both are the kind of thing Section 8 will make you glad you did.
+
+71
+00:03:44,881 --> 00:03:49,644
+With both halves of the toolbox connected, n8n and a model, you are ready for the
+
+72
+00:03:49,644 --> 00:03:50,467
+canvas itself.
+
+73
+00:03:50,467 --> 00:03:55,113
+Next lecture: reading what you are looking at, so Section 3's build is familiar
+
+74
+00:03:55,113 --> 00:03:55,995
+instead of new.

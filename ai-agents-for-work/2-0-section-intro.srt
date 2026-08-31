@@ -1,0 +1,19 @@
+1
+00:00:00,350 --> 00:00:02,238
+Short section, practical purpose.
+
+2
+00:00:02,238 --> 00:00:06,931
+You are going to set up n8n, connect a free AI model, and learn to read the canvas
+
+3
+00:00:06,931 --> 00:00:11,566
+well enough that Section 3's build makes sense the first time you see it, not the
+
+4
+00:00:11,566 --> 00:00:11,909
+third.
+
+5
+00:00:11,909 --> 00:00:13,683
+Three lectures, then you build.

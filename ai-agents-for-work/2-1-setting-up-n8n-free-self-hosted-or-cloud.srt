@@ -1,0 +1,283 @@
+1
+00:00:00,350 --> 00:00:04,454
+n8n is open source, and that one fact drives every choice in this lecture.
+
+2
+00:00:04,454 --> 00:00:09,057
+It means you can run it yourself, on your own computer, for as long as you like, at
+
+3
+00:00:09,057 --> 00:00:10,555
+no cost beyond electricity.
+
+4
+00:00:10,555 --> 00:00:14,880
+It also means n8n sells a hosted version for people who would rather not run a
+
+5
+00:00:14,880 --> 00:00:15,269
+server.
+
+6
+00:00:15,269 --> 00:00:16,544
+Both are the same tool.
+
+7
+00:00:16,544 --> 00:00:19,872
+The difference is who is responsible for keeping it running.
+
+8
+00:00:19,872 --> 00:00:22,811
+What does "run it yourself" actually involve, though?
+
+9
+00:00:22,811 --> 00:00:27,137
+Less than the phrase suggests, and it is worth demystifying before you choose.
+
+10
+00:00:27,137 --> 00:00:31,463
+Self-hosted n8n is one small program running quietly in the background of your
+
+11
+00:00:31,463 --> 00:00:36,121
+computer, and your browser is the whole interface: you open a tab, and the canvas is
+
+12
+00:00:36,121 --> 00:00:36,454
+there.
+
+13
+00:00:36,454 --> 00:00:38,673
+Nothing else changes about your machine.
+
+14
+00:00:38,673 --> 00:00:41,945
+The honest cost is the one word inside that sentence: your.
+
+15
+00:00:41,945 --> 00:00:45,716
+Your agents run while your computer is on, and pause when it is not.
+
+16
+00:00:45,716 --> 00:00:50,153
+For a work laptop and office hours tasks, which is everything Priya builds, that
+
+17
+00:00:50,153 --> 00:00:51,151
+costs you nothing.
+
+18
+00:00:51,151 --> 00:00:55,810
+The day you want an agent working at three in the morning while the laptop sleeps in
+
+19
+00:00:55,810 --> 00:01:00,413
+a drawer, that is the day the hosted conversation genuinely starts, and not before.
+
+20
+00:01:00,963 --> 00:01:05,541
+Cloud's higher tiers exist for teams running thousands of workflow runs a month.
+
+21
+00:01:05,541 --> 00:01:09,547
+Section 10's rollout plan is where that conversation becomes relevant.
+
+22
+00:01:09,547 --> 00:01:14,125
+For everything in this course, self-hosted is not a compromise, it is the better
+
+23
+00:01:14,125 --> 00:01:16,700
+choice: unlimited runs, and nothing to renew.
+
+24
+00:01:16,700 --> 00:01:20,019
+Do the execution arithmetic before the cap looks generous.
+
+25
+00:01:20,019 --> 00:01:24,540
+One run is one pass through a workflow, and a triage agent runs once per email:
+
+26
+00:01:24,540 --> 00:01:29,232
+Priya's inbox alone burns roughly nine hundred runs a month before her other three
+
+27
+00:01:29,232 --> 00:01:30,320
+agents do anything.
+
+28
+00:01:30,320 --> 00:01:33,066
+One busy agent, a third of the Starter cap gone.
+
+29
+00:01:33,066 --> 00:01:37,873
+That is the quiet trap in per-run pricing everywhere, not just here: the agents that
+
+30
+00:01:37,873 --> 00:01:42,623
+help most are the ones that run most, so success is exactly what walks you into the
+
+31
+00:01:42,623 --> 00:01:43,081
+ceiling.
+
+32
+00:01:43,081 --> 00:01:47,831
+Unlimited runs on the self-hosted side is not a nice-to-have for a course that ends
+
+33
+00:01:47,831 --> 00:01:49,605
+with four agents running daily.
+
+34
+00:01:49,605 --> 00:01:54,183
+It is the difference between adding your next agent freely and auditing your old
+
+35
+00:01:54,183 --> 00:01:55,671
+ones for permission first.
+
+36
+00:01:56,221 --> 00:02:00,963
+Every screenshot in this course was captured against a self-hosted instance, so what
+
+37
+00:02:00,963 --> 00:02:03,956
+you see on screen matches what you will see on yours.
+
+38
+00:02:03,956 --> 00:02:08,699
+If your workplace already runs n8n on a server somewhere, ask whoever manages it for
+
+39
+00:02:08,699 --> 00:02:11,070
+an account instead of installing your own.
+
+40
+00:02:11,070 --> 00:02:12,482
+Same tool, same lectures.
+
+41
+00:02:12,482 --> 00:02:17,055
+What the ten minutes of setup actually contains: n8n's install page gives you one
+
+42
+00:02:17,055 --> 00:02:21,685
+command to paste into a terminal, and that command needs one prerequisite the same
+
+43
+00:02:21,685 --> 00:02:22,475
+page links to.
+
+44
+00:02:22,475 --> 00:02:27,105
+That is the whole recipe, and the reason this course does not walk it keystroke by
+
+45
+00:02:27,105 --> 00:02:31,340
+keystroke is that the page moves with each release and this video does not.
+
+46
+00:02:31,340 --> 00:02:34,615
+Follow their current page, not a screenshot of an old one.
+
+47
+00:02:35,165 --> 00:02:39,898
+A tool nobody maintains is how workplace automation quietly dies, and it is a five
+
+48
+00:02:39,898 --> 00:02:41,167
+minute habit to avoid.
+
+49
+00:02:41,167 --> 00:02:45,785
+Put a monthly reminder in your calendar now, while this lecture is open, and the
+
+50
+00:02:45,785 --> 00:02:48,324
+habit exists before it has ever been needed.
+
+51
+00:02:48,324 --> 00:02:52,769
+Future you does not get a say in whether past you set that reminder, which is
+
+52
+00:02:52,769 --> 00:02:53,981
+exactly why it works.
+
+53
+00:02:54,531 --> 00:02:58,943
+One practical note about that form: the password it asks for is a new one you are
+
+54
+00:02:58,943 --> 00:03:03,300
+inventing for this install, not your email password or anything you already use.
+
+55
+00:03:03,300 --> 00:03:07,876
+It guards the door to your workflows on this machine, and since those workflows will
+
+56
+00:03:07,876 --> 00:03:12,070
+eventually hold saved credentials to your real accounts, treat it like a work
+
+57
+00:03:12,070 --> 00:03:13,758
+password, not like a wifi code.
+
+58
+00:03:13,758 --> 00:03:18,334
+If the form ever asks you something this lecture did not mention, the version moved.
+
+59
+00:03:18,334 --> 00:03:19,151
+Trust the form.
+
+60
+00:03:19,151 --> 00:03:23,617
+And write the password somewhere real, a password manager if you have one, because
+
+61
+00:03:23,617 --> 00:03:27,703
+this is the login you will use every working day from here to the capstone.
+
+62
+00:03:27,703 --> 00:03:31,951
+Fill it in, and you land on an empty canvas with one button: build a workflow.
+
+63
+00:03:31,951 --> 00:03:34,566
+You have seen that screen already, in Section 0.
+
+64
+00:03:34,566 --> 00:03:39,141
+Before you move on, run the thirty second victory lap: close the browser tab, open a
+
+65
+00:03:39,141 --> 00:03:41,102
+new one, and find your canvas again.
+
+66
+00:03:41,102 --> 00:03:41,919
+Sounds trivial.
+
+67
+00:03:41,919 --> 00:03:46,331
+It is the step that proves to you the tool lives on your machine and not in a tab
+
+68
+00:03:46,331 --> 00:03:50,743
+you are afraid to lose, and everyone skips it and then messages someone in a mild
+
+69
+00:03:50,743 --> 00:03:51,887
+panic two days later.
+
+70
+00:03:51,887 --> 00:03:56,354
+Next lecture, we connect the other half of the toolbox: the AI model that does the
+
+71
+00:03:56,354 --> 00:03:57,879
+actual reading and deciding.
