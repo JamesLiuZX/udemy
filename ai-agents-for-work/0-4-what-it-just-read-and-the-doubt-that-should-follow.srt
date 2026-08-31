@@ -1,0 +1,319 @@
+1
+00:00:00,350 --> 00:00:04,962
+An agent connected to an inbox does not see a curated pile of the emails you would
+
+2
+00:00:04,962 --> 00:00:06,874
+be comfortable showing a stranger.
+
+3
+00:00:06,874 --> 00:00:11,430
+It sees everything a mailbox holds: client complaints, a colleague's badly worded
+
+4
+00:00:11,430 --> 00:00:15,760
+joke, a half finished resignation letter someone saved to drafts by accident.
+
+5
+00:00:15,760 --> 00:00:18,797
+That is not a flaw in the agent you just watched work.
+
+6
+00:00:18,797 --> 00:00:23,522
+It is what "connect your inbox" has always meant, for every tool that has ever asked
+
+7
+00:00:23,522 --> 00:00:24,647
+for that permission.
+
+8
+00:00:24,647 --> 00:00:29,202
+The difference is that this one reads what it sees and can act on it, and that is
+
+9
+00:00:29,202 --> 00:00:31,171
+exactly the shift worth pausing on.
+
+10
+00:00:31,721 --> 00:00:35,275
+Hold the doubt and the win in the same hand, because both are real.
+
+11
+00:00:35,275 --> 00:00:37,715
+The message the agent surfaced was not trivia.
+
+12
+00:00:37,715 --> 00:00:41,906
+Brightwell Manufacturing pays Calloway and Finch eighteen thousand four hundred
+
+13
+00:00:41,906 --> 00:00:45,885
+dollars a year for property and liability cover, their renewal lands on the
+
+14
+00:00:45,885 --> 00:00:50,341
+fifteenth of September, and the question Ravi needed answered had been invisible for
+
+15
+00:00:50,341 --> 00:00:50,818
+six days.
+
+16
+00:00:50,818 --> 00:00:53,789
+A commercial policy that lapses does not send a warning.
+
+17
+00:00:53,789 --> 00:00:57,821
+On the renewal date, the stock in Brightwell's warehouse is simply no longer
+
+18
+00:00:57,821 --> 00:01:02,118
+insured, and the first person to discover that is usually the one filing a claim.
+
+19
+00:01:02,118 --> 00:01:06,203
+So the agent that read everything also caught the thing that mattered most on
+
+20
+00:01:06,203 --> 00:01:07,794
+Priya's entire book that week.
+
+21
+00:01:07,794 --> 00:01:11,932
+That is the honest shape of the trade you are being asked to think about: real
+
+22
+00:01:11,932 --> 00:01:16,282
+access, real reach, and a real catch that no amount of Tuesday diligence was going
+
+23
+00:01:16,282 --> 00:01:16,707
+to make.
+
+24
+00:01:17,257 --> 00:01:20,143
+Both reactions start from the same true observation.
+
+25
+00:01:20,143 --> 00:01:21,919
+Only one of them leads anywhere.
+
+26
+00:01:21,919 --> 00:01:26,414
+Refusing to connect an agent to real data keeps you safe and keeps you exactly as
+
+27
+00:01:26,414 --> 00:01:27,746
+busy as you already are.
+
+28
+00:01:27,746 --> 00:01:32,242
+The other path asks a better question: what would I actually do before trusting a
+
+29
+00:01:32,242 --> 00:01:33,740
+new person with this inbox?
+
+30
+00:01:33,740 --> 00:01:36,959
+Name the costs on both sides, because both sides have one.
+
+31
+00:01:36,959 --> 00:01:41,621
+The stalling path costs you every hour the agent would have saved, forever, plus the
+
+32
+00:01:41,621 --> 00:01:42,176
+next Ravi.
+
+33
+00:01:42,176 --> 00:01:46,727
+The connecting path costs you checking time for weeks, and it hands you a risk you
+
+34
+00:01:46,727 --> 00:01:49,058
+now own on purpose instead of by accident.
+
+35
+00:01:49,058 --> 00:01:51,722
+This course never pretends the second cost away.
+
+36
+00:01:51,722 --> 00:01:56,162
+It just insists you compare the two like an adult instead of flinching at one of
+
+37
+00:01:56,162 --> 00:01:56,440
+them.
+
+38
+00:01:56,990 --> 00:01:59,279
+None of that is exotic management theory.
+
+39
+00:01:59,279 --> 00:02:03,578
+It is what any competent manager does automatically for a human hire, without
+
+40
+00:02:03,578 --> 00:02:04,472
+writing it down.
+
+41
+00:02:04,472 --> 00:02:08,491
+The entire argument of this course is that the same four habits, applied
+
+42
+00:02:08,491 --> 00:02:13,126
+deliberately to an agent instead of assumed for a person, are what separate someone
+
+43
+00:02:13,126 --> 00:02:17,146
+who gets real hours back from someone cleaning up a mess three weeks in.
+
+44
+00:02:17,146 --> 00:02:21,835
+Each of those four instincts becomes one of the artifacts you saw listed in the last
+
+45
+00:02:21,835 --> 00:02:22,282
+lecture.
+
+46
+00:02:22,282 --> 00:02:26,805
+Not handing over every password becomes a one page job description that says what
+
+47
+00:02:26,805 --> 00:02:27,921
+the agent may touch.
+
+48
+00:02:27,921 --> 00:02:32,499
+Explaining what urgent means in your job becomes the plain English rules you write
+
+49
+00:02:32,499 --> 00:02:33,728
+into the agent itself.
+
+50
+00:02:33,728 --> 00:02:38,362
+Checking their work becomes a trial with a checklist and, later, a spot check habit
+
+51
+00:02:38,362 --> 00:02:39,758
+that never fully retires.
+
+52
+00:02:39,758 --> 00:02:44,336
+Deciding what they never do alone becomes a worksheet you fill in before the agent
+
+53
+00:02:44,336 --> 00:02:45,229
+acts, not after.
+
+54
+00:02:45,229 --> 00:02:48,858
+The course did not invent a method and dress it up as management.
+
+55
+00:02:48,858 --> 00:02:49,863
+It borrowed yours.
+
+56
+00:02:50,413 --> 00:02:53,515
+That sentence is doing real work, not just sounding tidy.
+
+57
+00:02:53,515 --> 00:02:56,780
+An app is something you configure once and trust by default.
+
+58
+00:02:56,780 --> 00:03:01,133
+An employee is something you give a job description, a trial period, and a trust
+
+59
+00:03:01,133 --> 00:03:02,874
+that grows only as it is earned.
+
+60
+00:03:02,874 --> 00:03:06,302
+Every agent you build from here on gets treated the second way.
+
+61
+00:03:06,302 --> 00:03:10,873
+Why the app framing fails here, specifically: an app does the same thing every time,
+
+62
+00:03:10,873 --> 00:03:13,757
+so testing it once tells you what it will do forever.
+
+63
+00:03:13,757 --> 00:03:17,130
+An agent judges, and judgement varies with the input it meets.
+
+64
+00:03:17,130 --> 00:03:21,647
+The thousandth email can confuse it in a way the first nine hundred and ninety nine
+
+65
+00:03:21,647 --> 00:03:22,191
+never did.
+
+66
+00:03:22,191 --> 00:03:25,728
+You cannot test your way to certainty with something that judges.
+
+67
+00:03:25,728 --> 00:03:30,081
+You can only supervise it the way you would supervise a person, which is why the
+
+68
+00:03:30,081 --> 00:03:32,693
+employee frame is not a metaphor in this course.
+
+69
+00:03:32,693 --> 00:03:34,162
+It is the operating manual.
+
+70
+00:03:34,712 --> 00:03:37,299
+You do not need an answer yet, just the sentence.
+
+71
+00:03:37,299 --> 00:03:41,680
+For what it is worth, Priya's habit is to double check anything new once, out loud,
+
+72
+00:03:41,680 --> 00:03:45,956
+before she trusts it, and her sentence came straight from that habit: before this
+
+73
+00:03:45,956 --> 00:03:50,390
+runs without me, I want to watch it be right about a full week of my real inbox, and
+
+74
+00:03:50,390 --> 00:03:52,185
+hear myself agree with every call.
+
+75
+00:03:52,185 --> 00:03:54,560
+Yours will be different, because your job is.
+
+76
+00:03:54,560 --> 00:03:58,994
+The shape is what matters: a concrete thing you would watch, for a concrete stretch,
+
+77
+00:03:58,994 --> 00:04:00,367
+before the checking stops.
+
+78
+00:04:00,367 --> 00:04:02,795
+Hold onto the doubt you are feeling right now.
+
+79
+00:04:02,795 --> 00:04:07,124
+It is correct, it is useful, and the next section is going to give it somewhere to
+
+80
+00:04:07,124 --> 00:04:07,282
+go.

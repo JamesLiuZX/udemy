@@ -1,0 +1,499 @@
+1
+00:00:00,350 --> 00:00:04,707
+Priya Malhotra manages renewals for forty one commercial insurance clients.
+
+2
+00:00:04,707 --> 00:00:09,237
+On a normal week her inbox fills with the same shape of noise every morning: a
+
+3
+00:00:09,237 --> 00:00:13,013
+webinar invite, a LinkedIn digest, a flash sale on office chairs.
+
+4
+00:00:13,013 --> 00:00:17,544
+Somewhere in the middle of that Tuesday's forty emails sat a message from Ravi
+
+5
+00:00:17,544 --> 00:00:22,365
+Chandra at Brightwell Manufacturing, asking a simple question about their September
+
+6
+00:00:22,365 --> 00:00:22,830
+renewal.
+
+7
+00:00:22,830 --> 00:00:24,166
+Nobody had answered it.
+
+8
+00:00:24,166 --> 00:00:25,560
+Nobody had even seen it.
+
+9
+00:00:25,560 --> 00:00:27,012
+That is not carelessness.
+
+10
+00:00:27,012 --> 00:00:31,718
+That is what forty identical looking subject lines do to a human inbox by Tuesday
+
+11
+00:00:31,718 --> 00:00:32,298
+lunchtime.
+
+12
+00:00:32,298 --> 00:00:34,332
+And the stakes are not symmetrical.
+
+13
+00:00:34,332 --> 00:00:37,352
+If Priya misses the webinar invite, nothing happens.
+
+14
+00:00:37,352 --> 00:00:42,057
+If she misses Ravi's question long enough, a commercial policy drifts towards its
+
+15
+00:00:42,057 --> 00:00:46,821
+renewal date unanswered, and a lapsed policy is not a late invoice: it is a client
+
+16
+00:00:46,821 --> 00:00:47,866
+sitting uninsured.
+
+17
+00:00:47,866 --> 00:00:52,629
+Six days of silence had already been absorbed before anyone knew there was silence
+
+18
+00:00:52,629 --> 00:00:53,152
+to count.
+
+19
+00:00:53,152 --> 00:00:54,837
+Every inbox has one of these.
+
+20
+00:00:54,837 --> 00:00:58,322
+The whole point of the next twenty minutes is to find yours.
+
+21
+00:00:58,872 --> 00:01:01,640
+You are not building anything from scratch yet.
+
+22
+00:01:01,640 --> 00:01:04,526
+Section 3 does that, slowly and screen by screen.
+
+23
+00:01:04,526 --> 00:01:09,238
+Right now you are doing what most people do with a new agent for the first time:
+
+24
+00:01:09,238 --> 00:01:13,302
+importing someone else's work and seeing whether it earns your trust.
+
+25
+00:01:13,302 --> 00:01:17,013
+Open the course resources and grab the file called C01-preview.
+
+26
+00:01:17,013 --> 00:01:21,842
+It is a real n8n workflow, saved out as one plain text file that n8n can read back
+
+27
+00:01:21,842 --> 00:01:25,199
+in, and it is the same file I used to write this lecture.
+
+28
+00:01:25,199 --> 00:01:27,261
+A word on how to take this lecture.
+
+29
+00:01:27,261 --> 00:01:32,149
+If you already have n8n and a free AI account connected from skimming ahead, follow
+
+30
+00:01:32,149 --> 00:01:32,797
+along live.
+
+31
+00:01:32,797 --> 00:01:37,686
+If not, watch it through once first, then come back and do it with the video paused
+
+32
+00:01:37,686 --> 00:01:38,452
+at each step.
+
+33
+00:01:38,452 --> 00:01:39,453
+Both routes work.
+
+34
+00:01:39,453 --> 00:01:44,224
+The only wrong route is watching without ever running it, because the moment this
+
+35
+00:01:44,224 --> 00:01:48,759
+course actually starts is the moment the agent reads your inbox, not Priya's.
+
+36
+00:01:49,309 --> 00:01:53,890
+The first thing n8n shows a new account is not a blank terminal, it is one button.
+
+37
+00:01:53,890 --> 00:01:58,136
+You will use the menu next to it to import the file instead of starting from
+
+38
+00:01:58,136 --> 00:02:02,493
+scratch, and within a few seconds the canvas fills in with three boxes already
+
+39
+00:02:02,493 --> 00:02:06,013
+connected: a trigger, an agent, and the model behind the agent.
+
+40
+00:02:06,563 --> 00:02:09,965
+That is the whole shape of everything you build in this course.
+
+41
+00:02:09,965 --> 00:02:13,745
+Something happens, an agent looks at it, the agent decides what to do.
+
+42
+00:02:13,745 --> 00:02:16,823
+Sound too simple to be worth four sections of build time?
+
+43
+00:02:16,823 --> 00:02:18,335
+The simplicity is the point.
+
+44
+00:02:18,335 --> 00:02:22,709
+The weekly report agent is this same shape with a spreadsheet where the inbox is.
+
+45
+00:02:22,709 --> 00:02:26,003
+The follow up chaser is this shape with a calendar behind it.
+
+46
+00:02:26,003 --> 00:02:29,891
+Master one honest version of this diagram and the other three agents are
+
+47
+00:02:29,891 --> 00:02:33,941
+rearrangements, which is exactly why the course can promise them by Friday.
+
+48
+00:02:33,941 --> 00:02:37,128
+Do not worry about the unfamiliar words on those boxes yet.
+
+49
+00:02:37,128 --> 00:02:41,610
+Every label you can see gets explained in Section 2, and none of them need touching
+
+50
+00:02:41,610 --> 00:02:41,934
+today.
+
+51
+00:02:41,934 --> 00:02:45,174
+An imported workflow arrives with its settings already made.
+
+52
+00:02:45,174 --> 00:02:49,710
+The only two things it cannot arrive with are your accounts, because those are yours
+
+53
+00:02:49,710 --> 00:02:51,762
+to connect, and that is the next step.
+
+54
+00:02:52,312 --> 00:02:56,861
+Forty one items is not a typo on my screen, and it will not be the number on yours.
+
+55
+00:02:56,861 --> 00:03:01,026
+That is how many emails were sitting in the test inbox I built this workflow
+
+56
+00:03:01,026 --> 00:03:03,327
+against, standing in for Priya's real one.
+
+57
+00:03:03,327 --> 00:03:07,602
+Once you connect your own account, that number becomes however many emails are
+
+58
+00:03:07,602 --> 00:03:09,849
+actually sitting in your inbox right now.
+
+59
+00:03:09,849 --> 00:03:14,343
+The number rides on the line between the boxes, and that line matters more than it
+
+60
+00:03:14,343 --> 00:03:14,671
+looks.
+
+61
+00:03:14,671 --> 00:03:19,220
+In n8n, data travels along those wires as small tables you can open and read: here,
+
+62
+00:03:19,220 --> 00:03:23,494
+one row per email, with the sender, the subject and the text in named columns.
+
+63
+00:03:23,494 --> 00:03:27,988
+When something goes wrong in any workflow you ever build, the fastest diagnosis is
+
+64
+00:03:27,988 --> 00:03:32,592
+always the same move: click a wire, look at the table, and see what the next box was
+
+65
+00:03:32,592 --> 00:03:33,414
+actually given.
+
+66
+00:03:33,414 --> 00:03:37,853
+Learn that reflex in week one and half of Section 7's debugging becomes instinct.
+
+67
+00:03:38,403 --> 00:03:41,131
+I am not going to pretend that part is invisible.
+
+68
+00:03:41,131 --> 00:03:45,696
+Connecting an email account means typing in a real address and a real password, or
+
+69
+00:03:45,696 --> 00:03:48,480
+clicking through your provider's own login screen.
+
+70
+00:03:48,480 --> 00:03:52,989
+It is the only unglamorous step in this entire twenty minutes, and it is also the
+
+71
+00:03:52,989 --> 00:03:57,666
+last time this course will ask you to trust a screen you cannot see reasoning happen
+
+72
+00:03:57,666 --> 00:03:58,056
+behind.
+
+73
+00:03:58,056 --> 00:03:59,893
+Two reassurances, both checkable.
+
+74
+00:03:59,893 --> 00:04:04,570
+The login screen belongs to your email provider, not to n8n, and what n8n keeps is a
+
+75
+00:04:04,570 --> 00:04:08,968
+saved permission you can revoke from your provider's security page at any time.
+
+76
+00:04:08,968 --> 00:04:13,478
+Because n8n runs on your own machine, that permission never leaves your computer.
+
+77
+00:04:13,478 --> 00:04:18,099
+For today, a practice inbox or a personal one you are comfortable with is the right
+
+78
+00:04:18,099 --> 00:04:18,934
+starting point.
+
+79
+00:04:18,934 --> 00:04:21,383
+Section 8 teaches the tighter scoping later.
+
+80
+00:04:21,933 --> 00:04:26,321
+This is the part no screenshot does justice, so run it rather than take my word.
+
+81
+00:04:26,321 --> 00:04:30,927
+The trigger fires, the emails stream in, and the agent box works through them one at
+
+82
+00:04:30,927 --> 00:04:31,311
+a time.
+
+83
+00:04:31,311 --> 00:04:35,918
+It takes a few seconds, not an hour, and when it finishes you can open the agent and
+
+84
+00:04:35,918 --> 00:04:40,470
+read what it wrote about each email in plain English: this one is promotional, this
+
+85
+00:04:40,470 --> 00:04:45,022
+one is internal chatter, this one is a client asking about a renewal and nobody has
+
+86
+00:04:45,022 --> 00:04:46,173
+replied for six days.
+
+87
+00:04:46,173 --> 00:04:47,874
+That last part deserves a beat.
+
+88
+00:04:47,874 --> 00:04:49,464
+The agent does not just sort.
+
+89
+00:04:49,464 --> 00:04:53,906
+It gives you its reasons, in sentences, and you can check them against the actual
+
+90
+00:04:53,906 --> 00:04:55,058
+email with one click.
+
+91
+00:04:55,058 --> 00:04:59,610
+Every agent in this course is built to be checkable like that, because an assistant
+
+92
+00:04:59,610 --> 00:05:04,162
+whose reasoning you can read is one you can correct, and one you can correct is one
+
+93
+00:05:04,162 --> 00:05:05,533
+you can eventually trust.
+
+94
+00:05:06,083 --> 00:05:08,536
+If your first run fails, you are not behind.
+
+95
+00:05:08,536 --> 00:05:10,543
+You are having the normal first run.
+
+96
+00:05:10,543 --> 00:05:15,059
+The habit to build, starting today, is to read the red box instead of fearing it:
+
+97
+00:05:15,059 --> 00:05:19,686
+n8n tells you exactly which step failed, and the last line of its message says why,
+
+98
+00:05:19,686 --> 00:05:20,188
+in words.
+
+99
+00:05:20,188 --> 00:05:23,087
+Click it, read it, fix that one thing, run it again.
+
+100
+00:05:23,087 --> 00:05:27,380
+Priya's first run failed on the credential step because she had connected the
+
+101
+00:05:27,380 --> 00:05:31,115
+practice inbox and then run the workflow against the wrong account.
+
+102
+00:05:31,115 --> 00:05:33,680
+Ninety seconds later she was watching it work.
+
+103
+00:05:33,680 --> 00:05:36,189
+Nobody in this course debugs by being clever.
+
+104
+00:05:36,189 --> 00:05:37,415
+They debug by reading.
+
+105
+00:05:37,965 --> 00:05:42,372
+Run the workflow, and within a few seconds it has read every email in the inbox and
+
+106
+00:05:42,372 --> 00:05:46,141
+flagged exactly one of them as needing Priya's attention today: Ravi's.
+
+107
+00:05:46,141 --> 00:05:47,893
+Not because it was marked urgent.
+
+108
+00:05:47,893 --> 00:05:52,140
+Because it read what he actually wrote and understood what an unanswered renewal
+
+109
+00:05:52,140 --> 00:05:55,804
+question sitting for six days actually means for Brightwell's policy.
+
+110
+00:05:55,804 --> 00:05:59,998
+Sit with that for a second, because the next lecture is about the question that
+
+111
+00:05:59,998 --> 00:06:04,457
+follows it in every new user's head: if it can read that one, what else can it read?
+
+112
+00:06:04,457 --> 00:06:07,377
+Because the honest answer is: everything you connected.
+
+113
+00:06:07,377 --> 00:06:08,333
+The payslip email.
+
+114
+00:06:08,333 --> 00:06:09,872
+The message from your doctor.
+
+115
+00:06:09,872 --> 00:06:11,412
+The thread about a colleague.
+
+116
+00:06:11,412 --> 00:06:15,765
+It read all of it in the same pass, and it needed to, because triage means reading
+
+117
+00:06:15,765 --> 00:06:17,517
+everything to find the one thing.
+
+118
+00:06:17,517 --> 00:06:21,658
+Shrinking that trade until it is clearly worth making is what the rest of this
+
+119
+00:06:21,658 --> 00:06:22,455
+course teaches.
+
+120
+00:06:22,455 --> 00:06:24,472
+Do not resolve the discomfort tonight.
+
+121
+00:06:24,472 --> 00:06:24,897
+Keep it.
+
+122
+00:06:24,897 --> 00:06:29,144
+One thing before the next lecture: run this against an inbox you are comfortable
+
+123
+00:06:29,144 --> 00:06:33,444
+with, and write down the one email it flags that you had genuinely lost track of.
+
+124
+00:06:33,444 --> 00:06:37,744
+That is your own version of Ravi's message, and everything from Section 1 onwards
+
+125
+00:06:37,744 --> 00:06:41,036
+lands differently once the missed email in the story is yours.

@@ -1,0 +1,243 @@
+1
+00:00:00,350 --> 00:00:01,806
+n8n is an automation tool.
+
+2
+00:00:01,806 --> 00:00:06,341
+You have probably used something in its family without knowing the name: a system
+
+3
+00:00:06,341 --> 00:00:10,540
+that watches for a trigger, like a new email, then runs a chain of steps in
+
+4
+00:00:10,540 --> 00:00:13,227
+response. n8n's version of that chain is visual.
+
+5
+00:00:13,227 --> 00:00:17,483
+You will spend this course looking at boxes and arrows, never at a terminal.
+
+6
+00:00:17,483 --> 00:00:20,730
+It is open source, which matters for one practical reason.
+
+7
+00:00:20,730 --> 00:00:25,377
+You can run it on your own machine for nothing, for as long as you like, and nobody
+
+8
+00:00:25,377 --> 00:00:28,512
+can take it away from you or change the price on a whim.
+
+9
+00:00:28,512 --> 00:00:32,935
+One honesty note. n8n also sells a hosted version, where their servers run your
+
+10
+00:00:32,935 --> 00:00:35,735
+workflows so your laptop does not have to stay on.
+
+11
+00:00:35,735 --> 00:00:38,422
+It costs money and this course does not need it.
+
+12
+00:00:38,422 --> 00:00:43,069
+We run everything on the free, run it yourself route, and Section 2 names the exact
+
+13
+00:00:43,069 --> 00:00:47,101
+moment the paid route starts earning its fee, so the choice stays yours.
+
+14
+00:00:47,651 --> 00:00:52,285
+Here is what a chain actually looks like in practice, and why none of it needs code.
+
+15
+00:00:52,285 --> 00:00:53,223
+An email arrives.
+
+16
+00:00:53,223 --> 00:00:54,106
+One box notices.
+
+17
+00:00:54,106 --> 00:00:57,361
+The next box reads it and decides what kind of email it is.
+
+18
+00:00:57,361 --> 00:01:01,940
+A third files it under the right label, and a fourth adds one line to a spreadsheet
+
+19
+00:01:01,940 --> 00:01:03,098
+so nothing gets lost.
+
+20
+00:01:03,098 --> 00:01:06,740
+Each box does one small job and hands its result on, like a relay.
+
+21
+00:01:06,740 --> 00:01:09,278
+When you can picture that, you understand n8n.
+
+22
+00:01:09,278 --> 00:01:10,712
+Everything else is detail.
+
+23
+00:01:11,262 --> 00:01:15,032
+n8n on its own cannot tell an urgent client query from a newsletter.
+
+24
+00:01:15,032 --> 00:01:18,358
+For that, one box in each workflow calls out to an AI model.
+
+25
+00:01:18,358 --> 00:01:22,018
+Which one is your choice, and Section 2 walks through picking one.
+
+26
+00:01:22,018 --> 00:01:25,122
+We will start on a free tier so today costs you nothing.
+
+27
+00:01:25,122 --> 00:01:28,892
+Think of it like a stapler and a good assistant. n8n is the stapler.
+
+28
+00:01:28,892 --> 00:01:32,496
+The model is the assistant reading the page before it staples it.
+
+29
+00:01:32,496 --> 00:01:36,931
+You need both, and they are two different subscriptions to two different things.
+
+30
+00:01:36,931 --> 00:01:39,260
+What does the thinking actually look like?
+
+31
+00:01:39,260 --> 00:01:43,751
+For inbox triage, the model reads the sender, the subject and the message itself,
+
+32
+00:01:43,751 --> 00:01:48,020
+then judges it against rules you wrote in plain English: flag anything from a
+
+33
+00:01:48,020 --> 00:01:52,455
+client, ignore anything promotional, escalate anything about money or deadlines.
+
+34
+00:01:52,455 --> 00:01:55,005
+Your rules live in a paragraph, not a program.
+
+35
+00:01:55,005 --> 00:01:59,496
+When the agent gets something wrong, you fix it by rewriting a sentence, the same
+
+36
+00:01:59,496 --> 00:02:01,603
+way you would correct a new assistant.
+
+37
+00:02:01,603 --> 00:02:05,650
+That single fact is why this course can exist for people who do not code.
+
+38
+00:02:06,200 --> 00:02:08,265
+You do not need to memorise this list.
+
+39
+00:02:08,265 --> 00:02:12,450
+Each artifact lands exactly when you need it, and every one is designed to be
+
+40
+00:02:12,450 --> 00:02:15,004
+forwarded to a colleague without embarrassment.
+
+41
+00:02:15,004 --> 00:02:19,352
+A template nobody would actually use is not worth building, so none of these are
+
+42
+00:02:19,352 --> 00:02:19,787
+teasers.
+
+43
+00:02:19,787 --> 00:02:22,558
+They are the real thing, cut down to one page each.
+
+44
+00:02:22,558 --> 00:02:26,906
+The reason the artifacts matter more than the videos is simple: the videos teach
+
+45
+00:02:26,906 --> 00:02:28,591
+you, the artifacts survive you.
+
+46
+00:02:28,591 --> 00:02:32,884
+Six months from now you will not rewatch Section 7 before trusting a new agent.
+
+47
+00:02:32,884 --> 00:02:37,123
+You will open the trial checklist, spend ten minutes on it, and catch the same
+
+48
+00:02:37,123 --> 00:02:39,134
+failure Priya catches in this course.
+
+49
+00:02:39,134 --> 00:02:43,699
+A colleague who never took the course can still pick up the job description template
+
+50
+00:02:43,699 --> 00:02:44,569
+and use it cold.
+
+51
+00:02:44,569 --> 00:02:47,069
+That is the test each one had to pass to ship.
+
+52
+00:02:47,619 --> 00:02:52,183
+What the course does assume: you are comfortable using web apps, and you have one
+
+53
+00:02:52,183 --> 00:02:54,945
+task you do every week that you would rather not.
+
+54
+00:02:54,945 --> 00:02:56,579
+That is the entire entry bar.
+
+55
+00:02:56,579 --> 00:03:01,313
+Each build section takes thirty to sixty minutes at your own pace, and the course is
+
+56
+00:03:01,313 --> 00:03:06,046
+front loaded on purpose: you build first, in Sections 3 to 6, and earn the judgement
+
+57
+00:03:06,046 --> 00:03:10,780
+that keeps those builds safe in Sections 7 to 10, against mistakes you have actually
+
+58
+00:03:10,780 --> 00:03:11,513
+seen by then.
+
+59
+00:03:11,513 --> 00:03:11,851
+Right.
+
+60
+00:03:11,851 --> 00:03:12,752
+That is the map.
+
+61
+00:03:12,752 --> 00:03:15,965
+Next lecture, we stop talking about agents and build one.
