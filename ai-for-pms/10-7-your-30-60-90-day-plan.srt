@@ -1,0 +1,371 @@
+1
+00:00:00,350 --> 00:00:04,200
+"Learn the product, build relationships, ship a quick win" isn't wrong.
+
+2
+00:00:04,200 --> 00:00:08,700
+It's just not specific to anything, which means it says nothing an interviewer or a
+
+3
+00:00:08,700 --> 00:00:12,170
+new manager couldn't have guessed before you walked in the door.
+
+4
+00:00:12,170 --> 00:00:16,019
+You've spent this whole course building things more specific than that.
+
+5
+00:00:16,019 --> 00:00:20,303
+This lecture swaps the three generic milestones for three artifacts this course
+
+6
+00:00:20,303 --> 00:00:24,640
+already taught you to build, timed to when they're actually achievable in a role
+
+7
+00:00:24,640 --> 00:00:25,779
+touching AI features.
+
+8
+00:00:25,779 --> 00:00:27,351
+Nothing here is new material.
+
+9
+00:00:27,351 --> 00:00:30,279
+It's a calendar wrapped around tools you already have.
+
+10
+00:00:30,279 --> 00:00:33,803
+Notice, too, that the timing itself is deliberate, not arbitrary.
+
+11
+00:00:33,803 --> 00:00:38,195
+Each milestone needs the standing, or the information, that only the previous one
+
+12
+00:00:38,195 --> 00:00:38,683
+produces.
+
+13
+00:00:38,683 --> 00:00:43,074
+Day one of a new role has neither, which is exactly why the first thirty days are
+
+14
+00:00:43,074 --> 00:00:46,490
+about finding out what's true, not about shipping anything yet.
+
+15
+00:00:46,490 --> 00:00:50,936
+This is also the natural close of this whole section, not a new topic bolted on at
+
+16
+00:00:50,936 --> 00:00:51,370
+the end.
+
+17
+00:00:51,370 --> 00:00:55,111
+Every lecture since 10.1 has been a specific skill for doing the job.
+
+18
+00:00:55,111 --> 00:00:59,394
+This one is where those skills get a calendar, because a skill you can name but
+
+19
+00:00:59,394 --> 00:01:02,973
+never schedule tends to stay theoretical past the first busy week.
+
+20
+00:01:03,523 --> 00:01:08,299
+Days one to thirty aren't about changing anything, they're about finding out what's
+
+21
+00:01:08,299 --> 00:01:12,730
+actually true, because a new hire has information value long before they have
+
+22
+00:01:12,730 --> 00:01:13,650
+standing to act.
+
+23
+00:01:13,650 --> 00:01:18,254
+Classify every AI-touching feature you can find, shipped or planned, using 1.6's
+
+24
+00:01:18,254 --> 00:01:23,030
+archetypes, and check honestly whether any of them has an eval or an 8.1-style risk
+
+25
+00:01:23,030 --> 00:01:24,238
+register row already.
+
+26
+00:01:24,238 --> 00:01:27,173
+Most new AI PMs find at least one that has neither.
+
+27
+00:01:27,173 --> 00:01:30,396
+That's not a criticism of the team that came before you.
+
+28
+00:01:30,396 --> 00:01:34,769
+It's the single most useful thing you can hand your new manager in week two.
+
+29
+00:01:34,769 --> 00:01:38,854
+Days thirty-one to sixty are where the audit turns into something real.
+
+30
+00:01:38,854 --> 00:01:43,400
+Pick the single gap that matters most, small enough to actually finish inside a
+
+31
+00:01:43,400 --> 00:01:47,889
+month, and fix it visibly: a 4.2-style golden set for the most fragile shipped
+
+32
+00:01:47,889 --> 00:01:52,492
+feature, or the first honest row in an 8.1 register that didn't exist before you
+
+33
+00:01:52,492 --> 00:01:52,953
+arrived.
+
+34
+00:01:52,953 --> 00:01:55,024
+The point isn't the artifact's size.
+
+35
+00:01:55,024 --> 00:01:59,340
+It's that it's finished and checkable, which a plan or a proposal never is.
+
+36
+00:01:59,890 --> 00:02:02,372
+Days sixty-one to ninety are about durability.
+
+37
+00:02:02,372 --> 00:02:05,986
+Could a teammate pick this up and continue it if you left tomorrow?
+
+38
+00:02:05,986 --> 00:02:10,518
+That question is the real test of day ninety, more than whether the dashboard or the
+
+39
+00:02:10,518 --> 00:02:12,029
+roadmap line looks finished.
+
+40
+00:02:12,579 --> 00:02:17,507
+Notice the good column is smaller, not bigger, and looks less impressive in the room
+
+41
+00:02:17,507 --> 00:02:18,739
+on day thirty itself.
+
+42
+00:02:18,739 --> 00:02:23,433
+That trade is worth making anyway, because the bad column's comprehensiveness is
+
+43
+00:02:23,433 --> 00:02:25,545
+exactly what makes it unfalsifiable.
+
+44
+00:02:25,545 --> 00:02:30,415
+Nobody can check "here's everything I've learned" against anything, six weeks later
+
+45
+00:02:30,415 --> 00:02:30,884
+or ever.
+
+46
+00:02:30,884 --> 00:02:35,695
+This is 10.2's calibration principle again, aimed at your own first update instead
+
+47
+00:02:35,695 --> 00:02:36,810
+of a stakeholder's.
+
+48
+00:02:36,810 --> 00:02:41,621
+A single named finding plus a dated commitment is a claim reality can prove wrong,
+
+49
+00:02:41,621 --> 00:02:46,490
+which is exactly what makes it trustworthy in a way a comprehensive-sounding survey
+
+50
+00:02:46,490 --> 00:02:47,018
+never is.
+
+51
+00:02:47,018 --> 00:02:50,011
+There's a compounding effect worth naming here too.
+
+52
+00:02:50,011 --> 00:02:54,763
+A manager who watches one specific, dated commitment land on time starts trusting
+
+53
+00:02:54,763 --> 00:02:56,171
+the next one by default.
+
+54
+00:02:56,171 --> 00:03:00,982
+A manager who's only ever seen broad, unfalsifiable updates has no evidence either
+
+55
+00:03:00,982 --> 00:03:05,734
+way, and has to keep re-evaluating you from scratch every single time, which is a
+
+56
+00:03:05,734 --> 00:03:09,313
+slower way to earn the trust this whole plan is actually for.
+
+57
+00:03:09,863 --> 00:03:14,383
+Say the honest caveat, because finishing a plan exactly as written, regardless of
+
+58
+00:03:14,383 --> 00:03:18,903
+what the audit actually finds, is its own failure mode, not a sign of discipline.
+
+59
+00:03:18,903 --> 00:03:23,367
+This is 10.1's sprint-theatre point again, aimed at a whole quarter instead of a
+
+60
+00:03:23,367 --> 00:03:24,483
+single feature idea.
+
+61
+00:03:24,483 --> 00:03:29,003
+A ninety-day plan followed to the letter no matter what days one to thirty reveal
+
+62
+00:03:29,003 --> 00:03:32,630
+stops being judgement and becomes a performance of having a plan.
+
+63
+00:03:32,630 --> 00:03:37,150
+The entire reason to spend the first thirty days auditing is that the audit might
+
+64
+00:03:37,150 --> 00:03:39,215
+change what the next sixty should be.
+
+65
+00:03:39,215 --> 00:03:43,902
+If that happens, say so plainly, the same way 10.2 asked you to replace a hedge with
+
+66
+00:03:43,902 --> 00:03:44,683
+a real number.
+
+67
+00:03:44,683 --> 00:03:49,315
+"The plan changed because of what I found in week two, here's the new day sixty" is
+
+68
+00:03:49,315 --> 00:03:53,835
+a stronger sentence to bring to your manager than quietly forcing the calendar to
+
+69
+00:03:53,835 --> 00:03:56,513
+match an assumption the audit already disproved.
+
+70
+00:03:57,063 --> 00:04:01,525
+That's the standard worth writing toward now, before day one makes it urgent, and
+
+71
+00:04:01,525 --> 00:04:05,988
+the exercise is worth doing for the real role in front of you, not a hypothetical
+
+72
+00:04:05,988 --> 00:04:06,208
+one.
+
+73
+00:04:06,208 --> 00:04:10,450
+Most people writing this for the first time realise they can already name the
+
+74
+00:04:10,450 --> 00:04:14,912
+day-thirty finding, even before the job starts, just from what they've noticed in
+
+75
+00:04:14,912 --> 00:04:16,509
+the interview process itself.
+
+76
+00:04:16,509 --> 00:04:18,162
+That's worth writing down now.
+
+77
+00:04:18,162 --> 00:04:22,679
+It's much easier to confirm a suspicion on day five than to form one from nothing.
+
+78
+00:04:22,679 --> 00:04:27,141
+Treat day thirty itself as the plan's own checkpoint, not just a milestone inside
+
+79
+00:04:27,141 --> 00:04:27,307
+it.
+
+80
+00:04:27,307 --> 00:04:31,934
+Reread what you wrote today against what the audit actually found, and let the sixty
+
+81
+00:04:31,934 --> 00:04:34,303
+and ninety day rows change if they need to.
+
+82
+00:04:34,303 --> 00:04:38,710
+A plan that can't survive contact with its own first month of evidence was never
+
+83
+00:04:38,710 --> 00:04:41,409
+really a plan, just a date with a guess attached.
+
+84
+00:04:41,959 --> 00:04:43,591
+One thing before you move on.
+
+85
+00:04:43,591 --> 00:04:47,868
+Write the plan using this lecture's table, for the role you actually have or
+
+86
+00:04:47,868 --> 00:04:48,937
+actually want next.
+
+87
+00:04:48,937 --> 00:04:53,157
+A generic template rewritten in your own words is still a generic template.
+
+88
+00:04:53,157 --> 00:04:57,884
+Then name the day-sixty artifact specifically, not as a category but as a real thing
+
+89
+00:04:57,884 --> 00:05:02,386
+with a real feature attached, so day thirty-one already knows what it's building
+
+90
+00:05:02,386 --> 00:05:02,780
+toward.
+
+91
+00:05:02,780 --> 00:05:07,337
+Next lecture is the capstone brief: ship an AI feature spec, the final project of
+
+92
+00:05:07,337 --> 00:05:11,895
+this course, where every artifact you've built gets used on one feature, start to
+
+93
+00:05:11,895 --> 00:05:12,289
+finish.

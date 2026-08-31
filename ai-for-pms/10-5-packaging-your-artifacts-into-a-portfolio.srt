@@ -1,0 +1,315 @@
+1
+00:00:00,350 --> 00:00:05,002
+You've built twelve real artifacts across this course: a PRD template, a golden set,
+
+2
+00:00:05,002 --> 00:00:08,602
+a rubric, a cost model, a risk register, a metric tree, and more.
+
+3
+00:00:08,602 --> 00:00:12,922
+Dumped into a folder and linked in an email, they prove you attended a course.
+
+4
+00:00:12,922 --> 00:00:17,519
+Selected and sequenced around one real feature, they prove something an interviewer
+
+5
+00:00:17,519 --> 00:00:22,172
+actually can't get from a resume line: that you know what order the thinking happens
+
+6
+00:00:22,172 --> 00:00:22,338
+in.
+
+7
+00:00:22,338 --> 00:00:25,882
+Most PM portfolios show a shipped feature and a nice screenshot.
+
+8
+00:00:25,882 --> 00:00:30,369
+Almost none show the eval rubric, the cost model, or the risk register behind it,
+
+9
+00:00:30,369 --> 00:00:32,695
+because most PMs never formally built one.
+
+10
+00:00:32,695 --> 00:00:37,070
+That gap is exactly where this course's artifacts stop being homework and start
+
+11
+00:00:37,070 --> 00:00:38,787
+being a genuine differentiator.
+
+12
+00:00:38,787 --> 00:00:42,664
+This isn't about hiding the other eight behind the four you lead with.
+
+13
+00:00:42,664 --> 00:00:47,150
+All twelve stay available, linked or attached, for anyone who wants to go deeper.
+
+14
+00:00:47,150 --> 00:00:51,581
+The four you actually walk through out loud, in the room, are the ones doing the
+
+15
+00:00:51,581 --> 00:00:52,356
+work of proof.
+
+16
+00:00:52,356 --> 00:00:56,953
+The rest are there for the person who asks a genuinely specific follow-up and wants
+
+17
+00:00:56,953 --> 00:00:57,618
+to see more.
+
+18
+00:00:58,168 --> 00:01:02,431
+Pick one feature, real or from this course's exercises, and walk it through these
+
+19
+00:01:02,431 --> 00:01:06,378
+four questions in this exact order, because it's the order a genuinely good
+
+20
+00:01:06,378 --> 00:01:10,483
+interviewer already asks them in, whether or not they've ever seen this table.
+
+21
+00:01:10,483 --> 00:01:14,851
+If you're choosing between a real feature from your own work and one built entirely
+
+22
+00:01:14,851 --> 00:01:19,114
+from this course's exercises, the real one usually wins, even if it's smaller and
+
+23
+00:01:19,114 --> 00:01:19,851
+less polished.
+
+24
+00:01:19,851 --> 00:01:24,114
+Genuine judgement under real constraints reads differently from a clean exercise,
+
+25
+00:01:24,114 --> 00:01:27,745
+and most interviewers can tell the difference within a few questions.
+
+26
+00:01:27,745 --> 00:01:32,166
+Resist the instinct to show all twelve artifacts because more feels like more proof.
+
+27
+00:01:32,166 --> 00:01:33,113
+It's the opposite.
+
+28
+00:01:33,113 --> 00:01:36,692
+Twelve artifacts with no throughline reads as a checklist completed.
+
+29
+00:01:36,692 --> 00:01:40,639
+Four artifacts walking one feature from spec to shippable reads as a way of
+
+30
+00:01:40,639 --> 00:01:44,007
+thinking, which is the actual thing being evaluated in the room.
+
+31
+00:01:44,557 --> 00:01:47,488
+Why leave two strong artifacts out of the main four?
+
+32
+00:01:47,488 --> 00:01:52,167
+Because a portfolio walkthrough that tries to cover every section of this course in
+
+33
+00:01:52,167 --> 00:01:56,395
+one sitting stops being a story and becomes a syllabus recited from memory.
+
+34
+00:01:56,395 --> 00:02:00,453
+Four questions, answered well, beats twelve topics mentioned in passing.
+
+35
+00:02:00,453 --> 00:02:05,075
+Notice, too, that the four-question sequence works because each answer sets up the
+
+36
+00:02:05,075 --> 00:02:06,428
+next question naturally.
+
+37
+00:02:06,428 --> 00:02:11,106
+Once the PRD's threshold is on the table, the golden set's pass rate is the obvious
+
+38
+00:02:11,106 --> 00:02:12,910
+next thing anyone would ask for.
+
+39
+00:02:12,910 --> 00:02:17,420
+Once the pass rate is real, the cost number is what makes it a business decision
+
+40
+00:02:17,420 --> 00:02:18,434
+instead of a demo.
+
+41
+00:02:18,434 --> 00:02:19,900
+The order isn't arbitrary.
+
+42
+00:02:19,900 --> 00:02:22,887
+It's the sequence a good question naturally produces.
+
+43
+00:02:23,437 --> 00:02:28,044
+Say the honest caveat plainly, because this is the exact doctrine this whole course
+
+44
+00:02:28,044 --> 00:02:32,263
+has run on, aimed one last time at you instead of a feature you're building.
+
+45
+00:02:32,263 --> 00:02:36,759
+"I practised this discipline on a hypothetical feature to make sure I could do it
+
+46
+00:02:36,759 --> 00:02:40,033
+for real" is a completely legitimate, respectable sentence.
+
+47
+00:02:40,033 --> 00:02:44,363
+Letting an artifact's polish imply it came from a real shipped product when it
+
+48
+00:02:44,363 --> 00:02:48,637
+didn't is the one move that turns a genuine portfolio into something a single
+
+49
+00:02:48,637 --> 00:02:50,801
+follow-up question can quietly unravel.
+
+50
+00:02:50,801 --> 00:02:53,244
+The honest version survives every follow-up.
+
+51
+00:02:53,244 --> 00:02:55,242
+The other kind survives exactly one.
+
+52
+00:02:55,242 --> 00:02:59,571
+This matters more than it might seem worth a whole caveat, because the cost of
+
+53
+00:02:59,571 --> 00:03:02,458
+getting caught is specific and hard to recover from.
+
+54
+00:03:02,458 --> 00:03:06,843
+An interviewer who catches one inflated claim doesn't just discount that claim.
+
+55
+00:03:06,843 --> 00:03:11,005
+They quietly re-evaluate everything else you said in the same conversation,
+
+56
+00:03:11,005 --> 00:03:13,559
+including the parts that were completely true.
+
+57
+00:03:14,109 --> 00:03:18,540
+That's the standard worth building the rest of the portfolio to, and the exercise is
+
+58
+00:03:18,540 --> 00:03:21,863
+worth doing today, on the artifact you're actually proudest of.
+
+59
+00:03:21,863 --> 00:03:26,189
+Most people find the two sentences harder to write than the artifact was to build,
+
+60
+00:03:26,189 --> 00:03:30,515
+because naming the exact question it answers, precisely, is a different skill from
+
+61
+00:03:30,515 --> 00:03:33,311
+having built something that answers it instinctively.
+
+62
+00:03:33,311 --> 00:03:37,742
+That's worth practising before an interview room is the first place you're doing it.
+
+63
+00:03:37,742 --> 00:03:41,804
+Do this for more than one artifact if you have time, not just your favourite.
+
+64
+00:03:41,804 --> 00:03:46,025
+The exercise gets easier by the third attempt, and the version of you doing it a
+
+65
+00:03:46,025 --> 00:03:50,456
+fourth time is the version actually ready for a real interview room, not the version
+
+66
+00:03:50,456 --> 00:03:54,465
+who wrote two good sentences once and hoped the rest would follow naturally.
+
+67
+00:03:55,015 --> 00:03:56,665
+One thing before you move on.
+
+68
+00:03:56,665 --> 00:03:58,599
+Pick the four and the order first.
+
+69
+00:03:58,599 --> 00:04:03,377
+Use this lecture's table as the starting sequence, and adjust it only if your actual
+
+70
+00:04:03,377 --> 00:04:07,131
+feature's story genuinely asks its questions in a different order.
+
+71
+00:04:07,131 --> 00:04:11,454
+Then label every artifact honestly, in writing, before anyone else reads it.
+
+72
+00:04:11,454 --> 00:04:15,777
+That label is what turns a portfolio into something you can defend under any
+
+73
+00:04:15,777 --> 00:04:18,166
+question, not just the ones you rehearsed.
+
+74
+00:04:18,166 --> 00:04:20,896
+Neither of these requires building anything new.
+
+75
+00:04:20,896 --> 00:04:22,602
+Every artifact already exists.
+
+76
+00:04:22,602 --> 00:04:27,210
+This is entirely about selection and honesty, the cheapest, highest-leverage work
+
+77
+00:04:27,210 --> 00:04:29,485
+available to you in this entire section.
+
+78
+00:04:29,485 --> 00:04:33,922
+Next lecture is interview questions you can now answer, the specific ones this
+
+79
+00:04:33,922 --> 00:04:35,969
+course was built to prepare you for.

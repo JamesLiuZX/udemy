@@ -1,0 +1,371 @@
+1
+00:00:00,350 --> 00:00:04,806
+A coding assistant that turns a described workflow into a working script, a tool
+
+2
+00:00:04,806 --> 00:00:09,429
+like ChatPRD that turns a rough idea into a structured draft, a Workspace or Notion
+
+3
+00:00:09,429 --> 00:00:14,052
+automation that used to need an engineer's help: all of this genuinely changes what
+
+4
+00:00:14,052 --> 00:00:17,617
+one PM can build alone, this afternoon, without filing a ticket.
+
+5
+00:00:17,617 --> 00:00:21,070
+That's real, and this course isn't going to pretend otherwise.
+
+6
+00:00:21,070 --> 00:00:25,637
+What it won't do is stop there, because the interesting question was never whether
+
+7
+00:00:25,637 --> 00:00:26,584
+you can build it.
+
+8
+00:00:26,584 --> 00:00:31,152
+It's what happens six weeks later, when the small script you wrote for yourself is
+
+9
+00:00:31,152 --> 00:00:35,830
+quietly the thing three other people now depend on, and nobody ever asked whether it
+
+10
+00:00:35,830 --> 00:00:37,167
+was built to carry that.
+
+11
+00:00:37,167 --> 00:00:39,952
+None of this is really new in kind, only in speed.
+
+12
+00:00:39,952 --> 00:00:44,464
+PMs have always found ways to work around a full engineering queue: a spreadsheet
+
+13
+00:00:44,464 --> 00:00:47,750
+formula, a macro, a borrowed hour from a friendly engineer.
+
+14
+00:00:47,750 --> 00:00:52,094
+What changed is that the gap between having an idea and having a working thing
+
+15
+00:00:52,094 --> 00:00:56,606
+collapsed from days to minutes, and a gap that used to force you to slow down and
+
+16
+00:00:56,606 --> 00:00:58,834
+think no longer does that automatically.
+
+17
+00:00:59,384 --> 00:01:03,970
+Read the blast radius column the exact same way 6.6 taught you to read it for an
+
+18
+00:01:03,970 --> 00:01:08,155
+agent's actions: can this be undone, and what does it cost if it's wrong.
+
+19
+00:01:08,155 --> 00:01:10,506
+Vibe-coding doesn't change that question.
+
+20
+00:01:10,506 --> 00:01:14,748
+It only changes how fast you can build something before anyone's asked it.
+
+21
+00:01:14,748 --> 00:01:18,130
+The top two rows are where this skill earns its reputation.
+
+22
+00:01:18,130 --> 00:01:22,717
+A script that summarises your own inbox, a rough prototype you'll throw away the
+
+23
+00:01:22,717 --> 00:01:27,475
+moment the real PRD conversation starts, cost nothing if they're wrong, because the
+
+24
+00:01:27,475 --> 00:01:30,857
+only person affected is you, and you'll notice immediately.
+
+25
+00:01:30,857 --> 00:01:32,176
+Build these constantly.
+
+26
+00:01:32,176 --> 00:01:35,616
+This is the fastest feedback loop available to a working PM.
+
+27
+00:01:35,616 --> 00:01:40,202
+The bottom two rows are where the exact same skill gets genuinely dangerous, and
+
+28
+00:01:40,202 --> 00:01:44,960
+it's dangerous for a reason specific to vibe-coding: the tool got built fast enough
+
+29
+00:01:44,960 --> 00:01:49,718
+that none of this course's earlier discipline, a golden set, a risk register row, a
+
+30
+00:01:49,718 --> 00:01:52,929
+named owner, ever had a natural moment to attach itself.
+
+31
+00:01:52,929 --> 00:01:56,999
+Slow, traditional engineering forced those checkpoints by taking weeks.
+
+32
+00:01:56,999 --> 00:02:00,897
+This doesn't, which means you have to add them back in deliberately.
+
+33
+00:02:01,447 --> 00:02:05,777
+The last row deserves the most caution, because it's the one most likely to feel
+
+34
+00:02:05,777 --> 00:02:08,483
+like the first row while actually being the third.
+
+35
+00:02:08,483 --> 00:02:13,029
+Would you still call it harmless if it were a spreadsheet of customer emails instead
+
+36
+00:02:13,029 --> 00:02:14,004
+of your own inbox?
+
+37
+00:02:14,004 --> 00:02:18,496
+A prototype built to prove an idea and a tool that now processes real customer data
+
+38
+00:02:18,496 --> 00:02:23,042
+are not the same category, even when they started from the identical five minutes of
+
+39
+00:02:23,042 --> 00:02:23,421
+typing.
+
+40
+00:02:23,971 --> 00:02:28,389
+Notice the trigger in the good column: a second person depending on it, not a
+
+41
+00:02:28,389 --> 00:02:30,340
+calendar date or a size threshold.
+
+42
+00:02:30,340 --> 00:02:34,988
+That's the actual moment a personal tool becomes a small piece of infrastructure,
+
+43
+00:02:34,988 --> 00:02:39,407
+and it's a moment worth noticing on purpose rather than discovering during an
+
+44
+00:02:39,407 --> 00:02:39,924
+incident.
+
+45
+00:02:39,924 --> 00:02:44,629
+This is 8.6's incident-response lecture in miniature, arriving earlier than anyone
+
+46
+00:02:44,629 --> 00:02:45,146
+expected.
+
+47
+00:02:45,146 --> 00:02:49,736
+A tool with no named owner and no documented failure mode is exactly the gap 8.6
+
+48
+00:02:49,736 --> 00:02:54,557
+warned about, just wearing a smaller, friendlier shape because you built it yourself
+
+49
+00:02:54,557 --> 00:02:57,770
+in an afternoon instead of commissioning it from a team.
+
+50
+00:02:57,770 --> 00:03:00,926
+Ask the ownership question specifically, not generally.
+
+51
+00:03:00,926 --> 00:03:05,747
+"Someone should probably own this eventually" is the sentence that lets a tool drift
+
+52
+00:03:05,747 --> 00:03:07,640
+for months with no name attached.
+
+53
+00:03:07,640 --> 00:03:12,403
+"I own this until a specific date, then we decide together whether it graduates" is
+
+54
+00:03:12,403 --> 00:03:17,223
+a sentence with an actual deadline built into it, and deadlines are what turn a good
+
+55
+00:03:17,223 --> 00:03:19,404
+intention into something that happens.
+
+56
+00:03:19,954 --> 00:03:24,339
+Say the honest caveat, because the entire appeal of this skill, speed, is also
+
+57
+00:03:24,339 --> 00:03:27,487
+exactly what makes it easy to outrun your own judgement.
+
+58
+00:03:27,487 --> 00:03:32,041
+Traditional engineering used to impose discipline by accident: a script that took
+
+59
+00:03:32,041 --> 00:03:36,707
+three weeks to build got a code review, a second pair of eyes, simply because three
+
+60
+00:03:36,707 --> 00:03:38,506
+weeks felt like it deserved one.
+
+61
+00:03:38,506 --> 00:03:42,329
+A script built in twenty minutes doesn't get that for free any more.
+
+62
+00:03:42,329 --> 00:03:46,827
+You have to choose to apply the same discipline deliberately, at a speed that no
+
+63
+00:03:46,827 --> 00:03:48,176
+longer forces it on you.
+
+64
+00:03:48,176 --> 00:03:52,505
+This is worth saying plainly because the framing around these tools, in every
+
+65
+00:03:52,505 --> 00:03:56,215
+product demo and every announcement, is speed as the entire pitch.
+
+66
+00:03:56,215 --> 00:03:57,958
+Speed is real and worth having.
+
+67
+00:03:57,958 --> 00:04:02,568
+It was just never the same thing as correctness, and conflating the two is exactly
+
+68
+00:04:02,568 --> 00:04:07,009
+how a confidently wrong five-minute script does as much damage as a confidently
+
+69
+00:04:07,009 --> 00:04:11,675
+wrong five-week project, just more often, because building one got so much cheaper.
+
+70
+00:04:12,225 --> 00:04:16,364
+That's the line worth drawing before the next script, not after someone else is
+
+71
+00:04:16,364 --> 00:04:18,773
+already relying on one you built for yourself.
+
+72
+00:04:18,773 --> 00:04:23,174
+Most people running this list for the first time find at least one tool that quietly
+
+73
+00:04:23,174 --> 00:04:27,469
+crossed the line months ago, still carrying none of the ownership or documentation
+
+74
+00:04:27,469 --> 00:04:29,303
+the crossing should have triggered.
+
+75
+00:04:29,303 --> 00:04:30,560
+That's not a confession.
+
+76
+00:04:30,560 --> 00:04:34,803
+It's this lecture's actual finding, and it's a cheap one to fix today compared to
+
+77
+00:04:34,803 --> 00:04:35,694
+during an outage.
+
+78
+00:04:35,694 --> 00:04:39,256
+Most people are also surprised by their own list in both directions.
+
+79
+00:04:39,256 --> 00:04:43,290
+There are usually more vibe-coded tools quietly running than anyone remembers
+
+80
+00:04:43,290 --> 00:04:47,271
+building, and at least one of them is doing something with real consequences
+
+81
+00:04:47,271 --> 00:04:49,681
+nobody's checked on since the week it shipped.
+
+82
+00:04:50,231 --> 00:04:51,849
+One thing before you move on.
+
+83
+00:04:51,849 --> 00:04:56,035
+Make the list honestly, including the small ones you'd forgotten you built.
+
+84
+00:04:56,035 --> 00:04:58,713
+Most people have more of these than they expect.
+
+85
+00:04:58,713 --> 00:05:03,122
+Then, for anything a teammate now depends on, give it a real owner and a row in
+
+86
+00:05:03,122 --> 00:05:07,698
+8.1's register, the same treatment as any other tool this course has taught you to
+
+87
+00:05:07,698 --> 00:05:08,535
+take seriously.
+
+88
+00:05:08,535 --> 00:05:11,995
+Neither step needs permission from anyone else to start today.
+
+89
+00:05:11,995 --> 00:05:16,683
+The list is yours to make honestly, and naming an owner for a tool you already built
+
+90
+00:05:16,683 --> 00:05:19,195
+is a five-minute conversation, not a project.
+
+91
+00:05:19,195 --> 00:05:23,882
+Next lecture is packaging your artifacts into a portfolio: turning everything you've
+
+92
+00:05:23,882 --> 00:05:28,180
+built across this entire course, including today's list, into something you'd
+
+93
+00:05:28,180 --> 00:05:29,798
+actually hand an interviewer.
