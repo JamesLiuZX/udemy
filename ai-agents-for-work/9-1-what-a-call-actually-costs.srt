@@ -1,0 +1,227 @@
+1
+00:00:00,350 --> 00:00:05,062
+Gemini's Flash model, the one every agent in this course was built against, prices
+
+2
+00:00:05,062 --> 00:00:09,659
+out at roughly thirty cents per million words of input and two dollars fifty per
+
+3
+00:00:09,659 --> 00:00:11,039
+million words of output.
+
+4
+00:00:11,039 --> 00:00:15,866
+Priya's forty one daily emails do not come close to using a million of anything in a
+
+5
+00:00:15,866 --> 00:00:16,211
+month.
+
+6
+00:00:16,211 --> 00:00:20,061
+Why so cheap, when the technology is supposedly the expensive kind?
+
+7
+00:00:20,061 --> 00:00:24,888
+Because you pay by the word, roughly: words the model reads, words it writes, priced
+
+8
+00:00:24,888 --> 00:00:28,566
+separately, and an office task barely registers on either meter.
+
+9
+00:00:28,566 --> 00:00:32,876
+An email is a couple of hundred words in; a triage verdict is one line out.
+
+10
+00:00:32,876 --> 00:00:37,588
+You are buying judgement by the thimble, and a thimble of judgement, it turns out,
+
+11
+00:00:37,588 --> 00:00:39,140
+costs a fraction of a cent.
+
+12
+00:00:39,140 --> 00:00:43,679
+The intuition that AI must be expensive comes from what it costs to build these
+
+13
+00:00:43,679 --> 00:00:44,082
+models.
+
+14
+00:00:44,082 --> 00:00:48,909
+Renting one, per call, at office volumes, is one of the cheapest inputs your job has
+
+15
+00:00:48,909 --> 00:00:49,426
+ever had.
+
+16
+00:00:49,976 --> 00:00:51,995
+That number is not a rounding trick.
+
+17
+00:00:51,995 --> 00:00:56,483
+Small, short, structured tasks like triage and extraction are exactly what these
+
+18
+00:00:56,483 --> 00:00:57,773
+models are cheapest at.
+
+19
+00:00:57,773 --> 00:01:02,260
+The bill that actually adds up belongs to a different kind of workload entirely:
+
+20
+00:01:02,260 --> 00:01:06,524
+long documents, high volume, or a model far more capable than the job needs.
+
+21
+00:01:06,524 --> 00:01:10,001
+Know what would actually move the number, so surprises cannot.
+
+22
+00:01:10,001 --> 00:01:14,433
+Feed the agent fifty page policy documents instead of emails and the words-read
+
+23
+00:01:14,433 --> 00:01:15,723
+meter starts mattering.
+
+24
+00:01:15,723 --> 00:01:20,379
+Point it at a shared inbox with ten times the volume and the arithmetic scales with
+
+25
+00:01:20,379 --> 00:01:21,444
+it, still modestly.
+
+26
+00:01:21,444 --> 00:01:25,932
+Swap the small fast model for the largest one out of vague ambition and the rate
+
+27
+00:01:25,932 --> 00:01:30,644
+itself jumps, which is why Section 2.2's surgeon-opening-the-post warning was also a
+
+28
+00:01:30,644 --> 00:01:31,485
+budgeting rule.
+
+29
+00:01:31,485 --> 00:01:36,029
+None of those describe your four agents, which is exactly why the estimate holds.
+
+30
+00:01:36,579 --> 00:01:40,788
+The comparison is where the value actually lives, so make it out loud when you
+
+31
+00:01:40,788 --> 00:01:41,922
+present your numbers.
+
+32
+00:01:41,922 --> 00:01:46,186
+Paying only for what ran, at rates you can audit any morning, is an unglamorous
+
+33
+00:01:46,186 --> 00:01:50,557
+superpower for anyone who has ever had to justify a software line item, and it is
+
+34
+00:01:50,557 --> 00:01:54,713
+the difference between asking a manager for a budget and telling them about a
+
+35
+00:01:54,713 --> 00:01:55,523
+rounding error.
+
+36
+00:01:56,073 --> 00:02:00,673
+This is exactly why the course keeps tool-specific facts like this one quarantined
+
+37
+00:02:00,673 --> 00:02:04,263
+to lectures like this, instead of scattered through every build.
+
+38
+00:02:04,263 --> 00:02:06,732
+The judgement spine survives a price change.
+
+39
+00:02:06,732 --> 00:02:08,583
+This one number does not need to.
+
+40
+00:02:08,583 --> 00:02:12,622
+The re-check, when you need it, is a sixty second errand with two stops.
+
+41
+00:02:12,622 --> 00:02:15,764
+Your provider's pricing page tells you the current rate.
+
+42
+00:02:15,764 --> 00:02:20,420
+Your own usage dashboard, on the same account where you made the API key, tells you
+
+43
+00:02:20,420 --> 00:02:25,020
+what last month actually cost, which is the only number that ever needs defending.
+
+44
+00:02:25,020 --> 00:02:29,621
+Do that once a quarter, when the freshness pass on your own materials comes round,
+
+45
+00:02:29,621 --> 00:02:33,660
+and pricing news between checks becomes something you can safely ignore.
+
+46
+00:02:33,660 --> 00:02:38,260
+Headlines about AI costs are written about training runs and enterprise contracts,
+
+47
+00:02:38,260 --> 00:02:40,392
+not about nine hundred emails a month.
+
+48
+00:02:40,392 --> 00:02:44,487
+Your dashboard is the only pricing journalism your agents will ever need.
+
+49
+00:02:45,037 --> 00:02:49,412
+Keep that ranking in mind for the rest of this section, because it inverts where
+
+50
+00:02:49,412 --> 00:02:51,162
+most people put their attention.
+
+51
+00:02:51,162 --> 00:02:55,537
+The model bill is the number everyone asks about and the one that matters least:
+
+52
+00:02:55,537 --> 00:02:57,396
+rounding error against any salary.
+
+53
+00:02:57,396 --> 00:03:01,990
+Your checking time is the real cost of running agents, which is why this course made
+
+54
+00:03:01,990 --> 00:03:06,474
+you count it from the first trial, and why the next lecture's tracker subtracts it
+
+55
+00:03:06,474 --> 00:03:08,552
+before claiming a single saved minute.
+
+56
+00:03:08,552 --> 00:03:10,685
+Optimise the hours, tolerate the cents.
+
+57
+00:03:10,685 --> 00:03:15,005
+Next lecture turns that into a document you fill in with your own real numbers.

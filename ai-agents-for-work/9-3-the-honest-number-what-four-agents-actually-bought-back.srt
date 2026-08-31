@@ -1,0 +1,219 @@
+1
+00:00:00,350 --> 00:00:04,825
+Two hours from Agent 1, no longer hunting for the one email that matters in a pile
+
+2
+00:00:04,825 --> 00:00:05,316
+of forty.
+
+3
+00:00:05,316 --> 00:00:09,846
+About fifty minutes from Agent 2, one clean list per call instead of scrawled notes
+
+4
+00:00:09,846 --> 00:00:11,265
+half-remembered by Friday.
+
+5
+00:00:11,265 --> 00:00:14,266
+Forty minutes from Agent 3, the weekly arithmetic gone.
+
+6
+00:00:14,266 --> 00:00:18,850
+Half an hour from Agent 4, chases that used to slip now sitting drafted and waiting.
+
+7
+00:00:18,850 --> 00:00:20,542
+Where did the figure come from?
+
+8
+00:00:20,542 --> 00:00:25,072
+Six weeks of the C09 tracker, filled in weekly, checking time subtracted every row,
+
+9
+00:00:25,072 --> 00:00:26,982
+exactly as the last lecture taught.
+
+10
+00:00:26,982 --> 00:00:31,566
+That provenance is the difference between this slide and every breathless automation
+
+11
+00:00:31,566 --> 00:00:36,150
+statistic you have ever scrolled past: you are looking at one person's counted week,
+
+12
+00:00:36,150 --> 00:00:40,570
+not an industry's press release, and by the time you present your own version, it
+
+13
+00:00:40,570 --> 00:00:42,098
+will have the same pedigree.
+
+14
+00:00:42,098 --> 00:00:46,410
+The six weeks were not flat, either, and the shape is worth knowing in advance.
+
+15
+00:00:46,410 --> 00:00:50,830
+Week one barely broke even: trials were running, every output was being read, and
+
+16
+00:00:50,830 --> 00:00:53,068
+the checking time ate most of the saving.
+
+17
+00:00:53,068 --> 00:00:57,379
+The number grew as trust climbed the ladder, as briefings absorbed their tuning
+
+18
+00:00:57,379 --> 00:00:59,726
+edits, and as checking thinned to sampling.
+
+19
+00:00:59,726 --> 00:01:04,310
+If your own week two looks unimpressive, that is not failure, that is the curve, and
+
+20
+00:01:04,310 --> 00:01:08,839
+it is precisely why the tracker runs for six weeks before anyone presents anything.
+
+21
+00:01:09,389 --> 00:01:12,638
+Notice that table adds to four hours, not five and a half.
+
+22
+00:01:12,638 --> 00:01:17,286
+The extra ninety minutes in Priya's real total came from something the tracker does
+
+23
+00:01:17,286 --> 00:01:21,767
+not have a row for: fewer things falling through the cracks altogether, and less
+
+24
+00:01:21,767 --> 00:01:25,687
+time spent each week simply worrying about what she might have missed.
+
+25
+00:01:25,687 --> 00:01:30,168
+That number is real but softer, and the honest thing to do is name it separately
+
+26
+00:01:30,168 --> 00:01:32,408
+rather than fold it into the hard total.
+
+27
+00:01:32,408 --> 00:01:37,113
+Read the ranking in the table too, because it teaches you where to start in your own
+
+28
+00:01:37,113 --> 00:01:37,337
+job.
+
+29
+00:01:37,337 --> 00:01:41,761
+Triage wins by a distance, and not because it is the cleverest agent: it is the
+
+30
+00:01:41,761 --> 00:01:42,265
+simplest.
+
+31
+00:01:42,265 --> 00:01:43,441
+It wins on frequency.
+
+32
+00:01:43,441 --> 00:01:47,922
+Forty one emails a day, every day, each shaving a sliver of attention, compounds
+
+33
+00:01:47,922 --> 00:01:52,234
+past anything a weekly task can offer, however painful the weekly task feels.
+
+34
+00:01:52,234 --> 00:01:56,771
+When you pick your own first agent after this course, resist the dramatic monthly
+
+35
+00:01:56,771 --> 00:01:59,011
+chore and automate the boring daily one.
+
+36
+00:01:59,011 --> 00:02:03,436
+The maths is on the boring one's side, and the daily agent also earns its trial
+
+37
+00:02:03,436 --> 00:02:07,020
+evidence four times faster, which Section 7 taught you to value.
+
+38
+00:02:07,570 --> 00:02:12,218
+This is the same instinct as Section 7's spot checks, aimed at a spreadsheet instead
+
+39
+00:02:12,218 --> 00:02:16,865
+of an agent's output: check your own numbers as carefully as you would check theirs.
+
+40
+00:02:16,865 --> 00:02:20,075
+And when someone hears "four hours" and asks, is that all?
+
+41
+00:02:20,075 --> 00:02:24,501
+Give the answer Priya gives Marcus in the next section: four hours a week is two
+
+42
+00:02:24,501 --> 00:02:28,761
+hundred hours a year, five full working weeks, bought back for the price of a
+
+43
+00:02:28,761 --> 00:02:32,801
+sandwich a month, counted by someone who subtracts her own checking time.
+
+44
+00:02:32,801 --> 00:02:37,061
+Said that way, the modest number stops sounding modest, and it still contains
+
+45
+00:02:37,061 --> 00:02:38,721
+nothing anyone can take apart.
+
+46
+00:02:38,721 --> 00:02:41,155
+Big claims impress until the first question.
+
+47
+00:02:41,155 --> 00:02:42,871
+Clean claims survive the tenth.
+
+48
+00:02:43,421 --> 00:02:47,870
+Four hours a week is real money and real relief, once you have counted your own the
+
+49
+00:02:47,870 --> 00:02:48,728
+same honest way.
+
+50
+00:02:48,728 --> 00:02:52,963
+And if your version of the table adds to ninety minutes rather than four hours,
+
+51
+00:02:52,963 --> 00:02:57,252
+present it with the same straight face: an hour and a half a week is most of two
+
+52
+00:02:57,252 --> 00:03:01,702
+working weeks a year, cleanly counted, for pocket change, and a small honest number
+
+53
+00:03:01,702 --> 00:03:03,953
+opens more doors than a large fragile one.
+
+54
+00:03:03,953 --> 00:03:08,403
+It was never going to be everything, and the next lecture is about the part of your
+
+55
+00:03:08,403 --> 00:03:11,191
+own job that was never meant to be automated at all.

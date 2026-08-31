@@ -1,0 +1,11 @@
+1
+00:00:00,350 --> 00:00:04,274
+You have built four agents, checked their work, and survived one near miss.
+
+2
+00:00:04,274 --> 00:00:08,563
+This section puts a number on what all of that was worth, and names the tasks this
+
+3
+00:00:08,563 --> 00:00:10,761
+whole approach should never be pointed at.
