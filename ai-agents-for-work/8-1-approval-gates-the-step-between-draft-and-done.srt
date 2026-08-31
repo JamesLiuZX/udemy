@@ -1,0 +1,243 @@
+1
+00:00:00,350 --> 00:00:04,657
+Keep both definitions where you can quote them, because the rest of this section
+
+2
+00:00:04,657 --> 00:00:09,017
+leans on the difference, and because the confusion between them is how "we have a
+
+3
+00:00:09,017 --> 00:00:13,162
+human in the loop" ends up meaning four different things in the same meeting.
+
+4
+00:00:13,162 --> 00:00:17,523
+All four agents in this course stop at a draft, a flag, or a report waiting to be
+
+5
+00:00:17,523 --> 00:00:17,792
+read.
+
+6
+00:00:17,792 --> 00:00:22,260
+That was the right choice for everything you built, and Section 6 made the case for
+
+7
+00:00:22,260 --> 00:00:22,906
+it directly.
+
+8
+00:00:22,906 --> 00:00:27,428
+Not every useful agent can stay that cautious forever, and this lecture is about the
+
+9
+00:00:27,428 --> 00:00:31,896
+next rung up: one that can act, but never without someone actually saying so first.
+
+10
+00:00:32,446 --> 00:00:34,976
+Why teach this now, straight after the trials?
+
+11
+00:00:34,976 --> 00:00:37,891
+Because of what a passed trial does to your appetite.
+
+12
+00:00:37,891 --> 00:00:42,402
+A month of clean drafts makes the read-and-click step start to feel like ceremony,
+
+13
+00:00:42,402 --> 00:00:46,857
+and the thought arrives on schedule: it has been right every time, why am I still
+
+14
+00:00:46,857 --> 00:00:47,682
+the bottleneck?
+
+15
+00:00:47,682 --> 00:00:51,807
+That thought is not wrong, it is premature until it has a design behind it.
+
+16
+00:00:51,807 --> 00:00:55,382
+The honest path upward from draft-only is not removing the human.
+
+17
+00:00:55,382 --> 00:00:59,618
+It is shrinking your involvement to one deliberate yes at the one moment that
+
+18
+00:00:59,618 --> 00:01:04,018
+matters, and building that yes so it cannot happen by reflex, so that the ninety
+
+19
+00:01:04,018 --> 00:01:08,418
+seconds you used to spend per output becomes five, without the one decision that
+
+20
+00:01:08,418 --> 00:01:10,233
+mattered ever leaving your hands.
+
+21
+00:01:10,233 --> 00:01:14,413
+That is an approval gate, and done properly it keeps most of the safety at a
+
+22
+00:01:14,413 --> 00:01:15,843
+fraction of the attention.
+
+23
+00:01:15,843 --> 00:01:17,989
+The difference sounds small and is not.
+
+24
+00:01:17,989 --> 00:01:22,224
+Draft-only puts the entire decision in your hands, every time, no exceptions.
+
+25
+00:01:22,224 --> 00:01:26,569
+An approval gate still trusts a "yes" once and then the action runs unattended,
+
+26
+00:01:26,569 --> 00:01:31,079
+which means the gate itself has to be genuinely hard to click through by accident.
+
+27
+00:01:31,629 --> 00:01:36,098
+Mechanically, a gate is one more node: the workflow pauses, sends you a message
+
+28
+00:01:36,098 --> 00:01:40,850
+describing what it wants to do, and waits. n8n has wait-for-approval steps built for
+
+29
+00:01:40,850 --> 00:01:45,602
+exactly this, and the details of wiring one are in its current docs rather than this
+
+30
+00:01:45,602 --> 00:01:47,751
+video, for the usual freshness reason.
+
+31
+00:01:47,751 --> 00:01:52,333
+What matters far more than the wiring is what lands in front of the person saying
+
+32
+00:01:52,333 --> 00:01:52,559
+yes.
+
+33
+00:01:52,559 --> 00:01:57,311
+You are not approving the agent's intention, you are approving the specific thing it
+
+34
+00:01:57,311 --> 00:02:01,893
+built, and that only means anything if you have actually seen it in the moment of
+
+35
+00:02:01,893 --> 00:02:02,459
+approving.
+
+36
+00:02:02,459 --> 00:02:07,154
+A yes given to a summary is a yes given on trust, and the gate exists precisely for
+
+37
+00:02:07,154 --> 00:02:09,699
+the actions where trust alone was not enough.
+
+38
+00:02:09,699 --> 00:02:14,395
+And the yes should live somewhere deliberate, a click in n8n itself or a reply in a
+
+39
+00:02:14,395 --> 00:02:18,920
+channel you treat as work, never buried where notifications go to die, because a
+
+40
+00:02:18,920 --> 00:02:23,615
+gate people approve without reading has already failed, it just has not been caught
+
+41
+00:02:23,615 --> 00:02:23,841
+yet.
+
+42
+00:02:24,391 --> 00:02:28,746
+None of the four agents you built needed this yet, and that was deliberate.
+
+43
+00:02:28,746 --> 00:02:33,566
+The moment you add one that does, this is the standard to hold it to: a gate a busy
+
+44
+00:02:33,566 --> 00:02:36,353
+afternoon cannot click through without noticing.
+
+45
+00:02:36,353 --> 00:02:41,172
+Read down the middle column and notice what the test never asks: how good the agent
+
+46
+00:02:41,172 --> 00:02:41,347
+is.
+
+47
+00:02:41,347 --> 00:02:42,566
+That is its strength.
+
+48
+00:02:42,566 --> 00:02:47,443
+Gate placement decided by trust evaporates as trust grows, which is exactly when the
+
+49
+00:02:47,443 --> 00:02:48,489
+stakes are rising.
+
+50
+00:02:48,489 --> 00:02:53,192
+Gate placement decided by reversibility stands still no matter how good the agent
+
+51
+00:02:53,192 --> 00:02:57,837
+gets, because sent is still sent, and no week of flawless behaviour changes what
+
+52
+00:02:57,837 --> 00:02:58,476
+sent means.
+
+53
+00:02:59,026 --> 00:03:03,810
+Keep your answer to step three in writing, with the job description it belongs to,
+
+54
+00:03:03,810 --> 00:03:08,652
+because a gate named in advance is a design and a gate improvised later is a patch,
+
+55
+00:03:08,652 --> 00:03:13,203
+and Section 6.1's house-framing argument applies to gates exactly as it did to
+
+56
+00:03:13,203 --> 00:03:13,553
+locks.
+
+57
+00:03:13,553 --> 00:03:17,929
+If you never build the more capable agent, the page cost you three minutes.
+
+58
+00:03:17,929 --> 00:03:22,654
+If you do, it is the difference between adding autonomy to a plan and improvising
+
+59
+00:03:22,654 --> 00:03:24,288
+autonomy onto a live system.
+
+60
+00:03:24,288 --> 00:03:29,013
+Next lecture applies the same caution to something that feels smaller: adding one
+
+61
+00:03:29,013 --> 00:03:31,639
+new capability to an agent you already trust.

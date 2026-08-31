@@ -1,0 +1,15 @@
+1
+00:00:00,350 --> 00:00:03,011
+Every safeguard in this course so far has held.
+
+2
+00:00:03,011 --> 00:00:07,596
+This section tells you about the one time it was actually tested: a scope set too
+
+3
+00:00:07,596 --> 00:00:12,125
+wide, caught before it became a real problem, because the draft-only design from
+
+4
+00:00:12,125 --> 00:00:14,729
+Section 6 did exactly what it was built to do.

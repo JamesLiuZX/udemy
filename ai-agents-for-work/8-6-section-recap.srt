@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:04,775
+That is the section, and it is the closest thing this course has to a warning label.
+
+2
+00:00:04,775 --> 00:00:09,200
+Four working agents, one real near miss, contained by a decision made three sections
+
+3
+00:00:09,200 --> 00:00:10,201
+before it mattered.
+
+4
+00:00:10,201 --> 00:00:14,626
+What should stay with you isn't the specific sheet that moved, it's how ordinary the
+
+5
+00:00:14,626 --> 00:00:19,051
+mistake was, and how unremarkable the guardrail that caught it looked right up until
+
+6
+00:00:19,051 --> 00:00:20,105
+the day it mattered.
+
+7
+00:00:20,655 --> 00:00:21,657
+See you there.
