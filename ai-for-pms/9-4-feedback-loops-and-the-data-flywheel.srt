@@ -1,0 +1,383 @@
+1
+00:00:00,350 --> 00:00:05,243
+The pitch version of a data flywheel sounds automatic: ship it, users generate data,
+
+2
+00:00:05,243 --> 00:00:09,903
+the data makes it better, better draws more users, the wheel spins itself faster
+
+3
+00:00:09,903 --> 00:00:10,718
+every quarter.
+
+4
+00:00:10,718 --> 00:00:15,261
+Said like that, it sounds like something that happens to a product rather than
+
+5
+00:00:15,261 --> 00:00:16,834
+something a team has to do.
+
+6
+00:00:16,834 --> 00:00:19,164
+It isn't automatic anywhere in the loop.
+
+7
+00:00:19,164 --> 00:00:23,824
+Every step, from a rejected suggestion to an actual fix shipped, is a deliberate
+
+8
+00:00:23,824 --> 00:00:25,397
+action someone has to take.
+
+9
+00:00:25,397 --> 00:00:28,600
+Skip the deliberate part and you don't have a flywheel.
+
+10
+00:00:28,600 --> 00:00:33,318
+You have 9.2's instrumentation, correctly capturing a rejection event that nobody
+
+11
+00:00:33,318 --> 00:00:34,483
+ever looks at again.
+
+12
+00:00:34,483 --> 00:00:39,376
+Every section in this course has quietly built toward this moment without naming it.
+
+13
+00:00:39,376 --> 00:00:41,415
+Section four gave you a golden set.
+
+14
+00:00:41,415 --> 00:00:46,074
+Section eight's incident rule turned one specific failure into a permanent case.
+
+15
+00:00:46,074 --> 00:00:50,967
+This lecture generalises both: the same discipline, running continuously on ordinary
+
+16
+00:00:50,967 --> 00:00:53,181
+usage, not just triggered by a crisis.
+
+17
+00:00:53,731 --> 00:00:58,232
+Exactly one arrow on this diagram draws itself: usage produces a signal, because
+
+18
+00:00:58,232 --> 00:01:01,664
+9.2's instrumentation fires whether or not anyone's watching.
+
+19
+00:01:01,664 --> 00:01:04,421
+Every arrow after that needs a person to push it.
+
+20
+00:01:04,421 --> 00:01:09,034
+Sampling for review needs someone to decide how much gets looked at and how often.
+
+21
+00:01:09,034 --> 00:01:13,648
+Turning a reviewed case into a golden set entry or a prompt fix needs someone with
+
+22
+00:01:13,648 --> 00:01:16,292
+the authority and the time to make that change.
+
+23
+00:01:16,292 --> 00:01:20,850
+Shipping the improvement needs the normal release process this course has assumed
+
+24
+00:01:20,850 --> 00:01:21,412
+all along.
+
+25
+00:01:21,412 --> 00:01:25,913
+Call any one of those steps optional, and the loop stops exactly there, quietly,
+
+26
+00:01:25,913 --> 00:01:28,051
+while the usage number keeps climbing.
+
+27
+00:01:28,051 --> 00:01:29,289
+Who would even notice?
+
+28
+00:01:29,289 --> 00:01:33,903
+Notice, too, what this diagram deliberately leaves out: a direct arrow from Signal
+
+29
+00:01:33,903 --> 00:01:35,534
+straight to Improved feature.
+
+30
+00:01:35,534 --> 00:01:39,979
+That shortcut is exactly the automated version this lecture is warning you away
+
+31
+00:01:39,979 --> 00:01:42,342
+from, missing from the drawing on purpose.
+
+32
+00:01:42,342 --> 00:01:46,899
+Every real version of this loop routes through a person at the review step, every
+
+33
+00:01:46,899 --> 00:01:48,025
+time, no exceptions.
+
+34
+00:01:48,025 --> 00:01:52,638
+Compare this loop against 4.2's golden set build process: the same shape stretched
+
+35
+00:01:52,638 --> 00:01:54,607
+out over time instead of done once.
+
+36
+00:01:54,607 --> 00:01:59,108
+A golden set was fifty cases, chosen deliberately, scored against a rubric, at a
+
+37
+00:01:59,108 --> 00:02:00,684
+single moment before launch.
+
+38
+00:02:00,684 --> 00:02:05,185
+This loop is the same deliberate selection and review, running in small batches,
+
+39
+00:02:05,185 --> 00:02:06,423
+forever, after launch.
+
+40
+00:02:06,973 --> 00:02:10,831
+Notice the good column isn't describing a bigger engineering effort.
+
+41
+00:02:10,831 --> 00:02:15,484
+It's describing the exact same habit 8.6 already asked for after an incident, just
+
+42
+00:02:15,484 --> 00:02:19,456
+running on a calendar instead of waiting for something to break first.
+
+43
+00:02:19,456 --> 00:02:23,939
+That's the actual insight worth taking from this lecture: a rejected or heavily
+
+44
+00:02:23,939 --> 00:02:28,535
+edited output is a small incident, informative in exactly the same way, even when
+
+45
+00:02:28,535 --> 00:02:30,918
+nothing broke badly enough to page anyone.
+
+46
+00:02:30,918 --> 00:02:35,344
+Review it with the same seriousness, on a schedule, and the loop closes weekly
+
+47
+00:02:35,344 --> 00:02:37,954
+instead of only after a crisis forces it open.
+
+48
+00:02:37,954 --> 00:02:42,663
+Notice, too, how cheap the good column actually is compared to almost anything else
+
+49
+00:02:42,663 --> 00:02:44,649
+this course has asked you to build.
+
+50
+00:02:44,649 --> 00:02:47,997
+No new infrastructure, no new model, no new eval framework.
+
+51
+00:02:47,997 --> 00:02:52,593
+Thirty minutes, one person, one calendar entry, and a habit of actually acting on
+
+52
+00:02:52,593 --> 00:02:55,998
+what gets found in that half hour instead of filing it away.
+
+53
+00:02:55,998 --> 00:03:00,537
+Ask which of the five diagram steps your own feature is actually missing, rather
+
+54
+00:03:00,537 --> 00:03:03,601
+than assuming the whole loop is either working or not.
+
+55
+00:03:03,601 --> 00:03:07,687
+Most teams already have usage and signal working, since 9.2 covers both.
+
+56
+00:03:07,687 --> 00:03:12,453
+The break is almost always at sampling or review, the two steps that need a person's
+
+57
+00:03:12,453 --> 00:03:14,779
+calendar time rather than a line of code.
+
+58
+00:03:15,329 --> 00:03:20,100
+Say the honest caveat, because "let the system learn from real usage automatically"
+
+59
+00:03:20,100 --> 00:03:24,813
+sounds like the flywheel finishing itself, and it's actually a new, specific risk.
+
+60
+00:03:24,813 --> 00:03:29,411
+Unfiltered public input feeding directly back into what the feature does next is
+
+61
+00:03:29,411 --> 00:03:33,894
+exactly the shape 8.2 warned about: content from outside your control silently
+
+62
+00:03:33,894 --> 00:03:38,608
+steering behaviour, just arriving through a training pipeline instead of a prompt.
+
+63
+00:03:38,608 --> 00:03:43,378
+A reviewer between the signal and the fix isn't friction slowing the flywheel down.
+
+64
+00:03:43,378 --> 00:03:48,091
+It's the component that stops the loop from learning the wrong lesson from a small
+
+65
+00:03:48,091 --> 00:03:50,793
+number of bad-faith or simply unusual requests.
+
+66
+00:03:50,793 --> 00:03:55,506
+This is also why the review step needs to be a person with judgement, not a second
+
+67
+00:03:55,506 --> 00:04:00,277
+model quietly triaging the first model's mistakes with no human in the loop at all.
+
+68
+00:04:00,277 --> 00:04:04,990
+A judge model reviewing rejected outputs can genuinely help at scale, the same way
+
+69
+00:04:04,990 --> 00:04:09,645
+4.4 taught you to use one, but it still needs 4.4's calibration discipline behind
+
+70
+00:04:09,645 --> 00:04:13,899
+it, not blind trust that a second model catches what the first one missed.
+
+71
+00:04:14,449 --> 00:04:18,854
+That's the standard worth holding your own loop to, and the exercise is worth
+
+72
+00:04:18,854 --> 00:04:23,489
+running exactly as written, on real rejected cases, not a hypothetical average of
+
+73
+00:04:23,489 --> 00:04:24,862
+how review usually goes.
+
+74
+00:04:24,862 --> 00:04:29,096
+Most teams running this for the first time find the honest answer is zero.
+
+75
+00:04:29,096 --> 00:04:30,984
+The data was captured faithfully.
+
+76
+00:04:30,984 --> 00:04:33,559
+Nobody ever closed the loop on a single case.
+
+77
+00:04:33,559 --> 00:04:35,962
+That gap is usually not a tooling problem.
+
+78
+00:04:35,962 --> 00:04:39,109
+It's a missing name next to a recurring calendar entry.
+
+79
+00:04:39,109 --> 00:04:41,799
+Widen the check if the first five surprise you.
+
+80
+00:04:41,799 --> 00:04:43,172
+Pull twenty, then fifty.
+
+81
+00:04:43,172 --> 00:04:47,692
+The pattern that shows up repeatedly across a real sample is usually the single
+
+82
+00:04:47,692 --> 00:04:52,498
+highest-value fix available to the feature this month, discovered for the cost of an
+
+83
+00:04:52,498 --> 00:04:55,531
+hour's honest review instead of a quarter's guessing.
+
+84
+00:04:56,081 --> 00:04:57,698
+One thing before you move on.
+
+85
+00:04:57,698 --> 00:05:01,435
+Run the check from the example slide for real, on your own feature.
+
+86
+00:05:01,435 --> 00:05:06,008
+It's a five-minute look that usually tells you exactly where your loop is actually
+
+87
+00:05:06,008 --> 00:05:06,287
+open.
+
+88
+00:05:06,287 --> 00:05:10,749
+Then assign it: a weekly thirty-minute review, owned by one person, is enough to
+
+89
+00:05:10,749 --> 00:05:12,144
+keep a real loop turning.
+
+90
+00:05:12,144 --> 00:05:16,773
+Both of these are true regardless of how sophisticated your instrumentation already
+
+91
+00:05:16,773 --> 00:05:16,940
+is.
+
+92
+00:05:16,940 --> 00:05:20,956
+The most advanced event schema in the world produces nothing on its own.
+
+93
+00:05:20,956 --> 00:05:24,358
+It only ever produces what someone deliberately does with it.
+
+94
+00:05:24,358 --> 00:05:28,764
+Next lecture is dashboards leadership actually reads, and the honest difference
+
+95
+00:05:28,764 --> 00:05:33,338
+between a dashboard built to inform a decision and one built to look thorough in a
+
+96
+00:05:33,338 --> 00:05:33,728
+review.

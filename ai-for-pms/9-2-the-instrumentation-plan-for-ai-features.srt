@@ -1,0 +1,395 @@
+1
+00:00:00,350 --> 00:00:03,323
+A deterministic feature can afford to instrument late.
+
+2
+00:00:03,323 --> 00:00:07,782
+The button did the same thing in January that it does today, so a metric added in
+
+3
+00:00:07,782 --> 00:00:11,526
+March can still be reasoned about honestly for the months before it.
+
+4
+00:00:11,526 --> 00:00:13,948
+An AI feature doesn't get that grace period.
+
+5
+00:00:13,948 --> 00:00:18,297
+The exact model, the exact prompt version, the exact retrieved context behind a
+
+6
+00:00:18,297 --> 00:00:22,922
+specific answer exists for one moment, the moment it's generated, and then it's gone
+
+7
+00:00:22,922 --> 00:00:24,518
+unless something captured it.
+
+8
+00:00:24,518 --> 00:00:29,088
+Add acceptance tracking three months after launch and you haven't just missed three
+
+9
+00:00:29,088 --> 00:00:30,134
+months of a number.
+
+10
+00:00:30,134 --> 00:00:34,648
+You've lost the ability to ever know what those three months actually looked like.
+
+11
+00:00:34,648 --> 00:00:38,998
+That's the entire argument for this lecture existing before any other analytics
+
+12
+00:00:38,998 --> 00:00:43,347
+work: instrumentation is the one part of this section that has to happen first,
+
+13
+00:00:43,347 --> 00:00:46,044
+because it can't be reconstructed after the fact.
+
+14
+00:00:46,044 --> 00:00:50,669
+This is worth internalising before the engineering conversation even starts, because
+
+15
+00:00:50,669 --> 00:00:54,688
+instrumentation usually gets scoped by an engineer working alone, without
+
+16
+00:00:54,688 --> 00:00:58,376
+necessarily knowing which numbers this section is about to ask for.
+
+17
+00:00:58,376 --> 00:01:02,836
+Bring this schema to that conversation yourself, before the sprint that ships the
+
+18
+00:01:02,836 --> 00:01:04,487
+feature, not the sprint after.
+
+19
+00:01:05,037 --> 00:01:10,053
+Read the request_id column down the table, because it's doing the actual work here.
+
+20
+00:01:10,053 --> 00:01:14,888
+Every one of these four events shares the same identifier, so any outcome traces
+
+21
+00:01:14,888 --> 00:01:19,843
+back to the exact shown event that produced it, and from there to the exact prompt
+
+22
+00:01:19,843 --> 00:01:22,019
+version and model that generated it.
+
+23
+00:01:22,019 --> 00:01:26,612
+This is the same discipline 7.2 already asked of your cost model: every call
+
+24
+00:01:26,612 --> 00:01:31,688
+identifiable, every number traceable to the request that produced it, not aggregated
+
+25
+00:01:31,688 --> 00:01:33,139
+into an anonymous total.
+
+26
+00:01:33,139 --> 00:01:37,792
+If you're already logging a request_id for cost, this schema mostly extends a
+
+27
+00:01:37,792 --> 00:01:39,484
+pattern that already exists.
+
+28
+00:01:39,484 --> 00:01:44,137
+Notice the feedback row is honestly the weakest of the four, and that's fine.
+
+29
+00:01:44,137 --> 00:01:46,615
+Most users never click thumbs up or down.
+
+30
+00:01:46,615 --> 00:01:51,389
+Still worth capturing: on the rare request where someone does, it's the closest
+
+31
+00:01:51,389 --> 00:01:54,411
+thing to direct ground truth this schema produces.
+
+32
+00:01:54,411 --> 00:01:59,366
+The escalation row deserves its own moment: it's the one most likely to be missing
+
+33
+00:01:59,366 --> 00:02:02,992
+on a feature that wasn't built with a human handoff in mind.
+
+34
+00:02:02,992 --> 00:02:05,349
+Take the refund agent from Section six.
+
+35
+00:02:05,349 --> 00:02:07,887
+Does it hand a case like 4471 to a person?
+
+36
+00:02:07,887 --> 00:02:12,843
+That's exactly what 9.1's deflection metric needs, tagged with the same request_id
+
+37
+00:02:12,843 --> 00:02:17,557
+as everything else, not reconstructed later from a support ticket system never
+
+38
+00:02:17,557 --> 00:02:19,430
+designed to connect back to it.
+
+39
+00:02:19,980 --> 00:02:23,332
+Notice the bad column isn't a story about lazy engineering.
+
+40
+00:02:23,332 --> 00:02:27,537
+It's what happens by default when instrumentation gets treated as a launch
+
+41
+00:02:27,537 --> 00:02:32,253
+nice-to-have instead of a launch requirement, the same way a golden set got treated
+
+42
+00:02:32,253 --> 00:02:35,265
+as optional before Section four made the case for it.
+
+43
+00:02:35,265 --> 00:02:39,754
+The good column's real payoff shows up the first time you ship a prompt change.
+
+44
+00:02:39,754 --> 00:02:44,470
+With a request_id tying every outcome to a version, acceptance before and after the
+
+45
+00:02:44,470 --> 00:02:47,481
+change is two clean numbers you can compare directly.
+
+46
+00:02:47,481 --> 00:02:52,198
+Without it, you're left asking everyone in the room whether the new version "feels"
+
+47
+00:02:52,198 --> 00:02:56,857
+better, which is exactly the kind of guess this whole course has been teaching you
+
+48
+00:02:56,857 --> 00:02:57,482
+to replace.
+
+49
+00:02:57,482 --> 00:03:00,437
+Run the maths on what the bad column actually costs.
+
+50
+00:03:00,437 --> 00:03:05,039
+Three months of real usage, at whatever volume your feature actually sees, is the
+
+51
+00:03:05,039 --> 00:03:09,358
+single richest dataset you'll ever have about how real users respond to real
+
+52
+00:03:09,358 --> 00:03:09,812
+outputs.
+
+53
+00:03:09,812 --> 00:03:13,051
+Losing it to a missing identifier isn't a rounding error.
+
+54
+00:03:13,051 --> 00:03:17,597
+It's the exact evidence a redesign conversation six months from now will wish it
+
+55
+00:03:17,597 --> 00:03:17,824
+had.
+
+56
+00:03:18,374 --> 00:03:23,009
+Say the honest caveat, because "log everything, decide what matters later" sounds
+
+57
+00:03:23,009 --> 00:03:27,415
+thorough and usually produces the opposite: a mass of events nobody can query
+
+58
+00:03:27,415 --> 00:03:31,478
+cleanly, with the four that actually matter buried somewhere inside it.
+
+59
+00:03:31,478 --> 00:03:33,596
+Start from the metric, not the event.
+
+60
+00:03:33,596 --> 00:03:38,231
+Adoption, acceptance, and deflection each need a specific, small set of fields to
+
+61
+00:03:38,231 --> 00:03:38,689
+compute.
+
+62
+00:03:38,689 --> 00:03:43,267
+Build to that list deliberately, and add more only when a real question needs an
+
+63
+00:03:43,267 --> 00:03:45,327
+answer this schema doesn't have yet.
+
+64
+00:03:45,327 --> 00:03:49,504
+This also has to run through 8.3's questions before a single event ships.
+
+65
+00:03:49,504 --> 00:03:54,197
+Whatever you log about a request is data you now hold, subject to the same PII and
+
+66
+00:03:54,197 --> 00:03:57,687
+residency questions as anything else this course has covered.
+
+67
+00:03:57,687 --> 00:03:59,690
+Log the request_id and the outcome.
+
+68
+00:03:59,690 --> 00:04:03,581
+Think hard before logging the full text of every request by default.
+
+69
+00:04:03,581 --> 00:04:08,102
+This is the same discipline as 9.1's acceptance metric turned inward on itself:
+
+70
+00:04:08,102 --> 00:04:12,737
+define the number first, then build only what computes it, rather than collecting
+
+71
+00:04:12,737 --> 00:04:16,056
+broadly and hoping a clean metric falls out the other end.
+
+72
+00:04:16,056 --> 00:04:16,915
+It rarely does.
+
+73
+00:04:16,915 --> 00:04:21,493
+A broad collection effort with no metric driving it tends to produce exactly the
+
+74
+00:04:21,493 --> 00:04:24,239
+unqueryable pile this caveat is warning against.
+
+75
+00:04:24,789 --> 00:04:29,344
+That's the floor worth building before launch, not after, and the example is worth
+
+76
+00:04:29,344 --> 00:04:32,898
+running literally, on a real request, not as a thought exercise.
+
+77
+00:04:32,898 --> 00:04:37,397
+Most teams running this for the first time discover the honest answer is no, they
+
+78
+00:04:37,397 --> 00:04:41,730
+can't reconstruct last week's request, because the request_id thread was never
+
+79
+00:04:41,730 --> 00:04:43,396
+actually connected end to end.
+
+80
+00:04:43,396 --> 00:04:48,006
+That gap is exactly what this lecture exists to close, before it costs three months
+
+81
+00:04:48,006 --> 00:04:49,117
+instead of one week.
+
+82
+00:04:49,117 --> 00:04:52,227
+Widen the exercise if the first attempt succeeds easily.
+
+83
+00:04:52,227 --> 00:04:55,115
+Pick a request from a month ago, then a quarter ago.
+
+84
+00:04:55,115 --> 00:04:59,669
+The point where the honest answer turns from yes to no is worth knowing precisely,
+
+85
+00:04:59,669 --> 00:05:04,224
+because that's the exact date this schema needs to have been live by, and probably
+
+86
+00:05:04,224 --> 00:05:04,613
+wasn't.
+
+87
+00:05:05,163 --> 00:05:06,817
+One thing before you move on.
+
+88
+00:05:06,817 --> 00:05:08,756
+Check the request_id thread first.
+
+89
+00:05:08,756 --> 00:05:13,432
+If shown and outcome events exist but don't share an identifier, that's the single
+
+90
+00:05:13,432 --> 00:05:16,341
+highest-leverage fix available to you this section.
+
+91
+00:05:16,341 --> 00:05:20,960
+Then confirm, honestly, that what you're logging has already been checked against
+
+92
+00:05:20,960 --> 00:05:22,215
+8.3's three questions.
+
+93
+00:05:22,215 --> 00:05:24,895
+Neither step needs new infrastructure to start.
+
+94
+00:05:24,895 --> 00:05:29,628
+The request_id check is a five-minute look at your existing event logs, and the 8.3
+
+95
+00:05:29,628 --> 00:05:34,191
+check is a conversation you've already had once this course, applied to one more
+
+96
+00:05:34,191 --> 00:05:34,590
+system.
+
+97
+00:05:34,590 --> 00:05:39,210
+Next lecture is A/B testing a feature that gives a different answer every time it
+
+98
+00:05:39,210 --> 00:05:44,000
+runs, and why the standard test you already know needs one real adjustment before it
+
+99
+00:05:44,000 --> 00:05:45,882
+works on something probabilistic.

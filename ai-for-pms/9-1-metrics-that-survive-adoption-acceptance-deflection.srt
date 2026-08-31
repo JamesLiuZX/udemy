@@ -1,0 +1,459 @@
+1
+00:00:00,350 --> 00:00:04,889
+Picture a rising line on a dashboard: messages per session, up twenty percent month
+
+2
+00:00:04,889 --> 00:00:05,491
+over month.
+
+3
+00:00:05,491 --> 00:00:08,280
+For most features, that line is an unambiguous win.
+
+4
+00:00:08,280 --> 00:00:10,960
+Ship it to the team, put it in the deck, move on.
+
+5
+00:00:10,960 --> 00:00:11,780
+Sound familiar?
+
+6
+00:00:11,780 --> 00:00:16,100
+For an AI feature, that same line has two completely different honest readings.
+
+7
+00:00:16,100 --> 00:00:19,382
+People might be getting real value and coming back for more.
+
+8
+00:00:19,382 --> 00:00:23,975
+Or the assistant might be getting it wrong on the first try often enough that people
+
+9
+00:00:23,975 --> 00:00:28,460
+are re-typing the same request three different ways before it lands, and every one
+
+10
+00:00:28,460 --> 00:00:30,538
+of those retries counts as engagement.
+
+11
+00:00:30,538 --> 00:00:35,132
+Generic product metrics were built assuming a feature does the same thing every time
+
+12
+00:00:35,132 --> 00:00:35,679
+it's used.
+
+13
+00:00:35,679 --> 00:00:40,218
+An AI feature doesn't, and that single difference is why this lecture exists: three
+
+14
+00:00:40,218 --> 00:00:44,538
+metrics built specifically for a feature that behaves differently every time it
+
+15
+00:00:44,538 --> 00:00:44,812
+runs.
+
+16
+00:00:44,812 --> 00:00:47,546
+None of this means engagement is a useless number.
+
+17
+00:00:47,546 --> 00:00:52,031
+It means engagement alone was never built to answer the question you actually care
+
+18
+00:00:52,031 --> 00:00:55,093
+about: is this feature good, or is it merely being used.
+
+19
+00:00:55,093 --> 00:00:59,304
+Those are different questions, and only a probabilistic feature makes the gap
+
+20
+00:00:59,304 --> 00:01:00,562
+between them this wide.
+
+21
+00:01:01,112 --> 00:01:03,392
+Read each one against what it replaces.
+
+22
+00:01:03,392 --> 00:01:08,185
+Adoption replaces raw usage counts, which a small group of power users can inflate
+
+23
+00:01:08,185 --> 00:01:10,524
+while everyone else ignores the feature.
+
+24
+00:01:10,524 --> 00:01:15,083
+It asks the harder question: of everyone who had this available, what fraction
+
+25
+00:01:15,083 --> 00:01:16,545
+actually chose to use it.
+
+26
+00:01:16,545 --> 00:01:19,292
+That denominator is what teams skip most often.
+
+27
+00:01:19,292 --> 00:01:23,794
+"Ten thousand people used the feature" means something different depending on
+
+28
+00:01:23,794 --> 00:01:27,067
+whether ten thousand or two hundred thousand could have.
+
+29
+00:01:27,067 --> 00:01:31,685
+Skipping the eligible population is the same mistake as an average with no tail
+
+30
+00:01:31,685 --> 00:01:32,855
+check underneath it.
+
+31
+00:01:32,855 --> 00:01:37,473
+Acceptance leans hardest on production: the closest thing to a live, continuous
+
+32
+00:01:37,473 --> 00:01:42,032
+version of 4.2's golden set, scored by every real user instead of fifty chosen
+
+33
+00:01:42,032 --> 00:01:42,383
+cases.
+
+34
+00:01:42,383 --> 00:01:46,709
+Someone keeping a drafted email as written, or rewriting three of its five
+
+35
+00:01:46,709 --> 00:01:49,574
+sentences, is a quality signal arriving for free.
+
+36
+00:01:49,574 --> 00:01:54,367
+Deflection matters most for the feature this course keeps returning to: the refund
+
+37
+00:01:54,367 --> 00:01:57,465
+agent, handling a request that used to need a person.
+
+38
+00:01:57,465 --> 00:02:01,440
+A rising conversation count says nothing about whether it's working.
+
+39
+00:02:01,440 --> 00:02:06,176
+Deflection says exactly what matters: of the refund requests that reached it, how
+
+40
+00:02:06,176 --> 00:02:08,865
+many closed without a human touching the case.
+
+41
+00:02:08,865 --> 00:02:13,541
+That's the number 7.2's cost model and 8.6's incident plan were quietly building
+
+42
+00:02:13,541 --> 00:02:17,809
+toward, the one that finally says whether the automation earned its keep.
+
+43
+00:02:18,359 --> 00:02:21,359
+Notice both columns start from the identical number.
+
+44
+00:02:21,359 --> 00:02:26,090
+The only difference is whether anyone checked a second metric before deciding what
+
+45
+00:02:26,090 --> 00:02:27,244
+the first one meant.
+
+46
+00:02:27,244 --> 00:02:31,859
+An engagement number alone can't distinguish delight from friction, because both
+
+47
+00:02:31,859 --> 00:02:36,648
+look identical in a raw usage count: more messages, more sessions, more time in the
+
+48
+00:02:36,648 --> 00:02:37,110
+feature.
+
+49
+00:02:37,110 --> 00:02:41,841
+Acceptance is the metric that tells the two apart, because a user delighted with a
+
+50
+00:02:41,841 --> 00:02:46,514
+first answer doesn't need a second one, and a user fighting the feature generates
+
+51
+00:02:46,514 --> 00:02:50,841
+exactly the retries that inflate engagement while acceptance quietly drops.
+
+52
+00:02:50,841 --> 00:02:55,688
+This is the same discipline 7.5 asked of a margin number and an engagement number on
+
+53
+00:02:55,688 --> 00:02:56,495
+the same page.
+
+54
+00:02:56,495 --> 00:02:59,784
+Two metrics rising or falling together tell a real story.
+
+55
+00:02:59,784 --> 00:03:03,476
+One metric alone is a single data point dressed up as an answer.
+
+56
+00:03:03,476 --> 00:03:06,361
+Notice, too, which team usually owns which column.
+
+57
+00:03:06,361 --> 00:03:11,150
+Product tends to watch the engagement number by default, because it's the one every
+
+58
+00:03:11,150 --> 00:03:12,419
+dashboard already has.
+
+59
+00:03:12,419 --> 00:03:17,266
+Acceptance often has to be deliberately added, by someone who specifically asked for
+
+60
+00:03:17,266 --> 00:03:21,824
+it, which is exactly why so many teams are flying with only the first column in
+
+61
+00:03:21,824 --> 00:03:22,112
+view.
+
+62
+00:03:22,662 --> 00:03:27,025
+Put the two cards from the last slide into one grid and the point gets sharper.
+
+63
+00:03:27,025 --> 00:03:31,665
+The top row is identical wherever you look: messages per session, up twenty percent,
+
+64
+00:03:31,665 --> 00:03:34,537
+in both readings, because that number never changed.
+
+65
+00:03:34,537 --> 00:03:37,575
+The bottom row is where the two readings stop agreeing.
+
+66
+00:03:37,575 --> 00:03:41,883
+Read across the first column and acceptance simply isn't there, because nobody
+
+67
+00:03:41,883 --> 00:03:42,435
+pulled it.
+
+68
+00:03:42,435 --> 00:03:47,020
+Read across the second and it's down eight points, sitting right next to the twenty
+
+69
+00:03:47,020 --> 00:03:48,898
+percent rise it was hiding behind.
+
+70
+00:03:48,898 --> 00:03:51,825
+Same release, same underlying data, one column apart.
+
+71
+00:03:51,825 --> 00:03:55,028
+The gap between those two cells isn't a measurement error.
+
+72
+00:03:55,028 --> 00:03:59,557
+It's the entire cost of skipping a second metric before you write "clear win" in a
+
+73
+00:03:59,557 --> 00:04:00,331
+weekly update.
+
+74
+00:04:00,881 --> 00:04:05,423
+Say the honest caveat, because it's tempting to treat acceptance as the one metric
+
+75
+00:04:05,423 --> 00:04:09,632
+that finally can't be misread, and it can be, in the opposite direction from
+
+76
+00:04:09,632 --> 00:04:10,242
+engagement.
+
+77
+00:04:10,242 --> 00:04:14,894
+A suggestion accepted without being read produces the exact same acceptance event as
+
+78
+00:04:14,894 --> 00:04:17,886
+a suggestion read carefully and judged genuinely good.
+
+79
+00:04:17,886 --> 00:04:22,428
+Low-stakes features, an autocomplete suggestion nobody's scrutinising closely, are
+
+80
+00:04:22,428 --> 00:04:23,812
+especially prone to this.
+
+81
+00:04:23,812 --> 00:04:28,465
+High acceptance on a feature where the cost of being wrong is low is weaker evidence
+
+82
+00:04:28,465 --> 00:04:31,844
+than the identical number on a feature people actually check.
+
+83
+00:04:31,844 --> 00:04:36,275
+This is 4.9's discipline again, aimed at a new number: don't trust one metric in
+
+84
+00:04:36,275 --> 00:04:38,103
+isolation, however good it looks.
+
+85
+00:04:38,103 --> 00:04:42,534
+Pair acceptance with a downstream signal where you can get one: did the accepted
+
+86
+00:04:42,534 --> 00:04:47,132
+draft get sent unedited, did the accepted suggestion actually get used five minutes
+
+87
+00:04:47,132 --> 00:04:49,126
+later, or did it quietly get undone.
+
+88
+00:04:49,126 --> 00:04:51,785
+The fix isn't abandoning acceptance as a metric.
+
+89
+00:04:51,785 --> 00:04:56,437
+It's the same fix as everywhere else in this course: pair a number with a second one
+
+90
+00:04:56,437 --> 00:05:00,924
+before trusting either alone, and be specific about what would make you doubt the
+
+91
+00:05:00,924 --> 00:05:05,466
+first number rather than simply believing it because it moved the right direction.
+
+92
+00:05:06,016 --> 00:05:10,641
+That's the floor worth building before any other analytics work in this section, and
+
+93
+00:05:10,641 --> 00:05:15,101
+the definition's last clause is the one worth remembering under pressure: none of
+
+94
+00:05:15,101 --> 00:05:17,138
+the three, alone, is the whole story.
+
+95
+00:05:17,138 --> 00:05:20,001
+Run the comparison on real numbers if you have them.
+
+96
+00:05:20,001 --> 00:05:24,626
+Most teams have engagement instrumented already and acceptance instrumented nowhere,
+
+97
+00:05:24,626 --> 00:05:29,031
+which is itself the finding: the metric this section calls the most important is
+
+98
+00:05:29,031 --> 00:05:31,233
+usually the one nobody's collecting yet.
+
+99
+00:05:31,233 --> 00:05:35,803
+Notice this floor doesn't require new infrastructure to define, only to instrument,
+
+100
+00:05:35,803 --> 00:05:38,006
+which is exactly next lecture's subject.
+
+101
+00:05:38,006 --> 00:05:41,199
+Knowing what to measure is the cheap half of this problem.
+
+102
+00:05:41,199 --> 00:05:45,549
+Actually firing the event at the right moment, for every user, is the part most
+
+103
+00:05:45,549 --> 00:05:46,650
+teams underestimate.
+
+104
+00:05:47,200 --> 00:05:48,819
+One thing before you move on.
+
+105
+00:05:48,819 --> 00:05:50,885
+Check for acceptance first, honestly.
+
+106
+00:05:50,885 --> 00:05:55,129
+If the answer is that no event fires when a user keeps, edits, or discards a
+
+107
+00:05:55,129 --> 00:05:59,763
+suggestion, that's today's finding, and it's a bigger gap than a missing engagement
+
+108
+00:05:59,763 --> 00:06:00,656
+metric would be.
+
+109
+00:06:00,656 --> 00:06:05,179
+If you have both numbers, put them side by side before trusting either one alone.
+
+110
+00:06:05,179 --> 00:06:09,590
+Both of these are conversations you can start today, before any new code ships.
+
+111
+00:06:09,590 --> 00:06:14,280
+The instrumentation next lecture covers is what turns the conversation into a number
+
+112
+00:06:14,280 --> 00:06:15,564
+you can actually trust.
+
+113
+00:06:15,564 --> 00:06:20,254
+Next lecture is the instrumentation plan: exactly which events to fire, and when, so
+
+114
+00:06:20,254 --> 00:06:24,777
+acceptance, adoption, and deflection are numbers you have on day one, not numbers
+
+115
+00:06:24,777 --> 00:06:27,066
+you retrofit after someone asks for them.

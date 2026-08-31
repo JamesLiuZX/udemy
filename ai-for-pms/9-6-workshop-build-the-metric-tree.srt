@@ -1,0 +1,363 @@
+1
+00:00:00,350 --> 00:00:04,908
+Open A12, and give this the same twenty minutes every workshop in this course has
+
+2
+00:00:04,908 --> 00:00:05,470
+asked for.
+
+3
+00:00:05,470 --> 00:00:06,821
+The bar is the same too.
+
+4
+00:00:06,821 --> 00:00:07,496
+Not perfect.
+
+5
+00:00:07,496 --> 00:00:12,054
+Complete, with a real number in every branch, even where that number is an honest
+
+6
+00:00:12,054 --> 00:00:15,317
+"not yet measured" rather than a guess dressed up as data.
+
+7
+00:00:15,317 --> 00:00:17,849
+This workshop doesn't introduce anything new.
+
+8
+00:00:17,849 --> 00:00:22,238
+Every block on the next slide is a direct check against something this section
+
+9
+00:00:22,238 --> 00:00:26,796
+already taught you, which means the twenty minutes should feel like assembly, not
+
+10
+00:00:26,796 --> 00:00:27,359
+discovery.
+
+11
+00:00:27,359 --> 00:00:32,029
+If it feels like discovery somewhere, that block is this workshop's actual finding.
+
+12
+00:00:32,029 --> 00:00:34,899
+Treat the twenty minutes as a floor, not a ceiling.
+
+13
+00:00:34,899 --> 00:00:39,344
+A tree assembled quickly from already-solid numbers is a genuine success, not a
+
+14
+00:00:39,344 --> 00:00:41,032
+shortcut to feel guilty about.
+
+15
+00:00:41,032 --> 00:00:45,646
+The workshop rewards a team that did the earlier work honestly by making this part
+
+16
+00:00:45,646 --> 00:00:45,927
+fast.
+
+17
+00:00:46,477 --> 00:00:49,910
+Notice the first two blocks are a direct check, not new work.
+
+18
+00:00:49,910 --> 00:00:54,637
+If 9.1's three metrics and 9.2's request_id thread are already solid, this is a fast
+
+19
+00:00:54,637 --> 00:00:57,057
+eight minutes confirming it, not a rebuild.
+
+20
+00:00:57,057 --> 00:01:01,783
+Most of this workshop's real time goes to whichever block turns out to be the honest
+
+21
+00:01:01,783 --> 00:01:02,008
+gap.
+
+22
+00:01:02,008 --> 00:01:06,567
+Minutes eight through twelve ask you to actually open your last A/B test's setup,
+
+23
+00:01:06,567 --> 00:01:08,030
+not recall it from memory.
+
+24
+00:01:08,030 --> 00:01:12,194
+Randomised by user, version pinned for the duration, sized larger than the
+
+25
+00:01:12,194 --> 00:01:13,375
+calculator suggested.
+
+26
+00:01:13,375 --> 00:01:17,708
+If you've never run one, that's a legitimate answer for this block too, noted
+
+27
+00:01:17,708 --> 00:01:19,397
+honestly rather than invented.
+
+28
+00:01:19,397 --> 00:01:24,011
+The feedback loop block, minutes twelve through sixteen, is the one most workshops
+
+29
+00:01:24,011 --> 00:01:28,400
+before this one have found the hardest, because it demands a real example: one
+
+30
+00:01:28,400 --> 00:01:32,958
+rejected case, actually traced to a fix or a golden-set row, not a description of
+
+31
+00:01:32,958 --> 00:01:34,534
+the process in the abstract.
+
+32
+00:01:34,534 --> 00:01:39,261
+The last block, the leadership dashboard, only works once the first four are honest,
+
+33
+00:01:39,261 --> 00:01:42,299
+which is why it sits at the end rather than the start.
+
+34
+00:01:42,299 --> 00:01:47,026
+A dashboard assembled from four unchecked numbers is exactly the "looks good, isn't"
+
+35
+00:01:47,026 --> 00:01:51,303
+trap 9.5 warned you about, wearing a workshop's shape instead of a quarterly
+
+36
+00:01:51,303 --> 00:01:51,809
+review's.
+
+37
+00:01:52,359 --> 00:01:56,531
+This is the shape A12 asks you to fill in, and it's deliberately simple.
+
+38
+00:01:56,531 --> 00:02:01,399
+One North Star metric at the top, the single number that best represents whether the
+
+39
+00:02:01,399 --> 00:02:06,150
+feature is succeeding, and the branches underneath it that explain why that number
+
+40
+00:02:06,150 --> 00:02:06,729
+is moving.
+
+41
+00:02:06,729 --> 00:02:10,959
+Choose the North Star carefully: it's doing more work than it looks like.
+
+42
+00:02:10,959 --> 00:02:15,769
+For the refund agent this course keeps returning to, deflection is often the honest
+
+43
+00:02:15,769 --> 00:02:20,578
+choice, the number that ties usage directly to the cost Section seven taught you to
+
+44
+00:02:20,578 --> 00:02:21,042
+compute.
+
+45
+00:02:21,042 --> 00:02:25,735
+For a drafting tool, acceptance might sit at the top instead, with adoption and a
+
+46
+00:02:25,735 --> 00:02:27,358
+cost number as its branches.
+
+47
+00:02:27,358 --> 00:02:29,849
+Which one is honestly true of your feature?
+
+48
+00:02:29,849 --> 00:02:34,427
+Notice this tree is deliberately shallow, one level, not a sprawling org chart.
+
+49
+00:02:34,427 --> 00:02:37,614
+Depth is what the team's own dashboard from 9.5 is for.
+
+50
+00:02:37,614 --> 00:02:42,307
+It exists to be read in the time it takes to say four sentences out loud, roughly
+
+51
+00:02:42,307 --> 00:02:44,973
+how long you'll have in the room that matters.
+
+52
+00:02:44,973 --> 00:02:49,261
+The cost branch is easy to leave off a tree that otherwise feels complete.
+
+53
+00:02:49,261 --> 00:02:54,128
+Pull it directly from Section seven's unit economics model rather than estimating it
+
+54
+00:02:54,128 --> 00:02:54,476
+fresh.
+
+55
+00:02:54,476 --> 00:02:58,937
+If 7.2's cost model and 7.5's margin work are already built, this branch is a
+
+56
+00:02:58,937 --> 00:03:03,747
+five-minute copy, the same shortcut this workshop already gave you for adoption and
+
+57
+00:03:03,747 --> 00:03:04,384
+acceptance.
+
+58
+00:03:04,934 --> 00:03:09,493
+Say the honest caveat, because a metric tree is exactly the kind of document that
+
+59
+00:03:09,493 --> 00:03:14,107
+can look done from a distance while being hollow up close, the same trap 9.5 named
+
+60
+00:03:14,107 --> 00:03:16,527
+for a dashboard that only ever shows green.
+
+61
+00:03:16,527 --> 00:03:21,142
+Before you call a branch finished, ask the question a real review would ask: where
+
+62
+00:03:21,142 --> 00:03:24,857
+does this number come from, and would it survive someone checking.
+
+63
+00:03:24,857 --> 00:03:29,359
+If the honest answer is "I'm not fully sure," write that down next to the branch
+
+64
+00:03:29,359 --> 00:03:33,524
+rather than letting a plausible-looking number stand in for a checked one.
+
+65
+00:03:33,524 --> 00:03:38,195
+This is the same discipline as every honest caveat this course has asked for, aimed
+
+66
+00:03:38,195 --> 00:03:42,697
+one last time at the artifact you're building right now, not a hypothetical one.
+
+67
+00:03:42,697 --> 00:03:47,256
+A metric tree presented once and never revisited goes stale exactly the way 8.1's
+
+68
+00:03:47,256 --> 00:03:51,927
+register does, and the fix is identical: a real owner, and a real date for the next
+
+69
+00:03:51,927 --> 00:03:52,602
+honest look.
+
+70
+00:03:53,152 --> 00:03:57,486
+That's today's bar, held to the same standard as every workshop before this one:
+
+71
+00:03:57,486 --> 00:04:01,874
+attempted honestly, with the one choice that matters most, the North Star itself,
+
+72
+00:04:01,874 --> 00:04:03,986
+made on purpose rather than by default.
+
+73
+00:04:03,986 --> 00:04:07,399
+If you finish with time left, don't polish every branch evenly.
+
+74
+00:04:07,399 --> 00:04:11,950
+Return to whichever number you're least confident defending live, because that's the
+
+75
+00:04:11,950 --> 00:04:13,791
+one a real review will find first.
+
+76
+00:04:13,791 --> 00:04:18,125
+Most people building their first tree default to whichever metric was easiest to
+
+77
+00:04:18,125 --> 00:04:20,671
+pull, not the one that best represents success.
+
+78
+00:04:20,671 --> 00:04:25,113
+Catch that instinct specifically at the North Star box, because every other branch
+
+79
+00:04:25,113 --> 00:04:29,285
+inherits its meaning from whether that top choice was actually the right one.
+
+80
+00:04:29,835 --> 00:04:31,448
+One thing before you move on.
+
+81
+00:04:31,448 --> 00:04:36,010
+Complete every branch for a feature you actually own, and make sure the top of the
+
+82
+00:04:36,010 --> 00:04:40,573
+tree was a deliberate choice, not whichever number happened to be easiest to find.
+
+83
+00:04:40,573 --> 00:04:45,079
+Then hand it to whoever actually presents this feature next, and ask which branch
+
+84
+00:04:45,079 --> 00:04:46,526
+they'd push back on first.
+
+85
+00:04:46,526 --> 00:04:48,862
+Neither step requires new data collection.
+
+86
+00:04:48,862 --> 00:04:53,313
+Everything the tree needs should already exist somewhere in what 9.1 through 9.5
+
+87
+00:04:53,313 --> 00:04:54,370
+asked you to check.
+
+88
+00:04:54,370 --> 00:04:58,821
+This workshop is assembly, and assembly is the part most teams skip, not because
+
+89
+00:04:58,821 --> 00:05:02,994
+it's hard, but because nobody ever put twenty minutes on a calendar for it.
+
+90
+00:05:02,994 --> 00:05:07,612
+Next lecture closes this section: what these seven lectures actually built, and how
+
+91
+00:05:07,612 --> 00:05:11,173
+it plugs directly into Section ten, where the job itself starts.
