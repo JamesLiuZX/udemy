@@ -1,63 +1,63 @@
 1
-00:00:00,350 --> 00:00:05,010
+00:00:00,350 --> 00:00:05,393
 Section six asked two questions about a single action an agent might take: can it be
 
 2
-00:00:05,010 --> 00:00:07,450
+00:00:05,393 --> 00:00:08,034
 undone, and what does it cost if it's wrong.
 
 3
-00:00:07,450 --> 00:00:11,944
+00:00:08,034 --> 00:00:12,897
 This section asks the same two questions about the feature as a whole, the leaked
 
 4
-00:00:11,944 --> 00:00:16,381
+00:00:12,897 --> 00:00:17,700
 document, the injected instruction, the quietly biased output, before legal asks
 
 5
-00:00:16,381 --> 00:00:17,102
+00:00:17,700 --> 00:00:18,480
 them for you.
 
 6
-00:00:17,102 --> 00:00:21,485
+00:00:18,480 --> 00:00:23,223
 By the end, you'll have a risk register that actually holds up in a review, and
 
 7
-00:00:21,485 --> 00:00:25,812
+00:00:23,223 --> 00:00:27,906
 you'll know exactly which regulations apply to your feature and which ones are
 
 8
-00:00:25,812 --> 00:00:27,587
+00:00:27,906 --> 00:00:29,827
 someone else's problem entirely.
 
 9
-00:00:28,137 --> 00:00:32,437
+00:00:30,377 --> 00:00:34,995
 Six ideas, each one something legal or security will eventually ask you about,
 
 10
-00:00:32,437 --> 00:00:34,698
+00:00:34,995 --> 00:00:37,422
 whether or not you've prepared an answer.
 
 11
-00:00:34,698 --> 00:00:38,943
+00:00:37,422 --> 00:00:41,981
 You'll learn to register a risk the same rigorous way you already score blast
 
 12
-00:00:38,943 --> 00:00:43,464
+00:00:41,981 --> 00:00:46,836
 radius, read a regulation for what it actually requires instead of what a headline
 
 13
-00:00:43,464 --> 00:00:47,930
+00:00:46,836 --> 00:00:51,632
 implied, and scope a fairness question to your own feature instead of a topic too
 
 14
-00:00:47,930 --> 00:00:48,812
+00:00:51,632 --> 00:00:52,579
 broad to act on.
 
 15
-00:00:48,812 --> 00:00:53,334
+00:00:52,579 --> 00:00:57,434
 It closes with you red-teaming your own feature honestly, before someone else does
 
 16
-00:00:53,334 --> 00:00:54,712
+00:00:57,434 --> 00:00:58,915
 it for you in production.

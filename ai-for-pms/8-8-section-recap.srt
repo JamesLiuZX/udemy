@@ -1,91 +1,91 @@
 1
-00:00:00,350 --> 00:00:04,787
+00:00:00,350 --> 00:00:05,149
 Eight lectures ago, this section opened with a question nobody can actually check:
 
 2
-00:00:04,787 --> 00:00:05,923
+00:00:05,149 --> 00:00:06,378
 is this feature safe.
 
 3
-00:00:05,923 --> 00:00:07,222
+00:00:06,378 --> 00:00:07,783
 Here's what replaced it.
 
 4
-00:00:07,222 --> 00:00:11,713
+00:00:07,783 --> 00:00:12,640
 You've got a risk register scored the same honest way Section six scored an agent's
 
 5
-00:00:11,713 --> 00:00:14,094
+00:00:12,640 --> 00:00:15,215
 blast radius, not a checklist of adjectives.
 
 6
-00:00:14,094 --> 00:00:18,422
+00:00:15,215 --> 00:00:19,897
 You know the difference between an injection attempt you typed and one hiding in
 
 7
-00:00:18,422 --> 00:00:22,913
+00:00:19,897 --> 00:00:24,755
 content your feature reads, and where the boundary needs to sit between reading and
 
 8
-00:00:22,913 --> 00:00:23,292
+00:00:24,755 --> 00:00:25,164
 acting.
 
 9
-00:00:23,292 --> 00:00:27,675
+00:00:25,164 --> 00:00:29,905
 You've split "is our data safe" into three separate questions with three separate
 
 10
-00:00:27,675 --> 00:00:32,220
+00:00:29,905 --> 00:00:34,821
 owners, and you can sort a feature into the EU AI Act's four tiers by what it's used
 
 11
-00:00:32,220 --> 00:00:33,844
+00:00:34,821 --> 00:00:36,577
 for, not what it's built with.
 
 12
-00:00:33,844 --> 00:00:38,389
+00:00:36,577 --> 00:00:41,493
 You've turned "is it biased" into a measured pass-rate gap instead of a feeling, and
 
 13
-00:00:38,389 --> 00:00:42,880
+00:00:41,493 --> 00:00:46,350
 you know the difference between a postmortem document and an incident response plan
 
 14
-00:00:42,880 --> 00:00:45,315
+00:00:46,350 --> 00:00:48,984
 that actually makes your eval suite stronger.
 
 15
-00:00:45,865 --> 00:00:50,353
+00:00:49,534 --> 00:00:54,427
 One downloadable artifact came out of this section, and the workshop put all six
 
 16
-00:00:50,353 --> 00:00:55,010
+00:00:54,427 --> 00:00:59,503
 categories through it against a feature of your own: a real attempted attack, not a
 
 17
-00:00:55,010 --> 00:00:55,964
+00:00:59,503 --> 00:01:00,543
 hypothetical one.
 
 18
-00:00:55,964 --> 00:00:57,984
+00:01:00,543 --> 00:01:02,745
 Keep the register alive after today.
 
 19
-00:00:57,984 --> 00:01:02,640
+00:01:02,745 --> 00:01:07,821
 It's only useful with a name and a date on every row, revisited, not filled in once
 
 20
-00:01:02,640 --> 00:01:03,426
+00:01:07,821 --> 00:01:08,677
 and forgotten.
 
 21
-00:01:03,426 --> 00:01:08,083
+00:01:08,677 --> 00:01:13,754
 Next section moves from whether a feature is safe to whether it's actually working:
 
 22
-00:01:08,083 --> 00:01:12,739
+00:01:13,754 --> 00:01:18,830
 the analytics that tell you if people are getting value, not just using the feature
 
 23
-00:01:12,739 --> 00:01:13,805
+00:01:18,830 --> 00:01:19,992
 because it's there.

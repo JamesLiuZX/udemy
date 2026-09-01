@@ -1,415 +1,415 @@
 1
-00:00:00,350 --> 00:00:03,238
+00:00:00,350 --> 00:00:03,486
 What does "the feature is down" actually look like?
 
 2
-00:00:03,238 --> 00:00:07,995
+00:00:03,486 --> 00:00:08,650
 Ask an engineer and they'll describe it precisely: errors spiking, latency climbing,
 
 3
-00:00:07,995 --> 00:00:09,354
+00:00:08,650 --> 00:00:10,125
 a dashboard turning red.
 
 4
-00:00:09,354 --> 00:00:14,055
+00:00:10,125 --> 00:00:15,228
 Every one of those signals exists because something stopped responding correctly at
 
 5
-00:00:14,055 --> 00:00:15,187
+00:00:15,228 --> 00:00:16,458
 the transport level.
 
 6
-00:00:15,187 --> 00:00:19,038
+00:00:16,458 --> 00:00:20,639
 An AI feature can fail without moving a single one of those numbers.
 
 7
-00:00:19,038 --> 00:00:23,738
+00:00:20,639 --> 00:00:25,742
 It returns a response, quickly, with no error, that happens to be wrong, or unsafe,
 
 8
-00:00:23,738 --> 00:00:25,947
+00:00:25,742 --> 00:00:28,139
 or quietly worse than it was yesterday.
 
 9
-00:00:25,947 --> 00:00:27,023
+00:00:28,139 --> 00:00:29,307
 The server is fine.
 
 10
-00:00:27,023 --> 00:00:28,042
+00:00:29,307 --> 00:00:30,414
 The feature isn't.
 
 11
-00:00:28,042 --> 00:00:32,403
+00:00:30,414 --> 00:00:35,148
 Nothing in a traditional monitoring stack was built to notice the difference.
 
 12
-00:00:32,403 --> 00:00:36,933
+00:00:35,148 --> 00:00:40,067
 That gap is what this lecture closes, and it's the last row on 8.1's table for a
 
 13
-00:00:36,933 --> 00:00:41,690
+00:00:40,067 --> 00:00:45,231
 reason: everything else in this section is about preventing a specific kind of risk.
 
 14
-00:00:41,690 --> 00:00:45,315
+00:00:45,231 --> 00:00:49,166
 This one is about what happens the day prevention wasn't enough.
 
 15
-00:00:45,315 --> 00:00:47,410
+00:00:49,166 --> 00:00:51,441
 This isn't a hypothetical gap either.
 
 16
-00:00:47,410 --> 00:00:51,997
+00:00:51,441 --> 00:00:56,421
 It's the direct product of everything Section seven and this section have already
 
 17
-00:00:51,997 --> 00:00:56,584
+00:00:56,421 --> 00:01:01,400
 taught you: a feature can pass its launch scorecard, clear its risk register, and
 
 18
-00:00:56,584 --> 00:01:01,115
+00:01:01,400 --> 00:01:06,319
 still degrade quietly in production, the same way 7.5's margin trap hid inside a
 
 19
-00:01:01,115 --> 00:01:02,587
+00:01:06,319 --> 00:01:07,917
 healthy-looking dashboard.
 
 20
-00:01:02,587 --> 00:01:04,286
+00:01:07,917 --> 00:01:09,762
 Detection was never automatic.
 
 21
-00:01:04,286 --> 00:01:05,362
+00:01:09,762 --> 00:01:10,930
 It has to be built.
 
 22
-00:01:05,912 --> 00:01:09,669
+00:01:11,480 --> 00:01:15,507
 Read the bottom row, because it's the entire argument in one line.
 
 23
-00:01:09,669 --> 00:01:14,451
+00:01:15,507 --> 00:01:20,632
 Existing monitoring genuinely does catch the left column, reliably, which is exactly
 
 24
-00:01:14,451 --> 00:01:18,721
+00:01:20,632 --> 00:01:25,208
 why it's tempting to assume the same dashboards cover the right column too.
 
 25
-00:01:18,721 --> 00:01:23,218
+00:01:25,208 --> 00:01:30,029
 They don't, and assuming they do is how a quality incident runs for days before
 
 26
-00:01:23,218 --> 00:01:24,072
+00:01:30,029 --> 00:01:30,944
 anyone notices.
 
 27
-00:01:24,072 --> 00:01:28,227
+00:01:30,944 --> 00:01:35,398
 The signal that actually catches the right column has to be about quality
 
 28
-00:01:28,227 --> 00:01:32,839
+00:01:35,398 --> 00:01:40,340
 specifically: a spike in thumbs-down feedback, a jump in support escalations from
 
 29
-00:01:32,839 --> 00:01:37,564
+00:01:40,340 --> 00:01:45,404
 this feature, a sampled review that finds several outputs failing 4.5's rubric in a
 
 30
-00:01:37,564 --> 00:01:37,791
+00:01:45,404 --> 00:01:45,648
 row.
 
 31
-00:01:37,791 --> 00:01:40,125
+00:01:45,648 --> 00:01:48,150
 None of these are infrastructure metrics.
 
 32
-00:01:40,125 --> 00:01:44,907
+00:01:48,150 --> 00:01:53,275
 All of them require someone to have decided, in advance, that this is worth watching
 
 33
-00:01:44,907 --> 00:01:48,152
+00:01:53,275 --> 00:01:56,753
 continuously, not just checking at launch and forgetting.
 
 34
-00:01:48,152 --> 00:01:51,625
+00:01:56,753 --> 00:02:00,475
 Picture the refund agent one more time, well into production.
 
 35
-00:01:51,625 --> 00:01:56,350
+00:02:00,475 --> 00:02:05,539
 Its error rate stays flat, its latency stays flat, every infrastructure graph looks
 
 36
-00:01:56,350 --> 00:01:58,285
+00:02:05,539 --> 00:02:07,614
 exactly like it did on launch day.
 
 37
-00:01:58,285 --> 00:02:03,010
+00:02:07,614 --> 00:02:12,678
 And yet a model update upstream, or a subtle shift in the kind of tickets arriving,
 
 38
-00:02:03,010 --> 00:02:07,337
+00:02:12,678 --> 00:02:17,315
 could be quietly pushing it toward approving refunds it shouldn't, at a rate
 
 39
-00:02:07,337 --> 00:02:12,062
+00:02:17,315 --> 00:02:22,380
 nobody's watching for, because nothing wired to page anyone was ever built to watch
 
 40
-00:02:12,062 --> 00:02:12,460
+00:02:22,380 --> 00:02:22,807
 for it.
 
 41
-00:02:13,010 --> 00:02:17,439
+00:02:23,357 --> 00:02:28,159
 Notice the good column's third row, because it's the one teams skip most often.
 
 42
-00:02:17,439 --> 00:02:21,925
+00:02:28,159 --> 00:02:33,021
 A kill switch nobody has actually tested is a kill switch you're discovering the
 
 43
-00:02:21,925 --> 00:02:26,634
+00:02:33,021 --> 00:02:38,127
 failure mode of during the incident itself, at the worst possible moment to learn it
 
 44
-00:02:26,634 --> 00:02:27,812
+00:02:38,127 --> 00:02:39,403
 doesn't work cleanly.
 
 45
-00:02:27,812 --> 00:02:32,521
+00:02:39,403 --> 00:02:44,509
 Test the fallback the way you'd test anything else that matters: before you need it,
 
 46
-00:02:32,521 --> 00:02:33,138
+00:02:44,509 --> 00:02:45,178
 not during.
 
 47
-00:02:33,138 --> 00:02:37,623
+00:02:45,178 --> 00:02:50,040
 Turn the feature off, or revert it to a simpler, safer version, as a drill, on a
 
 48
-00:02:37,623 --> 00:02:40,090
+00:02:50,040 --> 00:02:52,715
 quiet Tuesday, and fix whatever breaks then.
 
 49
-00:02:40,090 --> 00:02:44,127
+00:02:52,715 --> 00:02:57,091
 The incident is a bad time to discover the kill switch itself has a bug.
 
 50
-00:02:44,127 --> 00:02:48,388
+00:02:57,091 --> 00:03:01,711
 A named owner matters here for the same reason 8.1 insisted on one for every
 
 51
-00:02:48,388 --> 00:02:49,117
+00:03:01,711 --> 00:03:02,501
 register row.
 
 52
-00:02:49,117 --> 00:02:53,322
+00:03:02,501 --> 00:03:07,059
 "The on-call rotation will catch it" answers a different question than "who
 
 53
-00:02:53,322 --> 00:02:57,808
+00:03:07,059 --> 00:03:11,922
 specifically reviews the quality-alert queue." The first is about infrastructure
 
 54
-00:02:57,808 --> 00:02:58,200
+00:03:11,922 --> 00:03:12,348
 paging.
 
 55
-00:02:58,200 --> 00:03:02,573
+00:03:12,348 --> 00:03:17,089
 The second is a role nobody fills by default, and it stays empty until someone
 
 56
-00:03:02,573 --> 00:03:03,919
+00:03:17,089 --> 00:03:18,547
 deliberately assigns it.
 
 57
-00:03:03,919 --> 00:03:07,563
+00:03:18,547 --> 00:03:22,498
 Test the kill switch on a schedule, too, not just once at launch.
 
 58
-00:03:07,563 --> 00:03:12,217
+00:03:22,498 --> 00:03:27,543
 A fallback verified working six months ago, against a version of the feature that's
 
 59
-00:03:12,217 --> 00:03:16,422
+00:03:27,543 --> 00:03:32,102
 since changed twice, is a fact about the past, not a guarantee about today.
 
 60
-00:03:16,972 --> 00:03:21,779
+00:03:32,652 --> 00:03:37,838
 Say the honest caveat plainly, because a well-written postmortem feels like closure,
 
 61
-00:03:21,779 --> 00:03:26,301
+00:03:37,838 --> 00:03:42,716
 and it can quietly be the end of the learning instead of the useful part of it.
 
 62
-00:03:26,301 --> 00:03:30,650
+00:03:42,716 --> 00:03:47,409
 A document explaining what went wrong helps the people in the room that day.
 
 63
-00:03:30,650 --> 00:03:35,458
+00:03:47,409 --> 00:03:52,595
 A new golden-set case, built from the exact input that triggered the incident, helps
 
 64
-00:03:35,458 --> 00:03:40,265
+00:03:52,595 --> 00:03:57,781
 every single build after it, forever, automatically, every time the regression suite
 
 65
-00:03:40,265 --> 00:03:40,552
+00:03:57,781 --> 00:03:58,090
 runs.
 
 66
-00:03:40,552 --> 00:03:41,696
+00:03:58,090 --> 00:03:59,325
 One of these scales.
 
 67
-00:03:41,696 --> 00:03:43,985
+00:03:59,325 --> 00:04:01,795
 The other one is read once and archived.
 
 68
-00:03:43,985 --> 00:03:48,621
+00:04:01,795 --> 00:04:06,796
 Close every incident the same way: the specific failing input becomes a permanent
 
 69
-00:03:48,621 --> 00:03:53,371
+00:04:06,796 --> 00:04:11,921
 eval case before the postmortem doc is considered finished, not as a follow-up task
 
 70
-00:03:53,371 --> 00:03:54,917
+00:04:11,921 --> 00:04:13,588
 that quietly never happens.
 
 71
-00:03:54,917 --> 00:03:59,324
+00:04:13,588 --> 00:04:18,342
 This is also the fastest way this section's tools compound instead of sitting
 
 72
-00:03:59,324 --> 00:03:59,953
+00:04:18,342 --> 00:04:19,021
 separately.
 
 73
-00:03:59,953 --> 00:04:04,646
+00:04:19,021 --> 00:04:24,084
 A stronger golden set makes 7.4's scorecard more trustworthy the next time a model
 
 74
-00:04:04,646 --> 00:04:05,676
+00:04:24,084 --> 00:04:25,195
 gets re-evaluated.
 
 75
-00:04:05,676 --> 00:04:10,369
+00:04:25,195 --> 00:04:30,258
 A wider fairness slice, discovered through an incident, makes 8.5's segmented pass
 
 76
-00:04:10,369 --> 00:04:13,116
+00:04:30,258 --> 00:04:33,222
 rate catch more next quarter than it does today.
 
 77
-00:04:13,116 --> 00:04:17,867
+00:04:33,222 --> 00:04:38,347
 Nothing in this course is really separate once it's actually running in production.
 
 78
-00:04:18,417 --> 00:04:23,154
+00:04:38,897 --> 00:04:44,060
 That's the standard worth building toward, and the example question is the one worth
 
 79
-00:04:23,154 --> 00:04:27,778
+00:04:44,060 --> 00:04:49,100
 asking in the next team meeting, out loud, because most people have never actually
 
 80
-00:04:27,778 --> 00:04:29,187
+00:04:49,100 --> 00:04:50,637
 tested the honest answer.
 
 81
-00:04:29,187 --> 00:04:33,586
+00:04:50,637 --> 00:04:55,432
 Most teams discover, asking this for the first time, that their real detection
 
 82
-00:04:33,586 --> 00:04:38,266
+00:04:55,432 --> 00:05:00,533
 mechanism is a user complaining loudly enough, which is detection, technically, but
 
 83
-00:04:38,266 --> 00:04:41,030
+00:05:00,533 --> 00:05:03,545
 the slowest and most expensive version available.
 
 84
-00:04:41,030 --> 00:04:45,710
+00:05:03,545 --> 00:05:08,647
 Ask it about the feature you're least confident in, not the one you're proudest of.
 
 85
-00:04:45,710 --> 00:04:47,797
+00:05:08,647 --> 00:05:10,922
 The proud one already gets attention.
 
 86
-00:04:47,797 --> 00:04:52,308
+00:05:10,922 --> 00:05:15,839
 The quietly-shipped one, the internal tool nobody's watching closely, is exactly
 
 87
-00:04:52,308 --> 00:04:56,707
+00:05:15,839 --> 00:05:20,634
 where a quality incident runs longest before anyone notices, precisely because
 
 88
-00:04:56,707 --> 00:04:59,413
+00:05:20,634 --> 00:05:23,584
 nobody built a signal for it in the first place.
 
 89
-00:04:59,963 --> 00:05:01,550
+00:05:24,134 --> 00:05:25,849
 One thing before you move on.
 
 90
-00:05:01,550 --> 00:05:06,092
+00:05:25,849 --> 00:05:30,758
 Check the detection question honestly, the same exercise as every register row this
 
 91
-00:05:06,092 --> 00:05:08,718
+00:05:30,758 --> 00:05:33,597
 section has asked for: specific, not reassuring.
 
 92
-00:05:08,718 --> 00:05:13,150
+00:05:33,597 --> 00:05:38,388
 Then test the kill switch, for real, on purpose, before an incident forces you to
 
 93
-00:05:13,150 --> 00:05:14,409
+00:05:38,388 --> 00:05:39,748
 test it under pressure.
 
 94
-00:05:14,409 --> 00:05:18,895
+00:05:39,748 --> 00:05:44,598
 If it doesn't exist yet, that's today's finding, and it's a better one to have now
 
 95
-00:05:18,895 --> 00:05:21,631
+00:05:44,598 --> 00:05:47,556
 than at two in the morning during a real incident.
 
 96
-00:05:21,631 --> 00:05:25,844
+00:05:47,556 --> 00:05:52,110
 Both of these belong on the same afternoon as 8.1's first register row, not a
 
 97
-00:05:25,844 --> 00:05:27,486
+00:05:52,110 --> 00:05:53,884
 separate initiative for later.
 
 98
-00:05:27,486 --> 00:05:31,973
+00:05:53,884 --> 00:05:58,734
 An incident plan with no detection signal and no tested kill switch isn't a lesser
 
 99
-00:05:31,973 --> 00:05:33,231
+00:05:58,734 --> 00:06:00,095
 version of a real plan.
 
 100
-00:05:33,231 --> 00:05:37,608
+00:06:00,095 --> 00:06:04,826
 It's the appearance of one, worth naming honestly rather than assuming it covers
 
 101
-00:05:37,608 --> 00:05:37,827
+00:06:04,826 --> 00:06:05,063
 you.
 
 102
-00:05:37,827 --> 00:05:42,423
+00:06:05,063 --> 00:06:10,031
 Next lecture is this section's workshop: red-team your own feature, using everything
 
 103
-00:05:42,423 --> 00:05:46,637
+00:06:10,031 --> 00:06:14,585
 from the risk register through today's incident plan, against something you'd
 
 104
-00:05:46,637 --> 00:05:47,403
+00:06:14,585 --> 00:06:15,413
 actually ship.
