@@ -1,243 +1,243 @@
 1
-00:00:00,350 --> 00:00:05,040
+00:00:00,350 --> 00:00:05,500
 Every screenshot you have seen in this section came from a real build, tested before
 
 2
-00:00:05,040 --> 00:00:06,604
+00:00:05,500 --> 00:00:07,217
 a word of narration existed.
 
 3
-00:00:06,604 --> 00:00:09,061
+00:00:07,217 --> 00:00:09,914
 The trigger's output was not left to chance.
 
 4
-00:00:09,061 --> 00:00:13,472
+00:00:09,914 --> 00:00:14,758
 It was pinned: forty emails of ordinary noise, and one real question, buried on
 
 5
-00:00:13,472 --> 00:00:15,314
+00:00:14,758 --> 00:00:16,781
 purpose, the way it actually was.
 
 6
-00:00:15,314 --> 00:00:18,720
+00:00:16,781 --> 00:00:20,521
 Why test against frozen mail instead of just switching it on?
 
 7
-00:00:18,720 --> 00:00:21,736
+00:00:20,521 --> 00:00:23,832
 Because a live inbox is the worst possible test bench.
 
 8
-00:00:21,736 --> 00:00:26,426
+00:00:23,832 --> 00:00:28,982
 It sends you whatever it feels like, never the tricky case you need twice, and every
 
 9
-00:00:26,426 --> 00:00:28,660
+00:00:28,982 --> 00:00:31,434
 experiment costs a real call and a wait.
 
 10
-00:00:28,660 --> 00:00:33,238
+00:00:31,434 --> 00:00:36,462
 A pinned inbox is the same forty one emails every single run, which means when you
 
 11
-00:00:33,238 --> 00:00:37,817
+00:00:36,462 --> 00:00:41,489
 change one word of the system prompt, any change in the outcome was caused by your
 
 12
-00:00:37,817 --> 00:00:39,045
+00:00:41,489 --> 00:00:42,838
 word and nothing else.
 
 13
-00:00:39,045 --> 00:00:43,624
+00:00:42,838 --> 00:00:47,866
 That is the whole scientific method, borrowed for a Tuesday: hold the world still,
 
 14
-00:00:43,624 --> 00:00:44,908
+00:00:47,866 --> 00:00:49,276
 change one thing, look.
 
 15
-00:00:44,908 --> 00:00:49,319
+00:00:49,276 --> 00:00:54,119
 You will fix more agent problems with this one habit than with anything clever.
 
 16
-00:00:49,869 --> 00:00:52,745
+00:00:54,669 --> 00:00:57,782
 You do not need forty one rows to prove a workflow.
 
 17
-00:00:52,745 --> 00:00:57,087
+00:00:57,782 --> 00:01:02,482
 You need enough variety to catch a mistake: at least one email that should be
 
 18
-00:00:57,087 --> 00:00:59,342
+00:01:02,482 --> 00:01:04,924
 flagged, and several that should not be.
 
 19
-00:00:59,342 --> 00:01:03,741
+00:01:04,924 --> 00:01:09,685
 If your test only ever contains obvious urgent emails, you will never find out
 
 20
-00:01:03,741 --> 00:01:06,786
+00:01:09,685 --> 00:01:12,981
 whether the agent also flags a newsletter by accident.
 
 21
-00:01:06,786 --> 00:01:11,297
+00:01:12,981 --> 00:01:17,864
 Write your test emails yourself, from memory of your own real inbox, rather than
 
 22
-00:01:11,297 --> 00:01:15,808
+00:01:17,864 --> 00:01:22,747
 inventing generic filler: the value of the test is exactly how much it resembles
 
 23
-00:01:15,808 --> 00:01:16,541
+00:01:22,747 --> 00:01:23,540
 your Tuesday.
 
 24
-00:01:16,541 --> 00:01:18,345
+00:01:23,540 --> 00:01:25,493
 The borderline one matters most.
 
 25
-00:01:18,345 --> 00:01:22,969
+00:01:25,493 --> 00:01:30,499
 Every inbox has a category that fools humans, and if yours is in the test set, you
 
 26
-00:01:22,969 --> 00:01:27,649
+00:01:30,499 --> 00:01:35,565
 get to watch how the agent handles it for free, forever, before it ever handles the
 
 27
-00:01:27,649 --> 00:01:28,157
+00:01:35,565 --> 00:01:36,114
 real one.
 
 28
-00:01:28,707 --> 00:01:33,159
+00:01:36,664 --> 00:01:41,672
 Six emails, and notice that only one of them tests whether the agent flags well.
 
 29
-00:01:33,159 --> 00:01:37,666
+00:01:41,672 --> 00:01:46,742
 The other five all test whether it refrains well, and that ratio is correct: in a
 
 30
-00:01:37,666 --> 00:01:42,230
+00:01:46,742 --> 00:01:51,876
 real inbox, almost everything is a thing to ignore, so most of the ways your agent
 
 31
-00:01:42,230 --> 00:01:44,623
+00:01:51,876 --> 00:01:54,567
 can be wrong are ways of flagging too much.
 
 32
-00:01:44,623 --> 00:01:48,017
+00:01:54,567 --> 00:01:58,386
 A test set that mirrors that lopsidedness is testing the job.
 
 33
-00:01:48,017 --> 00:01:50,744
+00:01:58,386 --> 00:02:01,453
 One that is all urgent drama is testing the demo.
 
 34
-00:01:51,294 --> 00:01:55,819
+00:02:02,003 --> 00:02:06,939
 That right hand column is not a flaw in the method, it is the reason Section 7
 
 35
-00:01:55,819 --> 00:01:56,225
+00:02:06,939 --> 00:02:07,382
 exists.
 
 36
-00:01:56,225 --> 00:01:59,126
+00:02:07,382 --> 00:02:10,546
 Pinned data proves the machine is built correctly.
 
 37
-00:01:59,126 --> 00:02:03,651
+00:02:10,546 --> 00:02:15,482
 It cannot replace watching it run against a real week of real emails, which is
 
 38
-00:02:03,651 --> 00:02:05,565
+00:02:15,482 --> 00:02:17,570
 exactly what a trial task is for.
 
 39
-00:02:05,565 --> 00:02:09,974
+00:02:17,570 --> 00:02:22,380
 One check in the left column deserves its own minute, because its failure is
 
 40
-00:02:09,974 --> 00:02:10,554
+00:02:22,380 --> 00:02:23,013
 invisible.
 
 41
-00:02:10,554 --> 00:02:15,369
+00:02:23,013 --> 00:02:28,265
 Fields mapping correctly means the email's body actually arrives inside the prompt.
 
 42
-00:02:15,369 --> 00:02:19,952
+00:02:28,265 --> 00:02:33,264
 When the mapping is wrong, nothing goes red: the model receives a prompt with a
 
 43
-00:02:19,952 --> 00:02:24,593
+00:02:33,264 --> 00:02:38,327
 blank where the body should be, judges the blank, and answers SKIP with complete
 
 44
-00:02:24,593 --> 00:02:25,231
+00:02:38,327 --> 00:02:39,023
 confidence.
 
 45
-00:02:25,231 --> 00:02:29,698
+00:02:39,023 --> 00:02:43,895
 Every box green, every answer wrong, the exact case Section 2.3 warned about.
 
 46
-00:02:29,698 --> 00:02:34,339
+00:02:43,895 --> 00:02:48,958
 The defence takes ten seconds: on any test run, open the agent node and read the
 
 47
-00:02:34,339 --> 00:02:39,212
+00:02:48,958 --> 00:02:54,274
 prompt as the model received it, resolved, with the real subject and body sitting in
 
 48
-00:02:39,212 --> 00:02:39,386
+00:02:54,274 --> 00:02:54,463
 it.
 
 49
-00:02:39,386 --> 00:02:43,911
+00:02:54,463 --> 00:02:59,399
 Seeing the actual words in the actual slots, once, is worth fifty green ticks.
 
 50
-00:02:44,461 --> 00:02:47,638
+00:02:59,949 --> 00:03:03,383
 And if your pinned run flags two out of six instead of one?
 
 51
-00:02:47,638 --> 00:02:50,114
+00:03:03,383 --> 00:03:06,060
 That is not failure, that is the loop working.
 
 52
-00:02:50,114 --> 00:02:54,582
+00:03:06,060 --> 00:03:10,891
 Read the agent's stated reason for the extra flag, find the sentence in your system
 
 53
-00:02:54,582 --> 00:02:57,866
+00:03:10,891 --> 00:03:14,441
 prompt that let it through, tighten that sentence, run again.
 
 54
-00:02:57,866 --> 00:03:02,280
+00:03:14,441 --> 00:03:19,213
 The run is free, the inbox is frozen, so the only thing changing is your briefing,
 
 55
-00:03:02,280 --> 00:03:05,833
+00:03:19,213 --> 00:03:23,054
 and most prompts settle after two or three passes of exactly this.
 
 56
-00:03:05,833 --> 00:03:10,086
+00:03:23,054 --> 00:03:27,652
 Tuning on pinned data is where you learn the skill you will use for the life of
 
 57
-00:03:10,086 --> 00:03:14,554
+00:03:27,652 --> 00:03:32,483
 every agent you ever run: reading a wrong answer for the instruction that permitted
 
 58
-00:03:14,554 --> 00:03:14,716
+00:03:32,483 --> 00:03:32,657
 it.
 
 59
-00:03:14,716 --> 00:03:19,076
+00:03:32,657 --> 00:03:37,371
 With the wiring proven, the only thing left is the one step this course cannot do
 
 60
-00:03:19,076 --> 00:03:22,952
+00:03:37,371 --> 00:03:41,562
 for you: connecting it to a mailbox and a model that are actually yours.
 
 61
-00:03:22,952 --> 00:03:26,290
+00:03:41,562 --> 00:03:45,170
 That is next lecture, and it is where this agent becomes real.

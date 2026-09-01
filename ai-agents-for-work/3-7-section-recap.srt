@@ -1,23 +1,23 @@
 1
-00:00:00,350 --> 00:00:03,371
+00:00:00,350 --> 00:00:03,699
 You built a real thing this section, not a demo of one.
 
 2
-00:00:03,371 --> 00:00:07,874
+00:00:03,699 --> 00:00:08,693
 An inbox connection, a system prompt that encodes a specific, checkable judgement,
 
 3
-00:00:07,874 --> 00:00:10,565
+00:00:08,693 --> 00:00:11,677
 and a router that sends that judgement somewhere.
 
 4
-00:00:10,565 --> 00:00:12,323
+00:00:11,677 --> 00:00:13,626
 Hold onto that five-piece shape.
 
 5
-00:00:12,323 --> 00:00:16,222
+00:00:13,626 --> 00:00:17,950
 You will see it again three more times, each one a little more capable.
 
 6
-00:00:16,772 --> 00:00:17,775
+00:00:18,500 --> 00:00:19,417
 See you there.

@@ -1,227 +1,227 @@
 1
-00:00:00,350 --> 00:00:04,798
+00:00:00,350 --> 00:00:05,154
 If you skipped straight to this lecture hoping to skip the paperwork, here is the
 
 2
-00:00:04,798 --> 00:00:08,148
+00:00:05,154 --> 00:00:08,771
 argument again, briefly, because it matters enough to repeat.
 
 3
-00:00:08,148 --> 00:00:11,113
+00:00:08,771 --> 00:00:11,974
 A job description is not bureaucracy for its own sake.
 
 4
-00:00:11,113 --> 00:00:15,507
+00:00:11,974 --> 00:00:16,718
 It is the only thing standing between "I connected an inbox" and "I connected an
 
 5
-00:00:15,507 --> 00:00:19,900
+00:00:16,718 --> 00:00:21,462
 inbox, on purpose, to do one specific job." What actually goes wrong when people
 
 6
-00:00:19,900 --> 00:00:21,492
+00:00:21,462 --> 00:00:23,182
 build first and decide later?
 
 7
-00:00:21,492 --> 00:00:25,886
+00:00:23,182 --> 00:00:27,927
 The scope gets negotiated mid-build, with the least cautious person in the room,
 
 8
-00:00:25,886 --> 00:00:27,753
+00:00:27,927 --> 00:00:29,943
 which is you at your most excited.
 
 9
-00:00:27,753 --> 00:00:32,201
+00:00:29,943 --> 00:00:34,747
 The workflow nearly works, and it would definitely work if it could also read the
 
 10
-00:00:32,201 --> 00:00:36,539
+00:00:34,747 --> 00:00:39,432
 archive folder, so that access gets granted "just to try it", and by Friday the
 
 11
-00:00:36,539 --> 00:00:39,505
+00:00:39,432 --> 00:00:42,634
 agent can reach four things nobody sat down and chose.
 
 12
-00:00:39,505 --> 00:00:41,976
+00:00:42,634 --> 00:00:45,303
 Building against a written spec inverts that.
 
 13
-00:00:41,976 --> 00:00:46,314
+00:00:45,303 --> 00:00:49,988
 When the build tempts you to widen something, the document makes the widening a
 
 14
-00:00:46,314 --> 00:00:50,927
+00:00:49,988 --> 00:00:54,969
 decision instead of a slide, and most of the time, reading your own ceiling out loud
 
 15
-00:00:50,927 --> 00:00:52,135
+00:00:54,969 --> 00:00:56,274
 is enough to stop you.
 
 16
-00:00:52,685 --> 00:00:54,197
+00:00:56,824 --> 00:00:58,492
 You saw this in Section 1.
 
 17
-00:00:54,197 --> 00:00:58,614
+00:00:58,492 --> 00:01:03,368
 Read it again now with different eyes: every line in it is about to become a
 
 18
-00:00:58,614 --> 00:01:00,649
+00:01:03,368 --> 00:01:05,614
 specific decision inside the build.
 
 19
-00:01:00,649 --> 00:01:02,741
+00:01:05,614 --> 00:01:07,924
 Scope becomes which node reads what.
 
 20
-00:01:02,741 --> 00:01:06,461
+00:01:07,924 --> 00:01:12,030
 Action level becomes which nodes this workflow does not contain.
 
 21
-00:01:06,461 --> 00:01:10,588
+00:01:12,030 --> 00:01:16,586
 The ceiling becomes the reason the workflow ends at a flag, not a send.
 
 22
-00:01:10,588 --> 00:01:13,785
+00:01:16,586 --> 00:01:20,115
 Two lines deserve a preview of exactly where they land.
 
 23
-00:01:13,785 --> 00:01:18,319
+00:01:20,115 --> 00:01:25,119
 The "urgent means" line is not background: in two lectures' time, those words,
 
 24
-00:01:18,319 --> 00:01:22,388
+00:01:25,119 --> 00:01:29,610
 almost verbatim, become the instructions pasted into the agent itself.
 
 25
-00:01:22,388 --> 00:01:27,155
+00:01:29,610 --> 00:01:34,872
 You already wrote the most important part of the system prompt without knowing the
 
 26
-00:01:27,155 --> 00:01:27,445
+00:01:34,872 --> 00:01:35,192
 term.
 
 27
-00:01:27,445 --> 00:01:32,153
+00:01:35,192 --> 00:01:40,389
 And the trial line is a commitment device: one week, every flag, each morning, is
 
 28
-00:01:32,153 --> 00:01:36,978
+00:01:40,389 --> 00:01:45,715
 written down now so that Section 7's trial has a spec to check against instead of a
 
 29
-00:01:36,978 --> 00:01:37,269
+00:01:45,715 --> 00:01:46,036
 vibe.
 
 30
-00:01:37,269 --> 00:01:41,861
+00:01:46,036 --> 00:01:51,104
 A build that starts this way arrives at its trial with the pass mark already on
 
 31
-00:01:41,861 --> 00:01:42,209
+00:01:51,104 --> 00:01:51,489
 paper.
 
 32
-00:01:42,759 --> 00:01:45,006
+00:01:52,039 --> 00:01:54,486
 Notice how short that second column is.
 
 33
-00:01:45,006 --> 00:01:48,462
+00:01:54,486 --> 00:01:58,249
 A narrow job, done reliably, beats a broad one done shakily.
 
 34
-00:01:48,462 --> 00:01:53,185
+00:01:58,249 --> 00:02:03,393
 Every agent in this course stays deliberately narrow, and Agent 1 is the narrowest
 
 35
-00:01:53,185 --> 00:01:55,777
+00:02:03,393 --> 00:02:06,216
 of the four: it never writes anything at all.
 
 36
-00:01:55,777 --> 00:02:00,270
+00:02:06,216 --> 00:02:11,109
 Both columns become physically checkable in the build, and that is the part to
 
 37
-00:02:00,270 --> 00:02:00,904
+00:02:11,109 --> 00:02:11,799
 appreciate.
 
 38
-00:02:00,904 --> 00:02:05,627
+00:02:11,799 --> 00:02:16,943
 "Touch any inbox but Renewals" is ruled out by one form field: the trigger will be
 
 39
-00:02:05,627 --> 00:02:10,350
+00:02:16,943 --> 00:02:22,086
 pointed at one named folder, so the scope is not a policy the agent follows, it is
 
 40
-00:02:10,350 --> 00:02:12,424
+00:02:22,086 --> 00:02:24,345
 the only door it was given a key to.
 
 41
-00:02:12,424 --> 00:02:17,205
+00:02:24,345 --> 00:02:29,551
 "Send anything, ever" is ruled out by absence: this workflow will simply contain no
 
 42
-00:02:17,205 --> 00:02:21,410
+00:02:29,551 --> 00:02:34,130
 node capable of sending, and you can audit that by looking at the canvas.
 
 43
-00:02:21,410 --> 00:02:24,635
+00:02:34,130 --> 00:02:37,643
 That is the quiet advantage of building agents this way.
 
 44
-00:02:24,635 --> 00:02:29,301
+00:02:37,643 --> 00:02:42,724
 The safety rules are not promises buried in instructions the model might misread.
 
 45
-00:02:29,301 --> 00:02:33,563
+00:02:42,724 --> 00:02:47,366
 The important ones are wiring, and wiring does not have judgement to fail.
 
 46
-00:02:34,113 --> 00:02:38,909
+00:02:47,916 --> 00:02:53,057
 Four pieces, four lectures, one working agent, shipped at the end of this section as
 
 47
-00:02:38,909 --> 00:02:41,707
+00:02:53,057 --> 00:02:56,055
 C01, the first of your four importable templates.
 
 48
-00:02:41,707 --> 00:02:46,446
+00:02:56,055 --> 00:03:01,135
 Each piece is one sitting, none needs the one before it fresh in your head, and the
 
 49
-00:02:46,446 --> 00:02:49,586
+00:03:01,135 --> 00:03:04,501
 whole section is comfortably a weekend at an easy pace.
 
 50
-00:02:49,586 --> 00:02:53,468
+00:03:04,501 --> 00:03:08,662
 A practical note on what to build against: not your live work inbox.
 
 51
-00:02:53,468 --> 00:02:57,864
+00:03:08,662 --> 00:03:13,374
 The whole section was built, and filmed, against a practice inbox seeded with
 
 52
-00:02:57,864 --> 00:03:02,603
+00:03:13,374 --> 00:03:18,454
 realistic mail, the same forty one messages you glimpsed in Section 0, precisely so
 
 53
-00:03:02,603 --> 00:03:03,859
+00:03:18,454 --> 00:03:19,800
 mistakes cost nothing.
 
 54
-00:03:03,859 --> 00:03:08,655
+00:03:19,800 --> 00:03:24,941
 Set one up the same way, or use any personal account you are relaxed about, and save
 
 55
-00:03:08,655 --> 00:03:13,280
+00:03:24,941 --> 00:03:29,898
 the live connection for the end of the section, where it gets its own lecture and
 
 56
-00:03:13,280 --> 00:03:14,308
+00:03:29,898 --> 00:03:30,999
 its own checklist.
 
 57
-00:03:14,308 --> 00:03:15,963
+00:03:30,999 --> 00:03:32,774
 Next lecture: the connection.
