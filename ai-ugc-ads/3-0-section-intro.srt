@@ -1,87 +1,87 @@
 1
-00:00:00,350 --> 00:00:04,891
+00:00:00,350 --> 00:00:05,359
 Picture Sam opening the batch folder on a Wednesday afternoon: twenty statics (a
 
 2
-00:00:04,891 --> 00:00:09,433
+00:00:05,359 --> 00:00:10,369
 static is one still-image ad, one picture, one message) sitting there, generated
 
 3
-00:00:09,433 --> 00:00:11,079
+00:00:10,369 --> 00:00:12,185
 overnight from the angle map.
 
 4
-00:00:11,079 --> 00:00:13,179
+00:00:12,185 --> 00:00:14,502
 At a glance the batch looks finished.
 
 5
-00:00:13,179 --> 00:00:14,031
+00:00:14,502 --> 00:00:15,441
 It isn't quite.
 
 6
-00:00:14,031 --> 00:00:18,515
+00:00:15,441 --> 00:00:20,388
 I'm not going to pretend the first batch comes out clean, because Sam's didn't.
 
 7
-00:00:18,515 --> 00:00:23,170
+00:00:20,388 --> 00:00:25,523
 This section spends as much time on what goes wrong, colour drift, mangled text, a
 
 8
-00:00:23,170 --> 00:00:27,598
+00:00:25,523 --> 00:00:30,407
 product that doesn't quite look like the product, as it does on the generation
 
 9
-00:00:27,598 --> 00:00:27,995
+00:00:30,407 --> 00:00:30,845
 itself.
 
 10
-00:00:27,995 --> 00:00:29,528
+00:00:30,845 --> 00:00:32,536
 Both halves matter equally.
 
 11
-00:00:30,078 --> 00:00:34,284
+00:00:33,086 --> 00:00:37,719
 Five lectures, and notice the shape: one on what these tools can and can't do
 
 12
-00:00:34,284 --> 00:00:38,872
+00:00:37,719 --> 00:00:42,773
 honestly, one on the actual batch, and three on the specific ways a batch goes wrong
 
 13
-00:00:38,872 --> 00:00:39,964
+00:00:42,773 --> 00:00:43,977
 and how to catch it.
 
 14
-00:00:39,964 --> 00:00:41,439
+00:00:43,977 --> 00:00:45,601
 That balance is deliberate.
 
 15
-00:00:41,439 --> 00:00:45,809
+00:00:45,601 --> 00:00:50,415
 A course that only shows the wins teaches you to trust a generator more than you
 
 16
-00:00:45,809 --> 00:00:46,191
+00:00:50,415 --> 00:00:50,836
 should.
 
 17
-00:00:46,191 --> 00:00:50,506
+00:00:50,836 --> 00:00:55,589
 This one shows you Harlan's first batch failing in two specific, ordinary ways,
 
 18
-00:00:50,506 --> 00:00:55,039
+00:00:55,589 --> 00:01:00,583
 because that's what actually happens, and knowing the failure in advance is most of
 
 19
-00:00:55,039 --> 00:00:56,296
+00:01:00,583 --> 00:01:01,967
 the defence against it.
 
 20
-00:00:56,296 --> 00:01:00,829
+00:01:01,967 --> 00:01:06,961
 Before the next lecture, if you already have a batch of your own sitting somewhere,
 
 21
-00:01:00,829 --> 00:01:02,031
+00:01:06,961 --> 00:01:08,285
 open it and just look.
 
 22
-00:01:02,031 --> 00:01:05,144
+00:01:08,285 --> 00:01:11,715
 You'll want that image fresh in mind for what comes next.

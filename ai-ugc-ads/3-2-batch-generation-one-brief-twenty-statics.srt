@@ -1,435 +1,435 @@
 1
-00:00:00,350 --> 00:00:04,890
+00:00:00,350 --> 00:00:05,160
 Sam sat down on a Wednesday afternoon to turn the angle map into pixels, coffee in
 
 2
-00:00:04,890 --> 00:00:07,769
+00:00:05,160 --> 00:00:08,210
 hand, expecting this to be the easy part of the day.
 
 3
-00:00:07,769 --> 00:00:12,420
+00:00:08,210 --> 00:00:13,137
 This works the same way regardless of which specific tool you're using, so I'll show
 
 4
-00:00:12,420 --> 00:00:16,351
+00:00:13,137 --> 00:00:17,302
 the mechanics with one real example rather than a tour of every option.
 
 5
-00:00:16,351 --> 00:00:20,393
+00:00:17,302 --> 00:00:21,584
 As of this recording, tools like Ideogram support batch generation from a
 
 6
-00:00:20,393 --> 00:00:24,989
+00:00:21,584 --> 00:00:26,453
 spreadsheet: one row per prompt, up to hundreds at once, with in-image text handled
 
 7
-00:00:24,989 --> 00:00:25,487
+00:00:26,453 --> 00:00:26,980
 directly.
 
 8
-00:00:25,487 --> 00:00:29,972
+00:00:26,980 --> 00:00:31,732
 Twenty rows on the angle map becomes twenty rows on a prompt sheet becomes twenty
 
 9
-00:00:29,972 --> 00:00:31,079
+00:00:31,732 --> 00:00:32,905
 images in one batch.
 
 10
-00:00:31,079 --> 00:00:35,675
+00:00:32,905 --> 00:00:37,773
 Before this course's approach, Sam would have opened a single-image tool, typed one
 
 11
-00:00:35,675 --> 00:00:38,941
+00:00:37,773 --> 00:00:41,234
 prompt, waited, and either kept the result or started over.
 
 12
-00:00:38,941 --> 00:00:43,426
+00:00:41,234 --> 00:00:45,985
 Twenty variants meant twenty separate rounds of that, each one a fresh wait and a
 
 13
-00:00:43,426 --> 00:00:46,360
+00:00:45,985 --> 00:00:49,094
 fresh chance to second-guess himself halfway through.
 
 14
-00:00:46,360 --> 00:00:51,011
+00:00:49,094 --> 00:00:54,021
 A spreadsheet queue skips all of that: write every row once, submit the whole sheet,
 
 15
-00:00:51,011 --> 00:00:54,223
+00:00:54,021 --> 00:00:57,424
 and walk away rather than babysitting one image at a time.
 
 16
-00:00:54,223 --> 00:00:57,213
+00:00:57,424 --> 00:01:00,591
 Notice what didn't change between Section two and now.
 
 17
-00:00:57,213 --> 00:01:00,645
+00:01:00,591 --> 00:01:04,228
 You're not inventing twenty new ideas at the generation stage.
 
 18
-00:01:00,645 --> 00:01:03,358
+00:01:04,228 --> 00:01:07,102
 You're transcribing twenty ideas you already had.
 
 19
-00:01:03,358 --> 00:01:07,843
+00:01:07,102 --> 00:01:11,853
 If you find yourself improvising a new angle while writing prompts, that's a sign
 
 20
-00:01:07,843 --> 00:01:11,442
+00:01:11,853 --> 00:01:15,666
 the angle map wasn't finished, not a sign you're being efficient.
 
 21
-00:01:11,992 --> 00:01:14,343
+00:01:16,216 --> 00:01:18,769
 Here's the actual translation, row by row.
 
 22
-00:01:14,343 --> 00:01:17,477
+00:01:18,769 --> 00:01:22,174
 The angle map already told you the rung and the feeling.
 
 23
-00:01:17,477 --> 00:01:21,786
+00:01:22,174 --> 00:01:26,855
 Turning that into a prompt is mostly transcription: what's in frame, what the
 
 24
-00:01:21,786 --> 00:01:24,864
+00:01:26,855 --> 00:01:30,199
 overlay says, and which exact brand colour has to hold.
 
 25
-00:01:24,864 --> 00:01:29,398
+00:01:30,199 --> 00:01:35,123
 A full prompt row usually holds four or five fields: what's in frame, the pose or
 
 26
-00:01:29,398 --> 00:01:34,099
+00:01:35,123 --> 00:01:40,230
 setting, the exact overlay text, the brand colour, and a style note like lighting or
 
 27
-00:01:34,099 --> 00:01:34,379
+00:01:40,230 --> 00:01:40,534
 crop.
 
 28
-00:01:34,379 --> 00:01:38,240
+00:01:40,534 --> 00:01:44,729
 Fill those in once per row and the sheet does the repetition for you.
 
 29
-00:01:38,240 --> 00:01:42,886
+00:01:44,729 --> 00:01:49,775
 This is where twenty rows earns its keep over four: the marginal cost of row twenty
 
 30
-00:01:42,886 --> 00:01:47,475
+00:01:49,775 --> 00:01:54,760
 is the same few minutes of typing as row one, not another booking, another studio,
 
 31
-00:01:47,475 --> 00:01:48,370
+00:01:54,760 --> 00:01:55,733
 another invoice.
 
 32
-00:01:48,370 --> 00:01:52,792
+00:01:55,733 --> 00:02:00,536
 Do this for all twenty rows, queue the batch, and in the time it takes to get a
 
 33
-00:01:52,792 --> 00:01:54,583
+00:02:00,536 --> 00:02:02,481
 coffee, you have twenty statics.
 
 34
-00:01:54,583 --> 00:01:57,269
+00:02:02,481 --> 00:02:05,399
 That part is genuinely as easy as it sounds now.
 
 35
-00:01:57,269 --> 00:01:59,788
+00:02:05,399 --> 00:02:08,135
 What comes back is where it gets interesting.
 
 36
-00:01:59,788 --> 00:02:04,489
+00:02:08,135 --> 00:02:13,242
 One detail worth locking in the prompt every time: the exact brand colour, stated as
 
 37
-00:02:04,489 --> 00:02:08,966
+00:02:13,242 --> 00:02:18,105
 a hex value if the tool accepts one, not just "navy." "Navy" is an instruction a
 
 38
-00:02:08,966 --> 00:02:11,205
+00:02:18,105 --> 00:02:20,537
 model can interpret several honest ways.
 
 39
-00:02:11,205 --> 00:02:12,212
+00:02:20,537 --> 00:02:21,632
 A hex code is not.
 
 40
-00:02:12,212 --> 00:02:16,634
+00:02:21,632 --> 00:02:26,434
 You'll see in a moment why that distinction matters more than it sounds like it
 
 41
-00:02:16,634 --> 00:02:17,025
+00:02:26,434 --> 00:02:26,860
 should.
 
 42
-00:02:17,575 --> 00:02:22,332
+00:02:27,410 --> 00:02:32,520
 Here's what actually came back, and it's worth sitting with the real numbers rather
 
 43
-00:02:22,332 --> 00:02:23,479
+00:02:32,520 --> 00:02:33,751
 than a tidy summary.
 
 44
-00:02:23,479 --> 00:02:25,886
+00:02:33,751 --> 00:02:36,336
 All twenty generated on brief and on time.
 
 45
-00:02:25,886 --> 00:02:27,434
+00:02:36,336 --> 00:02:37,999
 Most got the product right.
 
 46
-00:02:27,434 --> 00:02:32,191
+00:02:37,999 --> 00:02:43,108
 But only thirteen of twenty held the exact Harlan Navy: several variants drifted to
 
 47
-00:02:32,191 --> 00:02:34,655
+00:02:43,108 --> 00:02:45,755
 a lighter, more generic royal blue instead.
 
 48
-00:02:34,655 --> 00:02:39,298
+00:02:45,755 --> 00:02:50,742
 And the spec overlay, the exact fifteen to twenty millimetres of mercury language
 
 49
-00:02:39,298 --> 00:02:44,055
+00:02:50,742 --> 00:02:55,851
 from the product truth document, garbled on five of the twenty, exactly the kind of
 
 50
-00:02:44,055 --> 00:02:47,780
+00:02:55,851 --> 00:02:59,853
 failure Section 3.1 told you to expect from longer on-image text.
 
 51
-00:02:47,780 --> 00:02:51,620
+00:02:59,853 --> 00:03:03,978
 Notice these two failures didn't show up in the same seven statics.
 
 52
-00:02:51,620 --> 00:02:56,148
+00:03:03,978 --> 00:03:08,841
 They're independent problems with independent causes, which matters, because it
 
 53
-00:02:56,148 --> 00:02:59,014
+00:03:08,841 --> 00:03:11,919
 means fixing one won't accidentally fix the other.
 
 54
-00:02:59,014 --> 00:03:03,026
+00:03:11,919 --> 00:03:16,228
 Each needs its own answer, and each gets one in the next two lectures.
 
 55
-00:03:03,026 --> 00:03:05,491
+00:03:16,228 --> 00:03:18,876
 Worth naming why the colour drifted at all.
 
 56
-00:03:05,491 --> 00:03:10,076
+00:03:18,876 --> 00:03:23,800
 A generator reads "navy" as a broad instruction, not a locked value, and it will
 
 57
-00:03:10,076 --> 00:03:14,604
+00:03:23,800 --> 00:03:28,664
 happily produce anything a reasonable person might call navy: sometimes exactly
 
 58
-00:03:14,604 --> 00:03:17,813
+00:03:28,664 --> 00:03:32,111
 Harlan's shade, sometimes a brighter, more generic blue.
 
 59
-00:03:17,813 --> 00:03:19,819
+00:03:32,111 --> 00:03:34,266
 That's not the tool malfunctioning.
 
 60
-00:03:19,819 --> 00:03:24,233
+00:03:34,266 --> 00:03:39,006
 It's doing exactly what an unlocked instruction asked for, which is the whole
 
 61
-00:03:24,233 --> 00:03:28,933
+00:03:39,006 --> 00:03:44,054
 argument for stating the colour as a hex value instead of a word, the fix the next
 
 62
-00:03:28,933 --> 00:03:30,709
+00:03:44,054 --> 00:03:45,963
 lecture actually walks through.
 
 63
-00:03:31,259 --> 00:03:35,256
+00:03:46,513 --> 00:03:50,885
 It's tempting to read "seven of twenty need fixes" as a failed batch.
 
 64
-00:03:35,256 --> 00:03:35,603
+00:03:50,885 --> 00:03:51,265
 Is it?
 
 65
-00:03:35,603 --> 00:03:38,268
+00:03:51,265 --> 00:03:54,180
 Look at the two columns again before deciding.
 
 66
-00:03:38,268 --> 00:03:40,642
+00:03:54,180 --> 00:03:56,778
 Thirteen of twenty needed nothing at all.
 
 67
-00:03:40,642 --> 00:03:45,334
+00:03:56,778 --> 00:04:01,910
 The seven that did fail, failed in two specific, named, entirely expected ways: a
 
 68
-00:03:45,334 --> 00:03:50,199
+00:04:01,910 --> 00:04:07,233
 colour consistency problem and a long-text problem, both flagged in the last lecture
 
 69
-00:03:50,199 --> 00:03:51,995
+00:04:07,233 --> 00:04:09,197
 before generation even started.
 
 70
-00:03:51,995 --> 00:03:55,644
+00:04:09,197 --> 00:04:13,189
 Neither failure is mysterious, and neither is expensive to fix.
 
 71
-00:03:55,644 --> 00:04:00,509
+00:04:13,189 --> 00:04:18,512
 That's a very different batch from one where you don't know why anything went wrong.
 
 72
-00:04:00,509 --> 00:04:04,853
+00:04:18,512 --> 00:04:23,264
 Compare that to what a batch looks like when nobody read Section 3.1 first.
 
 73
-00:04:04,853 --> 00:04:09,660
+00:04:23,264 --> 00:04:28,523
 Same failure rate, roughly, but every flawed static reads as a mystery instead of a
 
 74
-00:04:09,660 --> 00:04:14,352
+00:04:28,523 --> 00:04:33,656
 checklist item, and the instinct becomes "maybe this tool just isn't good enough"
 
 75
-00:04:14,352 --> 00:04:18,986
+00:04:33,656 --> 00:04:38,725
 rather than "fix the colour and the overlay." Knowing what to expect changes the
 
 76
-00:04:18,986 --> 00:04:23,677
+00:04:38,725 --> 00:04:43,857
 entire emotional experience of getting these results back, not just the technical
 
 77
-00:04:23,677 --> 00:04:24,662
+00:04:43,857 --> 00:04:44,935
 response to them.
 
 78
-00:04:24,662 --> 00:04:26,573
+00:04:44,935 --> 00:04:47,026
 It also changes what you do next.
 
 79
-00:04:26,573 --> 00:04:31,091
+00:04:47,026 --> 00:04:51,968
 Someone who reads this as a failed batch starts second-guessing the brief, the
 
 80
-00:04:31,091 --> 00:04:32,481
+00:04:51,968 --> 00:04:53,489
 angle, even the product.
 
 81
-00:04:32,481 --> 00:04:37,288
+00:04:53,489 --> 00:04:58,748
 Someone who reads it as an expected batch opens the next lecture and fixes a colour
 
 82
-00:04:37,288 --> 00:04:37,636
+00:04:58,748 --> 00:04:59,128
 value.
 
 83
-00:04:37,636 --> 00:04:40,937
+00:04:59,128 --> 00:05:02,740
 Same twenty statics, two completely different afternoons.
 
 84
-00:04:41,487 --> 00:04:44,904
+00:05:03,290 --> 00:05:06,987
 One honest limit before you get excited about how fast this was.
 
 85
-00:04:44,904 --> 00:04:49,069
+00:05:06,987 --> 00:05:11,493
 A batch with seven known problems in it is not ready for Section seven's test.
 
 86
-00:04:49,069 --> 00:04:53,393
+00:05:11,493 --> 00:05:16,173
 Running it anyway means testing seven ads that fail for a reason you already know
 
 87
-00:04:53,393 --> 00:04:57,824
+00:05:16,173 --> 00:05:20,968
 about, which wastes real budget confirming something you didn't need a test to tell
 
 88
-00:04:57,824 --> 00:04:58,038
+00:05:20,968 --> 00:05:21,199
 you.
 
 89
-00:04:58,038 --> 00:05:02,362
+00:05:21,199 --> 00:05:25,878
 The next two lectures fix exactly these two failures, properly, so the batch that
 
 90
-00:05:02,362 --> 00:05:06,046
+00:05:25,878 --> 00:05:29,864
 actually launches is twenty for twenty on the things you can control.
 
 91
-00:05:06,046 --> 00:05:07,968
+00:05:29,864 --> 00:05:31,944
 Put a number on that waste, roughly.
 
 92
-00:05:07,968 --> 00:05:12,239
+00:05:31,944 --> 00:05:36,565
 If seven of twenty statics are already known to be flawed and they run in a test
 
 93
-00:05:12,239 --> 00:05:15,389
+00:05:36,565 --> 00:05:39,974
 anyway, you're not learning whether Harlan's message works.
 
 94
-00:05:15,389 --> 00:05:19,714
+00:05:39,974 --> 00:05:44,653
 You're re-discovering, at real media spend, a fact the checklist already told you
 
 95
-00:05:19,714 --> 00:05:20,194
+00:05:44,653 --> 00:05:45,173
 for free.
 
 96
-00:05:20,194 --> 00:05:24,572
+00:05:45,173 --> 00:05:49,910
 That's the expensive way to learn something you already knew, and it's exactly the
 
 97
-00:05:24,572 --> 00:05:27,241
+00:05:49,910 --> 00:05:52,799
 mistake this checklist exists to make unnecessary.
 
 98
-00:05:27,791 --> 00:05:32,330
+00:05:53,349 --> 00:05:58,247
 Next lecture takes on the colour problem directly, and it's a smaller fix than the
 
 99
-00:05:32,330 --> 00:05:33,825
+00:05:58,247 --> 00:05:59,859
 failure rate makes it look.
 
 100
-00:05:33,825 --> 00:05:36,537
+00:05:59,859 --> 00:06:02,786
 Before that, do Harlan's count on your own batch.
 
 101
-00:05:36,537 --> 00:05:41,076
+00:06:02,786 --> 00:06:07,684
 Don't fix anything yet, just check: how many statics hold your exact brand colour,
 
 102
-00:05:41,076 --> 00:05:44,065
+00:06:07,684 --> 00:06:10,910
 and how many keep every word of on-image text legible.
 
 103
-00:05:44,065 --> 00:05:48,604
+00:06:10,910 --> 00:06:15,808
 Thirteen of twenty is roughly where Harlan started, and it's a fine bar to compare
 
 104
-00:05:48,604 --> 00:05:51,649
+00:06:15,808 --> 00:06:19,093
 yourself against, not a score to beat on the first try.
 
 105
-00:05:51,649 --> 00:05:54,029
+00:06:19,093 --> 00:06:21,661
 Write both numbers down next to your batch.
 
 106
-00:05:54,029 --> 00:05:58,291
+00:06:21,661 --> 00:06:26,260
 They become artifact B03's actual before picture: the flawed batch a fix gets
 
 107
-00:05:58,291 --> 00:06:02,221
+00:06:26,260 --> 00:06:30,501
 measured against, rather than a vague sense that some of it needs work.
 
 108
-00:06:02,221 --> 00:06:06,705
+00:06:30,501 --> 00:06:35,340
 Knowing your own two numbers now is what makes Section 3.3's fix land immediately
 
 109
-00:06:06,705 --> 00:06:08,255
+00:06:35,340 --> 00:06:37,012
 instead of staying abstract.
