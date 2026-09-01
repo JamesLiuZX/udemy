@@ -1,15 +1,15 @@
 1
-00:00:00,350 --> 00:00:04,557
+00:00:00,350 --> 00:00:05,086
 Everything so far has been personal: your job description, your trial, your near
 
 2
-00:00:04,557 --> 00:00:05,556
+00:00:05,086 --> 00:00:06,211
 miss, your numbers.
 
 3
-00:00:05,556 --> 00:00:09,974
+00:00:06,211 --> 00:00:11,184
 This section is where that becomes something you can actually bring to your manager,
 
 4
-00:00:09,974 --> 00:00:13,918
+00:00:11,184 --> 00:00:15,625
 and hand to a colleague, without either of them having to take it on faith.

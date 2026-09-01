@@ -1,171 +1,171 @@
 1
-00:00:00,350 --> 00:00:04,751
+00:00:00,350 --> 00:00:05,078
 You know how n8n works, what a system prompt is, what draft-only means at the node
 
 2
-00:00:04,751 --> 00:00:05,073
+00:00:05,078 --> 00:00:05,423
 level.
 
 3
-00:00:05,073 --> 00:00:07,542
+00:00:05,423 --> 00:00:08,075
 None of that belongs in front of your manager.
 
 4
-00:00:07,542 --> 00:00:11,782
+00:00:08,075 --> 00:00:12,630
 They need three things: what it does, what it's worth, and what could go wrong.
 
 5
-00:00:11,782 --> 00:00:16,291
+00:00:12,630 --> 00:00:17,473
 Everything else is for you, not for them, however satisfying it would be to explain.
 
 6
-00:00:16,291 --> 00:00:19,028
+00:00:17,473 --> 00:00:20,413
 Why does "how" actively hurt, rather than just pad?
 
 7
-00:00:19,028 --> 00:00:23,268
+00:00:20,413 --> 00:00:24,968
 Because a decision-maker cannot verify it, and unverifiable detail creates work
 
 8
-00:00:23,268 --> 00:00:24,449
+00:00:24,968 --> 00:00:26,236
 instead of confidence.
 
 9
-00:00:24,449 --> 00:00:28,743
+00:00:26,236 --> 00:00:30,848
 Every node name on the page is a thing Marcus cannot assess, which quietly turns
 
 10
-00:00:28,743 --> 00:00:33,090
+00:00:30,848 --> 00:00:35,518
 into a question he has to either ask or swallow, and a page that makes its reader
 
 11
-00:00:33,090 --> 00:00:35,505
+00:00:35,518 --> 00:00:38,113
 feel unqualified gets deferred, not approved.
 
 12
-00:00:35,505 --> 00:00:39,799
+00:00:38,113 --> 00:00:42,725
 Deferral is how small good ideas die: not rejected, just moved to a meeting that
 
 13
-00:00:39,799 --> 00:00:40,873
+00:00:42,725 --> 00:00:43,878
 never quite happens.
 
 14
-00:00:40,873 --> 00:00:42,375
+00:00:43,878 --> 00:00:45,492
 The cut is not dumbing down.
 
 15
-00:00:42,375 --> 00:00:46,776
+00:00:45,492 --> 00:00:50,220
 It is moving the conversation onto the only ground where the reader is the expert:
 
 16
-00:00:46,776 --> 00:00:48,387
+00:00:50,220 --> 00:00:51,949
 whether the trade is worth it.
 
 17
-00:00:48,937 --> 00:00:53,559
+00:00:52,499 --> 00:00:57,596
 This is a genuinely hard cut for anyone who just spent ten sections learning how the
 
 18
-00:00:53,559 --> 00:00:55,210
+00:00:57,596 --> 00:00:59,416
 machinery works, you included.
 
 19
-00:00:55,210 --> 00:00:59,668
+00:00:59,416 --> 00:01:04,330
 The instinct to explain it is exactly the instinct a one-pager has to resist, and
 
 20
-00:00:59,668 --> 00:01:04,180
+00:01:04,330 --> 00:01:09,305
 the consolation is real: everything you cut still exists, in your notes, ready for
 
 21
-00:01:04,180 --> 00:01:07,262
+00:01:09,305 --> 00:01:12,702
 the one meeting in ten where somebody actually asks how.
 
 22
-00:01:07,812 --> 00:01:09,068
+00:01:13,252 --> 00:01:14,625
 That is the whole test.
 
 23
-00:01:09,068 --> 00:01:13,328
+00:01:14,625 --> 00:01:19,282
 Does this sentence answer what it does, what it saved, or what could go wrong?
 
 24
-00:01:13,328 --> 00:01:17,752
+00:01:19,282 --> 00:01:24,118
 If it does not do one of those three things, it belongs in your own notes, not on
 
 25
-00:01:17,752 --> 00:01:21,630
+00:01:24,118 --> 00:01:28,356
 the page you actually hand over to someone deciding whether to say yes.
 
 26
-00:01:21,630 --> 00:01:24,416
+00:01:28,356 --> 00:01:31,401
 Run two real sentences through it to feel the edge.
 
 27
-00:01:24,416 --> 00:01:29,004
+00:01:31,401 --> 00:01:36,416
 "The agent uses a Switch node to route on the model's verdict": answers how, cut it,
 
 28
-00:01:29,004 --> 00:01:30,533
+00:01:36,416 --> 00:01:38,088
 however proud of it you are.
 
 29
-00:01:30,533 --> 00:01:34,793
+00:01:38,088 --> 00:01:42,745
 "If it misjudges an email, the worst case is a flag I disagree with at review,
 
 30
-00:01:34,793 --> 00:01:39,108
+00:01:42,745 --> 00:01:47,461
 nothing reaches a client": answers what could go wrong, and stays, jargon-free,
 
 31
-00:01:39,108 --> 00:01:40,146
+00:01:47,461 --> 00:01:48,595
 exactly as written.
 
 32
-00:01:40,146 --> 00:01:44,734
+00:01:48,595 --> 00:01:53,610
 Notice the second sentence is actually the more technical achievement, wearing plain
 
 33
-00:01:44,734 --> 00:01:45,171
+00:01:53,610 --> 00:01:54,088
 clothes.
 
 34
-00:01:45,171 --> 00:01:47,465
+00:01:54,088 --> 00:01:56,595
 That is the register the whole page wants.
 
 35
-00:01:48,015 --> 00:01:51,183
+00:01:57,145 --> 00:02:00,586
 The two checks in that list earn their place differently.
 
 36
-00:01:51,183 --> 00:01:55,797
+00:02:00,586 --> 00:02:05,596
 The ninety second read-aloud is a length gate that cannot be argued with, because a
 
 37
-00:01:55,797 --> 00:02:00,132
+00:02:05,596 --> 00:02:10,304
 busy reader gives you about that long before deciding whether to keep reading.
 
 38
-00:02:00,132 --> 00:02:04,635
+00:02:10,304 --> 00:02:15,194
 The naive-reader test catches the subtler failure: words you no longer notice are
 
 39
-00:02:04,635 --> 00:02:08,192
+00:02:15,194 --> 00:02:19,057
 jargon, because ten sections of this course made them furniture.
 
 40
-00:02:08,192 --> 00:02:12,806
+00:02:19,057 --> 00:02:24,067
 Whatever your test reader stumbles on, the stumble is the edit list, delivered free
 
 41
-00:02:12,806 --> 00:02:15,919
+00:02:24,067 --> 00:02:27,447
 by the one reviewer who cannot be fooled by familiarity.
 
 42
-00:02:15,919 --> 00:02:20,532
+00:02:27,447 --> 00:02:32,457
 Next lecture is where you actually fill the page in, using C10 and your own numbers
 
 43
-00:02:20,532 --> 00:02:21,033
+00:02:32,457 --> 00:02:33,001
 from C09.

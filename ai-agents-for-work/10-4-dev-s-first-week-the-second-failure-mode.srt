@@ -1,239 +1,239 @@
 1
-00:00:00,350 --> 00:00:02,968
+00:00:00,350 --> 00:00:03,196
 Dev runs Calloway & Finch's smaller accounts.
 
 2
-00:00:02,968 --> 00:00:07,796
+00:00:03,196 --> 00:00:08,446
 His first call using Agent 2 involved two people on the client side who happened to
 
 3
-00:00:07,796 --> 00:00:08,901
+00:00:08,446 --> 00:00:09,648
 share a first name.
 
 4
-00:00:08,901 --> 00:00:13,671
+00:00:09,648 --> 00:00:14,835
 The agent's action item read: "Alex to send the updated schedule." Two Alexes were
 
 5
-00:00:13,671 --> 00:00:16,871
+00:00:14,835 --> 00:00:18,314
 on that call, and nothing in the output said which one.
 
 6
-00:00:16,871 --> 00:00:19,663
+00:00:18,314 --> 00:00:21,350
 Dev was, for the record, doing everything right.
 
 7
-00:00:19,663 --> 00:00:24,433
+00:00:21,350 --> 00:00:26,537
 Marcus had approved the rollout, the template was Priya's proven copy, and Dev was
 
 8
-00:00:24,433 --> 00:00:29,320
+00:00:26,537 --> 00:00:31,850
 on day one of his own trial, checking every extracted item against his memory of the
 
 9
-00:00:29,320 --> 00:00:31,239
+00:00:31,850 --> 00:00:33,937
 call, exactly as C06 told him to.
 
 10
-00:00:31,239 --> 00:00:35,893
+00:00:33,937 --> 00:00:38,997
 Which is the only reason the two Alexes problem was a thirty second catch at his
 
 11
-00:00:35,893 --> 00:00:40,605
+00:00:38,997 --> 00:00:44,121
 desk instead of a wrong schedule chased with a client he was still building trust
 
 12
-00:00:40,605 --> 00:00:40,896
+00:00:44,121 --> 00:00:44,437
 with.
 
 13
-00:00:40,896 --> 00:00:42,932
+00:00:44,437 --> 00:00:46,651
 Would you have caught it on a skim?
 
 14
-00:00:42,932 --> 00:00:47,819
+00:00:46,651 --> 00:00:51,964
 Honestly, maybe not: "Alex to send the updated schedule" reads as perfectly complete
 
 15
-00:00:47,819 --> 00:00:49,447
+00:00:51,964 --> 00:00:53,735
 unless you were in the room.
 
 16
-00:00:49,997 --> 00:00:53,489
+00:00:54,285 --> 00:00:58,078
 This is a third failure mode, distinct from both of Priya's.
 
 17
-00:00:53,489 --> 00:00:58,320
+00:00:58,078 --> 00:01:03,325
 Nothing moved, the way Section 7.3's sheet moved, and nothing was invented, the way
 
 18
-00:00:58,320 --> 00:00:59,368
+00:01:03,325 --> 00:01:04,463
 Section 7.5 named.
 
 19
-00:00:59,368 --> 00:01:01,696
+00:01:04,463 --> 00:01:06,991
 The agent read the transcript correctly.
 
 20
-00:01:01,696 --> 00:01:06,585
+00:01:06,991 --> 00:01:12,302
 It just did not know that "Alex" needed a surname to be useful, because nothing told
 
 21
-00:01:06,585 --> 00:01:08,389
+00:01:12,302 --> 00:01:14,261
 it two Alexes were in the room.
 
 22
-00:01:08,389 --> 00:01:13,220
+00:01:14,261 --> 00:01:19,508
 Here is the generalisation worth keeping, because it explains why Priya's six weeks
 
 23
-00:01:13,220 --> 00:01:16,712
+00:01:19,508 --> 00:01:23,301
 of clean trials could not have found this in a hundred more.
 
 24
-00:01:16,712 --> 00:01:19,738
+00:01:23,301 --> 00:01:26,588
 A failure mode is not a property of the agent alone.
 
 25
-00:01:19,738 --> 00:01:24,336
+00:01:26,588 --> 00:01:31,582
 It is a property of the agent paired with a particular world, and Priya's world
 
 26
-00:01:24,336 --> 00:01:28,352
+00:01:31,582 --> 00:01:35,944
 simply contains no colliding first names among her regular attendees.
 
 27
-00:01:28,352 --> 00:01:33,241
+00:01:35,944 --> 00:01:41,254
 Same template, different client list, different exam, and your colleagues' desks are
 
 28
-00:01:33,241 --> 00:01:34,638
+00:01:41,254 --> 00:01:42,771
 all different exams too.
 
 29
-00:01:34,638 --> 00:01:39,352
+00:01:42,771 --> 00:01:47,891
 That is why "Priya already proved it" is a true statement that guarantees nothing
 
 30
-00:01:39,352 --> 00:01:44,067
+00:01:47,891 --> 00:01:53,012
 about Dev's desk, and why the trial has to travel with the template, every single
 
 31
-00:01:44,067 --> 00:01:46,220
+00:01:53,012 --> 00:01:55,351
 time, to every new world it lands in.
 
 32
-00:01:46,770 --> 00:01:51,130
+00:01:55,901 --> 00:02:00,616
 If Dev had skipped his own trial because "Priya already proved this works," he would
 
 33
-00:01:51,130 --> 00:01:55,282
+00:02:00,616 --> 00:02:05,107
 have shipped that ambiguous action item straight to a client relationship he was
 
 34
-00:01:55,282 --> 00:01:56,528
+00:02:05,107 --> 00:02:06,454
 still building trust in.
 
 35
-00:01:56,528 --> 00:02:00,629
+00:02:06,454 --> 00:02:10,889
 Picture the version of this mistake waiting inside whatever template you hand a
 
 36
-00:02:00,629 --> 00:02:04,989
+00:02:10,889 --> 00:02:15,604
 colleague next, because it exists: some fact about their clients, their sheet, their
 
 37
-00:02:04,989 --> 00:02:08,207
+00:02:15,604 --> 00:02:19,084
 calendar that your world never taught your briefing to handle.
 
 38
-00:02:08,207 --> 00:02:10,594
+00:02:19,084 --> 00:02:21,667
 You cannot predict it, and you do not need to.
 
 39
-00:02:10,594 --> 00:02:14,747
+00:02:21,667 --> 00:02:26,157
 You need them running the same first-week discipline you ran, and the discipline
 
 40
-00:02:14,747 --> 00:02:15,837
+00:02:26,157 --> 00:02:27,336
 will meet it for you.
 
 41
-00:02:15,837 --> 00:02:19,989
+00:02:27,336 --> 00:02:31,827
 That is what you are actually handing over in a rollout: not four files, but the
 
 42
-00:02:19,989 --> 00:02:23,415
+00:02:31,827 --> 00:02:35,532
 habit that makes four files safe on a desk you know nothing about.
 
 43
-00:02:23,965 --> 00:02:26,699
+00:02:36,082 --> 00:02:38,991
 Read the table by columns and it is two stories.
 
 44
-00:02:26,699 --> 00:02:31,371
+00:02:38,991 --> 00:02:43,961
 Read it by rows and it is one method, doing its job twice in two different worlds,
 
 45
-00:02:31,371 --> 00:02:33,991
+00:02:43,961 --> 00:02:46,749
 which is the only way a method earns the word.
 
 46
-00:02:34,541 --> 00:02:39,121
+00:02:47,299 --> 00:02:52,262
 Look at the shape of the fix too, because it settles a question every team rollout
 
 47
-00:02:39,121 --> 00:02:40,462
+00:02:52,262 --> 00:02:53,715
 eventually argues about.
 
 48
-00:02:40,462 --> 00:02:44,707
+00:02:53,715 --> 00:02:58,316
 Dev's surname rule went into his copy only, and that is correct, not untidy.
 
 49
-00:02:44,707 --> 00:02:49,119
+00:02:58,316 --> 00:03:03,098
 His briefing now knows something true about his world that is false in Priya's,
 
 50
-00:02:49,119 --> 00:02:51,521
+00:03:03,098 --> 00:03:05,701
 where the extra instruction would be noise.
 
 51
-00:02:51,521 --> 00:02:56,101
+00:03:05,701 --> 00:03:10,664
 Templates fork honestly as they meet different desks, the exports from Section 3.6
 
 52
-00:02:56,101 --> 00:03:00,681
+00:03:10,664 --> 00:03:15,628
 were built to make that cheap, and the thing that stays shared is not the briefing
 
 53
-00:03:00,681 --> 00:03:00,961
+00:03:15,628 --> 00:03:15,931
 text.
 
 54
-00:03:00,961 --> 00:03:05,652
+00:03:15,931 --> 00:03:21,015
 It is the method: job description, trial, spot checks, and a failure-mode name ready
 
 55
-00:03:05,652 --> 00:03:08,110
+00:03:21,015 --> 00:03:23,679
 for whatever each new world serves up first.
 
 56
-00:03:08,110 --> 00:03:12,578
+00:03:23,679 --> 00:03:28,521
 One template, two different first weeks, two different real failures caught, and
 
 57
-00:03:12,578 --> 00:03:13,919
+00:03:28,521 --> 00:03:29,974
 neither of them by luck.
 
 58
-00:03:13,919 --> 00:03:18,331
+00:03:29,974 --> 00:03:34,756
 That is the whole argument for why Trial never becomes optional for you, or for
 
 59
-00:03:18,331 --> 00:03:22,856
+00:03:34,756 --> 00:03:39,659
 anyone you hand a template to, just because someone else already proved the shape
 
 60
-00:03:22,856 --> 00:03:23,191
+00:03:39,659 --> 00:03:40,023
 works.
