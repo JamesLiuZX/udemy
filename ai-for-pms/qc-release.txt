@@ -1,5 +1,5 @@
 
-  built total: 7.53h across 102 lectures
+  built total: 8.18h across 102 lectures
 
   WARN  [1.6] estimated 5.8 min against a duration_target of 8 — narration is far under its own promise; expand it or lower the target.
   WARN  [2.0] estimated 1.0 min — very short for a lecture.
