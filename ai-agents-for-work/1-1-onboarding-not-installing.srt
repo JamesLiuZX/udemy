@@ -1,323 +1,323 @@
 1
-00:00:00,350 --> 00:00:03,834
+00:00:00,350 --> 00:00:04,156
 Priya's answer was no before she had even finished the question.
 
 2
-00:00:03,834 --> 00:00:04,869
+00:00:04,156 --> 00:00:05,286
 Every manager's is.
 
 3
-00:00:04,869 --> 00:00:09,224
+00:00:05,286 --> 00:00:10,044
 You would give a new hire a desk, a login for one system, and a first task small
 
 4
-00:00:09,224 --> 00:00:10,095
+00:00:10,044 --> 00:00:10,996
 enough to check.
 
 5
-00:00:10,095 --> 00:00:14,287
+00:00:10,996 --> 00:00:15,575
 Nobody hands over the keys on day one, and nobody thinks that is being overly
 
 6
-00:00:14,287 --> 00:00:14,777
+00:00:15,575 --> 00:00:16,111
 cautious.
 
 7
-00:00:14,777 --> 00:00:16,737
+00:00:16,111 --> 00:00:18,252
 It is just how you bring someone on.
 
 8
-00:00:16,737 --> 00:00:19,296
+00:00:18,252 --> 00:00:21,047
 Software has trained us to expect the opposite.
 
 9
-00:00:19,296 --> 00:00:23,379
+00:00:21,047 --> 00:00:25,507
 You install an app, tick a permissions box without reading it, and it works
 
 10
-00:00:23,379 --> 00:00:24,794
+00:00:25,507 --> 00:00:27,054
 immediately at full power.
 
 11
-00:00:24,794 --> 00:00:27,516
+00:00:27,054 --> 00:00:30,027
 That habit is the one this course exists to break.
 
 12
-00:00:27,516 --> 00:00:31,981
+00:00:30,027 --> 00:00:34,904
 Think about the last time you watched someone new arrive anywhere you have worked.
 
 13
-00:00:31,981 --> 00:00:36,499
+00:00:34,904 --> 00:00:39,841
 However good their references were, their first week had a shape: one system login,
 
 14
-00:00:36,499 --> 00:00:37,098
+00:00:39,841 --> 00:00:40,495
 not twelve.
 
 15
-00:00:37,098 --> 00:00:40,909
+00:00:40,495 --> 00:00:44,658
 A first task someone could check without embarrassment on either side.
 
 16
-00:00:40,909 --> 00:00:45,101
+00:00:44,658 --> 00:00:49,237
 A colleague glancing over the work, not because anyone expected disaster, but
 
 17
-00:00:45,101 --> 00:00:48,204
+00:00:49,237 --> 00:00:52,628
 because checking early is cheaper than apologising later.
 
 18
-00:00:48,204 --> 00:00:49,892
+00:00:52,628 --> 00:00:54,471
 Nobody wrote a policy for that.
 
 19
-00:00:49,892 --> 00:00:54,084
+00:00:54,471 --> 00:00:59,051
 It is simply what trusting a stranger with real work looks like when the work
 
 20
-00:00:54,084 --> 00:00:54,520
+00:00:59,051 --> 00:00:59,526
 matters.
 
 21
-00:00:54,520 --> 00:00:57,187
+00:00:59,526 --> 00:01:02,441
 An agent is a stranger with excellent references.
 
 22
-00:00:57,187 --> 00:00:58,712
+00:01:02,441 --> 00:01:04,106
 The references are the demo.
 
 23
-00:00:58,712 --> 00:01:01,053
+00:01:04,106 --> 00:01:06,663
 The stranger is what shows up on your data.
 
 24
-00:01:01,603 --> 00:01:05,642
+00:01:07,213 --> 00:01:11,690
 Notice that the right hand column is not slower for the sake of caution.
 
 25
-00:01:05,642 --> 00:01:10,242
+00:01:11,690 --> 00:01:16,789
 It is slower on day one and faster for the rest of the year, because every failure
 
 26
-00:01:10,242 --> 00:01:14,842
+00:01:16,789 --> 00:01:21,888
 it produces is small and survivable instead of the kind that ends up in an apology
 
 27
-00:01:14,842 --> 00:01:15,852
+00:01:21,888 --> 00:01:23,007
 email to a client.
 
 28
-00:01:15,852 --> 00:01:17,479
+00:01:23,007 --> 00:01:24,810
 Make the difference concrete.
 
 29
-00:01:17,479 --> 00:01:19,891
+00:01:24,810 --> 00:01:27,484
 Two people set up the same follow up agent.
 
 30
-00:01:19,891 --> 00:01:23,426
+00:01:27,484 --> 00:01:31,401
 The installer connects everything it asks for and lets it send.
 
 31
-00:01:23,426 --> 00:01:27,914
+00:01:31,401 --> 00:01:36,375
 Three weeks in, it chases a client who had already replied, warmly, to close the
 
 32
-00:01:27,914 --> 00:01:32,570
+00:01:36,375 --> 00:01:41,536
 matter, and the client reads the chase as nobody at the firm talking to each other.
 
 33
-00:01:32,570 --> 00:01:35,207
+00:01:41,536 --> 00:01:44,459
 The onboarder set the same agent to draft only.
 
 34
-00:01:35,207 --> 00:01:39,807
+00:01:44,459 --> 00:01:49,557
 The same wrong chase appears in her drafts folder, she deletes it in four seconds,
 
 35
-00:01:39,807 --> 00:01:44,071
+00:01:49,557 --> 00:01:54,283
 and she has learned something specific: this agent cannot yet tell a closing
 
 36
-00:01:44,071 --> 00:01:45,810
+00:01:54,283 --> 00:01:56,211
 pleasantry from an open thread.
 
 37
-00:01:45,810 --> 00:01:49,961
+00:01:56,211 --> 00:02:00,812
 Same software, same mistake, and only one of them had to say sorry for it.
 
 38
-00:01:49,961 --> 00:01:52,093
+00:02:00,812 --> 00:02:03,175
 The difference was never intelligence.
 
 39
-00:01:52,093 --> 00:01:54,561
+00:02:03,175 --> 00:02:05,911
 It was the order in which trust was granted.
 
 40
-00:01:55,111 --> 00:01:59,292
+00:02:06,461 --> 00:02:10,942
 Read that list again and notice you did not learn it from a management book.
 
 41
-00:01:59,292 --> 00:02:02,648
+00:02:10,942 --> 00:02:14,540
 You already do all four for people without thinking about it.
 
 42
-00:02:02,648 --> 00:02:07,214
+00:02:14,540 --> 00:02:19,434
 The entire method in this section is applying the same four habits to software that
 
 43
-00:02:07,214 --> 00:02:11,780
+00:02:19,434 --> 00:02:24,329
 can now read, decide and act, instead of quietly assuming they do not apply because
 
 44
-00:02:11,780 --> 00:02:13,870
+00:02:24,329 --> 00:02:26,570
 the new hire happens to be a workflow.
 
 45
-00:02:13,870 --> 00:02:18,271
+00:02:26,570 --> 00:02:31,288
 The first habit is the one people most want to skip, so here is why it cannot be
 
 46
-00:02:18,271 --> 00:02:20,141
+00:02:31,288 --> 00:02:33,293
 skipped for an agent specifically.
 
 47
-00:02:20,141 --> 00:02:24,762
+00:02:33,293 --> 00:02:38,246
 A human new starter fills the gaps in their instructions from context: they hear how
 
 48
-00:02:24,762 --> 00:02:29,273
+00:02:38,246 --> 00:02:43,082
 colleagues talk to clients, they notice what gets escalated, they ask when unsure.
 
 49
-00:02:29,273 --> 00:02:31,639
+00:02:43,082 --> 00:02:45,618
 An agent has none of that ambient learning.
 
 50
-00:02:31,639 --> 00:02:36,150
+00:02:45,618 --> 00:02:50,453
 It has exactly what you wrote down, and it will apply what you wrote with perfect,
 
 51
-00:02:36,150 --> 00:02:40,001
+00:02:50,453 --> 00:02:54,581
 literal confidence to situations you never imagined when you wrote it.
 
 52
-00:02:40,001 --> 00:02:42,586
+00:02:54,581 --> 00:02:57,353
 Writing the job description is not bureaucracy.
 
 53
-00:02:42,586 --> 00:02:47,152
+00:02:57,353 --> 00:03:02,247
 It is the only channel through which your judgement reaches the agent at all, which
 
 54
-00:02:47,152 --> 00:02:51,718
+00:03:02,247 --> 00:03:07,142
 is why it comes before anything else and why the next two lectures are spent on it.
 
 55
-00:02:52,268 --> 00:02:56,748
+00:03:07,692 --> 00:03:12,503
 One reading note on this pipeline: three of the habits are stages you move through,
 
 56
-00:02:56,748 --> 00:02:59,824
+00:03:12,503 --> 00:03:15,806
 but the fourth is a boundary that applies at every stage.
 
 57
-00:02:59,824 --> 00:03:04,088
+00:03:15,806 --> 00:03:20,385
 The things an agent may never do alone on day ninety are the same things it may
 
 58
-00:03:04,088 --> 00:03:05,491
+00:03:20,385 --> 00:03:21,892
 never do alone on day one.
 
 59
-00:03:05,491 --> 00:03:07,218
+00:03:21,892 --> 00:03:23,747
 Autonomy grows inside that line.
 
 60
-00:03:07,218 --> 00:03:11,535
+00:03:23,747 --> 00:03:28,384
 The line itself does not move, and drawing it before the first stage is what the
 
 61
-00:03:11,535 --> 00:03:13,047
+00:03:28,384 --> 00:03:30,007
 next three lectures are for.
 
 62
-00:03:13,597 --> 00:03:15,328
+00:03:30,557 --> 00:03:32,447
 Is the hour genuinely worth it?
 
 63
-00:03:15,328 --> 00:03:18,622
+00:03:32,447 --> 00:03:36,046
 Run the honest arithmetic, because this course promised to.
 
 64
-00:03:18,622 --> 00:03:21,972
+00:03:36,046 --> 00:03:39,705
 The job description takes about half an hour the first time.
 
 65
-00:03:21,972 --> 00:03:24,653
+00:03:39,705 --> 00:03:42,633
 A trial costs you checking time for a few weeks.
 
 66
-00:03:24,653 --> 00:03:29,231
+00:03:42,633 --> 00:03:47,634
 Against that: the follow up mistake above cost the installer a client apology and,
 
 67
-00:03:29,231 --> 00:03:32,302
+00:03:47,634 --> 00:03:50,988
 more expensively, her own confidence in the whole idea.
 
 68
-00:03:32,302 --> 00:03:36,825
+00:03:50,988 --> 00:03:55,928
 Most people who abandon agents do not abandon them because the technology failed.
 
 69
-00:03:36,825 --> 00:03:41,125
+00:03:55,928 --> 00:04:00,625
 They abandon them because an early, avoidable mess scared them off before the
 
 70
-00:03:41,125 --> 00:03:42,018
+00:04:00,625 --> 00:04:01,601
 savings arrived.
 
 71
-00:03:42,018 --> 00:03:44,587
+00:04:01,601 --> 00:04:04,406
 The setup hour is not overhead on the payback.
 
 72
-00:03:44,587 --> 00:03:48,886
+00:04:04,406 --> 00:04:09,102
 It is what makes the payback survivable long enough to collect, and Section 9
 
 73
-00:03:48,886 --> 00:03:53,521
+00:04:09,102 --> 00:04:14,164
 subtracts every minute of checking time from the savings before it ever shows you a
 
 74
-00:03:53,521 --> 00:03:53,912
+00:04:14,164 --> 00:04:14,591
 number.
 
 75
-00:03:53,912 --> 00:03:58,434
+00:04:14,591 --> 00:04:19,532
 One thing to do before the next lecture: name the task you would hand a competent
 
 76
-00:03:58,434 --> 00:04:00,221
+00:04:19,532 --> 00:04:21,483
 new hire on their first morning.
 
 77
-00:04:00,221 --> 00:04:03,348
+00:04:21,483 --> 00:04:24,899
 Not the hardest thing on your list, the checkable thing.
 
 78
-00:04:03,348 --> 00:04:07,368
+00:04:24,899 --> 00:04:29,290
 That task is your first agent's job, and the next lecture writes its job
 
 79
-00:04:07,368 --> 00:04:08,038
+00:04:29,290 --> 00:04:30,022
 description.
 
 80
-00:04:08,038 --> 00:04:12,394
+00:04:30,022 --> 00:04:34,779
 Then we cover how trust actually gets earned, in stages, once that description
 
 81
-00:04:12,394 --> 00:04:12,785
+00:04:34,779 --> 00:04:35,206
 exists.

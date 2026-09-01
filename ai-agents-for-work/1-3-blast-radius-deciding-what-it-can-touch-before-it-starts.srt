@@ -1,307 +1,307 @@
 1
-00:00:00,350 --> 00:00:04,243
+00:00:00,350 --> 00:00:04,612
 Blast radius is not a term from AI, it comes from systems engineering.
 
 2
-00:00:04,243 --> 00:00:08,859
+00:00:04,612 --> 00:00:09,666
 Before anyone ships a change, they ask what breaks and how far the break spreads if
 
 3
-00:00:08,859 --> 00:00:10,639
+00:00:09,666 --> 00:00:11,615
 the worst case actually happens.
 
 4
-00:00:10,639 --> 00:00:15,033
+00:00:11,615 --> 00:00:16,425
 It is a useful habit to steal, because most people setting up their first agent
 
 5
-00:00:15,033 --> 00:00:16,145
+00:00:16,425 --> 00:00:17,643
 never ask it at all.
 
 6
-00:00:16,145 --> 00:00:17,591
+00:00:17,643 --> 00:00:19,226
 They ask whether it works.
 
 7
-00:00:17,591 --> 00:00:20,316
+00:00:19,226 --> 00:00:22,210
 They do not ask what happens the day it does not.
 
 8
-00:00:20,316 --> 00:00:24,933
+00:00:22,210 --> 00:00:27,264
 For the agents in this course, the worst version comes in three flavours, and it is
 
 9
-00:00:24,933 --> 00:00:27,435
+00:00:27,264 --> 00:00:30,004
 worth naming them in ascending order of pain.
 
 10
-00:00:27,435 --> 00:00:31,440
+00:00:30,004 --> 00:00:34,388
 It reads something it should never have seen: uncomfortable, and usually
 
 11
-00:00:31,440 --> 00:00:32,107
+00:00:34,388 --> 00:00:35,119
 recoverable.
 
 12
-00:00:32,107 --> 00:00:36,167
+00:00:35,119 --> 00:00:39,564
 It sends something it should never have sent: public, and apology shaped.
 
 13
-00:00:36,167 --> 00:00:40,505
+00:00:39,564 --> 00:00:44,314
 Or it quietly changes a number somewhere nobody looks: the worst of the three,
 
 14
-00:00:40,505 --> 00:00:45,122
+00:00:44,314 --> 00:00:49,368
 because the first two announce themselves and this one waits until the wrong figure
 
 15
-00:00:45,122 --> 00:00:47,458
+00:00:49,368 --> 00:00:51,925
 has been in front of a client for a month.
 
 16
-00:00:47,458 --> 00:00:51,963
+00:00:51,925 --> 00:00:56,857
 Every limit this lecture sets exists to shrink one of those three, and the silent
 
 17
-00:00:51,963 --> 00:00:55,911
+00:00:56,857 --> 00:01:01,181
 one is why read only is a real permission level and not a technicality.
 
 18
-00:00:56,461 --> 00:00:58,113
+00:01:01,731 --> 00:01:03,539
 Those are different questions.
 
 19
-00:00:58,113 --> 00:01:00,591
+00:01:03,539 --> 00:01:06,250
 What you ask it to do is the job description.
 
 20
-00:01:00,591 --> 00:01:05,051
+00:01:06,250 --> 00:01:11,132
 What it is able to reach is the access you granted when you connected an account,
 
 21
-00:01:05,051 --> 00:01:07,749
+00:01:11,132 --> 00:01:14,085
 and access is almost always broader than the job.
 
 22
-00:01:07,749 --> 00:01:12,264
+00:01:14,085 --> 00:01:19,027
 An inbox connection that can read one folder can usually read every folder, unless
 
 23
-00:01:12,264 --> 00:01:13,751
+00:01:19,027 --> 00:01:20,654
 you deliberately narrow it.
 
 24
-00:01:13,751 --> 00:01:18,266
+00:01:20,654 --> 00:01:25,595
 The gap between the two is rarely visible at setup, because permission screens are
 
 25
-00:01:18,266 --> 00:01:20,799
+00:01:25,595 --> 00:01:28,368
 written in the provider's language, not yours.
 
 26
-00:01:20,799 --> 00:01:24,653
+00:01:28,368 --> 00:01:32,586
 "Read your mail" means every folder, every year, attachments included.
 
 27
-00:01:24,653 --> 00:01:29,003
+00:01:32,586 --> 00:01:37,347
 "Manage your calendar" usually includes deleting events, not just reading them.
 
 28
-00:01:29,003 --> 00:01:33,518
+00:01:37,347 --> 00:01:42,289
 "Edit spreadsheets" means every sheet the account can open, not the one you had in
 
 29
-00:01:33,518 --> 00:01:33,794
+00:01:42,289 --> 00:01:42,590
 mind.
 
 30
-00:01:33,794 --> 00:01:38,254
+00:01:42,590 --> 00:01:47,471
 The practical habit: read the permission screen as a list of what you are handing
 
 31
-00:01:38,254 --> 00:01:42,053
+00:01:47,471 --> 00:01:51,630
 over, not as a formality, and where a narrower grant exists, take it.
 
 32
-00:01:42,053 --> 00:01:46,513
+00:01:51,630 --> 00:01:56,511
 Where one does not, the narrowing has to happen on your side instead: a dedicated
 
 33
-00:01:46,513 --> 00:01:50,588
+00:01:56,511 --> 00:02:00,971
 folder, a label, a copy of the sheet that holds only what the agent needs.
 
 34
-00:01:50,588 --> 00:01:54,497
+00:02:00,971 --> 00:02:05,249
 Priya's Renewals label is exactly that move, and it costs five minutes.
 
 35
-00:01:55,047 --> 00:01:59,754
+00:02:05,799 --> 00:02:10,992
 Priya's follow up agent, built in Section 6, is scoped to her Renewals folder alone
 
 36
-00:01:59,754 --> 00:02:01,398
+00:02:10,992 --> 00:02:12,806
 and drafts only, never sends.
 
 37
-00:02:01,398 --> 00:02:03,496
+00:02:12,806 --> 00:02:15,121
 That is not caution for its own sake.
 
 38
-00:02:03,496 --> 00:02:08,032
+00:02:15,121 --> 00:02:20,126
 It is the exact reason a contained incident later in this course stays contained
 
 39
-00:02:08,032 --> 00:02:12,625
+00:02:20,126 --> 00:02:25,193
 instead of becoming a real one: the access was narrow before anything went wrong,
 
 40
-00:02:12,625 --> 00:02:14,439
+00:02:25,193 --> 00:02:27,195
 not narrowed afterward as a fix.
 
 41
-00:02:14,439 --> 00:02:19,089
+00:02:27,195 --> 00:02:32,325
 The ceiling deserves a moment, because it is the limit people set last and lean on
 
 42
-00:02:19,089 --> 00:02:19,373
+00:02:32,325 --> 00:02:32,638
 most.
 
 43
-00:02:19,373 --> 00:02:24,022
+00:02:32,638 --> 00:02:37,768
 A ceiling is always a number: never more than this many messages in a day, never a
 
 44
-00:02:24,022 --> 00:02:28,672
+00:02:37,768 --> 00:02:42,898
 figure above this amount touched without a human, never an email outside this list
 
 45
-00:02:28,672 --> 00:02:29,409
+00:02:42,898 --> 00:02:43,711
 of addresses.
 
 46
-00:02:29,409 --> 00:02:31,677
+00:02:43,711 --> 00:02:46,213
 Numbers matter because they fail loudly.
 
 47
-00:02:31,677 --> 00:02:36,440
+00:02:46,213 --> 00:02:51,468
 "Be sensible about volume" cannot trip an alarm; "more than twenty drafts in an hour
 
 48
-00:02:36,440 --> 00:02:40,919
+00:02:51,468 --> 00:02:56,411
 means stop" can, and an agent stuck in a loop is exactly the failure that turns
 
 49
-00:02:40,919 --> 00:02:43,811
+00:02:56,411 --> 00:02:59,601
 twenty into two hundred while you are in a meeting.
 
 50
-00:02:43,811 --> 00:02:45,966
+00:02:59,601 --> 00:03:01,979
 Pick ceilings you expect never to hit.
 
 51
-00:02:45,966 --> 00:02:48,177
+00:03:01,979 --> 00:03:04,418
 Their job is not to manage normal days.
 
 52
-00:02:48,177 --> 00:02:52,657
+00:03:04,418 --> 00:03:09,361
 Their job is to make an abnormal day cost you an alert instead of an afternoon.
 
 53
-00:02:53,207 --> 00:02:55,806
+00:03:09,911 --> 00:03:12,702
 Treat this as a literal gate, not an aspiration.
 
 54
-00:02:55,806 --> 00:03:00,300
+00:03:12,702 --> 00:03:17,529
 The whole diagram costs perhaps ten minutes of writing, and every path that skips a
 
 55
-00:03:00,300 --> 00:03:03,170
+00:03:17,529 --> 00:03:20,612
 question lands in the same place: do not connect yet.
 
 56
-00:03:03,170 --> 00:03:06,418
+00:03:20,612 --> 00:03:24,101
 If that feels strict, notice what it is protecting you from.
 
 57
-00:03:06,418 --> 00:03:08,097
+00:03:24,101 --> 00:03:25,904
 Nobody regrets the ten minutes.
 
 58
-00:03:08,097 --> 00:03:12,591
+00:03:25,904 --> 00:03:30,731
 The regrets in this course all belong to accounts connected first and thought about
 
 59
-00:03:12,591 --> 00:03:15,948
+00:03:30,731 --> 00:03:34,337
 afterwards, and Section 8's near miss is exactly one of those.
 
 60
-00:03:16,498 --> 00:03:18,685
+00:03:34,887 --> 00:03:37,297
 Why be that untrusting about intentions?
 
 61
-00:03:18,685 --> 00:03:22,238
+00:03:37,297 --> 00:03:41,212
 Because an agent's input is also, functionally, its instructions.
 
 62
-00:03:22,238 --> 00:03:26,502
+00:03:41,212 --> 00:03:45,911
 Everything it reads becomes part of what it thinks about, including text other
 
 63
-00:03:26,502 --> 00:03:27,212
+00:03:45,911 --> 00:03:46,694
 people wrote.
 
 64
-00:03:27,212 --> 00:03:29,617
+00:03:46,694 --> 00:03:49,345
 An email can, in effect, talk to your agent.
 
 65
-00:03:29,617 --> 00:03:31,476
+00:03:49,345 --> 00:03:51,393
 Most of the time that is harmless.
 
 66
-00:03:31,476 --> 00:03:35,740
+00:03:51,393 --> 00:03:56,091
 Occasionally it is exactly how an agent ends up doing something nobody in your
 
 67
-00:03:35,740 --> 00:03:36,778
+00:03:56,091 --> 00:03:57,236
 building asked for.
 
 68
-00:03:36,778 --> 00:03:39,074
+00:03:57,236 --> 00:03:59,766
 You do not need to master that risk today.
 
 69
-00:03:39,074 --> 00:03:43,666
+00:03:59,766 --> 00:04:04,826
 You need the design habit that makes it survivable, which is the same one this whole
 
 70
-00:03:43,666 --> 00:03:47,383
+00:04:04,826 --> 00:04:08,922
 lecture teaches: what it can reach is the risk, so narrow the reach.
 
 71
-00:03:47,383 --> 00:03:51,811
+00:04:08,922 --> 00:04:13,802
 That sentence is the whole argument for Section 8, which comes back to this exact
 
 72
-00:03:51,811 --> 00:03:53,287
+00:04:13,802 --> 00:04:15,428
 idea with a real near miss.
 
 73
-00:03:53,287 --> 00:03:57,605
+00:04:15,428 --> 00:04:20,187
 For now, one habit: set scope, action and ceiling before you connect, not after
 
 74
-00:03:57,605 --> 00:03:58,753
+00:04:20,187 --> 00:04:21,452
 something goes wrong.
 
 75
-00:03:59,303 --> 00:04:03,605
+00:04:22,002 --> 00:04:26,743
 If step two turned up something, you have already found your first real guardrail.
 
 76
-00:04:03,605 --> 00:04:08,011
+00:04:26,743 --> 00:04:31,600
 Next lecture turns all of this, the scope, the trial, the ceiling, into one document
 
 77
-00:04:08,011 --> 00:04:10,162
+00:04:31,600 --> 00:04:33,970
 you write before you build anything else.

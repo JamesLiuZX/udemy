@@ -1,31 +1,31 @@
 1
-00:00:00,350 --> 00:00:03,706
+00:00:00,350 --> 00:00:04,065
 That is the sentence to carry into every section from here.
 
 2
-00:00:03,706 --> 00:00:08,258
+00:00:04,065 --> 00:00:09,101
 Four lectures, one artifact: a job description that names what an agent can see,
 
 3
-00:00:08,258 --> 00:00:11,500
+00:00:09,101 --> 00:00:12,690
 what it can do, and the ceiling it may never cross alone.
 
 4
-00:00:11,500 --> 00:00:13,321
+00:00:12,690 --> 00:00:14,704
 You have not built anything yet.
 
 5
-00:00:13,321 --> 00:00:17,815
+00:00:14,704 --> 00:00:19,678
 That changes next section, where you set up the toolbox itself: n8n, and the AI
 
 6
-00:00:17,815 --> 00:00:20,147
+00:00:19,678 --> 00:00:22,259
 model behind it, on the free route first.
 
 7
-00:00:20,697 --> 00:00:24,029
+00:00:22,809 --> 00:00:26,297
 One short, practical section before the real building starts.
 
 8
-00:00:24,029 --> 00:00:24,793
+00:00:26,297 --> 00:00:27,097
 See you there.
