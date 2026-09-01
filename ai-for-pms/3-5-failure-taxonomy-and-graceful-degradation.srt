@@ -1,319 +1,319 @@
 1
-00:00:00,350 --> 00:00:04,213
+00:00:00,350 --> 00:00:04,504
 You now know how to specify the dataset, the rubric, and the threshold.
 
 2
-00:00:04,213 --> 00:00:08,730
+00:00:04,504 --> 00:00:09,359
 All three answer some version of the same question: how often does this feature get
 
 3
-00:00:08,730 --> 00:00:09,220
+00:00:09,359 --> 00:00:09,886
 it right.
 
 4
-00:00:09,220 --> 00:00:13,736
+00:00:09,886 --> 00:00:14,741
 None of them answer a completely different question, one just as important: when it
 
 5
-00:00:13,736 --> 00:00:16,022
+00:00:14,741 --> 00:00:17,198
 gets it wrong, what actually happens next.
 
 6
-00:00:16,022 --> 00:00:20,538
+00:00:17,198 --> 00:00:22,054
 Does the wrong answer sail straight through to the user, stated as confidently as a
 
 7
-00:00:20,538 --> 00:00:21,953
+00:00:22,054 --> 00:00:23,575
 right one would have been.
 
 8
-00:00:21,953 --> 00:00:23,204
+00:00:23,575 --> 00:00:24,920
 Does anything catch it.
 
 9
-00:00:23,204 --> 00:00:27,612
+00:00:24,920 --> 00:00:29,659
 Is there a fallback, or is showing the raw output the only path the system knows.
 
 10
-00:00:27,612 --> 00:00:31,965
+00:00:29,659 --> 00:00:34,339
 That's what a failure taxonomy and a degradation path are for, and almost no PRD
 
 11
-00:00:31,965 --> 00:00:33,108
+00:00:34,339 --> 00:00:35,567
 specifies either one.
 
 12
-00:00:33,108 --> 00:00:36,699
+00:00:35,567 --> 00:00:39,428
 Think about the last production incident you actually sat through.
 
 13
-00:00:36,699 --> 00:00:41,216
+00:00:39,428 --> 00:00:44,284
 The retro almost never says "the pass rate was too low." It says something like "it
 
 14
-00:00:41,216 --> 00:00:45,678
+00:00:44,284 --> 00:00:49,081
 told a customer their refund was approved when it wasn't, and nobody caught it for
 
 15
-00:00:45,678 --> 00:00:48,018
+00:00:49,081 --> 00:00:51,596
 six hours." That's not a threshold problem.
 
 16
-00:00:48,018 --> 00:00:52,589
+00:00:51,596 --> 00:00:56,510
 It's a missing answer to the question this lecture asks: what was supposed to happen
 
 17
-00:00:52,589 --> 00:00:56,615
+00:00:56,510 --> 00:01:00,839
 the moment that specific kind of wrong answer occurred, and why didn't it?
 
 18
-00:00:57,165 --> 00:01:01,667
+00:01:01,389 --> 00:01:06,309
 Here's why a single pass rate flattens exactly the distinction that matters most.
 
 19
-00:01:01,667 --> 00:01:05,112
+00:01:06,309 --> 00:01:10,075
 All five of these count as one failure in a simple percentage.
 
 20
-00:01:05,112 --> 00:01:07,169
+00:01:10,075 --> 00:01:12,322
 They are not remotely the same event.
 
 21
-00:01:07,169 --> 00:01:11,226
+00:01:12,322 --> 00:01:16,756
 A confidently wrong answer is the dangerous one, the failure mode lecture
 
 22
-00:01:11,226 --> 00:01:15,616
+00:01:16,756 --> 00:01:21,554
 one-point-five spent a whole hour on: nothing about how it looks tells you it's
 
 23
-00:01:15,616 --> 00:01:15,949
+00:01:21,554 --> 00:01:21,919
 wrong.
 
 24
-00:01:15,949 --> 00:01:19,673
+00:01:21,919 --> 00:01:25,988
 A timeout is annoying but honest, the system visibly didn't answer.
 
 25
-00:01:19,673 --> 00:01:24,119
+00:01:25,988 --> 00:01:30,847
 An over-cautious refusal costs you a bit of usefulness and costs nobody anything
 
 26
-00:01:24,119 --> 00:01:24,397
+00:01:30,847 --> 00:01:31,151
 real.
 
 27
-00:01:24,397 --> 00:01:29,009
+00:01:31,151 --> 00:01:36,192
 Treating all five as interchangeable "failures" means your ninety percent pass rate
 
 28
-00:01:29,009 --> 00:01:33,622
+00:01:36,192 --> 00:01:41,233
 could be hiding a small number of the first kind and a large number of the harmless
 
 29
-00:01:33,622 --> 00:01:36,289
+00:01:41,233 --> 00:01:44,148
 kind, and the number alone can't tell you which.
 
 30
-00:01:36,289 --> 00:01:40,958
+00:01:44,148 --> 00:01:49,250
 Building this table is a five-minute exercise with a habit behind it, not a research
 
 31
-00:01:40,958 --> 00:01:41,402
+00:01:49,250 --> 00:01:49,736
 project.
 
 32
-00:01:41,402 --> 00:01:46,070
+00:01:49,736 --> 00:01:54,838
 For your own feature, picture the worst thing it's actually done, or could plausibly
 
 33
-00:01:46,070 --> 00:01:48,071
+00:01:54,838 --> 00:01:57,025
 do, and ask which row it belongs in.
 
 34
-00:01:48,071 --> 00:01:52,684
+00:01:57,025 --> 00:02:02,066
 Most features turn out to have three or four realistic failure types, not the dozen
 
 35
-00:01:52,684 --> 00:01:53,628
+00:02:02,066 --> 00:02:03,098
 you might expect.
 
 36
-00:01:53,628 --> 00:01:55,796
+00:02:03,098 --> 00:02:05,467
 The value isn't the length of the list.
 
 37
-00:01:55,796 --> 00:02:00,353
+00:02:05,467 --> 00:02:10,448
 It's that each row now has an owner and a response, instead of dissolving into one
 
 38
-00:02:00,353 --> 00:02:01,687
+00:02:10,448 --> 00:02:11,905
 undifferentiated number.
 
 39
-00:02:02,237 --> 00:02:06,696
+00:02:12,455 --> 00:02:17,345
 Here's the branch most PRDs never draw, because most PRDs only draw the top path.
 
 40
-00:02:06,696 --> 00:02:10,879
+00:02:17,345 --> 00:02:21,932
 A request comes in, the model generates an answer, and then something has to
 
 41
-00:02:10,879 --> 00:02:15,448
+00:02:21,932 --> 00:02:26,943
 actually check it before it reaches anyone: a confidence score, a guardrail, a rule
 
 42
-00:02:15,448 --> 00:02:17,760
+00:02:26,943 --> 00:02:29,478
 that catches the shape of a known failure.
 
 43
-00:02:17,760 --> 00:02:18,641
+00:02:29,478 --> 00:02:30,444
 Passes, show it.
 
 44
-00:02:18,641 --> 00:02:22,990
+00:02:30,444 --> 00:02:35,212
 Doesn't, and the feature needs a second, deliberate path, not silence and not a
 
 45
-00:02:22,990 --> 00:02:24,641
+00:02:35,212 --> 00:02:37,023
 guess dressed up as an answer.
 
 46
-00:02:24,641 --> 00:02:28,935
+00:02:37,023 --> 00:02:41,732
 Degrading gracefully means picking one of three honest moves: say plainly that
 
 47
-00:02:28,935 --> 00:02:33,063
+00:02:41,732 --> 00:02:46,259
 you're not sure, hand the case to a human, or decline the request outright.
 
 48
-00:02:33,063 --> 00:02:37,577
+00:02:46,259 --> 00:02:51,209
 All three beat showing a wrong answer with the same confident tone as a right one.
 
 49
-00:02:37,577 --> 00:02:42,201
+00:02:51,209 --> 00:02:56,279
 The guardrail layer from Section two is what makes this branch technically possible.
 
 50
-00:02:42,201 --> 00:02:46,165
+00:02:56,279 --> 00:03:00,625
 A PRD that never specifies it is a feature with only the top path built.
 
 51
-00:02:46,165 --> 00:02:50,569
+00:03:00,625 --> 00:03:05,454
 Which of the three you pick should depend on the archetype and blast radius from
 
 52
-00:02:50,569 --> 00:02:54,092
+00:03:05,454 --> 00:03:09,318
 earlier in this section, not on whichever felt easiest to build.
 
 53
-00:02:54,092 --> 00:02:58,495
+00:03:09,318 --> 00:03:14,147
 A drafting tool can usually just disclaim and let the human reviewing it decide.
 
 54
-00:02:58,495 --> 00:03:02,624
+00:03:14,147 --> 00:03:18,674
 An agent about to take an action is a different conversation: escalating or
 
 55
-00:03:02,624 --> 00:03:07,138
+00:03:18,674 --> 00:03:23,624
 declining is often the only responsible choice, because there's no draft step left
 
 56
-00:03:07,138 --> 00:03:08,294
+00:03:23,624 --> 00:03:24,891
 to catch a bad guess.
 
 57
-00:03:08,844 --> 00:03:13,466
+00:03:25,441 --> 00:03:30,403
 Say the honest caveat, because the fix here has its own failure mode, and it's an
 
 58
-00:03:13,466 --> 00:03:15,234
+00:03:30,403 --> 00:03:32,301
 easy one to walk straight into.
 
 59
-00:03:15,234 --> 00:03:19,856
+00:03:32,301 --> 00:03:37,262
 Set the guardrail too sensitive, and the feature spends half its time saying "I'm
 
 60
-00:03:19,856 --> 00:03:24,478
+00:03:37,262 --> 00:03:42,224
 not sure" about things it actually knew, or routing easy cases to a human who now
 
 61
-00:03:24,478 --> 00:03:27,445
+00:03:42,224 --> 00:03:45,409
 has more work than the feature was supposed to save.
 
 62
-00:03:27,445 --> 00:03:31,895
+00:03:45,409 --> 00:03:50,186
 That's not safe, it's just failing in a direction that's harder to notice on a
 
 63
-00:03:31,895 --> 00:03:32,466
+00:03:50,186 --> 00:03:50,798
 dashboard.
 
 64
-00:03:32,466 --> 00:03:37,087
+00:03:50,798 --> 00:03:55,760
 The degradation rate belongs in the PRD too, with its own threshold, the same way
 
 65
-00:03:37,087 --> 00:03:38,171
+00:03:55,760 --> 00:03:56,923
 the pass rate does.
 
 66
-00:03:38,721 --> 00:03:43,134
+00:03:57,473 --> 00:04:02,231
 That's the definition worth holding onto: degradation is a decision, made in
 
 67
-00:03:43,134 --> 00:03:48,012
+00:04:02,231 --> 00:04:07,489
 advance, not an emergency improvisation made the day something breaks in production.
 
 68
-00:03:48,012 --> 00:03:49,347
+00:04:07,489 --> 00:04:08,929
 The exercise is direct.
 
 69
-00:03:49,347 --> 00:03:53,179
+00:04:08,929 --> 00:04:13,061
 Look for the sentence in your PRD that describes the unhappy path.
 
 70
-00:03:53,179 --> 00:03:57,825
+00:04:13,061 --> 00:04:18,069
 Most PRDs don't have one, because most teams write the feature they're hoping to
 
 71
-00:03:57,825 --> 00:04:00,844
+00:04:18,069 --> 00:04:21,324
 ship, not the one they're actually going to operate.
 
 72
-00:04:01,394 --> 00:04:03,001
+00:04:21,874 --> 00:04:23,611
 One thing before you move on.
 
 73
-00:04:03,001 --> 00:04:07,380
+00:04:23,611 --> 00:04:28,344
 List at least three different ways your feature can fail, not just "wrong," and
 
 74
-00:04:07,380 --> 00:04:10,206
+00:04:28,344 --> 00:04:31,399
 notice how differently you'd want each one handled.
 
 75
-00:04:10,206 --> 00:04:14,807
+00:04:31,399 --> 00:04:36,371
 Then take the most dangerous one on that list and write down, in one sentence, what
 
 76
-00:04:14,807 --> 00:04:17,079
+00:04:36,371 --> 00:04:38,827
 the system actually does when it happens.
 
 77
-00:04:17,079 --> 00:04:21,735
+00:04:38,827 --> 00:04:43,859
 If you can't finish that sentence yet, that's this week's real work, not a detail to
 
 78
-00:04:21,735 --> 00:04:22,621
+00:04:43,859 --> 00:04:44,817
 leave for later.
 
 79
-00:04:22,621 --> 00:04:27,166
+00:04:44,817 --> 00:04:49,730
 Next lecture is where the degradation path from this one gets a name and a design:
 
 80
-00:04:27,166 --> 00:04:31,212
+00:04:49,730 --> 00:04:54,103
 human-in-the-loop, and exactly where in the flow a person needs to stand.

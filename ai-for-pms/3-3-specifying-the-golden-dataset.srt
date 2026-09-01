@@ -1,319 +1,319 @@
 1
-00:00:00,350 --> 00:00:04,922
+00:00:00,350 --> 00:00:05,310
 That line shows up in almost every AI feature PRD, usually in the testing section,
 
 2
-00:00:04,922 --> 00:00:06,930
+00:00:05,310 --> 00:00:07,488
 usually agreed to without objection.
 
 3
-00:00:06,930 --> 00:00:09,495
+00:00:07,488 --> 00:00:10,270
 Who's actually going to build it, and by when?
 
 4
-00:00:09,495 --> 00:00:10,722
+00:00:10,270 --> 00:00:11,601
 It sounds like a plan.
 
 5
-00:00:10,722 --> 00:00:13,231
+00:00:11,601 --> 00:00:14,323
 It's actually a gap wearing a plan's clothes.
 
 6
-00:00:13,231 --> 00:00:17,859
+00:00:14,323 --> 00:00:19,343
 Nobody's named, so it belongs to everyone, which means it belongs to no one until a
 
 7
-00:00:17,859 --> 00:00:19,644
+00:00:19,343 --> 00:00:21,279
 launch date forces the question.
 
 8
-00:00:19,644 --> 00:00:24,272
+00:00:21,279 --> 00:00:26,299
 Nobody's said how big or what it has to cover, so whoever ends up building it under
 
 9
-00:00:24,272 --> 00:00:28,956
+00:00:26,299 --> 00:00:31,380
 pressure grabs whatever's fastest: ten cases from Slack, the ones already sitting in
 
 10
-00:00:28,956 --> 00:00:29,681
+00:00:31,380 --> 00:00:32,167
 a bug report.
 
 11
-00:00:29,681 --> 00:00:32,580
+00:00:32,167 --> 00:00:35,312
 The dataset doesn't need to be written into the PRD.
 
 12
-00:00:32,580 --> 00:00:34,030
+00:00:35,312 --> 00:00:36,885
 The commitment to it does.
 
 13
-00:00:34,030 --> 00:00:36,484
+00:00:36,885 --> 00:00:39,546
 Watch how this plays out on a real schedule.
 
 14
-00:00:36,484 --> 00:00:41,001
+00:00:39,546 --> 00:00:44,446
 The line sails through review because it sounds reasonable and nobody wants to be
 
 15
-00:00:41,001 --> 00:00:43,789
+00:00:44,446 --> 00:00:47,470
 the person who blocks a PRD over a testing detail.
 
 16
-00:00:43,789 --> 00:00:48,417
+00:00:47,470 --> 00:00:52,491
 Then, in the third week before launch, someone finally asks who's actually building
 
 17
-00:00:48,417 --> 00:00:53,045
+00:00:52,491 --> 00:00:57,511
 it, and the honest answer is nobody has started, because nobody was ever the answer
 
 18
-00:00:53,045 --> 00:00:53,993
+00:00:57,511 --> 00:00:58,539
 to that question.
 
 19
-00:00:53,993 --> 00:00:58,454
+00:00:58,539 --> 00:01:03,378
 What should have been two weeks of unhurried work becomes two days of panic, and
 
 20
-00:00:58,454 --> 00:01:02,525
+00:01:03,378 --> 00:01:07,794
 panic is exactly the condition under which a golden set gets built badly.
 
 21
-00:01:03,075 --> 00:01:07,466
+00:01:08,344 --> 00:01:13,170
 Same intention, and only one version survives contact with a slipping schedule.
 
 22
-00:01:07,466 --> 00:01:11,691
+00:01:13,170 --> 00:01:17,813
 The second version has four things the first one doesn't: a floor on size, a
 
 23
-00:01:11,691 --> 00:01:16,305
+00:01:17,813 --> 00:01:22,884
 coverage requirement that rules out fifty happy-path cases counting as done, a name
 
 24
-00:01:16,305 --> 00:01:20,085
+00:01:22,884 --> 00:01:27,038
 attached to the work, and a date that sits before launch, not on it.
 
 25
-00:01:20,085 --> 00:01:22,030
+00:01:27,038 --> 00:01:29,176
 None of that is the dataset itself.
 
 26
-00:01:22,030 --> 00:01:25,588
+00:01:29,176 --> 00:01:33,086
 It's the commitment that makes the dataset someone's actual job.
 
 27
-00:01:25,588 --> 00:01:28,367
+00:01:33,086 --> 00:01:36,141
 Notice, too, that the good version is still short.
 
 28
-00:01:28,367 --> 00:01:31,369
+00:01:36,141 --> 00:01:39,440
 It's one sentence longer than the bad one, not a page.
 
 29
-00:01:31,369 --> 00:01:35,594
+00:01:39,440 --> 00:01:44,083
 The goal here isn't length, it's specificity: every noun in that sentence is
 
 30
-00:01:35,594 --> 00:01:38,373
+00:01:44,083 --> 00:01:47,137
 something a project tracker could hold someone to.
 
 31
-00:01:38,373 --> 00:01:41,931
+00:01:47,137 --> 00:01:51,047
 "Appropriate" was never a word you could put a deadline against.
 
 32
-00:01:41,931 --> 00:01:43,154
+00:01:51,047 --> 00:01:52,391
 A name and a date are.
 
 33
-00:01:43,704 --> 00:01:48,136
+00:01:52,941 --> 00:01:57,808
 Five questions, and notice none of them ask you to actually build anything yet.
 
 34
-00:01:48,136 --> 00:01:52,793
+00:01:57,808 --> 00:02:02,921
 They ask you to decide, in writing, what building it correctly is going to require.
 
 35
-00:01:52,793 --> 00:01:55,655
+00:02:02,921 --> 00:02:06,062
 The coverage question is the one worth dwelling on.
 
 36
-00:01:55,655 --> 00:02:00,256
+00:02:06,062 --> 00:02:11,113
 Fifty cases that are all ordinary, everyday inputs will pass beautifully and prove
 
 37
-00:02:00,256 --> 00:02:04,856
+00:02:11,113 --> 00:02:16,165
 almost nothing, because they never touch the failure modes that actually hurt you.
 
 38
-00:02:04,856 --> 00:02:09,401
+00:02:16,165 --> 00:02:21,154
 The PRD doesn't need to enumerate every bucket, that's real, deliberate work, and
 
 39
-00:02:09,401 --> 00:02:12,599
+00:02:21,154 --> 00:02:24,665
 Section four walks through exactly how to do it properly.
 
 40
-00:02:12,599 --> 00:02:17,088
+00:02:24,665 --> 00:02:29,593
 What the PRD needs is the requirement that coverage exists at all, so nobody can
 
 41
-00:02:17,088 --> 00:02:18,827
+00:02:29,593 --> 00:02:31,503
 call fifty easy cases finished.
 
 42
-00:02:18,827 --> 00:02:23,316
+00:02:31,503 --> 00:02:36,431
 The source question matters almost as much, and it's the one people skip fastest
 
 43
-00:02:23,316 --> 00:02:24,438
+00:02:36,431 --> 00:02:37,663
 under time pressure.
 
 44
-00:02:24,438 --> 00:02:28,870
+00:02:37,663 --> 00:02:42,530
 Real transcripts show you what actually happens: the messy phrasing, the second
 
 45
-00:02:28,870 --> 00:02:31,227
+00:02:42,530 --> 00:02:45,117
 language, the question nobody anticipated.
 
 46
-00:02:31,227 --> 00:02:35,771
+00:02:45,117 --> 00:02:50,106
 Invented examples show you what you already imagined, which tells you nothing you
 
 47
-00:02:35,771 --> 00:02:37,062
+00:02:50,106 --> 00:02:51,523
 didn't already believe.
 
 48
-00:02:37,062 --> 00:02:41,382
+00:02:51,523 --> 00:02:56,266
 If real data genuinely doesn't exist yet, because the feature hasn't launched
 
 49
-00:02:41,382 --> 00:02:45,758
+00:02:56,266 --> 00:03:01,071
 anywhere, say that plainly in the PRD rather than quietly filling the gap with
 
 50
-00:02:45,758 --> 00:02:47,329
+00:03:01,071 --> 00:03:02,796
 guesses dressed up as cases.
 
 51
-00:02:47,879 --> 00:02:52,521
+00:03:03,346 --> 00:03:08,370
 Say the honest caveat, because the opposite mistake is just as common as the vague
 
 52
-00:02:52,521 --> 00:02:56,087
+00:03:08,370 --> 00:03:12,229
 one: dumping fifty rows straight into the PRD to look thorough.
 
 53
-00:02:56,087 --> 00:02:58,691
+00:03:12,229 --> 00:03:15,048
 A PRD is read once, argued over, and archived.
 
 54
-00:02:58,691 --> 00:03:03,333
+00:03:15,048 --> 00:03:20,071
 A golden set gets reused every release, edited under version control, argued about
 
 55
-00:03:03,333 --> 00:03:04,069
+00:03:20,071 --> 00:03:20,868
 case by case.
 
 56
-00:03:04,069 --> 00:03:08,428
+00:03:20,868 --> 00:03:25,585
 Cram it into the document and you get the worst of both: a bloated PRD nobody
 
 57
-00:03:08,428 --> 00:03:11,768
+00:03:25,585 --> 00:03:29,200
 rereads, and a dataset that's awkward to actually maintain.
 
 58
-00:03:11,768 --> 00:03:16,126
+00:03:29,200 --> 00:03:33,917
 Commit to it here, build and version it properly elsewhere, and link the two.
 
 59
-00:03:16,126 --> 00:03:19,976
+00:03:33,917 --> 00:03:38,083
 Think of the PRD as the contract and the dataset as the deliverable.
 
 60
-00:03:19,976 --> 00:03:22,806
+00:03:38,083 --> 00:03:41,146
 Nobody writes the deliverable inside the contract.
 
 61
-00:03:22,806 --> 00:03:27,278
+00:03:41,146 --> 00:03:45,986
 They write what the deliverable has to satisfy, and where to go find it once it
 
 62
-00:03:27,278 --> 00:03:27,674
+00:03:45,986 --> 00:03:46,415
 exists.
 
 63
-00:03:27,674 --> 00:03:32,259
+00:03:46,415 --> 00:03:51,378
 That distinction is what keeps this section from turning into fifty rows of stale
 
 64
-00:03:32,259 --> 00:03:34,807
+00:03:51,378 --> 00:03:54,135
 examples nobody trusts by the second release.
 
 65
-00:03:35,357 --> 00:03:39,934
+00:03:54,685 --> 00:03:59,701
 That's the whole shape of it: a paragraph, not an appendix, and every sentence in it
 
 66
-00:03:39,934 --> 00:03:41,787
+00:03:59,701 --> 00:04:01,732
 answerable by someone with a name.
 
 67
-00:03:41,787 --> 00:03:43,694
+00:04:01,732 --> 00:04:03,822
 The exercise is the rewrite itself.
 
 68
-00:03:43,694 --> 00:03:48,000
+00:04:03,822 --> 00:04:08,540
 Take the vague line if your PRD has one, and run it through the five questions.
 
 69
-00:03:48,000 --> 00:03:52,523
+00:04:08,540 --> 00:04:13,497
 Where you don't have an answer yet, write the question down instead of skipping it.
 
 70
-00:03:52,523 --> 00:03:54,811
+00:04:13,497 --> 00:04:16,006
 An unanswered question in a PRD is honest.
 
 71
-00:03:54,811 --> 00:03:57,373
+00:04:16,006 --> 00:04:18,813
 A vague sentence pretending to answer it isn't.
 
 72
-00:03:57,923 --> 00:03:59,558
+00:04:19,363 --> 00:04:21,143
 One thing before you move on.
 
 73
-00:03:59,558 --> 00:04:00,517
+00:04:21,143 --> 00:04:22,187
 Rewrite the line.
 
 74
-00:04:00,517 --> 00:04:05,030
+00:04:22,187 --> 00:04:27,098
 Give it an owner, a number, and a date, even if the date moves later, that alone
 
 75
-00:04:05,030 --> 00:04:07,737
+00:04:27,098 --> 00:04:30,045
 closes most of the gap this lecture opened with.
 
 76
-00:04:07,737 --> 00:04:12,362
+00:04:30,045 --> 00:04:35,079
 Then be honest about coverage: if you already suspect you have no real examples of
 
 77
-00:04:12,362 --> 00:04:15,070
+00:04:35,079 --> 00:04:38,026
 this feature failing badly, write that down now.
 
 78
-00:04:15,070 --> 00:04:19,018
+00:04:38,026 --> 00:04:42,324
 It's a better finding today than a silent gap in the golden set later.
 
 79
-00:04:19,018 --> 00:04:23,530
+00:04:42,324 --> 00:04:47,235
 Next lecture goes underneath the dataset to the other half of the threshold: the
 
 80
-00:04:23,530 --> 00:04:27,591
+00:04:47,235 --> 00:04:51,655
 rubric that makes "good" mean the same thing no matter who's scoring it.

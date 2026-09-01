@@ -1,323 +1,323 @@
 1
-00:00:00,350 --> 00:00:04,696
+00:00:00,350 --> 00:00:04,989
 You'll hear that exact sentence end a review, and it's almost never specific enough
 
 2
-00:00:04,696 --> 00:00:05,586
+00:00:04,989 --> 00:00:05,939
 to build against.
 
 3
-00:00:05,586 --> 00:00:06,476
+00:00:05,939 --> 00:00:06,889
 In the loop when?
 
 4
-00:00:06,476 --> 00:00:07,261
+00:00:06,889 --> 00:00:07,727
 Reviewing what?
 
 5
-00:00:07,261 --> 00:00:08,832
+00:00:07,727 --> 00:00:09,404
 Before the action or after it?
 
 6
-00:00:08,832 --> 00:00:10,822
+00:00:09,404 --> 00:00:11,528
 Those aren't details to fill in later.
 
 7
-00:00:10,822 --> 00:00:12,288
+00:00:11,528 --> 00:00:13,093
 They're the entire decision.
 
 8
-00:00:12,288 --> 00:00:16,686
+00:00:13,093 --> 00:00:17,787
 Put the human in the wrong place and you either add friction to something that never
 
 9
-00:00:16,686 --> 00:00:20,770
+00:00:17,787 --> 00:00:22,146
 needed it, or you add a reassuring sentence to the PRD that catches nothing in
 
 10
-00:00:20,770 --> 00:00:21,241
+00:00:22,146 --> 00:00:22,649
 practice.
 
 11
-00:00:21,241 --> 00:00:23,179
+00:00:22,649 --> 00:00:24,717
 "Human in the loop" isn't one design.
 
 12
-00:00:23,179 --> 00:00:27,158
+00:00:24,717 --> 00:00:28,965
 It's five, and the wrong one either burns your reviewers or catches nothing.
 
 13
-00:00:27,158 --> 00:00:31,399
+00:00:28,965 --> 00:00:33,492
 Both mistakes are common, and they come from the same shortcut: picking a pattern
 
 14
-00:00:31,399 --> 00:00:35,378
+00:00:33,492 --> 00:00:37,739
 because it's the one your team has used before, rather than asking what this
 
 15
-00:00:35,378 --> 00:00:37,054
+00:00:37,739 --> 00:00:39,528
 specific feature actually needs.
 
 16
-00:00:37,054 --> 00:00:41,033
+00:00:39,528 --> 00:00:43,775
 A pattern that worked perfectly for a low-stakes summariser can be genuinely
 
 17
-00:00:41,033 --> 00:00:45,379
+00:00:43,775 --> 00:00:48,414
 dangerous applied to something that spends money, and a pattern built for something
 
 18
-00:00:45,379 --> 00:00:49,411
+00:00:48,414 --> 00:00:52,717
 irreversible can smother a harmless drafting tool in approvals nobody needed.
 
 19
-00:00:49,961 --> 00:00:54,567
+00:00:53,267 --> 00:00:58,183
 Read this table as a spectrum, from a human checking everything to a human checking
 
 20
-00:00:54,567 --> 00:00:58,229
+00:00:58,183 --> 00:01:02,093
 almost nothing, and notice the right column is doing all the work.
 
 21
-00:00:58,229 --> 00:01:02,724
+00:01:02,093 --> 00:01:06,890
 Pre-approval belongs to the act archetype at its most dangerous: money moving, an
 
 22
-00:01:02,724 --> 00:01:05,610
+00:01:06,890 --> 00:01:09,970
 account changing, nothing recoverable if it's wrong.
 
 23
-00:01:05,610 --> 00:01:10,216
+00:01:09,970 --> 00:01:14,887
 Draft-then-review is the natural home for anything a user reads directly, the human
 
 24
-00:01:10,216 --> 00:01:14,433
+00:01:14,887 --> 00:01:19,388
 isn't approving an internal step, they're the last check before publication.
 
 25
-00:01:14,433 --> 00:01:18,817
+00:01:19,388 --> 00:01:24,067
 Sampled audit and monitor-only both trade certainty for speed, appropriate once
 
 26
-00:01:18,817 --> 00:01:21,925
+00:01:24,067 --> 00:01:27,384
 being wrong occasionally is merely annoying, not costly.
 
 27
-00:01:21,925 --> 00:01:26,419
+00:01:27,384 --> 00:01:32,182
 Escalate on uncertainty is the most efficient pattern on this table, and the most
 
 28
-00:01:26,419 --> 00:01:31,081
+00:01:32,182 --> 00:01:37,157
 dangerous one to pick too early, because it's only as good as the guardrail deciding
 
 29
-00:01:31,081 --> 00:01:32,468
+00:01:37,157 --> 00:01:38,638
 what counts as uncertain.
 
 30
-00:01:32,468 --> 00:01:36,575
+00:01:38,638 --> 00:01:43,021
 Notice, too, that these patterns aren't a ladder you climb once and leave.
 
 31
-00:01:36,575 --> 00:01:41,125
+00:01:43,021 --> 00:01:47,878
 A feature often starts on draft-then-review while everyone's still learning how it
 
 32
-00:01:41,125 --> 00:01:45,787
+00:01:47,878 --> 00:01:52,853
 fails, and earns its way down to sampled audit or escalation only once the pass rate
 
 33
-00:01:45,787 --> 00:01:50,226
+00:01:52,853 --> 00:01:57,592
 and the failure taxonomy from the last two lectures have actually proven it out.
 
 34
-00:01:50,226 --> 00:01:54,887
+00:01:57,592 --> 00:02:02,567
 Starting anywhere looser than that is borrowing trust the feature hasn't earned yet.
 
 35
-00:01:55,437 --> 00:02:00,112
+00:02:03,117 --> 00:02:08,181
 Remember auto-approving refunds over five hundred dollars, from the disqualification
 
 36
-00:02:00,112 --> 00:02:01,782
+00:02:08,181 --> 00:02:09,989
 checklist back in Section one.
 
 37
-00:02:01,782 --> 00:02:06,123
+00:02:09,989 --> 00:02:14,691
 Here's the same feature, and here's why the pattern you pick isn't a footnote.
 
 38
-00:02:06,123 --> 00:02:10,798
+00:02:14,691 --> 00:02:19,754
 Escalate on uncertainty sounds efficient, and it fails exactly where this feature is
 
 39
-00:02:10,798 --> 00:02:15,472
+00:02:19,754 --> 00:02:24,818
 most dangerous: a model can be confidently wrong, the whole premise of hallucination
 
 40
-00:02:15,472 --> 00:02:17,031
+00:02:24,818 --> 00:02:26,506
 from lecture one-point-five.
 
 41
-00:02:17,031 --> 00:02:21,149
+00:02:26,506 --> 00:02:30,966
 A confident, wrong approval sails straight past a guardrail built to catch
 
 42
-00:02:21,149 --> 00:02:23,820
+00:02:30,966 --> 00:02:33,860
 uncertainty, because the model wasn't uncertain.
 
 43
-00:02:23,820 --> 00:02:26,659
+00:02:33,860 --> 00:02:36,934
 It was sure, and it was sure about the wrong thing.
 
 44
-00:02:26,659 --> 00:02:29,608
+00:02:36,934 --> 00:02:40,129
 Pre-approval above a threshold doesn't have that gap.
 
 45
-00:02:29,608 --> 00:02:32,280
+00:02:40,129 --> 00:02:43,022
 It doesn't ask the model whether it's confident.
 
 46
-00:02:32,280 --> 00:02:36,787
+00:02:43,022 --> 00:02:47,905
 It asks whether the dollar amount crosses a line, a question with no ambiguity at
 
 47
-00:02:36,787 --> 00:02:37,010
+00:02:47,905 --> 00:02:48,146
 all.
 
 48
-00:02:37,560 --> 00:02:42,130
+00:02:48,696 --> 00:02:53,640
 Say the honest caveat, because this is the failure mode that makes a technically
 
 49
-00:02:42,130 --> 00:02:44,357
+00:02:53,640 --> 00:02:56,050
 correct design fail in practice anyway.
 
 50
-00:02:44,357 --> 00:02:46,585
+00:02:56,050 --> 00:02:58,460
 Reviewer fatigue is real and it's fast.
 
 51
-00:02:46,585 --> 00:02:51,383
+00:02:58,460 --> 00:03:03,651
 Give a human genuinely hard decisions all day and judgment holds up reasonably well.
 
 52
-00:02:51,383 --> 00:02:56,067
+00:03:03,651 --> 00:03:08,719
 Give them two hundred near-identical approvals, most of them plainly fine, and the
 
 53
-00:02:56,067 --> 00:02:59,780
+00:03:08,719 --> 00:03:12,736
 ninety-eighth one gets the same half-second glance as the second.
 
 54
-00:02:59,780 --> 00:03:02,008
+00:03:12,736 --> 00:03:15,146
 The loop still exists on the org chart.
 
 55
-00:03:02,008 --> 00:03:05,549
+00:03:15,146 --> 00:03:18,977
 It stopped doing anything useful somewhere around case thirty.
 
 56
-00:03:05,549 --> 00:03:10,176
+00:03:18,977 --> 00:03:23,983
 Design against this directly: keep the volume any one reviewer sees low enough to
 
 57
-00:03:10,176 --> 00:03:14,860
+00:03:23,983 --> 00:03:29,050
 stay real, rotate reviewers, or narrow pre-approval to genuinely high-stakes cases
 
 58
-00:03:14,860 --> 00:03:17,373
+00:03:29,050 --> 00:03:31,769
 and route the rest to sampled audit instead.
 
 59
-00:03:17,373 --> 00:03:21,943
+00:03:31,769 --> 00:03:36,713
 A human check that's too broad to sustain is worse than an honest, narrower one.
 
 60
-00:03:21,943 --> 00:03:26,684
+00:03:36,713 --> 00:03:41,843
 This is worth putting a number on in the PRD itself, the same way the threshold and
 
 61
-00:03:26,684 --> 00:03:29,483
+00:03:41,843 --> 00:03:44,871
 the failure floor got a number two lectures back.
 
 62
-00:03:29,483 --> 00:03:34,167
+00:03:44,871 --> 00:03:49,938
 A review queue with no stated volume limit will grow until it breaks, quietly, and
 
 63
-00:03:34,167 --> 00:03:38,851
+00:03:49,938 --> 00:03:55,006
 nobody will notice until an audit finds approvals that took less time to make than
 
 64
-00:03:38,851 --> 00:03:39,308
+00:03:55,006 --> 00:03:55,500
 to read.
 
 65
-00:03:39,858 --> 00:03:44,362
+00:03:56,050 --> 00:04:01,051
 That's the definition worth holding onto: the pattern is the design, not a sentence
 
 66
-00:03:44,362 --> 00:03:45,936
+00:04:01,051 --> 00:04:02,799
 you add to sound responsible.
 
 67
-00:03:45,936 --> 00:03:47,293
+00:04:02,799 --> 00:04:04,305
 The exercise is specific.
 
 68
-00:03:47,293 --> 00:03:51,472
+00:04:04,305 --> 00:04:08,945
 Wherever your PRD mentions a human check, name the pattern precisely, and ask
 
 69
-00:03:51,472 --> 00:03:54,728
+00:04:08,945 --> 00:04:12,561
 whether it matches how bad a wrong answer would actually be.
 
 70
-00:03:54,728 --> 00:03:59,286
+00:04:12,561 --> 00:04:17,622
 A mismatch in either direction is worth fixing before launch, not after the reviewer
 
 71
-00:03:59,286 --> 00:04:01,511
+00:04:17,622 --> 00:04:20,093
 burns out or the wrong one slips through.
 
 72
-00:04:02,061 --> 00:04:03,713
+00:04:20,643 --> 00:04:22,457
 One thing before you move on.
 
 73
-00:04:03,713 --> 00:04:08,440
+00:04:22,457 --> 00:04:27,651
 Name the pattern precisely, using this lecture's five options, not the vague phrase
 
 74
-00:04:08,440 --> 00:04:09,750
+00:04:27,651 --> 00:04:29,090
 your PRD currently has.
 
 75
-00:04:09,750 --> 00:04:12,256
+00:04:29,090 --> 00:04:31,844
 Then check it honestly against blast radius.
 
 76
-00:04:12,256 --> 00:04:17,040
+00:04:31,844 --> 00:04:37,100
 If a wrong output is expensive or irreversible and your pattern is anything short of
 
 77
-00:04:17,040 --> 00:04:21,767
+00:04:37,100 --> 00:04:42,294
 pre-approval, that mismatch is worth raising now, while it's a sentence to edit and
 
 78
-00:04:21,767 --> 00:04:23,305
+00:04:42,294 --> 00:04:43,983
 not an incident to explain.
 
 79
-00:04:23,305 --> 00:04:27,633
+00:04:43,983 --> 00:04:48,739
 Next lecture puts everything from this section, the dataset, the rubric, the
 
 80
-00:04:27,633 --> 00:04:32,189
+00:04:48,739 --> 00:04:53,745
 threshold, the taxonomy, and this human-in-the-loop pattern, into the actual PRD
 
 81
-00:04:32,189 --> 00:04:34,695
+00:04:53,745 --> 00:04:56,498
 template, walked through section by section.

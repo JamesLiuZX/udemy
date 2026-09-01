@@ -1,375 +1,375 @@
 1
-00:00:00,350 --> 00:00:04,733
+00:00:00,350 --> 00:00:05,079
 You've written pieces of this document across the last six lectures: a threshold
 
 2
-00:00:04,733 --> 00:00:08,788
+00:00:05,079 --> 00:00:09,453
 sentence, a dataset commitment, a rubric commitment, a failure taxonomy, a
 
 3
-00:00:08,788 --> 00:00:11,309
+00:00:09,453 --> 00:00:12,172
 degradation path, a human-in-the-loop pattern.
 
 4
-00:00:11,309 --> 00:00:15,802
+00:00:12,172 --> 00:00:17,019
 Here they all are, assembled into one template, in the order they actually belong.
 
 5
-00:00:15,802 --> 00:00:17,884
+00:00:17,019 --> 00:00:19,265
 This is A01, attached to this lecture.
 
 6
-00:00:17,884 --> 00:00:22,487
+00:00:19,265 --> 00:00:24,230
 Download it and follow along, because the fastest way to learn a template is to fill
 
 7
-00:00:22,487 --> 00:00:26,048
+00:00:24,230 --> 00:00:28,072
 one in while someone walks through it, not to read it cold later.
 
 8
-00:00:26,048 --> 00:00:28,459
+00:00:28,072 --> 00:00:30,673
 Nothing in this template is new information.
 
 9
-00:00:28,459 --> 00:00:33,007
+00:00:30,673 --> 00:00:35,579
 Every sentence you're about to see was earned, specifically, in one of the last six
 
 10
-00:00:33,007 --> 00:00:33,500
+00:00:35,579 --> 00:00:36,110
 lectures.
 
 11
-00:00:33,500 --> 00:00:37,993
+00:00:36,110 --> 00:00:40,957
 What's new is seeing all of it in one place, in the order an engineer or a QA lead
 
 12
-00:00:37,993 --> 00:00:42,431
+00:00:40,957 --> 00:00:45,745
 would actually want to read it, instead of scattered across six separate insights
 
 13
-00:00:42,431 --> 00:00:44,787
+00:00:45,745 --> 00:00:48,287
 you'd have to remember to combine yourself.
 
 14
-00:00:44,787 --> 00:00:47,856
+00:00:48,287 --> 00:00:51,597
 That ordering matters more than it looks like it should.
 
 15
-00:00:47,856 --> 00:00:52,404
+00:00:51,597 --> 00:00:56,503
 A reviewer reading a PRD top to bottom builds trust or loses it section by section.
 
 16
-00:00:52,404 --> 00:00:56,952
+00:00:56,503 --> 00:01:01,409
 Open with a sharp threshold and a real dataset commitment, and the failure taxonomy
 
 17
-00:00:56,952 --> 00:01:00,239
+00:01:01,409 --> 00:01:04,955
 a few sections later reads as thorough rather than paranoid.
 
 18
-00:01:00,239 --> 00:01:04,678
+00:01:04,955 --> 00:01:09,743
 Open with vague acceptance criteria, and nothing after it gets read as carefully,
 
 19
-00:01:04,678 --> 00:01:08,349
+00:01:09,743 --> 00:01:13,703
 because the reviewer has already learned not to trust the document.
 
 20
-00:01:08,899 --> 00:01:13,284
+00:01:14,253 --> 00:01:19,088
 Read straight down that left column and notice something: the first two rows are
 
 21
-00:01:13,284 --> 00:01:15,531
+00:01:19,088 --> 00:01:21,565
 close to what any decent PRD already has.
 
 22
-00:01:15,531 --> 00:01:19,313
+00:01:21,565 --> 00:01:25,735
 Everything from row three onward is what this section actually added.
 
 23
-00:01:19,313 --> 00:01:23,533
+00:01:25,735 --> 00:01:30,388
 That's deliberate, and it's worth saying plainly before you fill in your own.
 
 24
-00:01:23,533 --> 00:01:27,151
+00:01:30,388 --> 00:01:34,376
 You're not throwing out what you already know about writing a PRD.
 
 25
-00:01:27,151 --> 00:01:31,591
+00:01:34,376 --> 00:01:39,271
 Problem, context, archetype, all of that stays exactly as familiar as it's always
 
 26
-00:01:31,591 --> 00:01:31,865
+00:01:39,271 --> 00:01:39,573
 been.
 
 27
-00:01:31,865 --> 00:01:36,030
+00:01:39,573 --> 00:01:44,166
 What's new is everything underneath it: the six sections that turn a hopeful
 
 28
-00:01:36,030 --> 00:01:40,525
+00:01:44,166 --> 00:01:49,121
 description into something QA, engineering, and a launch reviewer can all hold you
 
 29
-00:01:40,525 --> 00:01:40,689
+00:01:49,121 --> 00:01:49,302
 to.
 
 30
-00:01:40,689 --> 00:01:45,239
+00:01:49,302 --> 00:01:54,318
 Walk the table again with one question in mind: which row would someone in a launch
 
 31
-00:01:45,239 --> 00:01:46,828
+00:01:54,318 --> 00:01:56,070
 review actually push back on?
 
 32
-00:01:46,828 --> 00:01:50,665
+00:01:56,070 --> 00:02:00,300
 Almost never the problem statement, everyone agreed on that weeks ago.
 
 33
-00:01:50,665 --> 00:01:54,995
+00:02:00,300 --> 00:02:05,074
 It's the threshold, the dataset, and the degradation path, the three rows teams
 
 34
-00:01:54,995 --> 00:01:59,544
+00:02:05,074 --> 00:02:10,090
 historically leave vaguest, precisely because they used to be the hardest to write.
 
 35
-00:01:59,544 --> 00:02:00,969
+00:02:10,090 --> 00:02:11,661
 They're not hard any more.
 
 36
-00:02:00,969 --> 00:02:03,436
+00:02:11,661 --> 00:02:14,380
 You've already written a version of each one.
 
 37
-00:02:03,986 --> 00:02:08,230
+00:02:14,930 --> 00:02:19,455
 Keep that column in view as you fill in your own template, and use it the way it's
 
 38
-00:02:08,230 --> 00:02:12,370
+00:02:19,455 --> 00:02:23,869
 meant: a pointer back to the lecture that has the full method, not a scoreboard.
 
 39
-00:02:12,920 --> 00:02:17,554
+00:02:24,419 --> 00:02:29,543
 This split matters because a common reaction to this whole section is to assume it
 
 40
-00:02:17,554 --> 00:02:20,492
+00:02:29,543 --> 00:02:32,792
 demands a completely different way of writing a PRD.
 
 41
-00:02:20,492 --> 00:02:21,114
+00:02:32,792 --> 00:02:33,480
 It doesn't.
 
 42
-00:02:21,114 --> 00:02:25,408
+00:02:33,480 --> 00:02:38,229
 Everything in the first column is the PRD skill you already have, untouched.
 
 43
-00:02:25,408 --> 00:02:29,985
+00:02:38,229 --> 00:02:43,291
 What's genuinely new lives entirely in the second column, and it's new because it
 
 44
-00:02:29,985 --> 00:02:34,562
+00:02:43,291 --> 00:02:48,353
 answers questions a deterministic feature never had to ask: what happens across a
 
 45
-00:02:34,562 --> 00:02:39,253
+00:02:48,353 --> 00:02:53,540
 range of outputs, not one, and what happens specifically when this one lands on the
 
 46
-00:02:39,253 --> 00:02:40,609
+00:02:53,540 --> 00:02:55,039
 wrong side of the range.
 
 47
-00:02:40,609 --> 00:02:44,903
+00:02:55,039 --> 00:02:59,789
 Notice, too, that the second column is shorter to list than it was to learn.
 
 48
-00:02:44,903 --> 00:02:46,486
+00:02:59,789 --> 00:03:01,538
 Three bullets, six lectures.
 
 49
-00:02:46,486 --> 00:02:50,724
+00:03:01,538 --> 00:03:06,225
 That's not a coincidence, and it's not this lecture cutting corners either.
 
 50
-00:02:50,724 --> 00:02:55,131
+00:03:06,225 --> 00:03:11,100
 Each of those three bullets is carrying an entire method behind it: a coverage
 
 51
-00:02:55,131 --> 00:02:59,369
+00:03:11,100 --> 00:03:15,786
 strategy, a calibration protocol, a taxonomy built from real failure modes.
 
 52
-00:02:59,369 --> 00:03:02,308
+00:03:15,786 --> 00:03:19,036
 The template compresses the method into a checklist.
 
 53
-00:03:02,308 --> 00:03:05,303
+00:03:19,036 --> 00:03:22,348
 It doesn't replace the method, and you now have both.
 
 54
-00:03:05,853 --> 00:03:10,213
+00:03:22,898 --> 00:03:27,642
 Say the honest caveat, because a template can create a false sense of completeness
 
 55
-00:03:10,213 --> 00:03:11,011
+00:03:27,642 --> 00:03:28,510
 all on its own.
 
 56
-00:03:11,011 --> 00:03:15,371
+00:03:28,510 --> 00:03:33,255
 Write "the rubric is attached" in that section without an actual calibrated rubric
 
 57
-00:03:15,371 --> 00:03:19,572
+00:03:33,255 --> 00:03:37,825
 behind it, and you've reproduced the exact failure this whole section opened by
 
 58
-00:03:19,572 --> 00:03:20,157
+00:03:37,825 --> 00:03:38,462
 diagnosing.
 
 59
-00:03:20,157 --> 00:03:24,145
+00:03:38,462 --> 00:03:42,801
 You've just hidden it one layer deeper, behind a section heading that looks
 
 60
-00:03:24,145 --> 00:03:24,624
+00:03:42,801 --> 00:03:43,322
 thorough.
 
 61
-00:03:24,624 --> 00:03:27,017
+00:03:43,322 --> 00:03:45,926
 The template is scaffolding for the thinking.
 
 62
-00:03:27,017 --> 00:03:29,091
+00:03:45,926 --> 00:03:48,182
 It was never a substitute for doing it.
 
 63
-00:03:29,091 --> 00:03:33,504
+00:03:48,182 --> 00:03:52,984
 A reviewer skimming eight completed sections will feel reassured whether or not the
 
 64
-00:03:33,504 --> 00:03:36,482
+00:03:52,984 --> 00:03:56,224
 content underneath is real, and that's exactly the risk.
 
 65
-00:03:36,482 --> 00:03:39,407
+00:03:56,224 --> 00:03:59,407
 The honest test isn't whether every box has text in it.
 
 66
-00:03:39,407 --> 00:03:43,661
+00:03:59,407 --> 00:04:04,035
 It's whether someone could act on that text: run the calibration check, find the
 
 67
-00:03:43,661 --> 00:03:45,203
+00:04:04,035 --> 00:04:05,713
 dataset, apply the threshold.
 
 68
-00:03:45,203 --> 00:03:49,404
+00:04:05,713 --> 00:04:10,284
 If a section reads well but nobody could actually do anything with it, it's not
 
 69
-00:03:49,404 --> 00:03:51,159
+00:04:10,284 --> 00:04:12,193
 finished, it's just well written.
 
 70
-00:03:51,709 --> 00:03:56,168
+00:04:12,743 --> 00:04:17,613
 That's the instruction for the rest of today, not a suggestion for sometime this
 
 71
-00:03:56,168 --> 00:03:56,614
+00:04:17,613 --> 00:04:18,100
 quarter.
 
 72
-00:03:56,614 --> 00:04:01,185
+00:04:18,100 --> 00:04:23,092
 Start with acceptance criteria specifically, because it's the section that exposes
 
 73
-00:04:01,185 --> 00:04:04,084
+00:04:23,092 --> 00:04:26,258
 whether the rest of the document is doing real work.
 
 74
-00:04:04,084 --> 00:04:08,543
+00:04:26,258 --> 00:04:31,128
 Once you've written a threshold you'd actually hold a launch to, the dataset and
 
 75
-00:04:08,543 --> 00:04:12,891
+00:04:31,128 --> 00:04:35,876
 rubric sections stop being paperwork and start being the thing that makes that
 
 76
-00:04:12,891 --> 00:04:14,006
+00:04:35,876 --> 00:04:37,094
 threshold checkable.
 
 77
-00:04:14,006 --> 00:04:18,577
+00:04:37,094 --> 00:04:42,086
 Expect it to take longer than filling in the problem statement did, and treat that
 
 78
-00:04:18,577 --> 00:04:20,138
+00:04:42,086 --> 00:04:43,790
 as a good sign, not a delay.
 
 79
-00:04:20,138 --> 00:04:23,315
+00:04:43,790 --> 00:04:47,260
 The problem statement was never the hard part of any PRD.
 
 80
-00:04:23,315 --> 00:04:26,214
+00:04:47,260 --> 00:04:50,426
 It never has been, for any feature, AI or otherwise.
 
 81
-00:04:26,214 --> 00:04:30,673
+00:04:50,426 --> 00:04:55,296
 The fact that acceptance criteria now takes real thought is this section working
 
 82
-00:04:30,673 --> 00:04:31,788
+00:04:55,296 --> 00:04:56,513
 exactly as intended.
 
 83
-00:04:32,338 --> 00:04:33,930
+00:04:57,063 --> 00:04:58,841
 One thing before you move on.
 
 84
-00:04:33,930 --> 00:04:36,564
+00:04:58,841 --> 00:05:01,783
 Download the template, attached to this lecture.
 
 85
-00:04:36,564 --> 00:04:41,120
+00:05:01,783 --> 00:05:06,870
 It's built with all eight sections in place, prompts included, so you're filling in
 
 86
-00:04:41,120 --> 00:04:43,150
+00:05:06,870 --> 00:05:09,137
 blanks, not staring at an empty page.
 
 87
-00:04:43,150 --> 00:04:47,541
+00:05:09,137 --> 00:05:14,040
 Then write the acceptance criteria section, for real, for a feature you actually
 
 88
-00:04:47,541 --> 00:04:48,584
+00:05:14,040 --> 00:05:15,205
 have some stake in.
 
 89
-00:04:48,584 --> 00:04:49,352
+00:05:15,205 --> 00:05:16,063
 Rough is fine.
 
 90
-00:04:49,352 --> 00:04:51,383
+00:05:16,063 --> 00:05:18,331
 Blank is the only wrong answer today.
 
 91
-00:04:51,383 --> 00:04:55,993
+00:05:18,331 --> 00:05:23,479
 Next lecture is the workshop: the full template, filled in end to end, for a feature
 
 92
-00:04:55,993 --> 00:04:57,640
+00:05:23,479 --> 00:05:25,317
 you'll actually use afterward.
 
 93
-00:04:57,640 --> 00:04:59,616
+00:05:25,317 --> 00:05:27,524
 Bring whatever you've written today.
 
 94
-00:04:59,616 --> 00:05:02,689
+00:05:27,524 --> 00:05:30,956
 It's the head start, not homework you redo from scratch.
