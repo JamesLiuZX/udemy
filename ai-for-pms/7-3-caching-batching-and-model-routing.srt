@@ -1,347 +1,347 @@
 1
-00:00:00,350 --> 00:00:04,781
+00:00:00,350 --> 00:00:05,156
 Last lecture ended on a question: which lever actually earns its engineering cost
 
 2
-00:00:04,781 --> 00:00:06,148
+00:00:05,156 --> 00:00:06,639
 for a feature like yours.
 
 3
-00:00:06,148 --> 00:00:10,743
+00:00:06,639 --> 00:00:11,623
 Here are the three real candidates, and the honest answer for each is "it depends on
 
 4
-00:00:10,743 --> 00:00:15,283
+00:00:11,623 --> 00:00:16,548
 your traffic," not "always" or "never." None of these change what the model can do.
 
 5
-00:00:15,283 --> 00:00:19,769
+00:00:16,548 --> 00:00:21,413
 They change what you pay for the same output, and each one only pays off against a
 
 6
-00:00:19,769 --> 00:00:22,832
+00:00:21,413 --> 00:00:24,735
 specific pattern in how your feature actually gets used.
 
 7
-00:00:22,832 --> 00:00:26,442
+00:00:24,735 --> 00:00:28,651
 That distinction is worth holding onto through this whole lecture.
 
 8
-00:00:26,442 --> 00:00:30,162
+00:00:28,651 --> 00:00:32,686
 Every one of these three is invisible to the end user when it works.
 
 9
-00:00:30,162 --> 00:00:34,702
+00:00:32,686 --> 00:00:37,610
 Nobody notices a cache hit, a batched job that finished overnight, or a router that
 
 10
-00:00:34,702 --> 00:00:37,382
+00:00:37,610 --> 00:00:40,517
 quietly sent an easy question to a cheaper model.
 
 11
-00:00:37,382 --> 00:00:40,664
+00:00:40,517 --> 00:00:44,077
 The entire value shows up on an invoice, not in the product.
 
 12
-00:00:41,214 --> 00:00:45,839
+00:00:44,627 --> 00:00:49,583
 Read the right column as a checklist, not a sales pitch, because building any of
 
 13
-00:00:45,839 --> 00:00:50,694
+00:00:49,583 --> 00:00:54,787
 these for traffic that doesn't match the pattern is real engineering time spent on a
 
 14
-00:00:50,694 --> 00:00:52,139
+00:00:54,787 --> 00:00:56,335
 discount nobody collects.
 
 15
-00:00:52,139 --> 00:00:55,377
+00:00:56,335 --> 00:00:59,805
 Caching is the direct fix for something you already met.
 
 16
-00:00:55,377 --> 00:01:00,232
+00:00:59,805 --> 00:01:05,008
 Remember 7.1's resent-history table: the same system prompt and growing conversation
 
 17
-00:01:00,232 --> 00:01:03,527
+00:01:05,008 --> 00:01:08,539
 history gets billed again, in full, on every single turn.
 
 18
-00:01:03,527 --> 00:01:08,383
+00:01:08,539 --> 00:01:13,743
 Most providers now discount tokens that repeat exactly from the previous call, often
 
 19
-00:01:08,383 --> 00:01:08,846
+00:01:13,743 --> 00:01:14,238
 steeply.
 
 20
-00:01:08,846 --> 00:01:13,586
+00:01:14,238 --> 00:01:19,318
 That discount applies specifically to the resent-history problem, not to genuinely
 
 21
-00:01:13,586 --> 00:01:18,268
+00:01:19,318 --> 00:01:24,336
 new content, which is why caching helps a long conversation far more than a short
 
 22
-00:01:18,268 --> 00:01:18,499
+00:01:24,336 --> 00:01:24,584
 one.
 
 23
-00:01:18,499 --> 00:01:22,546
+00:01:24,584 --> 00:01:28,920
 Apply it to last lecture's own numbers and the shape becomes concrete.
 
 24
-00:01:22,546 --> 00:01:27,055
+00:01:28,920 --> 00:01:33,752
 Most of that eight thousand input tokens per conversation is system prompt and
 
 25
-00:01:27,055 --> 00:01:30,465
+00:01:33,752 --> 00:01:37,407
 resent history, the exact content a cache discount targets.
 
 26
-00:01:30,465 --> 00:01:33,934
+00:01:37,407 --> 00:01:41,124
 Only the newest turn's message is genuinely fresh each time.
 
 27
-00:01:33,934 --> 00:01:38,674
+00:01:41,124 --> 00:01:46,204
 Cache the repeated portion and the input side of that conversation's cost drops by
 
 28
-00:01:38,674 --> 00:01:43,530
+00:01:46,204 --> 00:01:51,407
 roughly a third, without touching a single word of what the feature actually says to
 
 29
-00:01:43,530 --> 00:01:44,050
+00:01:51,407 --> 00:01:51,965
 the user.
 
 30
-00:01:44,600 --> 00:01:49,444
+00:01:52,515 --> 00:01:57,773
 Same technique, same discount, and the verdict flips entirely based on one question:
 
 31
-00:01:49,444 --> 00:01:52,557
+00:01:57,773 --> 00:02:01,153
 is anyone actually waiting on this response right now.
 
 32
-00:01:52,557 --> 00:01:56,997
+00:02:01,153 --> 00:02:05,973
 That single question sorts most of a feature's traffic faster than any deeper
 
 33
-00:01:56,997 --> 00:01:57,516
+00:02:05,973 --> 00:02:06,536
 analysis.
 
 34
-00:01:57,516 --> 00:02:02,014
+00:02:06,536 --> 00:02:11,418
 A support chat, a live drafting tool, anything with a person watching a cursor
 
 35
-00:02:02,014 --> 00:02:06,685
+00:02:11,418 --> 00:02:16,489
 blink, rules out batching immediately, whatever the discount looks like on paper.
 
 36
-00:02:06,685 --> 00:02:11,355
+00:02:16,489 --> 00:02:21,559
 A weekly digest, a bulk re-summarisation job, anything nobody's refreshing a page
 
 37
-00:02:11,355 --> 00:02:13,892
+00:02:21,559 --> 00:02:24,313
 for, is exactly what batching was built for.
 
 38
-00:02:13,892 --> 00:02:18,390
+00:02:24,313 --> 00:02:29,196
 Model routing has its own version of this question: does your query difficulty
 
 39
-00:02:18,390 --> 00:02:19,197
+00:02:29,196 --> 00:02:30,072
 actually vary?
 
 40
-00:02:19,197 --> 00:02:24,041
+00:02:30,072 --> 00:02:35,330
 It only pays off if it does, and if you can detect that cheaply before committing to
 
 41
-00:02:24,041 --> 00:02:25,194
+00:02:35,330 --> 00:02:36,582
 the expensive model.
 
 42
-00:02:25,194 --> 00:02:30,038
+00:02:36,582 --> 00:02:41,840
 A feature where every query needs your strongest model's reasoning gets nothing from
 
 43
-00:02:30,038 --> 00:02:34,766
+00:02:41,840 --> 00:02:46,973
 routing except the cost of maintaining a router that always picks the same answer.
 
 44
-00:02:34,766 --> 00:02:39,264
+00:02:46,973 --> 00:02:51,855
 The trap with routing specifically is that the classifier deciding "easy" from
 
 45
-00:02:39,264 --> 00:02:44,050
+00:02:51,855 --> 00:02:57,051
 "hard" is itself a model call, and a badly built one can misroute expensive queries
 
 46
-00:02:44,050 --> 00:02:48,202
+00:02:57,051 --> 00:03:01,557
 to the cheap model and quietly tank quality right where it matters most.
 
 47
-00:02:48,202 --> 00:02:52,699
+00:03:01,557 --> 00:03:06,440
 Section four's whole discipline applies here directly: you need an eval on the
 
 48
-00:02:52,699 --> 00:02:57,370
+00:03:06,440 --> 00:03:11,510
 routing decision itself, not just on the two models it's choosing between, or you
 
 49
-00:02:57,370 --> 00:03:00,657
+00:03:11,510 --> 00:03:15,078
 won't know it's wrong until a user notices before you do.
 
 50
-00:03:01,207 --> 00:03:05,890
+00:03:15,628 --> 00:03:20,630
 Say the honest caveat, because it's tempting to greenlight all three at once, since
 
 51
-00:03:05,890 --> 00:03:08,035
+00:03:20,630 --> 00:03:22,921
 each one has a clean story on its own.
 
 52
-00:03:08,035 --> 00:03:12,662
+00:03:22,921 --> 00:03:27,863
 A cache that's rarely hit, a batch queue processing requests nobody was willing to
 
 53
-00:03:12,662 --> 00:03:17,345
+00:03:27,863 --> 00:03:32,865
 wait for, and a router constantly sending traffic to the expensive model anyway are
 
 54
-00:03:17,345 --> 00:03:21,013
+00:03:32,865 --> 00:03:36,783
 three real maintenance burdens for close to zero combined saving.
 
 55
-00:03:21,013 --> 00:03:25,640
+00:03:36,783 --> 00:03:41,725
 Pick the lever that matches a pattern you can actually point to in your own usage,
 
 56
-00:03:25,640 --> 00:03:30,324
+00:03:41,725 --> 00:03:46,727
 build that one properly, and leave the other two for the traffic pattern that would
 
 57
-00:03:30,324 --> 00:03:31,058
+00:03:46,727 --> 00:03:47,511
 justify them.
 
 58
-00:03:31,058 --> 00:03:35,685
+00:03:47,511 --> 00:03:52,453
 This is the same instinct as 6.4's guardrails lecture, aimed at engineering effort
 
 59
-00:03:35,685 --> 00:03:36,588
+00:03:52,453 --> 00:03:53,417
 instead of risk.
 
 60
-00:03:36,588 --> 00:03:41,271
+00:03:53,417 --> 00:03:58,419
 Spend the budget where the pattern is real, not evenly across every option that has
 
 61
-00:03:41,271 --> 00:03:42,795
+00:03:58,419 --> 00:04:00,047
 a plausible-sounding story.
 
 62
-00:03:42,795 --> 00:03:47,309
+00:04:00,047 --> 00:04:04,868
 A team that ships one well-matched lever this quarter beats one that ships three
 
 63
-00:03:47,309 --> 00:03:49,792
+00:04:04,868 --> 00:04:07,520
 half-built ones nobody finishes maintaining.
 
 64
-00:03:50,342 --> 00:03:54,949
+00:04:08,070 --> 00:04:13,070
 That's the test worth keeping, and it's deliberately more boring than the individual
 
 65
-00:03:54,949 --> 00:03:58,679
+00:04:13,070 --> 00:04:17,118
 techniques, because boring and checkable beats exciting and assumed.
 
 66
-00:03:58,679 --> 00:04:01,147
+00:04:17,118 --> 00:04:19,797
 Run it against real numbers if you have them.
 
 67
-00:04:01,147 --> 00:04:04,109
+00:04:19,797 --> 00:04:23,012
 How often does the exact same context actually repeat.
 
 68
-00:04:04,109 --> 00:04:07,400
+00:04:23,012 --> 00:04:26,583
 How much of your traffic could genuinely wait until tonight.
 
 69
-00:04:07,400 --> 00:04:11,130
+00:04:26,583 --> 00:04:30,631
 How much does query difficulty actually vary, measured, not guessed.
 
 70
-00:04:11,130 --> 00:04:14,586
+00:04:30,631 --> 00:04:34,381
 Each answer points at exactly one lever, usually not all three.
 
 71
-00:04:14,586 --> 00:04:18,974
+00:04:34,381 --> 00:04:39,144
 If you don't have real numbers yet, say so, the same discipline as every guessed
 
 72
-00:04:18,974 --> 00:04:20,235
+00:04:39,144 --> 00:04:40,513
 figure in this section.
 
 73
-00:04:20,235 --> 00:04:24,568
+00:04:40,513 --> 00:04:45,215
 "I expect caching to help based on how the feature is designed" is a legitimate
 
 74
-00:04:24,568 --> 00:04:25,391
+00:04:45,215 --> 00:04:46,108
 starting point.
 
 75
-00:04:25,391 --> 00:04:29,834
+00:04:46,108 --> 00:04:50,930
 Presenting that expectation as a measured saving before anyone's checked is where
 
 76
-00:04:29,834 --> 00:04:34,112
+00:04:50,930 --> 00:04:55,573
 this exercise quietly turns into wishful thinking with a spreadsheet attached.
 
 77
-00:04:34,662 --> 00:04:36,321
+00:04:56,123 --> 00:04:57,917
 One thing before you move on.
 
 78
-00:04:36,321 --> 00:04:41,070
+00:04:57,917 --> 00:05:03,052
 Check the repetition question first, because caching is the lever most features can
 
 79
-00:04:41,070 --> 00:04:45,647
+00:05:03,052 --> 00:05:08,001
 adopt with the least new engineering, and it's the direct answer to the specific
 
 80
-00:04:45,647 --> 00:04:46,848
+00:05:08,001 --> 00:05:09,300
 waste 7.1 identified.
 
 81
-00:04:46,848 --> 00:04:49,423
+00:05:09,300 --> 00:05:12,083
 Then name one lever, not a wishlist of three.
 
 82
-00:04:49,423 --> 00:04:54,229
+00:05:12,083 --> 00:05:17,280
 Say it plainly if the honest answer right now is none of them, because that's a real
 
 83
-00:04:54,229 --> 00:04:58,806
+00:05:17,280 --> 00:05:22,229
 finding too, and a much better one than building a lever nobody's usage actually
 
 84
-00:04:58,806 --> 00:04:59,378
+00:05:22,229 --> 00:05:22,847
 justifies.
 
 85
-00:04:59,378 --> 00:05:03,955
+00:05:22,847 --> 00:05:27,796
 Next lecture goes deeper on the harder version of the routing question: not just
 
 86
-00:05:03,955 --> 00:05:08,647
+00:05:27,796 --> 00:05:32,869
 cheap versus expensive, but which specific model actually earns its price for your
 
 87
-00:05:08,647 --> 00:05:12,480
+00:05:32,869 --> 00:05:37,013
 feature, scored properly instead of guessed from a benchmark table.

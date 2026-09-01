@@ -1,427 +1,427 @@
 1
-00:00:00,350 --> 00:00:04,708
+00:00:00,350 --> 00:00:05,075
 Last lecture gave you the mechanics: what gets billed, and why a long conversation
 
 2
-00:00:04,708 --> 00:00:06,993
+00:00:05,075 --> 00:00:07,553
 costs more per turn than the one before it.
 
 3
-00:00:06,993 --> 00:00:10,447
+00:00:07,553 --> 00:00:11,299
 This lecture turns that into an actual model, the one behind A09.
 
 4
-00:00:10,447 --> 00:00:14,752
+00:00:11,299 --> 00:00:15,967
 Not a spreadsheet trick: the same number, at three different scales, and each one
 
 5
-00:00:14,752 --> 00:00:16,346
+00:00:15,967 --> 00:00:17,696
 tells you something different.
 
 6
-00:00:16,346 --> 00:00:19,110
+00:00:17,696 --> 00:00:20,692
 You don't need a finance background for any of this.
 
 7
-00:00:19,110 --> 00:00:22,989
+00:00:20,692 --> 00:00:24,899
 Every step is multiplication, and the hard part was never the arithmetic.
 
 8
-00:00:22,989 --> 00:00:27,294
+00:00:24,899 --> 00:00:29,567
 It's knowing which number to multiply first, and being honest about which of your
 
 9
-00:00:27,294 --> 00:00:29,845
+00:00:29,567 --> 00:00:32,333
 inputs are measured and which are still a guess.
 
 10
-00:00:29,845 --> 00:00:32,077
+00:00:32,333 --> 00:00:34,753
 It's three multiplications, done in order.
 
 11
-00:00:32,077 --> 00:00:33,671
+00:00:34,753 --> 00:00:36,482
 Tokens to a conversation cost.
 
 12
-00:00:33,671 --> 00:00:36,063
+00:00:36,482 --> 00:00:39,075
 Conversation cost to a monthly cost per user.
 
 13
-00:00:36,063 --> 00:00:38,029
+00:00:39,075 --> 00:00:41,207
 Per-user cost to total monthly spend.
 
 14
-00:00:38,029 --> 00:00:39,889
+00:00:41,207 --> 00:00:43,224
 Each step looks trivial on its own.
 
 15
-00:00:39,889 --> 00:00:44,194
+00:00:43,224 --> 00:00:47,892
 The gap between what step one feels like and what step three actually says is the
 
 16
-00:00:44,194 --> 00:00:47,648
+00:00:47,892 --> 00:00:51,637
 entire point of building this properly instead of guessing at it.
 
 17
-00:00:47,648 --> 00:00:51,793
+00:00:51,637 --> 00:00:56,132
 Most teams stop at the first multiplication, because it's the one that happens
 
 18
-00:00:51,793 --> 00:00:54,079
+00:00:56,132 --> 00:00:58,610
 naturally while you're testing the feature.
 
 19
-00:00:54,079 --> 00:00:58,543
+00:00:58,610 --> 00:01:03,451
 You run a conversation, you check what it cost, you feel reassured, and you move on.
 
 20
-00:00:58,543 --> 00:01:02,794
+00:01:03,451 --> 00:01:08,061
 The other two multiplications only happen if someone deliberately does them, and
 
 21
-00:01:02,794 --> 00:01:06,621
+00:01:08,061 --> 00:01:12,210
 they're the ones that actually matter to anyone signing off on a budget.
 
 22
-00:01:07,171 --> 00:01:11,734
+00:01:12,760 --> 00:01:17,754
 Walk down that table the way you'd walk into the actual budget conversation, because
 
 23
-00:01:11,734 --> 00:01:15,917
+00:01:17,754 --> 00:01:22,332
 each row is the answer to a different question someone in that room will ask.
 
 24
-00:01:15,917 --> 00:01:20,480
+00:01:22,332 --> 00:01:27,326
 The first row answers "does this feature work economically at all," and four cents a
 
 25
-00:01:20,480 --> 00:01:22,273
+00:01:27,326 --> 00:01:29,288
 conversation usually sounds fine.
 
 26
-00:01:22,273 --> 00:01:26,782
+00:01:29,288 --> 00:01:34,222
 The second row answers "is this a rounding error for one user," and seventeen cents
 
 27
-00:01:26,782 --> 00:01:28,629
+00:01:34,222 --> 00:01:36,243
 a month usually still sounds fine.
 
 28
-00:01:28,629 --> 00:01:32,812
+00:01:36,243 --> 00:01:40,821
 The third row answers the question that actually matters, what this costs the
 
 29
-00:01:32,812 --> 00:01:37,157
+00:01:40,821 --> 00:01:45,577
 company, and eight thousand four hundred dollars a month is the number that gets
 
 30
-00:01:37,157 --> 00:01:39,982
+00:01:45,577 --> 00:01:48,669
 someone's attention in a way the first two never do.
 
 31
-00:01:39,982 --> 00:01:41,123
+00:01:48,669 --> 00:01:49,917
 Same underlying cost.
 
 32
-00:01:41,123 --> 00:01:44,111
+00:01:49,917 --> 00:01:53,187
 Wildly different reaction depending which row you show.
 
 33
-00:01:44,111 --> 00:01:47,859
+00:01:53,187 --> 00:01:57,289
 Each multiplier deserves a second's thought too, not just the totals.
 
 34
-00:01:47,859 --> 00:01:52,368
+00:01:57,289 --> 00:02:02,224
 Four conversations a month is a real behavioural assumption about how often someone
 
 35
-00:01:52,368 --> 00:01:55,845
+00:02:02,224 --> 00:02:06,029
 actually returns to this feature, not an arbitrary round number.
 
 36
-00:01:55,845 --> 00:02:00,354
+00:02:06,029 --> 00:02:10,963
 Fifty thousand active users is wherever your product actually is today, or wherever
 
 37
-00:02:00,354 --> 00:02:03,667
+00:02:10,963 --> 00:02:14,590
 it's realistically headed in the window you're budgeting for.
 
 38
-00:02:03,667 --> 00:02:08,068
+00:02:14,590 --> 00:02:19,405
 Change either input and the bottom row moves by exactly that proportion, which is
 
 39
-00:02:08,068 --> 00:02:12,033
+00:02:19,405 --> 00:02:23,745
 worth demonstrating live in the room if anyone pushes back on the number.
 
 40
-00:02:12,583 --> 00:02:17,062
+00:02:24,295 --> 00:02:29,189
 Notice this is the same discipline Section four spent an entire section building,
 
 41
-00:02:17,062 --> 00:02:19,771
+00:02:29,189 --> 00:02:32,150
 aimed at a cost model instead of a quality score.
 
 42
-00:02:19,771 --> 00:02:22,978
+00:02:32,150 --> 00:02:35,654
 Your golden set already contains real conversation shapes.
 
 43
-00:02:22,978 --> 00:02:27,401
+00:02:35,654 --> 00:02:40,488
 Run token counts against it instead of against the demo you'd show in a meeting.
 
 44
-00:02:27,401 --> 00:02:30,553
+00:02:40,488 --> 00:02:43,932
 What if you don't have a golden set yet for this feature?
 
 45
-00:02:30,553 --> 00:02:34,921
+00:02:43,932 --> 00:02:48,705
 Name that as a real gap, not a reason to fall back on the demo estimate anyway.
 
 46
-00:02:34,921 --> 00:02:39,565
+00:02:48,705 --> 00:02:53,780
 A rough token count from ten genuinely varied real-style conversations, deliberately
 
 47
-00:02:39,565 --> 00:02:43,988
+00:02:53,780 --> 00:02:58,614
 including the longest and messiest ones you can construct, still beats five tidy
 
 48
-00:02:43,988 --> 00:02:46,200
+00:02:58,614 --> 00:03:01,031
 ones assembled to look good in a review.
 
 49
-00:02:46,200 --> 00:02:50,734
+00:03:01,031 --> 00:03:05,985
 This matters because the gap between these two columns compounds through all three
 
 50
-00:02:50,734 --> 00:02:52,448
+00:03:05,985 --> 00:03:07,858
 rows of the table you just saw.
 
 51
-00:02:52,448 --> 00:02:57,092
+00:03:07,858 --> 00:03:12,934
 A demo-estimated token count that's thirty percent low doesn't stay a thirty percent
 
 52
-00:02:57,092 --> 00:02:57,424
+00:03:12,934 --> 00:03:13,296
 error.
 
 53
-00:02:57,424 --> 00:03:01,737
+00:03:13,296 --> 00:03:18,009
 It's thirty percent low at the total-spend row too, and that's the row someone
 
 54
-00:03:01,737 --> 00:03:03,119
+00:03:18,009 --> 00:03:19,519
 actually budgets against.
 
 55
-00:03:03,119 --> 00:03:07,487
+00:03:19,519 --> 00:03:24,293
 There's a second reason the golden set specifically is the right source, beyond
 
 56
-00:03:07,487 --> 00:03:07,929
+00:03:24,293 --> 00:03:24,776
 honesty.
 
 57
-00:03:07,929 --> 00:03:12,574
+00:03:24,776 --> 00:03:29,851
 It's already sorted by difficulty and shape, because Section four made you choose it
 
 58
-00:03:12,574 --> 00:03:15,836
+00:03:29,851 --> 00:03:33,416
 deliberately rather than grab whatever was easiest to find.
 
 59
-00:03:15,836 --> 00:03:20,204
+00:03:33,416 --> 00:03:38,189
 A demo reflects whichever conversation the team happened to rehearse before the
 
 60
-00:03:20,204 --> 00:03:20,646
+00:03:38,189 --> 00:03:38,673
 meeting.
 
 61
-00:03:21,196 --> 00:03:25,900
+00:03:39,223 --> 00:03:44,341
 Say the honest caveat, because it's easy to present this model as more certain than
 
 62
-00:03:25,900 --> 00:03:28,904
+00:03:44,341 --> 00:03:47,609
 it actually is once the token maths looks this clean.
 
 63
-00:03:28,904 --> 00:03:33,664
+00:03:47,609 --> 00:03:52,789
 Four conversations a month and fifty thousand active users are the two numbers doing
 
 64
-00:03:33,664 --> 00:03:37,745
+00:03:52,789 --> 00:03:57,229
 the most work in that table, and before launch, neither one is measured.
 
 65
-00:03:37,745 --> 00:03:42,052
+00:03:57,229 --> 00:04:01,916
 They're informed guesses, and they deserve the same treatment as the guessed
 
 66
-00:03:42,052 --> 00:03:46,472
+00:04:01,916 --> 00:04:06,726
 retrieval targets back in Section five: write them down, label them clearly as
 
 67
-00:03:46,472 --> 00:03:49,986
+00:04:06,726 --> 00:04:10,549
 estimates, and revisit them the moment real usage data exists.
 
 68
-00:03:49,986 --> 00:03:53,330
+00:04:10,549 --> 00:04:14,187
 A model built on honestly-labelled guesses is useful today.
 
 69
-00:03:53,330 --> 00:03:57,920
+00:04:14,187 --> 00:04:19,182
 A model that quietly presents guesses as facts sets up the wrong conversation the
 
 70
-00:03:57,920 --> 00:04:00,187
+00:04:19,182 --> 00:04:21,649
 day real numbers arrive and don't match.
 
 71
-00:04:00,737 --> 00:04:05,185
+00:04:22,199 --> 00:04:27,063
 That's the general move: find the closest real number you already track, rather than
 
 72
-00:04:05,185 --> 00:04:06,614
+00:04:27,063 --> 00:04:28,627
 inventing one from nothing.
 
 73
-00:04:06,614 --> 00:04:11,061
+00:04:28,627 --> 00:04:33,491
 A feature with no real precedent at all is the honest exception, and there the right
 
 74
-00:04:11,061 --> 00:04:14,873
+00:04:33,491 --> 00:04:37,660
 move is a clearly labelled range, a low and a high case, rather than one
 
 75
-00:04:14,873 --> 00:04:18,844
+00:04:37,660 --> 00:04:42,003
 confident-looking number that happens to be a guess wearing better clothes.
 
 76
-00:04:18,844 --> 00:04:21,650
+00:04:42,003 --> 00:04:45,073
 The friction gap in that example is the whole lesson.
 
 77
-00:04:21,650 --> 00:04:24,827
+00:04:45,073 --> 00:04:48,547
 A phone call has a hold queue and a script to fight through.
 
 78
-00:04:24,827 --> 00:04:29,221
+00:04:48,547 --> 00:04:53,354
 A chat window is one click from whatever the user was already doing, so it captures
 
 79
-00:04:29,221 --> 00:04:32,027
+00:04:53,354 --> 00:04:56,423
 complaints a phone line never would have heard about.
 
 80
-00:04:32,027 --> 00:04:35,574
+00:04:56,423 --> 00:05:00,303
 Borrow across that kind of gap and you understate real usage badly.
 
 81
-00:04:35,574 --> 00:04:39,863
+00:05:00,303 --> 00:05:04,993
 Note which analogue you used alongside the number itself, so anyone reviewing the
 
 82
-00:04:39,863 --> 00:04:42,139
+00:05:04,993 --> 00:05:07,483
 model can judge whether it's the right one.
 
 83
-00:04:42,689 --> 00:04:47,606
+00:05:08,033 --> 00:05:13,333
 That's the model worth keeping, and the definition's last clause is doing real work:
 
 84
-00:04:47,606 --> 00:04:51,586
+00:05:13,333 --> 00:05:17,623
 every number labelled as measured or estimated, not presented as one
 
 85
-00:04:51,586 --> 00:04:52,874
+00:05:17,623 --> 00:05:19,011
 undifferentiated fact.
 
 86
-00:04:52,874 --> 00:04:55,567
+00:05:19,011 --> 00:05:21,913
 Build it for something real, today if you can.
 
 87
-00:04:55,567 --> 00:05:00,366
+00:05:21,913 --> 00:05:27,086
 Most people find the same thing: the per-conversation number feels irrelevant, the
 
 88
-00:05:00,366 --> 00:05:05,107
+00:05:27,086 --> 00:05:32,197
 per-user number still feels irrelevant, and the total is the one that changes how
 
 89
-00:05:05,107 --> 00:05:07,039
+00:05:32,197 --> 00:05:34,279
 the room talks about the feature.
 
 90
-00:05:07,039 --> 00:05:09,322
+00:05:34,279 --> 00:05:36,739
 Keep the model after you build it, too.
 
 91
-00:05:09,322 --> 00:05:13,770
+00:05:36,739 --> 00:05:41,534
 This isn't a one-time exercise you file away once the launch review is over.
 
 92
-00:05:13,770 --> 00:05:18,453
+00:05:41,534 --> 00:05:46,581
 The moment real usage data exists, the estimated rows get replaced with measured
 
 93
-00:05:18,453 --> 00:05:23,253
+00:05:46,581 --> 00:05:51,754
 ones, and the model becomes something you check against reality on a schedule, the
 
 94
-00:05:23,253 --> 00:05:27,877
+00:05:51,754 --> 00:05:56,738
 same instinct Section five's corpus-drift lecture argued for retrieval quality.
 
 95
-00:05:27,877 --> 00:05:32,793
+00:05:56,738 --> 00:06:02,038
 A cost model built once and never revisited is exactly how a feature quietly becomes
 
 96
-00:05:32,793 --> 00:05:36,949
+00:06:02,038 --> 00:06:06,517
 unprofitable without anyone noticing until the finance review asks why.
 
 97
-00:05:37,499 --> 00:05:39,108
+00:06:07,067 --> 00:06:08,824
 One thing before you move on.
 
 98
-00:05:39,108 --> 00:05:43,769
+00:06:08,824 --> 00:06:13,913
 Download the template and fill in real numbers where you have them, honest estimates
 
 99
-00:05:43,769 --> 00:05:44,657
+00:06:13,913 --> 00:06:14,882
 where you don't.
 
 100
-00:05:44,657 --> 00:05:48,374
+00:06:14,882 --> 00:06:18,941
 The structure matters more than having every input finalised today.
 
 101
-00:05:48,374 --> 00:05:53,035
+00:06:18,941 --> 00:06:24,030
 Label the two usage assumptions specifically: if you're presenting this model before
 
 102
-00:05:53,035 --> 00:05:54,311
+00:06:24,030 --> 00:06:25,423
 launch, say so upfront.
 
 103
-00:05:54,311 --> 00:05:58,639
+00:06:25,423 --> 00:06:30,149
 It's a far stronger position than someone discovering later that a number they
 
 104
-00:05:58,639 --> 00:06:01,524
+00:06:30,149 --> 00:06:33,299
 assumed was measured was actually a guess all along.
 
 105
-00:06:01,524 --> 00:06:06,019
+00:06:33,299 --> 00:06:38,206
 Next lecture looks at the two techniques that actually bring that total-spend row
 
 106
-00:06:06,019 --> 00:06:10,568
+00:06:38,206 --> 00:06:43,174
 down: caching and batching, and which one earns its engineering cost for a feature
 
 107
-00:06:10,568 --> 00:06:11,179
+00:06:43,174 --> 00:06:43,840
 like yours.
