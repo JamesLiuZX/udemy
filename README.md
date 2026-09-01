@@ -2,7 +2,7 @@
 
 This branch holds ONLY rendered course videos + captions (regenerable,
 gitignored on source branches — kept here so they survive ephemeral build
-containers). Built from `main` @ 4fae70c with Kokoro-82M `bf_emma`
+containers). Built from `main` @ 7ad24ea with Kokoro-82M `af_sarah` (American female — James's choice 2026-09-01; the earlier `bf_emma` renders remain in this branch's git history)
 (production voice per docs/07-tts.md), pushed section-by-section as each
 finished rendering.
 

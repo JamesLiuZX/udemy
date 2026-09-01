@@ -1,467 +1,467 @@
 1
-00:00:00,350 --> 00:00:03,622
+00:00:00,350 --> 00:00:03,836
 This one is hands-on, and it only works if you actually do it.
 
 2
-00:00:03,622 --> 00:00:05,680
+00:00:03,836 --> 00:00:06,029
 I'm going to show you a real AI output.
 
 3
-00:00:05,680 --> 00:00:06,999
+00:00:06,029 --> 00:00:07,435
 You're going to score it.
 
 4
-00:00:06,999 --> 00:00:11,379
+00:00:07,435 --> 00:00:12,102
 Then I'll show you how other people scored the same thing, and we'll talk about why
 
 5
-00:00:11,379 --> 00:00:13,331
+00:00:12,102 --> 00:00:14,182
 that result is a problem you now own.
 
 6
-00:00:13,331 --> 00:00:16,286
+00:00:14,182 --> 00:00:17,331
 You need nothing but somewhere to write a single number.
 
 7
-00:00:16,836 --> 00:00:17,846
+00:00:17,881 --> 00:00:18,961
 Here's the ticket.
 
 8
-00:00:17,846 --> 00:00:20,540
+00:00:18,961 --> 00:00:21,841
 A customer was charged twice for an annual plan.
 
 9
-00:00:20,540 --> 00:00:23,009
+00:00:21,841 --> 00:00:24,481
 They've already gone to their bank about it.
 
 10
-00:00:23,009 --> 00:00:27,610
+00:00:24,481 --> 00:00:29,401
 There's a deadline, April the first, and a consequence if it's missed: the account
 
 11
-00:00:27,610 --> 00:00:28,172
+00:00:29,401 --> 00:00:30,001
 overdraws.
 
 12
-00:00:28,172 --> 00:00:32,829
+00:00:30,001 --> 00:00:34,981
 And they've offered a probable cause, which is that their account email and billing
 
 13
-00:00:32,829 --> 00:00:33,839
+00:00:34,981 --> 00:00:36,061
 email don't match.
 
 14
-00:00:33,839 --> 00:00:35,242
+00:00:36,061 --> 00:00:37,561
 Here's what the AI wrote.
 
 15
-00:00:35,242 --> 00:00:36,309
+00:00:37,561 --> 00:00:38,701
 Read both properly.
 
 16
-00:00:36,309 --> 00:00:36,870
+00:00:38,701 --> 00:00:39,301
 I'll wait.
 
 17
-00:00:36,870 --> 00:00:39,114
+00:00:39,301 --> 00:00:41,701
 Now score that summary from one to five.
 
 18
-00:00:39,114 --> 00:00:40,124
+00:00:41,701 --> 00:00:42,781
 One means useless.
 
 19
-00:00:40,124 --> 00:00:44,502
+00:00:42,781 --> 00:00:47,461
 Five means you'd be happy for a support agent to act on it without opening the
 
 20
-00:00:44,502 --> 00:00:45,399
+00:00:47,461 --> 00:00:48,421
 original ticket.
 
 21
-00:00:45,399 --> 00:00:46,297
+00:00:48,421 --> 00:00:49,381
 Pause the video.
 
 22
-00:00:46,297 --> 00:00:47,364
+00:00:49,381 --> 00:00:50,521
 Commit to a number.
 
 23
-00:00:47,364 --> 00:00:49,833
+00:00:50,521 --> 00:00:53,161
 Say it out loud if you're somewhere you can.
 
 24
-00:00:50,383 --> 00:00:54,591
+00:00:53,711 --> 00:00:58,143
 Here's what happened when five experienced people scored that exact summary.
 
 25
-00:00:54,591 --> 00:00:56,252
+00:00:58,143 --> 00:00:59,892
 Two, three, three, four, five.
 
 26
-00:00:56,252 --> 00:00:56,806
+00:00:59,892 --> 00:01:00,475
 Same text.
 
 27
-00:00:56,806 --> 00:00:57,581
+00:01:00,475 --> 00:01:01,292
 Same question.
 
 28
-00:00:57,581 --> 00:00:59,962
+00:01:01,292 --> 00:01:03,799
 A three-point spread on a five-point scale.
 
 29
-00:00:59,962 --> 00:01:03,008
+00:01:03,799 --> 00:01:07,007
 And every one of those people could defend their score.
 
 30
-00:01:03,008 --> 00:01:07,659
+00:01:07,007 --> 00:01:11,905
 The person who gave it a two noticed the April first deadline had vanished, and that
 
 31
-00:01:07,659 --> 00:01:10,483
+00:01:11,905 --> 00:01:14,879
 deadline is the entire reason the ticket is urgent.
 
 32
-00:01:10,483 --> 00:01:14,857
+00:01:14,879 --> 00:01:19,486
 The person who gave it a five was reading it as a triage summary, where "double
 
 33
-00:01:14,857 --> 00:01:17,515
+00:01:19,486 --> 00:01:22,285
 charge, wants refund" is genuinely all you need.
 
 34
-00:01:17,515 --> 00:01:19,896
+00:01:22,285 --> 00:01:24,793
 They weren't disagreeing about the summary.
 
 35
-00:01:19,896 --> 00:01:24,105
+00:01:24,793 --> 00:01:29,225
 They were disagreeing about what the summary was *for*, and nobody had said.
 
 36
-00:01:24,655 --> 00:01:26,619
+00:01:29,775 --> 00:01:31,850
 Now sit with the uncomfortable part.
 
 37
-00:01:26,619 --> 00:01:28,801
+00:01:31,850 --> 00:01:34,156
 Your number is somewhere in that spread.
 
 38
-00:01:28,801 --> 00:01:33,001
+00:01:34,156 --> 00:01:38,595
 Not because you judged badly, but because there was nothing to judge against.
 
 39
-00:01:33,001 --> 00:01:36,329
+00:01:38,595 --> 00:01:42,112
 This is exactly what happens in your organisation every week.
 
 40
-00:01:36,329 --> 00:01:37,856
+00:01:42,112 --> 00:01:43,726
 Someone demos an AI feature.
 
 41
-00:01:37,856 --> 00:01:38,565
+00:01:43,726 --> 00:01:44,476
 People react.
 
 42
-00:01:38,565 --> 00:01:40,311
+00:01:44,476 --> 00:01:46,321
 Some are impressed, some aren't.
 
 43
-00:01:40,311 --> 00:01:44,129
+00:01:46,321 --> 00:01:50,356
 That reaction gets called a quality bar, and decisions get made on it.
 
 44
-00:01:44,129 --> 00:01:45,166
+00:01:50,356 --> 00:01:51,452
 But it isn't a bar.
 
 45
-00:01:45,166 --> 00:01:49,748
+00:01:51,452 --> 00:01:56,294
 It's five private opinions about five private definitions of good, and whichever one
 
 46
-00:01:49,748 --> 00:01:53,403
+00:01:56,294 --> 00:02:00,157
 belongs to the most senior person in the room becomes the decision.
 
 47
-00:01:53,403 --> 00:01:56,567
+00:02:00,157 --> 00:02:03,501
 Notice what this means for the idea from the last lecture.
 
 48
-00:01:56,567 --> 00:02:01,040
+00:02:03,501 --> 00:02:08,228
 You can't measure a distribution with an instrument that gives a different reading
 
 49
-00:02:01,040 --> 00:02:02,677
+00:02:08,228 --> 00:02:09,958
 depending on who's holding it.
 
 50
-00:02:02,677 --> 00:02:05,950
+00:02:09,958 --> 00:02:13,417
 Before you can measure the model, you have to fix the ruler.
 
 51
-00:02:06,500 --> 00:02:10,821
+00:02:13,967 --> 00:02:18,484
 Now watch what happens when we stop asking "is it good" and start asking six
 
 52
-00:02:10,821 --> 00:02:11,902
+00:02:18,484 --> 00:02:19,613
 specific questions.
 
 53
-00:02:11,902 --> 00:02:13,892
+00:02:19,613 --> 00:02:21,693
 Is the core billing issue captured?
 
 54
-00:02:13,892 --> 00:02:14,119
+00:02:21,693 --> 00:02:21,931
 Yes.
 
 55
-00:02:14,119 --> 00:02:15,768
+00:02:21,931 --> 00:02:23,655
 Is the required action clear?
 
 56
-00:02:15,768 --> 00:02:15,995
+00:02:23,655 --> 00:02:23,892
 Yes.
 
 57
-00:02:15,995 --> 00:02:17,360
+00:02:23,892 --> 00:02:25,319
 Are deadlines preserved?
 
 58
-00:02:17,360 --> 00:02:18,952
+00:02:25,319 --> 00:02:26,983
 No, April the first is gone.
 
 59
-00:02:18,952 --> 00:02:20,601
+00:02:26,983 --> 00:02:28,707
 Is the consequence preserved?
 
 60
-00:02:20,601 --> 00:02:22,079
+00:02:28,707 --> 00:02:30,252
 No, the overdraft is gone.
 
 61
-00:02:22,079 --> 00:02:23,785
+00:02:30,252 --> 00:02:32,035
 Is the diagnostic detail kept?
 
 62
-00:02:23,785 --> 00:02:27,936
+00:02:32,035 --> 00:02:36,374
 No, the mismatched email, which is very likely the actual cause, is gone.
 
 63
-00:02:27,936 --> 00:02:29,244
+00:02:36,374 --> 00:02:37,741
 Did it invent anything?
 
 64
-00:02:29,244 --> 00:02:30,438
+00:02:37,741 --> 00:02:38,989
 No. Three out of six.
 
 65
-00:02:30,438 --> 00:02:35,043
+00:02:38,989 --> 00:02:43,803
 And notice something important: the three it failed are the three that would have
 
 66
-00:02:35,043 --> 00:02:38,171
+00:02:43,803 --> 00:02:47,072
 let an agent resolve this without reopening the ticket.
 
 67
-00:02:38,171 --> 00:02:39,251
+00:02:47,072 --> 00:02:48,201
 Now score it again.
 
 68
-00:02:39,251 --> 00:02:44,027
+00:02:48,201 --> 00:02:53,194
 Almost everyone lands in the same place, because they're answering questions instead
 
 69
-00:02:44,027 --> 00:02:45,107
+00:02:53,194 --> 00:02:54,323
 of having feelings.
 
 70
-00:02:45,657 --> 00:02:49,238
+00:02:54,873 --> 00:02:58,632
 Here's the before and after, and this picture is the whole lecture.
 
 71
-00:02:49,238 --> 00:02:50,948
+00:02:58,632 --> 00:03:00,428
 The top row is where we started.
 
 72
-00:02:50,948 --> 00:02:54,475
+00:03:00,428 --> 00:03:04,131
 Five reviewers, a spread of three points, and no way to settle it.
 
 73
-00:02:54,475 --> 00:02:58,857
+00:03:04,131 --> 00:03:08,731
 The bottom row is the same five people, scoring the same summary, on the same day.
 
 74
-00:02:58,857 --> 00:03:03,132
+00:03:08,731 --> 00:03:13,220
 The only thing that changed is that six questions got written down before anyone
 
 75
-00:03:03,132 --> 00:03:03,506
+00:03:13,220 --> 00:03:13,613
 looked.
 
 76
-00:03:03,506 --> 00:03:05,964
+00:03:13,613 --> 00:03:16,193
 The spread collapses from three points to one.
 
 77
-00:03:05,964 --> 00:03:10,239
+00:03:16,193 --> 00:03:20,682
 That collapse is the entire trick, and I want to be precise about what it isn't.
 
 78
-00:03:10,239 --> 00:03:14,407
+00:03:20,682 --> 00:03:25,058
 The rubric didn't make anybody smarter, and it didn't make the summary better.
 
 79
-00:03:14,407 --> 00:03:16,705
+00:03:25,058 --> 00:03:27,471
 The summary is exactly as flawed as it was.
 
 80
-00:03:16,705 --> 00:03:21,087
+00:03:27,471 --> 00:03:32,071
 What changed is that the disagreement moved out of people's heads and onto a page,
 
 81
-00:03:21,087 --> 00:03:22,477
+00:03:32,071 --> 00:03:33,530
 where it can be discussed.
 
 82
-00:03:22,477 --> 00:03:25,843
+00:03:33,530 --> 00:03:37,065
 And that's the difference between a quality bar and an opinion.
 
 83
-00:03:26,393 --> 00:03:30,251
+00:03:37,615 --> 00:03:41,692
 Let's name what you just did, because it's more significant than it felt.
 
 84
-00:03:30,251 --> 00:03:34,532
+00:03:41,692 --> 00:03:46,215
 You took an unanswerable question, is this good, and swapped it for six questions
 
 85
-00:03:34,532 --> 00:03:35,854
+00:03:46,215 --> 00:03:47,611
 that each have an answer.
 
 86
-00:03:35,854 --> 00:03:38,338
+00:03:47,611 --> 00:03:50,236
 The box on screen gives you the formal version.
 
 87
-00:03:38,338 --> 00:03:40,822
+00:03:50,236 --> 00:03:52,861
 What I want you to notice is the word *before*.
 
 88
-00:03:40,822 --> 00:03:42,883
+00:03:52,861 --> 00:03:55,039
 That word is doing almost all the work.
 
 89
-00:03:42,883 --> 00:03:47,270
+00:03:55,039 --> 00:03:59,675
 Write your questions after you've seen the output and you will, without meaning to,
 
 90
-00:03:47,270 --> 00:03:49,120
+00:03:59,675 --> 00:04:01,629
 write questions it happens to pass.
 
 91
-00:03:49,120 --> 00:03:50,229
+00:04:01,629 --> 00:04:02,802
 Every team does this.
 
 92
-00:03:50,229 --> 00:03:54,510
+00:04:02,802 --> 00:04:07,326
 It's why so many quality bars are quietly set by the thing they're supposed to be
 
 93
-00:03:54,510 --> 00:03:54,933
+00:04:07,326 --> 00:04:07,773
 judging.
 
 94
-00:03:54,933 --> 00:03:59,214
+00:04:07,773 --> 00:04:12,296
 On the number: fewer than four and you'll miss the failure that actually matters.
 
 95
-00:03:59,214 --> 00:04:03,548
+00:04:12,296 --> 00:04:16,876
 More than eight and your reviewers stop reading carefully and start ticking boxes.
 
 96
-00:04:03,548 --> 00:04:06,191
+00:04:16,876 --> 00:04:19,668
 Six is about the number people genuinely complete.
 
 97
-00:04:06,191 --> 00:04:08,939
+00:04:19,668 --> 00:04:22,572
 And a rubric is the atom of everything that follows.
 
 98
-00:04:08,939 --> 00:04:12,586
+00:04:22,572 --> 00:04:26,426
 Run it across fifty tickets instead of one and you have a golden set.
 
 99
-00:04:12,586 --> 00:04:16,867
+00:04:26,426 --> 00:04:30,950
 Turn "three out of six" into a pass rate across those fifty and you have an eval.
 
 100
-00:04:16,867 --> 00:04:21,200
+00:04:30,950 --> 00:04:35,529
 Put a threshold on that pass rate and you have an acceptance criterion you can put
 
 101
-00:04:21,200 --> 00:04:21,729
+00:04:35,529 --> 00:04:36,088
 in a spec.
 
 102
-00:04:21,729 --> 00:04:25,799
+00:04:36,088 --> 00:04:40,388
 That's Sections 3 and 4, and you've just done the first version of it in five
 
 103
-00:04:25,799 --> 00:04:26,221
+00:04:40,388 --> 00:04:40,835
 minutes.
 
 104
-00:04:26,771 --> 00:04:31,310
+00:04:41,385 --> 00:04:46,171
 One thing before you move on, and it's the five-minute version of what you just did.
 
 105
-00:04:31,310 --> 00:04:33,904
+00:04:46,171 --> 00:04:48,906
 The rubric template is attached to this lecture.
 
 106
-00:04:33,904 --> 00:04:38,442
+00:04:48,906 --> 00:04:53,692
 Download it now, while you're thinking about it, and open it against something real:
 
 107
-00:04:38,442 --> 00:04:42,819
+00:04:53,692 --> 00:04:58,307
 a summary, a draft, a classification, a suggested reply, anything AI-generated at
 
 108
-00:04:42,819 --> 00:04:43,359
+00:04:58,307 --> 00:04:58,877
 your work.
 
 109
-00:04:43,359 --> 00:04:45,358
+00:04:58,877 --> 00:05:00,985
 Write six pass-fail questions for it.
 
 110
-00:04:45,358 --> 00:04:46,331
+00:05:00,985 --> 00:05:02,011
 Not five, not ten.
 
 111
-00:04:46,331 --> 00:04:49,627
+00:05:02,011 --> 00:05:05,487
 Six is enough to be useful and few enough that you'll finish.
 
 112
-00:04:49,627 --> 00:04:53,841
+00:05:05,487 --> 00:05:09,931
 You'll find at least one thing you care about that the current output silently
 
 113
-00:04:53,841 --> 00:04:54,166
+00:05:09,931 --> 00:05:10,273
 drops.
 
 114
-00:04:54,166 --> 00:04:58,488
+00:05:10,273 --> 00:05:14,831
 That finding is worth more than the rest of this section, and you got it in five
 
 115
-00:04:58,488 --> 00:04:58,921
+00:05:14,831 --> 00:05:15,287
 minutes.
 
 116
-00:04:58,921 --> 00:05:03,297
+00:05:15,287 --> 00:05:19,902
 Next up, we go properly under the hood: just enough of how these models work that
 
 117
-00:05:03,297 --> 00:05:05,891
+00:05:19,902 --> 00:05:22,637
 you can make good calls, and not one slide more.
