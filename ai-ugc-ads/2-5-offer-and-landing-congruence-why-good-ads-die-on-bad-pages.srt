@@ -1,351 +1,351 @@
 1
-00:00:00,350 --> 00:00:04,302
+00:00:00,350 --> 00:00:04,689
 Sam did something nobody on the team had done in weeks: he clicked Harlan's
 
 2
-00:00:04,302 --> 00:00:08,518
+00:00:04,689 --> 00:00:09,318
 best-performing ad on his own phone, the way a stranger scrolling past it would.
 
 3
-00:00:08,518 --> 00:00:12,787
+00:00:09,318 --> 00:00:14,004
 The ad read "it's hour eight and your feet finally aren't screaming." The page it
 
 4
-00:00:12,787 --> 00:00:17,003
+00:00:14,004 --> 00:00:18,633
 opened on read "quality socks for everyone." Nothing about the click was broken.
 
 5
-00:00:17,003 --> 00:00:19,638
+00:00:18,633 --> 00:00:21,526
 It just didn't feel like the same promise anymore.
 
 6
-00:00:19,638 --> 00:00:24,064
+00:00:21,526 --> 00:00:26,386
 One more document before the workshop, and it's the one people skip because it isn't
 
 7
-00:00:24,064 --> 00:00:25,382
+00:00:26,386 --> 00:00:27,832
 technically an ad at all.
 
 8
-00:00:25,382 --> 00:00:29,545
+00:00:27,832 --> 00:00:32,403
 You can build a perfect product truth document, a sharp hook matrix, and twenty
 
 9
-00:00:29,545 --> 00:00:33,866
+00:00:32,403 --> 00:00:37,148
 genuinely distinct angles, and still watch a real winner lose, because the page it
 
 10
-00:00:33,866 --> 00:00:36,238
+00:00:37,148 --> 00:00:39,751
 lands on breaks the promise the ad just made.
 
 11
-00:00:36,238 --> 00:00:40,612
+00:00:39,751 --> 00:00:44,553
 That gap has a name, and it's worth understanding before Section seven's test tells
 
 12
-00:00:40,612 --> 00:00:43,405
+00:00:44,553 --> 00:00:47,620
 you an angle failed when the angle was actually fine.
 
 13
-00:00:43,405 --> 00:00:47,674
+00:00:47,620 --> 00:00:52,306
 It's called congruence: whether the page keeps talking about the exact thing that
 
 14
-00:00:47,674 --> 00:00:48,675
+00:00:52,306 --> 00:00:53,406
 made someone click.
 
 15
-00:00:48,675 --> 00:00:52,100
+00:00:53,406 --> 00:00:57,166
 It's the part of the funnel that belongs to nobody in particular.
 
 16
-00:00:52,100 --> 00:00:56,527
+00:00:57,166 --> 00:01:02,026
 The person writing the ad usually isn't the person who owns the landing page, so the
 
 17
-00:00:56,527 --> 00:01:00,954
+00:01:02,026 --> 00:01:06,886
 seam between them is exactly where things quietly fall apart without anyone deciding
 
 18
-00:01:00,954 --> 00:01:01,586
+00:01:06,886 --> 00:01:07,581
 they should.
 
 19
-00:01:02,136 --> 00:01:04,886
+00:01:08,131 --> 00:01:11,115
 Here's the gap, made concrete with one real click.
 
 20
-00:01:04,886 --> 00:01:09,287
+00:01:11,115 --> 00:01:15,891
 Someone stops scrolling because "hour eight" named something they actually feel.
 
 21
-00:01:09,287 --> 00:01:12,477
+00:01:15,891 --> 00:01:19,354
 They click, expecting the page to keep talking about that.
 
 22
-00:01:12,477 --> 00:01:17,097
+00:01:19,354 --> 00:01:24,368
 Instead they land on a homepage that's technically about the same product but speaks
 
 23
-00:01:17,097 --> 00:01:19,352
+00:01:24,368 --> 00:01:26,816
 a completely different, generic language.
 
 24
-00:01:19,352 --> 00:01:23,973
+00:01:26,816 --> 00:01:31,830
 That half-second of "wait, is this the right place" is where a winning angle quietly
 
 25
-00:01:23,973 --> 00:01:28,373
+00:01:31,830 --> 00:01:36,606
 becomes a losing ad, and nothing about the creative itself was ever the problem.
 
 26
-00:01:28,373 --> 00:01:32,114
+00:01:36,606 --> 00:01:40,665
 This is easy to underestimate because nothing about it looks broken.
 
 27
-00:01:32,114 --> 00:01:35,909
+00:01:40,665 --> 00:01:44,784
 The page loads fine, the product's right there, the price is correct.
 
 28
-00:01:35,909 --> 00:01:40,144
+00:01:44,784 --> 00:01:49,381
 The failure is entirely about continuity of feeling, and that kind of failure
 
 29
-00:01:40,144 --> 00:01:41,409
+00:01:49,381 --> 00:01:50,754
 doesn't throw an error.
 
 30
-00:01:41,409 --> 00:01:45,920
+00:01:50,754 --> 00:01:55,649
 It just quietly loses the sale and leaves a number in a report that looks like the
 
 31
-00:01:45,920 --> 00:01:46,525
+00:01:55,649 --> 00:01:56,306
 ad's fault.
 
 32
-00:01:46,525 --> 00:01:50,870
+00:01:56,306 --> 00:02:01,022
 That's exactly the report Sam almost acted on before he clicked the ad himself.
 
 33
-00:01:50,870 --> 00:01:53,290
+00:02:01,022 --> 00:02:03,648
 The dashboard said the angle underperformed.
 
 34
-00:01:53,290 --> 00:01:57,911
+00:02:03,648 --> 00:02:08,663
 It never said why, and "why" turned out to have nothing to do with the angle at all.
 
 35
-00:01:58,461 --> 00:02:02,787
+00:02:09,213 --> 00:02:13,930
 Four things actually have to carry through, and none of them require a rebuild of
 
 36
-00:02:02,787 --> 00:02:03,589
+00:02:13,930 --> 00:02:14,803
 the whole site.
 
 37
-00:02:03,589 --> 00:02:07,862
+00:02:14,803 --> 00:02:19,462
 The headline should echo the ad's language closely enough that a visitor doesn't
 
 38
-00:02:07,862 --> 00:02:10,640
+00:02:19,462 --> 00:02:22,490
 have to re-read to check they're in the right place.
 
 39
-00:02:10,640 --> 00:02:15,073
+00:02:22,490 --> 00:02:27,324
 The hero image should continue the visual promise, not switch to something generic.
 
 40
-00:02:15,073 --> 00:02:19,453
+00:02:27,324 --> 00:02:32,099
 The offer and price need to match exactly, because any gap there reads as bait and
 
 41
-00:02:19,453 --> 00:02:21,590
+00:02:32,099 --> 00:02:34,429
 switch even when it's an honest mistake.
 
 42
-00:02:21,590 --> 00:02:25,970
+00:02:34,429 --> 00:02:39,204
 And whatever proof point earned the click, the spec, the review, the number, needs
 
 43
-00:02:25,970 --> 00:02:28,961
+00:02:39,204 --> 00:02:42,465
 to actually appear on the page, not just live in the ad.
 
 44
-00:02:29,511 --> 00:02:33,010
+00:02:43,015 --> 00:02:46,837
 One honest limit, because this isn't always a five-minute fix.
 
 45
-00:02:33,010 --> 00:02:37,751
+00:02:46,837 --> 00:02:52,014
 Sometimes the real problem is a landing page that belongs to someone else, built for
 
 46
-00:02:37,751 --> 00:02:42,265
+00:02:52,014 --> 00:02:56,945
 a different purpose, that nobody has the time or authority to rebuild before the
 
 47
-00:02:42,265 --> 00:02:43,281
+00:02:56,945 --> 00:02:58,054
 test needs to run.
 
 48
-00:02:43,281 --> 00:02:45,143
+00:02:58,054 --> 00:03:00,088
 When that's true, say so plainly.
 
 49
-00:02:45,143 --> 00:02:49,827
+00:03:00,088 --> 00:03:05,204
 Blaming the ad, or worse, killing a genuinely good angle because the page undersold
 
 50
-00:02:49,827 --> 00:02:54,568
+00:03:05,204 --> 00:03:10,381
 it, is a worse outcome than admitting the fix is a page problem you can't solve this
 
 51
-00:02:54,568 --> 00:02:54,850
+00:03:10,381 --> 00:03:10,689
 week.
 
 52
-00:02:54,850 --> 00:02:59,365
+00:03:10,689 --> 00:03:15,620
 There's a smaller version of this fix that's almost always available even when a
 
 53
-00:02:59,365 --> 00:03:04,105
+00:03:15,620 --> 00:03:20,797
 full rebuild isn't: a dedicated section, or even a single line, that speaks the ad's
 
 54
-00:03:04,105 --> 00:03:07,773
+00:03:20,797 --> 00:03:24,803
 exact language, added above whatever generic page already exists.
 
 55
-00:03:07,773 --> 00:03:10,539
+00:03:24,803 --> 00:03:27,823
 It's not elegant, and it's not the real solution.
 
 56
-00:03:10,539 --> 00:03:14,828
+00:03:27,823 --> 00:03:32,507
 It's often enough to close the worst of the gap without waiting on a project
 
 57
-00:03:14,828 --> 00:03:16,126
+00:03:32,507 --> 00:03:33,925
 nobody's scheduled yet.
 
 58
-00:03:16,126 --> 00:03:20,697
+00:03:33,925 --> 00:03:38,917
 That's the version Sam actually shipped after his own phone test: one new line at
 
 59
-00:03:20,697 --> 00:03:25,211
+00:03:38,917 --> 00:03:43,848
 the top of the homepage, echoing "hour eight" word for word, nothing else on the
 
 60
-00:03:25,211 --> 00:03:25,945
+00:03:43,848 --> 00:03:44,649
 page touched.
 
 61
-00:03:25,945 --> 00:03:28,315
+00:03:44,649 --> 00:03:47,238
 It cost him twenty minutes, not a rebuild.
 
 62
-00:03:28,865 --> 00:03:33,022
+00:03:47,788 --> 00:03:52,287
 Here's why this lecture earns its place before the workshop rather than after it.
 
 63
-00:03:33,022 --> 00:03:37,281
+00:03:52,287 --> 00:03:56,897
 When Section eight teaches you to read a result honestly, "winner, loser, or noise"
 
 64
-00:03:37,281 --> 00:03:40,155
+00:03:56,897 --> 00:04:00,007
 assumes the ad and the page were telling the same story.
 
 65
-00:03:40,155 --> 00:03:44,003
+00:04:00,007 --> 00:04:04,173
 If they weren't, a loss might be telling you about the page, not the angle.
 
 66
-00:03:44,003 --> 00:03:48,160
+00:04:04,173 --> 00:04:08,672
 Before you retire an angle for good, it's worth asking one question first: did it
 
 67
-00:03:48,160 --> 00:03:52,214
+00:04:08,672 --> 00:04:13,059
 actually get a fair, congruent landing experience, or did it lose to a mismatch
 
 68
-00:03:52,214 --> 00:03:53,189
+00:04:13,059 --> 00:04:14,115
 nobody checked for?
 
 69
-00:03:53,189 --> 00:03:57,499
+00:04:14,115 --> 00:04:18,780
 Add this check to whatever kill rule you build in Section seven, right alongside the
 
 70
-00:03:57,499 --> 00:03:58,321
+00:04:18,780 --> 00:04:19,669
 spend threshold.
 
 71
-00:03:58,321 --> 00:04:02,374
+00:04:19,669 --> 00:04:24,057
 It costs thirty seconds per angle before a test launches, and it's cheaper than
 
 72
-00:04:02,374 --> 00:04:06,480
+00:04:24,057 --> 00:04:28,500
 every one of those thirty seconds spent re-litigating a false negative after the
 
 73
-00:04:06,480 --> 00:04:07,609
+00:04:28,500 --> 00:04:29,722
 spend is already gone.
 
 74
-00:04:07,609 --> 00:04:09,507
+00:04:29,722 --> 00:04:31,777
 Make it a habit rather than a memory.
 
 75
-00:04:09,507 --> 00:04:13,715
+00:04:31,777 --> 00:04:36,331
 A checklist you have to remember to run gets skipped on the one week it would have
 
 76
-00:04:13,715 --> 00:04:17,307
+00:04:36,331 --> 00:04:40,219
 mattered most, which is usually the busiest week, not the calmest one.
 
 77
-00:04:17,857 --> 00:04:21,922
+00:04:40,769 --> 00:04:45,177
 One lecture left in this section, and it's the one where you actually build
 
 78
-00:04:21,922 --> 00:04:22,464
+00:04:45,177 --> 00:04:45,764
 something.
 
 79
-00:04:22,464 --> 00:04:26,854
+00:04:45,764 --> 00:04:50,524
 Everything from the product truth document to this congruence checklist gets used
 
 80
-00:04:26,854 --> 00:04:29,184
+00:04:50,524 --> 00:04:53,051
 for real, on a product you choose yourself.
 
 81
-00:04:29,184 --> 00:04:32,219
+00:04:53,051 --> 00:04:56,342
 Before that, do Sam's five-minute test on your own site.
 
 82
-00:04:32,219 --> 00:04:36,501
+00:04:56,342 --> 00:05:00,984
 Click your top-performing ad from your own phone, the way a stranger would, and
 
 83
-00:04:36,501 --> 00:04:40,295
+00:05:00,984 --> 00:05:05,097
 check whether the headline still finishes the sentence the ad started.
 
 84
-00:04:40,295 --> 00:04:42,679
+00:05:05,097 --> 00:05:07,683
 Fix what doesn't match now, while it's free.
 
 85
-00:04:42,679 --> 00:04:46,852
+00:05:07,683 --> 00:05:12,208
 That fix belongs in the same brief you assemble next lecture as artifact B01.
 
 86
-00:04:46,852 --> 00:04:49,996
+00:05:12,208 --> 00:05:15,616
 If nothing feels clearly broken, don't assume you're done.
 
 87
-00:04:49,996 --> 00:04:54,115
+00:05:15,616 --> 00:05:20,082
 Sam's own mismatch didn't look broken either, right up until he read the two
 
 88
-00:04:54,115 --> 00:04:56,337
+00:05:20,082 --> 00:05:22,491
 sentences back to back on his own screen.

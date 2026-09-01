@@ -1,91 +1,91 @@
 1
-00:00:00,350 --> 00:00:03,715
+00:00:00,350 --> 00:00:04,020
 Remember the page Dana taped above her monitor last lecture.
 
 2
-00:00:03,715 --> 00:00:06,070
+00:00:04,020 --> 00:00:06,589
 Seven lectures ago that page didn't exist.
 
 3
-00:00:06,070 --> 00:00:10,612
+00:00:06,589 --> 00:00:11,544
 This section promised generation quality gets decided before the generator opens.
 
 4
-00:00:10,612 --> 00:00:11,958
+00:00:11,544 --> 00:00:13,012
 Here's the honest tally.
 
 5
-00:00:11,958 --> 00:00:16,388
+00:00:13,012 --> 00:00:17,844
 You've written a product truth document with a claims boundary Dana, or whoever
 
 6
-00:00:16,388 --> 00:00:19,136
+00:00:17,844 --> 00:00:20,841
 you're actually accountable to, can stand behind.
 
 7
-00:00:19,136 --> 00:00:23,453
+00:00:20,841 --> 00:00:25,551
 You've built an awareness ladder and a hook matrix that turn "write something
 
 8
-00:00:23,453 --> 00:00:26,201
+00:00:25,551 --> 00:00:28,548
 persuasive" into a specific, answerable question.
 
 9
-00:00:26,201 --> 00:00:30,631
+00:00:28,548 --> 00:00:33,380
 You've mapped twenty genuinely distinct angles, not twenty reskins of one idea.
 
 10
-00:00:30,631 --> 00:00:35,061
+00:00:33,380 --> 00:00:38,212
 And you've got a congruence checklist that catches the loss Section eight would
 
 11
-00:00:35,061 --> 00:00:37,360
+00:00:38,212 --> 00:00:40,720
 otherwise have blamed on the wrong thing.
 
 12
-00:00:37,360 --> 00:00:41,005
+00:00:40,720 --> 00:00:44,696
 That's B01, assembled and real, for a product you actually chose.
 
 13
-00:00:41,555 --> 00:00:46,036
+00:00:45,246 --> 00:00:50,077
 Section three is where generation finally starts, and it's shorter work than you'd
 
 14
-00:00:46,036 --> 00:00:49,424
+00:00:50,077 --> 00:00:53,729
 expect, because the brief already answered the hard questions.
 
 15
-00:00:49,424 --> 00:00:53,795
+00:00:53,729 --> 00:00:58,442
 You'll batch-generate twenty statics from the angle map, and you'll meet the two
 
 16
-00:00:53,795 --> 00:00:58,167
+00:00:58,442 --> 00:01:03,154
 failures almost every first batch ships with: a colour that renders wrong, and a
 
 17
-00:00:58,167 --> 00:01:00,625
+00:01:03,154 --> 00:01:05,805
 spec number that garbles in the overlay text.
 
 18
-00:01:00,625 --> 00:01:05,215
+00:01:05,805 --> 00:01:10,754
 Both get caught and fixed in that same section, before anything reaches a real test.
 
 19
-00:01:05,215 --> 00:01:09,423
+00:01:10,754 --> 00:01:15,290
 Before section three, do one last thing with your own brief: read your claims
 
 20
-00:01:09,423 --> 00:01:10,406
+00:01:15,290 --> 00:01:16,350
 boundary out loud.
 
 21
-00:01:10,406 --> 00:01:13,903
+00:01:16,350 --> 00:01:20,120
 If any line makes you wince, fix it now, while it costs nothing.
 
 22
-00:01:13,903 --> 00:01:18,439
+00:01:20,120 --> 00:01:25,009
 Fixing it after twenty statics exist around it is the expensive version of the same
 
 23
-00:01:18,439 --> 00:01:18,712
+00:01:25,009 --> 00:01:25,304
 edit.

@@ -1,107 +1,107 @@
 1
-00:00:00,350 --> 00:00:04,858
+00:00:00,350 --> 00:00:05,211
 On a Sunday night, Sam texted Dana asking for the usual: brand voice notes, so he
 
 2
-00:00:04,858 --> 00:00:06,583
+00:00:05,211 --> 00:00:07,072
 could start briefing the batch.
 
 3
-00:00:06,583 --> 00:00:08,141
+00:00:07,072 --> 00:00:08,752
 Dana didn't send tone words.
 
 4
-00:00:08,141 --> 00:00:12,648
+00:00:08,752 --> 00:00:13,614
 She sent her price, her margin, and the one claim she will not let an ad make, no
 
 5
-00:00:12,648 --> 00:00:14,040
+00:00:13,614 --> 00:00:15,114
 matter how well it tests.
 
 6
-00:00:14,040 --> 00:00:17,601
+00:00:15,114 --> 00:00:18,955
 That's the whole design of this section, stated as one exchange.
 
 7
-00:00:17,601 --> 00:00:21,831
+00:00:18,955 --> 00:00:23,516
 Section one gave you a number: around twenty variants to find a real winner.
 
 8
-00:00:21,831 --> 00:00:26,283
+00:00:23,516 --> 00:00:28,318
 This section makes sure those twenty are actually twenty different bets, not one
 
 9
-00:00:26,283 --> 00:00:27,841
+00:00:28,318 --> 00:00:29,998
 idea wearing twenty outfits.
 
 10
-00:00:27,841 --> 00:00:30,567
+00:00:29,998 --> 00:00:32,939
 Everything here happens before a generator opens.
 
 11
-00:00:30,567 --> 00:00:35,242
+00:00:32,939 --> 00:00:37,980
 The product truth, the awareness levels, the hooks, the angle map, the landing page:
 
 12
-00:00:35,242 --> 00:00:36,355
+00:00:37,980 --> 00:00:39,181
 it all has to match.
 
 13
-00:00:36,355 --> 00:00:38,859
+00:00:39,181 --> 00:00:41,882
 Skip this section and generation still works.
 
 14
-00:00:38,859 --> 00:00:42,755
+00:00:41,882 --> 00:00:46,083
 It just produces twenty confident variations of the same narrow guess.
 
 15
-00:00:43,305 --> 00:00:47,342
+00:00:46,633 --> 00:00:51,003
 Five pieces, building toward the workshop where you write a real brief.
 
 16
-00:00:47,342 --> 00:00:51,948
+00:00:51,003 --> 00:00:55,990
 Product truth comes first, because every claim your ads make has to trace back to
 
 17
-00:00:51,948 --> 00:00:54,507
+00:00:55,990 --> 00:00:58,760
 something true and something Dana can defend.
 
 18
-00:00:54,507 --> 00:00:59,284
+00:00:58,760 --> 00:01:03,931
 Awareness levels and the hook taxonomy give you the actual vocabulary for a testable
 
 19
-00:00:59,284 --> 00:01:04,061
+00:01:03,931 --> 00:01:09,102
 angle, instead of "make it punchier." The angle map turns all of it into twenty real
 
 20
-00:01:04,061 --> 00:01:04,345
+00:01:09,102 --> 00:01:09,410
 bets.
 
 21
-00:01:04,345 --> 00:01:08,951
+00:01:09,410 --> 00:01:14,397
 And landing congruence closes the loop: the best hook in the world still loses if
 
 22
-00:01:08,951 --> 00:01:11,908
+00:01:14,397 --> 00:01:17,598
 the page it lands on breaks the promise the ad made.
 
 23
-00:01:11,908 --> 00:01:14,353
+00:01:17,598 --> 00:01:20,245
 Before the next lecture, open a blank note.
 
 24
-00:01:14,353 --> 00:01:19,016
+00:01:20,245 --> 00:01:25,293
 Write down your own price, what it actually costs you to deliver, and the one line
 
 25
-00:01:19,016 --> 00:01:22,883
+00:01:25,293 --> 00:01:29,479
 about your product you would not want to defend under bright lights.
 
 26
-00:01:22,883 --> 00:01:27,546
+00:01:29,479 --> 00:01:34,527
 That's the first three lines of your own product truth document, and it is exactly
 
 27
-00:01:27,546 --> 00:01:30,333
+00:01:34,527 --> 00:01:37,543
 what the workshop in 2.6 turns into artifact B01.
