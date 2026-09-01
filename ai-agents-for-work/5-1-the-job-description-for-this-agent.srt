@@ -1,211 +1,211 @@
 1
-00:00:00,350 --> 00:00:04,678
+00:00:00,350 --> 00:00:04,995
 Every Monday, Priya spends twenty minutes doing the same three sums before she can
 
 2
-00:00:04,678 --> 00:00:09,059
+00:00:04,995 --> 00:00:09,696
 write a word: how many renewals are still open, how much premium is riding on them,
 
 3
-00:00:09,059 --> 00:00:12,278
+00:00:09,696 --> 00:00:13,151
 and which ones are close enough to their date to worry about.
 
 4
-00:00:12,278 --> 00:00:16,606
+00:00:13,151 --> 00:00:17,796
 That twenty minutes of counting is what you are about to replace, and if you run a
 
 5
-00:00:16,606 --> 00:00:20,987
+00:00:17,796 --> 00:00:22,497
 pipeline of your own, you already know exactly which sums you do by hand every week
 
 6
-00:00:20,987 --> 00:00:21,198
+00:00:22,497 --> 00:00:22,724
 too.
 
 7
-00:00:21,198 --> 00:00:22,729
+00:00:22,724 --> 00:00:24,366
 Why arithmetic and not prose?
 
 8
-00:00:22,729 --> 00:00:24,365
+00:00:24,366 --> 00:00:26,122
 Because of who reads the thing.
 
 9
-00:00:24,365 --> 00:00:28,587
+00:00:26,122 --> 00:00:30,653
 Marcus does not read Priya's report for the sentences, he reads it for the three
 
 10
-00:00:28,587 --> 00:00:30,593
+00:00:30,653 --> 00:00:32,806
 numbers and whether one of them moved.
 
 11
-00:00:30,593 --> 00:00:31,807
+00:00:32,806 --> 00:00:34,109
 The prose is packaging.
 
 12
-00:00:31,807 --> 00:00:35,977
+00:00:34,109 --> 00:00:38,583
 Which means the worst failure of a weekly report is not clumsy writing, it is a
 
 13
-00:00:35,977 --> 00:00:40,093
+00:00:38,583 --> 00:00:43,001
 wrong number delivered fluently, and hand counting on a rushed Monday produces
 
 14
-00:00:40,093 --> 00:00:44,527
+00:00:43,001 --> 00:00:47,759
 exactly that: a row missed while a phone rang, a figure carried over from last week.
 
 15
-00:00:44,527 --> 00:00:47,008
+00:00:47,759 --> 00:00:50,421
 The agent's advantage here is not intelligence.
 
 16
-00:00:47,008 --> 00:00:48,749
+00:00:50,421 --> 00:00:52,291
 It is that it never counts tired.
 
 17
-00:00:49,299 --> 00:00:53,635
+00:00:52,841 --> 00:00:57,503
 That ceiling line reads like the one from Section 4, and that is not an accident.
 
 18
-00:00:53,635 --> 00:00:57,757
+00:00:57,503 --> 00:01:01,935
 Every agent you build in this course gets the same instruction in a different
 
 19
-00:00:57,757 --> 00:01:01,397
+00:01:01,935 --> 00:01:05,849
 costume: do not decide something the data did not actually tell you.
 
 20
-00:01:01,397 --> 00:01:05,840
+00:01:05,849 --> 00:01:10,626
 Here the costume is a column: the sheet's own Status field is the only authority on
 
 21
-00:01:05,840 --> 00:01:10,016
+00:01:10,626 --> 00:01:15,115
 whether a renewal is closed, and the agent's opinion about what looks finished
 
 22
-00:01:10,016 --> 00:01:11,033
+00:01:15,115 --> 00:01:16,209
 counts for nothing.
 
 23
-00:01:11,033 --> 00:01:15,530
+00:01:16,209 --> 00:01:21,044
 Keep that rule in mind through Section 7, because the one failure this agent suffers
 
 24
-00:01:15,530 --> 00:01:19,973
+00:01:21,044 --> 00:01:25,821
 in this course walks straight through the gap between what a sheet says and what it
 
 25
-00:01:19,973 --> 00:01:20,294
+00:01:25,821 --> 00:01:26,166
 means.
 
 26
-00:01:20,294 --> 00:01:24,737
+00:01:26,166 --> 00:01:30,943
 And the trial is three weeks, three Mondays, because this agent produces one output
 
 27
-00:01:24,737 --> 00:01:28,859
+00:01:30,943 --> 00:01:35,375
 a week: the unit-of-evidence logic from Agent 2, stretched to a weekly clock.
 
 28
-00:01:28,859 --> 00:01:33,195
+00:01:35,375 --> 00:01:40,037
 Write your own version of this template before you open n8n, the same way you did
 
 29
-00:01:33,195 --> 00:01:33,837
+00:01:40,037 --> 00:01:40,728
 for Agent 1.
 
 30
-00:01:34,387 --> 00:01:35,941
+00:01:41,278 --> 00:01:42,971
 Hold onto that distinction.
 
 31
-00:01:35,941 --> 00:01:40,602
+00:01:42,971 --> 00:01:48,051
 Section 8's guardrails lecture comes back to it directly: a scheduled agent needs
 
 32
-00:01:40,602 --> 00:01:45,378
+00:01:48,051 --> 00:01:53,256
 the same ceiling as any other you build, precisely because nobody is standing there
 
 33
-00:01:45,378 --> 00:01:47,392
+00:01:53,256 --> 00:01:55,451
 to double check it fired correctly.
 
 34
-00:01:47,392 --> 00:01:52,111
+00:01:55,451 --> 00:02:00,593
 You will not be watching every Monday morning, and the job description has to hold
 
 35
-00:01:52,111 --> 00:01:53,377
+00:02:00,593 --> 00:02:01,973
 even when you are not.
 
 36
-00:01:53,377 --> 00:01:56,024
+00:02:01,973 --> 00:02:04,858
 Spell out what unattended changes in practice.
 
 37
-00:01:56,024 --> 00:02:00,800
+00:02:04,858 --> 00:02:10,063
 Agents 1 and 2 always had a human somewhere in the moment: an inbox being worked, a
 
 38
-00:02:00,800 --> 00:02:02,181
+00:02:10,063 --> 00:02:11,568
 transcript being pasted.
 
 39
-00:02:02,181 --> 00:02:07,014
+00:02:11,568 --> 00:02:16,836
 This agent's first audience is nobody, and an error it makes at eight on Monday sits
 
 40
-00:02:07,014 --> 00:02:09,374
+00:02:16,836 --> 00:02:19,407
 unexamined until someone reads the draft.
 
 41
-00:02:09,374 --> 00:02:14,092
+00:02:19,407 --> 00:02:24,549
 Two design consequences follow, and both are already in the job description if you
 
 42
-00:02:14,092 --> 00:02:14,898
+00:02:24,549 --> 00:02:25,427
 look for them.
 
 43
-00:02:14,898 --> 00:02:19,559
+00:02:25,427 --> 00:02:30,507
 The output is a draft that never sends itself, so the error's blast radius is one
 
 44
-00:02:19,559 --> 00:02:23,529
+00:02:30,507 --> 00:02:34,834
 wrong document in a folder, not one wrong document in Marcus's inbox.
 
 45
-00:02:23,529 --> 00:02:28,018
+00:02:34,834 --> 00:02:39,725
 And the trial is a comparison, agent's numbers against Priya's own hand count,
 
 46
-00:02:28,018 --> 00:02:32,679
+00:02:39,725 --> 00:02:44,805
 because with no human in the loop at run time, the checking has to be designed in
 
 47
-00:02:32,679 --> 00:02:34,002
+00:02:44,805 --> 00:02:46,247
 after it, deliberately.
 
 48
-00:02:34,552 --> 00:02:39,177
+00:02:46,797 --> 00:02:51,823
 This section ships C03, the weekly report template, and of the four agents it is the
 
 49
-00:02:39,177 --> 00:02:43,747
+00:02:51,823 --> 00:02:56,789
 one most worth adapting beyond its own job: anything you currently summarise from a
 
 50
-00:02:43,747 --> 00:02:48,207
+00:02:56,789 --> 00:03:01,636
 spreadsheet on a rhythm, a sales pipeline, a project tracker, a hiring funnel, is
 
 51
-00:02:48,207 --> 00:02:50,630
+00:03:01,636 --> 00:03:04,268
 this same build with different column names.
 
 52
-00:02:50,630 --> 00:02:53,108
+00:03:04,268 --> 00:03:06,961
 Keep that in the back of your mind as you go.
 
 53
-00:02:53,108 --> 00:02:55,971
+00:03:06,961 --> 00:03:10,072
 Next lecture starts with the schedule and the sheet.

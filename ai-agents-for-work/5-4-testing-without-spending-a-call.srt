@@ -1,179 +1,179 @@
 1
-00:00:00,350 --> 00:00:04,047
+00:00:00,350 --> 00:00:04,497
 Before you run this agent even once, do the arithmetic in your head.
 
 2
-00:00:04,047 --> 00:00:05,079
+00:00:04,497 --> 00:00:05,656
 Four open renewals.
 
 3
-00:00:05,079 --> 00:00:07,417
+00:00:05,656 --> 00:00:08,278
 A total premium you can add up on one hand.
 
 4
-00:00:07,417 --> 00:00:11,005
+00:00:08,278 --> 00:00:12,304
 One renewal, Dunmore Electrical, close enough to its date to flag.
 
 5
-00:00:11,005 --> 00:00:12,310
+00:00:12,304 --> 00:00:13,767
 That is your answer key.
 
 6
-00:00:12,310 --> 00:00:16,876
+00:00:13,767 --> 00:00:18,890
 Write the key down before the first run, not after, for the same anchoring reason as
 
 7
-00:00:16,876 --> 00:00:21,442
+00:00:18,890 --> 00:00:24,013
 Section 4's count-first rule, sharpened by the fact that these are numbers now: once
 
 8
-00:00:21,442 --> 00:00:25,954
+00:00:24,013 --> 00:00:29,075
 the agent's total is on screen, your own addition quietly checks itself against the
 
 9
-00:00:25,954 --> 00:00:27,422
+00:00:29,075 --> 00:00:30,722
 agent instead of the sheet.
 
 10
-00:00:27,422 --> 00:00:31,717
+00:00:30,722 --> 00:00:35,540
 The whole key takes under a minute of mental arithmetic, and that minute is the
 
 11
-00:00:31,717 --> 00:00:33,674
+00:00:35,540 --> 00:00:37,736
 trial's entire measuring instrument.
 
 12
-00:00:33,674 --> 00:00:37,044
+00:00:37,736 --> 00:00:41,517
 An answer key you wrote after seeing the answers is not a key.
 
 13
-00:00:37,044 --> 00:00:37,805
+00:00:41,517 --> 00:00:42,371
 It is an echo.
 
 14
-00:00:38,355 --> 00:00:40,715
+00:00:42,921 --> 00:00:45,487
 Run it against the pinned data and compare.
 
 15
-00:00:40,715 --> 00:00:45,323
+00:00:45,487 --> 00:00:50,500
 If the numbers match, the wiring and the judgement are both sound, for this snapshot
 
 16
-00:00:45,323 --> 00:00:46,036
+00:00:50,500 --> 00:00:51,275
 of the sheet.
 
 17
-00:00:46,036 --> 00:00:50,590
+00:00:51,275 --> 00:00:56,228
 That phrase, "for this snapshot," is doing quiet work, and it is worth sitting with
 
 18
-00:00:50,590 --> 00:00:51,303
+00:00:56,228 --> 00:00:57,004
 for a second.
 
 19
-00:00:51,303 --> 00:00:55,748
+00:00:57,004 --> 00:01:01,838
 Know what a near miss looks like here, because it is subtler than a wrong answer.
 
 20
-00:00:55,748 --> 00:01:00,301
+00:01:01,838 --> 00:01:06,791
 The dangerous report is the one where the counts are right, the total is right, and
 
 21
-00:01:00,301 --> 00:01:04,636
+00:01:06,791 --> 00:01:11,506
 one detail is quietly off: the correct number of at-risk renewals but the wrong
 
 22
-00:01:04,636 --> 00:01:09,080
+00:01:11,506 --> 00:01:16,339
 client named, or a fluent paragraph in which one figure came from nowhere you can
 
 23
-00:01:09,080 --> 00:01:09,573
+00:01:16,339 --> 00:01:16,876
 point to.
 
 24
-00:01:09,573 --> 00:01:14,018
+00:01:16,876 --> 00:01:21,710
 Fluency is not accuracy, and on a numbers report the check is always the numbers,
 
 25
-00:01:14,018 --> 00:01:14,895
+00:01:21,710 --> 00:01:22,665
 never the prose.
 
 26
-00:01:14,895 --> 00:01:19,449
+00:01:22,665 --> 00:01:27,618
 If any single line cannot be traced to a cell in the pinned data, that line failed,
 
 27
-00:01:19,449 --> 00:01:22,631
+00:01:27,618 --> 00:01:31,079
 and the report fails with it, however well the rest reads.
 
 28
-00:01:23,181 --> 00:01:27,879
+00:01:31,629 --> 00:01:36,758
 This pipeline, these five rows, this exact Brightwell line, comes back later in this
 
 29
-00:01:27,879 --> 00:01:28,270
+00:01:36,758 --> 00:01:37,186
 course.
 
 30
-00:01:28,270 --> 00:01:32,912
+00:01:37,186 --> 00:01:42,254
 Not because it changes here, but because somewhere down the line, someone edits the
 
 31
-00:01:32,912 --> 00:01:37,553
+00:01:42,254 --> 00:01:47,321
 sheet the agent reads from, and the agent has no way to know that changed anything.
 
 32
-00:01:37,553 --> 00:01:38,560
+00:01:47,321 --> 00:01:48,420
 Hold that thought.
 
 33
-00:01:38,560 --> 00:01:40,238
+00:01:48,420 --> 00:01:50,252
 Section 7 is where it matters.
 
 34
-00:01:40,238 --> 00:01:44,208
+00:01:50,252 --> 00:01:54,587
 The unsettling part is that nothing needs to go wrong for this to bite.
 
 35
-00:01:44,208 --> 00:01:48,682
+00:01:54,587 --> 00:01:59,472
 A shared sheet is a living thing: a colleague sorts it to find their own client,
 
 36
-00:01:48,682 --> 00:01:53,324
+00:01:59,472 --> 00:02:04,540
 someone inserts a row to log a new account, a Status value gets typed in lower case
 
 37
-00:01:53,324 --> 00:01:54,554
+00:02:04,540 --> 00:02:05,883
 by someone in a hurry.
 
 38
-00:01:54,554 --> 00:01:59,084
+00:02:05,883 --> 00:02:10,829
 Every one of those is normal, correct use of a spreadsheet, and every one changes
 
 39
-00:01:59,084 --> 00:02:02,327
+00:02:10,829 --> 00:02:14,370
 what the agent reads without anyone having made a mistake.
 
 40
-00:02:02,327 --> 00:02:06,913
+00:02:14,370 --> 00:02:19,377
 Your pinned test can never cover the ways other people will use a sheet you share.
 
 41
-00:02:06,913 --> 00:02:09,317
+00:02:19,377 --> 00:02:22,003
 That is not a reason to distrust the build.
 
 42
-00:02:09,317 --> 00:02:14,015
+00:02:22,003 --> 00:02:27,132
 It is the reason the trial runs on the living sheet, for three Mondays, against your
 
 43
-00:02:14,015 --> 00:02:16,140
+00:02:27,132 --> 00:02:29,452
 hand count, before trust gets granted.
 
 44
-00:02:16,690 --> 00:02:21,341
+00:02:30,002 --> 00:02:34,838
 With the wiring proven, next lecture connects this agent to a real sheet and ships
 
 45
-00:02:21,341 --> 00:02:21,511
+00:02:34,838 --> 00:02:35,015
 it.
