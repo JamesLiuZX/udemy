@@ -1,583 +1,583 @@
 1
-00:00:00,350 --> 00:00:02,919
+00:00:00,350 --> 00:00:02,975
 I want to give you one idea in this lecture.
 
 2
-00:00:02,919 --> 00:00:06,013
+00:00:02,975 --> 00:00:06,136
 If you take nothing else from this course, take this.
 
 3
-00:00:06,013 --> 00:00:10,566
+00:00:06,136 --> 00:00:10,788
 It explains almost every argument you're going to have with engineering, every
 
 4
-00:00:10,566 --> 00:00:14,011
+00:00:10,788 --> 00:00:14,308
 feature that slips, and every launch that gets rolled back.
 
 5
-00:00:14,011 --> 00:00:14,653
+00:00:14,308 --> 00:00:14,964
 Here it is.
 
 6
-00:00:14,653 --> 00:00:18,331
+00:00:14,964 --> 00:00:18,722
 The software you've shipped your whole career is deterministic.
 
 7
-00:00:18,331 --> 00:00:19,732
+00:00:18,722 --> 00:00:20,153
 Same input, same output.
 
 8
-00:00:19,732 --> 00:00:20,374
+00:00:20,153 --> 00:00:20,809
 Every time.
 
 9
-00:00:20,374 --> 00:00:24,344
+00:00:20,809 --> 00:00:24,865
 You learned to manage that kind of software, and you got good at it.
 
 10
-00:00:24,344 --> 00:00:28,313
+00:00:24,865 --> 00:00:28,921
 Then you were handed something that does not behave that way at all.
 
 11
-00:00:28,313 --> 00:00:30,765
+00:00:28,921 --> 00:00:31,427
 And nobody told you the rules had changed.
 
 12
-00:00:31,315 --> 00:00:33,517
+00:00:31,977 --> 00:00:34,299
 Here are the two pictures side by side.
 
 13
-00:00:33,517 --> 00:00:38,034
+00:00:34,299 --> 00:00:39,062
 I want you to hold this image, because almost everything else in the course is a
 
 14
-00:00:38,034 --> 00:00:39,051
+00:00:39,062 --> 00:00:40,134
 consequence of it.
 
 15
-00:00:39,051 --> 00:00:42,382
+00:00:40,134 --> 00:00:43,647
 On the left, the software you've shipped your whole career.
 
 16
-00:00:42,382 --> 00:00:46,843
+00:00:43,647 --> 00:00:48,351
 Same input goes in, one output comes out, and it's the same output every single
 
 17
-00:00:46,843 --> 00:00:47,125
+00:00:48,351 --> 00:00:48,649
 time.
 
 18
-00:00:47,125 --> 00:00:50,400
+00:00:48,649 --> 00:00:52,102
 That single dot is why you could test it once and move on.
 
 19
-00:00:50,400 --> 00:00:51,981
+00:00:52,102 --> 00:00:53,769
 On the right, an AI feature.
 
 20
-00:00:51,981 --> 00:00:56,046
+00:00:53,769 --> 00:00:58,056
 Same input goes in, and what comes out is one of those scattered points.
 
 21
-00:00:56,046 --> 00:00:58,361
+00:00:58,056 --> 00:01:00,498
 Run it again and you get a different one.
 
 22
-00:00:58,361 --> 00:01:00,676
+00:01:00,498 --> 00:01:02,939
 Nothing is broken on the right hand side.
 
 23
-00:01:00,676 --> 00:01:03,499
+00:01:02,939 --> 00:01:05,916
 That scatter *is* the product working as designed.
 
 24
-00:01:03,499 --> 00:01:07,564
+00:01:05,916 --> 00:01:10,203
 Notice what that does to the word "it" when someone says "does it work".
 
 25
-00:01:07,564 --> 00:01:09,089
+00:01:10,203 --> 00:01:11,811
 On the left, "it" is a dot.
 
 26
-00:01:09,089 --> 00:01:13,549
+00:01:11,811 --> 00:01:16,515
 On the right, "it" is a cloud, and you happen to be looking at one point in it.
 
 27
-00:01:14,099 --> 00:01:18,537
+00:01:17,065 --> 00:01:21,630
 Let me make the distinction precise, because the whole course depends on it.
 
 28
-00:01:18,537 --> 00:01:23,324
+00:01:21,630 --> 00:01:26,557
 A deterministic function gives you the same output for a given input, every single
 
 29
-00:01:23,324 --> 00:01:23,616
+00:01:26,557 --> 00:01:26,857
 time.
 
 30
-00:01:23,616 --> 00:01:25,192
+00:01:26,857 --> 00:01:28,479
 That's the checkout button.
 
 31
-00:01:25,192 --> 00:01:28,870
+00:01:28,479 --> 00:01:32,264
 Click it a thousand times, you get a thousand identical orders.
 
 32
-00:01:28,870 --> 00:01:31,556
+00:01:32,264 --> 00:01:35,027
 An AI feature gives you a sample from a range.
 
 33
-00:01:31,556 --> 00:01:33,424
+00:01:35,027 --> 00:01:36,950
 The range is the actual product.
 
 34
-00:01:33,424 --> 00:01:37,394
+00:01:36,950 --> 00:01:41,035
 Any one answer you happen to be looking at is a single draw from it.
 
 35
-00:01:37,394 --> 00:01:40,022
+00:01:41,035 --> 00:01:43,738
 Here's how to feel that in about two minutes.
 
 36
-00:01:40,022 --> 00:01:44,692
+00:01:43,738 --> 00:01:48,544
 Take a prompt you already use, run it on the same input ten times, and count how
 
 37
-00:01:44,692 --> 00:01:48,546
+00:01:48,544 --> 00:01:52,509
 many of those outputs you would genuinely have been happy to ship.
 
 38
-00:01:48,546 --> 00:01:50,297
+00:01:52,509 --> 00:01:54,311
 That fraction is your feature.
 
 39
-00:01:50,297 --> 00:01:52,458
+00:01:54,311 --> 00:01:56,534
 Not the best one you saw in the demo.
 
 40
-00:01:52,458 --> 00:01:53,217
+00:01:56,534 --> 00:01:57,315
 The fraction.
 
 41
-00:01:53,217 --> 00:01:56,077
+00:01:57,315 --> 00:02:00,259
 Most people are surprised, and not in a good way.
 
 42
-00:01:56,627 --> 00:01:59,844
+00:02:00,809 --> 00:02:04,151
 Look at what that does to the way you manage the thing.
 
 43
-00:01:59,844 --> 00:02:03,997
+00:02:04,151 --> 00:02:08,467
 On the left, one test proves it works, because behaviour is repeatable.
 
 44
-00:02:03,997 --> 00:02:07,681
+00:02:08,467 --> 00:02:12,295
 A bad result is a defect: someone fixes it, and it stays fixed.
 
 45
-00:02:07,681 --> 00:02:10,606
+00:02:12,295 --> 00:02:15,334
 And the question "does it work" has a real answer.
 
 46
-00:02:10,606 --> 00:02:12,536
+00:02:15,334 --> 00:02:17,340
 On the right, none of that holds.
 
 47
-00:02:12,536 --> 00:02:15,869
+00:02:17,340 --> 00:02:20,804
 One test proves almost nothing, because you saw one draw.
 
 48
-00:02:15,869 --> 00:02:20,782
+00:02:20,804 --> 00:02:25,909
 A bad result usually isn't a defect at all, it's the tail of the range doing exactly
 
 49
-00:02:20,782 --> 00:02:21,542
+00:02:25,909 --> 00:02:26,700
 what it does.
 
 50
-00:02:21,542 --> 00:02:25,578
+00:02:26,700 --> 00:02:30,893
 And "does it work" stops being a question anyone can answer honestly.
 
 51
-00:02:25,578 --> 00:02:27,040
+00:02:30,893 --> 00:02:32,413
 That's the whole problem.
 
 52
-00:02:27,040 --> 00:02:31,777
+00:02:32,413 --> 00:02:37,335
 You're being asked a question that no longer has an answer, using tools built for
 
 53
-00:02:31,777 --> 00:02:33,123
+00:02:37,335 --> 00:02:38,733
 the column on the left.
 
 54
-00:02:33,673 --> 00:02:35,890
+00:02:39,283 --> 00:02:41,596
 Watch how predictably this plays out.
 
 55
-00:02:35,890 --> 00:02:37,208
+00:02:41,596 --> 00:02:42,972
 Someone builds a demo.
 
 56
-00:02:37,208 --> 00:02:42,061
+00:02:42,972 --> 00:02:48,036
 It's genuinely impressive, because the happy path for these systems is very good.
 
 57
-00:02:42,061 --> 00:02:45,896
+00:02:48,036 --> 00:02:52,037
 Leadership sees it, and the feature gets committed to a quarter.
 
 58
-00:02:45,896 --> 00:02:50,509
+00:02:52,037 --> 00:02:56,851
 Then it reaches QA, and QA does what QA has always correctly done: tries some
 
 59
-00:02:50,509 --> 00:02:53,086
+00:02:56,851 --> 00:02:59,539
 examples, sees sensible answers, passes it.
 
 60
-00:02:53,086 --> 00:02:56,621
+00:02:59,539 --> 00:03:03,228
 I want to be clear that this is not a failure of diligence.
 
 61
-00:02:56,621 --> 00:03:00,695
+00:03:03,228 --> 00:03:07,479
 Sampling a few cases is the right method for deterministic software.
 
 62
-00:03:00,695 --> 00:03:04,950
+00:03:07,479 --> 00:03:11,917
 It's standard practice, applied correctly, to the wrong kind of system.
 
 63
-00:03:04,950 --> 00:03:05,788
+00:03:11,917 --> 00:03:12,793
 Then it ships.
 
 64
-00:03:05,788 --> 00:03:10,522
+00:03:12,793 --> 00:03:17,732
 Real people arrive with inputs nobody thought of, at a volume nobody simulated.
 
 65
-00:03:10,522 --> 00:03:11,960
+00:03:17,732 --> 00:03:19,232
 Now the tail is visible.
 
 66
-00:03:11,960 --> 00:03:12,559
+00:03:19,232 --> 00:03:19,857
 Not often.
 
 67
-00:03:12,559 --> 00:03:16,753
+00:03:19,857 --> 00:03:24,233
 Just often enough that support notices, and then the internet notices.
 
 68
-00:03:16,753 --> 00:03:19,629
+00:03:24,233 --> 00:03:27,234
 And here's the part that should bother you most.
 
 69
-00:03:19,629 --> 00:03:24,423
+00:03:27,234 --> 00:03:32,236
 When the team sits down to argue about whether it's ready, nobody can settle it.
 
 70
-00:03:24,423 --> 00:03:29,156
+00:03:32,236 --> 00:03:37,175
 One person saw three great outputs, another saw two terrible ones, and both are
 
 71
-00:03:29,156 --> 00:03:30,235
+00:03:37,175 --> 00:03:38,300
 telling the truth.
 
 72
-00:03:30,235 --> 00:03:33,650
+00:03:38,300 --> 00:03:41,863
 There's no shared instrument, so the loudest person wins.
 
 73
-00:03:34,200 --> 00:03:36,833
+00:03:42,413 --> 00:03:45,148
 The root cause is your acceptance criteria.
 
 74
-00:03:36,833 --> 00:03:41,487
+00:03:45,148 --> 00:03:49,983
 You've been writing them the same way for years, and the format is sound for
 
 75
-00:03:41,487 --> 00:03:42,896
+00:03:49,983 --> 00:03:51,446
 deterministic software.
 
 76
-00:03:42,896 --> 00:03:44,365
+00:03:51,446 --> 00:03:52,972
 The summary is accurate.
 
 77
-00:03:44,365 --> 00:03:46,202
+00:03:52,972 --> 00:03:54,880
 The classification is correct.
 
 78
-00:03:46,202 --> 00:03:48,101
+00:03:54,880 --> 00:03:56,852
 The user gets a helpful answer.
 
 79
-00:03:48,101 --> 00:03:52,510
+00:03:56,852 --> 00:04:01,432
 Read those again and ask one specific question: accurate on which input?
 
 80
-00:03:52,510 --> 00:03:57,531
+00:04:01,432 --> 00:04:06,648
 Because the honest answer is that it's accurate on some inputs and not others, and
 
 81
-00:03:57,531 --> 00:04:02,246
+00:04:06,648 --> 00:04:11,545
 the criterion doesn't say which, or how many, or which failures you'd accept.
 
 82
-00:04:02,246 --> 00:04:03,594
+00:04:11,545 --> 00:04:12,945
 So it can't be tested.
 
 83
-00:04:03,594 --> 00:04:05,308
+00:04:12,945 --> 00:04:14,726
 It can only be argued about.
 
 84
-00:04:05,308 --> 00:04:08,370
+00:04:14,726 --> 00:04:17,906
 A criterion you cannot measure is not a criterion.
 
 85
-00:04:08,920 --> 00:04:12,730
+00:04:18,456 --> 00:04:22,414
 So here's the replacement, and it's the spine of this whole course.
 
 86
-00:04:12,730 --> 00:04:14,437
+00:04:22,414 --> 00:04:24,187
 You pick a set of real inputs.
 
 87
-00:04:14,437 --> 00:04:18,418
+00:04:24,187 --> 00:04:28,322
 Fifty is usually enough, and I'll show you exactly how to choose them.
 
 88
-00:04:18,418 --> 00:04:23,081
+00:04:28,322 --> 00:04:33,166
 You decide, in advance and in writing, what a good output looks like for each one.
 
 89
-00:04:23,081 --> 00:04:24,958
+00:04:33,166 --> 00:04:35,116
 That set becomes your instrument.
 
 90
-00:04:24,958 --> 00:04:28,769
+00:04:35,116 --> 00:04:39,074
 Then your acceptance criterion becomes a number on that instrument.
 
 91
-00:04:28,769 --> 00:04:32,750
+00:04:39,074 --> 00:04:43,210
 Not "accurate", but ninety-two percent pass rate on those fifty cases.
 
 92
-00:04:32,750 --> 00:04:37,470
+00:04:43,210 --> 00:04:48,113
 Not "doesn't make things up", but zero unsupported claims on the twenty cases where
 
 93
-00:04:37,470 --> 00:04:39,347
+00:04:48,113 --> 00:04:50,063
 you specifically check citations.
 
 94
-00:04:39,347 --> 00:04:41,224
+00:04:50,063 --> 00:04:52,012
 Now look at what you just gained.
 
 95
-00:04:41,224 --> 00:04:42,702
+00:04:52,012 --> 00:04:53,548
 The criterion is testable.
 
 96
-00:04:42,702 --> 00:04:46,172
+00:04:53,548 --> 00:04:57,152
 It re-runs automatically every time someone changes a prompt.
 
 97
-00:04:46,172 --> 00:04:49,527
+00:04:57,152 --> 00:05:00,637
 Two people who disagree can go and look at the same number.
 
 98
-00:04:49,527 --> 00:04:54,191
+00:05:00,637 --> 00:05:05,482
 And when someone asks whether it's ready, that question has an answer instead of a
 
 99
-00:04:54,191 --> 00:04:54,589
+00:05:05,482 --> 00:05:05,895
 debate.
 
 100
-00:04:55,139 --> 00:04:59,786
+00:05:06,445 --> 00:05:11,293
 I want to be straight with you about the cost, because most courses skip this bit.
 
 101
-00:04:59,786 --> 00:05:01,317
+00:05:11,293 --> 00:05:12,889
 This is more work up front.
 
 102
-00:05:01,317 --> 00:05:05,794
+00:05:12,889 --> 00:05:17,559
 Curating fifty cases and agreeing what good looks like takes real hours, and it
 
 103
-00:05:05,794 --> 00:05:08,855
+00:05:17,559 --> 00:05:20,752
 happens early, when everyone would rather be building.
 
 104
-00:05:08,855 --> 00:05:13,106
+00:05:20,752 --> 00:05:25,185
 You will feel that friction, and someone on your team will push back on it.
 
 105
-00:05:13,106 --> 00:05:14,807
+00:05:25,185 --> 00:05:26,959
 Here's the argument that wins.
 
 106
-00:05:14,807 --> 00:05:16,110
+00:05:26,959 --> 00:05:28,319
 That work is not extra.
 
 107
-00:05:16,110 --> 00:05:19,624
+00:05:28,319 --> 00:05:31,984
 It's the same work you were always going to do, moved earlier.
 
 108
-00:05:19,624 --> 00:05:22,402
+00:05:31,984 --> 00:05:34,881
 You were going to argue about quality eventually.
 
 109
-00:05:22,402 --> 00:05:27,106
+00:05:34,881 --> 00:05:39,787
 The only question is whether you argue with evidence or with anecdotes, and whether
 
 110
-00:05:27,106 --> 00:05:29,657
+00:05:39,787 --> 00:05:42,448
 it happens before launch or after a rollback.
 
 111
-00:05:29,657 --> 00:05:33,511
+00:05:42,448 --> 00:05:46,468
 The teams that ship AI features reliably are not smarter than yours.
 
 112
-00:05:33,511 --> 00:05:35,325
+00:05:46,468 --> 00:05:48,359
 They built the instrument first.
 
 113
-00:05:35,875 --> 00:05:40,576
+00:05:48,909 --> 00:05:53,746
 This is what an acceptance criterion actually looks like once you stop pretending
 
 114
-00:05:40,576 --> 00:05:42,085
+00:05:53,746 --> 00:05:55,298
 the feature is a function.
 
 115
-00:05:42,085 --> 00:05:45,277
+00:05:55,298 --> 00:05:58,582
 Fifty real inputs, each output scored against a rubric.
 
 116
-00:05:45,277 --> 00:05:47,889
+00:05:58,582 --> 00:06:01,269
 The bars show how the quality is distributed.
 
 117
-00:05:47,889 --> 00:05:52,648
+00:06:01,269 --> 00:06:06,165
 And your criterion is the line: where you put it, and how much of the distribution
 
 118
-00:05:52,648 --> 00:05:54,389
+00:06:06,165 --> 00:06:07,956
 has to sit to the right of it.
 
 119
-00:05:54,389 --> 00:05:58,800
+00:06:07,956 --> 00:06:12,494
 In this picture, thirty-four of fifty outputs are at or above the pass mark.
 
 120
-00:05:58,800 --> 00:06:03,501
+00:06:12,494 --> 00:06:17,331
 That's a sixty-eight percent pass rate, and for most features that's nowhere near
 
 121
-00:06:03,501 --> 00:06:04,081
+00:06:17,331 --> 00:06:17,928
 shippable.
 
 122
-00:06:04,081 --> 00:06:07,563
+00:06:17,928 --> 00:06:21,510
 But look at what you can now do that you couldn't do before.
 
 123
-00:06:07,563 --> 00:06:09,885
+00:06:21,510 --> 00:06:23,899
 You can say exactly how far off you are.
 
 124
-00:06:09,885 --> 00:06:13,599
+00:06:23,899 --> 00:06:27,720
 You can re-run this after a prompt change and see the bars move.
 
 125
-00:06:13,599 --> 00:06:18,416
+00:06:27,720 --> 00:06:32,676
 You can argue about where the line belongs, which is a productive argument, instead
 
 126
-00:06:18,416 --> 00:06:21,667
+00:06:32,676 --> 00:06:36,020
 of arguing about whether it "feels ready", which is not.
 
 127
-00:06:21,667 --> 00:06:25,033
+00:06:36,020 --> 00:06:39,483
 The grey bars on the left are also doing something useful.
 
 128
-00:06:25,033 --> 00:06:26,832
+00:06:39,483 --> 00:06:41,334
 They aren't a mystery any more.
 
 129
-00:06:26,832 --> 00:06:29,966
+00:06:41,334 --> 00:06:44,558
 They're a list of specific inputs you can go and read.
 
 130
-00:06:30,516 --> 00:06:33,194
+00:06:45,108 --> 00:06:47,854
 Everything after this builds on that one shift.
 
 131
-00:06:33,194 --> 00:06:35,188
+00:06:47,854 --> 00:06:49,899
 In Section 3 you'll write the spec.
 
 132
-00:06:35,188 --> 00:06:39,575
+00:06:49,899 --> 00:06:54,399
 In Section 4, the heart of this course, you'll build the measuring instrument
 
 133
-00:06:39,575 --> 00:06:44,133
+00:06:54,399 --> 00:06:59,073
 yourself: first in a spreadsheet so you can see every moving part, then in about
 
 134
-00:06:44,133 --> 00:06:45,329
+00:06:59,073 --> 00:07:00,300
 thirty lines of code.
 
 135
-00:06:45,329 --> 00:06:49,887
+00:07:00,300 --> 00:07:04,975
 Section 7 puts a currency number on the range, because the spread has a cost and
 
 136
-00:06:49,887 --> 00:06:52,109
+00:07:04,975 --> 00:07:07,254
 someone is going to ask you what it is.
 
 137
-00:06:52,109 --> 00:06:56,610
+00:07:07,254 --> 00:07:11,870
 Section 8 deals with the tail that stops being an engineering bug and becomes a
 
 138
-00:06:56,610 --> 00:06:57,692
+00:07:11,870 --> 00:07:12,980
 legal conversation.
 
 139
-00:06:57,692 --> 00:06:59,230
+00:07:12,980 --> 00:07:14,558
 But it all comes back here.
 
 140
-00:06:59,230 --> 00:07:00,085
+00:07:14,558 --> 00:07:15,434
 Not a function.
 
 141
-00:07:00,085 --> 00:07:00,940
+00:07:15,434 --> 00:07:16,311
 A distribution.
 
 142
-00:07:00,940 --> 00:07:04,643
+00:07:16,311 --> 00:07:20,109
 Next lecture, you're going to feel this rather than just hear it.
 
 143
-00:07:04,643 --> 00:07:08,118
+00:07:20,109 --> 00:07:23,673
 I'm going to hand you a real AI output and have you judge it.
 
 144
-00:07:08,118 --> 00:07:12,790
+00:07:23,673 --> 00:07:28,464
 It takes five minutes, and what you find out about your own judgement is genuinely
 
 145
-00:07:12,790 --> 00:07:13,588
+00:07:28,464 --> 00:07:29,282
 uncomfortable.
 
 146
-00:07:13,588 --> 00:07:14,670
+00:07:29,282 --> 00:07:30,393
 I'll see you there.

@@ -1,199 +1,199 @@
 1
-00:00:00,350 --> 00:00:03,475
+00:00:00,350 --> 00:00:03,601
 If you're here, I'd guess something like this happened.
 
 2
-00:00:03,475 --> 00:00:05,577
+00:00:03,601 --> 00:00:05,788
 An AI feature landed on your roadmap.
 
 3
-00:00:05,577 --> 00:00:08,532
+00:00:05,788 --> 00:00:08,862
 Maybe you asked for it, maybe it arrived from above.
 
 4
-00:00:08,532 --> 00:00:13,248
+00:00:08,862 --> 00:00:13,768
 And somewhere between the demo and the launch date you realised you had no reliable
 
 5
-00:00:13,248 --> 00:00:17,737
+00:00:13,768 --> 00:00:18,437
 way to tell whether the thing actually works, and that everyone in the room was
 
 6
-00:00:17,737 --> 00:00:19,498
+00:00:18,437 --> 00:00:20,269
 quietly waiting for you to say.
 
 7
-00:00:19,498 --> 00:00:21,657
+00:00:20,269 --> 00:00:22,515
 That's not a gap in your intelligence.
 
 8
-00:00:21,657 --> 00:00:23,134
+00:00:22,515 --> 00:00:24,052
 It's a gap in the toolkit.
 
 9
-00:00:23,134 --> 00:00:27,680
+00:00:24,052 --> 00:00:28,781
 The methods you were trained on assume software that behaves the same way twice.
 
 10
-00:00:27,680 --> 00:00:28,419
+00:00:28,781 --> 00:00:29,549
 This doesn't.
 
 11
-00:00:28,969 --> 00:00:33,603
+00:00:30,099 --> 00:00:34,946
 The résumé version is on screen if you want the specifics: years in AI product work,
 
 12
-00:00:33,603 --> 00:00:36,693
+00:00:34,946 --> 00:00:38,177
 a computing degree with distinction, a year at Stanford.
 
 13
-00:00:36,693 --> 00:00:40,996
+00:00:38,177 --> 00:00:42,678
 Read it once and move on, because that isn't actually the reason to trust what
 
 14
-00:00:40,996 --> 00:00:41,438
+00:00:42,678 --> 00:00:43,140
 follows.
 
 15
-00:00:41,438 --> 00:00:46,072
+00:00:43,140 --> 00:00:47,987
 Everything from here on is built to be checked, not taken on trust: a golden set you
 
 16
-00:00:46,072 --> 00:00:50,431
+00:00:47,987 --> 00:00:52,545
 can inspect, a pass rate you can recompute, a risk register you can argue with.
 
 17
-00:00:50,431 --> 00:00:54,569
+00:00:52,545 --> 00:00:56,873
 Judge the course the same way you're about to learn to judge an AI feature.
 
 18
-00:00:55,119 --> 00:00:56,603
+00:00:57,423 --> 00:00:58,956
 Here's the concrete change.
 
 19
-00:00:56,603 --> 00:01:00,946
+00:00:58,956 --> 00:01:03,442
 Right now, the honest version of your status update is "it seems to work well".
 
 20
-00:01:00,946 --> 00:01:05,345
+00:01:03,442 --> 00:01:07,985
 By the end of this course you'll be saying "ninety-four percent pass rate on our
 
 21
-00:01:05,345 --> 00:01:09,908
+00:01:07,985 --> 00:01:12,699
 golden set, three known failure modes, and here's the one I'd hold the launch for."
 
 22
-00:01:09,908 --> 00:01:13,976
+00:01:12,699 --> 00:01:16,901
 You'll settle quality arguments with a number everyone can go and look at.
 
 23
-00:01:13,976 --> 00:01:18,484
+00:01:16,901 --> 00:01:21,558
 You'll know what the feature costs per user before anyone writes code, rather than
 
 24
-00:01:18,484 --> 00:01:19,859
+00:01:21,558 --> 00:01:22,977
 when the invoice arrives.
 
 25
-00:01:19,859 --> 00:01:24,477
+00:01:22,977 --> 00:01:27,748
 And you'll have surfaced the legal and safety issues at kickoff, not in the week you
 
 26
-00:01:24,477 --> 00:01:25,577
+00:01:27,748 --> 00:01:28,883
 were hoping to ship.
 
 27
-00:01:26,127 --> 00:01:29,016
+00:01:29,433 --> 00:01:32,449
 Three commitments about how this course is built.
 
 28
-00:01:29,016 --> 00:01:30,431
+00:01:32,449 --> 00:01:33,926
 First, you build things.
 
 29
-00:01:30,431 --> 00:01:35,383
+00:01:33,926 --> 00:01:39,095
 There are twelve downloadable artifacts, and they're real work deliverables: a spec,
 
 30
-00:01:35,383 --> 00:01:38,154
+00:01:39,095 --> 00:01:41,988
 an eval harness, a cost model, a risk register.
 
 31
-00:01:38,154 --> 00:01:40,631
+00:01:41,988 --> 00:01:44,573
 You'll finish with a portfolio, not notes.
 
 32
-00:01:40,631 --> 00:01:44,168
+00:01:44,573 --> 00:01:48,265
 Second, I've kept this deliberately light on specific tools.
 
 33
-00:01:44,168 --> 00:01:45,878
+00:01:48,265 --> 00:01:50,050
 Tools churn every few months.
 
 34
-00:01:45,878 --> 00:01:46,939
+00:01:50,050 --> 00:01:51,158
 Judgement doesn't.
 
 35
-00:01:46,939 --> 00:01:51,361
+00:01:51,158 --> 00:01:55,773
 What you learn here will still be true after the next three model releases.
 
 36
-00:01:51,361 --> 00:01:53,425
+00:01:55,773 --> 00:01:57,927
 Third, I've left the trade-offs in.
 
 37
-00:01:53,425 --> 00:01:57,257
+00:01:57,927 --> 00:02:01,927
 Where this approach is expensive, or slow, or overkill, I say so.
 
 38
-00:01:57,257 --> 00:02:02,210
+00:02:01,927 --> 00:02:07,097
 You're going to have to defend these ideas to a skeptical engineer, and you can't do
 
 39
-00:02:02,210 --> 00:02:03,625
+00:02:07,097 --> 00:02:08,574
 that from a sales pitch.
 
 40
-00:02:04,175 --> 00:02:05,631
+00:02:09,124 --> 00:02:10,618
 One ask before we start.
 
 41
-00:02:05,631 --> 00:02:06,662
+00:02:10,618 --> 00:02:11,676
 Do the exercises.
 
 42
-00:02:06,662 --> 00:02:09,149
+00:02:11,676 --> 00:02:14,228
 I know that's what every instructor says.
 
 43
-00:02:09,149 --> 00:02:14,123
+00:02:14,228 --> 00:02:19,332
 But this material is skill, not information, and the difference between people who
 
 44
-00:02:14,123 --> 00:02:19,219
+00:02:19,332 --> 00:02:24,560
 get real value here and people who get a vocabulary refresh is entirely whether they
 
 45
-00:02:19,219 --> 00:02:20,675
+00:02:24,560 --> 00:02:26,054
 paused and did the work.
 
 46
-00:02:20,675 --> 00:02:25,649
+00:02:26,054 --> 00:02:31,158
 The exercise two lectures from now takes five minutes and is the one I'd fight you
 
 47
-00:02:25,649 --> 00:02:25,831
+00:02:31,158 --> 00:02:31,344
 on.
 
 48
-00:02:25,831 --> 00:02:26,559
+00:02:31,344 --> 00:02:32,091
 Do that one.
 
 49
-00:02:26,559 --> 00:02:31,412
+00:02:32,091 --> 00:02:37,071
 Next up: how to get through this efficiently, and what all twelve artifacts are.
 
 50
-00:02:31,412 --> 00:02:35,294
+00:02:37,071 --> 00:02:41,054
 Then we go straight into the idea this whole course is built on.
