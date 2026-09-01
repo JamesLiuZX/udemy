@@ -1,299 +1,299 @@
 1
-00:00:00,350 --> 00:00:04,821
+00:00:00,350 --> 00:00:05,125
 Here's the reward for the last six lectures: twenty specific things to say, each one
 
 2
-00:00:04,821 --> 00:00:08,440
+00:00:05,125 --> 00:00:08,990
 signalling, correctly, that you understand what you're asking about.
 
 3
-00:00:08,440 --> 00:00:10,036
+00:00:08,990 --> 00:00:10,695
 None of these are magic words.
 
 4
-00:00:10,036 --> 00:00:14,188
+00:00:10,695 --> 00:00:15,129
 They work because you now know what's actually behind each one, the stack from
 
 5
-00:00:14,188 --> 00:00:18,552
+00:00:15,129 --> 00:00:19,790
 lecture one, the retrieval mechanics, the difference between an average and a p95.
 
 6
-00:00:18,552 --> 00:00:23,023
+00:00:19,790 --> 00:00:24,564
 Say any of these without that underneath, and the first follow-up question will find
 
 7
-00:00:23,023 --> 00:00:24,087
+00:00:24,564 --> 00:00:25,701
 the gap immediately.
 
 8
-00:00:24,087 --> 00:00:28,398
+00:00:25,701 --> 00:00:30,305
 Organised into four groups, matching the four things this section actually taught
 
 9
-00:00:28,398 --> 00:00:28,611
+00:00:30,305 --> 00:00:30,533
 you.
 
 10
-00:00:28,611 --> 00:00:32,869
+00:00:30,533 --> 00:00:35,080
 Read through once, then go back and notice how many of these are really the same
 
 11
-00:00:32,869 --> 00:00:37,073
+00:00:35,080 --> 00:00:39,571
 move, applied to a different part of the stack: ask what's actually true before
 
 12
-00:00:37,073 --> 00:00:38,936
+00:00:39,571 --> 00:00:41,560
 agreeing with what's being claimed.
 
 13
-00:00:39,486 --> 00:00:42,874
+00:00:42,110 --> 00:00:45,682
 First group, straight from the stack diagram two lectures back.
 
 14
-00:00:42,874 --> 00:00:47,122
+00:00:45,682 --> 00:00:50,161
 "Which layer is this actually in" is worth leading with in almost any debugging
 
 15
-00:00:47,122 --> 00:00:51,477
+00:00:50,161 --> 00:00:54,753
 conversation, because it's the question that stops a vague complaint from staying
 
 16
-00:00:51,477 --> 00:00:51,800
+00:00:54,753 --> 00:00:55,093
 vague.
 
 17
-00:00:51,800 --> 00:00:56,102
+00:00:55,093 --> 00:00:59,629
 "Retrieval or the model itself" does similar work specifically for anything that
 
 18
-00:00:56,102 --> 00:01:00,404
+00:00:59,629 --> 00:01:04,164
 looks like a wrong answer, and it's usually the second question, right after the
 
 19
-00:01:00,404 --> 00:01:02,017
+00:01:04,164 --> 00:01:05,865
 first one narrows things down.
 
 20
-00:01:02,017 --> 00:01:06,534
+00:01:05,865 --> 00:01:10,628
 The fallback question is the one people skip under deadline pressure, and it's worth
 
 21
-00:01:06,534 --> 00:01:08,631
+00:01:10,628 --> 00:01:12,839
 asking even when the answer is obvious.
 
 22
-00:01:08,631 --> 00:01:12,933
+00:01:12,839 --> 00:01:17,374
 If nobody's thought about what happens when the call times out or errors, you've
 
 23
-00:01:12,933 --> 00:01:14,977
+00:01:17,374 --> 00:01:19,529
 just found the gap before a user does.
 
 24
-00:01:14,977 --> 00:01:19,440
+00:01:19,529 --> 00:01:24,234
 And asking prompt versus fine-tune, out loud, tells the room you know those are two
 
 25
-00:01:19,440 --> 00:01:22,021
+00:01:24,234 --> 00:01:26,956
 different costs, not two words for the same fix.
 
 26
-00:01:22,021 --> 00:01:24,387
+00:01:26,956 --> 00:01:29,450
 Notice none of these need you to write code.
 
 27
-00:01:24,387 --> 00:01:28,850
+00:01:29,450 --> 00:01:34,156
 They're technical in the sense of knowing where to point, not in the sense of being
 
 28
-00:01:28,850 --> 00:01:30,141
+00:01:34,156 --> 00:01:35,517
 able to fix it yourself.
 
 29
-00:01:30,691 --> 00:01:35,237
+00:01:36,067 --> 00:01:40,809
 Second group is everything from inside the RAG box, and "how are we chunking this"
 
 30
-00:01:35,237 --> 00:01:37,122
+00:01:40,809 --> 00:01:42,775
 is the one worth memorising first.
 
 31
-00:01:37,122 --> 00:01:41,612
+00:01:42,775 --> 00:01:47,459
 It's a question most PMs never think to ask, and it's very often where the actual
 
 32
-00:01:41,612 --> 00:01:44,883
+00:01:47,459 --> 00:01:50,871
 bug lives: a badly split document, not a badly built model.
 
 33
-00:01:44,883 --> 00:01:47,822
+00:01:50,871 --> 00:01:53,936
 Asking it early tells the room you already know that.
 
 34
-00:01:47,822 --> 00:01:52,257
+00:01:53,936 --> 00:01:58,563
 "How fresh is the index" catches the other common failure, the confidently wrong
 
 35
-00:01:52,257 --> 00:01:55,029
+00:01:58,563 --> 00:02:01,454
 answer built from something true eight months ago.
 
 36
-00:01:55,029 --> 00:01:59,630
+00:02:01,454 --> 00:02:06,254
 And "is this grounded, or reasoning from memory" is worth asking any time an answer
 
 37
-00:01:59,630 --> 00:02:03,234
+00:02:06,254 --> 00:02:10,013
 sounds suspiciously fluent for something nobody actually gave it.
 
 38
-00:02:03,234 --> 00:02:07,724
+00:02:10,013 --> 00:02:14,697
 Fluent and grounded are not the same thing, and this question is how you find out
 
 39
-00:02:07,724 --> 00:02:09,277
+00:02:14,697 --> 00:02:16,317
 which one you're looking at.
 
 40
-00:02:09,827 --> 00:02:14,445
+00:02:16,867 --> 00:02:21,693
 Third group is where this section overlaps hardest with Section four, and "what's
 
 41
-00:02:14,445 --> 00:02:18,323
+00:02:21,693 --> 00:02:25,745
 our pass rate on the golden set" is the one that does the most work.
 
 42
-00:02:18,323 --> 00:02:20,148
+00:02:25,745 --> 00:02:27,652
 It presumes a golden set exists.
 
 43
-00:02:20,148 --> 00:02:24,880
+00:02:27,652 --> 00:02:32,597
 Asking it plainly, as if of course there's one, is often the moment a room realises
 
 44
-00:02:24,880 --> 00:02:29,214
+00:02:32,597 --> 00:02:37,126
 there isn't, and that's a far more useful outcome than the question sounding
 
 45
-00:02:29,214 --> 00:02:29,841
+00:02:37,126 --> 00:02:37,781
 rhetorical.
 
 46
-00:02:29,841 --> 00:02:34,460
+00:02:37,781 --> 00:02:42,608
 "Is that benchmark representative of our task" belongs right after anyone cites a
 
 47
-00:02:34,460 --> 00:02:36,798
+00:02:42,608 --> 00:02:45,051
 leaderboard number in a model comparison.
 
 48
-00:02:36,798 --> 00:02:41,474
+00:02:45,051 --> 00:02:49,937
 And "does that hold under real concurrent load" is the one question that catches a
 
 49
-00:02:41,474 --> 00:02:43,356
+00:02:49,937 --> 00:02:51,903
 demo before it becomes a promise.
 
 50
-00:02:43,356 --> 00:02:46,834
+00:02:51,903 --> 00:02:55,538
 Ask it before launch, not during the first busy Monday after.
 
 51
-00:02:47,384 --> 00:02:51,746
+00:02:56,088 --> 00:03:00,700
 Last group is the one nobody enjoys asking, and it's the one that matters most.
 
 52
-00:02:51,746 --> 00:02:56,274
+00:03:00,700 --> 00:03:05,487
 "What would make us turn this off" is rarely asked before launch, and it's exactly
 
 53
-00:02:56,274 --> 00:03:00,802
+00:03:05,487 --> 00:03:10,275
 the disqualification checklist from Section one, asked one more time, out loud, in
 
 54
-00:03:00,802 --> 00:03:03,231
+00:03:10,275 --> 00:03:12,844
 the room where it can still change the plan.
 
 55
-00:03:03,231 --> 00:03:07,372
+00:03:12,844 --> 00:03:17,222
 "What's the blast radius" is worth asking about every feature, not just the
 
 56
-00:03:07,372 --> 00:03:11,790
+00:03:17,222 --> 00:03:21,893
 risky-looking ones, because the answer tells you how much evaluation the feature
 
 57
-00:03:11,790 --> 00:03:12,783
+00:03:21,893 --> 00:03:22,944
 actually owes you.
 
 58
-00:03:12,783 --> 00:03:17,256
+00:03:22,944 --> 00:03:27,673
 And "how do we know it hasn't just memorised this" is the quiet, technical way of
 
 59
-00:03:17,256 --> 00:03:21,618
+00:03:27,673 --> 00:03:32,285
 asking whether a benchmark score can be trusted at all, from two lectures back.
 
 60
-00:03:22,168 --> 00:03:25,278
+00:03:32,835 --> 00:03:36,107
 Say the honest caveat, because this list is easy to misuse.
 
 61
-00:03:25,278 --> 00:03:29,601
+00:03:36,107 --> 00:03:40,655
 Memorise the twenty phrases without the six lectures behind them, and you'll ask a
 
 62
-00:03:29,601 --> 00:03:32,448
+00:03:40,655 --> 00:03:43,651
 sharp question and have nothing to do with the answer.
 
 63
-00:03:32,448 --> 00:03:36,454
+00:03:43,651 --> 00:03:47,866
 That's worse than not asking, because it's now visible that the question was
 
 64
-00:03:36,454 --> 00:03:37,772
+00:03:47,866 --> 00:03:49,253
 borrowed, not understood.
 
 65
-00:03:37,772 --> 00:03:42,200
+00:03:49,253 --> 00:03:53,912
 Use these because you've earned them over this section, not instead of earning them.
 
 66
-00:03:42,750 --> 00:03:46,059
+00:03:54,462 --> 00:03:58,044
 One thing before you move on, and keep it small on purpose.
 
 67
-00:03:46,059 --> 00:03:50,770
+00:03:58,044 --> 00:04:03,144
 Pick three phrases from all twenty, the ones that fit a conversation you can already
 
 68
-00:03:50,770 --> 00:03:51,948
+00:04:03,144 --> 00:04:04,419
 see coming this week.
 
 69
-00:03:51,948 --> 00:03:53,743
+00:04:04,419 --> 00:04:06,362
 Twenty at once is a performance.
 
 70
-00:03:53,743 --> 00:03:55,650
+00:04:06,362 --> 00:04:08,426
 Three, used naturally, is a habit.
 
 71
-00:03:55,650 --> 00:04:00,361
+00:04:08,426 --> 00:04:13,526
 Say each one out loud, and imagine the actual follow-up question: can you answer it?
 
 72
-00:04:00,361 --> 00:04:02,997
+00:04:13,526 --> 00:04:16,379
 If so, you're ready to use the phrase for real.
 
 73
-00:04:02,997 --> 00:04:05,128
+00:04:16,379 --> 00:04:18,686
 That closes out the vocabulary itself.
 
 74
-00:04:05,128 --> 00:04:09,671
+00:04:18,686 --> 00:04:23,604
 Next lecture recaps the section and hands off to Section three, where you finally
 
 75
-00:04:09,671 --> 00:04:11,971
+00:04:23,604 --> 00:04:26,093
 write a spec an engineer actually trusts.

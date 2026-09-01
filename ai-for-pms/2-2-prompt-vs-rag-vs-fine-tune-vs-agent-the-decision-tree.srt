@@ -1,383 +1,383 @@
 1
-00:00:00,350 --> 00:00:04,618
+00:00:00,350 --> 00:00:04,887
 That's the pattern worth naming, and there are really only four moves available:
 
 2
-00:00:04,618 --> 00:00:09,100
+00:00:04,887 --> 00:00:09,651
 prompt it better, retrieve the right information, let it take actions, or change the
 
 3
-00:00:09,100 --> 00:00:09,794
+00:00:09,651 --> 00:00:10,388
 model itself.
 
 4
-00:00:09,794 --> 00:00:13,529
+00:00:10,388 --> 00:00:14,358
 Three questions, asked in order, tell you which one you actually need.
 
 5
-00:00:13,529 --> 00:00:16,090
+00:00:14,358 --> 00:00:17,080
 Get the order right and you'll notice something.
 
 6
-00:00:16,090 --> 00:00:20,465
+00:00:17,080 --> 00:00:21,730
 The expensive option almost never turns out to be the first one you needed to try.
 
 7
-00:00:20,465 --> 00:00:24,786
+00:00:21,730 --> 00:00:26,324
 It usually is the last box on this tree, reached only once the cheaper three have
 
 8
-00:00:24,786 --> 00:00:28,788
+00:00:26,324 --> 00:00:30,577
 genuinely been ruled out, not skipped past because it sounded more serious.
 
 9
-00:00:28,788 --> 00:00:32,950
+00:00:30,577 --> 00:00:35,000
 That matters because these four options don't cost the same to be wrong about.
 
 10
-00:00:32,950 --> 00:00:35,617
+00:00:35,000 --> 00:00:37,836
 Ship the wrong prompt and you fix it before lunch.
 
 11
-00:00:35,617 --> 00:00:39,992
+00:00:37,836 --> 00:00:42,486
 Commit to a fine-tune on the wrong assumption and you've spent days of engineering
 
 12
-00:00:39,992 --> 00:00:41,913
+00:00:42,486 --> 00:00:44,528
 time and a training run finding out.
 
 13
-00:00:41,913 --> 00:00:46,342
+00:00:44,528 --> 00:00:49,235
 The tree exists to make sure that cost difference actually shapes the order you try
 
 14
-00:00:46,342 --> 00:00:50,450
+00:00:49,235 --> 00:00:53,602
 things in, instead of whichever option sounds most impressive in the planning
 
 15
-00:00:50,450 --> 00:00:50,877
+00:00:53,602 --> 00:00:54,055
 meeting.
 
 16
-00:00:51,427 --> 00:00:54,366
+00:00:54,605 --> 00:00:57,676
 Walk it in order, because the order is the whole point.
 
 17
-00:00:54,366 --> 00:00:58,587
+00:00:57,676 --> 00:01:02,086
 First question: does this need facts the model wasn't trained on, or facts that
 
 18
-00:00:58,587 --> 00:01:02,167
+00:01:02,086 --> 00:01:05,827
 change, like this week's prices or this customer's account history?
 
 19
-00:01:02,167 --> 00:01:03,931
+00:01:05,827 --> 00:01:07,669
 If yes, stop, you need retrieval.
 
 20
-00:01:03,931 --> 00:01:08,366
+00:01:07,669 --> 00:01:12,303
 That's RAG, and it answers more "the model doesn't know enough" complaints than any
 
 21
-00:01:08,366 --> 00:01:09,595
+00:01:12,303 --> 00:01:13,587
 other box on this tree.
 
 22
-00:01:09,595 --> 00:01:12,106
+00:01:13,587 --> 00:01:16,211
 If the facts are fine, ask the second question.
 
 23
-00:01:12,106 --> 00:01:16,328
+00:01:16,211 --> 00:01:20,622
 Does this need multiple steps, or calling some other system: booking something,
 
 24
-00:01:16,328 --> 00:01:19,587
+00:01:20,622 --> 00:01:24,027
 updating a record, checking a second source before answering?
 
 25
-00:01:19,587 --> 00:01:23,969
+00:01:24,027 --> 00:01:28,605
 If yes, you need an agent, orchestration that can decide what to do next, not just
 
 26
-00:01:23,969 --> 00:01:24,877
+00:01:28,605 --> 00:01:29,554
 what to say next.
 
 27
-00:01:24,877 --> 00:01:29,259
+00:01:29,554 --> 00:01:34,132
 Only if both are no do you reach the third question: has prompting actually failed
 
 28
-00:01:29,259 --> 00:01:31,076
+00:01:34,132 --> 00:01:36,030
 real testing, not "might it fail"?
 
 29
-00:01:31,076 --> 00:01:35,084
+00:01:36,030 --> 00:01:40,218
 If a better prompt genuinely can't hold the format or behaviour you need, a
 
 30
-00:01:35,084 --> 00:01:36,419
+00:01:40,218 --> 00:01:41,613
 fine-tune earns its cost.
 
 31
-00:01:36,419 --> 00:01:40,320
+00:01:41,613 --> 00:01:45,689
 If prompting hasn't been seriously tried yet, the answer is still prompt.
 
 32
-00:01:40,320 --> 00:01:44,755
+00:01:45,689 --> 00:01:50,323
 One more distinction: "multiple steps" means deciding what to do next based on what
 
 33
-00:01:44,755 --> 00:01:47,748
+00:01:50,323 --> 00:01:53,449
 just happened, not multiple steps inside one model call.
 
 34
-00:01:47,748 --> 00:01:52,023
+00:01:53,449 --> 00:01:57,915
 Look something up, decide whether to escalate, then act: that's the branching an
 
 35
-00:01:52,023 --> 00:01:55,870
+00:01:57,915 --> 00:02:01,935
 agent buys you, and why it's harder to evaluate than anything else here.
 
 36
-00:01:55,870 --> 00:01:57,633
+00:02:01,935 --> 00:02:03,777
 Section six covers that properly.
 
 37
-00:01:58,183 --> 00:02:02,422
+00:02:04,327 --> 00:02:08,807
 Here's the same four options, mapped onto the stack from last lecture, and the
 
 38
-00:02:02,422 --> 00:02:04,052
+00:02:08,807 --> 00:02:10,529
 pattern is worth sitting with.
 
 39
-00:02:04,052 --> 00:02:08,508
+00:02:10,529 --> 00:02:15,238
 A prompt change and an agent both live in orchestration, the layer you can iterate
 
 40
-00:02:08,508 --> 00:02:09,106
+00:02:15,238 --> 00:02:15,870
 on fastest.
 
 41
-00:02:09,106 --> 00:02:13,508
+00:02:15,870 --> 00:02:20,521
 RAG lives in your data layer, still cheap to change: swap what gets retrieved and
 
 42
-00:02:13,508 --> 00:02:14,703
+00:02:20,521 --> 00:02:21,785
 test again in minutes.
 
 43
-00:02:14,703 --> 00:02:18,996
+00:02:21,785 --> 00:02:26,321
 A fine-tune is the only one of the four that touches the foundation model layer
 
 44
-00:02:18,996 --> 00:02:23,344
+00:02:26,321 --> 00:02:30,915
 itself, and that's exactly why it's the slowest and most expensive to get wrong.
 
 45
-00:02:23,344 --> 00:02:25,354
+00:02:30,915 --> 00:02:33,040
 Read the iteration cost column again.
 
 46
-00:02:25,354 --> 00:02:28,343
+00:02:33,040 --> 00:02:36,199
 It climbs by roughly an order of magnitude at each row.
 
 47
-00:02:28,343 --> 00:02:32,038
+00:02:36,199 --> 00:02:40,104
 That column alone is the argument for asking the questions in order.
 
 48
-00:02:32,038 --> 00:02:36,603
+00:02:40,104 --> 00:02:44,927
 You want to exhaust the cheap, fast options before committing to the one measured in
 
 49
-00:02:36,603 --> 00:02:37,473
+00:02:44,927 --> 00:02:45,846
 days, not hours.
 
 50
-00:02:37,473 --> 00:02:40,516
+00:02:45,846 --> 00:02:49,062
 There's a second reason the layer matters, beyond speed.
 
 51
-00:02:40,516 --> 00:02:43,450
+00:02:49,062 --> 00:02:52,163
 Whoever owns that layer is who ends up doing the work.
 
 52
-00:02:43,450 --> 00:02:47,472
+00:02:52,163 --> 00:02:56,412
 A prompt change is often something you can propose in a document yourself.
 
 53
-00:02:47,472 --> 00:02:50,352
+00:02:56,412 --> 00:02:59,456
 RAG usually needs someone who owns the data pipeline.
 
 54
-00:02:50,352 --> 00:02:54,862
+00:02:59,456 --> 00:03:04,222
 A fine-tune needs an engineer who can run a training job, evaluate it properly, and
 
 55
-00:02:54,862 --> 00:02:56,655
+00:03:04,222 --> 00:03:06,117
 decide whether it's safe to ship.
 
 56
-00:02:56,655 --> 00:03:01,057
+00:03:06,117 --> 00:03:10,769
 Naming the layer tells you not just how long the fix takes, but whose calendar it
 
 57
-00:03:01,057 --> 00:03:02,470
+00:03:10,769 --> 00:03:12,262
 actually needs to land on.
 
 58
-00:03:03,020 --> 00:03:07,293
+00:03:12,812 --> 00:03:17,348
 Here's the tree, run for real, on a complaint you'll actually hear: answers are
 
 59
-00:03:07,293 --> 00:03:08,753
+00:03:17,348 --> 00:03:18,898
 citing last month's prices.
 
 60
-00:03:08,753 --> 00:03:13,134
+00:03:18,898 --> 00:03:23,548
 The instinct in the room is often "let's fine-tune it on the current sheet." Walk
 
 61
-00:03:13,134 --> 00:03:16,217
+00:03:23,548 --> 00:03:26,821
 that against question one and it falls apart immediately.
 
 62
-00:03:16,217 --> 00:03:17,407
+00:03:26,821 --> 00:03:28,084
 Prices change monthly.
 
 63
-00:03:17,407 --> 00:03:21,842
+00:03:28,084 --> 00:03:32,792
 A fine-tune baked in today is wrong again in four weeks, and each correction means
 
 64
-00:03:21,842 --> 00:03:24,275
+00:03:32,792 --> 00:03:35,376
 retraining and re-evaluating before it ships.
 
 65
-00:03:24,275 --> 00:03:27,412
+00:03:35,376 --> 00:03:38,706
 The actual fix was sitting at question one the whole time.
 
 66
-00:03:27,412 --> 00:03:31,685
+00:03:38,706 --> 00:03:43,241
 Retrieve the current price sheet at answer time, and the fix updates itself the
 
 67
-00:03:31,685 --> 00:03:33,902
+00:03:43,241 --> 00:03:45,595
 moment someone edits the source document.
 
 68
-00:03:33,902 --> 00:03:38,283
+00:03:45,595 --> 00:03:50,246
 No retraining, no waiting on a batch job, no drift between what the model "knows"
 
 69
-00:03:38,283 --> 00:03:40,176
+00:03:50,246 --> 00:03:52,255
 and what's actually true this week.
 
 70
-00:03:40,176 --> 00:03:42,826
+00:03:52,255 --> 00:03:55,069
 Same complaint, same team, same model underneath.
 
 71
-00:03:42,826 --> 00:03:46,342
+00:03:55,069 --> 00:03:58,801
 The only thing that changed was which layer they looked at first.
 
 72
-00:03:46,892 --> 00:03:50,906
+00:03:59,351 --> 00:04:03,555
 Say the honest caveat, because this tree can look like it's asking you to pick
 
 73
-00:03:50,906 --> 00:03:53,994
+00:04:03,555 --> 00:04:06,788
 exactly one box, and that's rarely how a real feature works.
 
 74
-00:03:53,994 --> 00:03:58,162
+00:04:06,788 --> 00:04:11,154
 A support agent that looks up your order and then cancels it is doing RAG to find
 
 75
-00:03:58,162 --> 00:04:00,632
+00:04:11,154 --> 00:04:13,741
 the order and acting to cancel it, both at once.
 
 76
-00:04:00,632 --> 00:04:03,308
+00:04:13,741 --> 00:04:16,544
 The tree isn't asking you to choose a single answer.
 
 77
-00:04:03,308 --> 00:04:07,168
+00:04:16,544 --> 00:04:20,586
 It's asking you to name every box that applies, in order, so you don't skip
 
 78
-00:04:07,168 --> 00:04:11,233
+00:04:20,586 --> 00:04:24,844
 retrieval on your way to building an agent that didn't actually need to be one.
 
 79
-00:04:11,783 --> 00:04:16,095
+00:04:25,394 --> 00:04:29,893
 That's the entire tool, and notice where it puts the burden of proof: on the
 
 80
-00:04:16,095 --> 00:04:18,138
+00:04:29,893 --> 00:04:32,023
 expensive option, not the cheap one.
 
 81
-00:04:18,138 --> 00:04:21,031
+00:04:32,023 --> 00:04:35,042
 Nobody has to justify trying a better prompt first.
 
 82
-00:04:21,031 --> 00:04:25,627
+00:04:35,042 --> 00:04:39,837
 The justification is owed by whoever wants to skip straight to the box that takes
 
 83
-00:04:25,627 --> 00:04:27,669
+00:04:39,837 --> 00:04:41,968
 days and needs its own training run.
 
 84
-00:04:27,669 --> 00:04:29,087
+00:04:41,968 --> 00:04:43,448
 The exercise is specific.
 
 85
-00:04:29,087 --> 00:04:33,853
+00:04:43,448 --> 00:04:48,420
 Find a real proposal, yours or someone else's, that reached for a fine-tune, and run
 
 86
-00:04:33,853 --> 00:04:35,499
+00:04:48,420 --> 00:04:50,136
 it backward through the tree.
 
 87
-00:04:35,499 --> 00:04:40,094
+00:04:50,136 --> 00:04:54,931
 More often than you'd expect, it stops at question one or two, and the actual fix
 
 88
-00:04:40,094 --> 00:04:42,817
+00:04:54,931 --> 00:04:57,772
 was retrieval or a better prompt the whole time.
 
 89
-00:04:43,367 --> 00:04:44,894
+00:04:58,322 --> 00:04:59,964
 One thing before you move on.
 
 90
-00:04:44,894 --> 00:04:49,210
+00:04:59,964 --> 00:05:04,608
 Run the three questions, in order, against whatever AI feature is actually on your
 
 91
-00:04:49,210 --> 00:04:50,052
+00:05:04,608 --> 00:05:05,514
 plate right now.
 
 92
-00:04:50,052 --> 00:04:54,315
+00:05:05,514 --> 00:05:10,101
 Stop at the first yes, then check whether it's really one box: most real features
 
 93
-00:04:54,315 --> 00:04:58,684
+00:05:10,101 --> 00:05:14,802
 are two of the four working together, and naming both is more useful than forcing a
 
 94
-00:04:58,684 --> 00:04:59,421
+00:05:14,802 --> 00:05:15,595
 single answer.
 
 95
-00:04:59,421 --> 00:05:03,737
+00:05:15,595 --> 00:05:20,239
 Next lecture takes the RAG box from this tree and opens it up: what embeddings and
 
 96
-00:05:03,737 --> 00:05:06,685
+00:05:20,239 --> 00:05:23,410
 vector search actually do, without the underlying maths.

@@ -1,347 +1,347 @@
 1
-00:00:00,350 --> 00:00:03,972
+00:00:00,350 --> 00:00:04,118
 Early on, people treated getting good output as a wording problem.
 
 2
-00:00:03,972 --> 00:00:08,417
+00:00:04,118 --> 00:00:08,743
 Phrase the instruction cleverly enough, add the right magic words, and the answer
 
 3
-00:00:08,417 --> 00:00:08,910
+00:00:08,743 --> 00:00:09,257
 improves.
 
 4
-00:00:08,910 --> 00:00:13,465
+00:00:09,257 --> 00:00:13,996
 That's prompt engineering, and it's not wrong, it's just a small piece of something
 
 5
-00:00:13,465 --> 00:00:13,849
+00:00:13,996 --> 00:00:14,396
 bigger.
 
 6
-00:00:13,849 --> 00:00:17,471
+00:00:14,396 --> 00:00:18,164
 Every real feature sends the model far more than your instruction.
 
 7
-00:00:17,471 --> 00:00:22,026
+00:00:18,164 --> 00:00:22,903
 It sends retrieved documents, the last several messages of a conversation, examples
 
 8
-00:00:22,026 --> 00:00:26,470
+00:00:22,903 --> 00:00:27,528
 of the format you want, results from tools it already called, and only then, your
 
 9
-00:00:26,470 --> 00:00:27,348
+00:00:27,528 --> 00:00:28,441
 actual question.
 
 10
-00:00:27,348 --> 00:00:29,324
+00:00:28,441 --> 00:00:30,497
 All of that together is the context.
 
 11
-00:00:29,324 --> 00:00:33,714
+00:00:30,497 --> 00:00:35,065
 Managing it well is context engineering, and it's the actual skill behind almost
 
 12
-00:00:33,714 --> 00:00:35,744
+00:00:35,065 --> 00:00:37,177
 every AI feature that works reliably.
 
 13
-00:00:35,744 --> 00:00:37,500
+00:00:37,177 --> 00:00:39,004
 The name change isn't marketing.
 
 14
-00:00:37,500 --> 00:00:41,835
+00:00:39,004 --> 00:00:43,515
 It's an admission that the thing doing the work was never just the sentence you
 
 15
-00:00:41,835 --> 00:00:42,165
+00:00:43,515 --> 00:00:43,857
 typed.
 
 16
-00:00:42,165 --> 00:00:44,634
+00:00:43,857 --> 00:00:46,427
 It also isn't just a rename for its own sake.
 
 17
-00:00:44,634 --> 00:00:49,134
+00:00:46,427 --> 00:00:51,109
 When most people typed a prompt directly into a chat box, the prompt genuinely was
 
 18
-00:00:49,134 --> 00:00:52,481
+00:00:51,109 --> 00:00:54,592
 almost the whole story, there wasn't much else in the window.
 
 19
-00:00:52,481 --> 00:00:56,981
+00:00:54,592 --> 00:00:59,274
 The moment a feature started retrieving documents, remembering a conversation, and
 
 20
-00:00:56,981 --> 00:01:01,536
+00:00:59,274 --> 00:01:04,013
 calling tools, most of what the model actually saw was being assembled by code, not
 
 21
-00:01:01,536 --> 00:01:06,145
+00:01:04,013 --> 00:01:08,809
 typed by a person, and the old name stopped describing where the real decisions were
 
 22
-00:01:06,145 --> 00:01:06,749
+00:01:08,809 --> 00:01:09,437
 being made.
 
 23
-00:01:07,299 --> 00:01:11,858
+00:01:09,987 --> 00:01:14,794
 Here's roughly what's actually inside a real context window, in the order the pieces
 
 24
-00:01:11,858 --> 00:01:12,673
+00:01:14,794 --> 00:01:15,652
 usually appear.
 
 25
-00:01:12,673 --> 00:01:17,232
+00:01:15,652 --> 00:01:20,459
 System instructions come first: who the model is being asked to be, and the rules it
 
 26
-00:01:17,232 --> 00:01:17,992
+00:01:20,459 --> 00:01:21,260
 should follow.
 
 27
-00:01:17,992 --> 00:01:21,684
+00:01:21,260 --> 00:01:25,152
 Examples, if the feature uses them, show the shape of a good answer.
 
 28
-00:01:21,684 --> 00:01:26,189
+00:01:25,152 --> 00:01:29,902
 Retrieved chunks are whatever your data layer pulled in for this specific question.
 
 29
-00:01:26,189 --> 00:01:29,609
+00:01:29,902 --> 00:01:33,507
 Conversation history is everything said so far in this session.
 
 30
-00:01:29,609 --> 00:01:33,734
+00:01:33,507 --> 00:01:37,856
 Tool results are whatever came back from anything the system already called.
 
 31
-00:01:33,734 --> 00:01:37,914
+00:01:37,856 --> 00:01:42,263
 And the user's actual message, the thing everyone assumes is "the prompt," is
 
 32
-00:01:37,914 --> 00:01:39,977
+00:01:42,263 --> 00:01:44,438
 usually the smallest piece of the six.
 
 33
-00:01:39,977 --> 00:01:44,374
+00:01:44,438 --> 00:01:49,073
 Context engineering is deciding what goes in each of those slots, how much of it,
 
 34
-00:01:44,374 --> 00:01:46,762
+00:01:49,073 --> 00:01:51,591
 and in what order, for every single request.
 
 35
-00:01:46,762 --> 00:01:49,205
+00:01:51,591 --> 00:01:54,166
 Prompt engineering was writing slot one well.
 
 36
-00:01:49,205 --> 00:01:50,670
+00:01:54,166 --> 00:01:55,711
 It was never the whole job.
 
 37
-00:01:50,670 --> 00:01:54,253
+00:01:55,711 --> 00:01:59,488
 Notice, too, that most of these slots change on every single call.
 
 38
-00:01:54,253 --> 00:01:56,424
+00:01:59,488 --> 00:02:01,777
 Retrieved chunks depend on the question.
 
 39
-00:01:56,424 --> 00:01:57,781
+00:02:01,777 --> 00:02:03,208
 History grows every turn.
 
 40
-00:01:57,781 --> 00:02:00,984
+00:02:03,208 --> 00:02:06,585
 Tool results depend on what actually happened a moment ago.
 
 41
-00:02:00,984 --> 00:02:04,295
+00:02:06,585 --> 00:02:10,075
 Only the system instructions and examples tend to stay fixed.
 
 42
-00:02:04,295 --> 00:02:08,855
+00:02:10,075 --> 00:02:14,883
 That's the part a lot of PMs picture when they hear "the prompt," a document someone
 
 43
-00:02:08,855 --> 00:02:12,980
+00:02:14,883 --> 00:02:19,232
 wrote once, when in practice it's a small, stable fraction of what the model
 
 44
-00:02:12,980 --> 00:02:14,935
+00:02:19,232 --> 00:02:21,292
 actually receives on any given call.
 
 45
-00:02:15,485 --> 00:02:17,992
+00:02:21,842 --> 00:02:24,501
 Remember ticket 4471 from the tokens lecture.
 
 46
-00:02:17,992 --> 00:02:22,339
+00:02:24,501 --> 00:02:29,110
 Here's the same instinct that caused that bug showing up again, in a different
 
 47
-00:02:22,339 --> 00:02:22,673
+00:02:29,110 --> 00:02:29,464
 shape.
 
 48
-00:02:22,673 --> 00:02:26,797
+00:02:29,464 --> 00:02:33,836
 The summary was wrong, and the first move was rewriting the system prompt.
 
 49
-00:02:26,797 --> 00:02:31,422
+00:02:33,836 --> 00:02:38,741
 Four attempts, increasingly emphatic: be careful, double-check your work, make sure
 
 50
-00:02:31,422 --> 00:02:33,149
+00:02:38,741 --> 00:02:40,572
 the summary matches the ticket.
 
 51
-00:02:33,149 --> 00:02:37,440
+00:02:40,572 --> 00:02:45,122
 None of it changed the output, because none of it addressed what was actually
 
 52
-00:02:37,440 --> 00:02:37,997
+00:02:45,122 --> 00:02:45,713
 happening.
 
 53
-00:02:37,997 --> 00:02:40,950
+00:02:45,713 --> 00:02:48,844
 The real problem was sitting in the retrieved chunks.
 
 54
-00:02:40,950 --> 00:02:45,520
+00:02:48,844 --> 00:02:53,689
 An old, resolved, near-duplicate ticket had been pulled in alongside the real one,
 
 55
-00:02:45,520 --> 00:02:48,807
+00:02:53,689 --> 00:02:57,176
 and the model was accurately summarising a mixture of both.
 
 56
-00:02:48,807 --> 00:02:49,866
+00:02:57,176 --> 00:02:58,298
 It wasn't confused.
 
 57
-00:02:49,866 --> 00:02:53,042
+00:02:58,298 --> 00:03:01,666
 It was doing exactly what a mixed context asked it to do.
 
 58
-00:02:53,042 --> 00:02:57,667
+00:03:01,666 --> 00:03:06,570
 The fix was in retrieval, not wording, and no version of a cleverer prompt was ever
 
 59
-00:02:57,667 --> 00:02:58,615
+00:03:06,570 --> 00:03:07,575
 going to find it.
 
 60
-00:02:59,165 --> 00:03:03,845
+00:03:08,125 --> 00:03:12,988
 Say the honest caveat, because "just add more context" is the opposite mistake, and
 
 61
-00:03:03,845 --> 00:03:06,045
+00:03:12,988 --> 00:03:15,273
 it's just as common as under-including.
 
 62
-00:03:06,045 --> 00:03:10,782
+00:03:15,273 --> 00:03:20,195
 Stuff the window with everything that might be relevant, and two things get worse at
 
 63
-00:03:10,782 --> 00:03:11,064
+00:03:20,195 --> 00:03:20,488
 once.
 
 64
-00:03:11,064 --> 00:03:15,745
+00:03:20,488 --> 00:03:25,351
 The model's attention isn't distributed evenly, it favours the start and the end of
 
 65
-00:03:15,745 --> 00:03:20,200
+00:03:25,351 --> 00:03:29,980
 what it's given, so genuinely important material buried in the middle of a long
 
 66
-00:03:20,200 --> 00:03:22,569
+00:03:29,980 --> 00:03:32,441
 context gets less weight than it deserves.
 
 67
-00:03:22,569 --> 00:03:27,249
+00:03:32,441 --> 00:03:37,304
 And every token you add costs money and time, a conversation Section seven finishes
 
 68
-00:03:27,249 --> 00:03:27,757
+00:03:37,304 --> 00:03:37,831
 properly.
 
 69
-00:03:27,757 --> 00:03:32,494
+00:03:37,831 --> 00:03:42,753
 Context engineering means choosing what's in the window as carefully as you'd choose
 
 70
-00:03:32,494 --> 00:03:34,242
+00:03:42,753 --> 00:03:44,569
 what's in an executive summary.
 
 71
-00:03:34,242 --> 00:03:35,596
+00:03:44,569 --> 00:03:45,976
 Complete isn't the goal.
 
 72
-00:03:35,596 --> 00:03:36,385
+00:03:45,976 --> 00:03:46,796
 Sufficient is.
 
 73
-00:03:36,935 --> 00:03:40,991
+00:03:47,346 --> 00:03:51,667
 That's the definition worth carrying forward, and it explains why this lecture
 
 74
-00:03:40,991 --> 00:03:43,487
+00:03:51,667 --> 00:03:54,326
 belongs in a course for PMs, not just engineers.
 
 75
-00:03:43,487 --> 00:03:47,543
+00:03:54,326 --> 00:03:58,647
 You don't need to write the retrieval code to ask the right question about it.
 
 76
-00:03:47,543 --> 00:03:51,079
+00:03:58,647 --> 00:04:02,414
 The exercise is the habit that matters most from this whole lecture.
 
 77
-00:03:51,079 --> 00:03:55,446
+00:04:02,414 --> 00:04:07,068
 Before you touch the prompt, look at the full context as it was actually sent, every
 
 78
-00:03:55,446 --> 00:03:56,226
+00:04:07,068 --> 00:04:07,899
 slot, in order.
 
 79
-00:03:56,226 --> 00:03:59,762
+00:04:07,899 --> 00:04:11,666
 More often than seems reasonable, the wording was never the problem.
 
 80
-00:04:00,312 --> 00:04:01,983
+00:04:12,216 --> 00:04:13,982
 One thing before you move on.
 
 81
-00:04:01,983 --> 00:04:06,766
+00:04:13,982 --> 00:04:19,038
 Find a real case where your feature gave a wrong answer, and get the actual context
 
 82
-00:04:06,766 --> 00:04:10,396
+00:04:19,038 --> 00:04:22,875
 that was sent for that request, not the template, the real one.
 
 83
-00:04:10,396 --> 00:04:14,949
+00:04:22,875 --> 00:04:27,686
 Read every slot, in order, and ask: which one did the problem actually live in?
 
 84
-00:04:14,949 --> 00:04:19,098
+00:04:27,686 --> 00:04:32,072
 Instructions, examples, retrieval, history, tools, or truly the wording.
 
 85
-00:04:19,098 --> 00:04:21,518
+00:04:32,072 --> 00:04:34,630
 Most of the time it won't be the last one.
 
 86
-00:04:21,518 --> 00:04:26,186
+00:04:34,630 --> 00:04:39,563
 Next lecture takes the piece everyone underestimates, latency and throughput, and
 
 87
-00:04:26,186 --> 00:04:31,026
+00:04:39,563 --> 00:04:44,679
 gives you the vocabulary to read a benchmark table the way an engineer already does.
