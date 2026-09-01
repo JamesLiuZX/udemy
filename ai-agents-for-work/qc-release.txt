@@ -1,5 +1,5 @@
 
-  built total: 3.35h across 76 lectures
+  built total: 3.64h across 76 lectures
 
   WARN  [1.0] estimated 0.8 min — very short for a lecture.
   WARN  [1.5] estimated 0.5 min — very short for a lecture.
