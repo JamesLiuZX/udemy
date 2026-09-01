@@ -1,323 +1,323 @@
 1
-00:00:00,350 --> 00:00:03,844
+00:00:00,350 --> 00:00:03,956
 You'll hear that exact line defending the next feature too.
 
 2
-00:00:03,844 --> 00:00:08,819
+00:00:03,956 --> 00:00:09,090
 Here's the question it never answers: is a summariser actually the same conversation
 
 3
-00:00:08,819 --> 00:00:11,306
+00:00:09,090 --> 00:00:11,658
 as an agent that books refunds on its own?
 
 4
-00:00:11,306 --> 00:00:14,445
+00:00:11,658 --> 00:00:14,897
 Not even close, even when the same model powers both.
 
 5
-00:00:14,445 --> 00:00:19,005
+00:00:14,897 --> 00:00:19,603
 By now you've got the mechanism, the frontier, and why hallucination happens.
 
 6
-00:00:19,005 --> 00:00:22,735
+00:00:19,603 --> 00:00:23,454
 Here's where that turns into something you can use in the room.
 
 7
-00:00:22,735 --> 00:00:27,532
+00:00:23,454 --> 00:00:28,405
 Almost every AI feature anyone builds falls into one of seven archetypes, and the
 
 8
-00:00:27,532 --> 00:00:32,507
+00:00:28,405 --> 00:00:33,539
 archetype tells you most of what you need to know about how hard this is going to be
 
 9
-00:00:32,507 --> 00:00:35,882
+00:00:33,539 --> 00:00:37,023
 to ship safely, before you've written a line of the spec.
 
 10
-00:00:35,882 --> 00:00:40,324
+00:00:37,023 --> 00:00:41,607
 The mistake I see constantly is treating "should we use AI for this" as one
 
 11
-00:00:40,324 --> 00:00:41,094
+00:00:41,607 --> 00:00:42,402
 conversation.
 
 12
-00:00:41,094 --> 00:00:46,068
+00:00:42,402 --> 00:00:47,536
 It's actually seven different conversations wearing the same trenchcoat, and they do
 
 13
-00:00:46,068 --> 00:00:47,490
+00:00:47,536 --> 00:00:49,003
 not carry the same risk.
 
 14
-00:00:47,490 --> 00:00:51,517
+00:00:49,003 --> 00:00:53,159
 Watch for that defence, in exactly that shape, in your own meetings.
 
 15
-00:00:52,067 --> 00:00:56,314
+00:00:53,709 --> 00:00:58,144
 Here are the seven, roughly ordered by how directly they touch the user.
 
 16
-00:00:56,314 --> 00:01:00,679
+00:00:58,144 --> 00:01:02,701
 Summarise and extract both take real text you already have and reshape it,
 
 17
-00:01:00,679 --> 00:01:03,274
+00:01:02,701 --> 00:01:05,411
 condensing or pulling structured fields out.
 
 18
-00:01:03,274 --> 00:01:08,111
+00:01:05,411 --> 00:01:10,462
 Classify sorts something into a bucket you already defined, like routing a ticket.
 
 19
-00:01:08,111 --> 00:01:12,948
+00:01:10,462 --> 00:01:15,512
 Draft writes new words from a prompt, for a human to review before anything ships.
 
 20
-00:01:12,948 --> 00:01:16,842
+00:01:15,512 --> 00:01:19,577
 Search ranks existing documents so a human picks from the results.
 
 21
-00:01:16,842 --> 00:01:20,145
+00:01:19,577 --> 00:01:23,026
 Answer skips that step and states a conclusion directly.
 
 22
-00:01:20,145 --> 00:01:24,982
+00:01:23,026 --> 00:01:28,076
 And act is the one that actually does something in the world, booking, cancelling,
 
 23
-00:01:24,982 --> 00:01:28,639
+00:01:28,076 --> 00:01:31,895
 updating, on the user's behalf, with no draft step in between.
 
 24
-00:01:28,639 --> 00:01:33,181
+00:01:31,895 --> 00:01:36,637
 Notice the drift as you go down that list: less and less human review sitting
 
 25
-00:01:33,181 --> 00:01:35,423
+00:01:36,637 --> 00:01:38,977
 between the model and the consequence.
 
 26
-00:01:35,423 --> 00:01:40,260
+00:01:38,977 --> 00:01:44,028
 A single product often contains several of these at once, and that's normal, not a
 
 27
-00:01:40,260 --> 00:01:40,791
+00:01:44,028 --> 00:01:44,582
 red flag.
 
 28
-00:01:40,791 --> 00:01:45,392
+00:01:44,582 --> 00:01:49,386
 A support tool might summarise the thread, extract the account number, draft a
 
 29
-00:01:45,392 --> 00:01:48,931
+00:01:49,386 --> 00:01:53,081
 reply, and route the ticket, four archetypes in one feature.
 
 30
-00:01:48,931 --> 00:01:53,827
+00:01:53,081 --> 00:01:58,193
 Name each piece separately, because they don't share a risk level just because they
 
 31
-00:01:53,827 --> 00:01:54,476
+00:01:58,193 --> 00:01:58,871
 share a UI.
 
 32
-00:01:55,026 --> 00:01:57,975
+00:01:59,421 --> 00:02:02,491
 Here's the pattern the last slide was building to.
 
 33
-00:01:57,975 --> 00:02:02,870
+00:02:02,491 --> 00:02:07,589
 Same seven archetypes, ordered by how much evaluation rigour they genuinely demand.
 
 34
-00:02:02,870 --> 00:02:07,707
+00:02:07,589 --> 00:02:12,625
 Summarise and extract sit low, because you're reshaping text that's right there in
 
 35
-00:02:07,707 --> 00:02:11,836
+00:02:12,625 --> 00:02:16,924
 the prompt, exactly where the mechanism from lecture one is strongest.
 
 36
-00:02:11,836 --> 00:02:15,433
+00:02:16,924 --> 00:02:20,671
 A spot check and a light golden set will catch most problems.
 
 37
-00:02:15,433 --> 00:02:18,441
+00:02:20,671 --> 00:02:23,803
 Answer and act sit high, and for different reasons.
 
 38
-00:02:18,441 --> 00:02:23,278
+00:02:23,803 --> 00:02:28,839
 Answer skips the human review step search kept, so a wrong answer reaches the user
 
 39
-00:02:23,278 --> 00:02:23,809
+00:02:28,839 --> 00:02:29,392
 directly.
 
 40
-00:02:23,809 --> 00:02:28,291
+00:02:29,392 --> 00:02:34,060
 Act compounds that: it's not just wrong, it's wrong and it already happened.
 
 41
-00:02:28,291 --> 00:02:33,246
+00:02:34,060 --> 00:02:39,219
 Those two are where you want the entire Section four toolkit, not the light version.
 
 42
-00:02:33,246 --> 00:02:38,200
+00:02:39,219 --> 00:02:44,378
 Draft and search sit in the middle for a genuinely different reason than either end.
 
 43
-00:02:38,200 --> 00:02:43,154
+00:02:44,378 --> 00:02:49,537
 They're not risky because the model is unreliable on that task, they're risky if the
 
 44
-00:02:43,154 --> 00:02:46,398
+00:02:49,537 --> 00:02:52,914
 human review step gets skipped under deadline pressure.
 
 45
-00:02:46,398 --> 00:02:50,822
+00:02:52,914 --> 00:02:57,521
 The archetype is only as safe as the review step someone swore they'd keep.
 
 46
-00:02:51,372 --> 00:02:56,023
+00:02:58,071 --> 00:03:02,839
 Say the honest caveat, because a chart like that invites the wrong conclusion if
 
 47
-00:02:56,023 --> 00:02:57,127
+00:03:02,839 --> 00:03:03,972
 you're not careful.
 
 48
-00:02:57,127 --> 00:02:59,802
+00:03:03,972 --> 00:03:06,714
 This is not a verdict on any specific feature.
 
 49
-00:02:59,802 --> 00:03:01,429
+00:03:06,714 --> 00:03:08,383
 It's a prediction of effort.
 
 50
-00:03:01,429 --> 00:03:06,080
+00:03:08,383 --> 00:03:13,151
 A well-evaluated "act" feature, with the reliability maths from Section six done
 
 51
-00:03:06,080 --> 00:03:08,231
+00:03:13,151 --> 00:03:15,357
 properly, can absolutely ship safely.
 
 52
-00:03:08,231 --> 00:03:12,940
+00:03:15,357 --> 00:03:20,185
 A "summarise" feature that skipped Section four entirely can still embarrass you,
 
 53
-00:03:12,940 --> 00:03:16,254
+00:03:20,185 --> 00:03:23,582
 just with lower odds and probably a smaller blast radius.
 
 54
-00:03:16,254 --> 00:03:20,265
+00:03:23,582 --> 00:03:27,695
 The chart tells you how much you owe the problem before you trust it.
 
 55
-00:03:20,265 --> 00:03:22,126
+00:03:27,695 --> 00:03:29,603
 It doesn't do the owing for you.
 
 56
-00:03:22,126 --> 00:03:26,893
+00:03:29,603 --> 00:03:34,490
 Use it to argue about budget and timeline honestly, not to argue that a feature is
 
 57
-00:03:26,893 --> 00:03:29,858
+00:03:34,490 --> 00:03:37,530
 safe because of what category it happens to sit in.
 
 58
-00:03:29,858 --> 00:03:34,276
+00:03:37,530 --> 00:03:42,060
 "It's just a summariser" has talked more than one team out of eval work they
 
 59
-00:03:34,276 --> 00:03:35,206
+00:03:42,060 --> 00:03:43,014
 actually needed.
 
 60
-00:03:35,756 --> 00:03:39,179
+00:03:43,564 --> 00:03:47,081
 Notice the definition is about consequence, not appearance.
 
 61
-00:03:39,179 --> 00:03:43,820
+00:03:47,081 --> 00:03:51,851
 Two features can look identical in the UI, a chat window, a text box, and sit at
 
 62
-00:03:43,820 --> 00:03:48,461
+00:03:51,851 --> 00:03:56,620
 completely different points on that chart, because one drafts for review and the
 
 63
-00:03:48,461 --> 00:03:49,622
+00:03:56,620 --> 00:03:57,812
 other acts directly.
 
 64
-00:03:49,622 --> 00:03:51,536
+00:03:57,812 --> 00:03:59,780
 The exercise is blunt on purpose.
 
 65
-00:03:51,536 --> 00:03:53,915
+00:03:59,780 --> 00:04:02,224
 Say your feature's archetype in one word.
 
 66
-00:03:53,915 --> 00:03:58,614
+00:04:02,224 --> 00:04:07,053
 If nothing on that list fits cleanly, or more than one does at once, that's worth
 
 67
-00:03:58,614 --> 00:04:03,313
+00:04:07,053 --> 00:04:11,882
 sitting with before you write a single acceptance criterion, because the spec you
 
 68
-00:04:03,313 --> 00:04:06,852
+00:04:11,882 --> 00:04:15,519
 write depends entirely on which one you're actually building.
 
 69
-00:04:06,852 --> 00:04:09,405
+00:04:15,519 --> 00:04:18,142
 Do this before Section three, not during it.
 
 70
-00:04:09,405 --> 00:04:14,220
+00:04:18,142 --> 00:04:23,090
 Walking into a PRD already knowing your archetype is the difference between writing
 
 71
-00:04:14,220 --> 00:04:19,035
+00:04:23,090 --> 00:04:28,038
 the spec once and rewriting it after someone asks a question you hadn't considered.
 
 72
-00:04:19,585 --> 00:04:21,262
+00:04:28,588 --> 00:04:30,320
 One thing before you move on.
 
 73
-00:04:21,262 --> 00:04:24,846
+00:04:30,320 --> 00:04:34,022
 Name your feature's archetype, one word, out loud or on paper.
 
 74
-00:04:24,846 --> 00:04:29,645
+00:04:34,022 --> 00:04:38,979
 Then be honest about whether the evaluation work you've actually done matches where
 
 75
-00:04:29,645 --> 00:04:33,114
+00:04:38,979 --> 00:04:42,562
 that archetype sits on the chart, not where you wish it sat.
 
 76
-00:04:33,114 --> 00:04:37,566
+00:04:42,562 --> 00:04:47,160
 If you're building several archetypes in one product, do this once per piece.
 
 77
-00:04:37,566 --> 00:04:42,017
+00:04:47,160 --> 00:04:51,758
 A single honest sentence, "we've built a search feature's worth of rigour for
 
 78
-00:04:42,017 --> 00:04:46,874
+00:04:51,758 --> 00:04:56,775
 something that actually answers," is worth more than the whole rest of this lecture.
 
 79
-00:04:46,874 --> 00:04:51,441
+00:04:56,775 --> 00:05:01,492
 Next lecture is the checklist for the question underneath all of this: when the
 
 80
-00:04:51,441 --> 00:04:56,297
+00:05:01,492 --> 00:05:06,508
 honest answer, for all seven archetypes, is that you shouldn't build this with AI at
 
 81
-00:04:56,297 --> 00:04:56,529
+00:05:06,508 --> 00:05:06,747
 all.

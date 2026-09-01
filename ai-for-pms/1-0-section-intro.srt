@@ -1,71 +1,71 @@
 1
-00:00:00,350 --> 00:00:04,265
+00:00:00,350 --> 00:00:04,401
 Section zero gave you the one idea: a distribution, not a function.
 
 2
-00:00:04,265 --> 00:00:09,114
+00:00:04,401 --> 00:00:09,420
 This section is where that idea gets a mechanism underneath it, just enough of one.
 
 3
-00:00:09,114 --> 00:00:10,867
+00:00:09,420 --> 00:00:11,234
 Not a machine learning course.
 
 4
-00:00:10,867 --> 00:00:13,788
+00:00:11,234 --> 00:00:14,257
 You will not train a model, and you don't need to.
 
 5
-00:00:13,788 --> 00:00:18,579
+00:00:14,257 --> 00:00:19,215
 You need the six or seven facts about how these things actually work that keep you
 
 6
-00:00:18,579 --> 00:00:21,150
+00:00:19,215 --> 00:00:21,875
 from making an expensive, avoidable mistake.
 
 7
-00:00:21,700 --> 00:00:24,823
+00:00:22,425 --> 00:00:25,604
 Six mechanisms, roughly in the order they'll bite you.
 
 8
-00:00:24,823 --> 00:00:29,565
+00:00:25,604 --> 00:00:30,431
 You'll learn what the model is actually doing under the fluent sentences, and four
 
 9
-00:00:29,565 --> 00:00:31,994
+00:00:30,431 --> 00:00:32,903
 consequences that follow directly from it.
 
 10
-00:00:31,994 --> 00:00:36,737
+00:00:32,903 --> 00:00:37,730
 Tokens and context windows, because that's where a feature that worked in the demo
 
 11
-00:00:36,737 --> 00:00:38,992
+00:00:37,730 --> 00:00:40,026
 quietly breaks once real users show up.
 
 12
-00:00:38,992 --> 00:00:43,561
+00:00:40,026 --> 00:00:44,676
 Temperature, so you can explain why the same prompt gives two different answers
 
 13
-00:00:43,561 --> 00:00:45,007
+00:00:44,676 --> 00:00:46,148
 without calling it a bug.
 
 14
-00:00:45,007 --> 00:00:49,749
+00:00:46,148 --> 00:00:50,975
 Then the honest state of what these models can and can't do, and why hallucination
 
 15
-00:00:49,749 --> 00:00:53,103
+00:00:50,975 --> 00:00:54,389
 is the mechanism working as designed rather than a defect.
 
 16
-00:00:53,103 --> 00:00:57,904
+00:00:54,389 --> 00:00:59,275
 It closes with seven archetypes of AI feature so you can name what you're building,
 
 17
-00:00:57,904 --> 00:01:02,704
+00:00:59,275 --> 00:01:04,160
 and a checklist for the question nobody wants to ask out loud: should this be an AI
 
 18
-00:01:02,704 --> 00:01:03,571
+00:01:04,160 --> 00:01:05,043
 feature at all.

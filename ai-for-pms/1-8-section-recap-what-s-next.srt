@@ -1,79 +1,79 @@
 1
-00:00:00,350 --> 00:00:05,093
+00:00:00,350 --> 00:00:05,291
 Eight lectures ago, this section promised enough mechanism to make good decisions,
 
 2
-00:00:05,093 --> 00:00:05,787
+00:00:05,291 --> 00:00:06,014
 and no more.
 
 3
-00:00:05,787 --> 00:00:07,175
+00:00:06,014 --> 00:00:07,460
 Here's the honest tally.
 
 4
-00:00:07,175 --> 00:00:11,859
+00:00:07,460 --> 00:00:12,340
 You know what the model is actually doing, and four consequences that follow from
 
 5
-00:00:11,859 --> 00:00:12,033
+00:00:12,340 --> 00:00:12,521
 it.
 
 6
-00:00:12,033 --> 00:00:16,660
+00:00:12,521 --> 00:00:17,341
 You know why the same prompt gives different answers, what these systems can and
 
 7
-00:00:16,660 --> 00:00:21,171
+00:00:17,341 --> 00:00:22,041
 can't reliably do right now, and why hallucination is the mechanism working as
 
 8
-00:00:21,171 --> 00:00:23,484
+00:00:22,041 --> 00:00:24,451
 designed, not a bug waiting for a patch.
 
 9
-00:00:23,484 --> 00:00:28,285
+00:00:24,451 --> 00:00:29,452
 You can name your feature's archetype in one word, and you have five questions that
 
 10
-00:00:28,285 --> 00:00:31,581
+00:00:29,452 --> 00:00:32,886
 tell you when the honest answer is don't build it at all.
 
 11
-00:00:31,581 --> 00:00:32,622
+00:00:32,886 --> 00:00:33,971
 That's not trivia.
 
 12
-00:00:32,622 --> 00:00:37,365
+00:00:33,971 --> 00:00:38,912
 Every argument you have from here about specs, cost, risk, or agents is downstream
 
 13
-00:00:37,365 --> 00:00:38,637
+00:00:38,912 --> 00:00:40,237
 of one of those ideas.
 
 14
-00:00:39,187 --> 00:00:43,475
+00:00:40,787 --> 00:00:45,226
 One section ahead before the real work of specifying a feature begins.
 
 15
-00:00:43,475 --> 00:00:48,008
+00:00:45,226 --> 00:00:49,918
 Section two is short and specific: the AI stack in one diagram, the actual
 
 16
-00:00:48,008 --> 00:00:53,153
+00:00:49,918 --> 00:00:55,244
 difference between a prompt, RAG, a fine-tune, and an agent, and twenty phrases that
 
 17
-00:00:53,153 --> 00:00:58,115
+00:00:55,244 --> 00:01:00,379
 make an engineer trust you in the first five minutes of a conversation instead of
 
 18
-00:00:58,115 --> 00:00:58,972
+00:01:00,379 --> 00:01:01,267
 the last five.
 
 19
-00:00:58,972 --> 00:01:03,505
+00:01:01,267 --> 00:01:05,959
 Then Section three, where you finally write the spec, now with a mechanism
 
 20
-00:01:03,505 --> 00:01:08,344
+00:01:05,959 --> 00:01:10,968
 underneath it that makes the acceptance criteria defensible instead of hopeful.
