@@ -1,99 +1,99 @@
 1
-00:00:00,350 --> 00:00:04,548
+00:00:00,350 --> 00:00:04,856
 Sam had Harlan's first avatar video open in Ads Manager, ready to schedule.
 
 2
-00:00:04,548 --> 00:00:05,612
+00:00:04,856 --> 00:00:05,997
 It looked finished.
 
 3
-00:00:05,612 --> 00:00:07,011
+00:00:05,997 --> 00:00:07,499
 It wasn't allowed to run.
 
 4
-00:00:07,011 --> 00:00:11,657
+00:00:07,499 --> 00:00:12,485
 The avatar (an AI-generated on-screen presenter, standing in for an actor) had come
 
 5
-00:00:11,657 --> 00:00:16,359
+00:00:12,485 --> 00:00:17,531
 from a stock library's cheapest plan, and that plan covered personal, organic posts,
 
 6
-00:00:16,359 --> 00:00:17,423
+00:00:17,531 --> 00:00:18,673
 not paid campaigns.
 
 7
-00:00:17,423 --> 00:00:21,733
+00:00:18,673 --> 00:00:23,298
 Nobody had checked the licence tier, what the plan you're paying for actually
 
 8
-00:00:21,733 --> 00:00:25,260
+00:00:23,298 --> 00:00:27,083
 permits you to do with the footage, before generating the clip.
 
 9
-00:00:25,260 --> 00:00:29,514
+00:00:27,083 --> 00:00:31,649
 Sam caught it before a dollar of spend, which is the only reason it became a
 
 10
-00:00:29,514 --> 00:00:32,089
+00:00:31,649 --> 00:00:34,412
 five-minute fix instead of an account problem.
 
 11
-00:00:32,089 --> 00:00:35,224
+00:00:34,412 --> 00:00:37,776
 This section is built around not repeating that mistake.
 
 12
-00:00:35,224 --> 00:00:39,814
+00:00:37,776 --> 00:00:42,702
 It's about UGC video, short ads styled like an ordinary customer's own clip rather
 
 13
-00:00:39,814 --> 00:00:42,612
+00:00:42,702 --> 00:00:45,706
 than a polished commercial, built without a shoot.
 
 14
-00:00:42,612 --> 00:00:46,979
+00:00:45,706 --> 00:00:50,392
 Every lecture ahead assumes you check rights before you generate, never after.
 
 15
-00:00:47,529 --> 00:00:49,585
+00:00:50,942 --> 00:00:53,159
 Five lectures, and the order matters.
 
 16
-00:00:49,585 --> 00:00:54,086
+00:00:53,159 --> 00:00:58,011
 Rights and the avatar landscape come first, because generating first and checking
 
 17
-00:00:54,086 --> 00:00:57,309
+00:00:58,011 --> 00:01:01,485
 rights after is exactly how Harlan's first draft got made.
 
 18
-00:00:57,309 --> 00:01:01,643
+00:01:01,485 --> 00:01:06,158
 Scripting comes next, then the actual generation, properly licensed this time.
 
 19
-00:01:01,643 --> 00:01:06,200
+00:01:06,158 --> 00:01:11,070
 The section closes on assembly: turning a generated clip into something that works
 
 20
-00:01:06,200 --> 00:01:09,701
+00:01:11,070 --> 00:01:14,844
 with the sound off, which is how most people actually watch it.
 
 21
-00:01:09,701 --> 00:01:13,536
+00:01:14,844 --> 00:01:18,978
 Before lecture one, do the five-minute version of the check yourself.
 
 22
-00:01:13,536 --> 00:01:18,148
+00:01:18,978 --> 00:01:23,950
 Open whichever avatar or stock tool you already use and find its licence or pricing
 
 23
-00:01:18,148 --> 00:01:18,426
+00:01:23,950 --> 00:01:24,249
 page.
 
 24
-00:01:18,426 --> 00:01:23,038
+00:01:24,249 --> 00:01:29,222
 That's the exact five minutes that would have caught Harlan's first draft, and it's
 
 25
-00:01:23,038 --> 00:01:25,539
+00:01:29,222 --> 00:01:31,917
 the cheapest insurance in this whole section.

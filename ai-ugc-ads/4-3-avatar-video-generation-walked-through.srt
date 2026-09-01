@@ -1,463 +1,463 @@
 1
-00:00:00,350 --> 00:00:05,177
+00:00:00,350 --> 00:00:05,607
 Sam sat back down to generate Harlan's hook: the same script from last lecture, the
 
 2
-00:00:05,177 --> 00:00:05,874
+00:00:05,607 --> 00:00:06,367
 same avatar.
 
 3
-00:00:05,874 --> 00:00:10,352
+00:00:06,367 --> 00:00:11,243
 This time, before he touched the generator, he pulled up the licence page and
 
 4
-00:00:10,352 --> 00:00:13,783
+00:00:11,243 --> 00:00:14,980
 confirmed it himself: commercial tier, paid social cleared.
 
 5
-00:00:13,783 --> 00:00:15,818
+00:00:14,980 --> 00:00:17,197
 Only then did he generate anything.
 
 6
-00:00:15,818 --> 00:00:20,412
+00:00:17,197 --> 00:00:22,200
 As of this recording, tools built specifically for this workflow, Arcads is one
 
 7
-00:00:20,412 --> 00:00:25,180
+00:00:22,200 --> 00:00:27,394
 current example, take a script and a chosen avatar and generate a short-form video
 
 8
-00:00:25,180 --> 00:00:29,658
+00:00:27,394 --> 00:00:32,270
 suited to paid social by design, including the export formats Meta and TikTok
 
 9
-00:00:29,658 --> 00:00:30,065
+00:00:32,270 --> 00:00:32,714
 expect.
 
 10
-00:00:30,065 --> 00:00:34,775
+00:00:32,714 --> 00:00:37,844
 Whatever tool you're actually using when you watch this, the sequence below holds
 
 11
-00:00:34,775 --> 00:00:35,415
+00:00:37,844 --> 00:00:38,540
 regardless.
 
 12
-00:00:35,415 --> 00:00:40,183
+00:00:38,540 --> 00:00:43,734
 Confirm the specifics on your own account before you rely on any of them, the same
 
 13
-00:00:40,183 --> 00:00:43,963
+00:00:43,734 --> 00:00:47,850
 discipline Section 3.1 already asked of you for image generation.
 
 14
-00:00:43,963 --> 00:00:48,790
+00:00:47,850 --> 00:00:53,107
 Notice what's different about this generation compared to every static you built in
 
 15
-00:00:48,790 --> 00:00:52,860
+00:00:53,107 --> 00:00:57,540
 Section 3: there's now a performance involved, not just a composition.
 
 16
-00:00:52,860 --> 00:00:55,303
+00:00:57,540 --> 00:01:00,200
 A static either looks right or it doesn't.
 
 17
-00:00:55,303 --> 00:00:59,955
+00:01:00,200 --> 00:01:05,267
 A generated avatar clip has to look right and sound right and land the emotional
 
 18
-00:00:59,955 --> 00:01:04,258
+00:01:05,267 --> 00:01:09,954
 note the script is going for, three separate things that can each go wrong
 
 19
-00:01:04,258 --> 00:01:06,061
+00:01:09,954 --> 00:01:11,917
 independently of the other two.
 
 20
-00:01:06,061 --> 00:01:10,771
+00:01:11,917 --> 00:01:17,047
 That's the actual reason this lecture runs longer than a static walkthrough: more
 
 21
-00:01:10,771 --> 00:01:14,551
+00:01:17,047 --> 00:01:21,164
 can go right, and more can go wrong, in the same fifteen seconds.
 
 22
-00:01:15,101 --> 00:01:19,301
+00:01:21,714 --> 00:01:26,308
 Here's the actual sequence, and notice three of five steps happen before you
 
 23
-00:01:19,301 --> 00:01:20,683
+00:01:26,308 --> 00:01:27,820
 generate anything at all.
 
 24
-00:01:20,683 --> 00:01:25,325
+00:01:27,820 --> 00:01:32,898
 Licence tier first, confirmed rather than assumed, because that's the exact gap that
 
 25
-00:01:25,325 --> 00:01:26,873
+00:01:32,898 --> 00:01:34,590
 caught Harlan's first draft.
 
 26
-00:01:26,873 --> 00:01:30,520
+00:01:34,590 --> 00:01:38,580
 The script, word-budget checked and read aloud, from last lecture.
 
 27
-00:01:30,520 --> 00:01:34,942
+00:01:38,580 --> 00:01:43,416
 And a delivery style that matches the hook: the "hour eleven" line needs to land
 
 28
-00:01:34,942 --> 00:01:39,474
+00:01:43,416 --> 00:01:48,373
 tired and relieved, not upbeat, or the performance undercuts the exact words doing
 
 29
-00:01:39,474 --> 00:01:39,971
+00:01:48,373 --> 00:01:48,917
 the work.
 
 30
-00:01:39,971 --> 00:01:44,503
+00:01:48,917 --> 00:01:53,875
 Ask yourself, before you hit generate: does the delivery style you've chosen match
 
 31
-00:01:44,503 --> 00:01:46,990
+00:01:53,875 --> 00:01:56,595
 the feeling the script is actually going for?
 
 32
-00:01:46,990 --> 00:01:51,577
+00:01:56,595 --> 00:02:01,612
 A mismatch here is invisible in the settings panel and obvious the moment you press
 
 33
-00:01:51,577 --> 00:01:51,854
+00:02:01,612 --> 00:02:01,915
 play.
 
 34
-00:01:51,854 --> 00:01:56,441
+00:02:01,915 --> 00:02:06,932
 Most avatar tools offer a menu of delivery presets, energetic, warm, confident, and
 
 35
-00:01:56,441 --> 00:02:00,365
+00:02:06,932 --> 00:02:11,224
 it's tempting to default to whichever one sounds most like a normal ad.
 
 36
-00:02:00,365 --> 00:02:01,028
+00:02:11,224 --> 00:02:11,950
 Resist that.
 
 37
-00:02:01,028 --> 00:02:05,284
+00:02:11,950 --> 00:02:16,605
 "Hour eleven" is a line about exhaustion easing, not a line about excitement.
 
 38
-00:02:05,284 --> 00:02:09,705
+00:02:16,605 --> 00:02:21,441
 An energetic delivery would perform the words correctly and undercut the meaning
 
 39
-00:02:09,705 --> 00:02:13,905
+00:02:21,441 --> 00:02:26,035
 entirely, the same mismatch you'd hear if someone read a eulogy in an upbeat
 
 40
-00:02:13,905 --> 00:02:15,177
+00:02:26,035 --> 00:02:27,425
 customer-service voice.
 
 41
-00:02:15,177 --> 00:02:19,322
+00:02:27,425 --> 00:02:31,959
 Choose the preset closest to how the line would actually be said, tired and
 
 42
-00:02:19,322 --> 00:02:22,417
+00:02:31,959 --> 00:02:35,345
 relieved, not the one that sounds most like advertising.
 
 43
-00:02:22,967 --> 00:02:26,988
+00:02:35,895 --> 00:02:40,358
 A clip that renders successfully isn't automatically a clip that's ready.
 
 44
-00:02:26,988 --> 00:02:30,349
+00:02:40,358 --> 00:02:44,089
 Four checks, every time, before it goes anywhere near a test.
 
 45
-00:02:30,349 --> 00:02:34,756
+00:02:44,089 --> 00:02:48,980
 Lip-sync can drift subtly enough to miss on a glance and read as wrong on a full
 
 46
-00:02:34,756 --> 00:02:35,086
+00:02:48,980 --> 00:02:49,347
 watch.
 
 47
-00:02:35,086 --> 00:02:39,604
+00:02:49,347 --> 00:02:54,361
 Pacing can run long even from a word-budget-checked script, because delivery speed
 
 48
-00:02:39,604 --> 00:02:40,540
+00:02:54,361 --> 00:02:55,401
 varies by avatar.
 
 49
-00:02:40,540 --> 00:02:44,672
+00:02:55,401 --> 00:02:59,987
 Tone can default to a generic upbeat register that fights the actual words.
 
 50
-00:02:44,672 --> 00:02:49,300
+00:02:59,987 --> 00:03:05,124
 And problems love to hide in the middle third of a clip, which is exactly the part a
 
 51
-00:02:49,300 --> 00:02:51,173
+00:03:05,124 --> 00:03:07,203
 thumbnail preview never shows you.
 
 52
-00:02:51,173 --> 00:02:55,800
+00:03:07,203 --> 00:03:12,339
 Give yourself the full fifteen or thirty seconds, every time, before you sign off on
 
 53
-00:02:55,800 --> 00:02:56,186
+00:03:12,339 --> 00:03:12,767
 a clip.
 
 54
-00:02:56,186 --> 00:03:00,593
+00:03:12,767 --> 00:03:17,659
 Skimming to save a minute here is how a pacing problem survives all the way to a
 
 55
-00:03:00,593 --> 00:03:04,339
+00:03:17,659 --> 00:03:21,817
 real test, where it costs a great deal more than a minute to notice.
 
 56
-00:03:04,339 --> 00:03:08,691
+00:03:21,817 --> 00:03:26,648
 Do this watch on the device your audience actually uses, not a desktop monitor.
 
 57
-00:03:08,691 --> 00:03:13,099
+00:03:26,648 --> 00:03:31,540
 A lip-sync gap that's invisible on a large screen can read as clearly wrong on a
 
 58
-00:03:13,099 --> 00:03:17,616
+00:03:31,540 --> 00:03:36,554
 phone held at arm's length, because that's a smaller image asking more of the same
 
 59
-00:03:17,616 --> 00:03:18,002
+00:03:36,554 --> 00:03:36,982
 detail.
 
 60
-00:03:18,002 --> 00:03:20,866
+00:03:36,982 --> 00:03:40,162
 If it holds up on a phone, it'll hold up everywhere.
 
 61
-00:03:20,866 --> 00:03:22,133
+00:03:40,162 --> 00:03:41,568
 The reverse isn't true.
 
 62
-00:03:22,683 --> 00:03:27,149
+00:03:42,118 --> 00:03:47,013
 It's worth being honest about how much this actually replaced, in both directions.
 
 63
-00:03:27,149 --> 00:03:30,580
+00:03:47,013 --> 00:03:50,774
 A shoot day, a studio, a crew: genuinely gone, and that's real.
 
 64
-00:03:30,580 --> 00:03:32,378
+00:03:50,774 --> 00:03:52,744
 What didn't go away is judgement.
 
 65
-00:03:32,378 --> 00:03:36,898
+00:03:52,744 --> 00:03:57,699
 Something still has to decide whether a delivery actually lands, catch pacing drift
 
 66
-00:03:36,898 --> 00:03:41,419
+00:03:57,699 --> 00:04:02,653
 the script alone couldn't predict, and check every line against the claims boundary
 
 67
-00:03:41,419 --> 00:03:42,344
+00:04:02,653 --> 00:04:03,668
 from Section 2.1.
 
 68
-00:03:42,344 --> 00:03:44,033
+00:04:03,668 --> 00:04:05,519
 Generation replaced production.
 
 69
-00:03:44,033 --> 00:03:45,721
+00:04:05,519 --> 00:04:07,369
 It didn't replace the checking.
 
 70
-00:03:45,721 --> 00:03:49,915
+00:04:07,369 --> 00:04:11,966
 That's worth saying plainly, because it's the opposite of how this technology
 
 71
-00:03:49,915 --> 00:03:50,895
+00:04:11,966 --> 00:04:13,040
 usually gets sold.
 
 72
-00:03:50,895 --> 00:03:55,416
+00:04:13,040 --> 00:04:17,995
 The pitch is "video ads without the work." The honest version is "video ads without
 
 73
-00:03:55,416 --> 00:03:59,773
+00:04:17,995 --> 00:04:22,771
 the shoot, with a different kind of work in its place." Less expensive work, and
 
 74
-00:03:59,773 --> 00:04:00,426
+00:04:22,771 --> 00:04:23,487
 much faster.
 
 75
-00:04:00,426 --> 00:04:01,025
+00:04:23,487 --> 00:04:24,144
 Still work.
 
 76
-00:04:01,025 --> 00:04:05,546
+00:04:24,144 --> 00:04:29,099
 Think about where the actual time went on a real shoot day: not the filming itself,
 
 77
-00:04:05,546 --> 00:04:08,922
+00:04:29,099 --> 00:04:32,800
 but the setup, the retakes, the crew coordination, the travel.
 
 78
-00:04:08,922 --> 00:04:11,972
+00:04:32,800 --> 00:04:36,143
 Generation genuinely collapses all of that into minutes.
 
 79
-00:04:11,972 --> 00:04:16,547
+00:04:36,143 --> 00:04:41,157
 What it doesn't collapse is the four checks from the table above, because those were
 
 80
-00:04:16,547 --> 00:04:18,181
+00:04:41,157 --> 00:04:42,948
 never about filming logistics.
 
 81
-00:04:18,181 --> 00:04:22,484
+00:04:42,948 --> 00:04:47,664
 They were always about judgement, and judgement doesn't get faster just because
 
 82
-00:04:22,484 --> 00:04:23,301
+00:04:47,664 --> 00:04:48,559
 production did.
 
 83
-00:04:23,851 --> 00:04:26,453
+00:04:49,109 --> 00:04:51,937
 One honest limit before this goes any further.
 
 84
-00:04:26,453 --> 00:04:31,148
+00:04:51,937 --> 00:04:57,040
 Performance quality varies between generations of the exact same script and avatar,
 
 85
-00:04:31,148 --> 00:04:32,336
+00:04:57,040 --> 00:04:58,331
 sometimes noticeably.
 
 86
-00:04:32,336 --> 00:04:35,786
+00:04:58,331 --> 00:05:02,082
 If the first take feels flat, regenerate rather than ship it.
 
 87
-00:04:35,786 --> 00:04:40,538
+00:05:02,082 --> 00:05:07,246
 A strong script delivered flatly reads worse than either problem on its own, because
 
 88
-00:04:40,538 --> 00:04:43,253
+00:05:07,246 --> 00:05:10,197
 it promises energy the delivery doesn't back up.
 
 89
-00:04:43,253 --> 00:04:47,948
+00:05:10,197 --> 00:05:15,300
 Give yourself a real budget for this, two or three regenerations per angle, not one
 
 90
-00:04:47,948 --> 00:04:52,473
+00:05:15,300 --> 00:05:20,218
 attempt treated as final because generating again feels like admitting the first
 
 91
-00:04:52,473 --> 00:04:53,152
+00:05:20,218 --> 00:05:20,956
 pass failed.
 
 92
-00:04:53,152 --> 00:04:54,000
+00:05:20,956 --> 00:05:21,878
 It didn't fail.
 
 93
-00:04:54,000 --> 00:04:58,526
+00:05:21,878 --> 00:05:26,797
 Delivery variance is a known property of these tools, the same way a human actor
 
 94
-00:04:58,526 --> 00:05:02,033
+00:05:26,797 --> 00:05:30,609
 gives you a different take every time you ask for another one.
 
 95
-00:05:02,033 --> 00:05:06,558
+00:05:30,609 --> 00:05:35,527
 Judging the second or third take against the first isn't lowering your standard.
 
 96
-00:05:06,558 --> 00:05:10,009
+00:05:35,527 --> 00:05:39,277
 It's applying the same standard a real casting session would.
 
 97
-00:05:10,009 --> 00:05:12,101
+00:05:39,277 --> 00:05:41,552
 There's a cost side worth naming too.
 
 98
-00:05:12,101 --> 00:05:16,796
+00:05:41,552 --> 00:05:46,655
 Two or three regenerations of a fifteen-second clip cost a small fraction of what a
 
 99
-00:05:16,796 --> 00:05:21,491
+00:05:46,655 --> 00:05:51,758
 single reshoot day would, so the honest comparison isn't "one perfect take" against
 
 100
-00:05:21,491 --> 00:05:22,566
+00:05:51,758 --> 00:05:52,926
 "several attempts".
 
 101
-00:05:22,566 --> 00:05:27,148
+00:05:52,926 --> 00:05:57,906
 It's "several cheap attempts, keep the best" against "one expensive attempt, live
 
 102
-00:05:27,148 --> 00:05:28,732
+00:05:57,906 --> 00:05:59,627
 with whatever it gives you".
 
 103
-00:05:28,732 --> 00:05:33,257
+00:05:59,627 --> 00:06:04,546
 Regenerating is the better deal on both quality and cost, which is precisely why
 
 104
-00:05:33,257 --> 00:05:37,500
+00:06:04,546 --> 00:06:09,157
 settling for a flat first take is the actual mistake here, not a forgivable
 
 105
-00:05:37,500 --> 00:05:38,009
+00:06:09,157 --> 00:06:09,710
 shortcut.
 
 106
-00:05:38,559 --> 00:05:42,746
+00:06:10,260 --> 00:06:14,808
 Next lecture takes on the other half of video: the product itself, moving, and
 
 107
-00:05:42,746 --> 00:05:46,290
+00:06:14,808 --> 00:06:18,657
 exactly where a generator stops being the right tool for that job.
 
 108
-00:05:46,290 --> 00:05:50,585
+00:06:18,657 --> 00:06:23,322
 Right now, though, you have a real clip: Harlan's own script, properly licensed,
 
 109
-00:05:50,585 --> 00:05:53,001
+00:06:23,322 --> 00:06:25,946
 checked against all four items on that table.
 
 110
-00:05:53,001 --> 00:05:57,403
+00:06:25,946 --> 00:06:30,727
 Watch it back one more time before you move on, this time thinking like the person
 
 111
-00:05:57,403 --> 00:06:01,107
+00:06:30,727 --> 00:06:34,750
 who's about to see it on their phone, mid-scroll, sound probably off.
 
 112
-00:06:01,107 --> 00:06:03,631
+00:06:34,750 --> 00:06:37,491
 Does it still earn a second of their attention?
 
 113
-00:06:03,631 --> 00:06:08,140
+00:06:37,491 --> 00:06:42,389
 If yes, this half of the ad is done, and it's the first clip toward the three you'll
 
 114
-00:06:08,140 --> 00:06:08,946
+00:06:42,389 --> 00:06:43,264
 finish for B04.
 
 115
-00:06:08,946 --> 00:06:13,348
+00:06:43,264 --> 00:06:48,045
 If not, this is the cheapest possible moment to find out, before the product shot,
 
 116
-00:06:13,348 --> 00:06:16,462
+00:06:48,045 --> 00:06:51,427
 before assembly, before it's anywhere near a real account.

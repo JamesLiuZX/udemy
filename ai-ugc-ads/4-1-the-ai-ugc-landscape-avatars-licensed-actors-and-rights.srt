@@ -1,463 +1,463 @@
 1
-00:00:00,350 --> 00:00:02,610
+00:00:00,350 --> 00:00:02,784
 Sam had the clip open, ready to schedule.
 
 2
-00:00:02,610 --> 00:00:07,239
+00:00:02,784 --> 00:00:07,771
 It looked finished: the avatar (an AI-generated on-screen presenter, standing in for
 
 3
-00:00:07,239 --> 00:00:10,711
+00:00:07,771 --> 00:00:11,512
 an actor) delivered the line well, nothing suggested a problem.
 
 4
-00:00:10,711 --> 00:00:14,403
+00:00:11,512 --> 00:00:15,489
 Then he scrolled the tool's pricing page out of habit and found it.
 
 5
-00:00:14,403 --> 00:00:17,930
+00:00:15,489 --> 00:00:19,289
 The plan he'd generated on covered personal, organic posts only.
 
 6
-00:00:17,930 --> 00:00:22,339
+00:00:19,289 --> 00:00:24,039
 Paid campaigns needed a separate commercial licence tier, meaning what your plan
 
 7
-00:00:22,339 --> 00:00:26,968
+00:00:24,039 --> 00:00:29,026
 actually permits you to do with the footage, and this draft was never covered by it.
 
 8
-00:00:26,968 --> 00:00:28,291
+00:00:29,026 --> 00:00:30,451
 He hadn't been careless.
 
 9
-00:00:28,291 --> 00:00:32,700
+00:00:30,451 --> 00:00:35,200
 Everything up to now generated a product, a scene, a colour, nothing that needed
 
 10
-00:00:32,700 --> 00:00:34,959
+00:00:35,200 --> 00:00:37,634
 consent, because none of it was a person.
 
 11
-00:00:34,959 --> 00:00:39,203
+00:00:37,634 --> 00:00:42,206
 An avatar is different: a real person licensed their likeness, or a synthetic
 
 12
-00:00:39,203 --> 00:00:43,832
+00:00:42,206 --> 00:00:47,193
 performer stands in for one, and what you're allowed to do with it depends on which.
 
 13
-00:00:43,832 --> 00:00:46,257
+00:00:47,193 --> 00:00:49,805
 So what actually changes about how you work?
 
 14
-00:00:46,257 --> 00:00:50,831
+00:00:49,805 --> 00:00:54,733
 One habit, the exact one Sam had just skipped: check rights first, generate second,
 
 15
-00:00:50,831 --> 00:00:51,437
+00:00:54,733 --> 00:00:55,386
 every time.
 
 16
-00:00:51,437 --> 00:00:53,862
+00:00:55,386 --> 00:00:57,998
 That runs against how these tools are built.
 
 17
-00:00:53,862 --> 00:00:58,271
+00:00:57,998 --> 00:01:02,748
 A generator renders a convincing clip whether or not the licence behind the face
 
 18
-00:00:58,271 --> 00:01:02,459
+00:01:02,748 --> 00:01:07,260
 covers your plan, and a rendered clip gives no visual sign anything's wrong.
 
 19
-00:01:02,459 --> 00:01:04,939
+00:01:07,260 --> 00:01:09,931
 That's why it lands on you, not the platform.
 
 20
-00:01:04,939 --> 00:01:08,797
+00:01:09,931 --> 00:01:14,087
 Meta and TikTok police their own policy, not your avatar tool's terms.
 
 21
-00:01:09,347 --> 00:01:14,094
+00:01:14,637 --> 00:01:19,746
 Here's the landscape as it actually stands, in three categories rather than a list
 
 22
-00:01:14,094 --> 00:01:17,219
+00:01:19,746 --> 00:01:23,110
 of brand names that will be out of date within months.
 
 23
-00:01:17,219 --> 00:01:21,851
+00:01:23,110 --> 00:01:28,094
 A stock avatar is a real actor's likeness, licensed to whichever platform you're
 
 24
-00:01:21,851 --> 00:01:22,198
+00:01:28,094 --> 00:01:28,468
 using.
 
 25
-00:01:22,198 --> 00:01:26,771
+00:01:28,468 --> 00:01:33,389
 A custom avatar clones a specific real person, a founder or a real creator, and
 
 26
-00:01:26,771 --> 00:01:31,518
+00:01:33,389 --> 00:01:38,498
 needs their documented consent, not just a general terms-of-service click-through.
 
 27
-00:01:31,518 --> 00:01:35,917
+00:01:38,498 --> 00:01:43,232
 A synthetic avatar has no real person behind it at all, which is usually the
 
 28
-00:01:35,917 --> 00:01:40,491
+00:01:43,232 --> 00:01:48,154
 simplest rights picture, though it still needs the same disclosure you'll build
 
 29
-00:01:40,491 --> 00:01:41,880
+00:01:48,154 --> 00:01:49,649
 properly in Section 6.3.
 
 30
-00:01:41,880 --> 00:01:46,685
+00:01:49,649 --> 00:01:54,820
 Notice all three still end in the same place: some form of disclosure, some form of
 
 31
-00:01:46,685 --> 00:01:47,495
+00:01:54,820 --> 00:01:55,692
 documentation.
 
 32
-00:01:47,495 --> 00:01:50,910
+00:01:55,692 --> 00:01:59,368
 Nothing in this landscape lets you skip paperwork entirely.
 
 33
-00:01:50,910 --> 00:01:53,110
+00:01:59,368 --> 00:02:01,735
 It only changes whose paperwork it is.
 
 34
-00:01:53,110 --> 00:01:57,915
+00:02:01,735 --> 00:02:06,906
 Most people choosing between the three ask the wrong first question, which is which
 
 35
-00:01:57,915 --> 00:01:58,783
+00:02:06,906 --> 00:02:07,840
 one looks best.
 
 36
-00:01:58,783 --> 00:02:02,720
+00:02:07,840 --> 00:02:12,077
 Ask instead which rights picture you're actually prepared to manage.
 
 37
-00:02:02,720 --> 00:02:06,598
+00:02:12,077 --> 00:02:16,251
 A stock avatar means checking a licence tier before every campaign.
 
 38
-00:02:06,598 --> 00:02:11,056
+00:02:16,251 --> 00:02:21,048
 A custom avatar means holding someone's documented consent and being ready to
 
 39
-00:02:11,056 --> 00:02:11,692
+00:02:21,048 --> 00:02:21,733
 produce it.
 
 40
-00:02:11,692 --> 00:02:16,092
+00:02:21,733 --> 00:02:26,468
 A synthetic avatar means the lightest paperwork of the three, but still real
 
 41
-00:02:16,092 --> 00:02:17,250
+00:02:26,468 --> 00:02:27,714
 paperwork, not none.
 
 42
-00:02:17,250 --> 00:02:22,112
+00:02:27,714 --> 00:02:32,947
 Pick based on which obligation you'll actually keep up with, not which face you like
 
 43
-00:02:22,112 --> 00:02:23,270
+00:02:32,947 --> 00:02:34,193
 best in a demo reel.
 
 44
-00:02:23,820 --> 00:02:28,556
+00:02:34,743 --> 00:02:39,932
 Here's what actually happened on Harlan's account, and it's a genuinely easy mistake
 
 45
-00:02:28,556 --> 00:02:30,135
+00:02:39,932 --> 00:02:41,661
 to make, not a careless one.
 
 46
-00:02:30,135 --> 00:02:33,913
+00:02:41,661 --> 00:02:45,800
 Sam generated a strong first draft on a library's entry-level plan.
 
 47
-00:02:33,913 --> 00:02:38,536
+00:02:45,800 --> 00:02:50,865
 The video looked right, the performance was convincing, and nothing about watching
 
 48
-00:02:38,536 --> 00:02:40,115
+00:02:50,865 --> 00:02:52,595
 it back suggested a problem.
 
 49
-00:02:40,115 --> 00:02:44,851
+00:02:52,595 --> 00:02:57,784
 The problem was in the terms: that tier licensed the avatar for personal and organic
 
 50
-00:02:44,851 --> 00:02:46,204
+00:02:57,784 --> 00:02:59,266
 use, not paid campaigns.
 
 51
-00:02:46,204 --> 00:02:50,659
+00:02:59,266 --> 00:03:04,146
 Paid social needed a separate commercial tier, one draft one was never actually
 
 52
-00:02:50,659 --> 00:02:51,279
+00:03:04,146 --> 00:03:04,826
 covered by.
 
 53
-00:02:51,279 --> 00:02:55,846
+00:03:04,826 --> 00:03:09,829
 It got caught before any spend, and the fix was a recast on the right tier, not a
 
 54
-00:02:55,846 --> 00:02:58,045
+00:03:09,829 --> 00:03:12,238
 different avatar or a different script.
 
 55
-00:02:58,045 --> 00:03:02,612
+00:03:12,238 --> 00:03:17,242
 Notice what didn't need to change: the script, the avatar's appearance, the whole
 
 56
-00:03:02,612 --> 00:03:03,683
+00:03:17,242 --> 00:03:18,416
 creative direction.
 
 57
-00:03:03,683 --> 00:03:08,250
+00:03:18,416 --> 00:03:23,419
 One line item in a pricing page was the entire gap between a compliant ad and one
 
 58
-00:03:08,250 --> 00:03:08,927
+00:03:23,419 --> 00:03:24,160
 that wasn't.
 
 59
-00:03:08,927 --> 00:03:13,325
+00:03:24,160 --> 00:03:28,979
 That's usually how this mistake looks in practice, small and easy to miss, not
 
 60
-00:03:13,325 --> 00:03:13,832
+00:03:28,979 --> 00:03:29,534
 dramatic.
 
 61
-00:03:13,832 --> 00:03:18,512
+00:03:29,534 --> 00:03:34,662
 Sam's habit now: before any avatar clip goes near an ad account, he screenshots the
 
 62
-00:03:18,512 --> 00:03:21,388
+00:03:34,662 --> 00:03:37,812
 licence tier page and drops it in the brief folder.
 
 63
-00:03:21,388 --> 00:03:26,124
+00:03:37,812 --> 00:03:43,001
 Not distrust of the tool, just a refusal to repeat "I checked once, months ago", the
 
 64
-00:03:26,124 --> 00:03:29,451
+00:03:43,001 --> 00:03:46,645
 exact assumption that let draft one through the first time.
 
 65
-00:03:30,001 --> 00:03:34,707
+00:03:47,195 --> 00:03:52,324
 I want to be precise about what's actually true here, checked at the time of writing
 
 66
-00:03:34,707 --> 00:03:35,827
+00:03:52,324 --> 00:03:53,546
 rather than assumed.
 
 67
-00:03:35,827 --> 00:03:37,564
+00:03:53,546 --> 00:03:55,439
 Tools genuinely differ on this.
 
 68
-00:03:37,564 --> 00:03:41,710
+00:03:55,439 --> 00:03:59,957
 Some platforms ship commercial rights on every plan, entry-level included.
 
 69
-00:03:41,710 --> 00:03:46,304
+00:03:59,957 --> 00:04:04,964
 Others reserve paid, commercial use for a higher tier, exactly the gap that caught
 
 70
-00:03:46,304 --> 00:03:47,480
+00:04:04,964 --> 00:04:06,246
 Harlan's first draft.
 
 71
-00:03:47,480 --> 00:03:49,609
+00:04:06,246 --> 00:04:08,567
 Neither approach is hidden or unusual.
 
 72
-00:03:49,609 --> 00:03:54,203
+00:04:08,567 --> 00:04:13,574
 It's just a detail that's easy to miss once, expensive to miss on a live campaign,
 
 73
-00:03:54,203 --> 00:03:58,797
+00:04:13,574 --> 00:04:18,581
 and worth checking fresh before every single campaign, not just the first time you
 
 74
-00:03:58,797 --> 00:04:00,085
+00:04:18,581 --> 00:04:19,985
 signed up for the tool.
 
 75
-00:04:00,085 --> 00:04:01,990
+00:04:19,985 --> 00:04:22,061
 Where do you actually go to check?
 
 76
-00:04:01,990 --> 00:04:06,584
+00:04:22,061 --> 00:04:27,068
 The tool's own pricing or licence page, not a support article someone linked you a
 
 77
-00:04:06,584 --> 00:04:08,433
+00:04:27,068 --> 00:04:29,083
 year ago, and not a forum thread.
 
 78
-00:04:08,433 --> 00:04:12,971
+00:04:29,083 --> 00:04:34,029
 Pricing pages change more often than the tools themselves get rebuilt, and a tier
 
 79
-00:04:12,971 --> 00:04:17,565
+00:04:34,029 --> 00:04:39,036
 that was commercial-inclusive when you signed up can be restructured later without
 
 80
-00:04:17,565 --> 00:04:19,750
+00:04:39,036 --> 00:04:41,418
 your account automatically catching up.
 
 81
-00:04:19,750 --> 00:04:24,064
+00:04:41,418 --> 00:04:46,119
 Five minutes on the actual current page beats an assumption carried over from
 
 82
-00:04:24,064 --> 00:04:25,576
+00:04:46,119 --> 00:04:47,768
 whenever you first read it.
 
 83
-00:04:25,576 --> 00:04:28,433
+00:04:47,768 --> 00:04:50,882
 This is also why the course is built the way it is.
 
 84
-00:04:28,433 --> 00:04:32,803
+00:04:50,882 --> 00:04:55,645
 Naming one tool's exact terms here would be accurate for a few months and then
 
 85
-00:04:32,803 --> 00:04:37,005
+00:04:55,645 --> 00:05:00,225
 quietly wrong, which is a worse outcome than teaching you the check itself.
 
 86
-00:04:37,005 --> 00:04:40,703
+00:05:00,225 --> 00:05:04,255
 The check survives every pricing page rewrite a vendor ever ships.
 
 87
-00:04:41,253 --> 00:04:45,741
+00:05:04,805 --> 00:05:09,650
 Licence tier isn't the only rights question, and it's worth naming the other one
 
 88
-00:04:45,741 --> 00:04:47,424
+00:05:09,650 --> 00:05:11,467
 before you leave this lecture.
 
 89
-00:04:47,424 --> 00:04:51,969
+00:05:11,467 --> 00:05:16,374
 If an avatar is meant to represent a real, specific person, a founder using their
 
 90
-00:04:51,969 --> 00:04:56,570
+00:05:16,374 --> 00:05:21,340
 own likeness, or a real customer, that needs documented consent, not an assumption
 
 91
-00:04:56,570 --> 00:04:58,814
+00:05:21,340 --> 00:05:23,763
 that it's fine because they agreed once.
 
 92
-00:04:58,814 --> 00:05:03,246
+00:05:23,763 --> 00:05:28,548
 Some platforms now ask for that consent to be uploaded directly, with a name, a
 
 93
-00:05:03,246 --> 00:05:07,230
+00:05:28,548 --> 00:05:32,849
 description of use, and a signature, not just kept in a filing cabinet.
 
 94
-00:05:07,230 --> 00:05:11,942
+00:05:32,849 --> 00:05:37,936
 Both threads, the licence and the likeness, get their full treatment in Section six.
 
 95
-00:05:11,942 --> 00:05:16,543
+00:05:37,936 --> 00:05:42,903
 Think about why platforms have tightened this specifically for likeness and voice,
 
 96
-00:05:16,543 --> 00:05:19,068
+00:05:42,903 --> 00:05:45,629
 rather than for generated products or scenes.
 
 97
-00:05:19,068 --> 00:05:23,332
+00:05:45,629 --> 00:05:50,232
 A generated scene can't be defamed and doesn't have a reputation to protect.
 
 98
-00:05:23,332 --> 00:05:27,652
+00:05:50,232 --> 00:05:54,896
 A real person's face and voice, cloned convincingly enough to sell something,
 
 99
-00:05:27,652 --> 00:05:32,253
+00:05:54,896 --> 00:05:59,863
 absolutely can be, which is exactly the harm this documentation requirement exists
 
 100
-00:05:32,253 --> 00:05:32,870
+00:05:59,863 --> 00:06:00,529
 to prevent.
 
 101
-00:05:32,870 --> 00:05:34,834
+00:06:00,529 --> 00:06:02,649
 It's not friction for its own sake.
 
 102
-00:05:34,834 --> 00:05:39,378
+00:06:02,649 --> 00:06:07,555
 It's the platform asking the same question you should already be asking yourself:
 
 103
-00:05:39,378 --> 00:05:43,810
+00:06:07,555 --> 00:06:12,340
 does this specific person actually know their likeness is selling this specific
 
 104
-00:05:43,810 --> 00:05:44,259
+00:06:12,340 --> 00:06:12,825
 product?
 
 105
-00:05:44,809 --> 00:05:49,285
+00:06:13,375 --> 00:06:18,298
 Next lecture writes the actual script this avatar is going to perform, now that you
 
 106
-00:05:49,285 --> 00:05:52,035
+00:06:18,298 --> 00:06:21,323
 know exactly what you're allowed to generate it on.
 
 107
-00:05:52,035 --> 00:05:56,403
+00:06:21,323 --> 00:06:26,128
 Before you move on, do the one thing this whole lecture was building toward: open
 
 108
-00:05:56,403 --> 00:06:00,825
+00:06:26,128 --> 00:06:30,992
 whichever avatar tool you're planning to use and confirm, today, which tier you're
 
 109
-00:06:00,825 --> 00:06:01,472
+00:06:30,992 --> 00:06:31,704
 actually on.
 
 110
-00:06:01,472 --> 00:06:02,335
+00:06:31,704 --> 00:06:32,653
 Not from memory.
 
 111
-00:06:02,335 --> 00:06:03,467
+00:06:32,653 --> 00:06:33,899
 From the page itself.
 
 112
-00:06:03,467 --> 00:06:07,673
+00:06:33,899 --> 00:06:38,526
 That single check is worth more than everything else in this lecture combined,
 
 113
-00:06:07,673 --> 00:06:12,203
+00:06:38,526 --> 00:06:43,508
 because it's the one that would have stopped Harlan's first draft before it ever got
 
 114
-00:06:12,203 --> 00:06:12,742
+00:06:43,508 --> 00:06:44,102
 generated.
 
 115
-00:06:12,742 --> 00:06:14,144
+00:06:44,102 --> 00:06:45,644
 Screenshot it and keep it.
 
 116
-00:06:14,144 --> 00:06:18,297
+00:06:45,644 --> 00:06:50,211
 It's the first line of the B04 brief you'll fill out three lectures from now.
