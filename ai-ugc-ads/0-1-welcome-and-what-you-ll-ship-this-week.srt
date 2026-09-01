@@ -1,219 +1,219 @@
 1
-00:00:00,350 --> 00:00:04,779
+00:00:00,350 --> 00:00:05,185
 A few weeks ago, a founder named Dana Whitfield sat down with four ad variants her
 
 2
-00:00:04,779 --> 00:00:09,316
+00:00:05,185 --> 00:00:10,139
 media buyer had just generated for her sock brand, made in an afternoon instead of a
 
 3
-00:00:09,316 --> 00:00:10,180
+00:00:10,139 --> 00:00:11,082
 week-long shoot.
 
 4
-00:00:10,180 --> 00:00:12,070
+00:00:11,082 --> 00:00:13,146
 She had to choose one to run first.
 
 5
-00:00:12,070 --> 00:00:16,499
+00:00:13,146 --> 00:00:17,981
 If that sounds familiar, you've probably already lived a version of it yourself: a
 
 6
-00:00:16,499 --> 00:00:20,982
+00:00:17,981 --> 00:00:22,875
 product typed into a generator, and ten minutes later more ad creative than a whole
 
 7
-00:00:20,982 --> 00:00:22,170
+00:00:22,875 --> 00:00:24,173
 shoot used to produce.
 
 8
-00:00:22,170 --> 00:00:24,277
+00:00:24,173 --> 00:00:26,472
 Here's the part nobody warns you about.
 
 9
-00:00:24,277 --> 00:00:25,627
+00:00:26,472 --> 00:00:27,947
 Making the ads got cheap.
 
 10
-00:00:25,627 --> 00:00:27,355
+00:00:27,947 --> 00:00:29,834
 Knowing which one to run didn't.
 
 11
-00:00:27,355 --> 00:00:30,380
+00:00:29,834 --> 00:00:33,136
 That second problem is what this course exists to solve.
 
 12
-00:00:30,380 --> 00:00:34,755
+00:00:33,136 --> 00:00:37,912
 You'll watch it happen to Dana later in this section, then feel it happen to you.
 
 13
-00:00:35,305 --> 00:00:37,395
+00:00:38,462 --> 00:00:40,759
 Quick honesty check before we start.
 
 14
-00:00:37,395 --> 00:00:40,878
+00:00:40,759 --> 00:00:44,588
 I'm not a career media buyer, and I won't pretend otherwise.
 
 15
-00:00:40,878 --> 00:00:45,581
+00:00:44,588 --> 00:00:49,757
 What I bring is the AI-systems side: years building AI products in Silicon Valley
 
 16
-00:00:45,581 --> 00:00:50,168
+00:00:49,757 --> 00:00:54,799
 and at major technology companies, including ByteDance, with a Computer Science
 
 17
-00:00:50,168 --> 00:00:54,348
+00:00:54,799 --> 00:00:59,393
 degree from NUS, an AI specialisation, and a year at Stanford behind it.
 
 18
-00:00:54,348 --> 00:00:58,935
+00:00:59,393 --> 00:01:04,435
 That's exactly the discipline this course hands you: not better taste, a better
 
 19
-00:00:58,935 --> 00:00:59,400
+00:01:04,435 --> 00:01:04,945
 machine.
 
 20
-00:00:59,400 --> 00:01:04,161
+00:01:04,945 --> 00:01:10,178
 Brief it properly, generate at volume, pre-flight it, test it, and let the account
 
 21
-00:01:04,161 --> 00:01:05,148
+00:01:10,178 --> 00:01:11,263
 tell you who won.
 
 22
-00:01:05,148 --> 00:01:09,967
+00:01:11,263 --> 00:01:16,559
 Judge this course the same way, on whether that machine actually works for you, not
 
 23
-00:01:09,967 --> 00:01:10,605
+00:01:16,559 --> 00:01:17,261
 on the bio.
 
 24
-00:01:11,155 --> 00:01:14,044
+00:01:17,811 --> 00:01:20,961
 Here's the concrete change by the end of this course.
 
 25
-00:01:14,044 --> 00:01:18,295
+00:01:20,961 --> 00:01:25,597
 Right now, the honest version of how creative gets chosen is "I liked this one
 
 26
-00:01:18,295 --> 00:01:18,622
+00:01:25,597 --> 00:01:25,954
 best".
 
 27
-00:01:18,622 --> 00:01:23,091
+00:01:25,954 --> 00:01:30,827
 By the end, you'll be running a small, disciplined test with a kill rule, the line
 
 28
-00:01:23,091 --> 00:01:27,451
+00:01:30,827 --> 00:01:35,582
 you wrote down in advance that says exactly when to stop paying for a loser, and
 
 29
-00:01:27,451 --> 00:01:29,794
+00:01:35,582 --> 00:01:38,138
 reading the outcome instead of guessing it.
 
 30
-00:01:29,794 --> 00:01:34,263
+00:01:38,138 --> 00:01:43,011
 You'll spend less on production and more on testing, which is the trade this whole
 
 31
-00:01:34,263 --> 00:01:34,972
+00:01:43,011 --> 00:01:43,784
 course makes.
 
 32
-00:01:34,972 --> 00:01:39,223
+00:01:43,784 --> 00:01:48,420
 And you'll be able to explain, to a founder or a client, exactly why one ad is
 
 33
-00:01:39,223 --> 00:01:41,784
+00:01:48,420 --> 00:01:51,213
 getting the budget and three others got killed.
 
 34
-00:01:42,334 --> 00:01:44,620
+00:01:51,763 --> 00:01:54,310
 Three commitments about how this is built.
 
 35
-00:01:44,620 --> 00:01:45,927
+00:01:54,310 --> 00:01:55,764
 First, you build things.
 
 36
-00:01:45,927 --> 00:01:50,227
+00:01:55,764 --> 00:02:00,554
 Eleven downloadable artifacts, and they're the actual documents a real creative
 
 37
-00:01:50,227 --> 00:01:53,710
+00:02:00,554 --> 00:02:04,434
 operation runs on: a brief, a testing architecture, a scorecard.
 
 38
-00:01:53,710 --> 00:01:56,214
+00:02:04,434 --> 00:02:07,222
 You leave with a system, not a highlight reel.
 
 39
-00:01:56,214 --> 00:01:58,990
+00:02:07,222 --> 00:02:10,314
 Second, this is deliberately light on any one tool.
 
 40
-00:01:58,990 --> 00:02:03,563
+00:02:10,314 --> 00:02:15,406
 Whatever generator is best this month won't be by the time you finish the course, so
 
 41
-00:02:03,563 --> 00:02:07,591
+00:02:15,406 --> 00:02:19,892
 what you're learning is the brief, the pre-flight check, and the kill rule
 
 42
-00:02:07,591 --> 00:02:08,353
+00:02:19,892 --> 00:02:20,741
 underneath it.
 
 43
-00:02:08,353 --> 00:02:09,605
+00:02:20,741 --> 00:02:22,135
 Those outlive the tool.
 
 44
-00:02:09,605 --> 00:02:11,346
+00:02:22,135 --> 00:02:24,075
 Third, I'm leaving the costs in.
 
 45
-00:02:11,346 --> 00:02:15,701
+00:02:24,075 --> 00:02:28,925
 This is not a "go viral" course, and it's not a claim that AI replaces judgement
 
 46
-00:02:15,701 --> 00:02:16,790
+00:02:28,925 --> 00:02:30,138
 about your customer.
 
 47
-00:02:16,790 --> 00:02:20,600
+00:02:30,138 --> 00:02:34,381
 Where a human still has to make the call, I'll tell you exactly where.
 
 48
-00:02:21,150 --> 00:02:22,399
+00:02:34,931 --> 00:02:36,321
 One ask before we start.
 
 49
-00:02:22,399 --> 00:02:26,664
+00:02:36,321 --> 00:02:41,071
 Three lectures from now, I'm going to hand you a real generated ad set and ask you
 
 50
-00:02:26,664 --> 00:02:28,953
+00:02:41,071 --> 00:02:43,620
 to guess the winner before you see any data.
 
 51
-00:02:28,953 --> 00:02:29,734
+00:02:43,620 --> 00:02:44,488
 Do it properly.
 
 52
-00:02:29,734 --> 00:02:30,878
+00:02:44,488 --> 00:02:45,763
 Write your guess down.
 
 53
-00:02:30,878 --> 00:02:35,196
+00:02:45,763 --> 00:02:50,570
 That's the exercise I'd fight you on if you tried to skip it, because what it shows
 
 54
-00:02:35,196 --> 00:02:39,046
+00:02:50,570 --> 00:02:54,856
 you about your own judgement is the reason the rest of the course matters.
 
 55
-00:02:39,046 --> 00:02:39,774
+00:02:54,856 --> 00:02:55,667
 See you there.

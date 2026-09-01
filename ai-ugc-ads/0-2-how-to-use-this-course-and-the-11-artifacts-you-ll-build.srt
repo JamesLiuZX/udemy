@@ -1,203 +1,203 @@
 1
-00:00:00,350 --> 00:00:02,684
+00:00:00,350 --> 00:00:02,896
 Quick housekeeping before the idea lands.
 
 2
-00:00:02,684 --> 00:00:06,384
+00:00:02,896 --> 00:00:06,932
 Harlan Supply Co.'s account didn't get fixed by an idea Dana had.
 
 3
-00:00:06,384 --> 00:00:11,052
+00:00:06,932 --> 00:00:12,023
 It got fixed by eleven actual documents Sam built, one section at a time, starting
 
 4
-00:00:11,052 --> 00:00:14,012
+00:00:12,023 --> 00:00:15,252
 with a single page stating her price and her margin.
 
 5
-00:00:14,012 --> 00:00:16,175
+00:00:15,252 --> 00:00:17,612
 That's what you're about to build too.
 
 6
-00:00:16,175 --> 00:00:20,843
+00:00:17,612 --> 00:00:22,703
 Every section here ends in a workshop, and every workshop produces one artifact: a
 
 7
-00:00:20,843 --> 00:00:25,056
+00:00:22,703 --> 00:00:27,298
 real document you'll use on a real account, not a worksheet you file away.
 
 8
-00:00:25,056 --> 00:00:28,016
+00:00:27,298 --> 00:00:30,527
 Skip the workshops and you'll still learn the ideas.
 
 9
-00:00:28,016 --> 00:00:30,635
+00:00:30,527 --> 00:00:33,383
 You just won't have anything to run on Monday.
 
 10
-00:00:30,635 --> 00:00:34,904
+00:00:33,383 --> 00:00:38,040
 So here's the map: what you're building, and which lecture hands it to you.
 
 11
-00:00:35,454 --> 00:00:39,959
+00:00:38,590 --> 00:00:43,504
 That's the full set, and notice the shape of it before you notice the details.
 
 12
-00:00:39,959 --> 00:00:44,811
+00:00:43,504 --> 00:00:48,796
 Two artifacts before you generate anything: the hook matrix, a grid of opening lines
 
 13
-00:00:44,811 --> 00:00:47,468
+00:00:48,796 --> 00:00:51,695
 proven to stop a scroll, and the brief itself.
 
 14
-00:00:47,468 --> 00:00:50,760
+00:00:51,695 --> 00:00:55,286
 Two while you're generating, including a UGC video brief.
 
 15
-00:00:50,760 --> 00:00:55,612
+00:00:55,286 --> 00:01:00,578
 UGC just means it's styled like an ordinary customer's phone footage, not a polished
 
 16
-00:00:55,612 --> 00:00:56,190
+00:01:00,578 --> 00:01:01,208
 studio ad.
 
 17
-00:00:56,190 --> 00:01:00,059
+00:01:01,208 --> 00:01:05,429
 One artifact exists purely to stop a bad ad before it spends money.
 
 18
-00:01:00,059 --> 00:01:04,565
+00:01:05,429 --> 00:01:10,343
 Two for running the test itself, two for reading what it told you, and two for
 
 19
-00:01:04,565 --> 00:01:07,048
+00:01:10,343 --> 00:01:13,053
 turning one test into an ongoing operation.
 
 20
-00:01:07,048 --> 00:01:11,727
+00:01:13,053 --> 00:01:18,156
 Most people building this by hand skip straight to generation, because that's the
 
 21
-00:01:11,727 --> 00:01:12,536
+00:01:18,156 --> 00:01:19,038
 exciting part.
 
 22
-00:01:12,536 --> 00:01:16,579
+00:01:19,038 --> 00:01:23,448
 The order above is deliberate, and it's the order that actually works.
 
 23
-00:01:17,129 --> 00:01:19,438
+00:01:23,998 --> 00:01:26,534
 Here's the shape across the whole course.
 
 24
-00:01:19,438 --> 00:01:24,168
+00:01:26,534 --> 00:01:31,729
 The first two sections are judgement: why AI creative changes the economics, and the
 
 25
-00:01:24,168 --> 00:01:27,547
+00:01:31,729 --> 00:01:35,440
 brief that decides whether generation is worth doing at all.
 
 26
-00:01:27,547 --> 00:01:32,221
+00:01:35,440 --> 00:01:40,574
 The next three are production: statics, meaning still-image ad variants rather than
 
 27
-00:01:32,221 --> 00:01:36,444
+00:01:40,574 --> 00:01:45,213
 video, then moving video, then getting the same set to perform on different
 
 28
-00:01:36,444 --> 00:01:37,007
+00:01:45,213 --> 00:01:45,831
 platforms.
 
 29
-00:01:37,007 --> 00:01:40,611
+00:01:45,831 --> 00:01:49,790
 Then comes the stretch that separates this from a tool tutorial.
 
 30
-00:01:40,611 --> 00:01:45,060
+00:01:49,790 --> 00:01:54,676
 Sections 6 through 9 are pre-flight, testing, reading results, and scaling what
 
 31
-00:01:45,060 --> 00:01:45,398
+00:01:54,676 --> 00:01:55,047
 works.
 
 32
-00:01:45,398 --> 00:01:49,734
+00:01:55,047 --> 00:01:59,809
 That's where the actual skill lives, and it's the part almost nobody teaches,
 
 33
-00:01:49,734 --> 00:01:52,493
+00:01:59,809 --> 00:02:02,840
 because it isn't as fun to film as generation is.
 
 34
-00:01:53,043 --> 00:01:55,006
+00:02:03,390 --> 00:02:05,515
 One honest note before you go further.
 
 35
-00:01:55,006 --> 00:01:58,467
+00:02:05,515 --> 00:02:09,263
 Nothing here removes the need to spend real money to find a winner.
 
 36
-00:01:58,467 --> 00:02:02,599
+00:02:09,263 --> 00:02:13,737
 That part is unavoidable, and any course that tells you otherwise is selling you
 
 37
-00:02:02,599 --> 00:02:03,116
+00:02:13,737 --> 00:02:14,297
 something.
 
 38
-00:02:03,116 --> 00:02:07,197
+00:02:14,297 --> 00:02:18,715
 What the system in this course does is stop you spending on ads that were never
 
 39
-00:02:07,197 --> 00:02:08,850
+00:02:18,715 --> 00:02:20,505
 going to win in the first place.
 
 40
-00:02:08,850 --> 00:02:13,137
+00:02:20,505 --> 00:02:25,148
 That's a smaller promise than "never spend money", and it's the one that's actually
 
 41
-00:02:13,137 --> 00:02:13,395
+00:02:25,148 --> 00:02:25,427
 true.
 
 42
-00:02:13,945 --> 00:02:18,201
+00:02:25,977 --> 00:02:30,624
 Here's the one thing to do before you go any further, and it takes two minutes.
 
 43
-00:02:18,201 --> 00:02:22,565
+00:02:30,624 --> 00:02:35,389
 Open a note and write down the product or account you'll actually run this course
 
 44
-00:02:22,565 --> 00:02:25,151
+00:02:35,389 --> 00:02:38,212
 against: yours, a client's, whatever you've got.
 
 45
-00:02:25,151 --> 00:02:29,676
+00:02:38,212 --> 00:02:43,153
 Every one of those eleven artifacts is built to hold a real price and a real margin,
 
 46
-00:02:29,676 --> 00:02:33,609
+00:02:43,153 --> 00:02:47,447
 the way Harlan Supply Co.'s brief eventually holds Dana's actual numbers.
 
 47
-00:02:33,609 --> 00:02:37,057
+00:02:47,447 --> 00:02:51,212
 Without a real account in mind, you'll be filling in a template.
 
 48
-00:02:37,057 --> 00:02:40,127
+00:02:51,212 --> 00:02:54,565
 With one, you'll be building something you use on Monday.
 
 49
-00:02:40,127 --> 00:02:43,683
+00:02:54,565 --> 00:02:58,447
 Next lecture is short, and it's the one everything else hangs off.
 
 50
-00:02:43,683 --> 00:02:48,208
+00:02:58,447 --> 00:03:03,388
 After that, you'll do the exercise I mentioned: a real ad set, your own guess, and a
 
 51
-00:02:48,208 --> 00:02:50,633
+00:03:03,388 --> 00:03:06,035
 result that's probably going to surprise you.
