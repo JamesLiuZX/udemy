@@ -1,235 +1,235 @@
 1
-00:00:00,350 --> 00:00:03,920
+00:00:00,350 --> 00:00:04,258
 You have watched this method work four times against Priya's week.
 
 2
-00:00:03,920 --> 00:00:06,624
+00:00:04,258 --> 00:00:07,218
 This is where you find out it works against yours.
 
 3
-00:00:06,624 --> 00:00:11,167
+00:00:07,218 --> 00:00:12,192
 Pick something real: not a toy example, the actual task that eats twenty minutes you
 
 4
-00:00:11,167 --> 00:00:12,735
+00:00:12,192 --> 00:00:13,909
 would rather spend elsewhere.
 
 5
-00:00:12,735 --> 00:00:14,466
+00:00:13,909 --> 00:00:15,804
 It does not need to be dramatic.
 
 6
-00:00:14,466 --> 00:00:19,009
+00:00:15,804 --> 00:00:20,777
 A weekly status update you copy from three systems by hand, a folder of receipts you
 
 7
-00:00:19,009 --> 00:00:23,390
+00:00:20,777 --> 00:00:25,573
 sort every Friday, an inbox rule you have meant to write for months: any of those
 
 8
-00:00:23,390 --> 00:00:23,931
+00:00:25,573 --> 00:00:26,165
 qualifies.
 
 9
-00:00:23,931 --> 00:00:26,906
+00:00:26,165 --> 00:00:29,422
 What changes when the task is yours instead of Priya's?
 
 10
-00:00:26,906 --> 00:00:28,744
+00:00:29,422 --> 00:00:31,435
 One thing, and it is an advantage.
 
 11
-00:00:28,744 --> 00:00:33,179
+00:00:31,435 --> 00:00:36,290
 Following Priya, the course had to hand you her ground truth: what her clients are
 
 12
-00:00:33,179 --> 00:00:36,587
+00:00:36,290 --> 00:00:40,020
 like, which email mattered, what the sheet was supposed to say.
 
 13
-00:00:36,587 --> 00:00:38,912
+00:00:40,020 --> 00:00:42,566
 On your own task, you are the ground truth.
 
 14
-00:00:38,912 --> 00:00:43,239
+00:00:42,566 --> 00:00:47,303
 You know which Tuesday email is the dangerous one and what correct looks like on
 
 15
-00:00:43,239 --> 00:00:47,295
+00:00:47,303 --> 00:00:51,744
 your desk, which is exactly the independent knowledge Section 7.3 said safe
 
 16
-00:00:47,295 --> 00:00:48,485
+00:00:51,744 --> 00:00:53,046
 delegation depends on.
 
 17
-00:00:48,485 --> 00:00:51,406
+00:00:53,046 --> 00:00:56,244
 The capstone is not harder than the builds you copied.
 
 18
-00:00:51,406 --> 00:00:55,895
+00:00:56,244 --> 00:01:01,158
 It is the first one where the most qualified trial reviewer in the world is already
 
 19
-00:00:55,895 --> 00:00:57,085
+00:01:01,158 --> 00:01:02,461
 sitting in your chair.
 
 20
-00:00:57,635 --> 00:01:01,971
+00:01:03,011 --> 00:01:07,700
 Every one of those six steps is something you have already done at least once in
 
 21
-00:01:01,971 --> 00:01:02,622
+00:01:07,700 --> 00:01:08,404
 this course.
 
 22
-00:01:02,622 --> 00:01:03,706
+00:01:08,404 --> 00:01:09,576
 Nothing here is new.
 
 23
-00:01:03,706 --> 00:01:08,259
+00:01:09,576 --> 00:01:14,501
 What's new is that nobody is handing you Priya's story bible to work from this time.
 
 24
-00:01:08,259 --> 00:01:11,674
+00:01:14,501 --> 00:01:18,194
 As a plan, the six steps are smaller than they look on a slide.
 
 25
-00:01:11,674 --> 00:01:16,010
+00:01:18,194 --> 00:01:22,884
 One and two are an afternoon: half an hour of writing, then a build you have now
 
 26
-00:01:16,010 --> 00:01:16,877
+00:01:22,884 --> 00:01:23,822
 done four times.
 
 27
-00:01:16,877 --> 00:01:18,720
+00:01:23,822 --> 00:01:25,815
 Three is an hour with pinned data.
 
 28
-00:01:18,720 --> 00:01:22,569
+00:01:25,815 --> 00:01:29,977
 Four runs in the background of your normal week, costing minutes a day.
 
 29
-00:01:22,569 --> 00:01:25,442
+00:01:29,977 --> 00:01:33,084
 Five and six are paperwork measured in coffee breaks.
 
 30
-00:01:25,442 --> 00:01:29,507
+00:01:33,084 --> 00:01:37,481
 The two places people actually stall are worth naming in advance: step one,
 
 31
-00:01:29,507 --> 00:01:33,952
+00:01:37,481 --> 00:01:42,288
 polishing a job description that was good enough forty minutes ago, and step four,
 
 32
-00:01:33,952 --> 00:01:38,451
+00:01:42,288 --> 00:01:47,153
 abandoning the trial early because the first outputs looked fine, which Section 7.1
 
 33
-00:01:38,451 --> 00:01:40,077
+00:01:47,153 --> 00:01:48,912
 has already armed you against.
 
 34
-00:01:40,077 --> 00:01:44,468
+00:01:48,912 --> 00:01:53,660
 Start the afternoon version this week, while the last section's momentum is still
 
 35
-00:01:44,468 --> 00:01:45,281
+00:01:53,660 --> 00:01:54,540
 yours to spend.
 
 36
-00:01:45,281 --> 00:01:49,725
+00:01:54,540 --> 00:01:59,347
 The perfect version does not exist, and the shipped version teaches you things the
 
 37
-00:01:49,725 --> 00:01:51,297
+00:01:59,347 --> 00:02:01,047
 perfect one never would have.
 
 38
-00:01:51,847 --> 00:01:54,852
+00:02:01,597 --> 00:02:04,944
 Do not spend a week searching for the perfect task.
 
 39
-00:01:54,852 --> 00:01:59,565
+00:02:04,944 --> 00:02:10,194
 A modest, real task done properly beats an ambitious one left half finished, and
 
 40
-00:01:59,565 --> 00:02:02,157
+00:02:10,194 --> 00:02:13,081
 that sentence has been true since Section 1.
 
 41
-00:02:02,157 --> 00:02:06,811
+00:02:13,081 --> 00:02:18,266
 If two candidates come to mind, pick whichever one you can describe in a single
 
 42
-00:02:06,811 --> 00:02:07,931
+00:02:18,266 --> 00:02:19,513
 sentence right now.
 
 43
-00:02:07,931 --> 00:02:11,230
+00:02:19,513 --> 00:02:23,188
 That sentence is the first line of your job description.
 
 44
-00:02:11,230 --> 00:02:16,179
+00:02:23,188 --> 00:02:28,701
 The four shapes are also a map back into the course, and using it is encouraged, not
 
 45
-00:02:16,179 --> 00:02:16,709
+00:02:28,701 --> 00:02:29,291
 cheating.
 
 46
-00:02:16,709 --> 00:02:20,479
+00:02:29,291 --> 00:02:33,491
 A triage-shaped task starts from Section 3 and the C01 template.
 
 47
-00:02:20,479 --> 00:02:23,366
+00:02:33,491 --> 00:02:36,707
 An extraction task starts from Section 4 and C02.
 
 48
-00:02:23,366 --> 00:02:25,782
+00:02:36,707 --> 00:02:39,398
 A summary on a rhythm, Section 5 and C03.
 
 49
-00:02:25,782 --> 00:02:29,022
+00:02:39,398 --> 00:02:43,007
 A chase, Section 6 and C04, draft-only wiring included.
 
 50
-00:02:29,022 --> 00:02:33,499
+00:02:43,007 --> 00:02:47,995
 Import the nearest template, strip what your task does not need, rewrite the
 
 51
-00:02:33,499 --> 00:02:37,977
+00:02:47,995 --> 00:02:52,983
 briefing in your own words, and you have skipped an hour of plumbing without
 
 52
-00:02:37,977 --> 00:02:42,395
+00:02:52,983 --> 00:02:57,905
 skipping a minute of the method, because the method was never the plumbing.
 
 53
-00:02:42,945 --> 00:02:47,318
+00:02:58,455 --> 00:03:03,306
 Notice what the finish line does not require: a perfect agent, a finished trial, or
 
 54
-00:02:47,318 --> 00:02:48,372
+00:03:03,306 --> 00:03:04,475
 anything at Release.
 
 55
-00:02:48,372 --> 00:02:52,534
+00:03:04,475 --> 00:03:09,092
 It requires the method, executed once, with receipts, because the method is the
 
 56
-00:02:52,534 --> 00:02:55,010
+00:03:09,092 --> 00:03:11,839
 thing you are actually taking from this course.
 
 57
-00:02:55,010 --> 00:02:57,276
+00:03:11,839 --> 00:03:14,352
 The agent is just this month's proof of it.
 
 58
-00:02:57,276 --> 00:03:01,596
+00:03:14,352 --> 00:03:19,145
 Next lecture works through a full example from start to finish, so you can see the
 
 59
-00:03:01,596 --> 00:03:04,599
+00:03:19,145 --> 00:03:22,476
 whole method run once more before you run it on your own.
