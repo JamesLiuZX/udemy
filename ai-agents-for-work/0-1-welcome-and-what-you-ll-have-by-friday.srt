@@ -1,167 +1,167 @@
 1
-00:00:00,350 --> 00:00:01,436
+00:00:00,350 --> 00:00:01,522
 Hello, and welcome.
 
 2
-00:00:01,436 --> 00:00:06,179
+00:00:01,522 --> 00:00:06,641
 By the end of this course you will have built four working agents: one that triages
 
 3
-00:00:06,179 --> 00:00:10,809
+00:00:06,641 --> 00:00:11,636
 your inbox, one that turns a meeting recording into action items, one that writes
 
 4
-00:00:10,809 --> 00:00:15,381
+00:00:11,636 --> 00:00:16,570
 your weekly report, and one that chases the follow ups you keep meaning to send.
 
 5
-00:00:15,381 --> 00:00:19,896
+00:00:16,570 --> 00:00:21,443
 I've spent years building AI products in Silicon Valley and at major technology
 
 6
-00:00:19,896 --> 00:00:24,639
+00:00:21,443 --> 00:00:26,562
 companies, including ByteDance, and the pattern that shows up in every one of those
 
 7
-00:00:24,639 --> 00:00:29,440
+00:00:26,562 --> 00:00:31,742
 jobs is the same one you'll meet in your own inbox this week: the boring, repeatable
 
 8
-00:00:29,440 --> 00:00:34,241
+00:00:31,742 --> 00:00:36,923
 part of the work is exactly what a properly supervised agent is good at, and exactly
 
 9
-00:00:34,241 --> 00:00:37,555
+00:00:36,923 --> 00:00:40,500
 where people either save real hours or make a mess trying.
 
 10
-00:00:37,555 --> 00:00:42,356
+00:00:40,500 --> 00:00:45,680
 Every agent gets built screen by screen, in a free tool called n8n, and every one of
 
 11
-00:00:42,356 --> 00:00:46,528
+00:00:45,680 --> 00:00:50,183
 them comes home with you as a template you can open and adapt in minutes.
 
 12
-00:00:46,528 --> 00:00:48,871
+00:00:50,183 --> 00:00:52,711
 There is no code anywhere in this course.
 
 13
-00:00:49,421 --> 00:00:53,623
+00:00:53,261 --> 00:00:57,777
 Each agent ships as a downloadable workflow you import in a couple of clicks.
 
 14
-00:00:53,623 --> 00:00:58,206
+00:00:57,777 --> 00:01:02,703
 Alongside them you get six more artifacts: a job description template for onboarding
 
 15
-00:00:58,206 --> 00:01:02,353
+00:01:02,703 --> 00:01:07,159
 an agent properly, a trial task checklist, a spot check rubric, a guardrails
 
 16
-00:01:02,353 --> 00:01:06,773
+00:01:07,159 --> 00:01:11,909
 worksheet, a cost tracker, and a one page plan for rolling this out to your team.
 
 17
-00:01:06,773 --> 00:01:08,028
+00:01:11,909 --> 00:01:13,258
 Ten artifacts in total.
 
 18
-00:01:08,028 --> 00:01:10,865
+00:01:13,258 --> 00:01:16,307
 You will use the first one before this section ends.
 
 19
-00:01:10,865 --> 00:01:13,812
+00:01:16,307 --> 00:01:19,474
 Threaded through the whole course is one running case.
 
 20
-00:01:13,812 --> 00:01:18,013
+00:01:19,474 --> 00:01:23,989
 Priya Malhotra manages renewals at Calloway and Finch, a commercial insurance
 
 21
-00:01:18,013 --> 00:01:22,160
+00:01:23,989 --> 00:01:28,446
 brokerage: one hundred and eighty staff, three regional offices, and not one
 
 22
-00:01:22,160 --> 00:01:23,469
+00:01:28,446 --> 00:01:29,853
 engineer on the payroll.
 
 23
-00:01:23,469 --> 00:01:27,998
+00:01:29,853 --> 00:01:34,720
 Priya looks after forty one accounts on her own, and you will watch her onboard all
 
 24
-00:01:27,998 --> 00:01:32,200
+00:01:34,720 --> 00:01:39,236
 four of these agents against her real week, mistake by mistake, save by save.
 
 25
-00:01:32,200 --> 00:01:34,164
+00:01:39,236 --> 00:01:41,347
 She is not the expert in this story.
 
 26
-00:01:34,164 --> 00:01:35,965
+00:01:41,347 --> 00:01:43,282
 She is you, a few weeks from now.
 
 27
-00:01:36,515 --> 00:01:40,965
+00:01:43,832 --> 00:01:48,717
 That is the whole course in one sentence, and we will come back to it constantly.
 
 28
-00:01:40,965 --> 00:01:45,250
+00:01:48,717 --> 00:01:53,422
 You would never hand a brand new hire your whole inbox on their first morning.
 
 29
-00:01:45,250 --> 00:01:49,811
+00:01:53,422 --> 00:01:58,428
 The same caution applies here, and it is the difference between people who get real
 
 30
-00:01:49,811 --> 00:01:53,656
+00:01:58,428 --> 00:02:02,650
 hours back and people who spend a weekend cleaning up after a mistake.
 
 31
-00:01:53,656 --> 00:01:55,250
+00:02:02,650 --> 00:02:04,399
 Two promises before we start.
 
 32
-00:01:55,250 --> 00:01:59,700
+00:02:04,399 --> 00:02:09,285
 First, every technique in this course names its cost: the checking time, the ways
 
 33
-00:01:59,700 --> 00:02:03,436
+00:02:09,285 --> 00:02:13,386
 each agent fails, the tasks that should never be handed over at all.
 
 34
-00:02:03,436 --> 00:02:06,623
+00:02:13,386 --> 00:02:16,884
 If a lecture ever sounds like a sales page, I have failed.
 
 35
-00:02:06,623 --> 00:02:09,370
+00:02:16,884 --> 00:02:19,900
 Second, nothing here asks you to become technical.
 
 36
-00:02:09,370 --> 00:02:12,007
+00:02:19,900 --> 00:02:22,795
 Priya never writes a line of code in this story.
 
 37
-00:02:12,007 --> 00:02:12,941
+00:02:22,795 --> 00:02:23,821
 Neither will you.
 
 38
-00:02:12,941 --> 00:02:17,281
+00:02:23,821 --> 00:02:28,585
 I built this for the person who owns Section 0's problem for real: forty unread
 
 39
-00:02:17,281 --> 00:02:21,457
+00:02:28,585 --> 00:02:33,169
 emails, a report due Friday, and no budget for an engineer to fix any of it.
 
 40
-00:02:21,457 --> 00:02:23,380
+00:02:33,169 --> 00:02:35,280
 If that's your week, keep watching.
 
 41
-00:02:23,380 --> 00:02:24,918
+00:02:35,280 --> 00:02:36,969
 See you in the next lecture.
 
 42
-00:02:24,918 --> 00:02:28,215
+00:02:36,969 --> 00:02:40,588
 We are building your first agent in the next twenty minutes.
