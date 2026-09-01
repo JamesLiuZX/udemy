@@ -1,371 +1,371 @@
 1
-00:00:00,350 --> 00:00:02,272
+00:00:00,350 --> 00:00:02,446
 Nobody had touched that ad in days.
 
 2
-00:00:02,272 --> 00:00:06,664
+00:00:02,446 --> 00:00:07,238
 Go back to Section zero-point-three for a moment: the whole course opened on one
 
 3
-00:00:06,664 --> 00:00:10,892
+00:00:07,238 --> 00:00:11,850
 claim, nobody can reliably pick a winning ad by looking at it, including you.
 
 4
-00:00:10,892 --> 00:00:12,100
+00:00:11,850 --> 00:00:13,168
 Testing finds winners.
 
 5
-00:00:12,100 --> 00:00:12,869
+00:00:13,168 --> 00:00:14,006
 Taste doesn't.
 
 6
-00:00:12,869 --> 00:00:17,097
+00:00:14,006 --> 00:00:18,618
 As of this recording, Meta and TikTok have built that exact belief into their
 
 7
-00:00:17,097 --> 00:00:18,030
+00:00:18,618 --> 00:00:19,636
 delivery systems.
 
 8
-00:00:18,030 --> 00:00:22,368
+00:00:19,636 --> 00:00:24,368
 Meta's Advantage+ suite and TikTok's Smart+ don't just run the test you set up.
 
 9
-00:00:22,368 --> 00:00:26,651
+00:00:24,368 --> 00:00:29,040
 They generate their own variations of your creative, headlines swapped, images
 
 10
-00:00:26,651 --> 00:00:31,098
+00:00:29,040 --> 00:00:33,891
 cropped differently, text repositioned, and quietly test those against each other
 
 11
-00:00:31,098 --> 00:00:33,459
+00:00:33,891 --> 00:00:36,467
 too, often without a single click from you.
 
 12
-00:00:33,459 --> 00:00:34,667
+00:00:36,467 --> 00:00:37,784
 That's not a footnote.
 
 13
-00:00:34,667 --> 00:00:37,522
+00:00:37,784 --> 00:00:40,899
 It changes what "your ad" even means once it's live.
 
 14
-00:00:37,522 --> 00:00:39,005
+00:00:40,899 --> 00:00:42,516
 Sit with that for a second.
 
 15
-00:00:39,005 --> 00:00:43,233
+00:00:42,516 --> 00:00:47,128
 Why would you spend five sections building your own testing discipline if the
 
 16
-00:00:43,233 --> 00:00:46,417
+00:00:47,128 --> 00:00:50,602
 platform's already doing something similar underneath you?
 
 17
-00:00:46,417 --> 00:00:48,339
+00:00:50,602 --> 00:00:52,698
 Because "similar" isn't "the same".
 
 18
-00:00:48,339 --> 00:00:51,579
+00:00:52,698 --> 00:00:56,232
 The platform's automation optimises the pieces you hand it.
 
 19
-00:00:51,579 --> 00:00:56,191
+00:00:56,232 --> 00:01:01,263
 It has no idea which pieces are worth handing it in the first place, no view of your
 
 20
-00:00:56,191 --> 00:01:00,748
+00:01:01,263 --> 00:01:06,234
 claims boundary, and no concept of which angle actually deserves to be in the batch
 
 21
-00:01:00,748 --> 00:01:01,132
+00:01:06,234 --> 00:01:06,654
 at all.
 
 22
-00:01:01,132 --> 00:01:04,042
+00:01:06,654 --> 00:01:09,828
 It's very good at finding a winner among your inputs.
 
 23
-00:01:04,042 --> 00:01:07,282
+00:01:09,828 --> 00:01:13,362
 It has no opinion about whether those inputs were any good.
 
 24
-00:01:07,832 --> 00:01:11,445
+00:01:13,912 --> 00:01:17,759
 Notice the shared move underneath two differently branded systems.
 
 25
-00:01:11,445 --> 00:01:15,933
+00:01:17,759 --> 00:01:22,539
 Both platforms take the raw materials you hand them, not just one finished ad, and
 
 26
-00:01:15,933 --> 00:01:20,203
+00:01:22,539 --> 00:01:27,086
 recombine them on your behalf, then let performance decide which recombination
 
 27
-00:01:20,203 --> 00:01:20,695
+00:01:27,086 --> 00:01:27,611
 survives.
 
 28
-00:01:20,695 --> 00:01:25,293
+00:01:27,611 --> 00:01:32,508
 That's the same discipline Section 3.6's workshop taught you to do by hand: generate
 
 29
-00:01:25,293 --> 00:01:29,344
+00:01:32,508 --> 00:01:36,821
 a real batch, not one hero asset, and let a test sort winners from losers.
 
 30
-00:01:29,344 --> 00:01:33,723
+00:01:36,821 --> 00:01:41,485
 The platforms have simply moved a version of that step inside their own delivery
 
 31
-00:01:33,723 --> 00:01:38,211
+00:01:41,485 --> 00:01:46,265
 systems, running underneath the testing architecture you build yourself in Section
 
 32
-00:01:38,211 --> 00:01:38,540
+00:01:46,265 --> 00:01:46,614
 seven.
 
 33
-00:01:38,540 --> 00:01:40,565
+00:01:46,614 --> 00:01:48,771
 Here's what actually changes for you.
 
 34
-00:01:40,565 --> 00:01:43,795
+00:01:48,771 --> 00:01:52,211
 Your job used to stop at "which of my twenty variants won".
 
 35
-00:01:43,795 --> 00:01:48,393
+00:01:52,211 --> 00:01:57,107
 Now it includes a second layer: which sub-variation the platform generated from your
 
 36
-00:01:48,393 --> 00:01:52,169
+00:01:57,107 --> 00:02:01,129
 winner is actually running, and whether it still says what you meant.
 
 37
-00:01:52,169 --> 00:01:56,713
+00:02:01,129 --> 00:02:05,968
 Winning at the level you control doesn't guarantee the exact thing a viewer sees is
 
 38
-00:01:56,713 --> 00:01:58,410
+00:02:05,968 --> 00:02:07,775
 still the ad you signed off on.
 
 39
-00:01:58,410 --> 00:02:02,843
+00:02:07,775 --> 00:02:12,497
 That doesn't shrink your job, it adds a layer underneath the one you already had.
 
 40
-00:02:02,843 --> 00:02:05,635
+00:02:12,497 --> 00:02:15,470
 You still decide which angles are worth generating.
 
 41
-00:02:05,635 --> 00:02:09,795
+00:02:15,470 --> 00:02:19,900
 The platform just took over one narrower decision, which wording combination
 
 42
-00:02:09,795 --> 00:02:10,561
+00:02:19,900 --> 00:02:20,716
 performs best.
 
 43
-00:02:11,111 --> 00:02:14,701
+00:02:21,266 --> 00:02:25,141
 Worth checking on your own account before you assume anything.
 
 44
-00:02:14,701 --> 00:02:19,216
+00:02:25,141 --> 00:02:30,016
 Individual enhancements toggle separately, ad by ad, not as one all-or-nothing
 
 45
-00:02:19,216 --> 00:02:19,621
+00:02:30,016 --> 00:02:30,454
 switch.
 
 46
-00:02:19,621 --> 00:02:20,779
+00:02:30,454 --> 00:02:31,704
 That control exists.
 
 47
-00:02:20,779 --> 00:02:23,269
+00:02:31,704 --> 00:02:34,391
 Most people never open the panel to use it.
 
 48
-00:02:23,269 --> 00:02:28,074
+00:02:34,391 --> 00:02:39,579
 The line that matters most sits at the bottom of this table, and it doesn't move no
 
 49
-00:02:28,074 --> 00:02:30,100
+00:02:39,579 --> 00:02:41,767
 matter how automated the rest gets.
 
 50
-00:02:30,100 --> 00:02:34,557
+00:02:41,767 --> 00:02:46,579
 Nothing in Meta's or TikTok's creative automation checks a generated headline
 
 51
-00:02:34,557 --> 00:02:36,063
+00:02:46,579 --> 00:02:48,204
 against a claims boundary.
 
 52
-00:02:36,063 --> 00:02:40,752
+00:02:48,204 --> 00:02:53,267
 If Advantage+ combines your text in a way that drifts past what Section 6.2 would
 
 53
-00:02:40,752 --> 00:02:45,499
+00:02:53,267 --> 00:02:58,392
 sign off on, that drift ships exactly as fast as everything else it's testing, and
 
 54
-00:02:45,499 --> 00:02:47,872
+00:02:58,392 --> 00:03:00,955
 nobody catches it unless you're checking.
 
 55
-00:02:47,872 --> 00:02:50,941
+00:03:00,955 --> 00:03:04,267
 What would that drift actually look like in practice?
 
 56
-00:02:50,941 --> 00:02:55,688
+00:03:04,267 --> 00:03:09,393
 Picture Advantage+ pulling one phrase from your primary text and pairing it with a
 
 57
-00:02:55,688 --> 00:03:00,493
+00:03:09,393 --> 00:03:14,580
 headline written for a different angle entirely, a combination that, read together,
 
 58
-00:03:00,493 --> 00:03:03,908
+00:03:14,580 --> 00:03:18,268
 states something stronger than either piece did on its own.
 
 59
-00:03:03,908 --> 00:03:06,340
+00:03:18,268 --> 00:03:20,893
 Neither half is new copy you didn't write.
 
 60
-00:03:06,340 --> 00:03:11,145
+00:03:20,893 --> 00:03:26,081
 The combination is, and combinations are exactly what a claims review has never had
 
 61
-00:03:11,145 --> 00:03:14,271
+00:03:26,081 --> 00:03:29,456
 to check before this generation of automation existed.
 
 62
-00:03:14,271 --> 00:03:17,224
+00:03:29,456 --> 00:03:32,643
 Worth flagging precisely because it's easy to miss.
 
 63
-00:03:17,224 --> 00:03:21,855
+00:03:32,643 --> 00:03:37,644
 A human copywriter combining two lines would notice the overreach instinctively.
 
 64
-00:03:21,855 --> 00:03:26,370
+00:03:37,644 --> 00:03:42,519
 An optimisation system scoring purely on click-through has no reason to notice
 
 65
-00:03:26,370 --> 00:03:26,891
+00:03:42,519 --> 00:03:43,081
 anything.
 
 66
-00:03:26,891 --> 00:03:28,281
+00:03:43,081 --> 00:03:44,581
 It isn't being careless.
 
 67
-00:03:28,281 --> 00:03:30,133
+00:03:44,581 --> 00:03:46,581
 It was never asked the question.
 
 68
-00:03:30,683 --> 00:03:35,202
+00:03:47,131 --> 00:03:52,097
 One honest limit before this goes any further, and it's the same one that's run
 
 69
-00:03:35,202 --> 00:03:36,631
+00:03:52,097 --> 00:03:53,668
 under this entire course.
 
 70
-00:03:36,631 --> 00:03:41,378
+00:03:53,668 --> 00:03:58,885
 A generation tool, whether it's the one making your statics or the one now remixing
 
 71
-00:03:41,378 --> 00:03:45,554
+00:03:58,885 --> 00:04:03,473
 your headlines inside an ad account, optimises for the metric it's given.
 
 72
-00:03:45,554 --> 00:03:48,070
+00:04:03,473 --> 00:04:06,239
 Performance, in this case, not truthfulness.
 
 73
-00:03:48,070 --> 00:03:52,646
+00:04:06,239 --> 00:04:11,267
 It has no model of Section two's claims boundary and no reason to check for one.
 
 74
-00:03:52,646 --> 00:03:57,221
+00:04:11,267 --> 00:04:16,295
 That checking is still entirely a human job, yours, on a cadence, not a one-time
 
 75
-00:03:57,221 --> 00:03:59,280
+00:04:16,295 --> 00:04:18,558
 setup step you configure and forget.
 
 76
-00:03:59,280 --> 00:04:03,970
+00:04:18,558 --> 00:04:23,712
 Practically, that means pulling the actual delivered creative report periodically,
 
 77
-00:04:03,970 --> 00:04:08,488
+00:04:23,712 --> 00:04:28,678
 not just your uploaded originals, and reading it the way you'd read a generated
 
 78
-00:04:08,488 --> 00:04:12,549
+00:04:28,678 --> 00:04:33,140
 static in Section 3.3: does this still say what Dana would sign off on?
 
 79
-00:04:12,549 --> 00:04:16,953
+00:04:33,140 --> 00:04:37,980
 Most weeks, the answer will be yes, because most recombinations are harmless.
 
 80
-00:04:16,953 --> 00:04:19,183
+00:04:37,980 --> 00:04:40,431
 The check exists for the week it isn't.
 
 81
-00:04:19,733 --> 00:04:22,251
+00:04:40,981 --> 00:04:43,739
 This section closes next lecture with a recap.
 
 82
-00:04:22,251 --> 00:04:26,575
+00:04:43,739 --> 00:04:48,475
 But the honest note to carry forward is this one: the machine you've spent five
 
 83
-00:04:26,575 --> 00:04:30,570
+00:04:48,475 --> 00:04:52,851
 sections learning to build by hand is now partly built into the platforms
 
 84
-00:04:30,570 --> 00:04:31,172
+00:04:52,851 --> 00:04:53,510
 themselves.
 
 85
-00:04:31,172 --> 00:04:33,470
+00:04:53,510 --> 00:04:56,028
 That doesn't make your judgement optional.
 
 86
-00:04:33,470 --> 00:04:37,520
+00:04:56,028 --> 00:05:00,464
 It makes checking what the automation actually did the newest item on your
 
 87
-00:04:37,520 --> 00:04:38,396
+00:05:00,464 --> 00:05:01,423
 pre-flight list.
 
 88
-00:04:38,396 --> 00:04:42,829
+00:05:01,423 --> 00:05:06,279
 How would you know if this were happening right now, on your own account, without
 
 89
-00:04:42,829 --> 00:04:45,018
+00:05:06,279 --> 00:05:08,677
 you noticing, the way Sam almost didn't?
 
 90
-00:04:45,018 --> 00:04:46,441
+00:05:08,677 --> 00:05:10,235
 Open Ads Manager and look.
 
 91
-00:04:46,441 --> 00:04:50,710
+00:05:10,235 --> 00:05:14,911
 If you've never checked which creative enhancements are switched on for a live
 
 92
-00:04:50,710 --> 00:04:55,253
+00:05:14,911 --> 00:05:19,887
 campaign, that's the actual homework this lecture is leaving you with, ahead of the
 
 93
-00:04:55,253 --> 00:04:57,551
+00:05:19,887 --> 00:05:22,405
 B05 checklist Section six builds properly.

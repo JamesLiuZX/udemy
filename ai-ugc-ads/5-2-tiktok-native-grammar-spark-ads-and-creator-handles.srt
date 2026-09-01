@@ -1,431 +1,431 @@
 1
-00:00:00,350 --> 00:00:01,690
+00:00:00,350 --> 00:00:01,827
 Sam didn't expect that.
 
 2
-00:00:01,690 --> 00:00:04,487
+00:00:01,827 --> 00:00:04,908
 Meta's clinical cut had just won there, clearly.
 
 3
-00:00:04,487 --> 00:00:06,468
+00:00:04,908 --> 00:00:07,091
 TikTok's raw cut won here instead.
 
 4
-00:00:06,468 --> 00:00:09,556
+00:00:07,091 --> 00:00:10,494
 Section 5.1 asked you to check ratios and safe zones.
 
 5
-00:00:09,556 --> 00:00:14,392
+00:00:10,494 --> 00:00:15,822
 TikTok asks something harder: whether your ad reads as a TikTok in the first place,
 
 6
-00:00:14,392 --> 00:00:17,189
+00:00:15,822 --> 00:00:18,904
 before anyone gets far enough to judge the hook.
 
 7
-00:00:17,189 --> 00:00:21,617
+00:00:18,904 --> 00:00:23,783
 As of this recording, native, creator-style content consistently outperforms
 
 8
-00:00:21,617 --> 00:00:26,511
+00:00:23,783 --> 00:00:29,176
 studio-polished footage here, for a specific reason: TikTok's audience has a trained
 
 9
-00:00:26,511 --> 00:00:31,114
+00:00:29,176 --> 00:00:34,248
 reflex for skipping anything that announces itself as an ad in the first frame.
 
 10
-00:00:31,114 --> 00:00:34,610
+00:00:34,248 --> 00:00:38,100
 A cut that looks like an ordinary post survives that reflex.
 
 11
-00:00:34,610 --> 00:00:37,115
+00:00:38,100 --> 00:00:40,860
 A cut that looks like a commercial doesn't.
 
 12
-00:00:37,115 --> 00:00:40,087
+00:00:40,860 --> 00:00:44,135
 What actually earns that pass past the skip reflex?
 
 13
-00:00:40,087 --> 00:00:40,961
+00:00:44,135 --> 00:00:45,098
 Not sloppiness.
 
 14
-00:00:40,961 --> 00:00:45,680
+00:00:45,098 --> 00:00:50,298
 The best-performing native content is casual in look, not in construction: a real
 
 15
-00:00:45,680 --> 00:00:50,342
+00:00:50,298 --> 00:00:55,434
 hook line in the first second, legible on-screen text sitting inside the frame's
 
 16
-00:00:50,342 --> 00:00:53,255
+00:00:55,434 --> 00:00:58,644
 safe zone, clear audio, a specific call to action.
 
 17
-00:00:53,255 --> 00:00:56,110
+00:00:58,644 --> 00:01:01,790
 The difference from a studio ad isn't less craft.
 
 18
-00:00:56,110 --> 00:01:00,829
+00:01:01,790 --> 00:01:06,990
 It's craft that hides itself behind the look of something a viewer wasn't paid to
 
 19
-00:01:00,829 --> 00:01:01,121
+00:01:06,990 --> 00:01:07,311
 make.
 
 20
-00:01:01,121 --> 00:01:04,151
+00:01:07,311 --> 00:01:10,649
 That's good news for the workflow you already built.
 
 21
-00:01:04,151 --> 00:01:08,987
+00:01:10,649 --> 00:01:15,978
 An avatar-led, sound-off-designed ad from Section 4.5 was never trying to look like
 
 22
-00:01:08,987 --> 00:01:09,744
+00:01:15,978 --> 00:01:16,813
 a commercial.
 
 23
-00:01:09,744 --> 00:01:12,424
+00:01:16,813 --> 00:01:19,766
 TikTok doesn't ask you to build something new.
 
 24
-00:01:12,424 --> 00:01:15,745
+00:01:19,766 --> 00:01:23,425
 It asks you to stop softening the one you've already got.
 
 25
-00:01:16,295 --> 00:01:20,911
+00:01:23,975 --> 00:01:29,022
 Here's the format built specifically around the grammar this lecture just named.
 
 26
-00:01:20,911 --> 00:01:23,622
+00:01:29,022 --> 00:01:31,987
 A Spark Ad isn't a new upload dressed as an ad.
 
 27
-00:01:23,622 --> 00:01:28,468
+00:01:31,987 --> 00:01:37,286
 It's an existing post, boosted, keeping every social signal that made it look like a
 
 28
-00:01:28,468 --> 00:01:33,141
+00:01:37,286 --> 00:01:42,395
 real post in the first place: the account name, the sound, the likes and comments
 
 29
-00:01:33,141 --> 00:01:34,410
+00:01:42,395 --> 00:01:43,783
 already sitting on it.
 
 30
-00:01:34,410 --> 00:01:37,007
+00:01:43,783 --> 00:01:46,622
 That matters mechanically, not just visually.
 
 31
-00:01:37,007 --> 00:01:41,853
+00:01:46,622 --> 00:01:51,921
 As of this recording, TikTok's delivery reads engagement on the underlying post as a
 
 32
-00:01:41,853 --> 00:01:42,256
+00:01:51,921 --> 00:01:52,362
 signal.
 
 33
-00:01:42,256 --> 00:01:47,102
+00:01:52,362 --> 00:01:57,661
 An ad built from a post that already earned real engagement organically gets matched
 
 34
-00:01:47,102 --> 00:01:51,660
+00:01:57,661 --> 00:02:02,645
 to similar viewers faster than an ad starting cold with zero history behind it.
 
 35
-00:01:51,660 --> 00:01:56,448
+00:02:02,645 --> 00:02:07,881
 Notice what this changes about how you'd actually use your Section 4 workflow here.
 
 36
-00:01:56,448 --> 00:02:01,179
+00:02:07,881 --> 00:02:13,053
 On Meta, you generate a batch, upload it, and let the delivery system sort winners
 
 37
-00:02:01,179 --> 00:02:01,871
+00:02:13,053 --> 00:02:13,810
 from losers.
 
 38
-00:02:01,871 --> 00:02:06,544
+00:02:13,810 --> 00:02:18,920
 On TikTok, the strongest move is often to post an angle organically first, let it
 
 39
-00:02:06,544 --> 00:02:11,275
+00:02:18,920 --> 00:02:24,093
 earn real engagement on its own, and only then spend behind whichever one actually
 
 40
-00:02:11,275 --> 00:02:11,794
+00:02:24,093 --> 00:02:24,660
 took off.
 
 41
-00:02:11,794 --> 00:02:13,525
+00:02:24,660 --> 00:02:26,553
 The generation stays the same.
 
 42
-00:02:13,525 --> 00:02:16,467
+00:02:26,553 --> 00:02:29,770
 The path from generated clip to paid spend doesn't.
 
 43
-00:02:16,467 --> 00:02:18,198
+00:02:29,770 --> 00:02:31,663
 That's not a small difference.
 
 44
-00:02:18,198 --> 00:02:22,813
+00:02:31,663 --> 00:02:36,709
 Your posting calendar becomes part of your testing architecture here in a way it
 
 45
-00:02:22,813 --> 00:02:23,852
+00:02:36,709 --> 00:02:37,845
 never was on Meta.
 
 46
-00:02:23,852 --> 00:02:28,467
+00:02:37,845 --> 00:02:42,891
 An angle ignored organically is telling you something before you've spent a cent
 
 47
-00:02:28,467 --> 00:02:31,179
+00:02:42,891 --> 00:02:45,856
 finding that out through paid delivery instead.
 
 48
-00:02:31,729 --> 00:02:36,366
+00:02:46,406 --> 00:02:51,401
 This is the part that catches people who've only ever run Meta ads, where you simply
 
 49
-00:02:36,366 --> 00:02:37,138
+00:02:51,401 --> 00:02:52,234
 upload a file.
 
 50
-00:02:37,138 --> 00:02:39,567
+00:02:52,234 --> 00:02:54,851
 Spark Ads need permission, not just footage.
 
 51
-00:02:39,567 --> 00:02:44,094
+00:02:54,851 --> 00:02:59,727
 A creator generates their own authorization code from inside the app, tied to that
 
 52
-00:02:44,094 --> 00:02:46,081
+00:02:59,727 --> 00:03:01,868
 specific post, for a limited window.
 
 53
-00:02:46,081 --> 00:02:50,497
+00:03:01,868 --> 00:03:06,625
 You enter that code in Ads Manager, and only then can the post run as paid media
 
 54
-00:02:50,497 --> 00:02:51,491
+00:03:06,625 --> 00:03:07,696
 under your budget.
 
 55
-00:02:51,491 --> 00:02:55,907
+00:03:07,696 --> 00:03:12,453
 Miss the expiry and the code stops working, mid-flight, whether or not the ad is
 
 56
-00:02:55,907 --> 00:02:56,846
+00:03:12,453 --> 00:03:13,464
 still performing.
 
 57
-00:02:56,846 --> 00:02:59,440
+00:03:13,464 --> 00:03:16,259
 Two practical habits follow directly from that.
 
 58
-00:02:59,440 --> 00:03:04,022
+00:03:16,259 --> 00:03:21,195
 First, track expiry dates the same way you'd track a licence tier from Section 4.1,
 
 59
-00:03:04,022 --> 00:03:06,506
+00:03:21,195 --> 00:03:23,871
 in the same file as the brief, not in memory.
 
 60
-00:03:06,506 --> 00:03:11,033
+00:03:23,871 --> 00:03:28,748
 Second, when you're using your own brand account rather than an outside creator's,
 
 61
-00:03:11,033 --> 00:03:15,449
+00:03:28,748 --> 00:03:33,505
 you're both the poster and the authoriser, which simplifies the flow but doesn't
 
 62
-00:03:15,449 --> 00:03:16,332
+00:03:33,505 --> 00:03:34,457
 remove the step.
 
 63
-00:03:16,332 --> 00:03:20,803
+00:03:34,457 --> 00:03:39,274
 The code still has to be generated and entered, even when you're authorising your
 
 64
-00:03:20,803 --> 00:03:21,963
+00:03:39,274 --> 00:03:40,523
 own post to yourself.
 
 65
-00:03:22,513 --> 00:03:26,717
+00:03:41,073 --> 00:03:45,630
 This is exactly where Harlan's own set stopped behaving the same way on both
 
 66
-00:03:26,717 --> 00:03:27,271
+00:03:45,630 --> 00:03:46,230
 platforms.
 
 67
-00:03:27,271 --> 00:03:31,807
+00:03:46,230 --> 00:03:51,147
 The clinical framing that performed on Meta, credentials and a spec upfront, reads
 
 68
-00:03:31,807 --> 00:03:33,467
+00:03:51,147 --> 00:03:52,946
 as slightly too polished here.
 
 69
-00:03:33,467 --> 00:03:37,837
+00:03:52,946 --> 00:03:57,683
 The raw, unframed cut wins instead, the one that plays like a real shift ending
 
 70
-00:03:37,837 --> 00:03:40,327
+00:03:57,683 --> 00:04:00,382
 rather than a brand making a case for itself.
 
 71
-00:03:40,327 --> 00:03:43,647
+00:04:00,382 --> 00:04:03,980
 Why would the same claim, the same product, split like that?
 
 72
-00:03:43,647 --> 00:03:48,294
+00:04:03,980 --> 00:04:09,017
 Because Meta's feed still tolerates a moment that reads as an advertisement, if it's
 
 73
-00:03:48,294 --> 00:03:48,902
+00:04:09,017 --> 00:04:09,677
 a good one.
 
 74
-00:03:48,902 --> 00:03:51,337
+00:04:09,677 --> 00:04:12,315
 TikTok's doesn't tolerate it nearly as well.
 
 75
-00:03:51,337 --> 00:03:54,490
+00:04:12,315 --> 00:04:15,733
 The platform didn't change what's true about the product.
 
 76
-00:03:54,490 --> 00:03:58,252
+00:04:15,733 --> 00:04:19,811
 It changed which true thing lands as a real post instead of a pitch.
 
 77
-00:03:58,252 --> 00:04:02,014
+00:04:19,811 --> 00:04:23,889
 Notice what didn't change: the claims boundary underneath both cuts.
 
 78
-00:04:02,014 --> 00:04:06,495
+00:04:23,889 --> 00:04:28,746
 The raw version doesn't say anything the credentialed version couldn't defend, it
 
 79
-00:04:06,495 --> 00:04:11,143
+00:04:28,746 --> 00:04:33,783
 just says less of it, and lets the moment carry what the credentials would otherwise
 
 80
-00:04:11,143 --> 00:04:12,415
+00:04:33,783 --> 00:04:35,162
 have to state outright.
 
 81
-00:04:12,415 --> 00:04:15,126
+00:04:35,162 --> 00:04:38,100
 That's worth holding onto going into Section six.
 
 82
-00:04:15,126 --> 00:04:19,441
+00:04:38,100 --> 00:04:42,778
 A cut that reads as more casual isn't automatically a looser cut, claims-wise.
 
 83
-00:04:19,441 --> 00:04:23,535
+00:04:42,778 --> 00:04:47,215
 It can be the exact same claim, delivered with less scaffolding around it.
 
 84
-00:04:24,085 --> 00:04:28,911
+00:04:47,765 --> 00:04:53,066
 One honest note that applies to almost everything you've built since Section three.
 
 85
-00:04:28,911 --> 00:04:33,504
+00:04:53,066 --> 00:04:58,112
 TikTok's policy on AI-generated and AI-edited content requires a clear label or
 
 86
-00:04:33,504 --> 00:04:36,412
+00:04:58,112 --> 00:05:01,305
 disclosure on ad creative, not just organic posts.
 
 87
-00:04:36,412 --> 00:04:41,295
+00:05:01,305 --> 00:05:06,669
 That covers generated avatars, generated statics, and anything significantly altered
 
 88
-00:04:41,295 --> 00:04:44,842
+00:05:06,669 --> 00:05:10,565
 by AI, which is most of what this course teaches you to make.
 
 89
-00:04:44,842 --> 00:04:46,935
+00:05:10,565 --> 00:05:12,864
 Section 6.3 builds this in properly.
 
 90
-00:04:46,935 --> 00:04:51,645
+00:05:12,864 --> 00:05:18,038
 For now, just hold the fact: disclosure on TikTok isn't a nice-to-have layered on
 
 91
-00:04:51,645 --> 00:04:52,866
+00:05:18,038 --> 00:05:19,379
 top of a finished ad.
 
 92
-00:04:52,866 --> 00:04:55,947
+00:05:19,379 --> 00:05:22,764
 It's part of what makes the ad allowed to run at all.
 
 93
-00:04:55,947 --> 00:05:00,831
+00:05:22,764 --> 00:05:28,128
 Think about why this rule exists on this specific platform, more than somewhere your
 
 94
-00:05:00,831 --> 00:05:03,331
+00:05:28,128 --> 00:05:30,874
 ad announces itself as a commercial anyway.
 
 95
-00:05:03,331 --> 00:05:06,994
+00:05:30,874 --> 00:05:34,898
 TikTok's whole grammar is built on ads that pass as real posts.
 
 96
-00:05:06,994 --> 00:05:11,529
+00:05:34,898 --> 00:05:39,879
 A platform that rewards that illusion has an obvious reason to require the one
 
 97
-00:05:11,529 --> 00:05:15,425
+00:05:39,879 --> 00:05:44,158
 honest signal that tells a viewer what they're actually looking at.
 
 98
-00:05:15,425 --> 00:05:19,960
+00:05:44,158 --> 00:05:49,140
 The disclosure requirement and the native-grammar advantage aren't in tension.
 
 99
-00:05:19,960 --> 00:05:24,553
+00:05:49,140 --> 00:05:54,185
 The second one is exactly why the first one matters here more than most places.
 
 100
-00:05:25,103 --> 00:05:29,647
+00:05:54,735 --> 00:05:59,684
 Next lecture takes on a platform with a genuinely different logic again: someone
 
 101
-00:05:29,647 --> 00:05:34,360
+00:05:59,684 --> 00:06:04,817
 arriving on YouTube usually already wants something, which changes what a hook even
 
 102
-00:05:34,360 --> 00:05:36,121
+00:06:04,817 --> 00:06:06,735
 needs to do in the first place.
 
 103
-00:05:36,121 --> 00:05:40,721
+00:06:06,735 --> 00:06:11,745
 Before that, if you're running Harlan's raw cut, or your own equivalent of it, on
 
 104
-00:05:40,721 --> 00:05:45,321
+00:06:11,745 --> 00:06:16,755
 TikTok, go check your Spark Ads code's expiry today, and log the date in the same
 
 105
-00:05:45,321 --> 00:05:46,627
+00:06:16,755 --> 00:06:18,177
 file as your B04 brief.
 
 106
-00:05:46,627 --> 00:05:51,114
+00:06:18,177 --> 00:06:23,064
 It's the kind of detail that's invisible until the exact moment a live ad stops
 
 107
-00:05:51,114 --> 00:05:55,657
+00:06:23,064 --> 00:06:28,012
 serving mid-flight, and the fix takes thirty seconds now against an afternoon of
 
 108
-00:05:55,657 --> 00:05:57,417
+00:06:28,012 --> 00:06:29,929
 confused troubleshooting later.

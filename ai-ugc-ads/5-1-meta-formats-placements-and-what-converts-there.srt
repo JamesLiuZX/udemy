@@ -1,431 +1,431 @@
 1
-00:00:00,350 --> 00:00:04,897
+00:00:00,350 --> 00:00:05,314
 Picture Sam that Tuesday: the clinical-authority cut, ex-ER nurse credentials and
 
 2
-00:00:04,897 --> 00:00:09,612
+00:00:05,314 --> 00:00:10,463
 the spec first, against the raw cut with no framing at all, both live the same hour.
 
 3
-00:00:09,612 --> 00:00:11,409
+00:00:10,463 --> 00:00:12,424
 He bet one would win everywhere.
 
 4
-00:00:11,409 --> 00:00:16,012
+00:00:12,424 --> 00:00:17,450
 Meta answered first, and the clinical cut took it, clearly enough that Sam stopped
 
 5
-00:00:16,012 --> 00:00:16,349
+00:00:17,450 --> 00:00:17,818
 there.
 
 6
-00:00:16,349 --> 00:00:17,864
+00:00:17,818 --> 00:00:19,472
 Meta doesn't have one feed.
 
 7
-00:00:17,864 --> 00:00:21,906
+00:00:19,472 --> 00:00:23,885
 It has Feed, Stories, and Reels, and each one crops, frames, and behaves
 
 8
-00:00:21,906 --> 00:00:22,580
+00:00:23,885 --> 00:00:24,621
 differently.
 
 9
-00:00:22,580 --> 00:00:27,295
+00:00:24,621 --> 00:00:29,769
 As of this recording, three ratios cover nearly all of Meta's delivery: four-by-five
 
 10
-00:00:27,295 --> 00:00:31,899
+00:00:29,769 --> 00:00:34,795
 vertical for Feed, nine-by-sixteen for Stories and Reels, and one-by-one square as
 
 11
-00:00:31,899 --> 00:00:36,053
+00:00:34,795 --> 00:00:39,330
 the safe fallback when you're not sure which placement will pick up an ad.
 
 12
-00:00:36,053 --> 00:00:40,487
+00:00:39,330 --> 00:00:44,172
 Nine-by-sixteen has only grown more central since Instagram folded its separate
 
 13
-00:00:40,487 --> 00:00:45,090
+00:00:44,172 --> 00:00:49,198
 Explore feed into Reels earlier this year, pushing more discovery traffic into the
 
 14
-00:00:45,090 --> 00:00:46,157
+00:00:49,198 --> 00:00:50,363
 full-screen format.
 
 15
-00:00:46,157 --> 00:00:50,199
+00:00:50,363 --> 00:00:54,775
 Confirm these specifics in your own ads manager before you rely on them.
 
 16
-00:00:50,199 --> 00:00:53,567
+00:00:54,775 --> 00:00:58,453
 Meta reshapes its placements on its own schedule, not yours.
 
 17
-00:00:53,567 --> 00:00:56,149
+00:00:58,453 --> 00:01:01,272
 Why does this matter more now than it used to?
 
 18
-00:00:56,149 --> 00:00:59,461
+00:01:01,272 --> 00:01:04,888
 A landscape ad used to be close enough for every placement.
 
 19
-00:00:59,461 --> 00:01:04,177
+00:01:04,888 --> 00:01:10,037
 That's no longer true: as more of Meta's own traffic moves into full-screen vertical
 
 20
-00:01:04,177 --> 00:01:08,668
+00:01:10,037 --> 00:01:14,940
 formats, a landscape ad loses the top and bottom of frame to letterboxing on the
 
 21
-00:01:08,668 --> 00:01:10,857
+00:01:14,940 --> 00:01:17,330
 placement most people now actually use.
 
 22
-00:01:10,857 --> 00:01:15,404
+00:01:17,330 --> 00:01:22,295
 "Close enough" and "built for the format" have drifted further apart, not closer.
 
 23
-00:01:15,954 --> 00:01:17,864
+00:01:22,845 --> 00:01:24,876
 Notice none of these is landscape.
 
 24
-00:01:17,864 --> 00:01:22,416
+00:01:24,876 --> 00:01:29,715
 Every shape Meta actually rewards is taller than it is wide, because every one of
 
 25
-00:01:22,416 --> 00:01:26,686
+00:01:29,715 --> 00:01:34,255
 them is designed to fill a phone held upright, not a screen turned sideways.
 
 26
-00:01:26,686 --> 00:01:30,844
+00:01:34,255 --> 00:01:38,676
 This matters for the assembly discipline you already built in Section 4.5.
 
 27
-00:01:30,844 --> 00:01:35,395
+00:01:38,676 --> 00:01:43,515
 If you cut your avatar and product footage in nine-by-sixteen from the start, one
 
 28
-00:01:35,395 --> 00:01:39,553
+00:01:43,515 --> 00:01:47,936
 export covers Stories and Reels outright, and a centred crop covers Feed's
 
 29
-00:01:39,553 --> 00:01:41,688
+00:01:47,936 --> 00:01:50,206
 four-by-five without losing the frame.
 
 30
-00:01:41,688 --> 00:01:46,239
+00:01:50,206 --> 00:01:55,045
 Cut in landscape first, and you're fighting a crop on every single placement Meta
 
 31
-00:01:46,239 --> 00:01:47,532
+00:01:55,045 --> 00:01:56,419
 actually delivers into.
 
 32
-00:01:47,532 --> 00:01:50,229
+00:01:56,419 --> 00:01:59,287
 There's a practical order worth locking in here.
 
 33
-00:01:50,229 --> 00:01:54,836
+00:01:59,287 --> 00:02:04,185
 Shoot and generate at nine-by-sixteen first, treat everything else as a derivative
 
 34
-00:01:54,836 --> 00:01:55,229
+00:02:04,185 --> 00:02:04,603
 export.
 
 35
-00:01:55,229 --> 00:01:59,893
+00:02:04,603 --> 00:02:09,562
 Reframing a square or landscape source up to full-screen usually means losing edges
 
 36
-00:01:59,893 --> 00:02:01,747
+00:02:09,562 --> 00:02:11,533
 or padding them with empty space.
 
 37
-00:02:01,747 --> 00:02:06,186
+00:02:11,533 --> 00:02:16,253
 Reframing full-screen down to a square or a four-by-five almost never costs you
 
 38
-00:02:06,186 --> 00:02:10,344
+00:02:16,253 --> 00:02:20,674
 anything, because you're cropping into a taller canvas with room to spare.
 
 39
-00:02:10,344 --> 00:02:15,008
+00:02:20,674 --> 00:02:25,632
 One more reason to get this right at generation time: Section 4.5's caption and CTA
 
 40
-00:02:15,008 --> 00:02:17,424
+00:02:25,632 --> 00:02:28,201
 placement was tuned to a full-screen frame.
 
 41
-00:02:17,424 --> 00:02:21,750
+00:02:28,201 --> 00:02:32,801
 Crop it down after the fact and captions can drift relative to the new edges,
 
 42
-00:02:21,750 --> 00:02:26,470
+00:02:32,801 --> 00:02:37,819
 exactly the kind of gap a muted-watch test on the wrong export would catch too late.
 
 43
-00:02:27,020 --> 00:02:31,588
+00:02:38,369 --> 00:02:43,358
 Here's the part that catches people who cut a full-screen ad without checking it
 
 44
-00:02:31,588 --> 00:02:33,586
+00:02:43,358 --> 00:02:45,541
 against the actual interface first.
 
 45
-00:02:33,586 --> 00:02:37,354
+00:02:45,541 --> 00:02:49,657
 The top and bottom of a Stories or Reels frame aren't fully yours.
 
 46
-00:02:37,354 --> 00:02:42,093
+00:02:49,657 --> 00:02:54,833
 Meta's own profile bar, mute icon, caption line and CTA button sit over roughly the
 
 47
-00:02:42,093 --> 00:02:44,491
+00:02:54,833 --> 00:02:57,452
 top and bottom seventh of the screen each.
 
 48
-00:02:44,491 --> 00:02:49,116
+00:02:57,452 --> 00:03:02,503
 Put your hook text at the very top of frame, the way you might on a plain canvas,
 
 49
-00:02:49,116 --> 00:02:52,370
+00:03:02,503 --> 00:03:06,058
 and the platform covers it before a viewer ever reads it.
 
 50
-00:02:52,370 --> 00:02:57,166
+00:03:06,058 --> 00:03:11,296
 Check this the same way you checked a caption in Section 4.5: play the actual export
 
 51
-00:02:57,166 --> 00:03:01,505
+00:03:11,296 --> 00:03:16,036
 inside the actual platform, not just inside your edit tool's preview window.
 
 52
-00:03:01,505 --> 00:03:05,959
+00:03:16,036 --> 00:03:20,900
 An edit tool has no idea where Meta's interface is going to sit on top of your
 
 53
-00:03:05,959 --> 00:03:06,473
+00:03:20,900 --> 00:03:21,461
 creative.
 
 54
-00:03:06,473 --> 00:03:08,129
+00:03:21,461 --> 00:03:23,270
 Where does this bite hardest?
 
 55
-00:03:08,129 --> 00:03:08,585
+00:03:23,270 --> 00:03:23,768
 The CTA.
 
 56
-00:03:08,585 --> 00:03:13,381
+00:03:23,768 --> 00:03:29,007
 You spent Section 4.5 making sure "Harlan, link in bio" stayed on screen long enough
 
 57
-00:03:13,381 --> 00:03:13,838
+00:03:29,007 --> 00:03:29,506
 to read.
 
 58
-00:03:13,838 --> 00:03:18,634
+00:03:29,506 --> 00:03:34,744
 Put that same line flush against the bottom edge of a full-screen export, and Meta's
 
 59
-00:03:18,634 --> 00:03:23,087
+00:03:34,744 --> 00:03:39,608
 own CTA button sits directly on top of it, unread, for the entire time it's on
 
 60
-00:03:23,087 --> 00:03:23,487
+00:03:39,608 --> 00:03:40,045
 screen.
 
 61
-00:03:23,487 --> 00:03:25,314
+00:03:40,045 --> 00:03:42,040
 The line was designed correctly.
 
 62
-00:03:25,314 --> 00:03:29,996
+00:03:42,040 --> 00:03:47,154
 The frame it landed in wasn't checked against the platform that was actually going
 
 63
-00:03:29,996 --> 00:03:30,624
+00:03:47,154 --> 00:03:47,840
 to show it.
 
 64
-00:03:31,174 --> 00:03:35,752
+00:03:48,390 --> 00:03:53,363
 As of this recording, the pattern holds across most of what's published about Meta
 
 65
-00:03:35,752 --> 00:03:39,995
+00:03:53,363 --> 00:03:57,971
 performance: creative that looks native to the feed it's sitting in tends to
 
 66
-00:03:39,995 --> 00:03:43,345
+00:03:57,971 --> 00:04:01,610
 outperform creative that announces itself as an ad on sight.
 
 67
-00:03:43,345 --> 00:03:46,695
+00:04:01,610 --> 00:04:05,248
 That's the exact case for everything you built in Section 4.
 
 68
-00:03:46,695 --> 00:03:50,268
+00:04:05,248 --> 00:04:09,129
 An avatar-led, sound-off-designed ad isn't a compromise on Meta.
 
 69
-00:03:50,268 --> 00:03:53,004
+00:04:09,129 --> 00:04:12,101
 It's closer to what the platform already rewards.
 
 70
-00:03:53,004 --> 00:03:55,963
+00:04:12,101 --> 00:04:15,315
 The other half of that pattern is volume, not polish.
 
 71
-00:03:55,963 --> 00:04:00,653
+00:04:15,315 --> 00:04:20,409
 Meta's own automated delivery tools, grouped under the Advantage+ name, are built to
 
 72
-00:04:00,653 --> 00:04:05,175
+00:04:20,409 --> 00:04:25,321
 test a real spread of creative variants against each other and shift spend toward
 
 73
-00:04:05,175 --> 00:04:06,962
+00:04:25,321 --> 00:04:27,261
 whichever ones actually perform.
 
 74
-00:04:06,962 --> 00:04:10,814
+00:04:27,261 --> 00:04:31,446
 Feed them one hero ad and you've given the system nothing to compare.
 
 75
-00:04:10,814 --> 00:04:15,392
+00:04:31,446 --> 00:04:36,418
 Feed them the eight to twenty variants a real angle map produces, and you've given
 
 76
-00:04:15,392 --> 00:04:17,402
+00:04:36,418 --> 00:04:38,601
 it something to actually learn from.
 
 77
-00:04:17,402 --> 00:04:21,254
+00:04:38,601 --> 00:04:42,786
 Notice how directly this connects back to Section 1.4's volume maths.
 
 78
-00:04:21,254 --> 00:04:24,995
+00:04:42,786 --> 00:04:46,849
 Advantage+ isn't a separate skill from what you've already learned.
 
 79
-00:04:24,995 --> 00:04:29,573
+00:04:46,849 --> 00:04:51,821
 It's the same argument, one video can't reveal a winner, applied inside Meta's own
 
 80
-00:04:29,573 --> 00:04:33,146
+00:04:51,821 --> 00:04:55,702
 delivery system instead of inside your own testing architecture.
 
 81
-00:04:33,146 --> 00:04:36,273
+00:04:55,702 --> 00:04:59,098
 The system doesn't reward the one ad you're proudest of.
 
 82
-00:04:36,273 --> 00:04:40,795
+00:04:59,098 --> 00:05:04,010
 It rewards whichever one earns its keep against the others you gave it to compare
 
 83
-00:04:40,795 --> 00:04:41,242
+00:05:04,010 --> 00:05:04,495
 against.
 
 84
-00:04:41,792 --> 00:04:44,343
+00:05:05,045 --> 00:05:07,828
 One honest note before this goes any further.
 
 85
-00:04:44,343 --> 00:04:48,765
+00:05:07,828 --> 00:05:12,652
 Everything in this lecture, the ratios, the safe zones, the variant counts, is
 
 86
-00:04:48,765 --> 00:04:51,203
+00:05:12,652 --> 00:05:15,311
 accurate as checked at the time of writing.
 
 87
-00:04:51,203 --> 00:04:55,795
+00:05:15,311 --> 00:05:20,321
 Meta reshapes its own placements more often than most advertisers notice, because
 
 88
-00:04:55,795 --> 00:04:57,666
+00:05:20,321 --> 00:05:22,361
 most advertisers aren't checking.
 
 89
-00:04:57,666 --> 00:05:02,315
+00:05:22,361 --> 00:05:27,433
 Five minutes in your own ads manager before a campaign launches costs you nothing.
 
 90
-00:05:02,315 --> 00:05:06,907
+00:05:27,433 --> 00:05:32,442
 Finding out mid-flight that a safe zone moved costs you a whole batch of creative
 
 91
-00:05:06,907 --> 00:05:08,041
+00:05:32,442 --> 00:05:33,679
 that's already live.
 
 92
-00:05:08,041 --> 00:05:12,689
+00:05:33,679 --> 00:05:38,750
 Ask yourself the same question this course keeps asking about every tool it names:
 
 93
-00:05:12,689 --> 00:05:16,488
+00:05:38,750 --> 00:05:42,893
 what would actually break if this specific detail changed tomorrow?
 
 94
-00:05:16,488 --> 00:05:20,910
+00:05:42,893 --> 00:05:47,717
 A ratio shift breaks an export setting, fixable in minutes once you notice it.
 
 95
-00:05:20,910 --> 00:05:25,672
+00:05:47,717 --> 00:05:52,912
 It doesn't break the underlying discipline, generate in full-screen first, check the
 
 96
-00:05:25,672 --> 00:05:30,321
+00:05:52,912 --> 00:05:57,983
 actual platform before you trust a preview, give the delivery system a real spread
 
 97
-00:05:30,321 --> 00:05:30,774
+00:05:57,983 --> 00:05:58,478
 to test.
 
 98
-00:05:30,774 --> 00:05:34,062
+00:05:58,478 --> 00:06:02,065
 That discipline is what this lecture is actually teaching.
 
 99
-00:05:34,062 --> 00:05:36,500
+00:06:02,065 --> 00:06:04,724
 The numbers are just today's version of it.
 
 100
-00:05:37,050 --> 00:05:41,847
+00:06:05,274 --> 00:06:10,536
 Next lecture takes the same creative set to a platform where the rules aren't just
 
 101
-00:05:41,847 --> 00:05:42,841
+00:06:10,536 --> 00:06:11,627
 different ratios.
 
 102
-00:05:42,841 --> 00:05:47,638
+00:06:11,627 --> 00:06:16,890
 TikTok rewards a genuinely different kind of cut, and Harlan's own set is about to
 
 103
-00:05:47,638 --> 00:05:51,792
+00:06:16,890 --> 00:06:21,446
 prove it: the cut that just lost on Meta is about to win there instead.
 
 104
-00:05:51,792 --> 00:05:56,472
+00:06:21,446 --> 00:06:26,580
 Before that, open the actual video files behind your Section 4.6 brief, artifact
 
 105
-00:05:56,472 --> 00:06:00,449
+00:06:26,580 --> 00:06:30,944
 B04, and sort them by which placement each one was actually cut for.
 
 106
-00:06:00,449 --> 00:06:05,071
+00:06:30,944 --> 00:06:36,014
 If the honest answer for any of them is "none in particular", fix that tonight.
 
 107
-00:06:05,071 --> 00:06:09,634
+00:06:36,014 --> 00:06:41,020
 It only gets harder to ignore once TikTok starts asking the same question in a
 
 108
-00:06:09,634 --> 00:06:10,687
+00:06:41,020 --> 00:06:42,175
 different grammar.
