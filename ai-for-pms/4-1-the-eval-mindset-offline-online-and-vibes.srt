@@ -1,407 +1,407 @@
 1
-00:00:00,350 --> 00:00:04,697
+00:00:00,350 --> 00:00:05,175
 Right now, somebody on your team is deciding whether that AI feature is good enough.
 
 2
-00:00:04,697 --> 00:00:05,473
+00:00:05,175 --> 00:00:06,036
 Maybe it's you.
 
 3
-00:00:05,473 --> 00:00:08,422
+00:00:06,036 --> 00:00:09,310
 Most of the time that decision happens one of three ways.
 
 4
-00:00:08,422 --> 00:00:11,268
+00:00:09,310 --> 00:00:12,470
 Someone opens the tool, tries a few inputs, and reacts.
 
 5
-00:00:11,268 --> 00:00:15,098
+00:00:12,470 --> 00:00:16,720
 Or a test suite runs against a fixed set of examples before every release.
 
 6
-00:00:15,098 --> 00:00:19,186
+00:00:16,720 --> 00:00:21,258
 Or a dashboard somewhere tracks what real users are getting, after it's already
 
 7
-00:00:19,186 --> 00:00:19,444
+00:00:21,258 --> 00:00:21,545
 live.
 
 8
-00:00:19,444 --> 00:00:23,532
+00:00:21,545 --> 00:00:26,082
 Those are three different instruments, and they measure three different things.
 
 9
-00:00:23,532 --> 00:00:27,724
+00:00:26,082 --> 00:00:30,735
 The argument you keep having with engineering about whether a feature is ready is
 
 10
-00:00:27,724 --> 00:00:31,605
+00:00:30,735 --> 00:00:35,043
 usually two people trusting two different instruments and not realising it.
 
 11
-00:00:31,605 --> 00:00:35,330
+00:00:35,043 --> 00:00:39,178
 By the end of this lecture you'll know which one you're using, and, more
 
 12
-00:00:35,330 --> 00:00:37,452
+00:00:39,178 --> 00:00:41,533
 importantly, which disaster it can't see.
 
 13
-00:00:37,452 --> 00:00:41,643
+00:00:41,533 --> 00:00:46,186
 Get that wrong and you either ship on vibes alone, or trust a number that quietly
 
 14
-00:00:41,643 --> 00:00:42,627
+00:00:46,186 --> 00:00:47,277
 stopped being true.
 
 15
-00:00:43,177 --> 00:00:47,629
+00:00:47,827 --> 00:00:52,728
 Here's the same three things stated precisely, because the names get used loosely.
 
 16
-00:00:47,629 --> 00:00:52,082
+00:00:52,728 --> 00:00:57,628
 Vibes is a person reading outputs and reacting, right now, to whatever they happen
 
 17
-00:00:52,082 --> 00:00:52,787
+00:00:57,628 --> 00:00:58,405
 to have open.
 
 18
-00:00:52,787 --> 00:00:54,688
+00:00:58,405 --> 00:01:00,497
 No fixed cases, no fixed questions.
 
 19
-00:00:54,688 --> 00:00:58,869
+00:01:00,497 --> 00:01:05,099
 You already met this one in Section 0, and you already know its problem: five
 
 20
-00:00:58,869 --> 00:01:00,552
+00:01:05,099 --> 00:01:06,951
 people, five different numbers.
 
 21
-00:01:00,552 --> 00:01:04,353
+00:01:06,951 --> 00:01:11,135
 Offline is the golden set, run against a rubric, before every release.
 
 22
-00:01:04,353 --> 00:01:08,697
+00:01:11,135 --> 00:01:15,916
 It's the instrument this section teaches you to build, by hand and then in code.
 
 23
-00:01:08,697 --> 00:01:13,149
+00:01:15,916 --> 00:01:20,816
 Repeatable, cheap once it exists, and it never sees anything you didn't put in it.
 
 24
-00:01:13,149 --> 00:01:14,670
+00:01:20,816 --> 00:01:22,490
 Online is production itself.
 
 25
-00:01:14,670 --> 00:01:19,231
+00:01:22,490 --> 00:01:27,510
 Whatever users actually send, scored or simply watched, after the feature is already
 
 26
-00:01:19,231 --> 00:01:19,502
+00:01:27,510 --> 00:01:27,809
 live.
 
 27
-00:01:19,502 --> 00:01:23,792
+00:01:27,809 --> 00:01:32,530
 It sees everything, including the inputs you never thought to imagine, but only
 
 28
-00:01:23,792 --> 00:01:27,267
+00:01:32,530 --> 00:01:36,355
 after someone real has already been on the receiving end of one.
 
 29
-00:01:27,817 --> 00:01:30,985
+00:01:36,905 --> 00:01:40,346
 Here's the promise from the first slide, paid off properly.
 
 30
-00:01:30,985 --> 00:01:32,327
+00:01:40,346 --> 00:01:41,805
 Vibes misses consistency.
 
 31
-00:01:32,327 --> 00:01:36,838
+00:01:41,805 --> 00:01:46,705
 You saw this exact failure in Section 0: the same summary, scored two, three, three,
 
 32
-00:01:36,838 --> 00:01:39,737
+00:01:46,705 --> 00:01:49,855
 four, five, by five people who each had a real reason.
 
 33
-00:01:39,737 --> 00:01:41,348
+00:01:49,855 --> 00:01:51,605
 That's not five bad reviewers.
 
 34
-00:01:41,348 --> 00:01:44,248
+00:01:51,605 --> 00:01:54,755
 That's what happens when there's no shared instrument.
 
 35
-00:01:44,248 --> 00:01:47,630
+00:01:54,755 --> 00:01:58,430
 Offline misses drift, which is the picture you're about to see.
 
 36
-00:01:47,630 --> 00:01:51,926
+00:01:58,430 --> 00:02:03,097
 It's excellent at catching anything that looks like the fifty cases you built it
 
 37
-00:01:51,926 --> 00:01:55,201
+00:02:03,097 --> 00:02:06,655
 from, and structurally unable to catch anything that doesn't.
 
 38
-00:01:55,201 --> 00:01:56,544
+00:02:06,655 --> 00:02:08,114
 Online misses prevention.
 
 39
-00:01:56,544 --> 00:02:00,625
+00:02:08,114 --> 00:02:12,547
 It only speaks after a real user already sent the input and felt the result.
 
 40
-00:02:00,625 --> 00:02:04,974
+00:02:12,547 --> 00:02:17,272
 It's the most honest signal you have, and it is always, by construction, too late
 
 41
-00:02:04,974 --> 00:02:05,941
+00:02:17,272 --> 00:02:18,322
 for that one case.
 
 42
-00:02:05,941 --> 00:02:07,552
+00:02:18,322 --> 00:02:20,072
 None of the three is optional.
 
 43
-00:02:07,552 --> 00:02:12,008
+00:02:20,072 --> 00:02:24,914
 Each one is the only thing standing between you and the specific disaster the other
 
 44
-00:02:12,008 --> 00:02:12,760
+00:02:24,914 --> 00:02:25,731
 two can't see.
 
 45
-00:02:13,310 --> 00:02:15,415
+00:02:26,281 --> 00:02:28,563
 For good reason, most teams stop here.
 
 46
-00:02:15,415 --> 00:02:18,406
+00:02:28,563 --> 00:02:31,806
 On its own terms, offline eval is genuinely excellent.
 
 47
-00:02:18,406 --> 00:02:23,059
+00:02:31,806 --> 00:02:36,851
 Run the same fifty cases through the same rubric before every release, and you get a
 
 48
-00:02:23,059 --> 00:02:27,546
+00:02:36,851 --> 00:02:41,715
 number nobody can argue you out of: ninety-one percent, say, moving only when the
 
 49
-00:02:27,546 --> 00:02:29,042
+00:02:41,715 --> 00:02:43,337
 thing you changed moves it.
 
 50
-00:02:29,042 --> 00:02:31,535
+00:02:43,337 --> 00:02:46,040
 That's the column on the left, and it's real.
 
 51
-00:02:31,535 --> 00:02:35,578
+00:02:46,040 --> 00:02:50,424
 Now look at the column on the right, the assumption nobody says out loud.
 
 52
-00:02:35,578 --> 00:02:37,185
+00:02:50,424 --> 00:02:52,166
 A golden set is a photograph.
 
 53
-00:02:37,185 --> 00:02:41,506
+00:02:52,166 --> 00:02:56,850
 It's exactly correct for the moment you took it, and it says nothing about the
 
 54
-00:02:41,506 --> 00:02:42,503
+00:02:56,850 --> 00:02:57,931
 moment after that.
 
 55
-00:02:42,503 --> 00:02:44,386
+00:02:57,931 --> 00:02:59,973
 Hold onto that ninety-one percent.
 
 56
-00:02:44,386 --> 00:02:47,267
+00:02:59,973 --> 00:03:03,096
 You're about to watch it stop being the whole story.
 
 57
-00:02:47,817 --> 00:02:48,601
+00:03:03,646 --> 00:03:04,502
 Same product.
 
 58
-00:02:48,601 --> 00:02:50,774
+00:03:04,502 --> 00:03:06,874
 Same six questions from lecture 0.4.
 
 59
-00:02:50,774 --> 00:02:51,980
+00:03:06,874 --> 00:03:08,191
 Two different weeks.
 
 60
-00:02:51,980 --> 00:02:56,687
+00:03:08,191 --> 00:03:13,329
 The top row is your golden set, and it looks the way a healthy feature should:
 
 61
-00:02:56,687 --> 00:02:58,498
+00:03:13,329 --> 00:03:15,306
 tight, mostly fours and fives.
 
 62
-00:02:58,498 --> 00:03:02,118
+00:03:15,306 --> 00:03:19,258
 That's the ninety-one percent that got this feature shipped.
 
 63
-00:03:02,118 --> 00:03:06,946
+00:03:19,258 --> 00:03:24,528
 The bottom row is ten live transcripts, pulled at random this week and scored on
 
 64
-00:03:06,946 --> 00:03:08,274
+00:03:24,528 --> 00:03:25,977
 that identical rubric.
 
 65
-00:03:08,274 --> 00:03:13,101
+00:03:25,977 --> 00:03:31,247
 Wider spread, lower average, a couple of ones, and a one on this scale means the
 
 66
-00:03:13,101 --> 00:03:15,575
+00:03:31,247 --> 00:03:33,948
 agent reopens the original ticket anyway.
 
 67
-00:03:15,575 --> 00:03:18,713
+00:03:33,948 --> 00:03:37,373
 Say your product added a new refund policy in April.
 
 68
-00:03:18,713 --> 00:03:23,722
+00:03:37,373 --> 00:03:42,841
 Tickets like Ticket 4471 got a lot more common, and none of March's fifty cases saw
 
 69
-00:03:23,722 --> 00:03:23,963
+00:03:42,841 --> 00:03:43,104
 one.
 
 70
-00:03:23,963 --> 00:03:28,730
+00:03:43,104 --> 00:03:48,308
 Nothing here means the rubric is broken, or that March's fifty cases were badly
 
 71
-00:03:28,730 --> 00:03:29,153
+00:03:48,308 --> 00:03:48,769
 chosen.
 
 72
-00:03:29,153 --> 00:03:32,291
+00:03:48,769 --> 00:03:52,195
 It means production moved and the photograph didn't.
 
 73
-00:03:32,841 --> 00:03:36,279
+00:03:52,745 --> 00:03:56,545
 Notice the word doing the work in that definition: identical.
 
 74
-00:03:36,279 --> 00:03:38,928
+00:03:56,545 --> 00:03:59,474
 Drift isn't the rubric disagreeing with itself.
 
 75
-00:03:38,928 --> 00:03:43,042
+00:03:59,474 --> 00:04:04,022
 It's the same six questions, asked of a world that stopped holding still.
 
 76
-00:03:43,042 --> 00:03:46,536
+00:04:04,022 --> 00:04:07,885
 The exercise underneath it costs you twenty minutes a release.
 
 77
-00:03:46,536 --> 00:03:49,918
+00:04:07,885 --> 00:04:11,624
 Ten transcripts, the rubric you already own, no new tooling.
 
 78
-00:03:49,918 --> 00:03:53,356
+00:04:11,624 --> 00:04:15,424
 It's the cheapest early-warning system in this entire course.
 
 79
-00:03:53,356 --> 00:03:55,159
+00:04:15,424 --> 00:04:17,418
 Skip it, and you still find out.
 
 80
-00:03:55,159 --> 00:03:59,837
+00:04:17,418 --> 00:04:22,590
 You just find out from a support escalation, with your name already attached to the
 
 81
-00:03:59,837 --> 00:04:00,739
+00:04:22,590 --> 00:04:23,587
 launch decision.
 
 82
-00:04:01,289 --> 00:04:03,535
+00:04:24,137 --> 00:04:26,598
 Say the cost plainly, because it's real.
 
 83
-00:04:03,535 --> 00:04:06,119
+00:04:26,598 --> 00:04:29,428
 Online eval is a smoke alarm, not a sprinkler.
 
 84
-00:04:06,119 --> 00:04:08,028
+00:04:29,428 --> 00:04:31,520
 It tells you something is burning.
 
 85
-00:04:08,028 --> 00:04:12,409
+00:04:31,520 --> 00:04:36,319
 It does not put the fire out, and it never once sounds before the fire starts.
 
 86
-00:04:12,409 --> 00:04:16,452
+00:04:36,319 --> 00:04:40,749
 That's not a flaw you can engineer away, it's what "after launch" means.
 
 87
-00:04:16,452 --> 00:04:19,429
+00:04:40,749 --> 00:04:44,010
 And on its own, a handful of weekly samples is noisy.
 
 88
-00:04:19,429 --> 00:04:24,146
+00:04:44,010 --> 00:04:49,179
 Two failures out of ten live tickets: is that a true twenty percent failure rate, or
 
 89
-00:04:24,146 --> 00:04:26,842
+00:04:49,179 --> 00:04:52,132
 a true five percent rate having an unlucky week?
 
 90
-00:04:26,842 --> 00:04:30,156
+00:04:52,132 --> 00:04:55,762
 At that sample size, nobody in the room can tell you which.
 
 91
-00:04:30,156 --> 00:04:34,705
+00:04:55,762 --> 00:05:00,746
 You'll meet the fix for that later in this section: how many samples turn a hunch
 
 92
-00:04:34,705 --> 00:04:36,333
+00:05:00,746 --> 00:05:02,531
 into a number you can defend.
 
 93
-00:04:36,883 --> 00:04:40,249
+00:05:03,081 --> 00:05:06,832
 Three mechanisms, and this section builds all three properly.
 
 94
-00:04:40,249 --> 00:04:42,621
+00:05:06,832 --> 00:05:09,477
 You'll turn vibes into something scoreable.
 
 95
-00:04:42,621 --> 00:04:47,145
+00:05:09,477 --> 00:05:14,520
 You'll build the offline instrument yourself, first where you can see every moving
 
 96
-00:04:47,145 --> 00:04:48,193
+00:05:14,520 --> 00:05:15,689
 part, then in code.
 
 97
-00:04:48,193 --> 00:04:52,827
+00:05:15,689 --> 00:05:20,855
 And you'll give online signal a proper home instead of a Slack message someone sends
 
 98
-00:04:52,827 --> 00:04:54,262
+00:05:20,855 --> 00:05:22,454
 when a customer complains.
 
 99
-00:04:54,262 --> 00:04:57,793
+00:05:22,454 --> 00:05:26,390
 Next lecture, you build the fifty cases that instrument runs on.
 
 100
-00:04:57,793 --> 00:05:01,434
+00:05:26,390 --> 00:05:30,449
 Not fifty at random: fifty chosen for exactly what they teach you.
 
 101
-00:05:01,434 --> 00:05:06,013
+00:05:30,449 --> 00:05:35,554
 Do all three properly, and "is it ready" stops being an argument and starts being a
 
 102
-00:05:06,013 --> 00:05:08,109
+00:05:35,554 --> 00:05:37,891
 number everyone in the room can check.

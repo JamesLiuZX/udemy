@@ -1,63 +1,63 @@
 1
-00:00:00,350 --> 00:00:03,276
+00:00:00,350 --> 00:00:03,595
 Three sections in, you've built vocabulary and a spec.
 
 2
-00:00:03,276 --> 00:00:06,310
+00:00:03,595 --> 00:00:06,959
 None of it tells you whether an output is actually good.
 
 3
-00:00:06,310 --> 00:00:07,393
+00:00:06,959 --> 00:00:08,161
 That's this section.
 
 4
-00:00:07,393 --> 00:00:11,185
+00:00:08,161 --> 00:00:12,367
 If you only finish one part of this course properly, make it this one.
 
 5
-00:00:11,185 --> 00:00:15,411
+00:00:12,367 --> 00:00:17,054
 Everything after it, RAG, agents, cost, risk, assumes you can already do this.
 
 6
-00:00:15,961 --> 00:00:18,496
+00:00:17,604 --> 00:00:20,315
 Five ideas, and two things you actually build.
 
 7
-00:00:18,496 --> 00:00:23,125
+00:00:20,315 --> 00:00:25,266
 You'll build a golden set, fifty examples chosen for what they teach you rather than
 
 8
-00:00:23,125 --> 00:00:24,502
+00:00:25,266 --> 00:00:26,740
 how many you can collect.
 
 9
-00:00:24,502 --> 00:00:28,800
+00:00:26,740 --> 00:00:31,337
 You'll write a rubric, then check whether five people using it agree with each
 
 10
-00:00:28,800 --> 00:00:29,131
+00:00:31,337 --> 00:00:31,691
 other.
 
 11
-00:00:29,131 --> 00:00:33,429
+00:00:31,691 --> 00:00:36,288
 You'll learn where an AI judge earns your trust, and where it quietly flatters
 
 12
-00:00:33,429 --> 00:00:33,815
+00:00:36,288 --> 00:00:36,700
 itself.
 
 13
-00:00:33,815 --> 00:00:38,223
+00:00:36,700 --> 00:00:41,416
 And you'll build two working eval harnesses: one in a spreadsheet, one in thirty
 
 14
-00:00:38,223 --> 00:00:42,411
+00:00:41,416 --> 00:00:45,895
 lines of Python, so you own the number instead of asking an engineer for it.
 
 15
-00:00:42,411 --> 00:00:43,237
+00:00:45,895 --> 00:00:46,779
 That's the arc.
 
 16
-00:00:43,237 --> 00:00:45,993
+00:00:46,779 --> 00:00:49,726
 Let's start with the mindset underneath all of it.

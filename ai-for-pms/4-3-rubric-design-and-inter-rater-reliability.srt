@@ -1,439 +1,439 @@
 1
-00:00:00,350 --> 00:00:03,558
+00:00:00,350 --> 00:00:03,865
 Back in Section 0, you watched something satisfying happen.
 
 2
-00:00:03,558 --> 00:00:07,637
+00:00:03,865 --> 00:00:08,333
 Five reviewers, one rubric, and a three-point spread collapsed down to one.
 
 3
-00:00:07,637 --> 00:00:10,573
+00:00:08,333 --> 00:00:11,550
 I want to be honest with you about that demonstration.
 
 4
-00:00:10,573 --> 00:00:14,597
+00:00:11,550 --> 00:00:15,959
 Those six questions had already been road-tested before you ever saw them.
 
 5
-00:00:14,597 --> 00:00:18,567
+00:00:15,959 --> 00:00:20,308
 Draft your own this afternoon, first pass, and there's no such guarantee.
 
 6
-00:00:18,567 --> 00:00:23,080
+00:00:20,308 --> 00:00:25,253
 Vague wording produces exactly the disagreement you were trying to remove, just now
 
 7
-00:00:23,080 --> 00:00:24,548
+00:00:25,253 --> 00:00:26,862
 wearing a rubric's clothes.
 
 8
-00:00:24,548 --> 00:00:28,355
+00:00:26,862 --> 00:00:31,032
 How would you even know, before shipping it, which kind you'd written?
 
 9
-00:00:28,355 --> 00:00:30,856
+00:00:31,032 --> 00:00:33,773
 So this lecture isn't about writing questions.
 
 10
-00:00:30,856 --> 00:00:33,195
+00:00:33,773 --> 00:00:36,334
 You already have a working method for that.
 
 11
-00:00:33,195 --> 00:00:37,490
+00:00:36,334 --> 00:00:41,041
 It's about the part almost nobody does afterwards: proving your rubric actually
 
 12
-00:00:37,490 --> 00:00:41,025
+00:00:41,041 --> 00:00:44,913
 produces agreement, and fixing it, specifically, when it doesn't.
 
 13
-00:00:41,025 --> 00:00:43,581
+00:00:44,913 --> 00:00:47,713
 That proof has a name: inter-rater reliability.
 
 14
-00:00:43,581 --> 00:00:48,040
+00:00:47,713 --> 00:00:52,599
 By the end of this you'll know how to run it in under an hour, and why the version
 
 15
-00:00:48,040 --> 00:00:51,901
+00:00:52,599 --> 00:00:56,829
 of this most teams skip is exactly the hour that would have saved them.
 
 16
-00:00:52,451 --> 00:00:54,996
+00:00:57,379 --> 00:01:00,140
 Look at the left column, because it's the trap.
 
 17
-00:00:54,996 --> 00:00:57,595
+00:01:00,140 --> 00:01:02,960
 Every one of those reads like a rubric question.
 
 18
-00:00:57,595 --> 00:01:02,144
+00:01:02,960 --> 00:01:07,894
 Each has a subject, each sounds specific, and each will still get a different answer
 
 19
-00:01:02,144 --> 00:01:04,256
+00:01:07,894 --> 00:01:10,186
 depending entirely on who's reading it.
 
 20
-00:01:04,256 --> 00:01:05,339
+00:01:10,186 --> 00:01:11,361
 Appropriate to whom.
 
 21
-00:01:05,339 --> 00:01:06,531
+00:01:11,361 --> 00:01:12,653
 Good by what standard.
 
 22
-00:01:06,531 --> 00:01:11,080
+00:01:12,653 --> 00:01:17,588
 The right column is the actual six from Section 0's ticket rubric, close to word for
 
 23
-00:01:11,080 --> 00:01:11,351
+00:01:17,588 --> 00:01:17,881
 word.
 
 24
-00:01:11,351 --> 00:01:13,084
+00:01:17,881 --> 00:01:19,761
 Notice what they have in common.
 
 25
-00:01:13,084 --> 00:01:16,387
+00:01:19,761 --> 00:01:23,345
 Each one points at something you could screenshot and circle.
 
 26
-00:01:16,387 --> 00:01:18,770
+00:01:23,345 --> 00:01:25,930
 A date is either in the summary or it isn't.
 
 27
-00:01:18,770 --> 00:01:21,748
+00:01:25,930 --> 00:01:29,161
 A claim either traces back to the ticket or it doesn't.
 
 28
-00:01:21,748 --> 00:01:26,081
+00:01:29,161 --> 00:01:33,861
 That's the whole test for a rubric-grade question: could two people who disagree
 
 29
-00:01:26,081 --> 00:01:30,521
+00:01:33,861 --> 00:01:38,678
 about everything else still land on the same answer, because the answer is sitting
 
 30
-00:01:30,521 --> 00:01:31,821
+00:01:38,678 --> 00:01:40,088
 right there in the text.
 
 31
-00:01:31,821 --> 00:01:34,962
+00:01:40,088 --> 00:01:43,495
 If answering it takes taste, the question isn't ready yet.
 
 32
-00:01:35,512 --> 00:01:38,959
+00:01:44,045 --> 00:01:47,749
 Here's the actual protocol, and it's shorter than people expect.
 
 33
-00:01:38,959 --> 00:01:43,161
+00:01:47,749 --> 00:01:52,264
 Two people, you and one colleague, score the same fifteen cases independently.
 
 34
-00:01:43,161 --> 00:01:44,508
+00:01:52,264 --> 00:01:53,711
 Don't discuss them first.
 
 35
-00:01:44,508 --> 00:01:48,655
+00:01:53,711 --> 00:01:58,167
 That's the part people skip, and skipping it is what makes the whole exercise
 
 36
-00:01:48,655 --> 00:01:49,194
+00:01:58,167 --> 00:01:58,746
 worthless.
 
 37
-00:01:49,194 --> 00:01:52,318
+00:01:58,746 --> 00:02:02,102
 Then compare, case by case, not just the final percentage.
 
 38
-00:01:52,318 --> 00:01:56,843
+00:02:02,102 --> 00:02:06,964
 A spreadsheet with two columns is the entire tool: your verdicts next to theirs, row
 
 39
-00:01:56,843 --> 00:01:57,220
+00:02:06,964 --> 00:02:07,369
 by row.
 
 40
-00:01:57,220 --> 00:01:58,782
+00:02:07,369 --> 00:02:09,048
 Wherever you agreed, move on.
 
 41
-00:01:58,782 --> 00:02:02,283
+00:02:09,048 --> 00:02:12,809
 Wherever you didn't, stop and read that question again, together.
 
 42
-00:02:02,283 --> 00:02:06,700
+00:02:12,809 --> 00:02:17,555
 Nine times out of ten, the wording let two reasonable people read it two different
 
 43
-00:02:06,700 --> 00:02:06,970
+00:02:17,555 --> 00:02:17,845
 ways.
 
 44
-00:02:06,970 --> 00:02:08,316
+00:02:17,845 --> 00:02:19,292
 Reword that one question.
 
 45
-00:02:08,316 --> 00:02:09,070
+00:02:19,292 --> 00:02:20,102
 Just that one.
 
 46
-00:02:09,070 --> 00:02:10,848
+00:02:20,102 --> 00:02:22,012
 Run the same fifteen cases again.
 
 47
-00:02:10,848 --> 00:02:14,565
+00:02:22,012 --> 00:02:26,005
 Clear about eighty-five percent agreement and you're done, freeze it.
 
 48
-00:02:14,565 --> 00:02:16,181
+00:02:26,005 --> 00:02:27,741
 Fall short and you loop again.
 
 49
-00:02:16,181 --> 00:02:19,089
+00:02:27,741 --> 00:02:30,867
 Most rubrics need one or two passes through this loop.
 
 50
-00:02:19,089 --> 00:02:20,221
+00:02:30,867 --> 00:02:32,082
 Almost none need ten.
 
 51
-00:02:20,771 --> 00:02:25,028
+00:02:32,632 --> 00:02:37,353
 Here's what that loop looks like with real numbers, from exactly this kind of
 
 52
-00:02:25,028 --> 00:02:25,415
+00:02:37,353 --> 00:02:37,782
 rubric.
 
 53
-00:02:25,415 --> 00:02:28,622
+00:02:37,782 --> 00:02:41,338
 First pass, two reviewers, fifteen cases: nine agreements.
 
 54
-00:02:28,622 --> 00:02:29,396
+00:02:41,338 --> 00:02:42,196
 Sixty percent.
 
 55
-00:02:29,396 --> 00:02:31,884
+00:02:42,196 --> 00:02:44,955
 Not good enough to hang a launch decision on.
 
 56
-00:02:31,884 --> 00:02:36,528
+00:02:44,955 --> 00:02:50,105
 They read through the six disagreements together, and five of the six traced back to
 
 57
-00:02:36,528 --> 00:02:38,242
+00:02:50,105 --> 00:02:52,005
 one question: nothing invented.
 
 58
-00:02:38,242 --> 00:02:41,228
+00:02:52,005 --> 00:02:55,316
 One reviewer was flagging any paraphrase as invention.
 
 59
-00:02:41,228 --> 00:02:44,821
+00:02:55,316 --> 00:02:59,301
 The other only flagged claims with no basis in the ticket at all.
 
 60
-00:02:44,821 --> 00:02:47,973
+00:02:59,301 --> 00:03:02,795
 Same three words, two different tests hiding behind them.
 
 61
-00:02:47,973 --> 00:02:52,617
+00:03:02,795 --> 00:03:07,945
 They reworded it to something narrower: every claim in the summary is traceable to a
 
 62
-00:02:52,617 --> 00:02:54,165
+00:03:07,945 --> 00:03:09,662
 specific line in the ticket.
 
 63
-00:02:54,165 --> 00:02:55,990
+00:03:09,662 --> 00:03:11,685
 Ran the same fifteen cases again.
 
 64
-00:02:55,990 --> 00:02:57,483
+00:03:11,685 --> 00:03:13,340
 Fourteen of fifteen agreed.
 
 65
-00:02:57,483 --> 00:03:02,127
+00:03:13,340 --> 00:03:18,490
 One bad question was responsible for almost the entire gap, and it took one sentence
 
 66
-00:03:02,127 --> 00:03:02,514
+00:03:18,490 --> 00:03:18,919
 to fix.
 
 67
-00:03:03,064 --> 00:03:05,582
+00:03:19,469 --> 00:03:22,208
 Notice where the definition points the blame.
 
 68
-00:03:05,582 --> 00:03:06,702
+00:03:22,208 --> 00:03:23,425
 Not at the reviewer.
 
 69
-00:03:06,702 --> 00:03:07,597
+00:03:23,425 --> 00:03:24,398
 At the question.
 
 70
-00:03:07,597 --> 00:03:10,507
+00:03:24,398 --> 00:03:27,563
 That's a genuine change of instinct for most people.
 
 71
-00:03:10,507 --> 00:03:15,040
+00:03:27,563 --> 00:03:32,491
 Your first reaction to a disagreement is to think the other person read it wrong.
 
 72
-00:03:15,040 --> 00:03:19,573
+00:03:32,491 --> 00:03:37,420
 Nearly always, both of you read it correctly, and the question simply allowed two
 
 73
-00:03:19,573 --> 00:03:20,524
+00:03:37,420 --> 00:03:38,455
 correct readings.
 
 74
-00:03:20,524 --> 00:03:24,889
+00:03:38,455 --> 00:03:43,201
 The exercise is that same protocol, in one paragraph you can act on this week.
 
 75
-00:03:24,889 --> 00:03:27,575
+00:03:43,201 --> 00:03:46,122
 No special software, no data science background.
 
 76
-00:03:27,575 --> 00:03:30,821
+00:03:46,122 --> 00:03:49,651
 A colleague, fifteen cases, and forty-five honest minutes.
 
 77
-00:03:30,821 --> 00:03:35,354
+00:03:49,651 --> 00:03:54,580
 One caution before you go and do it: don't brief your colleague on what you meant
 
 78
-00:03:35,354 --> 00:03:35,970
+00:03:54,580 --> 00:03:55,250
 beforehand.
 
 79
-00:03:35,970 --> 00:03:37,593
+00:03:55,250 --> 00:03:57,014
 That defeats the entire test.
 
 80
-00:03:37,593 --> 00:03:42,237
+00:03:57,014 --> 00:04:02,065
 The rubric has to survive being read cold, because cold is how it will actually get
 
 81
-00:03:42,237 --> 00:03:43,357
+00:04:02,065 --> 00:04:03,282
 used once it's real.
 
 82
-00:03:43,907 --> 00:03:47,543
+00:04:03,832 --> 00:04:07,813
 Say the cost plainly, because raw agreement has a real blind spot.
 
 83
-00:03:47,543 --> 00:03:52,171
+00:04:07,813 --> 00:04:12,879
 Picture a feature that's genuinely excellent: ninety-five percent of outputs pass on
 
 84
-00:03:52,171 --> 00:03:53,438
+00:04:12,879 --> 00:04:14,266
 any reasonable reading.
 
 85
-00:03:53,438 --> 00:03:57,956
+00:04:14,266 --> 00:04:19,212
 Two reviewers could score almost at random and still agree with each other most of
 
 86
-00:03:57,956 --> 00:04:00,876
+00:04:19,212 --> 00:04:22,409
 the time, purely because almost everything is a pass.
 
 87
-00:04:00,876 --> 00:04:05,283
+00:04:22,409 --> 00:04:27,234
 High agreement, in that case, tells you nothing about whether your rubric is any
 
 88
-00:04:05,283 --> 00:04:05,558
+00:04:27,234 --> 00:04:27,535
 good.
 
 89
-00:04:05,558 --> 00:04:08,093
+00:04:27,535 --> 00:04:30,310
 You don't need to run that correction by hand.
 
 90
-00:04:08,093 --> 00:04:12,610
+00:04:30,310 --> 00:04:35,256
 A number called Cohen's kappa exists specifically to strip out the agreement you'd
 
 91
-00:04:12,610 --> 00:04:15,035
+00:04:35,256 --> 00:04:37,910
 expect from chance and show you what's left.
 
 92
-00:04:15,035 --> 00:04:19,607
+00:04:37,910 --> 00:04:42,916
 If your pass rate is very high or very low, ask whoever owns your analytics for it.
 
 93
-00:04:19,607 --> 00:04:24,235
+00:04:42,916 --> 00:04:47,982
 Anywhere in the middle, roughly thirty to seventy percent, plain agreement is honest
 
 94
-00:04:24,235 --> 00:04:25,227
+00:04:47,982 --> 00:04:49,068
 enough on its own.
 
 95
-00:04:25,227 --> 00:04:27,045
+00:04:49,068 --> 00:04:51,058
 And budget the discussion itself.
 
 96
-00:04:27,045 --> 00:04:29,414
+00:04:51,058 --> 00:04:53,652
 Fifteen cases take twenty minutes to score.
 
 97
-00:04:29,414 --> 00:04:33,987
+00:04:53,652 --> 00:04:58,658
 Talking through six disagreements properly, out loud, takes longer than the scoring
 
 98
-00:04:33,987 --> 00:04:34,207
+00:04:58,658 --> 00:04:58,899
 did.
 
 99
-00:04:34,207 --> 00:04:38,615
+00:04:58,899 --> 00:05:03,724
 That's not overhead, that conversation is where the rubric actually gets better.
 
 100
-00:04:39,165 --> 00:04:40,819
+00:05:04,274 --> 00:05:06,081
 One thing before you move on.
 
 101
-00:04:40,819 --> 00:04:45,496
+00:05:06,081 --> 00:05:11,192
 The rubric template and the calibration protocol are both in A05, attached to this
 
 102
-00:04:45,496 --> 00:04:49,089
+00:05:11,192 --> 00:05:15,118
 lecture, with the fifteen-case loop written out as a checklist.
 
 103
-00:04:49,089 --> 00:04:53,709
+00:05:15,118 --> 00:05:20,167
 Run it for real, not on someone else's feature, on the rubric you're building for
 
 104
-00:04:53,709 --> 00:04:54,907
+00:05:20,167 --> 00:05:21,475
 your own fifty cases.
 
 105
-00:04:54,907 --> 00:04:59,526
+00:05:21,475 --> 00:05:26,524
 Find your one bad question this week, while it only costs you an afternoon, not a
 
 106
-00:04:59,526 --> 00:05:01,751
+00:05:26,524 --> 00:05:28,954
 launch-week argument nobody can settle.
 
 107
-00:05:01,751 --> 00:05:06,371
+00:05:28,954 --> 00:05:34,002
 Next lecture, we hand your rubric to an AI model and ask it to do the scoring for
 
 108
-00:05:06,371 --> 00:05:06,599
+00:05:34,002 --> 00:05:34,252
 you.
 
 109
-00:05:06,599 --> 00:05:11,162
+00:05:34,252 --> 00:05:39,238
 It works better than you'd expect, and it fails in one specific way that's worth
 
 110
-00:05:11,162 --> 00:05:12,759
+00:05:39,238 --> 00:05:40,983
 knowing before you trust it.

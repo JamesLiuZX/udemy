@@ -1,435 +1,435 @@
 1
-00:00:00,350 --> 00:00:04,784
+00:00:00,350 --> 00:00:05,212
 Everything in the last two lectures took real hours: reading transcripts, arguing
 
 2
-00:00:04,784 --> 00:00:07,521
+00:00:05,212 --> 00:00:08,214
 about wording, running a calibration loop by hand.
 
 3
-00:00:07,521 --> 00:00:09,108
+00:00:08,214 --> 00:00:09,955
 Here's the tempting shortcut.
 
 4
-00:00:09,108 --> 00:00:13,597
+00:00:09,955 --> 00:00:14,877
 Hand your rubric and your fifty cases to an AI model, and it scores all of them in
 
 5
-00:00:13,597 --> 00:00:15,130
+00:00:14,877 --> 00:00:16,558
 under a minute, for pennies.
 
 6
-00:00:15,130 --> 00:00:18,961
+00:00:16,558 --> 00:00:20,760
 That speed is real, and for most teams it's eventually the right call.
 
 7
-00:00:18,961 --> 00:00:20,549
+00:00:20,760 --> 00:00:22,501
 But notice what you just did.
 
 8
-00:00:20,549 --> 00:00:24,928
+00:00:22,501 --> 00:00:27,304
 You handed judgement to a system built from the same technology you're trying to
 
 9
-00:00:24,928 --> 00:00:28,048
+00:00:27,304 --> 00:00:30,725
 evaluate, and asked it to grade its own kind of homework.
 
 10
-00:00:28,048 --> 00:00:32,427
+00:00:30,725 --> 00:00:35,528
 Would you trust a student grading their own exam without checking the answer key
 
 11
-00:00:32,427 --> 00:00:32,756
+00:00:35,528 --> 00:00:35,888
 first?
 
 12
-00:00:32,756 --> 00:00:35,274
+00:00:35,888 --> 00:00:38,649
 That's the position you just put the model in.
 
 13
-00:00:35,274 --> 00:00:36,533
+00:00:38,649 --> 00:00:40,030
 It's not disqualifying.
 
 14
-00:00:36,533 --> 00:00:39,051
+00:00:40,030 --> 00:00:42,792
 It's a reason to check, not to trust outright.
 
 15
-00:00:39,051 --> 00:00:40,912
+00:00:42,792 --> 00:00:44,833
 An LLM judge doesn't lie randomly.
 
 16
-00:00:40,912 --> 00:00:45,346
+00:00:44,833 --> 00:00:49,695
 It lies in a small number of specific, well-documented ways, the kind researchers
 
 17
-00:00:45,346 --> 00:00:49,670
+00:00:49,695 --> 00:00:54,437
 have measured across thousands of comparisons, and once you know what they are,
 
 18
-00:00:49,670 --> 00:00:51,477
+00:00:54,437 --> 00:00:56,418
 they're straightforward to catch.
 
 19
-00:00:51,477 --> 00:00:55,801
+00:00:56,418 --> 00:01:01,161
 This isn't a reason to skip straight back to scoring everything by hand either.
 
 20
-00:00:55,801 --> 00:00:58,100
+00:01:01,161 --> 00:01:03,682
 Section 4 has already cost you real hours.
 
 21
-00:00:58,100 --> 00:01:02,589
+00:01:03,682 --> 00:01:08,605
 The judge is how those hours stop scaling linearly with how much traffic you have.
 
 22
-00:01:03,139 --> 00:01:06,346
+00:01:09,155 --> 00:01:12,667
 Two are worth knowing before you use this on anything real.
 
 23
-00:01:06,346 --> 00:01:10,695
+00:01:12,667 --> 00:01:17,429
 Length bias: judge models consistently rate longer answers higher, even when the
 
 24
-00:01:10,695 --> 00:01:11,999
+00:01:17,429 --> 00:01:18,858
 extra words add nothing.
 
 25
-00:01:11,999 --> 00:01:16,403
+00:01:18,858 --> 00:01:23,680
 Politeness, hedging, restating the question, all of it reads as thoroughness to a
 
 26
-00:01:16,403 --> 00:01:20,045
+00:01:23,680 --> 00:01:27,669
 model pattern-matching on what confident answers usually look like.
 
 27
-00:01:20,045 --> 00:01:24,394
+00:01:27,669 --> 00:01:32,431
 Position bias shows up when you ask a judge to compare two outputs side by side.
 
 28
-00:01:24,394 --> 00:01:28,742
+00:01:32,431 --> 00:01:37,193
 Swap which one appears first, and on a meaningful fraction of cases, the verdict
 
 29
-00:01:28,742 --> 00:01:29,503
+00:01:37,193 --> 00:01:38,027
 flips with it.
 
 30
-00:01:29,503 --> 00:01:31,787
+00:01:38,027 --> 00:01:40,527
 The judge isn't re-weighing the arguments.
 
 31
-00:01:31,787 --> 00:01:34,994
+00:01:40,527 --> 00:01:44,039
 It's showing a mild preference for whichever it read first.
 
 32
-00:01:34,994 --> 00:01:37,168
+00:01:44,039 --> 00:01:46,421
 Neither is a reason to abandon the idea.
 
 33
-00:01:37,168 --> 00:01:41,626
+00:01:46,421 --> 00:01:51,302
 Both have a five-minute check: does the score track word count more than it tracks
 
 34
-00:01:41,626 --> 00:01:45,975
+00:01:51,302 --> 00:01:56,065
 the rubric, and does the verdict survive being run again with the order swapped.
 
 35
-00:01:45,975 --> 00:01:50,541
+00:01:56,065 --> 00:02:01,065
 A third is worth a mention even though it's harder to check yourself: judges tend to
 
 36
-00:01:50,541 --> 00:01:55,107
+00:02:01,065 --> 00:02:06,066
 favour answers formatted with headings and bullet points over plain prose making the
 
 37
-00:01:55,107 --> 00:01:56,140
+00:02:06,066 --> 00:02:07,197
 identical argument.
 
 38
-00:01:56,140 --> 00:02:00,489
+00:02:07,197 --> 00:02:11,959
 If your rubric never mentioned formatting, and the judge is rewarding it anyway,
 
 39
-00:02:00,489 --> 00:02:03,479
+00:02:11,959 --> 00:02:15,233
 that preference is coming from the judge, not from you.
 
 40
-00:02:04,029 --> 00:02:08,340
+00:02:15,783 --> 00:02:20,521
 Here's the bias caught in the act, on the ticket-summary case you already know.
 
 41
-00:02:08,340 --> 00:02:12,543
+00:02:20,521 --> 00:02:25,139
 Two summaries, same underlying facts: charge, refund, deadline, likely cause.
 
 42
-00:02:12,543 --> 00:02:15,054
+00:02:25,139 --> 00:02:27,898
 One is forty-one words, direct, nothing extra.
 
 43
-00:02:15,054 --> 00:02:19,366
+00:02:27,898 --> 00:02:32,636
 The other is a hundred and eighteen words, the same four facts, restated with a
 
 44
-00:02:19,366 --> 00:02:21,221
+00:02:32,636 --> 00:02:34,675
 longer opening and a longer close.
 
 45
-00:02:21,221 --> 00:02:24,551
+00:02:34,675 --> 00:02:38,334
 Scored against your six-question rubric by a human, they tie.
 
 46
-00:02:24,551 --> 00:02:27,389
+00:02:38,334 --> 00:02:41,452
 Every fact that needs to survive, survives, in both.
 
 47
-00:02:27,389 --> 00:02:31,974
+00:02:41,452 --> 00:02:46,490
 Scored by an unchecked LLM judge, the padded version wins outright: five out of five
 
 48
-00:02:31,974 --> 00:02:33,393
+00:02:46,490 --> 00:02:48,049
 against three out of five.
 
 49
-00:02:33,393 --> 00:02:36,067
+00:02:48,049 --> 00:02:50,988
 Nothing about the padded version is more correct.
 
 50
-00:02:36,067 --> 00:02:40,324
+00:02:50,988 --> 00:02:55,666
 It just sounds more thorough, and "sounds thorough" is precisely the pattern a
 
 51
-00:02:40,324 --> 00:02:41,853
+00:02:55,666 --> 00:02:57,345
 length-biased judge rewards.
 
 52
-00:02:41,853 --> 00:02:46,110
+00:02:57,345 --> 00:03:02,023
 Ship on that judge's numbers alone and you'd be optimising your feature to get
 
 53
-00:02:46,110 --> 00:02:47,201
+00:03:02,023 --> 00:03:03,223
 wordier, not better.
 
 54
-00:02:47,751 --> 00:02:49,553
+00:03:03,773 --> 00:03:05,760
 You already own the tool for this.
 
 55
-00:02:49,553 --> 00:02:53,898
+00:03:05,760 --> 00:03:10,552
 It's the calibration loop from last lecture, run once more with a different second
 
 56
-00:02:53,898 --> 00:02:54,375
+00:03:10,552 --> 00:03:11,078
 reviewer.
 
 57
-00:02:54,375 --> 00:02:58,349
+00:03:11,078 --> 00:03:15,462
 Score fifteen real cases yourself, using the rubric you already calibrated.
 
 58
-00:02:58,349 --> 00:03:01,952
+00:03:15,462 --> 00:03:19,436
 Have the model score the same fifteen, without seeing your verdicts.
 
 59
-00:03:01,952 --> 00:03:05,767
+00:03:19,436 --> 00:03:23,644
 Compare, case by case, the same way you compared against your colleague.
 
 60
-00:03:05,767 --> 00:03:10,111
+00:03:23,644 --> 00:03:28,437
 Clear roughly eighty-five percent agreement, and you've earned the right to let it
 
 61
-00:03:10,111 --> 00:03:13,555
+00:03:28,437 --> 00:03:32,236
 score the other thirty-five, and every future release after that.
 
 62
-00:03:13,555 --> 00:03:17,953
+00:03:32,236 --> 00:03:37,087
 Fall short, and look at where it broke: if the disagreements cluster on your longer
 
 63
-00:03:17,953 --> 00:03:20,815
+00:03:37,087 --> 00:03:40,243
 outputs, you've found length bias, not a broken judge.
 
 64
-00:03:20,815 --> 00:03:23,835
+00:03:40,243 --> 00:03:43,575
 This is also the one honest way to know a judge is ready.
 
 65
-00:03:23,835 --> 00:03:25,159
+00:03:43,575 --> 00:03:45,036
 Not a vendor's benchmark.
 
 66
-00:03:25,159 --> 00:03:27,703
+00:03:45,036 --> 00:03:47,841
 Your rubric, on your cases, checked against you.
 
 67
-00:03:28,253 --> 00:03:29,426
+00:03:48,391 --> 00:03:49,709
 Say the cost plainly.
 
 68
-00:03:29,426 --> 00:03:33,116
+00:03:49,709 --> 00:03:53,848
 Per case, an LLM judge is close to free next to a human afternoon.
 
 69
-00:03:33,116 --> 00:03:36,357
+00:03:53,848 --> 00:03:57,486
 But "validated once" is not the same claim as "validated".
 
 70
-00:03:36,357 --> 00:03:41,053
+00:03:57,486 --> 00:04:02,755
 The model behind your judge gets updated on a schedule you don't control and usually
 
 71
-00:03:41,053 --> 00:03:45,636
+00:04:02,755 --> 00:04:07,898
 aren't told about, and an update can shift how it scores without changing a single
 
 72
-00:03:45,636 --> 00:03:46,754
+00:04:07,898 --> 00:04:09,153
 word of your rubric.
 
 73
-00:03:46,754 --> 00:03:51,058
+00:04:09,153 --> 00:04:13,982
 That's the same drift idea from earlier in this section, aimed at a different
 
 74
-00:03:51,058 --> 00:03:51,449
+00:04:13,982 --> 00:04:14,421
 target.
 
 75
-00:03:51,449 --> 00:03:54,747
+00:04:14,421 --> 00:04:18,122
 There, production traffic moved and your golden set didn't.
 
 76
-00:03:54,747 --> 00:03:57,933
+00:04:18,122 --> 00:04:21,697
 Here, the judge itself moves and your validation doesn't.
 
 77
-00:03:57,933 --> 00:04:02,572
+00:04:21,697 --> 00:04:26,903
 The fix costs almost nothing: rerun the fifteen-case check against your judge every
 
 78
-00:04:02,572 --> 00:04:06,988
+00:04:26,903 --> 00:04:31,858
 time you notice its provider ships an update, or on a calendar, whichever comes
 
 79
-00:04:06,988 --> 00:04:07,323
+00:04:31,858 --> 00:04:32,234
 first.
 
 80
-00:04:07,323 --> 00:04:10,845
+00:04:32,234 --> 00:04:36,186
 Treat "validated" as a date-stamped claim, not a permanent one.
 
 81
-00:04:10,845 --> 00:04:13,807
+00:04:36,186 --> 00:04:39,510
 Put the date on the number itself when you report it.
 
 82
-00:04:13,807 --> 00:04:18,111
+00:04:39,510 --> 00:04:44,340
 "Ninety-four percent, validated against a human rubric on the third of March"
 
 83
-00:04:18,111 --> 00:04:20,626
+00:04:44,340 --> 00:04:47,162
 survives a hard question in a review meeting.
 
 84
-00:04:20,626 --> 00:04:22,918
+00:04:47,162 --> 00:04:49,734
 A bare "ninety-four percent" invites one.
 
 85
-00:04:23,468 --> 00:04:25,928
+00:04:50,284 --> 00:04:52,971
 Notice the word doing the work again: recently.
 
 86
-00:04:25,928 --> 00:04:27,340
+00:04:52,971 --> 00:04:54,514
 Not "we checked this once".
 
 87
-00:04:27,340 --> 00:04:29,486
+00:04:54,514 --> 00:04:56,858
 Trustworthy is a claim with a shelf life.
 
 88
-00:04:29,486 --> 00:04:33,097
+00:04:56,858 --> 00:05:00,803
 The exercise reuses cases you've already scored, which is deliberate.
 
 89
-00:04:33,097 --> 00:04:37,283
+00:05:00,803 --> 00:05:05,376
 You're not starting a new curation project, you're pointing a second reviewer at
 
 90
-00:04:37,283 --> 00:04:38,592
+00:05:05,376 --> 00:05:06,805
 work you've already done.
 
 91
-00:04:38,592 --> 00:04:42,516
+00:05:06,805 --> 00:05:11,092
 One afternoon, fifteen cases, a model, and a rubric it's never seen before.
 
 92
-00:04:42,516 --> 00:04:46,336
+00:05:11,092 --> 00:05:15,266
 Sort the disagreements by word count first, before you read a single one.
 
 93
-00:04:46,336 --> 00:04:50,732
+00:05:15,266 --> 00:05:20,068
 If they cluster at the long end, you've found your bias before it found you, and you
 
 94
-00:04:50,732 --> 00:04:52,878
+00:05:20,068 --> 00:05:22,411
 know exactly which slide to come back to.
 
 95
-00:04:52,878 --> 00:04:56,489
+00:05:22,411 --> 00:05:26,356
 If they don't cluster anywhere obvious, that's a genuinely good sign.
 
 96
-00:04:56,489 --> 00:05:00,727
+00:05:26,356 --> 00:05:30,986
 It means the disagreements are ordinary judgement calls rather than a pattern you
 
 97
-00:05:00,727 --> 00:05:04,757
+00:05:30,986 --> 00:05:35,388
 can name, which is exactly what you'd expect from two competent reviewers who
 
 98
-00:05:04,757 --> 00:05:06,641
+00:05:35,388 --> 00:05:37,446
 occasionally see things differently.
 
 99
-00:05:07,191 --> 00:05:08,787
+00:05:37,996 --> 00:05:39,761
 One thing before you move on.
 
 100
-00:05:08,787 --> 00:05:13,355
+00:05:39,761 --> 00:05:44,812
 Take the fifteen cases from last lecture's calibration and add one more reviewer: a
 
 101
-00:05:13,355 --> 00:05:15,887
+00:05:44,812 --> 00:05:47,612
 model, scoring blind, against the same rubric.
 
 102
-00:05:15,887 --> 00:05:18,199
+00:05:47,612 --> 00:05:50,168
 You already have everything else you need.
 
 103
-00:05:18,199 --> 00:05:22,822
+00:05:50,168 --> 00:05:55,281
 If the agreement isn't there yet, sort the disagreements by word count before you do
 
 104
-00:05:22,822 --> 00:05:23,813
+00:05:55,281 --> 00:05:56,376
 anything cleverer.
 
 105
-00:05:23,813 --> 00:05:28,381
+00:05:56,376 --> 00:06:01,428
 It's the single most common cause, and checking it first will save you an afternoon
 
 106
-00:05:28,381 --> 00:05:30,197
+00:06:01,428 --> 00:06:03,436
 of chasing the wrong explanation.
 
 107
-00:05:30,197 --> 00:05:34,766
+00:06:03,436 --> 00:06:08,487
 Next lecture, we stop scoring one batch of fifty and start watching the number over
 
 108
-00:05:34,766 --> 00:05:39,279
+00:06:08,487 --> 00:06:13,478
 time: pass rate, regression testing, and the dashboard that tells you the moment a
 
 109
-00:05:39,279 --> 00:05:42,086
+00:06:13,478 --> 00:06:16,582
 change makes things worse, instead of a week later.

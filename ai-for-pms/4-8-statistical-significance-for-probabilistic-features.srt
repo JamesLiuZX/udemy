@@ -1,383 +1,383 @@
 1
-00:00:00,350 --> 00:00:04,916
+00:00:00,350 --> 00:00:05,264
 A few lectures ago, a pass rate moved four points, ninety-two to eighty- eight, and
 
 2
-00:00:04,916 --> 00:00:07,501
+00:00:05,264 --> 00:00:08,047
 I told you that alone tells you almost nothing.
 
 3
-00:00:07,501 --> 00:00:11,957
+00:00:08,047 --> 00:00:12,843
 I also told you a much bigger move, in a much smaller bucket, five out of five to
 
 4
-00:00:11,957 --> 00:00:14,213
+00:00:12,843 --> 00:00:15,270
 two out of five, deserved real attention.
 
 5
-00:00:14,213 --> 00:00:17,458
+00:00:15,270 --> 00:00:18,763
 You might reasonably have asked: says who, and by how much?
 
 6
-00:00:17,458 --> 00:00:18,943
+00:00:18,763 --> 00:00:20,362
 This lecture is the answer.
 
 7
-00:00:18,943 --> 00:00:23,234
+00:00:20,362 --> 00:00:24,980
 Not a formula to memorise, a way of thinking about sample size that tells you,
 
 8
-00:00:23,234 --> 00:00:26,315
+00:00:24,980 --> 00:00:28,296
 roughly, when to trust a number and when to shrug at it.
 
 9
-00:00:26,315 --> 00:00:30,881
+00:00:28,296 --> 00:00:33,210
 The short version: small samples lie to you constantly, in both directions, and the
 
 10
-00:00:30,881 --> 00:00:33,686
+00:00:33,210 --> 00:00:36,230
 only fix is knowing roughly how small is too small.
 
 11
-00:00:33,686 --> 00:00:36,822
+00:00:36,230 --> 00:00:39,604
 This is also the last piece of mechanism in this section.
 
 12
-00:00:36,822 --> 00:00:41,222
+00:00:39,604 --> 00:00:44,341
 Everything after this lecture is about judgement: reading results honestly, then
 
 13
-00:00:41,222 --> 00:00:41,883
+00:00:44,341 --> 00:00:45,051
 closing out.
 
 14
-00:00:41,883 --> 00:00:44,248
+00:00:45,051 --> 00:00:47,597
 This is the last new idea you need to hold.
 
 15
-00:00:44,798 --> 00:00:46,637
+00:00:48,147 --> 00:00:50,177
 Forget golden sets for a second.
 
 16
-00:00:46,637 --> 00:00:51,004
+00:00:50,177 --> 00:00:54,997
 Here's a coin that lands heads exactly half the time, always, no exceptions.
 
 17
-00:00:51,004 --> 00:00:54,969
+00:00:54,997 --> 00:00:59,373
 Flip it five times, call heads a pass, and write down the percentage.
 
 18
-00:00:54,969 --> 00:00:56,520
+00:00:59,373 --> 00:01:01,085
 Do that ten separate times.
 
 19
-00:00:56,520 --> 00:01:00,600
+00:01:01,085 --> 00:01:05,588
 The top row is what you get: twenty percent one round, eighty the next.
 
 20
-00:01:00,600 --> 00:01:02,381
+00:01:05,588 --> 00:01:07,554
 Nothing about the coin changed.
 
 21
-00:01:02,381 --> 00:01:04,335
+00:01:07,554 --> 00:01:09,711
 It is identical every single time.
 
 22
-00:01:04,335 --> 00:01:08,989
+00:01:09,711 --> 00:01:14,848
 What changed is that five flips is a small window, and small windows swing wildly
 
 23
-00:01:08,989 --> 00:01:11,517
+00:01:14,848 --> 00:01:17,638
 even when nothing underneath them is moving.
 
 24
-00:01:11,517 --> 00:01:14,793
+00:01:17,638 --> 00:01:21,253
 Now flip the same coin fifty times per round, ten rounds.
 
 25
-00:01:14,793 --> 00:01:19,389
+00:01:21,253 --> 00:01:26,327
 The bottom row barely moves, mid-forties to mid-fifties, hugging fifty the whole
 
 26
-00:01:19,389 --> 00:01:19,619
+00:01:26,327 --> 00:01:26,581
 way.
 
 27
-00:01:19,619 --> 00:01:20,194
+00:01:26,581 --> 00:01:27,215
 Same coin.
 
 28
-00:01:20,194 --> 00:01:21,286
+00:01:27,215 --> 00:01:28,420
 Same fifty percent.
 
 29
-00:01:21,286 --> 00:01:26,112
+00:01:28,420 --> 00:01:33,747
 The only thing that changed is the sample size, and look what it did to how much you
 
 30
-00:01:26,112 --> 00:01:27,779
+00:01:33,747 --> 00:01:35,587
 can trust any single reading.
 
 31
-00:01:28,329 --> 00:01:32,796
+00:01:36,137 --> 00:01:41,013
 Here's the practical version, and it's deliberately a rule of thumb, not something
 
 32
-00:01:32,796 --> 00:01:34,702
+00:01:41,013 --> 00:01:43,094
 you'd hand a statistician as proof.
 
 33
-00:01:34,702 --> 00:01:39,279
+00:01:43,094 --> 00:01:48,089
 If you want the real statistics behind it, a proper confidence interval, ask whoever
 
 34
-00:01:39,279 --> 00:01:43,800
+00:01:48,089 --> 00:01:53,024
 owns your analytics for one; the number below is enough to decide whether that call
 
 35
-00:01:43,800 --> 00:01:44,672
+00:01:53,024 --> 00:01:53,976
 is worth making.
 
 36
-00:01:44,672 --> 00:01:49,030
+00:01:53,976 --> 00:01:58,733
 At five cases, a swing of up to roughly forty-five points in either direction is
 
 37
-00:01:49,030 --> 00:01:51,481
+00:01:58,733 --> 00:02:01,408
 well within what pure luck alone can produce.
 
 38
-00:01:51,481 --> 00:01:52,843
+00:02:01,408 --> 00:02:02,895
 That's most of the scale.
 
 39
-00:01:52,843 --> 00:01:55,622
+00:02:02,895 --> 00:02:05,928
 At five cases, almost nothing is provably real yet.
 
 40
-00:01:55,622 --> 00:02:00,034
+00:02:05,928 --> 00:02:10,744
 At fifty, the size most of your buckets probably sit at, noise alone rarely moves
 
 41
-00:02:00,034 --> 00:02:01,996
+00:02:10,744 --> 00:02:12,885
 you more than about fourteen points.
 
 42
-00:02:01,996 --> 00:02:06,299
+00:02:12,885 --> 00:02:17,582
 That's exactly why four points, on the aggregate fifty, genuinely was closer to
 
 43
-00:02:06,299 --> 00:02:07,280
+00:02:17,582 --> 00:02:18,653
 noise than signal.
 
 44
-00:02:07,280 --> 00:02:11,747
+00:02:18,653 --> 00:02:23,529
 At a hundred or more, you're down to about ten points of ordinary wobble, which is
 
 45
-00:02:11,747 --> 00:02:16,214
+00:02:23,529 --> 00:02:28,405
 where your bigger, common-path buckets will eventually sit if you keep growing the
 
 46
-00:02:16,214 --> 00:02:16,813
+00:02:28,405 --> 00:02:29,059
 golden set.
 
 47
-00:02:17,363 --> 00:02:21,876
+00:02:29,609 --> 00:02:34,538
 Let's go back to the number that started this whole section: adversarial, five out
 
 48
-00:02:21,876 --> 00:02:23,967
+00:02:34,538 --> 00:02:36,822
 of five before, two out of five after.
 
 49
-00:02:23,967 --> 00:02:26,169
+00:02:36,822 --> 00:02:39,227
 Sixty points of movement, at five cases.
 
 50
-00:02:26,169 --> 00:02:30,571
+00:02:39,227 --> 00:02:44,036
 Look at the table: that's right at the edge of what five cases can even measure.
 
 51
-00:02:30,571 --> 00:02:34,864
+00:02:44,036 --> 00:02:48,725
 It's a real, honest, uncomfortable answer, and it isn't the one anybody wants.
 
 52
-00:02:34,864 --> 00:02:39,376
+00:02:48,725 --> 00:02:53,654
 You cannot yet prove that drop is real, and you cannot dismiss it as noise either.
 
 53
-00:02:39,376 --> 00:02:43,284
+00:02:53,654 --> 00:02:57,922
 Both of those would be overclaiming what five data points can tell you.
 
 54
-00:02:43,284 --> 00:02:47,797
+00:02:57,922 --> 00:03:02,851
 What you can responsibly do is exactly what an earlier lecture already told you to
 
 55
-00:02:47,797 --> 00:02:51,979
+00:03:02,851 --> 00:03:07,420
 do when a bucket comes back thin: treat it as a warning, and go collect more
 
 56
-00:02:51,979 --> 00:02:54,786
+00:03:07,420 --> 00:03:10,486
 adversarial cases before you either panic or relax.
 
 57
-00:02:54,786 --> 00:02:58,473
+00:03:10,486 --> 00:03:14,513
 Fifteen or twenty would let you say something with real confidence.
 
 58
-00:02:58,473 --> 00:03:00,344
+00:03:14,513 --> 00:03:16,557
 Five can only make you suspicious.
 
 59
-00:03:00,894 --> 00:03:03,481
+00:03:17,107 --> 00:03:19,933
 Notice what "significant" actually means here.
 
 60
-00:03:03,481 --> 00:03:05,506
+00:03:19,933 --> 00:03:22,145
 Not "big" or "important" on its own.
 
 61
-00:03:05,506 --> 00:03:10,006
+00:03:22,145 --> 00:03:27,059
 It's "bigger than luck alone would produce, at this sample size." The exact same
 
 62
-00:03:10,006 --> 00:03:14,394
+00:03:27,059 --> 00:03:31,851
 ten-point swing can be meaningless at five cases and alarming at five hundred.
 
 63
-00:03:14,394 --> 00:03:19,006
+00:03:31,851 --> 00:03:36,888
 The exercise takes thirty seconds: find your smallest bucket, look up its row, and
 
 64
-00:03:19,006 --> 00:03:23,113
+00:03:36,888 --> 00:03:41,372
 now you have a number, not a feeling, for how much movement to shrug off.
 
 65
-00:03:23,113 --> 00:03:27,725
+00:03:41,372 --> 00:03:46,409
 Everything past that number is worth five minutes of somebody's attention before a
 
 66
-00:03:27,725 --> 00:03:29,300
+00:03:46,409 --> 00:03:48,129
 launch decision leans on it.
 
 67
-00:03:29,300 --> 00:03:33,519
+00:03:48,129 --> 00:03:52,737
 This cuts both ways, and the direction people forget is the reassuring one.
 
 68
-00:03:33,519 --> 00:03:37,738
+00:03:52,737 --> 00:03:57,344
 A bucket sitting dead flat release after release isn't necessarily healthy.
 
 69
-00:03:37,738 --> 00:03:42,406
+00:03:57,344 --> 00:04:02,443
 At small sample sizes, it can just as easily mean you haven't gathered enough cases
 
 70
-00:03:42,406 --> 00:03:43,981
+00:04:02,443 --> 00:04:04,163
 to see the problem move yet.
 
 71
-00:03:44,531 --> 00:03:48,915
+00:04:04,713 --> 00:04:09,476
 Say the cost plainly, because it complicates something from two lectures ago.
 
 72
-00:03:48,915 --> 00:03:50,566
+00:04:09,476 --> 00:04:11,270
 Fifty cases sounded complete.
 
 73
-00:03:50,566 --> 00:03:51,534
+00:04:11,270 --> 00:04:12,322
 It isn't, evenly.
 
 74
-00:03:51,534 --> 00:03:55,178
+00:04:12,322 --> 00:04:16,281
 Your twenty common-path cases give you real statistical footing.
 
 75
-00:03:55,178 --> 00:03:59,733
+00:04:16,281 --> 00:04:21,230
 Your five adversarial cases give you a smoke detector, not a verdict: useful for
 
 76
-00:03:59,733 --> 00:04:03,775
+00:04:21,230 --> 00:04:25,622
 noticing something might be wrong, not enough to prove it on their own.
 
 77
-00:04:03,775 --> 00:04:08,558
+00:04:25,622 --> 00:04:30,819
 Growing that bucket to something you can actually trust statistically costs the same
 
 78
-00:04:08,558 --> 00:04:12,999
+00:04:30,819 --> 00:04:35,644
 thing everything in this section has cost: real hours, finding or writing more
 
 79
-00:04:12,999 --> 00:04:15,903
+00:04:35,644 --> 00:04:38,799
 adversarial cases nobody was in a hurry to collect.
 
 80
-00:04:15,903 --> 00:04:18,408
+00:04:38,799 --> 00:04:41,521
 That's not a flaw in the four-bucket design.
 
 81
-00:04:18,408 --> 00:04:22,735
+00:04:41,521 --> 00:04:46,223
 It's the honest limit of building an instrument in an afternoon instead of a
 
 82
-00:04:22,735 --> 00:04:23,190
+00:04:46,223 --> 00:04:46,718
 quarter.
 
 83
-00:04:23,190 --> 00:04:25,297
+00:04:46,718 --> 00:04:49,007
 Treat it as a roadmap, not a failure.
 
 84
-00:04:25,297 --> 00:04:28,200
+00:04:49,007 --> 00:04:52,162
 Fifty cases got you a working instrument this week.
 
 85
-00:04:28,200 --> 00:04:32,983
+00:04:52,162 --> 00:04:57,358
 Twenty adversarial cases, added over the next few releases as you encounter or write
 
 86
-00:04:32,983 --> 00:04:37,766
+00:04:57,358 --> 00:05:02,555
 them, is what turns your weakest smoke detector into something you can defend in the
 
 87
-00:04:37,766 --> 00:04:39,986
+00:05:02,555 --> 00:05:04,967
 same room as the rest of the dashboard.
 
 88
-00:04:40,536 --> 00:04:42,184
+00:05:05,517 --> 00:05:07,320
 One thing before you move on.
 
 89
-00:04:42,184 --> 00:04:46,957
+00:05:07,320 --> 00:05:12,540
 Find your smallest bucket, and note down the swing that's genuinely still just noise
 
 90
-00:04:46,957 --> 00:04:51,560
+00:05:12,540 --> 00:05:17,574
 at that size, so you have a number to check any future alarm against instead of a
 
 91
-00:04:51,560 --> 00:04:52,242
+00:05:17,574 --> 00:05:18,320
 gut feeling.
 
 92
-00:04:52,242 --> 00:04:56,788
+00:05:18,320 --> 00:05:23,292
 Then label it honestly on the dashboard: anything under fifteen cases is a smoke
 
 93
-00:04:56,788 --> 00:05:01,106
+00:05:23,292 --> 00:05:28,015
 detector, not a verdict, until you've grown it, so nobody in a launch review
 
 94
-00:05:01,106 --> 00:05:02,754
+00:05:28,015 --> 00:05:29,817
 mistakes a warning for proof.
 
 95
-00:05:02,754 --> 00:05:07,300
+00:05:29,817 --> 00:05:34,789
 Next lecture, the last idea before the recap: how to read an eval result without
 
 96
-00:05:07,300 --> 00:05:10,823
+00:05:34,789 --> 00:05:38,642
 quietly fooling yourself, even once every number here is real.
