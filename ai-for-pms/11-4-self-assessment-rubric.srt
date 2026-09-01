@@ -1,291 +1,291 @@
 1
-00:00:00,350 --> 00:00:04,112
+00:00:00,350 --> 00:00:04,461
 Open your own capstone package next to this lecture, not after it.
 
 2
-00:00:04,112 --> 00:00:08,671
+00:00:04,461 --> 00:00:09,444
 The seven rows on the next slide are specific enough to check in the next twenty
 
 3
-00:00:08,671 --> 00:00:13,402
+00:00:09,444 --> 00:00:14,613
 minutes, and honest enough that a few of them will probably fail on the first pass.
 
 4
-00:00:13,402 --> 00:00:15,909
+00:00:14,613 --> 00:00:17,354
 That's the exercise working, not a bad sign.
 
 5
-00:00:15,909 --> 00:00:20,298
+00:00:17,354 --> 00:00:22,150
 Notice this rubric doesn't ask "is it good," the way most self-review ends up
 
 6
-00:00:20,298 --> 00:00:23,034
+00:00:22,150 --> 00:00:25,140
 working when nobody hands you specific criteria.
 
 7
-00:00:23,034 --> 00:00:27,764
+00:00:25,140 --> 00:00:30,309
 Every row asks something you can answer yes or no to, the same discipline 3.7 asked
 
 8
-00:00:27,764 --> 00:00:29,189
+00:00:30,309 --> 00:00:31,867
 of a PRD's own threshold.
 
 9
-00:00:29,189 --> 00:00:33,178
+00:00:31,867 --> 00:00:36,227
 A checklist you can argue with yourself about isn't doing its job yet.
 
 10
-00:00:33,178 --> 00:00:37,852
+00:00:36,227 --> 00:00:41,334
 This is also the last hands-on exercise in the entire course, which makes it worth
 
 11
-00:00:37,852 --> 00:00:40,645
+00:00:41,334 --> 00:00:44,386
 doing properly rather than rushing to the finish.
 
 12
-00:00:40,645 --> 00:00:45,261
+00:00:44,386 --> 00:00:49,431
 Six sections of workshops have been building toward the moment you check your own
 
 13
-00:00:45,261 --> 00:00:46,287
+00:00:49,431 --> 00:00:50,552
 work this closely.
 
 14
-00:00:46,287 --> 00:00:50,789
+00:00:50,552 --> 00:00:55,473
 Treat it that way, not as a formality between the capstone and the lecture that
 
 15
-00:00:50,789 --> 00:00:51,815
+00:00:55,473 --> 00:00:56,594
 closes the course.
 
 16
-00:00:52,365 --> 00:00:57,016
+00:00:57,144 --> 00:01:02,202
 Read the golden set row against 11.2's worked example specifically: the exact
 
 17
-00:00:57,016 --> 00:01:01,425
+00:01:02,202 --> 00:01:06,997
 fifty-dollar boundary, and the exact injection sentence from 8.2, weren't
 
 18
-00:01:01,425 --> 00:01:02,089
+00:01:06,997 --> 00:01:07,719
 decoration.
 
 19
-00:01:02,089 --> 00:01:05,471
+00:01:07,719 --> 00:01:11,398
 They were what made that golden set pass this exact row.
 
 20
-00:01:05,471 --> 00:01:10,484
+00:01:11,398 --> 00:01:16,850
 If your own set only has clean, obvious cases, this is the row that fails, and it's
 
 21
-00:01:10,484 --> 00:01:14,168
+00:01:16,850 --> 00:01:20,856
 the cheapest one to fix before you call the package finished.
 
 22
-00:01:14,168 --> 00:01:16,584
+00:01:20,856 --> 00:01:23,484
 Read the risk register row the same way.
 
 23
-00:01:16,584 --> 00:01:21,416
+00:01:23,484 --> 00:01:28,739
 A placeholder like "no known issues" in any of the five categories isn't a pass,
 
 24
-00:01:21,416 --> 00:01:24,315
+00:01:28,739 --> 00:01:31,891
 it's an unexamined category wearing a pass mark.
 
 25
-00:01:24,315 --> 00:01:29,026
+00:01:31,891 --> 00:01:37,015
 11.3's worked example gave even prompt injection, the row already mitigated by
 
 26
-00:01:29,026 --> 00:01:31,381
+00:01:37,015 --> 00:01:39,577
 design, a real sentence explaining why.
 
 27
-00:01:31,381 --> 00:01:35,730
+00:01:39,577 --> 00:01:44,306
 Every row deserves that same sentence, even the ones that turn out fine.
 
 28
-00:01:36,280 --> 00:01:40,526
+00:01:44,856 --> 00:01:49,354
 Which of your own seven rows would you actually bet money still fails on a second
 
 29
-00:01:40,526 --> 00:01:40,788
+00:01:49,354 --> 00:01:49,632
 look?
 
 30
-00:01:40,788 --> 00:01:43,356
+00:01:49,632 --> 00:01:52,353
 For most first-pass capstones, it's the last one.
 
 31
-00:01:43,356 --> 00:01:47,759
+00:01:52,353 --> 00:01:57,017
 A metric tree can look complete with a North Star and three branches while having no
 
 32
-00:01:47,759 --> 00:01:50,538
+00:01:57,017 --> 00:01:59,960
 real connection to the cost model two artifacts back.
 
 33
-00:01:50,538 --> 00:01:54,731
+00:01:59,960 --> 00:02:04,403
 If your North Star doesn't answer the specific question your cost model's payoff
 
 34
-00:01:54,731 --> 00:01:58,977
+00:02:04,403 --> 00:02:08,901
 claim depends on, the tree is decorative, the same failure 11.1's coherence check
 
 35
-00:01:58,977 --> 00:02:00,707
+00:02:08,901 --> 00:02:10,733
 warned the whole package against.
 
 36
-00:02:01,257 --> 00:02:05,835
+00:02:11,283 --> 00:02:16,195
 Notice both columns can produce a package that looks identical from across the room,
 
 37
-00:02:05,835 --> 00:02:08,070
+00:02:16,195 --> 00:02:18,593
 every field filled in, every row present.
 
 38
-00:02:08,070 --> 00:02:12,266
+00:02:18,593 --> 00:02:23,095
 The difference only shows up when someone reads closely, which is exactly why
 
 39
-00:02:12,266 --> 00:02:15,319
+00:02:23,095 --> 00:02:26,370
 self-assessment is so easy to do badly without noticing.
 
 40
-00:02:15,319 --> 00:02:19,842
+00:02:26,370 --> 00:02:31,224
 Grade yourself the way 4.9 asked you to read an eval result: looking for the reason
 
 41
-00:02:19,842 --> 00:02:23,712
+00:02:31,224 --> 00:02:35,375
 you'd fail your own package, not confirming the reasons it should pass.
 
 42
-00:02:23,712 --> 00:02:28,236
+00:02:35,375 --> 00:02:40,229
 That's an uncomfortable habit to build against your own work specifically, and it's
 
 43
-00:02:28,236 --> 00:02:32,215
+00:02:40,229 --> 00:02:44,498
 the entire value of doing this exercise seriously instead of skimming it.
 
 44
-00:02:32,215 --> 00:02:35,976
+00:02:44,498 --> 00:02:48,532
 Notice, too, that the box-checking column isn't dishonest on purpose.
 
 45
-00:02:35,976 --> 00:02:37,284
+00:02:48,532 --> 00:02:49,936
 It's usually just tired.
 
 46
-00:02:37,284 --> 00:02:41,590
+00:02:49,936 --> 00:02:54,555
 By the time a capstone's sixth artifact is finished, skimming your own work and
 
 47
-00:02:41,590 --> 00:02:44,969
+00:02:54,555 --> 00:02:58,181
 calling it done is the natural instinct, not a character flaw.
 
 48
-00:02:44,969 --> 00:02:49,384
+00:02:58,181 --> 00:03:02,917
 Naming that instinct here is what gives you a real chance of resisting it on this
 
 49
-00:02:49,384 --> 00:02:50,147
+00:03:02,917 --> 00:03:03,736
 specific pass.
 
 50
-00:02:50,697 --> 00:02:55,326
+00:03:04,286 --> 00:03:09,348
 Say the honest caveat, because a checklist this specific can start to feel like more
 
 51
-00:02:55,326 --> 00:02:57,309
+00:03:09,348 --> 00:03:11,518
 certainty than it actually provides.
 
 52
-00:02:57,309 --> 00:03:01,828
+00:03:11,518 --> 00:03:16,460
 Every row here checks that something exists and is labelled honestly, not that the
 
 53
-00:03:01,828 --> 00:03:04,198
+00:03:16,460 --> 00:03:19,051
 underlying judgement behind it was correct.
 
 54
-00:03:04,198 --> 00:03:08,386
+00:03:19,051 --> 00:03:23,632
 Your cost model can pass this rubric's row completely, every number labelled
 
 55
-00:03:08,386 --> 00:03:12,629
+00:03:23,632 --> 00:03:28,272
 measured or projected, while still resting on a volume estimate that's wrong.
 
 56
-00:03:12,629 --> 00:03:17,258
+00:03:28,272 --> 00:03:33,334
 That gap is exactly what 10.6's follow-up-question test and a second reader are for,
 
 57
-00:03:17,258 --> 00:03:19,903
+00:03:33,334 --> 00:03:36,227
 neither of which this rubric can substitute for.
 
 58
-00:03:19,903 --> 00:03:24,421
+00:03:36,227 --> 00:03:41,169
 Use this checklist for what it's actually good at: catching the missing threshold,
 
 59
-00:03:24,421 --> 00:03:28,664
+00:03:41,169 --> 00:03:45,810
 the placeholder risk row, the North Star with no real connection to anything.
 
 60
-00:03:28,664 --> 00:03:33,293
+00:03:45,810 --> 00:03:50,872
 Then find one other person and run 10.6's test on the parts this rubric can't check.
 
 61
-00:03:33,843 --> 00:03:38,293
+00:03:51,422 --> 00:03:56,240
 Do this now, while your own package is still open, not as something to come back to
 
 62
-00:03:38,293 --> 00:03:41,510
+00:03:56,240 --> 00:03:59,723
 later once the feeling of being finished has already set in.
 
 63
-00:03:41,510 --> 00:03:45,799
+00:03:59,723 --> 00:04:04,367
 Most people find one or two genuine fails on a first honest pass, most often the
 
 64
-00:03:45,799 --> 00:03:50,248
+00:04:04,367 --> 00:04:09,185
 golden set's boundary cases or the metric tree's connection back to the cost model.
 
 65
-00:03:50,248 --> 00:03:54,698
+00:04:09,185 --> 00:04:14,003
 Fixing either one usually takes under an hour, which is a small price for a package
 
 66
-00:03:54,698 --> 00:03:56,521
+00:04:14,003 --> 00:04:15,977
 that can survive more than a skim.
 
 67
-00:03:57,071 --> 00:03:58,652
+00:04:16,527 --> 00:04:18,268
 One thing before you move on.
 
 68
-00:03:58,652 --> 00:04:02,849
+00:04:18,268 --> 00:04:22,892
 Run the checklist honestly, today, while the package is fresh enough that you
 
 69
-00:04:02,849 --> 00:04:04,702
+00:04:22,892 --> 00:04:24,934
 remember why you made each choice.
 
 70
-00:04:04,702 --> 00:04:08,682
+00:04:24,934 --> 00:04:29,318
 Then fix what failed before you're tempted to add a new artifact instead.
 
 71
-00:04:08,682 --> 00:04:13,206
+00:04:29,318 --> 00:04:34,302
 A seventh artifact doesn't rescue a package with one real gap in the six it already
 
 72
-00:04:13,206 --> 00:04:13,424
+00:04:34,302 --> 00:04:34,542
 has.
 
 73
-00:04:13,424 --> 00:04:16,804
+00:04:34,542 --> 00:04:38,265
 Next lecture is the last one: where to go next, and thank you.
