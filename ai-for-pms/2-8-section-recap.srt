@@ -1,67 +1,67 @@
 1
-00:00:00,350 --> 00:00:04,755
+00:00:00,350 --> 00:00:04,878
 Seven lectures ago, this section promised one diagram and twenty phrases.
 
 2
-00:00:04,755 --> 00:00:06,204
+00:00:04,878 --> 00:00:06,366
 Here's the honest tally.
 
 3
-00:00:06,204 --> 00:00:11,152
+00:00:06,366 --> 00:00:11,453
 You can redraw the five-layer stack from memory, and you know orchestration is the
 
 4
-00:00:11,152 --> 00:00:13,083
+00:00:11,453 --> 00:00:13,437
 layer most PMs never hear named.
 
 5
-00:00:13,083 --> 00:00:17,549
+00:00:13,437 --> 00:00:18,027
 You can run the decision tree between a prompt, retrieval, an agent, and a
 
 6
-00:00:17,549 --> 00:00:21,471
+00:00:18,027 --> 00:00:22,059
 fine-tune, in that order, and explain why fine-tuning comes last.
 
 7
-00:00:21,471 --> 00:00:26,540
+00:00:22,059 --> 00:00:27,269
 You know what's actually sitting in a context window, why a chunking boundary breaks
 
 8
-00:00:26,540 --> 00:00:31,488
+00:00:27,269 --> 00:00:32,355
 retrieval before the model ever gets blamed, and the difference between an average
 
 9
-00:00:31,488 --> 00:00:34,687
+00:00:32,355 --> 00:00:35,643
 and a p95 that actually matters once something ships.
 
 10
-00:00:34,687 --> 00:00:35,773
+00:00:35,643 --> 00:00:36,759
 That's not trivia.
 
 11
-00:00:35,773 --> 00:00:40,420
+00:00:36,759 --> 00:00:41,535
 It's the vocabulary that turns "the AI is broken" into a specific, answerable
 
 12
-00:00:40,420 --> 00:00:40,963
+00:00:41,535 --> 00:00:42,093
 question.
 
 13
-00:00:41,513 --> 00:00:44,499
+00:00:42,643 --> 00:00:45,763
 One section ahead before you touch a live feature.
 
 14
-00:00:44,499 --> 00:00:49,038
+00:00:45,763 --> 00:00:50,506
 Section three is where all of this stops being vocabulary and starts being a
 
 15
-00:00:49,038 --> 00:00:53,935
+00:00:50,506 --> 00:00:55,623
 document: the AI feature PRD, acceptance criteria written as evaluation thresholds
 
 16
-00:00:53,935 --> 00:00:58,951
+00:00:55,623 --> 00:01:00,865
 instead of hopeful adjectives, and a failure taxonomy that survives contact with QA.
 
 17
-00:00:58,951 --> 00:01:03,849
+00:01:00,865 --> 00:01:05,982
 You'll write a real one, for a feature you're actually close to, by the end of it.

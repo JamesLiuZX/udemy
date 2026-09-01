@@ -1,383 +1,383 @@
 1
-00:00:00,350 --> 00:00:05,029
+00:00:00,350 --> 00:00:05,174
 It's not, and it's worth being precise about why, because "it searches a vector
 
 2
-00:00:05,029 --> 00:00:07,280
+00:00:05,174 --> 00:00:07,494
 database" isn't an explanation either.
 
 3
-00:00:07,280 --> 00:00:10,893
+00:00:07,494 --> 00:00:11,219
 It's a phrase people repeat to sound like they understand it.
 
 4
-00:00:10,893 --> 00:00:15,454
+00:00:11,219 --> 00:00:15,920
 An embedding is a list of numbers that represents what a piece of text means.
 
 5
-00:00:15,454 --> 00:00:17,942
+00:00:15,920 --> 00:00:18,485
 Not what words it contains, what it means.
 
 6
-00:00:17,942 --> 00:00:22,798
+00:00:18,485 --> 00:00:23,491
 Two sentences that say roughly the same thing in completely different words end up
 
 7
-00:00:22,798 --> 00:00:24,042
+00:00:23,491 --> 00:00:24,774
 with similar numbers.
 
 8
-00:00:24,042 --> 00:00:27,833
+00:00:24,774 --> 00:00:28,682
 Two sentences using identical words in unrelated contexts don't.
 
 9
-00:00:27,833 --> 00:00:32,690
+00:00:28,682 --> 00:00:33,688
 Vector search is just this: turn your question into that same kind of number list,
 
 10
-00:00:32,690 --> 00:00:36,540
+00:00:33,688 --> 00:00:37,657
 then find whichever stored piece of text has the closest numbers.
 
 11
-00:00:36,540 --> 00:00:38,791
+00:00:37,657 --> 00:00:39,977
 Closest numbers means closest meaning.
 
 12
-00:00:38,791 --> 00:00:43,588
+00:00:39,977 --> 00:00:44,923
 That's the entire mechanism, and you now understand it as well as you need to for
 
 13
-00:00:43,588 --> 00:00:45,958
+00:00:44,923 --> 00:00:47,366
 every conversation you'll have about it.
 
 14
-00:00:45,958 --> 00:00:50,755
+00:00:47,366 --> 00:00:52,311
 What actually changes how you use this is one consequence: the search is entirely
 
 15
-00:00:50,755 --> 00:00:53,480
+00:00:52,311 --> 00:00:55,120
 about meaning, never the specific words typed.
 
 16
-00:00:53,480 --> 00:00:58,278
+00:00:55,120 --> 00:01:00,066
 Ask about "cancelling a subscription" and it can surface "ending your membership"
 
 17
-00:00:58,278 --> 00:01:01,002
+00:01:00,066 --> 00:01:02,875
 without either sentence sharing a single word.
 
 18
-00:01:01,002 --> 00:01:04,615
+00:01:02,875 --> 00:01:06,599
 That's the whole point of replacing keyword search with this.
 
 19
-00:01:05,165 --> 00:01:09,661
+00:01:07,149 --> 00:01:11,755
 You'll never build this pipeline yourself, so treat what follows as the machinery
 
 20
-00:01:09,661 --> 00:01:13,990
+00:01:11,755 --> 00:01:16,190
 behind one decision that actually is yours: who owns re-indexing when a source
 
 21
-00:01:13,990 --> 00:01:18,596
+00:01:16,190 --> 00:01:20,909
 document changes, which the honest caveat at the end of this lecture comes back to.
 
 22
-00:01:18,596 --> 00:01:22,814
+00:01:20,909 --> 00:01:25,230
 Walk the two paths, because they run at completely different times, and that
 
 23
-00:01:22,814 --> 00:01:26,866
+00:01:25,230 --> 00:01:29,381
 distinction explains a lot of confusion about what's slow and what isn't.
 
 24
-00:01:26,866 --> 00:01:29,808
+00:01:29,381 --> 00:01:32,394
 The top path runs once, when you load your documents.
 
 25
-00:01:29,808 --> 00:01:34,303
+00:01:32,394 --> 00:01:37,000
 Each document gets split into chunks, sized to be small enough to be specific and
 
 26
-00:01:34,303 --> 00:01:36,856
+00:01:37,000 --> 00:01:39,615
 large enough to still make sense on their own.
 
 27
-00:01:36,856 --> 00:01:41,407
+00:01:39,615 --> 00:01:44,277
 Each chunk becomes a number list, and all of those number lists get stored in what
 
 28
-00:01:41,407 --> 00:01:45,903
+00:01:44,277 --> 00:01:48,883
 people call a vector index, which is really just a very fast lookup structure for
 
 29
-00:01:45,903 --> 00:01:50,565
+00:01:48,883 --> 00:01:53,659
 "which numbers are near which other numbers." The bottom path runs every single time
 
 30
-00:01:50,565 --> 00:01:51,897
+00:01:53,659 --> 00:01:55,023
 someone asks a question.
 
 31
-00:01:51,897 --> 00:01:55,837
+00:01:55,023 --> 00:01:59,060
 The question becomes its own number list, using the exact same process.
 
 32
-00:01:55,837 --> 00:02:00,166
+00:01:59,060 --> 00:02:03,495
 The system finds whichever stored chunks have the closest numbers, the nearest
 
 33
-00:02:00,166 --> 00:02:04,662
+00:02:03,495 --> 00:02:08,101
 neighbours, and those chunks, not the whole document, get dropped into the prompt
 
 34
-00:02:04,662 --> 00:02:05,938
+00:02:08,101 --> 00:02:09,408
 alongside the question.
 
 35
-00:02:05,938 --> 00:02:07,437
+00:02:09,408 --> 00:02:10,943
 That's the whole mechanism.
 
 36
-00:02:07,437 --> 00:02:11,710
+00:02:10,943 --> 00:02:15,321
 Everything people call RAG is some version of these six steps, with different
 
 37
-00:02:11,710 --> 00:02:16,317
+00:02:15,321 --> 00:02:20,041
 choices about chunk size, how many neighbours to retrieve, and what counts as close
 
 38
-00:02:16,317 --> 00:02:16,705
+00:02:20,041 --> 00:02:20,439
 enough.
 
 39
-00:02:17,255 --> 00:02:22,072
+00:02:20,989 --> 00:02:25,954
 Here's six chunks, ranked by how close their numbers are to the question's numbers,
 
 40
-00:02:22,072 --> 00:02:23,175
+00:02:25,954 --> 00:02:27,091
 for one real query.
 
 41
-00:02:23,175 --> 00:02:25,728
+00:02:27,091 --> 00:02:29,724
 Notice the system doesn't return one answer.
 
 42
-00:02:25,728 --> 00:02:30,544
+00:02:29,724 --> 00:02:34,689
 It returns a shortlist, usually somewhere between three and ten chunks, and someone
 
 43
-00:02:30,544 --> 00:02:31,589
+00:02:34,689 --> 00:02:35,766
 chose that number.
 
 44
-00:02:31,589 --> 00:02:35,361
+00:02:35,766 --> 00:02:39,655
 Set it too low and you miss a chunk that actually had the answer.
 
 45
-00:02:35,361 --> 00:02:39,887
+00:02:39,655 --> 00:02:44,322
 Set it too high and you flood the prompt with marginally related material that
 
 46
-00:02:39,887 --> 00:02:43,950
+00:02:44,322 --> 00:02:48,510
 crowds out the good chunks, and costs you tokens on every single call.
 
 47
-00:02:43,950 --> 00:02:48,070
+00:02:48,510 --> 00:02:52,757
 That cutoff line is doing more work than most teams give it credit for.
 
 48
-00:02:48,070 --> 00:02:51,088
+00:02:52,757 --> 00:02:55,868
 It's not a technical detail buried in a config file.
 
 49
-00:02:51,088 --> 00:02:55,498
+00:02:55,868 --> 00:03:00,415
 It's a product decision about how much you trust the ranking, and it's worth
 
 50
-00:02:55,498 --> 00:03:00,256
+00:03:00,415 --> 00:03:05,321
 revisiting deliberately instead of leaving at whatever default a tutorial happened
 
 51
-00:03:00,256 --> 00:03:00,663
+00:03:05,321 --> 00:03:05,740
 to use.
 
 52
-00:03:01,213 --> 00:03:05,594
+00:03:06,290 --> 00:03:10,777
 This is the failure mode worth knowing by name, because it looks like a model
 
 53
-00:03:05,594 --> 00:03:08,154
+00:03:10,777 --> 00:03:13,399
 problem and it's actually a chunking problem.
 
 54
-00:03:08,154 --> 00:03:12,593
+00:03:13,399 --> 00:03:17,945
 Split a document every fixed number of characters, and you'll eventually cut a
 
 55
-00:03:12,593 --> 00:03:17,201
+00:03:17,945 --> 00:03:22,665
 numbered list in half, or separate a table from the header row that explains what
 
 56
-00:03:17,201 --> 00:03:18,169
+00:03:22,665 --> 00:03:23,656
 its columns mean.
 
 57
-00:03:18,169 --> 00:03:21,696
+00:03:23,656 --> 00:03:27,269
 The embedding for that fragment is still technically accurate.
 
 58
-00:03:21,696 --> 00:03:24,428
+00:03:27,269 --> 00:03:30,066
 It represents what little text survived the cut.
 
 59
-00:03:24,428 --> 00:03:29,037
+00:03:30,066 --> 00:03:34,786
 It's just useless to whoever reads it, because half a procedure with no header is
 
 60
-00:03:29,037 --> 00:03:29,947
+00:03:34,786 --> 00:03:35,718
 not a procedure.
 
 61
-00:03:29,947 --> 00:03:34,157
+00:03:35,718 --> 00:03:40,031
 Chunk by the document's actual structure, sections, list boundaries, table
 
 62
-00:03:34,157 --> 00:03:38,653
+00:03:40,031 --> 00:03:44,634
 boundaries, and the same retrieval step returns something a human could act on.
 
 63
-00:03:38,653 --> 00:03:40,473
+00:03:44,634 --> 00:03:46,499
 Nothing about the model changed.
 
 64
-00:03:40,473 --> 00:03:44,855
+00:03:46,499 --> 00:03:50,986
 The only thing that changed was where the document got cut before it was ever
 
 65
-00:03:44,855 --> 00:03:45,367
+00:03:50,986 --> 00:03:51,511
 embedded.
 
 66
-00:03:45,917 --> 00:03:50,507
+00:03:52,061 --> 00:03:56,764
 Say the honest caveat, because "we added RAG" gets treated as a guarantee of
 
 67
-00:03:50,507 --> 00:03:52,137
+00:03:56,764 --> 00:03:58,435
 accuracy, and it isn't one.
 
 68
-00:03:52,137 --> 00:03:55,278
+00:03:58,435 --> 00:04:01,654
 An embedding captures what a piece of text is about.
 
 69
-00:03:55,278 --> 00:03:58,479
+00:04:01,654 --> 00:04:04,934
 It has no opinion on whether that text is still true.
 
 70
-00:03:58,479 --> 00:04:03,492
+00:04:04,934 --> 00:04:10,070
 A pricing page from eight months ago and this week's pricing page can both describe
 
 71
-00:04:03,492 --> 00:04:08,082
+00:04:10,070 --> 00:04:14,774
 pricing in nearly identical language, and rank almost identically close to a
 
 72
-00:04:08,082 --> 00:04:09,350
+00:04:14,774 --> 00:04:16,074
 question about price.
 
 73
-00:04:09,350 --> 00:04:14,181
+00:04:16,074 --> 00:04:21,025
 Retrieval will happily hand over the old one if it's still sitting in the index.
 
 74
-00:04:14,181 --> 00:04:16,054
+00:04:21,025 --> 00:04:22,943
 That's not a bug in the search.
 
 75
-00:04:16,054 --> 00:04:20,764
+00:04:22,943 --> 00:04:27,771
 It's exactly what similarity means, and it's why keeping your source documents
 
 76
-00:04:20,764 --> 00:04:25,717
+00:04:27,771 --> 00:04:32,846
 current is part of running a RAG feature, not a one-time setup step you finish and
 
 77
-00:04:25,717 --> 00:04:26,140
+00:04:32,846 --> 00:04:33,279
 forget.
 
 78
-00:04:26,140 --> 00:04:31,092
+00:04:33,279 --> 00:04:38,354
 On any RAG feature you touch: who owns re-indexing when a source document changes?
 
 79
-00:04:31,092 --> 00:04:35,742
+00:04:38,354 --> 00:04:43,119
 If the honest answer is nobody, you've found next week's actual risk, sitting
 
 80
-00:04:35,742 --> 00:04:39,366
+00:04:43,119 --> 00:04:46,833
 quietly underneath a feature everyone already signed off on.
 
 81
-00:04:39,916 --> 00:04:44,277
+00:04:47,383 --> 00:04:51,891
 That's the definition worth keeping, and notice what it deliberately leaves out.
 
 82
-00:04:44,277 --> 00:04:48,584
+00:04:51,891 --> 00:04:56,343
 No mention of correctness, because that was never what this mechanism promises.
 
 83
-00:04:48,584 --> 00:04:50,274
+00:04:56,343 --> 00:04:58,090
 The exercise makes it concrete.
 
 84
-00:04:50,274 --> 00:04:54,744
+00:04:58,090 --> 00:05:02,711
 Find one real query your feature has handled, look at what actually got retrieved,
 
 85
-00:04:54,744 --> 00:04:56,543
+00:05:02,711 --> 00:05:04,571
 and read it the way a user would.
 
 86
-00:04:56,543 --> 00:04:59,432
+00:05:04,571 --> 00:05:07,557
 If it's not useful, the fix is rarely a better model.
 
 87
-00:04:59,432 --> 00:05:03,956
+00:05:07,557 --> 00:05:12,235
 It's almost always upstream, in how the document got chunked or how many neighbours
 
 88
-00:05:03,956 --> 00:05:04,556
+00:05:12,235 --> 00:05:12,855
 got pulled.
 
 89
-00:05:05,106 --> 00:05:06,706
+00:05:13,405 --> 00:05:15,042
 One thing before you move on.
 
 90
-00:05:06,706 --> 00:05:11,283
+00:05:15,042 --> 00:05:19,729
 Pull one real retrieved result from your own feature and read it properly, not just
 
 91
-00:05:11,283 --> 00:05:11,725
+00:05:19,729 --> 00:05:20,181
 skim it.
 
 92
-00:05:11,725 --> 00:05:16,247
+00:05:20,181 --> 00:05:24,811
 Then check how the source document got chunked, and whether the boundaries respect
 
 93
-00:05:16,247 --> 00:05:19,998
+00:05:24,811 --> 00:05:28,651
 lists, tables, and sections, or just cut at a fixed character count.
 
 94
-00:05:19,998 --> 00:05:24,245
+00:05:28,651 --> 00:05:32,999
 Next lecture stays in the stack and tackles the phrase that swallowed "prompt
 
 95
-00:05:24,245 --> 00:05:28,878
+00:05:32,999 --> 00:05:37,742
 engineering" whole: what context engineering actually means, and why the name change
 
 96
-00:05:28,878 --> 00:05:29,319
+00:05:37,742 --> 00:05:38,194
 matters.
