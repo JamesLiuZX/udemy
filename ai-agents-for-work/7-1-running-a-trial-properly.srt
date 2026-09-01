@@ -1,231 +1,231 @@
 1
-00:00:00,350 --> 00:00:04,734
+00:00:00,350 --> 00:00:05,180
 Every agent you built in Sections 3 to 6 worked the moment you tested it against
 
 2
-00:00:04,734 --> 00:00:05,391
+00:00:05,180 --> 00:00:05,904
 pinned data.
 
 3
-00:00:05,391 --> 00:00:09,830
+00:00:05,904 --> 00:00:10,795
 That was always going to be true, because you built the test data to be readable.
 
 4
-00:00:09,830 --> 00:00:14,323
+00:00:10,795 --> 00:00:15,745
 A real trial has to include the cases you did not think to plan for, because those
 
 5
-00:00:14,323 --> 00:00:16,899
+00:00:15,745 --> 00:00:18,583
 are exactly the ones a real week will hand you.
 
 6
-00:00:16,899 --> 00:00:20,735
+00:00:18,583 --> 00:00:22,809
 Why is "it worked three times" so persuasive when it proves so little?
 
 7
-00:00:20,735 --> 00:00:23,036
+00:00:22,809 --> 00:00:25,345
 Because agreement feels like accumulation.
 
 8
-00:00:23,036 --> 00:00:27,475
+00:00:25,345 --> 00:00:30,235
 Three right answers in a row feel like three pieces of evidence stacking up, when
 
 9
-00:00:27,475 --> 00:00:32,023
+00:00:30,235 --> 00:00:35,246
 what they usually mean is that Monday, Tuesday and Wednesday happened to be easy in
 
 10
-00:00:32,023 --> 00:00:32,735
+00:00:35,246 --> 00:00:36,031
 the same way.
 
 11
-00:00:32,735 --> 00:00:36,955
+00:00:36,031 --> 00:00:40,679
 Priya's first week of triage flags came back clean, every one, and the honest
 
 12
-00:00:36,955 --> 00:00:40,023
+00:00:40,679 --> 00:00:44,060
 reading of that week was not "the agent is trustworthy".
 
 13
-00:00:40,023 --> 00:00:42,325
+00:00:44,060 --> 00:00:46,596
 It was "the inbox was ordinary this week".
 
 14
-00:00:42,325 --> 00:00:46,818
+00:00:46,596 --> 00:00:51,547
 The whole discipline of this section lives in the gap between those two sentences,
 
 15
-00:00:46,818 --> 00:00:50,928
+00:00:51,547 --> 00:00:56,075
 and the trial is the tool that closes it: not more days of agreement, but a
 
 16
-00:00:50,928 --> 00:00:53,394
+00:00:56,075 --> 00:00:58,791
 deliberate search for the day that disagrees.
 
 17
-00:00:53,944 --> 00:00:56,000
+00:00:59,341 --> 00:01:01,580
 Go back to Section 3.5 for a second.
 
 18
-00:00:56,000 --> 00:01:00,682
+00:01:01,580 --> 00:01:06,678
 The pinned inbox was not forty one ordinary emails, it was forty ordinary ones and
 
 19
-00:01:00,682 --> 00:01:02,909
+00:01:06,678 --> 00:01:09,103
 one that mattered, deliberately buried.
 
 20
-00:01:02,909 --> 00:01:07,705
+00:01:09,103 --> 00:01:14,326
 That is what a testing mindset looks like, and it is the same mindset a proper trial
 
 21
-00:01:07,705 --> 00:01:10,845
+00:01:14,326 --> 00:01:17,745
 needs, just aimed at real weeks instead of pinned data.
 
 22
-00:01:10,845 --> 00:01:15,527
+00:01:17,745 --> 00:01:22,844
 Each of your four agents has a case designed to break it, and you already know all
 
 23
-00:01:15,527 --> 00:01:20,152
+00:01:22,844 --> 00:01:27,880
 four, because each build named its own; the next slide gathers them in one place.
 
 24
-00:01:20,152 --> 00:01:24,892
+00:01:27,880 --> 00:01:33,040
 A trial that happens to contain none of them has tested the weather, not the agent,
 
 25
-00:01:24,892 --> 00:01:29,631
+00:01:33,040 --> 00:01:38,201
 and the practical move follows directly: when the breaking case does not show up on
 
 26
-00:01:29,631 --> 00:01:30,773
+00:01:38,201 --> 00:01:39,445
 its own, feed it in.
 
 27
-00:01:30,773 --> 00:01:32,771
+00:01:39,445 --> 00:01:41,621
 Send yourself the borderline email.
 
 28
-00:01:32,771 --> 00:01:35,341
+00:01:41,621 --> 00:01:44,419
 Walk back a commitment in your own test call.
 
 29
-00:01:35,341 --> 00:01:37,510
+00:01:44,419 --> 00:01:46,781
 You are allowed to make the exam hard.
 
 30
-00:01:37,510 --> 00:01:39,052
+00:01:46,781 --> 00:01:48,460
 That is what exams are for.
 
 31
-00:01:39,602 --> 00:01:43,936
+00:01:49,010 --> 00:01:53,763
 Keep this table beside your trial log, because it is the difference between waiting
 
 32
-00:01:43,936 --> 00:01:45,764
+00:01:53,763 --> 00:01:55,768
 for a hard week and scheduling one.
 
 33
-00:01:45,764 --> 00:01:50,046
+00:01:55,768 --> 00:02:00,464
 Each row is an exam question you can set deliberately, and a trial that has passed
 
 34
-00:01:50,046 --> 00:01:54,328
+00:02:00,464 --> 00:02:05,160
 its own breaking case has earned something a lucky fortnight never earns: you have
 
 35
-00:01:54,328 --> 00:01:58,141
+00:02:05,160 --> 00:02:09,341
 watched this agent be wrong, or nearly wrong, and watched what caught it.
 
 36
-00:01:58,691 --> 00:02:01,597
+00:02:09,891 --> 00:02:13,084
 That last point catches more people than any other.
 
 37
-00:02:01,597 --> 00:02:06,271
+00:02:13,084 --> 00:02:18,219
 A trial with no defined end quietly becomes "I'll always check it a bit," which is
 
 38
-00:02:06,271 --> 00:02:09,463
+00:02:18,219 --> 00:02:21,726
 not the same as either Trial or Review from Section 1.2.
 
 39
-00:02:09,463 --> 00:02:12,711
+00:02:21,726 --> 00:02:25,295
 Decide the length up front, in writing, before you start.
 
 40
-00:02:12,711 --> 00:02:17,328
+00:02:25,295 --> 00:02:30,367
 Notice that you have already done this four times if you followed the builds: one
 
 41
-00:02:17,328 --> 00:02:21,945
+00:02:30,367 --> 00:02:35,439
 week for triage, three or four calls for notes, three Mondays for the report, two
 
 42
-00:02:21,945 --> 00:02:26,732
+00:02:35,439 --> 00:02:40,699
 weeks of drafts for the chaser, each written into a job description before its agent
 
 43
-00:02:26,732 --> 00:02:26,960
+00:02:40,699 --> 00:02:40,949
 ran.
 
 44
-00:02:26,960 --> 00:02:29,867
+00:02:40,949 --> 00:02:44,143
 The third rule is where the ceilings come back too.
 
 45
-00:02:29,867 --> 00:02:34,540
+00:02:44,143 --> 00:02:49,278
 Each trial watches for one specific betrayal: a query marked resolved, an invented
 
 46
-00:02:34,540 --> 00:02:39,100
+00:02:49,278 --> 00:02:54,287
 date, a closed status the sheet never granted, a draft that reads like pressure.
 
 47
-00:02:39,100 --> 00:02:40,924
+00:02:54,287 --> 00:02:56,291
 You are not vaguely supervising.
 
 48
-00:02:40,924 --> 00:02:45,426
+00:02:56,291 --> 00:03:01,238
 You are standing guard at a named door, and knowing which door changes what you
 
 49
-00:02:45,426 --> 00:02:45,825
+00:03:01,238 --> 00:03:01,676
 notice.
 
 50
-00:02:46,375 --> 00:02:51,022
+00:03:02,226 --> 00:03:07,186
 Hold onto the asymmetry underneath all of this, because it is the reason the section
 
 51
-00:02:51,022 --> 00:02:55,668
+00:03:07,186 --> 00:03:12,145
 exists, and it is the last thing this lecture asks you to believe on argument alone:
 
 52
-00:02:55,668 --> 00:02:58,267
+00:03:12,145 --> 00:03:14,920
 the next lecture's incident shows it happening.
 
 53
-00:02:58,267 --> 00:03:02,748
+00:03:14,920 --> 00:03:19,703
 Confidence without checking feels identical to confidence with checking, right up
 
 54
-00:03:02,748 --> 00:03:07,062
+00:03:19,703 --> 00:03:24,308
 until the day it does not, and by then the unchecked agent has weeks of output
 
 55
-00:03:07,062 --> 00:03:07,615
+00:03:24,308 --> 00:03:24,898
 behind it.
 
 56
-00:03:07,615 --> 00:03:12,151
+00:03:24,898 --> 00:03:29,740
 The checklist in the next lecture is how you make the difference between those two
 
 57
-00:03:12,151 --> 00:03:13,755
+00:03:29,740 --> 00:03:31,452
 confidences visible on paper.
 
 58
-00:03:13,755 --> 00:03:14,529
+00:03:31,452 --> 00:03:32,279
 See you there.

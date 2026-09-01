@@ -1,331 +1,331 @@
 1
-00:00:00,350 --> 00:00:05,018
+00:00:00,350 --> 00:00:05,441
 Three weeks into trialling the weekly report agent, Priya was doing exactly what the
 
 2
-00:00:05,018 --> 00:00:08,741
+00:00:05,441 --> 00:00:09,501
 C06 checklist asks: reading every output before trusting any of it.
 
 3
-00:00:08,741 --> 00:00:13,409
+00:00:09,501 --> 00:00:14,592
 That Monday's report said Brightwell Manufacturing's renewal, eighteen thousand four
 
 4
-00:00:13,409 --> 00:00:14,965
+00:00:14,592 --> 00:00:16,289
 hundred dollars, was closed.
 
 5
-00:00:14,965 --> 00:00:16,188
+00:00:16,289 --> 00:00:17,622
 Priya knew it was not.
 
 6
-00:00:16,188 --> 00:00:19,300
+00:00:17,622 --> 00:00:21,016
 She had spoken to Ravi Chandra herself two days earlier.
 
 7
-00:00:19,300 --> 00:00:23,023
+00:00:21,016 --> 00:00:25,076
 Picture the moment properly, because the ordinariness is the point.
 
 8
-00:00:23,023 --> 00:00:27,580
+00:00:25,076 --> 00:00:30,045
 Monday, coffee, the drafted report open next to the sheet, her own hand count on a
 
 9
-00:00:27,580 --> 00:00:31,803
+00:00:30,045 --> 00:00:34,651
 sticky note, the habit of saying each line out loud before agreeing with it.
 
 10
-00:00:31,803 --> 00:00:33,081
+00:00:34,651 --> 00:00:36,045
 Renewals open: matches.
 
 11
-00:00:33,081 --> 00:00:34,526
+00:00:36,045 --> 00:00:37,621
 Premium at stake: matches.
 
 12
-00:00:34,526 --> 00:00:39,138
+00:00:37,621 --> 00:00:42,651
 Brightwell closed, and the word stopped halfway out of her mouth, because she could
 
 13
-00:00:39,138 --> 00:00:40,639
+00:00:42,651 --> 00:00:44,287
 still hear Thursday's call.
 
 14
-00:00:40,639 --> 00:00:44,306
+00:00:44,287 --> 00:00:48,287
 Now run the counterfactual that makes this section earn its place.
 
 15
-00:00:44,306 --> 00:00:48,919
+00:00:48,287 --> 00:00:53,317
 Without the trial, that report goes to Marcus, Marcus repeats the good news upward,
 
 16
-00:00:48,919 --> 00:00:53,420
+00:00:53,317 --> 00:00:58,226
 someone stops watching the one renewal on the book that most needed watching, and
 
 17
-00:00:53,420 --> 00:00:57,532
+00:00:58,226 --> 00:01:02,710
 the error surfaces in mid September, at the worst possible moment, wearing
 
 18
-00:00:57,532 --> 00:00:58,755
+00:01:02,710 --> 00:01:04,043
 everyone's confidence.
 
 19
-00:00:58,755 --> 00:01:01,311
+00:01:04,043 --> 00:01:06,831
 The gap between those two Mondays is not luck.
 
 20
-00:01:01,311 --> 00:01:02,311
+00:01:06,831 --> 00:01:07,922
 It is a checklist.
 
 21
-00:01:02,861 --> 00:01:05,094
+00:01:08,472 --> 00:01:10,872
 The agent did not hallucinate a status.
 
 22
-00:01:05,094 --> 00:01:06,582
+00:01:10,872 --> 00:01:12,473
 It did not misread a word.
 
 23
-00:01:06,582 --> 00:01:11,333
+00:01:12,473 --> 00:01:17,581
 It read the correct cell, at the wrong position, because a document editing another
 
 24
-00:01:11,333 --> 00:01:16,083
+00:01:17,581 --> 00:01:22,690
 client's information shifted every row below it by one, and the agent had no way of
 
 25
-00:01:16,083 --> 00:01:17,343
+00:01:22,690 --> 00:01:24,044
 knowing that happened.
 
 26
-00:01:17,343 --> 00:01:22,036
+00:01:24,044 --> 00:01:29,091
 The deeper distinction is worth one slow beat: position and identity are different
 
 27
-00:01:22,036 --> 00:01:25,184
+00:01:29,091 --> 00:01:32,476
 things, and a spreadsheet only really tracks the first.
 
 28
-00:01:25,184 --> 00:01:29,821
+00:01:32,476 --> 00:01:37,461
 To a human, "the Brightwell row" means wherever Brightwell's facts happen to live
 
 29
-00:01:29,821 --> 00:01:32,053
+00:01:37,461 --> 00:01:39,861
 today, because humans read by identity.
 
 30
-00:01:32,053 --> 00:01:36,403
+00:01:39,861 --> 00:01:44,539
 To the sheet, row six is just row six, and an insertion quietly re-addresses
 
 31
-00:01:36,403 --> 00:01:37,548
+00:01:44,539 --> 00:01:45,770
 everything below it.
 
 32
-00:01:37,548 --> 00:01:41,669
+00:01:45,770 --> 00:01:50,201
 The colleague did nothing wrong: inserting a row is what sheets are for.
 
 33
-00:01:41,669 --> 00:01:46,191
+00:01:50,201 --> 00:01:55,064
 The agent did nothing wrong: it read what was at the address it was pointed at.
 
 34
-00:01:46,191 --> 00:01:50,999
+00:01:55,064 --> 00:02:00,234
 The failure lived entirely in the space between two correct behaviours, which is why
 
 35
-00:01:50,999 --> 00:01:54,433
+00:02:00,234 --> 00:02:03,927
 nobody's checklist of mistakes would ever have contained it.
 
 36
-00:01:54,983 --> 00:01:59,445
+00:02:04,477 --> 00:02:09,390
 Sit with that distinction, because it is the one most people miss when they think
 
 37
-00:01:59,445 --> 00:02:00,436
+00:02:09,390 --> 00:02:10,481
 about AI failures.
 
 38
-00:02:00,436 --> 00:02:04,458
+00:02:10,481 --> 00:02:14,909
 Every instruction in this course's system prompts was followed correctly.
 
 39
-00:02:04,458 --> 00:02:08,203
+00:02:14,909 --> 00:02:19,034
 The failure lived in the data's shape, not in the agent's judgement.
 
 40
-00:02:08,203 --> 00:02:10,241
+00:02:19,034 --> 00:02:21,278
 Could a smarter model have caught it?
 
 41
-00:02:10,241 --> 00:02:13,766
+00:02:21,278 --> 00:02:25,160
 Ask the question seriously, because the honest no is the lesson.
 
 42
-00:02:13,766 --> 00:02:18,283
+00:02:25,160 --> 00:02:30,133
 The model can only judge what arrives, never what should have arrived instead, and
 
 43
-00:02:18,283 --> 00:02:22,800
+00:02:30,133 --> 00:02:35,107
 what arrived was a perfectly well formed sheet saying a perfectly plausible thing.
 
 44
-00:02:22,800 --> 00:02:27,041
+00:02:35,107 --> 00:02:39,777
 It is a family of failures, not a one-off, and it deserves a family portrait.
 
 45
-00:02:27,591 --> 00:02:32,104
+00:02:40,327 --> 00:02:45,221
 One signature unites the family, and it is worth memorising: every box green, every
 
 46
-00:02:32,104 --> 00:02:34,714
+00:02:45,221 --> 00:02:48,051
 instruction obeyed, and the answer wrong anyway.
 
 47
-00:02:34,714 --> 00:02:39,064
+00:02:48,051 --> 00:02:52,767
 No prompt engineering fixes any of these, because nothing in the prompt was ever
 
 48
-00:02:39,064 --> 00:02:39,391
+00:02:52,767 --> 00:02:53,121
 wrong.
 
 49
-00:02:39,391 --> 00:02:43,904
+00:02:53,121 --> 00:02:58,014
 The defences are structural too, which is the symmetry to notice: cross-checks that
 
 50
-00:02:43,904 --> 00:02:48,308
+00:02:58,014 --> 00:03:02,790
 make two fields agree, headers treated as a contract, the unpin ritual, and above
 
 51
-00:02:48,308 --> 00:02:52,658
+00:03:02,790 --> 00:03:07,506
 all a human sampling reality against output on a schedule that never quite ends.
 
 52
-00:02:53,208 --> 00:02:54,768
+00:03:08,056 --> 00:03:09,751
 Nothing exotic caught this.
 
 53
-00:02:54,768 --> 00:02:58,119
+00:03:09,751 --> 00:03:13,393
 No clever monitoring, no second AI checking the first one.
 
 54
-00:02:58,119 --> 00:03:02,740
+00:03:13,393 --> 00:03:18,416
 A person, reading every output during trial, who happened to know the truth well
 
 55
-00:03:02,740 --> 00:03:05,802
+00:03:18,416 --> 00:03:21,744
 enough to notice a lie that looked exactly like data.
 
 56
-00:03:05,802 --> 00:03:10,540
+00:03:21,744 --> 00:03:26,893
 That is what the trust ladder buys you, and it is why Section 7.1 insisted a trial
 
 57
-00:03:10,540 --> 00:03:11,406
+00:03:26,893 --> 00:03:27,835
 has to be real.
 
 58
-00:03:11,406 --> 00:03:15,219
+00:03:27,835 --> 00:03:31,979
 Count what did not catch it, too, because the list is instructive.
 
 59
-00:03:15,219 --> 00:03:20,014
+00:03:31,979 --> 00:03:37,191
 The agent raised nothing: from where it sat, Monday was entirely normal. n8n raised
 
 60
-00:03:20,014 --> 00:03:22,730
+00:03:37,191 --> 00:03:40,142
 nothing: every box green, every run successful.
 
 61
-00:03:22,730 --> 00:03:27,525
+00:03:40,142 --> 00:03:45,354
 The prompt's own safeguard, never mark closed unless the Status column says so, was
 
 62
-00:03:27,525 --> 00:03:28,911
+00:03:45,354 --> 00:03:46,861
 satisfied to the letter.
 
 63
-00:03:28,911 --> 00:03:33,591
+00:03:46,861 --> 00:03:51,947
 The only alarm in the entire system was a human who independently knew the truth,
 
 64
-00:03:33,591 --> 00:03:38,328
+00:03:51,947 --> 00:03:57,095
 and that is the design lesson hiding in the story: delegation stays safe where you
 
 65
-00:03:38,328 --> 00:03:40,408
+00:03:57,095 --> 00:03:59,356
 still hold ground truth of your own.
 
 66
-00:03:40,408 --> 00:03:44,799
+00:03:59,356 --> 00:04:04,128
 Priya talks to her clients, so a wrong status has something to collide with.
 
 67
-00:03:44,799 --> 00:03:49,420
+00:04:04,128 --> 00:04:09,151
 Hand an agent a domain where you retain no independent knowledge at all, and you
 
 68
-00:03:49,420 --> 00:03:51,038
+00:04:09,151 --> 00:04:10,909
 have not delegated the work.
 
 69
-00:03:51,038 --> 00:03:52,887
+00:04:10,909 --> 00:04:12,919
 You have delegated the noticing.
 
 70
-00:03:53,437 --> 00:03:56,467
+00:04:13,469 --> 00:04:16,780
 Look at how small the fix is, and what kind of fix it is.
 
 71
-00:03:56,467 --> 00:04:00,933
+00:04:16,780 --> 00:04:21,660
 Not a smarter model, not a longer prompt: one redundancy, two fields that must agree
 
 72
-00:04:00,933 --> 00:04:02,315
+00:04:21,660 --> 00:04:23,170
 before either is believed.
 
 73
-00:04:02,315 --> 00:04:06,621
+00:04:23,170 --> 00:04:27,876
 Cross-checks like that are the cheapest defence in this whole course, and you can
 
 74
-00:04:06,621 --> 00:04:08,961
+00:04:27,876 --> 00:04:30,432
 retrofit one onto any agent in an afternoon.
 
 75
-00:04:08,961 --> 00:04:10,928
+00:04:30,432 --> 00:04:32,581
 Be honest about what it buys, though.
 
 76
-00:04:10,928 --> 00:04:14,862
+00:04:32,581 --> 00:04:36,880
 The name-status check narrows this failure; it does not retire the family.
 
 77
-00:04:14,862 --> 00:04:19,328
+00:04:36,880 --> 00:04:41,760
 Some future edit will move the sheet in a way no one predicted, which is exactly why
 
 78
-00:04:19,328 --> 00:04:23,740
+00:04:41,760 --> 00:04:46,582
 the checking never goes to zero, and why the rung this incident happened on, Trial,
 
 79
-00:04:23,740 --> 00:04:27,196
+00:04:46,582 --> 00:04:50,358
 is where you want to be standing when your version of it arrives.
 
 80
-00:04:27,196 --> 00:04:30,067
+00:04:50,358 --> 00:04:53,495
 That is this section's whole argument in one sentence.
 
 81
-00:04:30,067 --> 00:04:34,373
+00:04:53,495 --> 00:04:58,201
 Next lecture turns the discipline that caught this into a rubric you can run even
 
 82
-00:04:34,373 --> 00:04:38,733
+00:04:58,201 --> 00:05:02,964
 after an agent has earned enough trust that you are no longer reading every single
 
 83
-00:04:38,733 --> 00:04:38,999
+00:05:02,964 --> 00:05:03,255
 line.

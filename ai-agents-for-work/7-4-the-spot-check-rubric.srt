@@ -1,231 +1,231 @@
 1
-00:00:00,350 --> 00:00:02,786
+00:00:00,350 --> 00:00:03,014
 Trial worked because Priya read everything.
 
 2
-00:00:02,786 --> 00:00:06,130
+00:00:03,014 --> 00:00:06,668
 Nobody reads everything forever, and nobody should have to.
 
 3
-00:00:06,130 --> 00:00:10,662
+00:00:06,668 --> 00:00:11,624
 Once an agent earns its way onto the Review rung, checking becomes sampling, and
 
 4
-00:00:10,662 --> 00:00:13,666
+00:00:11,624 --> 00:00:14,907
 sampling only works if the sample is chosen honestly.
 
 5
-00:00:13,666 --> 00:00:18,029
+00:00:14,907 --> 00:00:19,677
 Honestly is the hard word in that sentence, so ask it plainly: which run gets
 
 6
-00:00:18,029 --> 00:00:19,445
+00:00:19,677 --> 00:00:21,225
 checked, and who decides?
 
 7
-00:00:19,445 --> 00:00:24,205
+00:00:21,225 --> 00:00:26,428
 Left to instinct, you will sample the outputs that were already on your screen, skip
 
 8
-00:00:24,205 --> 00:00:28,681
+00:00:26,428 --> 00:00:31,322
 the weeks you were busy, and gravitate to runs that look interesting, which are
 
 9
-00:00:28,681 --> 00:00:31,061
+00:00:31,322 --> 00:00:33,924
 precisely the ones drift does not live in.
 
 10
-00:00:31,061 --> 00:00:35,820
+00:00:33,924 --> 00:00:39,127
 So take the choosing away from yourself: Section 1.2's die roll, or anything equally
 
 11
-00:00:35,820 --> 00:00:40,240
+00:00:39,127 --> 00:00:43,959
 blind, picks the run, and a ten minute calendar slot on Friday picks the time.
 
 12
-00:00:40,240 --> 00:00:44,490
+00:00:43,959 --> 00:00:48,605
 A spot check that depends on remembering and choosing is two failure points
 
 13
-00:00:44,490 --> 00:00:45,906
+00:00:48,605 --> 00:00:50,153
 pretending to be a habit.
 
 14
-00:00:45,906 --> 00:00:47,719
+00:00:50,153 --> 00:00:52,135
 Booked and blind, it is neither.
 
 15
-00:00:48,269 --> 00:00:52,752
+00:00:52,685 --> 00:00:57,604
 Read the middle row again: a weekly agent like Agent 3 stays fully checked for
 
 16
-00:00:52,752 --> 00:00:55,626
+00:00:57,604 --> 00:01:00,757
 twelve straight weeks before sampling even begins.
 
 17
-00:00:55,626 --> 00:01:00,166
+00:01:00,757 --> 00:01:05,738
 That is not overcaution, it is roughly the length of trial season for a renewal
 
 18
-00:01:00,166 --> 00:01:04,822
+00:01:05,738 --> 00:01:10,846
 pipeline, long enough to see a sheet actually get edited by someone else at least
 
 19
-00:01:04,822 --> 00:01:05,109
+00:01:10,846 --> 00:01:11,161
 once.
 
 20
-00:01:05,109 --> 00:01:08,730
+00:01:11,161 --> 00:01:15,133
 The rates differ because evidence accrues per run, not per day.
 
 21
-00:01:08,730 --> 00:01:13,442
+00:01:15,133 --> 00:01:20,304
 A daily agent hands you thirty verdicts a month, so a random one each week keeps a
 
 22
-00:01:13,442 --> 00:01:14,477
+00:01:20,304 --> 00:01:21,439
 real finger on it.
 
 23
-00:01:14,477 --> 00:01:19,305
+00:01:21,439 --> 00:01:26,736
 A weekly agent produces four, which is why it stays fully read for so long: sampling
 
 24
-00:01:19,305 --> 00:01:21,834
+00:01:26,736 --> 00:01:29,510
 four outputs would be a ritual, not a check.
 
 25
-00:01:21,834 --> 00:01:26,144
+00:01:29,510 --> 00:01:34,239
 And the third row's trailing clause, after any prompt change, is the one to
 
 26
-00:01:26,144 --> 00:01:26,719
+00:01:34,239 --> 00:01:34,870
 underline.
 
 27
-00:01:26,719 --> 00:01:31,489
+00:01:34,870 --> 00:01:40,104
 Any edit to the briefing resets part of the trust, because the agent you checked is
 
 28
-00:01:31,489 --> 00:01:33,903
+00:01:40,104 --> 00:01:42,752
 no longer quite the agent that is running.
 
 29
-00:01:33,903 --> 00:01:38,156
+00:01:42,752 --> 00:01:47,418
 The you-in-three-months from Section 6.4, adding one small thing on a busy
 
 30
-00:01:38,156 --> 00:01:40,972
+00:01:47,418 --> 00:01:50,508
 afternoon, is exactly who that clause exists for.
 
 31
-00:01:41,522 --> 00:01:44,702
+00:01:51,058 --> 00:01:54,470
 Question five is the one built directly from Section 7.3.
 
 32
-00:01:44,702 --> 00:01:48,831
+00:01:54,470 --> 00:01:58,899
 A moved row is exactly the kind of thing "drift" is designed to catch on a
 
 33
-00:01:48,831 --> 00:01:52,012
+00:01:58,899 --> 00:02:02,311
 Review-rung agent that nobody is reading in full anymore.
 
 34
-00:01:52,012 --> 00:01:56,698
+00:02:02,311 --> 00:02:07,339
 Run the five once, out loud, against a sampled chaser draft, and feel how mechanical
 
 35
-00:01:56,698 --> 00:01:57,033
+00:02:07,339 --> 00:02:07,698
 it is.
 
 36
-00:01:57,033 --> 00:02:01,050
+00:02:07,698 --> 00:02:12,007
 Facts: the renewal date in the draft, found in the sheet, cell for cell.
 
 37
-00:02:01,050 --> 00:02:04,231
+00:02:12,007 --> 00:02:15,419
 Scope: the draft concerns a renewal client, nothing else.
 
 38
-00:02:04,231 --> 00:02:08,471
+00:02:15,419 --> 00:02:19,968
 Ceiling: read it once looking only for money and pressure, and find neither.
 
 39
-00:02:08,471 --> 00:02:12,265
+00:02:19,968 --> 00:02:24,038
 Tone: read it aloud as if signing it, the Section 6 test, unchanged.
 
 40
-00:02:12,265 --> 00:02:16,562
+00:02:24,038 --> 00:02:28,647
 Drift: put it next to a draft from a month ago and ask what is different, and
 
 41
-00:02:16,562 --> 00:02:17,956
+00:02:28,647 --> 00:02:30,144
 whether you can name why.
 
 42
-00:02:17,956 --> 00:02:22,532
+00:02:30,144 --> 00:02:35,052
 Ten minutes, five verdicts, and the useful discipline is writing Pass next to each
 
 43
-00:02:22,532 --> 00:02:26,940
+00:02:35,052 --> 00:02:39,780
 question rather than nodding: a nod cannot be audited in March, and a filled-in
 
 44
-00:02:26,940 --> 00:02:27,553
+00:02:39,780 --> 00:02:40,439
 rubric can.
 
 45
-00:02:28,103 --> 00:02:31,870
+00:02:40,989 --> 00:02:45,187
 The protocol in that box is the difference between fixing and hoping.
 
 46
-00:02:31,870 --> 00:02:36,400
+00:02:45,187 --> 00:02:50,236
 A quiet prompt patch is an untested change to a system you have just learned not to
 
 47
-00:02:36,400 --> 00:02:40,931
+00:02:50,236 --> 00:02:55,286
 fully trust, made in response to a failure you have not yet explained: two unknowns
 
 48
-00:02:40,931 --> 00:02:41,531
+00:02:55,286 --> 00:02:55,955
 multiplied.
 
 49
-00:02:41,531 --> 00:02:46,062
+00:02:55,955 --> 00:03:01,005
 Moving the failure back to Trial costs you a week of closer reading, and re-testing
 
 50
-00:02:46,062 --> 00:02:50,483
+00:03:01,005 --> 00:03:05,933
 against the exact case that failed is what proves the fix fixed something, rather
 
 51
-00:02:50,483 --> 00:02:53,158
+00:03:05,933 --> 00:03:08,914
 than the failure simply not recurring on its own.
 
 52
-00:02:53,158 --> 00:02:54,795
+00:03:08,914 --> 00:03:10,739
 Machines get regression tests.
 
 53
-00:02:54,795 --> 00:02:59,380
+00:03:10,739 --> 00:03:15,849
 Your agents deserve the plain-English version: the thing that broke it once gets run
 
 54
-00:02:59,380 --> 00:03:01,564
+00:03:15,849 --> 00:03:18,283
 again, on purpose, before trust resumes.
 
 55
-00:03:01,564 --> 00:03:06,094
+00:03:18,283 --> 00:03:23,333
 Fill in C07 against one of your own agents this week, even if you have not moved it
 
 56
-00:03:06,094 --> 00:03:06,858
+00:03:23,333 --> 00:03:24,184
 to Review yet.
 
 57
-00:03:06,858 --> 00:03:11,444
+00:03:24,184 --> 00:03:29,295
 Next lecture names the failure modes worth watching for before you meet them for the
 
 58
-00:03:11,444 --> 00:03:12,044
+00:03:29,295 --> 00:03:29,964
 first time.
