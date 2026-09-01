@@ -1,379 +1,379 @@
 1
-00:00:00,350 --> 00:00:04,346
+00:00:00,350 --> 00:00:04,676
 Every product you've evaluated this year claims to have an agent in it now.
 
 2
-00:00:04,346 --> 00:00:05,199
+00:00:04,676 --> 00:00:05,598
 Some of them do.
 
 3
-00:00:05,199 --> 00:00:09,675
+00:00:05,598 --> 00:00:10,443
 Most of them are a fixed sequence of steps someone designed in advance, with a model
 
 4
-00:00:09,675 --> 00:00:12,393
+00:00:10,443 --> 00:00:13,384
 filling in text at one or two points along the way.
 
 5
-00:00:12,393 --> 00:00:16,762
+00:00:13,384 --> 00:00:18,114
 Both get called the same word, and the difference between them is exactly what you
 
 6
-00:00:16,762 --> 00:00:17,988
+00:00:18,114 --> 00:00:19,440
 need to be able to see.
 
 7
-00:00:17,988 --> 00:00:18,840
+00:00:19,440 --> 00:00:20,363
 Here's the test.
 
 8
-00:00:18,840 --> 00:00:23,210
+00:00:20,363 --> 00:00:25,092
 Who decides what happens next: the person who built the system, in advance, or the
 
 9
-00:00:23,210 --> 00:00:26,034
+00:00:25,092 --> 00:00:28,149
 model, in the moment, based on what it just observed.
 
 10
-00:00:26,034 --> 00:00:27,313
+00:00:28,149 --> 00:00:29,533
 A workflow is the first.
 
 11
-00:00:27,313 --> 00:00:28,538
+00:00:29,533 --> 00:00:30,860
 An agent is the second.
 
 12
-00:00:28,538 --> 00:00:32,748
+00:00:30,860 --> 00:00:35,416
 The distinction is worth this much attention because you'll be asked to approve
 
 13
-00:00:32,748 --> 00:00:36,798
+00:00:35,416 --> 00:00:39,799
 budget for one, scope one, or explain to legal what one is allowed to touch.
 
 14
-00:00:36,798 --> 00:00:41,221
+00:00:39,799 --> 00:00:44,586
 Answering any of those well depends on knowing which system you're actually looking
 
 15
-00:00:41,221 --> 00:00:43,352
+00:00:44,586 --> 00:00:46,893
 at, not which word is on the pitch deck.
 
 16
-00:00:43,902 --> 00:00:45,734
+00:00:47,443 --> 00:00:49,474
 That loop is the entire mechanism.
 
 17
-00:00:45,734 --> 00:00:50,100
+00:00:49,474 --> 00:00:54,310
 Look at the current state, decide what to do about it, take that action through a
 
 18
-00:00:50,100 --> 00:00:54,411
+00:00:54,310 --> 00:00:59,087
 tool, look at what happened, and decide again, until the model itself judges the
 
 19
-00:00:54,411 --> 00:00:55,166
+00:00:59,087 --> 00:00:59,923
 task finished.
 
 20
-00:00:55,716 --> 00:01:00,326
+00:01:00,473 --> 00:01:05,387
 Take the support-ticket summariser from Section two, and push it one step further
 
 21
-00:01:00,326 --> 00:01:01,578
+00:01:05,387 --> 00:01:06,722
 than it's gone so far.
 
 22
-00:01:01,578 --> 00:01:06,358
+00:01:06,722 --> 00:01:11,818
 Right now it only drafts a summary, the kind that dropped Ticket 4471's deadline and
 
 23
-00:01:06,358 --> 00:01:09,090
+00:01:11,818 --> 00:01:14,730
 left a human to catch the double charge by hand.
 
 24
-00:01:09,090 --> 00:01:10,740
+00:01:14,730 --> 00:01:16,490
 Suppose it could act instead.
 
 25
-00:01:10,740 --> 00:01:15,463
+00:01:16,490 --> 00:01:21,525
 An agent observes a refund request landing in that same queue, decides it needs the
 
 26
-00:01:15,463 --> 00:01:19,902
+00:01:21,525 --> 00:01:26,257
 order history, calls a tool to pull it, observes what came back, and only then
 
 27
-00:01:19,902 --> 00:01:24,000
+00:01:26,257 --> 00:01:30,626
 decides whether this qualifies for an automatic refund or needs a human.
 
 28
-00:01:24,000 --> 00:01:27,699
+00:01:30,626 --> 00:01:34,569
 That decision genuinely depends on what the order history showed.
 
 29
-00:01:27,699 --> 00:01:32,138
+00:01:34,569 --> 00:01:39,301
 Nobody wrote "always approve" or "always escalate" into the system in advance.
 
 30
-00:01:32,138 --> 00:01:35,325
+00:01:39,301 --> 00:01:42,699
 The model decided, in the moment, from what it observed.
 
 31
-00:01:35,325 --> 00:01:37,373
+00:01:42,699 --> 00:01:44,883
 Say it decides the refund qualifies.
 
 32
-00:01:37,373 --> 00:01:40,219
+00:01:44,883 --> 00:01:47,916
 That's not the end of the loop, it's the next lap.
 
 33
-00:01:40,219 --> 00:01:44,942
+00:01:47,916 --> 00:01:52,951
 It calls a tool to issue the refund, observes that the payment system confirmed it,
 
 34
-00:01:44,942 --> 00:01:49,666
+00:01:52,951 --> 00:01:57,987
 and decides again: does this specific customer's pattern, three refunds in a month,
 
 35
-00:01:49,666 --> 00:01:53,991
+00:01:57,987 --> 00:02:02,598
 say, need a fraud flag before it closes the case, or is a confirmation email
 
 36
-00:01:53,991 --> 00:01:54,958
+00:02:02,598 --> 00:02:03,629
 genuinely enough.
 
 37
-00:01:54,958 --> 00:01:59,568
+00:02:03,629 --> 00:02:08,543
 Each lap through that loop is a fresh decision made from what the last one turned
 
 38
-00:01:59,568 --> 00:02:02,243
+00:02:08,543 --> 00:02:11,395
 up, not a step ticked off a predetermined list.
 
 39
-00:02:02,793 --> 00:02:06,404
+00:02:11,945 --> 00:02:15,814
 Notice both columns can produce an identical-looking refund email.
 
 40
-00:02:06,404 --> 00:02:10,673
+00:02:15,814 --> 00:02:20,386
 The difference is invisible in the output and everything in how the system got
 
 41
-00:02:10,673 --> 00:02:11,001
+00:02:20,386 --> 00:02:20,738
 there.
 
 42
-00:02:11,001 --> 00:02:13,628
+00:02:20,738 --> 00:02:23,551
 Run the same test on anything you're evaluating.
 
 43
-00:02:13,628 --> 00:02:17,896
+00:02:23,551 --> 00:02:28,124
 Ask what happens if the order history comes back unusual: a duplicate order, a
 
 44
-00:02:17,896 --> 00:02:22,110
+00:02:28,124 --> 00:02:32,637
 customer with three prior refunds this month, an item that was never actually
 
 45
-00:02:22,110 --> 00:02:22,547
+00:02:32,637 --> 00:02:33,106
 shipped.
 
 46
-00:02:22,547 --> 00:02:26,761
+00:02:33,106 --> 00:02:37,620
 A workflow either has no branch for that, or someone had to anticipate it and
 
 47
-00:02:26,761 --> 00:02:27,691
+00:02:37,620 --> 00:02:38,617
 hard-code a rule.
 
 48
-00:02:27,691 --> 00:02:32,014
+00:02:38,617 --> 00:02:43,248
 An agent decides, because deciding what to do next from what it just saw is the
 
 49
-00:02:32,014 --> 00:02:34,860
+00:02:43,248 --> 00:02:46,296
 entire mechanism, not a special case bolted onto it.
 
 50
-00:02:34,860 --> 00:02:39,238
+00:02:46,296 --> 00:02:50,985
 Vendors have every incentive to blur this, because agent is the word that raises
 
 51
-00:02:39,238 --> 00:02:43,287
+00:02:50,985 --> 00:02:55,323
 money and workflow is the word that sounds like the thing you already had.
 
 52
-00:02:43,287 --> 00:02:47,391
+00:02:55,323 --> 00:02:59,720
 Reading a product's own documentation for the phrase "supported actions" or
 
 53
-00:02:47,391 --> 00:02:51,878
+00:02:59,720 --> 00:03:04,527
 "configured steps" is usually the fastest tell: that's workflow language, whatever
 
 54
-00:02:51,878 --> 00:02:53,411
+00:03:04,527 --> 00:03:06,168
 the marketing page calls it.
 
 55
-00:02:53,961 --> 00:02:58,477
+00:03:06,718 --> 00:03:11,628
 Say the honest caveat now, because the next few lectures spend real time on exactly
 
 56
-00:02:58,477 --> 00:02:59,022
+00:03:11,628 --> 00:03:12,220
 this cost.
 
 57
-00:02:59,022 --> 00:03:00,817
+00:03:12,220 --> 00:03:14,172
 Why is a workflow so predictable?
 
 58
-00:03:00,817 --> 00:03:03,593
+00:03:14,172 --> 00:03:17,189
 Because nobody left room for it to decide anything.
 
 59
-00:03:03,593 --> 00:03:07,892
+00:03:17,189 --> 00:03:21,862
 An agent's whole value is that room, and that same room is where it goes wrong:
 
 60
-00:03:07,892 --> 00:03:12,463
+00:03:21,862 --> 00:03:26,831
 approves a refund it shouldn't have, calls the wrong tool, decides it's done when it
 
 61
-00:03:12,463 --> 00:03:12,790
+00:03:26,831 --> 00:03:27,186
 isn't.
 
 62
-00:03:12,790 --> 00:03:17,252
+00:03:27,186 --> 00:03:32,037
 This section's next lecture puts an actual number on how fast that risk compounds.
 
 63
-00:03:17,252 --> 00:03:21,660
+00:03:32,037 --> 00:03:36,829
 For now, just hold the trade plainly: more autonomy, more reach, and more ways to
 
 64
-00:03:21,660 --> 00:03:22,367
+00:03:36,829 --> 00:03:37,598
 fail quietly.
 
 65
-00:03:22,367 --> 00:03:26,068
+00:03:37,598 --> 00:03:41,621
 This is also why the refund example keeps returning to money moving.
 
 66
-00:03:26,068 --> 00:03:30,421
+00:03:41,621 --> 00:03:46,353
 Blast radius scales with what the agent's tools can actually touch, not with how
 
 67
-00:03:30,421 --> 00:03:32,435
+00:03:46,353 --> 00:03:48,542
 clever its reasoning looks in a demo.
 
 68
-00:03:32,435 --> 00:03:36,843
+00:03:48,542 --> 00:03:53,334
 A five-step agent that only drafts text is a different risk profile entirely from
 
 69
-00:03:36,843 --> 00:03:41,251
+00:03:53,334 --> 00:03:58,125
 one that issues refunds, and this section keeps that distinction live throughout.
 
 70
-00:03:41,801 --> 00:03:46,343
+00:03:58,675 --> 00:04:03,576
 That's the definition worth carrying past this lecture, and the second half is doing
 
 71
-00:03:46,343 --> 00:03:47,748
+00:04:03,576 --> 00:04:05,092
 as much work as the first.
 
 72
-00:03:47,748 --> 00:03:52,128
+00:04:05,092 --> 00:04:09,818
 Not a fixed sequence with a model generating text at one step, because that's the
 
 73
-00:03:52,128 --> 00:03:54,994
+00:04:09,818 --> 00:04:12,910
 version most "agent" marketing is quietly describing.
 
 74
-00:03:54,994 --> 00:03:57,427
+00:04:12,910 --> 00:04:15,535
 The exercise is genuinely worth five minutes.
 
 75
-00:03:57,427 --> 00:04:01,050
+00:04:15,535 --> 00:04:19,443
 Most products fail it honestly, and that's not a criticism of them.
 
 76
-00:04:01,050 --> 00:04:03,645
+00:04:19,443 --> 00:04:22,243
 A well-built workflow is often the right answer.
 
 77
-00:04:03,645 --> 00:04:07,917
+00:04:22,243 --> 00:04:26,852
 It just isn't an agent, and knowing which one you're actually looking at is the
 
 78
-00:04:07,917 --> 00:04:09,430
+00:04:26,852 --> 00:04:28,485
 whole point of this lecture.
 
 79
-00:04:09,430 --> 00:04:13,972
+00:04:28,485 --> 00:04:33,386
 Keep the test handy past today, because you'll need it in rooms where nobody else in
 
 80
-00:04:13,972 --> 00:04:16,351
+00:04:33,386 --> 00:04:35,953
 the conversation is drawing the distinction.
 
 81
-00:04:16,351 --> 00:04:20,731
+00:04:35,953 --> 00:04:40,678
 A vendor demo, a roadmap review, an engineer proposing "an agent" for something a
 
 82
-00:04:20,731 --> 00:04:23,543
+00:04:40,678 --> 00:04:43,711
 workflow would do just as well and far more cheaply.
 
 83
-00:04:23,543 --> 00:04:27,922
+00:04:43,711 --> 00:04:48,437
 Being the person who asks the one question that actually settles it is worth more
 
 84
-00:04:27,922 --> 00:04:29,112
+00:04:48,437 --> 00:04:49,720
 than knowing the term.
 
 85
-00:04:29,662 --> 00:04:31,267
+00:04:50,270 --> 00:04:52,022
 One thing before you move on.
 
 86
-00:04:31,267 --> 00:04:35,084
+00:04:52,022 --> 00:04:56,189
 Run the test for real, on a specific product, not a hypothetical one.
 
 87
-00:04:35,084 --> 00:04:39,732
+00:04:56,189 --> 00:05:01,263
 Who decided what happens next: its builder, in advance, or the model, in the moment.
 
 88
-00:04:39,732 --> 00:04:44,047
+00:05:01,263 --> 00:05:05,975
 Then name one point where that decision could go wrong, concretely, not in the
 
 89
-00:04:44,047 --> 00:04:44,545
+00:05:05,975 --> 00:05:06,518
 abstract.
 
 90
-00:04:44,545 --> 00:04:47,920
+00:05:06,518 --> 00:05:10,203
 "It might misunderstand the customer" is too vague to act on.
 
 91
-00:04:47,920 --> 00:04:52,457
+00:05:10,203 --> 00:05:15,156
 "It might approve a refund for an item that was already returned once" is the kind
 
 92
-00:04:52,457 --> 00:04:55,113
+00:05:15,156 --> 00:05:18,055
 of finding that actually changes what you build.
 
 93
-00:04:55,113 --> 00:04:59,705
+00:05:18,055 --> 00:05:23,069
 Next lecture gives you the tools and connections that let an agent reach beyond its
 
 94
-00:04:59,705 --> 00:05:04,187
+00:05:23,069 --> 00:05:27,961
 own output into your real systems, and the lecture after that gives you the maths
 
 95
-00:05:04,187 --> 00:05:06,179
+00:05:27,961 --> 00:05:30,136
 for exactly the risk you just named.

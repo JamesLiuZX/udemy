@@ -1,71 +1,71 @@
 1
-00:00:00,350 --> 00:00:05,041
+00:00:00,350 --> 00:00:05,477
 Back in Section two, the decision tree gave agent one box among four, and moved on.
 
 2
-00:00:05,041 --> 00:00:06,172
+00:00:05,477 --> 00:00:06,713
 That was deliberate.
 
 3
-00:00:06,172 --> 00:00:10,524
+00:00:06,713 --> 00:00:11,470
 You needed the other three first, because an agent is what you reach for once
 
 4
-00:00:10,524 --> 00:00:14,481
+00:00:11,470 --> 00:00:15,794
 prompting, retrieval, and fine-tuning have all genuinely fallen short.
 
 5
-00:00:14,481 --> 00:00:17,420
+00:00:15,794 --> 00:00:19,007
 This section is that fourth box, opened up properly.
 
 6
-00:00:17,420 --> 00:00:22,055
+00:00:19,007 --> 00:00:24,072
 By the end, you'll know what actually separates an agent from a chatbot with extra
 
 7
-00:00:22,055 --> 00:00:26,633
+00:00:24,072 --> 00:00:29,076
 steps, the maths that tells you when a five-step plan is quietly a coin flip, and
 
 8
-00:00:26,633 --> 00:00:30,872
+00:00:29,076 --> 00:00:33,709
 how to scope one so a failure costs you an afternoon instead of a headline.
 
 9
-00:00:31,422 --> 00:00:36,079
+00:00:34,259 --> 00:00:39,281
 Five ideas, and the same discipline Section three brought to specifying a feature,
 
 10
-00:00:36,079 --> 00:00:38,238
+00:00:39,281 --> 00:00:41,608
 now aimed at one that acts on its own.
 
 11
-00:00:38,238 --> 00:00:43,009
+00:00:41,608 --> 00:00:46,752
 You'll learn what an agent actually is underneath the term, how it reaches your real
 
 12
-00:00:43,009 --> 00:00:47,666
+00:00:46,752 --> 00:00:51,774
 tools, and the reliability maths that turns "it worked in the demo" into an actual
 
 13
-00:00:47,666 --> 00:00:48,063
+00:00:51,774 --> 00:00:52,203
 number.
 
 14
-00:00:48,063 --> 00:00:52,607
+00:00:52,203 --> 00:00:57,102
 Then the design patterns that hold up once real users show up, including when to
 
 15
-00:00:52,607 --> 00:00:57,094
+00:00:57,102 --> 00:01:01,940
 reach for several agents instead of one, and the guardrails that keep a mistake
 
 16
-00:00:57,094 --> 00:00:58,628
+00:01:01,940 --> 00:01:03,593
 small instead of expensive.
 
 17
-00:00:58,628 --> 00:01:03,228
+00:01:03,593 --> 00:01:08,554
 It closes the way Section three did: a scoping worksheet, filled in for real, for
 
 18
-00:01:03,228 --> 00:01:05,784
+00:01:08,554 --> 00:01:11,309
 something you'd actually consider automating.

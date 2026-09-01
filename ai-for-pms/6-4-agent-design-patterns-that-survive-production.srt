@@ -1,383 +1,383 @@
 1
-00:00:00,350 --> 00:00:04,818
+00:00:00,350 --> 00:00:05,266
 The refund agent from earlier in this section worked perfectly in every demo anyone
 
 2
-00:00:04,818 --> 00:00:05,411
+00:00:05,266 --> 00:00:05,917
 showed you.
 
 3
-00:00:05,411 --> 00:00:09,771
+00:00:05,917 --> 00:00:10,715
 It also had never hit a network timeout calling the payment system, never seen an
 
 4
-00:00:09,771 --> 00:00:14,294
+00:00:10,715 --> 00:00:15,690
 order history come back empty, and never been asked to do the same task twice by two
 
 5
-00:00:14,294 --> 00:00:16,070
+00:00:15,690 --> 00:00:17,644
 different support agents at once.
 
 6
-00:00:16,070 --> 00:00:18,439
+00:00:17,644 --> 00:00:20,250
 Production hits all three in the first week.
 
 7
-00:00:18,439 --> 00:00:20,700
+00:00:20,250 --> 00:00:22,738
 None of those three are exotic edge cases.
 
 8
-00:00:20,700 --> 00:00:21,562
+00:00:22,738 --> 00:00:23,686
 They're Tuesday.
 
 9
-00:00:21,562 --> 00:00:26,030
+00:00:23,686 --> 00:00:28,601
 A network blips, a record is mid-update when something reads it, two people on your
 
 10
-00:00:26,030 --> 00:00:27,376
+00:00:28,601 --> 00:00:30,082
 team work the same queue.
 
 11
-00:00:27,376 --> 00:00:31,898
+00:00:30,082 --> 00:00:35,057
 Any system that touches real infrastructure meets all three eventually, and the only
 
 12
-00:00:31,898 --> 00:00:36,367
+00:00:35,057 --> 00:00:39,973
 real choice you have is whether it meets them with a plan already in place or finds
 
 13
-00:00:36,367 --> 00:00:36,851
+00:00:39,973 --> 00:00:40,506
 out live.
 
 14
-00:00:36,851 --> 00:00:38,574
+00:00:40,506 --> 00:00:42,401
 None of that is a model problem.
 
 15
-00:00:38,574 --> 00:00:42,666
+00:00:42,401 --> 00:00:46,903
 It's an architecture problem, and there are three patterns that consistently
 
 16
-00:00:42,666 --> 00:00:47,080
+00:00:46,903 --> 00:00:51,759
 separate the agents that survive contact with production from the ones that don't.
 
 17
-00:00:47,080 --> 00:00:50,903
+00:00:51,759 --> 00:00:55,965
 Notice none of the three require a better model, and that's deliberate.
 
 18
-00:00:50,903 --> 00:00:55,048
+00:00:55,965 --> 00:01:00,525
 Every one of them is a design decision you can ask about and evaluate without
 
 19
-00:00:55,048 --> 00:00:59,355
+00:01:00,525 --> 00:01:05,263
 reading a line of code, the same way you'd ask about error handling in any other
 
 20
-00:00:59,355 --> 00:01:00,647
+00:01:05,263 --> 00:01:06,685
 feature before it ships.
 
 21
-00:01:01,197 --> 00:01:05,943
+00:01:07,235 --> 00:01:12,367
 The difference sounds small and changes everything about how debuggable the system
 
 22
-00:01:05,943 --> 00:01:06,117
+00:01:12,367 --> 00:01:12,555
 is.
 
 23
-00:01:06,117 --> 00:01:10,746
+00:01:12,555 --> 00:01:17,563
 An agent that decides one step at a time is genuinely reactive: observe, decide,
 
 24
-00:01:10,746 --> 00:01:15,434
+00:01:17,563 --> 00:01:22,633
 act, exactly like 6.1's loop, with no plan you could inspect before it commits to
 
 25
-00:01:15,434 --> 00:01:15,608
+00:01:22,633 --> 00:01:22,820
 it.
 
 26
-00:01:15,608 --> 00:01:20,295
+00:01:22,820 --> 00:01:27,891
 An agent that plans first states, in plain language, what it intends to do and in
 
 27
-00:01:20,295 --> 00:01:22,668
+00:01:27,891 --> 00:01:30,457
 what order, before calling a single tool.
 
 28
-00:01:22,668 --> 00:01:25,504
+00:01:30,457 --> 00:01:33,524
 That plan is cheap to review and cheap to reject.
 
 29
-00:01:25,504 --> 00:01:30,018
+00:01:33,524 --> 00:01:38,406
 The refund agent that plans "check order history, confirm no prior refund this
 
 30
-00:01:30,018 --> 00:01:34,648
+00:01:38,406 --> 00:01:43,414
 month, then issue the refund" lets you catch a missing check before it runs, not
 
 31
-00:01:34,648 --> 00:01:36,442
+00:01:43,414 --> 00:01:45,354
 after it's already moved money.
 
 32
-00:01:36,442 --> 00:01:40,840
+00:01:45,354 --> 00:01:50,111
 Does that mean every agent should plan-then-execute, regardless of the task?
 
 33
-00:01:40,840 --> 00:01:45,644
+00:01:50,111 --> 00:01:55,307
 No. A single lookup barely benefits from a written plan; there's nothing to review.
 
 34
-00:01:45,644 --> 00:01:50,331
+00:01:55,307 --> 00:02:00,377
 The pattern earns its cost specifically once a task spans several steps with real
 
 35
-00:01:50,331 --> 00:01:55,193
+00:02:00,377 --> 00:02:05,635
 consequences, which describes most of the agents actually worth scoping carefully in
 
 36
-00:01:55,193 --> 00:01:56,119
+00:02:05,635 --> 00:02:06,636
 the first place.
 
 37
-00:01:56,669 --> 00:02:01,052
+00:02:07,186 --> 00:02:11,982
 Retrying a failed step sounds like the safe, resilient choice, and unbounded
 
 38
-00:02:01,052 --> 00:02:05,839
+00:02:11,982 --> 00:02:17,219
 retrying is one of the most common ways an agent quietly turns a small failure into
 
 39
-00:02:05,839 --> 00:02:06,820
+00:02:17,219 --> 00:02:18,292
 an expensive one.
 
 40
-00:02:06,820 --> 00:02:09,300
+00:02:18,292 --> 00:02:21,005
 A payment system timing out once is normal.
 
 41
-00:02:09,300 --> 00:02:13,972
+00:02:21,005 --> 00:02:26,116
 An agent that retries a timed-out refund call five times without checking whether
 
 42
-00:02:13,972 --> 00:02:18,413
+00:02:26,116 --> 00:02:30,975
 the first attempt actually went through can issue the same refund five times.
 
 43
-00:02:18,413 --> 00:02:23,085
+00:02:30,975 --> 00:02:36,086
 Bound the retries, and more importantly, decide in advance what happens when they
 
 44
-00:02:23,085 --> 00:02:23,547
+00:02:36,086 --> 00:02:36,591
 run out.
 
 45
-00:02:23,547 --> 00:02:28,392
+00:02:36,591 --> 00:02:41,892
 The honest answer is almost never "keep trying forever." It's "stop, and put this in
 
 46
-00:02:28,392 --> 00:02:32,948
+00:02:41,892 --> 00:02:46,877
 front of a person," the same escalation instinct as Section three's degradation
 
 47
-00:02:32,948 --> 00:02:37,216
+00:02:46,877 --> 00:02:51,546
 paths, now applied to a system that acts instead of one that only answers.
 
 48
-00:02:37,216 --> 00:02:41,196
+00:02:51,546 --> 00:02:55,900
 Notice the diagram has exactly one exit that isn't success: escalate.
 
 49
-00:02:41,196 --> 00:02:45,868
+00:02:55,900 --> 00:03:01,011
 Not "try a different approach automatically," which just substitutes one untested
 
 50
-00:02:45,868 --> 00:02:50,482
+00:03:01,011 --> 00:03:06,059
 path for another, and not "silently give up," which is 5.5's silent-failure mode
 
 51
-00:02:50,482 --> 00:02:52,674
+00:03:06,059 --> 00:03:08,457
 wearing a different section's clothes.
 
 52
-00:02:52,674 --> 00:02:57,231
+00:03:08,457 --> 00:03:13,442
 A human seeing the failure and the full context around it is the only exit that
 
 53
-00:02:57,231 --> 00:03:01,787
+00:03:13,442 --> 00:03:18,427
 reliably turns a stuck agent into a solved problem instead of a mysterious one.
 
 54
-00:03:02,337 --> 00:03:06,970
+00:03:18,977 --> 00:03:23,972
 Say the honest caveat, because plan-then-execute and bounded retries aren't free,
 
 55
-00:03:06,970 --> 00:03:11,603
+00:03:23,972 --> 00:03:28,967
 and treating them as a checklist every agent must satisfy regardless of stakes is
 
 56
-00:03:11,603 --> 00:03:12,861
+00:03:28,967 --> 00:03:30,324
 its own kind of waste.
 
 57
-00:03:12,861 --> 00:03:17,609
+00:03:30,324 --> 00:03:35,442
 An internal agent that drafts a weekly summary nobody reads unattended can probably
 
 58
-00:03:17,609 --> 00:03:18,638
+00:03:35,442 --> 00:03:36,552
 skip most of this.
 
 59
-00:03:18,638 --> 00:03:23,042
+00:03:36,552 --> 00:03:41,300
 An agent that touches customer refunds, sends external email, or edits a live
 
 60
-00:03:23,042 --> 00:03:27,675
+00:03:41,300 --> 00:03:46,295
 document cannot, and the difference between those two is exactly the blast radius
 
 61
-00:03:27,675 --> 00:03:32,479
+00:03:46,295 --> 00:03:51,475
 question the guardrails lecture two lectures from now makes the actual scoping tool.
 
 62
-00:03:32,479 --> 00:03:37,284
+00:03:51,475 --> 00:03:56,655
 For today, just hold the principle: match the engineering investment to what happens
 
 63
-00:03:37,284 --> 00:03:39,514
+00:03:56,655 --> 00:03:59,059
 when this specific agent gets it wrong.
 
 64
-00:03:39,514 --> 00:03:43,918
+00:03:59,059 --> 00:04:03,808
 Watch for the opposite mistake too, the one that's easier to make in a budget
 
 65
-00:03:43,918 --> 00:03:45,520
+00:04:03,808 --> 00:04:05,534
 conversation than it sounds.
 
 66
-00:03:45,520 --> 00:03:49,981
+00:04:05,534 --> 00:04:10,344
 A team under time pressure skips the plan-review step or the idempotency check
 
 67
-00:03:49,981 --> 00:03:54,786
+00:04:10,344 --> 00:04:15,524
 specifically on the agent that touches money, because that's the one everyone's most
 
 68
-00:03:54,786 --> 00:03:55,586
+00:04:15,524 --> 00:04:16,387
 eager to ship.
 
 69
-00:03:55,586 --> 00:04:00,162
+00:04:16,387 --> 00:04:21,320
 That's precisely backwards, and it's worth saying out loud in the room where the
 
 70
-00:04:00,162 --> 00:04:03,765
+00:04:21,320 --> 00:04:25,205
 schedule gets decided, not after the duplicate refund shows up.
 
 71
-00:04:04,315 --> 00:04:08,778
+00:04:25,755 --> 00:04:30,676
 That's the third pattern, and it's the one people skip because it sounds like a
 
 72
-00:04:08,778 --> 00:04:11,377
+00:04:30,676 --> 00:04:33,541
 backend detail rather than a product decision.
 
 73
-00:04:11,377 --> 00:04:11,886
+00:04:33,541 --> 00:04:34,101
 It isn't.
 
 74
-00:04:11,886 --> 00:04:16,349
+00:04:34,101 --> 00:04:39,022
 Whether an action is safe to repeat is exactly as much your call as whether the
 
 75
-00:04:16,349 --> 00:04:18,269
+00:04:39,022 --> 00:04:41,139
 agent needs a plan reviewed first.
 
 76
-00:04:18,269 --> 00:04:20,473
+00:04:41,139 --> 00:04:43,568
 Run the exercise on something concrete.
 
 77
-00:04:20,473 --> 00:04:23,523
+00:04:43,568 --> 00:04:46,932
 "Send a confirmation email" running twice is annoying.
 
 78
-00:04:23,523 --> 00:04:28,156
+00:04:46,932 --> 00:04:52,039
 "Issue a refund" running twice is a real financial loss, and both can be caused by
 
 79
-00:04:28,156 --> 00:04:32,732
+00:04:52,039 --> 00:04:57,084
 the exact same retry that looked like the safe, cautious choice from pattern two.
 
 80
-00:04:32,732 --> 00:04:35,613
+00:04:57,084 --> 00:05:00,260
 The fix is usually cheaper than the finding sounds.
 
 81
-00:04:35,613 --> 00:04:40,246
+00:05:00,260 --> 00:05:05,367
 Often it's a single check added before the risky call: has this order already been
 
 82
-00:04:40,246 --> 00:04:42,958
+00:05:05,367 --> 00:05:08,357
 refunded today, has this email already gone out.
 
 83
-00:04:42,958 --> 00:04:47,421
+00:05:08,357 --> 00:05:13,277
 That one addition is what makes pattern two's retries genuinely safe instead of
 
 84
-00:04:47,421 --> 00:04:51,884
+00:05:13,277 --> 00:05:18,198
 merely convenient, and it's worth costing out at the same time you cost out the
 
 85
-00:04:51,884 --> 00:04:55,951
+00:05:18,198 --> 00:05:22,682
 retry logic itself, not as an afterthought once someone notices the gap.
 
 86
-00:04:56,501 --> 00:04:58,138
+00:05:23,232 --> 00:05:25,007
 One thing before you move on.
 
 87
-00:04:58,138 --> 00:05:00,452
+00:05:25,007 --> 00:05:27,516
 Ask to see the plan, not just the output.
 
 88
-00:05:00,452 --> 00:05:04,855
+00:05:27,516 --> 00:05:32,290
 If there isn't one, because the system decides one step at a time with nothing
 
 89
-00:05:04,855 --> 00:05:09,426
+00:05:32,290 --> 00:05:37,248
 written down first, that's worth knowing before you're debugging it in production
 
 90
-00:05:09,426 --> 00:05:11,684
+00:05:37,248 --> 00:05:39,696
 instead of reviewing it in a design doc.
 
 91
-00:05:11,684 --> 00:05:16,199
+00:05:39,696 --> 00:05:44,592
 Then ask the retry question directly, and expect a specific answer, not a shrug.
 
 92
-00:05:16,199 --> 00:05:19,360
+00:05:44,592 --> 00:05:48,019
 "It handles errors gracefully" is not a specific answer.
 
 93
-00:05:19,360 --> 00:05:22,972
+00:05:48,019 --> 00:05:51,936
 "Three retries, then it stops and pings the on-call channel" is.
 
 94
-00:05:22,972 --> 00:05:27,601
+00:05:51,936 --> 00:05:56,955
 Next lecture takes this same production-survival lens and points it at a different
 
 95
-00:05:27,601 --> 00:05:32,172
+00:05:56,955 --> 00:06:01,912
 question: when do you actually need more than one agent working together, and why
 
 96
-00:05:32,172 --> 00:05:34,938
+00:06:01,912 --> 00:06:04,911
 local-first is usually the safer way to find out.

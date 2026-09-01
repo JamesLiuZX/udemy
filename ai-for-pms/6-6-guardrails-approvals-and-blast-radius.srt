@@ -1,355 +1,355 @@
 1
-00:00:00,350 --> 00:00:04,605
+00:00:00,350 --> 00:00:04,967
 "Is this agent safe" invites a vague answer, because safety isn't one thing.
 
 2
-00:00:04,605 --> 00:00:09,140
+00:00:04,967 --> 00:00:09,887
 "What's its blast radius" doesn't, because blast radius is exactly two questions:
 
 3
-00:00:09,140 --> 00:00:12,891
+00:00:09,887 --> 00:00:13,957
 can this action be undone, and how much does it cost if it's wrong.
 
 4
-00:00:12,891 --> 00:00:17,425
+00:00:13,957 --> 00:00:18,878
 Answer both, honestly, and you know precisely where a guardrail actually needs to
 
 5
-00:00:17,425 --> 00:00:17,593
+00:00:18,878 --> 00:00:19,060
 go.
 
 6
-00:00:17,593 --> 00:00:22,184
+00:00:19,060 --> 00:00:24,041
 Ask "is it safe" in a review and you'll get a confident yes from whoever built it,
 
 7
-00:00:22,184 --> 00:00:26,607
+00:00:24,041 --> 00:00:28,840
 because they're answering about the agent's intelligence, not its consequences.
 
 8
-00:00:26,607 --> 00:00:30,974
+00:00:28,840 --> 00:00:33,578
 Ask about blast radius instead and the conversation moves to specific actions,
 
 9
-00:00:30,974 --> 00:00:34,501
+00:00:33,578 --> 00:00:37,405
 specific numbers, and a specific answer you can actually check.
 
 10
-00:00:34,501 --> 00:00:35,620
+00:00:37,405 --> 00:00:38,620
 This isn't abstract.
 
 11
-00:00:35,620 --> 00:00:39,763
+00:00:38,620 --> 00:00:43,115
 It's the direct continuation of 6.2's read-versus-write question and 6.4's
 
 12
-00:00:39,763 --> 00:00:44,298
+00:00:43,115 --> 00:00:48,036
 escalate-to-a-human step, given the actual framework that tells you which actions
 
 13
-00:00:44,298 --> 00:00:45,474
+00:00:48,036 --> 00:00:49,312
 need which treatment.
 
 14
-00:00:45,474 --> 00:00:50,176
+00:00:49,312 --> 00:00:54,414
 Every lecture in this section so far has been building toward this one without quite
 
 15
-00:00:50,176 --> 00:00:50,736
+00:00:54,414 --> 00:00:55,022
 naming it.
 
 16
-00:00:50,736 --> 00:00:53,368
+00:00:55,022 --> 00:00:57,877
 Tools and MCP gave you what an agent can reach.
 
 17
-00:00:53,368 --> 00:00:56,447
+00:00:57,877 --> 00:01:01,218
 The reliability maths gave you how often it goes wrong.
 
 18
-00:00:56,447 --> 00:01:00,870
+00:01:01,218 --> 00:01:06,017
 Guardrails are where those two facts turn into an actual decision about where a
 
 19
-00:01:00,870 --> 00:01:04,061
+00:01:06,017 --> 00:01:09,479
 human has to stand between the agent and the consequence.
 
 20
-00:01:04,611 --> 00:01:09,459
+00:01:10,029 --> 00:01:15,302
 Read this table by the two questions, not by the dollar figure alone, because dollar
 
 21
-00:01:09,459 --> 00:01:12,345
+00:01:15,302 --> 00:01:18,441
 amount on its own misleads you in both directions.
 
 22
-00:01:12,345 --> 00:01:16,905
+00:01:18,441 --> 00:01:23,400
 A twenty-pound refund that's trivially clawed back if it's wrong doesn't need a
 
 23
-00:01:16,905 --> 00:01:21,754
+00:01:23,400 --> 00:01:28,674
 human standing between the agent and the action, whatever your instinct about "money
 
 24
-00:01:21,754 --> 00:01:22,505
+00:01:28,674 --> 00:01:29,490
 moving" says.
 
 25
-00:01:22,505 --> 00:01:27,295
+00:01:29,490 --> 00:01:34,700
 An email to a journalist costs nothing and is completely irreversible the moment it
 
 26
-00:01:27,295 --> 00:01:27,642
+00:01:34,700 --> 00:01:35,077
 sends.
 
 27
-00:01:27,642 --> 00:01:32,490
+00:01:35,077 --> 00:01:40,350
 That belongs in the bottom row with the eight-hundred-pound refund, not the top one,
 
 28
-00:01:32,490 --> 00:01:36,589
+00:01:40,350 --> 00:01:44,807
 because reversibility, not price, is doing the real work in this table.
 
 29
-00:01:36,589 --> 00:01:41,206
+00:01:44,807 --> 00:01:49,829
 Most teams default to gating by dollar amount because it's the easiest number to
 
 30
-00:01:41,206 --> 00:01:42,361
+00:01:49,829 --> 00:01:51,084
 write into a policy.
 
 31
-00:01:42,361 --> 00:01:44,439
+00:01:51,084 --> 00:01:53,344
 It's also the wrong axis on its own.
 
 32
-00:01:44,439 --> 00:01:48,883
+00:01:53,344 --> 00:01:58,178
 A five-pound action that posts publicly and can't be taken back deserves more
 
 33
-00:01:48,883 --> 00:01:53,732
+00:01:58,178 --> 00:02:03,451
 caution than a five-hundred-pound one your finance system can reverse with one call.
 
 34
-00:01:53,732 --> 00:01:58,465
+00:02:03,451 --> 00:02:08,599
 Ask both questions every time, not just the one that's easiest to put a number on.
 
 35
-00:01:59,015 --> 00:02:03,506
+00:02:09,149 --> 00:02:14,047
 The difference between these two is the difference between a policy and a feeling.
 
 36
-00:02:03,506 --> 00:02:05,916
+00:02:14,047 --> 00:02:16,676
 "We review its work" describes an intention.
 
 37
-00:02:05,916 --> 00:02:10,406
+00:02:16,676 --> 00:02:21,575
 A named gate on a named action is enforced in the system itself, the same boundary
 
 38
-00:02:10,406 --> 00:02:14,240
+00:02:21,575 --> 00:02:25,757
 6.2 drew between what the model requests and what your system permits.
 
 39
-00:02:14,240 --> 00:02:18,621
+00:02:25,757 --> 00:02:30,536
 Build the gate so the agent cannot technically complete the gated action without
 
 40
-00:02:18,621 --> 00:02:22,564
+00:02:30,536 --> 00:02:34,837
 approval, not so that a reviewer is supposed to catch it after the fact.
 
 41
-00:02:22,564 --> 00:02:26,781
+00:02:34,837 --> 00:02:39,438
 A policy a tired reviewer can skip under deadline pressure isn't a guardrail.
 
 42
-00:02:26,781 --> 00:02:29,190
+00:02:39,438 --> 00:02:42,066
 It's a suggestion with a job title attached.
 
 43
-00:02:29,190 --> 00:02:33,407
+00:02:42,066 --> 00:02:46,666
 Test whether a gate is real with one question: can the action complete if the
 
 44
-00:02:33,407 --> 00:02:36,146
+00:02:46,666 --> 00:02:49,653
 approver is on holiday and nobody covers for them.
 
 45
-00:02:36,146 --> 00:02:40,527
+00:02:49,653 --> 00:02:54,433
 If the answer is yes, eventually, through a timeout or a default-approve setting
 
 46
-00:02:40,527 --> 00:02:43,813
+00:02:54,433 --> 00:02:58,017
 someone added for convenience, it was never actually a gate.
 
 47
-00:02:43,813 --> 00:02:45,729
+00:02:58,017 --> 00:03:00,108
 It was a delay with an expiry date.
 
 48
-00:02:46,279 --> 00:02:50,988
+00:03:00,658 --> 00:03:05,757
 Say the honest caveat, because the instinct to add a gate to everything after seeing
 
 49
-00:02:50,988 --> 00:02:55,641
+00:03:05,757 --> 00:03:10,796
 that table is understandable and it defeats the entire point of automating the task
 
 50
-00:02:55,641 --> 00:02:56,707
+00:03:10,796 --> 00:03:11,949
 in the first place.
 
 51
-00:02:56,707 --> 00:03:00,350
+00:03:11,949 --> 00:03:15,895
 What's the point of an agent whose every action waits on a human?
 
 52
-00:03:00,350 --> 00:03:01,079
+00:03:15,895 --> 00:03:16,684
 None, really.
 
 53
-00:03:01,079 --> 00:03:05,732
+00:03:16,684 --> 00:03:21,722
 It isn't faster than doing the task yourself, and it quietly trains the approver to
 
 54
-00:03:05,732 --> 00:03:09,432
+00:03:21,722 --> 00:03:25,729
 click approve without reading, which is worse than no gate at all.
 
 55
-00:03:09,432 --> 00:03:13,973
+00:03:25,729 --> 00:03:30,646
 Reserve gates for where this lecture's table actually puts them, the irreversible
 
 56
-00:03:13,973 --> 00:03:17,000
+00:03:30,646 --> 00:03:33,924
 and the expensive, and let the top row run on its own.
 
 57
-00:03:17,000 --> 00:03:18,906
+00:03:33,924 --> 00:03:35,988
 That's not a compromise on safety.
 
 58
-00:03:18,906 --> 00:03:23,335
+00:03:35,988 --> 00:03:40,784
 It's what makes the safety on the rows that matter credible instead of theatre.
 
 59
-00:03:23,335 --> 00:03:26,138
+00:03:40,784 --> 00:03:43,819
 Gate fatigue is the specific failure worth naming.
 
 60
-00:03:26,138 --> 00:03:30,735
+00:03:43,819 --> 00:03:48,797
 An approver who sees forty low-stakes approval requests a day stops reading any of
 
 61
-00:03:30,735 --> 00:03:35,444
+00:03:48,797 --> 00:03:53,896
 them carefully by request twelve, and the one genuinely dangerous request that slips
 
 62
-00:03:35,444 --> 00:03:39,537
+00:03:53,896 --> 00:03:58,327
 through on day thirty gets the exact same reflexive click as the harmless
 
 63
-00:03:39,537 --> 00:03:40,770
+00:03:58,327 --> 00:03:59,663
 thirty-nine before it.
 
 64
-00:03:40,770 --> 00:03:45,199
+00:03:59,663 --> 00:04:04,458
 Fewer, better-chosen gates protect people better than many indiscriminate ones,
 
 65
-00:03:45,199 --> 00:03:49,627
+00:04:04,458 --> 00:04:09,254
 precisely because attention is the scarce resource a gate is actually spending.
 
 66
-00:03:50,177 --> 00:03:54,758
+00:04:09,804 --> 00:04:14,803
 That's the definition worth keeping, and the second half matters as much as the
 
 67
-00:03:54,758 --> 00:03:59,629
+00:04:14,803 --> 00:04:20,117
 first: blast radius has nothing to do with how impressive the agent's plan looked in
 
 68
-00:03:59,629 --> 00:04:00,035
+00:04:20,117 --> 00:04:20,560
 review.
 
 69
-00:04:00,035 --> 00:04:04,500
+00:04:20,560 --> 00:04:25,432
 A beautifully reasoned plan that ends in an irreversible, costly action still
 
 70
-00:04:04,500 --> 00:04:06,008
+00:04:25,432 --> 00:04:27,077
 belongs in the bottom row.
 
 71
-00:04:06,008 --> 00:04:07,805
+00:04:27,077 --> 00:04:29,039
 Run the sort on something real.
 
 72
-00:04:07,805 --> 00:04:12,502
+00:04:29,039 --> 00:04:34,164
 Most agents, once every action is actually listed instead of described in general
 
 73
-00:04:12,502 --> 00:04:16,967
+00:04:34,164 --> 00:04:39,036
 terms, turn out to have one or two genuinely high-stakes actions hiding among
 
 74
-00:04:16,967 --> 00:04:18,243
+00:04:39,036 --> 00:04:40,428
 several harmless ones.
 
 75
-00:04:18,243 --> 00:04:23,114
+00:04:40,428 --> 00:04:45,743
 Finding exactly which ones they are is the whole value of doing this exercise before
 
 76
-00:04:23,114 --> 00:04:25,201
+00:04:45,743 --> 00:04:48,020
 launch instead of after an incident.
 
 77
-00:04:25,201 --> 00:04:28,680
+00:04:48,020 --> 00:04:51,817
 Do the sort before the architecture is finalised, not after.
 
 78
-00:04:28,680 --> 00:04:33,203
+00:04:51,817 --> 00:04:56,752
 It's far cheaper to redesign an agent so its one irreversible action becomes a
 
 79
-00:04:33,203 --> 00:04:38,074
+00:04:56,752 --> 00:05:02,067
 proposal a human confirms, than to bolt a gate onto a system that was built assuming
 
 80
-00:04:38,074 --> 00:04:42,133
+00:05:02,067 --> 00:05:06,496
 full autonomy everywhere and now has to be pulled apart to fit one in.
 
 81
-00:04:42,683 --> 00:04:44,295
+00:05:07,046 --> 00:05:08,844
 One thing before you move on.
 
 82
-00:04:44,295 --> 00:04:48,796
+00:05:08,844 --> 00:05:13,866
 Do the sort completely, not just for the action that worried you most walking in.
 
 83
-00:04:48,796 --> 00:04:52,685
+00:05:13,866 --> 00:05:18,206
 The ones you'd forgotten to mention are usually where the real gap is.
 
 84
-00:04:52,685 --> 00:04:56,853
+00:05:18,206 --> 00:05:22,857
 Then name an actual person for every gated action, not a team or a process.
 
 85
-00:04:56,853 --> 00:04:58,964
+00:05:22,857 --> 00:05:25,213
 "The support team" is not an approver.
 
 86
-00:04:58,964 --> 00:05:01,687
+00:05:25,213 --> 00:05:28,251
 A specific name who knows they own that click is.
 
 87
-00:05:01,687 --> 00:05:06,299
+00:05:28,251 --> 00:05:33,397
 Next lecture asks the question this whole section has been building toward from the
 
 88
-00:05:06,299 --> 00:05:10,800
+00:05:33,397 --> 00:05:38,419
 other direction: when the honest answer isn't which guardrail to add, but whether
 
 89
-00:05:10,800 --> 00:05:12,523
+00:05:38,419 --> 00:05:40,341
 this should be an agent at all.

@@ -1,379 +1,379 @@
 1
-00:00:00,350 --> 00:00:04,932
+00:00:00,350 --> 00:00:05,318
 Multi-agent sounds like the natural next step once one agent feels limited: add a
 
 2
-00:00:04,932 --> 00:00:07,874
+00:00:05,318 --> 00:00:08,507
 second one, specialised, and let them work together.
 
 3
-00:00:07,874 --> 00:00:09,627
+00:00:08,507 --> 00:00:10,408
 Sometimes that's exactly right.
 
 4
-00:00:09,627 --> 00:00:14,040
+00:00:10,408 --> 00:00:15,192
 Often it's reaching for more machinery before confirming the first machine was
 
 5
-00:00:14,040 --> 00:00:15,398
+00:00:15,192 --> 00:00:16,664
 actually the bottleneck.
 
 6
-00:00:15,398 --> 00:00:20,036
+00:00:16,664 --> 00:00:21,693
 It's also, this year specifically, the architecture every vendor demo reaches for,
 
 7
-00:00:20,036 --> 00:00:24,675
+00:00:21,693 --> 00:00:26,723
 because a planner coordinating three specialised workers is a genuinely impressive
 
 8
-00:00:24,675 --> 00:00:25,523
+00:00:26,723 --> 00:00:27,643
 thing to watch.
 
 9
-00:00:25,523 --> 00:00:30,275
+00:00:27,643 --> 00:00:32,795
 Impressive to watch and proportionate to the task are two different claims, and only
 
 10
-00:00:30,275 --> 00:00:32,651
+00:00:32,795 --> 00:00:35,370
 one of them belongs in a scoping decision.
 
 11
-00:00:32,651 --> 00:00:34,518
+00:00:35,370 --> 00:00:37,394
 Here's the honest starting point.
 
 12
-00:00:34,518 --> 00:00:39,270
+00:00:37,394 --> 00:00:42,546
 Every handoff between two agents, one's output becoming another's input, is one more
 
 13
-00:00:39,270 --> 00:00:42,494
+00:00:42,546 --> 00:00:46,042
 step in exactly the chain 6.3 taught you to multiply out.
 
 14
-00:00:42,494 --> 00:00:46,341
+00:00:46,042 --> 00:00:50,213
 Splitting a task across agents doesn't remove steps from that chain.
 
 15
-00:00:46,341 --> 00:00:51,036
+00:00:50,213 --> 00:00:55,303
 It usually adds one: the step where agent A's output has to be correctly understood
 
 16
-00:00:51,036 --> 00:00:51,659
+00:00:55,303 --> 00:00:55,978
 by agent B.
 
 17
-00:00:51,659 --> 00:00:56,128
+00:00:55,978 --> 00:01:00,823
 That's worth sitting with before anything else in this lecture, because it cuts
 
 18
-00:00:56,128 --> 00:00:58,560
+00:01:00,823 --> 00:01:03,460
 against the intuition most pitches lean on.
 
 19
-00:00:58,560 --> 00:01:03,255
+00:01:03,460 --> 00:01:08,551
 "Two specialised agents" sounds like it should be more reliable than one generalist
 
 20
-00:01:03,255 --> 00:01:04,217
+00:01:08,551 --> 00:01:09,594
 doing everything.
 
 21
-00:01:04,217 --> 00:01:08,120
+00:01:09,594 --> 00:01:13,826
 Specialisation can genuinely help each agent's own per-step accuracy.
 
 22
-00:01:08,120 --> 00:01:12,646
+00:01:13,826 --> 00:01:18,732
 It doesn't touch the new step created at the seam between them, and that seam is
 
 23
-00:01:12,646 --> 00:01:15,361
+00:01:18,732 --> 00:01:21,676
 exactly where 6.3's maths starts counting again.
 
 24
-00:01:15,911 --> 00:01:20,517
+00:01:22,226 --> 00:01:27,165
 Picture that shape built for something concrete: a planner agent breaks a request
 
 25
-00:01:20,517 --> 00:01:25,067
+00:01:27,165 --> 00:01:32,043
 into research and drafting, hands each to a specialised worker, and a merge step
 
 26
-00:01:25,067 --> 00:01:27,227
+00:01:32,043 --> 00:01:34,360
 reconciles both before anything ships.
 
 27
-00:01:27,227 --> 00:01:31,890
+00:01:34,360 --> 00:01:39,359
 Every arrow in that diagram is a handoff, and every handoff is a new place for the
 
 28
-00:01:31,890 --> 00:01:33,369
+00:01:39,359 --> 00:01:40,945
 reliability maths to bite.
 
 29
-00:01:33,369 --> 00:01:38,145
+00:01:40,945 --> 00:01:46,066
 The research worker has to produce something the drafting worker, or the merge step,
 
 30
-00:01:38,145 --> 00:01:39,681
+00:01:46,066 --> 00:01:47,712
 can actually use correctly.
 
 31
-00:01:39,681 --> 00:01:44,344
+00:01:47,712 --> 00:01:52,712
 If the researcher's output is ambiguous and the merge step misreads it with even a
 
 32
-00:01:44,344 --> 00:01:48,779
+00:01:52,712 --> 00:01:57,468
 small probability, you've added a whole new multiplication to a chain that was
 
 33
-00:01:48,779 --> 00:01:52,077
+00:01:57,468 --> 00:02:01,004
 already compounding before you added a second agent to it.
 
 34
-00:01:52,077 --> 00:01:53,897
+00:02:01,004 --> 00:02:02,956
 So how long is the actual chain?
 
 35
-00:01:53,897 --> 00:01:57,707
+00:02:02,956 --> 00:02:07,041
 Longer than the diagram first suggests, once you count it honestly.
 
 36
-00:01:57,707 --> 00:02:02,370
+00:02:07,041 --> 00:02:12,040
 The planner's own decisions, each worker's internal steps from 6.1's loop, and now
 
 37
-00:02:02,370 --> 00:02:05,895
+00:02:12,040 --> 00:02:15,821
 the merge step reconciling two outputs instead of reading one.
 
 38
-00:02:05,895 --> 00:02:10,444
+00:02:15,821 --> 00:02:20,699
 A task that looked like four steps as a single agent can easily be eight or nine
 
 39
-00:02:10,444 --> 00:02:15,050
+00:02:20,699 --> 00:02:25,637
 once it's been split across a planner and two workers, and the whole-chain number
 
 40
-00:02:15,050 --> 00:02:17,041
+00:02:25,637 --> 00:02:27,771
 from 6.3's table drops accordingly.
 
 41
-00:02:17,591 --> 00:02:21,235
+00:02:28,321 --> 00:02:32,292
 Notice the left column isn't wrong about what multi-agent can do.
 
 42
-00:02:21,235 --> 00:02:25,888
+00:02:32,292 --> 00:02:37,362
 It's wrong about when to find out, and finding out is expensive in exactly the ways
 
 43
-00:02:25,888 --> 00:02:26,897
+00:02:37,362 --> 00:02:38,462
 that column lists.
 
 44
-00:02:26,897 --> 00:02:29,813
+00:02:38,462 --> 00:02:41,638
 Local doesn't mean a permanent architectural choice.
 
 45
-00:02:29,813 --> 00:02:34,466
+00:02:41,638 --> 00:02:46,708
 It means proving the handoffs actually work, on your own machine, where a bad merge
 
 46
-00:02:34,466 --> 00:02:38,727
+00:02:46,708 --> 00:02:51,351
 step costs you a rerun instead of an API bill and a confused support ticket.
 
 47
-00:02:38,727 --> 00:02:43,156
+00:02:51,351 --> 00:02:56,176
 Once the trace looks clean locally, moving it to production infrastructure is a
 
 48
-00:02:43,156 --> 00:02:44,278
+00:02:56,176 --> 00:02:57,398
 deployment decision.
 
 49
-00:02:44,278 --> 00:02:48,763
+00:02:57,398 --> 00:03:02,285
 Skipping straight to production is a debugging decision you didn't mean to make.
 
 50
-00:02:48,763 --> 00:02:53,248
+00:03:02,285 --> 00:03:07,172
 "Local" here means local infrastructure and a trace you can actually read end to
 
 51
-00:02:53,248 --> 00:02:57,789
+00:03:07,172 --> 00:03:12,120
 end, not a specific claim that a self-hosted model beats a hosted one on quality.
 
 52
-00:02:57,789 --> 00:03:02,387
+00:03:12,120 --> 00:03:17,129
 Some teams prototype with the same hosted model they'd use in production, just run
 
 53
-00:03:02,387 --> 00:03:06,199
+00:03:17,129 --> 00:03:21,283
 against local logs and a local test harness instead of live traffic.
 
 54
-00:03:06,199 --> 00:03:07,769
+00:03:21,283 --> 00:03:22,993
 The point isn't which model.
 
 55
-00:03:07,769 --> 00:03:12,366
+00:03:22,993 --> 00:03:28,002
 It's whether you can see every handoff clearly before real users depend on getting
 
 56
-00:03:12,366 --> 00:03:14,048
+00:03:28,002 --> 00:03:29,835
 through all of them correctly.
 
 57
-00:03:14,598 --> 00:03:19,254
+00:03:30,385 --> 00:03:35,442
 Say the honest caveat, because multi-agent has genuine uses and this section would
 
 58
-00:03:19,254 --> 00:03:23,115
+00:03:35,442 --> 00:03:39,635
 be dishonest pretending otherwise, and it's also genuinely oversold.
 
 59
-00:03:23,115 --> 00:03:27,544
+00:03:39,635 --> 00:03:44,445
 Before building the planner-and-workers version of anything, try rewriting the
 
 60
-00:03:27,544 --> 00:03:31,576
+00:03:44,445 --> 00:03:48,824
 single agent's instructions more precisely, or breaking the task into a
 
 61
-00:03:31,576 --> 00:03:35,834
+00:03:48,824 --> 00:03:53,449
 plan-then-execute sequence inside one agent, the pattern from last lecture.
 
 62
-00:03:35,834 --> 00:03:40,490
+00:03:53,449 --> 00:03:58,506
 If that solves it, you've kept the reliability maths from last lecture and skipped
 
 63
-00:03:40,490 --> 00:03:42,421
+00:03:58,506 --> 00:04:00,603
 every handoff this one just added.
 
 64
-00:03:42,421 --> 00:03:47,191
+00:04:00,603 --> 00:04:05,783
 Reach for a second agent when the subtasks genuinely need different tools, different
 
 65
-00:03:47,191 --> 00:03:51,676
+00:04:05,783 --> 00:04:10,655
 context, or real parallelism, not because the first attempt's prompt was vague.
 
 66
-00:03:51,676 --> 00:03:55,821
+00:04:10,655 --> 00:04:15,157
 Genuine parallelism is the strongest of those three reasons, worth naming
 
 67
-00:03:55,821 --> 00:03:56,559
+00:04:15,157 --> 00:04:15,959
 specifically.
 
 68
-00:03:56,559 --> 00:04:01,329
+00:04:15,959 --> 00:04:21,139
 If two subtasks truly don't depend on each other's output, research and a completely
 
 69
-00:04:01,329 --> 00:04:05,985
+00:04:21,139 --> 00:04:26,196
 separate compliance check, say, running them as parallel agents can save real time
 
 70
-00:04:05,985 --> 00:04:08,597
+00:04:26,196 --> 00:04:29,033
 without adding a handoff on the critical path.
 
 71
-00:04:08,597 --> 00:04:13,196
+00:04:29,033 --> 00:04:34,028
 That's a materially different case from splitting one sequential task into stages
 
 72
-00:04:13,196 --> 00:04:17,285
+00:04:34,028 --> 00:04:38,469
 just because it felt like the architecturally sophisticated thing to do.
 
 73
-00:04:17,835 --> 00:04:22,240
+00:04:39,019 --> 00:04:43,797
 That's the definition worth keeping, and the second sentence is the part most
 
 74
-00:04:22,240 --> 00:04:25,958
+00:04:43,797 --> 00:04:47,830
 pitches skip: a handoff is a new step, not a free specialisation.
 
 75
-00:04:25,958 --> 00:04:30,650
+00:04:47,830 --> 00:04:52,918
 Run the exercise on a real proposal, the same discipline as every other lecture in
 
 76
-00:04:30,650 --> 00:04:31,393
+00:04:52,918 --> 00:04:53,725
 this section.
 
 77
-00:04:31,393 --> 00:04:36,142
+00:04:53,725 --> 00:04:58,875
 If nobody can name the specific thing a single agent genuinely can't do, that's not
 
 78
-00:04:36,142 --> 00:04:37,744
+00:04:58,875 --> 00:05:00,612
 a reason to say no outright.
 
 79
-00:04:37,744 --> 00:04:41,977
+00:05:00,612 --> 00:05:05,204
 It's a reason to ask for the local prototype before the production budget.
 
 80
-00:04:41,977 --> 00:04:46,325
+00:05:05,204 --> 00:05:09,920
 Notice this is the identical instinct from 6.1's opening test, one level up.
 
 81
-00:04:46,325 --> 00:04:50,558
+00:05:09,920 --> 00:05:14,512
 There, the question was whether the model decides the next step or a human
 
 82
-00:04:50,558 --> 00:04:51,531
+00:05:14,512 --> 00:05:15,567
 predetermined it.
 
 83
-00:04:51,531 --> 00:04:56,222
+00:05:15,567 --> 00:05:20,655
 Here, it's whether splitting the work across agents was actually necessary or just
 
 84
-00:04:56,222 --> 00:04:58,339
+00:05:20,655 --> 00:05:22,951
 felt like the more impressive answer.
 
 85
-00:04:58,339 --> 00:05:02,630
+00:05:22,951 --> 00:05:27,604
 Both questions exist to stop architecture from expanding past what the task
 
 86
-00:05:02,630 --> 00:05:03,717
+00:05:27,604 --> 00:05:28,783
 genuinely required.
 
 87
-00:05:04,267 --> 00:05:05,907
+00:05:29,333 --> 00:05:31,101
 One thing before you move on.
 
 88
-00:05:05,907 --> 00:05:10,658
+00:05:31,101 --> 00:05:36,221
 Count the handoffs specifically, the same way you counted steps for 6.3's table, and
 
 89
-00:05:10,658 --> 00:05:13,260
+00:05:36,221 --> 00:05:39,025
 ask what a misread at each one actually costs.
 
 90
-00:05:13,260 --> 00:05:18,011
+00:05:39,025 --> 00:05:44,145
 Then ask the deployment question directly: "prototyping locally first" and "building
 
 91
-00:05:18,011 --> 00:05:22,650
+00:05:44,145 --> 00:05:49,143
 straight into the production pipeline" are two different risk profiles wearing the
 
 92
-00:05:22,650 --> 00:05:24,120
+00:05:49,143 --> 00:05:50,728
 same architecture diagram.
 
 93
-00:05:24,120 --> 00:05:28,815
+00:05:50,728 --> 00:05:55,787
 Next lecture gives you the guardrails that apply whichever answer you get, and it's
 
 94
-00:05:28,815 --> 00:05:32,944
+00:05:55,787 --> 00:06:00,236
 worth having both of today's questions answered before you walk into that
 
 95
-00:05:32,944 --> 00:05:33,679
+00:06:00,236 --> 00:06:01,029
 conversation.

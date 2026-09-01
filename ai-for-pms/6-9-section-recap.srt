@@ -1,95 +1,95 @@
 1
-00:00:00,350 --> 00:00:04,723
+00:00:00,350 --> 00:00:05,023
 Ten lectures ago, this section opened with the riskiest, most expensive box on
 
 2
-00:00:04,723 --> 00:00:08,143
+00:00:05,023 --> 00:00:08,678
 Section two's decision tree, the one worth reaching for last.
 
 3
-00:00:08,143 --> 00:00:10,610
+00:00:08,678 --> 00:00:11,314
 Here's what you can actually do with it now.
 
 4
-00:00:10,610 --> 00:00:14,984
+00:00:11,314 --> 00:00:15,988
 You've got the one-question test for whether something calling itself an agent
 
 5
-00:00:14,984 --> 00:00:19,581
+00:00:15,988 --> 00:00:20,901
 actually is one: who decides the next step, its builder in advance or the model in
 
 6
-00:00:19,581 --> 00:00:20,198
+00:00:20,901 --> 00:00:21,560
 the moment.
 
 7
-00:00:20,198 --> 00:00:24,907
+00:00:21,560 --> 00:00:26,592
 You can compute the real cost of a multi-step chain instead of trusting how reliable
 
 8
-00:00:24,907 --> 00:00:29,225
+00:00:26,592 --> 00:00:31,206
 a demo felt, and you know that a second agent adds a handoff, not a shortcut.
 
 9
-00:00:29,225 --> 00:00:33,654
+00:00:31,206 --> 00:00:35,939
 You know the three patterns that keep an agent alive past its first bad network
 
 10
-00:00:33,654 --> 00:00:38,364
+00:00:35,939 --> 00:00:40,972
 timeout, and the two questions, reversible and how much it costs if wrong, that tell
 
 11
-00:00:38,364 --> 00:00:40,606
+00:00:40,972 --> 00:00:43,368
 you exactly where a guardrail has to go.
 
 12
-00:00:40,606 --> 00:00:45,148
+00:00:43,368 --> 00:00:48,221
 And you've got a four-row checklist for the moments none of that is enough, where
 
 13
-00:00:45,148 --> 00:00:48,231
+00:00:48,221 --> 00:00:51,517
 the honest answer is to stay a workflow a while longer.
 
 14
-00:00:48,781 --> 00:00:53,373
+00:00:52,067 --> 00:00:57,014
 One downloadable artifact came out of this section, but don't let the count fool
 
 15
-00:00:53,373 --> 00:00:53,602
+00:00:57,014 --> 00:00:57,262
 you.
 
 16
-00:00:53,602 --> 00:00:58,251
+00:00:57,262 --> 00:01:02,271
 It's carrying seven separate decisions from seven separate lectures, the same way
 
 17
-00:00:58,251 --> 00:01:03,014
+00:01:02,271 --> 00:01:07,405
 Section three's PRD and Section five's design doc each compressed their own section
 
 18
-00:01:03,014 --> 00:01:04,047
+00:01:07,405 --> 00:01:08,518
 into one document.
 
 19
-00:01:04,047 --> 00:01:06,572
+00:01:08,518 --> 00:01:11,239
 Use it on something real before you move on.
 
 20
-00:01:06,572 --> 00:01:11,106
+00:01:11,239 --> 00:01:16,125
 Not a hypothetical automation, the one you've actually been asked about or have
 
 21
-00:01:11,106 --> 00:01:12,598
+00:01:16,125 --> 00:01:17,733
 actually been considering.
 
 22
-00:01:12,598 --> 00:01:17,132
+00:01:17,733 --> 00:01:22,619
 Next section leaves reliability and risk behind for a number every one of these
 
 23
-00:01:17,132 --> 00:01:21,780
+00:01:22,619 --> 00:01:27,629
 agents eventually has to answer to: what it costs to run, per user, per call, and
 
 24
-00:01:21,780 --> 00:01:24,765
+00:01:27,629 --> 00:01:30,845
 the margin trap that shows up when nobody's checked.

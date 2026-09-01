@@ -1,367 +1,367 @@
 1
-00:00:00,350 --> 00:00:04,989
+00:00:00,350 --> 00:00:05,321
 Last lecture's loop had one box doing all the interesting work: act, call a tool.
 
 2
-00:00:04,989 --> 00:00:09,799
+00:00:05,321 --> 00:00:10,475
 Here's exactly what that box contains, because "the AI checked my calendar" is doing
 
 3
-00:00:09,799 --> 00:00:13,178
+00:00:10,475 --> 00:00:14,096
 a lot of hidden mechanical work you should be able to name.
 
 4
-00:00:13,178 --> 00:00:14,895
+00:00:14,096 --> 00:00:15,937
 Two things make this possible.
 
 5
-00:00:14,895 --> 00:00:19,706
+00:00:15,937 --> 00:00:21,091
 Function calling is how a model asks for something specific instead of just talking.
 
 6
-00:00:19,706 --> 00:00:24,516
+00:00:21,091 --> 00:00:26,246
 MCP is how it reaches your actual tools, Workspace, Notion, Lark, whatever your team
 
 7
-00:00:24,516 --> 00:00:28,009
+00:00:26,246 --> 00:00:29,989
 runs on, without someone hand-wiring every single connection.
 
 8
-00:00:28,009 --> 00:00:32,648
+00:00:29,989 --> 00:00:34,960
 Neither one is exotic once you see it plainly, and that's the actual goal of this
 
 9
-00:00:32,648 --> 00:00:33,106
+00:00:34,960 --> 00:00:35,451
 lecture.
 
 10
-00:00:33,106 --> 00:00:37,458
+00:00:35,451 --> 00:00:40,114
 Not to make you able to build either, but to make sure nobody can wave "it's
 
 11
-00:00:37,458 --> 00:00:41,925
+00:00:40,114 --> 00:00:44,901
 connected via MCP" at you as though that settles a question it hasn't actually
 
 12
-00:00:41,925 --> 00:00:42,669
+00:00:44,901 --> 00:00:45,699
 answered yet.
 
 13
-00:00:43,219 --> 00:00:47,538
+00:00:46,249 --> 00:00:50,890
 That's the whole mechanism, and the detail worth sitting with is the middle box.
 
 14
-00:00:47,538 --> 00:00:49,752
+00:00:50,890 --> 00:00:53,269
 The model doesn't write and execute code.
 
 15
-00:00:49,752 --> 00:00:54,017
+00:00:53,269 --> 00:00:57,852
 It emits a structured request, a function name and some arguments, formatted so
 
 16
-00:00:54,017 --> 00:00:55,150
+00:00:57,852 --> 00:00:59,070
 software can read it.
 
 17
-00:00:55,150 --> 00:00:59,469
+00:00:59,070 --> 00:01:03,711
 Your system is the one that actually calls the calendar, checks the result makes
 
 18
-00:00:59,469 --> 00:01:03,896
+00:01:03,711 --> 00:01:08,468
 sense, and hands the answer back as text the model reads like anything else in its
 
 19
-00:01:03,896 --> 00:01:04,328
+00:01:08,468 --> 00:01:08,933
 context.
 
 20
-00:01:04,328 --> 00:01:08,863
+00:01:08,933 --> 00:01:13,806
 So where do you actually get to enforce the rules that matter: which functions exist
 
 21
-00:01:08,863 --> 00:01:13,344
+00:01:13,806 --> 00:01:18,621
 at all, what arguments are allowed, whether this particular action needs a human to
 
 22
-00:01:13,344 --> 00:01:14,262
+00:01:18,621 --> 00:01:19,607
 approve it first?
 
 23
-00:01:14,262 --> 00:01:16,043
+00:01:19,607 --> 00:01:21,522
 Right there, in that middle step.
 
 24
-00:01:16,043 --> 00:01:17,069
+00:01:21,522 --> 00:01:22,624
 The model requests.
 
 25
-00:01:17,069 --> 00:01:19,121
+00:01:22,624 --> 00:01:24,829
 Your system decides whether to comply.
 
 26
-00:01:19,121 --> 00:01:23,494
+00:01:24,829 --> 00:01:29,528
 Losing sight of that boundary is how a demo video convinces a room that the model
 
 27
-00:01:23,494 --> 00:01:26,787
+00:01:29,528 --> 00:01:33,067
 has more direct access to your systems than it actually does.
 
 28
-00:01:26,787 --> 00:01:30,458
+00:01:33,067 --> 00:01:37,012
 Extend the loop one step further and the picture gets more concrete.
 
 29
-00:01:30,458 --> 00:01:34,885
+00:01:37,012 --> 00:01:41,769
 Say the model checked the calendar, found a free slot, and now wants to schedule a
 
 30
-00:01:34,885 --> 00:01:35,317
+00:01:41,769 --> 00:01:42,233
 meeting.
 
 31
-00:01:35,317 --> 00:01:39,420
+00:01:42,233 --> 00:01:46,643
 That's a second function call, "create_event", with its own arguments: time,
 
 32
-00:01:39,420 --> 00:01:41,309
+00:01:46,643 --> 00:01:48,673
 attendees, a title it wrote itself.
 
 33
-00:01:41,309 --> 00:01:45,466
+00:01:48,673 --> 00:01:53,140
 Reading a calendar and creating an event look identical from the chat window.
 
 34
-00:01:45,466 --> 00:01:49,839
+00:01:53,140 --> 00:01:57,839
 They are not identical requests, and treating them as though they were is exactly
 
 35
-00:01:49,839 --> 00:01:51,837
+00:01:57,839 --> 00:01:59,986
 the gap this lecture exists to close.
 
 36
-00:01:52,387 --> 00:01:56,920
+00:02:00,536 --> 00:02:05,361
 Before this protocol existed, every one of those rows meant an engineer writing
 
 37
-00:01:56,920 --> 00:02:01,626
+00:02:05,361 --> 00:02:10,370
 bespoke code to talk to that specific product's API, then maintaining it when that
 
 38
-00:02:01,626 --> 00:02:03,233
+00:02:10,370 --> 00:02:12,080
 API changed underneath them.
 
 39
-00:02:03,233 --> 00:02:07,595
+00:02:12,080 --> 00:02:16,723
 MCP standardises the middle of that picture: one protocol an agent speaks to
 
 40
-00:02:07,595 --> 00:02:12,415
+00:02:16,723 --> 00:02:21,853
 discover what a tool offers and call it, the same way regardless of whether the tool
 
 41
-00:02:12,415 --> 00:02:14,137
+00:02:21,853 --> 00:02:23,686
 is Workspace, Notion, or Lark.
 
 42
-00:02:14,137 --> 00:02:17,465
+00:02:23,686 --> 00:02:27,229
 It doesn't remove the work of connecting to a real system.
 
 43
-00:02:17,465 --> 00:02:22,171
+00:02:27,229 --> 00:02:32,237
 It means that work gets done once, by whoever maintains that connector, instead of
 
 44
-00:02:22,171 --> 00:02:24,524
+00:02:32,237 --> 00:02:34,742
 once per project that happens to need it.
 
 45
-00:02:24,524 --> 00:02:28,828
+00:02:34,742 --> 00:02:39,323
 That's the actual shift worth understanding, not the name of any particular
 
 46
-00:02:28,828 --> 00:02:30,894
+00:02:39,323 --> 00:02:41,522
 connector, which will keep changing.
 
 47
-00:02:30,894 --> 00:02:33,649
+00:02:41,522 --> 00:02:44,454
 What it doesn't standardise is worth naming too.
 
 48
-00:02:33,649 --> 00:02:38,470
+00:02:44,454 --> 00:02:49,585
 A protocol says nothing about whether a specific connector was built carefully, what
 
 49
-00:02:38,470 --> 00:02:43,118
+00:02:49,585 --> 00:02:54,532
 it logs, or whether the person who installed it read the permission scopes before
 
 50
-00:02:43,118 --> 00:02:43,979
+00:02:54,532 --> 00:02:55,448
 approving them.
 
 51
-00:02:43,979 --> 00:02:48,455
+00:02:55,448 --> 00:03:00,213
 Two calendar connectors can speak identical MCP and still differ completely on
 
 52
-00:02:48,455 --> 00:02:51,038
+00:03:00,213 --> 00:03:02,961
 whether a mistaken write is even recoverable.
 
 53
-00:02:51,038 --> 00:02:54,711
+00:03:02,961 --> 00:03:06,871
 Standard plumbing is not the same claim as trustworthy plumbing.
 
 54
-00:02:55,261 --> 00:02:59,787
+00:03:07,421 --> 00:03:12,283
 Say the honest caveat, because "connect it to Workspace" sounds like one decision
 
 55
-00:02:59,787 --> 00:03:01,128
+00:03:12,283 --> 00:03:13,724
 and is actually several.
 
 56
-00:03:01,128 --> 00:03:03,363
+00:03:13,724 --> 00:03:16,125
 Read access to a calendar is low stakes.
 
 57
-00:03:03,363 --> 00:03:07,945
+00:03:16,125 --> 00:03:21,048
 Write access, the ability to create events, send email, or edit a live document on
 
 58
-00:03:07,945 --> 00:03:12,583
+00:03:21,048 --> 00:03:26,031
 its own, is a completely different risk, and it's easy to grant more than you meant
 
 59
-00:03:12,583 --> 00:03:16,159
+00:03:26,031 --> 00:03:29,873
 to because the connector ships with both switched on by default.
 
 60
-00:03:16,159 --> 00:03:20,741
+00:03:29,873 --> 00:03:34,795
 Before any tool connection goes live, ask specifically what it can write, not just
 
 61
-00:03:20,741 --> 00:03:24,987
+00:03:34,795 --> 00:03:39,358
 what it can read, and whether every write needs a human to approve it first.
 
 62
-00:03:24,987 --> 00:03:29,457
+00:03:39,358 --> 00:03:44,160
 That question is this section's guardrails lecture arriving four lectures early,
 
 63
-00:03:29,457 --> 00:03:31,916
+00:03:44,160 --> 00:03:46,802
 because it genuinely starts here, not there.
 
 64
-00:03:31,916 --> 00:03:34,710
+00:03:46,802 --> 00:03:49,803
 Picture the ordinary way this actually goes wrong.
 
 65
-00:03:34,710 --> 00:03:39,348
+00:03:49,803 --> 00:03:54,786
 Someone approves Workspace access for an agent so it can "check a few calendars," a
 
 66
-00:03:39,348 --> 00:03:41,471
+00:03:54,786 --> 00:03:57,067
 perfectly reasonable-sounding request.
 
 67
-00:03:41,471 --> 00:03:45,941
+00:03:57,067 --> 00:04:01,870
 The connector they installed defaults to read and write on every calendar it can
 
 68
-00:03:45,941 --> 00:03:48,623
+00:04:01,870 --> 00:04:04,752
 see, because that's the simpler product to ship.
 
 69
-00:03:48,623 --> 00:03:51,808
+00:04:04,752 --> 00:04:08,173
 Nobody meant to grant write access to the CEO's calendar.
 
 70
-00:03:51,808 --> 00:03:55,217
+00:04:08,173 --> 00:04:11,835
 Nobody looked closely enough at the scope to notice they had.
 
 71
-00:03:55,767 --> 00:04:00,124
+00:04:12,385 --> 00:04:17,096
 That's the definition worth keeping, and notice what it doesn't promise: nothing
 
 72
-00:04:00,124 --> 00:04:03,992
+00:04:17,096 --> 00:04:21,277
 about which specific tools exist, because that list changes constantly.
 
 73
-00:04:03,992 --> 00:04:08,078
+00:04:21,277 --> 00:04:25,693
 What doesn't change is the shape of the question you ask about any of them.
 
 74
-00:04:08,078 --> 00:04:11,346
+00:04:25,693 --> 00:04:29,226
 Try the exercise on a real proposal, not a hypothetical one.
 
 75
-00:04:11,346 --> 00:04:15,922
+00:04:29,226 --> 00:04:34,172
 A vague answer to "which functions can it call" is the same gap as a vague answer to
 
 76
-00:04:15,922 --> 00:04:18,209
+00:04:34,172 --> 00:04:36,646
 acceptance criteria back in Section three.
 
 77
-00:04:18,209 --> 00:04:22,295
+00:04:36,646 --> 00:04:41,062
 Someone hasn't actually decided yet, and shipping before they do is how the
 
 78
-00:04:22,295 --> 00:04:23,875
+00:04:41,062 --> 00:04:42,769
 write-access mistake happens.
 
 79
-00:04:23,875 --> 00:04:27,361
+00:04:42,769 --> 00:04:46,538
 Notice this exercise doesn't require you to read a line of code.
 
 80
-00:04:27,361 --> 00:04:31,664
+00:04:46,538 --> 00:04:51,190
 The function list is a product decision before it's an engineering one: someone
 
 81
-00:04:31,664 --> 00:04:36,022
+00:04:51,190 --> 00:04:55,901
 chose to expose "create_event" instead of just "check_calendar", and that choice
 
 82
-00:04:36,022 --> 00:04:40,598
+00:04:55,901 --> 00:05:00,847
 deserves the same scrutiny you'd give any other feature decision, not a pass because
 
 83
-00:04:40,598 --> 00:04:42,395
+00:05:00,847 --> 00:05:02,790
 the word agent is attached to it.
 
 84
-00:04:42,945 --> 00:04:44,532
+00:05:03,340 --> 00:05:05,107
 One thing before you move on.
 
 85
-00:04:44,532 --> 00:04:47,597
+00:05:05,107 --> 00:05:08,520
 Make the list itself, split cleanly into read and write.
 
 86
-00:04:47,597 --> 00:04:52,194
+00:05:08,520 --> 00:05:13,639
 Most people asked this question for the first time find the write column longer than
 
 87
-00:04:52,194 --> 00:04:52,960
+00:05:13,639 --> 00:05:14,492
 they expected.
 
 88
-00:04:52,960 --> 00:04:57,557
+00:05:14,492 --> 00:05:19,611
 Then ask the harder one: who actually approved that access, and what the system does
 
 89
-00:04:57,557 --> 00:05:01,333
+00:05:19,611 --> 00:05:23,816
 the moment a call goes wrong, wrong data, wrong recipient, wrong day.
 
 90
-00:05:01,333 --> 00:05:05,710
+00:05:23,816 --> 00:05:28,691
 Next lecture gives you the maths for how often "wrong" shows up once an agent is
 
 91
-00:05:05,710 --> 00:05:09,979
+00:05:28,691 --> 00:05:33,445
 chaining several of these calls together in a row, and it's a less comfortable
 
 92
-00:05:09,979 --> 00:05:11,675
+00:05:33,445 --> 00:05:35,334
 number than most demos suggest.
