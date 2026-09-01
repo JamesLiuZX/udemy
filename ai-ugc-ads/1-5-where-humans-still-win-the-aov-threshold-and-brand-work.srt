@@ -1,359 +1,359 @@
 1
-00:00:00,350 --> 00:00:04,872
+00:00:00,350 --> 00:00:05,243
 Dana keeps a note on her phone titled "premium bundle, someday": a bigger box, more
 
 2
-00:00:04,872 --> 00:00:07,759
+00:00:05,243 --> 00:00:08,368
 socks, a price well past a hundred and fifty dollars.
 
 3
-00:00:07,759 --> 00:00:12,063
+00:00:08,368 --> 00:00:13,026
 She has never priced a shoot against it, because at Harlan's actual fifty-eight
 
 4
-00:00:12,063 --> 00:00:15,387
+00:00:13,026 --> 00:00:16,622
 dollar AOV, the answer isn't close enough to be worth asking.
 
 5
-00:00:15,387 --> 00:00:19,745
+00:00:16,622 --> 00:00:21,339
 Four lectures into "generate more, test honestly", it's time to say exactly why,
 
 6
-00:00:19,745 --> 00:00:24,049
+00:00:21,339 --> 00:00:25,997
 because pretending this approach always wins would make the rest of this course
 
 7
-00:00:24,049 --> 00:00:24,812
+00:00:25,997 --> 00:00:26,822
 untrustworthy.
 
 8
-00:00:24,812 --> 00:00:29,279
+00:00:26,822 --> 00:00:31,656
 There's a number that decides it, and it's not creative quality or brand prestige.
 
 9
-00:00:29,279 --> 00:00:33,638
+00:00:31,656 --> 00:00:36,373
 It's the average order value, the AOV: how much a single sale is actually worth.
 
 10
-00:00:33,638 --> 00:00:37,942
+00:00:36,373 --> 00:00:41,031
 Get on the wrong side of that number and everything you've learned this section
 
 11
-00:00:37,942 --> 00:00:41,102
+00:00:41,031 --> 00:00:44,450
 still works, but it's no longer the best tool for the job.
 
 12
-00:00:41,102 --> 00:00:45,351
+00:00:44,450 --> 00:00:49,049
 This matters because you're going to meet people who've heard one half of this
 
 13
-00:00:45,351 --> 00:00:49,710
+00:00:49,049 --> 00:00:53,766
 course's argument and turned it into a blanket rule: AI volume always wins, full
 
 14
-00:00:49,710 --> 00:00:49,982
+00:00:53,766 --> 00:00:54,060
 stop.
 
 15
-00:00:49,982 --> 00:00:54,177
+00:00:54,060 --> 00:00:58,600
 That's not what the last four lectures actually showed you, and believing the
 
 16
-00:00:54,177 --> 00:00:58,481
+00:00:58,600 --> 00:01:03,258
 blanket version will cost you the one call this section exists to help you make
 
 17
-00:00:58,481 --> 00:00:59,026
+00:01:03,258 --> 00:01:03,847
 correctly.
 
 18
-00:00:59,576 --> 00:01:04,207
+00:01:04,397 --> 00:01:09,396
 Here's why the same decision comes out differently depending on which column you're
 
 19
-00:01:04,207 --> 00:01:04,374
+00:01:09,396 --> 00:01:09,577
 in.
 
 20
-00:01:04,374 --> 00:01:08,894
+00:01:09,577 --> 00:01:14,455
 At Harlan's numbers, a proper shoot needs roughly eighty-eight orders just to pay
 
 21
-00:01:08,894 --> 00:01:11,795
+00:01:14,455 --> 00:01:17,586
 for itself before it's contributed a cent of profit.
 
 22
-00:01:11,795 --> 00:01:16,091
+00:01:17,586 --> 00:01:22,224
 That's a real bet, and if the creative underperforms, it's a bet Harlan loses
 
 23
-00:01:16,091 --> 00:01:19,439
+00:01:22,224 --> 00:01:25,837
 slowly, watching margin disappear order by order for months.
 
 24
-00:01:19,439 --> 00:01:24,070
+00:01:25,837 --> 00:01:30,836
 At two hundred dollars a sale, the same shoot pays for itself in about twenty-three
 
 25
-00:01:24,070 --> 00:01:26,692
+00:01:30,836 --> 00:01:33,666
 orders, absorbed inside a couple of good weeks.
 
 26
-00:01:26,692 --> 00:01:28,366
+00:01:33,666 --> 00:01:35,473
 The creative is the same cost.
 
 27
-00:01:28,366 --> 00:01:31,881
+00:01:35,473 --> 00:01:39,267
 The number of times it has to be right is completely different.
 
 28
-00:01:31,881 --> 00:01:36,568
+00:01:39,267 --> 00:01:44,326
 Flip it around and the same maths tells you something about risk tolerance, not just
 
 29
-00:01:36,568 --> 00:01:37,349
+00:01:44,326 --> 00:01:45,169
 payback speed.
 
 30
-00:01:37,349 --> 00:01:41,310
+00:01:45,169 --> 00:01:49,445
 Eighty-eight orders at Harlan's volume could take months to accumulate.
 
 31
-00:01:41,310 --> 00:01:45,941
+00:01:49,445 --> 00:01:54,444
 A shoot that flops there doesn't just cost money, it costs time the account doesn't
 
 32
-00:01:45,941 --> 00:01:47,671
+00:01:54,444 --> 00:01:56,311
 have to spend finding that out.
 
 33
-00:01:48,221 --> 00:01:52,892
+00:01:56,861 --> 00:02:01,959
 Let's name the line properly, because "it depends" isn't useful without the actual
 
 34
-00:01:52,892 --> 00:01:54,032
+00:02:01,959 --> 00:02:03,203
 mechanism behind it.
 
 35
-00:01:54,032 --> 00:01:58,476
+00:02:03,203 --> 00:02:08,053
 The threshold sits wherever a bigger budget's cost, divided by your margin per
 
 36
-00:01:58,476 --> 00:02:01,780
+00:02:08,053 --> 00:02:11,659
 order, stops asking for an uncomfortable number of orders.
 
 37
-00:02:01,780 --> 00:02:04,572
+00:02:11,659 --> 00:02:14,706
 There's no single dollar figure that's universal.
 
 38
-00:02:04,572 --> 00:02:09,358
+00:02:14,706 --> 00:02:19,929
 It moves with your margin, how often people buy, and how considered the purchase is.
 
 39
-00:02:09,358 --> 00:02:14,029
+00:02:19,929 --> 00:02:25,027
 What stays constant is the question: how many orders does this spend need, and can
 
 40
-00:02:14,029 --> 00:02:17,790
+00:02:25,027 --> 00:02:29,131
 you actually stomach that many going wrong before it turns around?
 
 41
-00:02:17,790 --> 00:02:22,347
+00:02:29,131 --> 00:02:34,105
 This is also why the same rule shows up in completely different industries under
 
 42
-00:02:22,347 --> 00:02:23,259
+00:02:34,105 --> 00:02:35,100
 different names.
 
 43
-00:02:23,259 --> 00:02:27,874
+00:02:35,100 --> 00:02:40,137
 A software company thinking about an enterprise sales team asks a version of this
 
 44
-00:02:27,874 --> 00:02:28,387
+00:02:40,137 --> 00:02:40,696
 question.
 
 45
-00:02:28,387 --> 00:02:33,001
+00:02:40,696 --> 00:02:45,733
 A publisher deciding whether a book is worth an advance asks a version of it too.
 
 46
-00:02:33,001 --> 00:02:34,084
+00:02:45,733 --> 00:02:46,914
 The number changes.
 
 47
-00:02:34,084 --> 00:02:37,958
+00:02:46,914 --> 00:02:51,142
 The underlying arithmetic, cost divided by margin per unit, doesn't.
 
 48
-00:02:38,508 --> 00:02:42,620
+00:02:51,692 --> 00:02:56,211
 I want to be clear that this isn't AI creative losing to "real" creative.
 
 49
-00:02:42,620 --> 00:02:46,620
+00:02:56,211 --> 00:03:00,607
 It's two different tools, correctly matched to two different economics.
 
 50
-00:02:46,620 --> 00:02:51,240
+00:03:00,607 --> 00:03:05,684
 Where the margin per order is thin and purchases happen often, a system that tests
 
 51
-00:02:51,240 --> 00:02:55,859
+00:03:05,684 --> 00:03:10,760
 cheaply and finds a winner statistically beats one confident, expensive bet, every
 
 52
-00:02:55,859 --> 00:02:56,141
+00:03:10,760 --> 00:03:11,070
 time.
 
 53
-00:02:56,141 --> 00:03:00,817
+00:03:11,070 --> 00:03:16,209
 Where the margin is generous and the purchase is considered, rare, or carrying real
 
 54
-00:03:00,817 --> 00:03:05,549
+00:03:16,209 --> 00:03:21,409
 brand weight, a directed, human-made piece earns back its cost easily and often does
 
 55
-00:03:05,549 --> 00:03:10,000
+00:03:21,409 --> 00:03:26,300
 a job volume testing was never built for: building trust in a single, unhurried
 
 56
-00:03:10,000 --> 00:03:13,380
+00:03:26,300 --> 00:03:30,015
 moment rather than winning a fraction of a second of scroll.
 
 57
-00:03:13,380 --> 00:03:17,943
+00:03:30,015 --> 00:03:35,029
 Brand campaigns specifically live on the right side of this table for a different
 
 58
-00:03:17,943 --> 00:03:19,520
+00:03:35,029 --> 00:03:36,763
 reason than economics alone.
 
 59
-00:03:19,520 --> 00:03:23,914
+00:03:36,763 --> 00:03:41,592
 Their goal usually isn't "which variant converts this week", it's a consistent
 
 60
-00:03:23,914 --> 00:03:28,647
+00:03:41,592 --> 00:03:46,792
 impression built over months, and a batch of twenty statistically-optimised variants
 
 61
-00:03:28,647 --> 00:03:30,900
+00:03:46,792 --> 00:03:49,269
 actively works against that consistency.
 
 62
-00:03:30,900 --> 00:03:33,435
+00:03:49,269 --> 00:03:52,055
 That's not a failure of this course's method.
 
 63
-00:03:33,435 --> 00:03:36,928
+00:03:52,055 --> 00:03:55,893
 It's a different job with a different success metric entirely.
 
 64
-00:03:37,478 --> 00:03:40,618
+00:03:56,443 --> 00:03:59,839
 So where does the account you're following actually sit?
 
 65
-00:03:40,618 --> 00:03:41,963
+00:03:59,839 --> 00:04:01,295
 Below the line, clearly.
 
 66
-00:03:41,963 --> 00:03:46,616
+00:04:01,295 --> 00:04:06,328
 At fifty-eight dollars, Harlan's whole economics argue for exactly what this course
 
 67
-00:03:46,616 --> 00:03:48,635
+00:04:06,328 --> 00:04:08,511
 teaches: cheap, wide, tested volume.
 
 68
-00:03:48,635 --> 00:03:53,064
+00:04:08,511 --> 00:04:13,301
 If Dana ever launches a premium bundle, something well past a hundred and fifty
 
 69
-00:03:53,064 --> 00:03:57,436
+00:04:13,301 --> 00:04:18,031
 dollars, the maths on this slide starts to argue for a proper shoot around it.
 
 70
-00:03:57,436 --> 00:04:02,034
+00:04:18,031 --> 00:04:23,004
 She hasn't built that yet, so for now, treat the volume approach as the right call
 
 71
-00:04:02,034 --> 00:04:06,631
+00:04:23,004 --> 00:04:27,976
 on its own merits, not a budget compromise she's settling for until she can afford
 
 72
-00:04:06,631 --> 00:04:07,023
+00:04:27,976 --> 00:04:28,400
 better.
 
 73
-00:04:07,023 --> 00:04:11,620
+00:04:28,400 --> 00:04:33,373
 Worth saying plainly: nothing about the rest of this course changes if that bundle
 
 74
-00:04:11,620 --> 00:04:12,573
+00:04:33,373 --> 00:04:34,404
 never gets built.
 
 75
-00:04:12,573 --> 00:04:17,171
+00:04:34,404 --> 00:04:39,376
 Everything from Section two onward assumes exactly the account you've already met,
 
 76
-00:04:17,171 --> 00:04:19,581
+00:04:39,376 --> 00:04:41,984
 at exactly the numbers you've already seen.
 
 77
-00:04:19,581 --> 00:04:24,179
+00:04:41,984 --> 00:04:46,956
 The bundle is a live possibility worth knowing the threshold for, not a plot point
 
 78
-00:04:24,179 --> 00:04:26,085
+00:04:46,956 --> 00:04:49,018
 the rest of the course depends on.
 
 79
-00:04:26,635 --> 00:04:27,741
+00:04:49,568 --> 00:04:50,789
 That's Section one.
 
 80
-00:04:27,741 --> 00:04:32,283
+00:04:50,789 --> 00:04:55,802
 Five ideas, and every one of them has a number attached now instead of a vibe.
 
 81
-00:04:32,283 --> 00:04:36,824
+00:04:55,802 --> 00:05:00,815
 Section two turns all of it into the actual document that decides what's worth
 
 82
-00:04:36,824 --> 00:04:39,212
+00:05:00,815 --> 00:05:03,451
 generating in the first place: the brief.
 
 83
-00:04:39,212 --> 00:04:43,986
+00:05:03,451 --> 00:05:08,721
 It's the difference between twenty real shots at the tail and twenty variations on
 
 84
-00:04:43,986 --> 00:04:45,092
+00:05:08,721 --> 00:05:09,942
 the same one guess.
 
 85
-00:04:45,092 --> 00:04:46,897
+00:05:09,942 --> 00:05:11,934
 One thing before you get there.
 
 86
-00:04:46,897 --> 00:04:51,788
+00:05:11,934 --> 00:05:17,333
 Divide your own product's production cost by its margin per order, the same division
 
 87
-00:04:51,788 --> 00:04:53,768
+00:05:17,333 --> 00:05:19,518
 that placed Harlan below the line.
 
 88
-00:04:53,768 --> 00:04:55,690
+00:05:19,518 --> 00:05:21,639
 Write down what that asks of you.
 
 89
-00:04:55,690 --> 00:05:00,581
+00:05:21,639 --> 00:05:27,038
 It's the first honest input Section 2.6's brief, artifact B01, needs, whichever side
 
 90
-00:05:00,581 --> 00:05:01,978
+00:05:27,038 --> 00:05:28,581
 of the line you land on.

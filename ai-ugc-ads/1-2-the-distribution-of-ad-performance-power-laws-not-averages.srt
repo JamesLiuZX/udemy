@@ -1,435 +1,435 @@
 1
-00:00:00,350 --> 00:00:04,695
+00:00:00,350 --> 00:00:05,099
 Sam opens Harlan's ad account most Monday mornings before anything else gets his
 
 2
-00:00:04,695 --> 00:00:05,238
+00:00:05,099 --> 00:00:05,692
 attention.
 
 3
-00:00:05,238 --> 00:00:09,529
+00:00:05,692 --> 00:00:10,382
 This particular Monday the summary line for the last batch of statics read like
 
 4
-00:00:09,529 --> 00:00:13,711
+00:00:10,382 --> 00:00:14,952
 every other Monday: an average click-through rate, unremarkable, nothing that
 
 5
-00:00:13,711 --> 00:00:14,852
+00:00:14,952 --> 00:00:16,199
 screamed "look here".
 
 6
-00:00:14,852 --> 00:00:17,948
+00:00:16,199 --> 00:00:19,582
 What would you have done with a number that unremarkable?
 
 7
-00:00:17,948 --> 00:00:20,609
+00:00:19,582 --> 00:00:22,491
 He nearly moved straight past it to the next tab.
 
 8
-00:00:20,609 --> 00:00:25,117
+00:00:22,491 --> 00:00:27,418
 Most people would read a summary number like that the way Sam nearly did: picture a
 
 9
-00:00:25,117 --> 00:00:29,571
+00:00:27,418 --> 00:00:32,285
 bell curve, a hump in the middle, most ads clustered somewhere close to average, a
 
 10
-00:00:29,571 --> 00:00:30,875
+00:00:32,285 --> 00:00:33,710
 few better, a few worse.
 
 11
-00:00:30,875 --> 00:00:35,383
+00:00:33,710 --> 00:00:38,636
 That picture is wrong for almost every creative test you'll ever run, and believing
 
 12
-00:00:35,383 --> 00:00:37,664
+00:00:38,636 --> 00:00:41,129
 it nearly cost Sam a result worth scaling.
 
 13
-00:00:37,664 --> 00:00:39,294
+00:00:41,129 --> 00:00:42,910
 It's not a small error either.
 
 14
-00:00:39,294 --> 00:00:43,747
+00:00:42,910 --> 00:00:47,778
 It's the kind of wrong assumption that quietly shapes every decision downstream of
 
 15
-00:00:43,747 --> 00:00:48,201
+00:00:47,778 --> 00:00:52,645
 it: how you split budget, how many variants you bother making, even how you read a
 
 16
-00:00:48,201 --> 00:00:49,396
+00:00:52,645 --> 00:00:53,951
 dashboard at a glance.
 
 17
-00:00:49,396 --> 00:00:53,415
+00:00:53,951 --> 00:00:58,343
 Get the shape wrong and every one of those decisions inherits the mistake.
 
 18
-00:00:53,965 --> 00:00:58,484
+00:00:58,893 --> 00:01:03,771
 Here's the twelve variants from Section zero again, this time by what they actually
 
 19
-00:00:58,484 --> 00:00:58,811
+00:01:03,771 --> 00:01:04,123
 drove.
 
 20
-00:00:58,811 --> 00:01:00,280
+00:01:04,123 --> 00:01:05,710
 Look at where the dots sit.
 
 21
-00:01:00,280 --> 00:01:04,527
+00:01:05,710 --> 00:01:10,293
 Ten of them are crammed against the low end, barely distinguishable from zero.
 
 22
-00:01:04,527 --> 00:01:06,160
+00:01:10,293 --> 00:01:12,056
 One sits a little further out.
 
 23
-00:01:06,160 --> 00:01:10,406
+00:01:12,056 --> 00:01:16,639
 And one is all the way across the chart on its own, doing more than all eleven
 
 24
-00:01:10,406 --> 00:01:11,277
+00:01:16,639 --> 00:01:17,579
 others combined.
 
 25
-00:01:11,277 --> 00:01:12,584
+00:01:17,579 --> 00:01:18,990
 That's not a bell curve.
 
 26
-00:01:12,584 --> 00:01:17,103
+00:01:18,990 --> 00:01:23,867
 That's a pile at the bottom with a long thin tail running off to one side, and it's
 
 27
-00:01:17,103 --> 00:01:21,458
+00:01:23,867 --> 00:01:28,568
 the shape almost every real creative test actually takes, whether the product is
 
 28
-00:01:21,458 --> 00:01:24,670
+00:01:28,568 --> 00:01:32,035
 socks, software, or anything else sold through paid social.
 
 29
-00:01:24,670 --> 00:01:26,902
+00:01:32,035 --> 00:01:34,444
 Notice something else about this picture.
 
 30
-00:01:26,902 --> 00:01:31,311
+00:01:34,444 --> 00:01:39,204
 If you'd stopped the test after looking at the first six or seven variants, you'd
 
 31
-00:01:31,311 --> 00:01:32,999
+00:01:39,204 --> 00:01:41,025
 have seen nothing but the pile.
 
 32
-00:01:32,999 --> 00:01:37,518
+00:01:41,025 --> 00:01:45,902
 The interesting result was waiting at the far end, and nothing about the early data
 
 33
-00:01:37,518 --> 00:01:39,369
+00:01:45,902 --> 00:01:47,900
 would have told you it was coming.
 
 34
-00:01:39,369 --> 00:01:43,669
+00:01:47,900 --> 00:01:52,542
 That's a separate problem from the shape itself, and it's exactly what the next
 
 35
-00:01:43,669 --> 00:01:45,303
+00:01:52,542 --> 00:01:54,305
 lecture's volume maths solves.
 
 36
-00:01:45,853 --> 00:01:49,931
+00:01:54,855 --> 00:01:59,287
 Let's name it properly, because the name tells you what to do differently.
 
 37
-00:01:49,931 --> 00:01:54,451
+00:01:59,287 --> 00:02:04,198
 A normal distribution is the bell curve: most things are close to typical, and the
 
 38
-00:01:54,451 --> 00:01:59,026
+00:02:04,198 --> 00:02:09,169
 further you get from typical in either direction, the rarer it gets, symmetrically.
 
 39
-00:01:59,026 --> 00:02:01,947
+00:02:09,169 --> 00:02:12,343
 A heavy-tailed distribution doesn't behave like that.
 
 40
-00:02:01,947 --> 00:02:06,191
+00:02:12,343 --> 00:02:16,954
 Most outcomes sit near zero, and every so often, one sits far out on its own,
 
 41
-00:02:06,191 --> 00:02:08,450
+00:02:16,954 --> 00:02:19,410
 disproportionate to everything around it.
 
 42
-00:02:08,450 --> 00:02:11,702
+00:02:19,410 --> 00:02:22,943
 You'll have met this shape before, even if nobody named it.
 
 43
-00:02:11,702 --> 00:02:16,057
+00:02:22,943 --> 00:02:27,675
 It's the shape of book sales, where a handful of titles outsell everything else
 
 44
-00:02:16,057 --> 00:02:16,553
+00:02:27,675 --> 00:02:28,214
 combined.
 
 45
-00:02:16,553 --> 00:02:21,182
+00:02:28,214 --> 00:02:33,244
 It's the shape of a venture portfolio, where one investment returns the fund and the
 
 46
-00:02:21,182 --> 00:02:22,175
+00:02:33,244 --> 00:02:34,322
 rest mostly don't.
 
 47
-00:02:22,175 --> 00:02:26,749
+00:02:34,322 --> 00:02:39,293
 Creative testing follows the same pattern, and once you know to expect it, a lot of
 
 48
-00:02:26,749 --> 00:02:29,450
+00:02:39,293 --> 00:02:42,228
 otherwise confusing results stop being confusing.
 
 49
-00:02:29,450 --> 00:02:34,080
+00:02:42,228 --> 00:02:47,258
 Rank your own last test by actual result rather than by launch date, and look at the
 
 50
-00:02:34,080 --> 00:02:37,276
+00:02:47,258 --> 00:02:50,732
 gap between your best performer and your middle performer.
 
 51
-00:02:37,276 --> 00:02:40,143
+00:02:50,732 --> 00:02:53,846
 If that gap is large, you already have a heavy tail.
 
 52
-00:02:40,143 --> 00:02:43,505
+00:02:53,846 --> 00:02:57,499
 Most testing programmes do, whether anyone's named it or not.
 
 53
-00:02:44,055 --> 00:02:47,808
+00:02:58,049 --> 00:03:02,140
 Here's why that average is actively misleading, not just imprecise.
 
 54
-00:02:47,808 --> 00:02:52,178
+00:03:02,140 --> 00:03:06,901
 When ten variants barely move and one dominates, the average sits somewhere in
 
 55
-00:02:52,178 --> 00:02:55,652
+00:03:06,901 --> 00:03:10,686
 between, at a number none of the twelve variants actually hit.
 
 56
-00:02:55,652 --> 00:03:00,358
+00:03:10,686 --> 00:03:15,814
 You could report "1.1 percent average CTR" and it would be true, exactly the kind of
 
 57
-00:03:00,358 --> 00:03:05,064
+00:03:15,814 --> 00:03:20,942
 line Sam nearly scrolled past that Monday, and it would also describe a variant that
 
 58
-00:03:05,064 --> 00:03:07,137
+00:03:20,942 --> 00:03:23,201
 does not exist anywhere in your data.
 
 59
-00:03:07,137 --> 00:03:11,563
+00:03:23,201 --> 00:03:28,024
 This is exactly how a dashboard can tell two different stories to two different
 
 60
-00:03:11,563 --> 00:03:11,955
+00:03:28,024 --> 00:03:28,451
 people.
 
 61
-00:03:11,955 --> 00:03:16,493
+00:03:28,451 --> 00:03:33,396
 Someone glancing at "1.1 percent average" concludes the batch was mediocre across
 
 62
-00:03:16,493 --> 00:03:17,782
+00:03:33,396 --> 00:03:34,800
 the board and moves on.
 
 63
-00:03:17,782 --> 00:03:22,488
+00:03:34,800 --> 00:03:39,928
 Someone who ranks the same twelve variants individually finds a result worth scaling
 
 64
-00:03:22,488 --> 00:03:23,160
+00:03:39,928 --> 00:03:40,661
 immediately.
 
 65
-00:03:23,160 --> 00:03:23,721
+00:03:40,661 --> 00:03:41,271
 Same data.
 
 66
-00:03:23,721 --> 00:03:28,427
+00:03:41,271 --> 00:03:46,399
 Completely different decision, depending on whether you looked at the summary or the
 
 67
-00:03:28,427 --> 00:03:28,763
+00:03:46,399 --> 00:03:46,765
 shape.
 
 68
-00:03:28,763 --> 00:03:32,853
+00:03:46,765 --> 00:03:51,222
 If you make decisions off that average, treating every variant as roughly
 
 69
-00:03:32,853 --> 00:03:37,447
+00:03:51,222 --> 00:03:56,228
 equivalent, you'll under-invest in the one that's actually working and over-invest
 
 70
-00:03:37,447 --> 00:03:39,744
+00:03:56,228 --> 00:03:58,731
 in eleven that were never going anywhere.
 
 71
-00:03:40,294 --> 00:03:43,705
+00:03:59,281 --> 00:04:02,983
 So here's what this actually changes about how you run a test.
 
 72
-00:03:43,705 --> 00:03:48,326
+00:04:02,983 --> 00:04:07,999
 An even split, the same budget to all twenty variants, feels fair and feels careful.
 
 73
-00:03:48,326 --> 00:03:50,746
+00:04:07,999 --> 00:04:10,627
 Against a heavy-tailed result, it's neither.
 
 74
-00:03:50,746 --> 00:03:55,312
+00:04:10,627 --> 00:04:15,583
 It spends real money proving that most of your variants are exactly as unremarkable
 
 75
-00:03:55,312 --> 00:03:59,768
+00:04:15,583 --> 00:04:20,420
 as the shape predicted, and it slows down how fast you find and feed the one that
 
 76
-00:03:59,768 --> 00:04:00,098
+00:04:20,420 --> 00:04:20,779
 isn't.
 
 77
-00:04:00,098 --> 00:04:04,444
+00:04:20,779 --> 00:04:25,496
 The better move, and you'll build the actual mechanics of it in Section 7, is a
 
 78
-00:04:04,444 --> 00:04:08,900
+00:04:25,496 --> 00:04:30,333
 fast, cheap first pass across everything, followed by concentrating spend hard on
 
 79
-00:04:08,900 --> 00:04:10,716
+00:04:30,333 --> 00:04:32,304
 whatever's already pulling ahead.
 
 80
-00:04:10,716 --> 00:04:13,301
+00:04:32,304 --> 00:04:35,111
 You're not being unfair to the losing variants.
 
 81
-00:04:13,301 --> 00:04:16,767
+00:04:35,111 --> 00:04:38,873
 You're respecting the shape of the data instead of fighting it.
 
 82
-00:04:16,767 --> 00:04:20,068
+00:04:38,873 --> 00:04:42,456
 This also changes what a good test plan looks like on paper.
 
 83
-00:04:20,068 --> 00:04:24,469
+00:04:42,456 --> 00:04:47,233
 If someone hands you a plan that spends identically across every variant for the
 
 84
-00:04:24,469 --> 00:04:27,494
+00:04:47,233 --> 00:04:50,518
 full test window, that's a plan built for a bell curve.
 
 85
-00:04:27,494 --> 00:04:32,005
+00:04:50,518 --> 00:04:55,414
 A plan built for a heavy tail front-loads a cheap screening pass and reserves most
 
 86
-00:04:32,005 --> 00:04:34,426
+00:04:55,414 --> 00:04:58,042
 of the budget for whatever the screen finds.
 
 87
-00:04:34,976 --> 00:04:38,831
+00:04:58,592 --> 00:05:02,795
 I want to be honest about the part of this that's genuinely uncomfortable.
 
 88
-00:04:38,831 --> 00:04:43,103
+00:05:02,795 --> 00:05:07,453
 If you run a batch of twenty and eighteen of them underperform, that can feel like
 
 89
-00:04:43,103 --> 00:04:46,593
+00:05:07,453 --> 00:05:11,258
 eighteen failures, especially to anyone paying for the media spend.
 
 90
-00:04:46,593 --> 00:04:47,062
+00:05:11,258 --> 00:05:11,769
 It isn't.
 
 91
-00:04:47,062 --> 00:04:50,761
+00:05:11,769 --> 00:05:15,802
 In a heavy-tailed world, that's what a normal, healthy test looks like.
 
 92
-00:04:50,761 --> 00:04:53,522
+00:05:15,802 --> 00:05:18,812
 The failure mode isn't generating variants that lose.
 
 93
-00:04:53,522 --> 00:04:56,387
+00:05:18,812 --> 00:05:21,936
 It's stopping before you've found the one that doesn't.
 
 94
-00:04:56,387 --> 00:05:00,606
+00:05:21,936 --> 00:05:26,537
 You will have to explain this to someone eventually: a founder, a client, a boss,
 
 95
-00:05:00,606 --> 00:05:04,774
+00:05:26,537 --> 00:05:31,081
 watching a spend report full of small losses and asking whether the programme is
 
 96
-00:05:04,774 --> 00:05:05,191
+00:05:31,081 --> 00:05:31,535
 working.
 
 97
-00:05:05,191 --> 00:05:08,160
+00:05:31,535 --> 00:05:34,772
 The honest answer is that you can't tell from the losses.
 
 98
-00:05:08,160 --> 00:05:12,484
+00:05:34,772 --> 00:05:39,487
 You can only tell from whether a tail has shown up yet, and that means holding your
 
 99
-00:05:12,484 --> 00:05:15,141
+00:05:39,487 --> 00:05:42,383
 nerve through a report that looks worse than it is.
 
 100
-00:05:15,691 --> 00:05:20,345
+00:05:42,933 --> 00:05:48,002
 Next lecture turns this shape into an actual number: how many variants you need to
 
 101
-00:05:20,345 --> 00:05:23,239
+00:05:48,002 --> 00:05:51,154
 generate before a tail this thin reliably shows up.
 
 102
-00:05:23,239 --> 00:05:27,666
+00:05:51,154 --> 00:05:55,976
 It's not infinite, and it's smaller than most people assume once you know what
 
 103
-00:05:27,666 --> 00:05:29,255
+00:05:55,976 --> 00:05:57,706
 you're actually looking for.
 
 104
-00:05:29,255 --> 00:05:32,036
+00:05:57,706 --> 00:06:00,735
 Before that, do the five-minute version yourself.
 
 105
-00:05:32,036 --> 00:05:36,804
+00:06:00,735 --> 00:06:05,927
 Open your last test's results and rank them by what they actually drove, not by when
 
 106
-00:05:36,804 --> 00:05:37,598
+00:06:05,927 --> 00:06:06,793
 they launched.
 
 107
-00:05:37,598 --> 00:05:40,606
+00:06:06,793 --> 00:06:10,069
 Keep that ranked list somewhere you'll find it again.
 
 108
-00:05:40,606 --> 00:05:45,260
+00:06:10,069 --> 00:06:15,137
 It's the first evidence Section 2.6's brief draws on when it turns "generate more"
 
 109
-00:05:45,260 --> 00:05:48,495
+00:06:15,137 --> 00:06:18,661
 into a specific set of angles worth trying, artifact B01.

@@ -1,99 +1,99 @@
 1
-00:00:00,350 --> 00:00:04,929
+00:00:00,350 --> 00:00:05,336
 Five lectures ago, this section promised the numbers underneath "winners are found,
 
 2
-00:00:04,929 --> 00:00:09,563
+00:00:05,336 --> 00:00:10,383
 not picked." Here's the honest tally, and it's the same one Sam actually wrote down.
 
 3
-00:00:09,563 --> 00:00:14,087
+00:00:10,383 --> 00:00:15,309
 You know exactly what got cheap, and what stayed exactly as expensive as it always
 
 4
-00:00:14,087 --> 00:00:14,308
+00:00:15,309 --> 00:00:15,550
 was.
 
 5
-00:00:14,308 --> 00:00:18,832
+00:00:15,550 --> 00:00:20,476
 You've seen why ad performance piles up near zero with a thin tail stretching past
 
 6
-00:00:18,832 --> 00:00:22,307
+00:00:20,476 --> 00:00:24,261
 it, and why an average lies about a result that shape produces.
 
 7
-00:00:22,307 --> 00:00:26,666
+00:00:24,261 --> 00:00:29,007
 You know, mechanically, why confidence can't predict a winner, and you've got a
 
 8
-00:00:26,666 --> 00:00:30,638
+00:00:29,007 --> 00:00:33,332
 number, around twenty, for how many variants a real test actually needs.
 
 9
-00:00:30,638 --> 00:00:34,831
+00:00:33,332 --> 00:00:37,898
 And you know the one honest line where a bigger production budget still wins
 
 10
-00:00:34,831 --> 00:00:35,327
+00:00:37,898 --> 00:00:38,439
 outright.
 
 11
-00:00:35,327 --> 00:00:36,320
+00:00:38,439 --> 00:00:39,520
 That's not trivia.
 
 12
-00:00:36,320 --> 00:00:40,899
+00:00:39,520 --> 00:00:44,507
 Every brief, every test, and every scaling decision from here on is built on one of
 
 13
-00:00:40,899 --> 00:00:41,837
+00:00:44,507 --> 00:00:45,528
 those five ideas.
 
 14
-00:00:42,387 --> 00:00:45,106
+00:00:46,078 --> 00:00:49,036
 One section ahead before any generation happens.
 
 15
-00:00:45,106 --> 00:00:49,863
+00:00:49,036 --> 00:00:54,212
 Section two builds the actual document that turns twenty variants from a theoretical
 
 16
-00:00:49,863 --> 00:00:54,621
+00:00:54,212 --> 00:00:59,388
 number into twenty real, defensible angles: the product truth, the awareness levels,
 
 17
-00:00:54,621 --> 00:00:58,472
+00:00:59,388 --> 00:01:03,578
 the hook taxonomy, and the map that connects all of it to one brief.
 
 18
-00:00:58,472 --> 00:01:03,230
+00:01:03,578 --> 00:01:08,753
 Get that brief right, and the maths from this section starts paying off immediately.
 
 19
-00:01:03,230 --> 00:01:07,874
+00:01:08,753 --> 00:01:13,806
 Get it wrong, and twenty variants just means twenty ways of asking the same narrow
 
 20
-00:01:07,874 --> 00:01:08,383
+00:01:13,806 --> 00:01:14,361
 question.
 
 21
-00:01:08,383 --> 00:01:10,649
+00:01:14,361 --> 00:01:16,825
 Before Section two starts, do one thing.
 
 22
-00:01:10,649 --> 00:01:15,350
+00:01:16,825 --> 00:01:21,940
 Pull together the numbers you've written down across this section, your own margin,
 
 23
-00:01:15,350 --> 00:01:18,408
+00:01:21,940 --> 00:01:25,267
 your own hit-rate guess, your own AOV, into one place.
 
 24
-00:01:18,408 --> 00:01:19,654
+00:01:25,267 --> 00:01:26,623
 That's not tidying up.
 
 25
-00:01:19,654 --> 00:01:23,619
+00:01:26,623 --> 00:01:30,936
 It's the raw material Section 2.6 turns into your brief, artifact B01.
