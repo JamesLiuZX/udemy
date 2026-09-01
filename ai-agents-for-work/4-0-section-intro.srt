@@ -1,11 +1,11 @@
 1
-00:00:00,350 --> 00:00:03,846
+00:00:00,350 --> 00:00:04,142
 You have built one agent already, so this section moves faster.
 
 2
-00:00:03,846 --> 00:00:08,507
+00:00:04,142 --> 00:00:09,199
 New trigger, new judgement, and one genuinely different lesson: what happens when an
 
 3
-00:00:08,507 --> 00:00:12,169
+00:00:09,199 --> 00:00:13,171
 agent's whole job is turning something messy into something short.

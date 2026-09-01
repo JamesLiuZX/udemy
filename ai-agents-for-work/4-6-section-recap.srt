@@ -1,19 +1,19 @@
 1
-00:00:00,350 --> 00:00:04,988
+00:00:00,350 --> 00:00:05,399
 Two agents in, and the pattern is holding: a job description first, a prompt that
 
 2
-00:00:04,988 --> 00:00:09,626
+00:00:05,399 --> 00:00:10,448
 names its own limits, and a test built to catch the mistake before a client does.
 
 3
-00:00:09,626 --> 00:00:13,920
+00:00:10,448 --> 00:00:15,123
 Agent 3 keeps that pattern and adds one new piece: pulling numbers out of a
 
 4
-00:00:13,920 --> 00:00:15,753
+00:00:15,123 --> 00:00:17,118
 spreadsheet Priya already keeps.
 
 5
-00:00:16,303 --> 00:00:17,305
+00:00:17,668 --> 00:00:18,585
 See you there.

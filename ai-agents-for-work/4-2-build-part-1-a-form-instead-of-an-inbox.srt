@@ -1,275 +1,275 @@
 1
-00:00:00,350 --> 00:00:04,922
+00:00:00,350 --> 00:00:05,281
 Search "Form Trigger" in your node panel and add "n8n Form." Unlike the IMAP node,
 
 2
-00:00:04,922 --> 00:00:08,045
+00:00:05,281 --> 00:00:08,649
 this one opens a small menu first: Triggers and Actions.
 
 3
-00:00:08,045 --> 00:00:12,617
+00:00:08,649 --> 00:00:13,581
 You want the trigger, "On new n8n Form event." Why is a manual paste not cheating,
 
 4
-00:00:12,617 --> 00:00:14,234
+00:00:13,581 --> 00:00:15,325
 in a course about automation?
 
 5
-00:00:14,234 --> 00:00:18,248
+00:00:15,325 --> 00:00:19,655
 Because you should spend integration effort where the hours actually go.
 
 6
-00:00:18,248 --> 00:00:22,765
+00:00:19,655 --> 00:00:24,526
 Priya's twenty minutes per call went on reading the transcript and distilling it,
 
 7
-00:00:22,765 --> 00:00:27,002
+00:00:24,526 --> 00:00:29,096
 not on moving the file, and the agent removes the twenty minutes either way.
 
 8
-00:00:27,002 --> 00:00:31,630
+00:00:29,096 --> 00:00:34,088
 Meanwhile every live connection you add is a credential to guard, a blast radius to
 
 9
-00:00:31,630 --> 00:00:35,366
+00:00:34,088 --> 00:00:38,117
 think about, and a thing that breaks when the meeting tool updates.
 
 10
-00:00:35,366 --> 00:00:37,095
+00:00:38,117 --> 00:00:39,981
 A form has none of those costs.
 
 11
-00:00:37,095 --> 00:00:41,109
+00:00:39,981 --> 00:00:44,311
 The judgement, which is the entire value, is identical down both routes.
 
 12
-00:00:41,109 --> 00:00:42,670
+00:00:44,311 --> 00:00:45,995
 Automate the thinking first.
 
 13
-00:00:42,670 --> 00:00:45,960
+00:00:45,995 --> 00:00:49,543
 Automate the transport the day the transport is what hurts.
 
 14
-00:00:45,960 --> 00:00:50,644
+00:00:49,543 --> 00:00:54,595
 Later, if you decide the paste step is one click too many, you can swap this trigger
 
 15
-00:00:50,644 --> 00:00:55,160
+00:00:54,595 --> 00:00:59,466
 for a folder watcher on wherever your meeting tool saves transcripts, and nothing
 
 16
-00:00:55,160 --> 00:00:56,666
+00:00:59,466 --> 00:01:01,090
 else in this build changes.
 
 17
-00:00:56,666 --> 00:01:00,903
+00:01:01,090 --> 00:01:05,661
 That upgrade is worth knowing exists, even if you do not need it on day one.
 
 18
-00:01:01,453 --> 00:01:05,740
+00:01:06,211 --> 00:01:10,907
 You now have a working intake for this agent, and you did not touch a single
 
 19
-00:01:05,740 --> 00:01:06,924
+00:01:10,907 --> 00:01:12,205
 credential to get it.
 
 20
-00:01:06,924 --> 00:01:11,605
+00:01:12,205 --> 00:01:17,334
 That is worth noticing: not every agent in this course needs the setup weight Agent
 
 21
-00:01:11,605 --> 00:01:11,944
+00:01:17,334 --> 00:01:17,705
 1 did.
 
 22
-00:01:11,944 --> 00:01:16,512
+00:01:17,705 --> 00:01:22,711
 Name the three fields with a little care, because these names are not labels on a
 
 23
-00:01:16,512 --> 00:01:21,080
+00:01:22,711 --> 00:01:27,716
 page, they are the columns of the wire table the next lecture's prompt will point
 
 24
-00:01:21,080 --> 00:01:21,250
+00:01:27,716 --> 00:01:27,902
 at.
 
 25
-00:01:21,250 --> 00:01:25,874
+00:01:27,902 --> 00:01:32,969
 Meeting title, Attendees, Transcript: plain words you will recognise from the left
 
 26
-00:01:25,874 --> 00:01:28,074
+00:01:32,969 --> 00:01:35,379
 hand panel when you build the briefing.
 
 27
-00:01:28,074 --> 00:01:32,812
+00:01:35,379 --> 00:01:40,570
 The attendees field earns its place in a specific way: the transcript says "Sam will
 
 28
-00:01:32,812 --> 00:01:37,380
+00:01:40,570 --> 00:01:45,576
 send the figures", and the agent can only turn that into a real owner if it knows
 
 29
-00:01:37,380 --> 00:01:38,846
+00:01:45,576 --> 00:01:47,183
 which Sam was in the room.
 
 30
-00:01:38,846 --> 00:01:41,441
+00:01:47,183 --> 00:01:50,026
 You are not filling in a form for bureaucracy.
 
 31
-00:01:41,441 --> 00:01:46,178
+00:01:50,026 --> 00:01:55,217
 You are handing the agent the context the transcript itself forgets to say out loud.
 
 32
-00:01:46,178 --> 00:01:50,690
+00:01:55,217 --> 00:02:00,160
 Set the transcript field to the multi line type, save, and open the Test URL n8n
 
 33
-00:01:50,690 --> 00:01:55,259
+00:02:00,160 --> 00:02:05,166
 gives you, just to see your own intake page exist: a private little web page that
 
 34
-00:01:55,259 --> 00:01:56,951
+00:02:05,166 --> 00:02:07,020
 did not exist two minutes ago.
 
 35
-00:01:57,501 --> 00:01:59,386
+00:02:07,570 --> 00:02:09,646
 Neither route is the "proper" one.
 
 36
-00:01:59,386 --> 00:02:03,713
+00:02:09,646 --> 00:02:14,409
 The form is simply the one this course can teach without asking you to trust a
 
 37
-00:02:03,713 --> 00:02:05,155
+00:02:14,409 --> 00:02:15,997
 screen it cannot show you.
 
 38
-00:02:05,155 --> 00:02:08,039
+00:02:15,997 --> 00:02:19,173
 Pick whichever one you will actually use every week.
 
 39
-00:02:08,039 --> 00:02:12,697
+00:02:19,173 --> 00:02:24,302
 One more honest word on the right hand card, because "export format" sounds abstract
 
 40
-00:02:12,697 --> 00:02:13,529
+00:02:24,302 --> 00:02:25,218
 until it bites.
 
 41
-00:02:13,529 --> 00:02:18,022
+00:02:25,218 --> 00:02:30,165
 Every meeting tool writes transcripts its own way: different file names, speakers
 
 42
-00:02:18,022 --> 00:02:20,185
+00:02:30,165 --> 00:02:32,546
 marked differently, timestamps or none.
 
 43
-00:02:20,185 --> 00:02:24,733
+00:02:32,546 --> 00:02:37,554
 A folder watcher inherits all of that, which means the day your workplace switches
 
 44
-00:02:24,733 --> 00:02:29,004
+00:02:37,554 --> 00:02:42,256
 meeting tools, the watcher route needs rebuilding and the form route does not
 
 45
-00:02:29,004 --> 00:02:29,392
+00:02:42,256 --> 00:02:42,684
 notice.
 
 46
-00:02:29,392 --> 00:02:33,662
+00:02:42,684 --> 00:02:47,386
 Text pasted into a box is the one format no vendor can change underneath you.
 
 47
-00:02:33,662 --> 00:02:38,155
+00:02:47,386 --> 00:02:52,332
 The upgrade earns its keep at real volume, several transcribed calls a day, every
 
 48
-00:02:38,155 --> 00:02:38,377
+00:02:52,332 --> 00:02:52,576
 day.
 
 49
-00:02:38,377 --> 00:02:42,925
+00:02:52,576 --> 00:02:57,584
 Below that, the form's one click is cheaper than the watcher's maintenance, and it
 
 50
-00:02:42,925 --> 00:02:47,362
+00:02:57,584 --> 00:03:02,469
 keeps a human glance in the loop at the exact moment the raw material enters the
 
 51
-00:02:47,362 --> 00:02:47,750
+00:03:02,469 --> 00:03:02,897
 system.
 
 52
-00:02:48,300 --> 00:02:52,310
+00:03:03,447 --> 00:03:07,825
 Worth pausing on the last box, because it is the honest heart of this build.
 
 53
-00:02:52,310 --> 00:02:55,001
+00:03:07,825 --> 00:03:10,763
 The agent did not remove the work of meeting notes.
 
 54
-00:02:55,001 --> 00:02:59,275
+00:03:10,763 --> 00:03:15,430
 It removed the transcription and drafting, and left the judgement: does this list
 
 55
-00:02:59,275 --> 00:03:00,806
+00:03:15,430 --> 00:03:17,100
 match the call I was just in?
 
 56
-00:03:00,806 --> 00:03:05,185
+00:03:17,100 --> 00:03:21,882
 That division of labour, machine drafts and human verifies, is the shape every good
 
 57
-00:03:05,185 --> 00:03:09,459
+00:03:21,882 --> 00:03:26,548
 agent in this course settles into, and this diagram is the cleanest picture of it
 
 58
-00:03:09,459 --> 00:03:10,145
+00:03:26,548 --> 00:03:27,297
 you will get.
 
 59
-00:03:10,695 --> 00:03:14,178
+00:03:27,847 --> 00:03:31,585
 Before moving on, go and get a real transcript to build against.
 
 60
-00:03:14,178 --> 00:03:18,641
+00:03:31,585 --> 00:03:36,374
 Most meeting tools have a transcription switch you may never have flipped; flip it
 
 61
-00:03:18,641 --> 00:03:23,213
+00:03:36,374 --> 00:03:41,280
 on your next call, or export the text of a recent one if your tool keeps recordings.
 
 62
-00:03:23,213 --> 00:03:24,301
+00:03:41,280 --> 00:03:42,448
 No transcript handy?
 
 63
-00:03:24,301 --> 00:03:28,764
+00:03:42,448 --> 00:03:47,237
 Spend three minutes narrating a fake weekly catch up to yourself with two or three
 
 64
-00:03:28,764 --> 00:03:31,485
+00:03:47,237 --> 00:03:50,157
 commitments in it, names included, and paste that.
 
 65
-00:03:31,485 --> 00:03:35,839
+00:03:50,157 --> 00:03:54,829
 What matters is that the next lecture's prompt gets built against text with real
 
 66
-00:03:35,839 --> 00:03:40,302
+00:03:54,829 --> 00:03:59,618
 mess in it: half sentences, interruptions, a commitment made and then walked back.
 
 67
-00:03:40,302 --> 00:03:44,166
+00:03:59,618 --> 00:04:03,764
 Clean sample text teaches the agent nothing about your actual Tuesdays.
 
 68
-00:03:44,166 --> 00:03:48,738
+00:04:03,764 --> 00:04:08,670
 Next lecture is where this stops being an intake form and starts being an agent: the
 
 69
-00:03:48,738 --> 00:03:52,439
+00:04:08,670 --> 00:04:12,641
 prompt that reads a transcript and pulls the action items out of it.
