@@ -1,343 +1,343 @@
 1
-00:00:00,350 --> 00:00:03,192
+00:00:00,350 --> 00:00:03,480
 A checkout redesign's scope is knowable in advance.
 
 2
-00:00:03,192 --> 00:00:07,817
+00:00:03,480 --> 00:00:08,573
 Nobody needs to discover whether it's technically possible to add a shipping field.
 
 3
-00:00:07,817 --> 00:00:12,498
+00:00:08,573 --> 00:00:13,728
 An AI feature is different in one specific way: whether ninety-five percent accuracy
 
 4
-00:00:12,498 --> 00:00:17,123
+00:00:13,728 --> 00:00:18,821
 is achievable for this task is a genuine unknown until someone's actually built the
 
 5
-00:00:17,123 --> 00:00:21,693
+00:00:18,821 --> 00:00:23,853
 eval and run it, and a roadmap that puts a firm date on that unknown is committing
 
 6
-00:00:21,693 --> 00:00:23,587
+00:00:23,853 --> 00:00:25,939
 to a number nobody has earned yet.
 
 7
-00:00:23,587 --> 00:00:26,987
+00:00:25,939 --> 00:00:29,682
 That's the lie in the title, and it's rarely told on purpose.
 
 8
-00:00:26,987 --> 00:00:30,999
+00:00:29,682 --> 00:00:34,101
 It's told by a template that has one column for "when" and no column for
 
 9
-00:00:30,999 --> 00:00:35,513
+00:00:34,101 --> 00:00:39,071
 "validated," inherited from years of roadmaps for features that never needed that
 
 10
-00:00:35,513 --> 00:00:36,683
+00:00:39,071 --> 00:00:40,360
 second column at all.
 
 11
-00:00:36,683 --> 00:00:41,085
+00:00:40,360 --> 00:00:45,208
 Notice this isn't an argument against roadmaps, or against giving dates at all.
 
 12
-00:00:41,085 --> 00:00:45,543
+00:00:45,208 --> 00:00:50,117
 Plenty of AI roadmap items genuinely are knowable in advance, once the discovery
 
 13
-00:00:45,543 --> 00:00:48,552
+00:00:50,117 --> 00:00:53,431
 sprint's already run and the threshold's already real.
 
 14
-00:00:48,552 --> 00:00:50,614
+00:00:53,431 --> 00:00:55,701
 The problem is never the date itself.
 
 15
-00:00:50,614 --> 00:00:54,738
+00:00:55,701 --> 00:01:00,242
 It's a date that arrived before the evidence that should have produced it.
 
 16
-00:00:55,288 --> 00:01:00,016
+00:01:00,792 --> 00:01:05,900
 Notice the good column doesn't refuse to commit, it just commits to the right thing
 
 17
-00:01:00,016 --> 00:01:01,041
+00:01:05,900 --> 00:01:07,007
 at the right time.
 
 18
-00:01:01,041 --> 00:01:04,858
+00:01:07,007 --> 00:01:11,131
 A discovery sprint by a specific date is a real, checkable promise.
 
 19
-00:01:04,858 --> 00:01:09,642
+00:01:11,131 --> 00:01:16,300
 A ship date and an accuracy number for a capability nobody's measured is two guesses
 
 20
-00:01:09,642 --> 00:01:13,801
+00:01:16,300 --> 00:01:20,792
 stacked on top of each other, presented as one confident line on a slide.
 
 21
-00:01:13,801 --> 00:01:18,585
+00:01:20,792 --> 00:01:25,962
 Notice, too, that the evidence-first line isn't vaguer, it's just honest about which
 
 22
-00:01:18,585 --> 00:01:19,725
+00:01:25,962 --> 00:01:27,192
 part is known today.
 
 23
-00:01:19,725 --> 00:01:24,396
+00:01:27,192 --> 00:01:32,239
 "Discovery sprint by March" is exactly as specific a commitment as "ships Q3." The
 
 24
-00:01:24,396 --> 00:01:28,440
+00:01:32,239 --> 00:01:36,608
 only difference is which fact it's actually willing to promise, and the
 
 25
-00:01:28,440 --> 00:01:32,313
+00:01:36,608 --> 00:01:40,793
 evidence-first version never promises a number it hasn't earned yet.
 
 26
-00:01:32,313 --> 00:01:37,041
+00:01:40,793 --> 00:01:45,901
 The bad column's Q3 conversation is the expensive one, and it's entirely avoidable.
 
 27
-00:01:37,041 --> 00:01:41,484
+00:01:45,901 --> 00:01:50,701
 Nobody enjoys explaining why a promised ninety-five percent arrived at eighty.
 
 28
-00:01:41,484 --> 00:01:46,155
+00:01:50,701 --> 00:01:55,747
 Almost everybody accepts "we're running the sprint in March, and we'll have a real
 
 29
-00:01:46,155 --> 00:01:50,940
+00:01:55,747 --> 00:02:00,916
 number and a real date by April" without complaint, because it's honest about what's
 
 30
-00:01:50,940 --> 00:01:52,364
+00:02:00,916 --> 00:02:02,455
 actually known right now.
 
 31
-00:01:52,914 --> 00:01:57,362
+00:02:03,005 --> 00:02:07,826
 Sit with that meeting specifically, because it's the one every date-first roadmap is
 
 32
-00:01:57,362 --> 00:02:00,274
+00:02:07,826 --> 00:02:10,983
 quietly scheduling months in advance without naming it.
 
 33
-00:02:00,824 --> 00:02:05,266
+00:02:11,533 --> 00:02:16,417
 Read the order left to right, because it's the actual sequence, not just a table
 
 34
-00:02:05,266 --> 00:02:05,655
+00:02:16,417 --> 00:02:16,844
 layout.
 
 35
-00:02:05,655 --> 00:02:10,319
+00:02:16,844 --> 00:02:21,972
 What happens if you fill the date column before the threshold column has anything in
 
 36
-00:02:10,319 --> 00:02:10,485
+00:02:21,972 --> 00:02:22,155
 it?
 
 37
-00:02:10,485 --> 00:02:15,149
+00:02:22,155 --> 00:02:27,283
 Exactly the trap this lecture opened with, just formatted differently: sprint status
 
 38
-00:02:15,149 --> 00:02:18,869
+00:02:27,283 --> 00:02:31,374
 before threshold, threshold before date, never the other way round.
 
 39
-00:02:18,869 --> 00:02:23,422
+00:02:31,374 --> 00:02:36,379
 This table is also where 9.1's metrics stop being abstract and become the specific
 
 40
-00:02:23,422 --> 00:02:24,977
+00:02:36,379 --> 00:02:38,089
 number a roadmap answers to.
 
 41
-00:02:24,977 --> 00:02:29,196
+00:02:38,089 --> 00:02:42,728
 The threshold column isn't "good performance," it's adoption, acceptance, or
 
 42
-00:02:29,196 --> 00:02:33,860
+00:02:42,728 --> 00:02:47,856
 deflection, at a number someone measured, the same discipline the whole back half of
 
 43
-00:02:33,860 --> 00:02:37,136
+00:02:47,856 --> 00:02:51,458
 this course has been building toward one section at a time.
 
 44
-00:02:37,136 --> 00:02:41,634
+00:02:51,458 --> 00:02:56,403
 Notice, too, that this table doesn't ask for more total information than a normal
 
 45
-00:02:41,634 --> 00:02:45,854
+00:02:56,403 --> 00:03:01,042
 roadmap line, just the same information in an order that makes an unmeasured
 
 46
-00:02:45,854 --> 00:02:47,908
+00:03:01,042 --> 00:03:03,301
 commitment visible instead of hidden.
 
 47
-00:02:47,908 --> 00:02:52,405
+00:03:03,301 --> 00:03:08,246
 A line with "in progress" in the sprint-status column and nothing in threshold is
 
 48
-00:02:52,405 --> 00:02:57,069
+00:03:08,246 --> 00:03:13,374
 honest and incomplete, which is a completely different, much safer state than a line
 
 49
-00:02:57,069 --> 00:03:00,012
+00:03:13,374 --> 00:03:16,609
 with a confident-looking date and an invented number.
 
 50
-00:03:00,562 --> 00:03:05,268
+00:03:17,159 --> 00:03:22,336
 Say the honest caveat, because pretending this trade-off doesn't exist helps nobody
 
 51
-00:03:05,268 --> 00:03:07,990
+00:03:22,336 --> 00:03:25,330
 walking into a real roadmap review next quarter.
 
 52
-00:03:07,990 --> 00:03:12,526
+00:03:25,330 --> 00:03:30,320
 A roadmap full of specific dates reads as more confident than one with "date set
 
 53
-00:03:12,526 --> 00:03:17,119
+00:03:30,320 --> 00:03:35,372
 after the sprint" next to half its rows, even when the first one is substantially
 
 54
-00:03:17,119 --> 00:03:17,686
+00:03:35,372 --> 00:03:35,996
 less true.
 
 55
-00:03:17,686 --> 00:03:22,279
+00:03:35,996 --> 00:03:41,048
 This is 10.2's calibration principle again, aimed at an entire quarter instead of
 
 56
-00:03:22,279 --> 00:03:26,815
+00:03:41,048 --> 00:03:46,038
 one stakeholder conversation: the honest version costs you something in the room
 
 57
-00:03:26,815 --> 00:03:31,181
+00:03:46,038 --> 00:03:50,841
 today, and pays you back the day a date would otherwise have quietly slipped.
 
 58
-00:03:31,181 --> 00:03:35,547
+00:03:50,841 --> 00:03:55,643
 Resist the urge to solve this by quietly filling the threshold column with an
 
 59
-00:03:35,547 --> 00:03:38,495
+00:03:55,643 --> 00:03:58,887
 optimistic guess just to make the row look finished.
 
 60
-00:03:38,495 --> 00:03:42,918
+00:03:58,887 --> 00:04:03,752
 That's the exact failure this lecture is naming, now hiding one column deeper.
 
 61
-00:03:42,918 --> 00:03:45,356
+00:04:03,752 --> 00:04:06,434
 An empty threshold cell is an honest state.
 
 62
-00:03:45,356 --> 00:03:49,609
+00:04:06,434 --> 00:04:11,112
 A guessed one dressed up as measured is the same hedge from 10.2, wearing a
 
 63
-00:03:49,609 --> 00:03:51,537
+00:04:11,112 --> 00:04:13,233
 spreadsheet instead of a sentence.
 
 64
-00:03:52,087 --> 00:03:56,601
+00:04:13,783 --> 00:04:18,643
 That's the standard worth holding the next roadmap review to, and the exercise is
 
 65
-00:03:56,601 --> 00:04:00,837
+00:04:18,643 --> 00:04:23,204
 worth running on the actual document your team uses, not a hypothetical one.
 
 66
-00:04:00,837 --> 00:04:05,240
+00:04:23,204 --> 00:04:27,944
 Most roadmaps, checked honestly, have at least one line where the answer is no,
 
 67
-00:04:05,240 --> 00:04:09,810
+00:04:27,944 --> 00:04:32,865
 neither number was measured, it was estimated once in a planning meeting and never
 
 68
-00:04:09,810 --> 00:04:10,367
+00:04:32,865 --> 00:04:33,465
 revisited.
 
 69
-00:04:10,367 --> 00:04:14,938
+00:04:33,465 --> 00:04:38,385
 That line is this lecture's finding, and it's usually the line worth fixing before
 
 70
-00:04:14,938 --> 00:04:18,226
+00:04:38,385 --> 00:04:41,926
 the next review, not the one furthest away on the timeline.
 
 71
-00:04:18,226 --> 00:04:22,239
+00:04:41,926 --> 00:04:46,246
 Run this on the item that worries you most, not the safest one to check.
 
 72
-00:04:22,239 --> 00:04:26,530
+00:04:46,246 --> 00:04:50,867
 The feature everyone's already excited about, the one already mentioned in an
 
 73
-00:04:26,530 --> 00:04:30,989
+00:04:50,867 --> 00:04:55,667
 external announcement, is exactly the one most likely to be carrying an invented
 
 74
-00:04:30,989 --> 00:04:33,553
+00:04:55,667 --> 00:04:58,427
 number nobody's had the nerve to question yet.
 
 75
-00:04:34,103 --> 00:04:35,710
+00:04:58,977 --> 00:05:00,728
 One thing before you move on.
 
 76
-00:04:35,710 --> 00:04:37,152
+00:05:00,728 --> 00:05:02,298
 Add the two columns first.
 
 77
-00:04:37,152 --> 00:04:41,421
+00:05:02,298 --> 00:05:06,947
 It's a small template change that makes the gap this lecture named visible to
 
 78
-00:04:41,421 --> 00:04:43,694
+00:05:06,947 --> 00:05:09,423
 everyone who reads the roadmap after you.
 
 79
-00:04:43,694 --> 00:04:48,184
+00:05:09,423 --> 00:05:14,314
 Then find the one dated item that's honestly still a guess, and say so plainly at
 
 80
-00:04:48,184 --> 00:04:51,566
+00:05:14,314 --> 00:05:17,997
 the next review, before the date arrives and says it for you.
 
 81
-00:04:51,566 --> 00:04:54,615
+00:05:17,997 --> 00:05:21,318
 Neither of these requires anyone's permission to start.
 
 82
-00:04:54,615 --> 00:04:59,161
+00:05:21,318 --> 00:05:26,269
 A template column and one honest flag are both things you can do this week, on the
 
 83
-00:04:59,161 --> 00:05:03,430
+00:05:26,269 --> 00:05:30,918
 roadmap you already have, before the next review makes the gap someone else's
 
 84
-00:05:03,430 --> 00:05:04,539
+00:05:30,918 --> 00:05:32,125
 problem to discover.
 
 85
-00:05:04,539 --> 00:05:09,085
+00:05:32,125 --> 00:05:37,077
 Next lecture is vibe-coding your own tools: when building something small yourself
 
 86
-00:05:09,085 --> 00:05:12,411
+00:05:37,077 --> 00:05:40,699
 is the right call, and what it actually costs when it isn't.

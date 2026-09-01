@@ -1,467 +1,467 @@
 1
-00:00:00,350 --> 00:00:04,534
+00:00:00,350 --> 00:00:04,883
 Ask around, and product leaders hiring for anything AI-adjacent will describe a
 
 2
-00:00:04,534 --> 00:00:08,876
+00:00:04,883 --> 00:00:09,587
 strikingly similar loop: how would you evaluate this, how would you decide whether
 
 3
-00:00:08,876 --> 00:00:13,324
+00:00:09,587 --> 00:00:14,407
 to ship it, what would worry you about it, how would you know it's working once it's
 
 4
-00:00:13,324 --> 00:00:13,589
+00:00:14,407 --> 00:00:14,693
 live.
 
 5
-00:00:13,589 --> 00:00:17,826
+00:00:14,693 --> 00:00:19,283
 Different companies, same four questions, because the underlying job is the same
 
 6
-00:00:17,826 --> 00:00:18,408
+00:00:19,283 --> 00:00:19,914
 everywhere.
 
 7
-00:00:18,408 --> 00:00:22,698
+00:00:19,914 --> 00:00:24,562
 Most candidates answer all four the same way too: correctly in spirit, vaguely in
 
 8
-00:00:22,698 --> 00:00:23,227
+00:00:24,562 --> 00:00:25,135
 substance.
 
 9
-00:00:23,227 --> 00:00:27,676
+00:00:25,135 --> 00:00:29,955
 "I'd set up a good evaluation process" is true of almost every candidate in the room
 
 10
-00:00:27,676 --> 00:00:29,317
+00:00:29,955 --> 00:00:31,733
 and distinguishes none of them.
 
 11
-00:00:29,317 --> 00:00:32,177
+00:00:31,733 --> 00:00:34,832
 It sounds like an answer without functioning like one.
 
 12
-00:00:32,177 --> 00:00:36,625
+00:00:34,832 --> 00:00:39,651
 You're not in that position any more, and this lecture's only job is making sure you
 
 13
-00:00:36,625 --> 00:00:39,220
+00:00:39,651 --> 00:00:42,462
 notice that before the interview does it for you.
 
 14
-00:00:39,220 --> 00:00:43,404
+00:00:42,462 --> 00:00:46,995
 Every one of these four questions already has a specific answer sitting in this
 
 15
-00:00:43,404 --> 00:00:47,323
+00:00:46,995 --> 00:00:51,240
 course, built during an exercise, not invented under pressure in the room.
 
 16
-00:00:47,323 --> 00:00:51,771
+00:00:51,240 --> 00:00:56,060
 That matters more for this specific interview than it would for most others, because
 
 17
-00:00:51,771 --> 00:00:56,008
+00:00:56,060 --> 00:01:00,650
 the interviewer asking these questions is very likely someone who has personally
 
 18
-00:00:56,008 --> 00:00:59,556
+00:01:00,650 --> 00:01:04,494
 been burned by a vague answer before, either their own or a hire's.
 
 19
-00:00:59,556 --> 00:01:01,674
+00:01:04,494 --> 00:01:06,789
 They're not asking to make conversation.
 
 20
-00:01:01,674 --> 00:01:05,063
+00:01:06,789 --> 00:01:10,461
 They're screening for the exact gap this course exists to close.
 
 21
-00:01:05,613 --> 00:01:09,990
+00:01:11,011 --> 00:01:15,741
 Notice these four questions aren't a random assortment, they trace the job itself,
 
 22
-00:01:09,990 --> 00:01:14,368
+00:01:15,741 --> 00:01:20,472
 in the exact order the job actually happens: assess the feature, choose whether it
 
 23
-00:01:14,368 --> 00:01:17,944
+00:01:20,472 --> 00:01:24,338
 ships, name what could go wrong, then keep watching once it's live.
 
 24
-00:01:17,944 --> 00:01:21,520
+00:01:24,338 --> 00:01:28,203
 An interviewer asking all four isn't testing four unrelated skills.
 
 25
-00:01:21,520 --> 00:01:25,791
+00:01:28,203 --> 00:01:32,819
 They're testing whether you can walk a feature through its actual lifecycle, the
 
 26
-00:01:25,791 --> 00:01:30,168
+00:01:32,819 --> 00:01:37,549
 same lifecycle this course has spent ten sections building one artifact at a time.
 
 27
-00:01:30,718 --> 00:01:35,360
+00:01:38,099 --> 00:01:43,141
 "A fifty-case golden set, weighted toward the boundary cases, scored against a
 
 28
-00:01:35,360 --> 00:01:40,299
+00:01:43,141 --> 00:01:48,505
 rubric two people agree on" is the same idea, drawn from 4.2's golden set and 4.5's
 
 29
-00:01:40,299 --> 00:01:45,178
+00:01:48,505 --> 00:01:53,805
 pass rate, except now it's something you've actually built and can describe in the
 
 30
-00:01:45,178 --> 00:01:46,309
+00:01:53,805 --> 00:01:55,033
 order you built it.
 
 31
-00:01:46,309 --> 00:01:51,307
+00:01:55,033 --> 00:02:00,462
 The second question, deciding whether to ship, catches a confusion worth clearing up
 
 32
-00:01:51,307 --> 00:01:56,008
+00:02:00,462 --> 00:02:05,568
 before anyone asks it directly: passing an eval and being ready to ship are two
 
 33
-00:01:56,008 --> 00:02:00,888
+00:02:05,568 --> 00:02:10,868
 different questions, and answering as though they're the same one is a fast way to
 
 34
-00:02:00,888 --> 00:02:02,375
+00:02:10,868 --> 00:02:12,484
 sound junior in the room.
 
 35
-00:02:02,375 --> 00:02:07,076
+00:02:12,484 --> 00:02:17,590
 7.4's scorecard exists precisely because the ship decision weighs the pass rate
 
 36
-00:02:07,076 --> 00:02:11,956
+00:02:17,590 --> 00:02:22,890
 against cost, latency, and how bad the failure mode actually is, not the pass rate
 
 37
-00:02:11,956 --> 00:02:12,551
+00:02:22,890 --> 00:02:23,536
 by itself.
 
 38
-00:02:12,551 --> 00:02:17,312
+00:02:23,536 --> 00:02:28,707
 Naming those variables unprompted is what separates someone who ran an eval once
 
 39
-00:02:17,312 --> 00:02:19,751
+00:02:28,707 --> 00:02:31,357
 from someone who's made a real ship call.
 
 40
-00:02:20,301 --> 00:02:24,551
+00:02:31,907 --> 00:02:36,518
 The third question, what would worry you, is where most candidates go softest,
 
 41
-00:02:24,551 --> 00:02:28,909
+00:02:36,518 --> 00:02:41,248
 because naming a real worry out loud feels like admitting a weakness rather than
 
 42
-00:02:28,909 --> 00:02:29,890
+00:02:41,248 --> 00:02:42,313
 demonstrating one.
 
 43
-00:02:29,890 --> 00:02:31,579
+00:02:42,313 --> 00:02:44,145
 Isn't it actually the opposite?
 
 44
-00:02:31,579 --> 00:02:35,828
+00:02:44,145 --> 00:02:48,757
 Pretending no feature has ever worried you isn't true of anyone who's actually
 
 45
-00:02:35,828 --> 00:02:40,132
+00:02:48,757 --> 00:02:53,428
 shipped something, so naming the specific worry is the stronger answer, not the
 
 46
-00:02:40,132 --> 00:02:40,786
+00:02:53,428 --> 00:02:54,138
 riskier one.
 
 47
-00:02:40,786 --> 00:02:45,362
+00:02:54,138 --> 00:02:59,104
 The fourth question, how you'd know it's working after launch, is the one candidates
 
 48
-00:02:45,362 --> 00:02:49,176
+00:02:59,104 --> 00:03:03,243
 skip entirely most often, because most interview prep stops at launch.
 
 49
-00:02:49,176 --> 00:02:53,425
+00:03:03,243 --> 00:03:07,855
 Answering it well, adoption, acceptance, deflection, 9.1's three-metric floor,
 
 50
-00:02:53,425 --> 00:02:57,783
+00:03:07,855 --> 00:03:12,584
 signals something specific: that you think about a feature as a thing that keeps
 
 51
-00:02:57,783 --> 00:03:02,087
+00:03:12,584 --> 00:03:17,255
 needing attention after the demo, not a thing that's finished the day it ships.
 
 52
-00:03:02,637 --> 00:03:06,888
+00:03:17,805 --> 00:03:22,443
 Notice the good column isn't longer or more impressive-sounding, it's just
 
 53
-00:03:06,888 --> 00:03:07,520
+00:03:22,443 --> 00:03:23,132
 answerable.
 
 54
-00:03:07,520 --> 00:03:12,230
+00:03:23,132 --> 00:03:28,270
 Every phrase in it is something you could open right now and point to, because you
 
 55
-00:03:12,230 --> 00:03:16,193
+00:03:28,270 --> 00:03:32,594
 built it during this course's exercises or on a real feature at work.
 
 56
-00:03:16,193 --> 00:03:20,961
+00:03:32,594 --> 00:03:37,796
 This is 10.5's follow-up-question test again, aimed at a spoken answer instead of a
 
 57
-00:03:20,961 --> 00:03:22,052
+00:03:37,796 --> 00:03:38,986
 portfolio document.
 
 58
-00:03:22,052 --> 00:03:26,820
+00:03:38,986 --> 00:03:44,187
 An interviewer who's good at this job will ask "OK, what would three of those fifty
 
 59
-00:03:26,820 --> 00:03:31,645
+00:03:44,187 --> 00:03:49,451
 cases actually look like." The generic answer has nothing left to say at that point.
 
 60
-00:03:31,645 --> 00:03:36,297
+00:03:49,451 --> 00:03:54,527
 The specific answer has forty-seven more cases to describe, because they're real.
 
 61
-00:03:36,297 --> 00:03:40,950
+00:03:54,527 --> 00:03:59,603
 This is also why memorising this course's vocabulary without the underlying habit
 
 62
-00:03:40,950 --> 00:03:41,984
+00:03:59,603 --> 00:04:00,731
 fails in the room.
 
 63
-00:03:41,984 --> 00:03:46,752
+00:04:00,731 --> 00:04:05,932
 "Golden set" and "blast radius" said as terms, without being able to build one live
 
 64
-00:03:46,752 --> 00:03:51,404
+00:04:05,932 --> 00:04:11,008
 for a feature you've never seen, sound identical to the generic answer within two
 
 65
-00:03:51,404 --> 00:03:52,553
+00:04:11,008 --> 00:04:12,261
 follow-up questions.
 
 66
-00:03:52,553 --> 00:03:55,195
+00:04:12,261 --> 00:04:15,144
 The interviewer isn't grading your vocabulary.
 
 67
-00:03:55,195 --> 00:03:59,159
+00:04:15,144 --> 00:04:19,468
 They're grading whether the vocabulary is attached to something real.
 
 68
-00:03:59,709 --> 00:04:04,324
+00:04:20,018 --> 00:04:25,137
 Notice, too, that the good column answers in the order the work actually happens,
 
 69
-00:04:04,324 --> 00:04:09,110
+00:04:25,137 --> 00:04:30,446
 and that sequencing is a signal on its own, separate from the content: rubric before
 
 70
-00:04:09,110 --> 00:04:13,383
+00:04:30,446 --> 00:04:35,186
 cases, or measuring before agreement, reads as memorised rather than lived.
 
 71
-00:04:13,933 --> 00:04:18,468
+00:04:35,736 --> 00:04:40,671
 Say the honest caveat, because this lecture would be genuinely counterproductive if
 
 72
-00:04:18,468 --> 00:04:22,674
+00:04:40,671 --> 00:04:45,250
 it taught you four phrases to memorise instead of four habits to demonstrate.
 
 73
-00:04:22,674 --> 00:04:27,154
+00:04:45,250 --> 00:04:50,125
 The actual test rarely sounds like "define a golden set." It sounds like "here's a
 
 74
-00:04:27,154 --> 00:04:31,688
+00:04:50,125 --> 00:04:55,060
 feature we're building, walk me through how you'd evaluate it," followed by silence
 
 75
-00:04:31,688 --> 00:04:32,562
+00:04:55,060 --> 00:04:56,012
 while you think.
 
 76
-00:04:32,562 --> 00:04:34,583
+00:04:56,012 --> 00:04:58,212
 That silence is the entire interview.
 
 77
-00:04:34,583 --> 00:04:36,277
+00:04:58,212 --> 00:05:00,055
 Anyone can define a golden set.
 
 78
-00:04:36,277 --> 00:04:40,756
+00:05:00,055 --> 00:05:04,931
 Far fewer people can sketch one, unprompted, for a feature they heard about ninety
 
 79
-00:04:40,756 --> 00:04:41,412
+00:05:04,931 --> 00:05:05,644
 seconds ago.
 
 80
-00:04:41,412 --> 00:04:45,782
+00:05:05,644 --> 00:05:10,401
 This is exactly why the try-this exercise on the next slide asks you to practise
 
 81
-00:04:45,782 --> 00:04:47,749
+00:05:10,401 --> 00:05:12,542
 against a feature you didn't design.
 
 82
-00:04:47,749 --> 00:04:52,010
+00:05:12,542 --> 00:05:17,179
 Answering well on this course's own examples proves you were paying attention.
 
 83
-00:04:52,010 --> 00:04:56,489
+00:05:17,179 --> 00:05:22,055
 Answering well on a feature you've never seen proves you actually internalised the
 
 84
-00:04:56,489 --> 00:05:00,914
+00:05:22,055 --> 00:05:26,871
 habit, which is the only version of this skill an interview can't tell apart from
 
 85
-00:05:00,914 --> 00:05:01,625
+00:05:26,871 --> 00:05:27,644
 the real job.
 
 86
-00:05:01,625 --> 00:05:06,104
+00:05:27,644 --> 00:05:32,520
 This risk is highest right after finishing a course like this one, while the terms
 
 87
-00:05:06,104 --> 00:05:10,147
+00:05:32,520 --> 00:05:36,920
 are freshest and the underlying habit hasn't had time to become automatic.
 
 88
-00:05:10,147 --> 00:05:14,735
+00:05:36,920 --> 00:05:41,915
 That gap closes with repetition against unfamiliar features, not with rereading this
 
 89
-00:05:14,735 --> 00:05:15,937
+00:05:41,915 --> 00:05:43,223
 lecture a second time.
 
 90
-00:05:16,487 --> 00:05:20,852
+00:05:43,773 --> 00:05:48,506
 That's the standard worth rehearsing against, and it only works if the feature is
 
 91
-00:05:20,852 --> 00:05:21,984
+00:05:48,506 --> 00:05:49,733
 genuinely unfamiliar.
 
 92
-00:05:21,984 --> 00:05:26,187
+00:05:49,733 --> 00:05:54,291
 Rehearsing on a feature you already know the answer to tells you nothing about
 
 93
-00:05:26,187 --> 00:05:28,235
+00:05:54,291 --> 00:05:56,511
 whether the habit has actually formed.
 
 94
-00:05:28,235 --> 00:05:32,654
+00:05:56,511 --> 00:06:01,303
 Notice which of the four questions you reach for fastest and which one stalls you.
 
 95
-00:05:32,654 --> 00:05:36,103
+00:06:01,303 --> 00:06:05,042
 That gap is useful information, not something to feel bad about.
 
 96
-00:05:36,103 --> 00:05:40,360
+00:06:05,042 --> 00:06:09,659
 It's pointing you back at a specific lecture in this course worth a second look
 
 97
-00:05:40,360 --> 00:05:42,678
+00:06:09,659 --> 00:06:12,171
 before the interview that actually matters.
 
 98
-00:05:42,678 --> 00:05:46,989
+00:06:12,171 --> 00:06:16,846
 Do this exercise with another person if you can arrange it, since the unscripted
 
 99
-00:05:46,989 --> 00:05:50,438
+00:06:16,846 --> 00:06:20,585
 follow-up question is the part that's hardest to practise alone.
 
 100
-00:05:50,438 --> 00:05:54,749
+00:06:20,585 --> 00:06:25,260
 A friend asking "what would three of those cases look like" cold is a far closer
 
 101
-00:05:54,749 --> 00:05:58,306
+00:06:25,260 --> 00:06:29,117
 rehearsal for the room than answering your own imagined follow-up.
 
 102
-00:05:58,306 --> 00:06:02,779
+00:06:29,117 --> 00:06:33,967
 Run it more than once, against more than one borrowed feature, if you have the time
 
 103
-00:06:02,779 --> 00:06:04,557
+00:06:33,967 --> 00:06:35,895
 before an interview that matters.
 
 104
-00:06:04,557 --> 00:06:06,820
+00:06:35,895 --> 00:06:38,349
 The first attempt tends to expose the gap.
 
 105
-00:06:06,820 --> 00:06:11,131
+00:06:38,349 --> 00:06:43,024
 It's usually the third or fourth that starts to feel like an answer instead of a
 
 106
-00:06:11,131 --> 00:06:12,155
+00:06:43,024 --> 00:06:44,134
 performance of one.
 
 107
-00:06:12,705 --> 00:06:14,341
+00:06:44,684 --> 00:06:46,505
 One thing before you move on.
 
 108
-00:06:14,341 --> 00:06:18,851
+00:06:46,505 --> 00:06:51,530
 Pick one question, not all four at once, and actually say the answer out loud to
 
 109
-00:06:18,851 --> 00:06:19,697
+00:06:51,530 --> 00:06:52,472
 another person.
 
 110
-00:06:19,697 --> 00:06:24,095
+00:06:52,472 --> 00:06:57,371
 Reading this lecture's table silently doesn't build the same reflex as hearing
 
 111
-00:06:24,095 --> 00:06:27,309
+00:06:57,371 --> 00:07:00,951
 yourself produce the answer under a little real pressure.
 
 112
-00:06:27,309 --> 00:06:31,651
+00:07:00,951 --> 00:07:05,788
 Then be honest about which question stalled you, and go back to that specific
 
 113
-00:06:31,651 --> 00:06:32,102
+00:07:05,788 --> 00:07:06,290
 lecture.
 
 114
-00:06:32,102 --> 00:06:36,613
+00:07:06,290 --> 00:07:11,315
 The fix for a weak answer on blast radius is 6.6 and 8.1 again, not another pass
 
 115
-00:06:36,613 --> 00:06:37,797
+00:07:11,315 --> 00:07:12,634
 through this summary.
 
 116
-00:06:37,797 --> 00:06:42,252
+00:07:12,634 --> 00:07:17,596
 Next lecture is your thirty-sixty-ninety day plan: turning everything from this
 
 117
-00:06:42,252 --> 00:06:45,297
+00:07:17,596 --> 00:07:20,987
 section into the first three months of the actual job.

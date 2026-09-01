@@ -1,403 +1,403 @@
 1
-00:00:00,350 --> 00:00:04,442
+00:00:00,350 --> 00:00:04,864
 An idea for an AI feature arrives constantly, from a customer request, a
 
 2
-00:00:04,442 --> 00:00:07,227
+00:00:04,864 --> 00:00:07,937
 competitor's launch, an executive who saw a demo.
 
 3
-00:00:07,227 --> 00:00:09,557
+00:00:07,937 --> 00:00:10,507
 Most of them sound plausible in the room.
 
 4
-00:00:09,557 --> 00:00:14,217
+00:00:10,507 --> 00:00:15,648
 A discovery sprint is how you find out which ones actually hold up, in days, using
 
 5
-00:00:14,217 --> 00:00:18,820
+00:00:15,648 --> 00:00:20,727
 tools you already have, rather than months of engineering time discovering it the
 
 6
-00:00:18,820 --> 00:00:19,616
+00:00:20,727 --> 00:00:21,605
 expensive way.
 
 7
-00:00:19,616 --> 00:00:21,321
+00:00:21,605 --> 00:00:23,486
 The sprint isn't new material.
 
 8
-00:00:21,321 --> 00:00:25,924
+00:00:23,486 --> 00:00:28,564
 It's five questions this course already taught you to answer, asked in a specific
 
 9
-00:00:25,924 --> 00:00:28,766
+00:00:28,564 --> 00:00:31,699
 order, against a real idea, under a real deadline.
 
 10
-00:00:28,766 --> 00:00:33,369
+00:00:31,699 --> 00:00:36,778
 That order matters as much as the questions themselves, because each day's answer
 
 11
-00:00:33,369 --> 00:00:36,040
+00:00:36,778 --> 00:00:39,725
 decides whether the next day is worth spending.
 
 12
-00:00:36,040 --> 00:00:40,701
+00:00:39,725 --> 00:00:44,866
 None of the five days ask you to do anything you haven't already practised in this
 
 13
-00:00:40,701 --> 00:00:41,099
+00:00:44,866 --> 00:00:45,305
 course.
 
 14
-00:00:41,099 --> 00:00:42,121
+00:00:45,305 --> 00:00:46,433
 That's deliberate.
 
 15
-00:00:42,121 --> 00:00:46,668
+00:00:46,433 --> 00:00:51,449
 A sprint built from unfamiliar techniques takes longer to run than the five days
 
 16
-00:00:46,668 --> 00:00:48,259
+00:00:51,449 --> 00:00:53,205
 it's supposed to fit inside.
 
 17
-00:00:48,259 --> 00:00:52,920
+00:00:53,205 --> 00:00:58,346
 A sprint built entirely from tools you've already used once, for real, runs at the
 
 18
-00:00:52,920 --> 00:00:54,909
+00:00:58,346 --> 00:01:00,541
 speed the format actually promises.
 
 19
-00:00:55,459 --> 00:00:59,554
+00:01:01,091 --> 00:01:05,481
 Read the sequence as a series of exits, not a fixed five-day commitment.
 
 20
-00:00:59,554 --> 00:01:04,276
+00:01:05,481 --> 00:01:10,541
 Day one is just 1.6's seven archetypes, asked of a real idea: does AI even fit this
 
 21
-00:01:04,276 --> 00:01:04,731
+00:01:10,541 --> 00:01:11,029
 problem.
 
 22
-00:01:04,731 --> 00:01:09,509
+00:01:11,029 --> 00:01:16,151
 An idea that fails there, on an archetype mismatch, doesn't get four more days spent
 
 23
-00:01:09,509 --> 00:01:11,842
+00:01:16,151 --> 00:01:18,651
 confirming what day one already answered.
 
 24
-00:01:11,842 --> 00:01:15,596
+00:01:18,651 --> 00:01:22,675
 Most ideas that don't survive a sprint don't survive past day two.
 
 25
-00:01:15,596 --> 00:01:20,033
+00:01:22,675 --> 00:01:27,431
 Day three is usually where a genuinely good-sounding idea meets its first real
 
 26
-00:01:20,033 --> 00:01:20,659
+00:01:27,431 --> 00:01:28,101
 resistance.
 
 27
-00:01:20,659 --> 00:01:25,380
+00:01:28,101 --> 00:01:33,162
 It's 4.2's coverage test, asked under a deadline: if nobody can sketch even a rough
 
 28
-00:01:25,380 --> 00:01:29,817
+00:01:33,162 --> 00:01:37,918
 golden set, fifty cases you could plausibly score, that's not a paperwork gap.
 
 29
-00:01:29,817 --> 00:01:34,539
+00:01:37,918 --> 00:01:42,979
 It's a sign nobody's agreed what "correct" means for this feature yet, and building
 
 30
-00:01:34,539 --> 00:01:38,293
+00:01:42,979 --> 00:01:47,003
 anything before that's settled is building on an undefined target.
 
 31
-00:01:38,293 --> 00:01:41,991
+00:01:47,003 --> 00:01:50,966
 Push day three specifically on the hard cases, not the easy ones.
 
 32
-00:01:41,991 --> 00:01:46,769
+00:01:50,966 --> 00:01:56,088
 An idea that only produces confident golden-set cases for the obvious, common inputs
 
 33
-00:01:46,769 --> 00:01:51,377
+00:01:56,088 --> 00:02:01,026
 and goes quiet on the genuinely ambiguous ones is telling you something real: the
 
 34
-00:01:51,377 --> 00:01:55,984
+00:02:01,026 --> 00:02:05,965
 feature sounds clear in the room and gets fuzzy the moment someone tries to write
 
 35
-00:01:55,984 --> 00:01:57,577
+00:02:05,965 --> 00:02:07,672
 down what counts as correct.
 
 36
-00:01:57,577 --> 00:02:02,242
+00:02:07,672 --> 00:02:12,672
 That fuzziness on day three is exactly what would have shown up as a disputed pass
 
 37
-00:02:02,242 --> 00:02:05,825
+00:02:12,672 --> 00:02:16,513
 rate months later, just discovered far earlier and far cheaper.
 
 38
-00:02:06,375 --> 00:02:10,928
+00:02:17,063 --> 00:02:22,050
 Day four doesn't need 7.2's full model, built properly, with real token counts.
 
 39
-00:02:10,928 --> 00:02:15,481
+00:02:22,050 --> 00:02:27,037
 It needs the rough version: an honest order-of-magnitude guess at cost per use,
 
 40
-00:02:15,481 --> 00:02:17,902
+00:02:27,037 --> 00:02:29,688
 multiplied by a realistic volume estimate.
 
 41
-00:02:17,902 --> 00:02:22,512
+00:02:29,688 --> 00:02:34,738
 That back-of-envelope number has killed more bad ideas by Friday than a polished
 
 42
-00:02:22,512 --> 00:02:27,181
+00:02:34,738 --> 00:02:39,851
 cost model ever will, because a rough number that's clearly too high doesn't need
 
 43
-00:02:27,181 --> 00:02:29,083
+00:02:39,851 --> 00:02:41,934
 more precision to make its point.
 
 44
-00:02:29,083 --> 00:02:33,751
+00:02:41,934 --> 00:02:47,048
 Day two asks the blast radius question a full section later than 6.6 first taught
 
 45
-00:02:33,751 --> 00:02:34,615
+00:02:47,048 --> 00:02:47,994
 it, on purpose.
 
 46
-00:02:34,615 --> 00:02:37,036
+00:02:47,994 --> 00:02:50,646
 Why wait until day two instead of day one?
 
 47
-00:02:37,036 --> 00:02:41,646
+00:02:50,646 --> 00:02:55,696
 Because an idea that survives day one but carries a genuinely high blast radius,
 
 48
-00:02:41,646 --> 00:02:45,508
+00:02:55,696 --> 00:02:59,925
 hard to undo, expensive if wrong, isn't automatically disqualified.
 
 49
-00:02:45,508 --> 00:02:49,888
+00:02:59,925 --> 00:03:04,723
 It just needs day two's answer in writing before day three's effort is worth
 
 50
-00:02:49,888 --> 00:02:54,441
+00:03:04,723 --> 00:03:09,709
 spending, the same discipline 8.1's register asks of any risk with real stakes.
 
 51
-00:02:54,441 --> 00:02:59,051
+00:03:09,709 --> 00:03:14,759
 Day five isn't a fresh judgement call, it's an honest summary of the first four.
 
 52
-00:02:59,051 --> 00:03:01,011
+00:03:14,759 --> 00:03:16,906
 Go, if all four questions cleared.
 
 53
-00:03:01,011 --> 00:03:04,872
+00:03:16,906 --> 00:03:21,135
 No, if any one of them didn't, stated plainly rather than softened.
 
 54
-00:03:04,872 --> 00:03:09,713
+00:03:21,135 --> 00:03:26,437
 Or a narrower version, the option most sprints under-use: the same idea, scoped down
 
 55
-00:03:09,713 --> 00:03:14,093
+00:03:26,437 --> 00:03:31,235
 to the slice that actually clears every question, instead of either the full
 
 56
-00:03:14,093 --> 00:03:15,995
+00:03:31,235 --> 00:03:33,318
 original pitch or nothing at all.
 
 57
-00:03:16,545 --> 00:03:20,105
+00:03:33,868 --> 00:03:37,748
 Notice the good column doesn't celebrate saying no more often.
 
 58
-00:03:20,105 --> 00:03:24,928
+00:03:37,748 --> 00:03:43,005
 It celebrates a process capable of saying no at all, quickly, when the idea actually
 
 59
-00:03:24,928 --> 00:03:25,617
+00:03:43,005 --> 00:03:43,756
 deserves it.
 
 60
-00:03:25,617 --> 00:03:29,922
+00:03:43,756 --> 00:03:48,450
 A sprint that always ends in yes isn't evaluating anything, it's performing
 
 61
-00:03:29,922 --> 00:03:34,343
+00:03:48,450 --> 00:03:53,269
 evaluation on top of a decision that was already made before day one started.
 
 62
-00:03:34,343 --> 00:03:39,051
+00:03:53,269 --> 00:03:58,401
 That's expensive theatre, not discovery, and everyone on the team usually knows it
 
 63
-00:03:39,051 --> 00:03:43,701
+00:03:58,401 --> 00:04:03,470
 within a sprint or two, which quietly kills trust in every future sprint's yes as
 
 64
-00:03:43,701 --> 00:03:43,988
+00:04:03,470 --> 00:04:03,783
 well.
 
 65
-00:03:43,988 --> 00:03:48,524
+00:04:03,783 --> 00:04:08,727
 This connects directly to this lecture's opening claim: a sprint's entire value
 
 66
-00:03:48,524 --> 00:03:51,395
+00:04:08,727 --> 00:04:11,857
 depends on it being genuinely capable of stopping.
 
 67
-00:03:51,395 --> 00:03:56,103
+00:04:11,857 --> 00:04:16,988
 Remove that capability, deliberately or through quiet organisational pressure, and
 
 68
-00:03:56,103 --> 00:03:58,055
+00:04:16,988 --> 00:04:19,116
 you haven't shortened the process.
 
 69
-00:03:58,055 --> 00:04:02,016
+00:04:19,116 --> 00:04:23,435
 You've renamed a five-day rubber stamp and kept calling it discovery.
 
 70
-00:04:02,566 --> 00:04:07,331
+00:04:23,985 --> 00:04:29,123
 Say the honest caveat plainly, because it's easy to experience a "no" result as the
 
 71
-00:04:07,331 --> 00:04:11,177
+00:04:29,123 --> 00:04:33,271
 sprint having wasted a week, and that framing is exactly backwards.
 
 72
-00:04:11,177 --> 00:04:15,424
+00:04:33,271 --> 00:04:37,853
 Compare the cost of a week-long sprint against the cost of three months of
 
 73
-00:04:15,424 --> 00:04:20,189
+00:04:37,853 --> 00:04:42,991
 engineering discovering the same no, after a launch date's already been promised to
 
 74
-00:04:20,189 --> 00:04:20,648
+00:04:42,991 --> 00:04:43,487
 someone.
 
 75
-00:04:20,648 --> 00:04:25,126
+00:04:43,487 --> 00:04:48,316
 The sprint that produces a confident no on day two is one of the cheapest wins
 
 76
-00:04:25,126 --> 00:04:29,948
+00:04:48,316 --> 00:04:53,516
 available to a team, and it should be reported that way, not quietly filed away as a
 
 77
-00:04:29,948 --> 00:04:34,540
+00:04:53,516 --> 00:04:58,469
 project that "didn't work out." Track this the same way 9.1 asked you to track a
 
 78
-00:04:34,540 --> 00:04:39,132
+00:04:58,469 --> 00:05:03,422
 real metric: count sprints run against sprints that ended in yes, and watch that
 
 79
-00:04:39,132 --> 00:04:40,051
+00:05:03,422 --> 00:05:04,413
 ratio over time.
 
 80
-00:04:40,051 --> 00:04:44,643
+00:05:04,413 --> 00:05:09,366
 A ratio sitting at or near one hundred percent yes is the single clearest sign a
 
 81
-00:04:44,643 --> 00:04:49,465
+00:05:09,366 --> 00:05:14,566
 sprint has stopped doing its actual job, whatever the individual sprints looked like
 
 82
-00:04:49,465 --> 00:04:50,383
+00:05:14,566 --> 00:05:15,557
 from the inside.
 
 83
-00:04:50,933 --> 00:04:55,639
+00:05:16,107 --> 00:05:21,197
 That's the process worth running on the next idea that lands on your desk, and the
 
 84
-00:04:55,639 --> 00:05:00,403
+00:05:21,197 --> 00:05:26,349
 two-day version in the example is worth trying even if you never run the full five.
 
 85
-00:05:00,403 --> 00:05:05,109
+00:05:26,349 --> 00:05:31,440
 Most ideas that eventually get shelved after real engineering time was spent would
 
 86
-00:05:05,109 --> 00:05:09,643
+00:05:31,440 --> 00:05:36,344
 have failed day one or two of this sprint, cheaply, if anyone had run it first.
 
 87
-00:05:09,643 --> 00:05:14,464
+00:05:36,344 --> 00:05:41,558
 That's the entire case for doing this before committing resources rather than after.
 
 88
-00:05:14,464 --> 00:05:18,539
+00:05:41,558 --> 00:05:45,965
 Notice, too, that a sprint's real output isn't the yes or no by itself.
 
 89
-00:05:18,539 --> 00:05:23,015
+00:05:45,965 --> 00:05:50,807
 It's the written reasoning behind it, the same discipline 7.4 asked of a model
 
 90
-00:05:23,015 --> 00:05:27,721
+00:05:50,807 --> 00:05:55,898
 choice: not just the decision, but the specific answer to each day's question that
 
 91
-00:05:27,721 --> 00:05:32,485
+00:05:55,898 --> 00:06:01,050
 produced it, so someone revisiting the idea in six months isn't starting from zero.
 
 92
-00:05:33,035 --> 00:05:34,668
+00:06:01,600 --> 00:06:03,397
 One thing before you move on.
 
 93
-00:05:34,668 --> 00:05:39,344
+00:06:03,397 --> 00:06:08,541
 Pick a real idea, not a hypothetical one, and run the first two questions honestly.
 
 94
-00:05:39,344 --> 00:05:43,738
+00:06:08,541 --> 00:06:13,375
 Most people find this takes under an hour once the tools are already familiar.
 
 95
-00:05:43,738 --> 00:05:48,414
+00:06:13,375 --> 00:06:18,519
 Then, whatever the sprint concludes, report it with the same confidence either way.
 
 96
-00:05:48,414 --> 00:05:52,076
+00:06:18,519 --> 00:06:22,547
 A well-run no deserves the same visible credit as a well-run yes.
 
 97
-00:05:52,076 --> 00:05:55,907
+00:06:22,547 --> 00:06:26,761
 Neither of these requires scheduling a formal five-day sprint today.
 
 98
-00:05:55,907 --> 00:06:00,470
+00:06:26,761 --> 00:06:31,781
 The two-day version is the whole point: fast enough to run this week, on the idea
 
 99
-00:06:00,470 --> 00:06:02,554
+00:06:31,781 --> 00:06:34,074
 that's already sitting in your inbox.
 
 100
-00:06:02,554 --> 00:06:07,118
+00:06:34,074 --> 00:06:39,094
 Next lecture is managing stakeholder expectations, the skill that decides whether
 
 101
-00:06:07,118 --> 00:06:10,554
+00:06:39,094 --> 00:06:42,874
 people actually trust the sprint's answer once you've got it.

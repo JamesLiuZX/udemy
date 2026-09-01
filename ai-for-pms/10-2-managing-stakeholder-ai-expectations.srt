@@ -1,399 +1,399 @@
 1
-00:00:00,350 --> 00:00:03,826
+00:00:00,350 --> 00:00:04,164
 A stakeholder's expectations rarely come from your golden set.
 
 2
-00:00:03,826 --> 00:00:08,311
+00:00:04,164 --> 00:00:09,085
 They come from a keynote demo, a competitor's launch post, or a headline about a
 
 3
-00:00:08,311 --> 00:00:12,628
+00:00:09,085 --> 00:00:13,822
 frontier model, none of which mention the failure category your own eval work
 
 4
-00:00:12,628 --> 00:00:13,413
+00:00:13,822 --> 00:00:14,683
 already found.
 
 5
-00:00:13,413 --> 00:00:15,768
+00:00:14,683 --> 00:00:17,267
 Your job isn't to dampen their enthusiasm.
 
 6
-00:00:15,768 --> 00:00:20,085
+00:00:17,267 --> 00:00:22,004
 It's to replace an expectation built on marketing with one built on evidence.
 
 7
-00:00:20,085 --> 00:00:24,795
+00:00:22,004 --> 00:00:27,171
 That's a different skill from simply being the person who says "it's not ready yet."
 
 8
-00:00:24,795 --> 00:00:29,504
+00:00:27,171 --> 00:00:32,338
 Vague caution earns exactly as little trust as vague hype, because neither one gives
 
 9
-00:00:29,504 --> 00:00:33,709
+00:00:32,338 --> 00:00:36,952
 a stakeholder anything they can check later against what actually happened.
 
 10
-00:00:34,259 --> 00:00:38,721
+00:00:37,502 --> 00:00:42,385
 This gap isn't a communication failure on the stakeholder's part, and treating it
 
 11
-00:00:38,721 --> 00:00:42,577
+00:00:42,385 --> 00:00:46,606
 that way is the fastest way to lose the conversation before it starts.
 
 12
-00:00:42,577 --> 00:00:46,983
+00:00:46,606 --> 00:00:51,429
 Where would their expectation have come from, if not the same marketing everyone
 
 13
-00:00:46,983 --> 00:00:47,534
+00:00:51,429 --> 00:00:52,032
 else sees?
 
 14
-00:00:47,534 --> 00:00:51,775
+00:00:52,032 --> 00:00:56,674
 Assume good faith about that, and spend the conversation closing the gap, not
 
 15
-00:00:51,775 --> 00:00:54,144
+00:00:56,674 --> 00:00:59,266
 arguing they were wrong to have one at all.
 
 16
-00:00:54,144 --> 00:00:58,605
+00:00:59,266 --> 00:01:04,150
 Think of the stakeholder relationship the same way 9.5 asked you to think about a
 
 17
-00:00:58,605 --> 00:01:02,847
+00:01:04,150 --> 00:01:08,792
 leadership dashboard: something that has to survive contact with a bad number
 
 18
-00:01:02,847 --> 00:01:06,647
+00:01:08,792 --> 00:01:12,952
 eventually, not something optimised to look good in this one meeting.
 
 19
-00:01:06,647 --> 00:01:10,944
+00:01:12,952 --> 00:01:17,655
 A relationship that's only ever heard good news breaks the first time it hears
 
 20
-00:01:10,944 --> 00:01:11,715
+00:01:17,655 --> 00:01:18,499
 anything else.
 
 21
-00:01:12,265 --> 00:01:16,839
+00:01:19,049 --> 00:01:24,036
 Read the right column as a direct export of tools you've already built, not new
 
 22
-00:01:16,839 --> 00:01:18,808
+00:01:24,036 --> 00:01:26,183
 language to invent under pressure.
 
 23
-00:01:18,808 --> 00:01:23,556
+00:01:26,183 --> 00:01:31,360
 A pass rate from 4.5, a scorecard decision from 7.4, a blast radius sort from 6.6,
 
 24
-00:01:23,556 --> 00:01:27,725
+00:01:31,360 --> 00:01:35,905
 each one already exists before the stakeholder conversation even starts.
 
 25
-00:01:27,725 --> 00:01:32,531
+00:01:35,905 --> 00:01:41,146
 Notice what every right-column sentence has that the left column lacks: something a
 
 26
-00:01:32,531 --> 00:01:34,269
+00:01:41,146 --> 00:01:43,040
 stakeholder could check later.
 
 27
-00:01:34,269 --> 00:01:38,959
+00:01:43,040 --> 00:01:48,153
 "Ninety-four percent, fails on this category" is a claim reality can prove wrong,
 
 28
-00:01:38,959 --> 00:01:41,680
+00:01:48,153 --> 00:01:51,121
 which is exactly what makes it trustworthy now.
 
 29
-00:01:41,680 --> 00:01:46,313
+00:01:51,121 --> 00:01:56,172
 "It's pretty much ready" can't be checked against anything, so it never earns or
 
 30
-00:01:46,313 --> 00:01:47,355
+00:01:56,172 --> 00:01:57,308
 loses credibility.
 
 31
-00:01:47,355 --> 00:01:50,019
+00:01:57,308 --> 00:02:00,212
 It just gets forgotten until something breaks.
 
 32
-00:01:50,019 --> 00:01:54,883
+00:02:00,212 --> 00:02:05,515
 Notice, too, that the right column is shorter to say than the left, not longer, once
 
 33
-00:01:54,883 --> 00:01:57,141
+00:02:05,515 --> 00:02:07,978
 you've actually got the number in hand.
 
 34
-00:01:57,141 --> 00:02:01,831
+00:02:07,978 --> 00:02:13,091
 "Ninety-four percent, fails on this category" takes about as long to say as "it's
 
 35
-00:02:01,831 --> 00:02:05,595
+00:02:13,091 --> 00:02:17,195
 pretty much ready." The specificity isn't extra work in the room.
 
 36
-00:02:05,595 --> 00:02:10,054
+00:02:17,195 --> 00:02:22,057
 It's extra work beforehand, done once, back in Section four, long before this
 
 37
-00:02:10,054 --> 00:02:11,559
+00:02:22,057 --> 00:02:23,698
 conversation ever happens.
 
 38
-00:02:12,109 --> 00:02:16,834
+00:02:24,248 --> 00:02:29,440
 This is also the direct payoff of everything this course has built toward, stated as
 
 39
-00:02:16,834 --> 00:02:21,222
+00:02:29,440 --> 00:02:34,262
 plainly as possible: can you produce these three sentences on request, for the
 
 40
-00:02:21,222 --> 00:02:22,684
+00:02:34,262 --> 00:02:35,869
 feature you own right now?
 
 41
-00:02:22,684 --> 00:02:25,272
+00:02:35,869 --> 00:02:38,712
 That's the actual test, not the roadmap slide.
 
 42
-00:02:25,822 --> 00:02:28,215
+00:02:39,262 --> 00:02:41,843
 Notice the good column doesn't demo worse.
 
 43
-00:02:28,215 --> 00:02:33,000
+00:02:41,843 --> 00:02:47,005
 It demos honestly, using a boundary case straight out of 4.2's golden set instead of
 
 44
-00:02:33,000 --> 00:02:33,741
+00:02:47,005 --> 00:02:47,804
 avoiding one.
 
 45
-00:02:33,741 --> 00:02:36,418
+00:02:47,804 --> 00:02:50,693
 The difference shows up later, not in the room.
 
 46
-00:02:36,418 --> 00:02:41,204
+00:02:50,693 --> 00:02:55,855
 A stakeholder who's never seen the feature fail treats the first failure as a broken
 
 47
-00:02:41,204 --> 00:02:41,660
+00:02:55,855 --> 00:02:56,347
 promise.
 
 48
-00:02:41,660 --> 00:02:46,331
+00:02:56,347 --> 00:03:01,386
 A stakeholder who's already seen a named limitation, in a controlled demo, on your
 
 49
-00:02:46,331 --> 00:02:49,521
+00:03:01,386 --> 00:03:04,827
 terms, treats the same failure as an expected edge case.
 
 50
-00:02:49,521 --> 00:02:54,250
+00:03:04,827 --> 00:03:09,928
 Identical failure, completely different trust outcome, decided entirely by what was
 
 51
-00:02:54,250 --> 00:02:55,389
+00:03:09,928 --> 00:03:11,157
 shown weeks earlier.
 
 52
-00:02:55,389 --> 00:02:59,776
+00:03:11,157 --> 00:03:15,889
 Choosing the boundary case deliberately is harder than it sounds, because the
 
 53
-00:02:59,776 --> 00:03:04,448
+00:03:15,889 --> 00:03:20,929
 instinct under pressure, especially before an important stakeholder meeting, pulls
 
 54
-00:03:04,448 --> 00:03:06,726
+00:03:20,929 --> 00:03:23,387
 hard toward the safest possible showing.
 
 55
-00:03:06,726 --> 00:03:08,321
+00:03:23,387 --> 00:03:25,108
 Resist it specifically here.
 
 56
-00:03:08,321 --> 00:03:12,708
+00:03:25,108 --> 00:03:29,840
 The whole value of naming a limitation before someone finds it is lost if the
 
 57
-00:03:12,708 --> 00:03:16,297
+00:03:29,840 --> 00:03:33,711
 limitation shown is a trivial one nobody would have hit anyway.
 
 58
-00:03:16,297 --> 00:03:20,969
+00:03:33,711 --> 00:03:38,751
 Pick the real one, the case that actually worries you, not a token weakness chosen
 
 59
-00:03:20,969 --> 00:03:22,450
+00:03:38,751 --> 00:03:40,349
 for how harmless it looks.
 
 60
-00:03:23,000 --> 00:03:27,642
+00:03:40,899 --> 00:03:45,946
 Say the honest caveat, because the instinct after being burned once is to swing hard
 
 61
-00:03:27,642 --> 00:03:30,903
+00:03:45,946 --> 00:03:49,491
 toward maximum caution, and that instinct has its own cost.
 
 62
-00:03:30,903 --> 00:03:35,490
+00:03:49,491 --> 00:03:54,479
 If every estimate you give is quietly padded three times over, a stakeholder learns
 
 63
-00:03:35,490 --> 00:03:39,966
+00:03:54,479 --> 00:03:59,346
 to mentally discount everything you say, which means your actual signal, the case
 
 64
-00:03:39,966 --> 00:03:42,896
+00:03:59,346 --> 00:04:02,531
 where something really is at risk, stops landing too.
 
 65
-00:03:42,896 --> 00:03:44,498
+00:04:02,531 --> 00:04:04,273
 The goal was never pessimism.
 
 66
-00:03:44,498 --> 00:03:49,085
+00:04:04,273 --> 00:04:09,261
 It was calibration, the same word 4.8 used for a golden set's own honesty: a number
 
 67
-00:03:49,085 --> 00:03:53,451
+00:04:09,261 --> 00:04:14,008
 that's right about as often as it claims to be, not padded in either direction.
 
 68
-00:03:53,451 --> 00:03:57,928
+00:04:14,008 --> 00:04:18,875
 Watch for the specific symptom of over-correction: a stakeholder starts routinely
 
 69
-00:03:57,928 --> 00:04:02,570
+00:04:18,875 --> 00:04:23,923
 double-checking numbers you've already checked, or quietly building their own buffer
 
 70
-00:04:02,570 --> 00:04:03,786
+00:04:23,923 --> 00:04:25,245
 on top of your buffer.
 
 71
-00:04:03,786 --> 00:04:05,610
+00:04:25,245 --> 00:04:27,227
 That's not caution on their part.
 
 72
-00:04:05,610 --> 00:04:10,141
+00:04:27,227 --> 00:04:32,155
 It's the market price of a track record that's stopped being informative, and it's
 
 73
-00:04:10,141 --> 00:04:13,568
+00:04:32,155 --> 00:04:35,880
 exactly as expensive to earn back as trust lost the other way.
 
 74
-00:04:13,568 --> 00:04:17,878
+00:04:35,880 --> 00:04:40,567
 Aim for a number that's wrong in both directions roughly as often as an honest
 
 75
-00:04:17,878 --> 00:04:21,968
+00:04:40,567 --> 00:04:45,014
 estimate should be, not one that's never once come in worse than promised.
 
 76
-00:04:21,968 --> 00:04:26,058
+00:04:45,014 --> 00:04:49,461
 A track record with zero misses in either direction isn't a sign of skill.
 
 77
-00:04:26,058 --> 00:04:30,700
+00:04:49,461 --> 00:04:54,508
 It's usually a sign of padding thick enough to hide the real variance underneath it.
 
 78
-00:04:31,250 --> 00:04:35,725
+00:04:55,058 --> 00:04:59,982
 That's the standard worth holding the next update to, and the exercise is worth
 
 79
-00:04:35,725 --> 00:04:39,916
+00:04:59,982 --> 00:05:04,594
 running on a real sentence you were about to send, not a hypothetical one.
 
 80
-00:04:39,916 --> 00:04:44,391
+00:05:04,594 --> 00:05:09,517
 Most hedges, looked at honestly, already have a real number sitting behind them
 
 81
-00:04:44,391 --> 00:04:47,959
+00:05:09,517 --> 00:05:13,444
 somewhere, a pass rate, a scorecard result, a blast radius row.
 
 82
-00:04:47,959 --> 00:04:50,564
+00:05:13,444 --> 00:05:16,311
 The hedge isn't hiding an absence of evidence.
 
 83
-00:04:50,564 --> 00:04:54,133
+00:05:16,311 --> 00:05:20,237
 It's usually hiding evidence nobody bothered to quote directly.
 
 84
-00:04:54,133 --> 00:04:58,607
+00:05:20,237 --> 00:05:25,161
 Do this exercise on the update you were about to send today, not a hypothetical
 
 85
-00:04:58,607 --> 00:04:59,230
+00:05:25,161 --> 00:05:25,846
 future one.
 
 86
-00:04:59,230 --> 00:05:03,818
+00:05:25,846 --> 00:05:30,895
 The habit only forms by catching a real hedge in the moment it's about to go out,
 
 87
-00:05:03,818 --> 00:05:08,236
+00:05:30,895 --> 00:05:35,756
 not by reviewing old messages after the fact when there's nothing left to fix.
 
 88
-00:05:08,786 --> 00:05:10,407
+00:05:36,306 --> 00:05:38,058
 One thing before you move on.
 
 89
-00:05:10,407 --> 00:05:11,582
+00:05:38,058 --> 00:05:39,326
 Find the hedge first.
 
 90
-00:05:11,582 --> 00:05:16,278
+00:05:39,326 --> 00:05:44,401
 It's usually the sentence that felt safest to write, which is exactly why it's worth
 
 91
-00:05:16,278 --> 00:05:18,403
+00:05:44,401 --> 00:05:46,696
 checking for a real number underneath.
 
 92
-00:05:18,403 --> 00:05:22,485
+00:05:46,696 --> 00:05:51,106
 Then look at your next planned demo and add one case you know will show a
 
 93
-00:05:22,485 --> 00:05:26,119
+00:05:51,106 --> 00:05:55,033
 limitation, on purpose, before someone else finds it by accident.
 
 94
-00:05:26,119 --> 00:05:27,852
+00:05:55,033 --> 00:05:56,905
 Neither step requires new work.
 
 95
-00:05:27,852 --> 00:05:32,381
+00:05:56,905 --> 00:06:01,798
 The number behind the hedge and the boundary case in your golden set both already
 
 96
-00:05:32,381 --> 00:05:32,717
+00:06:01,798 --> 00:06:02,161
 exist.
 
 97
-00:05:32,717 --> 00:05:37,246
+00:06:02,161 --> 00:06:07,054
 This is entirely about what you choose to say out loud, not what you have left to
 
 98
-00:05:37,246 --> 00:05:37,581
+00:06:07,054 --> 00:06:07,416
 build.
 
 99
-00:05:37,581 --> 00:05:42,222
+00:06:07,416 --> 00:06:12,430
 Next lecture is the AI roadmap that doesn't lie: how the same discipline applies to
 
 100
-00:05:42,222 --> 00:05:45,409
+00:06:12,430 --> 00:06:15,873
 a whole quarter's commitments, not just one conversation.

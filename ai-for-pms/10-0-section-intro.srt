@@ -1,67 +1,67 @@
 1
-00:00:00,350 --> 00:00:05,120
+00:00:00,350 --> 00:00:05,514
 Everything so far has been building a real capability: reading a benchmark, building
 
 2
-00:00:05,120 --> 00:00:09,777
+00:00:05,514 --> 00:00:10,555
 a golden set, scoping an agent, modelling cost, running a risk register, measuring
 
 3
-00:00:09,777 --> 00:00:10,515
+00:00:10,555 --> 00:00:11,354
 what matters.
 
 4
-00:00:10,515 --> 00:00:14,377
+00:00:11,354 --> 00:00:15,534
 None of it counts for much if it stays invisible, known only to you.
 
 5
-00:00:14,377 --> 00:00:18,807
+00:00:15,534 --> 00:00:20,329
 This section is about the visible half of the job: running a discovery sprint,
 
 6
-00:00:18,807 --> 00:00:23,009
+00:00:20,329 --> 00:00:24,878
 managing what stakeholders expect, building a roadmap that doesn't quietly
 
 7
-00:00:23,009 --> 00:00:27,382
+00:00:24,878 --> 00:00:29,611
 overpromise, and knowing when to build a tool yourself instead of waiting for
 
 8
-00:00:27,382 --> 00:00:28,291
+00:00:29,611 --> 00:00:30,595
 someone else to.
 
 9
-00:00:28,841 --> 00:00:33,129
+00:00:31,145 --> 00:00:35,760
 Six ideas, all about turning what you know into something someone else can see: a
 
 10
-00:00:33,129 --> 00:00:37,471
+00:00:35,760 --> 00:00:40,433
 sprint they sat in, a roadmap they trust, a portfolio that proves the work instead
 
 11
-00:00:37,471 --> 00:00:38,371
+00:00:40,433 --> 00:00:41,401
 of describing it.
 
 12
-00:00:38,371 --> 00:00:42,713
+00:00:41,401 --> 00:00:46,074
 You'll learn how to run the first two weeks with a new AI opportunity, how to keep
 
 13
-00:00:42,713 --> 00:00:46,896
+00:00:46,074 --> 00:00:50,575
 expectations honest without sounding like the person always saying no, and when
 
 14
-00:00:46,896 --> 00:00:51,290
+00:00:50,575 --> 00:00:55,305
 building your own small tool is the right call instead of a shortcut you'll regret.
 
 15
-00:00:51,290 --> 00:00:55,579
+00:00:55,305 --> 00:00:59,920
 It closes with the twelve artifacts you've already built, packaged into something
 
 16
-00:00:55,579 --> 00:00:59,921
+00:00:59,920 --> 00:01:04,593
 you'd actually hand an interviewer, and a thirty-sixty-ninety day plan for turning
 
 17
-00:00:59,921 --> 00:01:01,880
+00:01:04,593 --> 00:01:06,701
 all of it into how you actually work.
