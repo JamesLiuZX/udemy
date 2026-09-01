@@ -1,323 +1,323 @@
 1
-00:00:00,350 --> 00:00:04,664
+00:00:00,350 --> 00:00:04,890
 Go back to that refund policy for a second: thirty days, full refund, stated with
 
 2
-00:00:04,664 --> 00:00:06,794
+00:00:04,890 --> 00:00:07,133
 total confidence, invented from nothing.
 
 3
-00:00:06,794 --> 00:00:11,214
+00:00:07,133 --> 00:00:11,785
 Notice what it never said, even once: did anything in that sentence sound like "I'm
 
 4
-00:00:11,214 --> 00:00:11,746
+00:00:11,785 --> 00:00:12,346
 not sure"?
 
 5
-00:00:11,746 --> 00:00:15,900
+00:00:12,346 --> 00:00:16,718
 That has a name, and understanding the name properly is the difference between
 
 6
-00:00:15,900 --> 00:00:20,373
+00:00:16,718 --> 00:00:21,427
 explaining it well to a skeptical engineer and just saying "AI does that sometimes."
 
 7
-00:00:20,373 --> 00:00:22,823
+00:00:21,427 --> 00:00:24,005
 Hallucination is not the model malfunctioning.
 
 8
-00:00:22,823 --> 00:00:27,136
+00:00:24,005 --> 00:00:28,546
 It's the model doing the exact same thing it does when it's right: predicting the
 
 9
-00:00:27,136 --> 00:00:29,639
+00:00:28,546 --> 00:00:31,181
 most plausible continuation of the text so far.
 
 10
-00:00:29,639 --> 00:00:33,686
+00:00:31,181 --> 00:00:35,441
 The only difference is that this time, nothing in its training or its prompt
 
 11
-00:00:33,686 --> 00:00:38,000
+00:00:35,441 --> 00:00:39,981
 anchored "plausible" to "true." So it filled the gap with whatever sounded right.
 
 12
-00:00:38,000 --> 00:00:42,260
+00:00:39,981 --> 00:00:44,466
 That distinction matters, because it tells you the fix isn't "make the model try
 
 13
-00:00:42,260 --> 00:00:46,041
+00:00:44,466 --> 00:00:48,446
 harder." It's giving it something true to anchor to in the first place.
 
 14
-00:00:46,041 --> 00:00:49,130
+00:00:48,446 --> 00:00:51,697
 It also matters for a conversation you will actually have.
 
 15
-00:00:49,130 --> 00:00:53,497
+00:00:51,697 --> 00:00:56,293
 Someone will call a wrong answer "a glitch" or "a bug they'll patch." Neither word
 
 16
-00:00:53,497 --> 00:00:57,917
+00:00:56,293 --> 00:01:00,946
 is accurate, and using the accurate one is how you get taken seriously in the room.
 
 17
-00:00:58,467 --> 00:01:02,177
+00:01:01,496 --> 00:01:05,402
 Here's why you can't patch this out with a stricter prompt alone.
 
 18
-00:01:02,177 --> 00:01:06,916
+00:01:05,402 --> 00:01:10,389
 There's no separate "I don't know" system sitting off to the side, waiting to catch
 
 19
-00:01:06,916 --> 00:01:07,373
+00:01:10,389 --> 00:01:10,870
 the gap.
 
 20
-00:01:07,373 --> 00:01:10,513
+00:01:10,870 --> 00:01:14,174
 It's the same single loop from lecture one, every time.
 
 21
-00:01:10,513 --> 00:01:14,851
+00:01:14,174 --> 00:01:18,741
 If the context you gave it actually contains the answer, that same mechanism
 
 22
-00:01:14,851 --> 00:01:19,304
+00:01:18,741 --> 00:01:23,428
 predicts words anchored to real information, and it's remarkably good at that.
 
 23
-00:01:19,304 --> 00:01:23,986
+00:01:23,428 --> 00:01:28,355
 If the context doesn't contain the answer, the exact same mechanism keeps running,
 
 24
-00:01:23,986 --> 00:01:26,441
+00:01:28,355 --> 00:01:30,939
 because that's the only mechanism there is.
 
 25
-00:01:26,441 --> 00:01:31,065
+00:01:30,939 --> 00:01:35,806
 It predicts the next plausible word anyway, anchored to nothing but "this is what
 
 26
-00:01:31,065 --> 00:01:35,518
+00:01:35,806 --> 00:01:40,493
 sentences like this usually say." From the outside, both outputs sound equally
 
 27
-00:01:35,518 --> 00:01:37,002
+00:01:40,493 --> 00:01:42,055
 fluent, equally confident.
 
 28
-00:01:37,002 --> 00:01:40,199
+00:01:42,055 --> 00:01:45,420
 Only one of them is actually connected to anything true.
 
 29
-00:01:40,199 --> 00:01:44,995
+00:01:45,420 --> 00:01:50,467
 This is also why hallucination gets worse exactly when you'd least expect it: on the
 
 30
-00:01:44,995 --> 00:01:47,221
+00:01:50,467 --> 00:01:52,811
 questions that sound the most ordinary.
 
 31
-00:01:47,221 --> 00:01:50,875
+00:01:52,811 --> 00:01:56,656
 A visibly strange question makes people double-check the answer.
 
 32
-00:01:50,875 --> 00:01:55,499
+00:01:56,656 --> 00:02:01,523
 A completely mundane one, like a refund policy, doesn't, and mundane is precisely
 
 33
-00:01:55,499 --> 00:01:57,783
+00:02:01,523 --> 00:02:03,927
 where an invented answer blends in best.
 
 34
-00:01:58,333 --> 00:02:02,777
+00:02:04,477 --> 00:02:09,169
 Two shapes you'll actually meet, and they need slightly different fixes, so it's
 
 35
-00:02:02,777 --> 00:02:04,166
+00:02:09,169 --> 00:02:10,636
 worth telling them apart.
 
 36
-00:02:04,166 --> 00:02:08,554
+00:02:10,636 --> 00:02:15,270
 Knowledge-gap hallucination is the refund policy: ask it something it was never
 
 37
-00:02:08,554 --> 00:02:12,776
+00:02:15,270 --> 00:02:19,728
 given the means to know, and it answers from general pattern instead of your
 
 38
-00:02:12,776 --> 00:02:13,332
+00:02:19,728 --> 00:02:20,315
 specifics.
 
 39
-00:02:13,332 --> 00:02:17,498
+00:02:20,315 --> 00:02:24,714
 Unsupported-detail hallucination is sneakier, because most of the answer is
 
 40
-00:02:17,498 --> 00:02:18,553
+00:02:24,714 --> 00:02:25,829
 genuinely grounded.
 
 41
-00:02:18,553 --> 00:02:23,164
+00:02:25,829 --> 00:02:30,697
 Give it a real document to summarise, and it gets the substance right, then invents
 
 42
-00:02:23,164 --> 00:02:27,831
+00:02:30,697 --> 00:02:35,625
 one small specific, a page number, a date, a quote, that sounds exactly as confident
 
 43
-00:02:27,831 --> 00:02:29,164
+00:02:35,625 --> 00:02:37,033
 as everything around it.
 
 44
-00:02:29,164 --> 00:02:33,830
+00:02:37,033 --> 00:02:41,960
 That one's harder to catch, because ninety percent of the sentence earned your trust
 
 45
-00:02:33,830 --> 00:02:34,330
+00:02:41,960 --> 00:02:42,488
 honestly.
 
 46
-00:02:34,330 --> 00:02:38,163
+00:02:42,488 --> 00:02:46,535
 Ask which one you're more worried about, and most teams answer wrong.
 
 47
-00:02:38,163 --> 00:02:42,663
+00:02:46,535 --> 00:02:51,287
 They spend their review time hunting knowledge-gap hallucinations, because that's
 
 48
-00:02:42,663 --> 00:02:47,218
+00:02:51,287 --> 00:02:56,097
 the dramatic one, and let the quieter unsupported detail through unchecked, on the
 
 49
-00:02:47,218 --> 00:02:49,051
+00:02:56,097 --> 00:02:58,033
 document they were sure was safe.
 
 50
-00:02:49,601 --> 00:02:54,250
+00:02:58,583 --> 00:03:03,534
 Here's the honest list, and notice what's missing from it: a cleverer system prompt.
 
 51
-00:02:54,250 --> 00:02:58,732
+00:03:03,534 --> 00:03:08,308
 Grounding means putting the actual answer inside the context before you ask, your
 
 52
-00:02:58,732 --> 00:03:03,048
+00:03:08,308 --> 00:03:12,905
 real refund policy, your real document, so the mechanism has something true to
 
 53
-00:03:03,048 --> 00:03:05,151
+00:03:12,905 --> 00:03:15,145
 predict from instead of a gap to fill.
 
 54
-00:03:05,151 --> 00:03:08,637
+00:03:15,145 --> 00:03:18,858
 That's most of what Section five, RAG, is built to do properly.
 
 55
-00:03:08,637 --> 00:03:13,175
+00:03:18,858 --> 00:03:23,691
 Verification means checking the output against a real source after it's generated,
 
 56
-00:03:13,175 --> 00:03:17,657
+00:03:23,691 --> 00:03:28,465
 catching the unsupported detail that slipped through even when most of the answer
 
 57
-00:03:17,657 --> 00:03:18,376
+00:03:28,465 --> 00:03:29,231
 was grounded.
 
 58
-00:03:18,376 --> 00:03:23,025
+00:03:29,231 --> 00:03:34,182
 That's what the rubric and golden set you'll build in Section four are actually for.
 
 59
-00:03:23,575 --> 00:03:27,735
+00:03:34,732 --> 00:03:39,149
 Say the honest caveat, because "this is unfixable" would be its own kind of
 
 60
-00:03:27,735 --> 00:03:28,456
+00:03:39,149 --> 00:03:39,915
 overclaiming.
 
 61
-00:03:28,456 --> 00:03:30,508
+00:03:39,915 --> 00:03:42,094
 Training has genuinely improved here.
 
 62
-00:03:30,508 --> 00:03:35,113
+00:03:42,094 --> 00:03:46,983
 Models today are measurably more willing to say they don't know something than they
 
 63
-00:03:35,113 --> 00:03:35,390
+00:03:46,983 --> 00:03:47,277
 were.
 
 64
-00:03:35,390 --> 00:03:39,994
+00:03:47,277 --> 00:03:52,166
 That's real progress, and it's worth acknowledging rather than pretending nothing's
 
 65
-00:03:39,994 --> 00:03:40,438
+00:03:52,166 --> 00:03:52,637
 changed.
 
 66
-00:03:40,438 --> 00:03:45,097
+00:03:52,637 --> 00:03:57,585
 But reduced is not eliminated, and it never will be from training alone, because the
 
 67
-00:03:45,097 --> 00:03:47,372
+00:03:57,585 --> 00:03:59,999
 mechanism is still next-token prediction.
 
 68
-00:03:47,372 --> 00:03:51,865
+00:03:59,999 --> 00:04:04,770
 Asking it nicely to only say true things changes the words in the prompt, not the
 
 69
-00:03:51,865 --> 00:03:53,640
+00:04:04,770 --> 00:04:06,655
 mechanism generating the answer.
 
 70
-00:03:53,640 --> 00:03:57,523
+00:04:06,655 --> 00:04:10,778
 Grounding and verification change what the mechanism has to work with.
 
 71
-00:03:57,523 --> 00:03:59,131
+00:04:10,778 --> 00:04:12,486
 That's the actual difference.
 
 72
-00:03:59,681 --> 00:04:01,295
+00:04:13,036 --> 00:04:14,745
 One thing before you move on.
 
 73
-00:04:01,295 --> 00:04:05,914
+00:04:14,745 --> 00:04:19,637
 Find one place in your own feature where it's answering a question without actually
 
 74
-00:04:05,914 --> 00:04:08,140
+00:04:19,637 --> 00:04:21,995
 being given the facts to answer it from.
 
 75
-00:04:08,140 --> 00:04:12,202
+00:04:21,995 --> 00:04:26,297
 That gap is where your next hallucination is waiting, not hypothetically,
 
 76
-00:04:12,202 --> 00:04:12,925
+00:04:26,297 --> 00:04:27,064
 specifically.
 
 77
-00:04:12,925 --> 00:04:17,377
+00:04:27,064 --> 00:04:31,779
 Then name which fix closes it: grounding, if the fact exists somewhere you could
 
 78
-00:04:17,377 --> 00:04:21,717
+00:04:31,779 --> 00:04:36,376
 retrieve it, or verification, if you can at least check the answer afterwards.
 
 79
-00:04:21,717 --> 00:04:25,835
+00:04:36,376 --> 00:04:40,738
 If neither is possible yet, that's worth knowing before launch, not after.
 
 80
-00:04:25,835 --> 00:04:30,398
+00:04:40,738 --> 00:04:45,571
 Next lecture turns this into a map: seven archetypes of AI feature, and which ones
 
 81
-00:04:30,398 --> 00:04:32,123
+00:04:45,571 --> 00:04:47,398
 actually make it to production.

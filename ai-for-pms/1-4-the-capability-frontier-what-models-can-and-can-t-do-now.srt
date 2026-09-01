@@ -1,327 +1,327 @@
 1
-00:00:00,350 --> 00:00:04,876
+00:00:00,350 --> 00:00:05,123
 I'm going to give you a list in this lecture: categories of things these models are
 
 2
-00:00:04,876 --> 00:00:08,039
+00:00:05,123 --> 00:00:08,459
 reliably good at, and categories they're reliably weak at.
 
 3
-00:00:08,039 --> 00:00:12,619
+00:00:08,459 --> 00:00:13,290
 Before I do, I need to tell you something that makes the list more useful, not less.
 
 4
-00:00:12,619 --> 00:00:17,145
+00:00:13,290 --> 00:00:18,063
 Some of what's in the "weak" column today will move to the "reliable" column within
 
 5
-00:00:17,145 --> 00:00:18,890
+00:00:18,063 --> 00:00:19,904
 a year, sometimes within months.
 
 6
-00:00:18,890 --> 00:00:20,690
+00:00:19,904 --> 00:00:21,802
 That's not a reason to skip this.
 
 7
-00:00:20,690 --> 00:00:21,890
+00:00:21,802 --> 00:00:23,067
 It's the actual point.
 
 8
-00:00:21,890 --> 00:00:23,307
+00:00:23,067 --> 00:00:24,562
 The specific list changes.
 
 9
-00:00:23,307 --> 00:00:27,343
+00:00:24,562 --> 00:00:28,818
 The categories, and the discipline of testing rather than assuming, don't.
 
 10
-00:00:27,343 --> 00:00:31,651
+00:00:28,818 --> 00:00:33,361
 By the end of this you'll have both: today's honest snapshot, and a five-minute
 
 11
-00:00:31,651 --> 00:00:35,032
+00:00:33,361 --> 00:00:36,927
 method for re-checking it yourself whenever a new model ships.
 
 12
-00:00:35,032 --> 00:00:36,668
+00:00:36,927 --> 00:00:38,652
 Most teams get this backwards.
 
 13
-00:00:36,668 --> 00:00:41,248
+00:00:38,652 --> 00:00:43,483
 They either treat the model as capable of anything, because the demo was impressive,
 
 14
-00:00:41,248 --> 00:00:45,774
+00:00:43,483 --> 00:00:48,257
 or they treat it as capable of nothing serious, because someone read a horror story
 
 15
-00:00:45,774 --> 00:00:46,047
+00:00:48,257 --> 00:00:48,544
 once.
 
 16
-00:00:46,047 --> 00:00:48,174
+00:00:48,544 --> 00:00:50,787
 Which one is your team doing right now?
 
 17
-00:00:48,174 --> 00:00:49,101
+00:00:50,787 --> 00:00:51,765
 Both are guesses.
 
 18
-00:00:49,101 --> 00:00:52,263
+00:00:51,765 --> 00:00:55,101
 The frontier is a specific, checkable line, not a feeling.
 
 19
-00:00:52,813 --> 00:00:57,440
+00:00:55,651 --> 00:01:00,459
 Here's the current shape, in categories built to outlast any specific benchmark.
 
 20
-00:00:57,440 --> 00:01:00,679
+00:01:00,459 --> 00:01:03,825
 Reliably strong: working with text you actually give it.
 
 21
-00:01:00,679 --> 00:01:05,306
+00:01:03,825 --> 00:01:08,634
 Rewriting, summarising, pulling structured fields out of something unstructured,
 
 22
-00:01:05,306 --> 00:01:07,793
+00:01:08,634 --> 00:01:11,218
 sorting things into categories you defined.
 
 23
-00:01:07,793 --> 00:01:12,420
+00:01:11,218 --> 00:01:16,027
 This is pattern completion applied to material that's right there in the prompt,
 
 24
-00:01:12,420 --> 00:01:15,891
+00:01:16,027 --> 00:01:19,633
 exactly where the mechanism from lecture one is at its best.
 
 25
-00:01:15,891 --> 00:01:20,518
+00:01:19,633 --> 00:01:24,441
 Still genuinely risky: exact arithmetic, especially with longer numbers, because
 
 26
-00:01:20,518 --> 00:01:23,294
+00:01:24,441 --> 00:01:27,327
 it's predicting digits as text, not calculating.
 
 27
-00:01:23,294 --> 00:01:27,574
+00:01:27,327 --> 00:01:31,774
 Anything past its training cutoff, unless you hand it the answer yourself.
 
 28
-00:01:27,574 --> 00:01:32,432
+00:01:31,774 --> 00:01:36,823
 And long chains of reasoning where nothing checks the middle steps, because an early
 
 29
-00:01:32,432 --> 00:01:36,423
+00:01:36,823 --> 00:01:40,971
 small error compounds silently into a confidently wrong final answer.
 
 30
-00:01:36,423 --> 00:01:41,166
+00:01:40,971 --> 00:01:45,899
 Notice the pattern connecting the whole right column: every one of these is a case
 
 31
-00:01:41,166 --> 00:01:45,908
+00:01:45,899 --> 00:01:50,828
 where the mechanism has to extend past what's directly visible in the prompt, into
 
 32
-00:01:45,908 --> 00:01:50,131
+00:01:50,828 --> 00:01:55,216
 genuine calculation, genuine recency, or genuine multi-step verification.
 
 33
-00:01:50,131 --> 00:01:53,196
+00:01:55,216 --> 00:01:58,401
 That's precisely where pattern completion is weakest.
 
 34
-00:01:53,746 --> 00:01:58,315
+00:01:58,951 --> 00:02:03,840
 Say the honest caveat, because pretending this list is permanent would be the least
 
 35
-00:01:58,315 --> 00:02:00,407
+00:02:03,840 --> 00:02:06,078
 defensible thing in this whole course.
 
 36
-00:02:00,407 --> 00:02:03,654
+00:02:06,078 --> 00:02:09,553
 Every item in the risky column is being actively worked on.
 
 37
-00:02:03,654 --> 00:02:08,223
+00:02:09,553 --> 00:02:14,442
 Arithmetic gets more reliable once a model can call an actual calculator instead of
 
 38
-00:02:08,223 --> 00:02:09,654
+00:02:14,442 --> 00:02:15,973
 predicting digits as text.
 
 39
-00:02:09,654 --> 00:02:14,223
+00:02:15,973 --> 00:02:20,862
 Some long reasoning chains get sturdier once a model can check its own intermediate
 
 40
-00:02:14,223 --> 00:02:16,150
+00:02:20,862 --> 00:02:22,924
 steps rather than committing blind.
 
 41
-00:02:16,150 --> 00:02:20,719
+00:02:22,924 --> 00:02:27,812
 Neither problem is solved everywhere, in every product, today, but both are visibly
 
 42
-00:02:20,719 --> 00:02:21,104
+00:02:27,812 --> 00:02:28,225
 moving.
 
 43
-00:02:21,104 --> 00:02:24,462
+00:02:28,225 --> 00:02:31,817
 That's exactly why the next slide matters more than this one.
 
 44
-00:02:24,462 --> 00:02:28,810
+00:02:31,817 --> 00:02:36,470
 A team that memorised this table eighteen months ago and never checked again is
 
 45
-00:02:28,810 --> 00:02:33,379
+00:02:36,470 --> 00:02:41,359
 making decisions on a map that's already partly wrong, in the specific direction of
 
 46
-00:02:33,379 --> 00:02:36,407
+00:02:41,359 --> 00:02:44,599
 being too cautious about things that quietly got fixed.
 
 47
-00:02:36,957 --> 00:02:41,400
+00:02:45,149 --> 00:02:49,958
 Here's the skill that actually survives every model upgrade, and it's the reason
 
 48
-00:02:41,400 --> 00:02:42,900
+00:02:49,958 --> 00:02:51,581
 this section exists at all.
 
 49
-00:02:42,900 --> 00:02:47,232
+00:02:51,581 --> 00:02:56,270
 Boundary probing means you don't take last year's capability list on faith, in
 
 50
-00:02:47,232 --> 00:02:48,177
+00:02:56,270 --> 00:02:57,292
 either direction.
 
 51
-00:02:48,177 --> 00:02:52,787
+00:02:57,292 --> 00:03:02,282
 You test, deliberately, at the edge of whatever category your feature sits in, with
 
 52
-00:02:52,787 --> 00:02:56,842
+00:03:02,282 --> 00:03:06,670
 your own real cases, before you build a launch decision on an assumption.
 
 53
-00:02:56,842 --> 00:02:59,063
+00:03:06,670 --> 00:03:09,075
 The exercise is that test, run for real.
 
 54
-00:02:59,063 --> 00:03:02,507
+00:03:09,075 --> 00:03:12,802
 Whichever risky item is closest to your feature, try it today.
 
 55
-00:03:02,507 --> 00:03:07,062
+00:03:12,802 --> 00:03:17,732
 Whatever you find is worth more than the table two slides back, because that table
 
 56
-00:03:07,062 --> 00:03:09,728
+00:03:17,732 --> 00:03:20,617
 has an expiry date and your test result doesn't.
 
 57
-00:03:09,728 --> 00:03:14,394
+00:03:20,617 --> 00:03:25,667
 This is also the entire reason Section four exists as a full section rather than one
 
 58
-00:03:14,394 --> 00:03:15,227
+00:03:25,667 --> 00:03:26,569
 paragraph here.
 
 59
-00:03:15,227 --> 00:03:19,337
+00:03:26,569 --> 00:03:31,017
 A boundary probe you run once, by hand, tells you where the edge is today.
 
 60
-00:03:19,337 --> 00:03:21,281
+00:03:31,017 --> 00:03:33,121
 A golden set tells you if it moves.
 
 61
-00:03:21,831 --> 00:03:24,357
+00:03:33,671 --> 00:03:36,389
 Here's what a real probe actually looks like.
 
 62
-00:03:24,357 --> 00:03:28,959
+00:03:36,389 --> 00:03:41,340
 A support tool asked to count how many messages, out of a two hundred word thread,
 
 63
-00:03:28,959 --> 00:03:31,204
+00:03:41,340 --> 00:03:43,756
 came from the customer versus the agent.
 
 64
-00:03:31,204 --> 00:03:32,888
+00:03:43,756 --> 00:03:45,567
 Ten runs, exact same question.
 
 65
-00:03:32,888 --> 00:03:33,674
+00:03:45,567 --> 00:03:46,413
 Three correct.
 
 66
-00:03:33,674 --> 00:03:37,771
+00:03:46,413 --> 00:03:50,821
 And every single one of the ten, right or wrong, delivered with identical
 
 67
-00:03:37,771 --> 00:03:42,261
+00:03:50,821 --> 00:03:55,651
 confidence, because that's the consequence from lecture one showing up again: no
 
 68
-00:03:42,261 --> 00:03:46,975
+00:03:55,651 --> 00:04:00,724
 separate signal for "I'm not sure about this count." Counting is exactly the kind of
 
 69
-00:03:46,975 --> 00:03:50,455
+00:04:00,724 --> 00:04:04,468
 task that looks trivial and sits squarely in the risky column.
 
 70
-00:03:50,455 --> 00:03:55,001
+00:04:04,468 --> 00:04:09,359
 Nobody would have guessed three out of ten from the demo, because the demo used a
 
 71
-00:03:55,001 --> 00:03:59,603
+00:04:09,359 --> 00:04:14,310
 five-message thread, and five is short enough to get right by pattern alone almost
 
 72
-00:03:59,603 --> 00:04:00,220
+00:04:14,310 --> 00:04:14,975
 every time.
 
 73
-00:04:00,220 --> 00:04:03,419
+00:04:14,975 --> 00:04:18,417
 The probe only found the gap because it pushed past that.
 
 74
-00:04:03,969 --> 00:04:05,653
+00:04:18,967 --> 00:04:20,727
 One thing before you move on.
 
 75
-00:04:05,653 --> 00:04:10,181
+00:04:20,727 --> 00:04:25,460
 Pick the risky item closest to what you're building, and put it to a real test
 
 76
-00:04:10,181 --> 00:04:14,244
+00:04:25,460 --> 00:04:29,708
 against your own cases before the week is out, not a hypothetical one.
 
 77
-00:04:14,244 --> 00:04:15,754
+00:04:29,708 --> 00:04:31,286
 Note down when you ran it.
 
 78
-00:04:15,754 --> 00:04:20,630
+00:04:31,286 --> 00:04:36,383
 You'll want to know exactly how current that result is, the next time someone claims
 
 79
-00:04:20,630 --> 00:04:21,733
+00:04:36,383 --> 00:04:37,536
 the frontier moved.
 
 80
-00:04:21,733 --> 00:04:25,855
+00:04:37,536 --> 00:04:41,845
 Next lecture takes the risky column's most persistent member seriously:
 
 81
-00:04:25,855 --> 00:04:30,615
+00:04:41,845 --> 00:04:46,821
 hallucination, and why it's the mechanism working as designed, not a bug anyone is
 
 82
-00:04:30,615 --> 00:04:31,718
+00:04:46,821 --> 00:04:47,974
 going to patch out.

@@ -1,383 +1,383 @@
 1
-00:00:00,350 --> 00:00:02,938
+00:00:00,350 --> 00:00:03,066
 Picture the demo that got this feature greenlit.
 
 2
-00:00:02,938 --> 00:00:07,306
+00:00:03,066 --> 00:00:07,651
 Someone picked the prompt, tried it a few times first, and the room nodded along.
 
 3
-00:00:07,306 --> 00:00:11,835
+00:00:07,651 --> 00:00:12,404
 Two weeks into production, the same feature meets a message nobody rehearsed, and it
 
 4
-00:00:11,835 --> 00:00:15,771
+00:00:12,404 --> 00:00:16,536
 answers just as confidently as it did in the demo, except now it's wrong.
 
 5
-00:00:15,771 --> 00:00:18,305
+00:00:16,536 --> 00:00:19,196
 That gap is not a bug that crept in afterwards.
 
 6
-00:00:18,305 --> 00:00:22,727
+00:00:19,196 --> 00:00:23,836
 It's the mechanism, doing exactly what it always does, just facing an input nobody
 
 7
-00:00:22,727 --> 00:00:23,967
+00:00:23,836 --> 00:00:25,138
 chose for it this time.
 
 8
-00:00:23,967 --> 00:00:28,227
+00:00:25,138 --> 00:00:29,609
 Strip away the marketing and the mystique, and here's what's actually happening
 
 9
-00:00:28,227 --> 00:00:32,702
+00:00:29,609 --> 00:00:34,306
 inside every one of these systems: given everything so far, predict the single most
 
 10
-00:00:32,702 --> 00:00:33,619
+00:00:34,306 --> 00:00:35,268
 likely next word.
 
 11
-00:00:33,619 --> 00:00:33,996
+00:00:35,268 --> 00:00:35,664
 Add it.
 
 12
-00:00:33,996 --> 00:00:34,643
+00:00:35,664 --> 00:00:36,344
 Do it again.
 
 13
-00:00:34,643 --> 00:00:36,099
+00:00:36,344 --> 00:00:37,872
 That's the whole mechanism.
 
 14
-00:00:36,099 --> 00:00:38,040
+00:00:37,872 --> 00:00:39,909
 Not reasoning in the way you reason.
 
 15
-00:00:38,040 --> 00:00:41,383
+00:00:39,909 --> 00:00:43,418
 Not looking things up the way a search engine looks things up.
 
 16
-00:00:41,383 --> 00:00:44,349
+00:00:43,418 --> 00:00:46,530
 Pattern completion, one word at a time, extremely fast.
 
 17
-00:00:44,349 --> 00:00:46,452
+00:00:46,530 --> 00:00:48,738
 So what follows from that one sentence?
 
 18
-00:00:46,452 --> 00:00:50,873
+00:00:48,738 --> 00:00:53,378
 I want to spend this lecture on four things, because none of them are obvious from
 
 19
-00:00:50,873 --> 00:00:55,079
+00:00:53,378 --> 00:00:57,793
 using the product, and every one of them will eventually cost you if you don't
 
 20
-00:00:55,079 --> 00:00:56,050
+00:00:57,793 --> 00:00:58,811
 already know them.
 
 21
-00:00:56,050 --> 00:00:57,559
+00:00:58,811 --> 00:01:00,396
 None of this is a criticism.
 
 22
-00:00:57,559 --> 00:01:01,981
+00:01:00,396 --> 00:01:05,037
 It's just what the mechanism is, and a PM who knows the mechanism makes different,
 
 23
-00:01:01,981 --> 00:01:04,893
+00:01:05,037 --> 00:01:08,093
 better decisions than one working from the demo alone.
 
 24
-00:01:05,443 --> 00:01:09,862
+00:01:08,643 --> 00:01:13,339
 Here's that sentence as a loop, because it really is just this, run thousands of
 
 25
-00:01:09,862 --> 00:01:10,801
+00:01:13,339 --> 00:01:14,337
 times per answer.
 
 26
-00:01:10,801 --> 00:01:12,072
+00:01:14,337 --> 00:01:15,688
 Start with your prompt.
 
 27
-00:01:12,072 --> 00:01:16,602
+00:01:15,688 --> 00:01:20,502
 Predict one word: the single most statistically likely next word, given everything
 
 28
-00:01:16,602 --> 00:01:16,988
+00:01:20,502 --> 00:01:20,913
 so far.
 
 29
-00:01:16,988 --> 00:01:17,541
+00:01:20,913 --> 00:01:21,500
 Append it.
 
 30
-00:01:17,541 --> 00:01:21,131
+00:01:21,500 --> 00:01:25,316
 Now that word is part of "everything so far," so go around again.
 
 31
-00:01:21,131 --> 00:01:22,291
+00:01:25,316 --> 00:01:26,549
 Predict the next one.
 
 32
-00:01:22,291 --> 00:01:22,844
+00:01:26,549 --> 00:01:27,136
 Append it.
 
 33
-00:01:22,844 --> 00:01:24,612
+00:01:27,136 --> 00:01:29,014
 Repeat until the answer is done.
 
 34
-00:01:24,612 --> 00:01:29,086
+00:01:29,014 --> 00:01:33,770
 There's no separate step where it "thinks it through" first and writes the answer
 
 35
-00:01:29,086 --> 00:01:29,694
+00:01:33,770 --> 00:01:34,415
 down after.
 
 36
-00:01:29,694 --> 00:01:34,058
+00:01:34,415 --> 00:01:39,053
 The writing is the thinking, and once a word is generated, the model is already
 
 37
-00:01:34,058 --> 00:01:38,477
+00:01:39,053 --> 00:01:43,750
 partly committed to whatever comes next, because that word is now sitting in the
 
 38
-00:01:38,477 --> 00:01:40,466
+00:01:43,750 --> 00:01:45,863
 context feeding the next prediction.
 
 39
-00:01:41,016 --> 00:01:44,200
+00:01:46,413 --> 00:01:49,705
 Watch the mechanism produce a genuinely dangerous sentence.
 
 40
-00:01:44,200 --> 00:01:48,626
+00:01:49,705 --> 00:01:54,279
 Ask a model, with nothing in the prompt about your actual policy, what your refund
 
 41
-00:01:48,626 --> 00:01:49,165
+00:01:54,279 --> 00:01:54,837
 policy is.
 
 42
-00:01:49,165 --> 00:01:53,591
+00:01:54,837 --> 00:01:59,411
 It doesn't say "I don't have that information." It predicts the most statistically
 
 43
-00:01:53,591 --> 00:01:58,016
+00:01:59,411 --> 00:02:03,985
 likely continuation of a sentence that starts with "our refund policy is," because
 
 44
-00:01:58,016 --> 00:02:02,387
+00:02:03,985 --> 00:02:08,504
 somewhere in an ocean of training text, refund policies overwhelmingly sound like
 
 45
-00:02:02,387 --> 00:02:02,657
+00:02:08,504 --> 00:02:08,783
 that.
 
 46
-00:02:02,657 --> 00:02:05,949
+00:02:08,783 --> 00:02:12,186
 Thirty days, full refund, is a genuinely common policy shape.
 
 47
-00:02:05,949 --> 00:02:08,540
+00:02:12,186 --> 00:02:14,863
 It might even be close to yours, by coincidence.
 
 48
-00:02:08,540 --> 00:02:10,321
+00:02:14,863 --> 00:02:16,704
 It is not looking up your policy.
 
 49
-00:02:10,321 --> 00:02:14,800
+00:02:16,704 --> 00:02:21,334
 It's completing a plausible sentence, with exactly the same confident tone it would
 
 50
-00:02:14,800 --> 00:02:16,581
+00:02:21,334 --> 00:02:23,175
 use if it happened to be correct.
 
 51
-00:02:16,581 --> 00:02:20,305
+00:02:23,175 --> 00:02:27,024
 Picture a support agent trusting that sentence for one real customer.
 
 52
-00:02:20,305 --> 00:02:23,003
+00:02:27,024 --> 00:02:29,814
 Nothing about the delivery would have warned them.
 
 53
-00:02:23,003 --> 00:02:27,375
+00:02:29,814 --> 00:02:34,332
 That's the entire danger in one exchange: not that it's wrong, but that wrong and
 
 54
-00:02:27,375 --> 00:02:28,562
+00:02:34,332 --> 00:02:35,559
 right sound identical.
 
 55
-00:02:29,112 --> 00:02:32,828
+00:02:36,109 --> 00:02:40,012
 Four consequences, and you just watched two of them happen at once.
 
 56
-00:02:32,828 --> 00:02:37,321
+00:02:40,012 --> 00:02:44,729
 It completes patterns, not intentions, so an ambiguous question gets a confident,
 
 57
-00:02:37,321 --> 00:02:41,758
+00:02:44,729 --> 00:02:49,388
 plausible-sounding answer instead of the clarifying question a person would ask.
 
 58
-00:02:41,758 --> 00:02:46,361
+00:02:49,388 --> 00:02:54,222
 It has no built-in confidence signal separate from fluency, so a wrong answer and a
 
 59
-00:02:46,361 --> 00:02:48,690
+00:02:54,222 --> 00:02:56,669
 right one arrive in exactly the same tone.
 
 60
-00:02:48,690 --> 00:02:50,410
+00:02:56,669 --> 00:02:58,474
 You cannot hear the difference.
 
 61
-00:02:50,410 --> 00:02:55,069
+00:02:58,474 --> 00:03:03,366
 It only knows what's in its training data plus whatever you put in the prompt, which
 
 62
-00:02:55,069 --> 00:02:59,672
+00:03:03,366 --> 00:03:08,200
 is precisely why it invented your refund policy instead of admitting it didn't have
 
 63
-00:02:59,672 --> 00:02:59,894
+00:03:08,200 --> 00:03:08,433
 one.
 
 64
-00:02:59,894 --> 00:03:03,832
+00:03:08,433 --> 00:03:12,568
 And it reflects the statistical centre of everything it was trained on.
 
 65
-00:03:03,832 --> 00:03:05,218
+00:03:12,568 --> 00:03:14,024
 Common patterns dominate.
 
 66
-00:03:05,218 --> 00:03:09,156
+00:03:14,024 --> 00:03:18,160
 A rare, correct, specialist answer competes against a much more common,
 
 67
-00:03:09,156 --> 00:03:12,539
+00:03:18,160 --> 00:03:21,712
 plausible-sounding, wrong one, and the common one often wins.
 
 68
-00:03:12,539 --> 00:03:13,704
+00:03:21,712 --> 00:03:22,935
 Hold onto that table.
 
 69
-00:03:13,704 --> 00:03:18,363
+00:03:22,935 --> 00:03:27,828
 Nearly every failure mode in the rest of this course is one of these four, wearing a
 
 70
-00:03:18,363 --> 00:03:19,361
+00:03:27,828 --> 00:03:28,876
 different costume.
 
 71
-00:03:19,911 --> 00:03:22,058
+00:03:29,426 --> 00:03:31,653
 That's the term for the whole mechanism.
 
 72
-00:03:22,058 --> 00:03:26,513
+00:03:31,653 --> 00:03:36,275
 Not magic, not reasoning in the way the word usually means: pattern completion, one
 
 73
-00:03:26,513 --> 00:03:30,752
+00:03:36,275 --> 00:03:40,674
 token at a time, at a speed and fluency that makes it feel like something else.
 
 74
-00:03:30,752 --> 00:03:34,670
+00:03:40,674 --> 00:03:44,738
 The exercise takes thirty seconds, and it's the one that actually sticks.
 
 75
-00:03:34,670 --> 00:03:38,856
+00:03:44,738 --> 00:03:49,082
 Ask any model something only your company could know, with zero context given.
 
 76
-00:03:38,856 --> 00:03:43,365
+00:03:49,082 --> 00:03:53,759
 Whatever it says back, confidently, is the mechanism working exactly as designed, on
 
 77
-00:03:43,365 --> 00:03:45,511
+00:03:53,759 --> 00:03:55,986
 a question it had no business answering.
 
 78
-00:03:46,061 --> 00:03:50,278
+00:03:56,536 --> 00:04:00,964
 Say the honest caveat, because overclaiming in the other direction is just as
 
 79
-00:03:50,278 --> 00:03:50,880
+00:04:00,964 --> 00:04:01,596
 misleading.
 
 80
-00:03:50,880 --> 00:03:55,262
+00:04:01,596 --> 00:04:06,197
 What you just watched is the base mechanism, not the entire product you actually
 
 81
-00:03:55,262 --> 00:03:55,481
+00:04:06,197 --> 00:04:06,427
 use.
 
 82
-00:03:55,481 --> 00:04:00,026
+00:04:06,427 --> 00:04:11,199
 Real systems wrap it in guardrails, give it tools to look things up, and connect it
 
 83
-00:04:00,026 --> 00:04:04,626
+00:04:11,199 --> 00:04:16,030
 to your actual documents, which is most of what the RAG and agents sections later in
 
 84
-00:04:04,626 --> 00:04:05,831
+00:04:16,030 --> 00:04:17,295
 this course are about.
 
 85
-00:04:05,831 --> 00:04:09,007
+00:04:17,295 --> 00:04:20,630
 But every one of those additions sits on top of this loop.
 
 86
-00:04:09,007 --> 00:04:12,895
+00:04:20,630 --> 00:04:24,713
 They don't replace next-token prediction, they constrain and inform it.
 
 87
-00:04:12,895 --> 00:04:17,495
+00:04:24,713 --> 00:04:29,543
 Understanding the loop is what lets you tell the difference between a guardrail that
 
 88
-00:04:17,495 --> 00:04:19,741
+00:04:29,543 --> 00:04:31,901
 actually works and one that's decoration.
 
 89
-00:04:20,291 --> 00:04:21,822
+00:04:32,451 --> 00:04:34,077
 One thing before you move on.
 
 90
-00:04:21,822 --> 00:04:26,045
+00:04:34,077 --> 00:04:38,562
 Ask a model one real question only your company could answer, with nothing about
 
 91
-00:04:26,045 --> 00:04:27,471
+00:04:38,562 --> 00:04:40,075
 your company in the prompt.
 
 92
-00:04:27,471 --> 00:04:31,906
+00:04:40,075 --> 00:04:44,785
 Then notice, specifically, whether it hedged, or answered with the same confidence a
 
 93
-00:04:31,906 --> 00:04:33,331
+00:04:44,785 --> 00:04:46,299
 correct answer would carry.
 
 94
-00:04:33,331 --> 00:04:37,555
+00:04:46,299 --> 00:04:50,784
 Next lecture takes the other half of that loop seriously: what's actually inside
 
 95
-00:04:37,555 --> 00:04:41,884
+00:04:50,784 --> 00:04:55,381
 "everything written so far," how big that space is, and exactly where your feature
 
 96
-00:04:41,884 --> 00:04:44,419
+00:04:55,381 --> 00:04:58,072
 quietly breaks once real conversations get long.

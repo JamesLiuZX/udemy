@@ -1,335 +1,335 @@
 1
-00:00:00,350 --> 00:00:04,907
+00:00:00,350 --> 00:00:05,155
 You run your feature's exact prompt twice this morning and get two different answers
 
 2
-00:00:04,907 --> 00:00:05,179
+00:00:05,155 --> 00:00:05,441
 back.
 
 3
-00:00:05,179 --> 00:00:06,047
+00:00:05,441 --> 00:00:06,356
 Nothing crashed.
 
 4
-00:00:06,047 --> 00:00:07,457
+00:00:06,356 --> 00:00:07,843
 Nobody touched the prompt.
 
 5
-00:00:07,457 --> 00:00:11,635
+00:00:07,843 --> 00:00:12,248
 And when a teammate asks why, "that's just how AI works" will not survive the
 
 6
-00:00:11,635 --> 00:00:12,666
+00:00:12,248 --> 00:00:13,335
 follow-up question.
 
 7
-00:00:12,666 --> 00:00:17,115
+00:00:13,335 --> 00:00:18,025
 Last lecture, I said the model predicts the single most likely next word, over and
 
 8
-00:00:17,115 --> 00:00:17,386
+00:00:18,025 --> 00:00:18,311
 over.
 
 9
-00:00:17,386 --> 00:00:21,672
+00:00:18,311 --> 00:00:22,830
 That was true enough to build the mental model on, and it's not quite the whole
 
 10
-00:00:21,672 --> 00:00:21,997
+00:00:22,830 --> 00:00:23,173
 story.
 
 11
-00:00:21,997 --> 00:00:22,811
+00:00:23,173 --> 00:00:24,031
 Time to fix it.
 
 12
-00:00:22,811 --> 00:00:27,369
+00:00:24,031 --> 00:00:28,836
 At each step, the model actually computes a whole list of plausible next words, each
 
 13
-00:00:27,369 --> 00:00:29,973
+00:00:28,836 --> 00:00:31,582
 with a likelihood attached, not just one winner.
 
 14
-00:00:29,973 --> 00:00:32,631
+00:00:31,582 --> 00:00:34,385
 Then it draws one, weighted by those likelihoods.
 
 15
-00:00:32,631 --> 00:00:36,972
+00:00:34,385 --> 00:00:38,961
 Most of the time the top candidate wins anyway, because it usually is by far the
 
 16
-00:00:36,972 --> 00:00:37,623
+00:00:38,961 --> 00:00:39,647
 most likely.
 
 17
-00:00:37,623 --> 00:00:42,126
+00:00:39,647 --> 00:00:44,395
 But not always, and that "not always" is precisely why the same prompt can give you
 
 18
-00:00:42,126 --> 00:00:44,513
+00:00:44,395 --> 00:00:46,912
 two different answers on two different runs.
 
 19
-00:00:44,513 --> 00:00:48,907
+00:00:46,912 --> 00:00:51,545
 Temperature is the dial that controls how often it draws something other than the
 
 20
-00:00:48,907 --> 00:00:49,667
+00:00:51,545 --> 00:00:52,346
 top candidate.
 
 21
-00:00:49,667 --> 00:00:53,845
+00:00:52,346 --> 00:00:56,750
 This isn't a footnote to last lecture, it's the answer to a question you were
 
 22
-00:00:53,845 --> 00:00:55,147
+00:00:56,750 --> 00:00:58,123
 probably already asking.
 
 23
-00:00:55,147 --> 00:00:59,541
+00:00:58,123 --> 00:01:02,756
 If it's really just predicting the obvious next word, why doesn't the same prompt
 
 24
-00:00:59,541 --> 00:01:01,223
+00:01:02,756 --> 00:01:04,529
 come back identical every time?
 
 25
-00:01:01,223 --> 00:01:05,509
+00:01:04,529 --> 00:01:09,048
 Now you know: because "obvious" is a probability, not a certainty, and the dial
 
 26
-00:01:05,509 --> 00:01:07,517
+00:01:09,048 --> 00:01:11,165
 decides how strictly it sticks to it.
 
 27
-00:01:08,067 --> 00:01:11,575
+00:01:11,715 --> 00:01:15,460
 Same prompt, five separate runs, asking for one product tagline.
 
 28
-00:01:11,575 --> 00:01:12,617
+00:01:15,460 --> 00:01:16,572
 Watch what changes.
 
 29
-00:01:12,617 --> 00:01:17,058
+00:01:16,572 --> 00:01:21,312
 Near zero, it's almost always the same answer, run after run, because the dial is
 
 30
-00:01:17,058 --> 00:01:20,347
+00:01:21,312 --> 00:01:24,823
 telling it to take the top candidate essentially every time.
 
 31
-00:01:20,347 --> 00:01:23,033
+00:01:24,823 --> 00:01:27,690
 Reliable, a little safe, occasionally repetitive.
 
 32
-00:01:23,033 --> 00:01:27,200
+00:01:27,690 --> 00:01:32,137
 Near one, the same prompt produces genuinely different taglines across runs.
 
 33
-00:01:27,200 --> 00:01:31,640
+00:01:32,137 --> 00:01:36,877
 Same input, real variety, because the dial is now telling it to draw from further
 
 34
-00:01:31,640 --> 00:01:33,450
+00:01:36,877 --> 00:01:38,808
 down that ranked list more often.
 
 35
-00:01:33,450 --> 00:01:37,890
+00:01:38,808 --> 00:01:43,548
 Neither setting is "better." They're tuned for different jobs, and the mistake is
 
 36
-00:01:37,890 --> 00:01:41,125
+00:01:43,548 --> 00:01:47,001
 picking one without asking which job you're actually doing.
 
 37
-00:01:41,125 --> 00:01:45,565
+00:01:47,001 --> 00:01:51,741
 Notice, too, that even at zero, the first tagline could still have been the wrong
 
 38
-00:01:45,565 --> 00:01:46,497
+00:01:51,741 --> 00:01:52,735
 one to lead with.
 
 39
-00:01:46,497 --> 00:01:50,664
+00:01:52,735 --> 00:01:57,183
 Consistency tells you nothing about whether the answer it kept repeating was
 
 40
-00:01:50,664 --> 00:01:51,431
+00:01:57,183 --> 00:01:58,002
 actually good.
 
 41
-00:01:51,981 --> 00:01:56,470
+00:01:58,552 --> 00:02:03,336
 That's the term, and notice the definition doesn't say "creative" or "smart." It
 
 42
-00:01:56,470 --> 00:02:00,229
+00:02:03,336 --> 00:02:07,343
 says how often the model picks something other than the top choice.
 
 43
-00:02:00,229 --> 00:02:00,790
+00:02:07,343 --> 00:02:07,941
 That's it.
 
 44
-00:02:00,790 --> 00:02:05,167
+00:02:07,941 --> 00:02:12,605
 Everything else people say about temperature is a description of what that one
 
 45
-00:02:05,167 --> 00:02:07,131
+00:02:12,605 --> 00:02:14,698
 mechanical change tends to produce.
 
 46
-00:02:07,131 --> 00:02:11,620
+00:02:14,698 --> 00:02:19,482
 The exercise is the fastest way to feel a setting you've probably never actually
 
 47
-00:02:11,620 --> 00:02:12,181
+00:02:19,482 --> 00:02:20,080
 looked at.
 
 48
-00:02:12,181 --> 00:02:16,501
+00:02:20,080 --> 00:02:24,684
 Run your feature's real prompt five times, at whatever temperature is already
 
 49
-00:02:16,501 --> 00:02:19,531
+00:02:24,684 --> 00:02:27,914
 configured, and count the genuinely different answers.
 
 50
-00:02:19,531 --> 00:02:23,122
+00:02:27,914 --> 00:02:31,741
 Most people are surprised by what they find, in both directions.
 
 51
-00:02:23,672 --> 00:02:25,876
+00:02:32,291 --> 00:02:34,601
 Here's a rough default, and I mean rough.
 
 52
-00:02:25,876 --> 00:02:28,832
+00:02:34,601 --> 00:02:37,699
 Treat it as a starting point to argue with, not a rule.
 
 53
-00:02:28,832 --> 00:02:33,186
+00:02:37,699 --> 00:02:42,262
 Anything where consistency itself is the feature, summarising the same ticket the
 
 54
-00:02:33,186 --> 00:02:37,325
+00:02:42,262 --> 00:02:46,601
 same way every time, extracting the same field reliably, wants a low setting.
 
 55
-00:02:37,325 --> 00:02:41,625
+00:02:46,601 --> 00:02:51,108
 Code generation too: you want the same, boring, working answer, not an inventive
 
 56
-00:02:41,625 --> 00:02:41,840
+00:02:51,108 --> 00:02:51,333
 one.
 
 57
-00:02:41,840 --> 00:02:46,194
+00:02:51,333 --> 00:02:55,896
 Anything where variety is the actual point, brainstorming names, drafting several
 
 58
-00:02:46,194 --> 00:02:48,990
+00:02:55,896 --> 00:02:58,826
 marketing angles to choose between, wants it higher.
 
 59
-00:02:48,990 --> 00:02:51,194
+00:02:58,826 --> 00:03:01,136
 You're not asking for one correct answer.
 
 60
-00:02:51,194 --> 00:02:52,591
+00:03:01,136 --> 00:03:02,601
 You're asking for options.
 
 61
-00:02:52,591 --> 00:02:57,106
+00:03:02,601 --> 00:03:07,333
 If you don't know which one your feature is, that's worth answering before you argue
 
 62
-00:02:57,106 --> 00:02:58,020
+00:03:07,333 --> 00:03:08,291
 about the number.
 
 63
-00:02:58,020 --> 00:03:02,213
+00:03:08,291 --> 00:03:12,685
 And if a single feature does both, a support tool that drafts a reply and also
 
 64
-00:03:02,213 --> 00:03:06,621
+00:03:12,685 --> 00:03:17,305
 suggests three subject lines, it may genuinely need two different settings for two
 
 65
-00:03:06,621 --> 00:03:09,362
+00:03:17,305 --> 00:03:20,178
 different calls, not one compromise value for both.
 
 66
-00:03:09,912 --> 00:03:14,302
+00:03:20,728 --> 00:03:25,371
 Say the honest caveat, because this is the misunderstanding that actually costs
 
 67
-00:03:14,302 --> 00:03:14,691
+00:03:25,371 --> 00:03:25,783
 people.
 
 68
-00:03:14,691 --> 00:03:18,192
+00:03:25,783 --> 00:03:29,486
 A low temperature setting does not make the model more correct.
 
 69
-00:03:18,192 --> 00:03:19,747
+00:03:29,486 --> 00:03:31,132
 It makes it more consistent.
 
 70
-00:03:19,747 --> 00:03:24,304
+00:03:31,132 --> 00:03:35,951
 If the most likely answer happens to be wrong, a temperature of zero will give you
 
 71
-00:03:24,304 --> 00:03:27,360
+00:03:35,951 --> 00:03:39,184
 that same wrong answer, confidently, every single time.
 
 72
-00:03:27,360 --> 00:03:31,806
+00:03:39,184 --> 00:03:43,886
 Consistency and correctness are two completely different properties, and turning
 
 73
-00:03:31,806 --> 00:03:33,750
+00:03:43,886 --> 00:03:45,944
 this dial only touches one of them.
 
 74
-00:03:33,750 --> 00:03:38,418
+00:03:45,944 --> 00:03:50,881
 Whether it's actually right is a question for the golden set and rubric you'll build
 
 75
-00:03:38,418 --> 00:03:40,363
+00:03:50,881 --> 00:03:52,938
 in Section four, not for this dial.
 
 76
-00:03:40,363 --> 00:03:44,253
+00:03:52,938 --> 00:03:57,053
 This dial has never been able to answer that question, at any setting.
 
 77
-00:03:44,803 --> 00:03:46,285
+00:03:57,603 --> 00:03:59,158
 One thing before you move on.
 
 78
-00:03:46,285 --> 00:03:49,966
+00:03:59,158 --> 00:04:03,021
 Find out what temperature your feature is actually running at right now.
 
 79
-00:03:49,966 --> 00:03:54,158
+00:04:03,021 --> 00:04:07,419
 Most people building on top of these models have never checked, and it's usually a
 
 80
-00:03:54,158 --> 00:03:55,794
+00:04:07,419 --> 00:04:09,136
 default nobody chose on purpose.
 
 81
-00:03:55,794 --> 00:04:00,037
+00:04:09,136 --> 00:04:13,588
 Then match the setting to the job you're doing, consistency or variety, rather than
 
 82
-00:04:00,037 --> 00:04:02,490
+00:04:13,588 --> 00:04:16,163
 whatever the example code happened to ship with.
 
 83
-00:04:02,490 --> 00:04:06,784
+00:04:16,163 --> 00:04:20,669
 Next lecture moves from how it decides to what it's actually capable of: the honest,
 
 84
-00:04:06,784 --> 00:04:09,443
+00:04:20,669 --> 00:04:23,459
 current state of what these models can and can't do.

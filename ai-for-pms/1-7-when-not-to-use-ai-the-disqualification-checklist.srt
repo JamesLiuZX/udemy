@@ -1,343 +1,343 @@
 1
-00:00:00,350 --> 00:00:04,954
+00:00:00,350 --> 00:00:05,195
 Everything in this section so far has assumed you're building the feature and needed
 
 2
-00:00:04,954 --> 00:00:05,886
+00:00:05,195 --> 00:00:06,176
 to build it well.
 
 3
-00:00:05,886 --> 00:00:10,162
+00:00:06,176 --> 00:00:10,675
 This lecture assumes something different: that the most valuable thing you can
 
 4
-00:00:10,162 --> 00:00:11,751
+00:00:10,675 --> 00:00:12,348
 decide, sometimes, is not to.
 
 5
-00:00:11,751 --> 00:00:14,876
+00:00:12,348 --> 00:00:15,636
 Nobody gets promoted for the AI feature they didn't ship.
 
 6
-00:00:14,876 --> 00:00:18,493
+00:00:15,636 --> 00:00:19,443
 So who in the room is actually going to argue for not building it?
 
 7
-00:00:18,493 --> 00:00:22,933
+00:00:19,443 --> 00:00:24,115
 That's exactly why this checklist matters: the pressure is always toward building
 
 8
-00:00:22,933 --> 00:00:27,538
+00:00:24,115 --> 00:00:28,961
 something, and the discipline you need is the same one from the rest of this course,
 
 9
-00:00:27,538 --> 00:00:30,607
+00:00:28,961 --> 00:00:32,191
 pointed at the decision itself instead of at the output.
 
 10
-00:00:30,607 --> 00:00:31,429
+00:00:32,191 --> 00:00:33,056
 Five questions.
 
 11
-00:00:31,429 --> 00:00:34,334
+00:00:33,056 --> 00:00:36,114
 If you answer yes to any of them, that's not a maybe.
 
 12
-00:00:34,334 --> 00:00:38,774
+00:00:36,114 --> 00:00:40,786
 That's a specific, nameable reason to stop, or to fix, before you write a line of
 
 13
-00:00:38,774 --> 00:00:39,048
+00:00:40,786 --> 00:00:41,074
 spec.
 
 14
-00:00:39,048 --> 00:00:41,515
+00:00:41,074 --> 00:00:43,670
 This lecture is marked hands-on for a reason.
 
 15
-00:00:41,515 --> 00:00:43,708
+00:00:43,670 --> 00:00:45,977
 Reading a checklist teaches you nothing.
 
 16
-00:00:43,708 --> 00:00:48,148
+00:00:45,977 --> 00:00:50,650
 Running it against something you actually care about shipping is the only version
 
 17
-00:00:48,148 --> 00:00:50,066
+00:00:50,650 --> 00:00:52,669
 that changes what you do next week.
 
 18
-00:00:50,616 --> 00:00:51,791
+00:00:53,219 --> 00:00:54,465
 Here's the checklist.
 
 19
-00:00:51,791 --> 00:00:55,035
+00:00:54,465 --> 00:00:57,909
 Five questions, and one yes is enough to stop and rethink.
 
 20
-00:00:55,035 --> 00:00:59,735
+00:00:57,909 --> 00:01:02,895
 Severe and irreversible, with nothing catching it first, that's the act archetype at
 
 21
-00:00:59,735 --> 00:01:03,259
+00:01:02,895 --> 00:01:06,636
 its most dangerous, last lecture's chart telling you the truth.
 
 22
-00:01:03,259 --> 00:01:07,622
+00:01:06,636 --> 00:01:11,266
 Needing correctness every time, not just usually, is asking the mechanism from
 
 23
-00:01:07,622 --> 00:01:11,035
+00:01:11,266 --> 00:01:14,888
 lecture one to do something it fundamentally isn't built for.
 
 24
-00:01:11,035 --> 00:01:15,510
+00:01:14,888 --> 00:01:19,637
 Ungroundable and unverifiable together means neither of hallucination's two real
 
 25
-00:01:15,510 --> 00:01:18,419
+00:01:19,637 --> 00:01:22,724
 fixes is available to you, so you're flying on hope.
 
 26
-00:01:18,419 --> 00:01:23,118
+00:01:22,724 --> 00:01:27,711
 Volume too low means the golden set from Section four costs more than the problem is
 
 27
-00:01:23,118 --> 00:01:23,454
+00:01:27,711 --> 00:01:28,067
 worth.
 
 28
-00:01:23,454 --> 00:01:27,985
+00:01:28,067 --> 00:01:32,876
 And if a simple rule already solves it, adding a probabilistic system on top only
 
 29
-00:01:27,985 --> 00:01:30,391
+00:01:32,876 --> 00:01:35,429
 adds risk to a feature that already worked.
 
 30
-00:01:30,391 --> 00:01:34,698
+00:01:35,429 --> 00:01:40,000
 Read them again and notice none of the five asks whether the model is capable
 
 31
-00:01:34,698 --> 00:01:35,090
+00:01:40,000 --> 00:01:40,415
 enough.
 
 32
-00:01:35,090 --> 00:01:39,733
+00:01:40,415 --> 00:01:45,343
 Every one of them is a question about your situation: what happens when it's wrong,
 
 33
-00:01:39,733 --> 00:01:43,649
+00:01:45,343 --> 00:01:49,498
 whether you can check it, whether the volume justifies the investment.
 
 34
-00:01:43,649 --> 00:01:44,656
+00:01:49,498 --> 00:01:50,567
 That's deliberate.
 
 35
-00:01:44,656 --> 00:01:45,999
+00:01:50,567 --> 00:01:51,992
 Capability keeps moving.
 
 36
-00:01:45,999 --> 00:01:48,460
+00:01:51,992 --> 00:01:54,604
 Your situation is what you actually control.
 
 37
-00:01:49,010 --> 00:01:53,376
+00:01:55,154 --> 00:01:59,782
 Here's the same five questions laid out as a path, because that's how it actually
 
 38
-00:01:53,376 --> 00:01:54,454
+00:01:59,782 --> 00:02:00,925
 plays out in a room.
 
 39
-00:01:54,454 --> 00:01:58,820
+00:02:00,925 --> 00:02:05,553
 One yes, on any single gate, and you stop right there and name what has to change
 
 40
-00:01:58,820 --> 00:02:00,006
+00:02:05,553 --> 00:02:06,809
 before you go further.
 
 41
-00:02:00,006 --> 00:02:04,372
+00:02:06,809 --> 00:02:11,437
 Only a no on every one of them clears you through to the far side, and even then,
 
 42
-00:02:04,372 --> 00:02:08,738
+00:02:11,437 --> 00:02:16,065
 you land on the eval work last lecture's chart said this archetype demands, not a
 
 43
-00:02:08,738 --> 00:02:09,277
+00:02:16,065 --> 00:02:16,637
 free pass.
 
 44
-00:02:09,827 --> 00:02:14,217
+00:02:17,187 --> 00:02:21,879
 Same company, same underlying model, two completely different verdicts, and this is
 
 45
-00:02:14,217 --> 00:02:15,645
+00:02:21,879 --> 00:02:23,406
 the exercise, run for real.
 
 46
-00:02:15,645 --> 00:02:17,603
+00:02:23,406 --> 00:02:25,497
 The ticket summariser passes cleanly.
 
 47
-00:02:17,603 --> 00:02:21,623
+00:02:25,497 --> 00:02:29,794
 A wrong summary gets caught by the agent reading it before anything happens.
 
 48
-00:02:21,623 --> 00:02:25,220
+00:02:29,794 --> 00:02:33,639
 It's groundable in the actual ticket text and verifiable against it.
 
 49
-00:02:25,220 --> 00:02:29,187
+00:02:33,639 --> 00:02:37,879
 And ticket volume is high enough that building a golden set pays for itself
 
 50
-00:02:29,187 --> 00:02:29,822
+00:02:37,879 --> 00:02:38,557
 immediately.
 
 51
-00:02:29,822 --> 00:02:34,212
+00:02:38,557 --> 00:02:43,250
 Auto-approving refunds over five hundred dollars fails on at least two questions at
 
 52
-00:02:34,212 --> 00:02:34,477
+00:02:43,250 --> 00:02:43,532
 once.
 
 53
-00:02:34,477 --> 00:02:38,286
+00:02:43,532 --> 00:02:47,603
 Money leaves before any human checks it, that's severe and irreversible.
 
 54
-00:02:38,286 --> 00:02:42,517
+00:02:47,603 --> 00:02:52,126
 And it needs to be right every single time, not usually, because "usually" means
 
 55
-00:02:42,517 --> 00:02:45,691
+00:02:52,126 --> 00:02:55,518
 real dollars walking out the door on a predictable schedule.
 
 56
-00:02:45,691 --> 00:02:49,764
+00:02:55,518 --> 00:02:59,871
 Notice these are the same seven archetypes from last lecture, just met at the
 
 57
-00:02:49,764 --> 00:02:51,933
+00:02:59,871 --> 00:03:02,189
 decision point instead of after the fact.
 
 58
-00:02:51,933 --> 00:02:54,314
+00:03:02,189 --> 00:03:04,733
 Summarise sits at the safe end of that chart.
 
 59
-00:02:54,314 --> 00:02:55,900
+00:03:04,733 --> 00:03:06,430
 Act sits at the dangerous end.
 
 60
-00:02:55,900 --> 00:02:59,762
+00:03:06,430 --> 00:03:10,557
 The checklist is what that chart feels like before you've built anything.
 
 61
-00:03:00,312 --> 00:03:04,486
+00:03:11,107 --> 00:03:15,460
 Say the honest caveat, because "no" can sound bigger than it actually is.
 
 62
-00:03:04,486 --> 00:03:08,145
+00:03:15,460 --> 00:03:19,276
 The refund example didn't fail because AI can never touch money.
 
 63
-00:03:08,145 --> 00:03:12,834
+00:03:19,276 --> 00:03:24,166
 It failed because right now, today, it isn't groundable enough, verifiable enough,
 
 64
-00:03:12,834 --> 00:03:13,920
+00:03:24,166 --> 00:03:25,299
 or reviewed enough.
 
 65
-00:03:13,920 --> 00:03:18,323
+00:03:25,299 --> 00:03:29,891
 Add a human approval step back in for anything over five hundred dollars, and
 
 66
-00:03:18,323 --> 00:03:19,923
+00:03:29,891 --> 00:03:31,561
 question one stops applying.
 
 67
-00:03:19,923 --> 00:03:23,697
+00:03:31,561 --> 00:03:35,497
 Build enough volume and history, and question four stops applying.
 
 68
-00:03:23,697 --> 00:03:26,556
+00:03:35,497 --> 00:03:38,478
 A disqualification is a punch list, not a verdict.
 
 69
-00:03:26,556 --> 00:03:31,359
+00:03:38,478 --> 00:03:43,488
 It tells you exactly what would have to change, which is far more useful than either
 
 70
-00:03:31,359 --> 00:03:33,074
+00:03:43,488 --> 00:03:45,277
 a blind yes or a permanent no.
 
 71
-00:03:33,624 --> 00:03:37,948
+00:03:45,827 --> 00:03:50,359
 That's the whole tool, and notice it's designed to run before the spec, not after
 
 72
-00:03:37,948 --> 00:03:40,350
+00:03:50,359 --> 00:03:52,876
 something's already gone wrong in production.
 
 73
-00:03:40,350 --> 00:03:44,568
+00:03:52,876 --> 00:03:57,296
 The exercise is blunt: run all five, right now, against the real feature you're
 
 74
-00:03:44,568 --> 00:03:47,344
+00:03:57,296 --> 00:04:00,206
 closest to, and do it with someone else in the room.
 
 75
-00:03:47,344 --> 00:03:51,508
+00:04:00,206 --> 00:04:04,570
 If you hit silence on any question, nobody actually knows the answer, and that
 
 76
-00:03:51,508 --> 00:03:53,803
+00:04:04,570 --> 00:04:06,976
 silence is exactly as informative as a yes.
 
 77
-00:03:53,803 --> 00:03:56,259
+00:04:06,976 --> 00:04:09,549
 It means find out before you build, not after.
 
 78
-00:03:56,809 --> 00:03:58,299
+00:04:10,099 --> 00:04:11,675
 One thing before you move on.
 
 79
-00:03:58,299 --> 00:04:02,257
+00:04:11,675 --> 00:04:15,860
 Run the five questions against whatever you're closest to building right now.
 
 80
-00:04:02,257 --> 00:04:03,954
+00:04:15,860 --> 00:04:17,653
 Not hypothetically, the real one.
 
 81
-00:04:03,954 --> 00:04:08,014
+00:04:17,653 --> 00:04:21,947
 For every yes you get, write down, specifically, what would have to become true
 
 82
-00:04:08,014 --> 00:04:09,299
+00:04:21,947 --> 00:04:23,305
 before that answer flips.
 
 83
-00:04:09,299 --> 00:04:13,617
+00:04:23,305 --> 00:04:27,870
 That list is worth more than the checklist itself, because it turns a stop sign into
 
 84
-00:04:13,617 --> 00:04:14,131
+00:04:27,870 --> 00:04:28,414
 a roadmap.
 
 85
-00:04:14,131 --> 00:04:18,295
+00:04:28,414 --> 00:04:32,815
 Next lecture closes out this section: what you've actually built here, and how it
 
 86
-00:04:18,295 --> 00:04:20,659
+00:04:32,815 --> 00:04:35,315
 plugs into everything from Section two onward.
