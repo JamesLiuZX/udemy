@@ -1,323 +1,323 @@
 1
-00:00:00,350 --> 00:00:04,607
+00:00:00,350 --> 00:00:04,969
 Chunking and retrieval quality get most of the attention in a RAG project, and
 
 2
-00:00:04,607 --> 00:00:07,663
+00:00:04,969 --> 00:00:08,285
 they're not what actually stalls enterprise deployments.
 
 3
-00:00:07,663 --> 00:00:12,028
+00:00:08,285 --> 00:00:13,023
 What stalls them is realising, usually late, that a document carries information
 
 4
-00:00:12,028 --> 00:00:16,230
+00:00:13,023 --> 00:00:17,582
 retrieval never checks: who's allowed to see it, and whether it's still true.
 
 5
-00:00:16,230 --> 00:00:18,031
+00:00:17,582 --> 00:00:19,536
 Both problems share a root cause.
 
 6
-00:00:18,031 --> 00:00:20,214
+00:00:19,536 --> 00:00:21,905
 An embedding represents what text means.
 
 7
-00:00:20,214 --> 00:00:23,488
+00:00:21,905 --> 00:00:25,458
 It has no opinion on access, and no opinion on the calendar.
 
 8
-00:00:23,488 --> 00:00:24,907
+00:00:25,458 --> 00:00:26,998
 That's worth sitting with.
 
 9
-00:00:24,907 --> 00:00:27,963
+00:00:26,998 --> 00:00:30,314
 Why are both failures so easy to miss in your own pilot?
 
 10
-00:00:27,963 --> 00:00:32,547
+00:00:30,314 --> 00:00:35,288
 A pilot usually runs with one tester, who has full access to everything, on a corpus
 
 11
-00:00:32,547 --> 00:00:34,021
+00:00:35,288 --> 00:00:36,887
 that was indexed yesterday.
 
 12
-00:00:34,021 --> 00:00:37,568
+00:00:36,887 --> 00:00:40,736
 Neither failure mode has anywhere to hide under those conditions.
 
 13
-00:00:37,568 --> 00:00:42,097
+00:00:40,736 --> 00:00:45,651
 Both show up the moment the pilot becomes a real rollout: many users with different
 
 14
-00:00:42,097 --> 00:00:45,208
+00:00:45,651 --> 00:00:49,027
 access, a corpus that's now months old and still growing.
 
 15
-00:00:45,758 --> 00:00:50,376
+00:00:49,577 --> 00:00:54,621
 Four assumptions, and every one of them holds fine in a demo and fails quietly in
 
 16
-00:00:50,376 --> 00:00:55,165
+00:00:54,621 --> 00:00:59,853
 production, because a demo runs with one user and a snapshot nobody's had time to go
 
 17
-00:00:55,165 --> 00:00:55,507
+00:00:59,853 --> 00:01:00,227
 stale.
 
 18
-00:00:55,507 --> 00:01:00,239
+00:01:00,227 --> 00:01:05,396
 The permission rows matter because your organisation's documents were never written
 
 19
-00:01:00,239 --> 00:01:01,778
+00:01:05,396 --> 00:01:07,078
 with one flat access level.
 
 20
-00:01:01,778 --> 00:01:02,862
+00:01:07,078 --> 00:01:08,261
 HR policy, general.
 
 21
-00:01:02,862 --> 00:01:04,629
+00:01:08,261 --> 00:01:10,192
 Compensation bands, restricted.
 
 22
-00:01:04,629 --> 00:01:06,852
+00:01:10,192 --> 00:01:12,621
 A draft strategy memo, leadership only.
 
 23
-00:01:06,852 --> 00:01:11,641
+00:01:12,621 --> 00:01:17,852
 Index all of it into one pool and ask a single retrieval system to search across it,
 
 24
-00:01:11,641 --> 00:01:16,259
+00:01:17,852 --> 00:01:22,897
 and the system has no idea it's supposed to treat those three differently, unless
 
 25
-00:01:16,259 --> 00:01:18,711
+00:01:22,897 --> 00:01:25,575
 someone explicitly built that filtering in.
 
 26
-00:01:18,711 --> 00:01:23,329
+00:01:25,575 --> 00:01:30,620
 The freshness rows are the quieter risk, precisely because a stale answer doesn't
 
 27
-00:01:23,329 --> 00:01:24,241
+00:01:30,620 --> 00:01:31,617
 announce itself.
 
 28
-00:01:24,241 --> 00:01:28,802
+00:01:31,617 --> 00:01:36,599
 A permission leak at least produces a document someone can point to and say this
 
 29
-00:01:28,802 --> 00:01:30,170
+00:01:36,599 --> 00:01:38,094
 shouldn't have shown up.
 
 30
-00:01:30,170 --> 00:01:34,503
+00:01:38,094 --> 00:01:42,827
 An answer built on a policy that changed three months ago just sounds right.
 
 31
-00:01:34,503 --> 00:01:39,121
+00:01:42,827 --> 00:01:47,872
 It reads exactly like a current answer would, because the mechanism generating it
 
 32
-00:01:39,121 --> 00:01:42,770
+00:01:47,872 --> 00:01:51,858
 doesn't know the difference between old truth and current truth.
 
 33
-00:01:43,320 --> 00:01:48,130
+00:01:52,408 --> 00:01:57,663
 The difference is exactly one step, inserted at exactly one point: before results go
 
 34
-00:01:48,130 --> 00:01:49,733
+00:01:57,663 --> 00:01:59,415
 back to the user, not after.
 
 35
-00:01:49,733 --> 00:01:53,970
+00:01:59,415 --> 00:02:04,045
 Notice the second column doesn't require re-architecting retrieval itself.
 
 36
-00:01:53,970 --> 00:01:58,779
+00:02:04,045 --> 00:02:09,300
 It requires the retrieval step to ask a second question alongside "what's relevant":
 
 37
-00:01:58,779 --> 00:02:03,474
+00:02:09,300 --> 00:02:14,430
 what is this specific person actually allowed to see, checked against their access
 
 38
-00:02:03,474 --> 00:02:07,425
+00:02:14,430 --> 00:02:18,747
 right now, not their access when the document was indexed months ago.
 
 39
-00:02:07,425 --> 00:02:12,006
+00:02:18,747 --> 00:02:23,752
 This is also exactly the kind of decision from Section three's PRD template that
 
 40
-00:02:12,006 --> 00:02:16,815
+00:02:23,752 --> 00:02:29,007
 belongs in writing before you launch, not discovered during a security review after.
 
 41
-00:02:16,815 --> 00:02:21,339
+00:02:29,007 --> 00:02:33,950
 Naming who owns the access model, and how quickly a revoked permission actually
 
 42
-00:02:21,339 --> 00:02:26,148
+00:02:33,950 --> 00:02:39,205
 takes effect, is a specification question with a real owner, the same way the golden
 
 43
-00:02:26,148 --> 00:02:27,751
+00:02:39,205 --> 00:02:40,957
 dataset and the rubric were.
 
 44
-00:02:28,301 --> 00:02:32,872
+00:02:41,507 --> 00:02:46,525
 Say the honest caveat, because freshness has a limit that no amount of engineering
 
 45
-00:02:32,872 --> 00:02:34,767
+00:02:46,525 --> 00:02:48,606
 effort around RAG actually solves.
 
 46
-00:02:34,767 --> 00:02:39,394
+00:02:48,606 --> 00:02:53,686
 A policy that updates twice a year fits RAG comfortably: re-index after each change
 
 47
-00:02:39,394 --> 00:02:40,453
+00:02:53,686 --> 00:02:54,849
 and you're current.
 
 48
-00:02:40,453 --> 00:02:45,079
+00:02:54,849 --> 00:02:59,929
 Live inventory, today's exchange rate, a support ticket's status right now, changes
 
 49
-00:02:45,079 --> 00:02:48,312
+00:02:59,929 --> 00:03:03,479
 faster than any reasonable re-indexing schedule can track.
 
 50
-00:02:48,312 --> 00:02:50,876
+00:03:03,479 --> 00:03:06,295
 That content was never meant to be a document.
 
 51
-00:02:50,876 --> 00:02:55,391
+00:03:06,295 --> 00:03:11,252
 It's a live answer from a live system, and the right fix is a direct call to that
 
 52
-00:02:55,391 --> 00:02:59,961
+00:03:11,252 --> 00:03:16,271
 system at the moment of the question, not a retrieval index trying to keep up with
 
 53
-00:02:59,961 --> 00:03:02,024
+00:03:16,271 --> 00:03:18,536
 something that changes by the minute.
 
 54
-00:03:02,024 --> 00:03:06,427
+00:03:18,536 --> 00:03:23,371
 Section six picks this up properly: giving a model a tool to call, instead of a
 
 55
-00:03:06,427 --> 00:03:07,486
+00:03:23,371 --> 00:03:24,534
 document to search.
 
 56
-00:03:07,486 --> 00:03:11,611
+00:03:24,534 --> 00:03:29,063
 This is worth checking against the decision tree from Section two as well.
 
 57
-00:03:11,611 --> 00:03:14,342
+00:03:29,063 --> 00:03:32,062
 "Needs facts that change" pointed you toward RAG.
 
 58
-00:03:14,342 --> 00:03:18,801
+00:03:32,062 --> 00:03:36,958
 It's worth adding the missing half of that sentence now: needs facts that change
 
 59
-00:03:18,801 --> 00:03:21,198
+00:03:36,958 --> 00:03:39,590
 slower than you can realistically re-index.
 
 60
-00:03:21,198 --> 00:03:24,487
+00:03:39,590 --> 00:03:43,201
 Past that speed, the honest answer isn't a better pipeline.
 
 61
-00:03:24,487 --> 00:03:26,828
+00:03:43,201 --> 00:03:45,772
 It's a different box on the tree entirely.
 
 62
-00:03:27,378 --> 00:03:31,921
+00:03:46,322 --> 00:03:51,335
 That's the definition worth holding onto, and notice the word doing the real work is
 
 63
-00:03:31,921 --> 00:03:32,191
+00:03:51,335 --> 00:03:51,634
 live.
 
 64
-00:03:32,191 --> 00:03:33,813
+00:03:51,634 --> 00:03:53,424
 Checked now, not checked once.
 
 65
-00:03:33,813 --> 00:03:36,030
+00:03:53,424 --> 00:03:55,871
 The exercise is uncomfortable on purpose.
 
 66
-00:03:36,030 --> 00:03:38,356
+00:03:55,871 --> 00:03:58,438
 Picture someone leaving your company today.
 
 67
-00:03:38,356 --> 00:03:42,898
+00:03:58,438 --> 00:04:03,451
 Ask, specifically, how long their old access lingers in your retrieval system before
 
 68
-00:03:42,898 --> 00:03:43,926
+00:04:03,451 --> 00:04:04,585
 it's actually gone.
 
 69
-00:03:43,926 --> 00:03:48,306
+00:04:04,585 --> 00:04:09,420
 If nobody in the room knows the answer, that's the honest finding, and it's worth
 
 70
-00:03:48,306 --> 00:03:50,631
+00:04:09,420 --> 00:04:11,986
 surfacing before an auditor finds it first.
 
 71
-00:03:51,181 --> 00:03:52,811
+00:04:12,536 --> 00:04:14,333
 One thing before you move on.
 
 72
-00:03:52,811 --> 00:03:56,633
+00:04:14,333 --> 00:04:18,546
 Find the real answer to the access question, not the reassuring one.
 
 73
-00:03:56,633 --> 00:04:00,904
+00:04:18,546 --> 00:04:23,255
 Minutes, hours, or the next scheduled re-index are three very different risk
 
 74
-00:04:00,904 --> 00:04:02,703
+00:04:23,255 --> 00:04:25,237
 profiles wearing the same shrug.
 
 75
-00:04:02,703 --> 00:04:07,311
+00:04:25,237 --> 00:04:30,318
 Then name one piece of content that's genuinely too fast-moving for retrieval, the
 
 76
-00:04:07,311 --> 00:04:09,784
+00:04:30,318 --> 00:04:33,044
 way live inventory or a real-time status is.
 
 77
-00:04:09,784 --> 00:04:14,224
+00:04:33,044 --> 00:04:37,938
 Flagging it now saves you from building a RAG feature for something that always
 
 78
-00:04:14,224 --> 00:04:15,741
+00:04:37,938 --> 00:04:39,611
 needed a tool call instead.
 
 79
-00:04:15,741 --> 00:04:19,956
+00:04:39,611 --> 00:04:44,258
 Next lecture puts everything from this section into the RAG design doc: the
 
 80
-00:04:19,956 --> 00:04:24,509
+00:04:44,258 --> 00:04:49,276
 pipeline, the chunking strategy, the metrics, and both of today's hard realities,
 
 81
-00:04:24,509 --> 00:04:25,970
+00:04:49,276 --> 00:04:50,887
 walked through end to end.

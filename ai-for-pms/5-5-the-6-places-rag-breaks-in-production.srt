@@ -1,347 +1,347 @@
 1
-00:00:00,350 --> 00:00:04,900
+00:00:00,350 --> 00:00:05,220
 Last lecture ended on a warning worth taking seriously: good scorecard numbers don't
 
 2
-00:00:04,900 --> 00:00:09,070
+00:00:05,220 --> 00:00:09,685
 guarantee a good system, because the scorecard was run once, on a corpus that
 
 3
-00:00:09,070 --> 00:00:10,099
+00:00:09,685 --> 00:00:10,786
 doesn't stay still.
 
 4
-00:00:10,099 --> 00:00:14,540
+00:00:10,786 --> 00:00:15,541
 Here are the six specific ways that gap actually shows up once real users and real
 
 5
-00:00:14,540 --> 00:00:15,515
+00:00:15,541 --> 00:00:16,584
 time get involved.
 
 6
-00:00:15,515 --> 00:00:18,819
+00:00:16,584 --> 00:00:20,121
 Each one maps to a stage from the pipeline two lectures back.
 
 7
-00:00:18,819 --> 00:00:23,044
+00:00:20,121 --> 00:00:24,644
 Knowing the name is what turns a vague "it's acting weird" into a specific bug
 
 8
-00:00:23,044 --> 00:00:24,777
+00:00:24,644 --> 00:00:26,499
 report someone can actually fix.
 
 9
-00:00:24,777 --> 00:00:29,164
+00:00:26,499 --> 00:00:31,195
 Notice, too, why this list matters even if you never write a line of the pipeline
 
 10
-00:00:29,164 --> 00:00:29,652
+00:00:31,195 --> 00:00:31,717
 yourself.
 
 11
-00:00:29,652 --> 00:00:33,984
+00:00:31,717 --> 00:00:36,355
 When something goes wrong in production, the room defaults to blaming the model,
 
 12
-00:00:33,984 --> 00:00:36,043
+00:00:36,355 --> 00:00:38,559
 because the model is the visible part.
 
 13
-00:00:36,043 --> 00:00:38,101
+00:00:38,559 --> 00:00:40,762
 But is the model actually the problem?
 
 14
-00:00:38,101 --> 00:00:41,784
+00:00:40,762 --> 00:00:44,705
 Five of these six failures have nothing to do with the model at all.
 
 15
-00:00:41,784 --> 00:00:46,063
+00:00:44,705 --> 00:00:49,285
 Naming the actual failure is how you stop a real bug from turning into a vague,
 
 16
-00:00:46,063 --> 00:00:48,771
+00:00:49,285 --> 00:00:52,184
 unfixable complaint about the AI being unreliable.
 
 17
-00:00:49,321 --> 00:00:53,906
+00:00:52,734 --> 00:00:57,731
 Read down that middle column, because every one of these looks completely different
 
 18
-00:00:53,906 --> 00:00:58,547
+00:00:57,731 --> 00:01:02,788
 from the outside and traces back to a specific, nameable cause once you know what to
 
 19
-00:00:58,547 --> 00:00:59,044
+00:01:02,788 --> 00:01:03,330
 look for.
 
 20
-00:00:59,044 --> 00:01:03,519
+00:01:03,330 --> 00:01:08,206
 Two of these, staleness and permissions, are big enough to earn their own lecture
 
 21
-00:01:03,519 --> 00:01:05,453
+00:01:08,206 --> 00:01:10,313
 next, so we'll only name them here.
 
 22
-00:01:05,453 --> 00:01:09,928
+00:01:10,313 --> 00:01:15,190
 The other four are worth sitting with now, because they're easy to misdiagnose as
 
 23
-00:01:09,928 --> 00:01:14,568
+00:01:15,190 --> 00:01:20,247
 "the model being unreliable" when the actual bug is sitting somewhere earlier in the
 
 24
-00:01:14,568 --> 00:01:15,066
+00:01:20,247 --> 00:01:20,788
 pipeline.
 
 25
-00:01:15,066 --> 00:01:19,651
+00:01:20,788 --> 00:01:25,785
 Context overflow deserves a second look, because the fix in that row isn't obvious.
 
 26
-00:01:19,651 --> 00:01:24,181
+00:01:25,785 --> 00:01:30,722
 When retrieved chunks and conversation history together exceed the context window,
 
 27
-00:01:24,181 --> 00:01:28,601
+00:01:30,722 --> 00:01:35,538
 something has to get cut, and most systems default to trimming whichever arrived
 
 28
-00:01:28,601 --> 00:01:30,590
+00:01:35,538 --> 00:01:37,705
 last, usually the retrieved content.
 
 29
-00:01:30,590 --> 00:01:31,529
+00:01:37,705 --> 00:01:38,729
 That's backwards.
 
 30
-00:01:31,529 --> 00:01:34,678
+00:01:38,729 --> 00:01:42,160
 History is often padding by the time it's five turns old.
 
 31
-00:01:34,678 --> 00:01:38,214
+00:01:42,160 --> 00:01:46,013
 The retrieved chunks are the actual facts the answer depends on.
 
 32
-00:01:38,214 --> 00:01:41,639
+00:01:46,013 --> 00:01:49,746
 Trim history first, and only touch retrieval as a last resort.
 
 33
-00:01:42,189 --> 00:01:46,934
+00:01:50,296 --> 00:01:55,585
 Silent failure is the row worth the most attention of the four, because it's the one
 
 34
-00:01:46,934 --> 00:01:49,646
+00:01:55,585 --> 00:01:58,608
 that produces the most convincing wrong answers.
 
 35
-00:01:49,646 --> 00:01:54,109
+00:01:58,608 --> 00:02:03,582
 A model asked a question with nothing relevant in its retrieved context doesn't
 
 36
-00:01:54,109 --> 00:01:54,956
+00:02:03,582 --> 00:02:04,526
 usually say so.
 
 37
-00:01:54,956 --> 00:01:59,645
+00:02:04,526 --> 00:02:09,752
 It answers anyway, confidently, the exact hallucination mechanism from Section one.
 
 38
-00:01:59,645 --> 00:02:04,333
+00:02:09,752 --> 00:02:14,979
 That gap is precisely what the degradation path from Section three exists to close.
 
 39
-00:02:04,883 --> 00:02:08,315
+00:02:15,529 --> 00:02:19,202
 Remember Ticket 4471 from the context engineering lecture.
 
 40
-00:02:08,315 --> 00:02:13,108
+00:02:19,202 --> 00:02:24,332
 That bug now has a name, and it's worth hearing it named formally, because you'll
 
 41
-00:02:13,108 --> 00:02:15,890
+00:02:24,332 --> 00:02:27,309
 meet this exact shape again in your own system.
 
 42
-00:02:15,890 --> 00:02:20,742
+00:02:27,309 --> 00:02:32,502
 Near-duplicate confusion happens whenever two versions of similar content both sit
 
 43
-00:02:20,742 --> 00:02:25,712
+00:02:32,502 --> 00:02:37,822
 in the index, both look relevant to the same query, and both get retrieved together.
 
 44
-00:02:25,712 --> 00:02:27,724
+00:02:37,822 --> 00:02:39,975
 Neither one is individually wrong.
 
 45
-00:02:27,724 --> 00:02:31,393
+00:02:39,975 --> 00:02:43,902
 The model, reading both, produces something blended and false.
 
 46
-00:02:31,393 --> 00:02:33,109
+00:02:43,902 --> 00:02:45,738
 It isn't a reasoning failure.
 
 47
-00:02:33,109 --> 00:02:37,074
+00:02:45,738 --> 00:02:49,982
 It's an index that was never cleaned of the document it superseded.
 
 48
-00:02:37,074 --> 00:02:41,571
+00:02:49,982 --> 00:02:54,795
 Notice how this connects directly back to the honest caveat on chunking, two
 
 49
-00:02:41,571 --> 00:02:46,482
+00:02:54,795 --> 00:03:00,051
 lectures ago: an embedding covering more than one idea matches worse than a focused
 
 50
-00:02:46,482 --> 00:02:46,719
+00:03:00,051 --> 00:03:00,305
 one.
 
 51
-00:02:46,719 --> 00:02:51,334
+00:03:00,305 --> 00:03:05,245
 Two near-duplicate chunks, retrieved side by side, do something similar to the
 
 52
-00:02:51,334 --> 00:02:52,400
+00:03:05,245 --> 00:03:06,385
 model's reasoning.
 
 53
-00:02:52,400 --> 00:02:57,015
+00:03:06,385 --> 00:03:11,325
 It's now holding two versions of the truth at once, with nothing in the prompt
 
 54
-00:02:57,015 --> 00:02:58,909
+00:03:11,325 --> 00:03:13,351
 telling it which one is current.
 
 55
-00:02:59,459 --> 00:03:04,192
+00:03:13,901 --> 00:03:19,042
 Say the honest caveat, because a RAG system is unusual in exactly this way: the code
 
 56
-00:03:04,192 --> 00:03:06,953
+00:03:19,042 --> 00:03:22,040
 can stay frozen and the system can still degrade.
 
 57
-00:03:06,953 --> 00:03:09,995
+00:03:22,040 --> 00:03:25,344
 A normal feature breaks when someone changes the code.
 
 58
-00:03:09,995 --> 00:03:14,728
+00:03:25,344 --> 00:03:30,485
 A RAG system can break when someone on a completely different team uploads a revised
 
 59
-00:03:14,728 --> 00:03:19,180
+00:03:30,485 --> 00:03:35,319
 policy document and forgets to remove the old one, six months after your launch
 
 60
-00:03:19,180 --> 00:03:20,476
+00:03:35,319 --> 00:03:36,726
 review closed the file.
 
 61
-00:03:20,476 --> 00:03:22,053
+00:03:36,726 --> 00:03:38,440
 Nobody touched the pipeline.
 
 62
-00:03:22,053 --> 00:03:26,505
+00:03:38,440 --> 00:03:43,274
 The corpus underneath it quietly grew a near-duplicate, and your scorecard from
 
 63
-00:03:26,505 --> 00:03:27,801
+00:03:43,274 --> 00:03:44,682
 launch day has no idea.
 
 64
-00:03:27,801 --> 00:03:32,308
+00:03:44,682 --> 00:03:49,577
 That's the argument for treating retrieval quality the way Section four treats a
 
 65
-00:03:32,308 --> 00:03:36,985
+00:03:49,577 --> 00:03:54,656
 golden set: something you re-check on a schedule, not something you verify once and
 
 66
-00:03:36,985 --> 00:03:37,999
+00:03:54,656 --> 00:03:55,757
 consider finished.
 
 67
-00:03:37,999 --> 00:03:42,732
+00:03:55,757 --> 00:04:00,898
 A PRD that specifies a threshold and never revisits it has quietly assumed the world
 
 68
-00:03:42,732 --> 00:03:43,408
+00:04:00,898 --> 00:04:01,632
 holds still.
 
 69
-00:03:43,408 --> 00:03:45,831
+00:04:01,632 --> 00:04:04,263
 This section keeps proving that it doesn't.
 
 70
-00:03:46,381 --> 00:03:50,708
+00:04:04,813 --> 00:04:09,573
 That's the concept worth carrying past this lecture: the pipeline can be perfect and
 
 71
-00:03:50,708 --> 00:03:55,035
+00:04:09,573 --> 00:04:14,333
 the system can still drift, because the documents underneath it have a life of their
 
 72
-00:03:55,035 --> 00:03:55,241
+00:04:14,333 --> 00:04:14,559
 own.
 
 73
-00:03:55,241 --> 00:03:56,838
+00:04:14,559 --> 00:04:16,316
 The exercise takes ten minutes.
 
 74
-00:03:56,838 --> 00:03:59,878
+00:04:16,316 --> 00:04:19,659
 Search for the same topic twice in your own knowledge base.
 
 75
-00:03:59,878 --> 00:04:03,999
+00:04:19,659 --> 00:04:24,192
 If two documents come back covering it, you've found this lecture's failure mode
 
 76
-00:04:03,999 --> 00:04:07,501
+00:04:24,192 --> 00:04:28,045
 sitting live in your own system, not a warning about someone else's.
 
 77
-00:04:08,051 --> 00:04:09,703
+00:04:28,595 --> 00:04:30,421
 One thing before you move on.
 
 78
-00:04:09,703 --> 00:04:10,557
+00:04:30,421 --> 00:04:31,365
 Run the search.
 
 79
-00:04:10,557 --> 00:04:15,282
+00:04:31,365 --> 00:04:36,588
 One topic, two documents, is often all it takes to find your first real instance of
 
 80
-00:04:15,282 --> 00:04:16,706
+00:04:36,588 --> 00:04:38,162
 near-duplicate confusion.
 
 81
-00:04:16,706 --> 00:04:21,261
+00:04:38,162 --> 00:04:43,197
 Then ask the question most launches never answer: who's actually responsible for
 
 82
-00:04:21,261 --> 00:04:24,677
+00:04:43,197 --> 00:04:46,973
 pulling a document out of the index once it's been replaced.
 
 83
-00:04:24,677 --> 00:04:29,289
+00:04:46,973 --> 00:04:52,071
 If the honest answer is nobody, that's the gap this whole section keeps returning
 
 84
-00:04:29,289 --> 00:04:32,648
+00:04:52,071 --> 00:04:55,784
 to, an unowned decision quietly becoming someone's Tuesday.
 
 85
-00:04:32,648 --> 00:04:37,146
+00:04:55,784 --> 00:05:00,756
 Next lecture goes deep on the two failures we only named today: permissions and
 
 86
-00:04:37,146 --> 00:04:41,929
+00:05:00,756 --> 00:05:06,043
 freshness, the two realities that break more enterprise RAG demos than anything else
 
 87
-00:04:41,929 --> 00:04:42,669
+00:05:06,043 --> 00:05:06,861
 on this list.

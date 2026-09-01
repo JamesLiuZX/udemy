@@ -1,315 +1,315 @@
 1
-00:00:00,350 --> 00:00:05,063
+00:00:00,350 --> 00:00:05,498
 Section two taught you the failure mode: a chunk boundary cutting through a list or
 
 2
-00:00:05,063 --> 00:00:07,732
+00:00:05,498 --> 00:00:08,412
 a table, producing a fragment nobody could use.
 
 3
-00:00:07,732 --> 00:00:12,501
+00:00:08,412 --> 00:00:13,622
 This lecture is about the decision underneath that one, the one that gets made once,
 
 4
-00:00:12,501 --> 00:00:16,930
+00:00:13,622 --> 00:00:18,459
 early, and quietly shapes every retrieval from then on: how big should a chunk
 
 5
-00:00:16,930 --> 00:00:17,611
+00:00:18,459 --> 00:00:19,204
 actually be.
 
 6
-00:00:17,611 --> 00:00:19,542
+00:00:19,204 --> 00:00:21,312
 There's no universal right answer.
 
 7
-00:00:19,542 --> 00:00:24,255
+00:00:21,312 --> 00:00:26,460
 There's a trade-off, and knowing which side of it your content needs is a genuinely
 
 8
-00:00:24,255 --> 00:00:28,740
+00:00:26,460 --> 00:00:31,359
 product decision, not something to leave entirely to whoever's implementing it.
 
 9
-00:00:28,740 --> 00:00:31,409
+00:00:31,359 --> 00:00:34,274
 Most teams never have this conversation at all.
 
 10
-00:00:31,409 --> 00:00:36,008
+00:00:34,274 --> 00:00:39,298
 Someone picks a chunk size from a tutorial or a default library setting, it works
 
 11
-00:00:36,008 --> 00:00:39,188
+00:00:39,298 --> 00:00:42,771
 well enough on the first few test queries, and it ships.
 
 12
-00:00:39,188 --> 00:00:43,560
+00:00:42,771 --> 00:00:47,546
 That's not a decision, it's an accident that happened to look fine in a demo.
 
 13
-00:00:43,560 --> 00:00:47,762
+00:00:47,546 --> 00:00:52,135
 The gap between accident and decision is exactly what this lecture closes.
 
 14
-00:00:48,312 --> 00:00:52,132
+00:00:52,685 --> 00:00:56,888
 Read this as a genuine trade-off, not a right answer and a wrong one.
 
 15
-00:00:52,132 --> 00:00:54,014
+00:00:56,888 --> 00:00:58,959
 Neither column is the safe choice.
 
 16
-00:00:54,014 --> 00:00:58,332
+00:00:58,959 --> 00:01:03,709
 Small chunks retrieve precisely, and precisely is exactly the problem when the
 
 17
-00:00:58,332 --> 00:01:01,543
+00:01:03,709 --> 00:01:07,242
 precise sentence needs a sentence before it to make sense.
 
 18
-00:01:01,543 --> 00:01:05,917
+00:01:07,242 --> 00:01:12,053
 Large chunks solve that by keeping more together, and pay for it with retrieval
 
 19
-00:01:05,917 --> 00:01:10,069
+00:01:12,053 --> 00:01:16,621
 that's less targeted and a prompt that costs more tokens every single call.
 
 20
-00:01:10,069 --> 00:01:12,837
+00:01:16,621 --> 00:01:19,666
 There's no setting that avoids both costs at once.
 
 21
-00:01:12,837 --> 00:01:17,210
+00:01:19,666 --> 00:01:24,478
 Choosing where to sit on that line is choosing which failure you'd rather have.
 
 22
-00:01:17,210 --> 00:01:18,816
+00:01:24,478 --> 00:01:26,244
 Which side should you favour?
 
 23
-00:01:18,816 --> 00:01:22,248
+00:01:26,244 --> 00:01:30,020
 It depends on what your feature actually does with the answer.
 
 24
-00:01:22,248 --> 00:01:26,788
+00:01:30,020 --> 00:01:35,014
 A quick factual lookup, a price, a date, a policy number, wants small and precise,
 
 25
-00:01:26,788 --> 00:01:31,438
+00:01:35,014 --> 00:01:40,130
 because the whole answer is one fact and padding it with surrounding paragraphs only
 
 26
-00:01:31,438 --> 00:01:32,047
+00:01:40,130 --> 00:01:40,800
 adds noise.
 
 27
-00:01:32,047 --> 00:01:36,642
+00:01:40,800 --> 00:01:45,855
 A feature explaining a multi-step process wants larger chunks, because cutting that
 
 28
-00:01:36,642 --> 00:01:41,182
+00:01:45,855 --> 00:01:50,850
 process into precise but disconnected fragments defeats the point of retrieving it
 
 29
-00:01:41,182 --> 00:01:41,569
+00:01:50,850 --> 00:01:51,276
 at all.
 
 30
-00:01:42,119 --> 00:01:46,895
+00:01:51,826 --> 00:01:56,992
 Here's the decision most teams skip entirely: your corpus probably isn't one kind of
 
 31
-00:01:46,895 --> 00:01:47,406
+00:01:56,992 --> 00:01:57,546
 document.
 
 32
-00:01:47,406 --> 00:01:51,670
+00:01:57,546 --> 00:02:02,159
 It's several, and each one has a natural unit that isn't a character count.
 
 33
-00:01:51,670 --> 00:01:55,593
+00:02:02,159 --> 00:02:06,403
 An FAQ's natural unit is a question and its answer, together, always.
 
 34
-00:01:55,593 --> 00:01:58,151
+00:02:06,403 --> 00:02:09,171
 A policy document's natural unit is a clause.
 
 35
-00:01:58,151 --> 00:02:02,472
+00:02:09,171 --> 00:02:13,845
 A table's natural unit is a row, and a row without its header means nothing.
 
 36
-00:02:02,472 --> 00:02:07,133
+00:02:13,845 --> 00:02:18,888
 Apply one fixed chunk size to all three and you'll get an FAQ answer with half the
 
 37
-00:02:07,133 --> 00:02:11,909
+00:02:18,888 --> 00:02:24,055
 question missing, a policy clause severed from the sentence that qualifies it, and a
 
 38
-00:02:11,909 --> 00:02:13,671
+00:02:24,055 --> 00:02:25,961
 table row nobody can interpret.
 
 39
-00:02:13,671 --> 00:02:17,878
+00:02:25,961 --> 00:02:30,513
 Three different content types, three different failures, one shared cause.
 
 40
-00:02:17,878 --> 00:02:22,539
+00:02:30,513 --> 00:02:35,556
 This is worth raising specifically because it's an easy thing for a PM to actually
 
 41
-00:02:22,539 --> 00:02:26,689
+00:02:35,556 --> 00:02:40,046
 catch that an engineer implementing quickly might not think to ask about.
 
 42
-00:02:26,689 --> 00:02:28,907
+00:02:40,046 --> 00:02:42,445
 You know what's in your knowledge base.
 
 43
-00:02:28,907 --> 00:02:31,920
+00:02:42,445 --> 00:02:45,705
 You know an FAQ looks nothing like a policy document.
 
 44
-00:02:31,920 --> 00:02:36,240
+00:02:45,705 --> 00:02:50,379
 That knowledge is the entire input this decision needs, and it's exactly the
 
 45
-00:02:36,240 --> 00:02:40,731
+00:02:50,379 --> 00:02:55,238
 knowledge sitting with the product side of the table, not the engineering side.
 
 46
-00:02:41,281 --> 00:02:45,736
+00:02:55,788 --> 00:03:00,690
 Say the honest caveat, because the instinct when chunking feels risky is to make
 
 47
-00:02:45,736 --> 00:02:49,744
+00:03:00,690 --> 00:03:05,103
 chunks bigger, and that instinct backfires in a specific, technical way.
 
 48
-00:02:49,744 --> 00:02:52,306
+00:03:05,103 --> 00:03:07,922
 An embedding represents what a chunk is about.
 
 49
-00:02:52,306 --> 00:02:56,816
+00:03:07,922 --> 00:03:12,885
 Cram three unrelated ideas into one chunk and the embedding becomes a blur of all
 
 50
-00:02:56,816 --> 00:03:00,713
+00:03:12,885 --> 00:03:17,175
 three, matching none of them as sharply as a focused chunk would have.
 
 51
-00:03:00,713 --> 00:03:02,383
+00:03:17,175 --> 00:03:19,013
 Bigger doesn't buy you safety.
 
 52
-00:03:02,383 --> 00:03:06,838
+00:03:19,013 --> 00:03:23,916
 It buys you a chunk that's vaguely about everything and precisely about nothing,
 
 53
-00:03:06,838 --> 00:03:11,292
+00:03:23,916 --> 00:03:28,818
 which is a worse retrieval result than a well-scoped small chunk that happens to
 
 54
-00:03:11,292 --> 00:03:13,185
+00:03:28,818 --> 00:03:30,902
 lack a little surrounding context.
 
 55
-00:03:13,185 --> 00:03:17,751
+00:03:30,902 --> 00:03:35,927
 The instinct to go bigger usually comes from a real fear, that a narrow chunk will
 
 56
-00:03:17,751 --> 00:03:19,143
+00:03:35,927 --> 00:03:37,459
 miss something important.
 
 57
-00:03:19,143 --> 00:03:23,485
+00:03:37,459 --> 00:03:42,239
 The fix for that fear isn't size, it's the natural-unit thinking from the last
 
 58
-00:03:23,485 --> 00:03:23,820
+00:03:42,239 --> 00:03:42,606
 slide.
 
 59
-00:03:23,820 --> 00:03:28,385
+00:03:42,606 --> 00:03:47,631
 A chunk scoped to one clause, one question, one row, is both focused and complete.
 
 60
-00:03:28,385 --> 00:03:33,062
+00:03:47,631 --> 00:03:52,779
 The safety people are reaching for when they oversize a chunk was never about bytes.
 
 61
-00:03:33,062 --> 00:03:37,461
+00:03:52,779 --> 00:03:57,620
 It was always about keeping one coherent idea together, and a bigger chunk is a
 
 62
-00:03:37,461 --> 00:03:38,741
+00:03:57,620 --> 00:03:59,029
 blunt way to get there.
 
 63
-00:03:39,291 --> 00:03:43,884
+00:03:59,579 --> 00:04:04,517
 That's the definition worth carrying forward: a strategy, decided per content type,
 
 64
-00:03:43,884 --> 00:03:46,042
+00:04:04,517 --> 00:04:06,837
 not a number picked once and forgotten.
 
 65
-00:03:46,042 --> 00:03:48,975
+00:04:06,837 --> 00:04:09,990
 The exercise is the audit most teams have never done.
 
 66
-00:03:48,975 --> 00:03:53,457
+00:04:09,990 --> 00:04:14,808
 List what's actually in your corpus, not as one blob but as the distinct kinds of
 
 67
-00:03:53,457 --> 00:03:56,611
+00:04:14,808 --> 00:04:18,199
 document it contains, and name the natural unit for each.
 
 68
-00:03:56,611 --> 00:04:00,982
+00:04:18,199 --> 00:04:22,898
 If you can't name one, that content type is probably being chunked by a default
 
 69
-00:04:00,982 --> 00:04:02,310
+00:04:22,898 --> 00:04:24,326
 nobody chose on purpose.
 
 70
-00:04:02,860 --> 00:04:04,505
+00:04:24,876 --> 00:04:26,684
 One thing before you move on.
 
 71
-00:04:04,505 --> 00:04:09,214
+00:04:26,684 --> 00:04:31,859
 List the content types feeding your retrieval system, genuinely distinct types, not
 
 72
-00:04:09,214 --> 00:04:10,065
+00:04:31,859 --> 00:04:32,795
 just documents.
 
 73
-00:04:10,065 --> 00:04:14,718
+00:04:32,795 --> 00:04:37,907
 An FAQ, a policy library, and a product spec are three different chunking problems
 
 74
-00:04:14,718 --> 00:04:16,533
+00:04:37,907 --> 00:04:39,903
 wearing the same file extension.
 
 75
-00:04:16,533 --> 00:04:21,185
+00:04:39,903 --> 00:04:45,015
 Check each one honestly: if the answer is "whatever the default did," that's not a
 
 76
-00:04:21,185 --> 00:04:24,136
+00:04:45,015 --> 00:04:48,258
 decision, it's a gap this lecture just made visible.
 
 77
-00:04:24,136 --> 00:04:28,504
+00:04:48,258 --> 00:04:53,059
 Next lecture gives you the metrics to actually measure whether any of this is
 
 78
-00:04:28,504 --> 00:04:32,930
+00:04:53,059 --> 00:04:57,922
 working, instead of judging retrieval quality by how a handful of demo queries
 
 79
-00:04:32,930 --> 00:04:33,894
+00:04:57,922 --> 00:04:58,982
 happened to look.

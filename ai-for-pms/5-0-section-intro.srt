@@ -1,67 +1,67 @@
 1
-00:00:00,350 --> 00:00:04,528
+00:00:00,350 --> 00:00:05,002
 Back in Section two you learned what vector search actually does: chunk, embed,
 
 2
-00:00:04,528 --> 00:00:05,321
+00:00:05,002 --> 00:00:05,886
 retrieve, done.
 
 3
-00:00:05,321 --> 00:00:06,538
+00:00:05,886 --> 00:00:07,240
 That was the mechanism.
 
 4
-00:00:06,538 --> 00:00:10,874
+00:00:07,240 --> 00:00:12,069
 This section is everything sitting on top of it that actually determines whether a
 
 5
-00:00:10,874 --> 00:00:11,826
+00:00:12,069 --> 00:00:13,129
 RAG feature works.
 
 6
-00:00:11,826 --> 00:00:15,793
+00:00:13,129 --> 00:00:17,546
 By the end, you'll be able to design one, defend the chunking and retrieval
 
 7
-00:00:15,793 --> 00:00:20,076
+00:00:17,546 --> 00:00:22,316
 decisions in it, and name the six specific ways these systems break in production
 
 8
-00:00:20,076 --> 00:00:21,769
+00:00:22,316 --> 00:00:24,201
 before one of them breaks yours.
 
 9
-00:00:22,319 --> 00:00:26,906
+00:00:24,751 --> 00:00:29,705
 Five ideas, and they build toward the same kind of deliverable Section three did.
 
 10
-00:00:26,906 --> 00:00:31,323
+00:00:29,705 --> 00:00:34,476
 You'll walk the full pipeline stage by stage, make the chunking calls that are
 
 11
-00:00:31,323 --> 00:00:36,023
+00:00:34,476 --> 00:00:39,553
 genuinely yours to make, and learn to measure retrieval quality instead of guessing
 
 12
-00:00:36,023 --> 00:00:38,119
+00:00:39,553 --> 00:00:41,816
 at it from a handful of demo queries.
 
 13
-00:00:38,119 --> 00:00:42,706
+00:00:41,816 --> 00:00:46,770
 Then the six specific failure modes production actually produces, and permissions
 
 14
-00:00:42,706 --> 00:00:47,349
+00:00:46,770 --> 00:00:51,786
 and freshness, the two enterprise realities that break demos the moment real users
 
 15
-00:00:47,349 --> 00:00:47,802
+00:00:51,786 --> 00:00:52,275
 show up.
 
 16
-00:00:47,802 --> 00:00:52,276
+00:00:52,275 --> 00:00:57,107
 It closes with the RAG design doc, and you designing one for a support use case
 
 17
-00:00:52,276 --> 00:00:54,825
+00:00:57,107 --> 00:00:59,859
 you'll recognise from earlier in this course.
