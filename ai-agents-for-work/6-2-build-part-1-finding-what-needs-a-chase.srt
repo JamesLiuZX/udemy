@@ -1,219 +1,219 @@
 1
-00:00:00,350 --> 00:00:05,048
+00:00:00,350 --> 00:00:05,440
 Add a Schedule Trigger and a Google Sheets node exactly as you did in Section 5.
 
 2
-00:00:05,048 --> 00:00:09,923
+00:00:05,440 --> 00:00:10,721
 There is a real lesson hiding in how little there is to explain here: once you have
 
 3
-00:00:09,923 --> 00:00:14,562
+00:00:10,721 --> 00:00:15,748
 built one agent properly, the next one starts from a head start, not from zero.
 
 4
-00:00:14,562 --> 00:00:19,261
+00:00:15,748 --> 00:00:20,838
 There is even a legitimate shortcut, and it is worth doing once to learn that it
 
 5
-00:00:19,261 --> 00:00:24,135
+00:00:20,838 --> 00:00:26,119
 exists: duplicate the Agent 3 workflow from the workflow list, rename the copy, and
 
 6
-00:00:24,135 --> 00:00:28,129
+00:00:26,119 --> 00:00:30,445
 strip out the report prompt, keeping the trigger and the sheet read.
 
 7
-00:00:28,129 --> 00:00:32,475
+00:00:30,445 --> 00:00:35,154
 Two working nodes, inherited in ten seconds, credentials already attached.
 
 8
-00:00:32,475 --> 00:00:35,705
+00:00:35,154 --> 00:00:38,653
 One discipline comes with the move: read what you kept.
 
 9
-00:00:35,705 --> 00:00:40,521
+00:00:38,653 --> 00:00:43,871
 An inherited node carries every setting of its old job, and the read only dropdown
 
 10
-00:00:40,521 --> 00:00:45,219
+00:00:43,871 --> 00:00:48,961
 check from Section 5.2 applies to a duplicated node exactly as it did to a fresh
 
 11
-00:00:45,219 --> 00:00:45,454
+00:00:48,961 --> 00:00:49,215
 one.
 
 12
-00:00:45,454 --> 00:00:49,213
+00:00:49,215 --> 00:00:53,287
 Copying a workflow copies its virtues and its assumptions alike.
 
 13
-00:00:49,763 --> 00:00:54,068
+00:00:53,837 --> 00:00:58,588
 This is worth pausing on: the "three weeks" threshold is a judgement call you are
 
 14
-00:00:54,068 --> 00:00:56,194
+00:00:58,588 --> 00:01:00,933
 encoding, not a fact the data hands you.
 
 15
-00:00:56,194 --> 00:01:00,553
+00:01:00,933 --> 00:01:05,742
 Write down your own number before you build this, the same way you would decide it
 
 16
-00:01:00,553 --> 00:01:02,998
+00:01:05,742 --> 00:01:08,440
 for a person you were training to do this job.
 
 17
-00:01:02,998 --> 00:01:05,443
+00:01:08,440 --> 00:01:11,137
 Notice how this number sits against Agent 3's.
 
 18
-00:01:05,443 --> 00:01:09,695
+00:01:11,137 --> 00:01:15,829
 The Monday report worries at fourteen days; the chaser starts drafting at twenty
 
 19
-00:01:09,695 --> 00:01:09,908
+00:01:15,829 --> 00:01:16,063
 one.
 
 20
-00:01:09,908 --> 00:01:14,372
+00:01:16,063 --> 00:01:20,990
 That ordering is the system working: the chase goes out while there is still runway,
 
 21
-00:01:14,372 --> 00:01:18,678
+00:01:20,990 --> 00:01:25,740
 so that by the time a renewal enters the report's worry window, it should already
 
 22
-00:01:18,678 --> 00:01:20,272
+00:01:25,740 --> 00:01:27,499
 have a reply thread behind it.
 
 23
-00:01:20,272 --> 00:01:23,355
+00:01:27,499 --> 00:01:30,900
 Two different numbers, two different jobs, chosen to mesh.
 
 24
-00:01:23,355 --> 00:01:27,661
+00:01:30,900 --> 00:01:35,651
 When you set your own thresholds, set them as a pair on purpose: the nudge should
 
 25
-00:01:27,661 --> 00:01:29,202
+00:01:35,651 --> 00:01:37,351
 always fire before the alarm.
 
 26
-00:01:29,752 --> 00:01:33,021
+00:01:37,901 --> 00:01:41,463
 This is a small detail with a real cost if you skip it.
 
 27
-00:01:33,021 --> 00:01:37,955
+00:01:41,463 --> 00:01:46,838
 A stale "days remaining" number, typed once and never updated, will eventually tell
 
 28
-00:01:37,955 --> 00:01:41,224
+00:01:46,838 --> 00:01:50,400
 your agent a renewal is safely far away when it is not.
 
 29
-00:01:41,224 --> 00:01:46,217
+00:01:50,400 --> 00:01:55,840
 The mechanics stay code free: n8n's date handling can subtract the renewal date from
 
 30
-00:01:46,217 --> 00:01:51,210
+00:01:55,840 --> 00:02:01,280
 today inside a small transformation step, one setting, no formula language to learn,
 
 31
-00:01:51,210 --> 00:01:56,085
+00:02:01,280 --> 00:02:06,590
 and the course template does it exactly that way, so import C04 later and read how
 
 32
-00:01:56,085 --> 00:01:58,046
+00:02:06,590 --> 00:02:08,727
 if you prefer learning backwards.
 
 33
-00:01:58,046 --> 00:02:03,039
+00:02:08,727 --> 00:02:14,167
 The principle underneath is the one to keep: anything that changes with the calendar
 
 34
-00:02:03,039 --> 00:02:05,595
+00:02:14,167 --> 00:02:16,952
 must be computed at run time, never stored.
 
 35
-00:02:05,595 --> 00:02:10,291
+00:02:16,952 --> 00:02:22,068
 A stored "days left" is a snapshot pretending to be a fact, which is becoming a
 
 36
-00:02:10,291 --> 00:02:12,193
+00:02:22,068 --> 00:02:24,140
 familiar villain in this course.
 
 37
-00:02:12,743 --> 00:02:17,209
+00:02:24,690 --> 00:02:29,605
 The selection itself is one more node, a Filter, sitting between the sheet and the
 
 38
-00:02:17,209 --> 00:02:21,730
+00:02:29,605 --> 00:02:34,580
 agent, with two plain conditions: Status is Open, and days remaining is your number
 
 39
-00:02:21,730 --> 00:02:22,220
+00:02:34,580 --> 00:02:35,120
 or fewer.
 
 40
-00:02:22,220 --> 00:02:26,032
+00:02:35,120 --> 00:02:39,316
 What does this buy over just asking the model to pick the rows itself?
 
 41
-00:02:26,032 --> 00:02:30,607
+00:02:39,316 --> 00:02:44,351
 The filter is arithmetic, so it is either right or wrong, checkable in one glance at
 
 42
-00:02:30,607 --> 00:02:31,697
+00:02:44,351 --> 00:02:45,550
 what passed through.
 
 43
-00:02:31,697 --> 00:02:35,781
+00:02:45,550 --> 00:02:50,045
 Save the model for the part that needs a model, the wording, and let a dumb
 
 44
-00:02:35,781 --> 00:02:37,633
+00:02:50,045 --> 00:02:52,083
 comparison decide who gets chased.
 
 45
-00:02:37,633 --> 00:02:42,208
+00:02:52,083 --> 00:02:57,118
 One box selects, one box writes, and when a chase goes to the wrong client, you will
 
 46
-00:02:42,208 --> 00:02:46,238
+00:02:57,118 --> 00:03:01,554
 know within a minute which of the two to open, because they cannot both be
 
 47
-00:02:46,238 --> 00:02:46,892
+00:03:01,554 --> 00:03:02,273
 responsible.
 
 48
-00:02:47,442 --> 00:02:52,287
+00:03:02,823 --> 00:03:08,052
 Check the pinned rows against the filter by hand once: with the course's five-client
 
 49
-00:02:52,287 --> 00:02:57,075
+00:03:08,052 --> 00:03:13,218
 pipeline, one open renewal sits inside a twenty one day window and should pass, the
 
 50
-00:02:57,075 --> 00:03:01,805
+00:03:13,218 --> 00:03:18,322
 closed one must never pass whatever its date says, and the far-off ones wait their
 
 51
-00:03:01,805 --> 00:03:02,093
+00:03:18,322 --> 00:03:18,633
 turn.
 
 52
-00:03:02,093 --> 00:03:06,881
+00:03:18,633 --> 00:03:23,799
 If your filter passes a different set than your head does, one of you is wrong, and
 
 53
-00:03:06,881 --> 00:03:09,188
+00:03:23,799 --> 00:03:26,289
 it is cheaper to find out which one now.
 
 54
-00:03:09,188 --> 00:03:13,687
+00:03:26,289 --> 00:03:31,144
 Next lecture is where those close-to-deadline rows turn into an actual drafted
 
 55
-00:03:13,687 --> 00:03:14,956
+00:03:31,144 --> 00:03:32,513
 email, one per client.

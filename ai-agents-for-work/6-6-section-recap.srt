@@ -1,27 +1,27 @@
 1
-00:00:00,350 --> 00:00:04,834
+00:00:00,350 --> 00:00:05,143
 That is the whole argument of this section, and it is worth carrying into everything
 
 2
-00:00:04,834 --> 00:00:06,596
+00:00:05,143 --> 00:00:07,026
 you build after this course ends.
 
 3
-00:00:06,596 --> 00:00:10,493
+00:00:07,026 --> 00:00:11,192
 Wherever you can, build the constraint into the wiring, not just into the
 
 4
-00:00:10,493 --> 00:00:11,187
+00:00:11,192 --> 00:00:11,934
 instructions.
 
 5
-00:00:11,737 --> 00:00:13,116
+00:00:12,484 --> 00:00:13,991
 Four builds are behind you.
 
 6
-00:00:13,116 --> 00:00:15,822
+00:00:13,991 --> 00:00:16,950
 The next four sections are about keeping them honest.
 
 7
-00:00:15,822 --> 00:00:16,537
+00:00:16,950 --> 00:00:17,732
 See you there.

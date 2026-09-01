@@ -1,31 +1,31 @@
 1
-00:00:00,350 --> 00:00:04,687
+00:00:00,350 --> 00:00:04,975
 You've probably had a message go out that shouldn't have: an email sent before it
 
 2
-00:00:04,687 --> 00:00:07,310
+00:00:04,975 --> 00:00:07,773
 was checked, a reply-all that couldn't be unsent.
 
 3
-00:00:07,310 --> 00:00:08,274
+00:00:07,773 --> 00:00:08,801
 Hold that feeling.
 
 4
-00:00:08,274 --> 00:00:10,737
+00:00:08,801 --> 00:00:11,428
 It's the entire design brief for this section.
 
 5
-00:00:10,737 --> 00:00:15,073
+00:00:11,428 --> 00:00:16,053
 The last agent in this course chases the follow ups Priya would otherwise forget.
 
 6
-00:00:15,073 --> 00:00:19,249
+00:00:16,053 --> 00:00:20,507
 It is also the one built around a single non-negotiable rule, and this section
 
 7
-00:00:19,249 --> 00:00:23,746
+00:00:20,507 --> 00:00:25,304
 exists to show you exactly how that rule gets enforced in the build itself, not just
 
 8
-00:00:23,746 --> 00:00:25,353
+00:00:25,304 --> 00:00:27,017
 promised in a job description.
