@@ -1,19 +1,19 @@
 1
-00:00:00,350 --> 00:00:04,871
+00:00:00,350 --> 00:00:05,201
 You now have a real number for what these four agents are worth, and a short, honest
 
 2
-00:00:04,871 --> 00:00:07,240
+00:00:05,201 --> 00:00:07,742
 list of what they were never meant to touch.
 
 3
-00:00:07,240 --> 00:00:11,707
+00:00:07,742 --> 00:00:12,536
 Both of those belong in the same conversation, and Section 10 is where you actually
 
 4
-00:00:11,707 --> 00:00:13,214
+00:00:12,536 --> 00:00:14,153
 have it, with your own team.
 
 5
-00:00:13,764 --> 00:00:14,767
+00:00:14,703 --> 00:00:15,620
 See you there.
