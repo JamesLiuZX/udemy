@@ -125,7 +125,7 @@ production:
   spellcheck_lang: en_GB
   tts:
     provider: kokoro
-    voice: "bf_emma"
+    voice: "af_sarah"        # American female; James's choice 2026-09-01 (was bf_emma)
     lang: "en-gb"
 
 # --- Downloadable artifacts (the "wow") -------------------------------------
