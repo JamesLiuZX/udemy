@@ -1,23 +1,23 @@
 1
-00:00:00,350 --> 00:00:01,768
+00:00:00,350 --> 00:00:01,902
 That is the whole toolbox.
 
 2
-00:00:01,768 --> 00:00:06,295
+00:00:01,902 --> 00:00:06,856
 You did not spend anything to get here, and you now have the vocabulary to read any
 
 3
-00:00:06,295 --> 00:00:10,877
+00:00:06,856 --> 00:00:11,870
 workflow this course shows you, including the ones with a dozen boxes still ahead in
 
 4
-00:00:10,877 --> 00:00:11,422
+00:00:11,870 --> 00:00:12,467
 Section 6.
 
 5
-00:00:11,972 --> 00:00:12,911
+00:00:13,017 --> 00:00:14,058
 No more imports.
 
 6
-00:00:12,911 --> 00:00:14,319
+00:00:14,058 --> 00:00:15,620
 Next section, you build.
