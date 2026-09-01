@@ -1,335 +1,335 @@
 1
-00:00:00,350 --> 00:00:04,667
+00:00:00,350 --> 00:00:05,059
 A team operating a feature day to day genuinely needs fifteen panels: latency by
 
 2
-00:00:04,667 --> 00:00:08,930
+00:00:05,059 --> 00:00:09,708
 percentile, cost by model, error rate by endpoint, every number 4.5 through 8.6
 
 3
-00:00:08,930 --> 00:00:10,009
+00:00:09,708 --> 00:00:10,885
 taught you to watch.
 
 4
-00:00:10,009 --> 00:00:13,517
+00:00:10,885 --> 00:00:14,711
 That dashboard is doing its job correctly by being comprehensive.
 
 5
-00:00:13,517 --> 00:00:17,888
+00:00:14,711 --> 00:00:19,479
 Hand that same dashboard to a leadership review and watch it fail completely, not
 
 6
-00:00:17,888 --> 00:00:22,151
+00:00:19,479 --> 00:00:24,128
 because the numbers are wrong, but because comprehensive and decision-ready are
 
 7
-00:00:22,151 --> 00:00:23,230
+00:00:24,128 --> 00:00:25,306
 different qualities.
 
 8
-00:00:23,230 --> 00:00:25,335
+00:00:25,306 --> 00:00:27,601
 Leadership isn't operating the feature.
 
 9
-00:00:25,335 --> 00:00:29,760
+00:00:27,601 --> 00:00:32,427
 They're deciding whether to fund it, expand it, or pull it back, and that decision
 
 10
-00:00:29,760 --> 00:00:31,972
+00:00:32,427 --> 00:00:34,840
 needs three or four numbers, not fifteen.
 
 11
-00:00:31,972 --> 00:00:34,671
+00:00:34,840 --> 00:00:37,783
 Which three would you actually defend in the room?
 
 12
-00:00:34,671 --> 00:00:36,559
+00:00:37,783 --> 00:00:39,843
 This isn't a hypothetical mismatch.
 
 13
-00:00:36,559 --> 00:00:40,876
+00:00:39,843 --> 00:00:44,552
 It's usually the first thing that goes wrong when a feature moves from a scrappy
 
 14
-00:00:40,876 --> 00:00:44,222
+00:00:44,552 --> 00:00:48,201
 team project to something the rest of the company is watching.
 
 15
-00:00:44,222 --> 00:00:48,053
+00:00:48,201 --> 00:00:52,380
 The instinct is to show more, not less, because more feels more honest.
 
 16
-00:00:48,053 --> 00:00:52,317
+00:00:52,380 --> 00:00:57,030
 It's usually the opposite: more panels just give leadership more places to find
 
 17
-00:00:52,317 --> 00:00:54,907
+00:00:57,030 --> 00:00:59,855
 whatever story they already believed walking in.
 
 18
-00:00:54,907 --> 00:00:59,386
+00:00:59,855 --> 00:01:04,740
 Three or four numbers force a discipline fifteen never will: you have to decide, in
 
 19
-00:00:59,386 --> 00:01:02,731
+00:01:04,740 --> 00:01:08,389
 advance, which ones actually matter enough to survive the cut.
 
 20
-00:01:02,731 --> 00:01:07,210
+00:01:08,389 --> 00:01:13,274
 That decision is worth making deliberately, not by whichever panels happened to get
 
 21
-00:01:07,210 --> 00:01:07,858
+00:01:13,274 --> 00:01:13,981
 built first.
 
 22
-00:01:08,408 --> 00:01:11,930
+00:01:14,531 --> 00:01:18,337
 Read the metrics row against 9.1, because it's not a coincidence.
 
 23
-00:01:11,930 --> 00:01:16,319
+00:01:18,337 --> 00:01:23,079
 The three metrics that lecture built specifically for a probabilistic feature are
 
 24
-00:01:16,319 --> 00:01:20,707
+00:01:23,079 --> 00:01:27,822
 exactly the ones dense enough in meaning to belong on a one-page leadership view.
 
 25
-00:01:20,707 --> 00:01:25,259
+00:01:27,822 --> 00:01:32,740
 Everything else in your team's fifteen panels exists to help you diagnose why one of
 
 26
-00:01:25,259 --> 00:01:29,647
+00:01:32,740 --> 00:01:37,483
 those three moved, not to be read by someone deciding whether to keep funding the
 
 27
-00:01:29,647 --> 00:01:30,081
+00:01:37,483 --> 00:01:37,952
 feature.
 
 28
-00:01:30,081 --> 00:01:33,223
+00:01:37,952 --> 00:01:41,348
 Refresh cadence matters more than it looks like it should.
 
 29
-00:01:33,223 --> 00:01:37,612
+00:01:41,348 --> 00:01:46,090
 A leadership dashboard refreshing every minute doesn't help anyone make a monthly
 
 30
-00:01:37,612 --> 00:01:41,459
+00:01:46,090 --> 00:01:50,248
 decision, it just adds noise between the meetings that actually matter.
 
 31
-00:01:41,459 --> 00:01:45,631
+00:01:50,248 --> 00:01:54,756
 Match the refresh rate to the decision cycle, not to what your infrastructure
 
 32
-00:01:45,631 --> 00:01:46,986
+00:01:54,756 --> 00:01:56,220
 happens to be capable of.
 
 33
-00:01:46,986 --> 00:01:50,941
+00:01:56,220 --> 00:02:00,494
 These two documents can share a source of truth without sharing a screen.
 
 34
-00:01:50,941 --> 00:01:53,379
+00:02:00,494 --> 00:02:03,129
 The same instrumentation from 9.2 feeds both.
 
 35
-00:01:53,379 --> 00:01:57,443
+00:02:03,129 --> 00:02:07,521
 The team's version queries it in detail, sliced by endpoint and percentile.
 
 36
-00:01:57,443 --> 00:02:01,777
+00:02:07,521 --> 00:02:12,205
 The leadership version rolls the same underlying events up to three numbers: one
 
 37
-00:02:01,777 --> 00:02:03,240
+00:02:12,205 --> 00:02:13,786
 pipeline, two honest views.
 
 38
-00:02:03,240 --> 00:02:07,737
+00:02:13,786 --> 00:02:18,645
 Ask which document you're actually looking at before trusting either one's silence.
 
 39
-00:02:07,737 --> 00:02:11,313
+00:02:18,645 --> 00:02:22,510
 A quiet number on the team's dashboard might mean nothing's wrong.
 
 40
-00:02:11,313 --> 00:02:15,756
+00:02:22,510 --> 00:02:27,311
 The same quiet number missing entirely from the leadership version might just mean
 
 41
-00:02:15,756 --> 00:02:19,820
+00:02:27,311 --> 00:02:31,703
 it didn't make the cut, a different and much less reassuring kind of quiet.
 
 42
-00:02:20,370 --> 00:02:24,763
+00:02:32,253 --> 00:02:37,010
 Say the honest caveat, because the pressure on a leadership dashboard runs one
 
 43
-00:02:24,763 --> 00:02:28,480
+00:02:37,010 --> 00:02:41,036
 direction: make it look good, quietly drop the panel that doesn't.
 
 44
-00:02:28,480 --> 00:02:32,760
+00:02:41,036 --> 00:02:45,672
 A trustworthy leadership dashboard has to be allowed to show a number that's
 
 45
-00:02:32,760 --> 00:02:37,040
+00:02:45,672 --> 00:02:50,307
 currently bad, with a sentence next to it saying what's being done about it.
 
 46
-00:02:37,040 --> 00:02:41,658
+00:02:50,307 --> 00:02:55,309
 The version that only ever shows green gets believed right up until the quarter it
 
 47
-00:02:41,658 --> 00:02:46,389
+00:02:55,309 --> 00:03:00,433
 can't hide the real number any longer, and every green quarter before that one loses
 
 48
-00:02:46,389 --> 00:02:48,078
+00:03:00,433 --> 00:03:02,262
 its credibility retroactively.
 
 49
-00:02:48,078 --> 00:02:52,753
+00:03:02,262 --> 00:03:07,325
 This is the same discipline as 9.1's acceptance-versus-engagement pairing, aimed at
 
 50
-00:02:52,753 --> 00:02:55,118
+00:03:07,325 --> 00:03:09,887
 an entire dashboard instead of one metric.
 
 51
-00:02:55,118 --> 00:02:59,398
+00:03:09,887 --> 00:03:14,523
 A flattering number is easy to produce by choosing what to measure and when.
 
 52
-00:02:59,398 --> 00:03:03,735
+00:03:14,523 --> 00:03:19,219
 A dashboard that's allowed to look bad occasionally is the only kind actually
 
 53
-00:03:03,735 --> 00:03:07,058
+00:03:19,219 --> 00:03:22,818
 reporting reality rather than managing an impression of it.
 
 54
-00:03:07,058 --> 00:03:09,873
+00:03:22,818 --> 00:03:25,868
 The instinct to omit rarely feels like dishonesty.
 
 55
-00:03:09,873 --> 00:03:14,323
+00:03:25,868 --> 00:03:30,686
 It feels like editing: choosing the story worth fifteen minutes of a leadership
 
 56
-00:03:14,323 --> 00:03:14,773
+00:03:30,686 --> 00:03:31,174
 meeting.
 
 57
-00:03:14,773 --> 00:03:19,279
+00:03:31,174 --> 00:03:36,054
 The real test is whether the bad number would still make the cut if it moved the
 
 58
-00:03:19,279 --> 00:03:21,588
+00:03:36,054 --> 00:03:38,555
 wrong way, not just when it's flattering.
 
 59
-00:03:21,588 --> 00:03:26,093
+00:03:38,555 --> 00:03:43,434
 Naming it is where credibility actually gets built: a team that surfaces its own
 
 60
-00:03:26,093 --> 00:03:30,542
+00:03:43,434 --> 00:03:48,253
 weak quarter, with a plan attached, earns more trust than one whose numbers are
 
 61
-00:03:30,542 --> 00:03:32,288
+00:03:48,253 --> 00:03:50,144
 suspiciously smooth every time.
 
 62
-00:03:32,838 --> 00:03:37,254
+00:03:50,694 --> 00:03:55,478
 That's the standard worth building toward, and the exercise usually lands quickly,
 
 63
-00:03:37,254 --> 00:03:41,455
+00:03:55,478 --> 00:04:00,029
 because most people already know which panel got looked at and which ones were
 
 64
-00:03:41,455 --> 00:03:42,209
+00:04:00,029 --> 00:04:00,846
 scrolled past.
 
 65
-00:03:42,209 --> 00:03:46,678
+00:04:00,846 --> 00:04:05,689
 Cut to those three or four honestly, even if it means retiring a chart you're proud
 
 66
-00:03:46,678 --> 00:03:46,840
+00:04:05,689 --> 00:04:05,864
 of.
 
 67
-00:03:46,840 --> 00:03:49,856
+00:04:05,864 --> 00:04:09,131
 A dashboard's value was never the count of panels on it.
 
 68
-00:03:49,856 --> 00:03:53,033
+00:04:09,131 --> 00:04:12,573
 It was always whether the room left knowing what to decide.
 
 69
-00:03:53,033 --> 00:03:56,749
+00:04:12,573 --> 00:04:16,599
 Do this exercise even if you weren't the one who built the dashboard.
 
 70
-00:03:56,749 --> 00:04:01,057
+00:04:16,599 --> 00:04:21,267
 Most people sitting in a leadership review can tell you exactly which number the
 
 71
-00:04:01,057 --> 00:04:05,204
+00:04:21,267 --> 00:04:25,759
 room actually reacted to, and it's almost always one of three or four, buried
 
 72
-00:04:05,204 --> 00:04:08,651
+00:04:25,759 --> 00:04:29,493
 somewhere among a dozen others competing for the same attention.
 
 73
-00:04:09,201 --> 00:04:10,833
+00:04:30,043 --> 00:04:31,860
 One thing before you move on.
 
 74
-00:04:10,833 --> 00:04:15,391
+00:04:31,860 --> 00:04:36,934
 Cut the dashboard first: adoption, acceptance, deflection, and one cost or margin
 
 75
-00:04:15,391 --> 00:04:17,585
+00:04:36,934 --> 00:04:39,377
 number from Section seven, on one page.
 
 76
-00:04:17,585 --> 00:04:19,386
+00:04:39,377 --> 00:04:41,382
 Then check its history honestly.
 
 77
-00:04:19,386 --> 00:04:23,944
+00:04:41,382 --> 00:04:46,456
 If every quarter has looked fine, that's worth a second look before you trust the
 
 78
-00:04:23,944 --> 00:04:26,251
+00:04:46,456 --> 00:04:49,024
 next one, not a reason to feel reassured.
 
 79
-00:04:26,251 --> 00:04:28,390
+00:04:49,024 --> 00:04:51,404
 Both of these are edits, not rebuilds.
 
 80
-00:04:28,390 --> 00:04:31,260
+00:04:51,404 --> 00:04:54,599
 The data already exists from 9.2's instrumentation.
 
 81
-00:04:31,260 --> 00:04:34,692
+00:04:54,599 --> 00:04:58,420
 This is a smaller, more honest view of it, not a new project.
 
 82
-00:04:34,692 --> 00:04:39,138
+00:04:58,420 --> 00:05:03,369
 Next lecture is this section's workshop: building the metric tree that connects
 
 83
-00:04:39,138 --> 00:04:43,640
+00:05:03,369 --> 00:05:08,381
 every number this section has taught you into the single document your feature's
 
 84
-00:04:43,640 --> 00:04:44,821
+00:05:08,381 --> 00:05:09,696
 whole story lives in.

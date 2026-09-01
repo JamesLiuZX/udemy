@@ -1,83 +1,83 @@
 1
-00:00:00,350 --> 00:00:04,857
+00:00:00,350 --> 00:00:05,280
 Seven lectures ago, this section opened with the gap between a golden set and a real
 
 2
-00:00:04,857 --> 00:00:09,256
+00:00:05,280 --> 00:00:10,093
 user: one tells you the feature works, the other tells you whether anyone actually
 
 3
-00:00:09,256 --> 00:00:09,739
+00:00:10,093 --> 00:00:10,621
 wants it.
 
 4
-00:00:09,739 --> 00:00:11,456
+00:00:10,621 --> 00:00:12,500
 Here's what closes that gap now.
 
 5
-00:00:11,456 --> 00:00:15,856
+00:00:12,500 --> 00:00:17,313
 You've got three metrics built specifically for a feature that behaves differently
 
 6
-00:00:15,856 --> 00:00:20,363
+00:00:17,313 --> 00:00:22,243
 every time it runs, instead of borrowed engagement numbers that can quietly mean the
 
 7
-00:00:20,363 --> 00:00:22,079
+00:00:22,243 --> 00:00:24,121
 opposite of what they look like.
 
 8
-00:00:22,079 --> 00:00:26,586
+00:00:24,121 --> 00:00:29,051
 You know how to instrument before launch so those numbers are answerable on day one,
 
 9
-00:00:26,586 --> 00:00:31,093
+00:00:29,051 --> 00:00:33,982
 and how to A/B test something that isn't deterministic without a standard calculator
 
 10
-00:00:31,093 --> 00:00:32,327
+00:00:33,982 --> 00:00:35,332
 quietly misleading you.
 
 11
-00:00:32,327 --> 00:00:36,512
+00:00:35,332 --> 00:00:39,910
 You've got the discipline that actually closes a feedback loop instead of just
 
 12
-00:00:36,512 --> 00:00:40,536
+00:00:39,910 --> 00:00:44,312
 logging one, and a leadership dashboard honest enough to show a bad number.
 
 13
-00:00:41,086 --> 00:00:45,644
+00:00:44,862 --> 00:00:49,894
 One downloadable artifact came out of this section, and the workshop put all five
 
 14
-00:00:45,644 --> 00:00:50,370
+00:00:49,894 --> 00:00:55,112
 ideas through it: a North Star metric, chosen on purpose, with adoption, acceptance,
 
 15
-00:00:50,370 --> 00:00:53,127
+00:00:55,112 --> 00:00:58,156
 deflection, and a real cost number underneath it.
 
 16
-00:00:53,127 --> 00:00:54,590
+00:00:58,156 --> 00:00:59,771
 Keep it alive after today.
 
 17
-00:00:54,590 --> 00:00:59,204
+00:00:59,771 --> 00:01:04,865
 A tree built once and never revisited goes stale the same way every other document
 
 18
-00:00:59,204 --> 00:01:00,330
+00:01:04,865 --> 00:01:06,107
 in this course does.
 
 19
-00:01:00,330 --> 00:01:04,775
+00:01:06,107 --> 00:01:11,015
 Next section is about doing the job itself: the workflows, the tooling, and the
 
 20
-00:01:04,775 --> 00:01:09,333
+00:01:11,015 --> 00:01:16,047
 judgment calls that fill the space between everything you've learned and actually
 
 21
-00:01:09,333 --> 00:01:10,008
+00:01:16,047 --> 00:01:16,792
 shipping it.
