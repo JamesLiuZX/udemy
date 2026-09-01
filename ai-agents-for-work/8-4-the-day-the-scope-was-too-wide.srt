@@ -1,367 +1,367 @@
 1
-00:00:00,350 --> 00:00:04,685
+00:00:00,350 --> 00:00:05,114
 Picture yourself a week after finishing Section 6, pleased with an agent that
 
 2
-00:00:04,685 --> 00:00:05,473
+00:00:05,114 --> 00:00:05,981
 already works.
 
 3
-00:00:05,473 --> 00:00:10,089
+00:00:05,981 --> 00:00:11,054
 That is exactly the moment this story happens in, because it is exactly the moment
 
 4
-00:00:10,089 --> 00:00:11,890
+00:00:11,054 --> 00:00:13,034
 you would be least on guard too.
 
 5
-00:00:11,890 --> 00:00:14,423
+00:00:13,034 --> 00:00:15,819
 The follow-up chaser worked exactly as built.
 
 6
-00:00:14,423 --> 00:00:19,152
+00:00:15,819 --> 00:00:21,016
 Priya, being sensible, noticed it would sometimes draft a chase for a client who had
 
 7
-00:00:19,152 --> 00:00:20,784
+00:00:21,016 --> 00:00:22,811
 already replied that morning.
 
 8
-00:00:20,784 --> 00:00:24,950
+00:00:22,811 --> 00:00:27,390
 Her fix seemed obvious: give it a tool to search her mail first and check.
 
 9
-00:00:24,950 --> 00:00:26,020
+00:00:27,390 --> 00:00:28,565
 Was the idea wrong?
 
 10
-00:00:26,020 --> 00:00:30,748
+00:00:28,565 --> 00:00:33,763
 No, and that matters: Section 6.4 told you this exact improvement was coming, and it
 
 11
-00:00:30,748 --> 00:00:31,536
+00:00:33,763 --> 00:00:34,629
 is a good one.
 
 12
-00:00:31,536 --> 00:00:36,265
+00:00:34,629 --> 00:00:39,826
 The redundant drafts were a real annoyance, the fix was a known tool one plus button
 
 13
-00:00:36,265 --> 00:00:40,768
+00:00:39,826 --> 00:00:44,777
 away, and the whole change was two minutes on a Thursday afternoon between other
 
 14
-00:00:40,768 --> 00:00:41,050
+00:00:44,777 --> 00:00:45,086
 work.
 
 15
-00:00:41,050 --> 00:00:45,609
+00:00:45,086 --> 00:00:50,098
 Every condition from lecture 8.2 was present: small effort, immediate benefit, an
 
 16
-00:00:45,609 --> 00:00:49,494
+00:00:50,098 --> 00:00:54,367
 agent with weeks of earned trust, and no sense of beginning anything.
 
 17
-00:00:49,494 --> 00:00:51,239
+00:00:54,367 --> 00:00:56,285
 So the worksheet stayed closed.
 
 18
-00:00:51,239 --> 00:00:55,967
+00:00:56,285 --> 00:01:01,483
 Not decided against, just never quite risen to the level of a decision, which is how
 
 19
-00:00:55,967 --> 00:00:57,825
+00:01:01,483 --> 00:01:03,525
 the worksheet is usually skipped.
 
 20
-00:00:57,825 --> 00:00:59,401
+00:01:03,525 --> 00:01:05,257
 Nobody chooses recklessness.
 
 21
-00:00:59,401 --> 00:01:00,583
+00:01:05,257 --> 00:01:06,557
 They choose Thursday.
 
 22
-00:01:01,133 --> 00:01:05,688
+00:01:07,107 --> 00:01:12,033
 This is the exact gap Section 8.2 named: a small-feeling addition, skipped past the
 
 23
-00:01:05,688 --> 00:01:09,255
+00:01:12,033 --> 00:01:15,892
 worksheet, carrying access wider than the job it was meant to do.
 
 24
-00:01:09,255 --> 00:01:12,986
+00:01:15,892 --> 00:01:19,928
 Reconstruct the consent-screen moment, because you have stood in it.
 
 25
-00:01:12,986 --> 00:01:17,431
+00:01:19,928 --> 00:01:24,736
 The tool needs a credential, the screen appears mid-flow, and it offers what such
 
 26
-00:01:17,431 --> 00:01:21,876
+00:01:24,736 --> 00:01:29,544
 screens offer: the standard grant, phrased reasonably, with the narrower option a
 
 27
-00:01:21,876 --> 00:01:24,181
+00:01:29,544 --> 00:01:32,037
 link or a dropdown away if you go looking.
 
 28
-00:01:24,181 --> 00:01:28,516
+00:01:32,037 --> 00:01:36,726
 Priya was not reading a contract that afternoon, she was finishing a two minute
 
 29
-00:01:28,516 --> 00:01:33,126
+00:01:36,726 --> 00:01:41,712
 change, and clicking agree on a screen is the most practised reflex in modern office
 
 30
-00:01:33,126 --> 00:01:33,400
+00:01:41,712 --> 00:01:42,009
 life.
 
 31
-00:01:33,400 --> 00:01:37,955
+00:01:42,009 --> 00:01:46,935
 She connected her own personal Gmail credential, authorised for everything, and the
 
 32
-00:01:37,955 --> 00:01:39,766
+00:01:46,935 --> 00:01:48,894
 workflow lit up green and worked.
 
 33
-00:01:39,766 --> 00:01:40,863
+00:01:48,894 --> 00:01:50,081
 Note that last part.
 
 34
-00:01:40,863 --> 00:01:42,949
+00:01:50,081 --> 00:01:52,337
 Nothing about over-broad access fails.
 
 35
-00:01:42,949 --> 00:01:46,845
+00:01:52,337 --> 00:01:56,551
 It succeeds, silently, holding more keys than its job needs, and waits.
 
 36
-00:01:47,395 --> 00:01:51,828
+00:01:57,101 --> 00:02:01,858
 The agent did exactly what a search tool does: it looked across everything the
 
 37
-00:01:51,828 --> 00:01:56,204
+00:02:01,858 --> 00:02:06,555
 credential could reach, found a thread that happened to mention Brightwell in
 
 38
-00:01:56,204 --> 00:02:00,864
+00:02:06,555 --> 00:02:11,556
 passing, in an entirely different, confidential context, and pulled a line from it
 
 39
-00:02:00,864 --> 00:02:02,569
+00:02:11,556 --> 00:02:13,385
 into the draft it was writing.
 
 40
-00:02:02,569 --> 00:02:05,865
+00:02:13,385 --> 00:02:16,923
 Understand the mechanism, because nothing in it is exotic.
 
 41
-00:02:05,865 --> 00:02:10,298
+00:02:16,923 --> 00:02:21,680
 A search tool ranks by relevance, and relevance has no concept of propriety: a
 
 42
-00:02:10,298 --> 00:02:14,731
+00:02:21,680 --> 00:02:26,437
 Legal-labelled thread that mentions Brightwell is, to a search index, simply a
 
 43
-00:02:14,731 --> 00:02:17,005
+00:02:26,437 --> 00:02:28,876
 strong match for the query "Brightwell".
 
 44
-00:02:17,005 --> 00:02:21,608
+00:02:28,876 --> 00:02:33,816
 The label that told every human at Calloway and Finch "not for general eyes" told
 
 45
-00:02:21,608 --> 00:02:25,302
+00:02:33,816 --> 00:02:37,781
 the tool nothing, because labels only bind things that read them.
 
 46
-00:02:25,302 --> 00:02:30,020
+00:02:37,781 --> 00:02:42,843
 And the model, handed a search result by its own tool, treated it the way it treats
 
 47
-00:02:30,020 --> 00:02:32,122
+00:02:42,843 --> 00:02:45,099
 everything that arrives: as material.
 
 48
-00:02:32,122 --> 00:02:36,726
+00:02:45,099 --> 00:02:50,039
 Recall lecture 1.3's line, an agent's input is also its instructions, and here is
 
 49
-00:02:36,726 --> 00:02:41,273
+00:02:50,039 --> 00:02:54,918
 its gentler sibling: an agent's input is also its source material, whatever that
 
 50
-00:02:41,273 --> 00:02:42,523
+00:02:54,918 --> 00:02:56,260
 input turns out to be.
 
 51
-00:02:42,523 --> 00:02:43,773
+00:02:56,260 --> 00:02:57,602
 Nothing malfunctioned.
 
 52
-00:02:43,773 --> 00:02:48,377
+00:02:57,602 --> 00:03:02,542
 Wide access plus honest machinery produced exactly what it produces, which is the
 
 53
-00:02:48,377 --> 00:02:50,423
+00:03:02,542 --> 00:03:04,737
 point of never granting wide access.
 
 54
-00:02:50,973 --> 00:02:55,455
+00:03:05,287 --> 00:03:10,129
 Read that again: the tool's scope was wrong, and the agent still could not cause
 
 55
-00:02:55,455 --> 00:03:00,049
+00:03:10,129 --> 00:03:15,092
 harm, because the one guardrail that mattered most was never the tool's permission
 
 56
-00:03:00,049 --> 00:03:00,385
+00:03:15,092 --> 00:03:15,455
 level.
 
 57
-00:03:00,385 --> 00:03:04,979
+00:03:15,455 --> 00:03:20,418
 It was the fact that nothing this agent produces leaves without a human reading it
 
 58
-00:03:04,979 --> 00:03:05,315
+00:03:20,418 --> 00:03:20,781
 first.
 
 59
-00:03:05,315 --> 00:03:10,022
+00:03:20,781 --> 00:03:25,865
 Ask yourself, right now, whether that same sentence would be true of every agent you
 
 60
-00:03:10,022 --> 00:03:11,030
+00:03:25,865 --> 00:03:26,954
 have built so far.
 
 61
-00:03:11,030 --> 00:03:15,568
+00:03:26,954 --> 00:03:31,856
 And run the counterfactual honestly, because in a compliance-heavy business it is
 
 62
-00:03:15,568 --> 00:03:16,129
+00:03:31,856 --> 00:03:32,461
 not small.
 
 63
-00:03:16,129 --> 00:03:20,779
+00:03:32,461 --> 00:03:37,485
 Had the chaser been allowed to send, a client contact would have received an email,
 
 64
-00:03:20,779 --> 00:03:25,429
+00:03:37,485 --> 00:03:42,508
 under Priya's name, quoting from a privileged thread about a dispute he had no part
 
 65
-00:03:25,429 --> 00:03:25,597
+00:03:42,508 --> 00:03:42,690
 in.
 
 66
-00:03:25,597 --> 00:03:30,247
+00:03:42,690 --> 00:03:47,713
 At minimum, an excruciating apology and a question nobody wants from a client: what
 
 67
-00:03:30,247 --> 00:03:32,208
+00:03:47,713 --> 00:03:49,831
 else can your systems see about me?
 
 68
-00:03:32,208 --> 00:03:35,626
+00:03:49,831 --> 00:03:53,523
 In an industry that runs on confidentiality, plausibly worse.
 
 69
-00:03:35,626 --> 00:03:40,052
+00:03:53,523 --> 00:03:58,304
 The distance between that paragraph and "she deleted a draft" is two words in a
 
 70
-00:03:40,052 --> 00:03:44,422
+00:03:58,304 --> 00:04:03,025
 dropdown, chosen five weeks earlier, on a calm day, before anyone was tempted.
 
 71
-00:03:44,972 --> 00:03:49,441
+00:04:03,575 --> 00:04:08,462
 Walk down the right hand column with your own agents in mind, and ask where your
 
 72
-00:03:49,441 --> 00:03:50,335
+00:04:08,462 --> 00:04:09,439
 equivalents are.
 
 73
-00:03:50,335 --> 00:03:54,915
+00:04:09,439 --> 00:04:14,448
 The first four rows are where things went wrong, and notice how quietly: no error,
 
 74
-00:03:54,915 --> 00:03:57,708
+00:04:14,448 --> 00:04:17,503
 no red box, no alert you could have subscribed to.
 
 75
-00:03:57,708 --> 00:04:02,233
+00:04:17,503 --> 00:04:22,451
 The last two rows are the entire defence, and you built both of them in Section 6
 
 76
-00:04:02,233 --> 00:04:03,741
+00:04:22,451 --> 00:04:24,101
 without knowing this story.
 
 77
-00:04:03,741 --> 00:04:08,098
+00:04:24,101 --> 00:04:28,865
 When you design your next agent, this table is the exercise worth repeating on
 
 78
-00:04:08,098 --> 00:04:12,679
+00:04:28,865 --> 00:04:33,875
 paper: walk the worst Thursday you can imagine, row by row, and make sure at least
 
 79
-00:04:12,679 --> 00:04:16,198
+00:04:33,875 --> 00:04:37,723
 two rows near the bottom hold without help from the rows above.
 
 80
-00:04:16,748 --> 00:04:21,380
+00:04:38,273 --> 00:04:43,320
 Notice what she did not have to do: apologise to a client, explain a leaked detail,
 
 81
-00:04:21,380 --> 00:04:24,171
+00:04:43,320 --> 00:04:46,360
 or rebuild trust with anyone outside her own desk.
 
 82
-00:04:24,171 --> 00:04:28,803
+00:04:46,360 --> 00:04:51,407
 That is what "blast radius, not disaster" actually looks like when a guardrail does
 
 83
-00:04:28,803 --> 00:04:33,212
+00:04:51,407 --> 00:04:56,210
 its job, and it is exactly what you are protecting yourself for, every time you
 
 84
-00:04:33,212 --> 00:04:35,556
+00:04:56,210 --> 00:04:58,764
 follow this method instead of skipping it.
 
 85
-00:04:35,556 --> 00:04:40,244
+00:04:58,764 --> 00:05:03,871
 Notice also the shape of the repair: remove first, understand, then re-add properly.
 
 86
-00:04:40,244 --> 00:04:44,820
+00:05:03,871 --> 00:05:08,857
 She did not patch the live problem in place, she took the capability out entirely,
 
 87
-00:04:44,820 --> 00:04:49,341
+00:05:08,857 --> 00:05:13,782
 which cost her nothing but a few redundant drafts for a week, and brought it back
 
 88
-00:04:49,341 --> 00:04:52,522
+00:05:13,782 --> 00:05:17,247
 only behind a label-scoped credential with C08 filled in.
 
 89
-00:04:52,522 --> 00:04:57,042
+00:05:17,247 --> 00:05:22,172
 That is Section 6.4's promise kept: the reply-checking tool, added properly, is a
 
 90
-00:04:57,042 --> 00:05:00,335
+00:05:22,172 --> 00:05:25,760
 genuinely good addition, and the chaser runs with it today.
 
 91
-00:05:00,335 --> 00:05:02,065
+00:05:25,760 --> 00:05:27,644
 The idea was never the mistake.
 
 92
-00:05:02,065 --> 00:05:03,014
+00:05:27,644 --> 00:05:28,678
 The Thursday was.

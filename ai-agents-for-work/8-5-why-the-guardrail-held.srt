@@ -1,231 +1,231 @@
 1
-00:00:00,350 --> 00:00:04,655
+00:00:00,350 --> 00:00:05,013
 Both questions are worth asking, and the order matters more than people expect.
 
 2
-00:00:04,655 --> 00:00:08,850
+00:00:05,013 --> 00:00:09,559
 It is tempting to end the last lecture's story at "the scope should have been
 
 3
-00:00:08,850 --> 00:00:10,267
+00:00:09,559 --> 00:00:11,093
 narrower," and stop there.
 
 4
-00:00:10,267 --> 00:00:14,517
+00:00:11,093 --> 00:00:15,698
 That is true, and it is also not the most important thing the incident proves.
 
 5
-00:00:14,517 --> 00:00:18,876
+00:00:15,698 --> 00:00:20,420
 The more important question is what actually held when the first line of defence
 
 6
-00:00:18,876 --> 00:00:19,257
+00:00:20,420 --> 00:00:20,833
 failed.
 
 7
-00:00:19,257 --> 00:00:23,780
+00:00:20,833 --> 00:00:25,733
 The two questions produce two different futures, which is why the distinction earns
 
 8
-00:00:23,780 --> 00:00:24,325
+00:00:25,733 --> 00:00:26,323
 a lecture.
 
 9
-00:00:24,325 --> 00:00:28,684
+00:00:26,323 --> 00:00:31,046
 Reviews that only ask what should have stopped it earlier end in resolutions: be
 
 10
-00:00:28,684 --> 00:00:32,008
+00:00:31,046 --> 00:00:34,646
 more careful, read consent screens, never skip the worksheet.
 
 11
-00:00:32,008 --> 00:00:36,530
+00:00:34,646 --> 00:00:39,546
 All true, all fragile, because they repair the person, and the person was never the
 
 12
-00:00:36,530 --> 00:00:37,293
+00:00:39,546 --> 00:00:40,372
 reliable part.
 
 13
-00:00:37,293 --> 00:00:41,598
+00:00:40,372 --> 00:00:45,036
 Asking what held ends somewhere sturdier: it finds the design that did not care
 
 14
-00:00:41,598 --> 00:00:46,011
+00:00:45,036 --> 00:00:49,817
 whether anyone was careful that Thursday, and tells you to build more of that, in
 
 15
-00:00:46,011 --> 00:00:48,463
+00:00:49,817 --> 00:00:52,473
 places your future carelessness cannot reach.
 
 16
-00:00:48,463 --> 00:00:50,152
+00:00:52,473 --> 00:00:54,303
 Resolutions decay in a quarter.
 
 17
-00:00:50,152 --> 00:00:51,024
+00:00:54,303 --> 00:00:55,248
 Wiring does not.
 
 18
-00:00:51,024 --> 00:00:55,438
+00:00:55,248 --> 00:01:00,029
 You have heard that principle twice now; this is what it looks like the day it is
 
 19
-00:00:55,438 --> 00:00:56,146
+00:01:00,029 --> 00:01:00,797
 load bearing.
 
 20
-00:00:56,696 --> 00:01:01,173
+00:01:01,347 --> 00:01:06,201
 This is the whole argument of Section 6, proven under real conditions instead of
 
 21
-00:01:01,173 --> 00:01:02,684
+00:01:06,201 --> 00:01:07,839
 just asserted in a lecture.
 
 22
-00:01:02,684 --> 00:01:04,195
+00:01:07,839 --> 00:01:09,477
 A wrong scope is a mistake.
 
 23
-00:01:04,195 --> 00:01:08,895
+00:01:09,477 --> 00:01:14,574
 A wrong scope on an agent that can only draft is a mistake that stays small, because
 
 24
-00:01:08,895 --> 00:01:13,428
+00:01:14,574 --> 00:01:19,489
 the thing that actually causes harm, sending something, was never possible in the
 
 25
-00:01:13,428 --> 00:01:14,099
+00:01:19,489 --> 00:01:20,217
 first place.
 
 26
-00:01:14,099 --> 00:01:17,849
+00:01:20,217 --> 00:01:24,283
 Why did one guardrail's failure tell you nothing about the other's?
 
 27
-00:01:17,849 --> 00:01:22,381
+00:01:24,283 --> 00:01:29,198
 Because the two were independent, and the independence was partly about when each
 
 28
-00:01:22,381 --> 00:01:23,388
+00:01:29,198 --> 00:01:30,290
 decision got made.
 
 29
-00:01:23,388 --> 00:01:27,865
+00:01:30,290 --> 00:01:35,144
 The scope was decided in a hurry, mid-flow, on the busy Thursday, by exactly the
 
 30
-00:01:27,865 --> 00:01:30,943
+00:01:35,144 --> 00:01:38,481
 version of Priya most likely to wave something through.
 
 31
-00:01:30,943 --> 00:01:35,364
+00:01:38,481 --> 00:01:43,275
 The action level was decided five weeks earlier, on day one, calm, with the job
 
 32
-00:01:35,364 --> 00:01:38,050
+00:01:43,275 --> 00:01:46,188
 description open, before any temptation existed.
 
 33
-00:01:38,050 --> 00:01:42,582
+00:01:46,188 --> 00:01:51,102
 Layers protect you when they cannot all fail for the same reason, and "decided by
 
 34
-00:01:42,582 --> 00:01:47,171
+00:01:51,102 --> 00:01:56,078
 different versions of you" is one of the cheapest independences available: put the
 
 35
-00:01:47,171 --> 00:01:51,704
+00:01:56,078 --> 00:02:00,993
 irreversibility guard where your calmest self placed it, and the hurried self who
 
 36
-00:01:51,704 --> 00:01:56,236
+00:02:00,993 --> 00:02:05,908
 mis-scopes a credential cannot also have removed it, because the hurried self was
 
 37
-00:01:56,236 --> 00:01:56,908
+00:02:05,908 --> 00:02:06,636
 never asked.
 
 38
-00:01:57,458 --> 00:02:01,650
+00:02:07,186 --> 00:02:11,750
 That sentence, "you cannot always get the first one right," is not pessimism.
 
 39
-00:02:01,650 --> 00:02:06,059
+00:02:11,750 --> 00:02:16,550
 It is the entire reason a single guardrail is never enough, however carefully you
 
 40
-00:02:06,059 --> 00:02:06,984
+00:02:16,550 --> 00:02:17,558
 think you set it.
 
 41
-00:02:06,984 --> 00:02:11,448
+00:02:17,558 --> 00:02:22,417
 Be honest about the price of layers, because there is one: each adds friction, and
 
 42
-00:02:11,448 --> 00:02:14,660
+00:02:22,417 --> 00:02:25,914
 friction is why people strip guardrails in the first place.
 
 43
-00:02:14,660 --> 00:02:17,817
+00:02:25,914 --> 00:02:29,352
 The craft is choosing layers whose cost you stop noticing.
 
 44
-00:02:17,817 --> 00:02:19,777
+00:02:29,352 --> 00:02:31,485
 Draft-only costs a click per output.
 
 45
-00:02:19,777 --> 00:02:23,152
+00:02:31,485 --> 00:02:35,160
 The review read costs minutes you were partly spending anyway.
 
 46
-00:02:23,152 --> 00:02:25,492
+00:02:35,160 --> 00:02:37,708
 A scoped credential costs ten minutes once.
 
 47
-00:02:25,492 --> 00:02:30,011
+00:02:37,708 --> 00:02:42,627
 Stack those three and you have real depth for almost nothing, which is why they are
 
 48
-00:02:30,011 --> 00:02:31,480
+00:02:42,627 --> 00:02:44,228
 this course's standard kit.
 
 49
-00:02:31,480 --> 00:02:35,999
+00:02:44,228 --> 00:02:49,147
 A gate on every trivial action, by contrast, is a layer people quietly route around
 
 50
-00:02:35,999 --> 00:02:40,517
+00:02:49,147 --> 00:02:54,066
 by Friday, and a routed-around guardrail is worse than none, because it still shows
 
 51
-00:02:40,517 --> 00:02:41,932
+00:02:54,066 --> 00:02:55,607
 up on paper as protection.
 
 52
-00:02:42,482 --> 00:02:46,997
+00:02:56,157 --> 00:03:01,003
 Four agents, one real incident, and a scope error that never became a disaster.
 
 53
-00:02:46,997 --> 00:02:51,570
+00:03:01,003 --> 00:03:05,912
 That is the standard the rest of this course holds itself to, and notice it is a
 
 54
-00:02:51,570 --> 00:02:56,371
+00:03:05,912 --> 00:03:11,065
 standard about outcomes, not perfection: the method did not prevent the mistake, the
 
 55
-00:02:56,371 --> 00:03:00,315
+00:03:11,065 --> 00:03:15,299
 method made the mistake survivable, and those are different promises.
 
 56
-00:03:00,315 --> 00:03:04,202
+00:03:15,299 --> 00:03:19,470
 Only the second one is honest, and it is the one worth building for.
 
 57
-00:03:04,202 --> 00:03:08,774
+00:03:19,470 --> 00:03:24,379
 Next lecture closes the section, and Section 9 turns to the number every manager
 
 58
-00:03:08,774 --> 00:03:13,004
+00:03:24,379 --> 00:03:28,919
 eventually asks for: what this actually costs, and what it actually saves.
