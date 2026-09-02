@@ -1,5 +1,5 @@
 
-  built total: 5.52h across 81 lectures
+  built total: 6.00h across 81 lectures
 
   WARN  [0.1] slide 2: 717 chars of slide text — dense.
   WARN  [7.0] estimated 0.9 min — very short for a lecture.
