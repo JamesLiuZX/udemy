@@ -1,327 +1,327 @@
 1
-00:00:00,350 --> 00:00:04,877
+00:00:00,350 --> 00:00:05,265
 Nobody outside the account sees Section 9.1's Wednesday step, or the scoring that
 
 2
-00:00:04,877 --> 00:00:06,050
+00:00:05,265 --> 00:00:06,539
 happens every Monday.
 
 3
-00:00:06,050 --> 00:00:10,577
+00:00:06,539 --> 00:00:11,454
 What a client, a boss, or your own future self actually sees is whatever makes it
 
 4
-00:00:10,577 --> 00:00:14,936
+00:00:11,454 --> 00:00:16,187
 into a report, and that's a real gap between the work and how it's understood.
 
 5
-00:00:14,936 --> 00:00:18,401
+00:00:16,187 --> 00:00:19,949
 This is where Section 8.2's honest ratio gets tested for real.
 
 6
-00:00:18,401 --> 00:00:22,760
+00:00:19,949 --> 00:00:24,682
 It's one thing to write "noise" on your own scorecard where nobody's watching.
 
 7
-00:00:22,760 --> 00:00:27,286
+00:00:24,682 --> 00:00:29,597
 It's a different thing to write it in a document going to someone who's expecting
 
 8
-00:00:27,286 --> 00:00:27,845
+00:00:29,597 --> 00:00:30,204
 good news.
 
 9
-00:00:27,845 --> 00:00:32,428
+00:00:30,204 --> 00:00:35,179
 The temptation to quietly upgrade a noise result into something more flattering is
 
 10
-00:00:32,428 --> 00:00:36,060
+00:00:35,179 --> 00:00:39,123
 strongest exactly here, in the report, not in the scoring itself.
 
 11
-00:00:36,060 --> 00:00:38,519
+00:00:39,123 --> 00:00:41,793
 A good report doesn't hide the honest ratio.
 
 12
-00:00:38,519 --> 00:00:42,990
+00:00:41,793 --> 00:00:46,647
 It explains it, so the person reading it understands why most ad sets landing on
 
 13
-00:00:42,990 --> 00:00:46,399
+00:00:46,647 --> 00:00:50,349
 noise or loser is the system working, not the system failing.
 
 14
-00:00:46,399 --> 00:00:50,814
+00:00:50,349 --> 00:00:55,142
 Why does this explaining matter so much, rather than just reporting the numbers
 
 15
-00:00:50,814 --> 00:00:51,317
+00:00:55,142 --> 00:00:55,688
 straight?
 
 16
-00:00:51,317 --> 00:00:55,843
+00:00:55,688 --> 00:01:00,603
 Because a reader who's never sat through Section 8.2 has no reason to know that a
 
 17
-00:00:55,843 --> 00:00:57,464
+00:01:00,603 --> 00:01:02,363
 mostly-noise batch is normal.
 
 18
-00:00:57,464 --> 00:01:01,991
+00:01:02,363 --> 00:01:07,278
 Without that context, the honest numbers alone can read as failure to someone who
 
 19
-00:01:01,991 --> 00:01:05,511
+00:01:07,278 --> 00:01:11,101
 doesn't already share this course's framework for judging them.
 
 20
-00:01:06,061 --> 00:01:09,302
+00:01:11,651 --> 00:01:15,213
 Notice the right column isn't wrong information, exactly.
 
 21
-00:01:09,302 --> 00:01:11,519
+00:01:15,213 --> 00:01:17,651
 Impressions and reach are real numbers.
 
 22
-00:01:11,519 --> 00:01:15,953
+00:01:17,651 --> 00:01:22,526
 They're just not the ones that answer whether the account is making money, and
 
 23
-00:01:15,953 --> 00:01:20,501
+00:01:22,526 --> 00:01:27,527
 reporting them alongside the CAC ceiling without that context lets a reader draw
 
 24
-00:01:20,501 --> 00:01:24,935
+00:01:27,527 --> 00:01:32,402
 whatever conclusion flatters the numbers most, rather than the one the account
 
 25
-00:01:24,935 --> 00:01:25,958
+00:01:32,402 --> 00:01:33,527
 actually supports.
 
 26
-00:01:25,958 --> 00:01:28,687
+00:01:33,527 --> 00:01:36,527
 The fourth row is easy to skip and shouldn't be.
 
 27
-00:01:28,687 --> 00:01:33,235
+00:01:36,527 --> 00:01:41,528
 A report that only ever shows this week's snapshot asks the reader to trust that
 
 28
-00:01:33,235 --> 00:01:36,248
+00:01:41,528 --> 00:01:44,840
 progress is happening without ever showing the trend.
 
 29
-00:01:36,248 --> 00:01:40,568
+00:01:44,840 --> 00:01:49,591
 Connecting this week to last week, even briefly, is what turns a report into
 
 30
-00:01:40,568 --> 00:01:45,002
+00:01:49,591 --> 00:01:54,466
 evidence of a system rather than a single lucky result repeated on a schedule.
 
 31
-00:01:45,002 --> 00:01:49,664
+00:01:54,466 --> 00:01:59,591
 Notice, too, that the left column deliberately mixes good and bad news in the same
 
 32
-00:01:49,664 --> 00:01:49,948
+00:01:59,591 --> 00:01:59,904
 rows.
 
 33
-00:01:49,948 --> 00:01:54,496
+00:01:59,904 --> 00:02:04,904
 Fatigue status includes a winner going tired, not just a winner performing well.
 
 34
-00:01:54,496 --> 00:01:59,157
+00:02:04,904 --> 00:02:10,029
 A report that reads this way consistently signals something a highlight reel never
 
 35
-00:01:59,157 --> 00:02:02,455
+00:02:10,029 --> 00:02:13,655
 can: nothing here is being filtered before it reaches you.
 
 36
-00:02:03,005 --> 00:02:07,368
+00:02:14,205 --> 00:02:18,977
 Four lines, and every one of them traces back to a lecture you've already sat
 
 37
-00:02:07,368 --> 00:02:08,559
+00:02:18,977 --> 00:02:20,279
 through this section.
 
 38
-00:02:08,559 --> 00:02:11,619
+00:02:20,279 --> 00:02:23,626
 The counts come straight from Section 8.5's scorecard.
 
 39
-00:02:11,619 --> 00:02:13,319
+00:02:23,626 --> 00:02:25,485
 Fatigue status comes from 8.3.
 
 40
-00:02:13,319 --> 00:02:15,983
+00:02:25,485 --> 00:02:28,398
 What's queued next comes from 9.4's swipe file.
 
 41
-00:02:15,983 --> 00:02:17,399
+00:02:28,398 --> 00:02:29,948
 Keep it short on purpose.
 
 42
-00:02:17,399 --> 00:02:21,537
+00:02:29,948 --> 00:02:34,472
 A report stuffed with every number available reads as either padding or a
 
 43
-00:02:21,537 --> 00:02:24,994
+00:02:34,472 --> 00:02:38,253
 distraction from one uncomfortable line buried in the middle.
 
 44
-00:02:24,994 --> 00:02:29,754
+00:02:38,253 --> 00:02:43,459
 A short, honest report earns more trust than a long one, because there's nowhere for
 
 45
-00:02:29,754 --> 00:02:31,511
+00:02:43,459 --> 00:02:45,381
 anything to hide behind volume.
 
 46
-00:02:31,511 --> 00:02:36,271
+00:02:45,381 --> 00:02:50,587
 This same shape works whether you're reporting to a client, a boss, or just your own
 
 47
-00:02:36,271 --> 00:02:36,725
+00:02:50,587 --> 00:02:51,083
 records.
 
 48
-00:02:36,725 --> 00:02:40,295
+00:02:51,083 --> 00:02:54,988
 The version you write for yourself doesn't need softer framing.
 
 49
-00:02:40,295 --> 00:02:44,376
+00:02:54,988 --> 00:02:59,450
 If anything, it's the one place brutal honesty costs you nothing at all.
 
 50
-00:02:44,376 --> 00:02:48,626
+00:02:59,450 --> 00:03:04,099
 Fill in the third line even in a quiet week where nothing dramatic changed.
 
 51
-00:02:48,626 --> 00:02:52,933
+00:03:04,099 --> 00:03:08,809
 "No change this period, still watching frequency on the current winner" is a
 
 52
-00:02:52,933 --> 00:02:57,467
+00:03:08,809 --> 00:03:13,768
 genuine, honest line, and skipping it because nothing exciting happened is how a
 
 53
-00:02:57,467 --> 00:03:02,001
+00:03:13,768 --> 00:03:18,726
 report quietly becomes a highlight reel without anyone deciding that on purpose.
 
 54
-00:03:02,551 --> 00:03:07,248
+00:03:19,276 --> 00:03:24,404
 One honest trap worth naming, because it's genuinely tempting under real pressure to
 
 55
-00:03:07,248 --> 00:03:08,087
+00:03:24,404 --> 00:03:25,320
 look competent.
 
 56
-00:03:08,087 --> 00:03:11,833
+00:03:25,320 --> 00:03:29,411
 A report that only surfaces winners looks better in the short term.
 
 57
-00:03:11,833 --> 00:03:16,083
+00:03:29,411 --> 00:03:34,051
 It also can't survive a single follow-up question about last month's quieter
 
 58
-00:03:16,083 --> 00:03:20,110
+00:03:34,051 --> 00:03:38,446
 results, and the moment that question lands, every previous report looks
 
 59
-00:03:20,110 --> 00:03:23,185
+00:03:38,446 --> 00:03:41,804
 retroactively dishonest, even the parts that were true.
 
 60
-00:03:23,185 --> 00:03:26,317
+00:03:41,804 --> 00:03:45,223
 Trust, once it breaks that way, is expensive to rebuild.
 
 61
-00:03:26,317 --> 00:03:30,455
+00:03:45,223 --> 00:03:49,741
 The honest ratio, reported consistently from the start, does the opposite.
 
 62
-00:03:30,455 --> 00:03:34,873
+00:03:49,741 --> 00:03:54,564
 It sets the expectation early that most weeks are ordinary, so the weeks with a
 
 63
-00:03:34,873 --> 00:03:39,458
+00:03:54,564 --> 00:03:59,570
 genuine winner actually stand out, and the reader already trusts the report enough
 
 64
-00:03:39,458 --> 00:03:40,968
+00:03:59,570 --> 00:04:01,219
 to believe it when it does.
 
 65
-00:03:40,968 --> 00:03:45,106
+00:04:01,219 --> 00:04:05,736
 Would you trust a report that never once mentioned a disappointing result?
 
 66
-00:03:45,106 --> 00:03:49,691
+00:04:05,736 --> 00:04:10,743
 Hold that question against your own reaction the next time you're tempted to leave
 
 67
-00:03:49,691 --> 00:03:50,139
+00:04:10,743 --> 00:04:11,231
 one out.
 
 68
-00:03:50,139 --> 00:03:54,836
+00:04:11,231 --> 00:04:16,359
 Whatever answer you'd give as the reader is the same standard worth holding yourself
 
 69
-00:03:54,836 --> 00:03:55,787
+00:04:16,359 --> 00:04:17,397
 to as the writer.
 
 70
-00:03:56,337 --> 00:03:58,419
+00:04:17,947 --> 00:04:20,200
 Next lecture closes out this section.
 
 71
-00:03:58,419 --> 00:04:03,035
+00:04:20,200 --> 00:04:25,192
 Then Section ten turns everything built here, the sprint, the economics, the swipe
 
 72
-00:04:03,035 --> 00:04:07,762
+00:04:25,192 --> 00:04:30,306
 file, this report, into something you can pitch as a service, using the same honesty
 
 73
-00:04:07,762 --> 00:04:10,746
+00:04:30,306 --> 00:04:33,533
 as proof of competence rather than something to hide.
 
 74
-00:04:10,746 --> 00:04:15,361
+00:04:33,533 --> 00:04:38,525
 Before that, write one honest report on whatever's currently live in your account,
 
 75
-00:04:15,361 --> 00:04:17,331
+00:04:38,525 --> 00:04:40,656
 even if nobody's asking for it yet.
 
 76
-00:04:17,331 --> 00:04:20,539
+00:04:40,656 --> 00:04:44,126
 The habit is worth building before someone actually does.
 
 77
-00:04:20,539 --> 00:04:23,297
+00:04:44,126 --> 00:04:47,110
 Keep every report you write, even the quiet ones.
 
 78
-00:04:23,297 --> 00:04:28,025
+00:04:47,110 --> 00:04:52,224
 Section 10.3 turns this same record into a portfolio piece, and a redacted string of
 
 79
-00:04:28,025 --> 00:04:32,753
+00:04:52,224 --> 00:04:57,338
 honest reports, ordinary weeks included, makes a far more convincing case study than
 
 80
-00:04:32,753 --> 00:04:35,061
+00:04:57,338 --> 00:04:59,834
 a single highlight pulled out of context.
 
 81
-00:04:35,061 --> 00:04:39,732
+00:04:59,834 --> 00:05:04,887
 Whoever reads it will trust the number precisely because the boring weeks are there
 
 82
-00:04:39,732 --> 00:04:39,957
+00:05:04,887 --> 00:05:05,131
 too.

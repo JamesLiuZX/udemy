@@ -1,71 +1,71 @@
 1
-00:00:00,350 --> 00:00:04,765
+00:00:00,350 --> 00:00:05,218
 Five lectures ago, this section promised to build the machine around a single scored
 
 2
-00:00:04,765 --> 00:00:05,027
+00:00:05,218 --> 00:00:05,507
 test.
 
 3
-00:00:05,027 --> 00:00:06,289
+00:00:05,507 --> 00:00:06,898
 Here's the honest tally.
 
 4
-00:00:06,289 --> 00:00:10,703
+00:00:06,898 --> 00:00:11,766
 You've got a five-step weekly rhythm that scores before it generates, so taste never
 
 5
-00:00:10,703 --> 00:00:12,648
+00:00:11,766 --> 00:00:13,910
 sneaks back in through the side door.
 
 6
-00:00:12,648 --> 00:00:16,957
+00:00:13,910 --> 00:00:18,662
 You know roughly what this actually costs, and that generation is nearly free next
 
 7
-00:00:16,957 --> 00:00:18,586
+00:00:18,662 --> 00:00:20,458
 to the media spend it protects.
 
 8
-00:00:18,586 --> 00:00:22,423
+00:00:20,458 --> 00:00:24,689
 You've named who owns each step, whichever model you're actually running.
 
 9
-00:00:22,423 --> 00:00:26,207
+00:00:24,689 --> 00:00:28,861
 You've started a swipe file so Wednesday never begins from a blank page.
 
 10
-00:00:26,207 --> 00:00:30,516
+00:00:28,861 --> 00:00:33,613
 And you know how to report all of it honestly, noise included, to whoever's paying
 
 11
-00:00:30,516 --> 00:00:30,884
+00:00:33,613 --> 00:00:34,018
 for it.
 
 12
-00:00:30,884 --> 00:00:32,618
+00:00:34,018 --> 00:00:35,931
 That's not a small set of skills.
 
 13
-00:00:32,618 --> 00:00:36,717
+00:00:35,931 --> 00:00:40,451
 It's the difference between a good week and an account that keeps having them.
 
 14
-00:00:37,267 --> 00:00:41,452
+00:00:41,001 --> 00:00:45,535
 Section ten takes everything built across this course and asks the practical
 
 15
-00:00:41,452 --> 00:00:45,857
+00:00:45,535 --> 00:00:50,308
 question: how do you actually get paid for running it, whether that's convincing
 
 16
-00:00:45,857 --> 00:00:48,114
+00:00:50,308 --> 00:00:52,754
 your own leadership or pitching a client.
 
 17
-00:00:48,114 --> 00:00:49,821
+00:00:52,754 --> 00:00:54,604
 Nothing gets rebuilt from here.
 
 18
-00:00:49,821 --> 00:00:50,537
+00:00:54,604 --> 00:00:55,379
 It gets sold.
