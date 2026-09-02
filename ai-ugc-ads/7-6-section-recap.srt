@@ -1,67 +1,67 @@
 1
-00:00:00,350 --> 00:00:04,480
+00:00:00,350 --> 00:00:04,827
 Six lectures ago, this section promised the account itself would become the
 
 2
-00:00:04,480 --> 00:00:07,233
+00:00:04,827 --> 00:00:07,812
 instrument that answers which angle actually wins.
 
 3
-00:00:07,233 --> 00:00:08,555
+00:00:07,812 --> 00:00:09,245
 Here's the honest tally.
 
 4
-00:00:08,555 --> 00:00:13,071
+00:00:09,245 --> 00:00:14,140
 You know why isolating one variable per ad set is the difference between an answer
 
 5
-00:00:13,071 --> 00:00:14,117
+00:00:14,140 --> 00:00:15,274
 and a spend report.
 
 6
-00:00:14,117 --> 00:00:18,467
+00:00:15,274 --> 00:00:19,990
 You've set real numbers, a CAC ceiling worked out from your own margin, a daily
 
 7
-00:00:18,467 --> 00:00:22,763
+00:00:19,990 --> 00:00:24,646
 budget, a kill rule, decided before any data existed to argue you out of them.
 
 8
-00:00:22,763 --> 00:00:27,113
+00:00:24,646 --> 00:00:29,362
 And you've built the harder discipline underneath all of it: knowing that three
 
 9
-00:00:27,113 --> 00:00:31,463
+00:00:29,362 --> 00:00:34,078
 conversions beating one isn't a result yet, and having the patience to wait for
 
 10
-00:00:31,463 --> 00:00:33,996
+00:00:34,078 --> 00:00:36,824
 volume instead of calling a winner from noise.
 
 11
-00:00:33,996 --> 00:00:35,814
+00:00:36,824 --> 00:00:38,793
 That's not a small set of skills.
 
 12
-00:00:35,814 --> 00:00:39,448
+00:00:38,793 --> 00:00:42,733
 It's the actual difference between running ads and running a test.
 
 13
-00:00:39,998 --> 00:00:44,546
+00:00:43,283 --> 00:00:48,195
 Section eight is where the numbers this structure generates finally get a verdict.
 
 14
-00:00:44,546 --> 00:00:49,095
+00:00:48,195 --> 00:00:53,108
 Not a feeling about which ad looks best, a decision tree, built on everything this
 
 15
-00:00:49,095 --> 00:00:51,424
+00:00:53,108 --> 00:00:55,624
 section just taught you to read correctly.
 
 16
-00:00:51,424 --> 00:00:53,144
+00:00:55,624 --> 00:00:57,481
 Nothing gets rebuilt from here.
 
 17
-00:00:53,144 --> 00:00:53,865
+00:00:57,481 --> 00:00:58,259
 It gets read.

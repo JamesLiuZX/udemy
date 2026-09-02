@@ -1,339 +1,339 @@
 1
-00:00:00,350 --> 00:00:03,415
+00:00:00,350 --> 00:00:03,723
 Here's the failure mode this lecture exists to prevent.
 
 2
-00:00:03,415 --> 00:00:07,706
+00:00:03,723 --> 00:00:08,446
 An ad set is running, the numbers are mediocre, not clearly dead, not clearly
 
 3
-00:00:07,706 --> 00:00:10,659
+00:00:08,446 --> 00:00:11,696
 working, and someone decides to give it one more day.
 
 4
-00:00:10,659 --> 00:00:11,384
+00:00:11,696 --> 00:00:12,493
 Then another.
 
 5
-00:00:11,384 --> 00:00:12,498
+00:00:12,493 --> 00:00:13,720
 That's not patience.
 
 6
-00:00:12,498 --> 00:00:17,068
+00:00:13,720 --> 00:00:18,749
 That's a decision being made by hope instead of by a rule, and hope has never once
 
 7
-00:00:17,068 --> 00:00:18,907
+00:00:18,749 --> 00:00:20,773
 correctly identified a losing ad.
 
 8
-00:00:18,907 --> 00:00:22,362
+00:00:20,773 --> 00:00:24,575
 You've actually seen this trap before, from a different angle.
 
 9
-00:00:22,362 --> 00:00:26,987
+00:00:24,575 --> 00:00:29,666
 Section 5.5 warned you that a platform's own automation optimises whatever you hand
 
 10
-00:00:26,987 --> 00:00:29,773
+00:00:29,666 --> 00:00:32,732
 it without judging whether it deserved optimising.
 
 11
-00:00:29,773 --> 00:00:34,454
+00:00:32,732 --> 00:00:37,884
 An unwilling-to-kill instinct is the human version of that same blind spot: no rule,
 
 12
-00:00:34,454 --> 00:00:37,074
+00:00:37,884 --> 00:00:40,766
 no judgement about when to stop, just momentum.
 
 13
-00:00:37,074 --> 00:00:41,699
+00:00:40,766 --> 00:00:45,857
 The fix is deciding the numbers before the test starts, while you have no emotional
 
 14
-00:00:41,699 --> 00:00:43,928
+00:00:45,857 --> 00:00:48,310
 stake in any single ad set's result yet.
 
 15
-00:00:43,928 --> 00:00:46,101
+00:00:48,310 --> 00:00:50,702
 Harlan's account runs on exact figures.
 
 16
-00:00:46,101 --> 00:00:50,504
+00:00:50,702 --> 00:00:55,547
 Yours should too, built from your own margin the same way Section 1.5 built the
 
 17
-00:00:50,504 --> 00:00:52,788
+00:00:55,547 --> 00:00:58,062
 twenty-four dollar ceiling from Harlan's.
 
 18
-00:00:52,788 --> 00:00:56,522
+00:00:58,062 --> 00:01:02,171
 Why does this need to happen before the data arrives, specifically?
 
 19
-00:00:56,522 --> 00:00:59,754
+00:01:02,171 --> 00:01:05,728
 Because a number chosen mid-test is never really a number.
 
 20
-00:00:59,754 --> 00:01:00,423
+00:01:05,728 --> 00:01:06,464
 It's a mood.
 
 21
-00:01:00,423 --> 00:01:04,770
+00:01:06,464 --> 00:01:11,247
 Watch a mediocre result for three days and your sense of "good enough" quietly
 
 22
-00:01:04,770 --> 00:01:07,389
+00:01:11,247 --> 00:01:14,130
 drifts to match whatever you're already seeing.
 
 23
-00:01:07,939 --> 00:01:12,616
+00:01:14,680 --> 00:01:19,718
 Eight ad sets, twenty-five dollars a day each, run against a twenty-four-dollar CAC
 
 24
-00:01:12,616 --> 00:01:16,504
+00:01:19,718 --> 00:01:23,906
 ceiling that Section 1.5 already worked out from Harlan's own margin.
 
 25
-00:01:16,504 --> 00:01:17,969
+00:01:23,906 --> 00:01:25,484
 None of that is arbitrary.
 
 26
-00:01:17,969 --> 00:01:22,477
+00:01:25,484 --> 00:01:30,339
 Every number traces back to something you've already seen this course establish.
 
 27
-00:01:22,477 --> 00:01:26,139
+00:01:30,339 --> 00:01:34,284
 Notice, too, that eight isn't a round number chosen for tidiness.
 
 28
-00:01:26,139 --> 00:01:30,873
+00:01:34,284 --> 00:01:39,383
 It's however many of the strongest angles from the angle map genuinely earned a slot
 
 29
-00:01:30,873 --> 00:01:35,549
+00:01:39,383 --> 00:01:44,420
 in this first test, not padded up to a nicer-looking figure and not trimmed down to
 
 30
-00:01:35,549 --> 00:01:36,226
+00:01:44,420 --> 00:01:45,149
 save budget.
 
 31
-00:01:36,226 --> 00:01:40,903
+00:01:45,149 --> 00:01:50,186
 The number of ad sets should follow from the strength of your angles, not the other
 
 32
-00:01:40,903 --> 00:01:41,466
+00:01:50,186 --> 00:01:50,793
 way round.
 
 33
-00:01:41,466 --> 00:01:45,185
+00:01:50,793 --> 00:01:54,799
 Notice, too, how the daily budget interacts with the ad-set count.
 
 34
-00:01:45,185 --> 00:01:49,918
+00:01:54,799 --> 00:01:59,897
 Twenty-five dollars a day across eight ad sets is two hundred dollars a day total, a
 
 35
-00:01:49,918 --> 00:01:53,412
+00:01:59,897 --> 00:02:03,661
 real number worth looking at honestly before you commit to it.
 
 36
-00:01:53,412 --> 00:01:56,736
+00:02:03,661 --> 00:02:07,242
 If that figure makes you flinch, that's useful information.
 
 37
-00:01:56,736 --> 00:02:01,301
+00:02:07,242 --> 00:02:12,158
 It means either the angle count needs trimming to the genuinely strongest few, or
 
 38
-00:02:01,301 --> 00:02:05,865
+00:02:12,158 --> 00:02:17,074
 the per-set budget needs to come down until the total feels like a number you can
 
 39
-00:02:05,865 --> 00:02:08,513
+00:02:17,074 --> 00:02:19,927
 actually sustain for the length of a real test.
 
 40
-00:02:09,063 --> 00:02:11,913
+00:02:20,477 --> 00:02:23,567
 Here's the exact moment a kill rule earns its keep.
 
 41
-00:02:11,913 --> 00:02:16,494
+00:02:23,567 --> 00:02:28,535
 Without one, "give it another day" sounds reasonable every single time you say it,
 
 42
-00:02:16,494 --> 00:02:19,678
+00:02:28,535 --> 00:02:31,989
 because it always feels premature to call something dead.
 
 43
-00:02:19,678 --> 00:02:23,086
+00:02:31,989 --> 00:02:35,684
 With the rule already decided, there's nothing to relitigate.
 
 44
-00:02:23,086 --> 00:02:27,444
+00:02:35,684 --> 00:02:40,410
 Fifty dollars, zero add-to-carts, finished, and that budget moves to an ad set
 
 45
-00:02:27,444 --> 00:02:29,566
+00:02:40,410 --> 00:02:42,713
 that's actually telling you something.
 
 46
-00:02:29,566 --> 00:02:33,756
+00:02:42,713 --> 00:02:47,257
 Notice why zero add-to-carts specifically, rather than a softer metric like
 
 47
-00:02:33,756 --> 00:02:34,818
+00:02:47,257 --> 00:02:48,408
 click-through rate.
 
 48
-00:02:34,818 --> 00:02:39,343
+00:02:48,408 --> 00:02:53,316
 An add-to-cart is someone doing something, not just seeing something, and it sits
 
 49
-00:02:39,343 --> 00:02:43,198
+00:02:53,316 --> 00:02:57,496
 closer to the outcome you actually care about than a click ever does.
 
 50
-00:02:43,198 --> 00:02:46,662
+00:02:57,496 --> 00:03:01,253
 Fifty dollars with genuinely zero of those isn't a slow start.
 
 51
-00:02:46,662 --> 00:02:48,505
+00:03:01,253 --> 00:03:03,252
 It's an angle that isn't landing.
 
 52
-00:02:48,505 --> 00:02:51,019
+00:03:03,252 --> 00:03:05,979
 Notice the rule isn't harsh for its own sake.
 
 53
-00:02:51,019 --> 00:02:55,433
+00:03:05,979 --> 00:03:10,765
 It's specifically calibrated to Harlan's twenty-five-dollar daily budget: fifty
 
 54
-00:02:55,433 --> 00:03:00,070
+00:03:10,765 --> 00:03:15,794
 dollars is two days' spend, enough to see a genuine signal, not so much that a dead
 
 55
-00:03:00,070 --> 00:03:02,975
+00:03:15,794 --> 00:03:18,945
 ad set burns a week of budget before anyone notices.
 
 56
-00:03:02,975 --> 00:03:06,830
+00:03:18,945 --> 00:03:23,125
 Ask yourself what the equivalent number is for your own daily budget.
 
 57
-00:03:06,830 --> 00:03:11,467
+00:03:23,125 --> 00:03:28,154
 The ratio matters more than the specific figure: roughly two days' spend before you
 
 58
-00:03:11,467 --> 00:03:16,048
+00:03:28,154 --> 00:03:33,122
 call it, calibrated so a genuinely dead angle doesn't quietly drain a week's worth
 
 59
-00:03:16,048 --> 00:03:19,232
+00:03:33,122 --> 00:03:36,576
 of budget while everyone assumes it just needs more time.
 
 60
-00:03:19,782 --> 00:03:23,565
+00:03:37,126 --> 00:03:41,229
 One honest limit before you copy any of this onto your own account.
 
 61
-00:03:23,565 --> 00:03:27,970
+00:03:41,229 --> 00:03:46,006
 These specific figures exist because of Harlan's specific contribution margin.
 
 62
-00:03:27,970 --> 00:03:32,487
+00:03:46,006 --> 00:03:50,905
 Your CAC ceiling comes from your own economics, the same calculation Section 1.5
 
 63
-00:03:32,487 --> 00:03:37,174
+00:03:50,905 --> 00:03:55,987
 walked through, not from borrowing Harlan's number because it's the one this course
 
 64
-00:03:37,174 --> 00:03:38,868
+00:03:55,987 --> 00:03:57,825
 happened to use as an example.
 
 65
-00:03:38,868 --> 00:03:42,708
+00:03:57,825 --> 00:04:01,989
 Redo that maths for your own product before you set a single budget.
 
 66
-00:03:42,708 --> 00:03:47,338
+00:04:01,989 --> 00:04:07,010
 Notice the same warning applies to the daily budget and the ad-set count, not just
 
 67
-00:03:47,338 --> 00:03:48,242
+00:04:07,010 --> 00:04:07,990
 the CAC ceiling.
 
 68
-00:03:48,242 --> 00:03:52,929
+00:04:07,990 --> 00:04:13,073
 Twenty-five dollars a day made sense against Harlan's total daily test spend of two
 
 69
-00:03:52,929 --> 00:03:57,615
+00:04:13,073 --> 00:04:18,156
 hundred dollars, itself a number sized to what her business could actually sustain.
 
 70
-00:03:57,615 --> 00:04:02,302
+00:04:18,156 --> 00:04:23,238
 Your version of that figure depends entirely on your own cash flow, not on matching
 
 71
-00:04:02,302 --> 00:04:04,504
+00:04:23,238 --> 00:04:25,627
 someone else's comfort level with risk.
 
 72
-00:04:04,504 --> 00:04:06,707
+00:04:25,627 --> 00:04:28,015
 This isn't a small caveat to skip past.
 
 73
-00:04:06,707 --> 00:04:11,393
+00:04:28,015 --> 00:04:33,098
 A CAC ceiling copied from a product with a different margin structure is worse than
 
 74
-00:04:11,393 --> 00:04:15,967
+00:04:33,098 --> 00:04:38,058
 no ceiling at all, because it looks precise and rigorous while actually measuring
 
 75
-00:04:15,967 --> 00:04:17,774
+00:04:38,058 --> 00:04:40,018
 nothing about your own business.
 
 76
-00:04:17,774 --> 00:04:22,405
+00:04:40,018 --> 00:04:45,039
 Precision borrowed from someone else's numbers is just a confident-sounding guess.
 
 77
-00:04:22,955 --> 00:04:27,398
+00:04:45,589 --> 00:04:50,413
 Next lecture solves a quieter problem: once you're running eight ad sets a week,
 
 78
-00:04:27,398 --> 00:04:31,676
+00:04:50,413 --> 00:04:55,057
 every week, how do you actually find the one that worked six months from now,
 
 79
-00:04:31,676 --> 00:04:35,564
+00:04:55,057 --> 00:04:59,278
 instead of scrolling through a library of files nobody can tell apart.
 
 80
-00:04:35,564 --> 00:04:40,174
+00:04:59,278 --> 00:05:04,283
 Before that, write your own two numbers down now, today, not once a test is already
 
 81
-00:04:40,174 --> 00:04:40,452
+00:05:04,283 --> 00:05:04,584
 live.
 
 82
-00:04:40,452 --> 00:04:43,229
+00:05:04,584 --> 00:05:07,599
 Your CAC ceiling, worked out from your own margin.
 
 83
-00:04:43,229 --> 00:04:47,895
+00:05:07,599 --> 00:05:12,664
 And your kill rule, roughly two days' spend with zero of whatever behavioural signal
 
 84
-00:04:47,895 --> 00:04:50,173
+00:05:12,664 --> 00:05:15,137
 actually matters for what you're selling.
 
 85
-00:04:50,173 --> 00:04:54,117
+00:05:15,137 --> 00:05:19,418
 Decide both while you have no result yet to talk you out of either one.
