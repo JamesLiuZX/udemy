@@ -1,115 +1,115 @@
 1
-00:00:00,350 --> 00:00:04,544
+00:00:00,350 --> 00:00:05,025
 Look back at what actually got built across this course: a brief system, a
 
 2
-00:00:04,544 --> 00:00:09,305
+00:00:05,025 --> 00:00:10,332
 generation pipeline, a pre-flight checklist, a testing architecture, an honest read,
 
 3
-00:00:09,305 --> 00:00:13,102
+00:00:10,332 --> 00:00:14,565
 a weekly sprint, a pitch, and now a capstone run on a real product.
 
 4
-00:00:13,102 --> 00:00:15,935
+00:00:14,565 --> 00:00:17,723
 Eleven artifacts, all of them yours to keep using.
 
 5
-00:00:15,935 --> 00:00:18,089
+00:00:17,723 --> 00:00:20,124
 None of it was complicated on its own.
 
 6
-00:00:18,089 --> 00:00:22,566
+00:00:20,124 --> 00:00:25,115
 What made it work was doing each piece in order, honestly, even the unglamorous
 
 7
-00:00:22,566 --> 00:00:22,906
+00:00:25,115 --> 00:00:25,494
 parts.
 
 8
-00:00:22,906 --> 00:00:24,267
+00:00:25,494 --> 00:00:27,010
 That's the actual skill.
 
 9
-00:00:24,267 --> 00:00:28,857
+00:00:27,010 --> 00:00:32,127
 Not a trick, not a tool, just the discipline to read a result straight and act on
 
 10
-00:00:28,857 --> 00:00:30,104
+00:00:32,127 --> 00:00:33,517
 what it actually says.
 
 11
-00:00:30,654 --> 00:00:33,979
+00:00:34,067 --> 00:00:37,684
 Read the note on screen for the specifics of why I built this.
 
 12
-00:00:33,979 --> 00:00:38,431
+00:00:37,684 --> 00:00:42,526
 Short version: I kept watching the same mistake, teams treating a good generator as
 
 13
-00:00:38,431 --> 00:00:42,722
+00:00:42,526 --> 00:00:47,193
 the whole story, when the actual skill was always the machine wrapped around it.
 
 14
-00:00:42,722 --> 00:00:47,066
+00:00:47,193 --> 00:00:51,918
 If you finish this course running that machine instead of eyeballing which ad you
 
 15
-00:00:47,066 --> 00:00:49,641
+00:00:51,918 --> 00:00:54,718
 like best, it did exactly what I built it to do.
 
 16
-00:00:50,191 --> 00:00:52,370
+00:00:55,268 --> 00:00:57,643
 Three concrete moves, in order of urgency.
 
 17
-00:00:52,370 --> 00:00:54,602
+00:00:57,643 --> 00:01:00,075
 Finish the capstone first if it's not done.
 
 18
-00:00:54,602 --> 00:00:58,857
+00:01:00,075 --> 00:01:04,712
 Watching two worked examples isn't the same as having run your own, and the second
 
 19
-00:00:58,857 --> 00:01:00,985
+00:01:04,712 --> 00:01:07,031
 one is where the actual learning happens.
 
 20
-00:01:00,985 --> 00:01:04,981
+00:01:07,031 --> 00:01:11,386
 After that, the two freshness-watch habits: platform mechanics and generation
 
 21
-00:01:04,981 --> 00:01:08,976
+00:01:11,386 --> 00:01:15,741
 pricing both move faster than any course can stay current with, so check them
 
 22
-00:01:08,976 --> 00:01:13,336
+00:01:15,741 --> 00:01:20,491
 against what's actually true every few months, not just what this course said in the
 
 23
-00:01:13,336 --> 00:01:14,425
+00:01:20,491 --> 00:01:21,679
 year it was recorded.
 
 24
-00:01:14,975 --> 00:01:19,142
+00:01:22,229 --> 00:01:26,835
 Thank you for sitting through the unglamorous parts, the checklists, the honest
 
 25
-00:01:19,142 --> 00:01:23,098
+00:01:26,835 --> 00:01:31,208
 ratios, the weeks of real testing time this course compressed into minutes.
 
 26
-00:01:23,098 --> 00:01:24,417
+00:01:31,208 --> 00:01:32,666
 That's the actual course.
 
 27
-00:01:24,417 --> 00:01:27,159
+00:01:32,666 --> 00:01:35,698
 Everything else was just explaining why it mattered.
 
 28
-00:01:27,159 --> 00:01:30,799
+00:01:35,698 --> 00:01:39,721
 If you're stuck on your own account, the Q&A tab reaches me directly.
 
 29
-00:01:30,799 --> 00:01:32,170
+00:01:39,721 --> 00:01:41,237
 Go find your first winner.

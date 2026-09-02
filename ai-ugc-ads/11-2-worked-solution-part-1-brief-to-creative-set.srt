@@ -1,463 +1,463 @@
 1
-00:00:00,350 --> 00:00:04,803
+00:00:00,350 --> 00:00:05,091
 This is the same account you've been following since Section 0, read straight
 
 2
-00:00:04,803 --> 00:00:07,868
+00:00:05,091 --> 00:00:08,354
 through as one pass instead of six separate lectures.
 
 3
-00:00:07,868 --> 00:00:12,378
+00:00:08,354 --> 00:00:13,156
 Watch for how each stage's output becomes the next stage's input, because that
 
 4
-00:00:12,378 --> 00:00:15,790
+00:00:13,156 --> 00:00:16,789
 handoff is exactly what your own capstone has to reproduce.
 
 5
-00:00:15,790 --> 00:00:20,532
+00:00:16,789 --> 00:00:21,837
 It starts with the product truth doc from Section 2.1: fifty-eight dollars for the
 
 6
-00:00:20,532 --> 00:00:25,390
+00:00:21,837 --> 00:00:27,009
 three-pack, thirty-four dollars of contribution margin, and the claims boundary Dana
 
 7
-00:00:25,390 --> 00:00:29,785
+00:00:27,009 --> 00:00:31,688
 holds hard, the fifteen to twenty mmHg spec, nothing about medical outcomes.
 
 8
-00:00:29,785 --> 00:00:32,908
+00:00:31,688 --> 00:00:35,013
 Every later decision traces back to this one document.
 
 9
-00:00:32,908 --> 00:00:37,708
+00:00:35,013 --> 00:00:40,123
 Sam wasn't in the room when Dana first wrote that boundary down, but he didn't need
 
 10
-00:00:37,708 --> 00:00:38,055
+00:00:40,123 --> 00:00:40,492
 to be.
 
 11
-00:00:38,055 --> 00:00:42,912
+00:00:40,492 --> 00:00:45,664
 It's specific enough, and written down clearly enough, that every brief, every hook,
 
 12
-00:00:42,912 --> 00:00:47,654
+00:00:45,664 --> 00:00:50,712
 every batch built afterward could simply check against it rather than needing Dana
 
 13
-00:00:47,654 --> 00:00:50,199
+00:00:50,712 --> 00:00:53,421
 to personally approve every individual line.
 
 14
-00:00:50,199 --> 00:00:54,709
+00:00:53,421 --> 00:00:58,223
 That's what a real product truth doc actually buys a team: a shared, checkable
 
 15
-00:00:54,709 --> 00:00:57,890
+00:00:58,223 --> 00:01:01,610
 reference, not a meeting that has to happen every time.
 
 16
-00:00:57,890 --> 00:01:02,574
+00:01:01,610 --> 00:01:06,597
 One SKU, one document, and everything from here forward, twenty angles, dozens of
 
 17
-00:01:02,574 --> 00:01:07,316
+00:01:06,597 --> 00:01:11,645
 statics, several video cuts, all of it traces back to these same handful of facts.
 
 18
-00:01:07,316 --> 00:01:11,827
+00:01:11,645 --> 00:01:16,447
 Nothing downstream introduces a new claim the product truth doc didn't already
 
 19
-00:01:11,827 --> 00:01:12,289
+00:01:16,447 --> 00:01:16,940
 license.
 
 20
-00:01:12,839 --> 00:01:17,691
+00:01:17,490 --> 00:01:22,743
 Twenty angles, not one hero ad, because Section 1's volume maths already told you a
 
 21
-00:01:17,691 --> 00:01:20,321
+00:01:22,743 --> 00:01:25,592
 single guess wasn't going to find the winner.
 
 22
-00:01:20,321 --> 00:01:24,939
+00:01:25,592 --> 00:01:30,592
 Each angle here traces back to a real fact from the product truth doc, never an
 
 23
-00:01:24,939 --> 00:01:27,044
+00:01:30,592 --> 00:01:32,871
 invented claim layered on top of it.
 
 24
-00:01:27,044 --> 00:01:30,434
+00:01:32,871 --> 00:01:36,542
 Notice the awareness ladder doing real work in this table.
 
 25
-00:01:30,434 --> 00:01:35,110
+00:01:36,542 --> 00:01:41,605
 The same compression spec gets framed completely differently for a cold audience
 
 26
-00:01:35,110 --> 00:01:39,962
+00:01:41,605 --> 00:01:46,859
 who's never heard of graduated compression than for someone who's already searching
 
 27
-00:01:39,962 --> 00:01:44,522
+00:01:46,859 --> 00:01:51,796
 "socks for a twelve-hour shift." Same product, same claims boundary, different
 
 28
-00:01:44,522 --> 00:01:45,048
+00:01:51,796 --> 00:01:52,365
 argument.
 
 29
-00:01:45,048 --> 00:01:49,432
+00:01:52,365 --> 00:01:57,112
 Notice, too, how little of this table required anything genuinely new to be
 
 30
-00:01:49,432 --> 00:01:49,958
+00:01:57,112 --> 00:01:57,682
 invented.
 
 31
-00:01:49,958 --> 00:01:54,810
+00:01:57,682 --> 00:02:02,935
 The hook taxonomy already existed as a general framework before Harlan's brief ever
 
 32
-00:01:54,810 --> 00:01:55,511
+00:02:02,935 --> 00:02:03,695
 got written.
 
 33
-00:01:55,511 --> 00:01:59,953
+00:02:03,695 --> 00:02:08,505
 The angle map is what happens when that general framework meets one specific
 
 34
-00:01:59,953 --> 00:02:01,181
+00:02:08,505 --> 00:02:09,834
 product's real facts.
 
 35
-00:02:01,181 --> 00:02:06,091
+00:02:09,834 --> 00:02:15,151
 Twenty angles isn't twenty separate creative ideas dreamed up individually, it's one
 
 36
-00:02:06,091 --> 00:02:10,826
+00:02:15,151 --> 00:02:20,278
 framework applied systematically until it runs out of honest combinations to try.
 
 37
-00:02:10,826 --> 00:02:14,801
+00:02:20,278 --> 00:02:24,582
 That systematic quality is exactly why this scales past one product.
 
 38
-00:02:14,801 --> 00:02:19,594
+00:02:24,582 --> 00:02:29,772
 The same three rows, hook taxonomy, awareness ladder, angle map, apply to whatever
 
 39
-00:02:19,594 --> 00:02:24,154
+00:02:29,772 --> 00:02:34,709
 you're building your own capstone on, producing a different twenty angles from
 
 40
-00:02:24,154 --> 00:02:26,784
+00:02:34,709 --> 00:02:37,557
 different facts, using the identical process.
 
 41
-00:02:27,334 --> 00:02:29,698
+00:02:38,107 --> 00:02:40,685
 Notice all three failures share something.
 
 42
-00:02:29,698 --> 00:02:31,556
+00:02:40,685 --> 00:02:42,711
 None of them were caught by luck.
 
 43
-00:02:31,556 --> 00:02:36,228
+00:02:42,711 --> 00:02:47,806
 Brand control checking, text-on-image review, and licence verification are specific
 
 44
-00:02:36,228 --> 00:02:40,900
+00:02:47,806 --> 00:02:52,901
 disciplines Sections 3 and 4 taught for exactly this reason, and all three caught a
 
 45
-00:02:40,900 --> 00:02:43,602
+00:02:52,901 --> 00:02:55,847
 real problem before it ever reached an audience.
 
 46
-00:02:43,602 --> 00:02:48,330
+00:02:55,847 --> 00:03:01,003
 This is also the moment worth sitting with if your own capstone hasn't hit a failure
 
 47
-00:02:48,330 --> 00:02:49,118
+00:03:01,003 --> 00:03:01,862
 like this yet.
 
 48
-00:02:49,118 --> 00:02:51,257
+00:03:01,862 --> 00:03:04,195
 It doesn't mean your process is worse.
 
 49
-00:02:51,257 --> 00:02:55,760
+00:03:04,195 --> 00:03:09,106
 It might mean you haven't generated enough variants yet to find where the tool's
 
 50
-00:02:55,760 --> 00:02:56,886
+00:03:09,106 --> 00:03:10,333
 limits actually are.
 
 51
-00:02:56,886 --> 00:03:01,164
+00:03:10,333 --> 00:03:14,998
 These failures are common, not a sign Harlan's batch was unusually troubled.
 
 52
-00:03:01,164 --> 00:03:04,035
+00:03:14,998 --> 00:03:18,129
 Look again at how each failure was actually caught.
 
 53
-00:03:04,035 --> 00:03:08,707
+00:03:18,129 --> 00:03:23,224
 Brand colour got checked against the product truth doc's real values, not eyeballed
 
 54
-00:03:08,707 --> 00:03:13,154
+00:03:23,224 --> 00:03:28,073
 for "close enough." The spec overlay got read at full size, not glanced at in a
 
 55
-00:03:13,154 --> 00:03:13,998
+00:03:28,073 --> 00:03:28,994
 thumbnail grid.
 
 56
-00:03:13,998 --> 00:03:18,388
+00:03:28,994 --> 00:03:33,781
 The avatar's licence terms got checked line by line before anything was recast
 
 57
-00:03:18,388 --> 00:03:18,951
+00:03:33,781 --> 00:03:34,395
 around it.
 
 58
-00:03:18,951 --> 00:03:21,484
+00:03:34,395 --> 00:03:37,157
 None of these catches happened automatically.
 
 59
-00:03:21,484 --> 00:03:25,819
+00:03:37,157 --> 00:03:41,884
 Each one needed someone to actually apply the specific check Sections 3 and 4
 
 60
-00:03:25,819 --> 00:03:29,140
+00:03:41,884 --> 00:03:45,505
 taught, deliberately, on every single variant in the batch.
 
 61
-00:03:29,140 --> 00:03:33,587
+00:03:45,505 --> 00:03:50,355
 That's worth remembering the next time a batch of twenty looks mostly fine at a
 
 62
-00:03:33,587 --> 00:03:33,981
+00:03:50,355 --> 00:03:50,784
 glance.
 
 63
-00:03:33,981 --> 00:03:37,358
+00:03:50,784 --> 00:03:54,467
 Mostly fine is exactly the condition these checks exist for.
 
 64
-00:03:37,358 --> 00:03:41,129
+00:03:54,467 --> 00:03:58,580
 A batch that's plainly broken doesn't need a checklist to catch it.
 
 65
-00:03:41,679 --> 00:03:44,007
+00:03:59,130 --> 00:04:01,636
 This is the batch's most important catch.
 
 66
-00:03:44,007 --> 00:03:48,321
+00:04:01,636 --> 00:04:06,280
 A forty percent swelling claim nobody ever tested, invented somewhere in the
 
 67
-00:03:48,321 --> 00:03:53,089
+00:04:06,280 --> 00:04:11,413
 drafting process, would have been the single fastest way to a policy strike or worse
 
 68
-00:03:53,089 --> 00:03:54,111
+00:04:11,413 --> 00:04:12,513
 if it had shipped.
 
 69
-00:03:54,111 --> 00:03:58,198
+00:04:12,513 --> 00:04:16,913
 Section 6.6's checklist caught it before a dollar of spend went near it.
 
 70
-00:03:58,198 --> 00:04:02,512
+00:04:16,913 --> 00:04:21,557
 Notice what replaced it: not a softer version of the same invented number, a
 
 71
-00:04:02,512 --> 00:04:05,747
+00:04:21,557 --> 00:04:25,041
 completely different claim, one Dana can actually defend.
 
 72
-00:04:05,747 --> 00:04:08,188
+00:04:25,041 --> 00:04:27,668
 The compression spec was always defensible.
 
 73
-00:04:08,188 --> 00:04:09,778
+00:04:27,668 --> 00:04:29,380
 The forty percent never was.
 
 74
-00:04:09,778 --> 00:04:13,524
+00:04:29,380 --> 00:04:33,413
 That's the difference pre-flight exists to catch, not just soften.
 
 75
-00:04:13,524 --> 00:04:18,122
+00:04:33,413 --> 00:04:38,363
 Notice, too, that this catch happened at the human review gate Section 6.5 built,
 
 76
-00:04:18,122 --> 00:04:19,144
+00:04:38,363 --> 00:04:39,463
 not automatically.
 
 77
-00:04:19,144 --> 00:04:23,742
+00:04:39,463 --> 00:04:44,413
 A checklist only works if someone actually runs it, on every draft, including the
 
 78
-00:04:23,742 --> 00:04:25,331
+00:04:44,413 --> 00:04:46,124
 ones that read convincingly.
 
 79
-00:04:25,331 --> 00:04:28,794
+00:04:46,124 --> 00:04:49,851
 The forty percent claim was written fluently and confidently.
 
 80
-00:04:28,794 --> 00:04:32,654
+00:04:49,851 --> 00:04:54,007
 It was still false, and confidence was never the test that mattered.
 
 81
-00:04:32,654 --> 00:04:34,129
+00:04:54,007 --> 00:04:55,596
 The product truth doc was.
 
 82
-00:04:34,129 --> 00:04:38,898
+00:04:55,596 --> 00:05:00,729
 The disclosure caption on the avatar video is a smaller catch by comparison, but the
 
 83
-00:04:38,898 --> 00:04:40,487
+00:05:00,729 --> 00:05:02,440
 same discipline produced it.
 
 84
-00:04:40,487 --> 00:04:45,028
+00:05:02,440 --> 00:05:07,329
 A synthetic performer appearing in a paid ad, without disclosure, was a real gap
 
 85
-00:04:45,028 --> 00:04:49,626
+00:05:07,329 --> 00:05:12,279
 Section 6.3 exists to close, checked and fixed the same way the claim was, before
 
 86
-00:04:49,626 --> 00:04:51,897
+00:05:12,279 --> 00:05:14,723
 either one ever reached a real audience.
 
 87
-00:04:52,447 --> 00:04:54,701
+00:05:15,273 --> 00:05:17,751
 One honest note before moving into testing.
 
 88
-00:04:54,701 --> 00:04:58,423
+00:05:17,751 --> 00:05:21,843
 Nothing about this walkthrough compresses cleanly into a real timeline.
 
 89
-00:04:58,423 --> 00:05:02,565
+00:05:21,843 --> 00:05:26,396
 Dana and Sam's actual product truth doc took several sittings to get right, the
 
 90
-00:05:02,565 --> 00:05:06,707
+00:05:26,396 --> 00:05:30,949
 batch went through more than one generation pass before twenty statics actually
 
 91
-00:05:06,707 --> 00:05:11,006
+00:05:30,949 --> 00:05:35,674
 cleared review, and pre-flight caught the swelling claim only because someone read
 
 92
-00:05:11,006 --> 00:05:14,834
+00:05:35,674 --> 00:05:39,881
 every draft carefully rather than skimming the ones that looked finished.
 
 93
-00:05:14,834 --> 00:05:18,818
+00:05:39,881 --> 00:05:44,261
 None of that shows up when the whole sequence gets narrated back in minutes.
 
 94
-00:05:18,818 --> 00:05:21,072
+00:05:44,261 --> 00:05:46,739
 Hold that against your own capstone's pace.
 
 95
-00:05:21,072 --> 00:05:25,162
+00:05:46,739 --> 00:05:51,234
 If your version of this phase is taking longer than watching this lecture did,
 
 96
-00:05:25,162 --> 00:05:26,840
+00:05:51,234 --> 00:05:53,078
 that's not a sign you're behind.
 
 97
-00:05:26,840 --> 00:05:31,244
+00:05:53,078 --> 00:05:57,919
 It's a sign you're doing it at the speed real work actually happens at, which is the
 
 98
-00:05:31,244 --> 00:05:34,809
+00:05:57,919 --> 00:06:01,838
 only speed that produces a batch worth testing honestly in part two.
 
 99
-00:05:35,359 --> 00:05:39,796
+00:06:02,388 --> 00:06:07,166
 Next lecture picks up exactly where this one ends: this cleared batch, built into a
 
 100
-00:05:39,796 --> 00:05:43,966
+00:06:07,166 --> 00:06:11,656
 real testing architecture, and read honestly once the numbers actually arrive.
 
 101
-00:05:43,966 --> 00:05:48,243
+00:06:11,656 --> 00:06:16,261
 If you're partway through your own capstone brief, pause here and check your own
 
 102
-00:05:48,243 --> 00:05:52,360
+00:06:16,261 --> 00:06:20,694
 product truth doc and batch against everything this pass just walked through.
 
 103
-00:05:52,360 --> 00:05:56,744
+00:06:20,694 --> 00:06:25,414
 The order matters more than any individual step, and seeing it run start to finish
 
 104
-00:05:56,744 --> 00:06:00,059
+00:06:25,414 --> 00:06:28,983
 is the whole point of watching this before finishing your own.
 
 105
-00:06:00,059 --> 00:06:02,464
+00:06:28,983 --> 00:06:31,574
 Nothing in this pass was dramatic on its own.
 
 106
-00:06:02,464 --> 00:06:06,047
+00:06:31,574 --> 00:06:35,431
 A document, a table, two caught rendering errors, one caught claim.
 
 107
-00:06:06,047 --> 00:06:10,431
+00:06:35,431 --> 00:06:40,151
 Put together, in order, that's the entire reason Harlan's batch was ready to spend
 
 108
-00:06:10,431 --> 00:06:14,654
+00:06:40,151 --> 00:06:44,699
 real money on by the time Section 7's testing architecture got built around it.
 
 109
-00:06:14,654 --> 00:06:19,145
+00:06:44,699 --> 00:06:49,534
 That quiet, checkable thoroughness is the actual skill this course has been teaching
 
 110
-00:06:19,145 --> 00:06:20,000
+00:06:49,534 --> 00:06:50,455
 since Section 0.
 
 111
-00:06:20,000 --> 00:06:24,384
+00:06:50,455 --> 00:06:55,176
 Which of these five stages would you be most tempted to rush on your own capstone?
 
 112
-00:06:24,384 --> 00:06:28,822
+00:06:55,176 --> 00:06:59,954
 For most people it's pre-flight, because by that point the batch already exists and
 
 113
-00:06:28,822 --> 00:06:32,832
+00:06:59,954 --> 00:07:04,271
 looks finished, and checking it carefully feels like it's only slowing down
 
 114
-00:06:32,832 --> 00:06:34,382
+00:07:04,271 --> 00:07:05,941
 something that's ready to go.
 
 115
-00:06:34,382 --> 00:06:38,873
+00:07:05,941 --> 00:07:10,776
 That's exactly the moment Harlan's forty percent claim would have shipped, if nobody
 
 116
-00:06:38,873 --> 00:06:40,691
+00:07:10,776 --> 00:07:12,733
 had resisted that same temptation.

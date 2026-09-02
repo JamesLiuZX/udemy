@@ -1,271 +1,271 @@
 1
-00:00:00,350 --> 00:00:04,906
+00:00:00,350 --> 00:00:05,384
 Everything up to this point has been one piece at a time: a brief here, a batch
 
 2
-00:00:04,906 --> 00:00:07,386
+00:00:05,384 --> 00:00:08,125
 there, a testing architecture in Section 7.
 
 3
-00:00:07,386 --> 00:00:12,114
+00:00:08,125 --> 00:00:13,350
 The capstone asks you to run all of it, in sequence, on one real product, the same
 
 4
-00:00:12,114 --> 00:00:14,940
+00:00:13,350 --> 00:00:16,473
 sequence Section 10.4's ninety-day plan laid out.
 
 5
-00:00:14,940 --> 00:00:19,669
+00:00:16,473 --> 00:00:21,699
 Pick a product you can actually get creative rights to and real, even if small, ad
 
 6
-00:00:19,669 --> 00:00:20,476
+00:00:21,699 --> 00:00:22,591
 spend against.
 
 7
-00:00:20,476 --> 00:00:22,437
+00:00:22,591 --> 00:00:24,758
 Your own business if you have one.
 
 8
-00:00:22,437 --> 00:00:24,225
+00:00:24,758 --> 00:00:26,733
 An employer's, with permission.
 
 9
-00:00:24,225 --> 00:00:27,800
+00:00:26,733 --> 00:00:30,684
 A friend's small brand, if they'll let you run a genuine test.
 
 10
-00:00:27,800 --> 00:00:32,068
+00:00:30,684 --> 00:00:35,400
 This only teaches you something if the product and the test are both real.
 
 11
-00:00:32,068 --> 00:00:36,739
+00:00:35,400 --> 00:00:40,562
 A hypothetical product produces a hypothetical result, teaching nothing about the
 
 12
-00:00:36,739 --> 00:00:38,412
+00:00:40,562 --> 00:00:42,410
 honest reads Section 8 built.
 
 13
-00:00:38,412 --> 00:00:43,256
+00:00:42,410 --> 00:00:47,763
 Work through the sequence exactly as taught: product truth doc, hook taxonomy, angle
 
 14
-00:00:43,256 --> 00:00:47,754
+00:00:47,763 --> 00:00:52,734
 map, batch generation, pre-flight checklist, testing architecture, and a first
 
 15
-00:00:47,754 --> 00:00:48,446
+00:00:52,734 --> 00:00:53,498
 honest read.
 
 16
-00:00:48,446 --> 00:00:53,232
+00:00:53,498 --> 00:00:58,788
 Sections 11.2 and 11.3 walk the same sequence on Harlan's account immediately after
 
 17
-00:00:53,232 --> 00:00:57,846
+00:00:58,788 --> 00:01:03,886
 this, as a worked example to check your own decisions against, not a template to
 
 18
-00:00:57,846 --> 00:00:59,115
+00:01:03,886 --> 00:01:05,288
 copy without thinking.
 
 19
-00:00:59,115 --> 00:01:03,440
+00:01:05,288 --> 00:01:10,068
 This is deliberately the hardest lecture in the course to simply listen to.
 
 20
-00:01:03,440 --> 00:01:06,496
+00:01:10,068 --> 00:01:13,445
 Everything before it could be understood by watching.
 
 21
-00:01:06,496 --> 00:01:07,361
+00:01:13,445 --> 00:01:14,401
 This one can't.
 
 22
-00:01:07,361 --> 00:01:11,975
+00:01:14,401 --> 00:01:19,499
 The capstone only teaches you anything once you've actually opened Section 2.1's
 
 23
-00:01:11,975 --> 00:01:16,300
+00:01:19,499 --> 00:01:24,279
 product truth doc template and started filling it in with your own numbers.
 
 24
-00:01:16,850 --> 00:01:20,842
+00:01:24,829 --> 00:01:29,165
 Notice this table is identical in shape to Section 10.4's checklist.
 
 25
-00:01:20,842 --> 00:01:21,899
+00:01:29,165 --> 00:01:30,313
 That's deliberate.
 
 26
-00:01:21,899 --> 00:01:26,772
+00:01:30,313 --> 00:01:35,606
 The capstone isn't new content, it's the proof that the sequence you've been taught
 
 27
-00:01:26,772 --> 00:01:31,645
+00:01:35,606 --> 00:01:40,898
 actually holds together end to end, on a product this course has never seen before.
 
 28
-00:01:31,645 --> 00:01:36,518
+00:01:40,898 --> 00:01:46,191
 Expect this to take real time, genuinely days rather than the length of this video.
 
 29
-00:01:36,518 --> 00:01:41,332
+00:01:46,191 --> 00:01:51,420
 Generating and pre-flighting a proper batch alone is several hours of honest work.
 
 30
-00:01:41,332 --> 00:01:45,970
+00:01:51,420 --> 00:01:56,458
 Running a test long enough to get past Section 7.4's small-sample honesty takes
 
 31
-00:01:45,970 --> 00:01:48,553
+00:01:56,458 --> 00:01:59,264
 actual days of live spend, not an afternoon.
 
 32
-00:01:48,553 --> 00:01:53,250
+00:01:59,264 --> 00:02:04,365
 Budget for that before you start, not partway through when the deadline pressure
 
 33
-00:01:53,250 --> 00:01:53,778
+00:02:04,365 --> 00:02:04,939
 shows up.
 
 34
-00:01:53,778 --> 00:01:58,592
+00:02:04,939 --> 00:02:10,168
 Notice, too, that this table has no line for "pitching" or "reporting." Those come
 
 35
-00:01:58,592 --> 00:02:03,171
+00:02:10,168 --> 00:02:15,142
 later, in Section 10.4's phase three, once a real cycle has actually been run.
 
 36
-00:02:03,171 --> 00:02:07,868
+00:02:15,142 --> 00:02:20,244
 The capstone stops at an honest first read, which is exactly as far as a genuine
 
 37
-00:02:07,868 --> 00:02:12,624
+00:02:20,244 --> 00:02:25,409
 first sprint should go before anything gets scaled, refreshed, or shown to anyone
 
 38
-00:02:12,624 --> 00:02:14,033
+00:02:25,409 --> 00:02:26,939
 outside the work itself.
 
 39
-00:02:14,583 --> 00:02:17,798
+00:02:27,489 --> 00:02:30,997
 Five checkpoints, and notice none of them require a winner.
 
 40
-00:02:17,798 --> 00:02:22,157
+00:02:30,997 --> 00:02:35,754
 A capstone that ends honestly in noise, correctly identified as noise, has still
 
 41
-00:02:22,157 --> 00:02:22,702
+00:02:35,754 --> 00:02:36,349
 succeeded.
 
 42
-00:02:22,702 --> 00:02:25,862
+00:02:36,349 --> 00:02:39,797
 Section 8.2 already told you most real batches land there.
 
 43
-00:02:25,862 --> 00:02:30,222
+00:02:39,797 --> 00:02:44,554
 Demanding a winner from your own capstone would be asking the exercise to lie to
 
 44
-00:02:30,222 --> 00:02:30,440
+00:02:44,554 --> 00:02:44,792
 you.
 
 45
-00:02:30,440 --> 00:02:34,581
+00:02:44,792 --> 00:02:49,310
 What actually fails the capstone is skipping a checkpoint, not landing on an
 
 46
-00:02:34,581 --> 00:02:35,616
+00:02:49,310 --> 00:02:50,440
 unglamorous result.
 
 47
-00:02:35,616 --> 00:02:39,976
+00:02:50,440 --> 00:02:55,197
 A batch that skipped pre-flight, or a test read before enough spend accumulated,
 
 48
-00:02:39,976 --> 00:02:44,226
+00:02:55,197 --> 00:02:59,834
 teaches you nothing true about your own product, whatever verdict it produces.
 
 49
-00:02:44,226 --> 00:02:48,803
+00:02:59,834 --> 00:03:04,829
 Would you trust a verdict from a process that skipped one of these five checkpoints?
 
 50
-00:02:48,803 --> 00:02:53,272
+00:03:04,829 --> 00:03:09,704
 If the honest answer is no, hold your own capstone to the same standard you'd hold
 
 51
-00:02:53,272 --> 00:02:54,035
+00:03:09,704 --> 00:03:10,537
 anyone else's.
 
 52
-00:02:54,035 --> 00:02:58,448
+00:03:10,537 --> 00:03:15,353
 The rubric in Section 11.4 checks exactly this, but the more useful check happens
 
 53
-00:02:58,448 --> 00:03:00,465
+00:03:15,353 --> 00:03:17,553
 here, honestly, before you get there.
 
 54
-00:03:01,015 --> 00:03:05,336
+00:03:18,103 --> 00:03:22,845
 The next two lectures walk this exact sequence on Harlan's account, in detail, as
 
 55
-00:03:05,336 --> 00:03:06,350
+00:03:22,845 --> 00:03:23,957
 the worked example.
 
 56
-00:03:06,350 --> 00:03:10,725
+00:03:23,957 --> 00:03:28,758
 Watch them before you start if you want a model to follow, or after your own first
 
 57
-00:03:10,725 --> 00:03:15,046
+00:03:28,758 --> 00:03:33,500
 pass if you'd rather work it out independently first and compare notes afterward.
 
 58
-00:03:15,046 --> 00:03:16,060
+00:03:33,500 --> 00:03:34,613
 Either order works.
 
 59
-00:03:16,060 --> 00:03:20,328
+00:03:34,613 --> 00:03:39,296
 What matters is that your own capstone gets run for real, on a real product, not
 
 60
-00:03:20,328 --> 00:03:22,409
+00:03:39,296 --> 00:03:41,579
 just watched as someone else's example.
 
 61
-00:03:22,409 --> 00:03:25,876
+00:03:41,579 --> 00:03:45,385
 That's the entire difference this course has been built to teach.
 
 62
-00:03:25,876 --> 00:03:30,305
+00:03:45,385 --> 00:03:50,244
 Give yourself permission for this to take longer than the two worked lectures do to
 
 63
-00:03:30,305 --> 00:03:30,625
+00:03:50,244 --> 00:03:50,595
 watch.
 
 64
-00:03:30,625 --> 00:03:34,786
+00:03:50,595 --> 00:03:55,162
 Harlan's story compresses months of real account history into a few minutes of
 
 65
-00:03:34,786 --> 00:03:36,493
+00:03:55,162 --> 00:03:57,035
 narration for teaching purposes.
 
 66
-00:03:36,493 --> 00:03:40,975
+00:03:57,035 --> 00:04:01,953
 Your own capstone doesn't get that compression, and expecting it to move at the same
 
 67
-00:03:40,975 --> 00:03:45,296
+00:04:01,953 --> 00:04:06,695
 pace as the video is the fastest way to feel behind on a schedule nobody actually
 
 68
-00:03:45,296 --> 00:03:45,937
+00:04:06,695 --> 00:04:07,398
 set for you.
