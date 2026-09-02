@@ -1,47 +1,47 @@
 1
-00:00:00,350 --> 00:00:04,675
+00:00:00,350 --> 00:00:04,966
 Everything up to this point answers "can you run this system." This section answers
 
 2
-00:00:04,675 --> 00:00:07,698
+00:00:04,966 --> 00:00:08,192
 a different question: does anyone actually pay you for it.
 
 3
-00:00:07,698 --> 00:00:12,075
+00:00:08,192 --> 00:00:12,863
 Those are not the same skill, and a lot of genuinely capable people never close that
 
 4
-00:00:12,075 --> 00:00:12,284
+00:00:12,863 --> 00:00:13,086
 gap.
 
 5
-00:00:12,284 --> 00:00:15,515
+00:00:13,086 --> 00:00:16,534
 Sam's own path through this course is the worked example here.
 
 6
-00:00:15,515 --> 00:00:19,684
+00:00:16,534 --> 00:00:20,983
 Fifteen hours a week on one account became a system worth pitching, and the same
 
 7
-00:00:19,684 --> 00:00:24,061
+00:00:20,983 --> 00:00:25,654
 honest reporting Section 9.5 built is what makes that pitch credible instead of just
 
 8
-00:00:24,061 --> 00:00:24,478
+00:00:25,654 --> 00:00:26,099
 a claim.
 
 9
-00:00:25,028 --> 00:00:29,595
+00:00:26,649 --> 00:00:31,621
 Four lectures, whether you're taking this system into your own employer's account or
 
 10
-00:00:29,595 --> 00:00:31,117
+00:00:31,621 --> 00:00:33,278
 pitching it as outside work.
 
 11
-00:00:31,117 --> 00:00:35,684
+00:00:33,278 --> 00:00:38,249
 By the end, you'll have an actual pitch, a pricing approach, a portfolio format, and
 
 12
-00:00:35,684 --> 00:00:38,511
+00:00:38,249 --> 00:00:41,327
 a concrete plan for your first ninety days using it.

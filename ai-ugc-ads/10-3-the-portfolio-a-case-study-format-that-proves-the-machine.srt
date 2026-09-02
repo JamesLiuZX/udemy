@@ -1,343 +1,343 @@
 1
-00:00:00,350 --> 00:00:04,824
+00:00:00,350 --> 00:00:05,175
 Most creative portfolios are a wall of finished ads, arranged to look impressive.
 
 2
-00:00:04,824 --> 00:00:09,132
+00:00:05,175 --> 00:00:09,821
 That's proof of production, not proof of the system this course teaches, and a
 
 3
-00:00:09,132 --> 00:00:13,605
+00:00:09,821 --> 00:00:14,646
 prospect who's evaluating whether you can find a winner, not just make one, needs
 
 4
-00:00:13,605 --> 00:00:15,152
+00:00:14,646 --> 00:00:16,314
 different evidence entirely.
 
 5
-00:00:15,152 --> 00:00:19,515
+00:00:16,314 --> 00:00:21,020
 A case study built from Section 9.5's report format is that different evidence.
 
 6
-00:00:19,515 --> 00:00:24,099
+00:00:21,020 --> 00:00:25,964
 It shows the objective, the metric that answered it, the honest ratio across a real
 
 7
-00:00:24,099 --> 00:00:27,468
+00:00:25,964 --> 00:00:29,597
 batch, and the one creative that actually won, in that order.
 
 8
-00:00:27,468 --> 00:00:29,125
+00:00:29,597 --> 00:00:31,384
 That order is the whole point.
 
 9
-00:00:29,125 --> 00:00:33,102
+00:00:31,384 --> 00:00:35,673
 It proves you followed a process to the winner, rather than picking your
 
 10
-00:00:33,102 --> 00:00:35,366
+00:00:35,673 --> 00:00:38,115
 best-looking output and calling it proof.
 
 11
-00:00:35,366 --> 00:00:39,619
+00:00:38,115 --> 00:00:42,702
 Sam's own case study is exactly this, built from his real reports on Harlan's
 
 12
-00:00:39,619 --> 00:00:41,773
+00:00:42,702 --> 00:00:45,025
 account, redacted rather than invented.
 
 13
-00:00:41,773 --> 00:00:44,093
+00:00:45,025 --> 00:00:47,527
 Nothing in it needed writing from scratch.
 
 14
-00:00:44,093 --> 00:00:48,677
+00:00:47,527 --> 00:00:52,471
 It already existed, one honest weekly report at a time, from the moment Section 9.5
 
 15
-00:00:48,677 --> 00:00:50,057
+00:00:52,471 --> 00:00:53,960
 taught him to write them.
 
 16
-00:00:50,057 --> 00:00:54,586
+00:00:53,960 --> 00:00:58,845
 Why does this matter enough to teach as its own lecture, rather than a single line
 
 17
-00:00:54,586 --> 00:00:56,133
+00:00:58,845 --> 00:01:00,512
 saying "reuse your reports"?
 
 18
-00:00:56,133 --> 00:01:00,330
+00:01:00,512 --> 00:01:05,040
 Because the instinct to build a portfolio from scratch, polished and written
 
 19
-00:01:00,330 --> 00:01:04,914
+00:01:05,040 --> 00:01:09,984
 specifically to impress, is strong, and it's exactly the instinct that produces the
 
 20
-00:01:04,914 --> 00:01:08,007
+00:01:09,984 --> 00:01:13,319
 highlight reel this lecture is trying to help you avoid.
 
 21
-00:01:08,557 --> 00:01:11,660
+00:01:13,869 --> 00:01:17,196
 Notice the right column is where the actual value lives.
 
 22
-00:01:11,660 --> 00:01:16,203
+00:01:17,196 --> 00:01:22,066
 A prospect doesn't need to know it was specifically compression socks to trust the
 
 23
-00:01:16,203 --> 00:01:16,646
+00:01:22,066 --> 00:01:22,542
 process.
 
 24
-00:01:16,646 --> 00:01:21,300
+00:01:22,542 --> 00:01:27,531
 They need to see that a real decision tree was applied, a real ratio resulted, and a
 
 25
-00:01:21,300 --> 00:01:25,067
+00:01:27,531 --> 00:01:31,570
 real winner survived scrutiny rather than being declared on day one.
 
 26
-00:01:25,067 --> 00:01:29,610
+00:01:31,570 --> 00:01:36,441
 Redacting the left column isn't just good practice with a client's data, it's also
 
 27
-00:01:29,610 --> 00:01:31,937
+00:01:36,441 --> 00:01:38,936
 what makes the case study honest to reuse.
 
 28
-00:01:31,937 --> 00:01:35,261
+00:01:38,936 --> 00:01:42,500
 You're not claiming credit for someone else's brand success.
 
 29
-00:01:35,261 --> 00:01:39,694
+00:01:42,500 --> 00:01:47,252
 You're demonstrating a repeatable process that happened to run on their account,
 
 30
-00:01:39,694 --> 00:01:42,242
+00:01:47,252 --> 00:01:49,984
 which is a narrower and more defensible claim.
 
 31
-00:01:42,242 --> 00:01:46,674
+00:01:49,984 --> 00:01:54,736
 Get explicit permission before using any client's numbers at all, even redacted.
 
 32
-00:01:46,674 --> 00:01:49,555
+00:01:54,736 --> 00:01:57,825
 Some clients are fine with an anonymised case study.
 
 33
-00:01:49,555 --> 00:01:54,098
+00:01:57,825 --> 00:02:02,695
 Some aren't, and assuming consent because the brand name is hidden is not the same
 
 34
-00:01:54,098 --> 00:01:55,317
+00:02:02,695 --> 00:02:04,002
 as actually having it.
 
 35
-00:01:55,317 --> 00:01:59,971
+00:02:04,002 --> 00:02:08,992
 If a client declines, that's not the end of the case study, only a constraint on how
 
 36
-00:01:59,971 --> 00:02:01,024
+00:02:08,992 --> 00:02:10,120
 specific it can be.
 
 37
-00:02:01,024 --> 00:02:05,622
+00:02:10,120 --> 00:02:15,050
 A version that rounds every number and describes the category rather than naming it
 
 38
-00:02:05,622 --> 00:02:09,833
+00:02:15,050 --> 00:02:19,565
 still shows the same process, the same ratio shape, the same honest verdict.
 
 39
-00:02:09,833 --> 00:02:14,209
+00:02:19,565 --> 00:02:24,257
 The identifying detail is the least important part of what makes it convincing.
 
 40
-00:02:14,759 --> 00:02:19,168
+00:02:24,807 --> 00:02:29,670
 Five lines, pulled directly from reports you've already written if you've been
 
 41
-00:02:19,168 --> 00:02:21,202
+00:02:29,670 --> 00:02:31,915
 running Section 9's sprint honestly.
 
 42
-00:02:21,202 --> 00:02:25,893
+00:02:31,915 --> 00:02:37,090
 There's no new document to draft from a blank page here, only a compilation of what
 
 43
-00:02:25,893 --> 00:02:27,871
+00:02:37,090 --> 00:02:39,272
 the weekly rhythm already produced.
 
 44
-00:02:27,871 --> 00:02:31,771
+00:02:39,272 --> 00:02:43,574
 Line five is the line most competing portfolios can't honestly write.
 
 45
-00:02:31,771 --> 00:02:36,236
+00:02:43,574 --> 00:02:48,499
 "This took a process, not luck" only means something if the four lines above it
 
 46
-00:02:36,236 --> 00:02:40,983
+00:02:48,499 --> 00:02:53,736
 actually show a process: an objective set in advance, a ratio that includes noise, a
 
 47
-00:02:40,983 --> 00:02:44,035
+00:02:53,736 --> 00:02:57,103
 verdict read against a tree rather than a gut feeling.
 
 48
-00:02:44,035 --> 00:02:47,709
+00:02:57,103 --> 00:03:01,156
 Claim it without the evidence and it reads as marketing language.
 
 49
-00:02:47,709 --> 00:02:50,421
+00:03:01,156 --> 00:03:04,148
 Claim it with the evidence and it's simply true.
 
 50
-00:02:50,421 --> 00:02:53,417
+00:03:04,148 --> 00:03:07,453
 Notice, too, that line four is optional for a reason.
 
 51
-00:02:53,417 --> 00:02:58,108
+00:03:07,453 --> 00:03:12,627
 Not every sprint cycle you'd want to feature has a fatigue story yet, especially an
 
 52
-00:02:58,108 --> 00:02:58,673
+00:03:12,627 --> 00:03:13,251
 early one.
 
 53
-00:02:58,673 --> 00:03:03,138
+00:03:13,251 --> 00:03:18,176
 A case study that skips a line it genuinely has nothing to say about is honest.
 
 54
-00:03:03,138 --> 00:03:07,433
+00:03:18,176 --> 00:03:22,915
 One that invents a fatigue story to fill the template is exactly the kind of
 
 55
-00:03:07,433 --> 00:03:10,598
+00:03:22,915 --> 00:03:26,406
 embellishment this whole course has been built to avoid.
 
 56
-00:03:11,148 --> 00:03:15,508
+00:03:26,956 --> 00:03:31,711
 One honest trap worth naming, because a portfolio piece invites it more than a
 
 57
-00:03:15,508 --> 00:03:16,570
+00:03:31,711 --> 00:03:32,869
 weekly report does.
 
 58
-00:03:16,570 --> 00:03:19,700
+00:03:32,869 --> 00:03:36,283
 A report goes out every week regardless of how it reads.
 
 59
-00:03:19,700 --> 00:03:24,395
+00:03:36,283 --> 00:03:41,403
 A portfolio piece gets chosen, which means there's a real decision about which cycle
 
 60
-00:03:24,395 --> 00:03:28,866
+00:03:41,403 --> 00:03:46,280
 to feature, and the temptation is to feature the best one you've ever had rather
 
 61
-00:03:28,866 --> 00:03:30,320
+00:03:46,280 --> 00:03:47,865
 than a representative one.
 
 62
-00:03:30,320 --> 00:03:34,903
+00:03:47,865 --> 00:03:52,863
 That's a subtler version of the same dishonesty Section 9.5 already named, dressed
 
 63
-00:03:34,903 --> 00:03:36,747
+00:03:52,863 --> 00:03:54,875
 up as normal editorial judgement.
 
 64
-00:03:36,747 --> 00:03:39,318
+00:03:54,875 --> 00:03:57,679
 The fix is the same one that fixed the report.
 
 65
-00:03:39,318 --> 00:03:44,013
+00:03:57,679 --> 00:04:02,799
 Include the honest ratio in the case study itself, not just the winning result, even
 
 66
-00:03:44,013 --> 00:03:45,914
+00:04:02,799 --> 00:04:04,872
 in the cycle you're most proud of.
 
 67
-00:03:45,914 --> 00:03:50,553
+00:04:04,872 --> 00:04:09,931
 A prospect who sees noise acknowledged inside your best example trusts it more, not
 
 68
-00:03:50,553 --> 00:03:52,845
+00:04:09,931 --> 00:04:12,431
 less, than one shown only a spotless win.
 
 69
-00:03:52,845 --> 00:03:57,484
+00:04:12,431 --> 00:04:17,490
 Would a spotless case study actually survive a follow-up question about what didn't
 
 70
-00:03:57,484 --> 00:03:57,763
+00:04:17,490 --> 00:04:17,795
 work?
 
 71
-00:03:57,763 --> 00:04:02,458
+00:04:17,795 --> 00:04:22,916
 It wouldn't, and a prospect sharp enough to ask that question is exactly the kind of
 
 72
-00:04:02,458 --> 00:04:03,576
+00:04:22,916 --> 00:04:24,135
 client worth having.
 
 73
-00:04:03,576 --> 00:04:08,271
+00:04:24,135 --> 00:04:29,255
 Building the honest ratio in from the start means that question has an answer ready,
 
 74
-00:04:08,271 --> 00:04:12,128
+00:04:29,255 --> 00:04:33,461
 rather than an admission that feels like it's walking something back.
 
 75
-00:04:12,678 --> 00:04:17,304
+00:04:34,011 --> 00:04:39,058
 Next lecture turns everything from this section into an actual plan for your first
 
 76
-00:04:17,304 --> 00:04:21,873
+00:04:39,058 --> 00:04:44,042
 thirty, sixty, and ninety days, including exactly when a case study like this one
 
 77
-00:04:21,873 --> 00:04:23,171
+00:04:44,042 --> 00:04:45,458
 becomes worth building.
 
 78
-00:04:23,171 --> 00:04:27,176
+00:04:45,458 --> 00:04:49,827
 Before that, look back through whatever reports you've already written.
 
 79
-00:04:27,176 --> 00:04:31,915
+00:04:49,827 --> 00:04:54,996
 If even one sprint cycle has a real ratio and a real verdict in it, you already have
 
 80
-00:04:31,915 --> 00:04:33,607
+00:04:54,996 --> 00:04:56,842
 the beginning of a case study.
 
 81
-00:04:33,607 --> 00:04:35,694
+00:04:56,842 --> 00:04:59,119
 It just needs redacting, not writing.
 
 82
-00:04:35,694 --> 00:04:37,669
+00:04:59,119 --> 00:05:01,273
 Keep this habit going forward, too.
 
 83
-00:04:37,669 --> 00:04:41,956
+00:05:01,273 --> 00:05:05,950
 Every future sprint cycle is a potential case study the moment it's reported
 
 84
-00:04:41,956 --> 00:04:45,172
+00:05:05,950 --> 00:05:09,458
 honestly, not something to reconstruct later from memory.
 
 85
-00:04:45,172 --> 00:04:49,628
+00:05:09,458 --> 00:05:14,320
 The best time to write a case study is the same week the report that becomes it
 
 86
-00:04:49,628 --> 00:04:50,475
+00:05:14,320 --> 00:05:15,243
 already exists.
