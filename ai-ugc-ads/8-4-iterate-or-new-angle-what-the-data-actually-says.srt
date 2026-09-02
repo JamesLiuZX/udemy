@@ -1,375 +1,375 @@
 1
-00:00:00,350 --> 00:00:04,565
+00:00:00,350 --> 00:00:04,889
 Section 8.3 answered the first question: a fatigued winner gets refreshed, not
 
 2
-00:00:04,565 --> 00:00:04,943
+00:00:04,889 --> 00:00:05,297
 killed.
 
 3
-00:00:04,943 --> 00:00:07,320
+00:00:05,297 --> 00:00:07,857
 It deliberately left a second question open.
 
 4
-00:00:07,320 --> 00:00:09,914
+00:00:07,857 --> 00:00:10,651
 What happens when the refresh itself goes tired?
 
 5
-00:00:09,914 --> 00:00:14,452
+00:00:10,651 --> 00:00:15,540
 Two different moves both get called "making something new," and they cost completely
 
 6
-00:00:14,452 --> 00:00:15,965
+00:00:15,540 --> 00:00:17,169
 different amounts of effort.
 
 7
-00:00:15,965 --> 00:00:20,450
+00:00:17,169 --> 00:00:21,999
 A refresh keeps the angle, the claim, the argument, and changes only the surface: a
 
 8
-00:00:20,450 --> 00:00:22,179
+00:00:21,999 --> 00:00:23,862
 new hook, a new cut, a new pace.
 
 9
-00:00:22,179 --> 00:00:26,231
+00:00:23,862 --> 00:00:28,227
 A new angle goes back to Section 2.4's map and starts an entirely different
 
 10
-00:00:26,231 --> 00:00:29,690
+00:00:28,227 --> 00:00:31,951
 argument, aimed at the same audience from a different direction.
 
 11
-00:00:29,690 --> 00:00:32,823
+00:00:31,951 --> 00:00:35,327
 Reaching for the wrong one is expensive in a specific way.
 
 12
-00:00:32,823 --> 00:00:37,254
+00:00:35,327 --> 00:00:40,099
 Refresh an angle that has genuinely run its course, and you're polishing something
 
 13
-00:00:37,254 --> 00:00:41,577
+00:00:40,099 --> 00:00:44,755
 the audience is done with, for the second or third time, before you'll admit it.
 
 14
-00:00:41,577 --> 00:00:46,115
+00:00:44,755 --> 00:00:49,643
 Rebuild from scratch when a simple refresh would have worked, and you've thrown away
 
 15
-00:00:46,115 --> 00:00:50,654
+00:00:49,643 --> 00:00:54,532
 an angle that still had life left in it, along with the effort it took to prove that
 
 16
-00:00:50,654 --> 00:00:52,005
+00:00:54,532 --> 00:00:55,987
 angle in the first place.
 
 17
-00:00:52,005 --> 00:00:54,436
+00:00:55,987 --> 00:00:58,606
 Neither mistake announces itself at the time.
 
 18
-00:00:54,436 --> 00:00:58,813
+00:00:58,606 --> 00:01:03,320
 Both look like reasonable decisions in the moment, made with the numbers you had.
 
 19
-00:00:58,813 --> 00:01:02,865
+00:01:03,320 --> 00:01:07,684
 The only way to tell them apart in advance is to know which signal actually
 
 20
-00:01:02,865 --> 00:01:06,215
+00:01:07,684 --> 00:01:11,293
 separates them, which is what the rest of this lecture is for.
 
 21
-00:01:06,765 --> 00:01:11,075
+00:01:11,843 --> 00:01:16,583
 Notice the third row is the one Section 8.3 didn't cover, and it's the one that
 
 22
-00:01:11,075 --> 00:01:12,439
+00:01:16,583 --> 00:01:18,083
 actually needs judgement.
 
 23
-00:01:12,439 --> 00:01:15,112
+00:01:18,083 --> 00:01:21,024
 A loser never earns a refresh, that call is easy.
 
 24
-00:01:15,112 --> 00:01:19,694
+00:01:21,024 --> 00:01:26,064
 A winner's first fatigue gets refreshed, that call is easy too, because the same cut
 
 25
-00:01:19,694 --> 00:01:22,258
+00:01:26,064 --> 00:01:28,885
 simply ran its course against a fixed audience.
 
 26
-00:01:22,258 --> 00:01:25,477
+00:01:28,885 --> 00:01:32,425
 The genuinely hard call is what happens after that refresh.
 
 27
-00:01:25,477 --> 00:01:30,059
+00:01:32,425 --> 00:01:37,466
 If the refreshed cut recovers something close to its original performance and runs a
 
 28
-00:01:30,059 --> 00:01:34,423
+00:01:37,466 --> 00:01:42,267
 healthy stretch before fatigue returns, the angle is still alive, and refreshing
 
 29
-00:01:34,423 --> 00:01:35,732
+00:01:42,267 --> 00:01:43,707
 again is the right move.
 
 30
-00:01:35,732 --> 00:01:40,315
+00:01:43,707 --> 00:01:48,747
 If it fatigues faster than the original, or never fully recovers, that's a different
 
 31
-00:01:40,315 --> 00:01:40,696
+00:01:48,747 --> 00:01:49,167
 signal.
 
 32
-00:01:40,696 --> 00:01:43,097
+00:01:49,167 --> 00:01:51,808
 The audience isn't tired of one cut anymore.
 
 33
-00:01:43,097 --> 00:01:44,897
+00:01:51,808 --> 00:01:53,788
 It's tired of the whole argument.
 
 34
-00:01:44,897 --> 00:01:48,606
+00:01:53,788 --> 00:01:57,869
 That distinction is why frequency alone was never enough on its own.
 
 35
-00:01:48,606 --> 00:01:50,898
+00:01:57,869 --> 00:02:00,389
 Section 8.3 asked you to watch it per cut.
 
 36
-00:01:50,898 --> 00:01:55,480
+00:02:00,389 --> 00:02:05,430
 This decision asks you to watch it across cuts, over the life of one angle, a longer
 
 37
-00:01:55,480 --> 00:01:58,862
+00:02:05,430 --> 00:02:09,150
 memory than a single ad set's dashboard usually keeps for you.
 
 38
-00:01:58,862 --> 00:02:03,117
+00:02:09,150 --> 00:02:13,831
 Nothing here fixes how many refresh cycles is too many, and that's deliberate.
 
 39
-00:02:03,117 --> 00:02:06,281
+00:02:13,831 --> 00:02:17,311
 A strong angle might earn three or four before it's spent.
 
 40
-00:02:06,281 --> 00:02:08,081
+00:02:17,311 --> 00:02:19,291
 A weaker one might only earn one.
 
 41
-00:02:08,081 --> 00:02:09,554
+00:02:19,291 --> 00:02:20,912
 The count isn't the signal.
 
 42
-00:02:09,554 --> 00:02:13,100
+00:02:20,912 --> 00:02:24,812
 The pattern across cycles is, which is what the next slide reads.
 
 43
-00:02:13,650 --> 00:02:17,972
+00:02:25,362 --> 00:02:30,047
 This is the actual continuation of the "hour eleven" story from Section 8.3.
 
 44
-00:02:17,972 --> 00:02:22,749
+00:02:30,047 --> 00:02:35,225
 That refresh follows Pattern A: it recovers, clears the winner tree again on its own
 
 45
-00:02:22,749 --> 00:02:25,649
+00:02:35,225 --> 00:02:38,369
 merits, and keeps earning its place in the account.
 
 46
-00:02:25,649 --> 00:02:30,426
+00:02:38,369 --> 00:02:43,547
 That's exactly why it's still the creative Section 9 scales from twenty-five dollars
 
 47
-00:02:30,426 --> 00:02:35,090
+00:02:43,547 --> 00:02:48,602
 a day to real budget, not a creative that got one lucky cut and then quietly died.
 
 48
-00:02:35,090 --> 00:02:39,866
+00:02:48,602 --> 00:02:53,780
 Not every refresh goes that way, and that's the entire point of watching the pattern
 
 49
-00:02:39,866 --> 00:02:41,174
+00:02:53,780 --> 00:02:55,198
 instead of assuming it.
 
 50
-00:02:41,174 --> 00:02:45,838
+00:02:55,198 --> 00:03:00,253
 An angle genuinely does wear out eventually, and Pattern B is what that looks like
 
 51
-00:02:45,838 --> 00:02:50,558
+00:03:00,253 --> 00:03:05,369
 on a dashboard: a refresh that can't recover what the original cut had, or recovers
 
 52
-00:02:50,558 --> 00:02:52,264
+00:03:05,369 --> 00:03:07,219
 it for a much shorter stretch.
 
 53
-00:02:52,264 --> 00:02:56,756
+00:03:07,219 --> 00:03:12,089
 When you see that, more refreshing isn't stubbornness paying off, it's spending
 
 54
-00:02:56,756 --> 00:02:58,463
+00:03:12,089 --> 00:03:13,938
 effort on diminishing returns.
 
 55
-00:02:58,463 --> 00:03:00,908
+00:03:13,938 --> 00:03:16,589
 Either read takes two data points, not one.
 
 56
-00:03:00,908 --> 00:03:04,491
+00:03:16,589 --> 00:03:20,472
 A single cut's fatigue never tells you which pattern you're in.
 
 57
-00:03:04,491 --> 00:03:07,505
+00:03:20,472 --> 00:03:23,739
 Only a refresh, read against the cut before it, does.
 
 58
-00:03:08,055 --> 00:03:12,376
+00:03:24,289 --> 00:03:28,917
 One honest trap worth naming, because it's the kind of bias that never announces
 
 59
-00:03:12,376 --> 00:03:12,754
+00:03:28,917 --> 00:03:29,322
 itself.
 
 60
-00:03:12,754 --> 00:03:15,563
+00:03:29,322 --> 00:03:32,330
 A refresh reuses almost everything you already have.
 
 61
-00:03:15,563 --> 00:03:19,938
+00:03:32,330 --> 00:03:37,015
 A new angle means going back to Section 2.4's map, picking a different one of the
 
 62
-00:03:19,938 --> 00:03:21,936
+00:03:37,015 --> 00:03:39,155
 twenty, and building it out properly.
 
 63
-00:03:21,936 --> 00:03:26,473
+00:03:39,155 --> 00:03:44,014
 One of those is a smaller job than the other, and smaller jobs get chosen by default
 
 64
-00:03:26,473 --> 00:03:30,578
+00:03:44,014 --> 00:03:48,410
 far more often than they get chosen because the data actually supports them.
 
 65
-00:03:30,578 --> 00:03:35,115
+00:03:48,410 --> 00:03:53,269
 Guard against that by deciding the call from the pattern first, before you weigh how
 
 66
-00:03:35,115 --> 00:03:36,736
+00:03:53,269 --> 00:03:55,005
 much work either option costs.
 
 67
-00:03:36,736 --> 00:03:41,057
+00:03:55,005 --> 00:03:59,632
 If Pattern B is genuinely what the numbers show, the extra effort of a new angle
 
 68
-00:03:41,057 --> 00:03:42,893
+00:03:59,632 --> 00:04:01,599
 isn't waste, it's the honest read.
 
 69
-00:03:42,893 --> 00:03:47,322
+00:04:01,599 --> 00:04:06,342
 Spending it there beats spending less effort refreshing something the audience has
 
 70
-00:03:47,322 --> 00:03:49,051
+00:04:06,342 --> 00:04:08,193
 already told you it's done with.
 
 71
-00:03:49,051 --> 00:03:52,670
+00:04:08,193 --> 00:04:12,069
 There's a second version of this same trap, quieter than the first.
 
 72
-00:03:52,670 --> 00:03:57,153
+00:04:12,069 --> 00:04:16,870
 It shows up as reluctance rather than laziness: an angle you're personally attached
 
 73
-00:03:57,153 --> 00:04:01,528
+00:04:16,870 --> 00:04:21,555
 to, maybe the one that proved the whole system worked in the first place, gets an
 
 74
-00:04:01,528 --> 00:04:05,957
+00:04:21,555 --> 00:04:26,298
 extra refresh cycle it hasn't earned, simply because retiring it feels like giving
 
 75
-00:04:05,957 --> 00:04:06,659
+00:04:26,298 --> 00:04:27,050
 something up.
 
 76
-00:04:06,659 --> 00:04:09,306
+00:04:27,050 --> 00:04:29,885
 The data doesn't know which angle you're fond of.
 
 77
-00:04:09,306 --> 00:04:13,681
+00:04:29,885 --> 00:04:34,570
 Reading Pattern B correctly means acting on it even when the angle in question is
 
 78
-00:04:13,681 --> 00:04:15,733
+00:04:34,570 --> 00:04:36,768
 the one you'd least like to let go of.
 
 79
-00:04:16,283 --> 00:04:20,614
+00:04:37,318 --> 00:04:42,090
 Next lecture is the workshop where you run this section's full read, metrics,
 
 80
-00:04:20,614 --> 00:04:25,113
+00:04:42,090 --> 00:04:47,047
 decision tree, fatigue, and this call, against a live test of your own, start to
 
 81
-00:04:25,113 --> 00:04:25,507
+00:04:47,047 --> 00:04:47,481
 finish.
 
 82
-00:04:25,507 --> 00:04:30,006
+00:04:47,481 --> 00:04:52,439
 Before that, look at any angle in your own account that's already been refreshed
 
 83
-00:04:30,006 --> 00:04:30,288
+00:04:52,439 --> 00:04:52,749
 once.
 
 84
-00:04:30,288 --> 00:04:32,256
+00:04:52,749 --> 00:04:54,918
 Ask honestly which pattern it's in.
 
 85
-00:04:32,256 --> 00:04:36,755
+00:04:54,918 --> 00:04:59,875
 That answer decides next week's work, and it's worth having before the sprint in
 
 86
-00:04:36,755 --> 00:04:38,949
+00:04:59,875 --> 00:05:02,292
 Section 9.1 asks you to plan around it.
 
 87
-00:04:38,949 --> 00:04:43,617
+00:05:02,292 --> 00:05:07,436
 Hold this decision next to Section 8.2's tree one more time, because they share the
 
 88
-00:04:43,617 --> 00:04:45,135
+00:05:07,436 --> 00:05:09,109
 same discipline underneath.
 
 89
-00:04:45,135 --> 00:04:49,635
+00:05:09,109 --> 00:05:14,067
 There, the honest answer was often noise, not winner or loser, and resisting the
 
 90
-00:04:49,635 --> 00:04:52,503
+00:05:14,067 --> 00:05:17,227
 urge to force a clean verdict was the whole lesson.
 
 91
-00:04:52,503 --> 00:04:57,115
+00:05:17,227 --> 00:05:22,309
 Here, the honest answer is often Pattern A, an angle that still has life left, not
 
 92
-00:04:57,115 --> 00:04:59,927
+00:05:22,309 --> 00:05:25,407
 the more dramatic story of an angle finally spent.
 
 93
-00:04:59,927 --> 00:05:04,483
+00:05:25,407 --> 00:05:30,427
 Both cases reward the same patience: read what the numbers actually show, not the
 
 94
-00:05:04,483 --> 00:05:08,645
+00:05:30,427 --> 00:05:35,013
 more interesting conclusion you'd rather be reporting back to the account.

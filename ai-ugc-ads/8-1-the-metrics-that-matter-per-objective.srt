@@ -1,343 +1,343 @@
 1
-00:00:00,350 --> 00:00:03,679
+00:00:00,350 --> 00:00:03,988
 Here's a mistake that looks like careful analysis and isn't.
 
 2
-00:00:03,679 --> 00:00:08,230
+00:00:03,988 --> 00:00:08,961
 Someone runs a cold-audience awareness test, gets a strong click-through rate, and
 
 3
-00:00:08,230 --> 00:00:09,062
+00:00:08,961 --> 00:00:09,871
 calls it a win.
 
 4
-00:00:09,062 --> 00:00:11,337
+00:00:09,871 --> 00:00:12,357
 The click-through rate really was strong.
 
 5
-00:00:11,337 --> 00:00:14,500
+00:00:12,357 --> 00:00:15,813
 It just wasn't the thing that test was supposed to prove.
 
 6
-00:00:14,500 --> 00:00:16,775
+00:00:15,813 --> 00:00:18,300
 Every metric answers a specific question.
 
 7
-00:00:16,775 --> 00:00:21,215
+00:00:18,300 --> 00:00:23,151
 Read the wrong metric and you'll get a confident, precise, completely irrelevant
 
 8
-00:00:21,215 --> 00:00:21,603
+00:00:23,151 --> 00:00:23,575
 answer.
 
 9
-00:00:21,603 --> 00:00:23,434
+00:00:23,575 --> 00:00:25,577
 The fix isn't a better dashboard.
 
 10
-00:00:23,434 --> 00:00:28,040
+00:00:25,577 --> 00:00:30,610
 It's knowing which number actually maps to what you were testing before you look at
 
 11
-00:00:28,040 --> 00:00:28,706
+00:00:30,610 --> 00:00:31,337
 any of them.
 
 12
-00:00:28,706 --> 00:00:32,368
+00:00:31,337 --> 00:00:35,340
 Why does this trap catch experienced people as often as beginners?
 
 13
-00:00:32,368 --> 00:00:35,809
+00:00:35,340 --> 00:00:39,099
 Because every number on a results page looks equally official.
 
 14
-00:00:35,809 --> 00:00:40,415
+00:00:39,099 --> 00:00:44,133
 A dashboard doesn't label one metric "relevant to your actual question" and another
 
 15
-00:00:40,415 --> 00:00:44,799
+00:00:44,133 --> 00:00:48,923
 "impressive but beside the point." That judgement has to come from you, decided
 
 16
-00:00:44,799 --> 00:00:49,404
+00:00:48,923 --> 00:00:53,956
 before the numbers arrive, the same discipline Section 7.2 already asked of budgets
 
 17
-00:00:49,404 --> 00:00:50,237
+00:00:53,956 --> 00:00:54,866
 and kill rules.
 
 18
-00:00:50,787 --> 00:00:55,147
+00:00:55,416 --> 00:01:00,114
 Notice each row asks a genuinely different question, not a smaller version of the
 
 19
-00:00:55,147 --> 00:00:55,631
+00:01:00,114 --> 00:01:00,636
 same one.
 
 20
-00:00:55,631 --> 00:01:00,099
+00:01:00,636 --> 00:01:05,450
 A cold-awareness ad earning strong click-through but weak hook retention is telling
 
 21
-00:01:00,099 --> 00:01:04,460
+00:01:05,450 --> 00:01:10,148
 you something real: people who saw it stopped scrolling for the wrong reason, and
 
 22
-00:01:04,460 --> 00:01:07,259
+00:01:10,148 --> 00:01:13,164
 it's not converting attention into anything durable.
 
 23
-00:01:07,259 --> 00:01:10,219
+00:01:13,164 --> 00:01:16,354
 This maps directly onto Section 2.2's awareness ladder.
 
 24
-00:01:10,219 --> 00:01:14,095
+00:01:16,354 --> 00:01:20,530
 A cold audience and a warm one aren't just different targeting settings.
 
 25
-00:01:14,095 --> 00:01:18,294
+00:01:20,530 --> 00:01:25,053
 They need different proof, and reading them against the same metric hides that
 
 26
-00:01:18,294 --> 00:01:20,178
+00:01:25,053 --> 00:01:27,083
 difference instead of revealing it.
 
 27
-00:01:20,178 --> 00:01:23,462
+00:01:27,083 --> 00:01:30,621
 Notice, too, that the three rows aren't ranked by importance.
 
 28
-00:01:23,462 --> 00:01:27,822
+00:01:30,621 --> 00:01:35,319
 Cost per purchase isn't a "better" metric than hook retention, it's the right one
 
 29
-00:01:27,822 --> 00:01:29,168
+00:01:35,319 --> 00:01:36,769
 for a different question.
 
 30
-00:01:29,168 --> 00:01:33,689
+00:01:36,769 --> 00:01:41,641
 An awareness campaign judged on cost per purchase looks like a failure by a standard
 
 31
-00:01:33,689 --> 00:01:37,942
+00:01:41,641 --> 00:01:46,223
 it was never trying to meet, and a conversion campaign judged on hook retention
 
 32
-00:01:37,942 --> 00:01:40,310
+00:01:46,223 --> 00:01:48,775
 looks impressive while quietly losing money.
 
 33
-00:01:40,310 --> 00:01:44,832
+00:01:48,775 --> 00:01:53,647
 If you're only running one type of campaign right now, conversion, most likely, it's
 
 34
-00:01:44,832 --> 00:01:47,255
+00:01:53,647 --> 00:01:56,257
 still worth knowing the other two rows exist.
 
 35
-00:01:47,255 --> 00:01:51,615
+00:01:56,257 --> 00:02:00,955
 The moment you add a genuinely cold prospecting push or a warm retargeting layer,
 
 36
-00:01:51,615 --> 00:01:56,029
+00:02:00,955 --> 00:02:05,711
 you'll need a different metric on standby, not a scramble to work out which number
 
 37
-00:01:56,029 --> 00:01:58,828
+00:02:05,711 --> 00:02:08,727
 actually matters once that campaign is already live.
 
 38
-00:01:59,378 --> 00:02:04,168
+00:02:09,277 --> 00:02:14,411
 Same creative, two completely different reads, because it's doing two different jobs
 
 39
-00:02:04,168 --> 00:02:05,935
+00:02:14,411 --> 00:02:16,305
 depending on who's watching it.
 
 40
-00:02:05,935 --> 00:02:10,725
+00:02:16,305 --> 00:02:21,439
 Judging the cold-audience placement on cost per purchase is unfair to an ad that was
 
 41
-00:02:10,725 --> 00:02:13,861
+00:02:21,439 --> 00:02:24,801
 never trying to close a sale in the first four seconds.
 
 42
-00:02:13,861 --> 00:02:18,366
+00:02:24,801 --> 00:02:29,630
 Judging the retargeting placement on hook retention misses the actual question,
 
 43
-00:02:18,366 --> 00:02:19,506
+00:02:29,630 --> 00:02:30,852
 whether it converts.
 
 44
-00:02:19,506 --> 00:02:23,440
+00:02:30,852 --> 00:02:35,069
 Notice what stayed identical across both rows: the actual video file.
 
 45
-00:02:23,440 --> 00:02:27,774
+00:02:35,069 --> 00:02:39,714
 Nothing about the creative itself changed between the cold placement and the
 
 46
-00:02:27,774 --> 00:02:28,686
+00:02:39,714 --> 00:02:40,692
 retargeting one.
 
 47
-00:02:28,686 --> 00:02:32,791
+00:02:40,692 --> 00:02:45,093
 Only the audience, the objective, and the metric that judges it changed.
 
 48
-00:02:32,791 --> 00:02:37,524
+00:02:45,093 --> 00:02:50,166
 That's worth sitting with, because it means the same asset can be a genuine success
 
 49
-00:02:37,524 --> 00:02:42,257
+00:02:50,166 --> 00:02:55,239
 in one context and simply irrelevant in another, without a single frame of it being
 
 50
-00:02:42,257 --> 00:02:42,827
+00:02:55,239 --> 00:02:55,850
 different.
 
 51
-00:02:42,827 --> 00:02:46,761
+00:02:55,850 --> 00:03:00,067
 This is why Section 7.1's isolated ad-set structure matters here too.
 
 52
-00:02:46,761 --> 00:02:50,810
+00:03:00,067 --> 00:03:04,407
 Mixed objectives in one ad set make this kind of clean read impossible.
 
 53
-00:02:50,810 --> 00:02:55,143
+00:03:04,407 --> 00:03:09,052
 Keep them separate, and the right metric for each one is obvious rather than
 
 54
-00:02:55,143 --> 00:02:57,937
+00:03:09,052 --> 00:03:12,047
 something you have to reconstruct after the fact.
 
 55
-00:02:57,937 --> 00:03:02,670
+00:03:12,047 --> 00:03:17,119
 Ask yourself, before your next test even launches: what's the one metric that would
 
 56
-00:03:02,670 --> 00:03:07,288
+00:03:17,119 --> 00:03:22,070
 tell you this specific ad set worked, decided now, written down, not chosen after
 
 57
-00:03:07,288 --> 00:03:09,569
+00:03:22,070 --> 00:03:24,515
 the results are already in front of you.
 
 58
-00:03:09,569 --> 00:03:14,245
+00:03:24,515 --> 00:03:29,527
 If you can't answer that question before launch, you haven't actually decided what
 
 59
-00:03:14,245 --> 00:03:15,328
+00:03:29,527 --> 00:03:30,688
 you're testing yet.
 
 60
-00:03:15,878 --> 00:03:19,264
+00:03:31,238 --> 00:03:34,927
 One honest trap worth naming, because it's genuinely tempting.
 
 61
-00:03:19,264 --> 00:03:23,688
+00:03:34,927 --> 00:03:39,746
 If cost per purchase came back disappointing but click-through rate looked great,
 
 62
-00:03:23,688 --> 00:03:26,692
+00:03:39,746 --> 00:03:43,018
 it's natural to lead with the number that looks better.
 
 63
-00:03:26,692 --> 00:03:27,347
+00:03:43,018 --> 00:03:43,732
 Resist that.
 
 64
-00:03:27,347 --> 00:03:31,662
+00:03:43,732 --> 00:03:48,432
 The objective you set before the test started is the one that gets to judge the
 
 65
-00:03:31,662 --> 00:03:32,044
+00:03:48,432 --> 00:03:48,849
 result.
 
 66
-00:03:32,044 --> 00:03:35,922
+00:03:48,849 --> 00:03:53,073
 Switching which metric matters after seeing the numbers isn't analysis.
 
 67
-00:03:35,922 --> 00:03:39,855
+00:03:53,073 --> 00:03:57,357
 It's choosing the answer you wanted and finding a question that fits it.
 
 68
-00:03:39,855 --> 00:03:44,005
+00:03:57,357 --> 00:04:01,879
 This is the same honesty Section 7.4 asked of small sample sizes, aimed at a
 
 69
-00:03:44,005 --> 00:03:45,262
+00:04:01,879 --> 00:04:03,247
 different failure mode.
 
 70
-00:03:45,262 --> 00:03:48,047
+00:04:03,247 --> 00:04:06,281
 There, the risk was reading real noise as a signal.
 
 71
-00:03:48,047 --> 00:03:51,324
+00:04:06,281 --> 00:04:09,851
 Here, the risk is reading the wrong signal as the right one.
 
 72
-00:03:51,324 --> 00:03:55,693
+00:04:09,851 --> 00:04:14,611
 Both mistakes produce a confident, wrong conclusion, and both get fixed the same
 
 73
-00:03:55,693 --> 00:04:00,117
+00:04:14,611 --> 00:04:19,430
 way: deciding what counts as evidence before you're looking at results that might
 
 74
-00:04:00,117 --> 00:04:01,483
+00:04:19,430 --> 00:04:20,917
 tempt you to redefine it.
 
 75
-00:04:02,033 --> 00:04:06,218
+00:04:21,467 --> 00:04:25,962
 Next lecture takes the metric you now know to read and turns it into an actual
 
 76
-00:04:06,218 --> 00:04:10,511
+00:04:25,962 --> 00:04:30,572
 decision: winner, loser, or still just noise, using the same honesty Section 7.4
 
 77
-00:04:10,511 --> 00:04:12,174
+00:04:30,572 --> 00:04:32,358
 already asked of small numbers.
 
 78
-00:04:12,174 --> 00:04:16,306
+00:04:32,358 --> 00:04:36,795
 Before that, go back through whatever tests you already have live or recently
 
 79
-00:04:16,306 --> 00:04:19,794
+00:04:36,795 --> 00:04:40,540
 finished, and check each one against the table from this lecture.
 
 80
-00:04:19,794 --> 00:04:23,819
+00:04:40,540 --> 00:04:44,862
 Ask, honestly, whether the metric you used to judge it actually matched the
 
 81
-00:04:23,819 --> 00:04:24,785
+00:04:44,862 --> 00:04:45,899
 objective you set.
 
 82
-00:04:24,785 --> 00:04:28,380
+00:04:45,899 --> 00:04:49,760
 If any of them don't line up, that's not a reason to redo the test.
 
 83
-00:04:28,380 --> 00:04:32,619
+00:04:49,760 --> 00:04:54,312
 It's a reason to read it again, properly, before you draw a conclusion from it.
 
 84
-00:04:32,619 --> 00:04:36,268
+00:04:54,312 --> 00:04:58,230
 Do this now, while it costs you nothing but a few minutes of review.
 
 85
-00:04:36,268 --> 00:04:40,614
+00:04:58,230 --> 00:05:02,897
 The alternative is carrying a wrong conclusion forward into Section nine's weekly
 
 86
-00:04:40,614 --> 00:04:44,800
+00:05:02,897 --> 00:05:07,392
 sprint, where it quietly shapes which angles you decide are worth building on.

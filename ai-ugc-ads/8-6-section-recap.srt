@@ -1,71 +1,71 @@
 1
-00:00:00,350 --> 00:00:04,730
+00:00:00,350 --> 00:00:05,160
 Five lectures ago, this section promised to turn whatever the testing architecture
 
 2
-00:00:04,730 --> 00:00:06,439
+00:00:05,160 --> 00:00:07,037
 produces into an actual verdict.
 
 3
-00:00:06,439 --> 00:00:07,721
+00:00:07,037 --> 00:00:08,445
 Here's the honest tally.
 
 4
-00:00:07,721 --> 00:00:11,887
+00:00:08,445 --> 00:00:13,020
 You know which metric answers which objective, so a strong number on the wrong
 
 5
-00:00:11,887 --> 00:00:13,703
+00:00:13,020 --> 00:00:15,015
 question doesn't fool you anymore.
 
 6
-00:00:13,703 --> 00:00:18,082
+00:00:15,015 --> 00:00:19,825
 You've got the three- question tree that sorts a result into winner, loser, or the
 
 7
-00:00:18,082 --> 00:00:19,952
+00:00:19,825 --> 00:00:21,878
 noise bucket most people skip past.
 
 8
-00:00:19,952 --> 00:00:24,331
+00:00:21,878 --> 00:00:26,688
 You can tell a fatigued winner from a never-worked loser by one number, frequency,
 
 9
-00:00:24,331 --> 00:00:26,521
+00:00:26,688 --> 00:00:29,093
 instead of guessing from a sliding graph.
 
 10
-00:00:26,521 --> 00:00:30,954
+00:00:29,093 --> 00:00:33,961
 And you know the harder call underneath a refresh: when it's the same angle wearing
 
 11
-00:00:30,954 --> 00:00:34,426
+00:00:33,961 --> 00:00:37,774
 out its welcome, and when it's time to retire the angle for good.
 
 12
-00:00:34,426 --> 00:00:36,189
+00:00:37,774 --> 00:00:39,710
 That's not a small set of skills.
 
 13
-00:00:36,189 --> 00:00:40,301
+00:00:39,710 --> 00:00:44,227
 It's the difference between reacting to a dashboard and actually reading one.
 
 14
-00:00:40,851 --> 00:00:45,173
+00:00:44,777 --> 00:00:49,359
 Section nine takes everything this section taught and turns it into a rhythm.
 
 15
-00:00:45,173 --> 00:00:49,551
+00:00:49,359 --> 00:00:54,001
 Not a one-off scorecard, a weekly habit the account runs on whether or not you
 
 16
-00:00:49,551 --> 00:00:51,066
+00:00:54,001 --> 00:00:55,608
 remember to think about it.
 
 17
-00:00:51,066 --> 00:00:52,918
+00:00:55,608 --> 00:00:57,572
 Nothing gets relearned from here.
 
 18
-00:00:52,918 --> 00:00:53,929
+00:00:57,572 --> 00:00:58,643
 It gets scheduled.
