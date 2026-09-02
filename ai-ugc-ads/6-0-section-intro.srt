@@ -1,71 +1,71 @@
 1
-00:00:00,350 --> 00:00:04,872
+00:00:00,350 --> 00:00:05,250
 One draft in Harlan's own batch claimed the socks were clinically proven to reduce
 
 2
-00:00:04,872 --> 00:00:06,305
+00:00:05,250 --> 00:00:06,803
 swelling by forty percent.
 
 3
-00:00:06,305 --> 00:00:08,235
+00:00:06,803 --> 00:00:08,894
 Nobody had ever tested that number.
 
 4
-00:00:08,235 --> 00:00:10,661
+00:00:08,894 --> 00:00:11,523
 Dana would never have signed her name to it.
 
 5
-00:00:10,661 --> 00:00:15,238
+00:00:11,523 --> 00:00:16,483
 It never ran, because someone asked one question before it went anywhere near an ad
 
 6
-00:00:15,238 --> 00:00:17,444
+00:00:16,483 --> 00:00:18,873
 account: could you defend this out loud?
 
 7
-00:00:17,444 --> 00:00:22,020
+00:00:18,873 --> 00:00:23,832
 Every section so far has been about making more, faster: more angles, more statics,
 
 8
-00:00:22,020 --> 00:00:24,116
+00:00:23,832 --> 00:00:26,103
 more video, tuned for more placements.
 
 9
-00:00:24,116 --> 00:00:28,306
+00:00:26,103 --> 00:00:30,644
 This section is the brake pedal, and it belongs here, before Section seven's
 
 10
-00:00:28,306 --> 00:00:29,354
+00:00:30,644 --> 00:00:31,779
 testing, not after.
 
 11
-00:00:29,354 --> 00:00:33,986
+00:00:31,779 --> 00:00:36,798
 That's what it actually builds: the pass that catches a draft like that one before a
 
 12
-00:00:33,986 --> 00:00:35,309
+00:00:36,798 --> 00:00:38,232
 dollar gets spent on it.
 
 13
-00:00:35,859 --> 00:00:40,330
+00:00:38,782 --> 00:00:43,626
 Six lectures, and they end in one artifact: a checklist you actually run before
 
 14
-00:00:40,330 --> 00:00:44,915
+00:00:43,626 --> 00:00:48,592
 every batch ships, not a set of rules you're expected to remember under pressure.
 
 15
-00:00:44,915 --> 00:00:47,631
+00:00:48,592 --> 00:00:51,535
 Keep the swelling-claim draft in mind as you go.
 
 16
-00:00:47,631 --> 00:00:52,103
+00:00:51,535 --> 00:00:56,379
 It's the worked example every lecture in this section comes back to, and by 6.6
 
 17
-00:00:52,103 --> 00:00:56,857
+00:00:56,379 --> 00:01:01,529
 you'll have B05, the one-page version of the check that caught it, ready to run on a
 
 18
-00:00:56,857 --> 00:00:57,875
+00:01:01,529 --> 00:01:02,633
 batch of your own.

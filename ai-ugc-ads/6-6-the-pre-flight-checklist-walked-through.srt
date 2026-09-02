@@ -1,331 +1,331 @@
 1
-00:00:00,350 --> 00:00:05,106
+00:00:00,350 --> 00:00:05,478
 Time to put the last five lectures together into the one document you'll actually
 
 2
-00:00:05,106 --> 00:00:09,921
+00:00:05,478 --> 00:00:10,670
 run before every batch ships, the same document that caught the swelling claim and
 
 3
-00:00:09,921 --> 00:00:12,328
+00:00:10,670 --> 00:00:13,266
 the licence-tier gap on Harlan's own set.
 
 4
-00:00:12,328 --> 00:00:13,503
+00:00:13,266 --> 00:00:14,532
 Nothing here is new.
 
 5
-00:00:13,503 --> 00:00:14,971
+00:00:14,532 --> 00:00:16,115
 Claims, from Section 6.2.
 
 6
-00:00:14,971 --> 00:00:15,969
+00:00:16,115 --> 00:00:17,191
 Rights, from 6.4.
 
 7
-00:00:15,969 --> 00:00:17,202
+00:00:17,191 --> 00:00:18,520
 Disclosure, from 6.3.
 
 8
-00:00:17,202 --> 00:00:20,138
+00:00:18,520 --> 00:00:21,686
 Accuracy, the taxonomy's fourth question from 6.1.
 
 9
-00:00:20,138 --> 00:00:22,075
+00:00:21,686 --> 00:00:23,775
 Owners and checkpoints, from 6.5.
 
 10
-00:00:22,075 --> 00:00:26,773
+00:00:23,775 --> 00:00:28,840
 This lecture's only job is assembly, the same way the static and video workshops
 
 11
-00:00:26,773 --> 00:00:29,885
+00:00:28,840 --> 00:00:32,196
 turned earlier sections into one repeatable template.
 
 12
-00:00:29,885 --> 00:00:34,582
+00:00:32,196 --> 00:00:37,261
 Why does assembly deserve its own lecture rather than a slide at the end of 6.5?
 
 13
-00:00:34,582 --> 00:00:38,869
+00:00:37,261 --> 00:00:41,883
 Because five separate lectures' worth of checks, however good each one is
 
 14
-00:00:38,869 --> 00:00:43,625
+00:00:41,883 --> 00:00:47,011
 individually, don't run themselves as a coherent pass unless someone deliberately
 
 15
-00:00:43,625 --> 00:00:47,383
+00:00:47,011 --> 00:00:51,063
 puts them in one place, in order, with the checkpoints attached.
 
 16
-00:00:47,383 --> 00:00:52,139
+00:00:51,063 --> 00:00:56,191
 That's genuinely different work from teaching each check on its own, and it's the
 
 17
-00:00:52,139 --> 00:00:54,018
+00:00:56,191 --> 00:00:58,217
 work this lecture actually does.
 
 18
-00:00:54,018 --> 00:00:58,539
+00:00:58,217 --> 00:01:03,092
 Think of this the way Section 2.6 turned five earlier lectures into one brief
 
 19
-00:00:58,539 --> 00:01:03,178
+00:01:03,092 --> 00:01:08,094
 template, or the way Section 5.4 turned three platform lectures into one export
 
 20
-00:01:03,178 --> 00:01:03,589
+00:01:08,094 --> 00:01:08,537
 matrix.
 
 21
-00:01:03,589 --> 00:01:08,521
+00:01:08,537 --> 00:01:13,855
 The pattern repeats across this entire course on purpose: teach each piece properly,
 
 22
-00:01:08,521 --> 00:01:12,866
+00:01:13,855 --> 00:01:18,540
 on its own, then hand you the one document that runs all of them together.
 
 23
-00:01:12,866 --> 00:01:17,681
+00:01:18,540 --> 00:01:23,732
 That's what actually survives into your real workflow, not the individual lectures
 
 24
-00:01:17,681 --> 00:01:18,327
+00:01:23,732 --> 00:01:24,428
 themselves.
 
 25
-00:01:18,877 --> 00:01:23,355
+00:01:24,978 --> 00:01:29,893
 Here's the whole checklist, four questions, four owners, run at the checkpoints
 
 26
-00:01:23,355 --> 00:01:27,946
+00:01:29,893 --> 00:01:34,932
 Section 6.5 already laid out: claims and rights before generation, accuracy right
 
 27
-00:01:27,946 --> 00:01:29,533
+00:01:34,932 --> 00:01:36,674
 after, disclosure at upload.
 
 28
-00:01:29,533 --> 00:01:31,063
+00:01:36,674 --> 00:01:38,353
 Save this exactly as it is.
 
 29
-00:01:31,063 --> 00:01:35,598
+00:01:38,353 --> 00:01:43,330
 The value isn't in the wording, it's in having one document that answers "did we
 
 30
-00:01:35,598 --> 00:01:40,133
+00:01:43,330 --> 00:01:48,307
 check everything" without anyone having to reconstruct five lectures from memory
 
 31
-00:01:40,133 --> 00:01:41,493
+00:01:48,307 --> 00:01:49,800
 under deadline pressure.
 
 32
-00:01:41,493 --> 00:01:43,760
+00:01:49,800 --> 00:01:52,289
 Notice, too, how short this actually is.
 
 33
-00:01:43,760 --> 00:01:48,125
+00:01:52,289 --> 00:01:57,079
 Four lines, four owners, no paragraph of explanation attached to any of them,
 
 34
-00:01:48,125 --> 00:01:52,773
+00:01:57,079 --> 00:02:02,180
 because the explanation already happened, properly, across five separate lectures.
 
 35
-00:01:52,773 --> 00:01:57,307
+00:02:02,180 --> 00:02:07,157
 A checklist that's short enough to read in thirty seconds is one people actually
 
 36
-00:01:57,307 --> 00:01:57,591
+00:02:07,157 --> 00:02:07,468
 read.
 
 37
-00:01:57,591 --> 00:02:02,069
+00:02:07,468 --> 00:02:12,383
 A checklist that reads like a policy document is one people learn to skip past.
 
 38
-00:02:02,069 --> 00:02:04,279
+00:02:12,383 --> 00:02:14,809
 Notice the shape of each question, too.
 
 39
-00:02:04,279 --> 00:02:08,984
+00:02:14,809 --> 00:02:19,973
 All four are yes-or-no, the same discipline Section 6.1 insisted on from the start.
 
 40
-00:02:08,984 --> 00:02:12,668
+00:02:19,973 --> 00:02:24,016
 "Could each claim survive being said out loud" has a real answer.
 
 41
-00:02:12,668 --> 00:02:17,260
+00:02:24,016 --> 00:02:29,056
 A vaguer version, "does this feel honest," doesn't, and a checklist full of vague
 
 42
-00:02:17,260 --> 00:02:20,774
+00:02:29,056 --> 00:02:32,913
 questions gets skipped exactly as fast as no checklist at all.
 
 43
-00:02:21,324 --> 00:02:23,378
+00:02:33,463 --> 00:02:35,702
 Notice this isn't a hypothetical run.
 
 44
-00:02:23,378 --> 00:02:27,931
+00:02:35,702 --> 00:02:40,666
 Two of the four checks actually caught something real on Harlan's own account, the
 
 45
-00:02:27,931 --> 00:02:31,040
+00:02:40,666 --> 00:02:44,056
 two you've already seen in full in Sections 6.2 and 6.4.
 
 46
-00:02:31,040 --> 00:02:34,649
+00:02:44,056 --> 00:02:47,991
 This checklist isn't a formality that happens to pass every time.
 
 47
-00:02:34,649 --> 00:02:39,202
+00:02:47,991 --> 00:02:52,954
 It's the thing that actually caught two genuine problems before either one spent a
 
 48
-00:02:39,202 --> 00:02:39,590
+00:02:52,954 --> 00:02:53,378
 dollar.
 
 49
-00:02:39,590 --> 00:02:42,311
+00:02:53,378 --> 00:02:56,344
 Notice, too, which checks passed cleanly and why.
 
 50
-00:02:42,311 --> 00:02:46,642
+00:02:56,344 --> 00:03:01,066
 Accuracy passed because Section 3's colour and text fixes were already applied
 
 51
-00:02:46,642 --> 00:02:48,974
+00:03:01,066 --> 00:03:03,608
 before this batch ever reached pre-flight.
 
 52
-00:02:48,974 --> 00:02:49,862
+00:03:03,608 --> 00:03:04,577
 That's not luck.
 
 53
-00:02:49,862 --> 00:02:54,081
+00:03:04,577 --> 00:03:09,177
 It's what happens when the earlier sections' discipline is already built in:
 
 54
-00:02:54,081 --> 00:02:57,413
+00:03:09,177 --> 00:03:12,809
 pre-flight catches what's left over, not everything at once.
 
 55
-00:02:57,413 --> 00:03:01,355
+00:03:12,809 --> 00:03:17,107
 That's actually the healthiest way to think about this checklist's job.
 
 56
-00:03:01,355 --> 00:03:04,408
+00:03:17,107 --> 00:03:20,436
 It isn't the only line of defence in this whole course.
 
 57
-00:03:04,408 --> 00:03:08,795
+00:03:20,436 --> 00:03:25,218
 It's the last one, catching whatever slipped through every earlier check, brand
 
 58
-00:03:08,795 --> 00:03:13,403
+00:03:25,218 --> 00:03:30,242
 control in Section 3, licence tiers in Section 4, the claims discipline you've been
 
 59
-00:03:13,403 --> 00:03:17,567
+00:03:30,242 --> 00:03:34,782
 building since Section 2.3's hook taxonomy first taught you to be specific.
 
 60
-00:03:17,567 --> 00:03:22,120
+00:03:34,782 --> 00:03:39,746
 Four checks here, not forty, because forty would mean the earlier sections weren't
 
 61
-00:03:22,120 --> 00:03:23,008
+00:03:39,746 --> 00:03:40,715
 doing their job.
 
 62
-00:03:23,558 --> 00:03:26,963
+00:03:41,265 --> 00:03:44,942
 One honest expectation before you run this on your own batch.
 
 63
-00:03:26,963 --> 00:03:30,089
+00:03:44,942 --> 00:03:48,317
 Passing zero for four on the first try would be unusual.
 
 64
-00:03:30,089 --> 00:03:34,778
+00:03:48,317 --> 00:03:53,381
 Failing one or two, the way Harlan's batch did, is the normal result of a real check
 
 65
-00:03:34,778 --> 00:03:36,062
+00:03:53,381 --> 00:03:54,767
 actually doing its job.
 
 66
-00:03:36,062 --> 00:03:40,360
+00:03:54,767 --> 00:03:59,408
 Measure success the same way Section 3.6 and 4.6 already taught you to: not a
 
 67
-00:03:40,360 --> 00:03:44,993
+00:03:59,408 --> 00:04:04,411
 perfect first pass, but every real problem caught here, before Section seven's test
 
 68
-00:03:44,993 --> 00:03:46,947
+00:04:04,411 --> 00:04:06,521
 finds it the expensive way instead.
 
 69
-00:03:46,947 --> 00:03:51,356
+00:04:06,521 --> 00:04:11,283
 Ask yourself, honestly, what a zero-for-four result on your own first run would
 
 70
-00:03:51,356 --> 00:03:52,138
+00:04:11,283 --> 00:04:12,127
 actually mean.
 
 71
-00:03:52,138 --> 00:03:56,548
+00:04:12,127 --> 00:04:16,889
 Either your batch is genuinely cleaner than Harlan's, which is possible, or the
 
 72
-00:03:56,548 --> 00:04:00,511
+00:04:16,889 --> 00:04:21,169
 checklist isn't being run with real scrutiny, which is far more common.
 
 73
-00:04:00,511 --> 00:04:04,809
+00:04:21,169 --> 00:04:25,810
 If nothing ever fails, go back and check whether you're actually testing each
 
 74
-00:04:04,809 --> 00:04:08,437
+00:04:25,810 --> 00:04:29,728
 question against the batch, or just glancing at it and moving on.
 
 75
-00:04:08,987 --> 00:04:10,810
+00:04:30,278 --> 00:04:32,249
 One lecture left in this section.
 
 76
-00:04:10,810 --> 00:04:15,120
+00:04:32,249 --> 00:04:36,906
 Then Section seven takes a batch that's already passed every one of these four
 
 77
-00:04:15,120 --> 00:04:19,595
+00:04:36,906 --> 00:04:41,743
 checks and finally puts it in front of a real test, with a budget and a kill rule
 
 78
-00:04:19,595 --> 00:04:20,092
+00:04:41,743 --> 00:04:42,281
 attached.
 
 79
-00:04:20,092 --> 00:04:24,290
+00:04:42,281 --> 00:04:46,819
 Before that, run this exact checklist on your own three video ads and twenty
 
 80
-00:04:24,290 --> 00:04:27,495
+00:04:46,819 --> 00:04:50,282
 statics, the same way you just watched it run on Harlan's.
 
 81
-00:04:27,495 --> 00:04:31,804
+00:04:50,282 --> 00:04:54,940
 Name an owner for each check, even if every owner is you, and note what fails.
 
 82
-00:04:31,804 --> 00:04:36,389
+00:04:54,940 --> 00:04:59,896
 Whatever it catches now is cheaper than whatever it would have cost you to find out
 
 83
-00:04:36,389 --> 00:04:39,317
+00:04:59,896 --> 00:05:03,061
 later, in a live test, with real money already spent.

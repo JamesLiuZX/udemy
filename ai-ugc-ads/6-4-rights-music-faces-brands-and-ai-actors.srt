@@ -1,307 +1,307 @@
 1
-00:00:00,350 --> 00:00:03,140
+00:00:00,350 --> 00:00:03,384
 Pre-flight doesn't run as one big audit at the end.
 
 2
-00:00:03,140 --> 00:00:07,461
+00:00:03,384 --> 00:00:08,084
 It's a pass, then another pass, on the same batch, and rights comes right after
 
 3
-00:00:07,461 --> 00:00:07,844
+00:00:08,084 --> 00:00:08,500
 claims.
 
 4
-00:00:07,844 --> 00:00:12,439
+00:00:08,500 --> 00:00:13,498
 Section 4.1 already taught Sam one version of this problem: an avatar's licence tier
 
 5
-00:00:12,439 --> 00:00:13,752
+00:00:13,498 --> 00:00:14,925
 quietly gating paid use.
 
 6
-00:00:13,752 --> 00:00:15,557
+00:00:14,925 --> 00:00:16,889
 That was never the whole picture.
 
 7
-00:00:15,557 --> 00:00:20,042
+00:00:16,889 --> 00:00:21,767
 It was the first, most obvious piece of a question that applies to everything in a
 
 8
-00:00:20,042 --> 00:00:21,902
+00:00:21,767 --> 00:00:23,789
 frame that isn't your own product.
 
 9
-00:00:21,902 --> 00:00:26,442
+00:00:23,789 --> 00:00:28,727
 Four things in a typical ad can carry a rights problem: a face, a voice, a piece of
 
 10
-00:00:26,442 --> 00:00:28,412
+00:00:28,727 --> 00:00:30,869
 music, and a brand that isn't yours.
 
 11
-00:00:28,412 --> 00:00:30,435
+00:00:30,869 --> 00:00:33,070
 You've handled the first two already.
 
 12
-00:00:30,435 --> 00:00:33,718
+00:00:33,070 --> 00:00:36,640
 This lecture gathers all four, and adds the two you haven't.
 
 13
-00:00:33,718 --> 00:00:38,094
+00:00:36,640 --> 00:00:41,399
 Why gather them into one lecture instead of leaving each where it first came up?
 
 14
-00:00:38,094 --> 00:00:42,688
+00:00:41,399 --> 00:00:46,396
 A checklist scattered across three sections is one nobody actually runs in full, and
 
 15
-00:00:42,688 --> 00:00:47,229
+00:00:46,396 --> 00:00:51,334
 remembering under deadline pressure is exactly the failure mode this section exists
 
 16
-00:00:47,229 --> 00:00:47,830
+00:00:51,334 --> 00:00:51,988
 to prevent.
 
 17
-00:00:47,830 --> 00:00:50,675
+00:00:51,988 --> 00:00:55,082
 One place, four questions, run together, every time.
 
 18
-00:00:50,675 --> 00:00:53,300
+00:00:55,082 --> 00:00:57,937
 Notice, too, that all four share the same shape.
 
 19
-00:00:53,300 --> 00:00:57,786
+00:00:57,937 --> 00:01:02,816
 Each one asks whether something in your frame belongs to someone else, and whether
 
 20
-00:00:57,786 --> 00:00:59,427
+00:01:02,816 --> 00:01:04,600
 you have permission to use it.
 
 21
-00:00:59,427 --> 00:01:03,967
+00:01:04,600 --> 00:01:09,538
 Once you see that pattern, you stop needing a separate category for "avatar rights"
 
 22
-00:01:03,967 --> 00:01:08,179
+00:01:09,538 --> 00:01:14,119
 versus "music rights" versus "brand rights." It's one question, asked of four
 
 23
-00:01:08,179 --> 00:01:08,562
+00:01:14,119 --> 00:01:14,535
 things.
 
 24
-00:01:09,112 --> 00:01:11,412
+00:01:15,085 --> 00:01:17,606
 Notice the last row isn't actually new.
 
 25
-00:01:11,412 --> 00:01:16,130
+00:01:17,606 --> 00:01:22,776
 An AI-generated actor is the same category as the avatars you already checked in
 
 26
-00:01:16,130 --> 00:01:18,489
+00:01:22,776 --> 00:01:25,362
 Section 4.1, whatever the tool calls it.
 
 27
-00:01:18,489 --> 00:01:23,384
+00:01:25,362 --> 00:01:30,726
 The genuinely new material here is music and third-party brands, because nothing so
 
 28
-00:01:23,384 --> 00:01:25,979
+00:01:30,726 --> 00:01:33,570
 far has asked you to think about either one.
 
 29
-00:01:25,979 --> 00:01:30,874
+00:01:33,570 --> 00:01:38,934
 Music is the easiest to get wrong, because a track that's free to use personally is
 
 30
-00:01:30,874 --> 00:01:34,530
+00:01:38,934 --> 00:01:42,941
 often not automatically cleared for paid commercial placement.
 
 31
-00:01:34,530 --> 00:01:39,425
+00:01:42,941 --> 00:01:48,306
 Check the specific licence tier a platform's music library grants for ads, the same
 
 32
-00:01:39,425 --> 00:01:44,025
+00:01:48,306 --> 00:01:53,347
 discipline Section 4.1 already taught you for avatars, applied to a completely
 
 33
-00:01:44,025 --> 00:01:44,969
+00:01:53,347 --> 00:01:54,381
 different asset.
 
 34
-00:01:44,969 --> 00:01:49,864
+00:01:54,381 --> 00:01:59,745
 Ask yourself, honestly: have you ever actually read a music library's licence terms
 
 35
-00:01:49,864 --> 00:01:54,287
+00:01:59,745 --> 00:02:04,593
 all the way through, or did you assume "free" meant cleared for everything?
 
 36
-00:01:54,287 --> 00:01:55,408
+00:02:04,593 --> 00:02:05,821
 Most people assume.
 
 37
-00:01:55,408 --> 00:02:00,126
+00:02:05,821 --> 00:02:10,991
 That assumption is exactly where a rights gap on music actually starts, quietly,
 
 38
-00:02:00,126 --> 00:02:01,836
+00:02:10,991 --> 00:02:12,865
 months before anyone notices.
 
 39
-00:02:02,386 --> 00:02:07,095
+00:02:13,415 --> 00:02:18,583
 Here's what running all four actually looks like on a real batch, not four separate
 
 40
-00:02:07,095 --> 00:02:09,365
+00:02:18,583 --> 00:02:21,074
 audits scattered across different weeks.
 
 41
-00:02:09,365 --> 00:02:12,429
+00:02:21,074 --> 00:02:24,436
 Sam runs this as one pass, right before a batch ships.
 
 42
-00:02:12,429 --> 00:02:16,344
+00:02:24,436 --> 00:02:28,732
 The face and voice check is the one he already had, from Section 4.1.
 
 43
-00:02:16,344 --> 00:02:21,110
+00:02:28,732 --> 00:02:33,962
 Music gets the same treatment: not "is this free," but "is this specifically cleared
 
 44
-00:02:21,110 --> 00:02:25,536
+00:02:33,962 --> 00:02:38,818
 for paid social," which is a different, narrower question a lot of free-to-use
 
 45
-00:02:25,536 --> 00:02:27,352
+00:02:38,818 --> 00:02:40,811
 libraries don't actually answer.
 
 46
-00:02:27,352 --> 00:02:32,118
+00:02:40,811 --> 00:02:46,041
 And every generated scene gets one visual sweep for a brand that shouldn't be there,
 
 47
-00:02:32,118 --> 00:02:36,827
+00:02:46,041 --> 00:02:51,208
 the same scan Section 3.3 taught him to run for his own product, aimed outward this
 
 48
-00:02:36,827 --> 00:02:37,111
+00:02:51,208 --> 00:02:51,520
 time.
 
 49
-00:02:37,111 --> 00:02:41,877
+00:02:51,520 --> 00:02:56,750
 Total time for all four checks on a full batch: about ten minutes, once it's a habit
 
 50
-00:02:41,877 --> 00:02:44,260
+00:02:56,750 --> 00:02:59,365
 rather than something relearned each time.
 
 51
-00:02:44,260 --> 00:02:48,743
+00:02:59,365 --> 00:03:04,284
 Compare that to the cost of any single one going wrong, a takedown, a licensing
 
 52
-00:02:48,743 --> 00:02:53,509
+00:03:04,284 --> 00:03:09,514
 dispute, a legal letter from a brand whose logo showed up uninvited, and ten minutes
 
 53
-00:02:53,509 --> 00:02:55,098
+00:03:09,514 --> 00:03:11,257
 stops looking like overhead.
 
 54
-00:02:55,098 --> 00:02:58,502
+00:03:11,257 --> 00:03:14,993
 It's some of the cheapest insurance in this entire workflow.
 
 55
-00:02:59,052 --> 00:03:03,648
+00:03:15,543 --> 00:03:20,496
 One trap worth naming plainly, because it's easy to walk into without noticing.
 
 56
-00:03:03,648 --> 00:03:07,895
+00:03:20,496 --> 00:03:25,074
 A generator asked for "a person doing laundry" might return a shot with a
 
 57
-00:03:07,895 --> 00:03:12,781
+00:03:25,074 --> 00:03:30,341
 recognisable detergent bottle in frame, purely because that's a common object in its
 
 58
-00:03:12,781 --> 00:03:16,039
+00:03:30,341 --> 00:03:33,852
 training data, not because anyone chose it deliberately.
 
 59
-00:03:16,039 --> 00:03:20,402
+00:03:33,852 --> 00:03:38,555
 If that bottle is a real, identifiable brand, you've now got someone else's
 
 60
-00:03:20,402 --> 00:03:23,020
+00:03:38,555 --> 00:03:41,376
 trademark in your ad without their knowledge.
 
 61
-00:03:23,020 --> 00:03:27,616
+00:03:41,376 --> 00:03:46,330
 Check generated scenes for exactly this, the same way Section 3.3 taught you to
 
 62
-00:03:27,616 --> 00:03:31,921
+00:03:46,330 --> 00:03:50,970
 check your own product for accuracy, just aimed outward instead of inward.
 
 63
-00:03:31,921 --> 00:03:33,783
+00:03:50,970 --> 00:03:52,977
 Why does this feel easy to skip?
 
 64
-00:03:33,783 --> 00:03:38,320
+00:03:52,977 --> 00:03:57,867
 Because your attention, checking a generated scene, naturally goes to your own
 
 65
-00:03:38,320 --> 00:03:41,520
+00:03:57,867 --> 00:04:01,316
 product first, the way Section 3.3 trained you to look.
 
 66
-00:03:41,520 --> 00:03:46,407
+00:04:01,316 --> 00:04:06,583
 A background brand sits outside that focus entirely, in the part of the frame you're
 
 67
-00:03:46,407 --> 00:03:48,501
+00:04:06,583 --> 00:04:08,840
 least likely to be studying closely.
 
 68
-00:03:48,501 --> 00:03:53,330
+00:04:08,840 --> 00:04:14,045
 That's exactly why it needs its own deliberate glance, not a hope that you'd notice
 
 69
-00:03:53,330 --> 00:03:54,144
+00:04:14,045 --> 00:04:14,923
 it in passing.
 
 70
-00:03:54,694 --> 00:03:59,238
+00:04:15,473 --> 00:04:20,398
 Next lecture asks the question this whole section has been building toward: once all
 
 71
-00:03:59,238 --> 00:04:03,782
+00:04:20,398 --> 00:04:25,324
 four checks exist, who actually runs them, and at what point in the process, so they
 
 72
-00:04:03,782 --> 00:04:06,865
+00:04:25,324 --> 00:04:28,666
 happen every time instead of only when someone remembers.
 
 73
-00:04:06,865 --> 00:04:11,300
+00:04:28,666 --> 00:04:33,474
 Before that, run all four checks on whatever's currently live in your own account,
 
 74
-00:04:11,300 --> 00:04:13,464
+00:04:33,474 --> 00:04:35,820
 not just the batch you're about to ship.
 
 75
-00:04:13,464 --> 00:04:18,008
+00:04:35,820 --> 00:04:40,745
 It's a fair bet at least one older asset is running on a music track or a background
 
 76
-00:04:18,008 --> 00:04:22,444
+00:04:40,745 --> 00:04:45,553
 scene you never actually checked this closely, and it's better to find that out on
 
 77
-00:04:22,444 --> 00:04:24,661
+00:04:45,553 --> 00:04:47,957
 your own schedule than on someone else's.
