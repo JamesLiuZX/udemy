@@ -1,0 +1,40 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../../../theme/deck.css">
+<style>
+  html,body{margin:0;padding:0;width:1500px;height:844px;overflow:hidden}
+  body{background:var(--paper)}
+  .frame{position:relative;width:1500px;height:844px}
+</style></head><body><div class="frame">
+<svg width="1500" height="844" viewBox="0 0 1500 844" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dots" width="46" height="46" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#788594" opacity="0.28"/>
+    </pattern>
+    <clipPath id="passzone"><rect x="962" y="0" width="538" height="700"/></clipPath>
+    <clipPath id="failzone"><rect x="0" y="0" width="962" height="700"/></clipPath>
+  </defs>
+  <rect width="1500" height="844" fill="#FFFFFF"/>
+  <rect width="1500" height="844" fill="url(#dots)"/>
+  <!-- baseline -->
+  <line x1="90" y1="668" x2="1410" y2="668" stroke="#14181D" stroke-width="5" stroke-linecap="round"/>
+  <!-- distribution: fail side tint -->
+  <path clip-path="url(#failzone)" d="M120 668 C 320 660, 420 210, 700 196 C 980 210, 1090 640, 1380 664 L1380 668 L120 668 Z" fill="#FAEBE9"/>
+  <!-- distribution: pass side tint -->
+  <path clip-path="url(#passzone)" d="M120 668 C 320 660, 420 210, 700 196 C 980 210, 1090 640, 1380 664 L1380 668 L120 668 Z" fill="#E9F0F9"/>
+  <path clip-path="url(#passzone)" d="M120 668 C 320 660, 420 210, 700 196 C 980 210, 1090 640, 1380 664 L1380 668 L120 668 Z" fill="#1B4F8F" opacity="0.18"/>
+  <!-- curve stroke -->
+  <path d="M120 668 C 320 660, 420 210, 700 196 C 980 210, 1090 640, 1380 664" fill="none" stroke="#14181D" stroke-width="9" stroke-linecap="round"/>
+  <!-- threshold -->
+  <line x1="962" y1="112" x2="962" y2="668" stroke="#8A5A08" stroke-width="10" stroke-dasharray="2 26" stroke-linecap="round"/>
+  <rect x="920" y="52" width="290" height="76" rx="14" fill="#8A5A08"/>
+  <text x="1065" y="103" font-family="PlexMono, monospace" font-size="40" font-weight="600" fill="#FFFFFF" text-anchor="middle">EVAL &#8805; 0.87</text>
+  <!-- fail mark -->
+  <g stroke="#A63229" stroke-width="16" stroke-linecap="round">
+    <line x1="470" y1="480" x2="546" y2="556"/><line x1="546" y1="480" x2="470" y2="556"/>
+  </g>
+  <!-- pass check -->
+  <path d="M1085 520 L1150 590 L1290 400" fill="none" stroke="#1C6B4C" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- footer word: big idea, serif, quiet -->
+  <text x="750" y="790" text-anchor="middle" font-family="Schola, Georgia, serif" font-size="50" fill="#45505E">Ship the AI feature you can <tspan fill="#1B4F8F" font-weight="700">prove</tspan> — not the one you <tspan font-style="italic">hope</tspan> works.</text>
+</svg>
+</div></body></html>
