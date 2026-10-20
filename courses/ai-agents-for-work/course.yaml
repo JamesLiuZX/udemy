@@ -98,9 +98,15 @@ free_preview_lectures: ["0.1", "0.3", "3.1"]
 # --- Compliance -------------------------------------------------------------
 ai_disclosure: "This course contains the use of artificial intelligence."
 
-# Author elected full-TTS delivery, 2026-08-12; presence carried by the AI
-# disclosure, instructor sign-off and Q&A responsiveness rather than recorded
-# voice. No lecture requires the instructor's own voice.
+# Narration is synthetic TTS course-wide; no lecture requires the instructor's
+# own voice. Author decisions: full-TTS delivery (2026-08-12); on 2026-08-31
+# narration is TTS, not recorded voice, and production voice should cost
+# nothing, so the provider is the free local Kokoro (see production.tts and
+# docs/07-tts.md), with the paid API providers kept as overrides. Presence is
+# carried by the AI disclosure, instructor sign-off and Q&A responsiveness.
+# Recording promo/0.1 personally remains an optional presence upgrade.
+# BEFORE UPLOAD: re-check Udemy's current marketplace policy on AI narration;
+# that policy was the reason this list used to gate the build.
 human_voice_required: []
 
 # --- Freshness registry ------------------------------------------------------
@@ -123,8 +129,17 @@ production:
   target_lufs: -16.0
   max_lecture_minutes: 12
   spellcheck_lang: en_GB
+  # Zero-cost local narration (James, 2026-08-31): Kokoro-82M via kokoro-onnx,
+  # no API key, Apache-2.0. All three courses were built and release-QC'd with
+  # it (docs/PRODUCTION-REPORT.md); setup, voices and costs: docs/07-tts.md.
+  # Paid overrides via this block: provider openai (model gpt-4o-mini-tts, about
+  # $8 a course, the cheap zero-setup option) or elevenlabs.
+  # Voice history: bf_emma -> af_sarah -> af_heart, James's ear-test choice
+  # 2026-09-01; the final MP4s were rendered with af_heart. tts.py caches audio
+  # by spoken text only, so wipe build/ before changing voice, provider or
+  # speed, or stale audio leaks into the new build.
   tts:
-    provider: kokoro
+    provider: kokoro          # kokoro | openai | elevenlabs | offline
     voice: "af_heart"        # American female, pack's highest-rated; James's choice 2026-09-01 after ear-test (was af_sarah, before that bf_emma)
     lang: "en-gb"
 
@@ -153,7 +168,7 @@ sections:
     title: "Start Here: Your First Agent in 20 Minutes"
     goal: "Import a working inbox-triage template, connect it, watch it work; feel the possibility and the first doubt."
     lectures:
-      - {id: "0.1", title: "Welcome, and what you'll have by Friday", duration: 3, voice: human}
+      - {id: "0.1", title: "Welcome, and what you'll have by Friday", duration: 3}
       - {id: "0.2", title: "How this course works: n8n, your own AI, and the 10 artifacts", duration: 4}
       - {id: "0.3", title: "Your first agent in 20 minutes", duration: 8, hands_on: true}
       - {id: "0.4", title: "What it just read, and the doubt that should follow", duration: 6}
@@ -269,7 +284,7 @@ sections:
     lectures:
       - {id: "11.0", title: "Section intro", duration: 1}
       - {id: "11.1", title: "The capstone brief", duration: 6, hands_on: true}
-      - {id: "11.2", title: "Worked solution, part 1: job description and build", duration: 8, voice: human}
-      - {id: "11.3", title: "Worked solution, part 2: trial, guardrails and cost", duration: 8, voice: human}
+      - {id: "11.2", title: "Worked solution, part 1: job description and build", duration: 8}
+      - {id: "11.3", title: "Worked solution, part 2: trial, guardrails and cost", duration: 8}
       - {id: "11.4", title: "The self-assessment rubric", duration: 5}
-      - {id: "11.5", title: "Thank you, and where to go next", duration: 3, voice: human}
+      - {id: "11.5", title: "Thank you, and where to go next", duration: 3}
