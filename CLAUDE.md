@@ -170,7 +170,7 @@ text-free atmosphere, never as diagrams. Learners specifically call out AI
 images with broken text.
 
 - Charts: a ` ```figure ` block with a YAML spec, rendered by `pipeline/figures.py`
-  (`dotplot`, `histogram`, `sampling`).
+  (`dotplot`, `histogram`, `composition`, `sampling`, `trend`, `grid`).
 - Flows: ` ```mermaid `.
 - Pair with `figcap:` so the figure is numbered and referenceable.
 
@@ -214,6 +214,10 @@ These are fixed. Do not "simplify" them back out.
   one LaTeX span and mangles everything between them, dropping spaces and the
   closing `$`. Costed real time in Section 7. Write currency as a bare number
   ("3/M") wherever a second `$` would land on the same line.
+- **The TTS cache is keyed by spoken text only**, not by voice, provider or
+  speed. Change any of those with a populated `build/` and stale audio from the
+  old voice silently leaks into the new build. Wipe `build/` first. (Learned
+  when the voice moved from `bf_emma` to `af_sarah` to `af_heart`.)
 
 ---
 
@@ -247,8 +251,13 @@ docs/08-channels.md               Channel map: Udemy, KDP, Spotify, YouTube; cut
 docs/09-visual-standard.md        Screenshots, diagrams, AI-image lanes, the hook standard
 growth/                           Paste-ready automation prompts (cron / Cowork)
 books/                            KDP publishing system (own CLAUDE.md; read it first)
+STATUS.md                         Portfolio status page (dated; CLAUDE.md §10 is current)
+docs/PRODUCTION-REPORT.md         Full-TTS conversion, Kokoro builds, what blocks upload
+proofs/video/                     Three short preview videos, one per course
 courses/<slug>/course.yaml        Curriculum, landing copy, config (source of truth)
 courses/<slug>/story-bible.yaml   Canonical facts for the running case study
+courses/<slug>/EDITORIAL-REPORT.md  What each editorial pass changed and checked
+courses/<slug>/artifacts/         Downloadable files promised in course.yaml
 courses/<slug>/lectures/*.md      One file per lecture
 courses/_template/                Lecture template
 pipeline/                         build, lecture, markup, slides, render, figures,
@@ -264,21 +273,56 @@ Chromium on purpose, so there is no dependency tree to rot.
 
 ## 10. Current state and what to do next
 
-Course #1 `ai-for-pms`: 12 sections, 10h targeted. **All 102 lecture files
-are drafted.** Section 0 is built and visually verified; Sections 1 to 11
-are unrendered, unverified and unsigned.
+As of 2026-10-20 everything is on `main`. Three courses are fully written,
+rendered, visually inspected and checked against their story bibles (per
+`courses/<slug>/EDITORIAL-REPORT.md` and `docs/PRODUCTION-REPORT.md`):
 
-Sibling system `books/` (own CLAUDE.md, own pipeline) has seven KDP titles
-with chapters 1 to 3 drafted each.
+| Course | Lectures | Narration, final render | `qc.py` today | Artifacts promised / built |
+| --- | --- | --- | --- | --- |
+| `ai-for-pms` | 102 in 12 sections | 8.2 h | 105 fail, 8 warn | 12 / 1 (A05) |
+| `ai-agents-for-work` | 76 in 12 sections | 3.6 h | 78 fail, 21 warn | 10 / 10 |
+| `ai-ugc-ads` | 81 in 12 sections | 6.0 h | 91 fail, 4 warn | 11 / 0 |
 
-**Next, in order (rationale in `docs/04-quality-bar.md` §9 and
-`docs/05-kdp-playbook.md` §7):**
+Every FAIL is a gate that is deliberately James's: 259 `verified: false`
+sign-offs (102, 76, 81) and `[SCREENSHOT-NEEDED]` markers (ai-for-pms 2.6,
+6.2, 10.4; ai-agents-for-work 3.2, 5.2; ai-ugc-ads 3.1, 3.2, 4.1, 4.3, 5.1,
+5.2, 5.5, 6.3, 6.4, 9.2, with 30 markers). No `[INSTRUCTOR-INPUT]` markers
+remain. Release QC on the final renders had zero technical failures. The
+WARNs are accepted: short section dividers (3, 21 and 3), one dense slide in
+ai-ugc-ads 0.1, and five ai-for-pms narrations more than two minutes under
+their `duration_target` (1.6, 4.7, 5.4, 5.5, 5.7). Narration hours are from the
+final render's manifests; the 7.3, 3.4 and 5.4 h in `docs/PRODUCTION-REPORT.md`
+are the earlier `bf_emma` build.
 
-1. Implement the QC additions specced in `docs/04-quality-bar.md` §7.
-2. Run the course verification pass section by section: render, view, read
-   aloud, confirm story-bible callbacks, then instructor sign-off.
-3. On the book side, finish `stop-guessing` end to end before touching the
-   other six titles.
+**The final rendered MP4s and SRTs (Kokoro `af_heart`, all three courses, 259
+lectures, about 4 GB) live at git tag `mp4/af_heart-2026-09-02`, formerly
+branch `claude/mp4-builds`. They are deliberately kept out of `main`: video is
+regenerable, and merging it would put 4 GB into every future clone. Never
+merge that tag or branch into `main`.**
+
+Sibling system `books/` (own CLAUDE.md, own pipeline) has seven KDP titles,
+English and Simplified Chinese, with proofs built. Its gate is
+`python3 books/pipeline/qc.py --book <slug>`; each English edition reports
+`1 fail, 0 warn`, the `verified: false` sign-off. Finish publishing
+`stop-guessing` before any other title (`docs/05-kdp-playbook.md` §1).
+
+**What stands between the courses and submission to Udemy:**
+
+1. James reads and signs off every lecture (`verified: true`). Nothing else
+   may set it.
+2. James captures the `[SCREENSHOT-NEEDED]` screenshots from his own accounts.
+3. A session builds the missing downloadables: ai-for-pms A01 to A04 and A06
+   to A12, and ai-ugc-ads B01 to B11. The landing copy promises 12 and 11
+   artifacts and lectures say "Download A0x". One artifact per session.
+4. James fixes listing details: Udemy titles are limited to 60 characters (per
+   the 2026-09-04 listing session) and `ai-for-pms` is 71, `ai-agents-for-work`
+   67. Keep the AI-disclosure sentence as the last line of every description.
+5. James re-checks Udemy's current policy on AI narration (flagged in each
+   `course.yaml`), decides whether `ai-agents-for-work` ships at about 3.6 h,
+   and uploads the MP4 and SRT files from the tag above.
+
+After any script edit, wipe `build/` and re-run the build for that course
+(section 7 explains why); the narration cache makes that cheap.
 
 A half-finished section is worth less than one finished lecture, and seven
 three-chapter manuscripts are worth less than one finished book.

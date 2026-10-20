@@ -2,6 +2,13 @@
 
 > Status: COMPLETE (2026-08-19). All three courses built with production
 > voice and release-QC checked; only author-side gates remain (§6).
+>
+> Update 2026-10-20: the production voice was later changed to `af_heart`
+> (James's ear-test choice, 2026-09-01) and all three courses were re-rendered
+> with it; the figures below are from the earlier `bf_emma` build. The final MP4s
+> and SRTs live at git tag `mp4/af_heart-2026-09-02` (formerly branch
+> `claude/mp4-builds`), kept out of `main`. The branch `claude/keep-writing-apht23`
+> named below is merged into `main`; its commits are in main's history.
 
 Date: 2026-08-12. Author decision: full-TTS delivery across all three
 courses, superseding the `human_voice_required` policy in every

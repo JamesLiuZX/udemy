@@ -23,7 +23,7 @@ render happens about once per course; edits re-spend only on changed lines.
 | Google Chirp 3 HD | $30/1M, first 1M chars each month free | Very good | Effectively free monthly; provider not yet wired |
 | Chatterbox-Turbo local | $0 | Preferred over ElevenLabs by 65% in blind tests | MIT licence; heavier than Kokoro, wants a GPU |
 
-**Decision: default provider is `kokoro` (free, local, British voices).**
+**Decision: default provider is `kokoro` (free, local), production voice `af_heart`.**
 The one-command upgrade if a render disappoints or setup is unwanted:
 `--provider openai` (~$8 per course, no model files, and its instruction
 steering pairs naturally with the `delivery:` hints planned in
@@ -42,15 +42,33 @@ export KOKORO_VOICES=/path/to/voices-v1.0.bin
 python3 pipeline/build.py --course courses/ai-for-pms --provider kokoro
 ```
 
-Voices to audition first (set `production.tts.voice`): `bf_emma` (British
-female, the default here since the scripts are en_GB), `bm_george` (British
-male), `af_heart` (the American flagship, highest MOS). CPU renders slower
+Production voice (`production.tts.voice` in each `course.yaml`): `af_heart`,
+the American flagship with the highest MOS, chosen by James after an ear-test on
+2026-09-01. `bf_emma` (British female) was the first default and `af_sarah` the
+next; `bm_george` (British male) is an untried alternative. The scripts stay
+en_GB-spelled and `lang` stays `en-gb`, as in the final renders. The audio cache
+is keyed by spoken text only, so wipe `build/` before changing voice. CPU renders slower
 than the APIs but a full course is still an overnight job, not a blocker;
 this is the one Python-dependency exception to the stdlib-only rule, and it
 is optional (the provider errors with setup instructions if missing).
 
 QC note: `qc.py --release` fails builds made with the espeak `offline`
 scaffold. `kokoro` is a production voice and passes.
+
+### Decision log
+
+- 2026-08: default provider moves from ElevenLabs to local Kokoro (section 1).
+- 2026-08-12: full-TTS delivery for all three courses; no recorded voice
+  (`human_voice_required: []`).
+- 2026-08-19: first full Kokoro builds with `bf_emma`; release QC clean.
+- 2026-08-31: James decides narration is TTS, not recorded voice (his "API TTS"
+  decision), and that production voice should cost nothing. Kokoro stays the
+  default; `openai` and `elevenlabs` stay wired as paid overrides. To use a paid
+  API voice instead, set `production.tts.provider: openai` (about $8 a course),
+  wipe `build/` and rebuild.
+- 2026-09-01: voice `bf_emma`, then `af_sarah`, then `af_heart`, James's choice.
+- 2026-09-02: all three courses re-rendered with `af_heart`; the MP4s are
+  archived at git tag `mp4/af_heart-2026-09-02`.
 
 ## 3. Books: audiobooks without paying per character
 
