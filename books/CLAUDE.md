@@ -298,6 +298,6 @@ purpose.
 
 ## 9. Git
 
-Same branch and repo as the video course: `claude/keep-writing-apht23`.
-This is one repo with two independent production lines in it, not two
-repos. Do not commit `build/`.
+Same repo and trunk (`main`) as the video course; the rules are in "Branching:
+one trunk" at the top of the root `CLAUDE.md`. This is one repo with two
+independent production lines in it, not two repos. Do not commit `build/`.

@@ -1,5 +1,11 @@
 # Portfolio status
 
+> **Dated 2026-08-12.** The course rows below predate the narration expansion,
+> the voice change to `af_heart` and the final renders. For the current state of
+> the courses and what is left before Udemy submission, read `CLAUDE.md` §10 and
+> `docs/PRODUCTION-REPORT.md`. The final MP4s live at git tag
+> `mp4/af_heart-2026-09-02` (formerly branch `claude/mp4-builds`), not on `main`.
+
 The one page to open to see everything: three courses, seven books (English
 + Simplified Chinese each), and the launch/growth assets that support them.
 Built 2026-08-12. Every "next command" below is copy-pasteable; every QC

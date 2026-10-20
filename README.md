@@ -4,8 +4,11 @@ An end-to-end pipeline for building courses that pass Udemy's quality bar and
 earn 4.5+ ratings: source scripts → designed slides → SOTA narration → 1080p MP4
 + captions, with a quality gate that blocks anything not ready to submit.
 
-**Course #1 in progress:** *AI Product Skills for PMs & Analysts: Spec, Evaluate
-& Ship AI Features* — 12 sections, 100 lectures, 10h00m of target runtime.
+**Three courses, fully written and rendered:** *AI Product Skills for PMs &
+Analysts* (`ai-for-pms`, 102 lectures), *AI Agents for Your Job*
+(`ai-agents-for-work`, 76) and *AI UGC & Video Ads* (`ai-ugc-ads`, 81). A sibling
+system in `books/` produces the KDP titles. Current state and what is left before
+submission: `CLAUDE.md` §10.
 
 ---
 
@@ -142,11 +145,17 @@ renders are byte-identical on any machine with no network.
 
 | | |
 | --- | --- |
-| Pipeline | Working end to end — 1080p MP4 + SRT verified |
-| Curriculum | All 12 sections / 100 lectures specced in `course.yaml` (10h00m) |
-| Scripts written | Section 0 — 4 lectures, production-ready (15.1 min built) |
-| Scripts remaining | Sections 1–11 — 96 lectures |
-| Blocking gates | Instructor sign-off on all scripts + 4 `[INSTRUCTOR-INPUT]` markers in 0.1 |
+| Pipeline | Working end to end: 1080p MP4 + SRT, release QC with zero technical failures on all three courses |
+| Courses | `ai-for-pms` 102 lectures, `ai-agents-for-work` 76, `ai-ugc-ads` 81; all written, rendered and checked |
+| Blocking gates | 259 instructor sign-offs (`verified: true`) and the `[SCREENSHOT-NEEDED]` screenshots, both James's alone |
+| Missing downloadables | `ai-for-pms` A01 to A04, A06 to A12 and all of `ai-ugc-ads` B01 to B11 are promised in `course.yaml` but not built |
 
-Next: write Section 4 (Evaluation) — it is the section that justifies the price,
-and everything else leans on it.
+Details, counts per course and the upload steps: `CLAUDE.md` §10 and
+`docs/PRODUCTION-REPORT.md`.
+
+**Rendered videos.** The final MP4s and SRTs (Kokoro `af_heart` voice, all three
+courses, 259 lectures, about 4 GB) live at git tag `mp4/af_heart-2026-09-02`,
+formerly branch `claude/mp4-builds`. They are deliberately kept out of `main`
+because video is regenerable and would bloat every clone. Fetch them with
+`git clone --depth 1 --branch mp4/af_heart-2026-09-02 https://github.com/JamesLiuZX/udemy mp4s`,
+or regenerate with `python3 pipeline/build.py --course courses/<slug> --provider kokoro`.
