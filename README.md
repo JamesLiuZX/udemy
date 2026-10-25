@@ -148,7 +148,7 @@ renders are byte-identical on any machine with no network.
 | Pipeline | Working end to end: 1080p MP4 + SRT, release QC with zero technical failures on all three courses |
 | Courses | `ai-for-pms` 102 lectures, `ai-agents-for-work` 76, `ai-ugc-ads` 81; all written, rendered and checked |
 | Blocking gates | 259 instructor sign-offs (`verified: true`) and the `[SCREENSHOT-NEEDED]` screenshots, both James's alone |
-| Missing downloadables | `ai-for-pms` A01 to A04, A06 to A12 and all of `ai-ugc-ads` B01 to B11 are promised in `course.yaml` but not built |
+| Missing downloadables | `ai-for-pms` A02 to A04, A06 to A12 and all of `ai-ugc-ads` B01 to B11 are promised in `course.yaml` but not built |
 
 Details, counts per course and the upload steps: `CLAUDE.md` §10 and
 `docs/PRODUCTION-REPORT.md`.
