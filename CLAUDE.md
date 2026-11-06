@@ -339,7 +339,7 @@ rendered, visually inspected and checked against their story bibles (per
 | --- | --- | --- | --- | --- |
 | `ai-for-pms` | 102 in 12 sections | 8.2 h | 105 fail, 8 warn | 12 / 12 (A01 to A12, complete) |
 | `ai-agents-for-work` | 76 in 12 sections | 3.6 h | 78 fail, 21 warn | 10 / 10 |
-| `ai-ugc-ads` | 81 in 12 sections | 6.0 h | 91 fail, 4 warn | 11 / 10 (B01 to B10) |
+| `ai-ugc-ads` | 81 in 12 sections | 6.0 h | 91 fail, 4 warn | 11 / 11 (B01 to B11, complete) |
 
 Every FAIL is a gate that is deliberately James's: 259 `verified: false`
 sign-offs (102, 76, 81) and `[SCREENSHOT-NEEDED]` markers (ai-for-pms 2.6,
@@ -369,9 +369,9 @@ English and Simplified Chinese, with proofs built. Its gate is
 1. James reads and signs off every lecture (`verified: true`). Nothing else
    may set it.
 2. James captures the `[SCREENSHOT-NEEDED]` screenshots from his own accounts.
-3. A session builds the missing downloadables: ai-ugc-ads B11 (all
+3. All downloadables are built (ai-ugc-ads B11 done; all
    twelve ai-for-pms artifacts are built). The landing copy promises 11
-   artifacts and lectures say "Download A0x". One artifact per session.
+   artifacts and lectures say "Download A0x". Nothing left to build here.
 4. James fixes listing details: Udemy titles are limited to 60 characters (per
    the 2026-09-04 listing session) and `ai-for-pms` is 71, `ai-agents-for-work`
    67. Keep the AI-disclosure sentence as the last line of every description.
