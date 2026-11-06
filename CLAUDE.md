@@ -306,6 +306,7 @@ docs/06-growth-engine.md          Channels, asset flywheel, automated growth job
 docs/07-tts.md                    Voice decision: Kokoro default, costs, audiobook routes
 docs/08-channels.md               Channel map: Udemy, KDP, Spotify, YouTube; cuts and requirements
 docs/09-visual-standard.md        Screenshots, diagrams, AI-image lanes, the hook standard
+docs/10-motion-and-katana.md      Motion upgrade proposal (v2 after v1 ships), tooling, Katana verdict
 growth/                           Paste-ready automation prompts (cron / Cowork)
 books/                            KDP publishing system (own CLAUDE.md; read it first)
 STATUS.md                         Portfolio status page (dated; CLAUDE.md §10 is current)
